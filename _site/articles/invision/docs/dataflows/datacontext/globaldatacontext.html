@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Global Data Context | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Global Data Context | InVision ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/Dcont.png" alt="img"></p>
+<br>
+<p>The Global Data Context is configured once pr Solution, and specifies the resources and bindings used to determine the transaction set to process when the star schema configuration of Data Stores cannot provide this information, and / or when Data Context Scopes cannot be fully configured in Workbooks. The Global Data Context is defined by <strong>Slicer Repositories</strong>, <strong>Data Context Variables</strong> and <strong>Data Context Subjects</strong>.</p>
+<br>
+<h3 id="slicer-repositories">Slicer Repositories</h3>
+<p>Slicer Repositories are table resources (Dimensions, Facts, Settings and Data Stores) that can be used to determine the transaction set to process when a data source (Data Store or View) does not have a star schema that the Data Context can be derived from. Once a table resources is registered in the Global Data Context, it can be applied in <strong>Slicer Repository Bindings</strong> for  <strong>Data Context Subjects</strong>.</p>
+<p><strong>Properties:</strong></p>
+<p><code>Repository</code></p>
+<blockquote>
+<p>The Solution Object (Setting, Data Store, Fact or Dimension) used for filtering the set of transactions to process.</p>
+</blockquote>
+<p><code>Name</code></p>
+<blockquote>
+<p>The name of the Data Context Resource. The name is used for referencing the resource in <strong>Slicer Repository Bindings</strong>.</p>
+</blockquote>
+<br>
+<h3 id="data-context-variables">Data Context Variables</h3>
+<p>Data Context Variables are declarations of resources that can be referenced in <strong>Value Bindings</strong>  when arbitrary values should be used to determine the transaction set to process.</p>
+<p>Values are assigned to Data Context Variabels listed in the <strong>Data Context Scope</strong> definition of Data Flows, by mapping <strong>Workbook variables</strong>  to the Data Context Variables.</p>
+<p><strong>Properties:</strong></p>
+<p><code>Name</code></p>
+<blockquote>
+<p>The name of the resource. The name is used for referencing the resource in <strong>Value Bindings</strong>.</p>
+</blockquote>
+<br>
+<h3 id="data-context-subjects">Data Context Subjects</h3>
+<p>Data Context Subjects are data sources and targets which are sliced by the Data Context during processing. Data Context Subjects can be Data Stores or Views.<br>
+If the star schema configuration of a Data Store provides sufficient information to determine the transaction set during read and write operations, the Data Store does not need to be enlisted in the Global Data Context.</p>
+<p>Since Views does not have a star schema configuration, any View being part of a contextual data processing must be enlisted in the Global Data Context.</p>
+<p><strong>Properties:</strong></p>
+<p><code>Subject</code></p>
+<blockquote>
+<p>The Solution Object (Data Store or View) to have its transaction set managed by the Data Context during processing.</p>
+</blockquote>
+<p><code>Repository Bindings</code></p>
+<blockquote>
+<p>A collection of <strong>Slicer Repository Bindings</strong>.</p>
+</blockquote>
+<p><code>Value Bindings</code></p>
+<blockquote>
+<p>A collection of <strong>Value Bindings</strong>.</p>
+</blockquote>
+<br>
+<ul>
+<li><p><strong>Slicer Repository Binding</strong></p>
+<p>Slicer Repository Bindings are used if a Data Context Subject does not have a star schema configuration (such as Views) or if the table resources used for filtering the transaction set during processing does not exist in the star schema configuration.</p>
+<p>Slicer Repository Bindings supplements the star schema configuration of Data Stores by providing a connection between Data Store columns and a columns in a <strong>Slicer Repository.</strong></p>
+<p><strong>Properties:</strong></p>
+<p><code>Target Column</code></p>
+<blockquote>
+<p>The name of the column in the Data Context Subject table (Data Store or View), used for filtering the transaction set read or written to during processing.</p>
+</blockquote>
+<p><code>Slicer Repository</code></p>
+<blockquote>
+<p>The <strong>Slicer Repository</strong> used for filtering transaction set.</p>
+</blockquote>
+<p><code>Slicer Repository Column</code></p>
+<blockquote>
+<p>The name of the column in the Slicer Repository used for matching the values in the Data Context Subject Target Column.</p>
+</blockquote>
+</li>
+</ul>
+<br>
+<ul>
+<li><p><strong>Value Binding</strong></p>
+<p>Value Bindings defines connections between Data Context Variables and a Data Context Subject columns. If a value has been assigned to a variable through the <strong>Data Context Scope</strong>, the value is used for determining the transaction set being processed. The difference between using Slicer Repository Bindings and Values Bindings for filtering, is that when using Slicer Repositories, the filtering is done by joining the Subject Column on the Slicer Column and applying a WHERE clause on the Slicer Column(s), while using Value Bindings, the WHERE clause is applied directly to the Subject Column. Also, Value Bindings allows using hard coded filtering values.</p>
+<p><strong>Properties:</strong></p>
+<p><code>Target Column</code></p>
+<blockquote>
+<p>The name of the column in the Data Context Subject table that the filter should be applied to. If a value has been assigned to the variable, the the value will be used for determining the transaction set to process.</p>
+</blockquote>
+<p><code>Variable</code></p>
+<blockquote>
+<p>The <strong>Data Context Variabel</strong> used holding the value used for filtering.</p>
+</blockquote>
+</li>
+</ul>
+<br>
+<h3 id="scripting-the-global-data-context">Scripting the Global Data Context</h3>
+<p>When creating a template that requires a Global Data Context configuration, you need to include a script to create the GDC at the end of the template deployment process. To do this, you need to create a Data Flow that executes when the template is deployed, an in that Data Flow, add a task that calls the <em>Profitbase.Invision.Cmd.ExecuteScript</em> function. The easiest way of doing this is to add it from the <strong>Data Flow Item Templates toolbox</strong> -&gt; <strong>Command Tasks</strong> -&gt; <strong>Execute Command Script</strong>. In the GDC screen, generate the script and copy it into the Command Script text input field of the Execute Command Script Task in the Data Flow Item.</p>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

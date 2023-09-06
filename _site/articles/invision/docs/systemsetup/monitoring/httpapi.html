@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>HTTP API | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="HTTP API | InVision ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p>The Log API lets you fetch log information from Profitbase InVision for Ops and Log Analysis using tools such Splunk, Datadog and Logstash.</p>
+<br>
+<h3 id="calling-the-api">Calling the API</h3>
+<p>To call the API, you need an API Key.<br>
+The API Key must be included in each request using a query string parameter or an HTTP header.</p>
+<br>
+<p><strong>API Key in the query string</strong><br>
+To send the API Key as part of the query, use the <code>api_key</code> query string parameter.<br>
+<strong>Example:</strong> <a href="https://domain.com/api/v1/monitoring?api_key=KEY">https://domain.com/api/v1/monitoring?api_key=KEY</a></p>
+<br>
+<p>** API Key in a header**<br>
+To send the API Key in a header, add a header with the name <strong>x-api-key</strong> and the corresponding API Key as value to the request.</p>
+<br>
+<h3 id="creating-an-api-key">Creating an API Key</h3>
+<p>To create an API Key, go to <strong>Application Menu -&gt; API Management -&gt; Edit</strong>. In the <strong>Monitoring</strong> tab, find an existing key or create a new one.</p>
+<ol>
+<li>Click the Edit command under the API Management menu item.</li>
+<li>Select the Monitoring tab.</li>
+<li>Click the Add button.</li>
+</ol>
+<br>
+<h3 id="api-definition">API Definition</h3>
+<p><strong>[GET]</strong> api/v1/monitoring</p>
+<pre><code>response:
+[{
+    rowid: string
+    data: string
+    level: string
+    timestamputc: datetime
+    logevent: string of type LogEvent (see below)
+}]
+</code></pre>
+<p><strong>URL parameters</strong><br>
+<em>fromDateTimeUtc</em> (Optional)<br>
+Use the fromDateTimeUtc to specify the lower bound timestamp of log entries to fetch.
+The value must be on the format <code>yyyy.MM.dd HH:mm:ss</code></p>
+<p><em>toDateTimeUtc</em> (Optional)<br>
+Use the toDateTimeUtc parameter to specify the upper bound timestamp of log entries to fetch.
+The value must be on the format <code>yyyy.MM.dd HH:mm:ss</code></p>
+<p><em>logEventType</em> (Optional)<br>
+Use one of the following values to fetch log entries of a specific log event type.<br>
+<code>ApplicationError</code>, <code>ApplicationInfo</code>, <code>BackgroundAgentTask</code>, <code>DataFlowExecution</code>, <code>Fatal</code>, <code>InvalidCron</code>, <code>UserAccessWorkbook</code>, <code>StartingHostProcess</code></p>
+<p><em>logLevel</em> (Optional)<br>
+Use one of the following values to fetch log entries of a specific log level.<br>
+<code>Error</code>, <code>Information</code>, <code>Warning</code>, <code>Verbose</code></p>
+<br>
+<blockquote>
+<p><strong>Example</strong></p>
+</blockquote>
+<pre><code>https://domain.com/api/v1/monitoring?api_Key=YOUR_KEY&amp;fromDateTimeUtc=2021.08.24 15:08:41&amp;logLevel=Error&amp;LogEventType=ApplicationInfo
+</code></pre>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

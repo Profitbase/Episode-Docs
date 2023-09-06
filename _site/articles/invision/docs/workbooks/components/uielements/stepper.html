@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Stepper | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Stepper | InVision ">
+      
+      <link rel="icon" href="../../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../../../../../public/main.js'
+    import { init } from './../../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/stepper.png" alt="stepper"></p>
+<p>The Stepper Control lets you organize content in tabs, and each tab can host a single <a href="../../subscreens.html">Subscreen</a>.</p>
+<p>You can drag and drop a Stepper Control onto a page from the <a href="../uielements.html">UI Elements</a> toolbox folder.
+<br></p>
+<h3 id="steps">Steps</h3>
+<p>To add Steps, click <strong>Edit Steps</strong> in the Property pane.<br>
+Using the Steps editor, you can manage stepps by setting the header texts and contents.</p>
+<p>To set the contents of a step, choose a <a href="../../subscreens.html">Subscreen</a> from the <strong>Contents</strong> dropdown. Note that a <a href="../../subscreens.html">Subscreen</a> can only be used once, so if you don’t see a Subscreen in the dropdown, this means that it is already in use somewhere else in the <a href="../../../workbooks.html">Workbook</a>.
+<br></p>
+<h4 id="steps-properties">Steps properties:</h4>
+<p><strong>Header</strong></p>
+<blockquote>
+<p>The text displayed as the step header.</p>
+</blockquote>
+<p><strong>Header Expression</strong></p>
+<blockquote>
+<p>A C# expression returning a string.</p>
+</blockquote>
+<p><strong>Content</strong></p>
+<blockquote>
+<p>The subscreen to display as the step content.</p>
+</blockquote>
+<br>
+<h3 id="stepper-api">Stepper API</h3>
+<p>You can use the Stepper API to control different states of the Steps dynamically, such as the header texts and enabled/disabled states.</p>
+<p>The Stepper API can be called from the <strong>Execute Expression</strong>, <strong>Set Step Is Completed</strong> or <strong>Go To Step</strong> action of the Stepper.</p>
+<br>
+<h3 id="actions">Actions</h3>
+<br>
+<h4 id="set-step-is-completed">Set Step Is Completed(...)</h4>
+<p>Checks out the step when completed.</p>
+<pre><code>Arguments(&quot;Step1&quot;, true)
+</code></pre>
+<br>
+<h4 id="go-to-step">Go To Step(...)</h4>
+<p>Switches dynamically to the chosen step.</p>
+<pre><code>Arguments(&quot;Step3&quot;)
+</code></pre>
+<br>
+<h3 id="events">Events</h3>
+<br>
+<h4 id="step-navigated-to">Step Navigated To</h4>
+<p>Executes an expression when the conditions are met.</p>
+<br>
+<p><strong>Example</strong></p>
+<blockquote>
+<p>This example shows which condition needs to be met to disable Step3.</p>
+<p><strong>Condition</strong></p>
+</blockquote>
+<pre><code>@Event.Data.StepName=='Step2'
+</code></pre>
+<blockquote>
+<p><strong>Instruction</strong></p>
+</blockquote>
+<pre><code>StepperItem(&quot;Step3&quot;).Disable()
+</code></pre>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/stepperEx.png" alt="img">
+<br></p>
+<h4 id="stepperitem">StepperItem(...)</h4>
+<p>Returns a reference to a Stepper instance which has the following API.</p>
+<pre><code>StepperItem(&quot;step name&quot;)
+</code></pre>
+<br>
+<h4 id="setheader">SetHeader(...)</h4>
+<p>Sets the header of a step.</p>
+<pre><code>SetHeader(text : string | Eaze expression)
+</code></pre>
+<br>
+<p><strong>Example</strong></p>
+<blockquote>
+<p>This example shows how to change the header of the Step named “Step1” from the <strong>Execute Expression</strong> action of a <strong>Stepper</strong>:</p>
+</blockquote>
+<pre><code>    StepperItem(&quot;Step1&quot;).SetHeader(&quot;My Header&quot;);
+</code></pre>
+<br>
+<h4 id="setheadersuffix">SetHeaderSuffix(...)</h4>
+<p>Adds a suffix to the original tab header. The optional whitespaceBetween enables you to determine whether you want whitespace between the base header text and the suffix (the default is true).</p>
+<pre><code>SetHeaderSuffix(text : string | Eaze expression[, whitespaceBetween | boolean = true])
+</code></pre>
+<br>
+<p><strong>Example</strong></p>
+<blockquote>
+<p>This example shows how to set a suffix of the Tab named “Tab1” from the <strong>Execute Expression</strong> action of a <strong>Stepper</strong></p>
+</blockquote>
+<pre><code>    StepperItem(&quot;Tab1&quot;).SetHeaderSuffix(&quot;My suffix&quot;);
+</code></pre>
+<br>
+<h4 id="resetheader">ResetHeader(...)</h4>
+<p>Resets the header to its original value.
+<br></p>
+<p><strong>Example</strong></p>
+<blockquote>
+<p>This example shows how to reset the text of the Step named “Step1” to its original state from the <strong>Execute Expression</strong> action of a <strong>Stepper</strong>:</p>
+</blockquote>
+<pre><code>    StepperItem(&quot;Step1&quot;).ResetHeader();
+</code></pre>
+<br>
+<h4 id="disable">Disable(...)</h4>
+<p>Lets you specify whether a tab is disabled or not.</p>
+<pre><code>Disable([disable:boolean = true])
+</code></pre>
+<br>
+<p><strong>Example</strong></p>
+<blockquote>
+<p>This example shows how to disable the Step named “Step1” from the <strong>Execute Expression</strong> action of a <strong>Stepper</strong>:</p>
+</blockquote>
+<pre><code>    StepperItem(&quot;Stepr1&quot;).Disable();
+</code></pre>
+<blockquote>
+<p>You can also call Disable(…) by passing a boolean value indicating whether the Step should be disabled or not, which basically means you can set the disabled state.</p>
+</blockquote>
+<pre><code>    StepperItem(&quot;Step1&quot;).Disable(false); // Since we’re passing false, Enables the Step.
+</code></pre>
+<br>
+<h4 id="enable">Enable(...)</h4>
+<p>Lets you specify whether a step is enabled or not.</p>
+<pre><code>Enable([enable:boolean = true])
+</code></pre>
+<br>
+<p><strong>Example</strong></p>
+<blockquote>
+<p>This example shows how to enable the Step named “Step1” from the <strong>Execute Expression</strong> action of a <strong>Stepper</strong>:</p>
+</blockquote>
+<pre><code>    StepperItem(&quot;Step1&quot;).Enable();
+</code></pre>
+<blockquote>
+<p>You can also call call Enable(…) by passing a boolean value indicating whether the Step should be enabled or not, which basically means you can set the enabled state.</p>
+</blockquote>
+<pre><code>    StepperItem(&quot;Step1&quot;).Enable(false); // Since we’re passing false, Disables the Step.
+</code></pre>
+<br>
+<h3 id="videos">Videos</h3>
+<ul>
+<li><a href="../../../../videos/workbooks.html">Workbooks</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20Stepper.mp4">Stepper</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Stepper%20-%20Step%20Navigated%20To.mp4">Stepper - Step Navigated To</a></li>
+</ul>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

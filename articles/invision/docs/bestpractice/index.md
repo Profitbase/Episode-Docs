@@ -1,0 +1,3 @@
+# Bestpractice
+
+* [Structuringsolution](./structuringsolution.md)

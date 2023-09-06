@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Data Set | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Data Set | InVision ">
+      
+      <link rel="icon" href="../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../../../public/main.js'
+    import { init } from './../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p>The Data Set configuration of a <a href="../workflow.html">Workflow</a> defines the data belonging to the business process. <a href="../datastores.html">Data Stores</a>, Settings and <a href="../views.html">Views</a> in the data set are archived by executing a <a href="../dataflows.html">Data Flow</a> containing the Archive Workflow Data Set Members <a href="../dataflowitems.html">data flow item</a>. As an example, a data flow for archiving the data set members can be added to an Action Activity as the last phase of a Workflow.</p>
+<p>Archive objects are created for every Data Store, Setting and View in the data set. The archiving process copies data from the working set to the archive by tagging each transaction with the id of the active workflow iteration.</p>
+<br>
+<h3 id="data-set-properties">Data Set Properties</h3>
+<ul>
+<li><strong>Name</strong></li>
+</ul>
+<p>Specifies the name of the Data Set. The Data Set Name is automatically assigned to the <strong>SYS_DataSetID</strong> column or new rows added to Settings displayed in Workbooks belonging to the Data Set (see the Workbooks property).
+The name of the Data Set can be read using the <code>@Object[…].DataSet-directive.</code> The name of the Data Set is not associated to Workflow Iterations, so the name does not change when a new iteration is started.
+To pass the Data Set Name to Data Flow Items which are set up to filter the data being processed by <strong>SYS_DataSetID</strong> columns in the participating data sources and Settings, you need to map the <strong>SYS_DataSetID</strong> Global Data Context variable to the <strong>SYS_DataSetID</strong> workbook variable in the Data Context Scope property of the Data Flow component in the Workbook designer.
+This setup requires that the Workbook is registered in the Workbooks property of the Data Set (refer to the property below).</p>
+<ul>
+<li><strong>Workbooks</strong></li>
+</ul>
+<p>Specifies which Workbooks belongs to the Data Set. The name of the Data Set will automatically be assigned to the <strong>SYS_DataSetID</strong> column of new rows added to Settings displayed in a Workbook.</p>
+<br>
+<h3 id="filtering-by-data-set-when-executing-data-flows">Filtering by Data Set when executing Data Flows</h3>
+<br>
+<p>When executing Data Flows containing Data Flow Items configured to filter data by the <strong>SYS_DataSetID</strong> column, for example the Financial Simulation Engines, the Data Set name needs to be passed as part of the arguments to the Data Flow.</p>
+<p>The standard way of doing this is to set up a Workflow and register the Workbook (which hosts the Data Flow) in the Workbooks collection of the Data Set. Next, ensure that the Global Data Context has been created in the Solution, and that it contains the <strong>SYS_DataSetID</strong> variable. Finally, edit the Data Context Scope property of the Data Flow component in the Workbook, and map the Global Data Context <strong>SYS_DataSetID</strong> variable to the Workbook <strong>SYS_DataSetID</strong> variable.<br>
+Doing this will ensure that the Data Set name is assigned to the <strong>SYS_DataSetID</strong> variable when the Data Flow is executed, which in turn will enable any Data Flow Items to only use data belonging to the specified Data Set.</p>
+<br>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Cell Renderer | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Cell Renderer | InVision ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="custom-cell-rendering">Custom Cell Rendering</h3>
+
+<p>Use cell renderers to define custom rendering of cells in spreadsheets (<a href="../../tables.html">Tables</a>, <a href="../../worksheets.html">Worksheets</a> and <a href="../../sqlreports.html">SQL Reports</a>).</p>
+<p>A cell renderer is defined as a JavaScript function expression, or the name of a function defined in a Solution JavaScript.</p>
+<p>using a format:</p>
+<pre><code>func::myscript.myfunction
+</code></pre>
+<p>A cell renderer must return a DOM object that can be displayed in a spreadsheet cell. If null or undefined is returned, the default (system) cell rendering will be used.</p>
+<p>Cell Renderers will only be executed for text, numeric and date columns. Cell Renderers will not execute for Dropdown, ActionLink and other special column types.
+<br></p>
+<blockquote>
+<p><strong>Example</strong></p>
+<p>The following example shows how to write a custom cell renderer for rendering the cell contents as a button.</p>
+</blockquote>
+<pre><code>    function(eventArgs, services){
+        var btn = document.createElement('button');
+
+        btn.style.width = '100%';
+        btn.style.height = '100%';
+        btn.innerText = eventArgs.displayValue;
+
+        return btn;
+    }
+</code></pre>
+<hr>
+<h3 id="function-argument-eventargs">Function argument: eventArgs</h3>
+<p>The event argument passed to the cell renderer function has the following properties (note the camel casing):
+<br></p>
+<p><strong>eventArgs.displayValue</strong><br>
+The formatted value of the cell. This is the value that would normally be displayed in the cell. Formatting is executed before the cell renderer, so you have access to both the raw value and the formatted value in your custom renderer.</p>
+<p><strong>eventArgs.rowNum</strong><br>
+The index of the row in the grid.</p>
+<p><strong>eventArgs.colNum</strong><br>
+The index of the column in the grid.</p>
+<p><strong>eventArgs.prop</strong><br>
+The property name of the rowData object that the cell is data bound to. This is usually the column name of the data set, for example “Amount”.</p>
+<p><strong>eventArgs.rowData</strong><br>
+The data object for the entire row.</p>
+<hr>
+<h3 id="function-argument-services">Function argument: services</h3>
+<p>The <strong>services</strong> argument provides access to the Workbook API for raising the Custom Event on spreadsheet components (Tabels, Worksheets and SQL Reports) from custom rendered cells. This makes it possible to trigger actions in a Workbook when a user performs some action in a custom rendered cell.<br>
+<br></p>
+<p><strong>services.eventDispatcher</strong><br>
+Provides access to the eventDispatcher service that enables raising the Custom Event on the host component (Table, Worksheet or SQL Report)</p>
+<blockquote>
+<p><strong>Example</strong></p>
+<p>This example shows how to raise the &quot;Custom&quot; event of a Worksheet when a button in a custom rendered cell is clicked.</p>
+</blockquote>
+<pre><code>    function(eventArgs, services){
+        var btn = document.createElement('button');
+
+        btn.style.width = '100%';
+        btn.style.height = '100%';
+        btn.innerText = eventArgs.displayValue;
+
+        btn.onclick = () =&gt; services.eventDispatcher.raiseCustomEvent({row : eventArgs.rowData});
+
+        return btn;
+    }
+</code></pre>
+<br>
+<h3 id="videos">Videos</h3>
+<ul>
+<li><a href="../../../videos/worksheet.html">Worksheet</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Spreadsheet%20-%20Column%20Properties%20-%20Custom%20Cell%20Renderer.mp4">Custom Cell Rendering</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Table%20View%20-%20Custom%20Cell%20Renderer.mp4">Custom Cell Rendering in Table View</a></li>
+</ul>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

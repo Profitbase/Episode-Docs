@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Run SQL Script when saving Worksheets or Tables | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Run SQL Script when saving Worksheets or Tables | InVision ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p>If you need to run a <a href="../../sqlscripts.html">SQL Script</a> when saving Worksheet or Table data, use the SqlScriptService in the <strong>Save Data | On Save Script</strong>.</p>
+<br>
+<p><strong>Example</strong></p>
+<pre><code class="lang-csharp">
+    // This method is called after the changes have been saved to the database.
+    // The operationType specifies whether the rows was inserted, updated or deleted.
+
+    protected override void OnAfterSave(IEnumerable&lt;CudRecord&gt; rows, TableOperationType operationType)
+    {   
+        base.OnAfterSave(rows, operationType);
+
+        //Executes query after save has been done, returns the amount of rows affected
+        this.SqlScriptService.ExecuteNonQueryById(&quot;24e871f8-cd46-4c51-9a46-cbf7eec66bff&quot;);
+    }
+
+    // This method is called at the end of the commit process.
+    // The data parameters contains the rows that was deleted, updated or inserted.
+
+    protected override void OnEndSave(CudDataPackage data)
+    {
+        base.OnEndSave(data);
+
+        // When method is called returns the first value of the result set.
+        var myNum = this.SqlScriptService.ExecuteScalarById&lt;int&gt;(&quot;63aa2021-4092-48d1-ba8f-975aeecb5202&quot;);
+    }
+
+</code></pre>
+<br>
+<h3 id="sqlscriptservice-methods">SqlScriptService methods</h3>
+<br>
+<p><code>ExecuteNonQueryById</code></p>
+<p>Executes a SQL Script, specified by its object id, and returns the number of rows affected by the query.</p>
+<pre><code class="lang-csharp">public int ExecuteNonQueryById(string scriptId, Dictionary&lt;string, object&gt; paramValues = null)
+</code></pre>
+<br>
+<p><code>ExecuteNonQueryByName</code></p>
+<p>Executes a SQL Script, specified by its object name , and returns the number of rows affected by the query.</p>
+<pre><code class="lang-csharp">public int ExecuteNonQueryByName(string scriptName, Dictionary&lt;string, object&gt; paramValues = null)
+</code></pre>
+<br>
+<p><code>ExecuteScalarById</code></p>
+<p>Executes a SQL Script, specified by its object id, and returns the value in the first column in the first row from the result set. Note that the SQL Script must be configured to return data</p>
+<pre><code class="lang-csharp">public T ExecuteScalarById&lt;T&gt;(string scriptId, Dictionary&lt;string, object&gt; paramValues = null)
+</code></pre>
+<br>
+<p><code>ExecuteScalarByName</code></p>
+<p>Executes a SQL Script, specified by its object name, and returns the value in the first column in the first row from the result set. Note that the SQL Script must be configured to return data.</p>
+<pre><code class="lang-csharp">public T ExecuteScalarByName&lt;T&gt;(string scriptName, Dictionary&lt;string, object&gt; paramValues = null)
+</code></pre>
+<br>
+<p><code>LoadById</code></p>
+<p>Executes a SQL Script, specified by its object id, and returns the data set from the query. Note that the SQL Script must be configured to return data.</p>
+<pre><code class="lang-csharp">public DataTable LoadById(string scriptId, Dictionary&lt;string, object&gt; paramValues = null)
+</code></pre>
+<br>
+<p><code>LoadByName</code></p>
+<p>Executes a SQL Script, specified by its object Name, and returns the data set from the query. Note that the SQL Script must be configured to return data.</p>
+<pre><code class="lang-csharp">public DataTable LoadByName(string scriptName, Dictionary&lt;string, object&gt; paramValues = null)
+</code></pre>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

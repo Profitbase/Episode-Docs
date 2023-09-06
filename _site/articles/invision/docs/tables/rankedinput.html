@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Ranked Input | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Ranked Input | InVision ">
+      
+      <link rel="icon" href="../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../../../public/main.js'
+    import { init } from './../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="what-is-ranked-input">What is Ranked Input</h3>
+
+<p>Ranked Input enables providing input relative to different levels of dimensions. When data is saved, the Setting is &quot;compiled&quot; by unwrapping the data at the lowest level of the dimension based on the Ranked Input data.<br>
+If there is more than one column set up as a Ranked Input column, the result of the compilation will be the Cartesian product of the values at the lowest level of the dimensions.</p>
+<br>
+<h3 id="compile-on-save">Compile on Save</h3>
+<p>Enable this option to automatically compile the setting table when data is saved.</p>
+<blockquote>
+<p><strong>Note</strong><br>
+that the compilation process can take some time, so if you do not need the compilation to run immediately, you can compile the setting at some later point using a Data Flow.</p>
+</blockquote>
+<br>
+<h3 id="automatically-recompile-when-ranked-input-column-source-is-updated">Automatically recompile when Ranked Input Column Source is updated</h3>
+<blockquote>
+<p>Enabled by default.<br>
+<em>Requires that the solution model is compiled</em>.</p>
+</blockquote>
+<p>The contents generated when a Ranked Input Setting table is compiled is tied directly to the data and structure of the Ranked Input source dimension (hierarchy + levels).<br>
+That's why the Setting table needs to be recompiled whenever a Ranked Input source dimension is updated.</p>
+<p>When this feature is enabled, InVision will automatically recompile the table when the Ranked Input source dimension is reloaded or updated.</p>
+<p>This feature is enabled by default. Consider turning it off for setting tables where you have multiple Ranked Input Columns and it takes a long time to compile the output. The auto compilation will occur when a source dimension is updated, so a setting table with two Ranked Input Columns will be compiled two times.</p>
+<p>If you are updating both dimensions, it is faster to disable this feature and compile the setting using in a custom Data Flow instead. This way, the compilation will only happen once, regardless of how many Ranked Input Columns there are.</p>
+<br>
+<h3 id="specificity">Specificity</h3>
+<p>The Ranked Input data set is compiled based on specificity, where the order of the rows determines the specificity from lower to higher (think of it as a reversed rank).</p>
+<p>When compiled, the result of the first (topmost) row is resolved first since it has the lowest specificity. Next, the result of each consecutive row is merged into the data set.<br>
+When the compilation of consecutive rows produces data matching rows already present in the data set, the existing rows are overwritten by the new ones.</p>
+<p>For example, suppose you want to enter values relative to a Department dimension, you would put the Enterprise level setting as row 1, then any Region level setting(s) for overriding the Enterprise setting, and finally Department level settings as the final override.</p>
+<p>To enable the user to order the rows in the desired order from lowest to highest specificity, you need to add a column to the Setting that the system can use for sorting the rows. The data type of the column must be Integer, but you are free to choose the name and index of the column.</p>
+<p>Next, you need to specify that the column should be used for determining the specificity by going to the <strong>Features</strong> -&gt; <strong>Ranked Input</strong> screen and choosing the column from the specificity Dropdown list.</p>
+<p>When the specificity column has been set up, the user can move rows up and down using the context menu of the grid.</p>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

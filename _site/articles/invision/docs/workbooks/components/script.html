@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Script | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Script | InVision ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p>To execute Script from a <a href="../../workbooks.html">Workbook</a>, it needs to be added to a page. A script does not have a user interface, so you would normally add all scripts to a hidden page.</p>
+<br>
+<h3 id="actions">Actions</h3>
+<ul>
+<li><strong>Execute</strong><br>
+Executes the script. Any arguments are passed by calling SetParamValue(…) one or many times (one for each argument to pass)</li>
+</ul>
+<br>
+<h3 id="executing-scripts">Executing scripts</h3>
+<p>To execute a Script, you need to call the Execute Action of the Script when an event is raised, for example from a button or context menu. When calling the Execute Action, it will wait until the script has finished executing.</p>
+<br>
+<h3 id="parameterized-execution">Parameterized execution</h3>
+<p>Arguments are passed to a Script using the SetParamValue instruction in the Execute Action handler.</p>
+<br>
+<p><strong>Example</strong></p>
+<blockquote>
+<p>This example shows a Script with a @ProductID parameter. To execute the Script from a Workbook, you need to pass a product id as an argument, or else the execution of the Script will fail.</p>
+</blockquote>
+<pre><code>    UPDATE @Object[Sales].DbObjectName
+    SET Amount = 0 
+    WHERE ProductID = @ProductID
+</code></pre>
+<blockquote>
+<p>To pass a product id as an argument, you need to call the SetParamValue function in the Execute Action of the Script. The following expression will pass the value of the ProductID variable to the @ProductID parameter.</p>
+</blockquote>
+<pre><code>    SetParamValue(«@ProductID»,ProductID);
+</code></pre>
+<br>
+<h3 id="script-return-values">Script return values</h3>
+<p>If you have enabled the Script to return data, the first row of the result set returned by the query is serialized an object and assigned to a variable with the same as the Script Workbook part. Starting with version 2.2.3, if your query returns multiple rows, you can access the entire collection of rows as an array through the ALL_ROWS property on the object assigned to the variable.</p>
+<br>
+<p><strong>Example</strong></p>
+<blockquote>
+<p>This example shows how to access the properties of an object returned from a Script.</p>
+</blockquote>
+<pre><code>    SELECT 10 AS ProductID, ‘B’ AS ProductCode
+</code></pre>
+<blockquote>
+<p>The name of the Script in the Workbook is set to &quot;GetProductInfo&quot;.
+After the Script has completed, the ProductID property will be 10, and ProductCode will be «B».</p>
+<p>To access the product id and product code returned from the query, use the following syntax:</p>
+</blockquote>
+<pre><code>    @Var[GetProductInfo].ProductID
+</code></pre>
+<blockquote>
+<p>and</p>
+</blockquote>
+<pre><code>    @Var[GetProductInfo].ProductCode
+</code></pre>
+<br>
+<p><strong>Example</strong></p>
+<blockquote>
+<p>Suppose you have a script with the following query returning multiple rows</p>
+</blockquote>
+<pre><code>    SELECT x, y, z  
+    FROM MyTable
+</code></pre>
+<blockquote>
+<p>The name of the script in the Workbook is set to &quot;ProjectProperties&quot;</p>
+<p>To access the entire list of rows, use the following syntax:</p>
+</blockquote>
+<pre><code>    @Var[ProjectProperties].ALL_ROWS
+</code></pre>
+<blockquote>
+<p>Getting the entire collection of rows returned by a script is useful in cases where you want to use a data set in client-side computation using a JavaScript function/library, for example in a Worksheet formula. ALL_ROWS is a standard JavaScript array.</p>
+</blockquote>
+<pre><code>    @MyComputedValue = my.computationLib.calculate(Qty, Pressure, @Var[ProjectProperties].ALL_ROWS);
+</code></pre>
+<blockquote>
+<p><em>Note! This feature is available starting with version 2.2.3</em></p>
+</blockquote>
+<br>
+<h3 id="see-also">See Also</h3>
+<ul>
+<li><a href="../../sqlscripts.html">More about Scripts</a></li>
+</ul>
+<br>
+<h3 id="videos">Videos</h3>
+<ul>
+<li><a href="../../../videos/sqlscripts.html">Scripts</a></li>
+</ul>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

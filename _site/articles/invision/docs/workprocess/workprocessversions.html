@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Work Process Versions | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Work Process Versions | InVision ">
+      
+      <link rel="icon" href="../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../../../public/main.js'
+    import { init } from './../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="content">Content</h3>
+
+<p>You cannot directly edit the content of a Version. The Content tab simply displays the content copied from the Work Process blueprint when the Version is deployed. If you want to change the contents of a Version, you need to change the blueprint of the Work Process before the Version has been deployed.
+<br></p>
+<h3 id="properties">Properties</h3>
+<p>In addition to the Name and Description property which is provided by the system, Versions may have additional properties coming from the Package(s) defined in the Work Process blueprint. The properties are used by Package authors to provide configuration options used by business logic in Packages, such as the start date and a number of planning periods, whether or not to do a rollover to the next period, and so on.
+Version properties can be edited as long as a Version is in the Draft status, but cannot be changed after a Version has been deployed.
+<br></p>
+<h3 id="status">Status</h3>
+<p>A Work Process Version can have one of the following states:</p>
+<ol>
+<li><strong>Draft</strong> - The Version only exists on the drawing board. No identities can do any work.</li>
+<li><strong>Deployed</strong> - The Version has been created. Work Process Administrators can access the Workbooks from the Workbook Menu and the homepage.</li>
+<li><strong>Open</strong> - The Version is open for input for any user with access to the Workbooks.</li>
+<li><strong>Closed</strong> - Identities with access can open Workbooks, but they cannot edit data.</li>
+</ol>
+<p>After a Version has been deployed, you can change its status to Open or Closed.
+An Open Version can at any point in time be set to Closed, and vice versa. Note that it's entirely up to the Work Process administrator to pick a suitable time to switch states.
+<br></p>
+<h3 id="translations">Translations</h3>
+<p>You can specify a translation for the name of the Work Process Version for each language defined in the system.
+The translated name will appear in the Workbook Menu and on the homepage.
+<br></p>
+<h3 id="deleting-versions">Deleting Versions</h3>
+<p>Versions take up storage space and should be deleted when they are no longer in use.
+If you do not delete versions, you will run out of available storage, and will not be able to create new versions unless you move to a higher pricing tier.</p>
+<h3 id="videos">Videos</h3>
+<ul>
+<li><a href="../../videos/workprocess.html">Work Process</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Work%20Process%20Versions.mp4">Work Process - Versions</a></li>
+</ul>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

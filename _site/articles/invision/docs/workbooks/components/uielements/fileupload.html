@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>File Upload | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="File Upload | InVision ">
+      
+      <link rel="icon" href="../../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../../../../../public/main.js'
+    import { init } from './../../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/upploadUI.png" alt="upploadUI">
+<br></p>
+<p>Provides file upload support from Workbooks. The user can upload one or many files in the same batch.</p>
+<h3 id="events">Events</h3>
+<ul>
+<li><strong>CompletedEvent</strong><br>
+This event is raised when the file upload has completed. The event payload contains an object with the ResourceID assigned by the server, the FileName, and any arguments you specified in the Upload Arguments Expression.</li>
+</ul>
+<p><strong>Example</strong></p>
+<blockquote>
+<p>If you uploaded an image file, myimage.png, and specified a custom ContextID = &quot;Test&quot; argument in Upload Arguments Expression, the event data object (@Event.Data) will have the following properties (obviously, the ResourceID will have a different value):</p>
+</blockquote>
+<pre><code>{
+    ResourceID: &quot;aa69a209-2828-4ca4-9a89-8ed061620aeb&quot;, 
+    FileName: &quot;myImage.png&quot;, 
+    params: {
+        ContextID: &quot;Test&quot;
+    }
+}
+</code></pre>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><p><strong>Accept Media Type</strong><br>
+Specifies the types of files that the server accepts.  <a href="https://www.w3schools.com/tags/att_input_accept.asp">Accept Attribute</a></p>
+</li>
+<li><p><strong>Upload Target Solution Object Name</strong><br>
+Specifies the name of the File Storage table that the file(s) should be uploaded to. You can either use this property or specify the Upload Target Url. If you want to upload the file(s) to the InVision backend and you do not need the upload target to be dynamically resolved, you should use this option instead of Upload Target Url.</p>
+</li>
+<li><p><strong>Upload Target Url</strong><br>
+Specifies the url that the file(s) should be uploaded to. You should use this option instead of Upload Target Solution Object Name if you want to upload the file(s) to the InVision backend, and you need the url do be dynamically resolved. The easiest way to upload files to the InVision backend using this option is to use a valid Db Web Api url.</p>
+</li>
+<li><p><strong>Upload Arguments Expression</strong><br>
+Specifies a range of SetParamValue(…) statements that can be used to add additional metadata to the file upload message sent from the browser to the server.<br>
+InVision uses FormData to upload files to the server. Each SetParamValue(…) appends a new value onto an existing key inside the FormData object.
+When uploading to an InVision File Storage table, the paramName should be the name of the column that you want to store the metadata in, and the param value should be the metadata that you want to store.</p>
+</li>
+</ul>
+<p><strong>Example</strong></p>
+<blockquote>
+<p>Suppose you have a File Storage table with a CustomerID column (in addition to the standard File Storage columns), and you want the files you upload to be tagged with the customer id, you should call SetParamValue(…) similar to this;</p>
+</blockquote>
+<pre><code>SetParamValue(&quot;CustomerID&quot;, _customer.CustomerID);
+</code></pre>
+<br>
+<h3 id="videos">Videos</h3>
+<ul>
+<li><a href="../../../../videos/workbooks.html">Workbooks</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Workbooks%20-%20File%20Upload.mp4">Components - File Upload</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20File%20Upload%20and%20Download.mp4">Components - File Upload and Download</a></li>
+</ul>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

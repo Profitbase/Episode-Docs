@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Input Configuration | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Input Configuration | InVision ">
+      
+      <link rel="icon" href="../../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../../../../../public/main.js'
+    import { init } from './../../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="relationship">Relationship</h3>
+
+<p>Specifies the column mapping used for determining which rows from the source table gets processed by the Cell Adapter component when the pipeline is run. In addition to this mapping, the Cell Adapter Ruleset table may extend the filter by specifying a Condition Expression column containing a logical expression that determines if the row should be processed or not. The rows from the source table not passing the filtering step are ignored by the component.</p>
+<br>
+<h3 id="computation-source-columns">Computation Source Column(s)</h3>
+<p>Specifies the column(s) to unpivot (to a data-value pair) and write to the target. The Cell Adapter component will generate rows for each item defined in the list if the source row passes the filtering step. The number of rows generated from each source row depends on the number of matches found in the Ruleset table. The columns defined in this list must be <strong>Time Frame Measure Columns</strong> so they can be unpivoted and written as date-value pairs to the target.</p>
+<p><strong>Properties:</strong></p>
+<p><code>Column Name</code></p>
+<blockquote>
+<p>Specifies the Time Frame Measure column to unpivot and write to the target.</p>
+</blockquote>
+<p><code>TypeId</code></p>
+<blockquote>
+<p>Specifies an identifier for the Computation Source Column that maps to a set of business rules in the Ruleset table. By default, the TypeId value is equal to the Column Name.<br>
+Suppose you have two Computation Source Columns, Forecast1, and Forecast2, and you want to use the same set of business rules for both of them, you can specify the same TypeId value for both of them and use that TypeId value in the Type ID column of the Ruleset table.</p>
+</blockquote>
+<p><code>No Commit</code></p>
+<blockquote>
+<p>Specifies whether no output row should be generated for the column by the Cell Adapter component.</p>
+</blockquote>
+<p><code>Value Expression (SQL)</code></p>
+<blockquote>
+<p>SQL expression for computing the value of the column when it's read from the database.</p>
+</blockquote>
+<p><code>Processing Condition (C#)</code></p>
+<blockquote>
+<p>Optional. A C# expression returning a boolean value (true/false) used for specifying whether to process the current input row for the Computation Source Column. You can use the <strong>Condition Expression</strong> methods as part of the Processing Condition expression.</p>
+</blockquote>
+<br>
+<h3 id="additional-columns">Additional columns</h3>
+<p>Additional columns is a list of columns that can be included in the output with the standard output. To output the additional columns, they need to be mapped to target columns in the <strong>Additional Output</strong> list of the Output configuration.</p>
+<p><strong>Properties:</strong></p>
+<p><code>Column Name</code></p>
+<blockquote>
+<p>Specifies the name of the additional column to include in the output.</p>
+</blockquote>
+<p><code>Computed Column</code></p>
+<blockquote>
+<p>Allows specifying a custom column that does not exist in the source. When this feature is enabled, the Expression property must have a valid SQL statement that provides the value for the computed column.</p>
+</blockquote>
+<p><code>SQL Value Expression</code></p>
+<blockquote>
+<p>SQL expression for computing the value of the column when it's read from the database, for example, <strong>substring</strong> (AccountID,0,2).</p>
+</blockquote>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

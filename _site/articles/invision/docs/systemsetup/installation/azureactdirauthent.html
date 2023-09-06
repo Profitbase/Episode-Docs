@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Azure Active Directory Authentication | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Azure Active Directory Authentication | InVision ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="authentication-using-microsoft-azure-active-directory">Authentication using Microsoft Azure Active Directory</h3>
+
+<br>
+<h3 id="configure-your-azure-ad-application">Configure your Azure AD Application</h3>
+<ol>
+<li>Log on to your Azure Active Directory management portal</li>
+<li>In the Portal, select your AD.</li>
+<li>Select “App registrations”, and “New registrations”
+<br></li>
+</ol>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/upa2.png" alt="Permissions and Authentication" title="Permissions and Authentication"></p>
+<br>
+<h3 id="web-client">Web Client</h3>
+<p>Create an application that represents the Web Client, and configure:
+<br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/upa3.png" alt="Permissions and Authentication" title="Permissions and Authentication">
+<br></p>
+<h4 id="application-client-id">Application (client) ID</h4>
+<p>This id is automatically generated for you, and you will need this later when configuring the InVision web site.</p>
+<h4 id="directory-tenant-id">Directory (tenant) ID</h4>
+<p>This is “you”, and you will need this id when configuring the InVision web site.
+<br></p>
+<p><em>“Authentication”</em></p>
+<p><strong>Redirect URI</strong><br>
+Add the redirect URI(s) (as type “Web”) that represents the physical address(es) for your app to which Azure AD sends security tokens for authenticated identities.</p>
+<p><strong>Implicit grant</strong><br>
+Check for both “Access tokens” and “ID tokens”.
+<br></p>
+<p><em>“Certificates &amp; secrets”</em></p>
+<p><strong>Keys</strong><br>
+Select and create a “New client secret”.</p>
+<p><strong>Make a copy of the secret/key</strong><br>
+because once you leave the configuration page, you will no longer be able to see it
+anymore. You need this value later when configuring the InVision web site.
+<br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/upa4.png" alt="Permissions and Authentication" title="Permissions and Authentication"></p>
+<br>
+<p><em>“API Permissions”</em></p>
+<p><strong>Microsoft Graph</strong><br>
+Enable identities to Sign in and read identity profile is mandatory to authenticate identities, add:</p>
+<ul>
+<li>User.Read as <strong>Delegated</strong> permission</li>
+</ul>
+<p>To enable access to administrate identities, add additional permissions:</p>
+<ul>
+<li><p><em>User.ReadWrite.All</em> as <strong>Application</strong> permission</p>
+</li>
+<li><p><em>Directory.ReadWrite.All</em> as <strong>Application</strong> permission</p>
+</li>
+</ul>
+<p>To enable access to Administrate groups, add additional permission:</p>
+<ul>
+<li><em>Group.ReadWrite.All</em> as <strong>Application</strong> permission</li>
+</ul>
+<p>Make sure to Grant consent (grant admin consent for Default Directory).</p>
+<blockquote>
+<p><strong>Note 1)</strong><br>
+To enable access to reset a identities password, the Web Client/API in addition has to be assigned the role.</p>
+</blockquote>
+<ul>
+<li>“User administrator”</li>
+</ul>
+<blockquote>
+<p><strong>Note 2)</strong><br>
+Enforcement of permissions in Azure Portal are delayed, wait sufficiently to have permissions applied.
+<br></p>
+</blockquote>
+<p><em>Expose an API</em></p>
+<p><strong>Application ID URI</strong><br>
+You will need to set this to be able to add a “Scope”.</p>
+<p><strong>Scope</strong><br>
+Add a scope to expose the api.
+<br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/upa5.png" alt="Permissions and Authentication" title="Permissions and Authentication">
+<br></p>
+<p><em>Manifest</em></p>
+<p>Some parameters are not set correctly during setup and configuration, and needs to be modified in the manifest file:</p>
+<p><code>&quot;accessTokenAcceptedVersion&quot;</code></p>
+<p><code>&quot;allowPublicClient&quot;</code></p>
+<p><code>&quot;groupMembershipClaims&quot;</code>
+<br></p>
+<p>Change:</p>
+<ul>
+<li><strong>accessTokenAcceptedVersion</strong> to <strong>null</strong>,</li>
+<li><strong>allowPublicClient</strong> to <strong>false</strong>,</li>
+<li><strong>groupMembershipClaims</strong> to <strong>All</strong>:
+<br></li>
+</ul>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/upa6.png" alt="Permissions and Authentication" title="Permissions and Authentication"></p>
+<br>
+<h3 id="designer">Designer</h3>
+<p>Create an application that represents the Designer, and configure.</p>
+<p><strong>Application (client) ID</strong><br>
+This id is automatically generated for you, and you will need this later when configuring the InVision Designer.</p>
+<p><strong>Directory (tenant) ID</strong><br>
+This is your tenant id, and you will need this id when configuring the InVision Designer.</p>
+<br>
+<p><em>“Authentication”</em></p>
+<p><strong>Redirect URI</strong><br>
+Add the redirect URI(s) (as type “Public client (mobile &amp; desktop)”) that represents the physical address(es) for your app to which Azure AD sends security tokens for authenticated identities.</p>
+<p><strong>Implicit grant</strong><br>
+Check for “ID tokens”.
+<br></p>
+<p><em>“API Permissions”</em></p>
+<p><strong>Microsoft Graph</strong><br>
+Enable identities to Sign in and read identity profile is mandatory to authenticate identities, add:</p>
+<ul>
+<li>User.Read as <strong>Delegated</strong> permission</li>
+</ul>
+<p>To enable access to to “Your-webclient-app”, add the exposed permissions from “Your-webclient-app” as Delegated permission:
+<br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/upa7.png" alt="Permissions and Authentication" title="Permissions and Authentication">
+<br></p>
+<p>Make sure to <strong>Grant consent</strong>  (grant admin consent for Default Directory).
+<br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/upa8.png" alt="Permissions and Authentication" title="Permissions and Authentication"></p>
+<br>
+<h4 id="configure-the-client-and-designer-web-site">Configure the Client and Designer Web Site</h4>
+<ol>
+<li><p>Go the the <strong>IdentityConfig</strong> folder in the <strong>Client install</strong> folder and open <strong>identityconfig.json</strong> for editing.</p>
+</li>
+<li><p>In the openIdConnect section, set the following properties.</p>
+</li>
+</ol>
+<ul>
+<li><p><strong>clientId</strong><br>
+Copy the Client ID value from the Azure AD Application Configuration.</p>
+</li>
+<li><p><strong>authority</strong><br>
+Azure AD instance + Tenant ID, for example <a href="https://login.microsoftonline.com/profitbase.no">https://login.microsoftonline.com/profitbase.no</a>.</p>
+</li>
+<li><p><strong>redirectUri</strong><br>
+The physical address of the web application, for example https://myserver/invision. This value must one of the Reply Url's configured in the Azure AD Application Configuration (step 4e above).</p>
+</li>
+<li><p><strong>clientSecret</strong><br>
+One of the keys from the Azure AD Application Configuration (step 4c above).</p>
+</li>
+<li><p><strong>tenant</strong><br>
+Your tenant id. You find your Tenant Id in the Overview screen of your App Registration.</p>
+</li>
+<li><p>Edit the <strong>claimsTransformation</strong> section.</p>
+</li>
+</ul>
+<ol start="3">
+<li><p>Go back into the Client install folder and rename the Web.config-file to something else, for example Original_Web.config.</p>
+</li>
+<li><p><strong>Rename OpenIDConnect_Web.config</strong> to <strong>Web.config</strong>. Copy the <code>&lt;connectionString&gt;</code> element (and its contents) from the original Web.config-file into the new Web.config-file (replace the existing <code>&lt;connectionString&gt;</code> element).</p>
+</li>
+<li><p>Make sure the <strong>auth:idp</strong> appSetting is set to <strong>AzureAD</strong>.</p>
+</li>
+</ol>
+<br>
+<h3 id="videos">Videos</h3>
+<ul>
+<li><a href="../../../videos/gettingstarted/installation.html">Installation and Setup</a></li>
+<li><a href="../../../videos/accesscontrol.html">Access Control</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Installation%20and%20Setup%20-%20Create%20Azure%20App%20Registration.mp4">Create Azure App Registration</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Installation%20and%20Setup%20-%20Setup%20Azure%20Service%20Bus.mp4">Setup Azure Service Bus</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Installation%20and%20Setup%20-%20InVision%20Service%20with%20Azure%20Active%20Directory%20Authentication.mp4">InVision Service with Azure Active Directory Authentication</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Users%20and%20Permissions%20-%20Create%20and%20Manage%20Azure%20AD%20Users%20and%20User%20Groups.mp4">Create and Manage Azure AD Identities and Access Groups</a></li>
+</ul>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

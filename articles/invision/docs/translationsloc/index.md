@@ -1,0 +1,4 @@
+# Translationsloc
+
+* [Howto](./howto.md)
+

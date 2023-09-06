@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>File Storage | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="File Storage | InVision ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p>File Storage is a flexible system to let users work with attachments in the <a href="../../workbooks.html">Workbook</a>.</p>
+<p>The component has built-in features for uploading, downloading, deletion and selection of files.</p>
+<p>Each component can have different context as described in link below.
+<a href="../../filestorage/howto/creatingfilestorage.html">How to create a File Storage</a></p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/FileStorage_Panel.PNG" alt="File Storage"></p>
+<br>
+<h3 id="actions">Actions</h3>
+<ul>
+<li><strong>Load Data</strong></li>
+</ul>
+<p>Call this action to load or refresh data.</p>
+<br>
+<h3 id="events">Events</h3>
+<ul>
+<li><strong>Upload Completed</strong></li>
+</ul>
+<p>This event is raised when a user uploads a file. The @Event payload contains the following data:</p>
+<pre><code>{
+“Data”: {
+  “FileReferenceId”: “&lt;reference id&gt;”,
+  “StorageName”: “&lt;name of file storage&gt;”
+  “FileName”: “&lt;file name&gt;”,
+  “MimeType”: “&lt;file’s mime type&gt;”
+
+}
+}
+</code></pre>
+<br>
+<ul>
+<li><strong>File Deleted</strong></li>
+</ul>
+<p>This event is raised when a user deletes a file. The @Event payload contains the same data as described above.</p>
+<br>
+<h3 id="properties">Properties</h3>
+<br>
+<h4 id="behavior">Behavior</h4>
+<ul>
+<li><strong>File selection</strong></li>
+</ul>
+<p>The developer can specify whether the user can select one or more files.</p>
+<ul>
+<li><p><strong>Single</strong></p>
+</li>
+<li><p><strong>Multiple</strong></p>
+</li>
+</ul>
+<br>
+<ul>
+<li><strong>File click actions</strong></li>
+</ul>
+<p>The developer can specify what happens when a user clicks a file in a File Storage Workbook component. Available options are:</p>
+<ul>
+<li><p><strong>Download</strong> – When a user clicks a file, it will be downloaded to the browser.</p>
+</li>
+<li><p><strong>Raise an event</strong> – When a user clicks a file, an event is raise. That enables the developer to perform a custom action when a file is clicked.</p>
+</li>
+<li><p><strong>Open</strong> – When a file is clicked, it will be open in the browser.</p>
+</li>
+<li><p><strong>None</strong> – This enables users to view which files are in the File Storage but not access them.</p>
+</li>
+</ul>
+<br>
+<h4 id="see-also">See Also</h4>
+<ul>
+<li><a href="../../filestorage.html">File Storage</a></li>
+</ul>
+<br>
+<h3 id="videos">Videos</h3>
+<ul>
+<li><a href="../../../videos/filestorage.html">File Storage</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/File%20Storage%20-%20File%20Click%20Actions.mp4">File Click Action</a></li>
+</ul>
+<br>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

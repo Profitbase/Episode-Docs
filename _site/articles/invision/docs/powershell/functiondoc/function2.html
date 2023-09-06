@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>$PbRunContext | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="$PbRunContext | InVision ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="pbruncontext-system-variable">$PbRunContext (system variable)</h3>
+
+<p>The <code>$PbRunContext</code> system variable is instantiated and set for each script execution. It contains useful information that can be utilized.</p>
+<br>
+<p><strong>Note 1:</strong> Profitbase may change the content of the <code>$PbRunContext</code> at any time.</p>
+<p><strong>Note 2:</strong> From InVision platform version 2022.3, the <code>$pbRunContext</code> is removed as argument in functions supplied by Profitbase. Remove this argument on upgrade and check the function name. Functions using this argument will not work after v.2022.4.</p>
+<br>
+<p><strong>Internal use:</strong></p>
+<ul>
+<li><p>The <code>$PbRunContext.WorkDir</code> value is required when using <code>Profitbase.IO</code> functions.
+<br></p>
+</li>
+<li><p>The <code>$PbRunContext.SolutionId</code> value is required when calling <code>[Profitbase.Data.SqlScript]::Execute</code>.
+<br></p>
+</li>
+<li><p>The <code>$PbRunContext.LogHandle</code> value is used when calling <code>[Profitbase.PS.PsScript]::Execute</code> from <strong>Designer/WebApp</strong> context.
+<br></p>
+</li>
+<li><p>The <code>$PbRunContext.TaskId</code> value is used when calling <code>[Profitbase.PS.PsScript]::Execute</code> from <strong>Data Flow/Worker</strong> context.
+<br></p>
+</li>
+</ul>
+<p><strong>Example 1 non data flow execution:</strong></p>
+<pre><code>WorkDir           : C:\InVision\WebApp\Profitbase.Invision.WebApp\PwshTempFolders\cc1604bb-42c
+SolutionId        : SHHealthChecksMmrJQlemljTJb9SZbiGC
+UserId            : domainname\user
+Language          : en-US
+ConnectionString  : Data Source=dbsrv;Initial Catalog=pbInvision_Test;Integrated Security=True;
+DataFlowExecution : False
+LogHandle         : 84c01459-b754-4d2b-aafb-49c99dd08319
+TaskId            : 
+DataFlowId        : 
+ParentLogItemId   : 
+DataFlowStepId    : 
+DataFlowItemId    :
+</code></pre>
+<br>
+<p><strong>Example 2 data flow execution:</strong></p>
+<pre><code>WorkDir           : C:\InVision\WebApp\Executables\Worker\PwshTempFolders\80b6d7f5-6abe-42d8
+SolutionId        : SHHealthChecksMmrJQlemljTJb9SZbiGC
+UserId            : domainname\user
+Language          : en-US
+ConnectionString  : Data Source=dbsrv;Initial Catalog=pbInvision_Test;Integrated Security=True;
+DataFlowExecution : True
+LogHandle         : 
+TaskId            : fd371b0a-edff-47fb-b5cb-ed757222189d
+DataFlowId        : 0b942eba-f035-48dc-bb38-d8655ebf452e
+ParentLogItemId   : entry_1b98165d-35a2-4c0b-922e-7ac8a0cf2f25
+DataFlowStepId    : 9bf09f3a-a239-46f9-9b87-957788c1d612
+DataFlowItemId    : d21119b2-d73e-453c-828b-b8fe7df424f9
+</code></pre>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

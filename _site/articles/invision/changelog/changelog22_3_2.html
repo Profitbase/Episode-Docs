@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Change Log 2022.3 pt.2 | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Change Log 2022.3 pt.2 | InVision ">
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../../public/main.js'
+    import { init } from './../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h2 id="new-features--fixes">New Features &amp; fixes</h2>
+
+<br>
+<h3 id="spreadsheets-worksheets--tables">Spreadsheets (Worksheets + Tables)</h3>
+<br>
+<h4 id="conditions-for-context-menu-options">Conditions for Context Menu Options</h4>
+<p>You can now specify conditions for whether a context menu option should be available to the user or not. That enables context menus to be rendered dynamically based on information from the clicked row(s) and the state of the Workbook.</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/chlog223_3.png" alt="img"></p>
+<p>Use JavaScript to define conditions to whether a context menu option should be available or not.</p>
+<br>
+<p><a href="../docs/worksheets/wproperties/contextmenuoptions.html">Read more about conditions for standard context menu options here</a></p>
+<p><a href="../docs/worksheets/columnproperties/customactionconditions.html">Read more about conditions for custom context menu actions</a></p>
+<br>
+<h3 id="table-view">Table View</h3>
+<br>
+<h4 id="you-can-now-turn-off-the-selection-column">You can now turn off the selection column</h4>
+<p>This is useful if you want to save space, and only have a single select enabled.
+<br></p>
+<h4 id="dropdown-menus-auto-sizes-to-the-content-width">Dropdown menus auto sizes to the content width</h4>
+<p>This prevents horizontal scrolling in the dropdown menus of filters.</p>
+<br>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ul>
+<li><p>Fixed issue regarding null values in selector filters. This fixed a crash if your data source contained NULL in one of the columns having a dropdown filter.</p>
+</li>
+<li><p>Fixed issue with sorting of date columns. Dates were not sorted correctly.</p>
+</li>
+<li><p>Fixed issue with sorting of text columns where text was sorted using alphanumerical comparison instead of string comparison.</p>
+</li>
+<li><p>Fixed issues with missing Norwegian translations.</p>
+</li>
+<li><p>Fixed issue where scrolled text content was displayed underneath pinned left or right columns.</p>
+</li>
+<li><p>Fixed issue where client-side filters did not properly reset after a data reload.</p>
+</li>
+<li><p>Fixed issue where the row popdown menu was misplaced
+Changed checkbox filters to support tri-state (true, false, and null) for boolean fields.</p>
+</li>
+</ul>
+<br>
+<h3 id="forms">Forms</h3>
+<br>
+<h4 id="itemssourcefilter-api">ItemsSourceFilter API</h4>
+<p>The Listbox, Dropdown, and SplitButton controls now support using a custom filter to select a subset of items from the ItemsSource. This is useful if you want to use the same data source for two or more list controls, but don’t want to display the same items.</p>
+<br>
+<p><strong>Apply a filter to the ItemsSource using the ItemsSourceFilter attribute</strong></p>
+<pre><code>&lt;Form&gt;
+  &lt;Data&gt;
+    &lt;Models&gt;
+      &lt;Model Name=&quot;Customer&quot; Source=&quot;@Object[Customers].DbObjectName&quot; Fields=&quot;ID,Name&quot; /&gt;
+    &lt;/Models&gt;
+    &lt;Lists&gt;
+    	&lt;List Name=&quot;Customers&quot; Source=&quot;@Object[Customers].DbObjectName&quot; Fields=&quot;ID,Name&quot;/&gt;    	
+    &lt;/Lists&gt;
+  &lt;/Data&gt;
+  &lt;Functions&gt;
+  	&lt;Function Name=&quot;MyFilter&quot; Parameters=&quot;items, controlName&quot;&gt;
+  		return items.filter(item =&gt; item.ID !== &quot;Customer1&quot;);
+  	&lt;/Function&gt;
+  &lt;/Functions&gt;
+  &lt;UI Grid=&quot;ui-root&quot;&gt;
+    &lt;Listbox Name=&quot;MyListbox&quot; Row=&quot;1&quot; 
+    	MinWidth=&quot;100px&quot;
+        ItemsSource=&quot;Customers&quot; 
+        ItemsSourceFilter=&quot;MyFilter($Data, $Ctrl.Id)&quot;
+    	DisplayMember=&quot;Name&quot; 
+    	ValueMember=&quot;ID&quot; 
+    	SelectedValue=&quot;{Binding Path:Customer.ID}&quot; /&gt;
+  &lt;/UI&gt;
+&lt;/Form&gt;
+</code></pre>
+<br>
+<h4 id="data-binding-api">Data Binding API</h4>
+<p>Solution Developers can use the new Data Binding API to retrieve all data bindings associated with a data source and force the binding targets (UI elements) to re-render.<br>
+A typical use case for this feature is when multiple lists or selection controls (for example dropdowns) are data bound to the same data source, and you are using the new <strong>ItemsSourceFilter</strong> feature to ensure that the same items are not available as selectable options in any two list controls.</p>
+<p><a href="../docs/forms/formschemas/apis/databindingsAPI.html">Read more here.</a></p>
+<br>
+<h4 id="selection">Selection</h4>
+<ul>
+<li><p>Listbox now supports SelectedItemCssClass, which enables Solution Developers to specify a custom CSS class to apply to the selected item in the listbox.</p>
+</li>
+<li><p>If SelectedValue is data bound, the corresponding listbox item will be highlighted. The default style of the selected item can be overridden by the SelectedItemCssClass property.</p>
+</li>
+</ul>
+<pre><code>&lt;Form&gt;
+  &lt;Style&gt;
+    &lt;Css&gt;&lt;![CDATA[    
+    .selectedItem{
+    	background-color: #404040;
+        color: white;
+    }
+]]&gt;&lt;/Css&gt;
+    &lt;Layouts&gt;
+      &lt;Grid Name=&quot;ui-root&quot; Rows=&quot;200px 1fr&quot; Columns=&quot;auto 1fr&quot; /&gt;
+    &lt;/Layouts&gt;
+  &lt;/Style&gt;
+  &lt;Data&gt;
+    &lt;Models&gt;
+      &lt;Model Name=&quot;Customer&quot; Source=&quot;@Object[Customers].DbObjectName&quot; Fields=&quot;ID,Name&quot; /&gt;
+    &lt;/Models&gt;
+    &lt;Lists&gt;
+    	&lt;List Name=&quot;Customers&quot; Source=&quot;@Object[Customers].DbObjectName&quot; Fields=&quot;ID,Name&quot;/&gt;    	
+    &lt;/Lists&gt;
+  &lt;/Data&gt;
+  &lt;UI Grid=&quot;ui-root&quot;&gt;
+    &lt;Listbox Name=&quot;MyListbox&quot; Row=&quot;1&quot; 
+    	MinWidth=&quot;100px&quot;
+        ItemsSource=&quot;Customers&quot; 
+    	DisplayMember=&quot;Name&quot; 
+    	ValueMember=&quot;ID&quot; 
+    	SelectedItemCssClass=&quot;selectedItem&quot;
+    	SelectedValue=&quot;{Binding Path:Customer.ID}&quot; /&gt;
+  &lt;/UI&gt;
+&lt;/Form&gt;
+</code></pre>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/chlog223_4.png" alt="img"></p>
+<p>Listbox using SelectedItemCssClass to apply a custom style to the selected item.
+<br></p>
+<h4 id="ctrl-keyword">$Ctrl keyword</h4>
+<p>The new <strong>$Ctrl</strong> keyword provides information about the current UI control, such as its Id. If you don’t specify a Name for the control, it will get an auto generated id. This feature is useful in ItemTemplates where you cannot use the Name property to identify the control. A typical use case is when you have dropdowns in a listbox, and you need to track the selection of each dropdown.</p>
+<pre><code>// Use $Ctrl.Id to pass the (auto generated) id of the control to the ItemSelected handler
+&lt;Dropdown ItemSelected=&quot;onItemSelected($Data, $Ctrl.Id)&quot;/&gt;
+</code></pre>
+<br>
+<h4 id="dynamic-number-of-splitbutton-sub-items">Dynamic number of SplitButton sub-items</h4>
+<p>The SplitButton control now supports dynamically adding and removing sub-items (SplitButtonItems) based on data in a data source, for example, a list. This enables having SplitButtons with a dynamic number of sub-actions based on the state in the Form Schema.</p>
+<pre><code>&lt;Functions&gt;
+  	&lt;Function Name=&quot;send&quot;&gt;
+  		alert('send');
+  	&lt;/Function&gt;  	
+  	&lt;Function Name=&quot;onClick&quot; Parameters=&quot;data&quot;&gt;
+  		alert(data.id);
+  	&lt;/Function&gt;  	
+  	&lt;Function Name=&quot;filter&quot; Parameters=&quot;items&quot;&gt;
+  		return items.filter(f =&gt; f.id == 'a' || f.id == 'b' );
+  	&lt;/Function&gt;
+  &lt;/Functions&gt;
+  &lt;EventHandlers&gt;
+  	&lt;FormEventHandler On=&quot;Init&quot;&gt;
+  		this.addViewStateModel(&quot;Actions&quot;, {
+  		 	splitButtons:[{
+  		 	   text: &quot;Subaction 1&quot;,
+  		 	   id:&quot;a&quot;
+	  		 },{
+	  		 	text: &quot;Subaction 2&quot;,
+	  		 	id:&quot;b&quot;
+	  		 }
+  		 	]
+  		});
+  	&lt;/FormEventHandler&gt;
+  &lt;/EventHandlers&gt;
+  &lt;UI Grid=&quot;grid&quot;&gt;
+  	&lt;Grid Rows=&quot;auto 1fr&quot; Columns=&quot;200px 200px 1fr&quot;&gt;
+  		&lt;SplitButton Text=&quot;Send&quot; ItemsSource=&quot;{Binding Path:ViewState.Actions.splitButtons}&quot; ItemsSourceFilter=&quot;filter&quot; Click=&quot;send&quot;&gt;
+  			&lt;SplitButtonItemTemplate Text=&quot;{Binding Path:text}&quot; Click=&quot;onClick($Data)&quot;/&gt;
+  		&lt;/SplitButton&gt;  		
+  	&lt;/Grid&gt;
+  &lt;/UI&gt;
+</code></pre>
+<br>
+<h4 id="misc">Misc</h4>
+<ul>
+<li>The Listbox, Dropdown, and TreeView control now supports <strong>Grid</strong> as the <strong>ItemTemplate</strong> container.</li>
+<li>We added support for handling Unload of a Form Schema from the DOM. Developers can use this event to do various types of cleanup.</li>
+</ul>
+<h3 id="work-process">Work Process</h3>
+<br>
+<h4 id="access-control-on-work-process-contents">Access control on Work Process contents</h4>
+<p>We have added an option to restrict access to Work Process contents to Process administrators only. That makes all Workbooks in the Work Process unavailable to users that are not Process Administrators, even though they have been granted access through the Workbook Permissions Manager. Note that Process Administrators must still be granted regular access through the Workbook Permissions Manager <strong>in addition</strong> to being a Process Administrator to get exclusive access.
+<br></p>
+<h4 id="work-process-deleted-event">Work Process Deleted event</h4>
+<p>Solution Developers can now subscribe to a “Work Process Deleted” event which is from the Work Process Editor component when a Work Process has been deleted. That enables performing actions after a Work Process has been deleted, such as custom cleanup.
+<br></p>
+<h3 id="misc-1">Misc</h3>
+<ul>
+<li><p>The web application has been updated to React 18 and the latest npm libraries. The most notable effect for end users is that the cold start loading time is improved.</p>
+</li>
+<li><p>When exporting a Package, the package version is automatically added to the file name.</p>
+</li>
+<li><p>Tab Control now has support for Large and Default modes. When using the Large mode, the tabs are displayed with larger text.</p>
+</li>
+<li><p>Tab Control now has support for controlling whether or not borders should be displayed.</p>
+</li>
+<li><p>We added support for translations of dimension names. You can use a text code to use the built-in translation system in InVision, or use the @Object[…].Lookup[] feature to roll your own.</p>
+</li>
+</ul>
+<h2 id="breaking-changes">Breaking changes</h2>
+<ul>
+<li>The Transaction Pipeline Producer will now include wildcard matches in addition to exact matches when resolving which transaction to generate from the rule set. This may cause more transactions to be generated from the Transaction Pipeline after upgrading to 2022.3 (depending on how the rule set table has been set up).</li>
+</ul>
+<p>See discussion here:</p>
+<p><a href="https://support.profitbase.com/platform/invision-beta/-/issues/536">https://support.profitbase.com/platform/invision-beta/-/issues/536</a></p>
+<br>
+<h4 id="see-also">See Also</h4>
+<ul>
+<li><a href="changelog23_4.html">Change Log 2023.4</a></li>
+<li><a href="changelog23_3.html">Change Log 2023.3</a></li>
+<li><a href="changelog23_2.html">Change Log 2023.2</a></li>
+<li><a href="changelog23_1.html">Change Log 2023.1</a></li>
+<li><a href="changelog22_5.html">Change Log 2022.5</a></li>
+<li><a href="changelog22_4.html">Change Log 2022.4</a></li>
+<li><a href="changelog22_3_2.html">Change Log 2022.3 pt 2</a></li>
+<li><a href="changelog22_3_1.html">Change Log 2022.3 pt 1</a></li>
+<li><a href="changelog22_1.html">Change Log 2022.1</a></li>
+<li><a href="changelog52.html">Change Log 5.2</a></li>
+<li><a href="changelog51.html">Change Log 5.1</a></li>
+<li><a href="changelog5.html">Change Log 5.0</a></li>
+<li><a href="changelog41.html">Change Log 4.1</a></li>
+<li><a href="changelog40.html">Change Log 4.0</a></li>
+</ul>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

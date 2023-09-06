@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Bla bla bla | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Bla bla bla | InVision ">
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../../public/main.js'
+    import { init } from './../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h2 id="new-features">New Features</h2>
+
+<br>
+<h3 id="application-services--infrastructure">Application Services / Infrastructure</h3>
+<ul>
+<li><strong>Fix:</strong> Azure Service Bus topic was automatically deleted after 24 hours of idle time, causing dataflows to not run.</li>
+<li><strong>Enhancement:</strong> Tasks such as Version deployment, cloning Solutions, Package deployments, and upgrades are now queued. It means that if more than one of these tasks are submitted, they will be queued and executed in the order they arrive.</li>
+</ul>
+<br>
+<h3 id="access-control">Access Control</h3>
+<ul>
+<li>Explore which Workbooks and Pages users and access group have access to.</li>
+<li>Explore which dimensions and dimension members users and access groups have access to.</li>
+<li>Support for the description of Access Groups.</li>
+</ul>
+<br>
+<h3 id="data-pool">Data Pool</h3>
+<ul>
+<li>Synonyms are now automatically taken when objects are deployed as part of Package deployments and upgrades, unless they are already in use.</li>
+</ul>
+<br>
+<h3 id="dataflow">Dataflow</h3>
+<ul>
+<li>Support for Global Parameters. This enables multiple Data Flow Activities to automatically receive the same argument without having to explicitly map the argument to each Activity.</li>
+</ul>
+<p><a href="../docs/dataflows/parametrization/globalparameters.html">Global Parameters</a> are passed to nested/child Dataflows during execution. See <a href="../docs/dataflows/parametrization/globalparameters.html">her</a>.</p>
+<br>
+<h3 id="dimensions-and-dimension-editor">Dimensions and Dimension Editor</h3>
+<ul>
+<li><p>Dimension Editor Workbook component which enables editing dimensions (structure and data):</p>
+<ul>
+<li>Add and delete dimensions members.</li>
+<li>Move dimension members using drag/drop and cut/paste.</li>
+<li>Supports multi-select.</li>
+<li>Sort nodes by drag/drop or use sorting functions (“sort children by …”).</li>
+<li>Preview dimension in for different languages.</li>
+<li>Edit properties and translations in either “Property mode” or “Table mode”.</li>
+</ul>
+</li>
+<li><p>Create a central repository of primary dimensions.</p>
+</li>
+<li><p>Publish dimensions to one or more Solutions and/or Work Process Versions. This enables customers to work with “master dimensions” and publish them to select Versions.</p>
+</li>
+<li><p>Open and edit dimensions in specific Solutions (Work Process Versions). This enables customers to have different dimension structures in different Solutions and Work Process Versions.</p>
+</li>
+<li><p>New dimension type:</p>
+<ul>
+<li>Existing dimension types are renamed to Linked Dimension and Strict Wide Dimension.</li>
+<li>Support for converting Strict Wide Dimension (previously called Dimension) to the new Dimension (enabling parent-child editing).</li>
+</ul>
+</li>
+<li><p>You can use dataflows to import primary dimensions into a Solution. This enables automation of importing data from the primary dimension repository to active Work Process Versions.</p>
+</li>
+<li><p>You can ad-hoc import data from the UI (spreadsheet import) or use Dataflows (load from SQL tables).</p>
+</li>
+</ul>
+<br>
+<h3 id="filter">Filter</h3>
+<ul>
+<li>Users can now click a “go-to” button on items in the selected items list of TreeView filters to quickly jump to the node in the tree</li>
+<li>Support for <a href="../docs/workbooks/components/filter/filterslicing.html">slicing hierarchical filters</a> based on a list of leaf-level members.</li>
+</ul>
+<br>
+<h3 id="forms">Forms</h3>
+<ul>
+<li><a href="../docs/forms/formschemas/controls/treeview.html">TreeView</a> with support for rendering dimensions. Access Control not supported.</li>
+<li>Support for <a href="../docs/forms/formschemas/controls/camera.html">camera</a>.</li>
+</ul>
+<br>
+<h3 id="macros">Macros</h3>
+<ul>
+<li>Support for <a href="../docs/macros/writingmacros/macroexpansionprovider.html">localization API</a>. Developers can now get information about the preferred language of the logged in user.</li>
+<li>Support for <a href="../docs/macros/writingmacros/macroexpansionprovider.html">dimension metadata API</a>.</li>
+</ul>
+<br>
+<h3 id="packages-and-upgrades">Packages and upgrades</h3>
+<ul>
+<li>You can now <a href="../docs/package/develop-package/create-package/define-package.html">specify dependencies</a> for a Package. This simplifies Package deployment and upgrades for customers, because when you deploy or upgrade a Package, dependencies are automatically deployed/upgraded first.</li>
+<li>New <strong>Package Management tool</strong> in Designer which enables partners and customers to easily get information the Packages which are installed and upgrade them without having to open any Solutions.</li>
+<li>Support for specifying Packages as <strong>non-upgradable</strong>. Use this feature for development when you want to ensure that the Package you are working on does not get upgraded from the Package Management tool. <strong>Note</strong> that this property only applies to packages that has been deployed.</li>
+<li>Support for <strong>typing/categorization of Packages</strong>. A Package can (and should) now be categorized as either Product or Library. By doing this, it will appear in different lists in the Package Management tool, making it easier for customers / partners choose the correct Package(s) to upgrade (which in most cases should be Packages marked as Products).</li>
+</ul>
+<br>
+<h3 id="profitbase-store">Profitbase Store</h3>
+<ul>
+<li>v2 API which supports the new Package deployment and upgrade experience.</li>
+</ul>
+<br>
+<h3 id="tables">Tables</h3>
+<ul>
+<li>Support for macros in Custom Load Data queries.</li>
+</ul>
+<br>
+<h3 id="tableview">TableView</h3>
+<ul>
+<li>Support for <a href="../docs/workbooks/components/tableview.html">SelectionChanged API</a>.</li>
+<li>Support for <a href="../docs/workbooks/components/tableview.html">ActionLink column</a> .</li>
+<li><strong>Fix:</strong> Action menu items did not display text.</li>
+</ul>
+<br>
+<h3 id="workbook">Workbook</h3>
+<ul>
+<li><strong>Display mode:</strong> Ability to remove header and/or page navbar from the Workbook. This behavior can be configured in the Workbook Properties panel (Hide Header, Hide Navbar) or using query string parameters in the url. (<a href="https://my.domain.com/workbooks/123?appheader=false&amp;navbar=false">https://my.domain.com/workbooks/123?appheader=false&amp;navbar=false</a>)</li>
+</ul>
+<br>
+<h3 id="views">Views</h3>
+<ul>
+<li>Support for <a href="../docs/macros.html">macros</a>.</li>
+</ul>
+<br>
+<h3 id="worksheet">Worksheet</h3>
+<ul>
+<li>Support for macros in Custom Load Data queries.</li>
+<li>Selecting item from dimension member dropdown while filter is applied. Now updates the row correctly.</li>
+</ul>
+<br>
+<h3 id="work-process">Work Process</h3>
+<ul>
+<li><strong>Fix:</strong> Prevent user from deleting Work Process Version which is used as data source for another Version.</li>
+<li><strong>Fix:</strong> Version status is not changed if “Version change dataflow” does not complete successfully.</li>
+<li><strong>Feature:</strong> Option to run “Post delete Dataflow” for Work Process Version.</li>
+<li><strong>Enhancement:</strong> Enable editing Version properties after Version has been deployed.</li>
+<li><strong>Feature:</strong> “Mutually exclusive boolean property” enables setting a true/false Version property which is mutually exclusive for all Versions within a Work Process (for example IsCurrentVersion).</li>
+<li><strong>Enhancement:</strong> Create new Version from older source Version. Developers can add SQL Scripts to Packages to run adapter logic when data is copied from older versions of Packages to the newer one (during Version deployment.md). Check how to do it <a href="../docs/package/develop-package/create-package/define-package.html">here</a>.</li>
+<li><strong>Fix:</strong> Statuses in Versions list page is updated correctly during version status changes.</li>
+<li><strong>Fix:</strong> Partially deployed Solutions are deleted on Version Deployment rollback.</li>
+</ul>
+<br>
+<h3 id="misc">Misc</h3>
+<ul>
+<li><strong>Fix:</strong> Transaction Pipeline - Transaction pipeline Producer ignored conditional expression.</li>
+<li><strong>Fix:</strong> Rollover + change tracking: Fixed issue that caused change history to get lost when rollover was executed.</li>
+<li><strong>Fix:</strong> Spreadsheet - Filter did not trigger when tabbing out of filter row quickly.</li>
+<li><strong>Macros:</strong> Added support for <strong>localization</strong> API.</li>
+</ul>
+<br>
+<h3 id="breaking-changes">Breaking changes</h3>
+<ul>
+<li><strong>pbSimSolutionLangText</strong> has been scheduled for deprecation and will be removed in the next version <strong>(v2022.2)</strong>. Use <strong>pbSimLangText</strong> for custom translations or <strong>SYS_LangText</strong> for system translations.</li>
+</ul>
+<br>
+<h4 id="see-also">See Also</h4>
+<ul>
+<li><a href="changelog23_4.html">Change Log 2023.4</a></li>
+<li><a href="changelog23_3.html">Change Log 2023.3</a></li>
+<li><a href="changelog23_2.html">Change Log 2023.2</a></li>
+<li><a href="changelog23_1.html">Change Log 2023.1</a></li>
+<li><a href="changelog22_5.html">Change Log 2022.5</a></li>
+<li><a href="changelog22_4.html">Change Log 2022.4</a></li>
+<li><a href="changelog22_3_2.html">Change Log 2022.3 pt 2</a></li>
+<li><a href="changelog22_3_1.html">Change Log 2022.3 pt 1</a></li>
+<li><a href="changelog22_2.html">Change Log 2022.2</a></li>
+<li><a href="changelog52.html">Change Log 5.2</a></li>
+<li><a href="changelog51.html">Change Log 5.1</a></li>
+<li><a href="changelog5.html">Change Log 5.0</a></li>
+<li><a href="changelog41.html">Change Log 4.1</a></li>
+<li><a href="changelog40.html">Change Log 4.0</a></li>
+</ul>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

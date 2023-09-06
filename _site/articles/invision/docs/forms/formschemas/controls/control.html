@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Control (base) | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Control (base) | InVision ">
+      
+      <link rel="icon" href="../../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../../../../../public/main.js'
+    import { init } from './../../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p>A base control object that cannot be directly used in your configuration. This is the base control that all other controls inherit from.</p>
+<br>
+<h3 id="properties">Properties</h3>
+<br>
+<p><code>Name</code></p>
+<blockquote>
+<p>The name of the control. By specifying a name, you can access the control through the <strong>Controls</strong>/ <strong>controls</strong> keyword in Event Handlers and Functions. You do not need to specify a name for a control if you don’t need to reference it in code.</p>
+</blockquote>
+<br>
+<p><code>CssClass</code></p>
+<blockquote>
+<p>The css class(es) to apply to the control. This property can be changed dynamically through the <em>AddCss(…)</em>, <em>RemoveCss(…)</em> and <em>ToggleCss(…)</em> APIs of the control.</p>
+</blockquote>
+<br>
+<p><code>Margin</code></p>
+<blockquote>
+<p>The margin of the control. Uses standard css luesyntax.</p>
+</blockquote>
+<br>
+<p><code>MinWidth</code></p>
+<blockquote>
+<p>The min width of the control. Uses standard css syntax.</p>
+</blockquote>
+<br>
+<p><code>HorizontalAlignment</code></p>
+<blockquote>
+<p>Specifies the horizontal alignment of the control within the grid. Allowed values are <strong>left, start, right, end, center, stretch.</strong></p>
+</blockquote>
+<br>
+<p><code>VerticalAlignment</code></p>
+<blockquote>
+<p>Specifies the vertical alignment of the control within the grid. Allowed values are <strong>start, top, end, bottom, center, stretch.</strong></p>
+</blockquote>
+<br>
+<p><code>Row</code></p>
+<blockquote>
+<p>Specfies the grid row that the control is positioned in.</p>
+<p><strong>Example</strong></p>
+</blockquote>
+<pre><code>&lt;Input Row =&quot;1&quot; …/&gt;
+</code></pre>
+<br>
+<p><code>RowSpan</code></p>
+<blockquote>
+<p>Specifies the number of grid rows the control spans.</p>
+<p><strong>Example</strong></p>
+</blockquote>
+<pre><code>&lt;Input RowSpan =&quot;2&quot; …/&gt;
+</code></pre>
+<br>
+<p><code>Column</code></p>
+<blockquote>
+<p>Specifies the grid column that the control is positioned in.</p>
+<p><strong>Example</strong></p>
+</blockquote>
+<pre><code>&lt;Input Column =&quot;1&quot; …/&gt;
+</code></pre>
+<br>
+<p><code>ColumnSpan</code></p>
+<blockquote>
+<p>Specifies the number of grid columns the control spans.</p>
+<p><strong>Example</strong></p>
+</blockquote>
+<pre><code>&lt;Input ColumnSpan =&quot;3&quot; …/&gt;
+</code></pre>
+<br>
+<h3 id="hotkeys-in-form-schema">Hotkeys in Form Schema</h3>
+<p>Yo can assign a hotkey to almost every control in the Form Schema, to do that use the Hotkey property.
+<br></p>
+<pre><code>&lt;Input Hotkey=&quot;...&quot;/&gt;
+</code></pre>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/hotkeys.png" alt="img"></p>
+<br>
+<h3 id="see-also">See Also</h3>
+<ul>
+<li><a href="textcontrol.html">Text Control</a></li>
+<li><a href="editablecontrol.html">Editable Control</a></li>
+<li><a href="image.html">Image</a></li>
+<li><a href="tabcontrol.html">TabControl</a></li>
+<li><a href="layout.html">Layout</a></li>
+<li><a href="html.html">Html</a></li>
+</ul>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

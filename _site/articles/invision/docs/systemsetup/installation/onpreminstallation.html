@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>On-premise Installation | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="On-premise Installation | InVision ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="installation-on-application-server">Installation on Application Server</h3>
+
+<ol>
+<li><p>Make sure <strong>.NET 4.8</strong> is installed on the application server.</p>
+</li>
+<li><p>Set up an <strong>Azure Service Bus subscription</strong>.</p>
+<p>a) Ensure that port <strong>443</strong>, <strong>5671</strong> and <strong>5672</strong> are open on the application server to enable communication with Microsoft Azure (*.servicebus.windows.net).</p>
+<p>b) Set up an Azure Service Bus <strong>Topic</strong>.</p>
+<ul>
+<li><p>In the <strong>Shared Access Policy</strong>, enable <strong>Manage</strong>, <strong>Send</strong> and <strong>Listen</strong></p>
+</li>
+<li><p>From the topic, copy the <strong>Primary Connection String</strong>. You will need it later when running the installation. It should be on the form <em>Endpoint=sb://yoursubscription.servicebus.windows.net/;SharedAccessKeyName=SendListen;SharedAccessKey=YOUR_KEY=;EntityPath=YOUR_TOPIC</em></p>
+</li>
+</ul>
+</li>
+<li><p>Make sure Powershell version v5.1 or higher is installed.</p>
+</li>
+<li><p>Make sure ASP.Net Core Hosting Bundle is installed.</p>
+</li>
+<li><p>Install <strong>Profitbase Installation Manager 5.x.x.x.</strong> If it does not already exist on the app server, you can download it from <a href="https://download.profitbase.com/Installer/">here</a>.</p>
+</li>
+<li><p>Run <strong>Profitbase Installation Manager</strong> to install the software and database (see instructions below). During the installation, you need to provide the <strong>Azure Service Bus connection string</strong> and <strong>topic</strong> from step <strong>2b</strong>.</p>
+</li>
+</ol>
+<br>
+<h3 id="using-profitbase-installation-manager">Using Profitbase Installation Manager</h3>
+<br>
+<h4 id="about">About</h4>
+<p>Profitbase Installation Manager installs InVision instances into sub folders of its own installation path. Already installed instances are upgraded using Profitbase Installation Manager.
+The default installation path for the installation manager is</p>
+<pre><code>C:\Program Files (x86)\Profitbase Installation Manager
+</code></pre>
+<p>InVision instances will be installed in</p>
+<pre><code>[Installation Manager path]\InVision\[instance]
+</code></pre>
+<br>
+<h3 id="setting-up-a-new-invision-instance">Setting up a new InVision instance</h3>
+<ol>
+<li><p>Start the <strong>Profitbase Installation Manager</strong></p>
+</li>
+<li><p>In the <strong>Install new Instance</strong> tab, press <strong>Download and Install</strong></p>
+</li>
+<li><p>Configure the instance by configuring the following settings (see details below)</p>
+<ul>
+<li><strong>Instance Name</strong></li>
+<li><strong>Website Name</strong></li>
+<li><strong>Domain</strong></li>
+<li><strong>Database Server</strong></li>
+<li><strong>Service User</strong></li>
+<li><strong>Service User Password</strong></li>
+<li><strong>Azure Service Bus connection string</strong></li>
+<li><strong>Azure Service Bus topic</strong></li>
+</ul>
+</li>
+<li><p>Provide the <strong>Azure Service Bus connection string</strong> and <strong>topic</strong>. You can find the topic at the end of the Azure Service Bus connection string.</p>
+</li>
+<li><p>Press <strong>Validate input</strong></p>
+</li>
+<li><p>Press <strong>Install</strong>
+<br></p>
+</li>
+</ol>
+<h3 id="instance-settings">Instance settings</h3>
+<p>During the installation process, you need to configure the following settings:</p>
+<p><strong>Instance Name</strong></p>
+<blockquote>
+<p>The name of the InVision instance. The instance name must be unique within the organization. The instance name affects:</p>
+</blockquote>
+<ul>
+<li>The web site urls (for example <a href="http://mydomain.com/instancename">http://mydomain.com/instancename</a>)</li>
+<li>The name of the InVision database</li>
+</ul>
+<p><strong>Website Name</strong></p>
+<blockquote>
+<p>The IIS web site that the InVision web application will be created in. You can usually just use Default Web Site (which is the default value)</p>
+</blockquote>
+<p><strong>Website domain</strong></p>
+<blockquote>
+<p>The domain for the web site. This value should match the domain specified for the web site you have selected above.</p>
+</blockquote>
+<p><strong>Database server</strong></p>
+<blockquote>
+<p>The SQL Server instance name that the InVision database should be deployed to. The installer will deploy one database pr instance. The database will be named &quot;pbInvision_[instanceName]&quot;</p>
+</blockquote>
+<p><strong>Service user</strong></p>
+<blockquote>
+<p>The name of the domain user that should run the AppPool and Windows Services (Data Flow Task Manager and Data Flow Task Worker). The Service user account requires special permissions. See the “Service User Accounts” section below.</p>
+</blockquote>
+<p><strong>Service user password</strong></p>
+<blockquote>
+<p>The password for the service user account.</p>
+</blockquote>
+<p><strong>Azure Service Bus connection string</strong></p>
+<blockquote>
+<p>On the form</p>
+</blockquote>
+<pre><code>Endpoint=sb://yoursubscription.servicebus.windows.net/  
+;SharedAccessKeyName=SendListen;SharedAccessKey=YOUR_KEY=;EntityPath=YOUR_TOPIC
+</code></pre>
+<p><strong>Azure Service Bus Topic</strong></p>
+<blockquote>
+<p>The name of the topic. Get it from the EntityPath token of the connection string.</p>
+</blockquote>
+<br>
+<h3 id="default-ports">Default ports</h3>
+<br>
+<p>Note that the port numbers are incremented for each installed instance. The actual port used when installing an instance, is displayed in the Installation Manager. <br></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Port Number</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">12311</td>
+<td style="text-align: left;">Used by the Data Flow <strong>Dispatcher service</strong> to accept job requests from the Data Flow Task Worker. (For example if the Worker invokes a Batch or Data Flow activity that requires load balancing).</td>
+</tr>
+<tr>
+<td style="text-align: left;">12310</td>
+<td style="text-align: left;">Used by the Data Flow Task <strong>Worker service</strong> to accept job requests from the Data Flow Task Manager</td>
+</tr>
+<tr>
+<td style="text-align: left;">12312</td>
+<td style="text-align: left;">Data Flow Scheduler</td>
+</tr>
+</tbody>
+</table>
+<br>
+<h3 id="firewall-settings">Firewall settings</h3>
+<p>The following table describes the application services requiring internet access.
+<br></p>
+<table>
+<thead>
+<tr>
+<th>External endpoint</th>
+<th>Port</th>
+<th>Service Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://store.profitbase.com/api/v1/">https://store.profitbase.com/api/v1/</a></td>
+<td>443</td>
+<td>Download business modules</td>
+</tr>
+<tr>
+<td><a href="https://download.profitbase.com">https://download.profitbase.com</a></td>
+<td>443</td>
+<td>Download new versions of the software</td>
+</tr>
+<tr>
+<td>*.servicebus.windows.net</td>
+<td>5671</td>
+<td>Azure Service Bus endpoint (AMQP)</td>
+</tr>
+<tr>
+<td>*.servicebus.windows.net</td>
+<td>5672</td>
+<td>Azure Service Bus endpoint (AMQP)</td>
+</tr>
+</tbody>
+</table>
+<br>
+<h3 id="see-also">See Also</h3>
+<ul>
+<li><p><a href="onpreminstallation/portsfirewall.html">Ports and Firewall Settings</a></p>
+</li>
+<li><p><a href="onpreminstallation/serviceuseraccounts.html">Service User Accounts</a></p>
+</li>
+<li><p><a href="../systemrequirements.html">System Requirements</a></p>
+</li>
+</ul>
+<br>
+<h3 id="videos">Videos</h3>
+<ul>
+<li><a href="../../../videos/gettingstarted/installation.html">Installation</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Installation%20and%20Setup%20-%20upgrading%20of%20%20the%20InVision%20instance.mp4">Upgrading of  the InVision Instance</a></li>
+</ul>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

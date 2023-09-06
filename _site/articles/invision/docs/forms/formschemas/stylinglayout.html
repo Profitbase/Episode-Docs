@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Styling and Layout | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Styling and Layout | InVision ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p>The Style section contains the styling and layout options that are used to describe how the contents of the Form Schema should be displayed (font size, colors, control arrangements, sizes etc). You can use the global (Solution) css styles for styling Forms contents just like any other component in InVision, but each Form Schema will most likely have their own requirements for layout, so keeping them tied together is usually the best option.</p>
+<h4 id="css-element">Css Element</h4>
+<p>The Css element contains your custom css styles that can be applied to the controls inside the Form Schema. Each control has a CssClass attribute, which allow you to add custom css styles to it. In addition, the css styles within this element can be applied to controls through the Form Schema API.</p>
+<p><strong>Css Element</strong></p>
+<pre><code>&lt;Form&gt;
+    &lt;Style&gt;
+        &lt;Css&gt;
+            …your css…
+        &lt;/Css&gt;
+    &lt;/Style&gt;
+&lt;/Form&gt;
+</code></pre>
+<blockquote>
+<p><strong>Example</strong></p>
+</blockquote>
+<pre><code>&lt;Css&gt;
+    .bold{
+        font-weight:bold;
+    }          
+    .margin-top-5{
+        margin-top:5px;
+    }
+&lt;/Css&gt;
+</code></pre>
+<blockquote>
+<p>Then, apply the css class to a Form Schema control</p>
+</blockquote>
+<pre><code>&lt;Label CssClass=&quot;bold&quot; Row=&quot;2&quot; Column=&quot;1&quot; Text=&quot;Item 1&quot; /&gt;
+</code></pre>
+<h4 id="grid-layouts">Grid Layouts</h4>
+<p>The Layouts element contains a collection of Grid layout configurations. A Grid arranges its children into rows and columns. The built-in Grid layout supports a subset of the standard W3C Css Grid Layout features, is very easy to set up, and should cover at least 95% of all Form Schema layout scenarios.</p>
+<p><strong>Layouts Element</strong></p>
+<pre><code>&lt;Form&gt;
+    &lt;Style&gt;
+        &lt;Layouts&gt;
+            &lt;Grid Name=&quot;name&quot; Rows=&quot;horizontal tracks&quot; Columns=&quot;vertical tracks&quot; /&gt;
+        &lt;/Layouts&gt;
+    &lt;/Style&gt;
+&lt;/Form&gt;
+</code></pre>
+<blockquote>
+<p><strong>Example</strong></p>
+</blockquote>
+<pre><code>&lt;Layouts&gt;
+&lt;Grid Name=&quot;grid1&quot; Rows=&quot;auto 20px auto 20px auto 20px auto 1fr&quot; Columns=&quot;1fr 1fr&quot; /&gt;
+&lt;Grid Name=&quot;grid2&quot; Rows=&quot;auto 20px&quot; Columns=&quot;80px 1fr&quot; /&gt;
+&lt;/Layouts&gt;
+</code></pre>
+<blockquote>
+<p>Then, apply the grid layout to a layout container so that it’s children can be arranged into rows and columns</p>
+</blockquote>
+<pre><code>&lt;UI Grid=&quot;grid1&quot;&gt;
+&lt;/UI&gt;
+</code></pre>
+<p><strong>Grid properties</strong></p>
+<ul>
+<li><strong>Name</strong> – required. Specify the name of the grid in the Grid property of Layout containers to indicate which grid layout to apply to the container.</li>
+<li><strong>Rows</strong> – Specifies the horizontal grid track, and is directly set as the grid-template-rows property of the Css Grid Layout applied to the layout container.</li>
+<li><strong>Columns</strong> – Specifies the vertical grid tracks, and is directly set as the grid-template-colums property of the Css Grid Layout applied to the layout container.</li>
+</ul>
+<p>If you need to use the full Css Grid Layout, or some other layout schema (for example flexbox), you must do this using standard css and apply class styling to the layout containers and controls in the Form Schema.
+<br></p>
+<h4 id="videos">Videos</h4>
+<ul>
+<li><a href="../../../videos/formschemas.html">Form Schemas</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Form%20Schema%20-%20Layout%20and%20styling.mp4">Styling and Layout</a></li>
+</ul>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

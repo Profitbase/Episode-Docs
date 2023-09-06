@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Run WebFunctions from Workbooks | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Run WebFunctions from Workbooks | InVision ">
+      
+      <link rel="icon" href="../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../../../public/main.js'
+    import { init } from './../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="run-web-functions-from-a-workbook">Run Web Functions from a Workbook</h3>
+
+<p>There are two ways you can run Web Functions from a Workbook.</p>
+<ol>
+<li>Use the <strong>Execute Web Function</strong> action. Recommended for most purposes.</li>
+<li>Use the generic <strong>Web Api</strong> action if you need to run a Web Function that is a different Solution than the Workbook.</li>
+</ol>
+<h4 id="use-the-execute-web-function-action">Use the Execute Web Function action</h4>
+<p>The recommended way to run a Web Function is to use the <strong>Execute Web Function</strong> action from the Workbook Actions list as shown in the image below.<br>
+<br>
+You need to do the following:</p>
+<ol>
+<li>Drag and drop the action from the toolbox into the Actions list</li>
+<li>Specify the name of the Web Function to run. In addition, you can also specify query parameters and a payload.</li>
+</ol>
+<p>Use <code>Execute(...)</code> to specify the name of the Web Function to run. <code>Execute(...)</code> returns a response handle that you can use to get the value returned from the Web Function (see example below).</p>
+<p>[Optional] Use <code>SetData(...)</code> to specify a payload. Then, in the Web Function implementation, use the <code>GetRequestBodyAsync</code> method to get the object.</p>
+<p>[Optional] Use <code>SetQueryString(..)</code> to specify a query string. Then, in the Web Function implementation, use the <code>GetRequestQueryString</code> method to get the value.
+<br></p>
+<p>** Example**</p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/Run_WebFunction_From_Workbook.png" alt="Run Web Function using the Execute Web Function action"></p>
+<pre><code class="lang-javascript">SetData({ CustomerId: &quot;1234&quot;, Name: &quot;Hypotesia&quot; });
+SetQueryString(&quot;api_key=secret&quot;);
+_response = Execute(&quot;UpdateCustomer&quot;);
+
+// Use _response.Data to access the value returned from the Web Function in subsequent Workbook component actions.
+</code></pre>
+<h5 id="web-function-implementation">Web Function implementation</h5>
+<p>The sample implementation below shows how to use the <code>GetRequestBodyAsync</code> and <code>GetRequestQueryString</code> methods to read the data and query string sent from the Workbook.</p>
+<pre><code class="lang-csharp">namespace Custom.WebFunctions
+{
+    public record RequestMessage(string CustomerId, string Name);
+
+    public sealed class MyWebFunction : WebFunction
+    {
+        public async Task&lt;IActionResult&gt; Run(HttpRequest request)
+        {
+            var apiKey = GetRequestQueryString(request, &quot;api_key&quot;);
+            // TODO: Use the api key to do authorization
+
+        	var requestMessage = await GetRequestBodyAsync&lt;RequestMessage&gt;(request);
+
+        	await this.SqlCommandService.ExecuteNonQueryAsync(&quot;UPDATE Customers SET Name = @name WHERE CustomerID = @customerId&quot;,
+        		new SqlParameter(&quot;@name&quot;, requestMessage.Name),
+        		new SqlParameter(&quot;@customerId&quot;, requestMessage.CustomerId));
+
+            return await Task.FromResult(Ok(&quot;ello&quot;));
+        }
+    }
+}
+
+</code></pre>
+<br>
+<br>
+<h4 id="use-the-generic-web-api-action">Use the generic Web Api action</h4>
+<p>If you need to run Web Functions that are in different Solutions than the Workbook, use the generic <strong>WebApi Action</strong>, paired with <code>HttpGet(…)</code>, <code>HttpPost(…)</code>, <code>HttpPut(…)</code>, <code>HttpPatch(…)</code> or <code>HttpDelete(…)</code> methods to configure the request.</p>
+<p>All the Http methods returns a response handle that you can use to obtain any data returned from a Web Function once the WebApi action has completed. The response handle has a Data property that contains the actual data returned from the Web Function, for example a string, a business object, an array of objects and so on.</p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/api.png" alt="pic"></p>
+<br>
+<h3 id="endpoints">Endpoints</h3>
+<br>
+<p><code>api/solutions/{solutionId}/webfunctions/{web function name}</code></p>
+<p>Use this endpoint if you need to run a Web Function that is in a different Solution than the Workbook.</p>
+<p><strong>Example</strong></p>
+<pre><code class="lang-javascript">HttpPut(&quot;api/solutions/&quot; + SYS.SolutionId + &quot;/webfunctions/My_Web_Function1&quot;, {
+  CustomerID: _selectedCustomer.ID,
+  Name: Input_CustomerName.Value,
+});
+</code></pre>
+<br>
+<p><code>api/webfunctions/{web function name}</code></p>
+<p>You can use this endpoint if you have only one solution, or you know that no other web functions with the same name exists.</p>
+<p><strong>Example</strong></p>
+<pre><code class="lang-javascript">_responseHandle = HttpGet(
+  &quot;api/webfunctions/My_Web_Function2?customerId=&quot; + _selectedCustomer.ID
+);
+</code></pre>
+<br>
+<hr>
+<p><strong>Example</strong></p>
+<p>This example shows how to call a Web Function from a Workbook by issuing a HTTP Put request.<br>
+First, you need to invoke a WebApi Action. The WebApi Action is an action available on the Workbook Object itself.</p>
+<p>In the WebApi Action instructions list, call the HttpPut method to configure the request with the url and payload.</p>
+<p><strong>In the WebApi Action instructions list:</strong></p>
+<pre><code class="lang-javascript">HttpPut(&quot;api/webfunctions/My_Web_Function1&quot;, {
+  CustomerID: _selectedCustomer.ID,
+  Name: Input_CustomerName.Value,
+});
+</code></pre>
+<br>
+<p><strong>Example</strong></p>
+<p>This example shows how to call a Web Function from a Workbook and read the data returned from the request.</p>
+<p>Calling HttpGet(…) returns a handle that you can use obtain the data returned from the Web Function once the WebApi action completes. The response handle has a Data property that contains the data returned by the Web Function.</p>
+<p><strong>In the WebApi Action instructions list:</strong></p>
+<pre><code class="lang-javascript">_responseHandle = HttpGet(
+  &quot;api/webfunctions/My_Web_Function2?customerId=&quot; + _selectedCustomer.ID
+);
+</code></pre>
+<p>Once the WebApi action completes, the data returned by the Web Function is available from the Data property of the response handle.</p>
+<p>So if the Web Function returns a customer object with a CustomerName property, you can get the customer name by simply accessing that property.</p>
+<pre><code class="lang-javascript">ShowToastNotification(&quot;Customer Name&quot;, _responseHandle.Data.CustomerName);
+</code></pre>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

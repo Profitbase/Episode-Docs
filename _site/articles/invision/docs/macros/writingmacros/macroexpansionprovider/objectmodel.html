@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>ObjectModel | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="ObjectModel | InVision ">
+      
+      <link rel="icon" href="../../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../../">
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../../../../../public/main.js'
+    import { init } from './../../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="macroexpansionproviderobjectmodel">MacroExpansionProvider.ObjectModel</h3>
+
+<p>The ObjectModel API provides access to metatadata information about the objects in the solution, for example getting connection strings, database table names for materialized objects, column names in the materialized objects etc. (Examples further down).
+<br></p>
+<p><strong>Method:</strong></p>
+<p><code>IObjectModelReference Object(string solutionObjectName)</code></p>
+<blockquote>
+<p>Returns an instance of a metadata providerservice for the specified solution object.</p>
+</blockquote>
+<br>
+<p><strong>Method:</strong></p>
+<p><code>IDimensionReference Dimension(string dimensionName)</code></p>
+<blockquote>
+<p>Returns an instance of a metdata provider service for the dimension with the specified name.</p>
+</blockquote>
+<h3 id="iobjectmodelreference">IObjectModelReference</h3>
+<br>
+<p><strong>Method:</strong></p>
+<p><code>IObjectModelStorageService Storage()</code></p>
+<blockquote>
+<p>Returns an instance of a service that provides information about the materialized storage object (database table) of a solution object.</p>
+</blockquote>
+<br>
+<p><strong>Method:</strong></p>
+<p><code>IDimensionMetadataService Metadata()</code></p>
+<blockquote>
+<p>Retuns an instance of a service that provides metadata information about the dimension.</p>
+</blockquote>
+<br>
+<h3 id="iobjectmodelstorageservice">IObjectModelStorageService</h3>
+<p>Provides APIs for accessing information about the materialized storage object (database table) of a solution object
+<br></p>
+<p><strong>Method:</strong></p>
+<p><code>Task&lt;IEnumerable&lt;string&gt;&gt; GetColumnNamesAsync(bool includeSystemColumns = false)</code></p>
+<blockquote>
+<p>Returns the column names in the database tableof the solution object.</p>
+</blockquote>
+<p><code>Task&lt;string&gt; GetConnectionStringAsync()</code></p>
+<blockquote>
+<p>Returns the connection string to the database table.</p>
+</blockquote>
+<p><code>Task&lt;string&gt; GetDbObjectNameAsync()</code></p>
+<blockquote>
+<p>Returns the database object name (table, view) of the solution object.</p>
+</blockquote>
+<br>
+<blockquote>
+<p><strong>Examples</strong></p>
+<p>The following example shows how the Context, SqlCommandService and ObjectModel API can be used to create a macro (SelectList) that returns a collection of columns that can be used as the select list of a query.</p>
+</blockquote>
+<pre><code>namespace Local
+{
+    using System; 
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+    using System.Data.SqlClient;
+    using System.Linq;
+    using Profitbase.Invision.Scripting.Dynamic;
+    public class MyMacros : MacroExpansionProvider
+    {           
+        public async Task&lt;string&gt; SelectList()
+        {
+            var customerMetadataStorage = this.ObjectModel.ForObject(&quot;Customer Metadata&quot;).Storage();
+            var connectionString = await customerMetadataStorage.GetConnectionStringAsync();
+            var customerMetadataTableName = await customerMetadataStorage.GetDbObjectNameAsync();
+            var customerCategory = await this.SqlCommandService.ExecuteScalarAsync&lt;int&gt;(connectionString,  
+            $&quot;SELECT CustomerCategory FROM {customerMetadataTableName} WHERE CustomerID = @customerId&quot;, 
+            new SqlParameter(&quot;@customerId&quot;, this.Context.Arguments.GetValue(&quot;@CustomerID&quot;)));
+            if(customerCategory == 1)
+            {
+                return string.Join(&quot;,&quot;, (await this.ObjectModel.ForObject(&quot;Customer Sales&quot;)  
+                .Storage().GetColumnNamesAsync()).Where(c =&gt; c.Contains(&quot;Cat1&quot;)));
+            }
+            else
+            {
+                return string.Join(&quot;,&quot;, (await this.ObjectModel.ForObject(&quot;Customer Sales&quot;)  
+                .Storage().GetColumnNamesAsync()).Where(c =&gt; !c.Contains(&quot;Cat1&quot;)));
+            }
+        }
+    }
+}
+</code></pre>
+<h3 id="idimensionmetadataservice">IDimensionMetadataService</h3>
+<br>
+<p><strong>Method:</strong></p>
+<p><code>Task&lt;Hierarchy&gt; GetHierarchyAsync(string? name = null)</code></p>
+<blockquote>
+<p>Returns the hierarchy with the specified name. If no name is specified, the first hierarchy is returned.</p>
+</blockquote>
+<br>
+<h3 id="hierarchy">Hierarchy</h3>
+<br>
+<p><strong>Methods</strong></p>
+<p><code>string GetIdColumn()</code></p>
+<blockquote>
+<p>Returns the name of the leaf level column which contains the id of the dimension member</p>
+</blockquote>
+<p><code>string GetNameColumn(string? langId = null)</code></p>
+<blockquote>
+<p>Returns the name of the leaf level column which contains the display name of the dimension member</p>
+</blockquote>
+<p><code>string GetIdColumn(int level)</code></p>
+<blockquote>
+<p>Returns the name of the column at the specified level which contains the id of the dimension member</p>
+</blockquote>
+<p><code>string GetNameColumn(int level, string? langId = null)</code></p>
+<blockquote>
+<p>Returns the name of the column at the specified level which contains the display name of the dimension member</p>
+</blockquote>
+<br>
+<p><strong>Example</strong></p>
+<p>The following example shows to use the dimension metadata API to create a SQL query which will return data from the leaf and level 1.
+It will generate the following query:</p>
+<pre><code>SELECT  L1, L1_Name,ItemID, ItemID_Name_EN 
+FROM Dim_MyDim_11062021094945 
+</code></pre>
+<br>
+<pre><code>namespace Local
+{
+    using System; 
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+    using Profitbase.Invision.Scripting.Dynamic;
+    
+    public class MyMacros : MacroExpansionProvider
+    {    
+        public async Task&lt;string&gt; CreateQuery()
+        {
+            var hierarhcy = await this.ObjectModel.Dimension(&quot;PCDim&quot;).Metadata().GetHierarchyAsync();
+            var tableName = await this.ObjectModel.Dimension(&quot;PCDim&quot;).Storage().GetDbObjectNameAsync();
+            
+            var idColumnName = hierarhcy.GetIdColumn(1);
+            var displayColumnName = hierarhcy.GetNameColumn(1);
+            
+            var leafIdColumnName = hierarhcy.GetIdColumn();
+            var leafDisplayColumnName = hierarhcy.GetNameColumn(this.Context.LanguageCode);
+            
+            return $&quot;SELECT {idColumnName}, {displayColumnName},{leafIdColumnName}, {leafDisplayColumnName} FROM {tableName}&quot;;
+        }
+    }
+}
+</code></pre>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
