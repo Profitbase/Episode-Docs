@@ -22,7 +22,7 @@ To preview your changes you need to save them, generate .json and run the server
 ## Support
 [DOCFX documentation](https://dotnet.github.io/docfx/index.html)  or ask Iza
 
-![img](https://profitbasedocs.blob.core.windows.net/images/readmePic4.png)
+![img](https://profitbasedocs.blob.core.windows.net/images/readmePic4.jpg)
 
 ## Roadmap
 * Step one: make it work with InVision DOCS 💫
@@ -34,7 +34,7 @@ To preview your changes you need to save them, generate .json and run the server
 * Step three: adding other Documentations to it, making it a GLOBAL DOCS platform.
 * Step four: ensouring that everyone who creates docs knows how to work with the new environment. (making docs about docs :D)
 
-![img](https://profitbasedocs.blob.core.windows.net/images/readmePic3.png)
+![img](https://profitbasedocs.blob.core.windows.net/images/readmePic3.jpg)
 
 
 ## Project status
