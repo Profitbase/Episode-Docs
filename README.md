@@ -9,6 +9,8 @@ New documentation will be a DOCFX project.
 [DOCFX documentation](https://dotnet.github.io/docfx/index.html) 
 
 ## Local Changes in Docfx project
+We work on files in the articles folder:
+![img](https://profitbasedocs.blob.core.windows.net/images/readmePic2.png)
 To preview your changes you need to save them, generate .json and run the server again.
 ![img](https://profitbasedocs.blob.core.windows.net/images/readmePic1.png)
 
