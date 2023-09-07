@@ -10,7 +10,7 @@ New documentation will be a DOCFX project.
 
 ## Local Changes in Docfx project
 To preview your changes you need to save them, generate .json and run the server again.
-![](image.png)
+![img](https://profitbasedocs.blob.core.windows.net/images/readmePic1.png)
 
 
 
