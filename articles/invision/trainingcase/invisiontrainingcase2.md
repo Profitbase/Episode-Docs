@@ -9,7 +9,7 @@ pageIndex: 2
 ### Hello learner!
 
 In this section, we will create together a solution. Under [this](https://profitbasedocs.blob.core.windows.net/videos/MovieMania.mp4) link you will find video that shows that process step by step.
-In every part of that case you will also find [Documentation](../docs.md).
+In every part of that case you will also find [Documentation](../docs/index.md).
 
 <br/>
 

@@ -27,7 +27,7 @@ To preview your changes you need to save them, generate .json and run the server
 ## Roadmap
 * Step one: make it work with InVision DOCS 💫
  * removing all the differences and bugs from the previous environment.
- * making sure all warks properly
+ * making sure all works properly
  * enhance graphic side of it / make it sexy 🚀
  * mastering DOCFX 🧐
 * Step two: launching and integrating with old DOCS

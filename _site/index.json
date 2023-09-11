@@ -7,12 +7,12 @@
   "articles/index.html": {
     "href": "articles/index.html",
     "title": "Articles | InVision",
-    "keywords": "Articles Invision"
+    "keywords": "Articles"
   },
   "articles/invision.html": {
     "href": "articles/invision.html",
-    "title": "InVision | InVision",
-    "keywords": "About Profitbase InVision Intuitive web-based applications The InVision platform serves as a \"Rapid Application Development\" solution, empowering users to swiftly and effectively construct adaptable business solutions on a modern and robust technology stack. Users can leverage the platform's comprehensive standard components to develop a wide range of elements, including user interfaces and back-end functionality. This streamlined approach significantly reduces both cost and time when implementing projects. Users utilize the Profitbase InVision Designer to construct applications, which are subsequently published as web applications within the organization. These web applications require minimal or no training to operate effectively. Within a matter of minutes, users can download prebuilt business modules and install them, tailoring them to precisely meet the specific requirements of the customer. Profitbase InVision seamlessly integrates with other business systems through a RESTful Web API or direct connection to the SQL data storage, facilitating effortless connectivity. Users can expand Profitbase InVision's capabilities by constructing custom business modules using the Profitbase InVision Designer developer tool and Microsoft Visual Studio. Solution A solution contains all of the data and configuration for your application, such as business logic, data stores, workbooks, worksheets, data flows, workflows, etc. Clone Solution You can easily clone entire Solutions from the Designer start page. Cloning a Solution will also copy input data from the source Solution, permissions, and Data Flow schedules. Note that objects in cloned Solutions are not automatically added to the Data Pool after the cloning has been completed. They will, however, be added to the Data Pool if the Data Pool Compound View is rebuilt. If you don’t want this to happen, you need to edit your newly cloned Solution and remove the Data Pool configuration from the objects that you don’t want as members of the Data Pool. When creating a new Solution Creating a new Solution requires specifying whether the Solution should provide contents to Work Process blueprints or not. This change was added because it was too easy to forget to set this property after a Package had been deployed. Designer The designer is the development tool for the InVision platform needed to create or modify solutions created on the InVision platform. The designer is a desktop application that is downloaded locally to your PC or server. Workbooks Workbooks are the user interfaces for the applications created on the InVision platform."
+    "title": "Articles | InVision",
+    "keywords": "Articles Invision"
   },
   "articles/invision/changelog.html": {
     "href": "articles/invision/changelog.html",
@@ -96,8 +96,8 @@
   },
   "articles/invision/changelog/index.html": {
     "href": "articles/invision/changelog/index.html",
-    "title": "Changelog | InVision",
-    "keywords": "Changelog Changelog22 1 Changelog22 2 Changelog22 3 1 Changelog22 3 2 Changelog22 4 Changelog22 5 Changelog23 1 Changelog23 2 Changelog23 3 Changelog23 4 Changelog40 Changelog41 Changelog5 Changelog51 Changelog52"
+    "title": "What's new? | InVision",
+    "keywords": "What's new? Learn about the cool new features, updates, and bug fixes. Changelog Change Log 2023.3 Change Log 2023.2 Change Log 2023.1 Changelog 2022.5 Changelog 2022.4 Changelog 2022.3 pt.2 Changelog 2022.3 pt.1 Changelog 2022.2 Changelog 2022.1 Changelog 5.2 Changelog 5.1 Changelog 5.0 Changelog 4.1 Changelog 4.0"
   },
   "articles/invision/docs.html": {
     "href": "articles/invision/docs.html",
@@ -1216,8 +1216,8 @@
   },
   "articles/invision/docs/index.html": {
     "href": "articles/invision/docs/index.html",
-    "title": "Docs | InVision",
-    "keywords": "Docs Accesscontrol Accessibility Bestpractice Dataflowitems Dataflows Datapool Datastores Dimensions Directives Filestorage Filters Forms Homepage Javascript Macros Package Powershell Sqlreports Sqlscripts Systemsetup Systemviews Tables Tableview Timeframe Translationsloc Troubleshooting Views Webfunctions Webserviceapis Workbookmenu Workbooks Workflow Workprocess Worksheets"
+    "title": "Hello learner! | InVision",
+    "keywords": "Hello learner! Welcome to the Profitbase InVision docs! You can explore the different topics from the left side bar, or use the search bar at the top of the page. We're working hard to provide video documentation for many of our features, so please check out our videos section as well. Each text topic has links to relavant videos. We hope that our documentation will be helpful to you! If there is something you can't find answers to, please contact Support, so we can help you and improve this documentation in the future. Docs Accesscontrol Accessibility Bestpractice Dataflowitems Dataflows Datapool Datastores Dimensions Directives Filestorage Filters Forms Homepage Javascript Macros Package Powershell Sqlreports Sqlscripts Systemsetup Systemviews Tables Tableview Timeframe Translationsloc Troubleshooting Views Webfunctions Webserviceapis Workbookmenu Workbooks Workflow Workprocess Worksheets"
   },
   "articles/invision/docs/javascript.html": {
     "href": "articles/invision/docs/javascript.html",
@@ -3111,8 +3111,8 @@
   },
   "articles/invision/index.html": {
     "href": "articles/invision/index.html",
-    "title": "Invision | InVision",
-    "keywords": "Invision Changelog Docs Trainingcase"
+    "title": "Profitbase Invision | InVision",
+    "keywords": "Profitbase Invision Changelog Docs Trainingcase Intuitive web-based applications The InVision platform serves as a \"Rapid Application Development\" solution, empowering users to swiftly and effectively construct adaptable business solutions on a modern and robust technology stack. Users can leverage the platform's comprehensive standard components to develop a wide range of elements, including user interfaces and back-end functionality. This streamlined approach significantly reduces both cost and time when implementing projects. Users utilize the Profitbase InVision Designer to construct applications, which are subsequently published as web applications within the organization. These web applications require minimal or no training to operate effectively. Within a matter of minutes, users can download prebuilt business modules and install them, tailoring them to precisely meet the specific requirements of the customer. Profitbase InVision seamlessly integrates with other business systems through a RESTful Web API or direct connection to the SQL data storage, facilitating effortless connectivity. Users can expand Profitbase InVision's capabilities by constructing custom business modules using the Profitbase InVision Designer developer tool and Microsoft Visual Studio. Solution A solution contains all of the data and configuration for your application, such as business logic, data stores, workbooks, worksheets, data flows, workflows, etc. Clone Solution You can easily clone entire Solutions from the Designer start page. Cloning a Solution will also copy input data from the source Solution, permissions, and Data Flow schedules. Note that objects in cloned Solutions are not automatically added to the Data Pool after the cloning has been completed. They will, however, be added to the Data Pool if the Data Pool Compound View is rebuilt. If you don’t want this to happen, you need to edit your newly cloned Solution and remove the Data Pool configuration from the objects that you don’t want as members of the Data Pool. When creating a new Solution Creating a new Solution requires specifying whether the Solution should provide contents to Work Process blueprints or not. This change was added because it was too easy to forget to set this property after a Package had been deployed. Designer The designer is the development tool for the InVision platform needed to create or modify solutions created on the InVision platform. The designer is a desktop application that is downloaded locally to your PC or server. Workbooks Workbooks are the user interfaces for the applications created on the InVision platform."
   },
   "articles/invision/trainingcase.html": {
     "href": "articles/invision/trainingcase.html",
@@ -3121,8 +3121,8 @@
   },
   "articles/invision/trainingcase/index.html": {
     "href": "articles/invision/trainingcase/index.html",
-    "title": "Trainingcase | InVision",
-    "keywords": "Trainingcase Invisiontrainingcase Invisiontrainingcase2"
+    "title": "Hello learner! | InVision",
+    "keywords": "Hello learner! In this part of the documentation, you will find Training Cases with exercises that can help you to get to know our products and features. Trainingcase Invisiontrainingcase Invisiontrainingcase2"
   },
   "articles/invision/trainingcase/invisiontrainingcase.html": {
     "href": "articles/invision/trainingcase/invisiontrainingcase.html",
@@ -3192,7 +3192,7 @@
   "articles/invision/videos/gettingstarted/index.html": {
     "href": "articles/invision/videos/gettingstarted/index.html",
     "title": "Gettingstarted | InVision",
-    "keywords": "Gettingstarted Developertools Installation Interface"
+    "keywords": "Gettingstarted In this section you will find videos about: Developertools Installation Interface"
   },
   "articles/invision/videos/gettingstarted/installation.html": {
     "href": "articles/invision/videos/gettingstarted/installation.html",
@@ -3207,7 +3207,7 @@
   "articles/invision/videos/index.html": {
     "href": "articles/invision/videos/index.html",
     "title": "Hello learner! | InVision",
-    "keywords": "Hello learner! In this part of the documentation, you will find videos showing features and tools that you can find in Profitbase InVision. All videos contain talking bubbles. When displayed, the video will pause for 5 seconds. If the pause is too short, we suggest you simply pause the video manually. We hope that our videos will be helpful to you. For more detailed descriptions, go to our DOCS section. Videos Accesscontrol Accessibility Dataflows Datastores Dimensions Filestorage Filters Formschemas Gettingstarted Jsondataapi Localization Packages Powershell Sqlreports Sqlscripts Tables Tableview Themesandstyles Views Workbookmenu Workbooks Workprocess Worksheet"
+    "keywords": "Hello learner! In this part of the documentation, you will find videos showing features and tools that you can find in Profitbase InVision. All videos contain talking bubbles. When displayed, the video will pause for 5 seconds. If the pause is too short, we suggest you simply pause the video manually. We hope that our videos will be helpful to you. For more detailed descriptions, go to our DOCS section. Videos Gettingstarted Accesscontrol Accessibility Dataflows Datastores Dimensions Filestorage Filters Formschemas Jsondataapi Localization Packages Powershell Sqlreports Sqlscripts Tables Tableview Themesandstyles Views Workbookmenu Workbooks Workprocess Worksheet"
   },
   "articles/invision/videos/jsondataapi.html": {
     "href": "articles/invision/videos/jsondataapi.html",
@@ -3276,8 +3276,8 @@
   },
   "articles/invision/videos/workbooks/index.html": {
     "href": "articles/invision/videos/workbooks/index.html",
-    "title": "Workbooks | InVision",
-    "keywords": "Workbooks Components Interactions"
+    "title": "Basics - Creating Pages, Adding Parts and The Layout System | InVision",
+    "keywords": "Basics - Creating Pages, Adding Parts and The Layout System Documentation Subscreens in Tabs Documentation Creating Popups Documentation Workbook as a Home Page Workbooks See Also Components Interactions Documentation Workbooks Components"
   },
   "articles/invision/videos/workbooks/interactions.html": {
     "href": "articles/invision/videos/workbooks/interactions.html",
@@ -3298,5 +3298,10 @@
     "href": "index.html",
     "title": "Resources | InVision",
     "keywords": "Welcome to docs.profitbase.com, the home for Profitbase documentation for partners, developers and business professionals. Go to our video tutorials and documentation. Read about the key features of Profitbase InVision. Resources Videos Profitbase InVision Demos Training Cases Docs Directory Check out the following topics to learn how to build, run, and deploy your Solution in InVision. System Setup Access Control Accessibility Best Practice Data Flow Items Data Flows Data Pool Data Stores Dimensions Directives File Storage Filters Forms Home Page JavaScript Macros Packages PowerShell SQL Reports SQL Scripts System Views Tables Table View Time Frame Translations / Localization Troubleshooting Views Web Functions Web Service APIs Workbooks Workbook Menu Workflow Work Process Worksheets"
+  },
+  "README.html": {
+    "href": "README.html",
+    "title": "Tech Wars: Episode Docs - May the Knowledge Be with You 💫 | InVision",
+    "keywords": "Tech Wars: Episode Docs - May the Knowledge Be with You 💫 Description New documentation will be a DOCFX project. Documentation Installation TODO 🚀 Quick start DOCFX documentation Local Changes in Docfx project We work on files in the articles folder: To preview your changes you need to save them, generate .json and run the server again. Support DOCFX documentation or ask Iza Roadmap Step one: make it work with InVision DOCS 💫 removing all the differences and bugs from the previous environment. making sure all works properly enhance graphic side of it / make it sexy 🚀 mastering DOCFX 🧐 Step two: launching and integrating with old DOCS Step three: adding other Documentations to it, making it a GLOBAL DOCS platform. Step four: ensouring that everyone who creates docs knows how to work with the new environment. (making docs about docs :D) Project status Phase one - all adjustments to make it work, before launching. 🚀🚀🚀"
   }
 }

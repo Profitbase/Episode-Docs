@@ -9,7 +9,7 @@ If the pause is too short, we suggest you simply pause the video manually.
 
 We hope that our videos will be helpful to you.
 
-For more detailed descriptions, go to our [DOCS](../docs.md) section.
+For more detailed descriptions, go to our [DOCS](../docs/index.md) section.
 
 ![Videos](https://profitbasedocs.blob.core.windows.net/images/videobubble.png "Videos")
 
@@ -17,6 +17,7 @@ For more detailed descriptions, go to our [DOCS](../docs.md) section.
 
 # Videos
 
+* [Gettingstarted](./gettingstarted/index.md)
 * [Accesscontrol](./accesscontrol.md)
 * [Accessibility](./accessibility.md)
 * [Dataflows](./dataflows.md)
@@ -25,7 +26,6 @@ For more detailed descriptions, go to our [DOCS](../docs.md) section.
 * [Filestorage](./filestorage.md)
 * [Filters](./filters.md)
 * [Formschemas](./formschemas.md)
-* [Gettingstarted](./gettingstarted.md)
 * [Jsondataapi](./jsondataapi.md)
 * [Localization](./localization.md)
 * [Packages](./packages.md)
@@ -37,6 +37,6 @@ For more detailed descriptions, go to our [DOCS](../docs.md) section.
 * [Themesandstyles](./themesandstyles.md)
 * [Views](./views.md)
 * [Workbookmenu](./workbookmenu.md)
-* [Workbooks](./workbooks.md)
+* [Workbooks](./workbooks/index.md)
 * [Workprocess](./workprocess.md)
 * [Worksheet](./worksheet.md)

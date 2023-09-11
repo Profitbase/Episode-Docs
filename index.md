@@ -4,15 +4,15 @@ Welcome to **docs.profitbase.com**, the home for Profitbase documentation for pa
 
 ![InVision](https://profitbasedocs.blob.core.windows.net/images/invisionlogo.png "InVision")
 
-Go to our [video tutorials](articles/invision/videos.md) and [documentation](articles/invision/docs.md). Read about the **key features** of **Profitbase InVision**.
+Go to our [video tutorials](articles/invision/videos/index.md) and [documentation](articles/invision/docs/index.md). Read about the **key features** of **Profitbase InVision**.
 
 ## Resources
 
-- [Videos](articles/invision/videos.md)
+- [Videos](articles/invision/videos/index.md)
 
 - [Profitbase InVision Demos](http://demo.profitbase.com/portal/#)
 
-- [Training Cases](articles/invision/trainingcase.md)
+- [Training Cases](articles/invision/trainingcase/index.md)
 
 ## Docs Directory
 

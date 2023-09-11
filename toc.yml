@@ -1,53 +1,8 @@
 
   items:
   - name: Invision
-    href: articles/invision.md
-  - name: Invision
     href: articles/invision/index.md
     items:
-    - name: Invision
-      href: articles/invision/index.md
-    - name: Changelog
-      href: articles/invision/changelog.md
-    - name: Changelog
-      href: articles/invision/changelog/index.md
-      items:
-      - name: Changelog
-        href: articles/invision/changelog/index.md
-      - name: Changelog22 1
-        href: articles/invision/changelog/changelog22_1.md
-      - name: Changelog22 2
-        href: articles/invision/changelog/changelog22_2.md
-      - name: Changelog22 3 1
-        href: articles/invision/changelog/changelog22_3_1.md
-      - name: Changelog22 3 2
-        href: articles/invision/changelog/changelog22_3_2.md
-      - name: Changelog22 4
-        href: articles/invision/changelog/changelog22_4.md
-      - name: Changelog22 5
-        href: articles/invision/changelog/changelog22_5.md
-      - name: Changelog23 1
-        href: articles/invision/changelog/changelog23_1.md
-      - name: Changelog23 2
-        href: articles/invision/changelog/changelog23_2.md
-      - name: Changelog23 3
-        href: articles/invision/changelog/changelog23_3.md
-      - name: Changelog23 4
-        href: articles/invision/changelog/changelog23_4.md
-      - name: Changelog40
-        href: articles/invision/changelog/changelog40.md
-      - name: Changelog41
-        href: articles/invision/changelog/changelog41.md
-      - name: Changelog5
-        href: articles/invision/changelog/changelog5.md
-      - name: Changelog51
-        href: articles/invision/changelog/changelog51.md
-      - name: Changelog52
-        href: articles/invision/changelog/changelog52.md
-      - name: Get information about files in the File Storage
-        href: articles/invision/changelog/changelog22_3_1.md
-    - name: Docs
-      href: articles/invision/docs.md
     - name: Docs
       href: articles/invision/docs/index.md
       items:
@@ -1535,24 +1490,22 @@
             href: articles/invision/docs/worksheets/wproperties/index.md
           - name: Contextmenuoptions
             href: articles/invision/docs/worksheets/wproperties/contextmenuoptions.md
-    - name: Trainingcase
-      href: articles/invision/trainingcase.md
-    - name: Trainingcase
-      href: articles/invision/trainingcase/index.md
-      items:
-      - name: Trainingcase
-        href: articles/invision/trainingcase/index.md
-      - name: Invisiontrainingcase
-        href: articles/invision/trainingcase/invisiontrainingcase.md
-      - name: Invisiontrainingcase2
-        href: articles/invision/trainingcase/invisiontrainingcase2.md
-    - name: Videos
-      href: articles/invision/videos.md
     - name: Videos
       href: articles/invision/videos/index.md
       items:
       - name: Videos
         href: articles/invision/videos/index.md
+      - name: Gettingstarted
+        href: articles/invision/videos/gettingstarted/index.md
+        items:
+        - name: Gettingstarted
+          href: articles/invision/videos/gettingstarted/index.md
+        - name: Developertools
+          href: articles/invision/videos/gettingstarted/developertools.md
+        - name: Installation
+          href: articles/invision/videos/gettingstarted/installation.md
+        - name: Interface
+          href: articles/invision/videos/gettingstarted/interface.md
       - name: Accesscontrol
         href: articles/invision/videos/accesscontrol.md
       - name: Accessibility
@@ -1569,19 +1522,6 @@
         href: articles/invision/videos/filters.md
       - name: Formschemas
         href: articles/invision/videos/formschemas.md
-      - name: Gettingstarted
-        href: articles/invision/videos/gettingstarted.md
-      - name: Gettingstarted
-        href: articles/invision/videos/gettingstarted/index.md
-        items:
-        - name: Gettingstarted
-          href: articles/invision/videos/gettingstarted/index.md
-        - name: Developertools
-          href: articles/invision/videos/gettingstarted/developertools.md
-        - name: Installation
-          href: articles/invision/videos/gettingstarted/installation.md
-        - name: Interface
-          href: articles/invision/videos/gettingstarted/interface.md
       - name: Jsondataapi
         href: articles/invision/videos/jsondataapi.md
       - name: Localization
@@ -1605,8 +1545,6 @@
       - name: Workbookmenu
         href: articles/invision/videos/workbookmenu.md
       - name: Workbooks
-        href: articles/invision/videos/workbooks.md
-      - name: Workbooks
         href: articles/invision/videos/workbooks/index.md
         items:
         - name: Workbooks
@@ -1619,3 +1557,49 @@
         href: articles/invision/videos/workprocess.md
       - name: Worksheet
         href: articles/invision/videos/worksheet.md
+    - name: Changelog
+      href: articles/invision/changelog/index.md
+      items:
+      - name: Changelog
+        href: articles/invision/changelog/index.md
+      - name: Changelog22 1
+        href: articles/invision/changelog/changelog22_1.md
+      - name: Changelog22 2
+        href: articles/invision/changelog/changelog22_2.md
+      - name: Changelog22 3 1
+        href: articles/invision/changelog/changelog22_3_1.md
+      - name: Changelog22 3 2
+        href: articles/invision/changelog/changelog22_3_2.md
+      - name: Changelog22 4
+        href: articles/invision/changelog/changelog22_4.md
+      - name: Changelog22 5
+        href: articles/invision/changelog/changelog22_5.md
+      - name: Changelog23 1
+        href: articles/invision/changelog/changelog23_1.md
+      - name: Changelog23 2
+        href: articles/invision/changelog/changelog23_2.md
+      - name: Changelog23 3
+        href: articles/invision/changelog/changelog23_3.md
+      - name: Changelog23 4
+        href: articles/invision/changelog/changelog23_4.md
+      - name: Changelog40
+        href: articles/invision/changelog/changelog40.md
+      - name: Changelog41
+        href: articles/invision/changelog/changelog41.md
+      - name: Changelog5
+        href: articles/invision/changelog/changelog5.md
+      - name: Changelog51
+        href: articles/invision/changelog/changelog51.md
+      - name: Changelog52
+        href: articles/invision/changelog/changelog52.md
+      - name: Get information about files in the File Storage
+        href: articles/invision/changelog/changelog22_3_1.md
+    - name: Trainingcase
+      href: articles/invision/trainingcase/index.md
+      items:
+      - name: Trainingcase
+        href: articles/invision/trainingcase/index.md
+      - name: Invisiontrainingcase
+        href: articles/invision/trainingcase/invisiontrainingcase.md
+      - name: Invisiontrainingcase2
+        href: articles/invision/trainingcase/invisiontrainingcase2.md

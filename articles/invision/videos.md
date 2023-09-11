@@ -15,7 +15,7 @@ If the pause is too short, we suggest you simply pause the video manually.
 
 We hope that our videos will be helpful to you.
 
-For more detailed descriptions, go to our [DOCS](docs.md) section.
+For more detailed descriptions, go to our [DOCS](docs/index.md) section.
 
 ![Videos](https://profitbasedocs.blob.core.windows.net/images/videobubble.png "Videos")
 
