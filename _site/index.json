@@ -162,7 +162,7 @@
   "articles/invision/docs/accesscontrol/index.html": {
     "href": "articles/invision/docs/accesscontrol/index.html",
     "title": "Accesscontrol | InVision",
-    "keywords": "Accesscontrol Accessgroups Dataperm Howto Httpapi Identities Workbookperm"
+    "keywords": "Accesscontrol Introduction Access control is a security technique that regulates who can view or use resources in a computing environment. It is a fundamental concept in security that minimizes risk to the business or organization. Access to resources, such as Workbooks, Data, and APIs are granted to Access Groups. Access Groups contain (identity or group) accounts from Windows or Azure AD. To each Identity and access group, you can grant access by setting Workbook and Data Permissions. Access control can be managed through an HTTP API. To manage Identities/Groups/Access Control through the API, you need an API Key and the API address. See Also How to's Access Groups Data Permissions Identities Workbook Permissions HTTP API Videos Access Control Identities and Access Groups Create and Manage Azure AD Identities and Access Groups Manage Access to Data and Workbooks Manage Access to Workbooks Access Control - Client Side"
   },
   "articles/invision/docs/accesscontrol/workbookperm.html": {
     "href": "articles/invision/docs/accesscontrol/workbookperm.html",

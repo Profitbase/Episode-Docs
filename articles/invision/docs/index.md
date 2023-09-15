@@ -16,7 +16,7 @@ If there is something you can't find answers to, please contact [Support](https:
 
 # Docs
 
-* [Accesscontrol](./accesscontrol.md)
+* [Accesscontrol](../docs/accesscontrol/index.md)
 
 * [Accessibility](./accessibility.md)
 

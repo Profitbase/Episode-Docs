@@ -32,7 +32,7 @@ pageIndex: 2
 <br/>
 
 ### Access Control - Client Side
-[Documentation](../docs/accesscontrol.md)
+[Documentation](../docs/accesscontrol/index.md)
 
 ![video](https://profitbasedocs.blob.core.windows.net/videos/Identities%20client%20side%20%20-%20Basics.mp4)
 <br/>
@@ -71,5 +71,5 @@ pageIndex: 2
 
 ### Documentation  
 
-* [Access Control](../docs/accesscontrol.md)
+* [Access Control](../docs/accesscontrol/index.md)
 * [Azure Active Directory Authentication](../docs/systemsetup/installation/azureactdirauthent.md)

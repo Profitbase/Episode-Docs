@@ -6,26 +6,16 @@
     - name: Docs
       href: articles/invision/docs/index.md
       items:
-      - name: Docs
-        href: articles/invision/docs/index.md
-      - name: Accesscontrol
-        href: articles/invision/docs/accesscontrol.md
       - name: Accesscontrol
         href: articles/invision/docs/accesscontrol/index.md
         items:
-        - name: Accesscontrol
-          href: articles/invision/docs/accesscontrol/index.md
         - name: Accessgroups
           href: articles/invision/docs/accesscontrol/accessgroups.md
         - name: Dataperm
           href: articles/invision/docs/accesscontrol/dataperm.md
         - name: Howto
-          href: articles/invision/docs/accesscontrol/howto.md
-        - name: Howto
           href: articles/invision/docs/accesscontrol/howto/index.md
           items:
-          - name: Howto
-            href: articles/invision/docs/accesscontrol/howto/index.md
           - name: Azuread
             href: articles/invision/docs/accesscontrol/howto/azuread.md
           - name: Dataworkbooks
@@ -1493,13 +1483,9 @@
     - name: Videos
       href: articles/invision/videos/index.md
       items:
-      - name: Videos
-        href: articles/invision/videos/index.md
       - name: Gettingstarted
         href: articles/invision/videos/gettingstarted/index.md
         items:
-        - name: Gettingstarted
-          href: articles/invision/videos/gettingstarted/index.md
         - name: Developertools
           href: articles/invision/videos/gettingstarted/developertools.md
         - name: Installation
@@ -1547,8 +1533,6 @@
       - name: Workbooks
         href: articles/invision/videos/workbooks/index.md
         items:
-        - name: Workbooks
-          href: articles/invision/videos/workbooks/index.md
         - name: Components
           href: articles/invision/videos/workbooks/components.md
         - name: Interactions
@@ -1560,8 +1544,6 @@
     - name: Changelog
       href: articles/invision/changelog/index.md
       items:
-      - name: Changelog
-        href: articles/invision/changelog/index.md
       - name: Changelog22 1
         href: articles/invision/changelog/changelog22_1.md
       - name: Changelog22 2
@@ -1597,8 +1579,6 @@
     - name: Trainingcase
       href: articles/invision/trainingcase/index.md
       items:
-      - name: Trainingcase
-        href: articles/invision/trainingcase/index.md
       - name: Invisiontrainingcase
         href: articles/invision/trainingcase/invisiontrainingcase.md
       - name: Invisiontrainingcase2
