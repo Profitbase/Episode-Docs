@@ -74,7 +74,7 @@ The name of the Synonym can consist of characters from **a-z/A-Z**, numbers **0-
 
 **Data Flow task for taking Synonym ownership**
 
-To take Synonyms from a [Data Flow](dataflows.md), add the Take Synonym Ownership task to a Data Flow Item and add it to a Data Flow.
+To take Synonyms from a [Data Flow](dataflows/index.md), add the Take Synonym Ownership task to a Data Flow Item and add it to a Data Flow.
 
 The argument is an identity to an object in a solution. This can be set to a parent node (folder, package, solution), and then Synonyms will be taken for all descendants.
 

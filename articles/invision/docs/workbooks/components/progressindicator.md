@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 14
 ---
 
-The progress indicator displays a spinner and text that can be started and stopped for long-running tasks, such as the execution of [Data Flows](../../dataflows.md) when you're not displaying the Data Flow execution UI.
+The progress indicator displays a spinner and text that can be started and stopped for long-running tasks, such as the execution of [Data Flows](../../dataflows/index.md) when you're not displaying the Data Flow execution UI.
 
 ### Actions
 

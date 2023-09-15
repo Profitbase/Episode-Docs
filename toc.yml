@@ -31,12 +31,8 @@
         - name: Workbookperm
           href: articles/invision/docs/accesscontrol/workbookperm.md
       - name: Accessibility
-        href: articles/invision/docs/accessibility.md
-      - name: Accessibility
         href: articles/invision/docs/accessibility/index.md
         items:
-        - name: Accessibility
-          href: articles/invision/docs/accessibility/index.md
         - name: Aria
           href: articles/invision/docs/accessibility/aria.md
         - name: Highcontrast
@@ -48,28 +44,18 @@
         - name: Howto
           href: articles/invision/docs/accessibility/howto/index.md
           items:
-          - name: Howto
-            href: articles/invision/docs/accessibility/howto/index.md
           - name: Highkontrast
             href: articles/invision/docs/accessibility/howto/highkontrast.md
           - name: Hotkey
             href: articles/invision/docs/accessibility/howto/hotkey.md
       - name: Bestpractice
-        href: articles/invision/docs/bestpractice.md
-      - name: Bestpractice
         href: articles/invision/docs/bestpractice/index.md
         items:
-        - name: Bestpractice
-          href: articles/invision/docs/bestpractice/index.md
         - name: Structuringsolution
           href: articles/invision/docs/bestpractice/structuringsolution.md
       - name: Dataflowitems
-        href: articles/invision/docs/dataflowitems.md
-      - name: Dataflowitems
         href: articles/invision/docs/dataflowitems/index.md
         items:
-        - name: Dataflowitems
-          href: articles/invision/docs/dataflowitems/index.md
         - name: Builtindfitems
           href: articles/invision/docs/dataflowitems/builtindfitems.md
         - name: Classlibraries

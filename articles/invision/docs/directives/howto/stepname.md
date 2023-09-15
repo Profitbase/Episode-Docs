@@ -8,7 +8,7 @@ pageIndex: 4
 
 ### Link to the video
 
-Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flow%20-%20Control%20Flow%20and%20Branching.mp4) you will find a video that shows how to Use Step Name Directive. [Here](../../dataflows.md) you will find [Documentation](../../dataflows.md).
+Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flow%20-%20Control%20Flow%20and%20Branching.mp4) you will find a video that shows how to Use Step Name Directive. [Here](../../dataflows/index.md) you will find [Documentation](../../dataflows/index.md).
 <br/>
 
 

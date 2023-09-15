@@ -24,7 +24,7 @@ pageIndex: 7
 
 (continuation of previous video)
 
-[Commands](../docs/powershell/commands.md), [Data Flow](../docs/dataflows.md)
+[Commands](../docs/powershell/commands.md), [Data Flow](../docs/dataflows/index.md)
 
 ![video](https://profitbasedocs.blob.core.windows.net/videos/PowerShell%20-%20How%20To%20Automate%20Script%20with%20Data%20Flow.mp4)
 

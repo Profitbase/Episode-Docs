@@ -141,8 +141,8 @@
   },
   "articles/invision/docs/accesscontrol/howto/index.html": {
     "href": "articles/invision/docs/accesscontrol/howto/index.html",
-    "title": "Howto | InVision",
-    "keywords": "Howto Azuread Dataworkbooks Identities Wbacess"
+    "title": "| InVision",
+    "keywords": "In this section, you will find a list of shortcuts to different subjects about Access Control. See Also How To Create Identities and Access Groups How To Create and Manage Azure AD Identities and Access Groups How to Manage Access to Workbooks How To Manage Access to Data and Workbooks"
   },
   "articles/invision/docs/accesscontrol/howto/wbacess.html": {
     "href": "articles/invision/docs/accesscontrol/howto/wbacess.html",
@@ -206,13 +206,13 @@
   },
   "articles/invision/docs/accessibility/howto/index.html": {
     "href": "articles/invision/docs/accessibility/howto/index.html",
-    "title": "Howto | InVision",
-    "keywords": "Howto Highkontrast Hotkey"
+    "title": "| InVision",
+    "keywords": "In this section, you will find a list of shortcuts to different subjects about Accessibility. See Also How To Setup Hotkey How To Setup High Contrast"
   },
   "articles/invision/docs/accessibility/index.html": {
     "href": "articles/invision/docs/accessibility/index.html",
     "title": "Accessibility | InVision",
-    "keywords": "Accessibility Aria Highcontrast Hotkey Howto"
+    "keywords": "Accessibility To make solutions usable by as many people as possible, Profitbase InVision is WCAG AAA compliant. It supports requirements such as high contrast mode for people with low vision, keyboard navigation, keyboard shortcuts, and support for screen readers. Moreover, you will find accessibility support for the htmlFor attribute to Label controls, search in Dropdowns, hotkeys, AriaLabelledBy to all editable controls, required attribute to all editable controls. See Also How to's Aria-labelledby High contrast Hotkeys"
   },
   "articles/invision/docs/bestpractice.html": {
     "href": "articles/invision/docs/bestpractice.html",
@@ -221,8 +221,8 @@
   },
   "articles/invision/docs/bestpractice/index.html": {
     "href": "articles/invision/docs/bestpractice/index.html",
-    "title": "Bestpractice | InVision",
-    "keywords": "Bestpractice Structuringsolution"
+    "title": "| InVision",
+    "keywords": "Guidance for InVision Here you will find the guidance and recommended practices for InVision. Guidance will continue to be updated and added to. Getting Started Keeping a good structure in your solution is important. Profitbase strongly suggest using folders to keep your solution organized. You should also choose sensible names for the items you create as they are likely to be used as references elsewhere in the solution. See Also Basic guidelines for structuring solutions"
   },
   "articles/invision/docs/bestpractice/structuringsolution.html": {
     "href": "articles/invision/docs/bestpractice/structuringsolution.html",
@@ -246,8 +246,8 @@
   },
   "articles/invision/docs/dataflowitems/index.html": {
     "href": "articles/invision/docs/dataflowitems/index.html",
-    "title": "Dataflowitems | InVision",
-    "keywords": "Dataflowitems Builtindfitems Classlibraries Tasktemplates"
+    "title": "| InVision",
+    "keywords": "Dataflowitems Data Flow Items are used for defining all kinds of business logic that can be executed on the server. A single Data Flow Item can execute one or many tasks, which may range from predefined system tasks to custom SQL tasks. In addition to predefined or custom SQL tasks, you can embed and execute C# code from within a Data Flow or even reference custom .NET libraries (.dlls) for execution. See Also Built-in Data Flow Items Task Templates Class Libraries"
   },
   "articles/invision/docs/dataflowitems/tasktemplates.html": {
     "href": "articles/invision/docs/dataflowitems/tasktemplates.html",

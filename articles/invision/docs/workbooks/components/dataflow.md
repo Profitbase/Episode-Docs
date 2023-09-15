@@ -161,14 +161,14 @@ Please note that if the Show Execution Log property is set to true, the Popup Ex
 <br/>
 
 ### See Also
-* [More about Data Flows](../../dataflows.md)
+* [More about Data Flows](../../dataflows/index.md)
 * [Execution of Data Flows](../../dataflows/execution.md)
 * [Data Context](../../dataflows/datacontext.md)
 <br/>
 
 ### Videos
 
-* [Data Flows](../../../videos/dataflows.md)
+* [Data Flows](../../../videos/dataflows/index.md)
 * [Introduction to Parameterization](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flow%20-%20Introduction%20to%20parameterization.mp4)
 * [Execute from Workbook with arguments](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flow%20-%20Execute%20from%20Workbook%20with%20arguments.mp4)
 * [Execute Using dfcmdutil Command Line Tool](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flow%20-%20Execute%20using%20dfcmdutil%20command%20line%20tool.mp4)

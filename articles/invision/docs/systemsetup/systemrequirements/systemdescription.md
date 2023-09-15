@@ -24,7 +24,7 @@ The website is hosted by the IIS web server which serves the user interface and 
 
 ### Data Flow Task Manager (Dispatcher)
 
-The [Data Flow](../../dataflows.md) Task Manager is responsible for managing execution of Data Flows by distributing the work load across the Task Workers, and controlling the execution paths for each Data Flow. There is only one Data Flow Task Manager per install site.
+The [Data Flow](../../dataflows/index.md) Task Manager is responsible for managing execution of Data Flows by distributing the work load across the Task Workers, and controlling the execution paths for each Data Flow. There is only one Data Flow Task Manager per install site.
 <br/>
 
 ### Data Flow Task Worker(s)

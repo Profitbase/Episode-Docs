@@ -22,7 +22,7 @@ pageIndex: 13
 <br/>
 
 ### How To Automate PowerShell Script with Data Flow
-[Commands](../docs/powershell/commands.md), [Data Flow](../docs/dataflows.md)
+[Commands](../docs/powershell/commands.md), [Data Flow](../docs/dataflows/index.md)
 
 ![video](https://profitbasedocs.blob.core.windows.net/videos/PowerShell%20-%20How%20To%20Automate%20Script%20with%20Data%20Flow.mp4)
 
@@ -46,7 +46,7 @@ pageIndex: 13
 
 * [Packages](../docs/powershell.md)
 * [Commands](../docs/powershell/commands.md) 
-* [Data Flow](../docs/dataflows.md)
+* [Data Flow](../docs/dataflows/index.md)
 
 
 

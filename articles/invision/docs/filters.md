@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 12
 ---
 
-Filters are components used for setting the data context for Settings, [Worksheets](worksheets.md), [Reports](sqlreports.md), [Workflows](workflow.md), and [Data Flows](dataflows.md).
+Filters are components used for setting the data context for Settings, [Worksheets](worksheets.md), [Reports](sqlreports.md), [Workflows](workflow.md), and [Data Flows](dataflows/index.md).
 
 Once a Filter is defined, it can be used by all data context-aware components in a Solution by binding the Filter to a property of the component.
 

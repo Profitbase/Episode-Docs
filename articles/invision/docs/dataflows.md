@@ -12,7 +12,7 @@ pageIndex: 6
 
 All data processing and business logic in InVision can be executed through Data Flows. Data Flows consists of one or more Data Flow Items and zero or more Decision steps that can be chained together. 
 
-The actual business logic is defined in Data Flow Items, and the Decision steps allow for setting up an execution path based on the outcome of the [Data Flow Items](dataflowitems.md) in the Data Flow.
+The actual business logic is defined in Data Flow Items, and the Decision steps allow for setting up an execution path based on the outcome of the [Data Flow Items](dataflowitems/index.md) in the Data Flow.
 
 A Data Flow can be viewed as a computer program that can take input, do some work, and produce output.
 
