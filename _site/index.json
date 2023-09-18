@@ -276,8 +276,8 @@
   },
   "articles/invision/docs/dataflows/datacontext/index.html": {
     "href": "articles/invision/docs/dataflows/datacontext/index.html",
-    "title": "Datacontext | InVision",
-    "keywords": "Datacontext Datacontextscope Globaldatacontext"
+    "title": "| InVision",
+    "keywords": "Datacontext The Data Context is the mechanism that defines the transaction set is processed by a Data Flow, for example, a Financial Simulation, Distributor, or Spawner. All Data Stores being sources or targets in a processing chain must have a Data Context specified for InVision to figure out which set of transactions to process. If you do not set up a Data Context, you must configure the transaction filtering manually. The Data Context of a Data Store is normally determined based on the Dimensions which are a part of the star schema. If one or more Filters based on star schema Dimensions are connected to the Data Context Scope of a Data Flow, the selected filter values will be used to determine which transactions to process. All sources and targets in a processing chain must have a Data Context because the Data Context Scope controls not only which transactions are being read from the sources, but also which transactions are being deleted from the targets. To enable other resources (dimensions not being part of star schemas, tables, and custom values) to determine the transaction set being processed, you need to define them in the Global Data Context. See Also Data Context Scope Global Data Context"
   },
   "articles/invision/docs/dataflows/execution.html": {
     "href": "articles/invision/docs/dataflows/execution.html",
@@ -296,8 +296,8 @@
   },
   "articles/invision/docs/dataflows/execution/index.html": {
     "href": "articles/invision/docs/dataflows/execution/index.html",
-    "title": "Execution | InVision",
-    "keywords": "Execution Commandline Httpapi Scheduledexecution"
+    "title": "| InVision",
+    "keywords": "How to execute a Data Flow We have three ways of executing a Data Flow. You can use the Data Flow Scheduler to schedule executions. Data Flows can be also executed through an HTTP API or the Command Line. You can read about it in the links below. See Also Command Line HTTP API Scheduling Execution Videos Data Flows Execute from Workbook with arguments Execute Using dfcmdutil Command Line Tool"
   },
   "articles/invision/docs/dataflows/execution/scheduledexecution.html": {
     "href": "articles/invision/docs/dataflows/execution/scheduledexecution.html",
@@ -351,8 +351,8 @@
   },
   "articles/invision/docs/dataflows/howto/index.html": {
     "href": "articles/invision/docs/dataflows/howto/index.html",
-    "title": "Howto | InVision",
-    "keywords": "Howto Autocopy Autoimport Controlflow Eventdatasuccess Execute Execute dfcmdutil Filenamesautom Guestexecutable Parameterization"
+    "title": "| InVision",
+    "keywords": "How to In this section, you will find a list of shortcuts to different subjects about Data Flows. See Also How To Parameterize the execution of Data Flows How To Execute from Workbook with arguments How to Execute Using dfcmdutil Command Line Tool How To Use Control Flow and Branching How To Register and Execute Guest Executable How to Automate Import of Data to Dimension How to Automate Import of the Primary Dimension How to Check if Dataflow Succeeded using @Event.Data.Success condition How To Automate PowerShell Script with Data Flow"
   },
   "articles/invision/docs/dataflows/howto/parameterization.html": {
     "href": "articles/invision/docs/dataflows/howto/parameterization.html",
@@ -361,8 +361,8 @@
   },
   "articles/invision/docs/dataflows/index.html": {
     "href": "articles/invision/docs/dataflows/index.html",
-    "title": "Dataflows | InVision",
-    "keywords": "Dataflows Datacontext Execution Howto Parametrization"
+    "title": "| InVision",
+    "keywords": "Dataflows All data processing and business logic in InVision can be executed through Data Flows. Data Flows consists of one or more Data Flow Items and zero or more Decision steps that can be chained together. The actual business logic is defined in Data Flow Items, and the Decision steps allow for setting up an execution path based on the outcome of the Data Flow Items in the Data Flow. A Data Flow can be viewed as a computer program that can take input, do some work, and produce output. Data Flows can be executed from InVision Dev Studio, any Workbook, and the command line. Additionally, a Data Flow can be executed through a REST API. See Also How to's More about Data Flows Execution of Data Flows Data Context Parameterization Videos Data Flows Introduction to Parameterization Execute from Workbook with arguments Execute Using dfcmdutil Command Line Tool Control Flow and Branching Guest Executables - Basics Automating Import of Data to Dimension Automating Import of the Primary Dimension How to Check if Dataflow Succeeded using @Event.Data.Success condition"
   },
   "articles/invision/docs/dataflows/parametrization.html": {
     "href": "articles/invision/docs/dataflows/parametrization.html",
@@ -376,8 +376,8 @@
   },
   "articles/invision/docs/dataflows/parametrization/index.html": {
     "href": "articles/invision/docs/dataflows/parametrization/index.html",
-    "title": "Parametrization | InVision",
-    "keywords": "Parametrization Globalparameters Programmatically set glob param"
+    "title": "| InVision",
+    "keywords": "Parametrization Parameterization of Data Flows enables you to provide input to the steps and control flow logic during execution. Parameterized execution To pass arguments to a Data Flow being executed from a Workbook, you need to edit the Arguments property of the Data Flow part from the Workbook designer. The editor shows a list of all activities and their respective parameters hosted by the Data Flow. When selecting the activity, you get a list of the parameters and any default arguments. To override the default values, you can use variables, the Filter(…) function, or hard coded values. InVision resolves the arguments by evaluating all values as Eaze expressions. Example This example shows how to specify the arguments passed to a Data Flow Activity. The values listed in the Default Value column is used unless a value is provided in the Override Value column. The values in the Override Value column must be valid Eaze expressions, meaning they can contain references to variables. In this example, a variable x = \"FOO\" exists. (We’re referencing it in the myAbbrev argument expression, by only getting the first 2 letters). Argument name Default Value Override Value myInt 1 1 myString Hello \"Hello\" myDate 1900.01.01 DATE(1900,1,1) myDec 22.4 11.6 myDepartment Filter(\"Filters\", \"Department\").SelectedValue.Id myAbbrev SUBSTRING(x, 0, 2) See Also Global Parameters Programmatically change Global Parameters Videos Data Flows Introduction to Parameterization"
   },
   "articles/invision/docs/dataflows/parametrization/programmatically-set-glob-param.html": {
     "href": "articles/invision/docs/dataflows/parametrization/programmatically-set-glob-param.html",
@@ -431,8 +431,8 @@
   },
   "articles/invision/docs/datastores/howto/index.html": {
     "href": "articles/invision/docs/datastores/howto/index.html",
-    "title": "Howto | InVision",
-    "keywords": "Howto Changetracking Rollover Schema Timeframe"
+    "title": "| InVision",
+    "keywords": "How to In this section, you will find a list of shortcuts to different subjects about Package. See Also How To Create Schema and Source Mapping How To Change Tracking How To Set Up Time Frame How To Set Up Rollover Calculations"
   },
   "articles/invision/docs/datastores/howto/rollover.html": {
     "href": "articles/invision/docs/datastores/howto/rollover.html",

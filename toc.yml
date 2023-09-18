@@ -63,30 +63,18 @@
         - name: Tasktemplates
           href: articles/invision/docs/dataflowitems/tasktemplates.md
       - name: Dataflows
-        href: articles/invision/docs/dataflows.md
-      - name: Dataflows
         href: articles/invision/docs/dataflows/index.md
         items:
-        - name: Dataflows
-          href: articles/invision/docs/dataflows/index.md
-        - name: Datacontext
-          href: articles/invision/docs/dataflows/datacontext.md
         - name: Datacontext
           href: articles/invision/docs/dataflows/datacontext/index.md
           items:
-          - name: Datacontext
-            href: articles/invision/docs/dataflows/datacontext/index.md
           - name: Datacontextscope
             href: articles/invision/docs/dataflows/datacontext/datacontextscope.md
           - name: Globaldatacontext
             href: articles/invision/docs/dataflows/datacontext/globaldatacontext.md
         - name: Execution
-          href: articles/invision/docs/dataflows/execution.md
-        - name: Execution
           href: articles/invision/docs/dataflows/execution/index.md
           items:
-          - name: Execution
-            href: articles/invision/docs/dataflows/execution/index.md
           - name: Commandline
             href: articles/invision/docs/dataflows/execution/commandline.md
           - name: Httpapi
@@ -94,12 +82,8 @@
           - name: Scheduledexecution
             href: articles/invision/docs/dataflows/execution/scheduledexecution.md
         - name: Howto
-          href: articles/invision/docs/dataflows/howto.md
-        - name: Howto
           href: articles/invision/docs/dataflows/howto/index.md
           items:
-          - name: Howto
-            href: articles/invision/docs/dataflows/howto/index.md
           - name: Autocopy
             href: articles/invision/docs/dataflows/howto/autocopy.md
           - name: Autoimport
@@ -119,12 +103,8 @@
           - name: Parameterization
             href: articles/invision/docs/dataflows/howto/parameterization.md
         - name: Parametrization
-          href: articles/invision/docs/dataflows/parametrization.md
-        - name: Parametrization
           href: articles/invision/docs/dataflows/parametrization/index.md
           items:
-          - name: Parametrization
-            href: articles/invision/docs/dataflows/parametrization/index.md
           - name: Globalparameters
             href: articles/invision/docs/dataflows/parametrization/globalparameters.md
           - name: Programmatically set glob param

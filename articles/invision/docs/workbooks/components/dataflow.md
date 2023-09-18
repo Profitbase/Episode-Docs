@@ -76,7 +76,7 @@ To override the default values, you can use variables, the Filter(…) function,
 To apply a Data Context for transactions, being processed based on states (selected filter values and variables) in the Workbook, you need to specify the Data Context Scope for the Data Flow. 
 
 Setting up a Data Context Scope for the execution will enable the Data Flow to only process the transaction subset resolved from the selected filter values and variables in the Workbook.  
-Read more about the [Data Context](../../dataflows/datacontext.md) and [Data Context Scope](../../dataflows/datacontext/datacontextscope.md) here. 
+Read more about the [Data Context](../../dataflows/datacontext/index.md) and [Data Context Scope](../../dataflows/datacontext/datacontextscope.md) here. 
 
 What is the difference between parameterized execution for filtering data to process and using Data Context Scope?  
 The Data Context Scope enables the system to resolve the transaction subset for processing while using parameterized execution leaves it up to the consultant to set up the filtering logic.
@@ -162,13 +162,13 @@ Please note that if the Show Execution Log property is set to true, the Popup Ex
 
 ### See Also
 * [More about Data Flows](../../dataflows/index.md)
-* [Execution of Data Flows](../../dataflows/execution.md)
-* [Data Context](../../dataflows/datacontext.md)
+* [Execution of Data Flows](../../dataflows/execution/index.md)
+* [Data Context](../../dataflows/datacontext/index.md)
 <br/>
 
 ### Videos
 
-* [Data Flows](../../../videos/dataflows/index.md)
+* [Data Flows](../../../videos/dataflows.md)
 * [Introduction to Parameterization](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flow%20-%20Introduction%20to%20parameterization.mp4)
 * [Execute from Workbook with arguments](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flow%20-%20Execute%20from%20Workbook%20with%20arguments.mp4)
 * [Execute Using dfcmdutil Command Line Tool](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flow%20-%20Execute%20using%20dfcmdutil%20command%20line%20tool.mp4)

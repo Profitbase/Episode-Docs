@@ -7,19 +7,19 @@ pageIndex: 4
 
 
 ### Introduction to Parameterization
-[Documentation](../docs/dataflows/parametrization.md)
+[Documentation](../docs/dataflows/parametrization/index.md)
 
 ![video](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flow%20-%20Introduction%20to%20parameterization.mp4)
 <br/>
 
 ###  Execute from Workbook with arguments
-[Documentation](../docs/dataflows/execution.md)
+[Documentation](../docs/dataflows/execution/index.md)
 
 ![video](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flow%20-%20Execute%20from%20Workbook%20with%20arguments.mp4)
 <br/>
 
 ###  Execute Using dfcmdutil Command Line Tool
-[Documentation](../docs/dataflows/execution.md)
+[Documentation](../docs/dataflows/execution/index.md)
 
 ![video](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flow%20-%20Execute%20using%20dfcmdutil%20command%20line%20tool.mp4)
 

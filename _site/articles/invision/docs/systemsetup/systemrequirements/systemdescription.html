@@ -88,7 +88,7 @@
 <p>The website is hosted by the IIS web server which serves the user interface and web requests.
 <br></p>
 <h3 id="data-flow-task-manager-dispatcher">Data Flow Task Manager (Dispatcher)</h3>
-<p>The <a href="../../dataflows.html">Data Flow</a> Task Manager is responsible for managing execution of Data Flows by distributing the work load across the Task Workers, and controlling the execution paths for each Data Flow. There is only one Data Flow Task Manager per install site.
+<p>The <a href="../../dataflows/index.html">Data Flow</a> Task Manager is responsible for managing execution of Data Flows by distributing the work load across the Task Workers, and controlling the execution paths for each Data Flow. There is only one Data Flow Task Manager per install site.
 <br></p>
 <h3 id="data-flow-task-workers">Data Flow Task Worker(s)</h3>
 <p>The Data Flow Task Worker is responsible for executing a Data Flow Item. Each Data Flow Item is executed in an isolated process which prevents it from affecting other processes if a fatal error should occur. Since Data Flow Items may take up a lot of system resources when executed, it is recommended (but not required) that Data Flow Task Workers run on different servers than the website to prevent slow response times to the end users.
