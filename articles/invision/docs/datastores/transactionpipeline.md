@@ -15,7 +15,7 @@ The business rules (Ruleset) are configured in the Feature section of Setting [t
 >**Note!**  
 All Transaction Pipeline target Data Stores must have [Tracing Columns](tracingcolumns.md).  
 >
-Also, unless you intend for the entire source transaction data set to be reprocessed every time the pipeline is executed, you need to ensure that the [Data Context](../dataflows/datacontext.md) for both the Transaction Pipeline source and target Data Stores have been properly defined. 
+Also, unless you intend for the entire source transaction data set to be reprocessed every time the pipeline is executed, you need to ensure that the [Data Context](../dataflows/datacontext/index.md) for both the Transaction Pipeline source and target Data Stores have been properly defined. 
 >
 If a Data Store does not have relationship Dimension bindings that can be used for fully resolving the Data Context, you need to specify the Data Context configuration for the Data Store as part of the [Global Data Context](../dataflows/datacontext/globaldatacontext.md).
 

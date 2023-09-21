@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 2
 ---
 
-![img](https://profitbasedocs.blob.core.windows.net/images/accCtrl.png.md)
+![img](https://profitbasedocs.blob.core.windows.net/images/accCtrl.png)
 
 ### Introduction
 

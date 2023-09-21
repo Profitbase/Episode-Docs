@@ -1,63 +1,79 @@
+
+
+
+# Hello learner!
+
+Welcome to the Profitbase InVision docs!
+You can explore the different topics from the left side bar, or use the search bar at the top of the page.
+
+We're working hard to provide video documentation for many of our features, so please check out our [videos section](../videos/index.md) as well. Each text topic has links to relavant videos.
+
+We hope that our documentation will be helpful to you!  
+If there is something you can't find answers to, please contact [Support](https://support.profitbase.com/), so we can help you and improve this documentation in the future.
+<br/>
+
+![Docs](https://profitbasedocs.blob.core.windows.net/images/dodocs.png "Docs")
+
 # Docs
 
-* [Accesscontrol](./accesscontrol.md)
+* [Accesscontrol](../docs/accesscontrol/index.md)
 
-* [Accessibility](./accessibility.md)
+* [Accessibility](./accessibility/index.md)
 
 * [Bestpractice](./bestpractice.md)
 
-* [Dataflowitems](./dataflowitems.md)
+* [Dataflowitems](./dataflowitems/index.md)
 
-* [Dataflows](./dataflows.md)
+* [Dataflows](./dataflows/index.md)
 
 * [Datapool](./datapool.md)
-* [Datastores](./datastores.md)
+* [Datastores](./datastores/index.md)
 
-* [Dimensions](./dimensions.md)
+* [Dimensions](./dimensions/index.md)
 
-* [Directives](./directives.md)
+* [Directives](./directives/index.md)
 
-* [Filestorage](./filestorage.md)
+* [Filestorage](./filestorage/index.md)
 
-* [Filters](./filters.md)
+* [Filters](./filters/index.md)
 
-* [Forms](./forms.md)
+* [Forms](./forms/index.md)
 
-* [Homepage](./homepage.md)
+* [Homepage](./homepage/index.md)
 
 * [Javascript](./javascript.md)
-* [Macros](./macros.md)
+* [Macros](./macros/index.md)
 
-* [Package](./package.md)
+* [Package](./package/index.md)
 
-* [Powershell](./powershell.md)
+* [Powershell](./powershell/index.md)
 
-* [Sqlreports](./sqlreports.md)
+* [Sqlreports](./sqlreports/index.md)
 
-* [Sqlscripts](./sqlscripts.md)
+* [Sqlscripts](./sqlscripts/index.md)
 
-* [Systemsetup](./systemsetup.md)
+* [Systemsetup](./systemsetup/index.md)
 
 * [Systemviews](./systemviews.md)
-* [Tables](./tables.md)
+* [Tables](./tables/index.md)
 
-* [Tableview](./tableview.md)
+* [Tableview](./tableview/index.md)
 
 * [Timeframe](./timeframe.md)
-* [Translationsloc](./translationsloc.md)
+* [Translationsloc](./translationsloc/index.md)
 
 * [Troubleshooting](./troubleshooting.md)
 * [Views](./views.md)
-* [Webfunctions](./webfunctions.md)
+* [Webfunctions](./webfunctions/index.md)
 
-* [Webserviceapis](./webserviceapis.md)
+* [Webserviceapis](./webserviceapis/index.md)
 
 * [Workbookmenu](./workbookmenu.md)
-* [Workbooks](./workbooks.md)
+* [Workbooks](./workbooks/index.md)
 
-* [Workflow](./workflow.md)
+* [Workflow](./workflow/index.md)
 
-* [Workprocess](./workprocess.md)
+* [Workprocess](./workprocess/index.md)
 
-* [Worksheets](./worksheets.md)
+* [Worksheets](./worksheets/index.md)
 

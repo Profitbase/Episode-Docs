@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Datacontext | InVision </title>
+      <title> | InVision </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Datacontext | InVision ">
+      <meta name="title" content=" | InVision ">
       
       <link rel="icon" href="../../../../../images/favicon.ico">
       <link rel="stylesheet" href="../../../../../public/docfx.min.css">
@@ -76,11 +76,20 @@
         </div>
 
         <article data-uid="">
-<h1 id="datacontext">Datacontext</h1>
 
+<h4 id="datacontext">Datacontext</h4>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/Dcont.png" alt="img"></p>
+<br>
+<p>The Data Context is the mechanism that defines the transaction set is processed by a Data Flow, for example, a Financial Simulation, Distributor, or Spawner.</p>
+<p>All <a href="../../datastores/index.html">Data Stores</a> being sources or targets in a processing chain must have a Data Context specified for InVision to figure out which set of transactions to process. If you do not set up a Data Context, you must configure the transaction filtering manually.</p>
+<p>The Data Context of a Data Store is normally determined based on the Dimensions which are a part of the star schema. If one or more Filters based on star schema Dimensions are connected to the <a href="datacontextscope.html">Data Context Scope</a> of a Data Flow, the selected filter values will be used to determine which transactions to process. All sources and targets in a processing chain must have a Data Context because the <a href="datacontextscope.html">Data Context Scope</a> controls not only which transactions are being read from the sources, but also which transactions are being deleted from the targets.</p>
+<p>To enable other resources (dimensions not being part of star schemas, tables, and custom values) to determine the transaction set being processed, you need to define them in the <a href="globaldatacontext.html">Global Data Context</a>.</p>
+<br>
+<h4 id="see-also">See Also</h4>
 <ul>
-<li><a href="datacontextscope.html">Datacontextscope</a></li>
-<li><a href="globaldatacontext.html">Globaldatacontext</a></li>
+<li><a href="datacontextscope.html">Data Context Scope</a></li>
+<li><a href="globaldatacontext.html">Global Data Context</a></li>
 </ul>
 </article>
 

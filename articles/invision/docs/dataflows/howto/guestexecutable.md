@@ -7,7 +7,7 @@ pageIndex: 5
 
 ### Link to the video
 
-Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Guest%20Executables%20-%20Basics.mp4) you will find a video that shows how to Register and Execute Guest Executable. [Here](../../dataflows.md) you will find [Documentation](../../dataflows.md).
+Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Guest%20Executables%20-%20Basics.mp4) you will find a video that shows how to Register and Execute Guest Executable. [Here](../../dataflows/index.md) you will find [Documentation](../../dataflows/index.md).
 <br/>
 
 

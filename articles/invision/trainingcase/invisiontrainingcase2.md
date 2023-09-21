@@ -9,7 +9,7 @@ pageIndex: 2
 ### Hello learner!
 
 In this section, we will create together a solution. Under [this](https://profitbasedocs.blob.core.windows.net/videos/MovieMania.mp4) link you will find video that shows that process step by step.
-In every part of that case you will also find [Documentation](../docs.md).
+In every part of that case you will also find [Documentation](../docs/index.md).
 
 <br/>
 
@@ -30,7 +30,7 @@ Using this simple example, we want to show you how the Invision LOW CODE can be 
 
 ### 1. Creating and setting up the Workbook
 
-> In this section you will find instruction on how to create solution, [Structure Folders](../docs/bestpractice/structuringsolution.md), and setup [Access Control](../docs/accesscontrol.md).  
+> In this section you will find instruction on how to create solution, [Structure Folders](../docs/bestpractice/structuringsolution.md), and setup [Access Control](../docs/accesscontrol/index.md).  
 > See also [Interface Introduction Video](https://profitbasedocs.blob.core.windows.net/videos/Getting%20Started%20-%20Interface%20Introduction.mp4), [Access Control Videos](../videos/accesscontrol.md).
 
 
@@ -90,7 +90,7 @@ Using this simple example, we want to show you how the Invision LOW CODE can be 
 
 <br/>
 
-4. You can overwrite System Theme Variables in the Main Theme section. Here you will also find sections for [Accesibility](../docs/accessibility.md) and Style Sheets. 
+4. You can overwrite System Theme Variables in the Main Theme section. Here you will also find sections for [Accesibility](../docs/accessibility/index.md) and Style Sheets. 
   
 ![pic](https://profitbasedocs.blob.core.windows.net/images/MovMania%20(9).png)
 <br/>

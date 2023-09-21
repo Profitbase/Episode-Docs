@@ -1,6 +1,12 @@
 # Transforms
 
-* [Aggregate](./aggregate.md)
-* [Customsql](./customsql.md)
-* [Pivot](./pivot.md)
-* [Unpivot](./unpivot.md)
+
+### See Also 
+
+* [Aggregate](aggregate.md)
+
+* [Custom SQL](customsql.md)
+
+* [Pivot](pivot.md)
+
+* [Unpivot](unpivot.md)

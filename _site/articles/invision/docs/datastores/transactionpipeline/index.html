@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Transactionpipeline | InVision </title>
+      <title>Transaction pipeline | InVision </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Transactionpipeline | InVision ">
+      <meta name="title" content="Transaction pipeline | InVision ">
       
       <link rel="icon" href="../../../../../images/favicon.ico">
       <link rel="stylesheet" href="../../../../../public/docfx.min.css">
@@ -76,13 +76,31 @@
         </div>
 
         <article data-uid="">
-<h1 id="transactionpipeline">Transactionpipeline</h1>
+<h1 id="transaction-pipeline">Transaction pipeline</h1>
 
+<p>The Transaction Pipeline is a mechanism that reads a data set from a <a href="../../datastores.html">Data Store</a> and produces an output based on a set of business rules. You would typically run a Transaction Pipeline process if you need to periodize or distribute data from one or more columns, spawn transactions based on a set of business rules or just assign values to rows when exporting data to a target.</p>
+<p>A Transaction Pipeline process consists of a Cell Adapter, <a href="distributer.html">Distributer</a>, and <a href="spawner.html">Spawner</a> component, which all produce output by evaluating business rules.
+The business rules (Ruleset) are configured in the Feature section of Setting <a href="../../tables.html">tables</a>, using one Setting table pr feature configuration. (For example, you cannot use the same Setting table to configure business rules for both Cell Adapter and Distributer components).
+<br></p>
+<blockquote>
+<p><strong>Note!</strong><br>
+All Transaction Pipeline target Data Stores must have <a href="../tracingcolumns.html">Tracing Columns</a>.</p>
+</blockquote>
+<p>Also, unless you intend for the entire source transaction data set to be reprocessed every time the pipeline is executed, you need to ensure that the <a href="../../dataflows/datacontext/index.html">Data Context</a> for both the Transaction Pipeline source and target Data Stores have been properly defined.</p>
+<blockquote>
+</blockquote>
+<p>If a Data Store does not have relationship Dimension bindings that can be used for fully resolving the Data Context, you need to specify the Data Context configuration for the Data Store as part of the <a href="../../dataflows/datacontext/globaldatacontext.html">Global Data Context</a>.</p>
+<br>
+<h3 id="see-also">See Also</h3>
 <ul>
-<li><a href="celladapter.html">Celladapter</a></li>
-<li><a href="conditionexpressions.html">Conditionexpressions</a></li>
-<li><a href="distributer.html">Distributer</a></li>
-<li><a href="spawner.html">Spawner</a></li>
+<li><p><a href="celladapter.html">Cell Adapter</a></p>
+</li>
+<li><p><a href="conditionexpressions.html">Condition Expressions</a></p>
+</li>
+<li><p><a href="distributer.html">Distributer</a></p>
+</li>
+<li><p><a href="spawner.html">Spawner</a></p>
+</li>
 </ul>
 </article>
 

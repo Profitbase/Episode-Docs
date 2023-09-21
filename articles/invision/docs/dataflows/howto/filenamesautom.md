@@ -9,7 +9,7 @@ pageIndex: 9
 
 ### Link to the video
 
-Under [this link](https://profitbasedocs.blob.core.windows.net/videos/PowerShell%20-%20How%20To%20Automate%20Script%20with%20Data%20Flow.mp4) you will find video that shows How To Automate PowerShell Script with [Data Flow](../../dataflows.md). [Here](../../powershell/commands.md) you will find [Documentation about used command](../../powershell/commands.md).
+Under [this link](https://profitbasedocs.blob.core.windows.net/videos/PowerShell%20-%20How%20To%20Automate%20Script%20with%20Data%20Flow.mp4) you will find video that shows How To Automate PowerShell Script with [Data Flow](../../dataflows/index.md). [Here](../../powershell/commands.md) you will find [Documentation about used command](../../powershell/commands.md).
 <br/>
 
 

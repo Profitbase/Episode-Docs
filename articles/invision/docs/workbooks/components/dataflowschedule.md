@@ -7,7 +7,7 @@ pageIndex: 3
 
 #### Data Flow Schedule
 
-The [Data Flow](../../dataflows.md) Schedule component enables end users to create and edit the scheduled runs of Data Flows from a [Workbook](../../workbooks.md) instead of having to use the Designer.
+The [Data Flow](../../dataflows/index.md) Schedule component enables end users to create and edit the scheduled runs of Data Flows from a [Workbook](../../workbooks.md) instead of having to use the Designer.
 
 <br/>
 
@@ -24,7 +24,7 @@ The [Data Flow](../../dataflows.md) Schedule component enables end users to crea
 #### How to create a New Schedule for a Dataflow
 <br/>
 
-To create a new Data Flow Schedule, you need to execute the New action of the Schedule component and provide the id of the [Data Flow](../../dataflows.md). You can also provide one or more parameters that you want the Dataflow to be executed with.
+To create a new Data Flow Schedule, you need to execute the New action of the Schedule component and provide the id of the [Data Flow](../../dataflows/index.md). You can also provide one or more parameters that you want the Dataflow to be executed with.
 
 1. Find the Data Flow Schedule component in the Actions explorer (for example for a button tapped event), 
 2. Drag and drop the New action into the Actions list,

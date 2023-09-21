@@ -7,12 +7,12 @@
   "articles/index.html": {
     "href": "articles/index.html",
     "title": "Articles | InVision",
-    "keywords": "Articles Invision"
+    "keywords": "Articles"
   },
   "articles/invision.html": {
     "href": "articles/invision.html",
-    "title": "InVision | InVision",
-    "keywords": "About Profitbase InVision Intuitive web-based applications The InVision platform serves as a \"Rapid Application Development\" solution, empowering users to swiftly and effectively construct adaptable business solutions on a modern and robust technology stack. Users can leverage the platform's comprehensive standard components to develop a wide range of elements, including user interfaces and back-end functionality. This streamlined approach significantly reduces both cost and time when implementing projects. Users utilize the Profitbase InVision Designer to construct applications, which are subsequently published as web applications within the organization. These web applications require minimal or no training to operate effectively. Within a matter of minutes, users can download prebuilt business modules and install them, tailoring them to precisely meet the specific requirements of the customer. Profitbase InVision seamlessly integrates with other business systems through a RESTful Web API or direct connection to the SQL data storage, facilitating effortless connectivity. Users can expand Profitbase InVision's capabilities by constructing custom business modules using the Profitbase InVision Designer developer tool and Microsoft Visual Studio. Solution A solution contains all of the data and configuration for your application, such as business logic, data stores, workbooks, worksheets, data flows, workflows, etc. Clone Solution You can easily clone entire Solutions from the Designer start page. Cloning a Solution will also copy input data from the source Solution, permissions, and Data Flow schedules. Note that objects in cloned Solutions are not automatically added to the Data Pool after the cloning has been completed. They will, however, be added to the Data Pool if the Data Pool Compound View is rebuilt. If you don’t want this to happen, you need to edit your newly cloned Solution and remove the Data Pool configuration from the objects that you don’t want as members of the Data Pool. When creating a new Solution Creating a new Solution requires specifying whether the Solution should provide contents to Work Process blueprints or not. This change was added because it was too easy to forget to set this property after a Package had been deployed. Designer The designer is the development tool for the InVision platform needed to create or modify solutions created on the InVision platform. The designer is a desktop application that is downloaded locally to your PC or server. Workbooks Workbooks are the user interfaces for the applications created on the InVision platform."
+    "title": "Articles | InVision",
+    "keywords": "Articles Invision"
   },
   "articles/invision/changelog.html": {
     "href": "articles/invision/changelog.html",
@@ -96,8 +96,8 @@
   },
   "articles/invision/changelog/index.html": {
     "href": "articles/invision/changelog/index.html",
-    "title": "Changelog | InVision",
-    "keywords": "Changelog Changelog22 1 Changelog22 2 Changelog22 3 1 Changelog22 3 2 Changelog22 4 Changelog22 5 Changelog23 1 Changelog23 2 Changelog23 3 Changelog23 4 Changelog40 Changelog41 Changelog5 Changelog51 Changelog52"
+    "title": "What's new? | InVision",
+    "keywords": "What's new? Learn about the cool new features, updates, and bug fixes. Changelog Change Log 2023.3 Change Log 2023.2 Change Log 2023.1 Changelog 2022.5 Changelog 2022.4 Changelog 2022.3 pt.2 Changelog 2022.3 pt.1 Changelog 2022.2 Changelog 2022.1 Changelog 5.2 Changelog 5.1 Changelog 5.0 Changelog 4.1 Changelog 4.0"
   },
   "articles/invision/docs.html": {
     "href": "articles/invision/docs.html",
@@ -141,8 +141,8 @@
   },
   "articles/invision/docs/accesscontrol/howto/index.html": {
     "href": "articles/invision/docs/accesscontrol/howto/index.html",
-    "title": "Howto | InVision",
-    "keywords": "Howto Azuread Dataworkbooks Identities Wbacess"
+    "title": "| InVision",
+    "keywords": "In this section, you will find a list of shortcuts to different subjects about Access Control. See Also How To Create Identities and Access Groups How To Create and Manage Azure AD Identities and Access Groups How to Manage Access to Workbooks How To Manage Access to Data and Workbooks"
   },
   "articles/invision/docs/accesscontrol/howto/wbacess.html": {
     "href": "articles/invision/docs/accesscontrol/howto/wbacess.html",
@@ -162,7 +162,7 @@
   "articles/invision/docs/accesscontrol/index.html": {
     "href": "articles/invision/docs/accesscontrol/index.html",
     "title": "Accesscontrol | InVision",
-    "keywords": "Accesscontrol Accessgroups Dataperm Howto Httpapi Identities Workbookperm"
+    "keywords": "Accesscontrol Introduction Access control is a security technique that regulates who can view or use resources in a computing environment. It is a fundamental concept in security that minimizes risk to the business or organization. Access to resources, such as Workbooks, Data, and APIs are granted to Access Groups. Access Groups contain (identity or group) accounts from Windows or Azure AD. To each Identity and access group, you can grant access by setting Workbook and Data Permissions. Access control can be managed through an HTTP API. To manage Identities/Groups/Access Control through the API, you need an API Key and the API address. See Also How to's Access Groups Data Permissions Identities Workbook Permissions HTTP API Videos Access Control Identities and Access Groups Create and Manage Azure AD Identities and Access Groups Manage Access to Data and Workbooks Manage Access to Workbooks Access Control - Client Side"
   },
   "articles/invision/docs/accesscontrol/workbookperm.html": {
     "href": "articles/invision/docs/accesscontrol/workbookperm.html",
@@ -206,13 +206,13 @@
   },
   "articles/invision/docs/accessibility/howto/index.html": {
     "href": "articles/invision/docs/accessibility/howto/index.html",
-    "title": "Howto | InVision",
-    "keywords": "Howto Highkontrast Hotkey"
+    "title": "| InVision",
+    "keywords": "In this section, you will find a list of shortcuts to different subjects about Accessibility. See Also How To Setup Hotkey How To Setup High Contrast"
   },
   "articles/invision/docs/accessibility/index.html": {
     "href": "articles/invision/docs/accessibility/index.html",
     "title": "Accessibility | InVision",
-    "keywords": "Accessibility Aria Highcontrast Hotkey Howto"
+    "keywords": "Accessibility To make solutions usable by as many people as possible, Profitbase InVision is WCAG AAA compliant. It supports requirements such as high contrast mode for people with low vision, keyboard navigation, keyboard shortcuts, and support for screen readers. Moreover, you will find accessibility support for the htmlFor attribute to Label controls, search in Dropdowns, hotkeys, AriaLabelledBy to all editable controls, required attribute to all editable controls. See Also How to's Aria-labelledby High contrast Hotkeys"
   },
   "articles/invision/docs/bestpractice.html": {
     "href": "articles/invision/docs/bestpractice.html",
@@ -221,8 +221,8 @@
   },
   "articles/invision/docs/bestpractice/index.html": {
     "href": "articles/invision/docs/bestpractice/index.html",
-    "title": "Bestpractice | InVision",
-    "keywords": "Bestpractice Structuringsolution"
+    "title": "| InVision",
+    "keywords": "Guidance for InVision Here you will find the guidance and recommended practices for InVision. Guidance will continue to be updated and added to. Getting Started Keeping a good structure in your solution is important. Profitbase strongly suggest using folders to keep your solution organized. You should also choose sensible names for the items you create as they are likely to be used as references elsewhere in the solution. See Also Basic guidelines for structuring solutions"
   },
   "articles/invision/docs/bestpractice/structuringsolution.html": {
     "href": "articles/invision/docs/bestpractice/structuringsolution.html",
@@ -246,8 +246,8 @@
   },
   "articles/invision/docs/dataflowitems/index.html": {
     "href": "articles/invision/docs/dataflowitems/index.html",
-    "title": "Dataflowitems | InVision",
-    "keywords": "Dataflowitems Builtindfitems Classlibraries Tasktemplates"
+    "title": "| InVision",
+    "keywords": "Dataflowitems Data Flow Items are used for defining all kinds of business logic that can be executed on the server. A single Data Flow Item can execute one or many tasks, which may range from predefined system tasks to custom SQL tasks. In addition to predefined or custom SQL tasks, you can embed and execute C# code from within a Data Flow or even reference custom .NET libraries (.dlls) for execution. See Also Built-in Data Flow Items Task Templates Class Libraries"
   },
   "articles/invision/docs/dataflowitems/tasktemplates.html": {
     "href": "articles/invision/docs/dataflowitems/tasktemplates.html",
@@ -276,8 +276,8 @@
   },
   "articles/invision/docs/dataflows/datacontext/index.html": {
     "href": "articles/invision/docs/dataflows/datacontext/index.html",
-    "title": "Datacontext | InVision",
-    "keywords": "Datacontext Datacontextscope Globaldatacontext"
+    "title": "| InVision",
+    "keywords": "Datacontext The Data Context is the mechanism that defines the transaction set is processed by a Data Flow, for example, a Financial Simulation, Distributor, or Spawner. All Data Stores being sources or targets in a processing chain must have a Data Context specified for InVision to figure out which set of transactions to process. If you do not set up a Data Context, you must configure the transaction filtering manually. The Data Context of a Data Store is normally determined based on the Dimensions which are a part of the star schema. If one or more Filters based on star schema Dimensions are connected to the Data Context Scope of a Data Flow, the selected filter values will be used to determine which transactions to process. All sources and targets in a processing chain must have a Data Context because the Data Context Scope controls not only which transactions are being read from the sources, but also which transactions are being deleted from the targets. To enable other resources (dimensions not being part of star schemas, tables, and custom values) to determine the transaction set being processed, you need to define them in the Global Data Context. See Also Data Context Scope Global Data Context"
   },
   "articles/invision/docs/dataflows/execution.html": {
     "href": "articles/invision/docs/dataflows/execution.html",
@@ -296,8 +296,8 @@
   },
   "articles/invision/docs/dataflows/execution/index.html": {
     "href": "articles/invision/docs/dataflows/execution/index.html",
-    "title": "Execution | InVision",
-    "keywords": "Execution Commandline Httpapi Scheduledexecution"
+    "title": "| InVision",
+    "keywords": "How to execute a Data Flow We have three ways of executing a Data Flow. You can use the Data Flow Scheduler to schedule executions. Data Flows can be also executed through an HTTP API or the Command Line. You can read about it in the links below. See Also Command Line HTTP API Scheduling Execution Videos Data Flows Execute from Workbook with arguments Execute Using dfcmdutil Command Line Tool"
   },
   "articles/invision/docs/dataflows/execution/scheduledexecution.html": {
     "href": "articles/invision/docs/dataflows/execution/scheduledexecution.html",
@@ -351,8 +351,8 @@
   },
   "articles/invision/docs/dataflows/howto/index.html": {
     "href": "articles/invision/docs/dataflows/howto/index.html",
-    "title": "Howto | InVision",
-    "keywords": "Howto Autocopy Autoimport Controlflow Eventdatasuccess Execute Execute dfcmdutil Filenamesautom Guestexecutable Parameterization"
+    "title": "| InVision",
+    "keywords": "How to In this section, you will find a list of shortcuts to different subjects about Data Flows. See Also How To Parameterize the execution of Data Flows How To Execute from Workbook with arguments How to Execute Using dfcmdutil Command Line Tool How To Use Control Flow and Branching How To Register and Execute Guest Executable How to Automate Import of Data to Dimension How to Automate Import of the Primary Dimension How to Check if Dataflow Succeeded using @Event.Data.Success condition How To Automate PowerShell Script with Data Flow"
   },
   "articles/invision/docs/dataflows/howto/parameterization.html": {
     "href": "articles/invision/docs/dataflows/howto/parameterization.html",
@@ -361,8 +361,8 @@
   },
   "articles/invision/docs/dataflows/index.html": {
     "href": "articles/invision/docs/dataflows/index.html",
-    "title": "Dataflows | InVision",
-    "keywords": "Dataflows Datacontext Execution Howto Parametrization"
+    "title": "| InVision",
+    "keywords": "Dataflows All data processing and business logic in InVision can be executed through Data Flows. Data Flows consists of one or more Data Flow Items and zero or more Decision steps that can be chained together. The actual business logic is defined in Data Flow Items, and the Decision steps allow for setting up an execution path based on the outcome of the Data Flow Items in the Data Flow. A Data Flow can be viewed as a computer program that can take input, do some work, and produce output. Data Flows can be executed from InVision Dev Studio, any Workbook, and the command line. Additionally, a Data Flow can be executed through a REST API. See Also How to's More about Data Flows Execution of Data Flows Data Context Parameterization Videos Data Flows Introduction to Parameterization Execute from Workbook with arguments Execute Using dfcmdutil Command Line Tool Control Flow and Branching Guest Executables - Basics Automating Import of Data to Dimension Automating Import of the Primary Dimension How to Check if Dataflow Succeeded using @Event.Data.Success condition"
   },
   "articles/invision/docs/dataflows/parametrization.html": {
     "href": "articles/invision/docs/dataflows/parametrization.html",
@@ -376,8 +376,8 @@
   },
   "articles/invision/docs/dataflows/parametrization/index.html": {
     "href": "articles/invision/docs/dataflows/parametrization/index.html",
-    "title": "Parametrization | InVision",
-    "keywords": "Parametrization Globalparameters Programmatically set glob param"
+    "title": "| InVision",
+    "keywords": "Parametrization Parameterization of Data Flows enables you to provide input to the steps and control flow logic during execution. Parameterized execution To pass arguments to a Data Flow being executed from a Workbook, you need to edit the Arguments property of the Data Flow part from the Workbook designer. The editor shows a list of all activities and their respective parameters hosted by the Data Flow. When selecting the activity, you get a list of the parameters and any default arguments. To override the default values, you can use variables, the Filter(…) function, or hard coded values. InVision resolves the arguments by evaluating all values as Eaze expressions. Example This example shows how to specify the arguments passed to a Data Flow Activity. The values listed in the Default Value column is used unless a value is provided in the Override Value column. The values in the Override Value column must be valid Eaze expressions, meaning they can contain references to variables. In this example, a variable x = \"FOO\" exists. (We’re referencing it in the myAbbrev argument expression, by only getting the first 2 letters). Argument name Default Value Override Value myInt 1 1 myString Hello \"Hello\" myDate 1900.01.01 DATE(1900,1,1) myDec 22.4 11.6 myDepartment Filter(\"Filters\", \"Department\").SelectedValue.Id myAbbrev SUBSTRING(x, 0, 2) See Also Global Parameters Programmatically change Global Parameters Videos Data Flows Introduction to Parameterization"
   },
   "articles/invision/docs/dataflows/parametrization/programmatically-set-glob-param.html": {
     "href": "articles/invision/docs/dataflows/parametrization/programmatically-set-glob-param.html",
@@ -431,8 +431,8 @@
   },
   "articles/invision/docs/datastores/howto/index.html": {
     "href": "articles/invision/docs/datastores/howto/index.html",
-    "title": "Howto | InVision",
-    "keywords": "Howto Changetracking Rollover Schema Timeframe"
+    "title": "| InVision",
+    "keywords": "How to In this section, you will find a list of shortcuts to different subjects about Package. See Also How To Create Schema and Source Mapping How To Change Tracking How To Set Up Time Frame How To Set Up Rollover Calculations"
   },
   "articles/invision/docs/datastores/howto/rollover.html": {
     "href": "articles/invision/docs/datastores/howto/rollover.html",
@@ -466,8 +466,8 @@
   },
   "articles/invision/docs/datastores/importingandupdting/index.html": {
     "href": "articles/invision/docs/datastores/importingandupdting/index.html",
-    "title": "Importingandupdting | InVision",
-    "keywords": "Importingandupdting Bindingsourcecoumns Customization Source"
+    "title": "| InVision",
+    "keywords": "Importing and updating data Importing and updating data to a Data Store can be set up as part of the star schema configuration, or you can write custom SQL scripts to do the job. Updating data to a Data Store from within InVision is usually done by executing one or more Data Flows that performs the update logic defined by the star schema, or runs your custom SQL script. Using the the data import / update part of the star schema configuration, you define properties for filtering data to import, transformations (pivot, unpivot, aggregate), conversions, calculations and data set compilation using the Core Set feature. See Also Binding Source Columns to DS Columns Customization Options Source"
   },
   "articles/invision/docs/datastores/importingandupdting/source.html": {
     "href": "articles/invision/docs/datastores/importingandupdting/source.html",
@@ -481,8 +481,8 @@
   },
   "articles/invision/docs/datastores/importingandupdting/source/index.html": {
     "href": "articles/invision/docs/datastores/importingandupdting/source/index.html",
-    "title": "Source | InVision",
-    "keywords": "Source Datasourceproperties Transforms"
+    "title": "See Also | InVision",
+    "keywords": "Source A Data Store can have multiple data sources. Valid data sources are Facts, Dimensions, Settings, Views and other Data Stores. By default, all data sources except dimensions are considered fact sources unless specified otherwise by the UsageOption property of the data source. By default, transactions are imported from the fact source(s). Having multiple fact sources, data will be imported using a UNION select combining data from all facts. If dimensions are bound to your Data Store, JOIN statements are produced so that the dimensions filters the transaction set being imported from the fact sources. In addition, custom filters can be applied to all sources. Dimensions can also be used for \"padding\" data imported from the facts sources. Padding data from fact sources means that you can fill the data store with rows containing data from both the fact sources and the dimensions. The Core Set feature also lets you do a type of padding by adding rows to the Data Store by creating rows based on the contents of dimensions. See Also Data Source Properties Transforms"
   },
   "articles/invision/docs/datastores/importingandupdting/source/transforms.html": {
     "href": "articles/invision/docs/datastores/importingandupdting/source/transforms.html",
@@ -502,7 +502,7 @@
   "articles/invision/docs/datastores/importingandupdting/source/transforms/index.html": {
     "href": "articles/invision/docs/datastores/importingandupdting/source/transforms/index.html",
     "title": "Transforms | InVision",
-    "keywords": "Transforms Aggregate Customsql Pivot Unpivot"
+    "keywords": "Transforms See Also Aggregate Custom SQL Pivot Unpivot"
   },
   "articles/invision/docs/datastores/importingandupdting/source/transforms/pivot.html": {
     "href": "articles/invision/docs/datastores/importingandupdting/source/transforms/pivot.html",
@@ -516,8 +516,8 @@
   },
   "articles/invision/docs/datastores/index.html": {
     "href": "articles/invision/docs/datastores/index.html",
-    "title": "Datastores | InVision",
-    "keywords": "Datastores Changetracking Coreset Creatingschema Dataupdateconfig Exportingdata Howto Importingandupdting Periodicimput Rollover Sourcemapping Timeframe Timeframemeasurecolumns Tracingcolumns Transactionpipeline"
+    "title": "Data Stores | InVision",
+    "keywords": "Data Stores Data Stores are the primary data repositories of your Solution. Data Stores should be used for storing the master data and processing results for your business modules, while Tables should contain configuration data for business rules and utility functions. Data Stores are materialized as SQL Server tables and can be read and written to by any SQL script or process having the required permissions. Data is stored \"as is\", so you do not need to use an InVision API to read or write data to a Data Store. This makes it easy to integrate with other tools, such as Excel or a custom Web Service, to export and import data to and from InVision. The table schema of a Data Store is configured by adding columns and setting up properties for each column. Constraints and data sources are defined by adding dimensions and fact to the setup, and binding columns from the (fact and dimension) data sources to the columns in the Data Store. By binding dimensions and facts to the table schema of a Data Store, you create a star schema. You should consider binding dimensions to Data Stores when you want to make it easy to: Enable foreign key constraints Create Worksheets with dropdown editors for selecting cell values (for example Accounts, Projects, Products, etc) Create Worksheets where the data set presented to the end-user should be filtered by dimension. Create Worksheets where you want to ensure identities only have access to data based on identity rights. Use the Core Set function to (pre)populate the Data Store. Specify a mechanism used for resolving the Data Context when processing data using Data Flows in a Workflow context. In addition to the core setup of the Data Store where you define the schema and how data is loaded and updated to the store, you can specify a range of features and behaviors which enable different kinds of applications of the Data Store. The features and behaviors include Rollover, Periodic Input, Core Set, and Transaction Pipeline. See Also How to's Creating Schema Source Mapping Importing and Updating Data from Data Sources Data Update Configuration Exporting Data from InVision Time Frame Core Set Rollover Periodic Input Time Frame Measure Columns Change Tracking Transaction Pipeline Tracing Columns Videos Data Stores"
   },
   "articles/invision/docs/datastores/periodicimput.html": {
     "href": "articles/invision/docs/datastores/periodicimput.html",
@@ -561,8 +561,8 @@
   },
   "articles/invision/docs/datastores/transactionpipeline/celladapter/index.html": {
     "href": "articles/invision/docs/datastores/transactionpipeline/celladapter/index.html",
-    "title": "Celladapter | InVision",
-    "keywords": "Celladapter Inputconfig Output Ruleset"
+    "title": "| InVision",
+    "keywords": "Cell adapter The Cell Adapter component assigns values from the Cell Adapter Ruleset table to each row matching the filter criteria of the row(s) being processed in the pipeline. The Cell Adapter will generate one row for each matched Ruleset row. The Cell Adapter runs as the last component of a Transaction Pipeline process, so if any transactions are produced by the Distributer of Spawner components, the Cell Adapter will not execute at all. Both the Distributer and Spawner components support setting up cell adaption rules, so the Cell Adapter should be used when the features provided by the Distributer and Spawner are not required. Ruleset Specifies the Setting table acting as the Cell Adapter Ruleset. See Also Input Configuration Ruleset Output"
   },
   "articles/invision/docs/datastores/transactionpipeline/celladapter/inputconfig.html": {
     "href": "articles/invision/docs/datastores/transactionpipeline/celladapter/inputconfig.html",
@@ -591,8 +591,8 @@
   },
   "articles/invision/docs/datastores/transactionpipeline/distributer/index.html": {
     "href": "articles/invision/docs/datastores/transactionpipeline/distributer/index.html",
-    "title": "Distributer | InVision",
-    "keywords": "Distributer Inputconfig Output Ruleset"
+    "title": "| InVision",
+    "keywords": "Distributer The Distributer component distributes the value of one or more columns across a date range based on a distribution key by creating one transaction for each date in the range. For example, by applying the Distributer to a year total column using a 12-month distribution key, the Distributer will create 12 transactions by distributing the year total value across 12 periods according to the distribution key factors. In essence Distributer distributes the values of total columns based on a distribution key to a transaction set format having a Value and Transaction date for each generated row. If enabled, the Distributer executes as the first component of the Transaction Pipeline, meaning that a Spawner will produce transactions based on the transactions generated by the Distributer. Ruleset Specifies the Setting table acting as the Distributer Ruleset. Distribution Key (Optional) Specifies the column in the data source that contains the distribution key identifier to use for a specific row. When using this option, a corresponding Distribution Key column needs to be set up by the Distributer Ruleset used for resolving the matching distribution key (row). You should only use this option if you need to explicitly specify the distribution key to use in addition to the Relationship configuration. See Also Input Configuration Ruleset Output"
   },
   "articles/invision/docs/datastores/transactionpipeline/distributer/inputconfig.html": {
     "href": "articles/invision/docs/datastores/transactionpipeline/distributer/inputconfig.html",
@@ -611,8 +611,8 @@
   },
   "articles/invision/docs/datastores/transactionpipeline/index.html": {
     "href": "articles/invision/docs/datastores/transactionpipeline/index.html",
-    "title": "Transactionpipeline | InVision",
-    "keywords": "Transactionpipeline Celladapter Conditionexpressions Distributer Spawner"
+    "title": "Transaction pipeline | InVision",
+    "keywords": "Transaction pipeline The Transaction Pipeline is a mechanism that reads a data set from a Data Store and produces an output based on a set of business rules. You would typically run a Transaction Pipeline process if you need to periodize or distribute data from one or more columns, spawn transactions based on a set of business rules or just assign values to rows when exporting data to a target. A Transaction Pipeline process consists of a Cell Adapter, Distributer, and Spawner component, which all produce output by evaluating business rules. The business rules (Ruleset) are configured in the Feature section of Setting tables, using one Setting table pr feature configuration. (For example, you cannot use the same Setting table to configure business rules for both Cell Adapter and Distributer components). Note! All Transaction Pipeline target Data Stores must have Tracing Columns. Also, unless you intend for the entire source transaction data set to be reprocessed every time the pipeline is executed, you need to ensure that the Data Context for both the Transaction Pipeline source and target Data Stores have been properly defined. If a Data Store does not have relationship Dimension bindings that can be used for fully resolving the Data Context, you need to specify the Data Context configuration for the Data Store as part of the Global Data Context. See Also Cell Adapter Condition Expressions Distributer Spawner"
   },
   "articles/invision/docs/datastores/transactionpipeline/spawner.html": {
     "href": "articles/invision/docs/datastores/transactionpipeline/spawner.html",
@@ -621,8 +621,8 @@
   },
   "articles/invision/docs/datastores/transactionpipeline/spawner/index.html": {
     "href": "articles/invision/docs/datastores/transactionpipeline/spawner/index.html",
-    "title": "Spawner | InVision",
-    "keywords": "Spawner Inputconfig Output Ruleset"
+    "title": "| InVision",
+    "keywords": "Spawner The Spawner component produces transactions based on source rows passing the filter and the business logic specified in the Spawner Ruleset. Based on the Ruleset, the Spawner may spawn zero or many rows from a single source row. Example This example shows the result of passing a source row through the Spawner using a Ruleset specifying parameters for the spawning process. Source Row EmployeeID Transdate Amount 51 2010.03.10 500000 Ruleset (snip) EmployeetID TypeID Value Operator AccountID ... ... ... ... ... 51 EmployeeSalary 0.25 * EmployerTax 51 EmployeeSalary 150 = Misc Output EmployeeID Transdate Amount AccountID ... ... ... ... 51 2010.03.10 125000 EmployerTax 51 2010.03.10 150 Misc If the Distributer is enabled, the Spawner will use the transaction(s) generated by the Distributer for spawning new transactions, meaning that the transaction date and computed value from the Distributer is used by the Spawner instead of resolving it from the actual source transaction in scope. See Also Input Configuration Ruleset Output"
   },
   "articles/invision/docs/datastores/transactionpipeline/spawner/inputconfig.html": {
     "href": "articles/invision/docs/datastores/transactionpipeline/spawner/inputconfig.html",
@@ -686,8 +686,8 @@
   },
   "articles/invision/docs/dimensions/howto/index.html": {
     "href": "articles/invision/docs/dimensions/howto/index.html",
-    "title": "Howto | InVision",
-    "keywords": "Howto Autocopy Autoimport Createdim Dimcomp Dimeditor Multilang Timedim Transl"
+    "title": "| InVision",
+    "keywords": "In this section, you will find a list of shortcuts to different subjects about Dimesions. See Also How To use Dimension Editor How to Enable Support for Multiple Languages How to Configure Translation of Dimensions Name How to Automate Import of Data to Dimension How to Automate Import of the Primary Dimension How To Create and Display Dimension How To Create a Time Dimension"
   },
   "articles/invision/docs/dimensions/howto/multilang.html": {
     "href": "articles/invision/docs/dimensions/howto/multilang.html",
@@ -706,8 +706,8 @@
   },
   "articles/invision/docs/dimensions/index.html": {
     "href": "articles/invision/docs/dimensions/index.html",
-    "title": "Dimensions | InVision",
-    "keywords": "Dimensions Dimautomating Dimcomposition Howto"
+    "title": "How to create a dimension | InVision",
+    "keywords": "Dimensions Dimensions lets you define hierarchical data structures which can be used in filters and reporting, both within Profitbase InVision, and in 3rd party tools such as Power BI. Dimension can have any number of levels, and each level has an id, name, and optional translations for different languages. Dimension can also have properties, which is a way to define “features” of dimension members (for example, weight, color, length, etc.). Dimensions are always stored as wide tables in the database, but you can edit them as parent-child hierarchies in the dimension editor. Each level in the dimension is represented by at least two columns in the wide table – an Id and a Name column. The Id column contains the id of the dimension member, and the Name column contains the text displayed to the user. If you enable language support, there will be a Name column for each language. Key Field specifies the name of leaf level column, for example ProductID or AccountID. The example below shows the columns in a table for a two-level dimension (L1 and ProductID), having “ProductID” as Key Id, translations for English and Norwegian (EN and NO), and a Weight property. The table includes a SortIndex column that specifies how siblings are sorted (not shown in the example below). How to create a dimension Start the Designer and open a Solution. In the Solution Explorer, right-click a Folder and choose “Add Item”, then choose “Dimension” from the list. Provide a name for the Key Field. The Key Field specifies the name of the column at the leaf (lowest) level of the wide table. Enable support for multiple languages If you want to enable the dimension to support different languages for displaying members, select one or more languages in the Languages dropdown. The language-specific names for each dimension member are managed in the Dimension Editor. Primary Dimension Specifying a dimension as a Primary Dimension means that it appears in the list of \"primary dimensions\" in the Dimension Editor without users first having to select a specific Solution. That gives Power users a central repository of dimensions they can edit and publish to Work Process Versions or other solutions. Think of primary dimensions as a central repository of dimensions that can be modified and published into production. Properties Dimension members can have zero or more properties. For example, products in a Product dimension can have properties such as weight, height, color, etc. Each property is materialized as a column in the dimension table. Property Id This is the Id of the property field and the name of the column in the dimension table in the database. Name Name specifies the label of the property in the Dimension Editor user interface. You can also provide specific translations for the label using this field. Data type Specifies the data type of the property. Is Lookup Use this feature if you want users to select from a set of predefined values when setting the value of the property. Extension properties Extension properties enable partners and customers to extend dimensions in installed Packages (for example, Planner) with custom properties. That makes it possible to use standard dimensions for custom Power BI reporting or EPM custom extensions. Custom properties will not be removed when the dimension is upgraded during a Package upgrade. Level names By default, column names for all levels except the leaf level are auto-generated using the format L[level number], for example, L1, L2. If you want to override the naming for each level column, you can specify this in the Level Names list. Options / Empty member If you need the dimension to always contain an empty member, enable the Include Empty Member option. This option is typically used when you are using the dimension as a source for a dropdown in a spreadsheet, and users must be able to select a “null” or “not applicable” value. Options / Dimension Composition Go to Dimension Composition. Build the dimension and edit dimension data To build the dimension and edit data, you need to use the Dimension Editor in a Workbook. In the Designer, check the “Primary Dimension” in the toolbar. That will make the dimension appear in the Primary dimensions dropdown in the Workbook Dimension Editor. Create a new Workbook. In the Toolbox, choose the Resources tab and drag/drop the Dimension Editor onto a page. Open the Workbook and choose a dimension from the list of available ones. Adding members to a dimension using the tree editor To add a new root dimension member, click the “+” button at the top of the dimension tree To add a new member as a child of another member, choose “Add” from the action menu of an existing item (hover the item to make the menu trigger appear). Adding members to a dimension by importing from clipboard/Excel To import multiple members at the same time, click the Import button at the top of the dimension tree. This will display a table editor that lets you copy/paste data from Excel (or any other tab-delimited file). Note that you need to use Ctrl-V to paste into the table. You cannot right-click a cell in the table editor. Organizing dimension members To organize dimension members in a hierarchical structure, you can do the following: Drag/drop nodes between levels. Use the action menu which appears when you hover a node to add, delete, cut, paste, and clone members. To move multiple items, hold down the Ctrl key while selecting multiple members. Then use the “Cut” and “Paste” options in the action menu to move the items as children to a different member. To sort children of an item, open the action menu and choose one of the sorting options available. The sorting options are only available on items in the tree which have children. Edit data in table mode You can edit properties and dimension member names (including translations) using Table Edit mode. That enables users to quickly edit data for multiple dimension members using data grid functionality like drag-copy of cells and copy/paste. While in Table Edit mode, you cannot edit the tree in any way, and you cannot switch back to the Properties tab until you have saved any changes. Note * When you are in Table Edit mode, you must remember to save your changes before choosing a different dimension member from the tree, or else all your changes are lost.* Preview dimension in different languages If you want to preview how the dimension looks in different languages, use the “Globe” icon at the top of the dimension tree to switch between different languages you have enabled for the dimension. Publishing a dimension The changes you make in the Dimension Editor are not fully applied until you have published the changes. That means that you can edit the data and hierarchy, save it, and continue working until you are satisfied with the result. Before applying those changes to the actual data model used by Data Stores, Filters, Tables, etc. When you publish a dimension, it will always be published to the Solution which owns it. Additionally, you can optionally choose to publish the dimension to other Solutions and Work Process Versions as well. When you choose Solutions and/or Work Process Versions to publish to, the dimension will be published to dimensions in the target Solutions and Work Process Versions having the same name as the dimension being published. When publishing to target See Also How to's Videos Dimensions Dimension Editor Dimension Composition Create and Display Dimension Create a Time Dimension Automating Import of Data to Dimension Automating Import of the Primary Dimension"
   },
   "articles/invision/docs/directives.html": {
     "href": "articles/invision/docs/directives.html",
@@ -1216,8 +1216,8 @@
   },
   "articles/invision/docs/index.html": {
     "href": "articles/invision/docs/index.html",
-    "title": "Docs | InVision",
-    "keywords": "Docs Accesscontrol Accessibility Bestpractice Dataflowitems Dataflows Datapool Datastores Dimensions Directives Filestorage Filters Forms Homepage Javascript Macros Package Powershell Sqlreports Sqlscripts Systemsetup Systemviews Tables Tableview Timeframe Translationsloc Troubleshooting Views Webfunctions Webserviceapis Workbookmenu Workbooks Workflow Workprocess Worksheets"
+    "title": "Hello learner! | InVision",
+    "keywords": "Hello learner! Welcome to the Profitbase InVision docs! You can explore the different topics from the left side bar, or use the search bar at the top of the page. We're working hard to provide video documentation for many of our features, so please check out our videos section as well. Each text topic has links to relavant videos. We hope that our documentation will be helpful to you! If there is something you can't find answers to, please contact Support, so we can help you and improve this documentation in the future. Docs Accesscontrol Accessibility Bestpractice Dataflowitems Dataflows Datapool Datastores Dimensions Directives Filestorage Filters Forms Homepage Javascript Macros Package Powershell Sqlreports Sqlscripts Systemsetup Systemviews Tables Tableview Timeframe Translationsloc Troubleshooting Views Webfunctions Webserviceapis Workbookmenu Workbooks Workflow Workprocess Worksheets"
   },
   "articles/invision/docs/javascript.html": {
     "href": "articles/invision/docs/javascript.html",
@@ -3111,8 +3111,8 @@
   },
   "articles/invision/index.html": {
     "href": "articles/invision/index.html",
-    "title": "Invision | InVision",
-    "keywords": "Invision Changelog Docs Trainingcase"
+    "title": "Profitbase Invision | InVision",
+    "keywords": "Profitbase Invision Changelog Docs Trainingcase Intuitive web-based applications The InVision platform serves as a \"Rapid Application Development\" solution, empowering users to swiftly and effectively construct adaptable business solutions on a modern and robust technology stack. Users can leverage the platform's comprehensive standard components to develop a wide range of elements, including user interfaces and back-end functionality. This streamlined approach significantly reduces both cost and time when implementing projects. Users utilize the Profitbase InVision Designer to construct applications, which are subsequently published as web applications within the organization. These web applications require minimal or no training to operate effectively. Within a matter of minutes, users can download prebuilt business modules and install them, tailoring them to precisely meet the specific requirements of the customer. Profitbase InVision seamlessly integrates with other business systems through a RESTful Web API or direct connection to the SQL data storage, facilitating effortless connectivity. Users can expand Profitbase InVision's capabilities by constructing custom business modules using the Profitbase InVision Designer developer tool and Microsoft Visual Studio. Solution A solution contains all of the data and configuration for your application, such as business logic, data stores, workbooks, worksheets, data flows, workflows, etc. Clone Solution You can easily clone entire Solutions from the Designer start page. Cloning a Solution will also copy input data from the source Solution, permissions, and Data Flow schedules. Note that objects in cloned Solutions are not automatically added to the Data Pool after the cloning has been completed. They will, however, be added to the Data Pool if the Data Pool Compound View is rebuilt. If you don’t want this to happen, you need to edit your newly cloned Solution and remove the Data Pool configuration from the objects that you don’t want as members of the Data Pool. When creating a new Solution Creating a new Solution requires specifying whether the Solution should provide contents to Work Process blueprints or not. This change was added because it was too easy to forget to set this property after a Package had been deployed. Designer The designer is the development tool for the InVision platform needed to create or modify solutions created on the InVision platform. The designer is a desktop application that is downloaded locally to your PC or server. Workbooks Workbooks are the user interfaces for the applications created on the InVision platform."
   },
   "articles/invision/trainingcase.html": {
     "href": "articles/invision/trainingcase.html",
@@ -3121,8 +3121,8 @@
   },
   "articles/invision/trainingcase/index.html": {
     "href": "articles/invision/trainingcase/index.html",
-    "title": "Trainingcase | InVision",
-    "keywords": "Trainingcase Invisiontrainingcase Invisiontrainingcase2"
+    "title": "Hello learner! | InVision",
+    "keywords": "Hello learner! In this part of the documentation, you will find Training Cases with exercises that can help you to get to know our products and features. Trainingcase Invisiontrainingcase Invisiontrainingcase2"
   },
   "articles/invision/trainingcase/invisiontrainingcase.html": {
     "href": "articles/invision/trainingcase/invisiontrainingcase.html",
@@ -3192,7 +3192,7 @@
   "articles/invision/videos/gettingstarted/index.html": {
     "href": "articles/invision/videos/gettingstarted/index.html",
     "title": "Gettingstarted | InVision",
-    "keywords": "Gettingstarted Developertools Installation Interface"
+    "keywords": "Gettingstarted In this section you will find videos about: Developertools Installation Interface"
   },
   "articles/invision/videos/gettingstarted/installation.html": {
     "href": "articles/invision/videos/gettingstarted/installation.html",
@@ -3207,7 +3207,7 @@
   "articles/invision/videos/index.html": {
     "href": "articles/invision/videos/index.html",
     "title": "Hello learner! | InVision",
-    "keywords": "Hello learner! In this part of the documentation, you will find videos showing features and tools that you can find in Profitbase InVision. All videos contain talking bubbles. When displayed, the video will pause for 5 seconds. If the pause is too short, we suggest you simply pause the video manually. We hope that our videos will be helpful to you. For more detailed descriptions, go to our DOCS section. Videos Accesscontrol Accessibility Dataflows Datastores Dimensions Filestorage Filters Formschemas Gettingstarted Jsondataapi Localization Packages Powershell Sqlreports Sqlscripts Tables Tableview Themesandstyles Views Workbookmenu Workbooks Workprocess Worksheet"
+    "keywords": "Hello learner! In this part of the documentation, you will find videos showing features and tools that you can find in Profitbase InVision. All videos contain talking bubbles. When displayed, the video will pause for 5 seconds. If the pause is too short, we suggest you simply pause the video manually. We hope that our videos will be helpful to you. For more detailed descriptions, go to our DOCS section. Videos Gettingstarted Accesscontrol Accessibility Dataflows Datastores Dimensions Filestorage Filters Formschemas Jsondataapi Localization Packages Powershell Sqlreports Sqlscripts Tables Tableview Themesandstyles Views Workbookmenu Workbooks Workprocess Worksheet"
   },
   "articles/invision/videos/jsondataapi.html": {
     "href": "articles/invision/videos/jsondataapi.html",
@@ -3276,8 +3276,8 @@
   },
   "articles/invision/videos/workbooks/index.html": {
     "href": "articles/invision/videos/workbooks/index.html",
-    "title": "Workbooks | InVision",
-    "keywords": "Workbooks Components Interactions"
+    "title": "Basics - Creating Pages, Adding Parts and The Layout System | InVision",
+    "keywords": "Basics - Creating Pages, Adding Parts and The Layout System Documentation Subscreens in Tabs Documentation Creating Popups Documentation Workbook as a Home Page Workbooks See Also Components Interactions Documentation Workbooks Components"
   },
   "articles/invision/videos/workbooks/interactions.html": {
     "href": "articles/invision/videos/workbooks/interactions.html",
@@ -3298,5 +3298,10 @@
     "href": "index.html",
     "title": "Resources | InVision",
     "keywords": "Welcome to docs.profitbase.com, the home for Profitbase documentation for partners, developers and business professionals. Go to our video tutorials and documentation. Read about the key features of Profitbase InVision. Resources Videos Profitbase InVision Demos Training Cases Docs Directory Check out the following topics to learn how to build, run, and deploy your Solution in InVision. System Setup Access Control Accessibility Best Practice Data Flow Items Data Flows Data Pool Data Stores Dimensions Directives File Storage Filters Forms Home Page JavaScript Macros Packages PowerShell SQL Reports SQL Scripts System Views Tables Table View Time Frame Translations / Localization Troubleshooting Views Web Functions Web Service APIs Workbooks Workbook Menu Workflow Work Process Worksheets"
+  },
+  "README.html": {
+    "href": "README.html",
+    "title": "Tech Wars: Episode Docs - May the Knowledge Be with You 💫 | InVision",
+    "keywords": "Tech Wars: Episode Docs - May the Knowledge Be with You 💫 Description New documentation will be a DOCFX project. Documentation Installation TODO 🚀 Quick start DOCFX documentation Local Changes in Docfx project We work on files in the articles folder: To preview your changes you need to save them, generate .json and run the server again. Support DOCFX documentation or ask Iza Roadmap Step one: make it work with InVision DOCS 💫 removing all the differences and bugs from the previous environment. making sure all works properly enhance graphic side of it / make it sexy 🚀 mastering DOCFX 🧐 Step two: launching and integrating with old DOCS Step three: adding other Documentations to it, making it a GLOBAL DOCS platform. Step four: ensouring that everyone who creates docs knows how to work with the new environment. (making docs about docs :D) Project status Phase one - all adjustments to make it work, before launching. 🚀🚀🚀"
   }
 }

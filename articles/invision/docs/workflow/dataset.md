@@ -4,7 +4,7 @@ metaKeys: "Data Set Properties, Workbooks, name, SYS_DataSetID, flows, Workflow,
 pageIndex: 1
 ---
 
-The Data Set configuration of a [Workflow](../workflow.md) defines the data belonging to the business process. [Data Stores](../datastores.md), Settings and [Views](../views.md) in the data set are archived by executing a [Data Flow](../dataflows.md) containing the Archive Workflow Data Set Members [data flow item](../dataflowitems.md). As an example, a data flow for archiving the data set members can be added to an Action Activity as the last phase of a Workflow.  
+The Data Set configuration of a [Workflow](../workflow.md) defines the data belonging to the business process. [Data Stores](../datastores/index.md), Settings and [Views](../views.md) in the data set are archived by executing a [Data Flow](../dataflows/index.md) containing the Archive Workflow Data Set Members [data flow item](../dataflowitems/index.md). As an example, a data flow for archiving the data set members can be added to an Action Activity as the last phase of a Workflow.  
 
 Archive objects are created for every Data Store, Setting and View in the data set. The archiving process copies data from the working set to the archive by tagging each transaction with the id of the active workflow iteration.
 
