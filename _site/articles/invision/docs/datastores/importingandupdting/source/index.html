@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Source | InVision </title>
+      <title>See Also | InVision </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Source | InVision ">
+      <meta name="title" content="See Also | InVision ">
       
       <link rel="icon" href="../../../../../../images/favicon.ico">
       <link rel="stylesheet" href="../../../../../../public/docfx.min.css">
@@ -76,11 +76,17 @@
         </div>
 
         <article data-uid="">
-<h1 id="source">Source</h1>
 
+<h4 id="source">Source</h4>
+<p>A Data Store can have multiple data sources. Valid data sources are Facts, Dimensions, Settings, Views and other Data Stores. By default, all data sources except dimensions are considered fact sources unless specified otherwise by the <strong>UsageOption</strong> property of the data source.</p>
+<p>By default, transactions are imported from the fact source(s). Having multiple fact sources, data will be imported using a UNION select combining data from all facts. If dimensions are bound to your Data Store, JOIN statements are produced so that the dimensions filters the transaction set being imported from the fact sources. In addition, custom filters can be applied to all sources. Dimensions can also be used for &quot;padding&quot; data imported from the facts sources. Padding data from fact sources means that you can fill the data store with rows containing data from both the fact sources and the dimensions. The Core Set feature also lets you do a type of padding by adding rows to the Data Store by creating rows based on the contents of dimensions.
+<br></p>
+<h3 id="see-also">See Also</h3>
 <ul>
-<li><a href="datasourceproperties.html">Datasourceproperties</a></li>
-<li><a href="transforms.html">Transforms</a></li>
+<li><p><a href="datasourceproperties.html">Data Source Properties</a></p>
+</li>
+<li><p><a href="transforms.html">Transforms</a></p>
+</li>
 </ul>
 </article>
 

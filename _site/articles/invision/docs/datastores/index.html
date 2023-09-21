@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Datastores | InVision </title>
+      <title>Data Stores | InVision </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Datastores | InVision ">
+      <meta name="title" content="Data Stores | InVision ">
       
       <link rel="icon" href="../../../../images/favicon.ico">
       <link rel="stylesheet" href="../../../../public/docfx.min.css">
@@ -76,23 +76,67 @@
         </div>
 
         <article data-uid="">
-<h1 id="datastores">Datastores</h1>
+<h3 id="data-stores">Data Stores</h3>
 
+<br>
+<p>Data Stores are the primary data repositories of your Solution. Data Stores should be used for storing the master data and processing results for your business modules, while Tables should contain configuration data for business rules and utility functions.</p>
+<p>Data Stores are materialized as SQL Server tables and can be read and written to by any SQL script or process having the required permissions. Data is stored &quot;as is&quot;, so you do not need to use an InVision API to read or write data to a Data Store. This makes it easy to integrate with other tools, such as Excel or a custom Web Service, to export and import data to and from InVision.</p>
+<p>The table schema of a Data Store is configured by adding columns and setting up properties for each column. Constraints and data sources are defined by adding dimensions and fact to the setup, and binding columns from the (fact and dimension) data sources to the columns in the Data Store. By binding dimensions and facts to the table schema of a Data Store, you create a star schema.
+<br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/datastores.png" alt="img"></p>
+<br>
+<p><strong>You should consider binding dimensions to Data Stores when you want to make it easy to:</strong></p>
+<ol>
+<li><p>Enable foreign key constraints</p>
+</li>
+<li><p>Create Worksheets with dropdown editors for selecting cell values (for example Accounts, Projects, Products, etc)</p>
+</li>
+<li><p>Create Worksheets where the data set presented to the end-user should be filtered by dimension.</p>
+</li>
+<li><p>Create Worksheets where you want to ensure identities only have access to data based on identity rights.</p>
+</li>
+<li><p>Use the Core Set function to (pre)populate the Data Store.</p>
+</li>
+<li><p>Specify a mechanism used for resolving the Data Context when processing data using Data Flows in a Workflow context.</p>
+</li>
+</ol>
+<p>In addition to the core setup of the Data Store where you define the schema and how data is loaded and updated to the store, you can specify a range of features and behaviors which enable different kinds of applications of the Data Store. The features and behaviors include Rollover, Periodic Input, Core Set, and Transaction Pipeline.</p>
+<br>
+<h3 id="see-also">See Also</h3>
 <ul>
-<li><a href="changetracking.html">Changetracking</a></li>
-<li><a href="coreset.html">Coreset</a></li>
-<li><a href="creatingschema.html">Creatingschema</a></li>
-<li><a href="dataupdateconfig.html">Dataupdateconfig</a></li>
-<li><a href="exportingdata.html">Exportingdata</a></li>
-<li><a href="howto.html">Howto</a></li>
-<li><a href="importingandupdting.html">Importingandupdting</a></li>
-<li><a href="periodicimput.html">Periodicimput</a></li>
-<li><a href="rollover.html">Rollover</a></li>
-<li><a href="sourcemapping.html">Sourcemapping</a></li>
-<li><a href="timeframe.html">Timeframe</a></li>
-<li><a href="timeframemeasurecolumns.html">Timeframemeasurecolumns</a></li>
-<li><a href="tracingcolumns.html">Tracingcolumns</a></li>
-<li><a href="transactionpipeline.html">Transactionpipeline</a></li>
+<li><p><a href="howto/index.html">How to's</a></p>
+</li>
+<li><p><a href="creatingschema.html">Creating Schema</a></p>
+</li>
+<li><p><a href="sourcemapping.html">Source Mapping</a></p>
+</li>
+<li><p><a href="importingandupdting/index.html">Importing and Updating Data from Data Sources</a></p>
+</li>
+<li><p><a href="dataupdateconfig.html">Data Update Configuration</a></p>
+</li>
+<li><p><a href="exportingdata.html">Exporting Data from InVision</a></p>
+</li>
+<li><p><a href="timeframe.html">Time Frame</a></p>
+</li>
+<li><p><a href="coreset.html">Core Set</a></p>
+</li>
+<li><p><a href="rollover.html">Rollover</a></p>
+</li>
+<li><p><a href="periodicimput.html">Periodic Input</a></p>
+</li>
+<li><p><a href="timeframemeasurecolumns.html">Time Frame Measure Columns</a></p>
+</li>
+<li><p><a href="changetracking.html">Change Tracking</a></p>
+</li>
+<li><p><a href="transactionpipeline.html">Transaction Pipeline</a></p>
+</li>
+<li><p><a href="tracingcolumns.html">Tracing Columns</a></p>
+</li>
+</ul>
+<br>
+<h3 id="videos">Videos</h3>
+<ul>
+<li><a href="../../videos/datastores.html">Data Stores</a></li>
 </ul>
 </article>
 

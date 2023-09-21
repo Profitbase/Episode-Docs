@@ -112,12 +112,8 @@
       - name: Datapool
         href: articles/invision/docs/datapool.md
       - name: Datastores
-        href: articles/invision/docs/datastores.md
-      - name: Datastores
         href: articles/invision/docs/datastores/index.md
         items:
-        - name: Datastores
-          href: articles/invision/docs/datastores/index.md
         - name: Changetracking
           href: articles/invision/docs/datastores/changetracking.md
         - name: Coreset
@@ -129,12 +125,8 @@
         - name: Exportingdata
           href: articles/invision/docs/datastores/exportingdata.md
         - name: Howto
-          href: articles/invision/docs/datastores/howto.md
-        - name: Howto
           href: articles/invision/docs/datastores/howto/index.md
           items:
-          - name: Howto
-            href: articles/invision/docs/datastores/howto/index.md
           - name: Changetracking
             href: articles/invision/docs/datastores/howto/changetracking.md
           - name: Rollover
@@ -144,32 +136,20 @@
           - name: Timeframe
             href: articles/invision/docs/datastores/howto/timeframe.md
         - name: Importingandupdting
-          href: articles/invision/docs/datastores/importingandupdting.md
-        - name: Importingandupdting
           href: articles/invision/docs/datastores/importingandupdting/index.md
           items:
-          - name: Importingandupdting
-            href: articles/invision/docs/datastores/importingandupdting/index.md
           - name: Bindingsourcecoumns
             href: articles/invision/docs/datastores/importingandupdting/bindingsourcecoumns.md
           - name: Customization
             href: articles/invision/docs/datastores/importingandupdting/customization.md
           - name: Source
-            href: articles/invision/docs/datastores/importingandupdting/source.md
-          - name: Source
             href: articles/invision/docs/datastores/importingandupdting/source/index.md
             items:
-            - name: Source
-              href: articles/invision/docs/datastores/importingandupdting/source/index.md
             - name: Datasourceproperties
               href: articles/invision/docs/datastores/importingandupdting/source/datasourceproperties.md
             - name: Transforms
-              href: articles/invision/docs/datastores/importingandupdting/source/transforms.md
-            - name: Transforms
               href: articles/invision/docs/datastores/importingandupdting/source/transforms/index.md
               items:
-              - name: Transforms
-                href: articles/invision/docs/datastores/importingandupdting/source/transforms/index.md
               - name: Aggregate
                 href: articles/invision/docs/datastores/importingandupdting/source/transforms/aggregate.md
               - name: Customsql
@@ -191,19 +171,11 @@
         - name: Tracingcolumns
           href: articles/invision/docs/datastores/tracingcolumns.md
         - name: Transactionpipeline
-          href: articles/invision/docs/datastores/transactionpipeline.md
-        - name: Transactionpipeline
           href: articles/invision/docs/datastores/transactionpipeline/index.md
           items:
-          - name: Transactionpipeline
-            href: articles/invision/docs/datastores/transactionpipeline/index.md
-          - name: Celladapter
-            href: articles/invision/docs/datastores/transactionpipeline/celladapter.md
           - name: Celladapter
             href: articles/invision/docs/datastores/transactionpipeline/celladapter/index.md
             items:
-            - name: Celladapter
-              href: articles/invision/docs/datastores/transactionpipeline/celladapter/index.md
             - name: Inputconfig
               href: articles/invision/docs/datastores/transactionpipeline/celladapter/inputconfig.md
             - name: Output
@@ -213,12 +185,8 @@
           - name: Conditionexpressions
             href: articles/invision/docs/datastores/transactionpipeline/conditionexpressions.md
           - name: Distributer
-            href: articles/invision/docs/datastores/transactionpipeline/distributer.md
-          - name: Distributer
             href: articles/invision/docs/datastores/transactionpipeline/distributer/index.md
             items:
-            - name: Distributer
-              href: articles/invision/docs/datastores/transactionpipeline/distributer/index.md
             - name: Inputconfig
               href: articles/invision/docs/datastores/transactionpipeline/distributer/inputconfig.md
             - name: Output
@@ -226,12 +194,8 @@
             - name: Ruleset
               href: articles/invision/docs/datastores/transactionpipeline/distributer/ruleset.md
           - name: Spawner
-            href: articles/invision/docs/datastores/transactionpipeline/spawner.md
-          - name: Spawner
             href: articles/invision/docs/datastores/transactionpipeline/spawner/index.md
             items:
-            - name: Spawner
-              href: articles/invision/docs/datastores/transactionpipeline/spawner/index.md
             - name: Inputconfig
               href: articles/invision/docs/datastores/transactionpipeline/spawner/inputconfig.md
             - name: Output
@@ -239,23 +203,15 @@
             - name: Ruleset
               href: articles/invision/docs/datastores/transactionpipeline/spawner/ruleset.md
       - name: Dimensions
-        href: articles/invision/docs/dimensions.md
-      - name: Dimensions
         href: articles/invision/docs/dimensions/index.md
         items:
-        - name: Dimensions
-          href: articles/invision/docs/dimensions/index.md
         - name: Dimautomating
           href: articles/invision/docs/dimensions/dimautomating.md
         - name: Dimcomposition
           href: articles/invision/docs/dimensions/dimcomposition.md
         - name: Howto
-          href: articles/invision/docs/dimensions/howto.md
-        - name: Howto
           href: articles/invision/docs/dimensions/howto/index.md
           items:
-          - name: Howto
-            href: articles/invision/docs/dimensions/howto/index.md
           - name: Autocopy
             href: articles/invision/docs/dimensions/howto/autocopy.md
           - name: Autoimport

@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Celladapter | InVision </title>
+      <title> | InVision </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Celladapter | InVision ">
+      <meta name="title" content=" | InVision ">
       
       <link rel="icon" href="../../../../../../images/favicon.ico">
       <link rel="stylesheet" href="../../../../../../public/docfx.min.css">
@@ -76,12 +76,23 @@
         </div>
 
         <article data-uid="">
-<h1 id="celladapter">Celladapter</h1>
 
+<h4 id="cell-adapter">Cell adapter</h4>
+<p>The Cell Adapter component assigns values from the Cell Adapter <a href="ruleset.html">Ruleset</a> table to each row matching the filter criteria of the row(s) being processed in the pipeline.</p>
+<p>The Cell Adapter will generate one row for each matched Ruleset row. The Cell Adapter runs as the last component of a Transaction Pipeline process, so if any transactions are produced by the Distributer of Spawner components, the Cell Adapter will not execute at all.</p>
+<p>Both the Distributer and Spawner components support setting up cell adaption rules, so the Cell Adapter should be used when the features provided by the Distributer and Spawner are not required.
+<br></p>
+<p><strong>Ruleset</strong></p>
+<p>Specifies the Setting table acting as the Cell Adapter Ruleset.</p>
+<br>
+<h4 id="see-also">See Also</h4>
 <ul>
-<li><a href="inputconfig.html">Inputconfig</a></li>
-<li><a href="output.html">Output</a></li>
-<li><a href="ruleset.html">Ruleset</a></li>
+<li><p><a href="inputconfig.html">Input Configuration</a></p>
+</li>
+<li><p><a href="ruleset.html">Ruleset</a></p>
+</li>
+<li><p><a href="output.html">Output</a></p>
+</li>
 </ul>
 </article>
 
