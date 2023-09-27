@@ -9,11 +9,11 @@ pageIndex: 3
 
 ### Context
 
-By setting the Context you connect the File Storage to the [Filter](../filters.md). You can have multiple filters attached to the File Storage. 
+By setting the Context you connect the File Storage to the [Filter](../filters/index.md). You can have multiple filters attached to the File Storage. 
 <br/>
 
 **Key** ``<Context item>``
->Set the Context by binding it to the [Data Id Column](../filters.md) of the [Filter](../filters.md).
+>Set the Context by binding it to the [Data Id Column](../filters/index.md) of the [Filter](../filters/index.md).
 
 **Type**
 >Choose the type of data, this parameter can't be changed later. 

@@ -125,7 +125,7 @@ ResetHeader(); // Resets the header back to the default value
 
 
 ### See Also
-* [More about Filters](../../filters.md)
+* [More about Filters](../../filters/index.md)
 * [Filtering Tables](../../tables/filters.md)
 * [Filtering Worksheets](../../worksheets/filters.md)
 

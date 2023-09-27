@@ -138,7 +138,7 @@ Using this simple example, we want to show you how the Invision LOW CODE can be 
 
 <br/>
 
-> In this section you will find instruction on how to create a [Filter](../docs/filters.md).  
+> In this section you will find instruction on how to create a [Filter](../docs/filters/index.md).  
 > See also [Filter Videos](../videos/filters.md), and [step by step documentation](../docs/filters/howto.md).
 
 <br/>
