@@ -7,7 +7,7 @@ pageIndex: 31
 
 ### Workbooks
 
-Workbooks are the end-user interfaces of InVision. A Workbook consists of one or multiple pages, and each page contains one or more [components](workbooks/components.md), for example, [Worksheets](worksheets.md), [Reports](workbooks/components/reports.md), [Filters](filters.md), [Buttons](workbooks/components/uielements/button.md), [Labels](workbooks/components/uielements/label.md), etc.
+Workbooks are the end-user interfaces of InVision. A Workbook consists of one or multiple pages, and each page contains one or more [components](workbooks/components.md), for example, [Worksheets](worksheets.md), [Reports](workbooks/components/reports.md), [Filters](filters/index.md), [Buttons](workbooks/components/uielements/button.md), [Labels](workbooks/components/uielements/label.md), etc.
 
 A Workbook also has left, top, and right sections which can be used for hosting components that interact with components across many pages, for example, a Save-button or global filters.
 

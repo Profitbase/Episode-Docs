@@ -229,19 +229,11 @@
           - name: Transl
             href: articles/invision/docs/dimensions/howto/transl.md
       - name: Directives
-        href: articles/invision/docs/directives.md
-      - name: Directives
         href: articles/invision/docs/directives/index.md
         items:
-        - name: Directives
-          href: articles/invision/docs/directives/index.md
-        - name: Csharpdirectives
-          href: articles/invision/docs/directives/csharpdirectives.md
         - name: Csharpdirectives
           href: articles/invision/docs/directives/csharpdirectives/index.md
           items:
-          - name: Csharpdirectives
-            href: articles/invision/docs/directives/csharpdirectives/index.md
           - name: Contextdir
             href: articles/invision/docs/directives/csharpdirectives/contextdir.md
           - name: Directive
@@ -249,12 +241,8 @@
           - name: Localize
             href: articles/invision/docs/directives/csharpdirectives/localize.md
         - name: Howto
-          href: articles/invision/docs/directives/howto.md
-        - name: Howto
           href: articles/invision/docs/directives/howto/index.md
           items:
-          - name: Howto
-            href: articles/invision/docs/directives/howto/index.md
           - name: Localize
             href: articles/invision/docs/directives/howto/localize.md
           - name: Stepname
@@ -264,23 +252,15 @@
         - name: Standarddirectives
           href: articles/invision/docs/directives/standarddirectives.md
       - name: Filestorage
-        href: articles/invision/docs/filestorage.md
-      - name: Filestorage
         href: articles/invision/docs/filestorage/index.md
         items:
-        - name: Filestorage
-          href: articles/invision/docs/filestorage/index.md
         - name: Context
           href: articles/invision/docs/filestorage/context.md
         - name: Display modes
           href: articles/invision/docs/filestorage/display-modes.md
         - name: Howto
-          href: articles/invision/docs/filestorage/howto.md
-        - name: Howto
           href: articles/invision/docs/filestorage/howto/index.md
           items:
-          - name: Howto
-            href: articles/invision/docs/filestorage/howto/index.md
           - name: Creatingfilestorage
             href: articles/invision/docs/filestorage/howto/creatingfilestorage.md
           - name: Fileclickaction
@@ -292,19 +272,11 @@
         - name: Setup
           href: articles/invision/docs/filestorage/setup.md
       - name: Filters
-        href: articles/invision/docs/filters.md
-      - name: Filters
         href: articles/invision/docs/filters/index.md
         items:
-        - name: Filters
-          href: articles/invision/docs/filters/index.md
-        - name: Howto
-          href: articles/invision/docs/filters/howto.md
         - name: Howto
           href: articles/invision/docs/filters/howto/index.md
           items:
-          - name: Howto
-            href: articles/invision/docs/filters/howto/index.md
           - name: Filteringtable
             href: articles/invision/docs/filters/howto/filteringtable.md
           - name: Filteringworksheet
@@ -316,19 +288,11 @@
           - name: Slicing
             href: articles/invision/docs/filters/howto/slicing.md
       - name: Forms
-        href: articles/invision/docs/forms.md
-      - name: Forms
         href: articles/invision/docs/forms/index.md
         items:
-        - name: Forms
-          href: articles/invision/docs/forms/index.md
         - name: Formelements
           href: articles/invision/docs/forms/formelements.md
-        - name: Formelements
-          href: articles/invision/docs/forms/formelements/index.md
           items:
-          - name: Formelements
-            href: articles/invision/docs/forms/formelements/index.md
           - name: Datepicker
             href: articles/invision/docs/forms/formelements/datepicker.md
           - name: Dropdown
@@ -339,18 +303,10 @@
             href: articles/invision/docs/forms/formelements/textbox.md
         - name: Formschemas
           href: articles/invision/docs/forms/formschemas.md
-        - name: Formschemas
-          href: articles/invision/docs/forms/formschemas/index.md
           items:
-          - name: Formschemas
-            href: articles/invision/docs/forms/formschemas/index.md
           - name: Apis
             href: articles/invision/docs/forms/formschemas/apis.md
-          - name: Apis
-            href: articles/invision/docs/forms/formschemas/apis/index.md
             items:
-            - name: Apis
-              href: articles/invision/docs/forms/formschemas/apis/index.md
             - name: ControlproxyAPI
               href: articles/invision/docs/forms/formschemas/apis/controlproxyAPI.md
             - name: DatabindingsAPI
@@ -365,11 +321,7 @@
               href: articles/invision/docs/forms/formschemas/apis/webfunctionsAPI.md
           - name: Controls
             href: articles/invision/docs/forms/formschemas/controls.md
-          - name: Controls
-            href: articles/invision/docs/forms/formschemas/controls/index.md
             items:
-            - name: Controls
-              href: articles/invision/docs/forms/formschemas/controls/index.md
             - name: Button
               href: articles/invision/docs/forms/formschemas/controls/button.md
             - name: Camera
@@ -398,11 +350,7 @@
               href: articles/invision/docs/forms/formschemas/controls/layout.md
             - name: Listbox
               href: articles/invision/docs/forms/formschemas/controls/listbox.md
-            - name: Listbox
-              href: articles/invision/docs/forms/formschemas/controls/listbox/index.md
               items:
-              - name: Listbox
-                href: articles/invision/docs/forms/formschemas/controls/listbox/index.md
               - name: Renderingitems
                 href: articles/invision/docs/forms/formschemas/controls/listbox/renderingitems.md
             - name: Richtexteditor
@@ -421,11 +369,7 @@
               href: articles/invision/docs/forms/formschemas/controls/treeview.md
           - name: Data
             href: articles/invision/docs/forms/formschemas/data.md
-          - name: Data
-            href: articles/invision/docs/forms/formschemas/data/index.md
             items:
-            - name: Data
-              href: articles/invision/docs/forms/formschemas/data/index.md
             - name: Dimensionmodels
               href: articles/invision/docs/forms/formschemas/data/dimensionmodels.md
             - name: Lists
@@ -438,20 +382,12 @@
             href: articles/invision/docs/forms/formschemas/eventhandlers.md
           - name: Functions
             href: articles/invision/docs/forms/formschemas/functions.md
-          - name: Functions
-            href: articles/invision/docs/forms/formschemas/functions/index.md
             items:
-            - name: Functions
-              href: articles/invision/docs/forms/formschemas/functions/index.md
             - name: Callingfunctions
               href: articles/invision/docs/forms/formschemas/functions/callingfunctions.md
           - name: Howto
             href: articles/invision/docs/forms/formschemas/howto.md
-          - name: Howto
-            href: articles/invision/docs/forms/formschemas/howto/index.md
             items:
-            - name: Howto
-              href: articles/invision/docs/forms/formschemas/howto/index.md
             - name: Controls
               href: articles/invision/docs/forms/formschemas/howto/controls.md
             - name: Dropdown
@@ -470,58 +406,34 @@
             href: articles/invision/docs/forms/formschemas/usingXMLedit.md
       - name: Homepage
         href: articles/invision/docs/homepage.md
-      - name: Homepage
-        href: articles/invision/docs/homepage/index.md
         items:
-        - name: Homepage
-          href: articles/invision/docs/homepage/index.md
         - name: Howto
           href: articles/invision/docs/homepage/howto.md
-        - name: Howto
-          href: articles/invision/docs/homepage/howto/index.md
           items:
-          - name: Howto
-            href: articles/invision/docs/homepage/howto/index.md
           - name: Homepage
             href: articles/invision/docs/homepage/howto/homepage.md
       - name: Javascript
         href: articles/invision/docs/javascript.md
       - name: Macros
         href: articles/invision/docs/macros.md
-      - name: Macros
-        href: articles/invision/docs/macros/index.md
         items:
-        - name: Macros
-          href: articles/invision/docs/macros/index.md
         - name: Howto
           href: articles/invision/docs/macros/howto.md
-        - name: Howto
-          href: articles/invision/docs/macros/howto/index.md
           items:
-          - name: Howto
-            href: articles/invision/docs/macros/howto/index.md
           - name: Usingmacrostbv
             href: articles/invision/docs/macros/howto/usingmacrostbv.md
         - name: Usingmacros
           href: articles/invision/docs/macros/usingmacros.md
         - name: Writingmacros
           href: articles/invision/docs/macros/writingmacros.md
-        - name: Writingmacros
-          href: articles/invision/docs/macros/writingmacros/index.md
           items:
-          - name: Writingmacros
-            href: articles/invision/docs/macros/writingmacros/index.md
           - name: Accessingarguments
             href: articles/invision/docs/macros/writingmacros/accessingarguments.md
           - name: Functionmacros
             href: articles/invision/docs/macros/writingmacros/functionmacros.md
           - name: Macroexpansionprovider
             href: articles/invision/docs/macros/writingmacros/macroexpansionprovider.md
-          - name: Macroexpansionprovider
-            href: articles/invision/docs/macros/writingmacros/macroexpansionprovider/index.md
             items:
-            - name: Macroexpansionprovider
-              href: articles/invision/docs/macros/writingmacros/macroexpansionprovider/index.md
             - name: Accesscontrolservice
               href: articles/invision/docs/macros/writingmacros/macroexpansionprovider/accesscontrolservice.md
             - name: Context
@@ -532,27 +444,15 @@
               href: articles/invision/docs/macros/writingmacros/macroexpansionprovider/sqlcommandservice.md
       - name: Package
         href: articles/invision/docs/package.md
-      - name: Package
-        href: articles/invision/docs/package/index.md
         items:
-        - name: Package
-          href: articles/invision/docs/package/index.md
         - name: Deploy package
           href: articles/invision/docs/package/deploy-package.md
         - name: Develop package
           href: articles/invision/docs/package/develop-package.md
-        - name: Develop package
-          href: articles/invision/docs/package/develop-package/index.md
           items:
-          - name: Develop package
-            href: articles/invision/docs/package/develop-package/index.md
           - name: Create package
             href: articles/invision/docs/package/develop-package/create-package.md
-          - name: Create package
-            href: articles/invision/docs/package/develop-package/create-package/index.md
             items:
-            - name: Create package
-              href: articles/invision/docs/package/develop-package/create-package/index.md
             - name: Define package
               href: articles/invision/docs/package/develop-package/create-package/define-package.md
             - name: Export package
@@ -563,29 +463,17 @@
               href: articles/invision/docs/package/develop-package/create-package/publ-packages.md
           - name: Create package upgrade
             href: articles/invision/docs/package/develop-package/create-package-upgrade.md
-          - name: Create package upgrade
-            href: articles/invision/docs/package/develop-package/create-package-upgrade/index.md
             items:
-            - name: Create package upgrade
-              href: articles/invision/docs/package/develop-package/create-package-upgrade/index.md
             - name: Create package upgrade using vs
               href: articles/invision/docs/package/develop-package/create-package-upgrade/create-package-upgrade-using-vs.md
-            - name: Create package upgrade using vs
-              href: articles/invision/docs/package/develop-package/create-package-upgrade/create-package-upgrade-using-vs/index.md
               items:
-              - name: Create package upgrade using vs
-                href: articles/invision/docs/package/develop-package/create-package-upgrade/create-package-upgrade-using-vs/index.md
               - name: Upgrade stepbystep
                 href: articles/invision/docs/package/develop-package/create-package-upgrade/create-package-upgrade-using-vs/upgrade-stepbystep.md
             - name: Pub pack upgrade
               href: articles/invision/docs/package/develop-package/create-package-upgrade/pub-pack-upgrade.md
         - name: Howto
           href: articles/invision/docs/package/howto.md
-        - name: Howto
-          href: articles/invision/docs/package/howto/index.md
           items:
-          - name: Howto
-            href: articles/invision/docs/package/howto/index.md
           - name: Create
             href: articles/invision/docs/package/howto/create.md
           - name: Deploy
@@ -596,29 +484,17 @@
             href: articles/invision/docs/package/howto/upgradepackmanagement.md
         - name: Upgrade package
           href: articles/invision/docs/package/upgrade-package.md
-        - name: Upgrade package
-          href: articles/invision/docs/package/upgrade-package/index.md
           items:
-          - name: Upgrade package
-            href: articles/invision/docs/package/upgrade-package/index.md
           - name: Production upgrade
             href: articles/invision/docs/package/upgrade-package/production-upgrade.md
       - name: Powershell
         href: articles/invision/docs/powershell.md
-      - name: Powershell
-        href: articles/invision/docs/powershell/index.md
         items:
-        - name: Powershell
-          href: articles/invision/docs/powershell/index.md
         - name: Commands
           href: articles/invision/docs/powershell/commands.md
         - name: Functiondoc
           href: articles/invision/docs/powershell/functiondoc.md
-        - name: Functiondoc
-          href: articles/invision/docs/powershell/functiondoc/index.md
           items:
-          - name: Functiondoc
-            href: articles/invision/docs/powershell/functiondoc/index.md
           - name: Function1
             href: articles/invision/docs/powershell/functiondoc/function1.md
           - name: Function2
@@ -635,11 +511,7 @@
             href: articles/invision/docs/powershell/functiondoc/function7.md
         - name: Howto
           href: articles/invision/docs/powershell/howto.md
-        - name: Howto
-          href: articles/invision/docs/powershell/howto/index.md
           items:
-          - name: Howto
-            href: articles/invision/docs/powershell/howto/index.md
           - name: Filenames
             href: articles/invision/docs/powershell/howto/filenames.md
           - name: Filenamesautom
@@ -654,22 +526,14 @@
           href: articles/invision/docs/powershell/referencedoc.md
       - name: Sqlreports
         href: articles/invision/docs/sqlreports.md
-      - name: Sqlreports
-        href: articles/invision/docs/sqlreports/index.md
         items:
-        - name: Sqlreports
-          href: articles/invision/docs/sqlreports/index.md
         - name: Chartformatting
           href: articles/invision/docs/sqlreports/chartformatting.md
         - name: Dataqueries
           href: articles/invision/docs/sqlreports/dataqueries.md
         - name: Howto
           href: articles/invision/docs/sqlreports/howto.md
-        - name: Howto
-          href: articles/invision/docs/sqlreports/howto/index.md
           items:
-          - name: Howto
-            href: articles/invision/docs/sqlreports/howto/index.md
           - name: Basics
             href: articles/invision/docs/sqlreports/howto/basics.md
           - name: Charts
@@ -678,18 +542,10 @@
             href: articles/invision/docs/sqlreports/howto/interactionevents.md
       - name: Sqlscripts
         href: articles/invision/docs/sqlscripts.md
-      - name: Sqlscripts
-        href: articles/invision/docs/sqlscripts/index.md
         items:
-        - name: Sqlscripts
-          href: articles/invision/docs/sqlscripts/index.md
         - name: Howto
           href: articles/invision/docs/sqlscripts/howto.md
-        - name: Howto
-          href: articles/invision/docs/sqlscripts/howto/index.md
           items:
-          - name: Howto
-            href: articles/invision/docs/sqlscripts/howto/index.md
           - name: RunSqlScriptFromWorkbook
             href: articles/invision/docs/sqlscripts/howto/runSqlScriptFromWorkbook.md
           - name: Setup
@@ -698,18 +554,10 @@
             href: articles/invision/docs/sqlscripts/howto/sqlscriptservice.md
       - name: Systemsetup
         href: articles/invision/docs/systemsetup.md
-      - name: Systemsetup
-        href: articles/invision/docs/systemsetup/index.md
         items:
-        - name: Systemsetup
-          href: articles/invision/docs/systemsetup/index.md
         - name: Howto
           href: articles/invision/docs/systemsetup/howto.md
-        - name: Howto
-          href: articles/invision/docs/systemsetup/howto/index.md
           items:
-          - name: Howto
-            href: articles/invision/docs/systemsetup/howto/index.md
           - name: Ad authentication
             href: articles/invision/docs/systemsetup/howto/ad-authentication.md
           - name: Azure registration
@@ -724,29 +572,17 @@
             href: articles/invision/docs/systemsetup/howto/win-authentication.md
         - name: Installation
           href: articles/invision/docs/systemsetup/installation.md
-        - name: Installation
-          href: articles/invision/docs/systemsetup/installation/index.md
           items:
-          - name: Installation
-            href: articles/invision/docs/systemsetup/installation/index.md
           - name: Azureactdirauthent
             href: articles/invision/docs/systemsetup/installation/azureactdirauthent.md
           - name: Ibmsecurity
             href: articles/invision/docs/systemsetup/installation/ibmsecurity.md
-          - name: Ibmsecurity
-            href: articles/invision/docs/systemsetup/installation/ibmsecurity/index.md
             items:
-            - name: Ibmsecurity
-              href: articles/invision/docs/systemsetup/installation/ibmsecurity/index.md
             - name: Configure webb app backend
               href: articles/invision/docs/systemsetup/installation/ibmsecurity/configure-webb-app-backend.md
           - name: Onpreminstallation
             href: articles/invision/docs/systemsetup/installation/onpreminstallation.md
-          - name: Onpreminstallation
-            href: articles/invision/docs/systemsetup/installation/onpreminstallation/index.md
             items:
-            - name: Onpreminstallation
-              href: articles/invision/docs/systemsetup/installation/onpreminstallation/index.md
             - name: Portsfirewall
               href: articles/invision/docs/systemsetup/installation/onpreminstallation/portsfirewall.md
             - name: Serviceuseraccounts
@@ -775,18 +611,10 @@
         href: articles/invision/docs/systemviews.md
       - name: Tables
         href: articles/invision/docs/tables.md
-      - name: Tables
-        href: articles/invision/docs/tables/index.md
         items:
-        - name: Tables
-          href: articles/invision/docs/tables/index.md
         - name: Calculations
           href: articles/invision/docs/tables/calculations.md
-        - name: Calculations
-          href: articles/invision/docs/tables/calculations/index.md
           items:
-          - name: Calculations
-            href: articles/invision/docs/tables/calculations/index.md
           - name: Appvariables
             href: articles/invision/docs/tables/calculations/appvariables.md
           - name: Arithmeticop
@@ -833,11 +661,7 @@
           href: articles/invision/docs/tables/colcaptions.md
         - name: Columnproperties
           href: articles/invision/docs/tables/columnproperties.md
-        - name: Columnproperties
-          href: articles/invision/docs/tables/columnproperties/index.md
           items:
-          - name: Columnproperties
-            href: articles/invision/docs/tables/columnproperties/index.md
           - name: Basiccolproperties
             href: articles/invision/docs/tables/columnproperties/basiccolproperties.md
           - name: Caption
@@ -864,11 +688,7 @@
           href: articles/invision/docs/tables/filters.md
         - name: Howto
           href: articles/invision/docs/tables/howto.md
-        - name: Howto
-          href: articles/invision/docs/tables/howto/index.md
           items:
-          - name: Howto
-            href: articles/invision/docs/tables/howto/index.md
           - name: Cellvalidation
             href: articles/invision/docs/tables/howto/cellvalidation.md
           - name: Creatingtable
@@ -897,18 +717,10 @@
           href: articles/invision/docs/tables/stackedcolhead.md
       - name: Tableview
         href: articles/invision/docs/tableview.md
-      - name: Tableview
-        href: articles/invision/docs/tableview/index.md
         items:
-        - name: Tableview
-          href: articles/invision/docs/tableview/index.md
         - name: Howto
           href: articles/invision/docs/tableview/howto.md
-        - name: Howto
-          href: articles/invision/docs/tableview/howto/index.md
           items:
-          - name: Howto
-            href: articles/invision/docs/tableview/howto/index.md
           - name: Creatingtableview
             href: articles/invision/docs/tableview/howto/creatingtableview.md
           - name: Filter
@@ -923,18 +735,10 @@
         href: articles/invision/docs/timeframe.md
       - name: Translationsloc
         href: articles/invision/docs/translationsloc.md
-      - name: Translationsloc
-        href: articles/invision/docs/translationsloc/index.md
         items:
-        - name: Translationsloc
-          href: articles/invision/docs/translationsloc/index.md
         - name: Howto
           href: articles/invision/docs/translationsloc/howto.md
-        - name: Howto
-          href: articles/invision/docs/translationsloc/howto/index.md
           items:
-          - name: Howto
-            href: articles/invision/docs/translationsloc/howto/index.md
           - name: Setup
             href: articles/invision/docs/translationsloc/howto/setup.md
       - name: Troubleshooting
@@ -943,11 +747,7 @@
         href: articles/invision/docs/views.md
       - name: Webfunctions
         href: articles/invision/docs/webfunctions.md
-      - name: Webfunctions
-        href: articles/invision/docs/webfunctions/index.md
         items:
-        - name: Webfunctions
-          href: articles/invision/docs/webfunctions/index.md
         - name: Calling
           href: articles/invision/docs/webfunctions/calling.md
         - name: Run from forms
@@ -964,11 +764,7 @@
           href: articles/invision/docs/webfunctions/usesqlcommands.md
       - name: Webserviceapis
         href: articles/invision/docs/webserviceapis.md
-      - name: Webserviceapis
-        href: articles/invision/docs/webserviceapis/index.md
         items:
-        - name: Webserviceapis
-          href: articles/invision/docs/webserviceapis/index.md
         - name: Dbwebapi
           href: articles/invision/docs/webserviceapis/dbwebapi.md
         - name: Jsondataapi
@@ -977,25 +773,13 @@
         href: articles/invision/docs/workbookmenu.md
       - name: Workbooks
         href: articles/invision/docs/workbooks.md
-      - name: Workbooks
-        href: articles/invision/docs/workbooks/index.md
         items:
-        - name: Workbooks
-          href: articles/invision/docs/workbooks/index.md
         - name: Components
           href: articles/invision/docs/workbooks/components.md
-        - name: Components
-          href: articles/invision/docs/workbooks/components/index.md
           items:
-          - name: Components
-            href: articles/invision/docs/workbooks/components/index.md
           - name: Accesscontrol
             href: articles/invision/docs/workbooks/components/accesscontrol.md
-          - name: Accesscontrol
-            href: articles/invision/docs/workbooks/components/accesscontrol/index.md
             items:
-            - name: Accesscontrol
-              href: articles/invision/docs/workbooks/components/accesscontrol/index.md
             - name: Accessgroupman
               href: articles/invision/docs/workbooks/components/accesscontrol/accessgroupman.md
             - name: Dataperm
@@ -1016,11 +800,7 @@
             href: articles/invision/docs/workbooks/components/filestorage.md
           - name: Filter
             href: articles/invision/docs/workbooks/components/filter.md
-          - name: Filter
-            href: articles/invision/docs/workbooks/components/filter/index.md
             items:
-            - name: Filter
-              href: articles/invision/docs/workbooks/components/filter/index.md
             - name: Filterslicing
               href: articles/invision/docs/workbooks/components/filter/filterslicing.md
           - name: Formelements
@@ -1041,11 +821,7 @@
             href: articles/invision/docs/workbooks/components/tableview.md
           - name: Uielements
             href: articles/invision/docs/workbooks/components/uielements.md
-          - name: Uielements
-            href: articles/invision/docs/workbooks/components/uielements/index.md
             items:
-            - name: Uielements
-              href: articles/invision/docs/workbooks/components/uielements/index.md
             - name: Button
               href: articles/invision/docs/workbooks/components/uielements/button.md
             - name: Fileupload
@@ -1066,11 +842,7 @@
             href: articles/invision/docs/workbooks/components/workprocesseditor.md
         - name: Howto
           href: articles/invision/docs/workbooks/howto.md
-        - name: Howto
-          href: articles/invision/docs/workbooks/howto/index.md
           items:
-          - name: Howto
-            href: articles/invision/docs/workbooks/howto/index.md
           - name: Components
             href: articles/invision/docs/workbooks/howto/components.md
           - name: Componentstacking
@@ -1097,22 +869,14 @@
           href: articles/invision/docs/workbooks/pages.md
         - name: Programmingmodel
           href: articles/invision/docs/workbooks/programmingmodel.md
-        - name: Programmingmodel
-          href: articles/invision/docs/workbooks/programmingmodel/index.md
           items:
-          - name: Programmingmodel
-            href: articles/invision/docs/workbooks/programmingmodel/index.md
           - name: Componentstacking
             href: articles/invision/docs/workbooks/programmingmodel/componentstacking.md
           - name: Initializing
             href: articles/invision/docs/workbooks/programmingmodel/initializing.md
           - name: Instructions
             href: articles/invision/docs/workbooks/programmingmodel/instructions.md
-          - name: Instructions
-            href: articles/invision/docs/workbooks/programmingmodel/instructions/index.md
             items:
-            - name: Instructions
-              href: articles/invision/docs/workbooks/programmingmodel/instructions/index.md
             - name: Addheader
               href: articles/invision/docs/workbooks/programmingmodel/instructions/addheader.md
             - name: Configinvocation
@@ -1191,11 +955,7 @@
               href: articles/invision/docs/workbooks/programmingmodel/instructions/var.md
           - name: Interactionmodel
             href: articles/invision/docs/workbooks/programmingmodel/interactionmodel.md
-          - name: Interactionmodel
-            href: articles/invision/docs/workbooks/programmingmodel/interactionmodel/index.md
             items:
-            - name: Interactionmodel
-              href: articles/invision/docs/workbooks/programmingmodel/interactionmodel/index.md
             - name: Sendingmsgbetween
               href: articles/invision/docs/workbooks/programmingmodel/interactionmodel/sendingmsgbetween.md
             - name: Workbookactions
@@ -1210,11 +970,7 @@
           href: articles/invision/docs/workbooks/themesandstyles.md
       - name: Workflow
         href: articles/invision/docs/workflow.md
-      - name: Workflow
-        href: articles/invision/docs/workflow/index.md
         items:
-        - name: Workflow
-          href: articles/invision/docs/workflow/index.md
         - name: Dataset
           href: articles/invision/docs/workflow/dataset.md
         - name: Flowcontrolobj
@@ -1223,11 +979,7 @@
           href: articles/invision/docs/workflow/iterationsarchvers.md
         - name: Processflow
           href: articles/invision/docs/workflow/processflow.md
-        - name: Processflow
-          href: articles/invision/docs/workflow/processflow/index.md
           items:
-          - name: Processflow
-            href: articles/invision/docs/workflow/processflow/index.md
           - name: Activity
             href: articles/invision/docs/workflow/processflow/activity.md
           - name: Flowcontrolconfig
@@ -1238,18 +990,10 @@
           href: articles/invision/docs/workflow/workflowusergroups.md
       - name: Workprocess
         href: articles/invision/docs/workprocess.md
-      - name: Workprocess
-        href: articles/invision/docs/workprocess/index.md
         items:
-        - name: Workprocess
-          href: articles/invision/docs/workprocess/index.md
         - name: Howto
           href: articles/invision/docs/workprocess/howto.md
-        - name: Howto
-          href: articles/invision/docs/workprocess/howto/index.md
           items:
-          - name: Howto
-            href: articles/invision/docs/workprocess/howto/index.md
           - name: Clientside
             href: articles/invision/docs/workprocess/howto/clientside.md
           - name: Setup
@@ -1262,18 +1006,10 @@
           href: articles/invision/docs/workprocess/workprocessversions.md
       - name: Worksheets
         href: articles/invision/docs/worksheets.md
-      - name: Worksheets
-        href: articles/invision/docs/worksheets/index.md
         items:
-        - name: Worksheets
-          href: articles/invision/docs/worksheets/index.md
         - name: Calculations
           href: articles/invision/docs/worksheets/calculations.md
-        - name: Calculations
-          href: articles/invision/docs/worksheets/calculations/index.md
           items:
-          - name: Calculations
-            href: articles/invision/docs/worksheets/calculations/index.md
           - name: Appvariables
             href: articles/invision/docs/worksheets/calculations/appvariables.md
           - name: Arithmeticop
@@ -1320,11 +1056,7 @@
           href: articles/invision/docs/worksheets/colcaptions.md
         - name: Columnproperties
           href: articles/invision/docs/worksheets/columnproperties.md
-        - name: Columnproperties
-          href: articles/invision/docs/worksheets/columnproperties/index.md
           items:
-          - name: Columnproperties
-            href: articles/invision/docs/worksheets/columnproperties/index.md
           - name: Basiccolproperties
             href: articles/invision/docs/worksheets/columnproperties/basiccolproperties.md
           - name: Caption
@@ -1355,11 +1087,7 @@
           href: articles/invision/docs/worksheets/filters.md
         - name: Howto
           href: articles/invision/docs/worksheets/howto.md
-        - name: Howto
-          href: articles/invision/docs/worksheets/howto/index.md
           items:
-          - name: Howto
-            href: articles/invision/docs/worksheets/howto/index.md
           - name: Cellvalidation
             href: articles/invision/docs/worksheets/howto/cellvalidation.md
           - name: Conditionalformating
@@ -1380,11 +1108,7 @@
             href: articles/invision/docs/worksheets/howto/timeframecolumns.md
         - name: Onsave
           href: articles/invision/docs/worksheets/onsave.md
-        - name: Onsave
-          href: articles/invision/docs/worksheets/onsave/index.md
           items:
-          - name: Onsave
-            href: articles/invision/docs/worksheets/onsave/index.md
           - name: Apireferences
             href: articles/invision/docs/worksheets/onsave/apireferences.md
           - name: Sqlscriptservice
@@ -1395,11 +1119,7 @@
           href: articles/invision/docs/worksheets/stackedcolhead.md
         - name: Wproperties
           href: articles/invision/docs/worksheets/wproperties.md
-        - name: Wproperties
-          href: articles/invision/docs/worksheets/wproperties/index.md
           items:
-          - name: Wproperties
-            href: articles/invision/docs/worksheets/wproperties/index.md
           - name: Contextmenuoptions
             href: articles/invision/docs/worksheets/wproperties/contextmenuoptions.md
     - name: Videos

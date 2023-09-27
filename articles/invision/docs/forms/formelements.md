@@ -19,16 +19,18 @@ Please note that filter directives are not supported by Form Element Data Querie
 To enable filtering in Form Element Data Queries, use custom parameters.
 <br/>
 
-**Selected Value - @FormElementValue()**
+##### Selected Value - @FormElementValue()
 
 The @FormElementValue() – directive is used in the Save Data Expression to refer to the value selected or entered by the user. The TextBox and Dropdown examples show the use of the @FormElementValue directive.
+
 <br/>
 
-### More about Form Elements
+#### More about Form Elements
 
 * [Form Elements](../workbooks/components/formelements.md)
 
-### See Also
+#### See Also
+
 * [Date Picker](formelements/datepicker.md)
 * [Dropdown](formelements/dropdown.md)
 * [Label](formelements/label.md)

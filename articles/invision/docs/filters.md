@@ -125,7 +125,7 @@ _Default Value Expression_
 ### See Also
 
 
-- [How to's](filters/howto.md)
+- [How to's](filters/howto/index.md)
 - [Filtering Tables](tables/filters.md)
 - [Filtering Worksheets](worksheets/filters.md)
 

@@ -23,7 +23,7 @@ File Storage enables users to upload download and manage files.
 
 **Context**
 
-By setting the [Context](filestorage/context.md), you associate the File Storage to the [Filter](filters.md).
+By setting the [Context](filestorage/context.md), you associate the File Storage to the [Filter](filters/index.md).
 
 •	Key ``<Context item>``
 

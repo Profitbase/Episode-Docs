@@ -8,7 +8,7 @@ pageIndex: 1
 
 ### Link to the video
 
-Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Filters%20-%20Creating%20and%20using%20flat%20filters.mp4) you will find a video that shows how to create and Use Flat Filter. [Here](../../filters.md) you will find [Documentation](../../filters.md).
+Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Filters%20-%20Creating%20and%20using%20flat%20filters.mp4) you will find a video that shows how to create and Use Flat Filter. [Here](../../filters/index.md) you will find [Documentation](../../filters/index.md).
 <br/>
 
 ### Step by step
