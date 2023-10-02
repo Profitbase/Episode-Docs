@@ -88,7 +88,7 @@
 
         <article data-uid="">
 
-
+<h4 id="sql-script-service">Sql Script Service</h4>
 <p>Use the SqlScriptService to run a SQL Script when a Worksheet or Table is saved.</p>
 <br>
 <p><strong>Example</strong></p>
@@ -138,32 +138,48 @@ Dictionary&lt;string, object&gt; paramValues = null)
 <br>
 <p><strong>ExecuteScalarById</strong></p>
 <blockquote>
-<p>Executes a SQL Script, specified by its object id, and returns the value in the first column in the first row from the result set. Note that the SQL Script must be configured to return data</p>
+<p>Executes a SQL Script, specified by its object id, and returns the value in the first column in the first row from the result set.</p>
 </blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The SQL Script must be configured to return data.</p>
+</div>
 <pre><code>public T ExecuteScalarById&lt;T&gt;(string scriptId, 
 Dictionary&lt;string, object&gt; paramValues = null)
 </code></pre>
 <br>
 <p><strong>ExecuteScalarByName</strong></p>
 <blockquote>
-<p>Executes a SQL Script, specified by its object name, and returns the value in the first column in the first row from the result set. Note that the SQL Script must be configured to return data.</p>
+<p>Executes a SQL Script, specified by its object name, and returns the value in the first column in the first row from the result set.</p>
 </blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The SQL Script must be configured to return data.</p>
+</div>
 <pre><code>public T ExecuteScalarByName&lt;T&gt;(string scriptName, 
 Dictionary&lt;string, object&gt; paramValues = null)
 </code></pre>
 <br>
 <p><strong>LoadById</strong></p>
 <blockquote>
-<p>Executes a SQL Script, specified by its object id, and returns the data set from the query. Note that the SQL Script must be configured to return data.</p>
+<p>Executes a SQL Script, specified by its object id, and returns the data set from the query.</p>
 </blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The SQL Script must be configured to return data.</p>
+</div>
 <pre><code>public DataTable LoadById(string scriptId, 
 Dictionary&lt;string, object&gt; paramValues = null)
 </code></pre>
 <br>
 <p><strong>LoadByName</strong></p>
 <blockquote>
-<p>Executes a SQL Script, specified by its object Name, and returns the data set from the query. Note that the SQL Script must be configured to return data.</p>
+<p>Executes a SQL Script, specified by its object Name, and returns the data set from the query.</p>
 </blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The SQL Script must be configured to return data.</p>
+</div>
 <pre><code>public DataTable LoadByName(string scriptName, 
 Dictionary&lt;string, object&gt; paramValues = null)
 </code></pre>

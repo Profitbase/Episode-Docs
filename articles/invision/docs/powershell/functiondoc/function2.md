@@ -4,15 +4,23 @@ metaKeys: "$PbRunContext, system variable, script execution, $PbRunContext.WorkD
 pageIndex: 2
 ---
 
+#### $PbRunContext
+
+<br/>
+
 ### $PbRunContext (system variable)
 
 The ``$PbRunContext`` system variable is instantiated and set for each script execution. It contains useful information that can be utilized.
 
 <br/>
 
-**Note 1:** Profitbase may change the content of the ``$PbRunContext`` at any time.
 
-**Note 2:** From InVision platform version 2022.3, the ``$pbRunContext`` is removed as argument in functions supplied by Profitbase. Remove this argument on upgrade and check the function name. Functions using this argument will not work after v.2022.4.
+> [!NOTE]
+> Profitbase may change the content of the ``$PbRunContext`` at any time.
+
+
+> [!NOTE]
+> From InVision platform version 2022.3, the ``$pbRunContext`` is removed as argument in functions supplied by Profitbase. Remove this argument on upgrade and check the function name. Functions using this argument will not work after v.2022.4.
 
 <br/>
 

@@ -1,10 +1,11 @@
 ---
-title: "How To Upgrade the InVision Instance"
+title: ""
 metaKeys: "How To Upgrade the InVision Instance"
 folderOnly: "false"
 pageIndex: 6
 ---
 
+#### How To Upgrade the InVision Instance
 
 ### Link to the video
 

@@ -124,7 +124,10 @@ The **MacroExpansionProvier.AccessControlService** provides an API against a sma
 
 **Example**
 
-This example shows how to check whether the current user is a member of the “Admins” Access Group. Note that we’re using Context.GetUserUniqueId() to get the id of the current user.
+This example shows how to check whether the current user is a member of the “Admins” Access Group. 
+
+> [!NOTE]
+>  We’re using Context.GetUserUniqueId() to get the id of the current user.
 <br/>
 
 ```

@@ -49,7 +49,9 @@ To enable dynamically changing text, you have two options:
 >
 >     SetTextIf(IsFilterSet("Filters", "Department"), Filter("Filters", "Department").SelectedValue.Description, "All Departments");
 >
->*Please note that you have to execute the UpdateText Action of the Label for the text to change.*
+
+> [!NOTE]
+> You have to execute the UpdateText Action of the Label for the text to change.
 
 
 <br/>

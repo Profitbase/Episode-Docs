@@ -4,6 +4,8 @@ metaKeys: "form, splitbutton, button, ItemsSourceFilter, To specify a collection
 pageIndex: 14
 ---
 
+#### SplitButton
+
 ![SplitButton](https://profitbasedocs.blob.core.windows.net/images/FormSchema_SplitButton.PNG)
 <br/>
 
@@ -82,7 +84,10 @@ To specify a collection of sub-actions in a SplitButton, add one or more SplitBu
 
 `ItemsSource`
 
-**Optional.** Specifies the name or binding to an array containing data items which is used to render a dynamic number of sub items. Note that you also need to specify the SplitButtonItemTemplate.
+**Optional.** Specifies the name or binding to an array containing data items which is used to render a dynamic number of sub items. 
+
+> [!NOTE]
+> You need to specify the SplitButtonItemTemplate.
 
 <br/>
 

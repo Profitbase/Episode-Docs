@@ -9,7 +9,10 @@ pageIndex: 1
 ### Default ports
 <br/>
 
-Note that the port numbers are incremented for each installed instance. The actual port used when installing an instance, is displayed in the Installation Manager. <br/>
+
+> [!NOTE]
+> The port numbers are incremented for each installed instance. The actual port used when installing an instance, is displayed in the Installation Manager. 
+<br/>
 
 | Port Number | Description                                                                                                                                                                                     |
 | :---------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

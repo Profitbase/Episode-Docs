@@ -60,7 +60,11 @@ public int ExecuteNonQueryByName(string scriptName, Dictionary<string, object> p
 
 `ExecuteScalarById`
 
-Executes a SQL Script, specified by its object id, and returns the value in the first column in the first row from the result set. Note that the SQL Script must be configured to return data
+Executes a SQL Script, specified by its object id, and returns the value in the first column in the first row from the result set.  
+
+> [!NOTE]
+> the SQL Script must be configured to return data.
+
 ```csharp
 public T ExecuteScalarById<T>(string scriptId, Dictionary<string, object> paramValues = null)
 ```
@@ -68,7 +72,11 @@ public T ExecuteScalarById<T>(string scriptId, Dictionary<string, object> paramV
 
 `ExecuteScalarByName`
 
-Executes a SQL Script, specified by its object name, and returns the value in the first column in the first row from the result set. Note that the SQL Script must be configured to return data.
+Executes a SQL Script, specified by its object name, and returns the value in the first column in the first row from the result set. 
+
+> [!NOTE]
+> The SQL Script must be configured to return data.
+
 ```csharp
 public T ExecuteScalarByName<T>(string scriptName, Dictionary<string, object> paramValues = null)
 ```
@@ -76,7 +84,11 @@ public T ExecuteScalarByName<T>(string scriptName, Dictionary<string, object> pa
 
 `LoadById`
 
-Executes a SQL Script, specified by its object id, and returns the data set from the query. Note that the SQL Script must be configured to return data.
+Executes a SQL Script, specified by its object id, and returns the data set from the query. 
+
+> [!NOTE]
+> The SQL Script must be configured to return data.
+
 ```csharp
 public DataTable LoadById(string scriptId, Dictionary<string, object> paramValues = null)
 ```
@@ -84,7 +96,10 @@ public DataTable LoadById(string scriptId, Dictionary<string, object> paramValue
 
 `LoadByName`
 
-Executes a SQL Script, specified by its object Name, and returns the data set from the query. Note that the SQL Script must be configured to return data.
+Executes a SQL Script, specified by its object Name, and returns the data set from the query. 
+
+> [!NOTE]
+> The SQL Script must be configured to return data.
 
 ```csharp
 public DataTable LoadByName(string scriptName, Dictionary<string, object> paramValues = null)

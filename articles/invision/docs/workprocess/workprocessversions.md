@@ -25,7 +25,11 @@ A Work Process Version can have one of the following states:
 4. **Closed** - Identities with access can open Workbooks, but they cannot edit data.
 
 After a Version has been deployed, you can change its status to Open or Closed.
-An Open Version can at any point in time be set to Closed, and vice versa. Note that it's entirely up to the Work Process administrator to pick a suitable time to switch states.
+An Open Version can at any point in time be set to Closed, and vice versa. 
+
+ 
+> [!NOTE]
+> It's entirely up to the Work Process administrator to pick a suitable time to switch states.
 <br/>
 
 ### Translations

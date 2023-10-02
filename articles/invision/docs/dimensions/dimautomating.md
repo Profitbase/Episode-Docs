@@ -10,7 +10,10 @@ pageIndex: 3
 
 You can import data to dimensions through Dataflows and staging tables. 
 
-1.	Create a table containing the columns you want to import into the dimension. **The columns in the staging table must match the dimension table columns by name and data type**. Note that the staging table does not need to contain all the columns in the dimension. It only needs to contain the columns that you want to import. To view which columns the dimension table contains, press “Browse P/C table” in the dimension editor in the Designer.
+1.	Create a table containing the columns you want to import into the dimension. **The columns in the staging table must match the dimension table columns by name and data type**. 
+> [!NOTE]
+> That the staging table does not need to contain all the columns in the dimension. It only needs to contain the columns that you want to import. To view which columns the dimension table contains, press “Browse P/C table” in the dimension editor in the Designer.
+
 2.	Create a Dataflow Item and add the **Import dimension members** task from the **Dimension Tasks** in the toolbox. Specify the name of the staging table and the name of the dimension. You can also specify whether to overwrite changes made by the user and whether blank cells should be ignored during the import.
 
 <br/>

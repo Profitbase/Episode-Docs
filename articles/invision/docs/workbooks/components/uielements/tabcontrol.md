@@ -24,7 +24,10 @@ You can drag and drop a Tab Control onto a page from the UI Elements toolbox fol
 To add Tabs, click **Edit Tabs** in the Property pane.  
 Using the Tabs editor, you can manage the tab items of your Tab Control by setting the header texts and contents.
 
-To set the contents of a tab, choose a Subscreen from the **Contents** dropdown. Note that a Subscreen can only be used once, so if you don’t see a Subscreen in the dropdown, this means that it is already in use somewhere else in the Workbook.
+To set the contents of a tab, choose a Subscreen from the **Contents** dropdown. 
+
+> [!NOTE]
+> Subscreen can only be used once, so if you don’t see a Subscreen in the dropdown, this means that it is already in use somewhere else in the Workbook.
 <br/>
 
 #### Tab properties:

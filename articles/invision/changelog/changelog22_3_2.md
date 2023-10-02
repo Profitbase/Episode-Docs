@@ -221,7 +221,10 @@ The SplitButton control now supports dynamically adding and removing sub-items (
 
 #### Access control on Work Process contents
 
-We have added an option to restrict access to Work Process contents to Process administrators only. That makes all Workbooks in the Work Process unavailable to users that are not Process Administrators, even though they have been granted access through the Workbook Permissions Manager. Note that Process Administrators must still be granted regular access through the Workbook Permissions Manager **in addition** to being a Process Administrator to get exclusive access.
+We have added an option to restrict access to Work Process contents to Process administrators only. That makes all Workbooks in the Work Process unavailable to users that are not Process Administrators, even though they have been granted access through the Workbook Permissions Manager. 
+
+> [!NOTE]
+> that Process Administrators must still be granted regular access through the Workbook Permissions Manager **in addition** to being a Process Administrator to get exclusive access.
 <br/>
 
 #### Work Process Deleted event

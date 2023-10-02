@@ -15,7 +15,10 @@ In order for a user to set states, you need to publish the Flow Control Object a
 
 Specifies the state of the Flow Control Object in the Workflow, for example «Started» or «Completed».
 To configure states for a Flow Control Object, you need to enable it from the Flow Control Object list in the Activity or Connection and then make sure it’s selected to bring up the State Editor. Next, you simply add the states that can be set when the Workflow is in the phase governed by the activity or connection.
-Please note that you should only create a single state for each Flow Control Object if you are setting up states for Action Activities, Wait Activities or Activity Connections. The Data Entry Activity is the only activity which allows multiple states for a Flow Control Object.
+
+
+> [!NOTE]
+> You should only create a single state for each Flow Control Object if you are setting up states for Action Activities, Wait Activities or Activity Connections. The Data Entry Activity is the only activity which allows multiple states for a Flow Control Object.
 
 *	**Name**
 
@@ -41,7 +44,9 @@ Please note that you should only create a single state for each Flow Control Obj
 
  **2)**	GoToOnFirstSave specifies that this state should be set for the Flow Control Object the first time a user saves data for a resources. For this event to occur, a state can not have been previously set from a user action for the Flow Control Object given the current Data Context during the current Iteration.
 
- *Note that when a state transitions* **to** *a state having Type* **GoToOnFirstSave**, *execution of Data Flows listed in state being left does not occur.*
+ 
+> [!NOTE]
+> When a state transitions **to** a state having Type **GoToOnFirstSave**, execution of Data Flows listed in state being left does not occur.
 
 *	**State Color**
 
@@ -55,4 +60,6 @@ Please note that you should only create a single state for each Flow Control Obj
 
  Specifies a list of Data Flows to execute when the state changes. The Data Flows are run sequentially. The Data Flows execute when the states are left, not entered.
 
- *Note that when a state transitions **to** a state having Type **GoToOnFirstSave**, this process does not execute.*
+  
+> [!NOTE]
+> When a state transitions **to** a state having Type **GoToOnFirstSave**, this process does not execute.*

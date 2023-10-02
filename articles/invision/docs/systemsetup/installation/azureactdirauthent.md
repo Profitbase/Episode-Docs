@@ -78,13 +78,17 @@ To enable access to Administrate groups, add additional permission:
 
 Make sure to Grant consent (grant admin consent for Default Directory).
 
->**Note 1)**  
-To enable access to reset a identities password, the Web Client/API in addition has to be assigned the role. 
+
+
+> [!NOTE]
+> To enable access to reset a identities password, the Web Client/API in addition has to be assigned the role. 
 
 *	“User administrator”
 
->**Note 2)**  
-Enforcement of permissions in Azure Portal are delayed, wait sufficiently to have permissions applied.
+
+
+> [!NOTE]
+> Enforcement of permissions in Azure Portal are delayed, wait sufficiently to have permissions applied.
 <br/>
 
 

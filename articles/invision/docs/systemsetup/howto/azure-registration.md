@@ -1,10 +1,11 @@
 ---
-title: "How To Create Azure App Registration"
+title: ""
 metaKeys: "How To Create Azure App Registration"
 folderOnly: "false"
 pageIndex: 2
 ---
 
+#### How To Create Azure App Registration
 
 ### Link to the video
 

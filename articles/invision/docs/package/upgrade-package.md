@@ -5,10 +5,13 @@ folderOnly: "false"
 pageIndex: 4
 ---
 
+#### Upgrade Package
 
 Installed Packages can be upgraded to newer versions. When a Package is upgraded, the currently installed version of the Package is deleted before the new version is installed. This means that any customizations made to the Package will be lost. 
 
-Please note that any external extensions referencing objects in the Package will continue to work after the upgrade has completed.
+
+> [!NOTE]
+> Any external extensions referencing objects in the Package will continue to work after the upgrade has completed.
 
 <br/>
 

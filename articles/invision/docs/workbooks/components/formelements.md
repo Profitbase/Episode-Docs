@@ -8,7 +8,10 @@ pageIndex: 8
 
 Form Elements defined in the Solution can be added to the [Workbook](../../workbooks.md) by dragging and dropping them to the desired location. To load and save data, you need to call the LoadData or SaveData actions in response to raised events.
 
-The current value of a [Form Element](../../forms/formelements.md) instance will always be stored in a variable whose name equals the Form Element instance name (Part Name). For example, the current value of a Form Element part having the name "MyFormElement" can be read using the **@Var[MyFormElement]** statement. Note that [Dropdown](../../forms/formelements/dropdown.md) Form Elements usually contains a list of objects with a display and value member (as specified in the select query), so you would need dot into the object to get either the display or value member.
+The current value of a [Form Element](../../forms/formelements.md) instance will always be stored in a variable whose name equals the Form Element instance name (Part Name). For example, the current value of a Form Element part having the name "MyFormElement" can be read using the **@Var[MyFormElement]** statement. 
+
+> [!NOTE]
+> That [Dropdown](../../forms/formelements/dropdown.md) Form Elements usually contains a list of objects with a display and value member (as specified in the select query), so you would need dot into the object to get either the display or value member.
 <br/>
 
 ### Actions

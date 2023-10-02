@@ -122,7 +122,11 @@
 <br>
 <p><strong>Data Labels Formatter</strong></p>
 <blockquote>
-<p>Callback JavaScript function to format the data label. Note that if a [ format ] is defined, the format takes precedence and the formatter is ignored. Available data are:</p>
+<p>Callback JavaScript function to format the data label.</p>
+</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If a [ format ] is defined, the format takes precedence and the formatter is ignored. Available data are:</p>
 <p><code>[ this.centage ]</code></p>
 <p>Stacked series and pies only. The point's percentage of the total.</p>
 <p><code>[ this.point ]</code></p>
@@ -137,7 +141,7 @@ through [ this.series.name ].</p>
 <p>The x value.</p>
 <p><code>[ this.y ]</code></p>
 <p>The y value.</p>
-</blockquote>
+</div>
 <br>
 <p><strong>Tooltip Point Format</strong></p>
 <blockquote>
@@ -209,9 +213,12 @@ through [ this.series.name ].</p>
 <br>
 <p><strong>Animation</strong></p>
 <blockquote>
-<p>Enable or disable the initial animation when a series is displayed. The animation can also be set as a configuration object. Please note that this option only applies to the initial animation of the series itself. For other animations, see</p>
-<p><code>&lt;a href=#chart.animation&gt;chart.animation&lt;/a&gt;</code> and the animation parameter under the API methods.</p>
+<p>Enable or disable the initial animation when a series is displayed. The animation can also be set as a configuration object.</p>
 </blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This option applies only to the initial animation of the series itself. For other animations, see <code>&lt;a href=#chart.animation&gt;chart.animation&lt;/a&gt;</code> and the animation parameter under the API methods.</p>
+</div>
 <blockquote>
 <p>The following properties are supported:</p>
 </blockquote>

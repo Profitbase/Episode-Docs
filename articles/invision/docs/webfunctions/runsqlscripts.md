@@ -57,7 +57,10 @@ Task<int> ExecuteNonQueryByNameAsync(string scriptName, Dictionary<string, objec
 <br/>
 
 `ExecuteScalarByIdAsync`  
-Asynchronusly executes a SQL Script, specified by its object id, and returns the value in the first column in the first row from the result set. Note that the SQL Script must be configured to return data.
+Asynchronusly executes a SQL Script, specified by its object id, and returns the value in the first column in the first row from the result set. 
+
+> [!NOTE]
+> The SQL Script must be configured to return data.
 
 ```csharp
 Task<T> ExecuteScalarByIdAsync<T>(string scriptId,  Dictionary<string, object> paramValues = null)
@@ -66,7 +69,10 @@ Task<T> ExecuteScalarByIdAsync<T>(string scriptId,  Dictionary<string, object> p
 <br/>
 
 `ExecuteScalarByNameAsync`  
-Asynchronusly executes a SQL Script, specified by its object name, and returns the value in the first column in the first row from the result set. Note that the SQL Script must be configured to return data.
+Asynchronusly executes a SQL Script, specified by its object name, and returns the value in the first column in the first row from the result set. 
+
+> [!NOTE]
+> The SQL Script must be configured to return data.
 
 ```csharp
 Task<T> ExecuteScalarByNameAsync<T>(string scriptName, Dictionary<string,object> paramValues = null)
@@ -75,7 +81,10 @@ Task<T> ExecuteScalarByNameAsync<T>(string scriptName, Dictionary<string,object>
 <br/>
 
 `LoadByNameAsync`  
-Asynchronusly executes a SQL Script, specified by its object name, and returns the data set from the query. Note that the SQL Script must be configured to return data.
+Asynchronusly executes a SQL Script, specified by its object name, and returns the data set from the query. 
+
+> [!NOTE]
+> The SQL Script must be configured to return data.
 
 ```csharp
 Task<DataTable> LoadByNameAsync(string scriptName,  Dictionary<string, object> paramValues = null)
@@ -84,7 +93,10 @@ Task<DataTable> LoadByNameAsync(string scriptName,  Dictionary<string, object> p
 <br/>
 
 `LoadByNameAsync`  
-Asynchronusly executes a SQL Script, specified by its object id, and returns the data set from the query. Note that the SQL Script must be configured to return data.
+Asynchronusly executes a SQL Script, specified by its object id, and returns the data set from the query. 
+
+> [!NOTE]
+> The SQL Script must be configured to return data.
 
 ```csharp
 Task<DataTable> LoadByIdAsync(string scriptId,  Dictionary<string, object> paramValues = null)

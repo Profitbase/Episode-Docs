@@ -89,8 +89,11 @@
         <article data-uid="">
 <h3 id="action-activity">Action Activity</h3>
 
-<p>Action Activities can execute one or more Data Flows sequentially. When the last Data Flow of an activity has completed, the outbound connections are evaluated to determine the status for Flow Control Objects, and which phase the Workflow should transition to. Statuses specified for Flow Control Objects in an activity are applied when the activity completes, before execution is moved forward.
-<em>Please note that you can only configure a single status pr Flow Control Object for Action Activities.</em></p>
+<p>Action Activities can execute one or more Data Flows sequentially. When the last Data Flow of an activity has completed, the outbound connections are evaluated to determine the status for Flow Control Objects, and which phase the Workflow should transition to. Statuses specified for Flow Control Objects in an activity are applied when the activity completes, before execution is moved forward.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can only configure a single status pr Flow Control Object for Action Activities.</p>
+</div>
 <p>When an Action Activity has completed all its tasks, the subsequent activity will be executed if it is an Action Activity, and the <em>Execute</em> <em>Manually</em> property is <em>not</em> set to True.</p>
 <p><strong>Properties</strong></p>
 <ul>

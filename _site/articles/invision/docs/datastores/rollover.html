@@ -112,8 +112,12 @@
 <ul>
 <li><strong>Reload data</strong></li>
 </ul>
-<p>Executes the rollover, the reloads data to the columns bound to the data source(s) in the schema configuration. Note that any rollover columns bound to the data sources will also be reloaded. Being a rollover column does not prevent reloading data for the column if this setting is applied.
+<p>Executes the rollover, the reloads data to the columns bound to the data source(s) in the schema configuration.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>that any rollover columns bound to the data sources will also be reloaded. Being a rollover column does not prevent reloading data for the column if this setting is applied.
 <br></p>
+</div>
 <h3 id="rollover-calculations">Rollover Calculations</h3>
 <p>Specifies column calculations to run before and after the Rollover.
 To set up a column calculation, add a column to the Rollover Calculations list and enter the <strong>SQL</strong> expression for calculating the value. The expression supports <strong>directives</strong>.</p>

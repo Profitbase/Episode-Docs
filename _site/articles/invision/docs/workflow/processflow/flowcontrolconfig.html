@@ -94,8 +94,11 @@ The <a href="../flowcontrolobj.html">Flow Control Object</a> configuration of a 
 <p>In order for a user to set states, you need to publish the Flow Control Object as a component to a Workbook. The Flow Control Object will be rendered as a dropdown editor, allowing the user to set the next state for the context. The states available to the user is determined based on which Workflow User Group he belongs to, and the current state of the Workflow.</p>
 <p><strong>State</strong></p>
 <p>Specifies the state of the Flow Control Object in the Workflow, for example «Started» or «Completed».
-To configure states for a Flow Control Object, you need to enable it from the Flow Control Object list in the Activity or Connection and then make sure it’s selected to bring up the State Editor. Next, you simply add the states that can be set when the Workflow is in the phase governed by the activity or connection.
-Please note that you should only create a single state for each Flow Control Object if you are setting up states for Action Activities, Wait Activities or Activity Connections. The Data Entry Activity is the only activity which allows multiple states for a Flow Control Object.</p>
+To configure states for a Flow Control Object, you need to enable it from the Flow Control Object list in the Activity or Connection and then make sure it’s selected to bring up the State Editor. Next, you simply add the states that can be set when the Workflow is in the phase governed by the activity or connection.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You should only create a single state for each Flow Control Object if you are setting up states for Action Activities, Wait Activities or Activity Connections. The Data Entry Activity is the only activity which allows multiple states for a Flow Control Object.</p>
+</div>
 <ul>
 <li><strong>Name</strong></li>
 </ul>
@@ -116,7 +119,10 @@ Please note that you should only create a single state for each Flow Control Obj
 <p>Possible values are Default and GoToOnFirstSave.</p>
 <p><strong>1)</strong>	Default specifies that the state can be set manually by a user or by a process, for example a Data Flow.</p>
 <p><strong>2)</strong>	GoToOnFirstSave specifies that this state should be set for the Flow Control Object the first time a user saves data for a resources. For this event to occur, a state can not have been previously set from a user action for the Flow Control Object given the current Data Context during the current Iteration.</p>
-<p><em>Note that when a state transitions</em> <strong>to</strong> <em>a state having Type</em> <strong>GoToOnFirstSave</strong>, <em>execution of Data Flows listed in state being left does not occur.</em></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When a state transitions <strong>to</strong> a state having Type <strong>GoToOnFirstSave</strong>, execution of Data Flows listed in state being left does not occur.</p>
+</div>
 <ul>
 <li><strong>State Color</strong></li>
 </ul>
@@ -129,7 +135,10 @@ Please note that you should only create a single state for each Flow Control Obj
 <li><strong>Data Flows</strong></li>
 </ul>
 <p>Specifies a list of Data Flows to execute when the state changes. The Data Flows are run sequentially. The Data Flows execute when the states are left, not entered.</p>
-<p><em>Note that when a state transitions <strong>to</strong> a state having Type <strong>GoToOnFirstSave</strong>, this process does not execute.</em></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When a state transitions <strong>to</strong> a state having Type <strong>GoToOnFirstSave</strong>, this process does not execute.*</p>
+</div>
 </article>
 
 

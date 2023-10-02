@@ -51,7 +51,10 @@ pageIndex: 2
 
 **Data Labels Formatter**
 
->Callback JavaScript function to format the data label. Note that if a [ format ] is defined, the format takes precedence and the formatter is ignored. Available data are:
+>Callback JavaScript function to format the data label. 
+
+> [!NOTE]
+> If a [ format ] is defined, the format takes precedence and the formatter is ignored. Available data are:
 >
 >``[ this.centage ]``
 >
@@ -172,9 +175,11 @@ or the index of the axis in the yAxis array, with 0 being the first.
 
 **Animation**
 
->Enable or disable the initial animation when a series is displayed. The animation can also be set as a configuration object. Please note that this option only applies to the initial animation of the series itself. For other animations, see 
->
->``<a href=#chart.animation>chart.animation</a>`` and the animation parameter under the API methods.	
+>Enable or disable the initial animation when a series is displayed. The animation can also be set as a configuration object. 
+
+
+> [!NOTE]
+> This option applies only to the initial animation of the series itself. For other animations, see ``<a href=#chart.animation>chart.animation</a>`` and the animation parameter under the API methods.	
 
 >The following properties are supported:
 

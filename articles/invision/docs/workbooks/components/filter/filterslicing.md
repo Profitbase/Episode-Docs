@@ -37,7 +37,8 @@ To achieve this, you need to call the **SetLeafLevelConstraints(…)** and speci
 
 4. In the Load Data action of the (Product) filter, call SetLeafLevelConstraint(…) and pass in the variable. 
 
-**Note that you need to call Load Data on the filter AFTER the spreadsheet has been loaded, or else the list of product ids has not been created.**
+> [!NOTE]
+> You need to call Load Data on the filter AFTER the spreadsheet has been loaded, or else the list of product ids has not been created.
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/slicingFilter4.png)
 

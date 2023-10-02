@@ -17,7 +17,10 @@ You can drag and drop a Stepper Control onto a page from the [UI Elements](../ui
 To add Steps, click **Edit Steps** in the Property pane.  
 Using the Steps editor, you can manage stepps by setting the header texts and contents.
 
-To set the contents of a step, choose a [Subscreen](../../subscreens.md) from the **Contents** dropdown. Note that a [Subscreen](../../subscreens.md) can only be used once, so if you don’t see a Subscreen in the dropdown, this means that it is already in use somewhere else in the [Workbook](../../../workbooks.md).
+To set the contents of a step, choose a [Subscreen](../../subscreens.md) from the **Contents** dropdown. 
+
+> [!NOTE]
+> [Subscreen](../../subscreens.md) can only be used once, so if you don’t see a Subscreen in the dropdown, this means that it is already in use somewhere else in the [Workbook](../../../workbooks.md).
 <br/>
 
 #### Steps properties:

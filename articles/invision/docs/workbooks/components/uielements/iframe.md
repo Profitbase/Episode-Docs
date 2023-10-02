@@ -43,9 +43,9 @@ ConfigureMessage({"MyMessage" : "Hello World"}, "*");
 *	**Message Received**  
 Receives messages sent from the iframe content window. Use the @Event.Data property access the received message.
 
- **Note to senders:**
  
- Use the sendMessage(...) API in the **invision-extensions-iframe-sdk** npm module to send messages from the iframe to the Workbook.
+> [!NOTE]
+> **Note to senders:** Use the sendMessage(...) API in the **invision-extensions-iframe-sdk** npm module to send messages from the iframe to the Workbook.
 
 
 

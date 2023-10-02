@@ -38,7 +38,10 @@ Saves / updates a specific model. You can optionally pass in arguments if the mo
 
 `reload(model: model | string, params?: object): Promise<Model>`
 
-Reloads a specific model by returning a new model. Note that the model passed in is not mutated. You can pass in either the model to reload, or the name of the model. If your data model has a filter or a parameterized Load Data query, you need to provide the required parameters.
+Reloads a specific model by returning a new model. 
+
+> [!NOTE]
+> The model passed in is not mutated. You can pass in either the model to reload, or the name of the model. If your data model has a filter or a parameterized Load Data query, you need to provide the required parameters.
 
 **Example**
 

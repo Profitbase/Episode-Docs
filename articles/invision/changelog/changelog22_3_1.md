@@ -17,7 +17,11 @@ pageIndex: 8
 
 #### SYS_ObjectPermissions
 
-The new SYS_ObjectPermissions database view enables Solution Developers to write a SQL query to check if a user has access to a Workbook or Workbook Page. Note that the UserUID is the id of the user identity in the InVision access control system, usually a GUID. It is NOT the user name, for example, name@corp.com.
+The new SYS_ObjectPermissions database view enables Solution Developers to write a SQL query to check if a user has access to a Workbook or Workbook Page. 
+
+> [!NOTE]
+> that the UserUID is the id of the user identity in the InVision access control system, usually a GUID. It is NOT the user name, for example, name@corp.com.
+
 
 ```
 SELECT HasAccess FROM SYS_ObjectPermissions WHERE UserUID = 'user object id' AND ObjectID = 'workbook or workbook page id'

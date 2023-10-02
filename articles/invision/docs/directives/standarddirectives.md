@@ -80,5 +80,8 @@ Returns the id of the Solution.
 
 #### @CurrentWorkProcessVersionID
 
-Returns the id of the Work Process Version that the Solution belongs to. Note that this directive is only resolved if the object being executed is part of a Solution that belongs to a Work Process Version.
+Returns the id of the Work Process Version that the Solution belongs to. 
+
+> [!NOTE]
+> This directive is only resolved if the object being executed is part of a Solution that belongs to a Work Process Version.
 

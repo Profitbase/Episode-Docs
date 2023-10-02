@@ -18,12 +18,16 @@ Enables editing a date using a [Date Picker](../formschemas/controls/datepicker.
 **Max Value Query**
 
 Specifies a SQL query returning the highest allowed date that the user can enter or select.  
-*Note that the returned value must be of a date data type, not a string.*
+
+> [!NOTE]
+>  The returned value must be of a date data type, not a string.*
 
 **Min Value Query**
 
 Specifies a SQL query returning the lowest allowed date that the user can enter or select.  
-*Note that the returned value must be of a date data type, not a string.*
+
+> [!NOTE]
+> The returned value must be of a date data type, not a string.*
 
 >**Example**
 >
@@ -33,7 +37,9 @@ Specifies a SQL query returning the lowest allowed date that the user can enter 
 **Selected Value Query**
 
 Specifies a query returning the initial value of the Date Picker.  
-*Note that the returned value must be of a date data type, not a string.*
+
+> [!NOTE]
+> The returned value must be of a date data type, not a string.*
 
 **Save Data Expression**
 

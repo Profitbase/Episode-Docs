@@ -96,7 +96,11 @@
 <h3 id="access-control">Access Control</h3>
 <br>
 <h4 id="sys_objectpermissions">SYS_ObjectPermissions</h4>
-<p>The new SYS_ObjectPermissions database view enables Solution Developers to write a SQL query to check if a user has access to a Workbook or Workbook Page. Note that the UserUID is the id of the user identity in the InVision access control system, usually a GUID. It is NOT the user name, for example, name@corp.com.</p>
+<p>The new SYS_ObjectPermissions database view enables Solution Developers to write a SQL query to check if a user has access to a Workbook or Workbook Page.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>that the UserUID is the id of the user identity in the InVision access control system, usually a GUID. It is NOT the user name, for example, name@corp.com.</p>
+</div>
 <pre><code>SELECT HasAccess FROM SYS_ObjectPermissions WHERE UserUID = 'user object id' AND ObjectID = 'workbook or workbook page id'
 </code></pre>
 <br>

@@ -1,10 +1,11 @@
 ---
-title: "How To Setup InVision Service with Windows Authentication"
+title: ""
 metaKeys: "How To Setup InVision Service with Windows Authentication"
 folderOnly: "false"
 pageIndex: 5
 ---
 
+#### How To Setup InVision Service with Windows Authentication
 
 ### Link to the video
 

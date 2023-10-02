@@ -23,7 +23,9 @@ This section is used for mapping Workbook variables to Data Context Variables.
 
 In cases where it’s not pratical or possible to use filter values to determine the transaction set to process, you have the option of using arbitrary values instead. These values can be found in Workbook variables, and mapped to Data Context Variables. 
 
-*Note that when mapping Workbook variables to Data Context Variables, you reference the Workbook variable by name, not by value, meaning you can’t use the @Var[…]-expression, just the name of the variable.*
+
+> [!NOTE]
+> When mapping Workbook variables to Data Context Variables, you reference the Workbook variable by name, not by value, meaning you can’t use the @Var[…]-expression, just the name of the variable.
 
 >**Example**
 >

@@ -7,7 +7,10 @@ pageIndex: 1
 ### Action Activity
 
 Action Activities can execute one or more Data Flows sequentially. When the last Data Flow of an activity has completed, the outbound connections are evaluated to determine the status for Flow Control Objects, and which phase the Workflow should transition to. Statuses specified for Flow Control Objects in an activity are applied when the activity completes, before execution is moved forward. 
-*Please note that you can only configure a single status pr Flow Control Object for Action Activities.*
+
+
+> [!NOTE]
+> You can only configure a single status pr Flow Control Object for Action Activities.
 
 When an Action Activity has completed all its tasks, the subsequent activity will be executed if it is an Action Activity, and the *Execute* *Manually* property is *not* set to True.
 
