@@ -1,10 +1,11 @@
 ---
-title: "How To Setup Azure Service Bus"
+title: ""
 metaKeys: "How To Setup Azure Service Bus"
 folderOnly: "false"
 pageIndex: 3
 ---
 
+#### How To Setup Azure Service Bus
 
 ### Link to the video
 

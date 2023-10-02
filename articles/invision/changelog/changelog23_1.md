@@ -14,7 +14,10 @@ This release is a small service release that adds a few improvements to Workbook
 
 Up until now, you had to use the generic Web API action to execute a Web Function, using HttpGet, HttpPost, HttpPut, or HttpDelete. This works fine, but you’d have to know the exact API endpoint (URL) to use, which shouldn’t be necessary.
 
-The new API is easier to use because you only need to provide the name of the Web Function. Note that if you want to call web functions in other Solutions, you need to keep using the Http-methods (HttpGet, HttpPost, etc) and provide the full address to the web function.
+The new API is easier to use because you only need to provide the name of the Web Function. 
+
+> [!NOTE]
+> If you want to call web functions in other Solutions, you need to keep using the Http-methods (HttpGet, HttpPost, etc) and provide the full address to the web function.
 
 [Read more here](../docs/forms/formschemas/functions/callingfunctions.md)
 

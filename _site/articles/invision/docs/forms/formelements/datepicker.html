@@ -94,19 +94,28 @@
 <p>Enables editing a date using a <a href="../formschemas/controls/datepicker.html">Date Picker</a> component.</p>
 <br>
 <p><strong>Max Value Query</strong></p>
-<p>Specifies a SQL query returning the highest allowed date that the user can enter or select.<br>
-<em>Note that the returned value must be of a date data type, not a string.</em></p>
+<p>Specifies a SQL query returning the highest allowed date that the user can enter or select.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The returned value must be of a date data type, not a string.*</p>
+</div>
 <p><strong>Min Value Query</strong></p>
-<p>Specifies a SQL query returning the lowest allowed date that the user can enter or select.<br>
-<em>Note that the returned value must be of a date data type, not a string.</em></p>
+<p>Specifies a SQL query returning the lowest allowed date that the user can enter or select.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The returned value must be of a date data type, not a string.*</p>
+</div>
 <blockquote>
 <p><strong>Example</strong></p>
 </blockquote>
 <pre><code>SELECT CAST('20150101' AS datetime)
 </code></pre>
 <p><strong>Selected Value Query</strong></p>
-<p>Specifies a query returning the initial value of the Date Picker.<br>
-<em>Note that the returned value must be of a date data type, not a string.</em></p>
+<p>Specifies a query returning the initial value of the Date Picker.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The returned value must be of a date data type, not a string.*</p>
+</div>
 <p><strong>Save Data Expression</strong></p>
 <p>Specifies the <a href="../../sqlreports/dataqueries.html">Data Query</a> used for saving data. The query must handle both insertion of a new row and updating an existing one.</p>
 </article>

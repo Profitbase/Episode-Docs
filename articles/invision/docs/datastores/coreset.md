@@ -49,4 +49,6 @@ The Core Set feature adds rows to the Data Store by combining the content of the
 
 ### Core Set Members
 
-The Core Set Members are the table resources used for producing the Cartesian product of rows that makes up the core data set of the [Data Store](../datastores.md) which is the rows that should always be present in the repository. (Note that enabling the Core Set does not prevent the rows from being deleted after they have been added, it just ensures that the rows are thereafter a data reload or update operation.)
+The Core Set Members are the table resources used for producing the Cartesian product of rows that makes up the core data set of the [Data Store](../datastores.md) which is the rows that should always be present in the repository. 
+> [!NOTE]
+> Enabling the Core Set does not prevent the rows from being deleted after they have been added, it just ensures that the rows are thereafter a data reload or update operation.

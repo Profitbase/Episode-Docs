@@ -36,7 +36,11 @@ A solution contains all of the data and configuration for your application, such
 
 **Clone Solution**
 
-You can easily clone entire Solutions from the Designer start page. Cloning a Solution will also copy input data from the source Solution, permissions, and Data Flow schedules. Note that objects in cloned Solutions are not automatically added to the Data Pool after the cloning has been completed. They will, however, be added to the Data Pool if the Data Pool Compound View is rebuilt. If you don’t want this to happen, you need to edit your newly cloned Solution and remove the Data Pool configuration from the objects that you don’t want as members of the Data Pool.
+You can easily clone entire Solutions from the Designer start page. Cloning a Solution will also copy input data from the source Solution, permissions, and Data Flow schedules. 
+
+> [!NOTE]
+> that objects in cloned Solutions are not automatically added to the Data Pool after the cloning has been completed. They will, however, be added to the Data Pool if the Data Pool Compound View is rebuilt. If you don’t want this to happen, you need to edit your newly cloned Solution and remove the Data Pool configuration from the objects that you don’t want as members of the Data Pool.
+ 
 <br/>
 
 **When creating a new Solution**

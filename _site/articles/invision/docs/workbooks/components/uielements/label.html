@@ -115,8 +115,11 @@
 The IsFilterSet(…) function checks whether a values has been selected. If it has, the label text is set to the value returned by the Filter(&quot;Filters&quot;, &quot;Department&quot;).SelectedValue.Description statement. If not, the label text is set to &quot;All Departments&quot;.</p>
 <pre><code>SetTextIf(IsFilterSet(&quot;Filters&quot;, &quot;Department&quot;), Filter(&quot;Filters&quot;, &quot;Department&quot;).SelectedValue.Description, &quot;All Departments&quot;);
 </code></pre>
-<p><em>Please note that you have to execute the UpdateText Action of the Label for the text to change.</em></p>
 </blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You have to execute the UpdateText Action of the Label for the text to change.</p>
+</div>
 <br>
 <p><strong>Example 2</strong></p>
 <blockquote>

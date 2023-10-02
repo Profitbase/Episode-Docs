@@ -107,7 +107,11 @@
 </code></pre>
 <br>
 <p><code>reload(model: model | string, params?: object): Promise&lt;Model&gt;</code></p>
-<p>Reloads a specific model by returning a new model. Note that the model passed in is not mutated. You can pass in either the model to reload, or the name of the model. If your data model has a filter or a parameterized Load Data query, you need to provide the required parameters.</p>
+<p>Reloads a specific model by returning a new model.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The model passed in is not mutated. You can pass in either the model to reload, or the name of the model. If your data model has a filter or a parameterized Load Data query, you need to provide the required parameters.</p>
+</div>
 <p><strong>Example</strong></p>
 <pre><code class="lang-xml">&lt;Data&gt;
     &lt;Models&gt;

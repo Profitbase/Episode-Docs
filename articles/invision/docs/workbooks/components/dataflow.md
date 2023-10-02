@@ -147,7 +147,8 @@ If you are creating custom Data Flow Items, the TaskId and DataFlowId can be rea
 
 To display the Data Flow while it’s running, you need to set the Show Execution Log property to True in the properties editor. Also, the Data Flow cannot be hosted on a hidden page.
 
-Please note that if the Show Execution Log property is set to true, the Popup Execution Errors property is ignored.
+> [!NOTE]
+> If the Show Execution Log property is set to true, the Popup Execution Errors property is ignored.
 
 <br/>
 
@@ -155,7 +156,8 @@ Please note that if the Show Execution Log property is set to true, the Popup Ex
 
 To enable error notifications, you need to set the **Popup Execution Errors** property to True in the Properties editor.
 
-Please note that if the Show Execution Log property is set to true, the Popup Execution Errors property is ignored.
+> [!NOTE]
+> If the Show Execution Log property is set to true, the Popup Execution Errors property is ignored.
 
 
 <br/>

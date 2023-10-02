@@ -48,7 +48,10 @@ This property is is part of the message contents and can be used to specify the 
 
 ``Message``     
 *Data Type : string.*  
-This property is part of the message content and is used for specifying the actual message being passed. Note that the data type of the property is text, so if you want to send a value not being a text, you need to use the Data property.
+This property is part of the message content and is used for specifying the actual message being passed. 
+
+> [!NOTE]
+> The data type of the property is text, so if you want to send a value not being a text, you need to use the Data property.
 
 ``Data``  
 *Data Type : Any.*  

@@ -192,7 +192,9 @@ public sealed class MyWebFunction : WebFunction
 
 We’ve added support for defining indexes and partitions on Data Stores and Tables which enables developers to significantly improve the performance of key parts of products and custom solutions.
 
-Partitions and indexes can be configured in the new “Scripts” tab of Data Stores and Tables. It is important to note that developers must script the entire logic related to the creation of indexes and partitions, including checking if the index or partition already exists, as shown in the screenshot below.
+
+> [!NOTE]
+> Partitions and indexes can be configured in the new “Scripts” tab of Data Stores and Tables. Developers must script the entire logic related to the creation of indexes and partitions, including checking if the index or partition already exists, as shown in the screenshot below.
 
 By pressing “Insert template”, you get a default script with template tags that you can modify to define partitions and indexes on the table.
 

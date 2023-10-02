@@ -109,7 +109,10 @@ This feature makes it possible to raise events from custom [cell renderers](../d
 
 #### Checkout Objects in the Designer
 
-If you have a Solution Object open for edit when performing a checkout, we now automatically reload the configuration to ensure that you get the latest server version. Note that any changes you have made before checkout is discarded.  
+If you have a Solution Object open for edit when performing a checkout, we now automatically reload the configuration to ensure that you get the latest server version. 
+
+> [!NOTE]
+>  Any changes you have made before checkout is discarded.  
 <br/>
 
 #### Simplify Azure AD redirect URI handling

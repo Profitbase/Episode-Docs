@@ -59,7 +59,9 @@ For example
 
 The lookup will search the Name and LangID columns for the values matching the criteria ("PC Dim" and @Language), and then return the value found in the LangText column.
 
-Note that @**LanguageTwoLetter** is a special keyword recognized by the system, which has two-letter language code of the currently logged in user, for example, EN or NO.
+
+> [!NOTE]
+>  that @**LanguageTwoLetter** is a special keyword recognized by the system, which has two-letter language code of the currently logged in user, for example, EN or NO.
 
 <br/>
 

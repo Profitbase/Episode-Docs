@@ -140,7 +140,9 @@ The following applies for the scripts:
 
 If a Package is dependent upon another Package, you need to add the dependency to the “Package Dependencies” list. By defining dependencies, the system will automatically install or update dependencies when the Package itself is installed or updated to new versions. 
 
-Note that you only need to register immediate dependencies, meaning you don’t need to register dependencies of dependencies. When exporting the Package, the system will automatically examine all dependencies and their dependencies, recursively.
+
+> [!NOTE]
+>  You need to register immediate dependencies, meaning you don’t need to register dependencies of dependencies. When exporting the Package, the system will automatically examine all dependencies and their dependencies, recursively.
 
 
 ### Videos

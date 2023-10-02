@@ -51,7 +51,9 @@ Once a Subscreen has been created, it can be added to a Page or set as the conte
 
 **To add a Subscreen to a Tab Control Item**, simply select it from the Content dropdown of a Tab Item.
 
-**Note that a Subscreen can only be used once pr Workbook. For example, you cannot put the same Subscreen in both a Tab Item and a Page.**
+
+> [!NOTE]
+> Subscreen can only be used once pr Workbook. For example, you cannot put the same Subscreen in both a Tab Item and a Page.
 
 
 <br/>

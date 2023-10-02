@@ -13,7 +13,9 @@ Start typing the opening token < for the tag and a popup will show which tags ar
 ```
 <Layout
 ```
- *Note that this tag is still open and ready for adding properties before being closed.*
+ 
+> [!NOTE]
+> This tag is still open and ready for adding properties before being closed.
 
 It is recommended to hit the closing token **>** which will add the closing tag to always keep the tags closed so that the XML can be rendered correctly.
 

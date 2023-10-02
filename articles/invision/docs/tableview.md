@@ -165,7 +165,9 @@ The Table View can be re-rendered manually at any time. A typical use case for w
 
 This functionality is intended for controls that do not automatically refresh the TableView.
 
-It is important to note that this re-rendering process does not involve reloading data from the backend, but rather only involves the TableView re-rendering itself on the client-side.
+
+> [!NOTE]
+> This re-rendering process does not involve reloading data from the backend, but rather only involves the TableView re-rendering itself on the client-side.
 
 <br/>
 

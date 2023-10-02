@@ -87,8 +87,9 @@
         </div>
 
         <article data-uid="">
-<h3 id="macroexpansionprovidercontext">MacroExpansionProvider.Context</h3>
 
+<h4 id="context">Context</h4>
+<h3 id="macroexpansionprovidercontext">MacroExpansionProvider.Context</h3>
 <p>The Context API provides information about the current execution context of the macros. For example, for macros in a SQL Script, the current execution context of the macros is the invocation of the SQL Script.</p>
 <p>The <strong>Context</strong> has the following APIs
 <br></p>
@@ -123,9 +124,12 @@
 </blockquote>
 <p><code>LanguageCode : string</code></p>
 <blockquote>
-<p>The culture name in the format languagecode2-country/regioncode2, for example, EN-US.
-Note that this property usually just returns a two-letter language code (for example EN), because InVision is usually set up to use two-letter cultures codes.</p>
+<p>The culture name in the format languagecode2-country/regioncode2, for example, EN-US.</p>
 </blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This property usually just returns a two-letter language code (for example EN), because InVision is usually set up to use two-letter cultures codes.</p>
+</div>
 <p><code>TwoLetterLanguageCode : string</code></p>
 <blockquote>
 <p>The ISO 639-1 two letter language code, for example, EN.</p>

@@ -36,7 +36,10 @@ When setting up Rollover for Data Stores, specifies whether to update data from 
 
 *	**Reload data**
 
- Executes the rollover, the reloads data to the columns bound to the data source(s) in the schema configuration. Note that any rollover columns bound to the data sources will also be reloaded. Being a rollover column does not prevent reloading data for the column if this setting is applied.
+ Executes the rollover, the reloads data to the columns bound to the data source(s) in the schema configuration. 
+ 
+> [!NOTE]
+> that any rollover columns bound to the data sources will also be reloaded. Being a rollover column does not prevent reloading data for the column if this setting is applied.
 <br/>
 
 ### Rollover Calculations

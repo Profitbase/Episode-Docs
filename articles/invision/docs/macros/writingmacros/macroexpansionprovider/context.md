@@ -4,6 +4,7 @@ metaKeys: "Writing macros, Accessing arguments, Function , Non-function macros, 
 pageIndex: 2
 ---
 
+#### Context
 
 ### MacroExpansionProvider.Context
 
@@ -37,7 +38,10 @@ The **Context** has the following APIs
 
 ``LanguageCode : string``
 >The culture name in the format languagecode2-country/regioncode2, for example, EN-US.
-Note that this property usually just returns a two-letter language code (for example EN), because InVision is usually set up to use two-letter cultures codes.
+
+
+> [!NOTE]
+> This property usually just returns a two-letter language code (for example EN), because InVision is usually set up to use two-letter cultures codes.
 
 ``TwoLetterLanguageCode : string``
 >The ISO 639-1 two letter language code, for example, EN.

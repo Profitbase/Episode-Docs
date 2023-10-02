@@ -113,7 +113,11 @@
 <p><code>Task&lt;bool&gt; HasWorkbookPageAccessAsync(string identityId, string workbookName, string pageName)</code></p>
 <br>
 <p><strong>Example:</strong></p>
-<p>This example shows how to check whether the current user is a member of the “Admins” Access Group. Note that we’re using Context.GetUserUniqueId() to get the id of the current user.</p>
+<p>This example shows how to check whether the current user is a member of the “Admins” Access Group.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>that we’re using Context.GetUserUniqueId() to get the id of the current user.</p>
+</div>
 <pre><code>namespace Local;
     
 using System.Threading.Tasks;

@@ -1,10 +1,11 @@
 ---
-title: "How To Install Desktop Designer and Connect to Service"
+title: ""
 metaKeys: "How To Install Desktop Designer and Connect to Service"
 folderOnly: "false"
 pageIndex: 1
 ---
 
+#### How To Upgrade the InVision Instance
 
 ### Link to the video
 

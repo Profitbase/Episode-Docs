@@ -90,8 +90,12 @@
 
 
 <p>Form Elements defined in the Solution can be added to the <a href="../../workbooks.html">Workbook</a> by dragging and dropping them to the desired location. To load and save data, you need to call the LoadData or SaveData actions in response to raised events.</p>
-<p>The current value of a <a href="../../forms/formelements.html">Form Element</a> instance will always be stored in a variable whose name equals the Form Element instance name (Part Name). For example, the current value of a Form Element part having the name &quot;MyFormElement&quot; can be read using the <strong>@Var[MyFormElement]</strong> statement. Note that <a href="../../forms/formelements/dropdown.html">Dropdown</a> Form Elements usually contains a list of objects with a display and value member (as specified in the select query), so you would need dot into the object to get either the display or value member.
+<p>The current value of a <a href="../../forms/formelements.html">Form Element</a> instance will always be stored in a variable whose name equals the Form Element instance name (Part Name). For example, the current value of a Form Element part having the name &quot;MyFormElement&quot; can be read using the <strong>@Var[MyFormElement]</strong> statement.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>That <a href="../../forms/formelements/dropdown.html">Dropdown</a> Form Elements usually contains a list of objects with a display and value member (as specified in the select query), so you would need dot into the object to get either the display or value member.
 <br></p>
+</div>
 <h3 id="actions">Actions</h3>
 <ul>
 <li><p><strong>LoadData</strong><br>

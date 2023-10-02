@@ -21,7 +21,10 @@ A menu can be structured with folders, Workbooks, and Work Processes using the I
 
 **Folders** are typically used for grouping Workbooks that logically belong together. Folders can have any type of children, so you can use folders to create menu hierarchies as deep as you want (although we don't recommend creating it more than a few levels deep).
 
-Workbooks can be placed at the root level of a menu, or as children of a folder. Workbooks cannot have children of their own. Note that a Workbook can only belong to a single menu.
+Workbooks can be placed at the root level of a menu, or as children of a folder. Workbooks cannot have children of their own. 
+
+> [!NOTE]
+> Workbook can only belong to a single menu.
 <br/>
 
 **Work Processes** can be placed in a menu using either the InVision Designer or the Work Process configuration screen in a Workbook. Work Processes can be placed at the root level or in folders. Versions and Workbooks that belong to a Work Process is automatically displayed in the menu.

@@ -31,7 +31,11 @@ Tracing Columns must exist in all [Transaction Pipeline](transactionpipeline.md)
 
  
     - When running a Transaction Pipeline process, for example the Cell Adapter, add an entry to Auxiallary Data of the Input configuration as a **Computed Column** (checkbox on the right side). Call the Computed Column "SYS_DataSetID" and specify the Data Set name in the **Expression**. You can either hard code the value as a single-quoted text, or use the `@Object[<source>].DataSet directive`.
- Note that using the `@Object[…].DataSet` directive requires that the Data Store is registered in the Data Set configuration of a Workflow, and it must be enclosed in single quotes, `‘@Object[<workflow name>].DataSet’`, since it will be used as part of a SQL SELECT clause.
+
+
+ 
+> [!NOTE]
+> Using the `@Object[…].DataSet` directive requires that the Data Store is registered in the Data Set configuration of a Workflow, and it must be enclosed in single quotes, `‘@Object[<workflow name>].DataSet’`, since it will be used as part of a SQL SELECT clause.
 
     - If you want to load data from one Data Store to another using the Data Store designer, you need to add a binding from the source Data Store to the **SYS_DataSetID** column of the target Data Store and use the `@Object[…].DataSet` directive in the Expression property of the binding.
 

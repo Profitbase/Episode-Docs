@@ -38,7 +38,12 @@ Returns a single value from the **column** in the InVision database table. **Db 
 
 **q**  
 >``{eaze expression}``  (see the example below)  
-Optional. Specifies search criteria. See Querying with the API example below. *Note that the search criteria must be enclosed in curly brackets.* 
+Optional. Specifies search criteria. See Querying with the API example below. 
+
+
+> [!NOTE]
+> The search criteria must be enclosed in curly brackets.
+
 
 **asFile**  
 >``true/false``  

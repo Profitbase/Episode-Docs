@@ -15,8 +15,10 @@ To create a Form Element, open (or create) a Form Element Collection and drag a 
 Once a Form Element has been created, you cannot change the type, so you need to make sure to select the right template when first creating it.
 
 To enable loading and saving data, you need to specify [Data Queries](../sqlreports/dataqueries.md).
-Please note that filter directives are not supported by Form Element Data Queries because Form Elements can display and edit a single value and filter directives kan return multiple values. 
-To enable filtering in Form Element Data Queries, use custom parameters.
+
+
+> [!NOTE]
+> Filter directives are not supported by Form Element Data Queries because Form Elements can display and edit a single value and filter directives kan return multiple values. To enable filtering in Form Element Data Queries, use custom parameters.
 <br/>
 
 ##### Selected Value - @FormElementValue()

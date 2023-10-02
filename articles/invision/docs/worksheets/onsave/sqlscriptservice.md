@@ -5,6 +5,7 @@ folderOnly: "false"
 pageIndex: 2
 ---
 
+#### Sql Script Service
 
 Use the SqlScriptService to run a SQL Script when a Worksheet or Table is saved.
 
@@ -64,8 +65,14 @@ Use the SqlScriptService to run a SQL Script when a Worksheet or Table is saved.
 
 **ExecuteScalarById**
 
-> Executes a SQL Script, specified by its object id, and returns the value in the first column in the first row from the result set. Note that the SQL Script must be configured to return data
->
+> Executes a SQL Script, specified by its object id, and returns the value in the first column in the first row from the result set. 
+
+ 
+> [!NOTE]
+> The SQL Script must be configured to return data.
+
+
+
     public T ExecuteScalarById<T>(string scriptId, 
     Dictionary<string, object> paramValues = null)
 
@@ -73,8 +80,12 @@ Use the SqlScriptService to run a SQL Script when a Worksheet or Table is saved.
 
 **ExecuteScalarByName**
 
-> Executes a SQL Script, specified by its object name, and returns the value in the first column in the first row from the result set. Note that the SQL Script must be configured to return data.
->
+> Executes a SQL Script, specified by its object name, and returns the value in the first column in the first row from the result set. 
+ 
+> [!NOTE]
+> The SQL Script must be configured to return data.
+
+
     public T ExecuteScalarByName<T>(string scriptName, 
     Dictionary<string, object> paramValues = null)
 
@@ -82,7 +93,10 @@ Use the SqlScriptService to run a SQL Script when a Worksheet or Table is saved.
 
 **LoadById**
 
-> Executes a SQL Script, specified by its object id, and returns the data set from the query. Note that the SQL Script must be configured to return data.
+> Executes a SQL Script, specified by its object id, and returns the data set from the query. 
+ 
+> [!NOTE]
+> The SQL Script must be configured to return data.
 >
     public DataTable LoadById(string scriptId, 
     Dictionary<string, object> paramValues = null)
@@ -91,7 +105,11 @@ Use the SqlScriptService to run a SQL Script when a Worksheet or Table is saved.
 
 **LoadByName**
 
-> Executes a SQL Script, specified by its object Name, and returns the data set from the query. Note that the SQL Script must be configured to return data.
->
+> Executes a SQL Script, specified by its object Name, and returns the data set from the query. 
+ 
+> [!NOTE]
+> The SQL Script must be configured to return data.
+
+
     public DataTable LoadByName(string scriptName, 
     Dictionary<string, object> paramValues = null)

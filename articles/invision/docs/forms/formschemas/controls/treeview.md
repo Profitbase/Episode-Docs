@@ -131,7 +131,9 @@ In this case, they happen to have similar names, but that is coincidental. The f
 
 The example below show how to use the ItemTemplate to provide a custom rendering of items in the TreeView.
 
-Note the use of the special $Data argument passed when calling the onItemClick function in the Button Click event handler. The $Data argument represents the data object from the ItemsSource displayed by the clicked TreeView item.
+
+> [!NOTE]
+> The use of the special $Data argument passed when calling the onItemClick function in the Button Click event handler. The $Data argument represents the data object from the ItemsSource displayed by the clicked TreeView item.
 
 The data context for bindings inside the ItemTemplate is the data object being rendered, meaning that **Binding Path:ItemName** binds the Text of the Label to the ItemName property of the data object rendered by the TreeView item. You need to bind to something outside the item, you need to use the full path of the property, including the model name, for example **{Binding Path:Models.Customer.Name}**
 

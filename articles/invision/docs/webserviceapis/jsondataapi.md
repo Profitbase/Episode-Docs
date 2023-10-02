@@ -6,7 +6,10 @@ pageIndex: 2
 ---
 
 
-The Data API lets you fetch data from InVision database objects (tables and views) using the HTTP protocol. The data is returned as an array of JSON objects. The main advantage of using the Data API instead of the OData API is better performance for large data sets and that you can use API Key authentication which may be easier for some clients. Note that there is no row-level access control associated with an API Key, meaning once you have an API Key, you have read access to all the data in the database.
+The Data API lets you fetch data from InVision database objects (tables and views) using the HTTP protocol. The data is returned as an array of JSON objects. The main advantage of using the Data API instead of the OData API is better performance for large data sets and that you can use API Key authentication which may be easier for some clients. 
+
+> [!NOTE]
+> There is no row-level access control associated with an API Key, meaning once you have an API Key, you have read access to all the data in the database.
 
 <br/>
 

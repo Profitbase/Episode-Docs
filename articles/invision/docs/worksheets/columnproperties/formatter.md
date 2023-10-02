@@ -4,9 +4,12 @@ metaKeys: "Editing column layout, Default Value, Name, Caption, Expression, Stor
 pageIndex: 7
 ---
 
+#### Formatter
 
-
-A JavaScript function expression, or the name of a function defined in a solution JavaScript. The formatter returns the value to display in the cells of the column. Note that this only affects the displayed value, not the actual value of the cells, so for example copying data will copy the actual value and not the displayed value.
+A JavaScript function expression, or the name of a function defined in a solution JavaScript. The formatter returns the value to display in the cells of the column.
+ 
+> [!NOTE]
+> This only affects the displayed value, not the actual value of the cells, so for example copying data will copy the actual value and not the displayed value. 
 
 
 >**Example**
