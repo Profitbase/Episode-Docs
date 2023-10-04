@@ -56,185 +56,183 @@
       - name: Access control
         href: articles/invision/docs/accesscontrol/index.md
         items:
-        - name: Accessgroups
-          href: articles/invision/docs/accesscontrol/accessgroups.md
-        - name: Dataperm
-          href: articles/invision/docs/accesscontrol/dataperm.md
         - name: How to's
           href: articles/invision/docs/accesscontrol/howto/index.md
           items:
-          - name: Azuread
+          - name: How To Create and Manage Azure AD Identities and Access Groups
             href: articles/invision/docs/accesscontrol/howto/azuread.md
-          - name: Dataworkbooks
+          - name: How To Manage Access to Data and Workbooks
             href: articles/invision/docs/accesscontrol/howto/dataworkbooks.md
-          - name: Identities
+          - name: How To Create Identities and Access Groups
             href: articles/invision/docs/accesscontrol/howto/identities.md
-          - name: Wbacess
+          - name: How To Manage Access to Workbooks
             href: articles/invision/docs/accesscontrol/howto/wbacess.md
-        - name: Httpapi
+        - name: Access groups
+          href: articles/invision/docs/accesscontrol/accessgroups.md
+        - name: Data Permissions
+          href: articles/invision/docs/accesscontrol/dataperm.md
+        - name: HTTP API
           href: articles/invision/docs/accesscontrol/httpapi.md
         - name: Identities
           href: articles/invision/docs/accesscontrol/identities.md
-        - name: Workbookperm
+        - name: Workbook Permissions
           href: articles/invision/docs/accesscontrol/workbookperm.md
       - name: Accessibility
         href: articles/invision/docs/accessibility/index.md
         items:
-        - name: Aria
-          href: articles/invision/docs/accessibility/aria.md
-        - name: Highcontrast
-          href: articles/invision/docs/accessibility/highcontrast.md
-        - name: Hotkey
-          href: articles/invision/docs/accessibility/hotkey.md
-        - name: How to's
-          href: articles/invision/docs/accessibility/howto.md
         - name: How to's
           href: articles/invision/docs/accessibility/howto/index.md
           items:
-          - name: Highkontrast
+          - name: How to setup high contrast
             href: articles/invision/docs/accessibility/howto/highkontrast.md
-          - name: Hotkey
+          - name: How to setup hotkey
             href: articles/invision/docs/accessibility/howto/hotkey.md
+        - name: Aria-labelledby
+          href: articles/invision/docs/accessibility/aria.md
+        - name: High contrast
+          href: articles/invision/docs/accessibility/highcontrast.md
+        - name: Hotkeys
+          href: articles/invision/docs/accessibility/hotkey.md
       - name: Best practice
         href: articles/invision/docs/bestpractice/index.md
         items:
-        - name: Structuringsolution
+        - name: Structuring a Solution
           href: articles/invision/docs/bestpractice/structuringsolution.md
       - name: Data flow items
         href: articles/invision/docs/dataflowitems/index.md
         items:
-        - name: Builtindfitems
+        - name: Built-in Data Flow Items
           href: articles/invision/docs/dataflowitems/builtindfitems.md
-        - name: Classlibraries
+        - name: Class libraries
           href: articles/invision/docs/dataflowitems/classlibraries.md
-        - name: Tasktemplates
+        - name: Task templates
           href: articles/invision/docs/dataflowitems/tasktemplates.md
-      - name: Dataflows
+      - name: Data flows
         href: articles/invision/docs/dataflows/index.md
         items:
-        - name: Datacontext
+        - name: How to's
+          href: articles/invision/docs/dataflows/howto/index.md
+          items:
+          - name: How to Automate Import of the Primary Dimension
+            href: articles/invision/docs/dataflows/howto/autocopy.md
+          - name: How to Automate Import of Data to Dimension
+            href: articles/invision/docs/dataflows/howto/autoimport.md
+          - name: How To Control Flow and Branching
+            href: articles/invision/docs/dataflows/howto/controlflow.md
+          - name: How to Check if Dataflow Succeeded using @Event.Data.Success condition
+            href: articles/invision/docs/dataflows/howto/eventdatasuccess.md
+          - name: How To Execute from Workbook with Arguments
+            href: articles/invision/docs/dataflows/howto/execute.md
+          - name: How To Execute Using dfcmdutil Command Line Tool
+            href: articles/invision/docs/dataflows/howto/execute-dfcmdutil.md
+          - name: How To Automate PowerShell Script with Data Flow
+            href: articles/invision/docs/dataflows/howto/filenamesautom.md
+          - name: How To Register and Execute Guest Executable
+            href: articles/invision/docs/dataflows/howto/guestexecutable.md
+          - name: How To Parameterize the execution of Data Flows
+            href: articles/invision/docs/dataflows/howto/parameterization.md
+        - name: Data context
           href: articles/invision/docs/dataflows/datacontext/index.md
           items:
-          - name: Datacontextscope
+          - name: Data context scope
             href: articles/invision/docs/dataflows/datacontext/datacontextscope.md
-          - name: Globaldatacontext
+          - name: Global data context
             href: articles/invision/docs/dataflows/datacontext/globaldatacontext.md
         - name: Execution
           href: articles/invision/docs/dataflows/execution/index.md
           items:
-          - name: Commandline
+          - name: Command line
             href: articles/invision/docs/dataflows/execution/commandline.md
-          - name: Httpapi
+          - name: HTTP API
             href: articles/invision/docs/dataflows/execution/httpapi.md
-          - name: Scheduledexecution
+          - name: Scheduling execution
             href: articles/invision/docs/dataflows/execution/scheduledexecution.md
-        - name: How to's
-          href: articles/invision/docs/dataflows/howto/index.md
-          items:
-          - name: Autocopy
-            href: articles/invision/docs/dataflows/howto/autocopy.md
-          - name: Autoimport
-            href: articles/invision/docs/dataflows/howto/autoimport.md
-          - name: Controlflow
-            href: articles/invision/docs/dataflows/howto/controlflow.md
-          - name: Eventdatasuccess
-            href: articles/invision/docs/dataflows/howto/eventdatasuccess.md
-          - name: Execute
-            href: articles/invision/docs/dataflows/howto/execute.md
-          - name: Execute dfcmdutil
-            href: articles/invision/docs/dataflows/howto/execute-dfcmdutil.md
-          - name: Filenamesautom
-            href: articles/invision/docs/dataflows/howto/filenamesautom.md
-          - name: Guestexecutable
-            href: articles/invision/docs/dataflows/howto/guestexecutable.md
-          - name: Parameterization
-            href: articles/invision/docs/dataflows/howto/parameterization.md
         - name: Parametrization
           href: articles/invision/docs/dataflows/parametrization/index.md
           items:
-          - name: Globalparameters
+          - name: Global parameters
             href: articles/invision/docs/dataflows/parametrization/globalparameters.md
-          - name: Programmatically set glob param
+          - name: Programmatically change global parameters
             href: articles/invision/docs/dataflows/parametrization/programmatically-set-glob-param.md
       - name: Data pool
         href: articles/invision/docs/datapool.md
       - name: Data stores
         href: articles/invision/docs/datastores/index.md
         items:
-        - name: Changetracking
-          href: articles/invision/docs/datastores/changetracking.md
-        - name: Coreset
-          href: articles/invision/docs/datastores/coreset.md
-        - name: Creatingschema
-          href: articles/invision/docs/datastores/creatingschema.md
-        - name: Dataupdateconfig
-          href: articles/invision/docs/datastores/dataupdateconfig.md
-        - name: Exportingdata
-          href: articles/invision/docs/datastores/exportingdata.md
         - name: How to's
           href: articles/invision/docs/datastores/howto/index.md
           items:
-          - name: Changetracking
+          - name: How to change tracking
             href: articles/invision/docs/datastores/howto/changetracking.md
-          - name: Rollover
+          - name: How to set up rollover calculations
             href: articles/invision/docs/datastores/howto/rollover.md
-          - name: Schema
+          - name: How to create schema and source mapping
             href: articles/invision/docs/datastores/howto/schema.md
-          - name: Timeframe
+          - name: How to set up time frame
             href: articles/invision/docs/datastores/howto/timeframe.md
-        - name: Importingandupdting
+        - name: Change tracking
+          href: articles/invision/docs/datastores/changetracking.md
+        - name: Core set
+          href: articles/invision/docs/datastores/coreset.md
+        - name: Creating schema
+          href: articles/invision/docs/datastores/creatingschema.md
+        - name: Data update configuration
+          href: articles/invision/docs/datastores/dataupdateconfig.md
+        - name: Exporting data from InVision
+          href: articles/invision/docs/datastores/exportingdata.md
+        - name: Importing and updating data from data sources
           href: articles/invision/docs/datastores/importingandupdting/index.md
           items:
-          - name: Bindingsourcecoumns
+          - name: Binding source columns to DS columns
             href: articles/invision/docs/datastores/importingandupdting/bindingsourcecoumns.md
-          - name: Customization
+          - name: Customization options
             href: articles/invision/docs/datastores/importingandupdting/customization.md
           - name: Source
             href: articles/invision/docs/datastores/importingandupdting/source/index.md
             items:
-            - name: Datasourceproperties
+            - name: Data source properties
               href: articles/invision/docs/datastores/importingandupdting/source/datasourceproperties.md
             - name: Transforms
               href: articles/invision/docs/datastores/importingandupdting/source/transforms/index.md
               items:
               - name: Aggregate
                 href: articles/invision/docs/datastores/importingandupdting/source/transforms/aggregate.md
-              - name: Customsql
+              - name: Custom SQL
                 href: articles/invision/docs/datastores/importingandupdting/source/transforms/customsql.md
               - name: Pivot
                 href: articles/invision/docs/datastores/importingandupdting/source/transforms/pivot.md
               - name: Unpivot
                 href: articles/invision/docs/datastores/importingandupdting/source/transforms/unpivot.md
-        - name: Periodicimput
+        - name: Periodic imput
           href: articles/invision/docs/datastores/periodicimput.md
         - name: Rollover
           href: articles/invision/docs/datastores/rollover.md
-        - name: Sourcemapping
+        - name: Source mapping
           href: articles/invision/docs/datastores/sourcemapping.md
-        - name: Timeframe
+        - name: Time frame
           href: articles/invision/docs/datastores/timeframe.md
-        - name: Timeframemeasurecolumns
+        - name: Time frame measure columns
           href: articles/invision/docs/datastores/timeframemeasurecolumns.md
-        - name: Tracingcolumns
+        - name: Tracing columns
           href: articles/invision/docs/datastores/tracingcolumns.md
-        - name: Transactionpipeline
+        - name: Transaction pipeline
           href: articles/invision/docs/datastores/transactionpipeline/index.md
           items:
-          - name: Celladapter
+          - name: Cell adapter
             href: articles/invision/docs/datastores/transactionpipeline/celladapter/index.md
             items:
-            - name: Inputconfig
+            - name: Input coonfiguration
               href: articles/invision/docs/datastores/transactionpipeline/celladapter/inputconfig.md
             - name: Output
               href: articles/invision/docs/datastores/transactionpipeline/celladapter/output.md
             - name: Ruleset
               href: articles/invision/docs/datastores/transactionpipeline/celladapter/ruleset.md
-          - name: Conditionexpressions
+          - name: Condition expressions
             href: articles/invision/docs/datastores/transactionpipeline/conditionexpressions.md
           - name: Distributer
             href: articles/invision/docs/datastores/transactionpipeline/distributer/index.md
             items:
-            - name: Inputconfig
+            - name: Input configuration
               href: articles/invision/docs/datastores/transactionpipeline/distributer/inputconfig.md
             - name: Output
               href: articles/invision/docs/datastores/transactionpipeline/distributer/output.md
@@ -243,7 +241,7 @@
           - name: Spawner
             href: articles/invision/docs/datastores/transactionpipeline/spawner/index.md
             items:
-            - name: Inputconfig
+            - name: Input configuration
               href: articles/invision/docs/datastores/transactionpipeline/spawner/inputconfig.md
             - name: Output
               href: articles/invision/docs/datastores/transactionpipeline/spawner/output.md
@@ -252,71 +250,71 @@
       - name: Dimensions
         href: articles/invision/docs/dimensions/index.md
         items:
-        - name: Dimautomating
-          href: articles/invision/docs/dimensions/dimautomating.md
-        - name: Dimcomposition
-          href: articles/invision/docs/dimensions/dimcomposition.md
         - name: How to's
           href: articles/invision/docs/dimensions/howto/index.md
           items:
-          - name: Autocopy
+          - name: How to automate copying a primary dimension into the solution
             href: articles/invision/docs/dimensions/howto/autocopy.md
-          - name: Autoimport
+          - name: How to automate data import
             href: articles/invision/docs/dimensions/howto/autoimport.md
-          - name: Createdim
+          - name: How to create and display a dimension
             href: articles/invision/docs/dimensions/howto/createdim.md
-          - name: Dimcomp
+          - name: How to create a composite dimension
             href: articles/invision/docs/dimensions/howto/dimcomp.md
-          - name: Dimeditor
+          - name: How to use the dimension editor
             href: articles/invision/docs/dimensions/howto/dimeditor.md
-          - name: Multilang
+          - name: How to enable support for multiple languages
             href: articles/invision/docs/dimensions/howto/multilang.md
-          - name: Timedim
+          - name: How to create a time dimension
             href: articles/invision/docs/dimensions/howto/timedim.md
-          - name: Transl
+          - name: How to configure translation of dimension name
             href: articles/invision/docs/dimensions/howto/transl.md
+        - name: Automating import of data to dimensions
+          href: articles/invision/docs/dimensions/dimautomating.md
+        - name: Dimension composition
+          href: articles/invision/docs/dimensions/dimcomposition.md
       - name: Directives
         href: articles/invision/docs/directives/index.md
         items:
-        - name: Csharpdirectives
-          href: articles/invision/docs/directives/csharpdirectives/index.md
-          items:
-          - name: Contextdir
-            href: articles/invision/docs/directives/csharpdirectives/contextdir.md
-          - name: Directive
-            href: articles/invision/docs/directives/csharpdirectives/directive.md
-          - name: Localize
-            href: articles/invision/docs/directives/csharpdirectives/localize.md
         - name: How to's
           href: articles/invision/docs/directives/howto/index.md
           items:
-          - name: Localize
+          - name: How To Set Up Translations
             href: articles/invision/docs/directives/howto/localize.md
-          - name: Stepname
+          - name: How to use step name directive
             href: articles/invision/docs/directives/howto/stepname.md
-        - name: Object
+        - name: C# Directives
+          href: articles/invision/docs/directives/csharpdirectives/index.md
+          items:
+          - name: Context Directives
+            href: articles/invision/docs/directives/csharpdirectives/contextdir.md
+          - name: "Directive(“directive expression”) : System.Object"
+            href: articles/invision/docs/directives/csharpdirectives/directive.md
+          - name: Localize
+            href: articles/invision/docs/directives/csharpdirectives/localize.md
+        - name: Object directives
           href: articles/invision/docs/directives/object.md
-        - name: Standarddirectives
+        - name: Standard directives
           href: articles/invision/docs/directives/standarddirectives.md
       - name: File storage
         href: articles/invision/docs/filestorage/index.md
         items:
+        - name: How to's
+          href: articles/invision/docs/filestorage/howto/index.md
+          items:
+          - name: How to create a file storage
+            href: articles/invision/docs/filestorage/howto/creatingfilestorage.md
+          - name: How to set up file click action
+            href: articles/invision/docs/filestorage/howto/fileclickaction.md
+          - name: How to get all file names from a file storage
+            href: articles/invision/docs/filestorage/howto/filenames.md
+          - name: How to set up a file storage
+            href: articles/invision/docs/filestorage/howto/settingfilestorage.md
         - name: Context
           href: articles/invision/docs/filestorage/context.md
         - name: Display modes
           href: articles/invision/docs/filestorage/display-modes.md
-        - name: How to's
-          href: articles/invision/docs/filestorage/howto/index.md
-          items:
-          - name: Creatingfilestorage
-            href: articles/invision/docs/filestorage/howto/creatingfilestorage.md
-          - name: Fileclickaction
-            href: articles/invision/docs/filestorage/howto/fileclickaction.md
-          - name: Filenames
-            href: articles/invision/docs/filestorage/howto/filenames.md
-          - name: Settingfilestorage
-            href: articles/invision/docs/filestorage/howto/settingfilestorage.md
-        - name: Setup
+        - name: File storage setup
           href: articles/invision/docs/filestorage/setup.md
       - name: Filters
         href: articles/invision/docs/filters/index.md
@@ -324,23 +322,23 @@
         - name: How to's
           href: articles/invision/docs/filters/howto/index.md
           items:
-          - name: Filteringtable
+          - name: How to filter the table
             href: articles/invision/docs/filters/howto/filteringtable.md
-          - name: Filteringworksheet
+          - name: How to filter the worksheet
             href: articles/invision/docs/filters/howto/filteringworksheet.md
-          - name: Flatfilter
+          - name: How to create and use flat filter
             href: articles/invision/docs/filters/howto/flatfilter.md
-          - name: Hierarchicalfilter
+          - name: How to create and use hierarchical filter
             href: articles/invision/docs/filters/howto/hierarchicalfilter.md
-          - name: Slicing
+          - name: How to use default selection and slicing
             href: articles/invision/docs/filters/howto/slicing.md
       - name: Forms
         href: articles/invision/docs/forms/index.md
         items:
-        - name: Formelements
+        - name: Form elements
           href: articles/invision/docs/forms/formelements.md
           items:
-          - name: Datepicker
+          - name: Date picker
             href: articles/invision/docs/forms/formelements/datepicker.md
           - name: Dropdown
             href: articles/invision/docs/forms/formelements/dropdown.md
@@ -348,23 +346,38 @@
             href: articles/invision/docs/forms/formelements/label.md
           - name: Textbox
             href: articles/invision/docs/forms/formelements/textbox.md
-        - name: Formschemas
+        - name: Form schemas
           href: articles/invision/docs/forms/formschemas.md
           items:
-          - name: Apis
+          - name: How to's
+            href: articles/invision/docs/forms/formschemas/howto.md
+            items:
+            - name: How to setup controls
+              href: articles/invision/docs/forms/formschemas/howto/controls.md
+            - name: How to setup a dropdown
+              href: articles/invision/docs/forms/formschemas/howto/dropdown.md
+            - name: How to use functions in forms
+              href: articles/invision/docs/forms/formschemas/howto/functions.md
+            - name: How to use a listbox
+              href: articles/invision/docs/forms/formschemas/howto/listbox.md
+            - name: How to use models and databindings
+              href: articles/invision/docs/forms/formschemas/howto/models-databinding.md
+            - name: How to configure layout
+              href: articles/invision/docs/forms/formschemas/howto/style.md
+          - name: APIs
             href: articles/invision/docs/forms/formschemas/apis.md
             items:
-            - name: ControlproxyAPI
+            - name: Control API
               href: articles/invision/docs/forms/formschemas/apis/controlproxyAPI.md
-            - name: DatabindingsAPI
+            - name: Data bindings API
               href: articles/invision/docs/forms/formschemas/apis/databindingsAPI.md
-            - name: Dataserviceapi
+            - name: Data service API
               href: articles/invision/docs/forms/formschemas/apis/dataserviceapi.md
-            - name: FormrunAPI
+            - name: Form runtime API
               href: articles/invision/docs/forms/formschemas/apis/formrunAPI.md
-            - name: Formruntime
+            - name: Form runtime
               href: articles/invision/docs/forms/formschemas/apis/formruntime.md
-            - name: WebfunctionsAPI
+            - name: Web functions API
               href: articles/invision/docs/forms/formschemas/apis/webfunctionsAPI.md
           - name: Controls
             href: articles/invision/docs/forms/formschemas/controls.md
@@ -373,14 +386,10 @@
               href: articles/invision/docs/forms/formschemas/controls/button.md
             - name: Camera
               href: articles/invision/docs/forms/formschemas/controls/camera.md
-            - name: Control
-              href: articles/invision/docs/forms/formschemas/controls/control.md
             - name: Datepicker
               href: articles/invision/docs/forms/formschemas/controls/datepicker.md
             - name: Dropdown
               href: articles/invision/docs/forms/formschemas/controls/dropdown.md
-            - name: Editablecontrol
-              href: articles/invision/docs/forms/formschemas/controls/editablecontrol.md
             - name: Grid
               href: articles/invision/docs/forms/formschemas/controls/grid.md
             - name: Headings
@@ -398,7 +407,7 @@
             - name: Listbox
               href: articles/invision/docs/forms/formschemas/controls/listbox.md
               items:
-              - name: Renderingitems
+              - name: Rendering items
                 href: articles/invision/docs/forms/formschemas/controls/listbox/renderingitems.md
             - name: Richtexteditor
               href: articles/invision/docs/forms/formschemas/controls/richtexteditor.md
@@ -408,48 +417,37 @@
               href: articles/invision/docs/forms/formschemas/controls/tabcontrol.md
             - name: Textarea
               href: articles/invision/docs/forms/formschemas/controls/textarea.md
-            - name: Textcontrol
-              href: articles/invision/docs/forms/formschemas/controls/textcontrol.md
             - name: Togglebutton
               href: articles/invision/docs/forms/formschemas/controls/togglebutton.md
             - name: Treeview
               href: articles/invision/docs/forms/formschemas/controls/treeview.md
+            - name: Control (base)
+              href: articles/invision/docs/forms/formschemas/controls/control.md
+            - name: Editable control (base)
+              href: articles/invision/docs/forms/formschemas/controls/editablecontrol.md
+            - name: Text control (base)
+              href: articles/invision/docs/forms/formschemas/controls/textcontrol.md
           - name: Data
             href: articles/invision/docs/forms/formschemas/data.md
             items:
-            - name: Dimensionmodels
+            - name: Dimension models
               href: articles/invision/docs/forms/formschemas/data/dimensionmodels.md
             - name: Lists
               href: articles/invision/docs/forms/formschemas/data/lists.md
             - name: Models
               href: articles/invision/docs/forms/formschemas/data/models.md
-            - name: Setmodels
+            - name: Set models
               href: articles/invision/docs/forms/formschemas/data/setmodels.md
-          - name: Eventhandlers
+          - name: Event handlers
             href: articles/invision/docs/forms/formschemas/eventhandlers.md
           - name: Functions
             href: articles/invision/docs/forms/formschemas/functions.md
             items:
-            - name: Callingfunctions
+            - name: Calling functions from external events
               href: articles/invision/docs/forms/formschemas/functions/callingfunctions.md
-          - name: How to's
-            href: articles/invision/docs/forms/formschemas/howto.md
-            items:
-            - name: Controls
-              href: articles/invision/docs/forms/formschemas/howto/controls.md
-            - name: Dropdown
-              href: articles/invision/docs/forms/formschemas/howto/dropdown.md
-            - name: Functions
-              href: articles/invision/docs/forms/formschemas/howto/functions.md
-            - name: Listbox
-              href: articles/invision/docs/forms/formschemas/howto/listbox.md
-            - name: Models databinding
-              href: articles/invision/docs/forms/formschemas/howto/models-databinding.md
-            - name: Style
-              href: articles/invision/docs/forms/formschemas/howto/style.md
-          - name: Stylinglayout
+          - name: Styling and layout
             href: articles/invision/docs/forms/formschemas/stylinglayout.md
-          - name: UsingXMLedit
+          - name: Using the XML edit
             href: articles/invision/docs/forms/formschemas/usingXMLedit.md
       - name: Home page
         href: articles/invision/docs/homepage.md
@@ -457,7 +455,7 @@
         - name: How to's
           href: articles/invision/docs/homepage/howto.md
           items:
-          - name: Homepage
+          - name: How to set up workbook as a home page
             href: articles/invision/docs/homepage/howto/homepage.md
       - name: Javascript
         href: articles/invision/docs/javascript.md
@@ -467,31 +465,42 @@
         - name: How to's
           href: articles/invision/docs/macros/howto.md
           items:
-          - name: Usingmacrostbv
+          - name: How to use macros in the TableView
             href: articles/invision/docs/macros/howto/usingmacrostbv.md
-        - name: Usingmacros
+        - name: Using macros in SQL statements
           href: articles/invision/docs/macros/usingmacros.md
-        - name: Writingmacros
+        - name: Writing macros
           href: articles/invision/docs/macros/writingmacros.md
           items:
-          - name: Accessingarguments
+          - name: Accessing arguments
             href: articles/invision/docs/macros/writingmacros/accessingarguments.md
-          - name: Functionmacros
+          - name: Function macros
             href: articles/invision/docs/macros/writingmacros/functionmacros.md
-          - name: Macroexpansionprovider
+          - name: MacroExpansionProvider
             href: articles/invision/docs/macros/writingmacros/macroexpansionprovider.md
             items:
-            - name: Accesscontrolservice
+            - name: AccessControlService
               href: articles/invision/docs/macros/writingmacros/macroexpansionprovider/accesscontrolservice.md
             - name: Context
               href: articles/invision/docs/macros/writingmacros/macroexpansionprovider/context.md
-            - name: Objectmodel
+            - name: Object model
               href: articles/invision/docs/macros/writingmacros/macroexpansionprovider/objectmodel.md
-            - name: Sqlcommandservice
+            - name: SqlCommandService
               href: articles/invision/docs/macros/writingmacros/macroexpansionprovider/sqlcommandservice.md
       - name: Packages
         href: articles/invision/docs/package.md
         items:
+        - name: How to's
+          href: articles/invision/docs/package/howto.md
+          items:
+          - name: How to create a package
+            href: articles/invision/docs/package/howto/create.md
+          - name: How to deploy a package
+            href: articles/invision/docs/package/howto/deploy.md
+          - name: How to upgrade a package
+            href: articles/invision/docs/package/howto/upgrade.md
+          - name: How to upgrade a package in package management screen
+            href: articles/invision/docs/package/howto/upgradepackmanagement.md
         - name: Deploy package
           href: articles/invision/docs/package/deploy-package.md
         - name: Develop package
@@ -504,31 +513,20 @@
               href: articles/invision/docs/package/develop-package/create-package/define-package.md
             - name: Export package
               href: articles/invision/docs/package/develop-package/create-package/export-package.md
-            - name: Packageproperty
+            - name: Package properties
               href: articles/invision/docs/package/develop-package/create-package/packageproperty.md
-            - name: Publ packages
+            - name: Publish packages
               href: articles/invision/docs/package/develop-package/create-package/publ-packages.md
           - name: Create package upgrade
             href: articles/invision/docs/package/develop-package/create-package-upgrade.md
             items:
-            - name: Create package upgrade using vs
+            - name: Create package upgrade using Visual Studio
               href: articles/invision/docs/package/develop-package/create-package-upgrade/create-package-upgrade-using-vs.md
               items:
-              - name: Upgrade stepbystep
+              - name: Step by step guide
                 href: articles/invision/docs/package/develop-package/create-package-upgrade/create-package-upgrade-using-vs/upgrade-stepbystep.md
-            - name: Pub pack upgrade
+            - name: Publish package upgrade
               href: articles/invision/docs/package/develop-package/create-package-upgrade/pub-pack-upgrade.md
-        - name: How to's
-          href: articles/invision/docs/package/howto.md
-          items:
-          - name: Create
-            href: articles/invision/docs/package/howto/create.md
-          - name: Deploy
-            href: articles/invision/docs/package/howto/deploy.md
-          - name: Upgrade
-            href: articles/invision/docs/package/howto/upgrade.md
-          - name: Upgradepackmanagement
-            href: articles/invision/docs/package/howto/upgradepackmanagement.md
         - name: Upgrade package
           href: articles/invision/docs/package/upgrade-package.md
           items:
@@ -537,175 +535,171 @@
       - name: PowerShell
         href: articles/invision/docs/powershell.md
         items:
-        - name: Commands
-          href: articles/invision/docs/powershell/commands.md
-        - name: Functiondoc
-          href: articles/invision/docs/powershell/functiondoc.md
-          items:
-          - name: Function1
-            href: articles/invision/docs/powershell/functiondoc/function1.md
-          - name: Function2
-            href: articles/invision/docs/powershell/functiondoc/function2.md
-          - name: Function3
-            href: articles/invision/docs/powershell/functiondoc/function3.md
-          - name: Function4
-            href: articles/invision/docs/powershell/functiondoc/function4.md
-          - name: Function5
-            href: articles/invision/docs/powershell/functiondoc/function5.md
-          - name: Function6
-            href: articles/invision/docs/powershell/functiondoc/function6.md
-          - name: Function7
-            href: articles/invision/docs/powershell/functiondoc/function7.md
         - name: How to's
           href: articles/invision/docs/powershell/howto.md
           items:
-          - name: Filenames
+          - name: How to get all file names from a file storage
             href: articles/invision/docs/powershell/howto/filenames.md
-          - name: Filenamesautom
+          - name: How to automate PowerShell script with data flow
             href: articles/invision/docs/powershell/howto/filenamesautom.md
-          - name: Sqlcommandwithdictionary
-            href: articles/invision/docs/powershell/howto/sqlcommandwithdictionary.md
-          - name: Sqlcommandwithparam
-            href: articles/invision/docs/powershell/howto/sqlcommandwithparam.md
+        - name: Commands
+          href: articles/invision/docs/powershell/commands.md
+        - name: Functions
+          href: articles/invision/docs/powershell/functiondoc.md
+          items:
+          - name: Pb. (dot-sourcing)
+            href: articles/invision/docs/powershell/functiondoc/function1.md
+          - name: $PbRunContext
+            href: articles/invision/docs/powershell/functiondoc/function2.md
+          - name: Profitbase.Data.SqlCommand functions
+            href: articles/invision/docs/powershell/functiondoc/function3.md
+          - name: Profitbase.Data.SqlScript functions
+            href: articles/invision/docs/powershell/functiondoc/function4.md
+          - name: Profitbase.PS.PsScript.Execute
+            href: articles/invision/docs/powershell/functiondoc/function5.md
+          - name: Profitbase.IO
+            href: articles/invision/docs/powershell/functiondoc/function6.md
+          - name: Profitbase.IO.FileStorage
+            href: articles/invision/docs/powershell/functiondoc/function7.md
         - name: Parameters
           href: articles/invision/docs/powershell/parameters.md
-        - name: Referencedoc
+        - name: References
           href: articles/invision/docs/powershell/referencedoc.md
       - name: SQL reports
         href: articles/invision/docs/sqlreports.md
         items:
-        - name: Chartformatting
-          href: articles/invision/docs/sqlreports/chartformatting.md
-        - name: Dataqueries
-          href: articles/invision/docs/sqlreports/dataqueries.md
         - name: How to's
           href: articles/invision/docs/sqlreports/howto.md
           items:
-          - name: Basics
+          - name: How to create SQL reports
             href: articles/invision/docs/sqlreports/howto/basics.md
-          - name: Charts
+          - name: How to create charts
             href: articles/invision/docs/sqlreports/howto/charts.md
-          - name: Interactionevents
+          - name: How to use ChartInteractionEvent
             href: articles/invision/docs/sqlreports/howto/interactionevents.md
+        - name: Chart formatting
+          href: articles/invision/docs/sqlreports/chartformatting.md
+        - name: Data queries
+          href: articles/invision/docs/sqlreports/dataqueries.md
       - name: SQL scripts
         href: articles/invision/docs/sqlscripts.md
         items:
         - name: How to's
           href: articles/invision/docs/sqlscripts/howto.md
           items:
-          - name: RunSqlScriptFromWorkbook
+          - name: Run SQL script from workbook
             href: articles/invision/docs/sqlscripts/howto/runSqlScriptFromWorkbook.md
-          - name: Setup
+          - name: How to create and execute from data flow
             href: articles/invision/docs/sqlscripts/howto/setup.md
-          - name: Sqlscriptservice
+          - name: Run SQL script when saving worksheets or tables
             href: articles/invision/docs/sqlscripts/howto/sqlscriptservice.md
       - name: System views
         href: articles/invision/docs/systemviews.md
       - name: Tables
         href: articles/invision/docs/tables.md
         items:
-        - name: Calculations
-          href: articles/invision/docs/tables/calculations.md
-          items:
-          - name: Appvariables
-            href: articles/invision/docs/tables/calculations/appvariables.md
-          - name: Arithmeticop
-            href: articles/invision/docs/tables/calculations/arithmeticop.md
-          - name: Calcinstfactory
-            href: articles/invision/docs/tables/calculations/calcinstfactory.md
-          - name: Celladressing
-            href: articles/invision/docs/tables/calculations/celladressing.md
-          - name: Cellnrowstylfunc
-            href: articles/invision/docs/tables/calculations/cellnrowstylfunc.md
-          - name: Comparisonop
-            href: articles/invision/docs/tables/calculations/comparisonop.md
-          - name: Datefunc
-            href: articles/invision/docs/tables/calculations/datefunc.md
-          - name: Eaze
-            href: articles/invision/docs/tables/calculations/eaze.md
-          - name: Financialfunc
-            href: articles/invision/docs/tables/calculations/financialfunc.md
-          - name: Keywords
-            href: articles/invision/docs/tables/calculations/keywords.md
-          - name: Logicalfunc
-            href: articles/invision/docs/tables/calculations/logicalfunc.md
-          - name: Logicalop
-            href: articles/invision/docs/tables/calculations/logicalop.md
-          - name: Mathfunc
-            href: articles/invision/docs/tables/calculations/mathfunc.md
-          - name: Miscfunc
-            href: articles/invision/docs/tables/calculations/miscfunc.md
-          - name: Otherbop
-            href: articles/invision/docs/tables/calculations/otherbop.md
-          - name: Rowcollfunc
-            href: articles/invision/docs/tables/calculations/rowcollfunc.md
-          - name: Statisticfunc
-            href: articles/invision/docs/tables/calculations/statisticfunc.md
-          - name: Sysfunc
-            href: articles/invision/docs/tables/calculations/sysfunc.md
-          - name: Textfunc
-            href: articles/invision/docs/tables/calculations/textfunc.md
-          - name: Usingdate
-            href: articles/invision/docs/tables/calculations/usingdate.md
-        - name: Cellvalidation
-          href: articles/invision/docs/tables/cellvalidation.md
-        - name: Colcaptions
-          href: articles/invision/docs/tables/colcaptions.md
-        - name: Columnproperties
-          href: articles/invision/docs/tables/columnproperties.md
-          items:
-          - name: Basiccolproperties
-            href: articles/invision/docs/tables/columnproperties/basiccolproperties.md
-          - name: Caption
-            href: articles/invision/docs/tables/columnproperties/caption.md
-          - name: Captionformatter
-            href: articles/invision/docs/tables/columnproperties/captionformatter.md
-          - name: Cellrenderer
-            href: articles/invision/docs/tables/columnproperties/cellrenderer.md
-          - name: Customactionconditions
-            href: articles/invision/docs/tables/columnproperties/customactionconditions.md
-          - name: Dropdownselection
-            href: articles/invision/docs/tables/columnproperties/dropdownselection.md
-          - name: Formatter
-            href: articles/invision/docs/tables/columnproperties/formatter.md
-          - name: Ishidden
-            href: articles/invision/docs/tables/columnproperties/ishidden.md
-          - name: Readonly
-            href: articles/invision/docs/tables/columnproperties/readonly.md
-          - name: Sourcecolumnpredicate
-            href: articles/invision/docs/tables/columnproperties/sourcecolumnpredicate.md
-        - name: Customquery
-          href: articles/invision/docs/tables/customquery.md
-        - name: Filters
-          href: articles/invision/docs/tables/filters.md
         - name: How to's
           href: articles/invision/docs/tables/howto.md
           items:
-          - name: Cellvalidation
+          - name: How to use cell validation
             href: articles/invision/docs/tables/howto/cellvalidation.md
-          - name: Creatingtable
+          - name: How to create and edit table schema
             href: articles/invision/docs/tables/howto/creatingtable.md
-          - name: Creatingtableview
+          - name: How to create a table view
             href: articles/invision/docs/tables/howto/creatingtableview.md
-          - name: Dropdown
+          - name: How to create a dropdown
             href: articles/invision/docs/tables/howto/dropdown.md
-          - name: Javascript
+          - name: How to modify table with custom JS
             href: articles/invision/docs/tables/howto/javascript.md
-          - name: Table events cell action link
+          - name: How to set cell action link tapped event
             href: articles/invision/docs/tables/howto/table-events-cell-action-link.md
-          - name: Table events data modified
+          - name: How to set data modified and item ddded events
             href: articles/invision/docs/tables/howto/table-events-data-modified.md
-          - name: Tableview custom cell
+          - name: How to use custom cell renderer in table view
             href: articles/invision/docs/tables/howto/tableview-custom-cell.md
-          - name: Tableviewmacro
+          - name: How to use macro expansion in table view
             href: articles/invision/docs/tables/howto/tableviewmacro.md
+        - name: Calculations
+          href: articles/invision/docs/tables/calculations.md
+          items:
+          - name: AppVariables in formulas
+            href: articles/invision/docs/tables/calculations/appvariables.md
+          - name: Arithmetic operators
+            href: articles/invision/docs/tables/calculations/arithmeticop.md
+          - name: Calculation instance factory
+            href: articles/invision/docs/tables/calculations/calcinstfactory.md
+          - name: Cell adressing
+            href: articles/invision/docs/tables/calculations/celladressing.md
+          - name: Cell and row styling functions
+            href: articles/invision/docs/tables/calculations/cellnrowstylfunc.md
+          - name: Comparison operators
+            href: articles/invision/docs/tables/calculations/comparisonop.md
+          - name: Date functions
+            href: articles/invision/docs/tables/calculations/datefunc.md
+          - name: Eaze
+            href: articles/invision/docs/tables/calculations/eaze.md
+          - name: Financial functions
+            href: articles/invision/docs/tables/calculations/financialfunc.md
+          - name: Keywords
+            href: articles/invision/docs/tables/calculations/keywords.md
+          - name: Logical functions
+            href: articles/invision/docs/tables/calculations/logicalfunc.md
+          - name: Logical operators
+            href: articles/invision/docs/tables/calculations/logicalop.md
+          - name: Math / Trig functions
+            href: articles/invision/docs/tables/calculations/mathfunc.md
+          - name: Misc functions
+            href: articles/invision/docs/tables/calculations/miscfunc.md
+          - name: Other binary operators
+            href: articles/invision/docs/tables/calculations/otherbop.md
+          - name: Row collection functions
+            href: articles/invision/docs/tables/calculations/rowcollfunc.md
+          - name: Statistical functions
+            href: articles/invision/docs/tables/calculations/statisticfunc.md
+          - name: System functions
+            href: articles/invision/docs/tables/calculations/sysfunc.md
+          - name: Text functions
+            href: articles/invision/docs/tables/calculations/textfunc.md
+          - name: Date for time frame columns in formulas
+            href: articles/invision/docs/tables/calculations/usingdate.md
+        - name: Cell validation
+          href: articles/invision/docs/tables/cellvalidation.md
+        - name: Column captions
+          href: articles/invision/docs/tables/colcaptions.md
+        - name: Column properties
+          href: articles/invision/docs/tables/columnproperties.md
+          items:
+          - name: Basic column properties
+            href: articles/invision/docs/tables/columnproperties/basiccolproperties.md
+          - name: Caption
+            href: articles/invision/docs/tables/columnproperties/caption.md
+          - name: Caption formatter
+            href: articles/invision/docs/tables/columnproperties/captionformatter.md
+          - name: Cell renderer
+            href: articles/invision/docs/tables/columnproperties/cellrenderer.md
+          - name: Custom action conditions
+            href: articles/invision/docs/tables/columnproperties/customactionconditions.md
+          - name: Dropdown selection
+            href: articles/invision/docs/tables/columnproperties/dropdownselection.md
+          - name: Formatter
+            href: articles/invision/docs/tables/columnproperties/formatter.md
+          - name: Is hidden
+            href: articles/invision/docs/tables/columnproperties/ishidden.md
+          - name: Read only
+            href: articles/invision/docs/tables/columnproperties/readonly.md
+          - name: Source column predicate
+            href: articles/invision/docs/tables/columnproperties/sourcecolumnpredicate.md
+        - name: Custom query
+          href: articles/invision/docs/tables/customquery.md
+        - name: Filters
+          href: articles/invision/docs/tables/filters.md
         - name: Layout
           href: articles/invision/docs/tables/layout.md
-        - name: Rankedinput
+        - name: Ranked input
           href: articles/invision/docs/tables/rankedinput.md
-        - name: Rowstyling
+        - name: Row styling
           href: articles/invision/docs/tables/rowstyling.md
-        - name: Stackedcolhead
+        - name: Stacked column headers
           href: articles/invision/docs/tables/stackedcolhead.md
       - name: Table view
         href: articles/invision/docs/tableview.md
@@ -713,15 +707,15 @@
         - name: How to's
           href: articles/invision/docs/tableview/howto.md
           items:
-          - name: Creatingtableview
+          - name: How to create a table view
             href: articles/invision/docs/tableview/howto/creatingtableview.md
-          - name: Filter
+          - name: How to use hierarchical filter in table view
             href: articles/invision/docs/tableview/howto/filter.md
-          - name: Rowselectcondition
+          - name: How to use row selectability condition
             href: articles/invision/docs/tableview/howto/rowselectcondition.md
-          - name: Tableview custom cell
+          - name: How to use custom cell renderer in table view
             href: articles/invision/docs/tableview/howto/tableview-custom-cell.md
-          - name: Tableviewmacro
+          - name: How to use macro expansion in table view
             href: articles/invision/docs/tableview/howto/tableviewmacro.md
       - name: Time frame
         href: articles/invision/docs/timeframe.md
@@ -731,7 +725,7 @@
         - name: How to's
           href: articles/invision/docs/translationsloc/howto.md
           items:
-          - name: Setup
+          - name: How to setup translations
             href: articles/invision/docs/translationsloc/howto/setup.md
       - name: Troubleshooting
         href: articles/invision/docs/troubleshooting.md

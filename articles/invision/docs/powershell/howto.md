@@ -12,5 +12,4 @@ In this section, you will find a list of shortcuts to different subjects about P
 #### See Also  
 
 * [How To get All File Names From a File Storage](howto/filenames.md)
-* [How To use The SqlCommand API With Sql Parameters](howto/sqlcommandwithparam.md)
-* [How To use The SqlCommand API With The Dictionary API](howto/sqlcommandwithdictionary.md)
+* [How To Automate PowerShell Script with Data Flow](howto/filenamesautom.md)
