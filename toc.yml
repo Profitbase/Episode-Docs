@@ -734,68 +734,93 @@
       - name: Web functions
         href: articles/invision/docs/webfunctions.md
         items:
-        - name: Calling
+        - name: Run web functions from workbooks
           href: articles/invision/docs/webfunctions/calling.md
-        - name: Run from forms
+        - name: Run web functions from forms
           href: articles/invision/docs/webfunctions/run-from-forms.md
-        - name: Rundfcommands
+        - name: Run data flow commands from web functions
           href: articles/invision/docs/webfunctions/rundfcommands.md
-        - name: Runpsscripts
+        - name: Run PowerShell scripts from web functions
           href: articles/invision/docs/webfunctions/runpsscripts.md
-        - name: Runsqlscripts
+        - name: Run SQL scripts from web functions
           href: articles/invision/docs/webfunctions/runsqlscripts.md
         - name: Testing
           href: articles/invision/docs/webfunctions/testing.md
-        - name: Usesqlcommands
+        - name: Run SQL commands from web functions
           href: articles/invision/docs/webfunctions/usesqlcommands.md
       - name: Web service APIs
         href: articles/invision/docs/webserviceapis.md
         items:
-        - name: Dbwebapi
+        - name: DB web API
           href: articles/invision/docs/webserviceapis/dbwebapi.md
-        - name: Jsondataapi
+        - name: JSON data API
           href: articles/invision/docs/webserviceapis/jsondataapi.md
       - name: Workbook menu
         href: articles/invision/docs/workbookmenu.md
       - name: Workbooks
         href: articles/invision/docs/workbooks.md
         items:
+        - name: How to's
+          href: articles/invision/docs/workbooks/howto.md
+          items:
+          - name: How to work with components in workbook
+            href: articles/invision/docs/workbooks/howto/components.md
+          - name: How to stack components
+            href: articles/invision/docs/workbooks/howto/componentstacking.md
+          - name: How to create a workbook
+            href: articles/invision/docs/workbooks/howto/creatingworkbook.md
+          - name: How to set up interactions in workbook
+            href: articles/invision/docs/workbooks/howto/interactions.md
+          - name: How to create a popup
+            href: articles/invision/docs/workbooks/howto/popup.md
+          - name: How to create stepper
+            href: articles/invision/docs/workbooks/howto/stepperbasic.md
+          - name: How to use step navigated to event in stepper
+            href: articles/invision/docs/workbooks/howto/stepperdisable.md
+          - name: How to set up buttons in stepper
+            href: articles/invision/docs/workbooks/howto/steppersetup.md
+          - name: How to create subscreens in tabs
+            href: articles/invision/docs/workbooks/howto/subscreens.md
+          - name: How to set up workbook as a home page
+            href: articles/invision/docs/workbooks/howto/workbookhomepage.md
+          - name: How to set up a workbook menu
+            href: articles/invision/docs/workbooks/howto/workbookmenu.md
         - name: Components
           href: articles/invision/docs/workbooks/components.md
           items:
-          - name: Accesscontrol
+          - name: Access control editors
             href: articles/invision/docs/workbooks/components/accesscontrol.md
             items:
-            - name: Accessgroupman
+            - name: Access group management
               href: articles/invision/docs/workbooks/components/accesscontrol/accessgroupman.md
-            - name: Dataperm
+            - name: Data permissions
               href: articles/invision/docs/workbooks/components/accesscontrol/dataperm.md
-            - name: Identitymanagement
+            - name: Identity management
               href: articles/invision/docs/workbooks/components/accesscontrol/identitymanagement.md
-            - name: Workbookperm
+            - name: Workbook permissions
               href: articles/invision/docs/workbooks/components/accesscontrol/workbookperm.md
-          - name: Dataflow
+          - name: Data flow
             href: articles/invision/docs/workbooks/components/dataflow.md
-          - name: Dataflowschedule
+          - name: Data flow schedule
             href: articles/invision/docs/workbooks/components/dataflowschedule.md
-          - name: Dimensioneditor
+          - name: Dimension editor
             href: articles/invision/docs/workbooks/components/dimensioneditor.md
           - name: Extension
             href: articles/invision/docs/workbooks/components/extension.md
-          - name: Filestorage
+          - name: File storage
             href: articles/invision/docs/workbooks/components/filestorage.md
           - name: Filter
             href: articles/invision/docs/workbooks/components/filter.md
             items:
-            - name: Filterslicing
+            - name: Filter slicing
               href: articles/invision/docs/workbooks/components/filter/filterslicing.md
-          - name: Formelements
+          - name: Form elements
             href: articles/invision/docs/workbooks/components/formelements.md
-          - name: Formschemas
+          - name: Form schemas
             href: articles/invision/docs/workbooks/components/formschemas.md
-          - name: Inputelement
+          - name: Input elements
             href: articles/invision/docs/workbooks/components/inputelement.md
-          - name: Progressindicator
+          - name: Progress indicator
             href: articles/invision/docs/workbooks/components/progressindicator.md
           - name: Reports
             href: articles/invision/docs/workbooks/components/reports.md
@@ -803,14 +828,14 @@
             href: articles/invision/docs/workbooks/components/script.md
           - name: Table
             href: articles/invision/docs/workbooks/components/table.md
-          - name: Tableview
+          - name: Table view
             href: articles/invision/docs/workbooks/components/tableview.md
-          - name: Uielements
+          - name: Ui elements
             href: articles/invision/docs/workbooks/components/uielements.md
             items:
             - name: Button
               href: articles/invision/docs/workbooks/components/uielements/button.md
-            - name: Fileupload
+            - name: File upload
               href: articles/invision/docs/workbooks/components/uielements/fileupload.md
             - name: Iframe
               href: articles/invision/docs/workbooks/components/uielements/iframe.md
@@ -824,155 +849,130 @@
               href: articles/invision/docs/workbooks/components/uielements/tabcontrol.md
           - name: Workflow
             href: articles/invision/docs/workbooks/components/workflow.md
-          - name: Workprocesseditor
+          - name: Work process editor
             href: articles/invision/docs/workbooks/components/workprocesseditor.md
-        - name: How to's
-          href: articles/invision/docs/workbooks/howto.md
-          items:
-          - name: Components
-            href: articles/invision/docs/workbooks/howto/components.md
-          - name: Componentstacking
-            href: articles/invision/docs/workbooks/howto/componentstacking.md
-          - name: Creatingworkbook
-            href: articles/invision/docs/workbooks/howto/creatingworkbook.md
-          - name: Interactions
-            href: articles/invision/docs/workbooks/howto/interactions.md
-          - name: Popup
-            href: articles/invision/docs/workbooks/howto/popup.md
-          - name: Stepperbasic
-            href: articles/invision/docs/workbooks/howto/stepperbasic.md
-          - name: Stepperdisable
-            href: articles/invision/docs/workbooks/howto/stepperdisable.md
-          - name: Steppersetup
-            href: articles/invision/docs/workbooks/howto/steppersetup.md
-          - name: Subscreens
-            href: articles/invision/docs/workbooks/howto/subscreens.md
-          - name: Workbookhomepage
-            href: articles/invision/docs/workbooks/howto/workbookhomepage.md
-          - name: Workbookmenu
-            href: articles/invision/docs/workbooks/howto/workbookmenu.md
         - name: Pages
           href: articles/invision/docs/workbooks/pages.md
-        - name: Programmingmodel
+        - name: Programming model
           href: articles/invision/docs/workbooks/programmingmodel.md
           items:
-          - name: Componentstacking
+          - name: Component stacking
             href: articles/invision/docs/workbooks/programmingmodel/componentstacking.md
-          - name: Initializing
+          - name: Initializing from URL
             href: articles/invision/docs/workbooks/programmingmodel/initializing.md
           - name: Instructions
             href: articles/invision/docs/workbooks/programmingmodel/instructions.md
             items:
-            - name: Addheader
+            - name: AddHeader
               href: articles/invision/docs/workbooks/programmingmodel/instructions/addheader.md
-            - name: Configinvocation
+            - name: ConfigInvocation
               href: articles/invision/docs/workbooks/programmingmodel/instructions/configinvocation.md
-            - name: Configuremessage
+            - name: ConfigureMessage
               href: articles/invision/docs/workbooks/programmingmodel/instructions/configuremessage.md
-            - name: Containsvalue
+            - name: Contains
               href: articles/invision/docs/workbooks/programmingmodel/instructions/containsvalue.md
-            - name: Cssclass
+            - name: CssClass
               href: articles/invision/docs/workbooks/programmingmodel/instructions/cssclass.md
-            - name: Enableif
+            - name: EnableIf
               href: articles/invision/docs/workbooks/programmingmodel/instructions/enableif.md
-            - name: Executeif
+            - name: ExecuteIf
               href: articles/invision/docs/workbooks/programmingmodel/instructions/executeif.md
             - name: Filter
               href: articles/invision/docs/workbooks/programmingmodel/instructions/filter.md
-            - name: Getactivepage
+            - name: GetActivePage
               href: articles/invision/docs/workbooks/programmingmodel/instructions/getactivepage.md
-            - name: Hasfilterchanged
+            - name: HasFilterChanged
               href: articles/invision/docs/workbooks/programmingmodel/instructions/hasfilterchanged.md
             - name: Http
               href: articles/invision/docs/workbooks/programmingmodel/instructions/http.md
-            - name: Isappreadonly
+            - name: IsAppReadOnly
               href: articles/invision/docs/workbooks/programmingmodel/instructions/isappreadonly.md
-            - name: Isfilterset
+            - name: IsFilterSet
               href: articles/invision/docs/workbooks/programmingmodel/instructions/isfilterset.md
-            - name: Ishostpageactive
+            - name: IsHostPageActive
               href: articles/invision/docs/workbooks/programmingmodel/instructions/ishostpageactive.md
-            - name: Loadminmax
+            - name: LoadMinMax
               href: articles/invision/docs/workbooks/programmingmodel/instructions/loadminmax.md
-            - name: Loadoptions
+            - name: LoadOptions
               href: articles/invision/docs/workbooks/programmingmodel/instructions/loadoptions.md
-            - name: Openbrowserwindow
+            - name: OpenBrowserWindow
               href: articles/invision/docs/workbooks/programmingmodel/instructions/openbrowserwindow.md
-            - name: Openspreadsheeteditor
+            - name: OpenSpreadsheetEditor
               href: articles/invision/docs/workbooks/programmingmodel/instructions/openspreadsheeteditor.md
             - name: Popup
               href: articles/invision/docs/workbooks/programmingmodel/instructions/popup.md
             - name: Reload
               href: articles/invision/docs/workbooks/programmingmodel/instructions/reload.md
-            - name: Resetcaption
+            - name: ResetCaption
               href: articles/invision/docs/workbooks/programmingmodel/instructions/resetcaption.md
             - name: Set
               href: articles/invision/docs/workbooks/programmingmodel/instructions/set.md
-            - name: Setapptitle
+            - name: SetAppTitle
               href: articles/invision/docs/workbooks/programmingmodel/instructions/setapptitle.md
-            - name: Setcaption
+            - name: SetCaption
               href: articles/invision/docs/workbooks/programmingmodel/instructions/setcaption.md
-            - name: Setcaptionsuffix
+            - name: SetCaptionSuffix
               href: articles/invision/docs/workbooks/programmingmodel/instructions/setcaptionsuffix.md
-            - name: Setdatamodified
+            - name: SetDataModified
               href: articles/invision/docs/workbooks/programmingmodel/instructions/setdatamodified.md
-            - name: Seteventdata
+            - name: SetEventData
               href: articles/invision/docs/workbooks/programmingmodel/instructions/seteventdata.md
-            - name: Setfieldvalue
+            - name: SetFieldValue
               href: articles/invision/docs/workbooks/programmingmodel/instructions/setfieldvalue.md
-            - name: Setif
+            - name: SetIf
               href: articles/invision/docs/workbooks/programmingmodel/instructions/setif.md
-            - name: Setparamvalue
+            - name: SetParamValue
               href: articles/invision/docs/workbooks/programmingmodel/instructions/setparamvalue.md
-            - name: Setreadonly
+            - name: SetReadOnly
               href: articles/invision/docs/workbooks/programmingmodel/instructions/setreadonly.md
-            - name: Setsrc
+            - name: SetSrc
               href: articles/invision/docs/workbooks/programmingmodel/instructions/setsrc.md
-            - name: Setsrcif
+            - name: SetSrcIf
               href: articles/invision/docs/workbooks/programmingmodel/instructions/setsrcif.md
-            - name: Settext
+            - name: SetText
               href: articles/invision/docs/workbooks/programmingmodel/instructions/settext.md
-            - name: Settextif
+            - name: SetTextIf
               href: articles/invision/docs/workbooks/programmingmodel/instructions/settextif.md
-            - name: Showtoastnotyfication
+            - name: ShowToastNotyfication
               href: articles/invision/docs/workbooks/programmingmodel/instructions/showtoastnotyfication.md
             - name: Validate
               href: articles/invision/docs/workbooks/programmingmodel/instructions/validate.md
             - name: Var
               href: articles/invision/docs/workbooks/programmingmodel/instructions/var.md
-          - name: Interactionmodel
+          - name: Interaction model
             href: articles/invision/docs/workbooks/programmingmodel/interactionmodel.md
             items:
-            - name: Sendingmsgbetween
+            - name: Sending messages between workbooks
               href: articles/invision/docs/workbooks/programmingmodel/interactionmodel/sendingmsgbetween.md
-            - name: Workbookactions
+            - name: Workbook actions
               href: articles/invision/docs/workbooks/programmingmodel/interactionmodel/workbookactions.md
-            - name: Workbookevents
+            - name: Workbook events
               href: articles/invision/docs/workbooks/programmingmodel/interactionmodel/workbookevents.md
           - name: Variables
             href: articles/invision/docs/workbooks/programmingmodel/variables.md
         - name: Subscreens
           href: articles/invision/docs/workbooks/subscreens.md
-        - name: Themesandstyles
+        - name: Themes and styles
           href: articles/invision/docs/workbooks/themesandstyles.md
       - name: Workflow
         href: articles/invision/docs/workflow.md
         items:
-        - name: Dataset
+        - name: Data set
           href: articles/invision/docs/workflow/dataset.md
-        - name: Flowcontrolobj
+        - name: Flow control objects
           href: articles/invision/docs/workflow/flowcontrolobj.md
-        - name: Iterationsarchvers
+        - name: Iterations, archiving and versioning
           href: articles/invision/docs/workflow/iterationsarchvers.md
-        - name: Processflow
+        - name: Process flow
           href: articles/invision/docs/workflow/processflow.md
           items:
           - name: Activity
             href: articles/invision/docs/workflow/processflow/activity.md
-          - name: Flowcontrolconfig
+          - name: Configuration
             href: articles/invision/docs/workflow/processflow/flowcontrolconfig.md
         - name: Rollover
           href: articles/invision/docs/workflow/rollover.md
-        - name: Workflowusergroups
+        - name: Workflow access groups
           href: articles/invision/docs/workflow/workflowusergroups.md
       - name: Work process
         href: articles/invision/docs/workprocess.md
@@ -980,183 +980,183 @@
         - name: How to's
           href: articles/invision/docs/workprocess/howto.md
           items:
-          - name: Clientside
+          - name: How to define admin in work process
             href: articles/invision/docs/workprocess/howto/clientside.md
-          - name: Setup
+          - name: How to setup work process
             href: articles/invision/docs/workprocess/howto/setup.md
-          - name: Versioning
+          - name: How to create a work process version
             href: articles/invision/docs/workprocess/howto/versioning.md
-        - name: Workprocessconfiguration
+        - name: Work process configuration
           href: articles/invision/docs/workprocess/workprocessconfiguration.md
-        - name: Workprocessversions
+        - name: Work process versions
           href: articles/invision/docs/workprocess/workprocessversions.md
       - name: Worksheets
         href: articles/invision/docs/worksheets.md
         items:
-        - name: Calculations
-          href: articles/invision/docs/worksheets/calculations.md
-          items:
-          - name: Appvariables
-            href: articles/invision/docs/worksheets/calculations/appvariables.md
-          - name: Arithmeticop
-            href: articles/invision/docs/worksheets/calculations/arithmeticop.md
-          - name: Calcinstfactory
-            href: articles/invision/docs/worksheets/calculations/calcinstfactory.md
-          - name: Celladressing
-            href: articles/invision/docs/worksheets/calculations/celladressing.md
-          - name: Cellnrowstylfunc
-            href: articles/invision/docs/worksheets/calculations/cellnrowstylfunc.md
-          - name: Comparisonop
-            href: articles/invision/docs/worksheets/calculations/comparisonop.md
-          - name: Datefunc
-            href: articles/invision/docs/worksheets/calculations/datefunc.md
-          - name: Eaze
-            href: articles/invision/docs/worksheets/calculations/eaze.md
-          - name: Financialfunc
-            href: articles/invision/docs/worksheets/calculations/financialfunc.md
-          - name: Keywords
-            href: articles/invision/docs/worksheets/calculations/keywords.md
-          - name: Logicalfunc
-            href: articles/invision/docs/worksheets/calculations/logicalfunc.md
-          - name: Logicalop
-            href: articles/invision/docs/worksheets/calculations/logicalop.md
-          - name: Mathfunc
-            href: articles/invision/docs/worksheets/calculations/mathfunc.md
-          - name: Miscfunc
-            href: articles/invision/docs/worksheets/calculations/miscfunc.md
-          - name: Otherbop
-            href: articles/invision/docs/worksheets/calculations/otherbop.md
-          - name: Rowcollfunc
-            href: articles/invision/docs/worksheets/calculations/rowcollfunc.md
-          - name: Statisticfunc
-            href: articles/invision/docs/worksheets/calculations/statisticfunc.md
-          - name: Sysfunc
-            href: articles/invision/docs/worksheets/calculations/sysfunc.md
-          - name: Textfunc
-            href: articles/invision/docs/worksheets/calculations/textfunc.md
-          - name: Usingdate
-            href: articles/invision/docs/worksheets/calculations/usingdate.md
-        - name: Cellvalidation
-          href: articles/invision/docs/worksheets/cellvalidation.md
-        - name: Colcaptions
-          href: articles/invision/docs/worksheets/colcaptions.md
-        - name: Columnproperties
-          href: articles/invision/docs/worksheets/columnproperties.md
-          items:
-          - name: Basiccolproperties
-            href: articles/invision/docs/worksheets/columnproperties/basiccolproperties.md
-          - name: Caption
-            href: articles/invision/docs/worksheets/columnproperties/caption.md
-          - name: Captionformatter
-            href: articles/invision/docs/worksheets/columnproperties/captionformatter.md
-          - name: Cellrenderer
-            href: articles/invision/docs/worksheets/columnproperties/cellrenderer.md
-          - name: Customactionconditions
-            href: articles/invision/docs/worksheets/columnproperties/customactionconditions.md
-          - name: Dropdownselection
-            href: articles/invision/docs/worksheets/columnproperties/dropdownselection.md
-          - name: Formatter
-            href: articles/invision/docs/worksheets/columnproperties/formatter.md
-          - name: Ishidden
-            href: articles/invision/docs/worksheets/columnproperties/ishidden.md
-          - name: Readonly
-            href: articles/invision/docs/worksheets/columnproperties/readonly.md
-          - name: Sourcecolumnpredicate
-            href: articles/invision/docs/worksheets/columnproperties/sourcecolumnpredicate.md
-        - name: Conditcellreadonly
-          href: articles/invision/docs/worksheets/conditcellreadonly.md
-        - name: Customquery
-          href: articles/invision/docs/worksheets/customquery.md
-        - name: Customrows
-          href: articles/invision/docs/worksheets/customrows.md
-        - name: Filters
-          href: articles/invision/docs/worksheets/filters.md
         - name: How to's
           href: articles/invision/docs/worksheets/howto.md
           items:
-          - name: Cellvalidation
+          - name: How to use cell validation in spreadsheets
             href: articles/invision/docs/worksheets/howto/cellvalidation.md
-          - name: Conditionalformating
+          - name: How to use a conditional formatting
             href: articles/invision/docs/worksheets/howto/conditionalformating.md
-          - name: Customcellrenderer
+          - name: How to use cell renderers
             href: articles/invision/docs/worksheets/howto/customcellrenderer.md
-          - name: Customquery
+          - name: How to use a custom query
             href: articles/invision/docs/worksheets/howto/customquery.md
-          - name: Customrow
+          - name: How to create a custom row
             href: articles/invision/docs/worksheets/howto/customrow.md
-          - name: Dropdown
+          - name: How to create a dropdown
             href: articles/invision/docs/worksheets/howto/dropdown.md
-          - name: Javascript
+          - name: How to modify spreadsheets with custom JS
             href: articles/invision/docs/worksheets/howto/javascript.md
-          - name: Stylingfunctions
+          - name: How to use styling functions
             href: articles/invision/docs/worksheets/howto/stylingfunctions.md
-          - name: Timeframecolumns
+          - name: How to use column captions for time frame columns
             href: articles/invision/docs/worksheets/howto/timeframecolumns.md
-        - name: Onsave
+        - name: Calculations
+          href: articles/invision/docs/worksheets/calculations.md
+          items:
+          - name: AppVariables in formulas
+            href: articles/invision/docs/worksheets/calculations/appvariables.md
+          - name: Arithmetic operators
+            href: articles/invision/docs/worksheets/calculations/arithmeticop.md
+          - name: Calculation instance factory
+            href: articles/invision/docs/worksheets/calculations/calcinstfactory.md
+          - name: Cell adressing
+            href: articles/invision/docs/worksheets/calculations/celladressing.md
+          - name: Cell and row styling functions
+            href: articles/invision/docs/worksheets/calculations/cellnrowstylfunc.md
+          - name: Comparison operators
+            href: articles/invision/docs/worksheets/calculations/comparisonop.md
+          - name: Date functions
+            href: articles/invision/docs/worksheets/calculations/datefunc.md
+          - name: Eaze
+            href: articles/invision/docs/worksheets/calculations/eaze.md
+          - name: Financial functions
+            href: articles/invision/docs/worksheets/calculations/financialfunc.md
+          - name: Keywords
+            href: articles/invision/docs/worksheets/calculations/keywords.md
+          - name: Logical functions
+            href: articles/invision/docs/worksheets/calculations/logicalfunc.md
+          - name: Logical operators
+            href: articles/invision/docs/worksheets/calculations/logicalop.md
+          - name: Math / trig functions
+            href: articles/invision/docs/worksheets/calculations/mathfunc.md
+          - name: Misc functions
+            href: articles/invision/docs/worksheets/calculations/miscfunc.md
+          - name: Other binary operators
+            href: articles/invision/docs/worksheets/calculations/otherbop.md
+          - name: Row collection functions
+            href: articles/invision/docs/worksheets/calculations/rowcollfunc.md
+          - name: Statistical functions
+            href: articles/invision/docs/worksheets/calculations/statisticfunc.md
+          - name: System functions
+            href: articles/invision/docs/worksheets/calculations/sysfunc.md
+          - name: Text functions
+            href: articles/invision/docs/worksheets/calculations/textfunc.md
+          - name: Date for time frame columns in formulas
+            href: articles/invision/docs/worksheets/calculations/usingdate.md
+        - name: Cell validation
+          href: articles/invision/docs/worksheets/cellvalidation.md
+        - name: Column captions
+          href: articles/invision/docs/worksheets/colcaptions.md
+        - name: Column properties
+          href: articles/invision/docs/worksheets/columnproperties.md
+          items:
+          - name: Basic column properties
+            href: articles/invision/docs/worksheets/columnproperties/basiccolproperties.md
+          - name: Caption
+            href: articles/invision/docs/worksheets/columnproperties/caption.md
+          - name: Caption formatter
+            href: articles/invision/docs/worksheets/columnproperties/captionformatter.md
+          - name: Cell renderer
+            href: articles/invision/docs/worksheets/columnproperties/cellrenderer.md
+          - name: Custom action conditions
+            href: articles/invision/docs/worksheets/columnproperties/customactionconditions.md
+          - name: Dropdown selection
+            href: articles/invision/docs/worksheets/columnproperties/dropdownselection.md
+          - name: Formatter
+            href: articles/invision/docs/worksheets/columnproperties/formatter.md
+          - name: Is hidden
+            href: articles/invision/docs/worksheets/columnproperties/ishidden.md
+          - name: Read only
+            href: articles/invision/docs/worksheets/columnproperties/readonly.md
+          - name: Source column predicate
+            href: articles/invision/docs/worksheets/columnproperties/sourcecolumnpredicate.md
+        - name: Conditional cell read only state
+          href: articles/invision/docs/worksheets/conditcellreadonly.md
+        - name: Custom query
+          href: articles/invision/docs/worksheets/customquery.md
+        - name: Custom rows
+          href: articles/invision/docs/worksheets/customrows.md
+        - name: Filters
+          href: articles/invision/docs/worksheets/filters.md
+        - name: On save
           href: articles/invision/docs/worksheets/onsave.md
           items:
-          - name: Apireferences
+          - name: API references
             href: articles/invision/docs/worksheets/onsave/apireferences.md
-          - name: Sqlscriptservice
+          - name: Sql script service
             href: articles/invision/docs/worksheets/onsave/sqlscriptservice.md
-        - name: Rowstyling
+        - name: Row styling
           href: articles/invision/docs/worksheets/rowstyling.md
-        - name: Stackedcolhead
+        - name: Stacked column headers
           href: articles/invision/docs/worksheets/stackedcolhead.md
-        - name: Wproperties
+        - name: Worksheet properties
           href: articles/invision/docs/worksheets/wproperties.md
           items:
-          - name: Contextmenuoptions
+          - name: Context menu options
             href: articles/invision/docs/worksheets/wproperties/contextmenuoptions.md
     - name: Videos
       href: articles/invision/videos/index.md
       items:
-      - name: Gettingstarted
+      - name: Getting started
         href: articles/invision/videos/gettingstarted/index.md
         items:
-        - name: Developertools
-          href: articles/invision/videos/gettingstarted/developertools.md
-        - name: Installation
+        - name: Installation and setup
           href: articles/invision/videos/gettingstarted/installation.md
+        - name: Developer tools
+          href: articles/invision/videos/gettingstarted/developertools.md
         - name: Interface
           href: articles/invision/videos/gettingstarted/interface.md
-      - name: Accesscontrol
+      - name: Access control
         href: articles/invision/videos/accesscontrol.md
       - name: Accessibility
         href: articles/invision/videos/accessibility.md
-      - name: Dataflows
+      - name: Data flow
         href: articles/invision/videos/dataflows.md
-      - name: Datastores
+      - name: Data stores
         href: articles/invision/videos/datastores.md
       - name: Dimensions
         href: articles/invision/videos/dimensions.md
-      - name: Filestorage
+      - name: File storage
         href: articles/invision/videos/filestorage.md
       - name: Filters
         href: articles/invision/videos/filters.md
-      - name: Formschemas
+      - name: Form schemas
         href: articles/invision/videos/formschemas.md
-      - name: Jsondataapi
+      - name: Json data api
         href: articles/invision/videos/jsondataapi.md
       - name: Localization
         href: articles/invision/videos/localization.md
       - name: Packages
         href: articles/invision/videos/packages.md
-      - name: Powershell
+      - name: PowerShell
         href: articles/invision/videos/powershell.md
-      - name: Sqlreports
+      - name: SQL reports
         href: articles/invision/videos/sqlreports.md
-      - name: Sqlscripts
+      - name: SQL scripts
         href: articles/invision/videos/sqlscripts.md
       - name: Tables
         href: articles/invision/videos/tables.md
-      - name: Tableview
+      - name: Table view
         href: articles/invision/videos/tableview.md
-      - name: Themesandstyles
+      - name: Themes and styles
         href: articles/invision/videos/themesandstyles.md
       - name: Views
         href: articles/invision/videos/views.md
-      - name: Workbookmenu
+      - name: Workbook menu
         href: articles/invision/videos/workbookmenu.md
       - name: Workbooks
         href: articles/invision/videos/workbooks/index.md
@@ -1165,49 +1165,49 @@
           href: articles/invision/videos/workbooks/components.md
         - name: Interactions
           href: articles/invision/videos/workbooks/interactions.md
-      - name: Workprocess
+      - name: Work process
         href: articles/invision/videos/workprocess.md
       - name: Worksheet
         href: articles/invision/videos/worksheet.md
     - name: Change log
       href: articles/invision/changelog/index.md
       items:
-      - name: Changelog22 1
-        href: articles/invision/changelog/changelog22_1.md
-      - name: Changelog22 2
-        href: articles/invision/changelog/changelog22_2.md
-      - name: Changelog22 3 1
-        href: articles/invision/changelog/changelog22_3_1.md
-      - name: Changelog22 3 2
-        href: articles/invision/changelog/changelog22_3_2.md
-      - name: Changelog22 4
-        href: articles/invision/changelog/changelog22_4.md
-      - name: Changelog22 5
-        href: articles/invision/changelog/changelog22_5.md
-      - name: Changelog23 1
-        href: articles/invision/changelog/changelog23_1.md
-      - name: Changelog23 2
-        href: articles/invision/changelog/changelog23_2.md
-      - name: Changelog23 3
-        href: articles/invision/changelog/changelog23_3.md
-      - name: Changelog23 4
+      - name: Change log 2023.5
+        href: articles/invision/changelog/changelog23_5.md
+      - name: Change log 2023.4
         href: articles/invision/changelog/changelog23_4.md
-      - name: Changelog40
-        href: articles/invision/changelog/changelog40.md
-      - name: Changelog41
-        href: articles/invision/changelog/changelog41.md
-      - name: Changelog5
-        href: articles/invision/changelog/changelog5.md
-      - name: Changelog51
-        href: articles/invision/changelog/changelog51.md
-      - name: Changelog52
+      - name: Change log 2023.3
+        href: articles/invision/changelog/changelog23_3.md
+      - name: Change log 2023.2
+        href: articles/invision/changelog/changelog23_2.md
+      - name: Change log 2023.1
+        href: articles/invision/changelog/changelog23_1.md
+      - name: Change log 2022.5
+        href: articles/invision/changelog/changelog22_5.md
+      - name: Change log 2022.4
+        href: articles/invision/changelog/changelog22_4.md
+      - name: Change log 2022.3 pt.2
+        href: articles/invision/changelog/changelog22_3_2.md
+      - name: Change log 2022.3 pt.1
+        href: articles/invision/changelog/changelog22_3_1.md     
+      - name: Change log 2022.2
+        href: articles/invision/changelog/changelog22_2.md
+      - name: Change log 2022.1
+        href: articles/invision/changelog/changelog22_1.md
+      - name: Change log 5.2
         href: articles/invision/changelog/changelog52.md
-      - name: Get information about files in the File Storage
-        href: articles/invision/changelog/changelog22_3_1.md
+      - name: Change log 5.1
+        href: articles/invision/changelog/changelog51.md
+      - name: Change log 5.0
+        href: articles/invision/changelog/changelog5.md
+      - name: Change log 4.1
+        href: articles/invision/changelog/changelog41.md
+      - name: Change log 4.0
+        href: articles/invision/changelog/changelog40.md
     - name: Trainingcase
       href: articles/invision/trainingcase/index.md
       items:
-      - name: Invisiontrainingcase
+      - name: Invision trainingcase
         href: articles/invision/trainingcase/invisiontrainingcase.md
-      - name: Invisiontrainingcase2
+      - name: Invision trainingcase 2
         href: articles/invision/trainingcase/invisiontrainingcase2.md
