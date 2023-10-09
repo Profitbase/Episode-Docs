@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Change Log 2023.5 | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Change Log 2023.5 | InVision ">
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../public/main.js'
+    import { init } from './../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p>2023.5 includes a range of improvements and new features, ranging from UI to infrastructure enhancements.</p>
+<br>
+<p>Before updating, please read the <strong>upgrade notes</strong> at the end.</p>
+<br>
+<h3 id="filter">Filter</h3>
+<p>We’ve added support for selecting multiple values in filters programmatically. In the <em>Set Filter Value</em> action of a Filter, you can now call the new SetValues function and pass in an array item filter item ids.</p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/chlog2351.png" alt="filter"></p>
+<br>
+<h3 id="forms">Forms</h3>
+<h4 id="support-for-dropdowntreeview-control">Support for DropdownTreeView control</h4>
+<p>We’ve added support for the DropdownTreeView control, which enables displaying a TreeView in a Dropdown control. It has support for single / multi-selection, custom rendering and an API to programmatically control the behavior of the control.</p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/chlog2352.png" alt="filter"></p>
+<br>
+<h4 id="extend-api-for-the-treeview-control">Extend API for the TreeView control</h4>
+<p>We’ve added APIs to enable developers to programmatically control the expansion state of a TreeView as highlighted in the image blow. The getExpandedNodIds also enables the developer get the current expansion state so it can be stored and re-applied later.</p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/chlog2353.png" alt="filter"></p>
+<br>
+<h3 id="dimensions">Dimensions</h3>
+<ul>
+<li><p>Fixed an issue where customers importing dimension data with cyclic references would cause dimension compilation to fail. Cyclic members will now become root members and needs to be moved to its proper location manually.</p>
+</li>
+<li><p>Fixed an issue with dimension generation when new properties were added.</p>
+</li>
+</ul>
+<br>
+<h3 id="permissions-and-access-control">Permissions and Access Control</h3>
+<h4 id="view-which-users-have-access-to-a-workbook">View which users have access to a Workbook</h4>
+<p>You can now easily see which users have access to a Workbook through group membership, both from the Designer and Web client.</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/chlog2354.png" alt="filter"></p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/chlog2355.png" alt="filter"></p>
+<br>
+<h4 id="copy-users-from-access-group">Copy users from Access Group</h4>
+<p>You can now easily copy users from one Access Group and paste to other Access Groups. If a user already exists, it will not be added to the target Access Group.</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/chlog2356.png" alt="filter"></p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/chlog2357.png" alt="filter"></p>
+<br>
+<h3 id="performance-improvements">Performance improvements</h3>
+<ul>
+<li><p>Workbooks loads faster.</p>
+</li>
+<li><p>The Workbook Menu loads faster.</p>
+</li>
+<li><p>Filters in Workbooks loads faster.</p>
+</li>
+<li><p>Worksheets loads faster.</p>
+</li>
+</ul>
+<br>
+<h3 id="developer-experience">Developer Experience</h3>
+<p>We no longer display the stack trace of error messages. If you need the stack trace for debugging purposes during development, you need to enable this feature from the System Settings menu in the Designer by setting the <strong>API Error Detail Level</strong> to <strong>Full</strong>.</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/chlog2358.png" alt="filter"></p>
+<br>
+<h3 id="upgrade-notes">Upgrade notes</h3>
+<h4 id="update-profitbase-installation-manager">Update Profitbase Installation Manager</h4>
+<p>Before upgrading to InVision 2023.5, it important to use <strong>Profitbase Installation Manager 5.3.0.3</strong>. Installing or upgrading to 2023.5 using a previous version of Profitbase Installation Manager will fail.</p>
+<h4 id="change-azure-service-bus-queues">Change Azure Service Bus queues</h4>
+<p>We fixed an issue with Dataflows that caused Dataflows to not complete execution in certain situations. If you have an on-premise deployment, you need to change all Azure Service Bus queues as follows:</p>
+<p><strong>Max delivery count</strong>: 750<br>
+<strong>Message time to live</strong>: 2 hours<br>
+<strong>Message lock duration</strong>: 10 seconds</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/chlog2359.png" alt="filter"></p>
+<br>
+<h4 id="see-also">See Also</h4>
+<ul>
+<li><a href="changelog23_4.html">Change Log 2023.4</a></li>
+<li><a href="changelog23_3.html">Change Log 2023.3</a></li>
+<li><a href="changelog23_2.html">Change Log 2023.2</a></li>
+<li><a href="changelog23_1.html">Change Log 2023.1</a></li>
+<li><a href="changelog22_5.html">Change Log 2022.5</a></li>
+<li><a href="changelog22_4.html">Change Log 2022.4</a></li>
+<li><a href="changelog22_3_2.html">Change Log 2022.3 pt 2</a></li>
+<li><a href="changelog22_3_1.html">Change Log 2022.3 pt 1</a></li>
+<li><a href="changelog22_2.html">Change Log 2022.2</a></li>
+<li><a href="changelog22_1.html">Change Log 2022.1</a></li>
+<li><a href="changelog52.html">Change Log 5.2</a></li>
+<li><a href="changelog51.html">Change Log 5.1</a></li>
+<li><a href="changelog5.html">Change Log 5.0</a></li>
+<li><a href="changelog41.html">Change Log 4.1</a></li>
+<li><a href="changelog40.html">Change Log 4.0</a></li>
+</ul>
+<br>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
