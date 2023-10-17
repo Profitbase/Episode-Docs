@@ -32,6 +32,8 @@ When enabled, the status bar will display the sum, count, and average of the sel
 
 #### See Also
 
+- [Change Log 2023.6](changelog23_6.md)
+- [Change Log 2023.5](changelog23_5.md)
 - [Change Log 2023.4](changelog23_4.md)
 - [Change Log 2023.3](changelog23_3.md)
 - [Change Log 2023.1](changelog23_1.md)

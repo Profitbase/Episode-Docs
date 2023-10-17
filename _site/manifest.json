@@ -186,6 +186,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/invision/changelog/changelog23_6.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/invision/changelog/changelog23_6.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/invision/changelog/changelog40.md",
       "output": {
         ".html": {

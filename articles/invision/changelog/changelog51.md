@@ -130,6 +130,8 @@ Access Control tables in the Solution database has been renamed. Any custom quer
 
 #### See Also
 
+- [Change Log 2023.6](changelog23_6.md)
+- [Change Log 2023.5](changelog23_5.md)
 - [Change Log 2023.4](changelog23_4.md)
 - [Change Log 2023.3](changelog23_3.md)
 - [Change Log 2023.2](changelog23_2.md)
