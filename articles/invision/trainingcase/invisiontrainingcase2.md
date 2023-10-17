@@ -90,7 +90,7 @@ Using this simple example, we want to show you how the Invision LOW CODE can be 
 
 <br/>
 
-4. You can overwrite System Theme Variables in the Main Theme section. Here you will also find sections for [Accesibility](../docs/accessibility/index.md) and Style Sheets. 
+4. You can overwrite System Theme Variables in the Main Theme section. Here you will also find sections for [Accesibility](../docs/accessibility/accessibility.md) and Style Sheets. 
   
 ![pic](https://profitbasedocs.blob.core.windows.net/images/MovMania%20(9).png)
 <br/>

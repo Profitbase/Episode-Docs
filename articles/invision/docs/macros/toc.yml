@@ -1,0 +1,27 @@
+        - name: Overview
+          href: ../macros.md
+        - name: How to's
+          href: howto.md
+          items:
+          - name: How to use macros in the TableView
+            href: howto/usingmacrostbv.md
+        - name: Using macros in SQL statements
+          href: usingmacros.md
+        - name: Writing macros
+          href: writingmacros.md
+          items:
+          - name: Accessing arguments
+            href: writingmacros/accessingarguments.md
+          - name: Function macros
+            href: writingmacros/functionmacros.md
+          - name: MacroExpansionProvider
+            href: writingmacros/macroexpansionprovider.md
+            items:
+            - name: AccessControlService
+              href: writingmacros/macroexpansionprovider/accesscontrolservice.md
+            - name: Context
+              href: writingmacros/macroexpansionprovider/context.md
+            - name: Object model
+              href: writingmacros/macroexpansionprovider/objectmodel.md
+            - name: SqlCommandService
+              href: writingmacros/macroexpansionprovider/sqlcommandservice.md

@@ -1,0 +1,44 @@
+        - name: Overview
+          href: ../package.md
+        - name: How to's
+          href: howto.md
+          items:
+          - name: How to create a package
+            href: howto/create.md
+          - name: How to deploy a package
+            href: howto/deploy.md
+          - name: How to upgrade a package
+            href: howto/upgrade.md
+          - name: How to upgrade a package in package management screen
+            href: howto/upgradepackmanagement.md
+        - name: Deploy package
+          href: deploy-package.md
+        - name: Develop package
+          href: develop-package.md
+          items:
+          - name: Create package
+            href: develop-package/create-package.md
+            items:
+            - name: Define package
+              href: develop-package/create-package/define-package.md
+            - name: Export package
+              href: develop-package/create-package/export-package.md
+            - name: Package properties
+              href: develop-package/create-package/packageproperty.md
+            - name: Publish packages
+              href: develop-package/create-package/publ-packages.md
+          - name: Create package upgrade
+            href: develop-package/create-package-upgrade.md
+            items:
+            - name: Create package upgrade using Visual Studio
+              href: develop-package/create-package-upgrade/create-package-upgrade-using-vs.md
+              items:
+              - name: Step by step guide
+                href: develop-package/create-package-upgrade/create-package-upgrade-using-vs/upgrade-stepbystep.md
+            - name: Publish package upgrade
+              href: develop-package/create-package-upgrade/pub-pack-upgrade.md
+        - name: Upgrade package
+          href: upgrade-package.md
+          items:
+          - name: Production upgrade
+            href: upgrade-package/production-upgrade.md

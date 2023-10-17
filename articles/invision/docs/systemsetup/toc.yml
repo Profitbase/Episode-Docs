@@ -1,0 +1,46 @@
+        - name: Overview
+          href: ../systemsetup.md
+        - name: How to's
+          href: howto.md
+          items:
+          - name: How To Setup InVision Service with Azure Active Directory Authentication
+            href: howto/ad-authentication.md
+          - name: How To Create Azure App Registration
+            href: howto/azure-registration.md
+          - name: How To Setup Azure Service Bus
+            href: howto/azuread.md
+          - name: How To Install Desktop Designer and Connect to Service
+            href: howto/install.md
+          - name: How To Upgrade the InVision Instance
+            href: howto/instance.md
+          - name: How To Setup InVision Service with Windows Authentication
+            href: howto/win-authentication.md
+        - name: Installation
+          href: installation.md
+          items:
+          - name: Azure Active Directory Authentication
+            href: installation/azureactdirauthent.md
+          - name: IBM Security Verify Authentication
+            href: installation/ibmsecurity.md
+            items:
+            - name: Configure webb app backend
+              href: installation/ibmsecurity/configure-webb-app-backend.md
+          - name: On-premise Installation
+            href: installation/onpreminstallation.md
+            items:
+            - name: Ports and Firewall Settings
+              href: installation/onpreminstallation/portsfirewall.md
+            - name: Service User Accounts
+              href: installation/onpreminstallation/serviceuseraccounts.md
+        - name: Language
+          href: language.md
+        - name: Monitoring
+          href: monitoring.md
+          items:
+          - name: HTTP API
+            href: monitoring/httpapi.md
+        - name: System requirements
+          href: systemrequirements.md
+          items:
+          - name: System description
+            href: systemrequirements/systemdescription.md

@@ -22,7 +22,7 @@ Check out the following topics to learn how to build, run, and deploy your Solut
 
 - [Access Control](articles/invision/docs/accesscontrol/index.md)
 
-- [Accessibility](articles/invision/docs/accessibility/index.md)
+- [Accessibility](articles/invision/docs/accessibility/accessibility.md)
 
 - [Best Practice](articles/invision/docs/bestpractice/index.md)
 

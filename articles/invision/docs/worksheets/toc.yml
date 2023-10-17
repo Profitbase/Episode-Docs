@@ -1,0 +1,117 @@
+        - name: Overview
+          href: ../worksheets.md
+        - name: How to's
+          href: howto.md
+          items:
+          - name: How to use cell validation in spreadsheets
+            href: howto/cellvalidation.md
+          - name: How to use a conditional formatting
+            href: howto/conditionalformating.md
+          - name: How to use cell renderers
+            href: howto/customcellrenderer.md
+          - name: How to use a custom query
+            href: howto/customquery.md
+          - name: How to create a custom row
+            href: howto/customrow.md
+          - name: How to create a dropdown
+            href: howto/dropdown.md
+          - name: How to modify spreadsheets with custom JS
+            href: howto/javascript.md
+          - name: How to use styling functions
+            href: howto/stylingfunctions.md
+          - name: How to use column captions for time frame columns
+            href: howto/timeframecolumns.md
+        - name: Calculations
+          href: calculations.md
+          items:
+          - name: AppVariables in formulas
+            href: calculations/appvariables.md
+          - name: Arithmetic operators
+            href: calculations/arithmeticop.md
+          - name: Calculation instance factory
+            href: calculations/calcinstfactory.md
+          - name: Cell adressing
+            href: calculations/celladressing.md
+          - name: Cell and row styling functions
+            href: calculations/cellnrowstylfunc.md
+          - name: Comparison operators
+            href: calculations/comparisonop.md
+          - name: Date functions
+            href: calculations/datefunc.md
+          - name: Eaze
+            href: calculations/eaze.md
+          - name: Financial functions
+            href: calculations/financialfunc.md
+          - name: Keywords
+            href: calculations/keywords.md
+          - name: Logical functions
+            href: calculations/logicalfunc.md
+          - name: Logical operators
+            href: calculations/logicalop.md
+          - name: Math / trig functions
+            href: calculations/mathfunc.md
+          - name: Misc functions
+            href: calculations/miscfunc.md
+          - name: Other binary operators
+            href: calculations/otherbop.md
+          - name: Row collection functions
+            href: calculations/rowcollfunc.md
+          - name: Statistical functions
+            href: calculations/statisticfunc.md
+          - name: System functions
+            href: calculations/sysfunc.md
+          - name: Text functions
+            href: calculations/textfunc.md
+          - name: Date for time frame columns in formulas
+            href: calculations/usingdate.md
+        - name: Cell validation
+          href: cellvalidation.md
+        - name: Column captions
+          href: colcaptions.md
+        - name: Column properties
+          href: columnproperties.md
+          items:
+          - name: Basic column properties
+            href: columnproperties/basiccolproperties.md
+          - name: Caption
+            href: columnproperties/caption.md
+          - name: Caption formatter
+            href: columnproperties/captionformatter.md
+          - name: Cell renderer
+            href: columnproperties/cellrenderer.md
+          - name: Custom action conditions
+            href: columnproperties/customactionconditions.md
+          - name: Dropdown selection
+            href: columnproperties/dropdownselection.md
+          - name: Formatter
+            href: columnproperties/formatter.md
+          - name: Is hidden
+            href: columnproperties/ishidden.md
+          - name: Read only
+            href: columnproperties/readonly.md
+          - name: Source column predicate
+            href: columnproperties/sourcecolumnpredicate.md
+        - name: Conditional cell read only state
+          href: conditcellreadonly.md
+        - name: Custom query
+          href: customquery.md
+        - name: Custom rows
+          href: customrows.md
+        - name: Filters
+          href: filters.md
+        - name: On save
+          href: onsave.md
+          items:
+          - name: API references
+            href: onsave/apireferences.md
+          - name: Sql script service
+            href: onsave/sqlscriptservice.md
+        - name: Row styling
+          href: rowstyling.md
+        - name: Stacked column headers
+          href: stackedcolhead.md
+        - name: Worksheet properties
+          href: wproperties.md
+          items:
+          - name: Context menu options
+            href: wproperties/contextmenuoptions.md
