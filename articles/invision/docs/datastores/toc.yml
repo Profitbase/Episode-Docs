@@ -1,0 +1,90 @@
+        - name: Overview
+          href: ../datastores.md
+        - name: How to's
+          href: howto/index.md
+          items:
+          - name: How to change tracking
+            href: howto/changetracking.md
+          - name: How to set up rollover calculations
+            href: howto/rollover.md
+          - name: How to create schema and source mapping
+            href: howto/schema.md
+          - name: How to set up time frame
+            href: howto/timeframe.md
+        - name: Change tracking
+          href: changetracking.md
+        - name: Core set
+          href: coreset.md
+        - name: Creating schema
+          href: creatingschema.md
+        - name: Data update configuration
+          href: dataupdateconfig.md
+        - name: Exporting data from InVision
+          href: exportingdata.md
+        - name: Importing and updating data from data sources
+          href: importingandupdting/index.md
+          items:
+          - name: Binding source columns to DS columns
+            href: importingandupdting/bindingsourcecoumns.md
+          - name: Customization options
+            href: importingandupdting/customization.md
+          - name: Source
+            href: importingandupdting/source/index.md
+            items:
+            - name: Data source properties
+              href: importingandupdting/source/datasourceproperties.md
+            - name: Transforms
+              href: importingandupdting/source/transforms/index.md
+              items:
+              - name: Aggregate
+                href: importingandupdting/source/transforms/aggregate.md
+              - name: Custom SQL
+                href: importingandupdting/source/transforms/customsql.md
+              - name: Pivot
+                href: importingandupdting/source/transforms/pivot.md
+              - name: Unpivot
+                href: importingandupdting/source/transforms/unpivot.md
+        - name: Periodic imput
+          href: periodicimput.md
+        - name: Rollover
+          href: rollover.md
+        - name: Source mapping
+          href: sourcemapping.md
+        - name: Time frame
+          href: timeframe.md
+        - name: Time frame measure columns
+          href: timeframemeasurecolumns.md
+        - name: Tracing columns
+          href: tracingcolumns.md
+        - name: Transaction pipeline
+          href: transactionpipeline/index.md
+          items:
+          - name: Cell adapter
+            href: transactionpipeline/celladapter/index.md
+            items:
+            - name: Input coonfiguration
+              href: transactionpipeline/celladapter/inputconfig.md
+            - name: Output
+              href: transactionpipeline/celladapter/output.md
+            - name: Ruleset
+              href: transactionpipeline/celladapter/ruleset.md
+          - name: Condition expressions
+            href: transactionpipeline/conditionexpressions.md
+          - name: Distributer
+            href: transactionpipeline/distributer/index.md
+            items:
+            - name: Input configuration
+              href: transactionpipeline/distributer/inputconfig.md
+            - name: Output
+              href: transactionpipeline/distributer/output.md
+            - name: Ruleset
+              href: transactionpipeline/distributer/ruleset.md
+          - name: Spawner
+            href: transactionpipeline/spawner/index.md
+            items:
+            - name: Input configuration
+              href: transactionpipeline/spawner/inputconfig.md
+            - name: Output
+              href: transactionpipeline/spawner/output.md
+            - name: Ruleset
+              href: transactionpipeline/spawner/ruleset.md

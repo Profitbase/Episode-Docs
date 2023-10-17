@@ -1,0 +1,46 @@
+        - name: Overview
+          href: ../dataflows.md
+        - name: How to's
+          href: howto/index.md
+          items:
+          - name: How to Automate Import of the Primary Dimension
+            href: howto/autocopy.md
+          - name: How to Automate Import of Data to Dimension
+            href: howto/autoimport.md
+          - name: How To Control Flow and Branching
+            href: howto/controlflow.md
+          - name: How to Check if Dataflow Succeeded using @Event.Data.Success condition
+            href: howto/eventdatasuccess.md
+          - name: How To Execute from Workbook with Arguments
+            href: howto/execute.md
+          - name: How To Execute Using dfcmdutil Command Line Tool
+            href: howto/execute-dfcmdutil.md
+          - name: How To Automate PowerShell Script with Data Flow
+            href: howto/filenamesautom.md
+          - name: How To Register and Execute Guest Executable
+            href: howto/guestexecutable.md
+          - name: How To Parameterize the execution of Data Flows
+            href: howto/parameterization.md
+        - name: Data context
+          href: datacontext/index.md
+          items:
+          - name: Data context scope
+            href: datacontext/datacontextscope.md
+          - name: Global data context
+            href: datacontext/globaldatacontext.md
+        - name: Execution
+          href: execution/index.md
+          items:
+          - name: Command line
+            href: execution/commandline.md
+          - name: HTTP API
+            href: execution/httpapi.md
+          - name: Scheduling execution
+            href: execution/scheduledexecution.md
+        - name: Parametrization
+          href: parametrization/index.md
+          items:
+          - name: Global parameters
+            href: parametrization/globalparameters.md
+          - name: Programmatically change global parameters
+            href: parametrization/programmatically-set-glob-param.md

@@ -1,0 +1,116 @@
+        - name: Overview
+          href: ../forms.md
+        - name: Form elements
+          href: formelements.md
+          items:
+          - name: Date picker
+            href: formelements/datepicker.md
+          - name: Dropdown
+            href: formelements/dropdown.md
+          - name: Label
+            href: formelements/label.md
+          - name: Textbox
+            href: formelements/textbox.md
+        - name: Form schemas
+          href: formschemas.md
+          items:
+          - name: How to's
+            href: formschemas/howto.md
+            items:
+            - name: How to setup controls
+              href: formschemas/howto/controls.md
+            - name: How to setup a dropdown
+              href: formschemas/howto/dropdown.md
+            - name: How to use functions in forms
+              href: formschemas/howto/functions.md
+            - name: How to use a listbox
+              href: formschemas/howto/listbox.md
+            - name: How to use models and databindings
+              href: formschemas/howto/models-databinding.md
+            - name: How to configure layout
+              href: formschemas/howto/style.md
+          - name: APIs
+            href: formschemas/apis.md
+            items:
+            - name: Control API
+              href: formschemas/apis/controlproxyAPI.md
+            - name: Data bindings API
+              href: formschemas/apis/databindingsAPI.md
+            - name: Data service API
+              href: formschemas/apis/dataserviceapi.md
+            - name: Form runtime API
+              href: formschemas/apis/formrunAPI.md
+            - name: Form runtime
+              href: formschemas/apis/formruntime.md
+            - name: Web functions API
+              href: formschemas/apis/webfunctionsAPI.md
+          - name: Controls
+            href: formschemas/controls.md
+            items:
+            - name: Button
+              href: formschemas/controls/button.md
+            - name: Camera
+              href: formschemas/controls/camera.md
+            - name: Datepicker
+              href: formschemas/controls/datepicker.md
+            - name: Dropdown
+              href: formschemas/controls/dropdown.md
+            - name: Grid
+              href: formschemas/controls/grid.md
+            - name: Headings
+              href: formschemas/controls/headings.md
+            - name: Html
+              href: formschemas/controls/html.md
+            - name: Image
+              href: formschemas/controls/image.md
+            - name: Input
+              href: formschemas/controls/input.md
+            - name: Label
+              href: formschemas/controls/label.md
+            - name: Layout
+              href: formschemas/controls/layout.md
+            - name: Listbox
+              href: formschemas/controls/listbox.md
+              items:
+              - name: Rendering items
+                href: formschemas/controls/listbox/renderingitems.md
+            - name: Richtexteditor
+              href: formschemas/controls/richtexteditor.md
+            - name: Splitbutton
+              href: formschemas/controls/splitbutton.md
+            - name: Tabcontrol
+              href: formschemas/controls/tabcontrol.md
+            - name: Textarea
+              href: formschemas/controls/textarea.md
+            - name: Togglebutton
+              href: formschemas/controls/togglebutton.md
+            - name: Treeview
+              href: formschemas/controls/treeview.md
+            - name: Control (base)
+              href: formschemas/controls/control.md
+            - name: Editable control (base)
+              href: formschemas/controls/editablecontrol.md
+            - name: Text control (base)
+              href: formschemas/controls/textcontrol.md
+          - name: Data
+            href: formschemas/data.md
+            items:
+            - name: Dimension models
+              href: formschemas/data/dimensionmodels.md
+            - name: Lists
+              href: formschemas/data/lists.md
+            - name: Models
+              href: formschemas/data/models.md
+            - name: Set models
+              href: formschemas/data/setmodels.md
+          - name: Event handlers
+            href: formschemas/eventhandlers.md
+          - name: Functions
+            href: formschemas/functions.md
+            items:
+            - name: Calling functions from external events
+              href: formschemas/functions/callingfunctions.md
+          - name: Styling and layout
+            href: formschemas/stylinglayout.md
+          - name: Using the XML edit
+            href: formschemas/usingXMLedit.md

@@ -1,0 +1,32 @@
+        - name: Overview
+          href: ../powershell.md
+        - name: How to's
+          href: howto.md
+          items:
+          - name: How to get all file names from a file storage
+            href: howto/filenames.md
+          - name: How to automate PowerShell script with data flow
+            href: howto/filenamesautom.md
+        - name: Commands
+          href: commands.md
+        - name: Functions
+          href: functiondoc.md
+          items:
+          - name: Pb. (dot-sourcing)
+            href: functiondoc/function1.md
+          - name: $PbRunContext
+            href: functiondoc/function2.md
+          - name: Profitbase.Data.SqlCommand functions
+            href: functiondoc/function3.md
+          - name: Profitbase.Data.SqlScript functions
+            href: functiondoc/function4.md
+          - name: Profitbase.PS.PsScript.Execute
+            href: functiondoc/function5.md
+          - name: Profitbase.IO
+            href: functiondoc/function6.md
+          - name: Profitbase.IO.FileStorage
+            href: functiondoc/function7.md
+        - name: Parameters
+          href: parameters.md
+        - name: References
+          href: referencedoc.md

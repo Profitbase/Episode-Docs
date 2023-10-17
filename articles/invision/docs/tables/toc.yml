@@ -1,0 +1,105 @@
+        - name: Overview
+          href: ../tables.md
+        - name: How to's
+          href: howto.md
+          items:
+          - name: How to use cell validation
+            href: howto/cellvalidation.md
+          - name: How to create and edit table schema
+            href: howto/creatingtable.md
+          - name: How to create a table view
+            href: howto/creatingtableview.md
+          - name: How to create a dropdown
+            href: howto/dropdown.md
+          - name: How to modify table with custom JS
+            href: howto/javascript.md
+          - name: How to set cell action link tapped event
+            href: howto/table-events-cell-action-link.md
+          - name: How to set data modified and item ddded events
+            href: howto/table-events-data-modified.md
+          - name: How to use custom cell renderer in table view
+            href: howto/tableview-custom-cell.md
+          - name: How to use macro expansion in table view
+            href: howto/tableviewmacro.md
+        - name: Calculations
+          href: calculations.md
+          items:
+          - name: AppVariables in formulas
+            href: calculations/appvariables.md
+          - name: Arithmetic operators
+            href: calculations/arithmeticop.md
+          - name: Calculation instance factory
+            href: calculations/calcinstfactory.md
+          - name: Cell adressing
+            href: calculations/celladressing.md
+          - name: Cell and row styling functions
+            href: calculations/cellnrowstylfunc.md
+          - name: Comparison operators
+            href: calculations/comparisonop.md
+          - name: Date functions
+            href: calculations/datefunc.md
+          - name: Eaze
+            href: calculations/eaze.md
+          - name: Financial functions
+            href: calculations/financialfunc.md
+          - name: Keywords
+            href: calculations/keywords.md
+          - name: Logical functions
+            href: calculations/logicalfunc.md
+          - name: Logical operators
+            href: calculations/logicalop.md
+          - name: Math / Trig functions
+            href: calculations/mathfunc.md
+          - name: Misc functions
+            href: calculations/miscfunc.md
+          - name: Other binary operators
+            href: calculations/otherbop.md
+          - name: Row collection functions
+            href: calculations/rowcollfunc.md
+          - name: Statistical functions
+            href: calculations/statisticfunc.md
+          - name: System functions
+            href: calculations/sysfunc.md
+          - name: Text functions
+            href: calculations/textfunc.md
+          - name: Date for time frame columns in formulas
+            href: calculations/usingdate.md
+        - name: Cell validation
+          href: cellvalidation.md
+        - name: Column captions
+          href: colcaptions.md
+        - name: Column properties
+          href: columnproperties.md
+          items:
+          - name: Basic column properties
+            href: columnproperties/basiccolproperties.md
+          - name: Caption
+            href: columnproperties/caption.md
+          - name: Caption formatter
+            href: columnproperties/captionformatter.md
+          - name: Cell renderer
+            href: columnproperties/cellrenderer.md
+          - name: Custom action conditions
+            href: columnproperties/customactionconditions.md
+          - name: Dropdown selection
+            href: columnproperties/dropdownselection.md
+          - name: Formatter
+            href: columnproperties/formatter.md
+          - name: Is hidden
+            href: columnproperties/ishidden.md
+          - name: Read only
+            href: columnproperties/readonly.md
+          - name: Source column predicate
+            href: columnproperties/sourcecolumnpredicate.md
+        - name: Custom query
+          href: customquery.md
+        - name: Filters
+          href: filters.md
+        - name: Layout
+          href: layout.md
+        - name: Ranked input
+          href: rankedinput.md
+        - name: Row styling
+          href: rowstyling.md
+        - name: Stacked column headers
+          href: stackedcolhead.md

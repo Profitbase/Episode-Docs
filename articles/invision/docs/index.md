@@ -18,7 +18,7 @@ If there is something you can't find answers to, please contact [Support](https:
 
 * [Accesscontrol](../docs/accesscontrol/index.md)
 
-* [Accessibility](./accessibility/index.md)
+* [Accessibility](./accessibility/accessibility.md)
 
 * [Bestpractice](./bestpractice.md)
 

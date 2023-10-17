@@ -1,0 +1,25 @@
+        - name: Overview
+          href: ../dimensions.md
+        - name: How to's
+          href: howto/index.md
+          items:
+          - name: How to automate copying a primary dimension into the solution
+            href: howto/autocopy.md
+          - name: How to automate data import
+            href: howto/autoimport.md
+          - name: How to create and display a dimension
+            href: howto/createdim.md
+          - name: How to create a composite dimension
+            href: howto/dimcomp.md
+          - name: How to use the dimension editor
+            href: howto/dimeditor.md
+          - name: How to enable support for multiple languages
+            href: howto/multilang.md
+          - name: How to create a time dimension
+            href: howto/timedim.md
+          - name: How to configure translation of dimension name
+            href: howto/transl.md
+        - name: Automating import of data to dimensions
+          href: dimautomating.md
+        - name: Dimension composition
+          href: dimcomposition.md

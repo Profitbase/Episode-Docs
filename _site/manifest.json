@@ -396,6 +396,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/invision/docs/accessibility/accessibility.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/invision/docs/accessibility/accessibility.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/invision/docs/accessibility/aria.md",
       "output": {
         ".html": {
@@ -460,16 +470,6 @@
       "output": {
         ".html": {
           "relative_path": "articles/invision/docs/accessibility/howto/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/invision/docs/accessibility/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/invision/docs/accessibility/index.html"
         }
       },
       "version": ""
