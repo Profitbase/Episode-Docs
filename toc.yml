@@ -158,6 +158,8 @@
     - name: Change log
       href: articles/invision/changelog/index.md
       items:
+      - name: Change log 2023.6
+        href: articles/invision/changelog/changelog23_6.md
       - name: Change log 2023.5
         href: articles/invision/changelog/changelog23_5.md
       - name: Change log 2023.4
