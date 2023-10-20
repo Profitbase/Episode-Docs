@@ -1,0 +1,2 @@
+* [Row grand totals](https://github.com/Profitbase/PowerBI-visuals-FinancialReportingMatrix/wiki/Row-grand-totals)   
+* [Column subtotals](https://github.com/Profitbase/PowerBI-visuals-FinancialReportingMatrix/wiki/Column-subtotals)

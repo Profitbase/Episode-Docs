@@ -1,0 +1,6 @@
+- name: Overview
+  href: formatting.md
+- name: Cell formatting using Format function
+  href: cell-formatting-using-format-function.md
+- name: Conditional formatting
+  href: conditional-formatting.md

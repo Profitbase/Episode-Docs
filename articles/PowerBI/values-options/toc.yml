@@ -1,0 +1,12 @@
+- name: Overview
+  href: values-options.md
+- name: Banded row style
+  href: banded-row-style.md
+- name: Default formatting
+  href: default-formatting.md
+- name: Negative values formatting
+  href: negative-values-formatting.md
+- name: Scale units
+  href: scale-units.md
+- name: Zero values format
+  href: zero-values-format.md

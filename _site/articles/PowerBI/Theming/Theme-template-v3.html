@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title> | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" | InVision ">
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../public/main.js'
+    import { init } from './../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<p>The JSON definition below shows all properties of the Financial Reporting Matrix that can be themed, along with all valid values for each property.</p>
+<p>A few things to note:</p>
+<ul>
+<li>&lt;empty&gt; means empty string &quot;&quot; (two double quotes with no whitespace)</li>
+<li>All colors are specified using the hex color format #XXXXXX. For example #000000 is black. #someColor = use a hex color.</li>
+<li>If you import the visual from your Organizational store (not AppSource), you must change the visual id in the visualStyles section below to &quot;financialreportingmatrixD8A502553641450F8EAEB9BA40B2166E_OrgStore&quot;</li>
+</ul>
+<pre><code class="lang-json">{
+  &quot;name&quot;: &quot;My Theme&quot;,
+  &quot;dataColors&quot;: [
+    &quot;#00338D&quot;,
+    &quot;#00CCDD&quot;,
+    &quot;#00EEFF&quot;
+  ],
+  &quot;visualStyles&quot;: {
+    &quot;financialreportingmatrixD8A502553641450F8EAEB9BA40B2166E&quot;: {
+      &quot;*&quot;: {
+        &quot;customColumns&quot;: [{ &quot;width&quot;: 100 }, { &quot;columnSeparator&quot;: &quot;left | right | both | &lt;empty&gt;&quot; }],
+        &quot;grid&quot;: [
+          { &quot;verticalGrid&quot;: false },
+          { &quot;verticalGridThickness&quot;: 1 },
+          { &quot;verticalGridColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          { &quot;horizontalGrid&quot;: false },
+          { &quot;horizontalGridThickness&quot;: 1 },
+          { &quot;horizontalColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          { &quot;rowPadding&quot;: 1 },
+          { &quot;outlineColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          { &quot;outlineWeight&quot;: 1 }
+        ],
+        &quot;columnFormatting&quot;: [
+          { &quot;width&quot;: 100 },
+          { &quot;isHidden&quot;: false },
+          { &quot;width&quot;: 100 },
+          { &quot;color&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          { &quot;backgroundColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          { &quot;columnSeparatorColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          { &quot;separator&quot;: &quot;&lt;empty&gt; | left | right | both&quot; },
+          { &quot;formatString&quot;: &quot;&lt;empty&gt; | &lt;Power BI format string&gt; | custom&quot; },
+          { &quot;customFormatString&quot;: &quot;&lt;Power BI format string&gt;&quot; }
+        ],
+        &quot;columnHeaders&quot;: [
+          { &quot;fontColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          { &quot;backgroundColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          { &quot;fontWeightBold&quot;: false },
+          { &quot;fontStyleItalic&quot;: false },
+          {
+            &quot;outline&quot;: &quot;&lt;empty&gt; | bottom | bottom double | top | top bottom | top bottom double | left | right | left right | top bottom left right&quot;
+          },
+          { &quot;textSize&quot;: 8 },
+          { &quot;groupAlignment&quot;: &quot;left | center | right&quot; },
+          { &quot;alignment&quot;: &quot;left | center | right&quot; },
+          { &quot;wordWrap&quot;: true }
+        ],
+        &quot;rowHeaders&quot;: [
+          { &quot;defaultExpandRows&quot;: false },
+          { &quot;expandToLevel&quot;: 1 },
+          { &quot;fontColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          { &quot;backgroundColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          {
+            &quot;outline&quot;: &quot;&lt;empty&gt; | bottom | bottom double | top | top bottom | top bottom double | left | right | left right | top bottom left right&quot;
+          },
+          { &quot;textSize&quot;: 8 },
+          { &quot;wordWrap&quot;: true }
+        ],
+        &quot;values&quot;: [
+          {
+            &quot;scalingValues&quot;: &quot;none | thousands | millions | billions | trillions&quot;
+          },
+          { &quot;negativeValueFormatting&quot;: &quot;minus | parentheses&quot; },
+          { &quot;zeroValueFormatting&quot;: &quot;dash | empty | zero&quot; },
+          { &quot;formatString&quot;: &quot;&lt;empty&gt; | &lt;Power BI format string&gt; | custom&quot; },
+          { &quot;customFormatString&quot;: &quot;&lt;Power BI format string&gt;&quot; },
+          { &quot;fontColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          { &quot;backgroundColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          {
+            &quot;outline&quot;: &quot;none | bottom | top | left | right | top bottom | left right | top bottom left right&quot;
+          },
+          { &quot;textSize&quot;: 8 },
+          { &quot;wordWrap&quot;: false }
+        ],
+        &quot;subTotals&quot;: [
+          { &quot;rowGrandTotal&quot;: false },
+          { &quot;rowGrandTotalLabel&quot;: &quot;Your label&quot; },
+          {
+            &quot;rowGrandTotalStyle&quot;: &quot;\&quot;\&quot;| bold | overline | underline | custom1 | custom2 | custom3 | custom4 | stylesSubtotal | stylesKPI&quot;
+          },
+          { &quot;columnSubotals&quot;: false },
+          { &quot;columnTotalsLabel&quot;: &quot;Total&quot; },
+          {
+            &quot;columnTotalsStyle&quot;: &quot;\&quot;\&quot;| bold | overline | underline | custom1 | custom2 | custom3 | custom4 | stylesTotal&quot;
+          }
+        ],
+        &quot;rowExpansion&quot;: [
+          { &quot;storeExpansionState&quot;: true },
+          { &quot;indentSize&quot;: 10 },
+          { &quot;showExpandCollapseIcon&quot;: true },
+          { &quot;upwardsExpansion&quot;: false },
+          { &quot;useRowExpansionStyling&quot;: false },
+          { &quot;bold&quot;: true },
+          { &quot;fontStyleItalic&quot;: true },
+          { &quot;fontSize&quot;: 8 },
+          { &quot;color&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          { &quot;background&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          {
+            &quot;outline&quot;: &quot;\&quot;\&quot; | bottom | bottom double | top | top bottom | top bottom double&quot;
+          },
+          { &quot;outlineThickness&quot;: 1 },
+          { &quot;outlineColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } }
+        ],
+        &quot;stylesTotal&quot;: [
+          { &quot;bold&quot;: true },
+          { &quot;fontStyleItalic&quot;: false },
+          { &quot;fontSize&quot;: 8 },
+          { &quot;color&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          { &quot;background&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          {
+            &quot;outline&quot;: &quot;\&quot;\&quot; | bottom | bottom double | top | top bottom | top bottom double | left | right | left right&quot;
+          },
+          { &quot;outlineThickness&quot;: 1 },
+          { &quot;outlineColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } }
+        ],
+        &quot;stylesSubtotal&quot;: [
+          { &quot;bold&quot;: true },
+          { &quot;fontStyleItalic&quot;: false },
+          { &quot;fontSize&quot;: 8 },
+          { &quot;color&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          { &quot;background&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          {
+            &quot;outline&quot;: &quot;\&quot;\&quot; | bottom | bottom double | top | top bottom | top bottom double&quot;
+          },
+          { &quot;outlineThickness&quot;: 1 },
+          { &quot;outlineColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } }
+        ],
+        &quot;stylesKPI&quot;: [
+          { &quot;bold&quot;: true },
+          { &quot;fontStyleItalic&quot;: false },
+          { &quot;fontSize&quot;: 8 },
+          { &quot;color&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          { &quot;background&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          {
+            &quot;outline&quot;: &quot;\&quot;\&quot; | bottom | bottom double | top | top bottom | top bottom double | left | right | left right&quot;
+          },
+          { &quot;outlineThickness&quot;: 1 },
+          { &quot;outlineColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } }
+        ],
+        &quot;stylesCustom1&quot;: [
+          { &quot;bold&quot;: false },
+          { &quot;fontStyleItalic&quot;: false },
+          { &quot;fontSize&quot;: 8 },
+          { &quot;color&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          { &quot;background&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          {
+            &quot;outline&quot;: &quot;\&quot;\&quot; | bottom | bottom double | top | top bottom | top bottom double | left | right | left right | top bottom left right&quot;
+          },
+          { &quot;outlineThickness&quot;: 1 },
+          { &quot;outlineColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } }
+        ],
+        &quot;stylesCustom2&quot;: [
+          { &quot;bold&quot;: false },
+          { &quot;fontStyleItalic&quot;: false },
+          { &quot;fontSize&quot;: 8 },
+          { &quot;color&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          { &quot;background&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          {
+            &quot;outline&quot;: &quot;\&quot;\&quot; | bottom | bottom double | top | top bottom | top bottom double | left | right | left right | top bottom left right&quot;
+          },
+          { &quot;outlineThickness&quot;: 1 },
+          { &quot;outlineColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } }
+        ],
+        &quot;stylesCustom3&quot;: [
+          { &quot;bold&quot;: false },
+          { &quot;fontStyleItalic&quot;: false },
+          { &quot;fontSize&quot;: 8 },
+          { &quot;color&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          { &quot;background&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          {
+            &quot;outline&quot;: &quot;\&quot;\&quot; | bottom | bottom double | top | top bottom | top bottom double | left | right | left right | top bottom left right&quot;
+          },
+          { &quot;outlineThickness&quot;: 1 },
+          { &quot;outlineColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } }
+        ],
+        &quot;stylesCustom4&quot;: [
+          { &quot;bold&quot;: false },
+          { &quot;fontStyleItalic&quot;: false },
+          { &quot;fontSize&quot;: 8 },
+          { &quot;color&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          { &quot;background&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          {
+            &quot;outline&quot;: &quot;\&quot;\&quot; | bottom | bottom double | top | top bottom | top bottom double | left | right | left right | top bottom left right&quot;
+          },
+          { &quot;outlineThickness&quot;: 1 },
+          { &quot;outlineColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } }
+        ],
+        &quot;stylesBold&quot;: [
+          { &quot;bold&quot;: true },
+          { &quot;fontStyleItalic&quot;: false },
+          { &quot;fontSize&quot;: 8 },
+          { &quot;color&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          { &quot;background&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          {
+            &quot;outline&quot;: &quot;\&quot;\&quot; | bottom | bottom double | top | top bottom | top bottom double | left | right | left right | top bottom left right&quot;
+          },
+          { &quot;outlineThickness&quot;: 1 },
+          { &quot;outlineColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } }
+        ],
+        &quot;stylesOverline&quot;: [
+          { &quot;bold&quot;: false },
+          { &quot;fontStyleItalic&quot;: false },
+          { &quot;fontSize&quot;: 8 },
+          { &quot;color&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          { &quot;background&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          {
+            &quot;outline&quot;: &quot;\&quot;\&quot; | bottom | bottom double | top | top bottom | top bottom double | left | right | left right | top bottom left right&quot;
+          },
+          { &quot;outlineThickness&quot;: 1 },
+          { &quot;outlineColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } }
+        ],
+        &quot;stylesUnderline&quot;: [
+          { &quot;bold&quot;: false },
+          { &quot;fontStyleItalic&quot;: false },
+          { &quot;fontSize&quot;: 8 },
+          { &quot;color&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          { &quot;background&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } },
+          {
+            &quot;outline&quot;: &quot;\&quot;\&quot; | bottom | bottom double | top | top bottom | top bottom double | left | right | left right | top bottom left right&quot;
+          },
+          { &quot;outlineThickness&quot;: 1 },
+          { &quot;outlineColor&quot;: { &quot;solid&quot;: { &quot;color&quot;: &quot;#someColor&quot; } } }
+        ]
+      }
+    }
+  }
+}
+
+</code></pre>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
