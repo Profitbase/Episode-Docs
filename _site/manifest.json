@@ -46,6 +46,706 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/adding-data-to-the-visual.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/adding-data-to-the-visual.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/applied-steps.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/applied-steps.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/calculations/calculations.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/calculations/calculations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/calculations/date-functions.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/calculations/date-functions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/calculations/financial-functions.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/calculations/financial-functions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/calculations/keywords.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/calculations/keywords.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/calculations/logical-functions.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/calculations/logical-functions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/calculations/math-functions.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/calculations/math-functions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/calculations/operators.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/calculations/operators.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/calculations/table-functions.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/calculations/table-functions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/calculations/text-functions.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/calculations/text-functions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/calculations/using-functions-in-column-calculations.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/calculations/using-functions-in-column-calculations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/column-expansion/column-expansion.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/column-expansion/column-expansion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/column-expansion/default-column-expansion.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/column-expansion/default-column-expansion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/column-expansion/enable-column-expansion.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/column-expansion/enable-column-expansion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/column-styling/column-header-grid-lines.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/column-styling/column-header-grid-lines.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/column-styling/column-headers-style.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/column-styling/column-headers-style.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/column-styling/column-styling.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/column-styling/column-styling.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/column-styling/individual-column-styles.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/column-styling/individual-column-styles.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/custom-columns/add-custom-columns.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/custom-columns/add-custom-columns.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/custom-columns/custom-columns.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/custom-columns/custom-columns.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/custom-columns/styling-custom-columns.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/custom-columns/styling-custom-columns.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/custom-subtotals-rows.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/custom-subtotals-rows.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/data-bars.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/data-bars.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/export-to-excel.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/export-to-excel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/formatting/cell-formatting-using-format-function.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/formatting/cell-formatting-using-format-function.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/formatting/conditional-formatting.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/formatting/conditional-formatting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/formatting/formatting.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/formatting/formatting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/getting-started/get-help.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/getting-started/get-help.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/getting-started/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/getting-started/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/getting-started/getting-the-visual.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/getting-started/getting-the-visual.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/getting-started/use-premium-features.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/getting-started/use-premium-features.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/getting-started/video-tutorials.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/getting-started/video-tutorials.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/hide-column.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/hide-column.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/hide-empty-columns.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/hide-empty-columns.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/hide-empty-rows.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/hide-empty-rows.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/hiding-rows.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/hiding-rows.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/home.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/home.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/measure-placement.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/measure-placement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/most-used-functions.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/most-used-functions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/overriding-column-calculations.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/overriding-column-calculations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/ragged-hierarchies.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/ragged-hierarchies.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/row-and-column-totals/column-subtotals.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/row-and-column-totals/column-subtotals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/row-and-column-totals/row-and-column-totals.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/row-and-column-totals/row-and-column-totals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/row-and-column-totals/row-grand-totals.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/row-and-column-totals/row-grand-totals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/row-expansion/allow-or-deny-expansion-for-individual-rows.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/row-expansion/allow-or-deny-expansion-for-individual-rows.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/row-expansion/default-expand-rows.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/row-expansion/default-expand-rows.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/row-expansion/expand-collapse-all.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/row-expansion/expand-collapse-all.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/row-expansion/expanded-rows-auto-styling.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/row-expansion/expanded-rows-auto-styling.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/row-expansion/row-expansion-direction.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/row-expansion/row-expansion-direction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/row-expansion/row-expansion-indent-size.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/row-expansion/row-expansion-indent-size.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/row-expansion/row-expansion.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/row-expansion/row-expansion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/row-expansion/show-hide-expansion-icons.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/row-expansion/show-hide-expansion-icons.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/row-styles-appearance/customize-row-styles.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/row-styles-appearance/customize-row-styles.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/row-styles-appearance/update-all-row-styles-with-or-without-conditions.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/row-styles-appearance/update-all-row-styles-with-or-without-conditions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/security.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/security.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/statistical-functions.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/statistical-functions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/testing-beta-versions-in-developer-mode.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/testing-beta-versions-in-developer-mode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/theming/theme-template-v3.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/theming/theme-template-v3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/theming/theme-template-v6.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/theming/theme-template-v6.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/theming/theming.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/theming/theming.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/thousand-and-decimal-separators.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/thousand-and-decimal-separators.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/title.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/title.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/values-options/banded-row-style.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/values-options/banded-row-style.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/values-options/default-formatting.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/values-options/default-formatting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/values-options/negative-values-formatting.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/values-options/negative-values-formatting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/values-options/scale-units.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/values-options/scale-units.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/values-options/values-options.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/values-options/values-options.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/values-options/zero-values-format.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/values-options/zero-values-format.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PowerBI/web-url.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PowerBI/web-url.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/index.md",
       "output": {
         ".html": {

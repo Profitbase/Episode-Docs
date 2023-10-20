@@ -1,0 +1,8 @@
+- name: Overview
+  href: column-styling.md
+- name: Enable grid lines
+  href: column-header-grid-lines.md
+- name: Column headers style - general
+  href: column-headers-style.md
+- name: Individual column styles
+  href: individual-column-styles.md

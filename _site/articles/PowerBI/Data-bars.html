@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title> | InVision </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" | InVision ">
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../public/main.js'
+    import { init } from './../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<p>In Edit mode; Right click column, and select &quot;Add data bar&quot;</p>
+<p>The parent rows Bergen, Oslo and Stavanger compare to each other, as they are on the same level of the hierarchy.
+Child rows compare to other child rows.</p>
+<p><img src="https://user-images.githubusercontent.com/82056309/188615791-b7e92e8d-bd31-440d-96ca-6ebab176797a.png" alt="image"></p>
+<p>Once the data bar is applied, you will get a format panel for the data bar:</p>
+<p><img src="https://user-images.githubusercontent.com/82056309/188615805-659f203a-2d02-49c0-86db-117a4e16adb6.png" alt="image"></p>
+<p><strong>Minimum</strong>: default set to Lowest value in the column. Could be set to any value.
+If you have a value of -100, but set the minimum to &quot;-50&quot;, then all rows with a value lower than -50 will have a full negative bar.</p>
+<p>Similar with <strong>Maximum</strong>.</p>
+<p><strong>Positiv bar/Negative bar</strong>: Set bar colors.</p>
+<p><strong>Axis</strong>: Set axis color</p>
+<p><strong>Hide Axis for empty cell:</strong> Will create a break in the axis if the value is empty.</p>
+<p><strong>Apply for only this column</strong>: Turn this ON if you only want the data bar for one specific column. Turn this OFF, and you will get a data bar for every instance of that measure. E.g. you have years on your column header, and add a data bar to your Actual measure. Turning this OFF will then apply a data bar to the Actual column for each year.</p>
+<p><strong>Bar direction</strong>: Set what should be the positive direction.</p>
+<p><strong>Compare against</strong>:
+Child Group: Each of the circled child groups contain one Maximum and one Minimum Value to compare against:
+The child group under &quot;Bergen&quot; has one maximum value. The child group under Oslo has a separate maximum value. So the comparison is done within the separate child groups.</p>
+<p><img src="https://user-images.githubusercontent.com/82056309/188615836-3c8ee722-3680-482d-8875-877a4a7073e1.png" alt="image"></p>
+<p><strong>RowLevel</strong>: Each row in the circles compare against each other. The middle group has the highest value, of 2,17 million, and all other rows compare to that as their maximum value.</p>
+<p><img src="https://user-images.githubusercontent.com/82056309/188615849-d1520264-59db-48b7-af0f-78fc23078876.png" alt="image"></p>
+<p><strong>Optional Condition:</strong></p>
+<p><img src="https://user-images.githubusercontent.com/82056309/188615863-2c20f52e-5c4c-44dd-a09f-9615db78975e.png" alt="image"></p>
+<p>You can use that field to specify where you want the data bar to appear.</p>
+<p>For instance, you can write &quot;RowLevel()&gt;0&quot; to exclude data bars on the top level (top level is defined as 0):</p>
+<p><img src="https://user-images.githubusercontent.com/82056309/188615884-f12cb7af-5b32-4918-b459-cbbf05e95ae1.png" alt="image"></p>
+<p>Or you could add it only to the parent rows by using &quot;RowLevel()==0&quot;:</p>
+<p><img src="https://user-images.githubusercontent.com/82056309/188615904-e4469e3f-016c-4410-a295-e50a5be97bb7.png" alt="image"></p>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
