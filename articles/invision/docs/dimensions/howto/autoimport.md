@@ -5,15 +5,14 @@ folderOnly: "false"
 pageIndex: 4
 ---
 
-
 ### Link to the video
 
-Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Automating%20Import%20of%20Data%20to%20Dimension.mp4) you will find video that shows how to automate import of data to dimension. [Here](../../dimensions.md) you will find [Documentation](../../dimensions.md).
+Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Automating%20Import%20of%20Data%20to%20Dimension.mp4), you will find a video that shows how to automate import of data to a dimension.  
+Read more about defining dimensions [here](../../dimensions.md).
+
 <br/>
 
-
 ### Step by step
-
 
 1. Create a table containing the columns you want to import into the dimension. The columns in the staging table must match the dimension table columns by name and data type:
 

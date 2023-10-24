@@ -1,0 +1,198 @@
+    - name: Overview
+      href: invision.md
+    - name: Docs
+      href: docs/index.md
+      items:
+      - name: System setup
+        href: docs/systemsetup/toc.yml
+      - name: Access control
+        href: docs/accesscontrol/toc.yml
+      - name: Accessibility
+        href: docs/accessibility/toc.yml
+      - name: Best practice
+        href: docs/bestpractice/index.md
+        items:
+        - name: Structuring a Solution
+          href: docs/bestpractice/structuringsolution.md
+      - name: Data flow items
+        href: docs/dataflowitems/toc.yml
+      - name: Data flows
+        href: docs/dataflows/toc.yml
+      - name: Data pool
+        href: docs/datapool.md
+      - name: Data stores
+        href: docs/datastores/toc.yml
+      - name: Dimensions
+        href: docs/dimensions/toc.yml
+      - name: Directives
+        href: docs/directives/toc.yml
+      - name: File storage
+        href: docs/filestorage/toc.yml
+      - name: Filters
+        href: docs/filters/toc.yml
+      - name: Forms
+        href: docs/forms/toc.yml
+      - name: Home page
+        href: docs/homepage.md
+        items:
+        - name: How to's
+          href: docs/homepage/howto.md
+          items:
+          - name: How to set up workbook as a home page
+            href: docs/homepage/howto/homepage.md
+      - name: Javascript
+        href: docs/javascript.md
+      - name: Macros
+        href: docs/macros/toc.yml
+      - name: Packages
+        href: docs/package/toc.yml
+      - name: PowerShell
+        href: docs/powershell/toc.yml
+      - name: SQL reports
+        href: docs/sqlreports/toc.yml
+      - name: SQL scripts
+        href: docs/sqlscripts/toc.yml
+      - name: System views
+        href: docs/systemviews.md
+      - name: Tables
+        href: docs/tables/toc.yml
+      - name: Table view
+        href: docs/tableview/toc.yml
+      - name: Time frame
+        href: docs/timeframe.md
+      - name: Translations / Localization
+        href: docs/translationsloc.md
+        items:
+        - name: How to's
+          href: docs/translationsloc/howto.md
+          items:
+          - name: How to setup translations
+            href: docs/translationsloc/howto/setup.md
+      - name: Troubleshooting
+        href: docs/troubleshooting.md
+      - name: Views
+        href: docs/views.md
+      - name: Web functions
+        href: docs/webfunctions/toc.yml
+      - name: Web service APIs
+        href: docs/webserviceapis.md
+        items:
+        - name: DB web API
+          href: docs/webserviceapis/dbwebapi.md
+        - name: JSON data API
+          href: docs/webserviceapis/jsondataapi.md
+      - name: Workbook menu
+        href: docs/workbookmenu.md
+      - name: Workbooks
+        href: docs/workbooks/toc.yml
+      - name: Workflow
+        href: docs/workflow/toc.yml
+      - name: Work process
+        href: docs/workprocess/toc.yml
+      - name: Worksheets
+        href: docs/worksheets/toc.yml
+    - name: Videos
+      href: videos/index.md
+      items:
+      - name: Getting started
+        href: videos/gettingstarted/index.md
+        items:
+        - name: Installation and setup
+          href: videos/gettingstarted/installation.md
+        - name: Developer tools
+          href: videos/gettingstarted/developertools.md
+        - name: Interface
+          href: videos/gettingstarted/interface.md
+      - name: Access control
+        href: videos/accesscontrol.md
+      - name: Accessibility
+        href: videos/accessibility.md
+      - name: Data flow
+        href: videos/dataflows.md
+      - name: Data stores
+        href: videos/datastores.md
+      - name: Dimensions
+        href: videos/dimensions.md
+      - name: File storage
+        href: videos/filestorage.md
+      - name: Filters
+        href: videos/filters.md
+      - name: Form schemas
+        href: videos/formschemas.md
+      - name: Json data api
+        href: videos/jsondataapi.md
+      - name: Localization
+        href: videos/localization.md
+      - name: Packages
+        href: videos/packages.md
+      - name: PowerShell
+        href: videos/powershell.md
+      - name: SQL reports
+        href: videos/sqlreports.md
+      - name: SQL scripts
+        href: videos/sqlscripts.md
+      - name: Tables
+        href: videos/tables.md
+      - name: Table view
+        href: videos/tableview.md
+      - name: Themes and styles
+        href: videos/themesandstyles.md
+      - name: Views
+        href: videos/views.md
+      - name: Workbook menu
+        href: videos/workbookmenu.md
+      - name: Workbooks
+        href: videos/workbooks/index.md
+        items:
+        - name: Components
+          href: videos/workbooks/components.md
+        - name: Interactions
+          href: videos/workbooks/interactions.md
+      - name: Work process
+        href: videos/workprocess.md
+      - name: Worksheet
+        href: videos/worksheet.md
+    - name: Change log
+      href: changelog/index.md
+      items:
+      - name: Change log 2023.6
+        href: changelog/changelog23_6.md
+      - name: Change log 2023.5
+        href: changelog/changelog23_5.md
+      - name: Change log 2023.4
+        href: changelog/changelog23_4.md
+      - name: Change log 2023.3
+        href: changelog/changelog23_3.md
+      - name: Change log 2023.2
+        href: changelog/changelog23_2.md
+      - name: Change log 2023.1
+        href: changelog/changelog23_1.md
+      - name: Change log 2022.5
+        href: changelog/changelog22_5.md
+      - name: Change log 2022.4
+        href: changelog/changelog22_4.md
+      - name: Change log 2022.3 pt.2
+        href: changelog/changelog22_3_2.md
+      - name: Change log 2022.3 pt.1
+        href: changelog/changelog22_3_1.md     
+      - name: Change log 2022.2
+        href: changelog/changelog22_2.md
+      - name: Change log 2022.1
+        href: changelog/changelog22_1.md
+      - name: Change log 5.2
+        href: changelog/changelog52.md
+      - name: Change log 5.1
+        href: changelog/changelog51.md
+      - name: Change log 5.0
+        href: changelog/changelog5.md
+      - name: Change log 4.1
+        href: changelog/changelog41.md
+      - name: Change log 4.0
+        href: changelog/changelog40.md
+    - name: Trainingcase
+      href: trainingcase/index.md
+      items:
+      - name: Invision trainingcase
+        href: trainingcase/invisiontrainingcase.md
+      - name: Invision trainingcase 2
+        href: trainingcase/invisiontrainingcase2.md

@@ -5,15 +5,14 @@ folderOnly: "false"
 pageIndex: 5
 ---
 
-
 ### Link to the video
 
-Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Create%20and%20display%20dimension.mp4) you will find video that shows how to Create and Display Dimension. [Here](../../dimensions.md) you will find [Documentation](../../dimensions.md).
+Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Create%20and%20display%20dimension.mp4), you will find a video that shows how to create and display a dimension.  
+Read more about defining dimensions [here](../../dimensions.md).
+
 <br/>
 
-
 ### Step by step
-
 
 1. Create schema - add and set up columns:
 
