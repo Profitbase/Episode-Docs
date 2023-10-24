@@ -1,4 +1,6 @@
-## Welcome to the Financial Reporting Matrix by Profitbase.
+# Welcome to the Financial Reporting Matrix by Profitbase.
+
+![bi](https://profitbasedocs.blob.core.windows.net/images/PowerBiVisuallogo.png)
 
 ### An improved matrix visual with advanced formatting
 

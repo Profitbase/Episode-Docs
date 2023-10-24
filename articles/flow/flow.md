@@ -1,27 +1,38 @@
-# Profitbase Flow
+# Welcome to the Profitbase Flow
+
+![flow](https://profitbasedocs.blob.core.windows.net/images/flowlogo.png)
+
+
+
+#### What is Profitbase Flow
 
 Profitbase Flow enables businesses to automate digital processes and integrate data from various sources through a user-friendly drag-and-drop interface. 
 
-Flow enables organizations to
+**Digital process automation**
 
-- Automate digital processes
-- Build integrations between disparate business systems
-- Run high-performance calculations over large volumes of data  
-- Build business rules engines for any type of business domain
-- Make business logic or services available through web service APIs
+-	Create, visualize, and manage complex business processes with a user-friendly drag-and-drop interface.
+-	Orchestrate processes between different business applications.
+-	Monitor and respond to events from external systems, such as incoming emails, message brokers, or changes in 3rd party applications.
 
+**Data integrations**
 
-## Continue reading
-[What is Profitbase Flow](what-is-flow.md)  
-[Key concepts and overview](key-concepts-and-overview.md)  
+-	Easily connect to various data sources, including databases, APIs, cloud services and ERP systems.
+-	Transform, cleanse, validate and enrich data as it flows through the system to ensure data quality and consistency.
+-	Keep data synchronized across systems in real-time or on a scheduled basis to support up-to-date decision making. 
 
-## SaaS and on-premises workloads
+**Business rules and high-performance calculations over large volumes of data**
 
-Profitbase Flow runs on Microsoft Azure as a fully managed Software-as-a-Service managed by Profitbase.
-You can also run Flow on your own Virual Machines or servers, making it possible for organizations with strict regulatory requirements or other internal policies to utilize the offering.  
+-	Build business rules engines for any type of business area, including finance, operations, IT, HR, sales, and marketing. 
+-	Perform complex calculations over large volumes of data at high speed to get immediate feedback on input.
 
-[Read more about on-premises installation](on-premises-installation.md)
+**Build APIs**
+
+-	Make your services and data available through highly available, secure APIs.
 
 <br/>
 
+<figure>    
+     <img src="../../images/What-is-Flow.png" style="width:100%">
+    <figcaption style="text-align:center"><b>Profitbase Flow - build business process automation flows using drag-and-drop</b></figcaption>
+</figure>
 

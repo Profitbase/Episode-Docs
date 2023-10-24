@@ -1,6 +1,5 @@
 
-
-Welcome to **docs.profitbase.com**, the home for Profitbase documentation for partners, developers and business professionals.
+# Welcome to the Profitbase Invision
 
 ![InVision](https://profitbasedocs.blob.core.windows.net/images/invisionlogo.png "InVision")
 

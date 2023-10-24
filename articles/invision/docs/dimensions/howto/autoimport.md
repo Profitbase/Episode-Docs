@@ -8,7 +8,7 @@ pageIndex: 4
 ### Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Automating%20Import%20of%20Data%20to%20Dimension.mp4), you will find a video that shows how to automate import of data to a dimension.  
-Read more about defining dimensions [here](../../dimensions).
+Read more about defining dimensions [here](../../dimensions.md).
 
 <br/>
 

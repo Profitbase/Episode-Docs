@@ -9,7 +9,7 @@ pageIndex: 4
 ### Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Import%20Primary%20Dimension.mp4), you will find a video that shows how to automate copying a Primary Dimension into a Solution.  
-Read more about defining dimensions [here](../../dimensions).
+Read more about defining dimensions [here](../../dimensions.md).
 
 <br/>
 

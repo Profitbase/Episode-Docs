@@ -1,10 +1,9 @@
   - name: Overview
     href: flow.md
-    items:
-    - name: What is Profitbase Flow
-      href: what-is-flow.md
-    - name: Key concepts and overview
-      href: key-concepts-and-overview.md    
+  - name: Key concepts
+    href: key-concepts.md     
+  - name: Hosting
+    href: hosting.md
   - name: On-premises installation
     href: on-premises-installation.md
     items:    

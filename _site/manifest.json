@@ -1506,10 +1506,20 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/flow/key-concepts-and-overview.md",
+      "source_relative_path": "articles/flow/hosting.md",
       "output": {
         ".html": {
-          "relative_path": "articles/flow/key-concepts-and-overview.html"
+          "relative_path": "articles/flow/hosting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/flow/key-concepts.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/flow/key-concepts.html"
         }
       },
       "version": ""
@@ -1550,16 +1560,6 @@
       "output": {
         ".html": {
           "relative_path": "articles/flow/on-premises-installation/system-requirements.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "articles/flow/what-is-flow.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/flow/what-is-flow.html"
         }
       },
       "version": ""
