@@ -15,7 +15,7 @@ If the Flow you want to run can handle input data, you can specify an input argu
 
 If the Flow you want to run returns data, you can use the data returned as input to actions later in the Flow. Note, however, that the data returned is typed as System.Object, so you may need to convert it to a type known by the calling Flow before you can use as input to other actions. 
 
-To convert a value to a different type, you must use the Convert action. This action can convert between objects as long as the source and target types are convertible.
+To convert a value to a different type, you must use the [Convert action](../../actions/built-in/convert.md). This action can convert between objects as long as the source and target types are convertible.
  
 <br/>
 

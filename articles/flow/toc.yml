@@ -89,4 +89,6 @@
     - name: 'Profitbase InVision'
       href: actions/profitbase-invision/toc.yml
     - name: "SQL Server"
-      href: actions/sql-server/toc.yml      
+      href: actions/sql-server/toc.yml
+  - name: "Triggers"
+    href: triggers/toc.yml

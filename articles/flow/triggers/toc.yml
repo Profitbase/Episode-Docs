@@ -1,0 +1,4 @@
+- name: "Schedule trigger"
+  href: "schedule-trigger.md"
+- name: "HTTP trigger"
+  href: "http-trigger.md"

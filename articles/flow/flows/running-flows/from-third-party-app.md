@@ -1,7 +1,7 @@
 
 #### Running Flows from 3rd party applications
 
-To run a Flow from a 3rd party application, you must use one of the API endpoints of the Flow. You can find the API endpoints of a Flow in the Resources -> Flow Properties window.
+To run a Flow from a 3rd party application, you must use one of the API endpoints of the Flow. You can find the API endpoints of a Flow in the `Resources -> Flow Properties` window, or you can add a [HTTP trigger](../../triggers/http-trigger.md) to the Flow.
 
 
 > [!NOTE]
