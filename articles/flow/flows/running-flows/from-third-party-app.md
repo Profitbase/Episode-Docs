@@ -1,7 +1,7 @@
 
 #### Running Flows from 3rd party applications
 
-To run a Flow from a 3rd party application, you must use one of the API endpoints of the Flow. You can find the API endpoints of a Flow in the Resources -> Flow Properties window.
+To run a Flow from a 3rd party application, you must use one of the API endpoints of the Flow. You can find the API endpoints of a Flow in the `Resources -> Flow Properties` window, or you can add a [HTTP trigger](../../triggers/http-trigger.md) to the Flow.
 
 
 > [!NOTE]
@@ -11,7 +11,7 @@ To run a Flow from a 3rd party application, you must use one of the API endpoint
 
 ![img](../../../../images/running1.png)
 
-To execute a **short-running** Flow, use the Short-running HTTP API endpoint. The API will return when the Flow has completed execution. If the Flow is configured to return a value or a file, you can read the result from the HTTP response body. For non-binary data, data is returned as JSON. The shape is defined by the shape and data type of the value that the Flow is configured to return. 
+To execute a **short-running** Flow, use the Short-running HTTP API endpoint. The API will return when the Flow has completed execution. If the Flow is configured to return a value or a file, you can read the result from the HTTP response body. For non-binary data, data is returned as JSON. The format is defined by the data type of the value that the Flow is configured to return. 
  
 <br/>
 

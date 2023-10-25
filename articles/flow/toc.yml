@@ -50,6 +50,8 @@
       href: flows/long-vs-short-running-flows.md
     - name: Debugging and logging
       href: flows/debugging-and-logging.md
+    - name: "Execution logs"
+      href: flows/execution-logs.md
     - name: Publish a Flow
       href: flows/publishing-flow.md
     - name: Modularization and extensions
@@ -89,4 +91,6 @@
     - name: 'Profitbase InVision'
       href: actions/profitbase-invision/toc.yml
     - name: "SQL Server"
-      href: actions/sql-server/toc.yml      
+      href: actions/sql-server/toc.yml
+  - name: "Triggers"
+    href: triggers/toc.yml

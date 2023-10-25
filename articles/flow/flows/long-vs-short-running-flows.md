@@ -15,7 +15,7 @@ The **differences** between short-running and long-running Flows are listed belo
 
 | Feature                                                                              | Short-running             | Long-running |
 |--------------------------------------------------------------------------------------|---------------------------|--------------|
-| Max execution time                                                                   | 150 seconds (2,5 minutes) | No limit     |
+| Max execution time                                                                   | 300 seconds (5 minutes)   | No limit     |
 | Can use the Return action to return a result directly to the caller                  | Yes                       | No           |
 | Can use the Return HTTP File response action to return a file directly to the caller | Yes                       | No           |
 | Requires polling for completion                                                      | No                        | Yes          |

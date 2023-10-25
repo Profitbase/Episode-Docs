@@ -1,5 +1,9 @@
 
-#### Publish a Flow
+# Publish a Flow
+
+To publish a Flow, open the Flow in the Designer and press Publish from the application bar.  
+
+![img](../../../images/publish-flow.png)
 
 Profitbase Flow defines three environments: 
 
@@ -16,3 +20,4 @@ All Workspace Variables in the Flow will now automatically use the values for th
 For example, if you publish from Development to Production and you have a different database connection for the Production and Development environments, the published Flow will now automatically connect to the production database instead of the development database. 
 
 Flows published to production will also run faster due to optimizations applied during the publish process.
+
