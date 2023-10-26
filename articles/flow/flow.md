@@ -1,8 +1,4 @@
-# Welcome to the Profitbase Flow
-
-![flow](https://profitbasedocs.blob.core.windows.net/images/flowlogo.png)
-
-
+# Overview
 
 #### What is Profitbase Flow
 
