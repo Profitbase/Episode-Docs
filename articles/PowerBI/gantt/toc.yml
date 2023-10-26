@@ -1,0 +1,51 @@
+
+- name: Overview
+  href: overview.md
+- name: Getting Started
+  href: Getting-Started/toc.yml
+- name: Security
+  href: Security.md
+- name: Adding data to the visual
+  href: Adding-data-to-the-visual.md
+- name: Column Options
+  href: Column-Options.md
+- name: Additional columns
+  href: Additional-columns.md
+- name: Chart Options
+  href: Chart-Options.md  
+- name: Chart Colors
+  href: Chart-Colors.md
+- name: Data Grid
+  href: Data-Grid.md 
+- name: Timelines
+  href: Timeline.md
+- name: Data Label
+  href: Data-Label.md
+- name: Baseline formatting
+  href: Baseline-formatting-(Planned-start-end-date).md
+- name: Conditional formatting
+  href: Conditional-Formatting.md
+- name: Conditions bucket
+  href: Conditions-bucket.md
+- name: Duration
+  href: Duration.md
+- name: Dynamic event markers
+  href: Dynamic-Event-Markers.md
+- name: Gridline options
+  href: Gridline-options.md
+- name: Licenses
+  href: Licenses-AppSource-or-License-key.md
+- name: Milestones
+  href: Milestones.md
+- name: Multi taskbar
+  href: Multi-taskbar.md
+- name: Progress
+  href: Progress.md
+- name: Ragged hierarchy
+  href: Ragged-Hierarchy.md
+- name: Theme template
+  href: Theme-template.md
+- name: Toolbar(Zoom,-search-and-filter)
+  href: toolbar.md
+
+
