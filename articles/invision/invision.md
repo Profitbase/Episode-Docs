@@ -1,5 +1,5 @@
 
-# Welcome to the Profitbase Invision
+# Welcome to Profitbase Invision
 
 ![InVision](https://profitbasedocs.blob.core.windows.net/images/invisionlogo.png "InVision")
 
