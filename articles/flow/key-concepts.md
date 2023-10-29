@@ -17,11 +17,11 @@ A Workspace is a logical container of Flows and artifacts. Workspace artifacts i
 
 ### Workspace Objects
 
-Workspace Objects are reusable objects that consist of multiple values, for example a SQL Server connection having a server name, database name, username, and password. Instead of defining a different connection for every SQL Server action in a Flow, you can reuse an existing connection object and manage its settings once.
+[Workspace Objects](workspaces/workspace-objects.md) are reusable objects that consist of multiple values, for example a SQL Server connection having a server name, database name, username, and password. Instead of defining a different connection for every SQL Server action in a Flow, you can reuse an existing connection object and manage its settings once.
 
 ### Workspace Variables
 
-Workspace Variables are simple values that can be shared by all Flows in a Workspace, for example, a connection strings, usernames, database names or numeric values. Workspace Variables also can be used in Workspace Objects.
+[Workspace Variables](workspaces/workspace-variables.md) are simple values that can be shared by all Flows in a Workspace, for example, a connection strings, usernames, database names or numeric values. Workspace Variables also can be used in Workspace Objects.
 
 Environments and Workspace Variables are closely related. Each Workspace variable can hold one distinct value pr environment. For example, you may define a _ConnectionString_ variable that points to different databases for Development and Production. This functionality enables you to deploy a Flow to different environments without having to make manual changes to the configuration of the Flow when it's deployed to the target environment.
 
@@ -31,13 +31,15 @@ Profitbase Flow defines three environments:
 
 - Development
 - Test
-- Production.
+- Production
 
 While developing a Flow, you are working in one environment. To follow best practices, this should be the Development environment. Once your Flow reaches a stage where it's prepared for testing or deployment to production, you should publish it to either the Test or Production environment. This allows your users or external APIs to access a stable version of the Flow, while you can continue development of subsequent versions or features.
 
 Environments and Workspace Variables are closely related. Each Workspace variable can hold one distinct value pr environment. For example, you may define a _ConnectionString_ variable that points to different databases for Development and Production. This functionality enables you to deploy a Flow to different environments without having to make manual changes to the configuration of the Flow when it's deployed to the target environment.
 
 Access to different environments may vary depending on your subscription plan. Typically, the Test environment is not accessible with free or lower-cost subscriptions.
+
+[Read more about Environments here](environments.md).
 
 ## Flows
 

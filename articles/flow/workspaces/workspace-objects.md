@@ -7,7 +7,7 @@ Workspace Object are reusable objects that consist of multiple values. For insta
 
 ## Creating Workspace Objects
 
-Workspace Objects are created automatically when you configure an Action or Trigger that require them. For example, if you are confiuring a SQL Server action, you must specify a SQL Server connection. When you do, a SQL Server Connection object is created. The next time you create a SQL Server action, you can reuse the existing SQL Server Connection object.
+Workspace Objects are created automatically when you configure an Action or Trigger that require them. For example, if you are configuring a SQL Server action, you must specify a SQL Server connection. When you do, a SQL Server Connection object is created. The next time you create a SQL Server action, you can reuse the existing SQL Server Connection object instead of creating another connection definition.
 
 ## Editing and deleting Workspace Objects
 
@@ -17,3 +17,4 @@ To edit or delete a Workspace Object, open the Workspace Objects editor from the
 > If you edit a Workspace Object which contains secrets such as usernames, passwords or API keys, you must re-enter all secrets before saving. Secrets will not be displayed when opening a Workspace Object for edit.
 
 ![img](../../../images/open-workspace-objects-editor.png)
+

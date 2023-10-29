@@ -2,3 +2,5 @@
   href: "schedule-trigger.md"
 - name: "HTTP trigger"
   href: "http-trigger.md"
+- name: "Flow trigger"
+  href: "flow-trigger.md"
