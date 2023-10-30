@@ -42,7 +42,7 @@ This example demonstrates how to run a Flow within another Flow. We will call th
 
 2) In `Create order`, create a [Flow trigger](../../triggers/flow-trigger.md) to define the entry point of the Flow, and the format of the data that `Create order` accepts as input from `Order processor`.
 
-3) Select the Flow trigger and click `Data definition` in the `Properties` panel. Define the following data format:  
+3) Select the Flow trigger, toggle `Output data type` to `Use custom type(s)`, and open the data type editor in the `Properties` panel. Define the following data format:  
 ![img](../../../../images/nested_execution_example_create_order_datatype.png)
 
 4) Define the business logic to process the shopping cart items. As this is beyond the scope of this example, we will not go into details on these steps. A quick-and-dirty implementation would be to simply insert data to a database. The image below shows a series of steps to create an order id, create order lines and save them to a SQL Server database.
