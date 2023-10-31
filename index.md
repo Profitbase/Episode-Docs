@@ -1,4 +1,4 @@
-![doku](https://profitbasedocs.blob.core.windows.net/images/Docu.png)
+![doku](https://profitbasedocs.blob.core.windows.net/imagestitlesites/Docu.png)
 
 INDEX
 
@@ -6,11 +6,52 @@ INDEX
 
 Explore guides and articles by product.
 
-* [Invision](articles/invision/toc.yml)
-* [Flow](articles/flow/toc.yml)
-* [PowerBI](articles/PowerBI/toc.yml)
-* [Planner](https://documentation.support.profitbase.com/framework/planner)
-* [Risk](https://documentation.support.profitbase.com/framework/risk)
-* [Glossary](https://documentation.support.profitbase.com/framework/glossary)
-* [Profitbase](https://www.profitbase.no/)
-* [Blog](https://blogs.profitbase.com/)
+![PowerBI](https://profitbasedocs.blob.core.windows.net/imagestitlesites/powerBIheader.png)
+
+ [PowerBI](articles/PowerBI/power-bi.md)
+
+  lorem ipsum bla bla bla
+
+ </br>
+
+![Invision](https://profitbasedocs.blob.core.windows.net/imagestitlesites/lowcodeheader.png)
+
+ [Invision](articles/invision/invision.md)
+
+ lorem ipsum bla bla bla
+
+ </br>
+
+![Flow](https://profitbasedocs.blob.core.windows.net/imagestitlesites/flowheader.png)
+
+ [Flow](articles/flow/flow.md)
+
+ lorem ipsum bla bla bla
+
+ </br>
+
+
+![Budgeting and forecasting](https://profitbasedocs.blob.core.windows.net/imagestitlesites/budgforrecastingheader.png)
+
+ [Budgeting and forecasting](https://documentation.support.profitbase.com/framework/planner)
+
+  lorem ipsum bla bla bla
+
+ </br>
+
+![Risk](https://profitbasedocs.blob.core.windows.net/imagestitlesites/riskheader.png)
+
+ [Risk](https://documentation.support.profitbase.com/framework/risk)
+
+  lorem ipsum bla bla bla
+
+ </br>
+
+ ![Profitbase](https://profitbasedocs.blob.core.windows.net/imagestitlesites/PBheader.png)
+
+ [Profitbase](https://www.profitbase.no/)
+
+  lorem ipsum bla bla bla
+
+ </br>
+
