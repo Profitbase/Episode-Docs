@@ -1,7 +1,7 @@
 
 # Running Flows within Flows
 
-To run a Flow within another Flow, use the **Run Flow action**. 
+To run a Flow within another Flow, use the [Run Flow](../../actions/built-in/run-flow.md) action. 
  
 <br/>
 
@@ -9,17 +9,14 @@ To run a Flow within another Flow, use the **Run Flow action**.
 
 ## Input
 
-If the Flow you want to run can handle input data, you can specify an input argument to pass to the Flow. All Flows technically accepts a single argument, but it's up to the implementer to decide whether to use that data or not. It is also up to the implementer to decide the format of the input data. It can be anything from a simple numeric value to a complex business object.  To know the type and format of the data you can pass in, you need to open the Flow you want to run and examine its configuration. 
+If the Flow you want to run supports parameterization, you can specify an argument to pass to the Flow. All Flows technically accepts a single argument, but it's up to the implementer to decide whether to use that data or not. It is also up to the implementer to decide the format of the input data. It can be anything from a simple numeric value to a complex business object. To know the type and format of the data you can pass in, you need to open the Flow you want to run and examine its configuration. If the Flow is implemented following best practices, it should have a [Flow trigger](../../triggers/flow-trigger.md) which optionally defines the parameter type definition.
 
 ## Return data
 
-If the Flow you want to run returns data, you can use the data returned as input to actions later in the Flow. Note, however, that the data returned is typed as System.Object, so you almost always have to convert it to a type known by the calling Flow before you can use as input to other actions. 
+If the Flow you want to run returns data, you can use the data returned as input to actions later in the Flow. Note, however, that the data returned is typed as [System.Object](https://learn.microsoft.com/en-us/dotnet/api/system.object), so you almost always have to convert it to a type known by the calling Flow before you can use as input to other actions. 
 
-To convert a value to a different type, you must use the [Convert action](../../actions/built-in/convert.md). This action can convert between objects as long as the source and target types are convertible.
+To convert the returned value to a format that can be used by actions in the calling Flow, specify the `Output data type` property of the [Run Flow](../../actions/built-in/run-flow.md) action in the `Properties` panel. 
  
-<br/>
-
-![img](../../../../images/running5.png)
 
 ### Example
 
@@ -28,7 +25,7 @@ This example demonstrates how to run a Flow within another Flow. We will call th
 
 #### Outline
 
-1) `Order processor` calls `Create order` using the [Run Flow action](../../actions/built-in/run-flow.md), and passes in an order request coming from a HTTP request via an [HTTP Trigger](../../triggers/http-trigger.md).  
+1) `Order processor` calls `Create order` using the [Run Flow action](../../actions/built-in/run-flow.md), and passes in an order request coming from an HTTP request via an [HTTP Trigger](../../triggers/http-trigger.md).  
 2) `Create order` has a [Flow trigger](../../triggers/flow-trigger.md) which converts the input from `Order processor` to a list of shopping cart items.
 3) `Create order` processes the items and returns an Order object to `Order processor` using the [Return action](../../actions/built-in/return.md)
 4) `Order processor` converts the Order object returned from `Create order` to its own object so it can be used by other actions in the Flow.
@@ -83,7 +80,7 @@ Select the HTTP Trigger and define the input from the `Data definition` property
 
 ![img](/images/nested_execution_example_run_create_order.png)
 
-3) With the Run Flow action still selected, use the `Data definition` property in the `Properties panel` to define the format of the Order object returned from `Create order`. By defining the format of the object, you tell Flow how to handle the data returned from the other Flow and convert it into something that can be used on the receivng end.  
+3) With the Run Flow action still selected, use the `Output data type` property in the `Properties panel` to define the format of the Order object returned from `Create order`. By defining the format of the object, you tell Flow how to handle the data returned from the other Flow and convert it into something that can be used on the receivng end.  
 
 From `Step 4 ` of the `Create order` Flow above, we remember that the format of the object was
 
@@ -97,5 +94,5 @@ To summarize how to run a Flow in another Flow, you need to use the [Run Flow](.
 If you want to exchange data between the Flows using custom business objects, you need to define the formats of the data you want to exchange on both sides. 
 
 > [!NOTE]
-> Note that you only need to define data formats if you want to pass custom business objects between the Flows. If you only want to pass data back and forth  using standard .NET types such as strings, numbers, dates etc, you do NOT need to define data formats. In that case, you need use a [Convert](../../actions/built-in/convert.md) action to convert the data from System.Object to the desired data type.
+> Note that you only need to define data formats if you want to pass custom business objects between the Flows. If you only want to pass data back and forth  using standard .NET types such as strings, numbers, dates etc, you can simply select the standard type to use in the `Output data type` property. 
 
