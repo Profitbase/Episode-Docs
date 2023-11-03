@@ -2,7 +2,7 @@
 
 ![InVision](https://profitbasedocs.blob.core.windows.net/imagestitlesites/Docu3.png "InVision")
 
-Go to our [video tutorials](videos/index.md) and [documentation](docs/index.md). Read about the **key features** of **Profitbase InVision**.
+
 
 ### Resources
 
@@ -33,7 +33,7 @@ INDEX
 
 ### Documentation directory
 
-Check out the following topics to learn how to build, run, and deploy your Solution in InVision.
+Read about the **key features** of **Profitbase InVision**. Check out the following topics to learn how to build, run, and deploy your Solution in InVision.
 
 <div class="column-container">
     <div class="column">
