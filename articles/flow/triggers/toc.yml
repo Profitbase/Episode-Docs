@@ -4,3 +4,5 @@
   href: "http-trigger.md"
 - name: "Flow trigger"
   href: "flow-trigger.md"
+- name: "Multi-trigger"
+  href: "multi-trigger.md"

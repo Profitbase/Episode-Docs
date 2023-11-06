@@ -52,6 +52,8 @@
       href: flows/debugging-and-logging.md
     - name: "Execution logs"
       href: flows/execution-logs.md
+    - name: "Execution endpoints"
+      href: flows/execution-endpoints.md
     - name: Publish a Flow
       href: flows/publishing-flow.md
     - name: Modularization and extensions
@@ -94,3 +96,5 @@
       href: actions/sql-server/toc.yml
   - name: "Triggers"
     href: triggers/toc.yml
+  - name: "API reference"
+    href: api-reference/toc.yml

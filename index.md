@@ -11,7 +11,7 @@ Explore guides and articles by product.
             <img src="https://profitbasedocs.blob.core.windows.net/imagestitlesites/powerBIheader.png" alt="PowerBI">
         </a>
         <a href="articles/PowerBI/power-bi.md" class="custom-link">
-            PowerBI
+            PowerBI Custom Visuals
         </a>
     <p>Advanced Reporting, Simplified with Profitbase and PowerBI.</p>
 </div>
@@ -23,7 +23,7 @@ Explore guides and articles by product.
                 <a href="articles/invision/invision.md" class="custom-link">
            Invision
         </a>   
-    <p>Low Code, Big Solutions.</p>
+    <p>Build powerful business apps with low-code.</p>
 </div>
 
 <div class="flex-column">
@@ -33,7 +33,7 @@ Explore guides and articles by product.
                  <a href="articles/flow/flow.md" class="custom-link">
             Flow
         </a>
-    <p>Flow - Your Logic, Your Way.</p>
+    <p>Automate digital processes and integrate data from various sources through a user-friendly drag-and-drop interface.</p>
 </div>
 </div>
 </br>
@@ -53,7 +53,7 @@ Explore guides and articles by product.
             <img src="https://profitbasedocs.blob.core.windows.net/imagestitlesites/riskheader.png" alt="Risk">
         </a>
                  <a href="https://documentation.support.profitbase.com/framework/risk" class="custom-link">
-            Risk Management Software
+            Risk Management
         </a>
     <p>Safeguard your company’s values and assets.</p>
 </div>

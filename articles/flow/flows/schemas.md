@@ -2,9 +2,9 @@
 
 Each Flow has at least one schema, which is called "Main". This is where you define the main sequence of actions that drive the business logic.
 
-The Main schema can only contain a single entry point, which can be either an action or a trigger. During development, you are technically allowed to have multiple entry points in the Main schema, but only the path with the most number of actions will be executed.
+The Main schema can only contain a single entry point, which can be either an [action or a trigger](actions-and-triggers.md). During development, you are technically allowed to have multiple entry points in the Main schema, but only the path with the most number of actions will be executed.
 
-In addition to Main, you can add multiple sub-flows called Extension schemas. You can use extension schemas to break large Flows up into smaller units, or to enable extension of a Flow with custom logic without modifying the main schema.
+In addition to Main, you can add multiple sub-flows called `extension schemas`. You can use `extension schemas` to break large Flows up into smaller units, or to enable extension of a Flow with custom logic without modifying the main schema.
 
 <br/>
 
