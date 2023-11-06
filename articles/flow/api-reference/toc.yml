@@ -6,3 +6,9 @@
     href: "execute-flow/submit-long-running.md"
   - name: "Poll"
     href: "execute-flow/poll.md"
+- name: "Logs"
+  items:
+  - name: "Get Runs"
+    href: "logs/get-runs.md"
+  - name: "Get Run log"
+    href: "logs/get-run-log.md"

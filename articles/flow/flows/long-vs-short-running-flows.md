@@ -16,7 +16,7 @@ The **differences** between short-running and long-running Flows are listed belo
 | Feature                                                                              | Short-running             | Long-running |
 |--------------------------------------------------------------------------------------|---------------------------|--------------|
 | Max execution time                                                                   | 300 seconds (5 minutes)   | No limit     |
-| Can use the Return action to return a result directly to the caller                  | Yes                       | No           |
-| Can use the Return HTTP File response action to return a file directly to the caller | Yes                       | No           |
-| Requires polling for completion                                                      | No                        | Yes          |
+| Can use the [Return action](../actions/built-in/return.md) to return a result directly to the caller                  | Yes                       | No           |
+| Can use the [Return HTTP File response action](../actions/http/return-file-http-response.md) to return a file directly to the caller | Yes                       | No           |
+| Requires [polling](../api-reference/execute-flow/poll.md) for completion             | No                        | Yes          |
 
