@@ -1,10 +1,10 @@
 # HTTP trigger
 
-When the Flow is called from an HTTP request, the HTTP trigger defines how to convert the HTTP request body to a business object.
+When a Flow is executed from an HTTP request, the HTTP trigger defines how to convert the HTTP request body to a business object.  
 You can also get the HTTP endpoint of the Flow from the HTTP trigger. The HTTP endpoint is the URL used to execute the Flow from a 3rd party application.
 
 > [!Note]
-> You must define at least one API Key with `Execute` permissions in order to execute a Flow from a 3rd party application. The Flow will have no public API unless at least one API key is defined in the tenant.
+> You must define at least one API Key with `Execute` permissions in order to execute a Flow from a 3rd party application. A Flow will have no public HTTP endpoint unless at least one API key is defined in the tenant.
 
 ## Example
 

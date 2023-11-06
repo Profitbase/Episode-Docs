@@ -9,7 +9,7 @@ The business logic of a Flow is defined by combining triggers and actions into a
 
 There are a few simple rules that apply to how actions and triggers can be used in a Flow:
 
--	A Flow can have zero or one trigger. In cases where you want to trigger a Flow based on events from multiple systems, use the MultiTrigger. 
+-	A Flow can have zero or one trigger. In cases where you want to trigger a Flow based on events from multiple systems, use the [Multi-Trigger](../triggers/multi-trigger.md).  
 -	A Flow can have any number of actions.
 -	A Flow cannot have multiple entry points. An entry point is defined as an action or trigger with no inbound connections. If you add multiple entry points, Flow will execute the path with the longest chain of actions. All other actions will be ignored. 
 -	A trigger does not have parameters, but it can return an output. (All triggers except the Schedule trigger have some type of output)
@@ -21,9 +21,9 @@ There are a few simple rules that apply to how actions and triggers can be used 
 
 Actions can have parameters (inputs) and return a value (output). An action and a trigger can only have a single output, but an output can be a collection of items, a complex business object or a simple scalar value like a number.
 
-In Flow, variables, inputs, and outputs have specific data types and only compatible data types can be used together.  For example, you cannot pass a string output or variable to a numeric input. 
+In Flow, variables, inputs, and outputs have specific data types and only compatible data types can be used together.  For example, you cannot pass a `string` output or variable to a `numeric` input. 
 
-When you select a parameter and open the selector, a list of all variables with compatible data types will be listed. Choose the appropriate value to use it as input to the parameter.
+When you select a parameter and open the selector, a list of all variables with `compatible data types` will be listed. Choose the appropriate value to use it as input to the parameter.
 
 
 <br/>
@@ -33,7 +33,3 @@ When you select a parameter and open the selector, a list of all variables with 
 **No compatible data found**
 
 When using the Flow designer to configure parameters of an Action, you will only be able to select variables having compatible data types as inputs. If the variable selector display no items to select, it means that there is no compatible data available to use as input to the action.
-
-<br/>
-
-![img](../../../images/inputoutput.png)
