@@ -1,0 +1,13 @@
+- name: Overview
+  href: planner.md
+- name: Getting Started
+  href: getting-started.md
+  items:
+  - name: Common functionality
+    href: getting-started/common-functionality.md
+- name: Modules
+  href: modules/toc.yml
+- name: Risk Administration
+  href: workbooks/toc.yml
+- name: Changelog
+  href: changelog/toc.yml

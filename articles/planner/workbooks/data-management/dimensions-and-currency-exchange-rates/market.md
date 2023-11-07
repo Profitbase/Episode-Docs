@@ -1,0 +1,10 @@
+---
+title: "Market"
+metaKeys: ""
+folderOnly: "false"
+pageIndex: 7
+---
+
+**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x, 5.0 or 5.1
+
+See [Product](/planner/workbooks/data-management/dimensions-and-currency-exchange-rates/product)
