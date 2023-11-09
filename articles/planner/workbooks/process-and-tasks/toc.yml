@@ -1,8 +1,8 @@
-- name: Financial Planning
+- name: "Financial Planning"
   href: financial-planning/toc.yml
-- name: Process and Tasks
+- name: "Process and Tasks"
   href: process-and-tasks/toc.yml
-- name: Data Management
+- name: "Data Management"
   href: data-management/toc.yml
-- name: Administration
+- name: "Administration"
   href: administration/toc.yml

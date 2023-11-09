@@ -1,13 +1,64 @@
 - name: Overview
-  href: planner.md
-- name: Getting Started
-  href: getting-started.md
+  href: modules.md
+- name: Account
+  href: account.md
   items:
-  - name: Common functionality
-    href: getting-started/common-functionality.md
-- name: Modules
-  href: modules/toc.yml
-- name: Risk Administration
-  href: workbooks/toc.yml
-- name: Changelog
-  href: changelog/toc.yml
+  - name: Account details
+    href: account/account-details.md
+  - name: Supporting details
+    href: account/supporting-details.md
+- name: Personnel
+  items:
+  - name: Personnel details
+    href: personnel-details.md
+  - name: FTE
+    href: fte.md
+  - name: Headcount
+    href: hc.md
+  - name: FTE long term
+    href: fte-long-term.md
+  - name: Spread to periods
+    href: spread-to-periods.md
+  href: personnel.md
+- name: Driver based
+  href: driver-based.md
+  items:
+  - name: Drivers
+    href: drivers.md
+  - name: Details
+    href: details.md
+  - name: Distribution
+    href: distribution.md
+  - name: Assumption
+    href: assumption.md
+  - name: Formula
+    href: formula.md
+- name: Finance advanced input
+  href: finance-native.md
+  items:
+  - name: Source data
+    href: input-data.md
+  - name: Report
+    href: report.md
+  - name: Setup
+    href: setup.md
+- name: Sales Forecast
+  href: sales-forecast.md
+  items:
+  - name: Sales details
+    href: sales-forecast-details.md 
+  - name: Sales main driver
+    href: sales-forecast-driver.md 
+  - name: Distribution
+    href: distribution.md
+  - name: Assumption
+    href: assumption.md
+  - name: Formula
+    href: formula.md
+- name: Sales GM
+  href: sales-gm.md
+  items:
+  - name: Sales details
+    href: sales-gm-details.md
+  - name: GM% periodic override
+    href: gm-ovr.md

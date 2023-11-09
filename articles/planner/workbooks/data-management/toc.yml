@@ -1,0 +1,128 @@
+- name: "Data Management"
+  href: data-management.md
+- name: "Currency exchange rates and calendar"
+  href: currency-exchange-rates-and-calendar.md
+  items:
+  - name: "Setup"
+    href: setup.md
+  - name: "Workday calendar"
+    href: workday-calendar.md
+- name: "Dimensions"
+  href: dimensions.md
+  items:
+  - name: "Edit dimensions"
+    href: edit-dimensions.md
+  - name: "Elim. Legal Entity Mapping"
+    href: elim-legal-entity-mapping.md
+  - name: "Group Account Mapping"
+    href: group-account-mapping.md
+  - name: "Setup"
+    href: setup.md
+  - name: "Time and fiscal setup"
+    href: time-and-fiscal-setup.md
+- name: "Source fact data"
+  href: source-fact-data.md
+  items:
+  - name: "Personnel facts"
+    href: personnel-facts.md
+  - name: "Measure facts"
+    href: sales-forecast-facts.md
+- name: "Report setup"
+  href: report-setup.md
+  items:
+  - name: "Account mapping"
+    href: account-mapping.md
+  - name: "Account"
+    href: account.md
+  - name: "Additional dim. mapping - Edit selection"
+    href: additional-dim-mapping-edit-selection.md
+  - name: "Additional dim. mapping"
+    href: additional-dim-mapping.md
+  - name: "Options"
+    href: options.md
+  - name: "Report lines"
+    href: report-lines.md
+  - name: "Reports"
+    href: reports.md
+  - name: "Setup report"
+    href: setup-report.md
+  - name: "Setup"
+    href: setup.md
+  - name: "Translations"
+    href: translations.md
+  - name: "View report data"
+    href: view-report-data.md
+- name: "Account plan proposal"
+  href: account-plan-proposal.md
+  items:
+  - name: "1. Create basis proposal"
+    href: create-basis-proposal.md
+  - name: "2. Adjust basis proposal and import"
+    href: adjust-basis-proposal-and-import.md
+  - name: "Adjust data and periods"
+    href: adjust-data-and-periods.md
+  - name: "Import proposal"
+    href: import.md
+  - name: "Limit data from source"
+    href: limit-data-from-source.md
+  - name: "Override dataset mapping"
+    href: override-dataset-selection.md
+  - name: "Set adjustment factors"
+    href: set-factor-adjustment.md
+- name: "Driver based plan proposal"
+  href: driver-based-plan-proposal.md
+  items:
+  - name: "1. Create basis proposal"
+    href: create-basis-proposal.md
+  - name: "2. Adjust basis proposal and import"
+    href: adjust-basis-proposal-and-import.md
+  - name: "Adjust data and periods"
+    href: adjust-data-and-periods.md
+  - name: "Import proposal"
+    href: import.md
+  - name: "Override dataset mapping"
+    href: override-dataset-selection.md
+  - name: "Set adjustment factors"
+    href: set-factor-adjustment.md
+- name: "Data import & export"
+  href: data-import.md
+  items:
+  - name: "Audit"
+    href: audit.md
+  - name: INSERT_NAME
+    href: connections.md
+  - name: "Export data"
+    href: export-data.md
+  - name: "File import"
+    href: file-import.md
+  - name: "Import data"
+    href: import-data.md
+- name: "Dimensions (version < 5.2)"
+  href: dimensions-and-currency-exchange-rates.md
+  items:
+  - name: "Account"
+    href: account.md
+  - name: "Activity"
+    href: activity.md
+  - name: "Asset group"
+    href: asset-group.md
+  - name: "Department"
+    href: department.md
+  - name: "Dim1..Dim4"
+    href: dim1-dim4.md
+  - name: "Employee"
+    href: employee.md
+  - name: "Exchange rate daily"
+    href: exchange-rate-daily.md
+  - name: "Exchange rate monthly"
+    href: exchange-rate-monthly.md
+  - name: "Legal entity"
+    href: legal-entity-and-department.md
+  - name: "Market"
+    href: market.md
+  - name: "Product"
+    href: product.md
+  - name: "Project"
+    href: project.md
+  - name: "Supplier"
+    href: supplier.md

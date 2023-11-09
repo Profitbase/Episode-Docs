@@ -35,7 +35,7 @@ Press **Save** when you are satisfied with your proposed treatment plan.
 
 ## Add tasks to treatment plan
 
-If you want to break down your treatment plan into specific tasks, press **Add New Task** in the **Treatment Plan** window. Add specific tasks delegated to specific users, describe the tasks and set deadlines. For more info, please see **[Tasks](/planner/workbooks/process-and-tasks/tasks.md)**. <br/>
+If you want to break down your treatment plan into specific tasks, press **Add New Task** in the **Treatment Plan** window. Add specific tasks delegated to specific users, describe the tasks and set deadlines. For more info, please see **[Tasks](../../../planner/workbooks/process-and-tasks/tasks.md)**. <br/>
 <br/>
 
 ![](https://profitbasedocs.blob.core.windows.net/riskimages/risk-add-new-task.png)
@@ -44,10 +44,10 @@ If you want to break down your treatment plan into specific tasks, press **Add N
 
 ## Related Pages
 
-- [Create New Risk](/risk/workbooks/risks/create-new-risk.md)
+- [Create New Risk](create-new-risk.md)
   <br/>
 
-- [Risk Submission](/risk/workbooks/risk-submission.md)
-- [Group Risks](/risk/workbooks/group-risks.md)
-- [Risk reports](/risk/workbooks/risk-reports.md)
-- [Risk Administration](/risk/workbooks/risk-admin.md)
+- [Risk Submission](../risk-submission.md)
+- [Group Risks](../group-risks.md)
+- [Risk reports](../risk-reports.md)
+- [Risk Administration](../risk-admin.md)

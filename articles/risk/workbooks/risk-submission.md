@@ -19,7 +19,7 @@ A risk owner sets a risk as “Reviewed” in the "Risks" workbook. The risk the
 
 In order to manage risk development over time; this risk review process can follow a pre-established (or ad-hoc) pattern, for example, a quarterly risk review. When starting a new risk review process, all previously submitted risks are sent back to the risk owners at various levels in the organization for review. When risks are in review, risk owners are required to re-evaluate their previous risk assessments.
 
-For more information on how to start a new risk review process, please see [Risk Administration ](/risk/workbooks/risk-admin.md).
+For more information on how to start a new risk review process, please see [Risk Administration ](risk-admin.md).
 
 <br/>
 
@@ -29,9 +29,9 @@ For more information on how to start a new risk review process, please see [Risk
 
 ## Related Pages
 
-- [Risks](/risk/workbooks/risks.md)
-- [Group Risks](/risk/workbooks/group-risks.md)
-- [Risk reports](/risk/workbooks/risk-reports.md)
-- [Risk Administration](/risk/workbooks/risk-admin.md)
+- [Risks](risks.md)
+- [Group Risks](group-risks.md)
+- [Risk reports](risk-reports.md)
+- [Risk Administration](risk-admin.md)
 
 <br/>

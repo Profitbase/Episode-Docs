@@ -25,7 +25,7 @@ An example: Various departments have sent risks regarding personnel not coming t
 
 <br/>
 
-Once you have selected the relevant risks and added them to an existing risk/created a new group risk, you are then asked to evaluate the risks jointly through a risk input form. The right part of the screen shows you and overview of the risks you have selected for consolidation. The left part of the screen is a risk form where you evaluate the risks. In the example below, numerous departments have entered risks related to loss of key personnel. This can pose a threat to the organization as a whole. For more on risk evaluation, please see [Risk form](/risk/workbooks/risks/create-new-risk.md).
+Once you have selected the relevant risks and added them to an existing risk/created a new group risk, you are then asked to evaluate the risks jointly through a risk input form. The right part of the screen shows you and overview of the risks you have selected for consolidation. The left part of the screen is a risk form where you evaluate the risks. In the example below, numerous departments have entered risks related to loss of key personnel. This can pose a threat to the organization as a whole. For more on risk evaluation, please see [Risk form](risks/create-new-risk.md).
 
 <br/>
 
@@ -35,7 +35,7 @@ Once you have selected the relevant risks and added them to an existing risk/cre
 
 ## Consolidated risk
 
-On this page, you will see how individual risks have been consolidated into group risks. You can then add treatment plans for how to handle the consolidated risk. For more on treatment plans, please see [Add Treatment Plan](/risk/workbooks/risks/treatment-plan.md).
+On this page, you will see how individual risks have been consolidated into group risks. You can then add treatment plans for how to handle the consolidated risk. For more on treatment plans, please see [Add Treatment Plan](risks/treatment-plan.md).
 
 <br/>
 
@@ -45,10 +45,10 @@ By pressing **Add New Risk**, you will be able to create a group risk from scrat
 
 ## Related Pages
 
-- [Risks](/risk/workbooks/risks.md)
-- [Add Treatment Plan](/risk/workbooks/risks/treatment-plan.md)
-- [Risk Submission](/risk/workbooks/risk-submission.md)
-- [Risk reports](/risk/workbooks/risk-reports.md)
-- [Risk Administration](/risk/workbooks/risk-admin.md)
+- [Risks](risks.md)
+- [Add Treatment Plan](risks/treatment-plan.md)
+- [Risk Submission](risk-submission.md)
+- [Risk reports](risk-reports.md)
+- [Risk Administration](risk-admin.md)
 
 <br/>

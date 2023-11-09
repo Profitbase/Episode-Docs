@@ -67,9 +67,9 @@ On this page, the categories used by your organization can be adjusted. It is al
 
 ## Related Pages
 
-- [Risks](/risk/workbooks/risks.md)
-- [Add Treatment Plan](/risk/workbooks/risks/treatment-plan.md)
-- [Risk Submission](/risk/workbooks/risk-submission.md)
-- [Risk reports](/risk/workbooks/risk-reports.md)
+- [Risks](risks.md)
+- [Add Treatment Plan](risks/treatment-plan.md)
+- [Risk Submission](risk-submission.md)
+- [Risk reports](risk-reports.md)
 
 <br/>

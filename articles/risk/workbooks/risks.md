@@ -34,15 +34,15 @@ Filter for "Status" is employed to tie together multiple levels of the organizat
 
 ## Next steps - create a risk and add a treatment plan
 
-- [Create New Risk](/risk/workbooks/risks/create-new-risk.md)
-- [Add Treatment Plan](/risk/workbooks/risks/treatment-plan.md)
+- [Create New Risk](risks/create-new-risk.md)
+- [Add Treatment Plan](risks/treatment-plan.md)
 
 <br/>
 
 ## Related Pages
 
-- [Risk Submission](/risk/workbooks/risk-submission.md)
-- [Group Risks](/risk/workbooks/group-risks.md)
-- [Risk reports](/risk/workbooks/risk-reports.md)
-- [Risk Administration](/risk/workbooks/risk-admin.md)
+- [Risk Submission](risk-submission.md)
+- [Group Risks](group-risks.md)
+- [Risk reports](risk-reports.md)
+- [Risk Administration](risk-admin.md)
   <br/>

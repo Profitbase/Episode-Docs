@@ -29,7 +29,7 @@ To manage risk development over time; this risk review process can follow a pre-
 
 ## Navigation
 
-The picture below shows the menu present in all [workbooks](/risk/workbooks.md) for navigating in Risk. Clicking the "hamburger" icon in the upper left corner will show the menu. Not all menu choices will be available, based on the user access.
+The picture below shows the menu present in all [workbooks](workbooks.md) for navigating in Risk. Clicking the "hamburger" icon in the upper left corner will show the menu. Not all menu choices will be available, based on the user access.
 
 ![](https://profitbasedocs.blob.core.windows.net/riskimages/risk-left-menu.png)
 
@@ -52,4 +52,4 @@ Typical users can include:
 
 ## Related Pages
 
-- [Risk workbooks](/risk/workbooks.md)
+- [Risk workbooks](workbooks.md)

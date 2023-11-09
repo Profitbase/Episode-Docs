@@ -20,13 +20,13 @@ The full set of workbook groups and workbooks are:
 ### Risk
 These are the workbooks related to risk identification and management.
 
-- **[Risks](/risk/workbooks/risks.md)**<br/>
+- **[Risks](workbooks/risks.md)**<br/>
 Register, classify and manage risks relevant at a department level.
-- **[Risk Submission](/risk/workbooks/risk-submission.md)**<br/>
+- **[Risk Submission](workbooks/risk-submission.md)**<br/>
 Manage risk submission status.
-- **[Group Risks](/risk/workbooks/group-risks.md)**<br/>
+- **[Group Risks](workbooks/group-risks.md)**<br/>
 Manage and evaluate risks that affect your company/group. Consolidate risks from the department level and see how they affect the company/group.
-- **[Risk Administration](/risk/workbooks/risk-admin.md)**<br/>
+- **[Risk Administration](workbooks/risk-admin.md)**<br/>
 Govern the risk taxonomy, risk levels and versions of your risk register.
 
 <br/>
@@ -34,9 +34,9 @@ Govern the risk taxonomy, risk levels and versions of your risk register.
 ### Process and tasks
 Here you will find workbooks for setting up a work process and manage process tasks and ad-hoc tasks.
 
-   - **[Tasks](/planner/workbooks/process-and-tasks/tasks.md)**<br/>
+   - **[Tasks](../planner/workbooks/process-and-tasks/tasks.md)**<br/>
    Get an overview of your tasks, create and assign ad-hoc tasks and manage tasks.
-   - **[Process and Schedule Manager](/planner/workbooks/process-and-tasks/process-and-schedule-manager.md)**<br/>
+   - **[Process and Schedule Manager](../planner/workbooks/process-and-tasks/process-and-schedule-manager.md)**<br/>
    Create and manage the work process.
 
 <br/>
@@ -45,7 +45,7 @@ Here you will find workbooks for setting up a work process and manage process ta
 ### Administration
 Here you will find workbooks for user access, system setup, and data process flow.
 
-   - **[Access Control](/planner/workbooks/administration/access-control.md)**<br/>
+   - **[Access Control](../planner/workbooks/administration/access-control.md)**<br/>
    Manage users and access to workbooks and data.
 
 
