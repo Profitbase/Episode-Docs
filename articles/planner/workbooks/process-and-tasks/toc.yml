@@ -1,8 +1,46 @@
-- name: "Financial Planning"
-  href: financial-planning/toc.yml
-- name: "Process and Tasks"
-  href: process-and-tasks/toc.yml
-- name: "Data Management"
-  href: data-management/toc.yml
-- name: "Administration"
-  href: administration/toc.yml
+- name: Process and Tasks
+  href: process-and-tasks.md
+- name: Guide Manager
+  href: guide-manager.md
+  items:
+  - name: Guide Manager - list
+    href: guide-manager/settings.md
+  - name: Guide Manager - steps
+    href: guide-manager/steps.md
+- name: Process and schedule manager
+  href: process-and-schedule-manager.md
+  items:
+  - name: Notification settings
+    href: process-and-schedule-manager/notification-settings.md
+  - name: Process tasks
+    href: process-and-schedule-manager/process-tasks.md
+  - name: Processes
+    href: process-and-schedule-manager/processes.md
+  - name: Rec. event calendar
+    href: process-and-schedule-manager/rec-event-calendar.md
+  - name: Recurring events
+    href: process-and-schedule-manager/recurring-events.md
+  - name: Setup
+    href: process-and-schedule-manager/setup.md
+  - name: Workday calendar
+    href: process-and-schedule-manager/work-day-calendar.md
+- name: Tasks
+  href: tasks.md
+  items:
+  - name: All tasks
+    href: tasks/all-tasks.md
+  - name: Task form (create/edit)
+    href: tasks/create-edit-task.md
+  - name: My tasks
+    href: tasks/my-tasks.md
+  - name: Statistics
+    href: tasks/statistics.md
+- name: Version Manager
+  href: version-manager.md
+  items:
+  - name: Export name
+    href: version-manager/export-name.md
+  - name: Processes and versions
+    href: version-manager/process-version.md
+  - name: Version attributes
+    href: version-manager/version-attributes.md

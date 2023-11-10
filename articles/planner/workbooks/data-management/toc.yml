@@ -1,128 +1,128 @@
-- name: "Data Management"
+- name: Data Management
   href: data-management.md
-- name: "Currency exchange rates and calendar"
+- name: Currency exchange rates and calendar
   href: currency-exchange-rates-and-calendar.md
   items:
-  - name: "Setup"
-    href: setup.md
-  - name: "Workday calendar"
-    href: workday-calendar.md
-- name: "Dimensions"
+  - name: Setup
+    href: currency-exchange-rates-and-calendar/setup.md
+  - name: Workday calendar
+    href: currency-exchange-rates-and-calendar/workday-calendar.md
+- name: Dimensions
   href: dimensions.md
   items:
-  - name: "Edit dimensions"
-    href: edit-dimensions.md
-  - name: "Elim. Legal Entity Mapping"
-    href: elim-legal-entity-mapping.md
-  - name: "Group Account Mapping"
-    href: group-account-mapping.md
-  - name: "Setup"
-    href: setup.md
-  - name: "Time and fiscal setup"
-    href: time-and-fiscal-setup.md
-- name: "Source fact data"
+  - name: Edit dimensions
+    href: dimensions/edit-dimensions.md
+  - name: Elim. Legal Entity Mapping
+    href: dimensions/elim-legal-entity-mapping.md
+  - name: Group Account Mapping
+    href: dimensions/group-account-mapping.md
+  - name: Setup
+    href: dimensions/setup.md
+  - name: Time and fiscal setup
+    href: dimensions/time-and-fiscal-setup.md
+- name: Source fact data
   href: source-fact-data.md
   items:
-  - name: "Personnel facts"
-    href: personnel-facts.md
-  - name: "Measure facts"
-    href: sales-forecast-facts.md
-- name: "Report setup"
+  - name: Personnel facts
+    href: source-fact-data/personnel-facts.md
+  - name: Measure facts
+    href: source-fact-data/sales-forecast-facts.md
+- name: Report setup
   href: report-setup.md
   items:
-  - name: "Account mapping"
-    href: account-mapping.md
-  - name: "Account"
-    href: account.md
-  - name: "Additional dim. mapping - Edit selection"
-    href: additional-dim-mapping-edit-selection.md
-  - name: "Additional dim. mapping"
-    href: additional-dim-mapping.md
-  - name: "Options"
-    href: options.md
-  - name: "Report lines"
-    href: report-lines.md
-  - name: "Reports"
-    href: reports.md
-  - name: "Setup report"
-    href: setup-report.md
-  - name: "Setup"
-    href: setup.md
-  - name: "Translations"
-    href: translations.md
-  - name: "View report data"
-    href: view-report-data.md
-- name: "Account plan proposal"
+  - name: Account mapping
+    href: report-setup/account-mapping.md
+  - name: Account
+    href: report-setup/account.md
+  - name: Additional dim. mapping - Edit selection
+    href: report-setup/additional-dim-mapping-edit-selection.md
+  - name: Additional dim. mapping
+    href: report-setup/additional-dim-mapping.md
+  - name: Options
+    href: report-setup/options.md
+  - name: Report lines
+    href: report-setup/report-lines.md
+  - name: Reports
+    href: report-setup/reports.md
+  - name: Setup report
+    href: report-setup/setup-report.md
+  - name: Setup
+    href: report-setup/setup.md
+  - name: Translations
+    href: report-setup/translations.md
+  - name: View report data
+    href: report-setup/view-report-data.md
+- name: Account plan proposal
   href: account-plan-proposal.md
   items:
-  - name: "1. Create basis proposal"
-    href: create-basis-proposal.md
-  - name: "2. Adjust basis proposal and import"
-    href: adjust-basis-proposal-and-import.md
-  - name: "Adjust data and periods"
-    href: adjust-data-and-periods.md
-  - name: "Import proposal"
-    href: import.md
-  - name: "Limit data from source"
-    href: limit-data-from-source.md
-  - name: "Override dataset mapping"
-    href: override-dataset-selection.md
-  - name: "Set adjustment factors"
-    href: set-factor-adjustment.md
-- name: "Driver based plan proposal"
+  - name: 1. Create basis proposal
+    href: account-plan-proposal/create-basis-proposal.md
+  - name: 2. Adjust basis proposal and import
+    href: account-plan-proposal/adjust-basis-proposal-and-import.md
+  - name: Adjust data and periods
+    href: account-plan-proposal/adjust-data-and-periods.md
+  - name: Import proposal
+    href: account-plan-proposal/import.md
+  - name: Limit data from source
+    href: account-plan-proposal/limit-data-from-source.md
+  - name: Override dataset mapping
+    href: account-plan-proposal/override-dataset-selection.md
+  - name: Set adjustment factors
+    href: account-plan-proposal/set-factor-adjustment.md
+- name: Driver based plan proposal
   href: driver-based-plan-proposal.md
   items:
-  - name: "1. Create basis proposal"
-    href: create-basis-proposal.md
-  - name: "2. Adjust basis proposal and import"
-    href: adjust-basis-proposal-and-import.md
-  - name: "Adjust data and periods"
-    href: adjust-data-and-periods.md
-  - name: "Import proposal"
-    href: import.md
-  - name: "Override dataset mapping"
-    href: override-dataset-selection.md
-  - name: "Set adjustment factors"
-    href: set-factor-adjustment.md
-- name: "Data import & export"
+  - name: 1. Create basis proposal
+    href: driver-based-plan-proposal/create-basis-proposal.md
+  - name: 2. Adjust basis proposal and import
+    href: driver-based-plan-proposal/adjust-basis-proposal-and-import.md
+  - name: Adjust data and periods
+    href: driver-based-plan-proposal/adjust-data-and-periods.md
+  - name: Import proposal
+    href: driver-based-plan-proposal/import.md
+  - name: Override dataset mapping
+    href: driver-based-plan-proposal/override-dataset-selection.md
+  - name: Set adjustment factors
+    href: driver-based-plan-proposal/set-factor-adjustment.md
+- name: Data import & export
   href: data-import.md
   items:
-  - name: "Audit"
-    href: audit.md
+  - name: Audit
+    href: data-import/audit.md
   - name: INSERT_NAME
-    href: connections.md
-  - name: "Export data"
-    href: export-data.md
-  - name: "File import"
-    href: file-import.md
-  - name: "Import data"
-    href: import-data.md
-- name: "Dimensions (version < 5.2)"
+    href: data-import/connections.md
+  - name: Export data
+    href: data-import/export-data.md
+  - name: File import
+    href: data-import/file-import.md
+  - name: Import data
+    href: data-import/import-data.md
+- name: Dimensions (version < 5.2)
   href: dimensions-and-currency-exchange-rates.md
   items:
-  - name: "Account"
-    href: account.md
-  - name: "Activity"
-    href: activity.md
-  - name: "Asset group"
-    href: asset-group.md
-  - name: "Department"
-    href: department.md
-  - name: "Dim1..Dim4"
-    href: dim1-dim4.md
-  - name: "Employee"
-    href: employee.md
-  - name: "Exchange rate daily"
-    href: exchange-rate-daily.md
-  - name: "Exchange rate monthly"
-    href: exchange-rate-monthly.md
-  - name: "Legal entity"
-    href: legal-entity-and-department.md
-  - name: "Market"
-    href: market.md
-  - name: "Product"
-    href: product.md
-  - name: "Project"
-    href: project.md
-  - name: "Supplier"
-    href: supplier.md
+  - name: Account
+    href: dimensions-and-currency-exchange-rates/account.md
+  - name: Activity
+    href: dimensions-and-currency-exchange-rates/activity.md
+  - name: Asset group
+    href: dimensions-and-currency-exchange-rates/asset-group.md
+  - name: Department
+    href: dimensions-and-currency-exchange-rates/department.md
+  - name: Dim1..Dim4
+    href: dimensions-and-currency-exchange-rates/dim1-dim4.md
+  - name: Employee
+    href: dimensions-and-currency-exchange-rates/employee.md
+  - name: Exchange rate daily
+    href: dimensions-and-currency-exchange-rates/exchange-rate-daily.md
+  - name: Exchange rate monthly
+    href: dimensions-and-currency-exchange-rates/exchange-rate-monthly.md
+  - name: Legal entity
+    href: dimensions-and-currency-exchange-rates/legal-entity-and-department.md
+  - name: Market
+    href: dimensions-and-currency-exchange-rates/market.md
+  - name: Product
+    href: dimensions-and-currency-exchange-rates/product.md
+  - name: Project
+    href: dimensions-and-currency-exchange-rates/project.md
+  - name: Supplier
+    href: dimensions-and-currency-exchange-rates/supplier.md

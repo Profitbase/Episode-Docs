@@ -1,3 +1,5 @@
+- name: Workbooks
+  href: workbooks.md
 - name: Financial Planning
   href: financial-planning/toc.yml
 - name: Process and Tasks

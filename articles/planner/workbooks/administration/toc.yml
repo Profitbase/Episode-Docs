@@ -4,102 +4,102 @@
   href: access-control.md
   items:
   - name: Data permissions
-    href: data-permissions.md
+    href: access-control/data-permissions.md
   - name: Group management
-    href: group-management.md
+    href: access-control/group-management.md
   - name: User email override
-    href: user-email-override.md
+    href: access-control/user-email-override.md
   - name: User management
-    href: user-management.md
+    href: access-control/user-management.md
   - name: Workbook permissions
-    href: workbook-permissions.md
+    href: access-control/workbook-permissions.md
 - name: User management
   href: users-and-group-management.md
 - name: Operation Manager
   href: operation-manager.md
   items:
   - name: Scheduled Operations
-    href: ScheduledOperations.md
+    href: operation-manager/ScheduledOperations.md
   - name: Operations
-    href: Operations.md
+    href: operation-manager/Operations.md
   - name: Settings
-    href: Settings.md
+    href: operation-manager/Settings.md
   - name: Operation Manger v4
     items:
     - name: Add or edit operation
-      href: AddEditOperation.md
+      href: operation-manager/operation-manager-v4/AddEditOperation.md
     - name: Add or edit a schedule
-      href: AddEditSchedule.md
+      href: operation-manager/operation-manager-v4/AddEditSchedule.md
     - name: Broadcast Message to workbooks
-      href: BroadcastMessage.md
+      href: operation-manager/operation-manager-v4/BroadcastMessage.md
     - name: Execute data admin tasks
-      href: execute-data-admin-tasks.md
+      href: operation-manager/operation-manager-v4/execute-data-admin-tasks.md
     - name: Operation execution log
-      href: OperationLog.md
+      href: operation-manager/operation-manager-v4/OperationLog.md
     - name: Schedule
-      href: schedule.md
+      href: operation-manager/operation-manager-v4/schedule.md
 - name: Input settings And Administration
   href: input-settings-and-administration.md
   items:
   - name: Budget admin
-    href: budget-admin.md
+    href: input-settings-and-administration/budget-admin.md
   - name: Budget settings
-    href: budget-settings.md
+    href: input-settings-and-administration/budget-settings.md
   - name: Driver based Settings
-    href: driver-based-settings.md
+    href: input-settings-and-administration/driver-based-settings.md
   - name: Forecast admin
-    href: forecast-admin.md
+    href: input-settings-and-administration/forecast-admin.md
   - name: Forecast settings
-    href: forecast-settings.md
+    href: input-settings-and-administration/forecast-settings.md
   - name: Payroll settings
-    href: payroll-settings.md
+    href: input-settings-and-administration/payroll-settings.md
   - name: Account / Personnel Settings
-    href: settings.md
+    href: input-settings-and-administration/settings.md
   - name: Setup
-    href: setup.md
+    href: input-settings-and-administration/setup.md
   - name: Translations
-    href: translations.md
+    href: input-settings-and-administration/translations.md
 - name: Driver based modelling
   href: driver-based-modelling.md
   items:
   - name: Apply changes to model
-    href: apply.md
+    href: driver-based-modelling/apply.md
   - name: Calculation
-    href: calculation.md
+    href: driver-based-modelling/calculation.md
   - name: Delete
-    href: delete.md
+    href: driver-based-modelling/delete.md
   - name: Exclude dimension items
-    href: dim-item-exclusion.md
+    href: driver-based-modelling/dim-item-exclusion.md
   - name: Dimension data
-    href: dimension-data.md
+    href: driver-based-modelling/dimension-data.md
   - name: Edit
-    href: edit.md
+    href: driver-based-modelling/edit.md
   - name: Measure facts
-    href: measure-facts.md
+    href: driver-based-modelling/measure-facts.md
   - name: Measure
-    href: measure.md
+    href: driver-based-modelling/measure.md
   - name: Models
-    href: models.md
+    href: driver-based-modelling/models.md
   - name: New model
-    href: new-model.md
+    href: driver-based-modelling/new-model.md
 - name: Sales Forecast Setup
   href: sales-forecast-setup.md
   items:
   - name: Apply changes to model
-    href: apply.md
+    href: sales-forecast-setup/apply.md
   - name: Calculation
-    href: calculation.md
+    href: sales-forecast-setup/calculation.md
   - name: Delete
-    href: delete.md
+    href: sales-forecast-setup/delete.md
   - name: Exclude dimension items
-    href: dim-item-exclusion.md
+    href: sales-forecast-setup/dim-item-exclusion.md
   - name: Dimension data
-    href: dimension-data.md
+    href: sales-forecast-setup/dimension-data.md
   - name: Measure
-    href: measure.md
+    href: sales-forecast-setup/measure.md
   - name: New model
-    href: new-model.md
+    href: sales-forecast-setup/new-model.md
   - name: Sales forecast facts
-    href: sales-forecast-facts.md
+    href: sales-forecast-setup/sales-forecast-facts.md
   - name: Sales forecast setup
-    href: sales-forecast-setup.md
+    href: sales-forecast-setup/sales-forecast-setup.md

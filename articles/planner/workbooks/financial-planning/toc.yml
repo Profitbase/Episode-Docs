@@ -1,129 +1,141 @@
-- name: "Financial Planning"
+- name: Financial Planning
   href: financial-planning.md
-- name: "Budget"
+- name: Budget
   href: budget.md
   items:
-  - name: "Account Details Report"
+  - name: Account Details Report
     href: budget/account-details-report.md
-  - name: "Status"
+  - name: Status
     href: budget/status.md
-  - name: "Summary"
+  - name: Summary
     href: budget/summary.md
-  - name: "Trend"
+  - name: Trend
     href: budget/trend.md
-- name: "CapEx"
+- name: CapEx
   href: capex.md
   items:
-  - name: "CapEx"
+  - name: CapEx
     href: capex/capex.md
-  - name: "Copy data from"
+  - name: Copy data from
     href: capex/copy-data.md
-  - name: "Delete data"
+  - name: Delete data
     href: capex/delete-data.md
-  - name: "Setup"
+  - name: Setup
     href: capex/setup.md
-- name: "Finance Reports"
+- name: Finance Reports
   href: finance-reports.md
   items:
-  - name: "Cash Monthly"
+  - name: Cash Monthly
     href: finance-reports/cash-monthly.md
-
-  - name: "Cash"
+    items:
+    - name: Cash Monthly - Planner 4
+      href: finance-reports/cash-monthly/cash-monthly-v4.md
+  - name: Cash
     href: finance-reports/cash.md
-
-  - name: "Compare"
+    items:
+    - name: Cash - Planner 4
+      href: finance-reports/cash/cash-v4.md
+  - name: Compare
     href: finance-reports/compare.md
-
-  - name: "Scenario Trend"
+    items:
+    - name: Compare - Planner 4
+      href: finance-reports/compare/compare-v4.md
+  - name: Scenario Trend
     href: finance-reports/scenario-trend.md
-
-  - name: "Trend"
+    items:
+    - name: Scenario Trend - Planner 4
+      href: finance-reports/scenario-trend/scenario-trend-v4.md
+  - name: Trend
     href: finance-reports/trend.md
-
-  - name: "Trial Balance"
+    items:
+    - name: Trend - Planner 4
+      href: finance-reports/trend/trend-v4.md
+  - name: Trial Balance
     href: finance-reports/trial-balance.md
-    
-  - name: "Year and Months"
+    items:
+    - name: Trial Balance - Planner 4
+      href: finance-reports/trial-balance/trial-balance-v4.md
+  - name: Year and Months
     href: finance-reports/year-and-months.md
-
-- name: "Finance Settings"
+    items:
+    - name: Year and Months - Planner 4
+      href: finance-reports/year-and-months/year-and-months-v4.md
+- name: Finance Settings
   href: finance-settings.md
   items:
-  - name: "Account Usage"
+  - name: Account Usage
     href: finance-settings/account-usage.md
-  - name: "Advanced"
+  - name: Advanced
     href: finance-settings/advanced.md
-  - name: "Allocation"
+  - name: Allocation
     href: finance-settings/allocation.md
-  - name: "Audit"
+  - name: Audit
     href: finance-settings/audit.md
-  - name: "Expense"
+  - name: Expense
     href: finance-settings/expense.md
-  - name: "Year-End Alloc."
+  - name: Year-End Alloc.
     href: finance-settings/financesettings-yearend.md
-  - name: "Fixed Assets"
+  - name: Fixed Assets
     href: finance-settings/fixed-assets.md
-  - name: "OBDue"
+  - name: OBDue
     href: finance-settings/obdue.md
-  - name: "Payroll"
+  - name: Payroll
     href: finance-settings/payroll.md
-  - name: "Purchase"
+  - name: Purchase
     href: finance-settings/purchase.md
-  - name: "Sales"
+  - name: Sales
     href: finance-settings/sales.md
-  - name: "Setup"
+  - name: Setup
     href: finance-settings/setup.md
-  - name: "Short-Term Cash"
+    items:
+    - name: Setup
+      href: setup-v4.md
+  - name: Short-Term Cash
     href: finance-settings/short-cash.md
-  - name: "VAT"
+  - name: VAT
     href: finance-settings/vat.md
-
-- name: "Finance Simulation"
+- name: Finance Simulation
   href: finance-simulation.md
   items:
-  - name: "Simulation"
+  - name: Simulation
     href: finance-simulation/simulation.md
-
-- name: "Forecast"
+- name: Forecast
   href: forecast.md
   items:
-  - name: "Account Details Report"
+  - name: Account Details Report
     href: forecast/account-details-report.md
-  - name: "Status"
+  - name: Status
     href: forecast/status.md
-  - name: "Summary"
+  - name: Summary
     href: forecast/summary.md
-  - name: "Trend"
+  - name: Trend
     href: forecast/trend.md
-
-- name: "Loan"
+- name: Loan
   href: loan.md
   items:
-  - name: "Loan"
+  - name: Loan
     href: loan/loan.md
-  - name: "Override principal"
+  - name: Override principal
     href: loan/override-principal.md
-  - name: "Setup"
+  - name: Setup
     href: loan/setup.md
-
-- name: "Opening Balance"
+- name: Opening Balance
   href: opening-balance.md
   items:
-  - name: "Edit"
+  - name: Edit
     href: opening-balance/edit.md
-  - name: "Report"
+  - name: Report
     href: opening-balance/report.md
-
-- name: "Plan overview"
+- name: Plan overview
   href: plan-overview.md
   items:
-  - name: "Account Details Report"
+  - name: Account Details Report
     href: plan-overview/account-details.md
-  - name: "Manage comments"
+  - name: Manage comments
     href: plan-overview/manage-comments.md
-  - name: "Status"
+  - name: Status
     href: plan-overview/status.md
-  - name: "Summary"
+  - name: Summary
     href: plan-overview/summary.md
-  - name: "Trend"
+  - name: Trend
     href: plan-overview/trend.md
