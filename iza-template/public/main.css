@@ -36,11 +36,20 @@ article {
     
 
 .custom-link {
-    color: #6EA8FE; /* Set link color to black */
+    color: #00378a; /* Set link color to black */
     font-weight: bold; /* Make the link text bold */
     font-size: large;
     text-decoration: none; /* Remove underlining from the link text */
 }
+
+
+/* Apply your custom-link styles here for the new section */
+.custom-link-mini {
+    color: blue; 
+     font-weight: lighter; 
+    text-decoration: underline;  
+}
+
 
 /* Style the new flex container */
 .new-flex-container {
@@ -106,11 +115,4 @@ article {
 /* Style the column list items for the new section */
 .column ul li {
     margin: 5px 0;
-}
-
-/* Apply your custom-link styles here for the new section */
-.custom-link {
-    color: blue; /* Example link color */
-    font-weight: normal; /* Example font weight */
-    text-decoration: underline; /* Example text decoration */
 }
