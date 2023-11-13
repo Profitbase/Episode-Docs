@@ -24,9 +24,9 @@ Models that are published contribute to the plan while data from unpublished mod
 <br/>
 
 ## Related Pages
--  [Source data](finance-native/input-data)<br/>
--  [Report](finance-native/report)<br/>
--  [Setup](finance-native/setup)<br/>
+-  [Source data](finance-native/input-data.md)<br/>
+-  [Report](finance-native/report.md)<br/>
+-  [Setup](finance-native/setup.md)<br/>
 
 ## How to`s
 

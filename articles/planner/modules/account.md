@@ -11,8 +11,8 @@ It contains an input page (Account Details) and a report page (Supporting Detail
 <br/>
 
 ## Related Pages
--  [Account Details (input)](account/account-details)<br/>
--  [Supporting Details](account/account-details)<br/>
+-  [Account Details (input)](account/account-details.md)<br/>
+-  [Supporting Details](account/account-details.md)<br/>
 
 ## How to`s
 

@@ -14,7 +14,7 @@ It contains an input page (Sales Details).
 <br/>
 
 ## Related Pages
--  [Sales Details](sales-gm/sales-gm-details)<br/>
+-  [Sales Details](sales-gm/sales-gm-details.md)<br/>
 
 ## How to`s
 

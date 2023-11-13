@@ -20,11 +20,11 @@ The module consists of a main driver view in which the driver can bet adjusted a
 <br/>
 
 ## Related Pages
--  [Drivers](driver-based/drivers)<br/>
--  [Details](driver-based/details)<br/>
--  [Details - distribution](driver-based/distribution)<br/>
--  [Details - assumption](driver-based/assumption)<br/>
--  [Details - formula](driver-based/formula)<br/>
+-  [Drivers](driver-based/drivers.md)<br/>
+-  [Details](driver-based/details.md)<br/>
+-  [Details - distribution](driver-based/distribution.md)<br/>
+-  [Details - assumption](driver-based/assumption.md)<br/>
+-  [Details - formula](driver-based/formula.md)<br/>
 
 ## How to`s
 

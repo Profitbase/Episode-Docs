@@ -20,11 +20,11 @@ The module consists of a main driver view in which the driver can bet adjusted a
 <br/>
 
 ## Related Pages
--  [Sales Driver](sales-forecast/sales-forecast-driver)<br/>
--  [Sales Details](sales-forecast/sales-forecast-details)<br/>
--  [Sales Details - distribution](sales-forecast/sales-forecast-distribution)<br/>
--  [Sales Details - assumption](sales-forecast/sales-forecast-assumption)<br/>
--  [Sales Details - formula](sales-forecast/sales-forecast-formula)<br/>
+-  [Sales Driver](sales-forecast/sales-forecast-driver.md)<br/>
+-  [Sales Details](sales-forecast/sales-forecast-details.md)<br/>
+-  [Sales Details - distribution](sales-forecast/distribution.md)<br/>
+-  [Sales Details - assumption](sales-forecast/assumption.md)<br/>
+-  [Sales Details - formula](sales-forecast/formula.md)<br/>
 
 ## How to`s
 

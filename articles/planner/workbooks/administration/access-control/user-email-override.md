@@ -14,7 +14,7 @@ If the email reported by Azure/Active Directory is wrong, you can override this 
 
 <br/>
 
-This email will now be used instead of the one provided by Active Directory, in, for example, the [tasks](/planner/workbooks/process-and-tasks/tasks) module.
+This email will now be used instead of the one provided by Active Directory, in, for example, the [tasks](../../process-and-tasks/tasks.md) module.
 
 <br/>
 

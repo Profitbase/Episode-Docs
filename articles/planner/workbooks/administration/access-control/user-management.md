@@ -31,7 +31,7 @@ When you "add" users, you connect to the identity provider that the system is se
 
 <br/>
 
-If the email reported by Azure is wrong, you can override this field using the [User email override](user-email-override) page.
+If the email reported by Azure is wrong, you can override this field using the [User email override](user-email-override.md) page.
 
 <br/>
 

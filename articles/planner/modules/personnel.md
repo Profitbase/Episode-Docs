@@ -11,10 +11,10 @@ It contains an input page (Personnel Details) and associated pop-up pages for ma
 <br/>
 
 ## Related Pages
--  [Personnel Details (input)](personnel/personnel-details)<br/>
--  [FTE](personnel/fte)<br/>
--  [Headcount](personnel/hc)<br/>
--  [Spread keys](personnel/spread-to-periods)<br/>
+-  [Personnel Details (input)](personnel/personnel-details.md)<br/>
+-  [FTE](personnel/fte.md)<br/>
+-  [Headcount](personnel/hc.md)<br/>
+-  [Spread keys](personnel/spread-to-periods.md)<br/>
 
 ## How to`s
 

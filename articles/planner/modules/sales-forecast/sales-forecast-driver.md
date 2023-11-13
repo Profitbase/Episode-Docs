@@ -94,7 +94,7 @@ Input field enabling textual comments to be associated with the input for a spec
 
 <br/>
 
-> [Create new task](/planner/workbooks/process-and-tasks/tasks/create-edit-task)<br/>
+> [Create new task](../../workbooks/process-and-tasks/tasks/create-edit-task.md)<br/>
 
 
 
