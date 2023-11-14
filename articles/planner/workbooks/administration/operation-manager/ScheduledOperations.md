@@ -12,7 +12,7 @@ This page is used to schedule background operations that keep the system updated
 
 These may be executed manually or scheduled.
 
-This page is designed to be more accessible and makes use of the [Operations](/planner/workbooks/administration/operation-manager/Operations) that are set up on page 2 which may require some knowledge of the Invision objects that exist in the system.
+This page is designed to be more accessible and makes use of the [Operations](Operations.md) that are set up on page 2 which may require some knowledge of the Invision objects that exist in the system.
 
 A warning icon ![img](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/warning_24.png)  will show if any problems are detected, such as no steps defined, or taret object not found in system. Click that icon to see the warning message.
 
@@ -63,13 +63,13 @@ When a Process has been selected, "Current Version" will be selected by default,
 
 ### Steps
 
-Steps on this page should only consist of "[Operations](/planner/workbooks/administration/operation-manager/Operations)", defined on page 2.
+Steps on this page should only consist of "[Operations](Operations.md)", defined on page 2.
 
 Steps can be enabled or disabled using the Toggle Button.
 
 Hovering a step, will also display 4 small buttons to navigate to the operation (on page 2), move the steps up or down (re-ordering), or deleting the step from this scheduled operation.
 
-To add a step, use the (orange) Actions menu top right: a popup will appear, so you can select an [Operation](/planner/workbooks/administration/operation-manager/Operations) from the list. Optionally, give it a more user friendly name and proper translation.
+To add a step, use the (orange) Actions menu top right: a popup will appear, so you can select an [Operation](Operations.md) from the list. Optionally, give it a more user friendly name and proper translation.
 
 
 ### Schedule
@@ -83,6 +83,6 @@ To delete a schedule, hover over it, and click the trash icon.
 
 ## Related Pages
 
-[Operations](/planner/workbooks/administration/operation-manager/Operations)
+[Operations](Operations.md)
 
-[Settings](/planner/workbooks/administration/operation-manager/Settings)
+[Settings](Settings.md)

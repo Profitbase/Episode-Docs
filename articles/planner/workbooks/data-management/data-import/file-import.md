@@ -74,7 +74,7 @@ Before you can import the file, it is mandatory to validate the contents of the 
 
 For details on the kind of validation checks performed, please refer to the description given on the Audit page:
 
--  [Audit](/planner/workbooks/data-management/data-import/audit)
+-  [Audit](audit.md)
 
 Errors and/or warnings are presented if they exist. Please review and correct any issues before attempting to import the data!
 

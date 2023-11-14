@@ -132,6 +132,6 @@ If you wish to automate this job or just expose it to the "Operation Manager" mo
 
 ## Related Pages
 
-[Data Import](/planner/workbooks/administration/data-import/import-data)
-[Scheduled Operations](/planner/workbooks/administration/OperationManager/ScheduledOperations)
-[Operations](/planner/workbooks/administration/OperationManager/Operations)
+[Data Import](import-data.md)
+[Scheduled Operations](../../administration/operation-manager/ScheduledOperations.md)
+[Operations](../../administration/operation-manager/Operations.md)

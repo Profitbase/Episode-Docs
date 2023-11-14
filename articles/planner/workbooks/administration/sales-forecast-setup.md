@@ -17,10 +17,10 @@ This workbook deals with topics such as:<br/>
 <br/>
 
 ## Related Pages
--  [Sales forecast setup](/planner/workbooks/administration/sales-forecast-setup/sales-forecast-setup)<br/>
--  [Measures](/planner/workbooks/administration/sales-forecast-setup/measure)<br/>
--  [Dimension data](/planner/workbooks/administration/sales-forecast-setup/dimension-data)<br/>
--  [Sales Forecast facts](/planner/workbooks/administration/sales-forecast-setup/sales-forecast-facts)<br/>
+-  [Sales forecast setup](sales-forecast-setup/sales-forecast-setup.md)<br/>
+-  [Measures](sales-forecast-setup/measure.md)<br/>
+-  [Dimension data](sales-forecast-setup/dimension-data.md)<br/>
+-  [Sales Forecast facts](sales-forecast-setup/sales-forecast-facts.md)<br/>
 
 <br/>
 

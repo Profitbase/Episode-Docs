@@ -29,7 +29,7 @@ The Report Line name for the line of the currently selected report. Readonly.<br
 If additional dimension members are mapped to the report line, a View link is available. Click it to review the current mapping (see description of second grid below).<br/>
 - **Edit**<br/>
 In order to map additional dimension members to the given report line or to edit the current mapping, click the Edit link for the appropriate report line.<br/>
--  [Edit selection](/planner/workbooks/data-management/report-setup/additional-dim-mapping-edit-selection) click to edit selection.<br/>
+-  [Edit selection](additional-dim-mapping-edit-selection.md) click to edit selection.<br/>
 - **Delete**<br/>
 If additional dimension members are mapped to the report line, a Delete is avialable. If you require to delete the additional dimension mapping, click the Delete link.<br/>
 

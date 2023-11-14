@@ -16,17 +16,17 @@ This workbook covers topics such as:<br/>
 
 ## Related Pages
 
--  [Account / Personnel Settings](/planner/workbooks/administration/input-settings-and-administration/settings)<br/>
--  [Driver based settings](/planner/workbooks/administration/input-settings-and-administration/driver-based-settings)<br/>
--  [Payroll settings](/planner/workbooks/administration/input-settings-and-administration/payroll-settings)<br/>
--  [Setup](/planner/workbooks/administration/input-settings-and-administration/setup)<br/>
+-  [Account / Personnel Settings](input-settings-and-administration/settings.md)<br/>
+-  [Driver based settings](input-settings-and-administration/driver-based-settings.md)<br/>
+-  [Payroll settings](input-settings-and-administration/payroll-settings.md)<br/>
+-  [Setup](input-settings-and-administration/setup.md)<br/>
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x
 
--  [Budget settings](/planner/workbooks/administration/input-settings-and-administration/budget-settings)<br/>
--  [Forecast settings](/planner/workbooks/administration/input-settings-and-administration/forecast-settings)<br/>
--  [Budget admin](/planner/workbooks/administration/input-settings-and-administration/budget-admin)<br/>
--  [Forecast admin](/planner/workbooks/administration/input-settings-and-administration/forecast-admin)<br/>
+-  [Budget settings](input-settings-and-administration/budget-settings.md)<br/>
+-  [Forecast settings](input-settings-and-administration/forecast-settings.md)<br/>
+-  [Budget admin](input-settings-and-administration/budget-admin.md)<br/>
+-  [Forecast admin](input-settings-and-administration/forecast-admin.md)<br/>
 
 <br/>
 

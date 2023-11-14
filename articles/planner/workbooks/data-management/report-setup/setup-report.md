@@ -64,7 +64,7 @@ Line name translation in English. Optional.
 - **Sign Factor**<br/>
 Set this factor normally to -1.0 or 1.0 to change sign on report line.
 Sign factor is relevant in two scenarios:<br/>
-   1.	**Account** sign factor (see [Account](/planner/workbooks/data-management/dimensions-and-currency-exchange-rates/account)). A sign factor of -1 tied to an account will:<br/>
+   1.	**Account** sign factor (see [Account](../dimensions-and-currency-exchange-rates/account.md)). A sign factor of -1 tied to an account will:<br/>
    o	Switch the sign of any historical data<br/>
    o	Switch the sign of any input data<br/>
    This would typically apply to income accounts booked with a credit sign that one would like to see and input as a positive amount in an input form.<br/>

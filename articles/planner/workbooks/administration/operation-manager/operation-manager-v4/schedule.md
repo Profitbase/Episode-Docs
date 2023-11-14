@@ -10,7 +10,7 @@ pageIndex: 2
 ## Overview
 
 Listing of all scheduled operations, their last run, next run, last run time (duration), average run time.
-The "Details" button will take you to the first tab [Execute Data AdminTasks](execute-data-admin-tasks), with the appropriate operation loaded into view.
+The "Details" button will take you to the first tab [Execute Data AdminTasks](execute-data-admin-tasks.md), with the appropriate operation loaded into view.
 
 ![](Img/Schedule.png)
 

@@ -12,24 +12,24 @@ Generally, basic user level access affords the least amount of authority and per
 
 ## Related Pages
 
--  [Workbook permissions](/planner/workbooks/administration/access-control/workbook-permissions)
--  [Data permissions](/planner/workbooks/administration/access-control/data-permissions)
+-  [Workbook permissions](access-control/workbook-permissions.md)
+-  [Data permissions](access-control/data-permissions.md)
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x or later
 <br/>
 
--  [Users](/planner/workbooks/administration/access-control/user-management)
--  [User groups](/planner/workbooks/administration/access-control/group-management)
--  [User Email override](/planner/workbooks/administration/access-control/user-email-override)
+-  [Users](access-control/user-management.md)
+-  [User groups](access-control/group-management.md)
+-  [User Email override](access-control/user-email-override.md)
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5 or later
 <br/>
 
-Users and groups management is moved to [Users and group management](/planner/workbooks/administration/users-and-group-management).
+Users and groups management is moved to [Users and group management](users-and-group-management.md).
 
 <br/>
 
 
 ## Video
-[https://docs.support.profitbase.com/framework/invision/videos/usersandpermissions](#)
+[](https://docs.support.profitbase.com/framework/invision/videos/usersandpermissions.mp4)
 

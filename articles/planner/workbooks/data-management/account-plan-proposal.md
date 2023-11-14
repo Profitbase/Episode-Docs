@@ -17,8 +17,8 @@ The process of defining such a proposal contains of two steps:
 <br/>
 
 ## Related Pages
--  [1. Create basis proposal](/planner/workbooks/data-management/account-plan-proposal/create-basis-proposal)
--  [2. Adjust basis proposal and import](/planner/workbooks/data-management/account-plan-proposal/adjust-basis-proposal-and-import)
+-  [1. Create basis proposal](account-plan-proposal/create-basis-proposal.md)
+-  [2. Adjust basis proposal and import](account-plan-proposal/adjust-basis-proposal-and-import.md)
 
 <br/>
 
@@ -28,4 +28,4 @@ The process of defining such a proposal contains of two steps:
 
 > **Input Modules**<br/>
 
-> [How to plan on accounts](/planner/modules/account/account-details)<br/>
+> [How to plan on accounts](../../modules/account/account-details.md)<br/>

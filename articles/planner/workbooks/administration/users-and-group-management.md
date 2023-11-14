@@ -14,14 +14,14 @@ Generally, basic user level access affords the least amount of authority and per
 
 ## Related Pages
 
--  [Users](/planner/workbooks/administration/access-control/user-management)
--  [User groups](/planner/workbooks/administration/access-control/group-management)
--  [User Email override](/planner/workbooks/administration/access-control/user-email-override)
+-  [Users](access-control/user-management.md)
+-  [User groups](access-control/group-management.md)
+-  [User Email override](access-control/user-email-override.md)
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.2 or later
 
--  [Workbook Permissions](/planner/workbooks/administration/access-control/workbook-permissions)
--  [Data Permissions](/planner/workbooks/administration/access-control/data-permissions)
+-  [Workbook Permissions](access-control/workbook-permissions.md)
+-  [Data Permissions](access-control/data-permissions.md)
 
 <br/>
 

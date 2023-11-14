@@ -12,7 +12,7 @@ This is the page for maintaining report lines and their main properties, such as
 
 Select a report in the left margin in order to display and edit the associated report lines.  
 
-If you need to create a new report or maintain the properties of an existing one, click the Add.. link in the upper right corner in the left margin. This takes you to [Reports](/planner/workbooks/data-management/report-setup/reports)
+If you need to create a new report or maintain the properties of an existing one, click the Add.. link in the upper right corner in the left margin. This takes you to [Reports](../../data-management/report-setup/reports.md)
 
 When changes are done and saved, click the Publish button to publish these changes to relevant versioned solutions. Clicking Publish will reveal a pop-up in which versions can be selected.
 <br/>
@@ -59,7 +59,7 @@ Dropdown to select how to style the row.
 - **Sign Factor**<br/>
 Set this factor normally to -1.0 or 1.0 to change sign on report line.
 Sign factor is relevant in two scenarios:<br/>
-   1.	**Account** sign factor (see [Account](/planner/workbooks/data-management/dimensions)). A sign factor of -1 tied to an account will:<br/>
+   1.	**Account** sign factor (see [Account](../../data-management/dimensions.md)). A sign factor of -1 tied to an account will:<br/>
    o	Switch the sign of any historical data<br/>
    o	Switch the sign of any input data<br/>
    This would typically apply to income accounts booked with a credit sign that one would like to see and input as a positive amount in an input form.<br/>

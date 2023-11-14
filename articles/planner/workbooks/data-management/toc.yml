@@ -89,7 +89,7 @@
   items:
   - name: Audit
     href: data-import/audit.md
-  - name: INSERT_NAME
+  - name: Connections
     href: data-import/connections.md
   - name: Export data
     href: data-import/export-data.md

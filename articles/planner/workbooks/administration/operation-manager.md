@@ -10,6 +10,6 @@ pageIndex: 2
 Create, edit, add, delete or schedule operations.
 
 ## Related Pages
-[Scheduled Operations](operation-manager/ScheduledOperations)  
-[Operations](operation-manager/Operations)  
-[Category Setup](operation-manager/CategorySetup)
+[Scheduled Operations](operation-manager/ScheduledOperations.md)  
+[Operations](operation-manager/Operations.md)  
+

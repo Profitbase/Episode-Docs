@@ -8,7 +8,7 @@ pageIndex: 2
 
 ## Overview
 
-This page is used to create operations that are made available as steps for the [Scheduled Operations](/planner/workbooks/administration/operation-manager/ScheduledOperations) on page 1.
+This page is used to create operations that are made available as steps for the [Scheduled Operations](ScheduledOperations.md) on page 1.
 
 Each step is a reference to an existing Invision object of either of these types: PowerShell scripts, SQL Scripts, DataFlows.
 
@@ -40,7 +40,7 @@ These are the most commonly used functions on this page, and have therefore been
 
 **Link to workbook** - Makes the Operation available on the selected workbook(s), through a button that will be shown on the target workbook(s).
 
-~~**Schedule Plan**~~ - Option Disabled for page 2. Only [Scheduled Operations](/planner/workbooks/administration/operation-manager/ScheduledOperations) can be set on schedule.
+~~**Schedule Plan**~~ - Option Disabled for page 2. Only [Scheduled Operations](ScheduledOperations.md) can be set on schedule.
 
 **Version Execution Mode** - Select version(s) the operation should target when run on schedule. For every Process, the options are "Current Version" and "All Active Versions". The last column will show a list of version(s) that would currently correspond to.
 
@@ -64,5 +64,5 @@ Arguments (advanced) may be added to objects of the type SQL Script and PowerShe
 
 ## Related Pages
 
-[Scheduled Operations](/planner/workbooks/administration/OperationManager/ScheduledOperations)
-[Category Setup](/planner/workbooks/administration/OperationManager/CategorySetup)
+[Scheduled Operations](ScheduledOperations.md)
+

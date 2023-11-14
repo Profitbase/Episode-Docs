@@ -31,7 +31,7 @@ This is the page for defining report line translations.
 
 Select a report in the left margin in order to display and edit the associated report lines.  
 
-If you need to create a new report or maintain the properties of an existing one, click the Add.. link in the upper right corner in the left margin. This takes you to [Reports](/planner/workbooks/data-management/report-setup/reports)
+If you need to create a new report or maintain the properties of an existing one, click the Add.. link in the upper right corner in the left margin. This takes you to [Reports](reports.md)
 
 When changes are done and saved, click the Publish button to publish these changes to relevant versioned solutions. Clicking Publish will reveal a pop-up in which versions can be selected.
 <br/>
@@ -41,9 +41,9 @@ When changes are done and saved, click the Publish button to publish these chang
 ## Column descriptions
 
 - **Report Line ID**<br/>
-Readonly on this page, see [Report lines](/planner/workbooks/data-management/report-setup/report-lines) for details.
+Readonly on this page, see [Report lines](report-lines.md) for details.
 - **Report Line**<br/>
-Readonly on this page, see [Report lines](/planner/workbooks/data-management/report-setup/report-lines) for details.
+Readonly on this page, see [Report lines](report-lines.md) for details.
 - **NO: Report Line**<br/>
 Line name translation in Norwegian. Optional.
 - **EN: Report Line**<br/>

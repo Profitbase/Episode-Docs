@@ -24,7 +24,7 @@ The target to which external data will be imported. Readonly.
 Check if local edits made to dimension members (directly in the dimension editor) should be overwritten on import, uncheck if not. Mandatory.
 - **Import empty values**<br/>
 Check if empty values are allowed to be imported, uncheck if not. Mandatory.
-- **(Export) Enabled)**<br/>
+- **(Export) Enabled**<br/>
 Check if export of dimensional data is to be enabled, uncheck if not. Mandatory.
 - **Comment**<br/>
 Free text comment. Optional.

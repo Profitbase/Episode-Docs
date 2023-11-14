@@ -17,7 +17,7 @@ Note that you cannot delete nor add rows to this table. The content is preset co
 ## Column Descriptions
 
 - **Enabled**<br/>
-Set to true to enable dimension to be available in [Finance Reports](\planner\workbooks\financial-planning\finance-reports.md) options.
+Set to true to enable dimension to be available in [Finance Reports](../../financial-planning/finance-reports.md) options.
 - **Name**<br/>
 The name of the dimension. This list contains all possible dimensions that can be used.
 - **Show as column**<br/>
@@ -27,7 +27,7 @@ This defines the sort order of the columns.
 - **Use as filter**<br/>
 Set to true to enable this dimension to be used as a filter.
 - **Built-in**<br/>
-This is an information column to inform that there may be settings that are mandatory. For example, "Dataset" which is always enabled and available as additional column. It does not make sense to set "Use as filter" for "Dataset" since this dimension is already used as filter in [Finance Reports](\planner\workbooks\financial-planning\finance-reports.md).
+This is an information column to inform that there may be settings that are mandatory. For example, "Dataset" which is always enabled and available as additional column. It does not make sense to set "Use as filter" for "Dataset" since this dimension is already used as filter in [Finance Reports](../../financial-planning/finance-reports.md).
 
 
 ## Caution setting "Show as filter"

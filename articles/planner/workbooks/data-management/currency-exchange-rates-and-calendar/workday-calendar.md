@@ -11,10 +11,10 @@ This is where the workday calendar - that is an indication of which dates are wo
 
 <br/>
 
-This information is used when assigning process tasks [Processes](/planner/workbooks/process-and-tasks/process-and-schedule-manager/processes) if the process in question is set up to calculate lead days based on a working day calendar as apposed to a normal 7-days-per-week calendar.
+This information is used when assigning process tasks [Processes](../../process-and-tasks/process-and-schedule-manager/processes.md) if the process in question is set up to calculate lead days based on a working day calendar as apposed to a normal 7-days-per-week calendar.
 
 This allows automated deadlines (due dates) of process tasks that are based on recurring events +- lead/lag days to skip non workdays.
-Each process can be configured whether to take this calendar into account or not on the [processes](processes) page.
+Each process can be configured whether to take this calendar into account or not on the [processes](../../process-and-tasks/process-and-schedule-manager/processes.md) page.
 
 <br/>
 

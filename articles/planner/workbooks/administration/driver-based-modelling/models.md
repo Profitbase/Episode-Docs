@@ -29,14 +29,14 @@ Click this button to set the name and or translated names as well as certain mod
 For the various model configuration options, please refer to the How to document below.
 
 ## Related Pages
--  [Create new model](/planner/workbooks/administration/driver-based-modelling/new-model)<br/>
--  [Apply changes to model](/planner/workbooks/administration/driver-based-modelling/apply)<br/>
--  [Delete model](/planner/workbooks/administration/driver-based-modelling/delete)<br/>
--  [Calculation](/planner/workbooks/administration/driver-based-modelling/calculation)<br/>
+-  [Create new model](new-model.md)<br/>
+-  [Apply changes to model](apply.md)<br/>
+-  [Delete model](delete.md)<br/>
+-  [Calculation](calculation.md)<br/>
 
 For the setup of a model's plan proposal, refer to:
 
--  [Set plan proposal](/planner/workbooks/data-management/driver-based-plan-proposal)
+-  [Set plan proposal](../../data-management/driver-based-plan-proposal.md)
 
 ## How to`s
 

@@ -14,7 +14,7 @@ This is the workbook for importing data to and exporting data from Profitbase EP
 
 ## Related Pages
 
--  [File import](/planner/workbooks/data-management/data-import/file-import)
--  [Data Import](/planner/workbooks/data-management/data-import/import-data)
--  [Data export](/planner/workbooks/data-management/data-import/export-data)
--  [Audit](/planner/workbooks/data-management/data-import/audit)
+-  [File import](data-import/file-import.md)
+-  [Data Import](data-import/import-data.md)
+-  [Data export](data-import/export-data.md)
+-  [Audit](data-import/audit.md)

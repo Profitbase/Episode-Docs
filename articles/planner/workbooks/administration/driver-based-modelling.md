@@ -17,12 +17,12 @@ This workbook deals with topics such as:<br/>
 <br/>
 
 ## Related Pages
--  [Models](/planner/workbooks/administration/driver-based-modelling/models)<br/>
--  [Measures](/planner/workbooks/administration/driver-based-modelling/measure)<br/>
+-  [Models](driver-based-modelling/models.md)<br/>
+-  [Measures](driver-based-modelling/measure.md)<br/>
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.0 or 5.1
--  [Dimension data](/planner/workbooks/administration/driver-based-modelling/dimension-data)<br/>
--  [Measure facts (driver)](/planner/workbooks/administration/driver-based-modelling/measure-facts)<br/>
+-  [Dimension data](driver-based-modelling/dimension-data.md)<br/>
+-  [Measure facts (driver)](driver-based-modelling/measure-facts.md)<br/>
 
 <br/>
 

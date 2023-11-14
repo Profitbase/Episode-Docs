@@ -26,6 +26,6 @@ Categories should have one name for English and one for Norwegian.
 
 ## Related Pages
 
-[Scheduled Operations](/planner/workbooks/administration/OperationManager/ScheduledOperations)
-[Operations](/planner/workbooks/administration/OperationManager/Operations)
+[Scheduled Operations](ScheduledOperations.md)
+[Operations](Operations.md)
 

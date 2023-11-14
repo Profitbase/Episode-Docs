@@ -65,7 +65,7 @@ Sign factor is relevant in two scenarios:<br/>
 o	Switch the sign of any historical data<br/>
 o	Switch the sign of any input data<br/>
 This would typically apply to income accounts booked with a credit sign that one would like to see and input as a positive amount in an input form.<br/>
-2.	**Report line** sign factor (see [Setup Report](/planner/workbooks/data-management/report-setup/setup-report)): a report line nets a range of accounts or is a calculation of other report lines.<br/>
+2.	**Report line** sign factor (see [Setup Report](../report-setup/setup-report.md)): a report line nets a range of accounts or is a calculation of other report lines.<br/>
 The report line sign factor indicates whether this net amount should be presented "as is" (sign factor +1) or with the opposite sign (sign factor -1) in this particular report.<br/>
 Note that any report lines that act as calculations of other report lines will perform that calculation based on the values displayed, i.e. after the sign factor has been applied. <br/>
 - **EN: Account Description**<br/>

@@ -16,8 +16,8 @@ To view the proposal, click the Refresh button or make a selection in the organi
 
 ![](img/account-plan-proposal-adjust-basis.JPG)
 
-If the proposal is as desired, it can be imported straight away using the Import... button. Please refer to [Import...](/planner/workbooks/data-management/account-plan-proposal/import)
+If the proposal is as desired, it can be imported straight away using the Import... button. Please refer to [Import...](import.md)
 
-The basis proposal can be adjusted clicking the "Adjust data and periods" button, please refer to [Adjust data and periods](/planner/workbooks/data-management/account-plan-proposal/adjust-data-and-periods)
+The basis proposal can be adjusted clicking the "Adjust data and periods" button, please refer to [Adjust data and periods](adjust-data-and-periods.md)
 
-If, having exhausted the adjustment options available, the proposal is still not as desired you may have to revert to [1. Create basis proposal](/planner/workbooks/data-management/account-plan-proposal/create-basis-proposal) in order to rethink the source dataset mapping and to create a revised basis proposal.
+If, having exhausted the adjustment options available, the proposal is still not as desired you may have to revert to [1. Create basis proposal](create-basis-proposal.md) in order to rethink the source dataset mapping and to create a revised basis proposal.

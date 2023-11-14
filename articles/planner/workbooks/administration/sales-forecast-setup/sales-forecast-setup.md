@@ -25,10 +25,10 @@ Click this button to delete data from the model or the complete model. Clicking 
 Click this button to test the validity of any calculations in the model. The check function will report any errors found in a pop-up.
 
 ## Related Pages
--  [Create new model](/planner/workbooks/administration/sales-forecast-setup/new-model)<br/>
--  [Apply changes to model](/planner/workbooks/administration/sales-forecast-setup/apply)<br/>
--  [Delete model](/planner/workbooks/administration/sales-forecast-setup/delete)<br/>
--  [Calculation](/planner/workbooks/administration/sales-forecast-setup/calculation)<br/>
+-  [Create new model](new-model.md)<br/>
+-  [Apply changes to model](apply.md)<br/>
+-  [Delete model](delete.md)<br/>
+-  [Calculation](calculation.md)<br/>
 
 ## How to`s
 

@@ -5,4 +5,4 @@ folderOnly: "false"
 pageIndex: 2
 ---
 
-See [Sales forecast facts](/planner/workbooks/data-management/source-fact-data/sales-forecast-facts)
+See [Sales forecast facts](../../data-management/source-fact-data/sales-forecast-facts.md)

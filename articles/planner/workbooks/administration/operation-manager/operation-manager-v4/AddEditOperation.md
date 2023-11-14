@@ -8,7 +8,7 @@ pageIndex: 4
  
 ## Overview
 
-From the [Execute Data Admin Tasks](execute-data-admin-tasks) page, you can either add or edit an operation using these buttons:
+From the [Execute Data Admin Tasks](execute-data-admin-tasks.md) page, you can either add or edit an operation using these buttons:
 
 <br/>
 

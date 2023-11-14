@@ -28,7 +28,7 @@ A mechanism has been set up to prevent any of these operations to run simultaneo
 ![](Img/OperationsTopSection.png)
 
 - Filter the operation list by category, to find the operation you are looking for faster.<br/>
-- The "Add operation" button brings up the form used to [Add/Edit operations](AddEditOperation).<br/>
+- The "Add operation" button brings up the form used to [Add/Edit operations](AddEditOperation.md).<br/>
 - The "Refresh" button gets the latest data but keeps your selection active.
 
 3. **Right section**<br/>
@@ -48,13 +48,13 @@ When the execution is complete, the spinner icon, top right of the popup, goes a
 - Basic information about the operation is displayed right under, such as the "Job Status", when it was last run, how long it took, etc.
 
 - The "Schedule plan" displays a list of schedules. Those can be turned on or off using the toggle button.<br/>
-To create a new schedule, click the [Create new schedule](AddEditSchedule) button.
+To create a new schedule, click the [Create new schedule](AddEditSchedule.md) button.
 
 - The steps are listed below. Grayed out steps have been disabled.
 
 
 ## Related Pages
 
--  [Add/Edit operations](AddEditOperation)
--  [Add/Edit schedule](AddEditSchedule)
--  [Execution log and error messages](OperationLog)
+-  [Add/Edit operations](AddEditOperation.md)
+-  [Add/Edit schedule](AddEditSchedule.md)
+-  [Execution log and error messages](OperationLog.md)

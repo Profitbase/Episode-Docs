@@ -19,4 +19,4 @@ Defines the from-to dates between which currency exchange rates are processed. P
 **Dataset**
 Defines basic datasets for reporting, such as Actual and Budget. These datasets are pre-defined by Planner and no new datasets can be added nor existing deleted. The names, however, can be edited.
 
-The datasets are used for reporting [Finance reports](/planner/workbooks/financial-planning/finance-reports) and will be combined with the different plan versions that are made available for reporting.
+The datasets are used for reporting [Finance reports](../../financial-planning/finance-reports.md) and will be combined with the different plan versions that are made available for reporting.

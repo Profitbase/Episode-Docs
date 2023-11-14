@@ -14,10 +14,10 @@ This is the workbook for maintaining currency exchange rates and the global cale
 
 ## Related Pages
 
--  [Exchange rates daily](/planner/workbooks/data-management/dimensions-and-currency-exchange-rates/exchange-rate-daily)
--  [Exchange rate monthly](/planner/workbooks/data-management/dimensions-and-currency-exchange-rates/exchange-rate-monthly)
--  [Setup](/planner/workbooks/data-management/currency-exchange-rates-and-calendar/setup)
--  [Workday calendar](/planner/workbooks/data-management/currency-exchange-rates-and-calendar/workday-calendar)
+-  [Exchange rates daily](dimensions-and-currency-exchange-rates/exchange-rate-daily.md)
+-  [Exchange rate monthly](dimensions-and-currency-exchange-rates/exchange-rate-monthly.md)
+-  [Setup](currency-exchange-rates-and-calendar/setup.md)
+-  [Workday calendar](currency-exchange-rates-and-calendar/workday-calendar.md)
 
 <br/>
 
