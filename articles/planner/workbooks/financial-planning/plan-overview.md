@@ -12,11 +12,11 @@ This is the main workbook for planning profit and loss and is likely to be the m
 <br/>
 
 ## Related Pages
--  [Summary](/planner/workbooks/financial-planning/plan-overview/summary)
--  [Account details report](/planner/workbooks/financial-planning/plan-overview/account-details)
--  [Trend](/planner/workbooks/financial-planning/plan-overview/trend)
--  [Summary](/planner/workbooks/financial-planning/plan-overview/status)
--  [Manage comments](/planner/workbooks/financial-planning/plan-overview/manage-comments)
+-  [Summary](../../workbooks/financial-planning/plan-overview/summary.md)
+-  [Account details report](../../workbooks/financial-planning/plan-overview/account-details.md)
+-  [Trend](../../workbooks/financial-planning/plan-overview/trend.md)
+-  [Summary](../../workbooks/financial-planning/plan-overview/status.md)
+-  [Manage comments](../../workbooks/financial-planning/plan-overview/manage-comments.md)
 
 <br/>
 
@@ -25,6 +25,6 @@ This is the main workbook for planning profit and loss and is likely to be the m
 <br/>
 
 > **Input Modules**<br/>
-> [How to plan driver based](/planner/modules/driver-based/drivers)<br/>
-> [How to plan personnel](/planner/modules/personnel/personnel-details)<br/>
-> [How to plan on accounts](/planner/modules/account/account-details)<br/>
+> [How to plan driver based](../../modules/driver-based/drivers.md)<br/>
+> [How to plan personnel](../../modules/personnel/personnel-details.md)<br/>
+> [How to plan on accounts](../../modules/account/account-details.md)<br/>

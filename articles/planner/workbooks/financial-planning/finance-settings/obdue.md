@@ -193,7 +193,7 @@ The picture above shows the "Vacation Pay %" settings that determine which accou
 
 **Vacation Pay Example 1** <br/>
 
-This example has plan start date set to 2021-01-01 and vacation due to June 15 yearly. Finance Settings is as above, and [Opening Balance](/planner/workbooks/financial-planning/opening-balance/edit) is set as shown in picture below.
+This example has plan start date set to 2021-01-01 and vacation due to June 15 yearly. Finance Settings is as above, and [Opening Balance](../../financial-planning/opening-balance/edit.md) is set as shown in picture below.
 
 ![img](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/vacation-pay-ex1-Opening-balance-2021-01-01.jpg)
 
@@ -207,7 +207,7 @@ The top marked line is from opening balance and the last line is from plan accru
 
 **Vacation Pay Example 2**
 
-This example has plan start date set to 2021-07-01 and vacation due to June 15 yearly. Finance Settings is as above, and [Opening Balance](/planner/workbooks/financial-planning/opening-balance/edit) is set as shown in picture below.
+This example has plan start date set to 2021-07-01 and vacation due to June 15 yearly. Finance Settings is as above, and [Opening Balance](../../financial-planning/opening-balance/edit.md) is set as shown in picture below.
 
 ![img](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/vacation-pay-ex2-opening-balance-2021-07-01.jpg)
 
@@ -262,7 +262,7 @@ The first 3 lines should sum to a total of -6 848 478.13 (same as account receiv
 
 **Term Payments**
 
-There are a few payables that have to follow terms. These terms are assumed already set up under [Finance Settings - Payroll](/planner/workbooks/financial-planning/finance-settings/payroll).
+There are a few payables that have to follow terms. These terms are assumed already set up under [Finance Settings - Payroll](../../financial-planning/finance-settings/payroll.md).
 
 Use the setting "OBDue: Term" to identify accounts for:
 
@@ -272,4 +272,4 @@ Use the setting "OBDue: Term" to identify accounts for:
 * Withhold Tax (OBDueWithhold TaxPayable)
 * Duty and VAT (OBDueDutyAndVAT - this term is not enabled in the standard configuration setup)
 
-The Sim Item column value will together with the Legal Entity identify the term definition to be used from [Finance Settings - Payroll](/planner/workbooks/financial-planning/finance-settings/payroll). The account identified here is the accrued account for the term payment. Some of these terms extends 2 months and hence will use the opening balance from previous months to determine the correct payment to be made.
+The Sim Item column value will together with the Legal Entity identify the term definition to be used from [Finance Settings - Payroll](../../financial-planning/finance-settings/payroll.md). The account identified here is the accrued account for the term payment. Some of these terms extends 2 months and hence will use the opening balance from previous months to determine the correct payment to be made.

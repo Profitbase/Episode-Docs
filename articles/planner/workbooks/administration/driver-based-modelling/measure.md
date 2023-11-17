@@ -9,7 +9,7 @@ Measures are used as planning entities (model-rows) in sales forecast models. Be
 A separate document deals with the setup of sales forecast models, please refer to the "How to's" link below.<br/>
 <br/>
 
-![](img/measure.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/measure.JPG)
 
 ## How to`s
 

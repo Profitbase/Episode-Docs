@@ -14,6 +14,6 @@ Note that the import is sensitive to the selection made in the organizational fi
 
 <br/>
 
-![](img/driver-based-proposal-import.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/driver-based-proposal-import.JPG)
 
 Consider the organizational scope of the import. Click the Import button to import the proposal to the input module. Click the Cancel button to cancel the operation.

@@ -14,7 +14,7 @@ To view the proposal, click the Refresh button or make a selection in the organi
 
 <br/>
 
-![](img/account-plan-proposal-adjust-basis.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/account-plan-proposal-adjust-basis.JPG)
 
 If the proposal is as desired, it can be imported straight away using the Import... button. Please refer to [Import...](import.md)
 

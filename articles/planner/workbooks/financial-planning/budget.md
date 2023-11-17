@@ -12,7 +12,7 @@ This is the main workbook for budgeting profit and loss.
 <br/>
 
 ## Related Pages
--  [Summary](/planner/workbooks/financial-planning/budget/summary)
+-  [Summary](../../workbooks/financial-planning/budget/summary.md)
 
 <br/>
 
@@ -21,6 +21,6 @@ This is the main workbook for budgeting profit and loss.
 <br/>
 
 > **Input Modules**<br/>
-> [How to budget sales](/planner/modules/sales-gm/sales-gm-details)<br/>
-> [How to budget personnel](/planner/modules/personnel/personnel-details)<br/>
-> [How to budget on accounts](/planner/modules/account/account-details)<br/>
+> [How to budget sales](../../modules/sales-gm/sales-gm-details.md)<br/>
+> [How to budget personnel](../../modules/personnel/personnel-details.md)<br/>
+> [How to budget on accounts](../../modules/account/account-details.md)<br/>

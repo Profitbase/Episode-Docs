@@ -9,7 +9,7 @@ This is the main page for defining and operating sales forecast models.<br/>
 A separate document deals with the setup of sales forecast models, please refer to the "How to's" link below.<br/>
 <br/>
 
-![](img/salesforecastsetup.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/salesforecastsetup.JPG)
 
 1. **New... button - create a new model**<br/> 
 Click this button to create a new model. The new model can be created as an empty model or as a copy of an existing model. Clicking the button will take you to a pop-up dialogue where you can set the specifics of the new model.

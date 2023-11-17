@@ -9,7 +9,7 @@ pageIndex: 5
 This is the page for defining how per-month-per-FTE input values given for an employee/employee category should be spread to periods. The default spread is an even spread, that is the per-month-per-FTE input value is spread to all periods with a value identical to the input value.
 <br/>
 
-![](img/spreadtoperiods.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/spreadtoperiods.JPG)
 
 When changes have been made, click the "Save" button. This will update the Personnel details page from which the spread to periods page (this page) was triggered from.<br/>
 To discard any changes made or to close the page, click the "Close" button.

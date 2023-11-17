@@ -53,7 +53,6 @@ Number-columns explained:
 You can select additional columns under "Options". These will be dataset and other dimensions that may be used in the report. Available columns are subject to configuration settings for your solution.
 
 ## How to`s
+<br/>
 
-<br/>
-[Create new task](/planner/workbooks/process-and-tasks/tasks/create-edit-task)<br/>
-<br/>
+[Create new task](../../process-and-tasks/tasks/create-edit-task.md)<br/>

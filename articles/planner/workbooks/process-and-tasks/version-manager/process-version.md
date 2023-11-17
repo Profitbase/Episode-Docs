@@ -8,7 +8,7 @@ pageIndex: 1
 This is where new work processes and their associated versions area created.
 <br/>
 
-![](img/processes-and-versions.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/processes-and-versions.JPG)
 
 ## New work process
 
@@ -20,7 +20,7 @@ In order to create a new work process, click the + button:
 
 <br/>
 
-![](img/processes-and-versions-new-work-process.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/processes-and-versions-new-work-process.JPG)
 
 <br/>
 
@@ -28,7 +28,7 @@ In the following dialogue, enter the work process name and click the Create butt
 
 <br/>
 
-![](img/processes-and-versions-create-new-work-process.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/processes-and-versions-create-new-work-process.JPG)
 
 <br/>
 
@@ -44,7 +44,7 @@ Select the Configuration node under the work process in question (left most sect
 
 <br/>
 
-![](img/processes-and-versions-set-content.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/processes-and-versions-set-content.JPG)
 
 <br/>
 
@@ -68,7 +68,7 @@ Consider if additional users should be granted process administrator access. Thi
 
 <br/>
 
-![](img/processes-and-versions-process-administrator-access.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/processes-and-versions-process-administrator-access.JPG)
 
 ## Create new version
 
@@ -80,7 +80,7 @@ To create a new version, select the Versions node under the work process in ques
 
 <br/>
 
-![](img/processes-and-versions-create-new-version.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/processes-and-versions-create-new-version.JPG)
 
 <br/>
 
@@ -88,7 +88,7 @@ In the following dialogue, the version specifics are set:
 
 <br/>
 
-![](img/processes-and-versions-create-new-version-dialogue.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/processes-and-versions-create-new-version-dialogue.JPG)
 
 <br/>
 
@@ -149,7 +149,7 @@ This is done by selecting the version and clicking the Deploy button:
 
 <br/>
 
-![](img/processes-and-versions-deploy.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/processes-and-versions-deploy.JPG)
 
 <br/>
 
@@ -157,7 +157,7 @@ Once the deployed button is clicked, note that it's caption changes to Progress.
 
 <br/>
 
-![](img/processes-and-versions-deploy-log.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/processes-and-versions-deploy-log.JPG)
 
 <br/>
 
@@ -175,7 +175,7 @@ To make the version available to all contributors based on their permissions, yo
 
 <br/>
 
-![](img/processes-and-versions-change-status.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/processes-and-versions-change-status.JPG)
 
 <br/>
 
@@ -187,4 +187,4 @@ In order to close the version, click the "Change status" button, select the Clos
 
 <br/>
 
-![](img/processes-and-versions-change-status-close.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/processes-and-versions-change-status-close.JPG)

@@ -59,7 +59,7 @@ Select from the list of Processes using the checkbox.
 
 When a Process has been selected, "Current Version" will be selected by default, and can be changed to "All Active Versions". A summary of the versions will be displayed.
 
-![](Img/versionexecutionmode.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/versionexecutionmode.png)
 
 ### Steps
 

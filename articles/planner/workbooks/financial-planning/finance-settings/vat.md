@@ -9,7 +9,7 @@ pageIndex: 1
 VAT defines the settings related to Value Added Tax to set the VAT rate percent and payment term.
 <br/>
 
-![](img/finance-settings-vat.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/finance-settings-vat.jpg)
 
 1. **Selecting Setting Table**<br/>The left area list the different setting tables available for the page. Ticking here will turn on and off the table.
 2. **Tables View**<br/>The right area will display the selected tables and allows users to edit content.

@@ -11,7 +11,7 @@ pageIndex: 3
 Here you can manage the Legal Entity dimension attributes including adding new members.
 <br/>
 
-![](img/dimensions-legal-entity-and-department.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/dimensions-legal-entity-and-department.jpg)
 
 1. **Legal entity filter**<br/>
 Here you can make a selection to filter the department table.
@@ -46,7 +46,7 @@ This is reflected in the positioning of the columns from left (lowest level, i.e
 
 Note that all levels must be filled in, but padding - that is repeating - levels from one level to the next should be used if the actual hierarchy does not contain all levels, as shown in the example below:
 
-![](img/LegalEntityPadding.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/LegalEntityPadding.JPG)
 
 In the example, Legal entity Profitways is padded - repeated - to Hierarchy levels 3 and 2. This means that Planner renders the hierarchy skipping Hierarchy levels 3 and 2 so that when expanding level 1, the legal entity level is displayed as shown in the left margin where Profitways holding (Hierarchy level 1) expands directly to Profitways (Legal entity).
 

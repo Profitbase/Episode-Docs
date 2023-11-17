@@ -9,7 +9,7 @@ pageIndex: 2
 Here you can see the opening balance including any overrides presented using the balance report.  
 <br/>
 
-![](img/opening-balance-report.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/opening-balance-report.jpg)
 
 1. **Description** <br/>
 This is using the report layout configuration for the Balance report. Accounts from the edit is aggregated and present as report line sums here.

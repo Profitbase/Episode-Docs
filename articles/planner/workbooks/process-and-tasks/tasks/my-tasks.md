@@ -6,12 +6,12 @@ pageIndex: 1
 ---
 ## Overview
 Card view of all tasks assigned to the logged in user.<br/>
-Clicking a task brings up the [edit form](/planner/workbooks/process-and-tasks/tasks/create-edit-task) .<br/>
+Clicking a task brings up the [edit form](../../../workbooks/process-and-tasks/tasks/create-edit-task.md) .<br/>
 
-![](Img/MyTasks.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/MyTasks.png)
 
 1. Click "**New task**" to create a new task.<br/>
-How to [create or edit a task](/planner/workbooks/process-and-tasks/tasks/create-edit-task) 
+How to [create or edit a task](../../../workbooks/process-and-tasks/tasks/create-edit-task.md) 
 
 2. Click "**View closed tasks**" to view closed tasks.<br/>
 

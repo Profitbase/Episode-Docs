@@ -12,7 +12,7 @@ In this screen, the basis proposal can be refined by un-grouping or grouping dat
 
 <br/>
 
-![](img/driver-based-proposal-adjust-data-and-periods.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/driver-based-proposal-adjust-data-and-periods.JPG)
 
 In the "Dimension settings proposal" part of the screen, you can un-group the proposal data on any optional dimensions used. Un-grouping means less level of detail in the proposal as the proposal is then aggregated over the remaining dimensions that have the "Group proposal data" checked.
 

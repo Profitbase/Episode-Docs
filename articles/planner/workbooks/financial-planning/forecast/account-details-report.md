@@ -10,7 +10,7 @@ This page displays forecast details per account for a given report line.<br/>
 The report will typically include transactions produced by multiple input modules.
 <br/>
 
-![](img/ForecastAccountReport.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/ForecastAccountReport.JPG)
 
 <br/>
 

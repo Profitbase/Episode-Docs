@@ -9,7 +9,7 @@ pageIndex: 7
 This page allows you to define a calculation tied to a model measure.
 <br/>
 
-![](img/calculation.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/calculation.JPG)
 
 There are two types of calculations:<br/>
 

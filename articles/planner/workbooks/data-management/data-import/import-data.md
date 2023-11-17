@@ -29,7 +29,7 @@ The general principle for Data Import jobs is:
 3 - Once the column mapping has been set up, the "Execute Now" button will become active. This button will then do everything: import data into the internal temporary table, and copy that data using the column mapping rules to the final destination table.
 <br />
 
-![](img/DataImport.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/DataImport.png)
 
 <br/>
 
@@ -176,7 +176,7 @@ Here is a basic example:
 <br/>
 
 
-![](img/ColumnMappingExample.PNG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/ColumnMappingExample.PNG)
 
 <br/>
 
@@ -199,7 +199,7 @@ After the column mapping has been saved, a summary will be displayed in the fina
 <br/>
 
 
-![](img/ColumnMappingExample_result.PNG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/ColumnMappingExample_result.PNG)
 
 <br/>
 

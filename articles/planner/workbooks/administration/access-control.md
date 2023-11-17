@@ -31,5 +31,5 @@ Users and groups management is moved to [Users and group management](users-and-g
 
 
 ## Video
-[](https://docs.support.profitbase.com/framework/invision/videos/usersandpermissions.mp4)
+![](https://docs.support.profitbase.com/framework/invision/videos/usersandpermissions.mp4)
 

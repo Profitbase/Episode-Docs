@@ -9,7 +9,7 @@ pageIndex: 4
 This page contains settings related to operating expenses.
 <br/>
 
-![](img/finance-settings-expense.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/finance-settings-expense.jpg)
 
 1. **Selecting Setting Table**<br/>The left area list the different setting tables available for the page. Ticking here will turn on and off the table.
 2. **Tables View**<br/>The right area will display the selected tables and allows users to edit content.

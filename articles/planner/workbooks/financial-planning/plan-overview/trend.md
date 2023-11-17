@@ -9,7 +9,7 @@ pageIndex: 2
 This page enables graphical trending of the individual report lines in the Profit & Loss report.
 <br/>
 
-![](img/plan-overview-trend.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/plan-overview-trend.JPG)
 
 1. **Period filter** <br/>
 Select the period to trend. The following options are available:<br/>

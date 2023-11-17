@@ -52,7 +52,7 @@ In the left section, the mandatory Department filter is displayed. The content o
 
 
 ## Video
-[Introduction](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/PersonnelInput.mp4)<br/>
+![Introduction](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/PersonnelInput.mp4)<br/>
 
 <br/>
 

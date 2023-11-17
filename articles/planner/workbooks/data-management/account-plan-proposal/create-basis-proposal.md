@@ -12,7 +12,7 @@ This is the main screen for defining the basis proposal. A quick guide to the pr
 
 <br/>
 
-![](img/account-plan-proposal-create-basis.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/account-plan-proposal-create-basis.JPG)
 
 Although there are many options, the only mandatory step is to define which source dataset(s) constitute the proposal. 
 
@@ -28,7 +28,7 @@ This screen defines how the plan will be pre-filled with data from the source da
 
 <br/>
 
-![](img/map-source-datasets-to-plan.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/map-source-datasets-to-plan.JPG)
 
 
 Now, in more complex situations, different parts of the plan (as in different parts of the organization and/or different time periods within the plan's total time frame) may take their proposal from different source datasets.
@@ -37,7 +37,7 @@ This can be achieved by detailing the "Map source datasets to plan" table with m
 
 <br/>
 
-![](img/map-source-datasets-to-plan2.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/map-source-datasets-to-plan2.JPG)
 
 
 #### Columns
@@ -76,7 +76,7 @@ This can be achieved in the "Account - dimensions" screen by:
 1. Un-checking any optional dimensions that are not required.
 2. Un-checking the "Group source data" option for any optional dimensions that must be included but where it is not absolutely required to detail the proposal on those dimensions from the source. For example, even though the project dimension may be required for input in the plan, it may not be required to group source data by projects. If Group source data is unchecked, the proposal is aggregated, i.e. not grouped by the dimension in question, resulting in a less detailed proposal with less amounts of data.
 
-![](img/account-dimensions.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/account-dimensions.JPG)
 
 #### Override dataset mapping
 

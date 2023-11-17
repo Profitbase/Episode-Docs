@@ -12,7 +12,7 @@ This is the page where the forecast is rolled forward. Rollover will archive cur
 Actuals will be updated up to but not including the new forecast start.<br/>
 <br/>
 
-![](img/rollover.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/rollover.JPG)
 
 1. Set the number of months that the forecast should be rolled (moved) forward. 
 2. Check that actuals up to the new forecast start is available by clicking the "Check Actuals YTD" button. This will open a pop-up in which actuals data can be viewed. Make necessary checks and close the pop-up.<br/>

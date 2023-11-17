@@ -10,7 +10,7 @@ This page allows you to copy investments from another year. This may be relevant
 Note that the copy operation is relative to the selection made in the Department filter, e.g. when invoking the "Copy data from.." while positioned at department Stavanger, only investments for department Stavanger are copied.
 <br/>
 
-![](img/capex-copy-data.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/capex-copy-data.jpg)
 
 1. **Dataset filter** <br/>
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x<br/>

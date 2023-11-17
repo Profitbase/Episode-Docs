@@ -12,7 +12,7 @@ It contains an input page (Loan) and a setup page (Setup) that enables configura
 <br/>
 
 ## Related Pages
--  [Loan](loan/loan)
--  [Setup](loan/setup)
+-  [Loan](loan/loan.md)
+-  [Setup](loan/setup.md)
 
 <br/>

@@ -9,7 +9,7 @@ pageIndex: 2
 Here you can override and inspect the monthly exchange rates including regenerating the monthly rates.
 <br/>
 
-![](img/dimensions-exchange-rate-monthly.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/dimensions-exchange-rate-monthly.jpg)
 
 
 1. **Changes Rate Historical Monthly Override**<br/>

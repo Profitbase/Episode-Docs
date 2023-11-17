@@ -23,7 +23,7 @@ The general principle for Data Export jobs is:
 3 - Once the column mapping has been set up, the "Execute Now" button will become active. This button will then do execute the export job and move the data using the column mapping rules to the destination table.
 <br/>
 
-![](img/DataExport.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/DataExport.png)
 
 <br/>
 
@@ -98,7 +98,7 @@ This will tell the system which column to put where, as the column names don't n
 Here is a basic example:
 <br/>
 
-![](img/ColumnMappingExample.PNG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/ColumnMappingExample.PNG)
 
 <br/>
 EmployeeID will be imported as-is.
@@ -114,7 +114,7 @@ ModifyType and PBRowIdentity will be ignored.
 After the column mapping has been saved, a summary will be displayed in the final section:
 <br/>
 
-![](img/ColumnMappingExample_result.PNG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/ColumnMappingExample_result.PNG)
 
 <br/>
 Clicking auto-cast, will use any mappings set up, and automatically add a transform formula. If transforms have already been added, they will be wrapped in this additional casting.

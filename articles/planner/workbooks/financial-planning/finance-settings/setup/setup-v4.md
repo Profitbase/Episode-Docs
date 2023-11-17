@@ -11,7 +11,7 @@ pageIndex: 8
 In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
 <br/>
 
-![](img/finance-settings-setup.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/finance-settings-setup.jpg)
 
 1. **Selecting Setting Table**<br/>The left area list the different setting tables available for the page. Ticking here will turn on and off the table.
 2. **Tables View**<br/>The right area will display the selected tables and allows users to edit content.

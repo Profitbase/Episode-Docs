@@ -16,7 +16,7 @@ On the upper left of the screen you will find instruction on how to perform the 
 
 <br/>
 
-![](img/finance-simulation.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/finance-simulation.jpg)
 
 1. **Execute Budget Scenario**<br/> 
 This button will start the scenario simulation for the Budget dataset based on Budget input and settings. 

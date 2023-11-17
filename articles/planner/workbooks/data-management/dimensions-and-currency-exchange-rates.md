@@ -14,26 +14,26 @@ This is the workbook for maintaining dimensional data. Note that in most solutio
 
 ## Related Pages
 
--  [Legal entity](/planner/workbooks/data-management/dimensions-and-currency-exchange-rates/legal-entity-and-department)
--  [Department](/planner/workbooks/data-management/dimensions-and-currency-exchange-rates/department)
--  [Account](/planner/workbooks/data-management/dimensions-and-currency-exchange-rates/account)
--  [Project](/planner/workbooks/data-management/dimensions-and-currency-exchange-rates/project)
--  [Activity](/planner/workbooks/data-management/dimensions-and-currency-exchange-rates/activity)
--  [Product](/planner/workbooks/data-management/dimensions-and-currency-exchange-rates/product)
--  [Market](/planner/workbooks/data-management/dimensions-and-currency-exchange-rates/market)
--  [Supplier](/planner/workbooks/data-management/dimensions-and-currency-exchange-rates/supplier)
--  [Employee](/planner/workbooks/data-management/dimensions-and-currency-exchange-rates/employee)
--  [Asset group](/planner/workbooks/data-management/dimensions-and-currency-exchange-rates/asset-group)
--  [Dim1..Dim4](/planner/workbooks/data-management/dimensions-and-currency-exchange-rates/dim1-dim4)
+-  [Legal entity](dimensions-and-currency-exchange-rates/legal-entity-and-department.md)
+-  [Department](dimensions-and-currency-exchange-rates/department.md)
+-  [Account](dimensions-and-currency-exchange-rates/account.md)
+-  [Project](dimensions-and-currency-exchange-rates/project.md)
+-  [Activity](dimensions-and-currency-exchange-rates/activity.md)
+-  [Product](dimensions-and-currency-exchange-rates/product.md)
+-  [Market](dimensions-and-currency-exchange-rates/market.md)
+-  [Supplier](dimensions-and-currency-exchange-rates/supplier.md)
+-  [Employee](dimensions-and-currency-exchange-rates/employee.md)
+-  [Asset group](dimensions-and-currency-exchange-rates/asset-group.md)
+-  [Dim1..Dim4](dimensions-and-currency-exchange-rates/dim1-dim4.md)
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x
 
--  [Exchange rates daily](/planner/workbooks/data-management/dimensions-and-currency-exchange-rates/exchange-rate-daily)
--  [Exchange rate monthly](/planner/workbooks/data-management/dimensions-and-currency-exchange-rates/exchange-rate-monthly)
+-  [Exchange rates daily](dimensions-and-currency-exchange-rates/exchange-rate-daily.md)
+-  [Exchange rate monthly](dimensions-and-currency-exchange-rates/exchange-rate-monthly.md)
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5 or later
 
-The maintenance of currency exchange rates is moved to [Currency Exchange Rates and Calendar](/planner/workbooks/data-management/dimensions-and-currency-exchange-rates/exchange-rate-daily)
+The maintenance of currency exchange rates is moved to [Currency Exchange Rates and Calendar](dimensions-and-currency-exchange-rates/exchange-rate-daily.md)
 
 <br/>
 

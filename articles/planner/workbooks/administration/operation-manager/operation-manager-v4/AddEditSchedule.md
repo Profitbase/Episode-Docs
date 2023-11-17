@@ -11,7 +11,7 @@ This popup is used to add or update a schedule for an operation.
 <br/>
 An operation can have multiple schedules to fit every scenario.
 
-![](Img/AddEditSchedule.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/AddEditSchedule.png)
 
 1. **Name**<br/>
 A short name for the scheduled job.

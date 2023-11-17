@@ -18,4 +18,4 @@ Here, the **department** is considered the most important dimension. <br/>
 6. Make sure the "Is Default Member" is NOT checked.
 7. Click "Publish"
 
-![](Img/DataPermisions.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/DataPermisions.png)

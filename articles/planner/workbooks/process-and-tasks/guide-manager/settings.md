@@ -20,7 +20,7 @@ Clicking the name of the guide takes you to the pop-up where you can (re)name an
 
 Hovering over the guide name reveals a ... (3 dot) action menu that if clicked allows you to:<br/>
 
-- [Go to Steps](/planner/workbooks/process-and-tasks/guide-manager/steps)
+- [Go to Steps](../../../workbooks/process-and-tasks/guide-manager/steps.md)
 - Delete - delete the guide
 - Preview - preview how the guide will be executed using the Guides workbook 
 

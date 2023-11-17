@@ -7,7 +7,7 @@ pageIndex: 2
 ## Overview
 Add / Edit / Remove processes.
 
-![](img/processes.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/processes.JPG)
 
 <br/>
 
@@ -17,7 +17,7 @@ Also configure which processes should use the workday calendar.
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5 or later
 
-Work processes that are versioned and created in the [Version Manager](/planner/workbooks/process-and-tasks/version-manager/process-version) will show up here once the process is created and it's first version is deployed and can not be deleted as Planner will automatically delete once the process' last version is deleted.
+Work processes that are versioned and created in the [Version Manager](../../../workbooks/process-and-tasks/version-manager/process-version.md) will show up here once the process is created and it's first version is deployed and can not be deleted as Planner will automatically delete once the process' last version is deleted.
 
 The following attributes can be maintained:
 

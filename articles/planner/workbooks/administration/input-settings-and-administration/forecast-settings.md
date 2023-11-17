@@ -11,7 +11,7 @@ pageIndex: 5
 This page contains a collection of central settings for the budget modules Personnel and Account, such as distribution and spread keys, setup for auto transactions and so on.<br/>
 <br/>
 
-![](img/forecastsettings.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/forecastsettings.JPG)
 
 Please refer to the relevant module document in the "How to's" section below for details.
 

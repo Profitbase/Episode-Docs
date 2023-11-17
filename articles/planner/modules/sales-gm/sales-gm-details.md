@@ -8,7 +8,7 @@ pageIndex: 1
 This is the the Sales by GM% input module and is where any detailed budgeting of sales per product and market (and possibly other dimensions) takes place. 
 <br/>
 
-![](img/sales-gm.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/sales-gm.JPG)
 
 1. **Back button** <br/>
 This button is active when the module is launched from the Budget or Forecast summary workbook. Clicking the Back button will launch the summary workbook in the same browser window. If there are unsaved changes made in the Sales by GM% module, a prompt will appear requesting confirmation.
@@ -26,7 +26,7 @@ The account report display the financial effect of the input made and is updated
 
 
 ## Video
-[Introduction](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/SalesGMInput.mp4)
+![Introduction](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/SalesGMInput.mp4)
 
 <br/>
 

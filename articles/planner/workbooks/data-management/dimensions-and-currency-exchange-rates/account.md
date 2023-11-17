@@ -10,7 +10,7 @@ pageIndex: 5
 # Overview
 Here you can edit the Account dimension.
 
-![](img/dimensions-account.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/dimensions-account.jpg)
 
 1. **Account** <br/>
 This will filter accounts on the hierarchical node selected.
@@ -40,7 +40,7 @@ This is reflected in the positioning of the columns from left (lowest level, i.e
 
 Note that all levels must be filled in, but padding - that is repeating - levels from one level to the next level up should be used if the actual hierarchy does not contain all levels, as shown in the example below, considering the account level contains actual accounts.
 
-![](img/AccountPadding.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/AccountPadding.JPG)
 
 In the example, Account 3790 is padded - repeated - to hierarchy levels 3. This means that Planner renders the hierarchy skipping hierarchy levels 3 so that when expanding level 2 at the 37 node, 3790 renders immediately below as shown in the left margin.
 

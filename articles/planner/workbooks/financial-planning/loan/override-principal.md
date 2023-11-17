@@ -9,7 +9,7 @@ pageIndex: 3
 This page allows you to specify the loan principals for the loan in question. This page is only relevant for term (serial) loans.
 <br/>
 
-![](img/override-principal.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/override-principal.JPG)
 
 For term (serial) loans, the principals are by default generated automatically by the system. If you are required to override the default principals, this can be done by adding rows to this page. You add rows by hovering the mouse over the data area, perform a mouse right-click and select one of the "Insert new row.." options.<br/>
 

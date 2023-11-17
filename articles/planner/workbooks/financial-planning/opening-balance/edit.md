@@ -9,7 +9,7 @@ pageIndex: 1
 This page allows for adjusting opening balances for Forecast and Budget dataset and with start date as controlled by the roll-forward process.
 <br/>
 
-![](img/opening-balance-edit.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/opening-balance-edit.jpg)
 
 To edit opening balance, you can follow the 3 steps below:
 
@@ -31,7 +31,7 @@ Note that override values will survive when you re-generate the balance from the
 
 The source data is historic actual general ledger transactions.
 
-During simulation these values are deployed according to [Finance Settings OBDue](/planner/workbooks/financial-planning/finance-settings/obdue).
+During simulation these values are deployed according to [Finance Settings OBDue](../finance-settings/obdue.md).
 
 Providing the balance for the last 3 month helps the system to deal with due payments on the balance. Providing the last full year balance help the system to apply e.g. vacation pay based on last year actual.
 

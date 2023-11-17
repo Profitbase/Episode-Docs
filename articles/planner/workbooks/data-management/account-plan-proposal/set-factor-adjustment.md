@@ -14,6 +14,6 @@ Note that both the organizational and account dimensions are set based on their 
 
 <br/>
 
-![](img/account-proposal-set-adjustment-factors.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/account-proposal-set-adjustment-factors.JPG)
 
 Add rows for the selections of the proposal that should be factored differently from a 1:1 mapping from the source. Click the Save button to save any changes.

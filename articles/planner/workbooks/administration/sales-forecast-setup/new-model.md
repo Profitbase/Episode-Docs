@@ -9,7 +9,7 @@ pageIndex: 5
 This page allows you to create a new sales forecast model.
 <br/>
 
-![](img/new-model.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/new-model.JPG)
 
 In the dialogue, enter a model id (characters a-z and 0-9 only) and a model default name.<br/>
 

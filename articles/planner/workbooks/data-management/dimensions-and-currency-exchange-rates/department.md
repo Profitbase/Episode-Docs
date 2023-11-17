@@ -11,7 +11,7 @@ pageIndex: 4
 Here you can manage the Department dimension hierarchy and attributes including adding new departments. This table is the source for the Department dimension.
 <br/>
 
-![](img/dimensions-department.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/dimensions-department.jpg)
 
 
 1. **Department filter**<br/>
@@ -51,7 +51,7 @@ This is reflected in the positioning of the columns from left (lowest level, i.e
 
 Note that all levels must be filled in, but padding - that is repeating - levels from one level to the next level up should be used if the actual hierarchy does not contain all levels, as shown in the example below so long as the department level contains actual departments and the legal entity level contains actual legal entities.
 
-![](img/DepartmentPadding.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/DepartmentPadding.JPG)
 
 In the example, department Stavanger is padded - repeated - to Hierarchy levels 6 and 5. This means that Planner renders the hierarchy skipping Hierarchy levels 5 and 6 so that when expanding level 4, the department level is displayed as shown in the left margin where Norway (Hierarchy level 4) expands directly to Stavanger (Department).
 

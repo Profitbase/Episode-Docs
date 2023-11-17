@@ -9,7 +9,7 @@ pageIndex: 3
 This page contains a collection of central settings for payroll such as settings for vacation pay, employer tax, pension and so on.
 <br/>
 
-![](img/PayrollSettings.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/PayrollSettings.JPG)
 
 Please refer to the relevant module document in the "How to's" section below for details.
 

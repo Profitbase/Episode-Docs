@@ -18,4 +18,4 @@ Each process can be configured whether to take this calendar into account or not
 
 <br/>
 
-![](img/workday-calendar.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/workday-calendar.JPG)

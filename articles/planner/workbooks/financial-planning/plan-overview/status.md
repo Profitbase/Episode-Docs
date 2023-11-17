@@ -10,7 +10,7 @@ pageIndex: 4
 This page displays an overview of the different departments and their respective workflow states. The workflow tracks the process progress and will typically contain states such as Not started, In Progress, Finished and so on. The workflow state is recorded per department and module based on the selection made by the user in the module's workflow drop down selector..
 <br/>
 
-![](img/plan-overview-status.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/plan-overview-status.JPG)
 
 1. **Module and workflow state list**<br/>
 This lists the different modules and an overview of the workflow states indicating the number of departments that currently holds that particular state for that particular module.

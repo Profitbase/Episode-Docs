@@ -13,10 +13,10 @@ This allows automated deadlines (due dates) of process tasks that are based on r
 
 <br/>
 
-Each process can be configured whether to take this calendar into account or not on the [processes](processes) page.
+Each process can be configured whether to take this calendar into account or not on the [processes](processes.md) page.
 
 <br/>
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5 or later
 
-This page is moved to [Currency exchange rates and calendar](/planner/workbooks/data-management/currency-exchange-rates-and-calendar)
+This page is moved to [Currency exchange rates and calendar](../../../workbooks/data-management/currency-exchange-rates-and-calendar.md)

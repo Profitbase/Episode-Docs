@@ -16,9 +16,9 @@ Note that in most solutions, some of the dimensions (typically legal entity, dep
 
 ## Related Pages
 
--  [Edit dimensions](/planner/workbooks/data-management/dimensions/edit-dimensions)
--  [Group Account Mapping](/planner/workbooks/data-management/dimensions/group-account-mapping)
--  [Time and fiscal setup](/planner/workbooks/data-management/dimensions/time-and-fiscal-setup)
--  [Workday calendar](/planner/workbooks/data-management/currency-exchange-rates-and-calendar/workday-calendar)
--  [Elim. Legal Entity Mapping](/planner/workbooks/data-management/dimensions/elim-legal-entity-mapping)
--  [Setup](/planner/workbooks/data-management/dimensions/setup)
+-  [Edit dimensions](dimensions/edit-dimensions.md)
+-  [Group Account Mapping](dimensions/group-account-mapping.md)
+-  [Time and fiscal setup](dimensions/time-and-fiscal-setup.md)
+-  [Workday calendar](currency-exchange-rates-and-calendar/workday-calendar.md)
+-  [Elim. Legal Entity Mapping](dimensions/elim-legal-entity-mapping.md)
+-  [Setup](dimensions/setup.md)

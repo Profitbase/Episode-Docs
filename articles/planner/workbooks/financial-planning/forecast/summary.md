@@ -9,7 +9,7 @@ pageIndex: 1
 This is the Profit and Loss overview page for the Forecast process. It acts as a summary for the forecasting done so far as well as a navigation page to the various input modules used for detailing the forecast. The summary is, with exception of the Comment column, read only.
 <br/>
 
-![](img/forecast-summary.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/forecast-summary.jpg)
 
 1. **The forecast summary report** <br/>
 A Profit and Loss summary report that displays the forecast done so far. It contains a set of profit and loss report lines (rows) that either sums a range of accounts or act as a calculation of other report lines. The profit and loss setup will vary from solution to solution. 
@@ -25,7 +25,7 @@ Launch drop down selector for launching specific input modules. When selecting a
 <br/>
 
 ## Video
-[Introduction](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/ForecastSummary.mp4)
+![Introduction](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/ForecastSummary.mp4)
 
 <br/>
 
@@ -59,12 +59,12 @@ Input column for commenting a specific report line. To save the comments, click 
 
 <br/>
 
-[Create new task](/planner/workbooks/process-and-tasks/tasks/create-edit-task)<br/>
+[Create new task](../../process-and-tasks/tasks/create-edit-task.md)<br/>
 
 > **Input Modules**<br/>
-> [How to forecast sales](/planner/modules/sales-forecast/sales-forecast-details)<br/>
-> [How to forecast personnel](/planner/modules/personnel/personnel-details)<br/> 
-> [How to forecast on accounts](/planner/modules/account/account-details)<br/>
+> [How to forecast sales](../../../modules/sales-forecast/sales-forecast-details.md)<br/>
+> [How to forecast personnel](../../../modules/personnel/personnel-details.md)<br/> 
+> [How to forecast on accounts](../../../modules/account/account-details.md)<br/>
 
 
 

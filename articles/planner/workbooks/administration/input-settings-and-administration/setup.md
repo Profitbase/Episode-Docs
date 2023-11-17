@@ -31,7 +31,7 @@ Please refer to the relevant module document in the "How to's" section below for
 
 ## The Base settings table
 
-![](img/base-settings.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/base-settings.JPG)
 
 The Base settings table contains settings that span all profit and loss input modules.
 
@@ -45,7 +45,7 @@ The setting identifier.<br/>
 
 The actual value for the setting in question, see corresponding comment for valid options.<br/>
 
-![](img/base-setting-close-up.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/base-setting-close-up.JPG)
 
 The following settings require additional explanation:<br/>
 

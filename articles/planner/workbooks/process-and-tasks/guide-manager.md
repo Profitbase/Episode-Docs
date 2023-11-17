@@ -9,5 +9,6 @@ This workbook is used to manage guides for easier execution of more complex admi
 <br/>
 
 ## Related Pages
-- [Settings](/planner/workbooks/process-and-tasks/guide-manager/settings)
-- [Steps](/planner/workbooks/process-and-tasks/guide-manager/steps)
+
+- [Settings](../../workbooks/process-and-tasks/guide-manager/settings.md)
+- [Steps](../../workbooks/process-and-tasks/guide-manager/steps.md)

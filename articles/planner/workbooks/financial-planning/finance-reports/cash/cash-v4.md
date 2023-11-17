@@ -57,4 +57,5 @@ For all these there are a "total cash" line that is sum of all bars. One excepti
 ## How to`s
 
 <br/>
-[Create new task](/planner/workbooks/process-and-tasks/tasks/create-edit-task)<br/>
+
+[Create new task](../../../process-and-tasks/tasks/create-edit-task.md)<br/>

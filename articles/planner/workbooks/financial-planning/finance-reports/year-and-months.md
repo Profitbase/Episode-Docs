@@ -16,7 +16,7 @@ You can select additional columns to be included to compare data for example bet
 
 It is also possible to apply additional filters to "slice" data using other dimensions.
 
-Options to add additional columns and filter data is controlled through configuration setup under [Report Setup Options](/planner/workbooks/data-management/report-setup/options) workbook page.
+Options to add additional columns and filter data is controlled through configuration setup under [Report Setup Options](../../data-management/report-setup/options.md) workbook page.
 <br/>
 
 ![img](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/finance-reports-year-and-months-v5.JPG)
@@ -63,5 +63,5 @@ You can select additional columns under "Options". These will be dataset and oth
 ## How to`s
 
 <br/>
-[Create new task](/planner/workbooks/process-and-tasks/tasks/create-edit-task)<br/>
-<br/>
+
+[Create new task](../../process-and-tasks/tasks/create-edit-task.md)<br/>

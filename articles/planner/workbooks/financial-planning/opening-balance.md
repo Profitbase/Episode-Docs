@@ -43,7 +43,7 @@ OB provides a clean cut between actual funds on accounts up until plan start dat
 
 In the Opening Balances workbook you can created the opening balance. Here you can also create overrides to adjust the OB available from actual data. This may be necessary for example at the beginning of the year when previous year is not closed and hence an actual OB is not completed or accurate, you can make necessary adjustments. In order for the system to make best judgements about receivables and payables, Planner use the OB from the last 3 months.
 
-Details on how adjust opening balances  can be found here: [Generate and Edit Opening Balance](opening-balance/edit)
+Details on how adjust opening balances  can be found here: [Generate and Edit Opening Balance](opening-balance/edit.md)
 
 #### 2. OB Due rules
 
@@ -51,30 +51,30 @@ In "Finance Settings" workbook there is a page "OB Due" that allows you to defin
 
 Remember that the rules set here will have a big impact on the cashflow. For example if you have large funds accumulated on account receivables and a large portion of this is in reality funds that will not be paid, you can make a big error telling the system that all these funds will be paid next month. In this case you will not pay 100% or the whole amount. Another way to deal with this is to adjust the OB (see point above).
 
-More details on this can be found here: [OB Due](finance-settings/obdue)
+More details on this can be found here: [OB Due](finance-settings/obdue.md)
 
 #### 3. Simulate the general ledger
 
 For the steps above to take effect the general ledger has to be calculated applying OB and due rules in order to generate payment transactions. This is done under "Operation Manager" running the job to simulate the general ledger ("Process finance baseline"). Normally this job is schedule to run automatic at regular intervals.
 
-More details on this can be found here: [Operation Manager](/planner/workbooks/administration/operation-manager)
+More details on this can be found here: [Operation Manager](../../workbooks/administration/operation-manager.md)
 
 #### 4. Review results
 
 To verify and check results you should use the "Finance Reports". The most relevant reports are:
- - [Trial Balance](/planner/workbooks/financial-planning/finance-reports/trial-balance) will show the period amounts on each account including the year OB. Remember that Forecast will show a combination of actual and plan data for the periods.
- - [Year and Month](/planner/workbooks/financial-planning/finance-reports/year-and-months) will show the OB, periods and CB (Closing Balance) for the selected year. Remember that OB and CB will only show for balance type reports.
+ - [Trial Balance](../../workbooks/financial-planning/finance-reports/trial-balance.md) will show the period amounts on each account including the year OB. Remember that Forecast will show a combination of actual and plan data for the periods.
+ - [Year and Month](../../workbooks/financial-planning/finance-reports/year-and-months.md) will show the OB, periods and CB (Closing Balance) for the selected year. Remember that OB and CB will only show for balance type reports.
 
 <br/>
 
 ## Content
 
-- [Generate and Edit Opening Balance](opening-balance/edit)
-- [Opening Balance Report](opening-balance/report)
+- [Generate and Edit Opening Balance](opening-balance/edit.md)
+- [Opening Balance Report](opening-balance/report.md)
 
 ## Related Pages
--  [OBDue Finance Settings](/planner/workbooks/financial-planning/finance-settings/obdue)
--  [Forecast Admin - control Forecast Opening Balance date](/planner/workbooks/administration/input-settings-and-administration/forecast-admin)
--  [Budget Admin - control Budget Opening Balance date](/planner/workbooks/administration/input-settings-and-administration/budget-admin)
+-  [OBDue Finance Settings](../../workbooks/financial-planning/finance-settings/obdue.md)
+-  [Forecast Admin - control Forecast Opening Balance date](../../workbooks/administration/input-settings-and-administration/forecast-admin.md)
+-  [Budget Admin - control Budget Opening Balance date](../../workbooks/administration/input-settings-and-administration/budget-admin.md)
 
 <br/>

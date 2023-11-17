@@ -11,11 +11,11 @@ This is the Personnel facts page that allows you to input personnel fact data as
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5 or later
 
-![](img/personnelfactsv5.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/personnelfactsv5.JPG)
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x
 
-![](img/personnelfacts.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/personnelfacts.JPG)
 
 <br/>
 The fact source data contain current FTE, monthly salary and other personnel data (subject to configuration) data per department/employee combinations:

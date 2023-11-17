@@ -10,7 +10,7 @@ This is the drivers view in which the driver(s) can be adjusted and the financia
 
 <br/>
 
-![](img/DriverBasedDrivers.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/DriverBasedDrivers.JPG)
 
 <br/>
 

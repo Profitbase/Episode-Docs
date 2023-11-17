@@ -51,9 +51,10 @@ Each graph line represents a reporting line enabled for trending in the selected
 
 Click on the bottom legend to toggle on/off graph lines. This is useful to enable to focus on certain series.
 
-The graph series appearing here is configured in the [Report Setup](\planner\workbooks\data-management\report-setup).
+The graph series appearing here is configured in the [Report Setup](../../data-management/report-setup.md).
 
 ## How to`s
 
 <br/>
-[Create new task](/planner/workbooks/process-and-tasks/tasks/create-edit-task)<br/>
+
+[Create new task](../../process-and-tasks/tasks/create-edit-task.md)<br/>

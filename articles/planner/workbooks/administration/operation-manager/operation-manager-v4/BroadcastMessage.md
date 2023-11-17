@@ -13,10 +13,10 @@ Write a message that will be displayed as a popup to anyone who has the selected
 This can be used, for example, to notify any user who has a page open, that some critical data has been changed.
 <br/>
 
-![](Img/BroadCastMessage.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/BroadCastMessage.png)
 <br/>
 
 Resulting message on the selected workbook(s):
 <br/>
 
-![](Img/ReceiveMessage.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/ReceiveMessage.png)

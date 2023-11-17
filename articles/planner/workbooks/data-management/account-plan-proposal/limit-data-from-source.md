@@ -15,6 +15,6 @@ This is done by un-checking the report lines for which the account module is not
 
 <br/>
 
-![](img/account-proposal-limit-data-from-source.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/account-proposal-limit-data-from-source.JPG)
 
 Un-check as appropriate and click the Save button.

@@ -10,7 +10,7 @@ This is the setup page for the loan module. On this page, you can configure sett
 A separate document deals with the setup, please refer to the "How to's" link below.<br/>
 <br/>
 
-![](img/LoanSetup.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/LoanSetup.JPG)
 
 ## How to`s
 

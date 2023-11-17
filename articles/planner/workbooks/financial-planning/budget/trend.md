@@ -9,7 +9,7 @@ pageIndex: 2
 This page enables graphical trending of the individual report lines in the Profit & Loss report.
 <br/>
 
-![](img/budget-trend.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/budget-trend.jpg)
 
 1. **Historical reference filter** <br/>
 Subject to configuration, you can select a historical dataset as a reference. This might be actuals last year, budget this year and so on.<br/>

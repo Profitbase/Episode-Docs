@@ -9,7 +9,7 @@ pageIndex: 2
 The purpose of this page is to allow for overriding the GM% per period. The page is accessed from the Sales details page of the Sales by GM module.
 <br/>
 
-![](img/gmovr.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/gmovr.JPG)
 
 Check the "Override" check-box to override the GM% per period. When checked, the periods are editable.
 Un-check the "Override" check-box to revert to a common GM% value for all periods. When un-checking, the current average GM% value (column "GM%") will be copied to all periods.

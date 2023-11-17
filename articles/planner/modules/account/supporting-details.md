@@ -8,7 +8,7 @@ pageIndex: 2
 This is the report page of the Account module and displays the transactions produced from the input given. The Account module comes in two versions, one for the Budget process and one for the Forecast process. The examples shown below refer to the Forecast version.
 <br/>
 
-![](img/Supportingdetails.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/Supportingdetails.JPG)
 
 ## Column Descriptions
 

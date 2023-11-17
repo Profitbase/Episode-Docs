@@ -9,7 +9,7 @@ pageIndex: 1
 This is the Profit and Loss overview page for the Budget process. It acts as a summary for the budgeting done so far as well as a navigation page to the various input modules used for detailing the budget. The summary is, with exception of the Comment column, read only.
 <br/>
 
-![](img/budget-summary.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/budget-summary.jpg)
 
 1. **The budget summary report** <br/>
 A Profit and Loss summary report that displays the budget done so far. It contains a set of profit and loss report lines (rows) that either sums a range of accounts or act as a calculation of other report lines. The profit and loss setup will vary from solution to solution. 
@@ -27,7 +27,7 @@ Launch drop down selector for launching specific input modules. When selecting a
 
 
 ## Video
-[Introduction](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/BudgetSummary.mp4)
+![Introduction](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/BudgetSummary.mp4)
 
 <br/>
 
@@ -51,11 +51,11 @@ Input column for commenting a specific report line. To save the comments, click 
 
 <br/>
 
-[Create new task](/planner/workbooks/process-and-tasks/tasks/create-edit-task)<br/>
+[Create new task](../../process-and-tasks/tasks/create-edit-task.md)<br/>
 
 > **Input Modules**<br/>
-> [How to budget sales](/planner/modules/sales-gm/sales-gm-details)<br/>
-> [How to budget personnel](/planner/modules/personnel/personnel-details)<br/>
-> [How to budget on accounts](/planner/modules/account/account-details)<br/>
+> [How to budget sales](../../../modules/sales-gm/sales-gm-details.md)<br/>
+> [How to budget personnel](../../../modules/personnel/personnel-details.md)<br/>
+> [How to budget on accounts](../../../modules/account/account-details.md)<br/>
 
 

@@ -21,7 +21,7 @@ Some tasks will be automatically pushed to users from the process tasks, which a
 Other tasks can be created and assigned to users on an "ad-hoc" basis.
 
 ## Related Pages
-- [My tasks](/planner/workbooks/process-and-tasks/tasks/my-tasks)
-- [All tasks](/planner/workbooks/process-and-tasks/tasks/all-tasks)
-- [Statistics](/planner/workbooks/process-and-tasks/tasks/statistics)
-- [Create or edit task](/planner/workbooks/process-and-tasks/tasks/create-edit-task)
+- [My tasks](../../workbooks/process-and-tasks/tasks/my-tasks.md)
+- [All tasks](../../workbooks/process-and-tasks/tasks/all-tasks.md)
+- [Statistics](../../workbooks/process-and-tasks/tasks/statistics.md)
+- [Create or edit task](../../workbooks/process-and-tasks/tasks/create-edit-task.md)

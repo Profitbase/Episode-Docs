@@ -10,7 +10,7 @@ This is the input module in which to plan loans.
 
 <br/>
 
-![](img/loan.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/loan.jpg)
 
 1. **The loan description** <br/>
 Each loan should have a textual description so that they are identifiable. The Text column contains this description.<br/>
@@ -32,7 +32,7 @@ Select the appropriate tab to view the report or trend therein.
 
 
 ## Video
-[Introduction - Input](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/Loan.mp4)<br/>
+![Introduction - Input](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/Loan.mp4)<br/>
 
 <br/>
 
@@ -80,7 +80,7 @@ Input field enabling textual comments to be associated with the input for a spec
 
 <br/>
 
-> [Create new task](/planner/workbooks/process-and-tasks/tasks/create-edit-task)<br/>
+> [Create new task](../../process-and-tasks/tasks/create-edit-task.md)<br/>
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.4 or later
 > [Configure the loan module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.4/Planner%20Loan%20module.pdf)<br/>

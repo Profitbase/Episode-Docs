@@ -7,10 +7,10 @@ pageIndex: 3
 ## Overview
 
 Create or modify events. 
-The schedule is defined on [Rec. Event Calendar](rec-event-calendar)
+The schedule is defined on [Rec. Event Calendar](rec-event-calendar.md)
 <br/>
 
-![](Img/RecEvent.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/RecEvent.png)
 
 ## Column Descriptions
 

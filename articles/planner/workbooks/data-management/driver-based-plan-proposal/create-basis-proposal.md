@@ -12,7 +12,7 @@ This is the main screen for defining the basis proposal. A quick guide to the pr
 
 <br/>
 
-![](img/driver-based-proposal-create-basis.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/driver-based-proposal-create-basis.JPG)
 
 Although there are many options, the only mandatory step is to define which source dataset(s) constitute the proposal. 
 
@@ -28,7 +28,7 @@ This screen defines how the plan will be pre-filled with data from the source da
 
 <br/>
 
-![](img/driver-based-proposal-map-source-dataset.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/driver-based-proposal-map-source-dataset.JPG)
 
 
 Now, in more complex situations, different parts of the plan (as in different parts of the organization and/or different time periods within the plan's total time frame) may take their proposal from different source datasets and also different source measures.
@@ -37,7 +37,7 @@ This can be achieved by detailing the "Map source datasets to plan" table with m
 
 <br/>
 
-![](img/driver-based-proposal-map-source-dataset2.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/driver-based-proposal-map-source-dataset2.JPG)
 
 
 #### Columns

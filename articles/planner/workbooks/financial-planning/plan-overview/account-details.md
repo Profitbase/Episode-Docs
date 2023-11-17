@@ -10,7 +10,7 @@ This page displays plan details per account for a given report line.<br/>
 The report will typically include transactions produced by multiple input modules.
 <br/>
 
-![](img/plan-overview-account-details.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/plan-overview-account-details.JPG)
 
 <br/>
 

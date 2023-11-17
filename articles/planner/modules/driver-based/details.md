@@ -10,7 +10,7 @@ This is the the driver based detail view in which the complete model for a given
 
 <br/>
 
-![](img/DriverBasedDetails.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/DriverBasedDetails.JPG)
 
 1. **Periods button** <br/>
 The Periods button toggles the input mode between a year-total input and a periodic input. Any year-total input will automatically be distributed to the periods. Input made to periods will automatically be summed to the year-total.

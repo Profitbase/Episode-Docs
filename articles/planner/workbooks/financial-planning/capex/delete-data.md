@@ -10,7 +10,7 @@ This page allows you to delete investment data for a given year.<br/>
 This will typically be a function that you might do for historical years, i.e. in order to delete investments that are no longer relevant.
 <br/>
 
-![](img/capex-delete-data.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/capex-delete-data.jpg)
 
 1. **Dataset filter** <br/>
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x<br/>

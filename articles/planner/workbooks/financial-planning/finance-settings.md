@@ -17,51 +17,51 @@ The picture below is an example that will help explain how settings is organized
 <br/>
 
 ## Related Pages
-- [VAT](/planner/workbooks/financial-planning/finance-settings/vat)<br/>
+- [VAT](../../workbooks/financial-planning/finance-settings/vat.md)<br/>
 This page contains VAT settings for the different rates and when VAT payment is due.
 
-- [Payroll](/planner/workbooks/financial-planning/finance-settings/payroll)<br/>
+- [Payroll](../../workbooks/financial-planning/finance-settings/payroll.md)<br/>
 This page contains settings related to payroll.
 
-- [Sales](/planner/workbooks/financial-planning/finance-settings/sales)<br/>
+- [Sales](../../workbooks/financial-planning/finance-settings/sales.md)<br/>
 This page contains settings related to sales.
 
-- [Expense](/planner/workbooks/financial-planning/finance-settings/expense)<br/>
+- [Expense](../../workbooks/financial-planning/finance-settings/expense.md)<br/>
 This page contains settings related to expenses.
 
-- [Purchase](/planner/workbooks/financial-planning/finance-settings/purchase)<br/>
+- [Purchase](../../workbooks/financial-planning/finance-settings/purchase.md)<br/>
 This page contains settings related to purchase of goods for sales and/or production.
 
-- [Fixed Assets](/planner/workbooks/financial-planning/finance-settings/fixed-assets)<br/>
+- [Fixed Assets](../../workbooks/financial-planning/finance-settings/fixed-assets.md)<br/>
 This page contains settings and input for fixed assets.
 
-- [OBDue](/planner/workbooks/financial-planning/finance-settings/obdue)<br/>
+- [OBDue](../../workbooks/financial-planning/finance-settings/obdue.md)<br/>
 This page contains settings for opening balance and how accounts receivable and accounts payable will be paid.
 
-- [Setup](/planner/workbooks/financial-planning/finance-settings/setup)<br/>
+- [Setup](../../workbooks/financial-planning/finance-settings/setup.md)<br/>
 This page contains system settings for the solution.
 
-- [Account Usage](/planner/workbooks/financial-planning/finance-settings/account-usage)<br/>
+- [Account Usage](../../workbooks/financial-planning/finance-settings/account-usage.md)<br/>
 This is a page containing a report that allows you to get an overview on where different accounts are used.
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.2 or later.
 
-- [Advanced](/planner/workbooks/financial-planning/finance-settings/advanced)<br/>
+- [Advanced](../../workbooks/financial-planning/finance-settings/advanced.md)<br/>
 This page allows you to create advanced (debit/credit) postings.
 
-- [Audit](/planner/workbooks/financial-planning/finance-settings/audit)<br/>
+- [Audit](../../workbooks/financial-planning/finance-settings/audit.md)<br/>
 This page allows you to perform a data quality audit.
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.4.0 or later.
 
-- [Allocation](/planner/workbooks/financial-planning/finance-settings/allocation)<br/>
+- [Allocation](../../workbooks/financial-planning/finance-settings/allocation.md)<br/>
 This page allows you to create, maintain and check allocation rules for allocating cost between givers and bearers.
 
 ## Concepts
 
 Often settings are used for (but not limited to):
 - Tell which accounts to be used in a certain context determined by settings tables (e.g. "Personnel: Accounts" in picture above) and leftmost columns in the table and FromDate (if present)
-- Define payment terms (e.g. see [VAT](finance-settings/vat) and "Due Term" table)
+- Define payment terms (e.g. see [VAT](finance-settings/vat.md) and "Due Term" table)
 - Rates to be used in general ledger calculation (e.g. see "Pension Employer" in picture above)
 
 All settings tables contain a set of keys where most keys allow for using wildcard (the * character). The key columns are always placed to the left in the table and in general all columns to the left of FromDate are key columns. The key columns together with FromDate decide which settings row are applicable whenever used.
@@ -80,7 +80,7 @@ Note that you can make it very complicated and create a mess if you are using a 
 <br/>
 
 ## See also
--  [Opening Balance](/planner/workbooks/financial-planning/opening--balance)<br/>
+-  [Opening Balance](../../workbooks/financial-planning/opening-balance.md)<br/>
 Adjust opening balance for Forecast and Budget.
 
 <br/>

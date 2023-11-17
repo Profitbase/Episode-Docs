@@ -11,7 +11,7 @@ pageIndex: 1
 This page contains a collection of central settings for the Personnel and Account input modules, such as distribution and spread keys, setup for auto transactions and so on.<br/>
 <br/>
 
-![](img/input-settings-and-administration-setup.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/input-settings-and-administration-setup.JPG)
 
 Please refer to the relevant module document in the "How to's" section below for details.
 

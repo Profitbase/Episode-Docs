@@ -9,7 +9,7 @@ pageIndex: 2
 This is the input page for altering the FTE (Full-Time Equivalents) per period for the employee/employee category in question.
 <br/>
 
-![](img/fte.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/fte.JPG)
 
 When changes have been made, click the "Save" button. This will update the new average FTE in the Personnel details page from which the FTE page (this page) was triggered from.<br/>
 To discard any changes made or to close the page, click the "Close" button.  

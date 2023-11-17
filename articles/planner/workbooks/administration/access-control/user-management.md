@@ -23,11 +23,11 @@ When you "add" users, you connect to the identity provider that the system is se
 5. Click "Publish" (optional, this will apply the changes immediately)
 <br/>
 
-![](Img/add_user.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/add_user.png)
 
 <br/>
 
-![](Img/add_user2.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/add_user2.png)
 
 <br/>
 
@@ -42,6 +42,6 @@ If the email reported by Azure is wrong, you can override this field using the [
 3. Click the + in the "User groups" section to find and select the group(s) to assign to the user
 4. Click "Add"
 
-![](Img/add_user_group.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/add_user_group.png)
 
 

@@ -15,4 +15,4 @@ pageIndex: 3
 
 <br/>
 
-![](Img/workbook_permissions.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/workbook_permissions.png)

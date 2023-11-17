@@ -10,7 +10,7 @@ Define the dates for the recurring events.
 
 <br/>
 
-![](Img/RecEventCalendar.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/RecEventCalendar.png)
 
 <br/>
 

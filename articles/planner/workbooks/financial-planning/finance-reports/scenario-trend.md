@@ -62,4 +62,5 @@ Click on the bottom legend to toggle on/off graph lines. This is useful to enabl
 ## How to`s
 
 <br/>
-[Create new task](/planner/workbooks/process-and-tasks/tasks/create-edit-task)<br/>
+
+[Create new task](../../process-and-tasks/tasks/create-edit-task.md)<br/>

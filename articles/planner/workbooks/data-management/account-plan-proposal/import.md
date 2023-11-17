@@ -16,6 +16,6 @@ Note also that, by default, proposal data is added to the existing data in the m
 
 <br/>
 
-![](img/account-proposal-import.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/account-proposal-import.JPG)
 
 Consider the organizational scope of the import and whether or not to replace existing module data. Click the Import button to import the proposal to the input module. Click the Cancel button to cancel the operation.

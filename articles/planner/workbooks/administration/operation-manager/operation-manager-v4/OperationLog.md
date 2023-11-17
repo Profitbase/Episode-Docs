@@ -11,7 +11,7 @@ pageIndex: 6
 
 The execution history of an operation can be found here:
 
-![](Img/OpenLog.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/OpenLog.png)
 
 This displays the start and end time for every execution.
 **Job status** indicates whether it succeeded or failed.
@@ -21,13 +21,13 @@ This is especially useful when the job has failed, and you want to see the syste
 
 Example of failed operation:
 
-![](Img/OperationError1.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/OperationError1.png)
 
 Let's open the log and find the detailed error information:
 
 Open the "Details" link in the log:
 
-![](Img/OperationError2.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/OperationError2.png)
 
 A system administrator can find out why the operation has failed using the log.
 In this example, the error was a missing parameter that was not provided to the script.

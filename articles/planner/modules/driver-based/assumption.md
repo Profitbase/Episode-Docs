@@ -10,7 +10,7 @@ Display the assumption values for a measure of that type, i.e. a lookup type of 
 Subject to configuration, you may override the central (default) value and revert to use the central (default) value.<br/>
 <br/>
 
-![](img/assumption.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/assumption.JPG)
 
 To override a central (default) value, click the "Override" button (availability subject to configuration).<br/>
 To revert from an override to a default value, click the "Use default" button.

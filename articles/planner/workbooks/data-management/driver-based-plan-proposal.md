@@ -25,8 +25,8 @@ The process of defining such a proposal contains of two steps:
 <br/>
 
 ## Related Pages
--  [1. Create basis proposal](/planner/workbooks/data-management/driver-based-plan-proposal/create-basis-proposal)
--  [2. Adjust basis proposal and import](/planner/workbooks/data-management/driver-based-plan-proposal/adjust-basis-proposal-and-import)
+-  [1. Create basis proposal](driver-based-plan-proposal/create-basis-proposal.md)
+-  [2. Adjust basis proposal and import](driver-based-plan-proposal/adjust-basis-proposal-and-import.md)
 
 <br/>
 

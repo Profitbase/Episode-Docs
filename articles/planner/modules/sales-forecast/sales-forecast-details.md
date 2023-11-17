@@ -10,7 +10,7 @@ This is the the Sales detail view in which the complete model for a given dimens
 
 <br/>
 
-![](img/SalesForecastDetailView.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/SalesForecastDetailView.jpg)
 
 1. **Periods button** <br/>
 The Periods button toggles the input mode between a year-total input and a periodic input. Any year-total input will automatically be distributed to the periods. Input made to periods will automatically be summed to the year-total.
@@ -22,7 +22,7 @@ The year filter allows you to select the year to plan for. Note that the years a
 
 
 ## Video
-[Introduction](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/ForecastSalesInput.mp4)<br/>
+![Introduction](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/ForecastSalesInput.mp4)<br/>
 
 <br/>
 

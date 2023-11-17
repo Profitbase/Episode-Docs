@@ -12,7 +12,7 @@ This help page is common to managing the data for the Product, Market, Supplier,
 The purpose of these pages is to maintain the data content of these dimension. Note that, subject to configuration, one or more of the dimensions may be sourced externally and/or not be in use.
 <br/>
 
-![](img/product.PNG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/product.PNG)
 
 The page consists of a data area in which to maintain dimension data and a visual representation of the dimension and its hierarchy. These dimensions will by default comprise of a group level, a leaf (lowest) level id and a leaf (lowest) level name.
 

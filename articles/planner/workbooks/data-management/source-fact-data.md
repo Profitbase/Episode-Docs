@@ -12,8 +12,8 @@ This is the workbook to use for entering source fact data for the Personnel and 
 <br/>
 
 ## Related Pages
--  [Personnel facts](/planner/workbooks/data-management/source-fact-data/personnel-facts)
--  [Sales forecast facts](/planner/workbooks/data-management/source-fact-data/sales-forecast-facts)
+-  [Personnel facts](source-fact-data/personnel-facts.md)
+-  [Sales forecast facts](source-fact-data/sales-forecast-facts.md)
 
 <br/>
 

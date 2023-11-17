@@ -12,7 +12,7 @@ For long-term (beyond next year) forecasting, the level of detail is less – in
 The detailed forecast for next year is used as a basis for scaling the long-term forecast based on the change in FTE and annual salary raise. The periodic distribution for next year is replicated for the long-term forecast.<br/>
 <br/>
 
-![](img/FTElongterm.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/FTElongterm.JPG)
 
 When changes have been made, click the "Save" button. This will update Personnel details page from which the FTE long term page (this page) was triggered from.<br/>
 To discard any changes made or to close the page, click the "Close" button.

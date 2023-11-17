@@ -10,7 +10,7 @@ pageIndex: 1
 This is the Profit and Loss overview page for the plan process. It acts as a summary for the planning done so far as well as a navigation page to the various input modules used for detailing the plan. The summary is, with exception of the Comment column, read only.
 <br/>
 
-![](img/plan-overview-summary.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/plan-overview-summary.JPG)
 
 1. **The summary report** <br/>
 A Profit and Loss summary report that displays the plan input done so far. It contains a set of profit and loss report lines (rows) that either sums a range of accounts or act as a calculation of other report lines. The profit and loss setup will vary from solution to solution.
@@ -58,12 +58,12 @@ Comment-icon and display-column for the current comment for a specific report li
 
 <br/>
 
-[Create new task](/planner/workbooks/process-and-tasks/tasks/create-edit-task)<br/>
+[Create new task](../../process-and-tasks/tasks/create-edit-task.md)<br/>
 
 > **Input Modules**<br/>
-> [How to plan driver based](/planner/modules/driver-based/drivers)<br/>
-> [How to plan personnel](/planner/modules/personnel/personnel-details)<br/>
-> [How to plan on accounts](/planner/modules/account/account-details)<br/>
+> [How to plan driver based](../../../modules/driver-based/drivers.md)<br/>
+> [How to plan personnel](../../../modules/personnel/personnel-details.md)<br/>
+> [How to plan on accounts](../../../modules/account/account-details.md)<br/>
 
 
 

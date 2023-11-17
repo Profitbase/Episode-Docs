@@ -9,7 +9,7 @@ pageIndex: 1
 This is the input page of the Account module and is where any detailed planning per account takes place.
 <br/>
 
-![](img/Account.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/Account.JPG)
 
 1. **Back button** <br/>
 This button is active when the module is launched from the Budget or Forecast summary (versions 4.x) and Plan overview (from version 5) workbook. Clicking the Back button will launch the summary workbook in the same browser window. If there are unsaved changes made in the Account module, a prompt will appear requesting confirmation.
@@ -42,7 +42,7 @@ In the left section, the mandatory Department filter is displayed. The content o
 
 
 ## Video
-[Introduction](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/AccountInput.mp4)
+![Introduction](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/AccountInput.mp4)
 
 <br/>
 

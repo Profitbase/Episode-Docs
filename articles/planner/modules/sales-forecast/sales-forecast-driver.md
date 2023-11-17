@@ -10,7 +10,7 @@ This is the Sales main driver view in which the driver can be adjusted and the f
 
 <br/>
 
-![](img/SalesForecast.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/SalesForecast.JPG)
 
 1. **Back button** <br/>
 This button is active when the module is launched from the Budget or Forecast summary workbook. Clicking the Back button will launch the summary workbook in the same browser window. If there are unsaved changes made in the Sales forecast module, a prompt will appear requesting confirmation.
@@ -31,7 +31,7 @@ Note that for forecasting, the current year (this year) will consist of a set of
 
 
 ## Video
-[Introduction](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/ForecastSalesInput.mp4)<br/>
+![Introduction](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/ForecastSalesInput.mp4)<br/>
 
 <br/>
 

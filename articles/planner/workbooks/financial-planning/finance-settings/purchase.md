@@ -9,7 +9,7 @@ pageIndex: 5
 This page contains settings related to purchase of goods for sales or production.
 <br/>
 
-![](img/finance-settings-purchase.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/finance-settings-purchase.jpg)
 
 1. **Selecting Setting Table**<br/>The left area list the different setting tables available for the page. Ticking here will turn on and off the table.
 2. **Tables View**<br/>The right area will display the selected tables and allows users to edit content.

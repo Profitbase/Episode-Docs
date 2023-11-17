@@ -10,7 +10,7 @@ This is a simple input tool for maintaining historical data for the driver based
 
 <br/>
 
-![](img/salesfact.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/salesfact.JPG)
 
 Select a value in the “Dataset” and “Measure” filter at the top and click the “Refresh” button to enable the save button.
 

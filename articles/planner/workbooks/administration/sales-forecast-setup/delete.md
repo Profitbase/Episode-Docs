@@ -9,7 +9,7 @@ pageIndex: 8
 This page allows you to delete the model data or the complete model, including data and its configuration and settings.
 <br/>
 
-![](img/delete-model.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/delete-model.JPG)
 
 In the dialogue, select from the following options: 
 

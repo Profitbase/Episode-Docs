@@ -11,7 +11,7 @@ This is the input module in which planned investments are input.
 Only investments input for periods post the start of plan will be considered in the plan.
 <br/>
 
-![](img/capex-overview.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/capex-overview.jpg)
 
 1. **Dataset filter** <br/>
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x<br/>
@@ -42,7 +42,7 @@ Trend displaying the cash flow of the investments. Note the two buttons in the u
 
 
 ## Video
-[Introduction - Input](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/CapEx.mp4)<br/>
+![Introduction - Input](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/CapEx.mp4)<br/>
 
 <br/>
 

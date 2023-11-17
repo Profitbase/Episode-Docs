@@ -12,12 +12,12 @@ From the [Execute Data Admin Tasks](execute-data-admin-tasks.md) page, you can e
 
 <br/>
 
-![](Img/AddOperation.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/AddOperation.png)
 
-![](Img/EditOperation.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/EditOperation.png)
 
 1. **Top section - Operation information**<br/>
-![](Img/AddEditOperation_operationInfo.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/AddEditOperation_operationInfo.png)
 
 - **Category:** Select a category from the list.
 - **OperationID:** Unique ID for the operation. Form validation will not allow duplicate names.
@@ -27,7 +27,7 @@ From the [Execute Data Admin Tasks](execute-data-admin-tasks.md) page, you can e
 
 2. **Add Step**<br/>
 
-![](Img/AddEditOperation_addStep.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/AddEditOperation_addStep.png)
 
 - **Select Step type:** DataFlow or Script.
 - **Select step**: Select the step to add to the operation. This list is filtered by the selected type (Script or DataFlow).
@@ -40,7 +40,7 @@ If the list is very long, you can type part of the name in the textbox "Type her
 
 3. **Steps**
 
-![](Img/AddEditOperation_Steps.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/AddEditOperation_Steps.png)
 
 - **Enabled:** Checkbox to disable or enable the step.
 - **Step#:** The ordering of steps.
@@ -50,7 +50,7 @@ If the list is very long, you can type part of the name in the textbox "Type her
 
 4. **Buttons**
 
-![](Img/AddEditOperation_Buttons.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/AddEditOperation_Buttons.png)
 
 - **Delete:** Deletes the entire operation. A warning will pop up asking for confirmation. There is no "undo".
 - **Save:** Saves the operation (add or update).

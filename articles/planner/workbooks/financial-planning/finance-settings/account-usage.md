@@ -14,7 +14,7 @@ Instructions for use:
 2. Click on settings table in the "Settings Name" column. For example for Account = "5010" and Settings Name = "PensionEmployerPct" to bring up the display of 3 records in Settings Details.
 <br/>
 
-![](img/finance-settings-account-usage.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/finance-settings-account-usage.jpg)
 
 1. **Account Usage**<br/>
 This table list all accounts in all settings tables. The Settings Name column provide a drilldown to see content for this account and setting table.

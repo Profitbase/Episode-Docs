@@ -10,7 +10,7 @@ Measures that allow input may have a central (default) distribution key associat
 The fallback to a central key is an even distribution.<br/>
 <br/>
 
-![](img/distribution.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/distribution.JPG)
 
 If periodic values are set specifically and you would like to revert to the default key, click the "Use default" button.<br/>
 To close, click "Close".<br/>

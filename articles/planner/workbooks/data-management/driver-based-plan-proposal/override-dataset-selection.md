@@ -14,7 +14,7 @@ Make sure to make a selection in the organizational dimension filter, as the det
 
 <br/>
 
-![](img/driver-based-proposal-override-dataset-mapping.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/driver-based-proposal-override-dataset-mapping.JPG)
 
 For each department and plan month, the source department, from (source) date, source dataset or source measure can be set.
 

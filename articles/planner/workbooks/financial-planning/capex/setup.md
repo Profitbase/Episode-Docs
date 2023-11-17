@@ -10,7 +10,7 @@ This is the setup page for the loan module. On this page, you can configure sett
 A separate document deals with the setup, please refer to the "How to's" link below.<br/>
 <br/>
 
-![](img/CapExSetup.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/CapExSetup.JPG)
 
 ## Descriptions
 
@@ -83,6 +83,7 @@ Free text string to help document settings.
 ## How to`s
 
 <br/>
+
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.2.4 or later
 > [Configure the CapEx module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2.4/Planner%20CapEx%20module.pdf)<br/>
 

@@ -16,7 +16,7 @@ A mechanism has been set up to prevent any of these operations to run simultaneo
 
 1. **Operations list**<br/>
 
-![](Img/Operations1.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/Operations1.png)
 
 - Click an operation in the list on the left pane to view the details on the right pane.
 - Operations that have been scheduled will have a clock and arrow icon.
@@ -25,7 +25,7 @@ A mechanism has been set up to prevent any of these operations to run simultaneo
 
 2. **Top section**<br/>
 
-![](Img/OperationsTopSection.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/OperationsTopSection.png)
 
 - Filter the operation list by category, to find the operation you are looking for faster.<br/>
 - The "Add operation" button brings up the form used to [Add/Edit operations](AddEditOperation.md).<br/>
@@ -33,7 +33,7 @@ A mechanism has been set up to prevent any of these operations to run simultaneo
 
 3. **Right section**<br/>
 
-![](Img/OperationDetails.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/OperationDetails.png)
 
 After selecting an operation in the list, its full details are displayed on the right pane, as seen in the example above.
 
@@ -41,7 +41,7 @@ After selecting an operation in the list, its full details are displayed on the 
 <br/>
 When the execution is complete, the spinner icon, top right of the popup, goes away.
 
-![](Img/OperationRunning.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/OperationRunning.png)
 
 <br/>
 

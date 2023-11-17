@@ -27,7 +27,7 @@ When you "add" users, you connect to the identity provider that the system is se
 
 4. Click "Ok"
 
-![](Img/add_group.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/add_group.png)
 
 ## Add Users to groups
 
@@ -36,4 +36,4 @@ When you "add" users, you connect to the identity provider that the system is se
 3. Search for user(s), select them, then click "Add"
 <br/>
 
-![](Img/add_user_to_group.png)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/add_user_to_group.png)

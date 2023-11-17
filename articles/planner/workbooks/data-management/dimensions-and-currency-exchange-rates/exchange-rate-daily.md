@@ -9,7 +9,7 @@ pageIndex: 1
 This page is to manage exchange rates.
 <br/>
 
-![](img/dimensions-exchange-rate-daily.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/dimensions-exchange-rate-daily.jpg)
 
 
 1. **Changes and Overrides to Daily Exchange Rates**<br/>
