@@ -5,9 +5,9 @@ folderOnly: "false"
 pageIndex: 1
 ---
 
-## About
+## About Profitbase Planner
 
-This is the help site for Profitbase Planner, a financial planning tool covering the annual budgeting and rolling forecast processes.
+Profitbase Planner is a financial planning tool covering the annual budgeting and rolling forecast processes.
 
 This site contains the help needed for different users to use Profitbase Planner.
 

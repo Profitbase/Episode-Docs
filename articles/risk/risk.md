@@ -5,9 +5,9 @@ folderOnly: "false"
 pageIndex: 2
 ---
 
-## About
+## About Profitbase Risk
 
-This is the help site for Profitbase Risk, a flexible and reliable automated risk management software program that businesses can trust to identify, manage, and mitigate risk and safeguard their organization, assets, and reputation.
+Profitbase Risk is a flexible and reliable automated risk management software program that businesses can trust to identify, manage, and mitigate risk and safeguard their organization, assets, and reputation.
 
 This site contains the user guides needed to accomplish key tasks in Profitbase Risk.
 
