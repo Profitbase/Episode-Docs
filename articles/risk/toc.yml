@@ -1,0 +1,22 @@
+- name: Overview
+  href: risk.md
+- name: Getting Started
+  href: getting-started.md
+- name: Workbooks
+  href: workbooks.md
+  items:
+  - name: Risks
+    href: workbooks/risks.md
+    items:
+    - name: Create New Risk
+      href: workbooks/risks/create-new-risk.md
+    - name: Add treatment plan
+      href: workbooks/risks/treatment-plan.md
+  - name: Risk submission
+    href: workbooks/risk-submission.md
+  - name: Group risks
+    href: workbooks/group-risks.md
+  - name: Risk Reports
+    href: workbooks/risk-reports.md
+  - name: Risk Administration
+    href: workbooks/risk-admin.md

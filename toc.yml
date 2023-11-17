@@ -7,9 +7,9 @@
   - name: Flow
     href: articles/flow/toc.yml
   - name: Budgeting and forecasting
-    href: https://documentation.support.profitbase.com/framework/planner
+    href: articles/planner/toc.yml
   - name: Risk
-    href: https://documentation.support.profitbase.com/framework/risk
+    href: articles/risk/toc.yml
   - name: Profitbase @
     href: https://www.profitbase.no/
   - name: Blog
