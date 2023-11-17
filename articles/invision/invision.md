@@ -1,8 +1,5 @@
 
 
-![InVision](https://profitbasedocs.blob.core.windows.net/imagestitlesites/Docu3.png "InVision")
-
-
 
 ### Resources
 
