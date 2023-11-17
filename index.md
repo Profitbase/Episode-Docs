@@ -1,4 +1,3 @@
-![doku](https://profitbasedocs.blob.core.windows.net/imagestitlesites/Docu.png)
 
 INDEX
 

@@ -1,4 +1,4 @@
-![doku](https://profitbasedocs.blob.core.windows.net/imagestitlesites/Docu4.png)
+
 
 #### What is Profitbase Flow
 
