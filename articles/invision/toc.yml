@@ -155,6 +155,8 @@
     - name: Change log
       href: changelog/index.md
       items:
+      - name: Change log 2023.7
+        href: changelog/changelog23_7.md
       - name: Change log 2023.6
         href: changelog/changelog23_6.md
       - name: Change log 2023.5
