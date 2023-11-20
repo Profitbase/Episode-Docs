@@ -6,7 +6,7 @@ pageIndex: 1
 ---
 
 
-## Overview
+### Overview
 This is the Profit and Loss overview page for the plan process. It acts as a summary for the planning done so far as well as a navigation page to the various input modules used for detailing the plan. The summary is, with exception of the Comment column, read only.
 <br/>
 
@@ -28,7 +28,7 @@ In the rightmost section of the workbook, an expandable section contains additio
 <br/>
 
 
-## Column Descriptions
+### Column Descriptions
 
 - **Report**<br/>
 By clicking the Report column (one of the report lines) or the link icon to its left, the input module associated with that report line will launch and replace the summary page. This would be the normal procedure when you want to view input details or perform detailed input to that report line. The input module can also be launched in a new window by right-clicking the link symbol and selecting the "Open in new window" option
@@ -54,7 +54,7 @@ Long term plan, that are the year totals of plan input for years beyond next yea
 - **Comment** <br/>
 Comment-icon and display-column for the current comment for a specific report line. To edit the comments, click the Comments icon and enter the comment in the Comments pop-up. Click the "Save" button in the Comments pop-up to save the changes. Note that comments are sensitive to the context selected, i.e. the selection mad in the organizational and additional filters. Comments can be added at any level in the organizational structure.
 
-## How to`s
+### How to`s
 
 <br/>
 

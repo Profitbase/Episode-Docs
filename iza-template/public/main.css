@@ -36,16 +36,17 @@ article {
     
 
 .custom-link {
-    color: #00378a; /* Set link color to black */
+    color: #135075; /* Set link color to black */
     font-weight: bold; /* Make the link text bold */
     font-size: large;
+    text-transform: uppercase;
     text-decoration: none; /* Remove underlining from the link text */
 }
 
 
 /* Apply your custom-link styles here for the new section */
 .custom-link-mini {
-    color: blue; 
+    color: #135075; 
      font-weight: lighter; 
     text-decoration: underline;  
 }

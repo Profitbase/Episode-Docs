@@ -7,7 +7,7 @@ pageIndex: 2
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5 or later.
 
-## Overview
+### Overview
 This report provides a period view for selected Report showing all periods of the selected year. For Profit & Loss type of reports, a total sum over periods for the year is provided. For Balance Sheet type reports, an Opening Balance (OB) and Closing Balance (CB) or Total sum over periods are provided depending on Timefunction selection (see details below).
 
 See an example of this report in picture below.
@@ -37,7 +37,7 @@ Click on "Options" on the right edge of the window, you can select additional co
 5. **Right Section - Lower** <br/>
 Click on "Options" on the right edge of the window, at the bottom you can select and additional filters to be applied when extracting data. You can see filters and values applied on the top section next to the label "Filter options:". Filters available here is subject to configuration settings.
 
-## Filter Descriptions
+### Filter Descriptions
 Filter selections available apart from Department are:
 
 - **Report**<br/>This allows for selecting between different report configurations
@@ -48,7 +48,7 @@ Filter selections available apart from Department are:
 - **Timefunction**<br/>Selecting Month will show the numbers for each month. Selecting Year-to-date will show the sum of this and preceding periods including OB for balance type reports. To see balanced you must use Year-to-date.
 - **Currency**<br/>Choose which currency to the used in the report. Average rate for each period is used for currency conversion.
 
-## Column Descriptions
+### Column Descriptions
 The number columns explained:
 
 - **MMM YY**<br/> These 12 columns contain numbers from the selected dataset and will show period values (when Timefunction = Month) and balance / year-to-date values (when Timefunction = Year-to-date).
@@ -60,7 +60,7 @@ From Planner versions after 5.1.3, the column header is different (showing Total
 
 You can select additional columns under "Options". These will be dataset and other dimensions that may be used in the report. Available columns are subject to configuration settings for you solution.
 
-## How to`s
+### How to`s
 
 <br/>
 

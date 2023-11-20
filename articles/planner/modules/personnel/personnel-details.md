@@ -4,7 +4,7 @@ metaKeys: ""
 folderOnly: "false"
 pageIndex: 1
 ---
-## Overview
+### Overview
 This is the the Personnel input module and is where any detailed planning per employee/employee category takes place.
 
 The Personnel module uses a driver-based principle in which FTEs (Full Time Equivalents) and HCs (Headcounts) are the drivers.
@@ -51,12 +51,12 @@ In the left section, the mandatory Department filter is displayed. The content o
 <br/>
 
 
-## Video
+### Video
 ![Introduction](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/PersonnelInput.mp4)<br/>
 
 <br/>
 
-## Column Descriptions
+### Column Descriptions
 
 Note that some of the columns may have headings that differ from the example depending on the solution configuration and the year selected if in a forecast context. For columns of this kind, a reference to the image example shown is mentioned in the below description.
 
@@ -111,7 +111,7 @@ Input field enabling textual comments to be associated with the input for a spec
 
 <br/>
 
-## How to`s
+### How to`s
 
 <br/>
 

@@ -7,7 +7,7 @@ pageIndex: 3
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x, 5.0 or 5.1
 
-## Overview
+### Overview
 Here you can manage the Legal Entity dimension attributes including adding new members.
 <br/>
 
@@ -25,7 +25,7 @@ Often legal entities are imported from an external source. In this case the defa
 - External source will have priority for Legal entity description and will add new legal entities.
 - Local edits will have priority for hierarchical information contained in the Hierarchy level 1-3 (see below). Local edits can also add legal entities and delete legal entities.
 
-## Descriptions
+### Descriptions
 
 The Legal Entity dimension is a mandatory dimension in Profitbase Planner.
 
@@ -52,7 +52,7 @@ In the example, Legal entity Profitways is padded - repeated - to Hierarchy leve
 
 The number of hierarchical levels can be changed but has to be done using the Profitbase InVision designer.
 
-#### Column descriptions:
+#### Column Descriptions:
 
 Columns:
 

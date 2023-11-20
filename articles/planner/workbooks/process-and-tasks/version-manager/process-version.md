@@ -4,13 +4,13 @@ metaKeys: ""
 folderOnly: "false"
 pageIndex: 1
 ---
-## Overview
+###  Overview
 This is where new work processes and their associated versions area created.
 <br/>
 
 ![](https://profitbasedocs.blob.core.windows.net/plannerimages/processes-and-versions.JPG)
 
-## New work process
+### New work process
 
 All versions must belong to a work process, for example Budget, Forecast or similar.
 
@@ -32,7 +32,7 @@ In the following dialogue, enter the work process name and click the Create butt
 
 <br/>
 
-### Work process content
+#### Work process content
 
 <br/>
 
@@ -56,7 +56,7 @@ Once checked, click the Save button.
 
 <br/>
 
-### Work process administrator access
+#### Work process administrator access
 
 <br/>
 
@@ -70,7 +70,7 @@ Consider if additional users should be granted process administrator access. Thi
 
 ![](https://profitbasedocs.blob.core.windows.net/plannerimages/processes-and-versions-process-administrator-access.JPG)
 
-## Create new version
+### Create new version
 
 <br/>
 
@@ -98,7 +98,7 @@ There are 3 distinct version creation alternatives to choose from as given by th
 
 <br/>
 
-### "With new version..." alternatives
+#### "With new version..." alternatives
 
 <br/>
 
@@ -141,7 +141,7 @@ Before creating the new version, consider the following optional settings:
 
 Once the version specifics are set, click the Create button.
 
-## Deploy version
+### Deploy version
 
 Once the version is created, it is left in the Draft mode which means that it is created but contains no data and is not accessible by anyone. The next step is to deploy (materialize) the version.
 
@@ -165,7 +165,7 @@ The deployment process will take time depending on the amounts of data involved.
 
 <br/>
 
-## Open version
+### Open version
 
 Once deployed, the version is only available to those set as process administrators.
 
@@ -179,7 +179,7 @@ To make the version available to all contributors based on their permissions, yo
 
 <br/>
 
-## Close version
+### Close version
 
 The life cycle of the version will typically end with it being closed. A closed version is still available to all contributors based on their permissions, but the version is in a read only mode making it a version of reference only to the contributors.
 

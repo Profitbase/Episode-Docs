@@ -6,7 +6,7 @@ pageIndex: 2
 ---
 
 
-## Overview
+### Overview
 
 In this screen, the basis proposal can be viewed, adjusted and then finally imported as a proposal into the account module.
 

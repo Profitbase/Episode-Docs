@@ -10,7 +10,7 @@ This package provide central management of dimensions, report setup and group ac
 
 The top section contains an abstract of the new features and main changes. The bottom section contains a detailed list of GitLab issues registered for this release. Items marked with "Bug" contains bug fixes.
 
-## Gitlab Issues
+### Gitlab Issues
 
 Package EPM Reporting 1.0.6:
 

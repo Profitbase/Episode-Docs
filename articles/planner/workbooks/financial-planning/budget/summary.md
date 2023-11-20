@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 1
 ---
 
-## Overview
+### Overview
 This is the Profit and Loss overview page for the Budget process. It acts as a summary for the budgeting done so far as well as a navigation page to the various input modules used for detailing the budget. The summary is, with exception of the Comment column, read only.
 <br/>
 
@@ -26,12 +26,12 @@ Launch drop down selector for launching specific input modules. When selecting a
 <br/>
 
 
-## Video
+### Video
 ![Introduction](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/BudgetSummary.mp4)
 
 <br/>
 
-## Column Descriptions
+### Column Descriptions
 
 - **Report**<br/>
 By clicking the Report column (one of the report lines) or the link icon to its left, the input module associated with that report line will launch and replace the summary page. This would be the normal procedure when you want to view input details or perform detailed input to that report line. The input module can also be launched in a new window by right-clicking the link symbol and selecting the "Open in new window" option
@@ -47,7 +47,7 @@ Input column for commenting a specific report line. To save the comments, click 
 
 <br/>
 
-## How to`s
+### How to`s
 
 <br/>
 

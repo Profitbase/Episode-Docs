@@ -7,7 +7,7 @@ pageIndex: 1
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.2 or later
 
-## Overview
+### Overview
 
 File import is a simple tool to import data to from CSV (comma separated) files to Profitbase EPM using pre-defined import templates for standard dimensions and transactional data.<br/>
 
@@ -21,7 +21,7 @@ To set up an import ruleset, click the + (new) button:
 
 ![](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/FileImportNew.JPG)
 
-## Required fields
+### Required fields
 
 - **Ruleset Name**<br/>
 Set a name for the import ruleset.
@@ -56,19 +56,19 @@ The import format is CSV based. Select the delimiter that makes a downloaded tem
 
 Once the required fields are set, the import process can start:<br/>
 
-## Download template to your local machine
+### Download template to your local machine
 
 Click the Download template file, save it to your local machine and open the file in Excel. If the contents does not render correctly, i.e. each header separated into it's own column, alter the column delimiter setting and down load the template again.
 
 Edit the file and save it to your local machine.
 
-## Upload and Process file for your local machine
+### Upload and Process file for your local machine
 
 Having edited the downloaded template (i.e. added the content you want to import), click the Upload button and drag the saved file onto the drop-zone available.
 
 Click the Process button to load the file to a temporary storage in Profitbase EPM. Alongside the Process button is a viewer button that allows you to view the contents loaded into the temporary storage.
 
-## Validate the processed file
+### Validate the processed file
 
 Before you can import the file, it is mandatory to validate the contents of the file. The validation is sensitive to the destination table selected e.g., if you have selected the Account dimension as destination table, the validation will check the content with respect to the data requirements for the Account dimension.<br/>
 
@@ -78,7 +78,7 @@ For details on the kind of validation checks performed, please refer to the desc
 
 Errors and/or warnings are presented if they exist. Please review and correct any issues before attempting to import the data!
 
-## Import the processed file
+### Import the processed file
 
 If no validation issues exists, click the Import button to import and process the data.
 

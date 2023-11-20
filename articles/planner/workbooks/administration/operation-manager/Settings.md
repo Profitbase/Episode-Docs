@@ -6,7 +6,7 @@ pageIndex: 3
 ---
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.0 or later
 
-## Category Setup
+### Category Setup
 
 Manage the categories used by the operations. The categories are used to filter the operation list and find an operation faster.
 
@@ -24,7 +24,7 @@ Click on the trash icon to delete a category.
 
 Categories should have one name for English and one for Norwegian.
 
-## Related Pages
+### Related Pages
 
 [Scheduled Operations](ScheduledOperations.md)
 [Operations](Operations.md)

@@ -5,9 +5,9 @@ folderOnly: "false"
 pageIndex: 1
 ---
 
-## Common functionality
+### Common functionality
 
-### Input Sheets
+#### Input Sheets
 **Save button** <br/>
 Changes made to input sheets are not saved automatically. To save changes, click the “Save” button. The “Save” button will remain disabled until a change has been made.
 

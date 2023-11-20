@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 2
 ---
 
-## Overview
+### Overview
 This page enables graphical trending of the individual report lines in the Profit & Loss report.
 <br/>
 

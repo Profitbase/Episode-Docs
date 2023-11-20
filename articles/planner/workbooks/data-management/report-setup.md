@@ -4,7 +4,7 @@ metaKeys: ""
 folderOnly: "false"
 pageIndex: 4
 ---
-## Overview
+### Overview
 Report setup is used to define new reports by defining report lines that aggregates a set of accounts and subtotals with styling such as underline and bold text.
 
 The reports set up here will be selectable under Finance Reports.
@@ -12,7 +12,7 @@ The reports set up here will be selectable under Finance Reports.
 The report with ID "INPUT" is (by default) for grouping accounts for input in distributed input. For all practical purposes this report will be a variant of a profit and loss report. The starting point for defining the INPUT report should be your Profit & Loss report. From here you may want to modify to adjust resolution for account grouping to be better suited for input by e.g. increasing number of report lines for income and expenses.
 <br/>
 
-## Content
+### Content
 -  [Reports](report-setup/reports.md) is used to create a new report or change display name on existing report
 -  [Options](report-setup/options.md) is used to enable additional dimensions as columns and/or filters for some of the finance reports.  
 
@@ -28,7 +28,7 @@ The report with ID "INPUT" is (by default) for grouping accounts for input in di
 -  [View Report Data](report-setup/view-report-data.md) is used to inspect and verify report definition
 -  [Account](report-setup/account.md) is used to inspect accounts to help mapping. Managing account should be done in "Dimensions and Currency Exchange Rates" workbook.
 
-## Related Pages
+### Related Pages
 -  [Finance Reports](../financial-planning/finance-reports.md) is used to view reports appearance after making changes to report setup.
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x, 5.0 and 5.1

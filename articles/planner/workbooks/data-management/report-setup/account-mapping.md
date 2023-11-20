@@ -19,7 +19,7 @@ When changes are done and saved, click the Publish button to publish these chang
 
 ![img](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/AccountMapping.JPG)
 
-## Column descriptions
+### Column Descriptions
 
 - **Report Line ID**<br/>
 Readonly on this page, see [Report lines](report-lines.md) for details.

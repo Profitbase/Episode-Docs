@@ -5,14 +5,14 @@ folderOnly: "false"
 pageIndex: 3
 ---
 
-## Overview
+### Overview
 This is the setup page for the loan module. On this page, you can configure settings such depreciation accounts, depreciation rates and so on as well as configure the input page in terms of which columns to include and how to name them.<br/>
 A separate document deals with the setup, please refer to the "How to's" link below.<br/>
 <br/>
 
 ![](https://profitbasedocs.blob.core.windows.net/plannerimages/CapExSetup.JPG)
 
-## Descriptions
+### Descriptions
 
 Each table and columns are described below.
 
@@ -80,7 +80,7 @@ Defines the residual value limit to stop depreciation calculation.
 Free text string to help document settings.
 <br/>
 
-## How to`s
+### How to`s
 
 <br/>
 

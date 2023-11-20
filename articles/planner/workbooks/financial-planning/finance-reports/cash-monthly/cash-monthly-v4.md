@@ -7,7 +7,7 @@ pageIndex: 5
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4
 
-## Overview
+### Overview
 This report shows how cash is developing over the periods of a year. 
 <br/>
 
@@ -24,7 +24,7 @@ Starting with the upper left "Cash Available OB", cash movements in and out is d
 <br/>The row "Cash Adjustments" is provided for doing quick adjustments which is directly applied to the cash development. Note that changes here are not saved anywhere.
 <br/>The Forecast dataset is composed of Actual data for periods before the forecast start and Forecast input data from the forecast start period.
 
-## Filter Descriptions
+### Filter Descriptions
 Filter selections available apart from Department are:
 
 - **Report** <br/>
@@ -43,13 +43,13 @@ This selection is not relevant for this report
 Choose which currency to the used in the report. Average rate for each period is used for currency conversion.
 
 
-## Column Descriptions
+### Column Descriptions
 Number-columns explained:
 
 - **MMM YY** <br/> these 12 columns contain numbers from the selected dataset and shows the changes for each period.
 - **Total** <br/> shows the sum of changes over the period.
 
-## How to`s
+### How to`s
 
 <br/>
 

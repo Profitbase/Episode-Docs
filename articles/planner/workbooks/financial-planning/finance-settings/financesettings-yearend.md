@@ -5,19 +5,19 @@ folderOnly: "false"
 pageIndex: 7
 ---
 
-## Overview
+### Overview
 This page contains setting year-end allocations for dividend, group contribution and withholding tax payments. All amounts is entered as positive values. All transactions for group contribution is using the currency of the paying legal entity.
 
-## Functional Description
+###Functional Description
 Year end allocation post end of year dispositions and perform financial close as described below.
 
 
-#### Fiscal Year related to Payment Due Date
+####Fiscal Year related to Payment Due Date
 Normal payment for dividends, goup contribution and tax, is the next fiscal year. Based on the combination of fiscal year and due date, the model automatically posts the associated provision.
 When payment according to the normal occurs the year after the fiscal year, the provision is posted on the last day of the fiscal year. 
 When payment takes place in the same year as the selected fiscal year, provision and payment are posted on the same date. The latter is typically the case for extraordinary dividends.
 
-#### Posting combinations types
+####Posting combinations types
 There are readymade combinations (dropdown list) for how to post on part and counterpart.
 
 - Dividend
@@ -33,7 +33,7 @@ There are readymade combinations (dropdown list) for how to post on part and cou
 
 <br/>
 
-#### Dividends
+####Dividends
 Dividends are recorded as a disposition with no tax effect for the paying party.
 For the recipient, the choices are Financial income or to reduce the Investment, both without tax effect (*).
 For any extraordinary dividends throughout the year: Set Fiscal Year to the same year as the due date.
@@ -58,10 +58,10 @@ For recipient, the options are:
 A) Increase in Contributed Equity (after deduction Change Deferred tax)
 B) Reduction of Uncovered loss (after deduction Change Deferred tax)
 
-#### Corporate tax payments
+####Corporate tax payments
 This is to manually post tax payment due amounts.
 
-#### Year End Closing
+####Year End Closing
 This part is a separate function that can be enabled using the "EngineID" (ID="YearEndTransfer") settings (see below).
 
 A simple byt automatic closing is performed here. Profit (or loss) is transferred to the balance sheet as change in earned equity.
@@ -69,13 +69,13 @@ A simple byt automatic closing is performed here. Profit (or loss) is transferre
 If the fiscal year result is negative, any negative allocated tax (from Tax) will be zeroed (reversed).
 Final 'final tax settlement' (calculated tax payable + - change in tax due - manually paid advance tax) is due at the selected 'FinalDueDate'. The same end date applies, whether you owe or have tax to your credit.
 
-## Descriptions
+### Descriptions
 
 Each table and columns are described below.
 
 Key columns used for matching when looking up correct setting is marked (k).
 
-#### Year End Alloc.: YearEnd Due
+####Year End Alloc.: YearEnd Due
 This table defines the legal parties, posting type, time and amounts for year-end allocations.
 
 **Caution:** The system will allocate amounts as instructed. It will not not prevent you from allocating more amounts than is available. 
@@ -98,7 +98,7 @@ Payment amount input as positive number.
 Free text string to help document settings.
 <br/>
 
-#### Year End Alloc.: YearEnd Tax %
+####Year End Alloc.: YearEnd Tax %
 This table set the tax percent to be used for year end transactions.
 
 Columns:
@@ -115,7 +115,7 @@ Last due date for final tax settlement.
 Free text string to help document settings.
 <br/>
 
-#### Year End Alloc.: YearEnd Accounts
+####Year End Alloc.: YearEnd Accounts
 This is to select accounts used for posting year end allocations.
 
 Columns:
@@ -142,7 +142,7 @@ Account for equity uncovered loss.
 Free text string to help document settings.
 <br/>
 
-#### Year End Alloc.: YearEnd Due - Accounts
+####Year End Alloc.: YearEnd Due - Accounts
 
 Columns:
 
@@ -173,7 +173,7 @@ Account for agio/disagio calculation.
 - **Comments**<br/>
 Free text string to help document settings.
 
-#### Year End Alloc.: EngineID
+####Year End Alloc.: EngineID
 This table enables or disable using the year end allocation. The year end allocation contains two parts:
 
 - YearEndDue - year end dividends, group contribution and tax payments

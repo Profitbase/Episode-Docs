@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 1
 ---
 
-## Overview
+### Overview
 This page is to manage exchange rates.
 <br/>
 
@@ -22,7 +22,7 @@ The publish button is used to process any changes and overrides to exchange rate
 3. **Exchange Rates Daily**<br/>
 The table to the right shows the daily exchange rates generated from historical and future rates. Using the filter capabilities, you can inspect exchange rates between different  combination of currencies.
 
-## Descriptions
+### Descriptions
 
 By default the system will import historical exchange rates and rely on the Exchange Rate table for future rates. Note that future rates will be generated after the last historical date.
 

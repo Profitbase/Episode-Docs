@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 4
 ---
 
-## Overview
+### Overview
 For long-term (beyond next year) forecasting, the level of detail is less – input is done for the department as a whole:<br/>
 - FTE for given year<br/>
 - Expected annual salary raise for given year<br/>
@@ -17,7 +17,7 @@ The detailed forecast for next year is used as a basis for scaling the long-term
 When changes have been made, click the "Save" button. This will update Personnel details page from which the FTE long term page (this page) was triggered from.<br/>
 To discard any changes made or to close the page, click the "Close" button.
 
-## Column Descriptions
+### Column Descriptions
 
 - **FTE next year ("2021" in the example):**<br/>
 The sum of FTEs planned for next year for the department in question. This is a reference value and not editable in this (long term) view. 

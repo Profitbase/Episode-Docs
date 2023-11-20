@@ -7,7 +7,7 @@ pageIndex: 4
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x
 
-## Overview
+### Overview
 This page contains a collection of central settings for the budget modules Sales by GM, Personnel and Account, such as distribution and spread keys, setup for auto transactions and so on.<br/>
 <br/>
 
@@ -15,7 +15,7 @@ This page contains a collection of central settings for the budget modules Sales
 
 Please refer to the relevant module document in the "How to's" section below for details.
 
-## How to`s
+### How to`s
 
 <br/>
 

@@ -27,7 +27,7 @@ Often accounts are imported from external source. In this case the priority betw
 
 If you choose to edit account description or translations and delete an account that is imported from external source, the edits will be overwritten, and the deleted account will be added from external source.
 
-## Column Descriptions
+### Column Descriptions
 
 - **Account**<br/>
 The account identifier.

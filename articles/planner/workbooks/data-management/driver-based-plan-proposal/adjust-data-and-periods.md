@@ -6,7 +6,7 @@ pageIndex: 6
 ---
 
 
-## Overview
+### Overview
 
 In this screen, the basis proposal can be refined by un-grouping or grouping data for any optional dimensions, by selecting or un-selecting individual dimension members (thereby removing them from the proposal) and by selecting or un-selecting plan years that the proposal should affect.
 

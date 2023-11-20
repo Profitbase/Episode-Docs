@@ -7,7 +7,7 @@ pageIndex: 6
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x
 
-## Overview
+### Overview
 This is the page where a new budget period is created. When creating a new budget period, the current input data and transactions will be archived, after which the new budget year is initialized which implies that any existing input data will be deleted.
 <br/>
 
@@ -18,7 +18,7 @@ This is the page where a new budget period is created. When creating a new budge
 
 The progress of the create new budget period process is displayed in the log in the lower part of the page.
 
-## Video
+### Video
 [Start new budget period - under construction](#)
 
 <br/>

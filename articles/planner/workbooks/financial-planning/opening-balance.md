@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 8
 ---
 
-## Overview
+### Overview
 The purpose of Opening Balance is to inspect and adjust opening balance values as generated from historical actual finance general ledger.
 
 You can generate the opening balance for dataset according to forecast start date and budget start date. These dates are controlled by roll forward for forecast and budget datasets.
@@ -14,7 +14,7 @@ After importing and generating the opening balance for selected dataset and date
 
 This adjusted balance will be used in the following simulations and subject to settings under Finance Settings and OBDue. Here you can control how payables, receivable and other payments of opening balance will be treated.
 
-## How OB works
+### How OB works
 
 Opening Balances (OB) in finance accounting is the amount of funds on a company's account at the beginning of a fiscal year. Hence OB is relevant for all finance general ledger datasets that include balance accounts. For Planner the typical datasets are:
  - Actual - historic booked values. The date for the OB actual is the first day of the fiscal year (or any date in the first fiscal period)
@@ -67,12 +67,12 @@ To verify and check results you should use the "Finance Reports". The most relev
 
 <br/>
 
-## Content
+### Content
 
 - [Generate and Edit Opening Balance](opening-balance/edit.md)
 - [Opening Balance Report](opening-balance/report.md)
 
-## Related Pages
+### Related Pages
 -  [OBDue Finance Settings](../../workbooks/financial-planning/finance-settings/obdue.md)
 -  [Forecast Admin - control Forecast Opening Balance date](../../workbooks/administration/input-settings-and-administration/forecast-admin.md)
 -  [Budget Admin - control Budget Opening Balance date](../../workbooks/administration/input-settings-and-administration/budget-admin.md)

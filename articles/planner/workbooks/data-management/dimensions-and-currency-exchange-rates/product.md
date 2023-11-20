@@ -7,7 +7,7 @@ pageIndex: 6
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x, 5.0 or 5.1
 
-## Overview
+### Overview
 This help page is common to managing the data for the Product, Market, Supplier, Employee, Dim1..Dim4, Project, Activity and Asset group dimension. The example shown relates to the Product dimension.<br/>
 The purpose of these pages is to maintain the data content of these dimension. Note that, subject to configuration, one or more of the dimensions may be sourced externally and/or not be in use.
 <br/>
@@ -19,7 +19,7 @@ The page consists of a data area in which to maintain dimension data and a visua
 When changes have been made and saved, click the "Publish" button to process the dimension. Once processed, it's hierarchy will render in the display area. Expand the hierarchy to investigate.
 
 
-## Column Descriptions
+### Column Descriptions
 
 - **XYZ ("Product" in the example):**<br/>
 The leaf (lowest) level id, mandatory. Will be the binding id between the dimension and any associated fact tables. In the example, these will be the Product ids.
@@ -35,7 +35,7 @@ The group level name. Will render as group level description in the hierarchy.
 
 <br/>
 
-## How to`s
+### How to`s
 
 <br/>
 

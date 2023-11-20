@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 2
 ---
 
-## Overview
+### Overview
 This is the input page for altering the FTE (Full-Time Equivalents) per period for the employee/employee category in question.
 <br/>
 
@@ -18,7 +18,7 @@ To discard any changes made or to close the page, click the "Close" button.
 
 FTE is a multi-row page as oppsoed to a pop-up for one input row. This allows for editing of the FTE values for multiple rows.  
 
-## Column Descriptions
+### Column Descriptions
 
 - **Employee:**<br/>
 The employee/employee category in question.

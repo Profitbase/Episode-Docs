@@ -7,7 +7,7 @@ pageIndex: 6
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5 or later.
 
-## Overview
+### Overview
 This report is using splines to show the trend over time for selected report lines. To the right you can select which report lines you want to show. This report shows data from selected dataset versions and all scenarios. Note that scenarios is only relevant for plan datasets (e.g. plan data from Forecast and Budget process).
 <br/>Report lines available for trending (selectable item to the right) is a subset of all report lines. The set enabled for trending is configured when defining the report lines.
 
@@ -40,7 +40,7 @@ Note that the graph is prepared to display up to scenario version Baseline, Best
 
 The time axis will show 12 periods for 3 fiscal years with the selected fiscal year as the middle year. The red vertical line draws where the plan start is for the current version.
 
-## Filter Descriptions
+### Filter Descriptions
 Filter selections available apart from Department are:
 
 - **Report**<br/>Allows for selecting between different report configurations
@@ -53,13 +53,13 @@ Filter selections available apart from Department are:
 
 This report allows slicing on additional dimensions - found under "Options".
 
-## Graph Descriptions
+### Graph Descriptions
 
 Each graph line represents a reporting line enabled for trending in the selected report. The amount is plotted on a per million scale. Moving the mouse over a period, will show a shared tooltip that present all amounts for the period.
 
 Click on the bottom legend to toggle on/off graph lines. This is useful to enable to focus on certain series.
 
-## How to`s
+### How to`s
 
 <br/>
 

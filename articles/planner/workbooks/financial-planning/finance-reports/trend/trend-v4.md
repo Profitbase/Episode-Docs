@@ -7,7 +7,7 @@ pageIndex: 7
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4
 
-## Overview
+### Overview
 This report shows the line graph over periods for all report lines enabled for trending.
 Report lines available for trending (selectable item to the right) is a subset of all report lines. The set enabled for trending is configured when defining the report lines.
 
@@ -29,7 +29,7 @@ The upper right "Forecast start" tells which calendar period the forecast start.
 2. **Content Section** <br/>
 The content section shows graph lines for all report lines that are configured enabled for trending. The Forecast dataset is composed of Actual data for periods before the Forecast start and Forecast input data from the Forecast start period (as shown in the upper right in the report).
 
-## Filter Descriptions
+### Filter Descriptions
 Filter selections available apart from Department are:
 
 - **Report**<br/>Allows for selecting between different report configurations
@@ -40,11 +40,11 @@ Filter selections available apart from Department are:
 - **Timefunction**<br/>Selecting Month will show the numbers for each month. Selecting Year-to-date will show the sum of this and preceding periods. To see balanced you have to use Year-to-date.
 - **Currency**<br/>Choose which currency to the used in the report. Average rate for each period is used for currency conversion.
 
-## Graph Descriptions
+### Graph Descriptions
 
 Each graph line represents a reporting line enabled for trending in the selected report. The amount is plotted on a per million scale. Moving the mouse over a period, will show a shared tooltip that present all amounts for the period.
 
-## How to`s
+### How to`s
 
 <br/>
 

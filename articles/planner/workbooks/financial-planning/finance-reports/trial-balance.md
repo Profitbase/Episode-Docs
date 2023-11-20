@@ -7,7 +7,7 @@ pageIndex: 3
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5 or later.
 
-## Overview
+### Overview
 This report provides a period view for Accounts including Opening and Closing Balance. This report also provides a sum across all accounts. This sum should be 0 (zero) for a correct trial balance. This report is sorted by account code but with accounts containing numbers first.
 
 See an example of this report in picture below.
@@ -32,7 +32,7 @@ Click on "Options" on the right edge of the window, you can select additional co
 5. **Right Section - Lower** <br/>
 Click on "Options" on the right edge of the window, at the bottom you can select and additional filters to be applied when extracting data. You can see filters and values applied on the top section next to the label "Filter options:". Filters available here are subject to configuration settings.
 
-## Filter Descriptions
+### Filter Descriptions
 Filter selections available apart from Department are:
 
 - **Fiscal Year**<br/>What year to look at.
@@ -42,7 +42,7 @@ Filter selections available apart from Department are:
 - **Timefunction**<br/>Selecting Month will show the numbers for each month. Selecting Year-to-date will show the sum of this and preceding periods including OB. To see balanced you must use Year-to-date.
 - **Currency**<br/>Choose which currency to the used in the report. Average rate for each period is used for currency conversion.
 
-## Column Descriptions
+### Column Descriptions
 Number-columns explained:
 
 - **YYYYMM**<br/>These 12 columns contain numbers from the selected dataset.
@@ -52,7 +52,7 @@ Number-columns explained:
 
 You can select additional columns under "Options". These will be dataset and other dimensions that may be used in the report. Available columns are subject to configuration settings for your solution.
 
-## How to`s
+### How to`s
 <br/>
 
 [Create new task](../../process-and-tasks/tasks/create-edit-task.md)<br/>

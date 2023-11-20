@@ -10,7 +10,7 @@ This is the report page of the Account module and displays the transactions prod
 
 ![](https://profitbasedocs.blob.core.windows.net/plannerimages/Supportingdetails.JPG)
 
-## Column Descriptions
+### Column Descriptions
 
 - **Account:**<br/>
 The account of the transaction produced. In most cases this will correlate to the input account but in some cases additional transactions are produced based on the input, examples being vacation pay, employer tax and so on.

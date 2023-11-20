@@ -10,7 +10,7 @@ Allows you to map elimination companies to trade between operational companies. 
 
 ![](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/ElimLegalEntity.JPG)
 
-## Column Descriptions
+### Column Descriptions
 
 - **Legal Entity**<br/>
 The source Legal entity of the intercompany relation. Mandatory. Select from the drop down list.

@@ -6,7 +6,7 @@ pageIndex: 5
 ---
  **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x
  
-## Overview
+### Overview
 This popup is used to add or update a schedule for an operation.
 <br/>
 An operation can have multiple schedules to fit every scenario.

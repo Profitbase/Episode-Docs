@@ -13,7 +13,7 @@ Select the type from the Type drop down and the lanuage of choice from the Langu
 
 ![](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/ReportSetupTranslations.JPG)
 
-## Column descriptions
+### Column Descriptions
 
 - **Type**<br/>
 The type, either ReportID, ReportLineID or DimensionID. Mandatory. Filled in from the selection made in the type drop down.
@@ -38,7 +38,7 @@ When changes are done and saved, click the Publish button to publish these chang
 
 ![img](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/ReportLineTranslations.JPG)
 
-## Column descriptions
+### Column Descriptions
 
 - **Report Line ID**<br/>
 Readonly on this page, see [Report lines](report-lines.md) for details.

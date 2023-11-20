@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 5
 ---
 
-## Overview
+### Overview
 This page contains settings related to purchase of goods for sales or production.
 <br/>
 
@@ -15,13 +15,13 @@ This page contains settings related to purchase of goods for sales or production
 2. **Tables View**<br/>The right area will display the selected tables and allows users to edit content.
 <br/>
 
-## Descriptions
+### Descriptions
 
 Each table and columns are described below.
 
 Key columns used for matching when looking up correct setting is marked (k).
 
-#### Purchase: Accounts
+####Purchase: Accounts
 This table identifies which accounts to be used for purchased goods.
 
 Columns:
@@ -46,7 +46,7 @@ Free text string to help document settings.
 When accounts are not specified, Planner will use the internal account key. These will be visible in the trial balance report. Accounts that appear with internal account key names can also be mapped using the System Fallback Account mapping.
 <br/>
 
-#### Purchase: Days Of Credit
+####Purchase: Days Of Credit
 This table define number of days until purchased goods will be paid.
 
 Columns:
@@ -69,7 +69,7 @@ Number of days to payment.
 Free text string to help document settings.
 <br/>
 
-#### Purchase: Accrued
+####Purchase: Accrued
 Use this table to set up accrued purchase. This is purchased goods that are booked but accrued for payment at later regular terms.
 
 Columns:

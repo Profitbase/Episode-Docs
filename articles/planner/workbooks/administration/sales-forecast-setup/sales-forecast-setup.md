@@ -4,7 +4,7 @@ metaKeys: ""
 folderOnly: "false"
 pageIndex: 1
 ---
-## Overview
+### Overview
 This is the main page for defining and operating sales forecast models.<br/>
 A separate document deals with the setup of sales forecast models, please refer to the "How to's" link below.<br/>
 <br/>
@@ -24,13 +24,13 @@ Click this button to delete data from the model or the complete model. Clicking 
 6. **Check calc. button - check validity of model calculations**<br/> 
 Click this button to test the validity of any calculations in the model. The check function will report any errors found in a pop-up.
 
-## Related Pages
+### Related Pages
 -  [Create new model](new-model.md)<br/>
 -  [Apply changes to model](apply.md)<br/>
 -  [Delete model](delete.md)<br/>
 -  [Calculation](calculation.md)<br/>
 
-## How to`s
+### How to`s
 
 <br/>
 
