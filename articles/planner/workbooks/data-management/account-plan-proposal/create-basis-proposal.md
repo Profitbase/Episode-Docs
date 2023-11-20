@@ -6,7 +6,7 @@ pageIndex: 1
 ---
 
 
-## Overview
+### Overview
 
 This is the main screen for defining the basis proposal. A quick guide to the process is shown in the workbook itself.
 
@@ -22,7 +22,7 @@ Once, the "map source datasets to plan" table is set up, consider the other opti
 
 To finish off the basis proposal section, click the "Create basis proposal" button. This will produce the basis proposal that will be found on the following page [2. Adjust basis proposal and import](adjust-basis-proposal-and-import.md) and can be further detailed and finally imported there.
 
-## Map source datasets to plan
+### Map source datasets to plan
 
 This screen defines how the plan will be pre-filled with data from the source dataset(s). In its simplest form, the plan is filled from a specific source dataset, for example using the source dataset constituted by last year's actuals:
 
@@ -51,7 +51,7 @@ The (source) date from which the proposal is drawn.
 - **Source - Dataset**<br/>
 The (source) dataset from which the proposal is drawn. Select from the drop down that will include standard datasets such as Actuals as well as plan versions that are made available for use. 
 
-### Options
+#### Options
 
 #### Limit data from source
 

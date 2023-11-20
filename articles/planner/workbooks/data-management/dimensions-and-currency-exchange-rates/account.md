@@ -50,7 +50,7 @@ The account dimension hierarchy is used for defining Finance settings and not fo
 
 When designing this hierarchy, the main consideration should therefore be the granularity most suitable for defining finance settings.<br/>
 
-## Column Descriptions
+### Column Descriptions
 
 - **Account**<br/>
 The account identifier.

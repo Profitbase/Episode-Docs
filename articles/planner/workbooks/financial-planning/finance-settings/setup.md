@@ -7,7 +7,7 @@ pageIndex: 8
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5 or later.
 
-## Overview
+### Overview
 
 <br/>
 
@@ -17,13 +17,13 @@ pageIndex: 8
 2. **Tables View**<br/>The right area will display the selected tables and allows users to edit content.
 <br/>
 
-## Descriptions
+### Descriptions
 
 Each table and columns are described below.
 
 Key columns used for matching when looking up correct setting is marked (k).
 
-#### Time: Start and range
+####Time: Start and range
 This table defines the start date and length for each planning dataset (i.e. Forecast and Budget).
 
 Columns:
@@ -34,7 +34,7 @@ Read-only columns that shows the start date for current Forecast and Budget data
 Selection of time range that allows for up to 7 years planning.
 <br/>
 
-#### DaysOfCreditMethod: Monthly
+####DaysOfCreditMethod: Monthly
 
 This is useful to ensure that input from one month will be paid (i.e. due) over 2 months.
 Setting the value below to true, will distribute the input evenly over 30 days staring from days of credit. This will ensure that the due amounts is distributed between 2 months based on input from one month.
@@ -50,7 +50,7 @@ Engine name.
 - **Value**<br/>
 Value true or false.
 
-#### Fiscal Calendar Offset
+####Fiscal Calendar Offset
 This table is used to define a Fiscal year and periods that is offset from a normal calendar. Leaving this table empty will use the calendar.
 
 Columns:
@@ -70,7 +70,7 @@ Setting "Fiscal Start Date" = 2020-01-01 and "Fiscal Year" = 2020 is equivalent 
 <br/>
 
 
-#### Source: map Account to Engine
+####Source: map Account to Engine
 This table maps input accounts to the different posting engines.
 
 Columns:
@@ -85,7 +85,7 @@ Engine name.
 Note that one account will only be mapped to one and only one engine.
 <br/>
 
-#### System: Fallback Accounts
+####System: Fallback Accounts
 This table maps internal account keys to your accounts. There are already quite a few tables where account use is defined but there will be accounts and in particular balance accounts that are used but not mapped elsewhere. Please check Finance Reports Trial Balance report for accounts that are used but not mapped.
 
 Columns:
@@ -98,7 +98,7 @@ Legal Entity applicable.
 Your account to be used.
 <br/>
 
-#### CurrencyReportID
+####CurrencyReportID
 This table defines the currency to be used as default reporting currency during simulation.
 
 Columns:

@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 2
 ---
 
-## Overview
+### Overview
 Here you can override and inspect the monthly exchange rates including regenerating the monthly rates.
 <br/>
 
@@ -19,7 +19,7 @@ The publish button is used to generate monthly rates based on daily exchange rat
 3. **Exchange Rates Monthly**<br/>
 The table to the right shows the daily exchange rates generated. Using the filter capabilities, you can inspect exchange rates between different combination of currencies.
 
-## Descriptions
+### Descriptions
 
 Monthly average exchange rates are used for most currency conversions. An exception is the simulation to generate the general ledger which will use any level of detail down to daily exchange rate. To get the same currency
 

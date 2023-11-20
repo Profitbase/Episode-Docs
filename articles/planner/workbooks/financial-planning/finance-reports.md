@@ -4,12 +4,12 @@ metaKeys: ""
 folderOnly: "false"
 pageIndex: 5
 ---
-## Overview
+### Overview
 The reports for Finance Planning that are provided with the solution:
 <br/>
 
 
-## Related Pages
+### Related Pages
 
 - [Compare](../../workbooks/financial-planning/finance-reports/compare.md)<br/>This report compares actual and budget against selected dataset. Numbers can be compared on selected current period, year-to-date, rest-of-year and the total for year.
 
@@ -41,6 +41,6 @@ Note that in most cases the Forecast dataset is made up by Actuals for periods b
 The exception to this is the Trial Balance and Scenario Trend reports which always will show individual data from each dataset. This is for controlling and compare purposes.
 <br/>
 
-## See also
+### See also
 -  [Setup Reports](../../workbooks/data-management/report-setup.md)<br/>
 Create reports and report lines. Manage account mapping to report lines and sub-total formulas.

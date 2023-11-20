@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 4
 ---
 
-## Overview
+### Overview
 
 From Datamart version 5.3.0, the concept of reusable connections has been added. Instead of setting up all the connection fields one by one for each ruleset, you can now define all avaliable connections in one place, and reuse them.
 

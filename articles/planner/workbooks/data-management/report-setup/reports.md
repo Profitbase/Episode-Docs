@@ -20,7 +20,7 @@ Note that from Planner 5.2, this page renders in a pop-up as opposed to a separa
 Right-click mouse to insert a new row for new report.
 <br/>
 
-## Column Descriptions
+### Column Descriptions
 
 - **Report ID (k)**<br/>
 ID text string to uniquely identify the report. Mandatory.

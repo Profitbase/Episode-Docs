@@ -4,7 +4,7 @@ metaKeys: ""
 folderOnly: "false"
 pageIndex: 2
 ---
-## Overview
+### Overview
 Access to resources, such as Workbooks, Data, and APIs are granted to User Groups. User Groups contain (user or group) accounts from Windows or Azure AD.
 
 You can add or import your users.
@@ -13,7 +13,7 @@ When you "add" users, you connect to the identity provider that the system is se
 
 <br/>
 
-## Create User Groups
+### Create User Groups
 
 1. Go to the "Group management" tab
 2. Click the + to bring up a dialog box
@@ -29,7 +29,7 @@ When you "add" users, you connect to the identity provider that the system is se
 
 ![](https://profitbasedocs.blob.core.windows.net/plannerimages/add_group.png)
 
-## Add Users to groups
+### Add Users to groups
 
 1. Select a group in the list to view current users assigned
 2. You can add users to the group by clicking the + in the "Users" section

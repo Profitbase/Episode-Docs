@@ -39,7 +39,7 @@ Apart from the normal Save and Refresh buttons there are a few more:
 Right-click mouse to insert a new row for new report.
 <br/>
 
-## Column Descriptions
+### Column Descriptions
 
 - **Report ID (k)**<br/>
 ID text string to uniquely identify the report. Read-only field that is set when selecting report in the next column.

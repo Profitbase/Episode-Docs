@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 1
 ---
 
-## Overview
+### Overview
 Enables input to the financial engines selected for the model.<br/>
 <br/>
 Set a dimensional context and select the appropriate input sub-screen. Standard right-click menu options such as Insert new row, Delete row, etc. is supported. THe Save button is activated once changes are detected.<br/>
@@ -20,7 +20,7 @@ Note that the model does not have to be published in order to simulate the finan
 
 ![](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/FinanceNativeInputDataSimulation.JPG)<br/>
 
-## How to`s
+### How to`s
 
 <br/>
 

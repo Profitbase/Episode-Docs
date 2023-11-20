@@ -7,7 +7,7 @@ pageIndex: 10
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.2 or later.
 
-## Overview
+### Overview
 
 <br/>
 This page contains an audit report that should be used to assess the data quality of data within the given version. Click the "Run audit" button to execute the report.
@@ -17,7 +17,7 @@ If the report yields no result rows, everyting is fine.
 If the report yields result rows, issues exist, please see below for a description of the report's columns.
 <br/>
 
-## Descriptions
+### Descriptions
 
 The report contains an in-line filter row on top that enables you to filter out certain rows of data. Type in the filter row and use the tab key (exit from cell) to execute filter.
 
@@ -34,7 +34,7 @@ The input module (if relevant) to which the issue is related.
 - **Audit text**<br/>
 A description of the issue itself. Note that the audit text will always be presented in English.<br/>
 
-## Audit checks made
+###Audit checks made
 
 Specifically, any mandatory dimensional properties as outlined in the document are checked:
 

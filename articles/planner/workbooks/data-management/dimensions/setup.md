@@ -10,7 +10,7 @@ Setup that controls how dimensional data is imported from and/or exported to ext
 
 ![](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/DimensionSetup.JPG)
 
-## Column Descriptions
+### Column Descriptions
 
 - **Dimension**<br/>
 The dimension in question. Readonly.

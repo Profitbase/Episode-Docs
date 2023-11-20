@@ -7,7 +7,7 @@ pageIndex: 8
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4
 
-## Overview
+### Overview
 In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
 <br/>
 
@@ -17,7 +17,7 @@ In publishing and graphic design, Lorem ipsum is a placeholder text commonly use
 2. **Tables View**<br/>The right area will display the selected tables and allows users to edit content.
 <br/>
 
-## Descriptions
+### Descriptions
 
 Each table and columns are described below.
 

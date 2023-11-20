@@ -7,7 +7,7 @@ pageIndex: 10
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5 or later.
 
-## Overview
+### Overview
 
 <br/>
 
@@ -17,7 +17,7 @@ pageIndex: 10
 2. **Tables View**<br/>The right area will display the selected tables and allows users to edit content.
 <br/>
 
-## Descriptions
+### Descriptions
 
 The purpose of Short-Term Cash is to calculate the interest income and cost from the cash balance. This standard configuration setup supports one currency per legal entity.
 
@@ -31,7 +31,7 @@ Key columns used for matching when looking up correct setting is marked (k).
 
 Mandatory tables is marked (m).
 
-#### Short Fin: Source Definition (m)
+####Short Fin: Source Definition (m)
 This table defines the source for legal entities, currencies and accounts to calculate interest.
 
 Columns:
@@ -49,7 +49,7 @@ This is the list of source accounts that have the same currency and will be subj
 Free text string to help document settings.
 <br/>
 
-#### Short Fin: Due Term
+####Short Fin: Due Term
 This table defines the payment terms for the interest calculation.
 
 Columns:
@@ -73,7 +73,7 @@ This is number of periods per year that interest is paid out from the legal enti
 Free text string to help document settings.
 <br/>
 
-#### Short Fin: Accounts (m)
+####Short Fin: Accounts (m)
 This table defines the accounts to be used when posting the interest calculations.
 
 Columns:
@@ -112,7 +112,7 @@ Free text string to help document settings.
 In case columns is not filled in, the calculation will be posed using the internal codes as account. Unless these are properly mapped, they will not occur correctly in finance reports aggregated over set of accounts.
 
 
-#### ShortFin(+): Interest % (m)
+####ShortFin(+): Interest % (m)
 This table defines the interest rate for positive cash balance. If this is omitted for a legal entity or a currency, no transactions is generated for this case.
 
 Columns:
@@ -139,7 +139,7 @@ The interest low percent used for scenario simulation (optional).
 Free text string to help document settings.
 <br/>
 
-#### ShortFin(-): Limit
+####ShortFin(-): Limit
 This table defines the cash credit limit.
 
 Columns:
@@ -166,7 +166,7 @@ The credit limit low amount used for scenario simulation (optional).
 Free text string to help document settings.
 <br/>
 
-#### ShortFin(-): Limit Fee %
+####ShortFin(-): Limit Fee %
 This table defines the fee cost for the credit limit. The fee is calculated as a percent of the credit limit amount.
 
 Columns:
@@ -194,7 +194,7 @@ Free text string to help document settings.
 <br/>
 
 
-#### ShortFin(-): Interest % (m)
+####ShortFin(-): Interest % (m)
 This table defines the interest rate for negative cash balance; i.e. using the cash credit.
 
 If this is omitted for a legal entity or a currency, no transactions is generated for this case.
@@ -223,7 +223,7 @@ The interest low percent used for scenario simulation (optional).
 Free text string to help document settings.
 <br/>
 
-#### ShortFin(-): Overdraft Interest %
+####ShortFin(-): Overdraft Interest %
 This table defines the interest rate for using negative cash balance above the credit limit.
 
 Columns:
@@ -250,7 +250,7 @@ The interest low percent used for scenario simulation (optional).
 Free text string to help document settings.
 <br/>
 
-#### ShortFin: (+) = Cash
+####ShortFin: (+) = Cash
 This table defines if interest income will be posted to another cash account.
 
 Columns:

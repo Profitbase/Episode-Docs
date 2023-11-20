@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 2
 ---
 
-## Overview
+### Overview
 This page contains setting to control payroll related transactions such as social tax.
 <br/>
 
@@ -15,13 +15,13 @@ This page contains setting to control payroll related transactions such as socia
 2. **Tables View**<br/>The right area will display the selected tables and allows users to edit content.
 <br/>
 
-## Descriptions
+### Descriptions
 
 Each table and columns are described below.
 
 Key columns used for matching when looking up correct setting is marked (k).
 
-#### Personnel: Accounts
+####Personnel: Accounts
 This table defines which accounts to be used for posting employer tax, pension (employer and employees) Vacation pay and employment tax on vacation pay.
 
 Columns:
@@ -46,7 +46,7 @@ Account for calculated employer tax on vacation pay.
 Free text string to help document settings.
 <br/>
 
-#### Salary: Accrued
+####Salary: Accrued
 This table define how salary is accrued and paid.
 
 Columns:
@@ -80,7 +80,7 @@ Examples:
 
 <br/>
 
-#### Pension Employer %
+####Pension Employer %
 This table defines the rates applicable for employer pension.
 
 Columns:
@@ -101,7 +101,7 @@ Percent employer pension.
 Free text string to help document settings.
 <br/>
 
-#### Pension Employees %
+####Pension Employees %
 This table define the rates applicable for employee's pension.
 
 Columns:
@@ -143,7 +143,7 @@ Percent employer tax.
 Free text string to help document settings.
 <br/>
 
-#### VacationPay %
+####VacationPay %
 This table defines the rates for vacation pay.
 
 Columns:
@@ -164,7 +164,7 @@ Percent vacation pay.
 Free text string to help document settings.
 <br/>
 
-#### WithholdTax %
+####WithholdTax %
 This table defines the rates for tax on salary.
 
 Columns:
@@ -185,7 +185,7 @@ Percent withhold tax.
 Free text string to help document settings.
 <br/>
 
-#### PensionDueTerm
+####PensionDueTerm
 This table defines the payment terms for pension.
 
 Columns:
@@ -227,7 +227,7 @@ Due date for first term.
 Free text string to help document settings.
 <br/>
 
-#### VacationPay Due Term
+####VacationPay Due Term
 This table defines the payment terms for vacation pay.
 
 Columns:
@@ -248,7 +248,7 @@ Due date for first term.
 Free text string to help document settings.
 <br/>
 
-#### WithholdTax Due Term
+####WithholdTax Due Term
 This table defines the payment terms for withhold tax.
 
 Columns:
@@ -271,7 +271,7 @@ Posted on separate tax deduction account.
 Free text string to help document settings.
 <br/>
 
-#### NonCash: Counter Account
+####NonCash: Counter Account
 Transactions matching these settings (Legal Entity and Account) will be posted as "non-cash". A non-cash transaction means that the input transactions matching LegalEntity and Account will generate a transaction on selected counteraccount only - not involving any payments.  
 
 Note that any other functions that would involve this account will be deactivated for this Legal Entity and Account combination.

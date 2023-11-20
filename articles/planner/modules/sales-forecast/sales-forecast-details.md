@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 2
 ---
 
-## Overview
+### Overview
 This is the the Sales detail view in which the complete model for a given dimensionality (dimensionality subject to configuration) can be viewed and adjusted.
 
 <br/>
@@ -21,12 +21,12 @@ The year filter allows you to select the year to plan for. Note that the years a
 <br/>
 
 
-## Video
+### Video
 ![Introduction](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/ForecastSalesInput.mp4)<br/>
 
 <br/>
 
-## Column Descriptions 
+### Column Descriptions 
 
 - **Measure**<br/>
 

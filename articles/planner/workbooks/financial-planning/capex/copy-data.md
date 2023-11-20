@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 2
 ---
 
-## Overview
+### Overview
 This page allows you to copy investments from another year. This may be relevant if investments span multiple years.<br/>
 Note that the copy operation is relative to the selection made in the Department filter, e.g. when invoking the "Copy data from.." while positioned at department Stavanger, only investments for department Stavanger are copied.
 <br/>

@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 1
 ---
 
-## Overview
+### Overview
 VAT defines the settings related to Value Added Tax to set the VAT rate percent and payment term.
 <br/>
 
@@ -15,13 +15,13 @@ VAT defines the settings related to Value Added Tax to set the VAT rate percent 
 2. **Tables View**<br/>The right area will display the selected tables and allows users to edit content.
 <br/>
 
-## Descriptions
+### Descriptions
 
 Each table and columns are described below.
 
 Key columns used for matching when looking up correct setting is marked (k).
 
-#### VAT %
+####VAT %
 This table defines the VAT rate percent. It is possible to differentiate between legal Entities, datasets and accounts. FromDate is used when the rate has changed over time.
 
 Columns:
@@ -42,7 +42,7 @@ Free text string to help document settings.
 The table above shows that all Accounts under the Sales account group will have 25% VAT while the account 3015 will have 12,5%. Note that 3015 may also be part of Sales account group but will still get 12,5%.
 <br/>
 
-#### VAT Due Term
+####VAT Due Term
 This table defines the schedule for VAT payment.
 
 Columns:

@@ -7,16 +7,16 @@ pageIndex: 6
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x<br/>
 
-## Overview
+### Overview
 This is the Sales budget input module and is where any detailed budgeting per product and market takes place.<br/>
 
 It contains an input page (Sales Details).
 <br/>
 
-## Related Pages
+### Related Pages
 -  [Sales Details](sales-gm/sales-gm-details.md)<br/>
 
-## How to`s
+### How to`s
 
 <br/>
 

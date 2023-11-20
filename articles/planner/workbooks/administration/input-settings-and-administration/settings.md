@@ -7,7 +7,7 @@ pageIndex: 1
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5 or later
 
-## Overview
+### Overview
 This page contains a collection of central settings for the Personnel and Account input modules, such as distribution and spread keys, setup for auto transactions and so on.<br/>
 <br/>
 
@@ -15,7 +15,7 @@ This page contains a collection of central settings for the Personnel and Accoun
 
 Please refer to the relevant module document in the "How to's" section below for details.
 
-## How to`s
+### How to`s
 
 <br/>
 

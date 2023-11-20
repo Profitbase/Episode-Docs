@@ -4,7 +4,7 @@ metaKeys: ""
 folderOnly: "false"
 pageIndex: 4
 ---
-## Overview
+### Overview
 
 Data permissions are used to limit or grant access to dimensions.<br/>
 Here, the **department** is considered the most important dimension. <br/>

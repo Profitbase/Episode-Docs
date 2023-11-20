@@ -6,7 +6,7 @@ pageIndex: 2
 ---
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Common 5.3.0 or later
 
-## Overview
+### Overview
 
 This page is used to create operations that are made available as steps for the [Scheduled Operations](ScheduledOperations.md) on page 1.
 
@@ -17,7 +17,7 @@ All the steps within an Operation must belong to the same Application.
 A warning icon ![img](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/warning_24.png) will show if any problems are detected, such as no steps defined, or taret object not found in system. Click that icon to see the warning message.
 
 
-### Active functions in the listing:
+####Active functions in the listing:
 
 These are the most commonly used functions on this page, and have therefore been added directly in the listing:
 
@@ -27,7 +27,7 @@ These are the most commonly used functions on this page, and have therefore been
 
 
 
-### Click on the 3 dots menu in the operations list to view all possible actions:
+####Click on the 3 dots menu in the operations list to view all possible actions:
 
 
 **Edit** - Edit an operation : Rename, add translation, set the category or add a comment.
@@ -48,7 +48,7 @@ These are the most commonly used functions on this page, and have therefore been
 
 
 
-### Steps
+####Steps
 
 Steps on this page should only consist of Invision objects of the type: SQL Script, PowerShell Script or DataFlow.
 
@@ -62,7 +62,7 @@ The Object selection dropdown has text search enabled to help find the step.
 
 Arguments (advanced) may be added to objects of the type SQL Script and PowerShell. The Data Import module, for example, makes use of these arguments.
 
-## Related Pages
+### Related Pages
 
 [Scheduled Operations](ScheduledOperations.md)
 

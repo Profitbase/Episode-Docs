@@ -7,7 +7,7 @@ pageIndex: 5
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.2 or later
 
-## Overview
+### Overview
 
 This page allows you to audit the quality of imported data, such as checking that mandatory dimensional properties are set, etc..
 
@@ -17,7 +17,7 @@ Click the Run audit button to perform an audit. If the audit report is empty, al
 
 ![](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/ImportAudit.JPG)
 
-## Column Descriptions
+### Column Descriptions
 
 - **Severity**<br/>
 The severity of the issue (Error | Warning | Information). If issues with severity Error exists, actions should be taken to remedy the issue.
@@ -28,7 +28,7 @@ The column name within the object that has the issue.
 - **Audit Text**<br/>
 The audit text outlining the issue.
 
-## Audit checks made
+### Audit checks made
 
 The basis for the checks made is the data requirements document:
 

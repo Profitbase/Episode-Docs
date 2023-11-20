@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 3
 ---
 
-## Overview
+### Overview
 This page allows you to specify the loan principals for the loan in question. This page is only relevant for term (serial) loans.
 <br/>
 
@@ -17,7 +17,7 @@ Click "Apply ovr" to apply any overrides.<br/>
 Click "Remove ovr" to remove all overrides added for the current loan.<br/>
 Click "Cancel" to cancel any changes made.
 
-## Column Descriptions
+### Column Descriptions
 
 Note that the heading of the columns and their visibility can be configured and may thus differ from the example.<br/>
 

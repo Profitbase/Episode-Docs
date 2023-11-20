@@ -6,7 +6,7 @@ pageIndex: 10
 ---
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5 or later<br/>
 
-## Overview
+### Overview
 In some cases it may be desirable to pre-fill an input module with a proposal so that the contributors can have a qualified starting point for their work. As such, a plan proposal will normally be made in a new version prior to the users starting the detailed planning. Such a proposal can be created for eligible measures in driver based models Driver based plan proposal workbook.
 
 Please note that this workbook can only be reached via the Driver based modelling workbook, more specifically by selecting a model and clicking the link icon for the relevant measure for which you would like to set a plan proposal:
@@ -24,13 +24,13 @@ The process of defining such a proposal contains of two steps:
 
 <br/>
 
-## Related Pages
+### Related Pages
 -  [1. Create basis proposal](driver-based-plan-proposal/create-basis-proposal.md)
 -  [2. Adjust basis proposal and import](driver-based-plan-proposal/adjust-basis-proposal-and-import.md)
 
 <br/>
 
-## How to`s
+### How to`s
 
 <br/>
 

@@ -7,7 +7,7 @@ pageIndex: 1
 
  **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x
  
-## Overview
+### Overview
 
 This page allows an administrator to create or modify operations, as well as scheduling them or executing them.
 <br/>
@@ -53,7 +53,7 @@ To create a new schedule, click the [Create new schedule](AddEditSchedule.md) bu
 - The steps are listed below. Grayed out steps have been disabled.
 
 
-## Related Pages
+### Related Pages
 
 -  [Add/Edit operations](AddEditOperation.md)
 -  [Add/Edit schedule](AddEditSchedule.md)

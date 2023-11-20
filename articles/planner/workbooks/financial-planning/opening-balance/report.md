@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 2
 ---
 
-## Overview
+### Overview
 Here you can see the opening balance including any overrides presented using the balance report.  
 <br/>
 
@@ -15,7 +15,7 @@ Here you can see the opening balance including any overrides presented using the
 This is using the report layout configuration for the Balance report. Accounts from the edit is aggregated and present as report line sums here.
 <br/>
 
-## Column Descriptions
+### Column Descriptions
 
 - **Name**<br/>
 Report line name

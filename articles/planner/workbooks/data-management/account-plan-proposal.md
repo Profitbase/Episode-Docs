@@ -6,7 +6,7 @@ pageIndex: 9
 ---
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5 or later<br/>
 
-## Overview
+### Overview
 In some cases it may be desirable to pre-fill an input module with a proposal so that the contributors can have a qualified starting point for their work. As such, a plan proposal will normally be made in a new version prior to the users starting the detailed planning. Such a proposal can be created for the account input module using the Account plan proposal workbook.
 
 The process of defining such a proposal contains of two steps:
@@ -16,13 +16,13 @@ The process of defining such a proposal contains of two steps:
 
 <br/>
 
-## Related Pages
+### Related Pages
 -  [1. Create basis proposal](account-plan-proposal/create-basis-proposal.md)
 -  [2. Adjust basis proposal and import](account-plan-proposal/adjust-basis-proposal-and-import.md)
 
 <br/>
 
-## How to`s
+### How to`s
 
 <br/>
 

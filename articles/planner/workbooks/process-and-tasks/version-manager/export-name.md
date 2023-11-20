@@ -4,7 +4,7 @@ metaKeys: ""
 folderOnly: "false"
 pageIndex: 3
 ---
-## Overview
+### Overview
 
 Planner is by nature versioned, i.e. plan data exists for multiple versions. In a monthly rolling forecast context, a new version will be created each month.
 
@@ -12,7 +12,7 @@ Export names are tags that logically attach a planner version to an external dat
 
 This page is used to create the different export names (right-click in the input grid to reveal menu options such as Insert new row).
 
-## Column Descriptions
+### Column Descriptions
 
 - **Export name**<br/>
 The export name. Mandatory.

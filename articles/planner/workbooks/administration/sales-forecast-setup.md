@@ -16,7 +16,7 @@ This workbook deals with topics such as:<br/>
 
 <br/>
 
-## Related Pages
+### Related Pages
 -  [Sales forecast setup](sales-forecast-setup/sales-forecast-setup.md)<br/>
 -  [Measures](sales-forecast-setup/measure.md)<br/>
 -  [Dimension data](sales-forecast-setup/dimension-data.md)<br/>
@@ -24,7 +24,7 @@ This workbook deals with topics such as:<br/>
 
 <br/>
 
-## How to`s
+### How to`s
 
 <br/>
 

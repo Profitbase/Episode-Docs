@@ -13,7 +13,7 @@ When external ledger data is imported to Profitbase EPM, this mapping is used. A
 
 ![](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/GroupAccountMapping.JPG)
 
-## Column Descriptions
+### Column Descriptions
 
 - **Legal Entity**<br/>
 The Legal entity to which the local or source account belongs. Mandatory. Select from the drop down list.

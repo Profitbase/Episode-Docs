@@ -7,7 +7,7 @@ pageIndex: 1
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5 or later.
 
-## Overview
+### Overview
 This report is used for comparing finance ledger aggregated to reporting lines. Data versions are compared by selecting two dataset versions (A and B). The forecast datasets are combining actual data up until forecast start and forecast data from forecast start and forward. 
 
 This report contains sections to comparing the selected period, year-to-date, rest-of-year and year-total.
@@ -34,7 +34,7 @@ The Forecast dataset is composed of Actual data for periods before the Forecast 
 3. **Left Section** <br/>
 The left section contains the Department filter and gives the ability to slice data according to an organization hierarchy.
 
-## Filter Descriptions
+### Filter Descriptions
 Filter selections available apart from Department are:
 
 - **Report**<br/>Allow selecting different report configurations.
@@ -45,7 +45,7 @@ Filter selections available apart from Department are:
 - **Scenario**<br/>Is used related to simulation providing the alternatives: "Baseline", "Best" and "Worst". Scenario is only relevant for Forecast and Budget datasets.
 - **Currency**<br/>Choose which currency to the used in the report. Average rate for each period is used for currency conversion.
 
-## Column Descriptions
+### Column Descriptions
 
 Number-columns explained:
 
@@ -57,7 +57,7 @@ Number-columns explained:
 - **Act.+Forecast**<br/> This contains the sum of Actual year-to-date and Forecast rest-of-year. Note that the selected month controls the year-to-date and rest-of-year.
 - **Act.+Budget**<br/> This contains the sum of Actual year-to-date and Budget rest-of-year. Note that the selected month controls the year-to-date and rest-of-year.
 
-## How to`s
+### How to`s
 
 <br/>
 

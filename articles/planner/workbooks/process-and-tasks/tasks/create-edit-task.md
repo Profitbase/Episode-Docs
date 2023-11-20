@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 4
 ---
 
-## Overview
+### Overview
 The form used to create tasks may be opened from several workbooks in the system, using the "**New task**" link. 
 
 <br/>
@@ -20,7 +20,7 @@ and the "<b>Go to task</b>" link will include these values.
 The task form fields: 
 <br/>
 
-## Field Descriptions
+### Field Descriptions
 <br/>
 
 1. **Task name**

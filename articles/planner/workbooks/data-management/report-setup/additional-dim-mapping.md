@@ -19,7 +19,7 @@ Select the report in question in the leftmost filter to display the current addi
 
 ![img](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/AdditionalDimMapping1.JPG)
 
-## Column Descriptions
+### Column Descriptions
 
 - **Report Line ID**<br/>
 The Report Line ID for the line of the currently selected report. Readonly.<br/>

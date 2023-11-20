@@ -13,7 +13,7 @@ Select the input module from the Input module drop down and the lanuage of choic
 
 ![](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/InputSettingsTranslations.JPG)
 
-## Column descriptions
+### Column Descriptions
 
 - **ModuleExtensionID**<br/>
 The module ID. Mandatory. Filled in from the selection made in the Input module drop down.

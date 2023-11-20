@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 3
 ---
 
-## Overview
+### Overview
 This page contains a collection of central settings for payroll such as settings for vacation pay, employer tax, pension and so on.
 <br/>
 
@@ -13,7 +13,7 @@ This page contains a collection of central settings for payroll such as settings
 
 Please refer to the relevant module document in the "How to's" section below for details.
 
-## How to`s
+### How to`s
 
 <br/>
 

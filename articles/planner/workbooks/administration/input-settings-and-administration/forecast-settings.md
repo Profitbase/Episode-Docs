@@ -7,7 +7,7 @@ pageIndex: 5
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x
 
-## Overview
+### Overview
 This page contains a collection of central settings for the budget modules Personnel and Account, such as distribution and spread keys, setup for auto transactions and so on.<br/>
 <br/>
 
@@ -15,7 +15,7 @@ This page contains a collection of central settings for the budget modules Perso
 
 Please refer to the relevant module document in the "How to's" section below for details.
 
-## How to`s
+### How to`s
 
 <br/>
 

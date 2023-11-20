@@ -5,7 +5,7 @@ folderOnly: "false"
 pageIndex: 7
 ---
 
-## Overview
+### Overview
 Finance Settings contains all parameter settings that is required to do an accurate simulation of a full general ledger.
 
 The picture below is an example that will help explain how settings is organized and which concepts is applied.
@@ -16,7 +16,7 @@ The picture below is an example that will help explain how settings is organized
 2. **Tables View**<br/>The right area will display the selected tables and allows users to edit content.
 <br/>
 
-## Related Pages
+### Related Pages
 - [VAT](../../workbooks/financial-planning/finance-settings/vat.md)<br/>
 This page contains VAT settings for the different rates and when VAT payment is due.
 
@@ -57,7 +57,7 @@ This page allows you to perform a data quality audit.
 - [Allocation](../../workbooks/financial-planning/finance-settings/allocation.md)<br/>
 This page allows you to create, maintain and check allocation rules for allocating cost between givers and bearers.
 
-## Concepts
+### Concepts
 
 Often settings are used for (but not limited to):
 - Tell which accounts to be used in a certain context determined by settings tables (e.g. "Personnel: Accounts" in picture above) and leftmost columns in the table and FromDate (if present)
@@ -68,7 +68,7 @@ All settings tables contain a set of keys where most keys allow for using wildca
 
 FromDate is used to make changes in setting over time (e.g. see "Pension Employees" above for changes in FromDate and percent value).
 
-## Example
+### Example
 
 Consider the following salary transaction:
 LegalEntity = "Profitways", Department="ADMIN", PayrollDate=2020-09-30, Account=5000 (in Payroll group)
@@ -79,7 +79,7 @@ Note that you can make it very complicated and create a mess if you are using a 
 
 <br/>
 
-## See also
+### See also
 -  [Opening Balance](../../workbooks/financial-planning/opening-balance.md)<br/>
 Adjust opening balance for Forecast and Budget.
 

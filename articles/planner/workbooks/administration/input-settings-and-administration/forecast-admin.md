@@ -7,7 +7,7 @@ pageIndex: 7
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x
 
-## Overview
+### Overview
 This is the page where the forecast is rolled forward. Rollover will archive current input data, roll (move) the start of the forecast forward while retaining any input data that exists after the new forecast start.<br/>
 Actuals will be updated up to but not including the new forecast start.<br/>
 <br/>
@@ -20,7 +20,7 @@ Actuals will be updated up to but not including the new forecast start.<br/>
 
 The progress of the roll forward process is displayed in the log in the lower part of the page.
 
-## Video
+### Video
 [Roll forward forecast - under construction](#)
 
 <br/>
