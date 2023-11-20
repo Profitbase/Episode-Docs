@@ -1,16 +1,16 @@
 
   items:
   - name: PowerBI
-    href: articles/PowerBI/toc.yml  
-  - name: Invision
-    href: articles/invision/toc.yml
-  - name: Flow
-    href: articles/flow/toc.yml
+    href: articles/PowerBI/toc.yml    
   - name: Budgeting and forecasting
     href: articles/planner/toc.yml
   - name: Risk
     href: articles/risk/toc.yml
-  - name: Profitbase @
-    href: https://www.profitbase.no/
+  - name: InVision
+    href: articles/invision/toc.yml
+  - name: Flow
+    href: articles/flow/toc.yml
+  - name: Profitbase website
+    href: https://www.profitbase.com/
   - name: Blog
     href: https://blogs.profitbase.com/
