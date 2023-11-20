@@ -21,9 +21,9 @@ A Workspace is a logical container of Flows and artifacts. Workspace artifacts i
 
 ### Workspace Variables
 
-[Workspace Variables](workspaces/workspace-variables.md) are simple values that can be shared by all Flows in a Workspace, for example, a connection strings, usernames, database names or numeric values. Workspace Variables also can be used in Workspace Objects.
+[Workspace Variables](workspaces/workspace-variables.md) are simple values that can be shared by all Flows in a Workspace, for example connection strings, usernames, database names or numeric values. Workspace Variables can also be used in Workspace Objects.
 
-Environments and Workspace Variables are closely related. Each Workspace variable can hold one distinct value pr environment. For example, you may define a _ConnectionString_ variable that points to different databases for Development and Production. This functionality enables you to deploy a Flow to different environments without having to make manual changes to the configuration of the Flow when it's deployed to the target environment.
+Environments and Workspace Variables are closely related. Each Workspace variable can hold one distinct value pr environment. For example, you may define a _ConnectionString_ variable that points different databases for the Development and Production. This functionality enables you to deploy a Flow to different environments without having to make manual changes to the configuration of the Flow when it's deployed to the target environment.
 
 ### Environments
 
@@ -33,7 +33,7 @@ Profitbase Flow defines three environments:
 - Test
 - Production
 
-While developing a Flow, you are working in one environment. To follow best practices, this should be the Development environment. Once your Flow reaches a stage where it's prepared for testing or deployment to production, you should publish it to either the Test or Production environment. This allows your users or external APIs to access a stable version of the Flow, while you can continue development of subsequent versions or features.
+While developing a Flow, you are working in a environment, which should be the Development environment if you follow best practices. Once your Flow reaches a stage where it's prepared for testing or deployment to production, you should publish it to either the Test or Production environment. This allows your users or external APIs to access a stable version of the Flow, while you can continue development of subsequent versions or features.
 
 Environments and Workspace Variables are closely related. Each Workspace variable can hold one distinct value pr environment. For example, you may define a _ConnectionString_ variable that points to different databases for Development and Production. This functionality enables you to deploy a Flow to different environments without having to make manual changes to the configuration of the Flow when it's deployed to the target environment.
 
@@ -49,7 +49,7 @@ A Flow can be run manually from the Designer, from a 3rd party app via an HTTP e
 
 ### Triggers
 
-Use triggers to run Flows as response to events from external systems, such as incoming mail, new files uploaded to an Azure Storage Container, or a message added to an Azure Service Bus queue. A Flow can only contain a single trigger node, and the trigger node must be the first node in the Flow. If you need a Flow to react to events from multiple source systems, you can use the MultiTrigger.  
+Use triggers to run Flows as response to events from external systems, such as incoming mail, new files uploaded to an Azure Storage Container, or a message added to an Azure Service Bus queue. A Flow can only contain a single trigger node, and the trigger node must be the first node in the Flow. If you need a Flow to react to events from multiple source systems, you can use the [Multi-Trigger](triggers/multi-trigger.md).  
 
 ### Actions
 
