@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Edit dimensions | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Edit dimensions | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p><strong>Applies to:</strong> <img src="https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png" alt="img"> Planner 5.2 or later</p>
+<h1 id="overview">Overview</h1>
+<p>This is the page where dimensions can be browsed, edited and published to versions.</p>
+<p>Starting from Planner version 5.2, the concept of centralized dimension management was introduced. The central or default repository for a given dimension is what is called the Primary dimension. Data can be imported to the primary dimension from an external source or edited directly. Once a change is done to the primary dimension, it can be published to one or more versions.<br></p>
+<p>Each Planner version does however contain it's own copy of the dimensions and the ability to edit the version-local copy. It is best practice to limit version-local editing of a dimension and to manage the primary dimension in stead.<br></p>
+<p>By default, when opening the Edit dimensions page, the primary dimensions are in context. Select the appropriate dimension from the Select dimension drop down.<br><br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/enduserhelp/images/EditDimension.JPG" alt=""></p>
+<h3 id="adding-members-to-a-dimension-using-the-tree-editor">Adding members to a dimension using the tree editor</h3>
+<p>To add a new root dimension member, click the “+” button at the top of the dimension tree<br>
+To add a new member as a child of another member, choose “Add” from the action menu of an existing item (hover the item to make the menu trigger appear).<br></p>
+<h3 id="adding-members-to-a-dimension-by-importing-from-clipboardexcel">Adding members to a dimension by importing from clipboard/Excel</h3>
+<p>To import multiple members at the same time, click the Import button at the top of the dimension tree. This will display a table editor that lets you copy/paste data from Excel (or any other tab-delimited file).<br></p>
+<p>Note that you need to use Ctrl-V to paste into the table. You cannot right-click a cell in the table editor.<br></p>
+<h3 id="importing-dimension-data-from-an-external-source">Importing dimension data from an external source</h3>
+<p>In many cases, dimensional data is imported from an external source such as an ERP system. If this is the case, import jobs will have been configured. Click the Import button, and select Import external data. This will open up a dialogue in which the appropriate import job can be selected (one for each dimension). Select the appropriate job and click execute.</p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/enduserhelp/images/ExecuteOperation.JPG" alt=""></p>
+<p>Note that the import jobs must be configured to work in each individual solution for this option to function.</p>
+<h3 id="organizing-dimension-members">Organizing dimension members</h3>
+<p>To organize dimension members in a hierarchical structure, you can do the following:<br><br></p>
+<p>Drag/drop nodes between levels.<br>
+Use the action menu which appears when you hover a node to add, delete, cut, paste, and clone members.<br>
+To move multiple items, hold down the Ctrl key while selecting multiple members. Then use the “Cut” and “Paste” options in the action menu to move the items as children to a different member.<br>
+To sort children of an item, open the action menu and choose one of the sorting options available. The sorting options are only available on items in the tree which have children.<br><br></p>
+<h3 id="edit-data-in-table-mode">Edit data in table mode</h3>
+<p>You can edit properties and dimension member names (including translations) using Table Edit mode. That enables users to quickly edit data for multiple dimension members using data grid functionality like drag-copy of cells and copy/paste. While in Table Edit mode, you cannot edit the tree in any way, and you cannot switch back to the Properties tab until you have saved any changes.<br></p>
+<p>Note When you are in Table Edit mode, you must remember to save your changes before choosing a different dimension member from the tree, or else all your changes are lost.<br></p>
+<h3 id="preview-dimension-in-different-languages">Preview dimension in different languages</h3>
+<p>If you want to preview how the dimension looks in different languages, use the “Globe” icon at the top of the dimension tree to switch between different languages you have enabled for the dimension.<br></p>
+<h3 id="publishing-a-dimension">Publishing a dimension</h3>
+<p>The changes you make in the Dimension Editor are not fully applied until you have published the changes. That means that you can edit the data and hierarchy, save it, and continue working until you are satisfied with the result. Before applying those changes to the actual data model used by Data Stores, Filters, Tables, etc.<br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/enduserhelp/images/PublishDimension.JPG" alt=""></p>
+<p>When you publish a dimension, it will always be published to the Solution which owns it. Additionally, you can optionally choose to publish the dimension to other Solutions and Work Process Versions as well. When you choose Solutions and/or Work Process Versions to publish to, the dimension will be published to dimensions in the target Solutions and Work Process Versions having the same name as the dimension being published. When publishing to target<br><br></p>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

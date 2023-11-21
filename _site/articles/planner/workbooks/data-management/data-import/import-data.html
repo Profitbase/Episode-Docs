@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Import data | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Import data | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="overview">Overview</h3>
+
+<p>This module is used to import data from external sources, such as CSV files from an Azure blob storage or any SQL database accessible from the Planner database.
+<br></p>
+<p>Each import &quot;ruleset&quot; created can either be started manually from the Data Import module, or be used to generate an operation (todo: link to Operation Manager).
+<br></p>
+<p>The general principle for Data Import jobs is:
+<br></p>
+<br>
+<p>1 - Data must first be copied into an SQL temporary table, within Profitbase Planner.
+<br></p>
+<p>2 - Column Mapping must be set up to match the correct columns between this temporary table and the actual destination table. This step allows for SQL transform formulas.
+<br></p>
+<p>3 - Once the column mapping has been set up, the &quot;Execute Now&quot; button will become active. This button will then do everything: import data into the internal temporary table, and copy that data using the column mapping rules to the final destination table.
+<br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/plannerimages/DataImport.png" alt=""></p>
+<br>
+<p>Buttons will become active once the required information has been set up.
+<br></p>
+<br>
+<h4 id="creating-a-new-ruleset-for-data-import">Creating a new RuleSet for Data Import</h4>
+<br>
+<p>Click an existing RuleSet in the list to open it.
+<br></p>
+<p>Click the &quot;Add ruleset&quot; button above the list to create a new ruleset.
+<br></p>
+<p>Each section for the ruleset will be described below.
+<br></p>
+<br>
+<h4 id="data-import-ruleset">DATA IMPORT RULESET</h4>
+<br>
+<p><strong>Ruleset name:</strong> A short name for the data import job, so it can easily be identified in the list.
+<br></p>
+<p><strong>Destination store:</strong> Select the planner destination from the list. This is the final destination for the imported data. Changing this field will trigger an automatic save.
+<br></p>
+<p><strong>Connection:</strong> Select a <a href="/planner/workbooks/data-management/connections">Connection</a> from the list. Changing this field will trigger an automatic save.
+A &quot;Test Connection&quot; button is available, and will also be automatically triggered when loading a ruleset with a connection. A &quot;browse&quot; button will be enabled for valid Azure Blob connections, to view the files.
+<br></p>
+<p><strong>Select method:</strong>
+<br></p>
+<ul>
+<li><p>Append all data to the destination table: all new data will be added and all existing data will remain intact.
+<br></p>
+</li>
+<li><p>Custom (SQL) WHERE clauses: this option is the most flexible, and will make use of the &quot;SOURCE SQL FILTER&quot; and &quot;DESTINATION SQL FILTER&quot; sections.
+<br></p>
+</li>
+</ul>
+<p>Example : We have set up an import job to import data from any data source into the &quot;Employees&quot;, which has a column name &quot;UserName&quot;.
+<br></p>
+<p>Example Source SQL filter: UserName = 'Nico' - Only data from the source matching UserName = 'Nico' will be imported.
+<br></p>
+<p>Example Destination SQL filter: UserName = 'Nico' - Only data in the destination matching UserName = 'Nico' will be <strong>replaced</strong>.
+<br></p>
+<ul>
+<li>Replace all data to the destination table: existing data in the final destination will be wiped and replaced with the new import.
+<br></li>
+</ul>
+<p>For the replace method, 2 optional checkboxes:
+<br></p>
+<pre><code>* &quot;Keep existing data if no rows loaded&quot;: This will abort the final step if the temporary table is empty.
+&lt;br/&gt;
+
+* &quot;Abort if rows decrease&quot;: This will abort the final step if the temporary table has less rows than the destination.
+</code></pre>
+<br>
+<p>These 2 options are particularly useful when import jobs are automated with <a href="../../administration/operation-manager/ScheduledOperations.html">Scheduled Operations</a></p>
+<br>
+<br>
+<h4 id="configure-source-azure-blob-storage---csv-file-option-1">CONFIGURE SOURCE: AZURE BLOB STORAGE - CSV FILE (Option 1)</h4>
+<br>
+<p><strong>File name prefix:</strong> The blob storage may contain multiple files, so we must specify the first few letters of files the import job must look for.
+<br></p>
+<p><strong>Column delimiter:</strong> The symbol used inside the CSV file to separate the columns. Typical values are either <strong>,</strong> or <strong>;</strong>
+<br></p>
+<p><strong>Text qualifier:</strong> The symbol used inside the CSV file to wrap data strings. Most common is <strong>&quot;</strong>
+<br></p>
+<p><strong>Automatically move blob files after processing (auto cleanup)</strong> If this option is active, files will be moved into an <strong>Archive</strong> folder in the blob storage. The purpose is to handle automatic updates, and prevent re-using the same file, if, for example, another automatic routine adds new files every day/week/month.
+<br></p>
+<p><strong>Custom (SQL) WHERE clause on source:</strong> Filter the source data using an SQL expression. This can reduce the number of rows imported, if you only need a subset. Do not include the key word &quot;WHERE&quot; at the start, just the filter.
+<br></p>
+<h4 id="configure-source-direct-sql-option-2">CONFIGURE SOURCE: DIRECT SQL (Option 2)</h4>
+<br>
+<p><strong>Select Query:</strong> The SQL query used to get the data to import. This can be any valid SQL query: you may use joins or &quot;where&quot; filters to completely customize what data to import. The &quot;Browse&quot; button is only meant as a helper for this step to get the correct table and column names without needing SQL Management Studio.
+<br></p>
+<p><strong>Browse:</strong> (Optional) Helper popup to browse the tables and suggest a select query that you may copy paste for the next step. The &quot;auto-collate option&quot; will add collation code to match the destination database on text fields. The &quot;use suggested query&quot; will add that query to the above mentioned field, so you don't have to maually copy paste it. You may add a WHERE clause if needed.
+<br></p>
+<br>
+<h4 id="configure-temporary-table">CONFIGURE TEMPORARY TABLE</h4>
+<br>
+<p>Enter the name for the temporary table to be used. It will be prefixed with DataImport_ automatically.
+<br></p>
+<p>When all the necessary fields have been filled, the &quot;Import New Data&quot; button will become active.
+<br></p>
+<p>Instances hosted by Profitbase will use a much faster method, which is impossible with &quot;on premise&quot; installations.
+<br></p>
+<p>A preview button can be used to view the status of that table (if it exists).
+<br></p>
+<p>Once the temporary data has data, the column mapping must be set up between this temporary (staging) table and the final destination, as column names or types could differ.</p>
+<h4 id="column-mapping">COLUMN MAPPING</h4>
+<br>
+<p>Mandatory step to perform the copy of data from the SQL temporary table to the final destination.
+<br></p>
+<p>This will tell the system which column to put where, as the column names don't necessarily match.
+<br></p>
+<p>Here is a basic example:
+<br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/plannerimages/ColumnMappingExample.PNG" alt=""></p>
+<br>
+<p>EmployeeID will be imported as-is.
+<br></p>
+<p>If the Employee name is &quot;Lisa&quot;, it will be replaced with &quot;Nico&quot;. This can be used to add any logic, and may even reference other columns.
+<br></p>
+<p>EmploymentType_Name will be left to NULL for all rows in the destination, regardless of imported data (no string delimiters).
+<br></p>
+<p>EmploymentType will be &quot;Programmer&quot; for all rows in the destination, regardless of imported data (note the string delimiters).
+<br></p>
+<p>ModifyType and PBRowIdentity will be ignored.
+<br></p>
+<p>After the column mapping has been saved, a summary will be displayed in the final section:
+<br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/plannerimages/ColumnMappingExample_result.PNG" alt=""></p>
+<br>
+<br>
+<h4 id="optional-creating-operations-to-automate-data-imports">(Optional) Creating Operations to automate Data Imports</h4>
+<p>To run an import job, click the &quot;Execute Now&quot; button.</p>
+<p>This will perform all the steps above, which consists of one step: a dataflow with an argument (the import ruleset GUID).</p>
+<p>If you wish to automate this job or just expose it to the &quot;Operation Manager&quot; module of the Profitbase Planner, the &quot;Create Operation&quot; button will create an operation with the same name as the ruleset, under the application &quot;EPMDataMart&quot; and the category &quot;Data Import&quot;.</p>
+<p>If you select multiple rulesets on the ruleset selection screen, that &quot;Create Operation&quot; button will create one operation with all the selections. The default name of the operation will become all ruleset names, comma separated (but may be renamed).</p>
+<h3 id="related-pages">Related Pages</h3>
+<p><a href="../../administration/operation-manager/ScheduledOperations.html">Scheduled Operations</a>
+<a href="../../administration/operation-manager/Operations.html">Operations</a></p>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

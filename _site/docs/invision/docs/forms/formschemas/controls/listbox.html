@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Listbox | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Listbox | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../../public/main.js'
+    import { init } from './../../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p>Inherits from <a href="editablecontrol.html">Editable Control</a>.</p>
+<br>
+<h4 id="properties">Properties</h4>
+<br>
+<p><code>ItemsSource</code><br>
+Specifies the name of the List or SetModel that contains the items that is displayed to the user, or a binding to a collection in the Form Runtime.</p>
+<br>
+<p><code>ItemsSourceFilter</code><br>
+<strong>Optional.</strong> Specifies a function that returns the items to render in the Listbox. The function cannot be asynchronous.</p>
+<p><strong>Example</strong></p>
+<pre><code class="lang-xml">&lt;Form&gt;
+  &lt;Data&gt;
+    &lt;Models&gt;
+      &lt;Model Name=&quot;Customer&quot; Source=&quot;@Object[Customers].DbObjectName&quot; Fields=&quot;ID,Name&quot; /&gt;
+    &lt;/Models&gt;
+    &lt;Lists&gt;
+    	&lt;List Name=&quot;Customers&quot; Source=&quot;@Object[Customers].DbObjectName&quot; Fields=&quot;ID,Name&quot;/&gt;
+    &lt;/Lists&gt;
+  &lt;/Data&gt;
+  &lt;Functions&gt;
+  	&lt;Function Name=&quot;MyFilter&quot; Parameters=&quot;items, controlName&quot;&gt;
+  		return items.filter(item =&gt; item.ID !== &quot;Customer1&quot;);
+  	&lt;/Function&gt;
+  &lt;/Functions&gt;
+  &lt;UI Grid=&quot;ui-root&quot;&gt;
+    &lt;Listbox Name=&quot;MyListbox&quot; Row=&quot;1&quot;
+    	MinWidth=&quot;100px&quot;
+        ItemsSource=&quot;Customers&quot;
+        ItemsSourceFilter=&quot;MyFilter($Data, $Ctrl.Id)&quot;
+    	DisplayMember=&quot;Name&quot;
+    	ValueMember=&quot;ID&quot;
+    	SelectedValue=&quot;{Binding Path:Customer.ID}&quot; /&gt;
+  &lt;/UI&gt;
+&lt;/Form&gt;
+</code></pre>
+<br>
+<p><code>DisplayMember</code><br>
+Specifies the field of the List or SetModel member that is displayed to the user. This is usually a description or some sort of user friendly text. This property is ignored if you have specified an <strong>ItemTemplate.</strong></p>
+<br>
+<p><code>ValueMember</code><br>
+Specifies the field of the Set Model member or List that holds the value to assign to the SelectedValue when the user selects an item in the list.</p>
+<br>
+<p><code>SelectedValue</code><br>
+<strong>Optional.</strong> Specifies the binding to the field in a Model or custom object that the ValueMember should update.</p>
+<br>
+<p><code>KeyProp</code><br>
+<strong>Required.</strong> This property indicates which field in the ItemsSource that uniquely identifies an item in the ItemsSource.</p>
+<br>
+<p><code>ItemSelected</code><br>
+A Function to call when the user has selected an item from the list. You can pass the selected item to the function using the special $Data keyword, or you can get the selected value from within the function from the object property bound to the SelectedValue property.</p>
+<br>
+<p><code>ItemTemplate</code><br>
+The ItemTemplate enables you to customize how you want each item in the listbox to be displayed, using all the available UI controls.</p>
+<blockquote>
+</blockquote>
+<br>
+<h3 id="see-also">See Also</h3>
+<ul>
+<li><a href="listbox/renderingitems.html">Rendering Items</a></li>
+</ul>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

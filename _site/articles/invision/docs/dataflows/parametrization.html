@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Parameterization | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Parameterization | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../public/main.js'
+    import { init } from './../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h2 id="parameterization">Parameterization</h2>
+
+<p>Parameterization of Data Flows enables you to provide input to the steps and control flow logic during execution.
+<br></p>
+<h3 id="parameterized-execution">Parameterized execution</h3>
+<p>To pass arguments to a Data Flow being executed from a Workbook, you need to edit the Arguments property of the Data Flow part from the Workbook designer.</p>
+<p>The editor shows a list of all activities and their respective parameters hosted by the Data Flow. When selecting the activity, you get a list of the parameters and any default arguments.</p>
+<p>To override the default values, you can use variables, the Filter(…) function, or hard coded values. InVision resolves the arguments by evaluating all values as Eaze expressions.</p>
+<br>
+<p><strong>Example</strong></p>
+<blockquote>
+<p>This example shows how to specify the arguments passed to a Data Flow Activity.<br>
+The values listed in the Default Value column is used unless a value is provided in the Override Value column. The values in the Override Value column must be valid Eaze expressions, meaning they can contain references to variables.</p>
+<p>In this example, a variable x = &quot;FOO&quot; exists. (We’re referencing it in the myAbbrev argument expression, by only getting the first 2 letters).</p>
+<table>
+<thead>
+<tr>
+<th>Argument name</th>
+<th>Default Value</th>
+<th>Override Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>myInt</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>myString</td>
+<td>Hello</td>
+<td>&quot;Hello&quot;</td>
+</tr>
+<tr>
+<td>myDate</td>
+<td>1900.01.01</td>
+<td>DATE(1900,1,1)</td>
+</tr>
+<tr>
+<td>myDec</td>
+<td>22.4</td>
+<td>11.6</td>
+</tr>
+<tr>
+<td>myDepartment</td>
+<td></td>
+<td>Filter(&quot;Filters&quot;, &quot;Department&quot;).SelectedValue.Id</td>
+</tr>
+<tr>
+<td>myAbbrev</td>
+<td></td>
+<td>SUBSTRING(x, 0, 2)</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<br>
+<h4 id="see-also">See Also</h4>
+<ul>
+<li><a href="parametrization/globalparameters.html">Global Parameters</a></li>
+<li><a href="parametrization/programmatically-set-glob-param.html">Programmatically change Global Parameters</a>
+<br></li>
+</ul>
+<h4 id="videos">Videos</h4>
+<ul>
+<li><a href="../../videos/dataflows.html">Data Flows</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Data%20Flow%20-%20Introduction%20to%20parameterization.mp4">Introduction to Parameterization</a></li>
+</ul>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

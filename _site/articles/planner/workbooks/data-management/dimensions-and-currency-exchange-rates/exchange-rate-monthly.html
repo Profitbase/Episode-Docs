@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Exchange rate monthly | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Exchange rate monthly | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="overview">Overview</h3>
+
+<p>Here you can override and inspect the monthly exchange rates including regenerating the monthly rates.
+<br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/plannerimages/dimensions-exchange-rate-monthly.jpg" alt=""></p>
+<ol>
+<li><strong>Changes Rate Historical Monthly Override</strong><br>
+This table allows you to override monthly exchange rates.</li>
+<li><strong>Publish</strong><br>
+The publish button is used to generate monthly rates based on daily exchange rates.</li>
+<li><strong>Exchange Rates Monthly</strong><br>
+The table to the right shows the daily exchange rates generated. Using the filter capabilities, you can inspect exchange rates between different combination of currencies.</li>
+</ol>
+<h3 id="descriptions">Descriptions</h3>
+<p>Monthly average exchange rates are used for most currency conversions. An exception is the simulation to generate the general ledger which will use any level of detail down to daily exchange rate. To get the same currency</p>
+<p>Each table and columns is described below.</p>
+<p>Columns marked with (k) is key columns that will be used to match transactions when exchange rates are deployed in calculations.</p>
+<h4 id="exchange-rate-historical-monthly-override">Exchange Rate Historical Monthly Override</h4>
+<p>This table allows you to override monthly exchange rates.</p>
+<p>Columns:</p>
+<ul>
+<li><strong>From Currency (k)</strong><br>
+3-character code to identify the currency.</li>
+<li><strong>To Currency (k)</strong><br>
+3-character code to identify the currency.</li>
+<li><strong>PeriodNo (k)</strong><br>
+This is number defining the calendar period on format YYYYMM.</li>
+<li><strong>From Date (k)</strong><br>
+Set the date from when the override will be applicable.</li>
+<li><strong>RateOpen</strong><br>
+The rate at the first-rate day in month.</li>
+<li><strong>RateHigh</strong><br>
+The highest rate during the month.</li>
+<li><strong>RateLow</strong><br>
+The lowest rate during the month.</li>
+<li><strong>Rate Lst Day</strong><br>
+The rate the last rate date in the month.</li>
+<li><strong>Rate Average</strong><br>
+The arithmetic means between all rate dates.</li>
+<li><strong>Comments</strong><br>
+Free text sting to help document settings.</li>
+</ul>
+<p>Note that all rates must be input as the rate that you use to convert an amount in currency as defined in From Currency column to currency as defined into Currency column. E.g. &quot;From Currency&quot;=EUR and &quot;To Currency&quot; = NOK and Value = 9.</p>
+<p>Exchange rates are published on all business days depending on the publisher working calendar. Therefore you will not get exchange rates published on public holidays. That is why the term &quot;rate days&quot; is used above.
+<br></p>
+<h4 id="exchange-rates-monthly">Exchange Rates Monthly</h4>
+<p>This table is a report (read-only) showing the generated monthly rates. Selecting From Currency, To Currency and Year you can inspect any rate.</p>
+<p>The Comments column is here used to tell that this is historical rate or forecast (i.e. future) rate.</p>
+<p>Columns:</p>
+<p>Columns:</p>
+<ul>
+<li><strong>Dataset</strong> (k)**<br>
+Identify the dataset that the exchange rate applies to</li>
+<li><strong>From Currency (k)</strong><br>
+3-character code to identify the currency.</li>
+<li><strong>To Currency (k)</strong><br>
+3-character code to identify the currency.</li>
+<li><strong>Period No. (k)</strong><br>
+This is number defining the calendar period on format YYYYMM.</li>
+<li><strong>Rate Average</strong><br>
+The arithmetic means between all rate dates.</li>
+<li><strong>Rate Last Day</strong><br>
+The rate the last rate date in the month.</li>
+<li><strong>Comments</strong><br>
+Free text sting to help document settings.</li>
+</ul>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

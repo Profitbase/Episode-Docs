@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Operations | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Operations | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p><strong>Applies to:</strong> <img src="https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png" alt="img"> Common 5.3.0 or later</p>
+<h3 id="overview">Overview</h3>
+<p>This page is used to create operations that are made available as steps for the <a href="ScheduledOperations.html">Scheduled Operations</a> on page 1.</p>
+<p>Each step is a reference to an existing Invision object of either of these types: PowerShell scripts, SQL Scripts, DataFlows.</p>
+<p>All the steps within an Operation must belong to the same Application.</p>
+<p>A warning icon <img src="https://profitbasedocs.blob.core.windows.net/enduserhelp/images/warning_24.png" alt="img"> will show if any problems are detected, such as no steps defined, or taret object not found in system. Click that icon to see the warning message.</p>
+<p>####Active functions in the listing:</p>
+<p>These are the most commonly used functions on this page, and have therefore been added directly in the listing:</p>
+<p><strong>Steps</strong> - To Edit the Steps, which consists of Operations from the second page, click the action link in the list.</p>
+<p><strong>Execute</strong> - Same function as the &quot;Execute in Version&quot; in the 3 dots menu.</p>
+<p>####Click on the 3 dots menu in the operations list to view all possible actions:</p>
+<p><strong>Edit</strong> - Edit an operation : Rename, add translation, set the category or add a comment.</p>
+<p><strong>Execute</strong> - Execute an operation immediately, using stored settings.</p>
+<p><strong>Execute in version..</strong> - Execute an operation in a specific set of versions. An intermediary popup for selecting versions appears. An action link is available in the Operations list for this commonly used function.</p>
+<p><strong>Operation log</strong> - View execution log, showing when the job was run, who or what (schedule) started it, and see any errors.</p>
+<p><strong>Link to workbook</strong> - Makes the Operation available on the selected workbook(s), through a button that will be shown on the target workbook(s).</p>
+<p><del><strong>Schedule Plan</strong></del> - Option Disabled for page 2. Only <a href="ScheduledOperations.html">Scheduled Operations</a> can be set on schedule.</p>
+<p><strong>Version Execution Mode</strong> - Select version(s) the operation should target when run on schedule. For every Process, the options are &quot;Current Version&quot; and &quot;All Active Versions&quot;. The last column will show a list of version(s) that would currently correspond to.</p>
+<p><strong>Delete</strong> - Deletes the operation. The steps are not deleted and are still available to add.</p>
+<p>####Steps</p>
+<p>Steps on this page should only consist of Invision objects of the type: SQL Script, PowerShell Script or DataFlow.</p>
+<p>Steps can be enabled or disabled using the Toggle Button.</p>
+<p>Hovering a step, will also display 3 small buttons to move the steps up or down (re-ordering), or deleting the step from this scheduled operation. Deleting a step will not delete the Invision object, only the step!</p>
+<p>To add a step, use the (orange) Actions menu top right: a popup will appear, so you can select an Invision object from the list. The type dropdown will filter the objects. Optionally, give it a more user friendly name and proper translation.</p>
+<p>The Object selection dropdown has text search enabled to help find the step.</p>
+<p>Arguments (advanced) may be added to objects of the type SQL Script and PowerShell. The Data Import module, for example, makes use of these arguments.</p>
+<h3 id="related-pages">Related Pages</h3>
+<p><a href="ScheduledOperations.html">Scheduled Operations</a></p>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

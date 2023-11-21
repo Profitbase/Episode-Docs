@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Data Stores | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Data Stores | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../public/main.js'
+    import { init } from './../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="data-stores">Data Stores</h3>
+
+<br>
+<p>Data Stores are the primary data repositories of your Solution. Data Stores should be used for storing the master data and processing results for your business modules, while Tables should contain configuration data for business rules and utility functions.</p>
+<p>Data Stores are materialized as SQL Server tables and can be read and written to by any SQL script or process having the required permissions. Data is stored &quot;as is&quot;, so you do not need to use an InVision API to read or write data to a Data Store. This makes it easy to integrate with other tools, such as Excel or a custom Web Service, to export and import data to and from InVision.</p>
+<p>The table schema of a Data Store is configured by adding columns and setting up properties for each column. Constraints and data sources are defined by adding dimensions and fact to the setup, and binding columns from the (fact and dimension) data sources to the columns in the Data Store. By binding dimensions and facts to the table schema of a Data Store, you create a star schema.
+<br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/datastores.png" alt="img"></p>
+<br>
+<p><strong>You should consider binding dimensions to Data Stores when you want to make it easy to:</strong></p>
+<ol>
+<li><p>Enable foreign key constraints</p>
+</li>
+<li><p>Create Worksheets with dropdown editors for selecting cell values (for example Accounts, Projects, Products, etc)</p>
+</li>
+<li><p>Create Worksheets where the data set presented to the end-user should be filtered by dimension.</p>
+</li>
+<li><p>Create Worksheets where you want to ensure identities only have access to data based on identity rights.</p>
+</li>
+<li><p>Use the Core Set function to (pre)populate the Data Store.</p>
+</li>
+<li><p>Specify a mechanism used for resolving the Data Context when processing data using Data Flows in a Workflow context.</p>
+</li>
+</ol>
+<p>In addition to the core setup of the Data Store where you define the schema and how data is loaded and updated to the store, you can specify a range of features and behaviors which enable different kinds of applications of the Data Store. The features and behaviors include Rollover, Periodic Input, Core Set, and Transaction Pipeline.</p>
+<br>
+<h3 id="see-also">See Also</h3>
+<ul>
+<li><p><a href="howto/index.html">How to's</a></p>
+</li>
+<li><p><a href="creatingschema.html">Creating Schema</a></p>
+</li>
+<li><p><a href="sourcemapping.html">Source Mapping</a></p>
+</li>
+<li><p><a href="importingandupdting/index.html">Importing and Updating Data from Data Sources</a></p>
+</li>
+<li><p><a href="dataupdateconfig.html">Data Update Configuration</a></p>
+</li>
+<li><p><a href="exportingdata.html">Exporting Data from InVision</a></p>
+</li>
+<li><p><a href="timeframe.html">Time Frame</a></p>
+</li>
+<li><p><a href="coreset.html">Core Set</a></p>
+</li>
+<li><p><a href="rollover.html">Rollover</a></p>
+</li>
+<li><p><a href="periodicimput.html">Periodic Input</a></p>
+</li>
+<li><p><a href="timeframemeasurecolumns.html">Time Frame Measure Columns</a></p>
+</li>
+<li><p><a href="changetracking.html">Change Tracking</a></p>
+</li>
+<li><p><a href="transactionpipeline.html">Transaction Pipeline</a></p>
+</li>
+<li><p><a href="tracingcolumns.html">Tracing Columns</a></p>
+</li>
+</ul>
+<br>
+<h3 id="videos">Videos</h3>
+<ul>
+<li><a href="../../videos/datastores.html">Data Stores</a></li>
+</ul>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

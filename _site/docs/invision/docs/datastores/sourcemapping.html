@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Source Mapping | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Source Mapping | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../public/main.js'
+    import { init } from './../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="source-mapping">Source Mapping</h3>
+
+<p>In this <strong>Example</strong> we use Data Store that we created <a href="creatingschema.html">here</a>.</p>
+<ol>
+<li>Go to the “Source Mapping” tab.</li>
+<li>Click on the “Add Source” button.</li>
+<li>Find the Fact table “HistProductSales” in the Item Picker pop up and click “Ok”.</li>
+</ol>
+<p><strong>Notice</strong> that the data in the HistProductSales table is not in the same format as the data store we just created. One alternative is to use the SQL Transform field to write SQL code that transform your data. Another option is to create a view and use the view as your data source.</p>
+<p>You can copy the SQL statement below into the Sql Transform window. We do this to create a column with margin % based on the data in the fact table.</p>
+<pre><code>SELECT 
+[DepartmentID],
+[ProductID],
+SUM([Amount]) AS HistSalesLY,
+(1-(SUM([Amount])/SUM(COGS)))*-1 AS MarginPCT 
+
+FROM @Object[HistProductSales, fact].DbObjectName
+WHERE [DatasetID] = 'Actual' and YEAR(Transdate) = '2009'
+Group BY 
+[DepartmentID],
+[ProductID]
+</code></pre>
+<ol start="4">
+<li>Paste the SQL query into the SQL Transform field</li>
+<li>Click “Save” or Ctrl + S</li>
+<li>Navigate to the “Column Bindings” area</li>
+</ol>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/sourcemapping1.png" alt="Source Mapping"></p>
+<ol start="7">
+<li>Map your Source columns to your Data Store columns or use the “Auto Bind” function. Your mapping should look like this:</li>
+</ol>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/sourcemapping2.png" alt="Source Mapping"></p>
+<ol start="8">
+<li>Click “Save” or Ctrl + S</li>
+<li>Click on the “Add Source” button. Select the “Department” Dimension in the Item Picker pop-up and click “Ok”</li>
+<li>Use the “column Bindings” function to map the Dimension column DepartmentID against Data Store column DepartmentID.
+Make sure the binding type is set to “Relationship”.</li>
+<li>Repeat step 9 and 10 for the “Product” Dimension</li>
+<li>Click “Save” or Ctrl + S</li>
+<li>Right click on your Data Store “Product Sales” in the Solution Explorer pane on the right-hand side and select “Reload Data”. Click “Yes” in the Reload Data pop-up.
+This uses the query you entered in the SQL Transform field to load the selected data from the fact table into the data store.</li>
+<li>When the “Reload data” dataflow is completed close the Data Flow execution dialog box.</li>
+<li>Right click on your Data Store “Product Sales” and select “Browse Data” to explore the content of your Data Store</li>
+</ol>
+<br>
+<h3 id="videos">Videos</h3>
+<ul>
+<li><a href="../../videos/datastores.html">Data Stores</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/DS%20Basic%20-Creating%20Schema%20and%20source%20maping.mp4">Basics - Creating Schema and Source Mapping</a></li>
+</ul>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

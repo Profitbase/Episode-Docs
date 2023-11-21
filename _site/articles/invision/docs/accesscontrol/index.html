@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Accesscontrol | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Accesscontrol | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../public/main.js'
+    import { init } from './../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="accesscontrol">Accesscontrol</h3>
+
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/accCtrl.png" alt="img"></p>
+<br>
+<h3 id="introduction">Introduction</h3>
+<p>Access control is a security technique that regulates who can view or use resources in a computing environment. It is a fundamental concept in security that minimizes risk to the business or organization.</p>
+<p>Access to resources, such as <a href="../workbooks.html">Workbooks</a>, Data, and APIs are granted to <a href="accessgroups.html">Access Groups</a>. Access Groups contain (identity or group) accounts from Windows or Azure AD.</p>
+<p>To each <a href="identities.html">Identity</a> and access group, you can grant access by setting Workbook and <a href="dataperm.html">Data Permissions</a>.</p>
+<p>Access control can be managed through an <a href="httpapi.html">HTTP API</a>. To manage Identities/Groups/Access Control through the API, you need an API Key and the API address.</p>
+<br>
+<h3 id="see-also">See Also</h3>
+<ul>
+<li><a href="howto.html">How to's</a></li>
+<li><a href="accessgroups.html">Access Groups</a></li>
+<li><a href="dataperm.html">Data Permissions</a></li>
+<li><a href="identities.html">Identities</a></li>
+<li><a href="workbookperm.html">Workbook Permissions</a></li>
+<li><a href="httpapi.html">HTTP API</a></li>
+</ul>
+<br>
+<h3 id="videos">Videos</h3>
+<ul>
+<li><a href="../../videos/accesscontrol.html">Access Control</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Users%20and%20Permissions%20-%20Users%20and%20User%20Groups.mp4">Identities and Access Groups</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Users%20and%20Permissions%20-%20Create%20and%20Manage%20Azure%20AD%20Users%20and%20User%20Groups.mp4">Create and Manage Azure AD Identities and Access Groups</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Users%20and%20Permissions%20-%20Manage%20access%20to%20data%20and%20Workbooks.mp4">Manage Access to Data and Workbooks</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Access%20Control%20-%20Manage%20access%20to%20Workbooks.mp4">Manage Access to Workbooks</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Identities%20client%20side%20%20-%20Basics.mp4">Access Control - Client Side</a></li>
+</ul>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

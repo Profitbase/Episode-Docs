@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>SQL Reports | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="SQL Reports | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../public/main.js'
+    import { init } from './../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/sqlScr.png" alt="pic"></p>
+<p>InVision supports line and chart reports, and a single report can toggle between line and chart display mode.</p>
+<p>Reports are created by defining one or more data sets using SQL queries and then mapping those data sets to chart and table reports.</p>
+<p>InVision reports can read data from any SQL source, so you can use reports to view data from any SQL Server database in addition to the InVision databases.
+<br></p>
+<h3 id="query-definitions">Query Definitions</h3>
+<p>The data sets for the line and chart reports are created using standard SQL queries and <a href="sqlreports/dataqueries.html">SQL direktives</a>, called <a href="sqlreports/dataqueries.html">Data Queries</a>. A Report definition can contain multiple data sets used for displaying the same data in different ways. For example, you can use one data set for the chart and a different data set for the line report. Or you can use multiple data sets in the same chart and display then as different series.</p>
+<p>The data sets are listed in the Data Sets list of the Report editor. To create a new data set, drag and drop a &quot;<strong>New Default Data Set</strong>&quot; from the <em>Data View Resources</em> Toolbox onto the list.</p>
+<p>Default queries for reading data from InVision table resources such as Data Stores and Views can be added by drag and drop resource objects from the Database Resources Toolbox onto the query editor.
+<br></p>
+<h3 id="writing-custom-event-handlers-for-chart-events">Writing custom event handlers for Chart events</h3>
+<p>Profitbase InVision is using Highcharts for rendering charts. If you want to write custom event handlers for events such as when a user clicks a point in a series, or when the user hovers the mouse over a point, you should first read the documentation for Highcharts on how to handle the different types of events and what data is available to an event handler function when the event is raised.</p>
+<p>Currently, InVision has a built-in event handler that can be applied to the Point Clicked event of a series. When the user clicks a point, the <a href="workbooks/components/reports.html">ChartInteractionEvent</a> will be raised when the Report is displayed in a Workbook, passing along the x-value, y-value and the data object (row) that point represents. Any other Workbook component can subscribe to this event and use the event payload to do with as he pleases.</p>
+<p>If you need to write a custom event handler for any of the events exposed by the Properties editor in the Chart Configuration screen, you can either write an inline function or provide the name of a function from a <a href="javascript.html">JavaScript</a> defined in the solution. The example below shows how to create a custom event handler for the point clicked event of a series, which will raise the ChartInteractionEvent manually. It will also output the data object associated with the point to the browser console window.</p>
+<pre><code>var mySolution;
+(function(mySolution){
+    var myChartEventHandlers;
+    (function(myChartEventHandlers){
+        var myUtil = (function(){
+            function myUtil(){
+            }
+            myUtil.onClick = function(){
+                console.log(this.dataObject);
+                this.series.chart.componentContext.eventDispatcher
+                raiseEvent('ChartInteractionEvent', {x : this.x, y :  this.y, row :
+                this.dataObject}, this.series.chart.componentContext.componentId);
+            };
+    return myUtil;
+        })();
+        myChartEventHandlers.myUtil = myUtil;
+    })( myChartEventHandlers = mySolution. myChartEventHandlers ||
+     (mySolution. myChartEventHandlers = {}));
+})(mySolution || (mySolution = {}));
+</code></pre>
+<p>To use this function as the event handler of the Point Clicked event of a Serie, enter the following value for the Point Clicked property of a chart serie:</p>
+<pre><code>func::mySolution.myChartEventHandlers.myUtil.onClick (Note the func:: designation at the start)
+</code></pre>
+<br>
+<h3 id="see-also">See Also</h3>
+<ul>
+<li><a href="sqlreports/howto.html">How to's</a></li>
+<li><a href="workbooks/components/reports.html">Reports</a></li>
+<li><a href="sqlreports/chartformatting.html">Charts Formatting</a></li>
+<li><a href="sqlreports/dataqueries.html">Data Queries</a></li>
+</ul>
+<h3 id="videos">Videos</h3>
+<ul>
+<li><a href="../videos/sqlreports.html">SQL Reports</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/SQL%20Report%20Intro%20basics.mp4">SQL Reports - Basics</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/SQL%20Report%20Charts.mp4">SQL Reports - Charts</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/SQL%20Reports%20-%20ChartInteractionEvent.mp4">SQL Reports - ChartInteractionEvent</a></li>
+</ul>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

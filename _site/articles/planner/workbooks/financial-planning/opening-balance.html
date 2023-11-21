@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Opening Balance | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Opening Balance | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../public/main.js'
+    import { init } from './../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="overview">Overview</h3>
+
+<p>The purpose of Opening Balance is to inspect and adjust opening balance values as generated from historical actual finance general ledger.</p>
+<p>You can generate the opening balance for dataset according to forecast start date and budget start date. These dates are controlled by roll forward for forecast and budget datasets.</p>
+<p>After importing and generating the opening balance for selected dataset and date, you can drill down to individual legal entity and override to adjust the balance.</p>
+<p>This adjusted balance will be used in the following simulations and subject to settings under Finance Settings and OBDue. Here you can control how payables, receivable and other payments of opening balance will be treated.</p>
+<h3 id="how-ob-works">How OB works</h3>
+<p>Opening Balances (OB) in finance accounting is the amount of funds on a company's account at the beginning of a fiscal year. Hence OB is relevant for all finance general ledger datasets that include balance accounts. For Planner the typical datasets are:</p>
+<ul>
+<li>Actual - historic booked values. The date for the OB actual is the first day of the fiscal year (or any date in the first fiscal period)</li>
+<li>Budget - a best estimate for future development typical for one fiscal year. OB is created for the first day or period for the first fiscal year. OB for following years is generated by the system.</li>
+<li>Forecast - a rolling monthly forecast looking a number of months ahead. When looking av Forecast for a fiscal year this dataset contains actual data for OB and periods up until the Forecast start period and Forecast data after. For reporting purposes, an OB for each year is created for following years by the system.</li>
+</ul>
+<p>For each plan process such as Forecast and Budget there is a plan start date which is the date for when the plan starts.</p>
+<p>For each fiscal year, the balance from the previous year makes the OB for the following year.</p>
+<p>For a rolling Forecast, the OB must be provided for every plan start date change - meaning for every time the Forecast is rolled forward. Likewise for Budget, an OB is required for each budget start date.</p>
+<p>Assume we have a forecast (or budget) starting at the first fiscal period (e.g. January for a fiscal year following a calendar year). As stated above Forecast dataset = Actual + Forecast. When plan start is the first fiscal period, opening balance is the actual OB. Assuming the plan start date is in period 3, Forecast OB for period 3 = Actual OB + Actual period 1 + Actual period 2.</p>
+<p>OB provides a clean cut between actual funds on accounts up until plan start date. These funds serves as input to decide how the finance ledger will evolve in the following periods and in particular the impact on cash. the different parts of OB is used for:</p>
+<ul>
+<li>Accounts Receivables will be due with payments in the following periods</li>
+<li>Accounts Payables will be due to the paid in the following periods</li>
+<li>Vacation pay will be due to be paid based on accrued or previous full year</li>
+<li>Other payments that will be due based on accounts balances</li>
+</ul>
+<p>Certain rules for when and how much must exist to take care of the list above. This is describe in more detail below.</p>
+<p>How to proceed with Profitbase Planner to deal with opening balances.</p>
+<h4 id="1-create-ob">1. Create OB</h4>
+<p>In the Opening Balances workbook you can created the opening balance. Here you can also create overrides to adjust the OB available from actual data. This may be necessary for example at the beginning of the year when previous year is not closed and hence an actual OB is not completed or accurate, you can make necessary adjustments. In order for the system to make best judgements about receivables and payables, Planner use the OB from the last 3 months.</p>
+<p>Details on how adjust opening balances  can be found here: <a href="opening-balance/edit.html">Generate and Edit Opening Balance</a></p>
+<h4 id="2-ob-due-rules">2. OB Due rules</h4>
+<p>In &quot;Finance Settings&quot; workbook there is a page &quot;OB Due&quot; that allows you to define payment due rules. Here you can define which accounts, how much as amount or percent to be payed and when.</p>
+<p>Remember that the rules set here will have a big impact on the cashflow. For example if you have large funds accumulated on account receivables and a large portion of this is in reality funds that will not be paid, you can make a big error telling the system that all these funds will be paid next month. In this case you will not pay 100% or the whole amount. Another way to deal with this is to adjust the OB (see point above).</p>
+<p>More details on this can be found here: <a href="finance-settings/obdue.html">OB Due</a></p>
+<h4 id="3-simulate-the-general-ledger">3. Simulate the general ledger</h4>
+<p>For the steps above to take effect the general ledger has to be calculated applying OB and due rules in order to generate payment transactions. This is done under &quot;Operation Manager&quot; running the job to simulate the general ledger (&quot;Process finance baseline&quot;). Normally this job is schedule to run automatic at regular intervals.</p>
+<p>More details on this can be found here: <a href="../administration/operation-manager.html">Operation Manager</a></p>
+<h4 id="4-review-results">4. Review results</h4>
+<p>To verify and check results you should use the &quot;Finance Reports&quot;. The most relevant reports are:</p>
+<ul>
+<li><a href="finance-reports/trial-balance.html">Trial Balance</a> will show the period amounts on each account including the year OB. Remember that Forecast will show a combination of actual and plan data for the periods.</li>
+<li><a href="finance-reports/year-and-months.html">Year and Month</a> will show the OB, periods and CB (Closing Balance) for the selected year. Remember that OB and CB will only show for balance type reports.</li>
+</ul>
+<br>
+<h3 id="content">Content</h3>
+<ul>
+<li><a href="opening-balance/edit.html">Generate and Edit Opening Balance</a></li>
+<li><a href="opening-balance/report.html">Opening Balance Report</a></li>
+</ul>
+<h3 id="related-pages">Related Pages</h3>
+<ul>
+<li><a href="finance-settings/obdue.html">OBDue Finance Settings</a></li>
+<li><a href="../administration/input-settings-and-administration/forecast-admin.html">Forecast Admin - control Forecast Opening Balance date</a></li>
+<li><a href="../administration/input-settings-and-administration/budget-admin.html">Budget Admin - control Budget Opening Balance date</a></li>
+</ul>
+<br>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

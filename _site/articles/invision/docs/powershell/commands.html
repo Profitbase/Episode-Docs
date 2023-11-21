@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Examples | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Examples | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../public/main.js'
+    import { init } from './../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p><strong>Example 1</strong><br>
+The example below shows how to get all file names from a File Storage and insert the file names to &quot;MY TABLE&quot; in the InVision database.
+<br></p>
+<pre><code class="lang-powershell">param (
+ [Parameter (MANDATORY = $TRUE)][string] $sessionId   
+)
+
+$storageName = &quot;My Files&quot;
+$fileInfos = [Profitbase.IO.FileStorage]::GetFileInfos($storageName)
+
+$sessionIdSqlParam = New-Object 'Microsoft.Data.SqlClient.SqlParameter'
+$sessionIdSqlParam.ParameterName = &quot;@sessionId&quot;
+$sessionIdSqlParam.Value = $sessionId
+
+[Profitbase.Data.SqlCommand]::ExecuteNonQuery(&quot;DELETE FROM [MY_TABLE] WHERE SessionID = @sessionId&quot;, $sessionIdSqlParam)
+
+foreach($fileInfo in $fileInfos)
+{  
+    $sessionIdSqlParam = New-Object 'Microsoft.Data.SqlClient.SqlParameter'
+    $sessionIdSqlParam.ParameterName = &quot;@sessionId&quot;
+    $sessionIdSqlParam.Value = $sessionId
+
+    $fileNameSqlParam = New-Object 'Microsoft.Data.SqlClient.SqlParameter'
+    $fileNameSqlParam.ParameterName = &quot;@fileName&quot;   
+    $fileNameSqlParam.Value = $fileInfo.FileName
+   [Profitbase.Data.SqlCommand]::ExecuteNonQuery(&quot;INSERT INTO [MY_TABLE] (SessionID, FileName) VALUES(@sessionId, @fileName)&quot;, $sessionIdSqlParam, $fileNameSqlParam)
+}
+</code></pre>
+<br>
+<p><strong>Example 2</strong><br>
+This example shows how to move files from a File Storage to a table. The script does the following:</p>
+<ol>
+<li>Reads all files from the File Storage named 'Job Files'.</li>
+<li>Renames the files based on some business rules.</li>
+<li>Copies the files to a SQL table (don't do this in production, folks).</li>
+<li>Deletes the files from the File Storage</li>
+</ol>
+<pre><code class="lang-powershell">param (
+ [Parameter (MANDATORY = $TRUE)][string] $jobId,
+ [Parameter (MANDATORY = $TRUE)][string] $jobItemId 
+)
+
+function Remove-InvalidFileNameChars {
+  param(
+    [Parameter(Mandatory=$true,
+      Position=0,
+      ValueFromPipeline=$true,
+      ValueFromPipelineByPropertyName=$true)]
+    [String]$Name
+  )
+
+  $invalidChars = [IO.Path]::GetInvalidFileNameChars() -join ''
+  $re = &quot;[{0}]&quot; -f [RegEx]::Escape($invalidChars)
+  return ($Name -replace $re)
+}
+
+$targetTable = [Profitbase.Data.SqlCommand]::ExecuteScalar(&quot;SELECT [Value] FROM Setting_ApiSettings_04042017103212 WHERE [Key]='FilesArchive'&quot;)
+
+$storageName = &quot;Job Files&quot;
+$query = &quot;JobItemId == `&quot;${jobItemId}`&quot;&quot;
+$fileInfos = [Profitbase.IO.FileStorage]::GetFileInfos($storageName, $query)
+
+foreach($fileInfo in $fileInfos)
+{  
+
+   $jobItemIdParam_1 = New-Object 'Microsoft.Data.SqlClient.SqlParameter'
+   $jobItemIdParam_1.ParameterName = &quot;@jobItemId&quot;
+   $jobItemIdParam_1.Value = $jobItemId	
+	
+   $fileName = $fileInfo.FileName   
+   $sqlDataReader = [Profitbase.Data.SqlCommand]::ExecuteReader(&quot;SELECT TagID, BoxID FROM Store_JobItems_01242017125507 WHERE JobItemID = @jobItemId&quot; , $jobItemIdParam_1)
+   if ($sqlDataReader.Read()){
+       $tagId = $sqlDataReader[&quot;TagID&quot;]
+       $boxId = $sqlDataReader[&quot;BoxID&quot;] 
+       
+       $jobItemIdParam_2 = New-Object 'Microsoft.Data.SqlClient.SqlParameter'
+       $jobItemIdParam_2.ParameterName = &quot;@jobItemId&quot;
+       $jobItemIdParam_2.Value = $jobItemId	
+        
+       $count = [Profitbase.Data.SqlCommand]::ExecuteScalar(&quot;SELECT COUNT(ResourceID) FROM &quot; + $targetTable + &quot; WHERE JobItemID = @jobItemId AND ResourceName LIKE '%-P_-handdrawing%'&quot;, $jobItemIdParam_2) + 1
+       
+       $tagName = Remove-InvalidFileNameChars $tagId
+       $fileName = $tagName + &quot;-&quot; + $boxId + &quot;-P&quot; + $count.ToString() + &quot;-handdrawing&quot; + [System.IO.Path]::GetExtension($fileName)       
+   }
+   $sqlDataReader.Dispose()
+
+   $fileNameParam = New-Object 'Microsoft.Data.SqlClient.SqlParameter'
+   $fileNameParam.ParameterName = &quot;@fileName&quot;
+   $fileNameParam.Value = $fileName
+   
+   $mediaTypeParam = New-Object 'Microsoft.Data.SqlClient.SqlParameter'
+   $mediaTypeParam.ParameterName = &quot;@mediaType&quot;
+   $mediaTypeParam.Value = $fileInfo.MimeType   
+
+   $dataParam = New-Object 'Microsoft.Data.SqlClient.SqlParameter'
+   $dataParam.ParameterName = &quot;@data&quot;
+   $dataParam.Value = [Profitbase.IO.FileStorage]::ReadAllBytes($storageName, $fileInfo.FileName)
+	
+   $sqlQuery = &quot;INSERT INTO &quot; + $targetTable + &quot; (ResourceID, ResourceName, Data, MediaType) VALUES(NEWID(), @fileName, @data, @mediaType)&quot;
+   
+   [Profitbase.Data.SqlCommand]::ExecuteNonQuery($sqlQuery, $fileNameParam, $mediaTypeParam, $dataParam)
+   
+   [Profitbase.IO.FileStorage]::DeleteFileByReferenceId($fileInfo.FileReferenceId)
+}  
+</code></pre>
+<br>
+<p>** Example 3**<br>
+This example show how to read a number of files from a File Storage and send them to a Web API in a single .zip file.</p>
+<pre><code class="lang-powershell">param (
+ [Parameter (MANDATORY = $TRUE)][string] $sessionId,
+ [Parameter (MANDATORY = $TRUE)][string] $jobId
+)
+
+$storageName = &quot;Job Files&quot;
+
+$folderName = &quot;_&quot; + [guid]::NewGuid()
+$folder = [Profitbase.IO.Directory]::CreateTransientDirectory($folderName)
+$query = &quot;session == `&quot;${sessionId}`&quot;&quot;
+$fileInfos = [Profitbase.IO.FileStorage]::GetFileInfos($storageName, $query)
+foreach($fileInfo in $fileInfos)
+{	
+    $bytes = [Profitbase.IO.FileStorage]::ReadAllBytes($storageName, $fileInfo.FileName)    
+	$fileStream = $folder.CreateFile($fileInfo.FileName)
+   	$fileStream.Write($bytes, 0, $bytes.Length)
+   	$fileStream.Flush()
+   	$fileStream.Dispose()    
+}
+
+$tempFolderName = &quot;_&quot; + [guid]::NewGuid()
+$tempFolder = [Profitbase.IO.Directory]::CreateTransientDirectory($tempFolderName)
+[System.IO.Compression.ZipFile]::CreateFromDirectory($folder.FullName, $tempFolder.FullName + &quot;\FileSpread.zip&quot;)
+
+$zipFile = $folder.OpenFile($tempFolder.FullName + &quot;\FileSpread.zip&quot;, [System.IO.FileMode]::Open)
+
+$FileHeader = [System.Net.Http.Headers.ContentDispositionHeaderValue]::new('form-data')
+$FileHeader.Name = &quot;document&quot;
+$FileHeader.FileName = &quot;FileSpread.zip&quot;
+$FileContent = [System.Net.Http.StreamContent]::new($zipFile)
+$FileContent.Headers.ContentDisposition = $FileHeader
+$FileContent.Headers.ContentType = [System.Net.Http.Headers.MediaTypeHeaderValue]::Parse('application/zip')
+
+$MultipartContent = [System.Net.Http.MultipartFormDataContent]::new()
+$MultipartContent.Add($FileContent)
+
+$apiBaseUrl = [Profitbase.Data.SqlCommand]::ExecuteScalar(&quot;SELECT [Value] FROM ApiSettings WHERE [Key] = 'WebApiBaseUrl'&quot;)
+
+Invoke-WebRequest -Body $MultipartContent -Method 'POST' -Uri &quot;${apiBaseUrl}/api/filespread/${sessionId}?jobId=${jobId}&quot;
+
+$zipFile.Dispose()
+$folder.DeleteFile(&quot;FileSpread.zip&quot;)
+
+foreach($fileInfo in $fileInfos)
+{	
+    [Profitbase.IO.FileStorage]::DeleteFileByReferenceId($fileInfo.FileReferenceId)	
+}
+
+[Profitbase.Data.SqlCommand]::ExecuteNonQuery(&quot;DELETE FROM Files WHERE [FileSpreadSessionID] = '&quot; + $sessionId + &quot;'&quot;)
+</code></pre>
+<h4 id="see-also">See Also</h4>
+<ul>
+<li><a href="../filestorage.html">File Storage</a></li>
+</ul>
+<h4 id="videos">Videos</h4>
+<ul>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/PowerShell%20-%20file%20name%20export.mp4">PowerShell - How To get All File Names From a File Storage</a></li>
+</ul>
+<br>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

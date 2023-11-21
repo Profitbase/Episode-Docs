@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Formatter | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Formatter | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p>A JavaScript function expression, or the name of a function defined in a solution JavaScript. The formatter returns the value to display in the cells of the column.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This only affects the displayed value, not the actual value of the cells, so for example copying data will copy the actual value and not the displayed value.</p>
+</div>
+<blockquote>
+<p><strong>Example</strong></p>
+<p>Column1 and Column2 in the following table has the Formatter property set to:<br>
+<strong>Column1</strong> : func::examples.customCellFormatters.stringFormatter.col1Formatter<br>
+<strong>Column2</strong> : func:: examples.customCellFormatters.stringFormatter.col2Formatter</p>
+<table>
+<thead>
+<tr>
+<th>Column1_Operation</th>
+<th>Column1</th>
+<th>Column2_Operation</th>
+<th>Column2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ReverseText</td>
+<td>Darth Vader</td>
+<td>Enclose</td>
+<td>Some text</td>
+</tr>
+<tr>
+<td>ToUpper</td>
+<td>Darth Vader</td>
+<td>ToLower</td>
+<td>Some text</td>
+</tr>
+<tr>
+<td></td>
+<td>Darth Vader</td>
+<td></td>
+<td>Some text</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><em>Formatters implementation</em></p>
+</blockquote>
+<pre><code>var examples;
+(function(examples){
+    var customCellFormatters;
+    (function(customCellFormatters){
+        var stringFormatter = (function(){
+            function stringFormatter(){                
+            }
+            stringFormatter.col1Formatter = function(evtArgs){
+                if(evtArgs.rowData.Column1_Operation === 'ReverseText'){
+                    return !evtArgs.value ? null : evtArgs.value.split('').reverse().join('');
+                }else if(evtArgs.rowData.Column1_Operation === 'ToUpper'){
+                    return !evtArgs.value ? null : evtArgs.value.toUpperCase();
+                }else{
+                    evtArgs.handled = false;
+                }                
+            };
+            stringFormatter.col2Formatter = function(evtArgs){
+                if(evtArgs.rowData.Column2_Operation === 'Enclose'){				 
+                    return '(' + evtArgs.value + ')';
+                }else if(evtArgs.rowData.Column2_Operation === 'ToLower'){
+                    return !evtArgs.value ? null : evtArgs.value.toLowerCase();
+                }else{
+                    evtArgs.handled = false;
+                }
+            };
+            return stringFormatter;
+        })();
+        customCellFormatters.stringFormatter = stringFormatter;
+    })(customCellFormatters = examples.customCellFormatters 
+    || (examples.customCellFormatters={}));
+})(examples || (examples = {}));
+</code></pre>
+<blockquote>
+<p>Gives the following result</p>
+<table>
+<thead>
+<tr>
+<th>Column1_Operation</th>
+<th>Column1</th>
+<th>Column2_Operation</th>
+<th>Column2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ReverseText</td>
+<td>redaV htraD</td>
+<td>Enclose</td>
+<td>(Some text)</td>
+</tr>
+<tr>
+<td>ToUpper</td>
+<td>DARTH VADER</td>
+<td>ToLower</td>
+<td>some text</td>
+</tr>
+<tr>
+<td></td>
+<td>Darth Vader</td>
+<td></td>
+<td>Some text</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p><em>Cell Formatter Event argument</em></p>
+<p>The event argument passed to the formatter function has the following properties (note the camel casing).</p>
+<p><strong>Properties:</strong></p>
+<p><strong>value</strong></p>
+<p>The value of the cell.</p>
+<p><strong>rowData</strong></p>
+<p>The data row that the cell belongs to.</p>
+<p><strong>handled</strong></p>
+<p>Set this property to false if you want the standard formatting to apply.</p>
+<p><strong>rowNum</strong></p>
+<p>The visual row index.</p>
+<p><strong>colNum</strong></p>
+<p>The visual column index.</p>
+<p><strong>prop</strong></p>
+<p>The property name of the rowData object that the cell is data bound to. This is usually the column name of the data set, for example “Amount”.</p>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

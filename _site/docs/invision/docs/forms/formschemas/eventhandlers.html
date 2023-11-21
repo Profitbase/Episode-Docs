@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Event Handlers | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Event Handlers | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p>There are two types of event handlers – FormEventHandler and DataChangeEventHandler.</p>
+<p><strong>FormEventHandlers</strong> is executed when a <em>form</em> <em>event</em> is raised, for example when data has been loaded or when the form has initialized.<br>
+<strong>DataChangedEventHandlers</strong> are bound to fields in Models and executes when fields change.</p>
+<p>Event handlers contains plain JavaScript, which is executed every time an event handler runs. In event handlers and functions, you can access the <a href="apis/formruntime.html">Form Runtime</a> and <a href="apis/controlproxyAPI.html">Control APIs</a> that lets you call methods on controls, do validation, do calculations, raise Workbook events and more.
+<br></p>
+<h4 id="formeventhandler">FormEventHandler</h4>
+<p>FormEventHandlers contains JavaScript code, and you can access the <a href="apis/formruntime.html">Form Runtime</a> and <a href="apis.html">Control APIs</a> that lets you call methods on controls, do validation, do calculations, raise Workbook events and more.<br>
+FormEventHandler is executed when a form event is raised. There are currently two form events.
+<br></p>
+<p><strong>Init</strong><br>
+The Init event runs after the first render of the Form Schema. Rendering happens the first time it appears on the screen and after data has been loaded.</p>
+<pre><code>&lt;EventHandlers&gt;
+    &lt;FormEventHandler On=&quot;Init&quot;&gt;
+        &lt;![CDATA[
+        // Your JavaScript goes here
+        ]]
+    &lt;/FormEventHandler&gt;
+&lt;/EventHandlers&gt;
+</code></pre>
+<br>
+<blockquote>
+<p><strong>Example</strong></p>
+<p>The following event handler runs when the Init event is raised.</p>
+</blockquote>
+<pre><code>&lt;FormEventHandler On=&quot;Init&quot;&gt;
+    &lt;![CDATA[
+    controls.myInput.setIsEnabled(false);
+    alert('Hello world');
+    ]]
+&lt;/FormEventHandler&gt;
+</code></pre>
+<br>
+<p><strong>DataLoaded</strong><br>
+The DataLoaded event runs after data has been loaded, but before the initial render. If you need to manipulate the data before it is rendered the first time, you should use this event.</p>
+<pre><code>&lt;EventHandlers&gt;
+    &lt;FormEventHandler On=&quot;DataLoaded&quot;&gt;
+        &lt;![CDATA[
+        // Your JavaScript goes here
+        ]]
+    &lt;/FormEventHandler&gt;
+&lt;/EventHandlers&gt;
+</code></pre>
+<br>
+<blockquote>
+<p><strong>Example</strong></p>
+<p>The following event handler runs when the DataLoaded event is raised.</p>
+</blockquote>
+<pre><code>&lt;FormEventHandler On=&quot;DataLoaded&quot;&gt;
+    &lt;![CDATA[
+    this.models.Customer.Name = 'Customer 2';
+    ]]
+&lt;/FormEventHandler&gt;
+</code></pre>
+<br>
+<p><strong>Unload</strong></p>
+<p>The Unload event is raised when the Form Schema is unloaded from the DOM. You can use this event to unsubscribe from events raised from DOM nodes outside the Form, or do other types of cleanup.
+<br></p>
+<blockquote>
+<p><strong>Example</strong></p>
+</blockquote>
+<pre><code>&lt;EventHandlers&gt;
+    &lt;FormEventHandler On=&quot;Unload&quot;&gt;
+        // unsubscribe events, cleanup, etc
+        window.removeEventListener('click', ...); 
+    &lt;/FormEventHandler&gt;
+
+&lt;/EventHandlers&gt;
+</code></pre>
+<br>
+<h4 id="datachangedeventhandler">DataChangedEventHandler</h4>
+<p>DataChangedEventHandlers are bound to properties in Models, and executes when fields change. DataChangeEventHandlers can listen for changes to a specific property, or to all properties in a Model.
+<br></p>
+<pre><code>&lt;DataChangedEventHandler Value=&quot;{Binding Path:FormData.Bit}&quot;&gt;
+    &lt;![CDATA[
+    // Your JavaScript goes here
+    // The following variables are available in the scope
+    // $model, $modelName, $propertyName, $newValue, $oldValue);
+    ]]
+&lt;/DataChangedEventHandler&gt;
+</code></pre>
+<br>
+<p>The DataChangeEventHandler has the following parameters, which can be accessed by your code.</p>
+<br>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$model</td>
+<td>This is the model object that the event handler is listening for changes to.</td>
+</tr>
+<tr>
+<td>$modelName</td>
+<td>This is the name of the Model that the event handler is listening for changes to.</td>
+</tr>
+<tr>
+<td>$propertyName</td>
+<td>This is the name of the property in the model that changed.</td>
+</tr>
+<tr>
+<td>$newValue</td>
+<td>This is the new value of the property being listened to.</td>
+</tr>
+<tr>
+<td>$oldValue</td>
+<td>This is the old value of the property being listened to.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<br>
+<p><strong>Listening for changes</strong></p>
+<p>To listen for changes, you need to set the Value property of the DataChangedEventHandler, and specify a binding to the property or properties of the Model that you want to monitor.</p>
+<ul>
+<li><p>To listen for changes to a specific property, use Value=”{Binding Path:ModelName.PropertyName}”.</p>
+</li>
+<li><p>To listen for changes to any property of a model, use Value=”{Binding Path:ModelName.*}”</p>
+</li>
+</ul>
+<br>
+<blockquote>
+<p><strong>Example</strong></p>
+<p>This example show how a DataChangedEventHandler can listen for changes to the Name property of the customer Model. When Name changes, the code below is executed.</p>
+</blockquote>
+<pre><code>&lt;DataChangedEventHandler Value=&quot;{Binding Path:Customer.Name}&quot;&gt;
+    &lt;![CDATA[
+    // call shared function
+    var isValidName = this.isValidName($newValue);
+    controls.Input1.setIsEnabled(isValidName);
+    controls.Btn_Notify.setIsEnabled(isValidName);
+    ]]
+&lt;/DataChangedEventHandler&gt;
+</code></pre>
+<br>
+<blockquote>
+<p><strong>Example</strong></p>
+<p>This example show how a DataChangedEventHandler can listen for changes to all properties of the Customer model. By examining the $propertyName, we determine which validation to run. ValidateName(…) and ValidateEmail(…) are functions defined in the Functions section.</p>
+</blockquote>
+<pre><code>&lt;DataChangedEventHandler Value=&quot;{Binding Path:Customer.*}&quot;&gt;
+    &lt;![CDATA[
+    // The following variables are available in the scope of a DataChangedEventHandler
+    // $model, $modelName, $propertyName, $newValue, $oldValue);
+    if($propertyName === &quot;Name&quot;){
+        functions.ValidateName($newValue);
+    }
+    else if($propertyName === &quot;Email&quot;){
+        functions.ValidateEmail($newValue);
+    }
+    ]]
+&lt;/DataChangedEventHandler&gt;
+</code></pre>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Year and Months - Planner 4 | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Year and Months - Planner 4 | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../../public/main.js'
+    import { init } from './../../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p><strong>Applies to:</strong> <img src="https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png" alt="img"> Planner 4</p>
+<h3 id="overview">Overview</h3>
+<p>This report provides a period view for selected Report showing all periods of the selected year. For Profit &amp; Loss type of reports, a total sum over periods for the year is provided. For Balance Sheet type reports, an Opening Balance (OB) and Closing Balance (CB) are provided.</p>
+<p>See an example of this report in picture below.
+<br></p>
+<p><img src="../img/finance-reports-year-and-months.jpg" alt=""></p>
+<ol>
+<li><p><strong>Top and Left Section</strong> <br>
+The left section contains the Department filter and gives the ability to slice data according to an organization hierarchy.
+The top section contains mainly filter choices including selection of which report to present.
+The upper right &quot;Forecast start&quot; tells which calendar period the forecast start. Since this may be a rolling forecast this period will be updated as the forecast reach next period. &quot;Data last updated&quot; tells when the input was last simulated to generate the full ledger. This process is normally scheduled to run at certain intervals.</p>
+</li>
+<li><p><strong>Content Section</strong> <br>
+The content section shows the reporting lines including sub-totals per period for a selected year. The Forecast dataset is composed of Actual data for periods before the Forecast start and Forecast input data from the Forecast start period (as shown in the upper right in the report).</p>
+</li>
+</ol>
+<h3 id="filter-descriptions">Filter Descriptions</h3>
+<p>Filter selections available apart from Department are:</p>
+<ul>
+<li><strong>Report</strong><br>This allows for selecting between different report configurations</li>
+<li><strong>Year</strong><br>Select what year to look at</li>
+<li><strong>Month</strong><br>Not relevant here</li>
+<li><strong>Dataset</strong><br>Select dataset to be presented.</li>
+<li><strong>Scenario</strong><br>This is used related to simulation providing the alternatives: &quot;Baseline&quot;, &quot;Best&quot; and &quot;Worst&quot;. Scenario is only relevant for Forecast and Budget datasets.</li>
+<li><strong>Timefunction</strong><br>Selecting Month will show the numbers for each month. Selecting Year-to-date will show the sum of this and preceding periods including OB for balance type reports. To see balanced you must use Year-to-date.</li>
+<li><strong>Currency</strong><br>Choose which currency to the used in the report. Average rate for each period is used for currency conversion.</li>
+</ul>
+<h3 id="column-descriptions">Column Descriptions</h3>
+<p>The number columns explained:</p>
+<ul>
+<li><strong>MMM YY</strong><br> These 12 columns contain numbers from the selected dataset.</li>
+<li><strong>Total</strong><br> Provides the sum over the above 12 columns for Profit-Loss type reports.</li>
+<li><strong>OB</strong><br> This is the Opening Balance and is only visible for Balance Sheet type reports.</li>
+<li><strong>CB</strong><br> This is the Closing Balance and is only visible for Balance Sheet type reports. This is the sum of the OB and the 12 periods.</li>
+</ul>
+<h3 id="how-tos">How to`s</h3>
+<br>
+<p><a href="../../../process-and-tasks/tasks/create-edit-task.html">Create new task</a><br></p>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

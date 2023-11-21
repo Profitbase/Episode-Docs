@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Trial Balance | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Trial Balance | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p><strong>Applies to:</strong> <img src="https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png" alt="img"> Planner 5 or later.</p>
+<h3 id="overview">Overview</h3>
+<p>This report provides a period view for Accounts including Opening and Closing Balance. This report also provides a sum across all accounts. This sum should be 0 (zero) for a correct trial balance. This report is sorted by account code but with accounts containing numbers first.</p>
+<p>See an example of this report in picture below.
+<br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/enduserhelp/images/finance-reports-trial-balance-v5.JPG" alt="img"></p>
+<ol>
+<li><p><strong>Top Section</strong> <br>
+The top section contains mainly filter choices including selection of which report to presented.
+The upper right &quot;Forecast start&quot; tells which calendar period the forecast start. Since this may be a rolling forecast this period will be updated as the forecast reach next period. &quot;Data last updated&quot; tells when the input was last simulated to generate the full ledger. This process is normally scheduled to run at certain intervals.</p>
+</li>
+<li><p><strong>Content Section</strong> <br>
+The content section shows the period and total numbers per account for a selected year and dataset. The Forecast dataset here only contains Forecast input data. Depending on how data is loaded, the opening balance may be included in the first period and with the OB-column showing empty. In this case the data is loaded without marking the OB transactions.
+Accounts with numbers are sorted first in the table. Accounts not used can be found sorted at the bottom.</p>
+</li>
+<li><p><strong>Left Section</strong> <br>
+The left section contains the Department filter and gives the ability to slice data according to an organization hierarchy.</p>
+</li>
+<li><p><strong>Right Section - Upper</strong> <br>
+Click on &quot;Options&quot; on the right edge of the window, you can select additional columns to be included after the report line name column in the table report (section 2). The picture above shows an example using dataset to compare between a forecast dataset and actual last year. Additional columns enabled here is subject to configuration settings.</p>
+</li>
+<li><p><strong>Right Section - Lower</strong> <br>
+Click on &quot;Options&quot; on the right edge of the window, at the bottom you can select and additional filters to be applied when extracting data. You can see filters and values applied on the top section next to the label &quot;Filter options:&quot;. Filters available here are subject to configuration settings.</p>
+</li>
+</ol>
+<h3 id="filter-descriptions">Filter Descriptions</h3>
+<p>Filter selections available apart from Department are:</p>
+<ul>
+<li><strong>Fiscal Year</strong><br>What year to look at.</li>
+<li><strong>Dataset A</strong><br>Select dataset to be presented.</li>
+<li><strong>compared to B</strong><br>Optional select a dataset to be used for comparison together with selecting &quot;Dataset&quot; column under options.</li>
+<li><strong>Scenario</strong><br>Is used related to simulation providing the alternatives: &quot;Baseline&quot;, &quot;Best&quot; and &quot;Worst&quot;. Scenario is only relevant for Forecast and Budget datasets.</li>
+<li><strong>Timefunction</strong><br>Selecting Month will show the numbers for each month. Selecting Year-to-date will show the sum of this and preceding periods including OB. To see balanced you must use Year-to-date.</li>
+<li><strong>Currency</strong><br>Choose which currency to the used in the report. Average rate for each period is used for currency conversion.</li>
+</ul>
+<h3 id="column-descriptions">Column Descriptions</h3>
+<p>Number-columns explained:</p>
+<ul>
+<li><strong>YYYYMM</strong><br>These 12 columns contain numbers from the selected dataset.</li>
+<li><strong>OB</strong><br>This is the Opening Balance.</li>
+<li><strong>CB</strong><br> CB is the sum of OB for plan start and the following plan columns when Timefunction = Year-to-date. When Timefunction = Month, CB is the sum of OB and the 12 period values (not including plan start OB). This is why CB may show different values for different sleection of Timefunction because plan OB is missing or adjusted (and hence not equal to year-to-date actual periods before plan start period).</li>
+<li><strong>Total</strong><br> Provides the sum of period values over the above 12 columns for Profit-Loss type reports.  For Balance type reports showing opening balance (OB) and period values (when Timefunction = Month), Total column is the sum on OB and period values. From Planner versions after 5.1.3, the column header is different (showing Total or CB) to reflect the way this column is calculated.</li>
+</ul>
+<p>You can select additional columns under &quot;Options&quot;. These will be dataset and other dimensions that may be used in the report. Available columns are subject to configuration settings for your solution.</p>
+<h3 id="how-tos">How to`s</h3>
+<br>
+<p><a href="../../process-and-tasks/tasks/create-edit-task.html">Create new task</a><br></p>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

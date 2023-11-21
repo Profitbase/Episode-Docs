@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Setup | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Setup | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="overview">Overview</h3>
+
+<p>This page allows you to configure the Profit and Loss input modules such as Personnel and Account. By configuration means the dimensionality, the use of historical reference columns and so on.<br>
+You can also name the modules, control their availability to end-users and how the individual modules are tied to specific report lines of the profit and loss summary report used in the:<br></p>
+<p>Plan overview workbook (<strong>Applies to:</strong> <img src="https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png" alt="img"> Planner 5 or later)<br></p>
+<p>or<br></p>
+<p>Budget and Forecast workbooks (<strong>Applies to:</strong> <img src="https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png" alt="img"> Planner 4.x)<br>
+<br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/enduserhelp/images/InputSettingsSetup.JPG" alt=""></p>
+<ol>
+<li><strong>Module specific configuration tables - main, upper area</strong><br>
+With the exception of the &quot;Base settings&quot; table (see description below), this area contains module specific configuration tables.<br>
+Please refer to the relevant module document in the &quot;How to's&quot; section below for details.</li>
+<li><strong>Module specifics - lower left area</strong><br>
+This is where you can set the name of the modules and, by checking/un-checking the &quot;Published&quot; check box, control the availability of the module to end-user. A module with its &quot;Published&quot; check box unchecked is not available to end-users.<br>
+Note that the Sales forecast module has a separate setup workbook.</li>
+<li><strong>Module to report line mapping - lower right area</strong><br>
+This is where you can tie an input module to a specific report line. This tie control which input module is launched when an end-user clicks the report line in either the Budget or Forecast summary.<br>
+Please refer to the relevant module document in the &quot;How to's&quot; section below for details.
+<br></li>
+</ol>
+<h3 id="the-base-settings-table">The Base settings table</h3>
+<p><img src="https://profitbasedocs.blob.core.windows.net/plannerimages/base-settings.JPG" alt=""></p>
+<p>The Base settings table contains settings that span all profit and loss input modules.</p>
+<h3 id="column-descriptions">Column Descriptions</h3>
+<ul>
+<li><strong>Setting ID</strong><br></li>
+</ul>
+<p>The setting identifier.<br></p>
+<ul>
+<li><strong>Setting ID</strong><br></li>
+</ul>
+<p>The actual value for the setting in question, see corresponding comment for valid options.<br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/plannerimages/base-setting-close-up.JPG" alt=""></p>
+<p>The following settings require additional explanation:<br></p>
+<p><em>FCTYearTotalFloating</em>: In a rolling forecast, this year will consist of an Actuals Year to Date part and a Forecast Rest of Year Part. When rolling forward 1 month, one forecast rest of year month is replaced with an actual year to date month. This setting controls how This year's total value is affected:<br></p>
+<ul>
+<li>TRUE: This year's total floats (changes) reflects the fact the new actuals year to date month differs from the replaced forecast rest of year month.<br></li>
+<li>FALSE: This year's total remains the same as it was prior to roll forward. This implies that any difference is spread across the remaining forecast rest of year months.<br></li>
+</ul>
+<p><em>AccountNetFactor</em>: Applies only to sum (net) lines in account-based input sheets and reports (valid values: -1 | 1), -1 is the default. Net is displayed as sum of amounts of individual accounts multiplied by account's sign factor. The net is then multiplied with the AccountNetFactor value.<br></p>
+<p>What value to choose depends on which account sign is used, how data is input and how one would like to see the net of income and cost.<br></p>
+<p>Default:<br></p>
+<p>Account sign -1 for income accounts, +1 for cost accounts.<br>
+All normal input positive, income and cost.<br>
+AccountNetFact -1<br></p>
+<p>These defaults will render a net profit as a positive number.<br></p>
+<p><em>ExternalLedgerActualDatasetID</em>:</p>
+<p>The default is that all processes import the actual dataset from the external ledger.</p>
+<p>In special cases, however, different processes may use different sets of actual data.</p>
+<p>For this to take place, the ExternalLedgerActualDatasetID property can be used to point to the specific actual dataset id to be used in the current version.</p>
+<p>NOTE: in such scenarios, no set should be named Actual in the external source. Name them individually as ActualSRS, ActualKontant and so on. If you have one set named Actual and one named ActualSRS in the external source both will be mapped to Actual given the above mapping and that is not what you want.</p>
+<ul>
+<li><strong>Comment ID</strong><br></li>
+</ul>
+<p>Short description of the individual setting.<br></p>
+<h3 id="how-tos">How to`s</h3>
+<br>
+<p><strong>Applies to:</strong> <img src="https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png" alt="img"> Planner 5.4 or later</p>
+<blockquote>
+<p><a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.4/Planner%20Account%20module.pdf">Configure the Account module</a><br>
+<a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.4/Planner%20Personnel%20module.pdf">Configure the Personnel module</a><br>
+<a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.4/Planner%20Driver%20based%20module.pdf">Configure the Driver based module</a><br>
+<a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.4/Planner%20CapEx%20module.pdf">Configure the CapEx module</a><br>
+<a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.4/Planner%20Loan%20module.pdf">Configure the Loan module</a><br></p>
+</blockquote>
+<p><strong>Applies to:</strong> <img src="https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png" alt="img"> Planner 5.2.4 or later</p>
+<blockquote>
+<p><a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2.4/Planner%20Account%20module.pdf">Configure the Account module</a><br>
+<a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2.4/Planner%20Personnel%20module.pdf">Configure the Personnel module</a><br>
+<a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2.4/Planner%20Driver%20based%20module.pdf">Configure the Driver based module</a><br>
+<a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2.4/Planner%20CapEx%20module.pdf">Configure the CapEx module</a><br>
+<a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2.4/Planner%20Loan%20module.pdf">Configure the Loan module</a><br></p>
+</blockquote>
+<p><strong>Applies to:</strong> <img src="https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png" alt="img"> Planner 5.2</p>
+<blockquote>
+<p><a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2/Planner%20Account%20module.pdf">Configure the Account module</a><br>
+<a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2/Planner%20Personnel%20module.pdf">Configure the Personnel module</a><br>
+<a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2/Planner%20Driver%20based%20module.pdf">Configure the Driver based module</a><br>
+<a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2/Planner%20CapEx%20module.pdf">Configure the CapEx module</a><br>
+<a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2/Planner%20Loan%20module.pdf">Configure the Loan module</a><br></p>
+</blockquote>
+<p><strong>Applies to:</strong> <img src="https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png" alt="img"> Planner 5</p>
+<blockquote>
+<p><a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/v5/Planner%20Account%20module.pdf">Configure the Account module</a><br>
+<a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/v5/Planner%20Personnel%20module.pdf">Configure the Personnel module</a><br></p>
+</blockquote>
+<p>Note that the Driver based, Cap Ex and Loan modules have their individual setup workbooks.</p>
+<blockquote>
+<p><a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/v5/Planner%20Sales%20Forecast%20module.pdf">Configure the Driver based module</a><br>
+<a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/v5/Planner%20CapEx%20module.pdf">Configure the CapEx module</a><br>
+<a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/v5/Planner%20Loan%20module.pdf">Configure the Loan module</a><br></p>
+</blockquote>
+<p><strong>Applies to:</strong> <img src="https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png" alt="img"> Planner 4.x</p>
+<blockquote>
+<p><a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/Planner%20Account%20module.pdf">Configure the Account module</a><br>
+<a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/Planner%20Personnel%20module.pdf">Configure the Personnel module</a><br>
+<a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/Planner%20Sales%20By%20GM%20module.pdf">Configure the Sales by GM module</a><br></p>
+</blockquote>
+<p>Note that the Sales forecast, CapEx and Loan modules have separate setup workbooks.</p>
+<blockquote>
+<p><a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/Planner%20Sales%20Forecast%20module.pdf">Configure the Sales forecast module</a><br>
+<a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/Planner%20CapEx%20module.pdf">Configure the CapEx module</a><br>
+<a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/Planner%20Loan%20module.pdf">Configure the Loan module</a><br></p>
+</blockquote>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

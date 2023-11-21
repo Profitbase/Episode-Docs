@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Edit | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Edit | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="overview">Overview</h3>
+
+<p>This page allows you to edit model-specific properties such as description, access and so on.
+<br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/enduserhelp/images/edit-driver-model.JPG" alt=""></p>
+<p>The following properties can be controlled:</p>
+<ul>
+<li><p>Description: The desfault description of the model. For language specific translations, see Input Administration and Settings -&gt; Translations.<br></p>
+</li>
+<li><p>Access group (select from drop down list): It is possible to limit the access to a model to a specific access group. The access group is set up in the User Management -&gt; Group Management and must be of category Default to appear in drop down list.<br></p>
+</li>
+<li><p>Periods button (check | uncheck): by default the Periods button appear in the input workbook for the model. If year-total only input is desired, the Periods button can be hidden by unchecking this option.<br></p>
+</li>
+<li><p>Navigate directly to details view (check | uncheck): By default a driver-view is displayed in the input workbook as the workbook is started and/or a new department is selected. To see the details view (complete model), a click on a driver-row has to be made. The details view can be directly navigateable if this option is clicked and all dimensional id's other than departmentid has a default value of # (the standard default). This can be of use for models that are singular to the various departments.<br></p>
+</li>
+<li><p>Multi-dept. input (check | uncheck): Input only allowed at lowest department level input is the default (false). If set to true, input can (given that access control allows) be given at higher-level nodes of the department dimension. <br></p>
+</li>
+</ul>
+<p>NOTE: when multi-department input is no (true), other filter should be used to narrow down the data set operated on. <br></p>
+<ul>
+<li><p>Auto load on filter chg (check | uncheck): By default, data is loaded automatically on filter change (true). When multi-department input is used, it may be desirable to first set all filters and then load the data. If this is the case, set this option to false. End user will have to use the Refresh button to load data. <br></p>
+</li>
+<li><p>Auto submit data (check | uncheck): By default, the save button will both save and submit (process) the data. It may be desirable to split the two. If checked, a Submit button will appear and must be clicked once the editing is saved and a submit is desired.<br></p>
+</li>
+<li><p>Input row limit: Max. row limit returned that allows input. If row limit is reached, data is limited, and a warning is given to say that data set must be narrowed down to allow input. When multi-department input is set to true, a row limit must be set. <br></p>
+</li>
+</ul>
+<p>Row context menu controls:<br></p>
+<ul>
+<li><p>New (check | uncheck): Insert new row and Insert copy of row is allowed (true) or not allowed (false). Default is true. <br></p>
+</li>
+<li><p>Delete (check | uncheck): Delete row is allowed (true) or not allowed (false). Default is true. <br></p>
+</li>
+<li><p>Delete (act. = 0) (check | uncheck): Delete row is allowed only if row contains no actuals (true). Available for selection only if “Delete” is true. <br></p>
+</li>
+<li><p>Ch. dim. (check | uncheck): Change dimensionality is allowed (true) or not allowed (false). Default is true. <br></p>
+</li>
+<li><p>Ch. dim. (act. = 0) (check | uncheck): Change dimensionality is allowed only if row contains no actuals (true). Available for selection only if “Ch. dim.” is true. <br></p>
+</li>
+</ul>
+<br>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

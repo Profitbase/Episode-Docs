@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Setup | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Setup | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p><strong>Applies to:</strong> <img src="https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png" alt="img"> Planner 5 or later.</p>
+<h3 id="overview">Overview</h3>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/enduserhelp/images/finance-settings-setup-v5.JPG" alt="img"></p>
+<ol>
+<li><strong>Selecting Setting Table</strong><br>The left area list the different setting tables available for the page. Ticking here will turn on and off the table.</li>
+<li><strong>Tables View</strong><br>The right area will display the selected tables and allows users to edit content.
+<br></li>
+</ol>
+<h3 id="descriptions">Descriptions</h3>
+<p>Each table and columns are described below.</p>
+<p>Key columns used for matching when looking up correct setting is marked (k).</p>
+<p>####Time: Start and range
+This table defines the start date and length for each planning dataset (i.e. Forecast and Budget).</p>
+<p>Columns:</p>
+<ul>
+<li><strong>Start Date</strong><br>
+Read-only columns that shows the start date for current Forecast and Budget dataset. For rolling forecasts (and budget) this date will change every time the dataset is rolled forward.</li>
+<li><strong>Time: Start and length</strong><br>
+Selection of time range that allows for up to 7 years planning.
+<br></li>
+</ul>
+<p>####DaysOfCreditMethod: Monthly</p>
+<p>This is useful to ensure that input from one month will be paid (i.e. due) over 2 months.
+Setting the value below to true, will distribute the input evenly over 30 days staring from days of credit. This will ensure that the due amounts is distributed between 2 months based on input from one month.</p>
+<p>Example: Input dated March 3 and with 15 days due for payment, will cause 50% due in March and 50% due in April.</p>
+<p>Columns:</p>
+<ul>
+<li><strong>Legal Entity (k)</strong><br>
+Legal Entity applicable.</li>
+<li><strong>Engine (k)</strong><br>
+Engine name.</li>
+<li><strong>Value</strong><br>
+Value true or false.</li>
+</ul>
+<p>####Fiscal Calendar Offset
+This table is used to define a Fiscal year and periods that is offset from a normal calendar. Leaving this table empty will use the calendar.</p>
+<p>Columns:</p>
+<ul>
+<li><p><strong>Fiscal start date</strong><br>
+Set to be the date of first day of a Fiscal calendar year.</p>
+</li>
+<li><p><strong>Fiscal Year</strong><br>
+Set to the year number of the Fiscal year that starts on Fiscal Start Month number of months after the Calendar start date. This must be set to the year that the Fiscal year ends or to the Fiscal calendar start year.</p>
+</li>
+</ul>
+<p>Fiscal Calendar is used to set the year, quarter and month in the Time dimension. Time dimension is used to control how data is aggregate on Fiscal year and months.</p>
+<p>Example:
+Setting &quot;Fiscal Start Date&quot; = 2020-08-01 and &quot;Fiscal Year&quot; = 2021 will set the start period to one for transactions in august and the year will be set to 2021 which is the calendar year of the last day of the Fiscal year.</p>
+<p>Setting &quot;Fiscal Start Date&quot; = 2020-01-01 and &quot;Fiscal Year&quot; = 2020 is equivalent to using an empty table.
+<br></p>
+<p>####Source: map Account to Engine
+This table maps input accounts to the different posting engines.</p>
+<p>Columns:</p>
+<ul>
+<li><strong>Account:</strong><br>
+Account group or single accounts that will be input to the selected engine.</li>
+<li><strong>Legal Entity (k)</strong><br>
+Legal Entity applicable.</li>
+<li><strong>Engine</strong><br>
+Engine name.</li>
+</ul>
+<p>Note that one account will only be mapped to one and only one engine.
+<br></p>
+<p>####System: Fallback Accounts
+This table maps internal account keys to your accounts. There are already quite a few tables where account use is defined but there will be accounts and in particular balance accounts that are used but not mapped elsewhere. Please check Finance Reports Trial Balance report for accounts that are used but not mapped.</p>
+<p>Columns:</p>
+<ul>
+<li><strong>Acc Key (k)</strong><br>
+The system internal name for the account. This name will be used whenever an account mapping is missing.</li>
+<li><strong>Legal Entity (k)</strong><br>
+Legal Entity applicable.</li>
+<li><strong>Account</strong><br>
+Your account to be used.
+<br></li>
+</ul>
+<p>####CurrencyReportID
+This table defines the currency to be used as default reporting currency during simulation.</p>
+<p>Columns:</p>
+<ul>
+<li><strong>ID:</strong><br>
+ID must be set to &quot;Finance&quot; for the Planner solution.</li>
+<li><strong>Currency:</strong><br>
+Currency code (3-character code).</li>
+</ul>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

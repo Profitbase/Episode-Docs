@@ -1,0 +1,369 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Charts Formatting | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Charts Formatting | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../public/main.js'
+    import { init } from './../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="general-pie-chart-properties">General pie chart properties</h3>
+
+<br>
+<p><strong>Data Source</strong></p>
+<blockquote>
+<p>Specifies the source of the data set.</p>
+</blockquote>
+<br>
+<p><strong>Name Value</strong></p>
+<blockquote>
+<p>Specifies the Name Value.</p>
+</blockquote>
+<br>
+<p><strong>Serie Name</strong></p>
+<blockquote>
+<p>Specifies the name of the Series.</p>
+</blockquote>
+<br>
+<p><strong>Serie Colors</strong></p>
+<blockquote>
+<p>A series specific or series type specyfic color set to use instead of the global colors.</p>
+</blockquote>
+<br>
+<p><strong>Data Labels Enabled</strong></p>
+<blockquote>
+<p>Enable or disable the data labels.</p>
+</blockquote>
+<br>
+<p><strong>Data Labels Format</strong></p>
+<blockquote>
+</blockquote>
+<p>A <a href="http://www.highcharts.com/docs/chart-concepts/labels-and-string-formatting">format string</a> for the data label. Available variables are the same as for [ formatter ].</p>
+<br>
+<p><strong>Data Labels Formatter</strong></p>
+<blockquote>
+<p>Callback JavaScript function to format the data label.</p>
+</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If a [ format ] is defined, the format takes precedence and the formatter is ignored. Available data are:</p>
+<p><code>[ this.centage ]</code></p>
+<p>Stacked series and pies only. The point's percentage of the total.</p>
+<p><code>[ this.point ]</code></p>
+<p>The point object. The point name, if defined, is available
+through [ this.point.name ].</p>
+<p><code>[ this.series ]:</code></p>
+<p>The series object. The series name is available
+through [ this.series.name ].</p>
+<p><code>[ this.total ]</code></p>
+<p>Stacked series only. The total value at this point's x value.</p>
+<p><code>[ this.x ]</code></p>
+<p>The x value.</p>
+<p><code>[ this.y ]</code></p>
+<p>The y value.</p>
+</div>
+<br>
+<p><strong>Tooltip Point Format</strong></p>
+<blockquote>
+<p>The HTML of the point's line in the tooltip. Variables are enclosed by curly brackets. Available variables are point.x, point.y, series.name and series.color and other properties on the same form. Furthermore,  point.y can be extended by the <strong>[ tooltip.yPrefix ]</strong> and <strong>[ tooltip.ySuffix ]</strong> variables. This can also be overridden for each series, which makes it a good hook for displaying units.</p>
+</blockquote>
+<br>
+<p><strong>Tooltip Point Formatter</strong></p>
+<blockquote>
+<p>A callback function for formatting the HTML output for a single point in the tooltip. Like the pointFormat string, but with more flexibility. The <strong>[this]</strong> keyword refers to the Point object.</p>
+</blockquote>
+<br>
+<p><strong>Tooltip Date Time Label Formats</strong></p>
+<blockquote>
+<p>For series on a datetime axes, the date format in the tooltip's header will by default be guessed based on the closest data points. This member gives the default string representations used for each unit. For an overview of the replacement codes, see <code>&lt;a href=#Highcharts.dateFormat&gt;dateFormat&lt;/a&gt;</code>.</p>
+</blockquote>
+<p>Defaults to:</p>
+<pre><code>       {
+            millisecond:%A, %b %e, %H:%M:%S.%L,
+            second:%A, %b %e, %H:%M:%S,
+            minute:%A, %b %e, %H:%M,
+            hour:%A, %b %e, %H:%M,
+            day:%A, %b %e, %Y,
+            week:Week from %A, %b %e, %Y,
+            month:%B %Y,
+            year:%Y
+        }
+</code></pre>
+<br>
+<p><strong>Tooltip Value Decimals</strong></p>
+<blockquote>
+<p>How many decimals to show in each series' y value. This is overridable in each series' tooltip options object. The default is to preserve all decimals.</p>
+</blockquote>
+<br>
+<p><strong>Tooltip XDate Format</strong></p>
+<blockquote>
+<p>The format for the date in the tooltip header if the X axis is a datetime axis. The default is a best guess based on the smallest distance between points in the chart.</p>
+</blockquote>
+<br>
+<p><strong>X Axis</strong></p>
+<blockquote>
+<p>When using dual or multiple x axes, this number defines which xAxis the particular series is connected to. It refers to either the</p>
+</blockquote>
+<pre><code>&lt;a href=#xAxis.id&gt;axis id&lt;/a&gt;
+</code></pre>
+<p>or the index of the axis in the xAxis array, with 0 being the first.</p>
+<br>
+<p><strong>Y Axis</strong></p>
+<blockquote>
+<p>When using dual or multiple y axes, this number defines which yAxis the particular series is connected to. It refers to either the</p>
+</blockquote>
+<pre><code>&lt;a href=#yAxis.id&gt;axis id&lt;/a&gt;
+</code></pre>
+<p>or the index of the axis in the yAxis array, with 0 being the first.</p>
+<br>
+<p><strong>Data Point Factory</strong></p>
+<blockquote>
+<p>Function name (on the form <strong>func::my.lib.func</strong>) or function expression used for creating a Data Point for a serie. An object on the form <strong>{pointData, row, serieName}</strong> is passed to the function.</p>
+<p>The pointData is the point data object already created by InVision, which you can modify in this function by changing its fields and adding new ones.</p>
+<p>The row is the actual data row from the Data Source that the pointData object was created from.</p>
+<p>The serieName is the name of the serie.</p>
+</blockquote>
+<br>
+<h3 id="advanced-pie-chart-properties">Advanced pie chart properties</h3>
+<br>
+<p><strong>Allow point select</strong></p>
+<blockquote>
+<p>Allow this series' points to be selected by clicking on the markers, bars or pie slices.</p>
+</blockquote>
+<br>
+<p><strong>Animation</strong></p>
+<blockquote>
+<p>Enable or disable the initial animation when a series is displayed. The animation can also be set as a configuration object.</p>
+</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This option applies only to the initial animation of the series itself. For other animations, see <code>&lt;a href=#chart.animation&gt;chart.animation&lt;/a&gt;</code> and the animation parameter under the API methods.</p>
+</div>
+<blockquote>
+<p>The following properties are supported:</p>
+</blockquote>
+<pre><code>    &lt;dl&gt;
+        &lt;dt&gt;duration&lt;/dt&gt;
+        &lt;dd&gt;The duration of the animation in milliseconds.&lt;/dd&gt;
+        &lt;dt&gt;easing&lt;/dt&gt;
+        &lt;dd&gt;When using jQuery as the general framework, the easing can be set to [ linear ] 
+        or	[ swing ]. More easing functions are available with the use of jQuery plug-ins, most notably the jQuery UI suite. 
+        See &lt;a href=http://api.jquery.com/animate/&gt;the jQuery docs&lt;/a&gt;. When using MooTools as the general framework, use the property name [ transition ] instead of [ easing ].&lt;/dd&gt;
+    &lt;/dl&gt;
+</code></pre>
+<p>Due to poor performance, animation is disabled in old IE browsers for column charts and polar charts.</p>
+<br>
+<p><strong>Border color</strong></p>
+<blockquote>
+<p>The color of the border surrounding each slice.</p>
+</blockquote>
+<br>
+<p><strong>Border width</strong></p>
+<blockquote>
+<p>The width of the border surrounding each slice.</p>
+</blockquote>
+<br>
+<p><strong>Center</strong></p>
+<blockquote>
+<p>The center of the pie chart relative to the plot area. Can be percentages or pixel values. The default behaviour (as of 3.0) is to center the pie so that all slices and data labels are within the plot area. As a consequence, the pie may actually jump around in a chart with dynamic values, as the data labels move. In that case, the center should be explicitly set, for example to <strong>[ [50%, 50%] ]</strong>.</p>
+</blockquote>
+<br>
+<p><strong>Cursor</strong></p>
+<blockquote>
+<p>You can set the cursor to pointer if you have click events attached to  the series, to signal to the user that the points and lines can be clicked.</p>
+</blockquote>
+<br>
+<p><strong>Enable mouse tracking</strong></p>
+<blockquote>
+<p>Enable or disable the mouse tracking for a specific series. This includes point tooltips and click events on graphs and points. For large datasets it improves performance.</p>
+</blockquote>
+<br>
+<p><strong>End angle</strong></p>
+<blockquote>
+<p>The end angle of the pie in degrees where 0 is top and 90 is right. Defaults to <strong>[ startAngle ]</strong> plus 360.</p>
+</blockquote>
+<br>
+<p><strong>Ignore hidden point</strong></p>
+<blockquote>
+<p>Equivalent to <code>&lt;a href=#chart.ignoreHiddenSeries&gt;chart.ignoreHiddenSeries&lt;/a&gt;</code>, this option tells whether the series shall be redrawn as if the hidden point were [ null ].
+The default value changed from <strong>[ false ]</strong> to <strong>[ true ]</strong> with Highcharts 3.0.</p>
+</blockquote>
+<br>
+<p><strong>Inner size</strong></p>
+<blockquote>
+<p>The size of the inner diameter for the pie. A size greater than 0 renders a donut chart. Can be a percentage or pixel value. Percentages are relative to the size of the plot area. Pixel values are given as integers.</p>
+</blockquote>
+<br>
+<p><strong>Linked to</strong></p>
+<blockquote>
+<p>The <code>&lt;a href=#series.id&gt;id&lt;/a&gt;</code> of another series to link to. Additionally, the value can be :previous to link to the previous series. When two series are linked, only the first one appears in the legend. Toggling the visibility of this also toggles the linked series.</p>
+</blockquote>
+<br>
+<p><strong>Min size</strong></p>
+<blockquote>
+<p>The minimum size for a pie in response to auto margins. The pie will try to shrink to make room for data labels in side the plot area, but only to this size.</p>
+</blockquote>
+<br>
+<p><strong>Selected</strong></p>
+<blockquote>
+<p>Whether to select the series initially. If <strong>[ showCheckbox ]</strong> is true, the checkbox next to the series name will be checked for a selected series.</p>
+</blockquote>
+<br>
+<p><strong>Shadow</strong></p>
+<blockquote>
+<p>Whether to apply a drop shadow to the plot area. Requires that plotBackgroundColor be set. Since 2.3 the shadow can be an object configuration containing <strong>[ color ]</strong>, <strong>[ offsetX ]</strong>, <strong>[ offsetY ]</strong>, <strong>[ opacity ]</strong> and <strong>[ width ]</strong>.</p>
+</blockquote>
+<br>
+<p><strong>Show in legend</strong></p>
+<blockquote>
+<p>Whether to display this particular series or series type in the legend. The default value is <strong>[ true ]</strong> for standalone series, <strong>[ false ]</strong> for linked series.</p>
+</blockquote>
+<br>
+<p><strong>Size</strong></p>
+<blockquote>
+<p>The diameter of the pie relative to the plot area. Can be a percentage or pixel value. Pixel values are given as integers. The default behaviour (as of 3.0) is to scale to the plot area and give room for data labels within the plot area. As a consequence, the size of the pie may vary when points are updated and data labels more around. In that case it is best to set a fixed value, for example <strong>[ 75% ]</strong>.</p>
+</blockquote>
+<br>
+<p><strong>Sliced offset</strong></p>
+<blockquote>
+<p>If a point is sliced, moved out from the center, how many pixels should  it be moved?</p>
+</blockquote>
+<br>
+<p><strong>Start angle</strong></p>
+<blockquote>
+<p>The start angle of the pie slices in degrees where 0 is top and 90 right.</p>
+</blockquote>
+<br>
+<p><strong>Sticky tracking</strong></p>
+<blockquote>
+<p>Sticky tracking of mouse events. When true, the <strong>[ mouseOut ]</strong> event on a series isn't triggered until the mouse moves over another series, or out of the plot area. When false, the <strong>[ mouseOut ]</strong> event on a series is triggered when the mouse leaves the area around the series' graph or markers. This also implies the tooltip. When <strong>[ stickyTracking ]</strong> is false and <strong>[ tooltip.shared ]</strong> is false, the tooltip will be hidden when moving the mouse between series. Defaults to true for line and area type series, but to false for columns, pies etc.</p>
+</blockquote>
+<br>
+<p><strong>Index</strong></p>
+<blockquote>
+<p>The index of the series in the chart, affecting the internal index in the <strong>[ chart.series ]</strong> array, the visible Z index as well as the order in the legend.</p>
+</blockquote>
+<br>
+<p><strong>Legend index</strong></p>
+<blockquote>
+<p>The sequential index of the series in the legend.</p>
+</blockquote>
+<pre><code>&lt;div class=demo&gt; 
+//Try it:  
+&lt;a href=http://jsfiddle.net/gh/get/jquery/1.7.1/highslide-software/highcharts.com/tree/master/samples/highcharts/series/legendindex/ target=_blank&gt;
+Legend in opposite order&lt;/a&gt; &lt;/div&gt;.
+</code></pre>
+<br>
+<p><strong>Stack</strong></p>
+<blockquote>
+<p>This option allows grouping series in a stacked chart. The stack option can be a string  or a number or anything else, as long as the grouped series' stack options match each other.</p>
+</blockquote>
+<br>
+<hr>
+<p>Here is just couple of options. By clinking on a property in the InVision designer, you will find describtion below.</p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/describtionsincharts.png" alt="describtions"></p>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
