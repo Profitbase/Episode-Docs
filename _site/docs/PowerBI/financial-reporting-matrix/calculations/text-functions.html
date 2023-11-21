@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Text functions | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Text functions | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../public/main.js'
+    import { init } from './../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h2 id="text-functions">Text functions</h2>
+
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CONCAT(…t:string)</td>
+<td>Concatenates a comma separated list of strings  CONCAT(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;) will return the string &quot;abc&quot;</td>
+</tr>
+<tr>
+<td>SUBSTRING(input : string, start : number[, length : number)</td>
+<td>Returns a substring of the input string.  SUBSTRING(&quot;Hello&quot;, 1) returns the string &quot;ello&quot;.  SUBSTRING(&quot;Hello&quot;, 1,2) returns the string &quot;el&quot;.</td>
+</tr>
+<tr>
+<td>SPLIT(input : string, delimiter : string)</td>
+<td>Returns an array of strings that contains the substrings of the input strings that are delimited by the delimiter argument.  SPLIT(&quot;Hi, everyone&quot;, &quot;,&quot;) returns [&quot;Hi&quot;, &quot;everyone&quot;]</td>
+</tr>
+<tr>
+<td>LEFT</td>
+<td></td>
+</tr>
+<tr>
+<td>LEN</td>
+<td></td>
+</tr>
+<tr>
+<td>LOWER</td>
+<td>Converts all characthers in a string to lower case</td>
+</tr>
+<tr>
+<td>REPLACE</td>
+<td></td>
+</tr>
+<tr>
+<td>RIGHT</td>
+<td></td>
+</tr>
+<tr>
+<td>REPLACE</td>
+<td></td>
+</tr>
+<tr>
+<td>TOSTRING(value)</td>
+<td>Converts a value to a string, for example the number 100.123 is converted to the string &quot;100.123&quot;</td>
+</tr>
+<tr>
+<td>TOSTRING(value,formatString)</td>
+<td>Similar to the Excel TEXT-function, converts a value to a string using the specified format.  When the value is a number, valid format strings are those supported by the numeraljs formatting library – <a href="http://numeraljs.com/">http://numeraljs.com</a>  When the value is a Date, valid format strings are those supported by the momentjs formatting library – <a href="http://momentjs.com/">http://momentjs.com</a>   Example  TOSTRING(DATE(2016,1,1), &quot;YYYYMMDD&quot;) will returns &quot;20160101&quot;</td>
+</tr>
+<tr>
+<td>TRIM(input)</td>
+<td>Removes leading and trailing whitespace charachters from a string.</td>
+</tr>
+<tr>
+<td>UPPER(input)</td>
+<td>Converts all characthers in a string to upper case</td>
+</tr>
+<tr>
+<td>TONUMBER(value)</td>
+<td>Converts a string to a number. If the string cannot be converted to a number, null is returned.</td>
+</tr>
+<tr>
+<td>NEWLINE()</td>
+<td>Returns the newline character.</td>
+</tr>
+</tbody>
+</table>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

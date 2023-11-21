@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>TreeView | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="TreeView | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../../public/main.js'
+    import { init } from './../../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p>Inherits from <a href="control.html">Control</a>.</p>
+<p>TreeView presents a hierarchical view of information, where each item can have zero or more children / subitems.</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/TreeView1.png" alt="TreeView"></p>
+<br>
+<p><strong>Properties</strong></p>
+<p><code>ItemsSource</code></p>
+<p>This is the collection of items displayed in the TreeView. The ItemSource can be a SetModel, List, or DimensionModel.</p>
+<p>If the ItemsSource is a SetModel or List, you must set the ItemId and ParentItemId to specify the parent-child relationship between the items in the TreeView.</p>
+<p>If the ItemsSource is a DimensionModel, you should NOT specify the ItemId, ParentItemId, or DisplayMember.</p>
+<br>
+<p><code>ItemId</code></p>
+<p>Specify the name of the field in the ItemSource that represents an item. If the ItemSource is a SetModel or List, you must set the ItemId.</p>
+<p>If the ItemSource is a DimensionModel, this property is ignored.</p>
+<br>
+<p><code>ParentItemId</code></p>
+<p>Specifies the name of the field in the ItemSource that represents the parent of an item. If the ItemSource is a SetModel or List, you must set the ParentItemId.</p>
+<p>If the ItemsSource is a DimensionModel, this property is ignored.</p>
+<br>
+<p><code>DisplayMember</code></p>
+<p>Specifies the name of the field in the ItemSource that should be displayed as the text of an item in the TreeView. If this field is not specified, the ItemId field is displayed in the tree.</p>
+<p>If the ItemsSource is a DimensionModel, this property is ignored.</p>
+<br>
+<p><code>CanSelectItem</code></p>
+<p>The callback function which returns true or false, indicating whether an item in the TreeView can be selected by the user. The argument passed to the function is the data object from the ItemsSource displayed in the TreeView.</p>
+<br>
+<p><code>ItemSelected</code></p>
+<p>The function to call when an item in the TreeView is selected. The argument passed to the function is the data object from the ItemsSource displayed in the TreeView which is being clicked / selected by the user.</p>
+<br>
+<p><code>ItemTemplate</code></p>
+<p>Use ItemTemplate to specify the custom rendering of TreeView items, for example, if you want to render images or checkboxes.</p>
+<br>
+<p><strong>Basic example using SetModel as ItemsSource</strong></p>
+<p>The example below shows how to use a SetModel as a data source for a TreeView.<br>
+The ItemID and ParentItemID fields from the source table specifies the parent/child relationship, and the ItemName specifies the label displayed for each node in the tree. They are mapped to the TreeView <strong>ItemId</strong>, <strong>ParentItemId</strong>, and <strong>DisplayMember</strong> properties, respectively.</p>
+<p>In this case, they happen to have similar names, but that is coincidental. The fields from the data source could have been Foo, Bar, Baz, and you would have to map them to the TreeView properties the same way.</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/TreeView2.png" alt="TreeView"></p>
+<br>
+<pre><code class="lang-xml">&lt;Form&gt;
+  &lt;Style&gt;
+    &lt;Layouts&gt;
+      &lt;Grid Name=&quot;grid&quot; Rows=&quot;1fr&quot; Columns=&quot;1fr&quot; /&gt;
+    &lt;/Layouts&gt;
+    &lt;Css&gt;
+        .border{
+            border: 1px solid var(--theme-border-color);
+        }
+    &lt;/Css&gt;
+  &lt;/Style&gt;
+  &lt;Data&gt;
+    &lt;SetModels&gt;
+        &lt;SetModel Name=&quot;TreeViewData&quot; Source=&quot;Setting_HierarchicalTable_11022021184313&quot; Fields=&quot;ItemID, ItemName, ParentItemID, SomeBool, VotingDisabled&quot;/&gt;
+    &lt;/SetModels&gt;
+  &lt;/Data&gt;
+  &lt;Functions&gt;
+      &lt;Function Name=&quot;onItemSelected&quot; Parameters=&quot;item&quot;&gt;
+          alert('You selected ' + item.ItemName);
+      &lt;/Function&gt;
+      &lt;Function Name=&quot;onItemClick&quot; Parameters=&quot;item&quot;&gt;
+          alert('You clicked ' + item.ItemName);
+      &lt;/Function&gt;
+      &lt;Function Name=&quot;onCanSelectItem&quot; Parameters=&quot;item&quot;&gt;
+          // Only allow selecting items which are children of items with Id 'Root'
+          return item.ParentItemID === 'Root';
+      &lt;/Function&gt;
+  &lt;/Functions&gt;
+  &lt;EventHandlers/&gt;
+  &lt;UI Grid=&quot;grid&quot;&gt;
+      &lt;Grid Rows=&quot;1fr&quot; Columns=&quot;1fr&quot;&gt;
+          &lt;TreeView ItemsSource=&quot;{Binding Path:TreeViewData}&quot; Row=&quot;1&quot; Column=&quot;1&quot;
+              ItemId=&quot;ItemID&quot;
+              ParentItemId=&quot;ParentItemID&quot;
+              DisplayMember=&quot;ItemName&quot;
+              ItemSelected=&quot;onItemSelected&quot;
+              CanSelectItem=&quot;onCanSelectItem&quot;
+              CssClass=&quot;border&quot;/&gt;
+      &lt;/Grid&gt;
+  &lt;/UI&gt;
+&lt;/Form&gt;
+</code></pre>
+<br>
+<p><strong>Example using ItemTemplate</strong></p>
+<p>The example below show how to use the ItemTemplate to provide a custom rendering of items in the TreeView.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The use of the special $Data argument passed when calling the onItemClick function in the Button Click event handler. The $Data argument represents the data object from the ItemsSource displayed by the clicked TreeView item.</p>
+</div>
+<p>The data context for bindings inside the ItemTemplate is the data object being rendered, meaning that <strong>Binding Path:ItemName</strong> binds the Text of the Label to the ItemName property of the data object rendered by the TreeView item. You need to bind to something outside the item, you need to use the full path of the property, including the model name, for example <strong>{Binding Path:Models.Customer.Name}</strong></p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/TreeView3.png" alt="TreeView"></p>
+<br>
+<pre><code class="lang-xml">&lt;TreeView ItemsSource=&quot;{Binding Path:TreeViewData}&quot; Row=&quot;1&quot; Column=&quot;1&quot;
+              ItemId=&quot;ItemID&quot;
+              ParentItemId=&quot;ParentItemID&quot;
+              DisplayMember=&quot;ItemName&quot;
+              ItemSelected=&quot;onItemSelected&quot;
+              CanSelectItem=&quot;onCanSelectItem&quot;
+              CssClass=&quot;border&quot;&gt;
+              &lt;ItemTemplate&gt;
+                  &lt;Layout Grid=&quot;grid&quot;&gt;
+                      &lt;Grid Columns=&quot;auto auto auto&quot; Gap=&quot;4px&quot;&gt;
+                          &lt;Input Type=&quot;checkbox&quot; VerticalAlignment=&quot;center&quot; Value=&quot;{Binding Path:SomeBool}&quot; /&gt;
+                          &lt;Label Text=&quot;{Binding Path:ItemName}&quot; VerticalAlignment=&quot;center&quot; Column=&quot;2&quot;/&gt;
+                          &lt;Button Click=&quot;onItemClick($Data)&quot; Text=&quot;Vote!&quot; StopClickEventPropagation=&quot;true&quot; Column=&quot;4&quot; Type=&quot;Link&quot; Disabled=&quot;{Binding Path:VotingDisabled}&quot; /&gt;
+                      &lt;/Grid&gt;
+                  &lt;/Layout&gt;
+              &lt;/ItemTemplate&gt;
+&lt;/TreeView&gt;
+</code></pre>
+<br>
+<p><strong>Example using DimensionModel as ItemsSource</strong></p>
+<p>When using a dimension as ItemsSource, you should <strong>not</strong> specify the ItemId, ParentItemId, and DisplayMember properties. The system will take care of rendering the TreeView correctly without any configuration as long as the ItemsSource is bound to a DimensionModel.</p>
+<p>A DimensionModel must have a Name and a Source. The <strong>Name</strong> is the <strong>name of the model</strong>, that you bind to the TreeView.</p>
+<p>The <strong>Source</strong> is the <strong>name of the dimension</strong> in your Solution. It is <strong>NOT</strong> the database table name of the dimension. Also, you cannot use the @Object[…].DbObjectName directive as Source.</p>
+<p><strong>Note!</strong> that you cannot use legacy Wide or Linked dimensions as sources for DimensionModels.</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/TreeView4.png" alt="TreeView"></p>
+<br>
+<pre><code class="lang-xml">&lt;Form&gt;
+  &lt;Style&gt;
+    &lt;Layouts&gt;
+      &lt;Grid Name=&quot;grid&quot; Rows=&quot;1fr&quot; Columns=&quot;1fr&quot; /&gt;
+    &lt;/Layouts&gt;
+  &lt;/Style&gt;
+  &lt;Texts /&gt;
+  &lt;Data&gt;
+    &lt;Dimensions&gt;
+        &lt;DimensionModel Name=&quot;TreeViewData&quot; Source=&quot;PCDim&quot;/&gt;
+    &lt;/Dimensions&gt;
+  &lt;/Data&gt;
+  &lt;EventHandlers/&gt;
+  &lt;UI Grid=&quot;grid&quot;&gt;
+      &lt;Grid Rows=&quot;1fr&quot; Columns=&quot;1fr&quot;&gt;
+          &lt;TreeView ItemsSource=&quot;{Binding Path:TreeViewData}&quot; Row=&quot;1&quot; Column=&quot;1&quot; /&gt;
+      &lt;/Grid&gt;
+  &lt;/UI&gt;
+&lt;/Form&gt;
+</code></pre>
+<h3 id="videos">Videos</h3>
+<ul>
+<li><p><a href="../../../../videos/formschemas.html">Form Schemas</a></p>
+</li>
+<li><p><a href="https://profitbasedocs.blob.core.windows.net/videos/Form%20Schema%20-%20Control%20-%20TreeView.mp4">TreeView</a></p>
+</li>
+</ul>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

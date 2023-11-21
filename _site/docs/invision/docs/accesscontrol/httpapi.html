@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>HTTP API | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="HTTP API | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../public/main.js'
+    import { init } from './../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="manage-access-control-using-an-api">Manage Access Control using an API</h3>
+
+<p>Access control can be managed through an <strong>HTTP API</strong>. To manage Identities/Groups/Access Control through the API, you need an <strong>API Key</strong> and the <strong>API address</strong>.</p>
+<br>
+<h3 id="getting-an-api-key">Getting an API Key</h3>
+<p>To get an API Key to use with the Access Control Management API, go to <strong>Application Menu -&gt; API Management -&gt; Edit</strong>. In the <strong>Access Control</strong> tab, find an existing key or create a new one. Use the API Key in the <strong>url</strong> or header in the request (see the <strong>example</strong> below).</p>
+<br>
+<h3 id="define-api-key-in-designer">Define API key in designer</h3>
+<ol>
+<li>Click the Edit command under the API Management menu item.</li>
+<li>Select the Access Control tab.</li>
+<li>Click the Add button.</li>
+</ol>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/apimanagement.png" alt="apimanagement">
+<br></p>
+<h3 id="get-identities-api">Get Identities API</h3>
+<p>This API gets a list of existing Identities.</p>
+<p><strong>URL</strong></p>
+<p>api/v1/accesscontrol/identities</p>
+<p><strong>Method</strong></p>
+<p>GET</p>
+<p><strong>URL Params</strong></p>
+<p><em>Required</em><br>
+api_key=[api key]</p>
+<p><strong>Note!</strong> Optionally, you can provide the API key as a header named x-api-key</p>
+<p><strong>Success Response</strong></p>
+<p>Code: 200 OK</p>
+<p>Content:</p>
+<br>
+<pre><code>[
+
+
+  {
+
+    &quot;id&quot;: &quot;9cbf5b23-a9d3-4743-87d7-733e0c2bd08e&quot;,
+
+    &quot;name&quot;: &quot;Anders Andersen&quot;,
+
+    &quot;type&quot;: 0,
+
+    &quot;email&quot;: &quot;anan@mydomain.no&quot;,
+
+    &quot;description&quot;: &quot;anan@mydomain.no&quot;
+
+  }
+
+]
+</code></pre>
+<br>
+<p><strong>Error Response</strong></p>
+<p>Code: 500 Internal Server Error</p>
+<p><strong>Example</strong></p>
+<p><a href="https://mydomain.com/invision/api/v1/accesscontrol/identities?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb">https://mydomain.com/invision/api/v1/accesscontrol/identities?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb</a></p>
+<br>
+<h3 id="get-identity-api">Get Identity API</h3>
+<p>This API gets the properties of an existing Identity.</p>
+<p><strong>URL</strong></p>
+<p><code>api/v1/accesscontrol/identities/&lt;id&gt;</code></p>
+<p><strong>Method</strong></p>
+<p>GET</p>
+<p><strong>URL Params</strong></p>
+<p><em>Required</em><br>
+api_key=[api key]</p>
+<p><strong>Note!</strong> Optionally, you can provide the API key as a header named x-api-key</p>
+<p><strong>Success Response</strong></p>
+<p>Code: 200 OK</p>
+<p>Content:</p>
+<br>
+<pre><code>  {
+
+    &quot;id&quot;: &quot;9cbf5b23-a9d3-4743-87d7-733e0c2bd08e&quot;,
+
+    &quot;name&quot;: &quot;Anders Andersen&quot;,
+
+    &quot;type&quot;: 0,
+
+    &quot;email&quot;: &quot;anan@mydomain.no&quot;,
+
+    &quot;description&quot;: &quot;anan@mydomain.no&quot;
+
+  }
+
+</code></pre>
+<p><strong>Error Response</strong></p>
+<p>Code: 500 Internal Server Error</p>
+<p><strong>Example</strong></p>
+<p><a href="https://mydomain.com/invision/api/v1/accesscontrol/identities/04f0bc48-a51d-4339-be90-f20c1787b6ea?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb">https://mydomain.com/invision/api/v1/accesscontrol/identities/04f0bc48-a51d-4339-be90-f20c1787b6ea?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb</a></p>
+<br>
+<h3 id="add-identity-api">Add Identity API</h3>
+<p>This API adds an Identity.</p>
+<p><strong>URL</strong></p>
+<p>api/v1/accesscontrol/identities</p>
+<p><strong>Method</strong></p>
+<p>POST</p>
+<p><strong>URL Params</strong></p>
+<p><em>Required</em><br>
+api_key=[api key]</p>
+<p><strong>Note!</strong> Optionally, you can provide the API key as a header named x-api-key</p>
+<p><strong>Body</strong></p>
+<pre><code>  {
+
+    &quot;id&quot;: &quot;c6c52e0d-812f-47d1-9795-eb011c2eba03&quot;,
+
+    &quot;name&quot;: &quot;Anders Andersen&quot;,
+
+    &quot;type&quot;: 0,
+
+    &quot;email&quot;: &quot;anan@mydomain.no&quot;,
+
+    &quot;description&quot;: &quot;anan@mydomain.no&quot;
+
+  }
+</code></pre>
+<p><strong>Success Response</strong></p>
+<p>Code: 200 OK</p>
+<p><strong>Error Response</strong></p>
+<p>Code: 500 Internal Server Error</p>
+<p><strong>Example</strong></p>
+<p><a href="https://mydomain.com/invision/api/v1/accesscontrol/identities?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb">https://mydomain.com/invision/api/v1/accesscontrol/identities?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb</a></p>
+<br>
+<h3 id="update-identity-api">Update Identity API</h3>
+<p>This API updates an Identity.</p>
+<p><strong>URL</strong></p>
+<p><code>api/v1/accesscontrol/identities/&lt;id&gt;</code></p>
+<p><strong>Method</strong></p>
+<p>PUT</p>
+<p><strong>URL Params</strong></p>
+<p><em>Required</em><br>
+api_key=[api key]</p>
+<p><strong>Note!</strong> Optionally, you can provide the API key as a header named x-api-key</p>
+<p><strong>Body</strong></p>
+<pre><code>  {
+
+    &quot;id&quot;: &quot;c6c52e0d-812f-47d1-9795-eb011c2eba03&quot;, //will be ignored
+
+    &quot;name&quot;: &quot;Anders Andersen&quot;,
+
+    &quot;type&quot;: 0,
+
+    &quot;email&quot;: &quot;anan@mydomain.no&quot;,
+
+    &quot;description&quot;: &quot;anan@mydomain.no&quot;
+
+  }
+</code></pre>
+<p><strong>Success Response</strong></p>
+<p>Code: 200 OK</p>
+<p><strong>Error Response</strong></p>
+<p>Code: 500 Internal Server Error</p>
+<p><strong>Example</strong></p>
+<p><a href="https://mydomain.com/invision/api/v1/accesscontrol/identities/04f0bc48-a51d-4339-be90-f20c1787b6ea?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb">https://mydomain.com/invision/api/v1/accesscontrol/identities/04f0bc48-a51d-4339-be90-f20c1787b6ea?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb</a></p>
+<br>
+<h3 id="delete-identity-api">Delete Identity API</h3>
+<p>This API deletes an Identity.</p>
+<p><strong>URL</strong></p>
+<p><code>api/v1/accesscontrol/identities/&lt;id&gt;</code></p>
+<p><strong>Method</strong></p>
+<p>DELETE</p>
+<p><strong>URL Params</strong></p>
+<p><em>Required</em><br>
+api_key=[api key]</p>
+<p><strong>Note!</strong> Optionally, you can provide the API key as a header named x-api-key</p>
+<p><strong>Success Response</strong></p>
+<p>Code: 200 OK</p>
+<p><strong>Error Response</strong></p>
+<p>Code: 500 Internal Server Error</p>
+<p><strong>Example</strong></p>
+<p><a href="https://mydomain.com/invision/api/v1/accesscontrol/identities/04f0bc48-a51d-4339-be90-f20c1787b6ea?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb">https://mydomain.com/invision/api/v1/accesscontrol/identities/04f0bc48-a51d-4339-be90-f20c1787b6ea?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb</a></p>
+<br>
+<h3 id="get-identity-access-groups-api">Get Identity Access Groups API</h3>
+<p>This API gets a list of an Identity’s Access Groups.</p>
+<p><strong>URL</strong></p>
+<p><code>api/v1/accesscontrol/identities/&lt;id&gt;/accessgroups</code></p>
+<p><strong>Method</strong></p>
+<p>GET</p>
+<p><strong>URL Params</strong></p>
+<p>Required
+api_key=[api key]</p>
+<p><strong>Note!</strong> Optionally, you can provide the API key as a header named x-api-key</p>
+<p><strong>Success Response</strong></p>
+<p>Code: 200 OK</p>
+<p><strong>Content:</strong></p>
+<br>
+<pre><code>[
+
+
+  {
+
+    &quot;id&quot;: &quot;2cbf5b23-a9d3-4743-87d7-733e0c2bd08e&quot;,
+
+    &quot;name&quot;: &quot;My Access Group&quot;
+
+  }
+
+]
+</code></pre>
+<p><strong>Error Response</strong></p>
+<p>Code: 500 Internal Server Error</p>
+<p><strong>Example</strong></p>
+<p><a href="https://mydomain.com/invision/api/v1/accesscontrol/identities/cafdd2dd-f709-4841-a41d-7f2d6cdccca3/accessgroups?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb">https://mydomain.com/invision/api/v1/accesscontrol/identities/cafdd2dd-f709-4841-a41d-7f2d6cdccca3/accessgroups?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb</a></p>
+<br>
+<h3 id="get-access-group-identities-api">Get Access Group Identities API</h3>
+<p>This API gets a list of existing Identities in an Access Group.</p>
+<p><strong>URL</strong></p>
+<p><code>api/v1/accesscontrol/accessgroups/&lt;id&gt;/identities</code></p>
+<p><strong>Method</strong></p>
+<p>GET</p>
+<p><strong>URL Params</strong></p>
+<p><em>Required</em><br>
+api_key=[api key]</p>
+<p><strong>Note!</strong> Optionally, you can provide the API key as a header named x-api-key</p>
+<p><strong>Success Response</strong></p>
+<p>Code: 200 OK</p>
+<p><strong>Content:</strong></p>
+<br>
+<pre><code>[
+
+
+  {
+
+    &quot;id&quot;: &quot;9cbf5b23-a9d3-4743-87d7-733e0c2bd08e&quot;,
+
+    &quot;name&quot;: &quot;Anders Andersen&quot;,
+
+    &quot;type&quot;: 0,
+
+    &quot;email&quot;: &quot;anan@mydomain.no&quot;,
+
+    &quot;description&quot;: &quot;anan@mydomain.no&quot;
+
+  }
+
+]
+</code></pre>
+<p><strong>Error Response</strong></p>
+<p>Code: 500 Internal Server Error</p>
+<p><strong>Example</strong></p>
+<p><a href="https://mydomain.com/invision/api/v1/accesscontrol/accessgroups/cafdd2dd-f709-4841-a41d-7f2d6cdccca3/identities?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb">https://mydomain.com/invision/api/v1/accesscontrol/accessgroups/cafdd2dd-f709-4841-a41d-7f2d6cdccca3/identities?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb</a></p>
+<br>
+<h3 id="add-access-group-identity-api">Add Access Group Identity API</h3>
+<p>Using the IdentityID, you can add an identity to an Access Group.</p>
+<p><strong>URL</strong></p>
+<p><code>api/v1/accesscontrol/accessgroups/&lt;accessgroupid&gt;/identities/&lt;identityid&gt;</code></p>
+<p><strong>URL Params</strong></p>
+<p><em>Required</em><br>
+api_key=[api key]</p>
+<p><strong>Note!</strong> Optionally, you can provide the api key as a header named x-api-key</p>
+<p><strong>Method</strong></p>
+<p>POST</p>
+<p><strong>Success Response</strong></p>
+<p>Code: 200 OK</p>
+<p><strong>Error Response</strong></p>
+<p>Code: 500 Internal Server Error</p>
+<p><strong>Example</strong></p>
+<p><a href="https://mydomain.com/invision/api/v1/accesscontrol/accessgroups/cafdd2dd-f709-4841-a41d-7f2d6cdccca3/identities/c6c52e0d-812f-47d1-9795-eb011c2eba03?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb">https://mydomain.com/invision/api/v1/accesscontrol/accessgroups/cafdd2dd-f709-4841-a41d-7f2d6cdccca3/identities/c6c52e0d-812f-47d1-9795-eb011c2eba03?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb</a></p>
+<br>
+<h3 id="delete-access-group-identity-api">Delete Access Group Identity API</h3>
+<p>Using the <strong>IdentityID</strong>, you can add an identity to the Access Group.</p>
+<p><strong>URL</strong></p>
+<p><code>api/v1/accesscontrol/accessgroups/&lt;accessgroupid&gt;/identities/&lt;identityid&gt;</code></p>
+<p><strong>URL Params</strong></p>
+<p><em>Required</em><br>
+api_key=[api key]</p>
+<p><strong>Note!</strong> Optionally, you can provide the api key as a header named x-api-key</p>
+<p><strong>Method</strong></p>
+<p>DELETE</p>
+<p><strong>Success Response</strong></p>
+<p>Code: 200 OK</p>
+<p><strong>Error Response</strong></p>
+<p>Code: 500 Internal Server Error</p>
+<p><strong>Example</strong></p>
+<p><a href="https://mydomain.com/invision/api/v1/accesscontrol/accessgroups/cafdd2dd-f709-4841-a41d-7f2d6cdccca3/identities/c6c52e0d-812f-47d1-9795-eb011c2eba03?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb">https://mydomain.com/invision/api/v1/accesscontrol/accessgroups/cafdd2dd-f709-4841-a41d-7f2d6cdccca3/identities/c6c52e0d-812f-47d1-9795-eb011c2eba03?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb</a></p>
+<br>
+<h3 id="get-access-groups-api">Get Access Groups API</h3>
+<p>This API gets a list of all  Access Groups.</p>
+<p><strong>URL</strong></p>
+<p>api/v1/accesscontrol/accessgroups</p>
+<p><strong>Method</strong></p>
+<p>GET</p>
+<p><strong>URL Params</strong></p>
+<p>Required api_key=[api key]</p>
+<p><strong>Note!</strong> Optionally, you can provide the API key as a header named x-api-key</p>
+<p><strong>Success Response</strong></p>
+<p>Code: 200 OK</p>
+<p><strong>Content:</strong></p>
+<pre><code>[
+
+  {
+
+    &quot;id&quot;:&quot;2cbf5b23-a9d3-4743-87d7-733e0c2bd08e&quot;,
+
+    &quot;name&quot;:&quot;My Access Group&quot;
+
+  }
+
+]
+</code></pre>
+<p><strong>Error Response</strong></p>
+<p>Code: 500 Internal Server Error</p>
+<p><strong>Example</strong></p>
+<p><a href="https://mydomain.com/invision/api/v1/accesscontrol/accessgroups?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb">https://mydomain.com/invision/api/v1/accesscontrol/accessgroups?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb</a></p>
+<br>
+<h3 id="see-also">See Also</h3>
+<ul>
+<li><a href="identities.html">Identities</a></li>
+</ul>
+<br>
+<h3 id="videos">Videos</h3>
+<ul>
+<li><a href="../../videos/accesscontrol.html">Access Control</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Users%20and%20Permissions%20-%20Create%20and%20Manage%20Azure%20AD%20Users%20and%20User%20Groups.mp4">Create and Manage Azure AD Identities and Access Groups</a></li>
+</ul>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

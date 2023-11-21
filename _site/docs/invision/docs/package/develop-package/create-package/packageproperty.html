@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Package Properties | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Package Properties | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../../public/main.js'
+    import { init } from './../../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="package-properties">Package Properties</h3>
+
+<br>
+<p>A package property can be defined inside of a Package.</p>
+<p>There are ten supported property types. They are listed here:</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/packageProperties1.jpg" alt="PK"></p>
+<br>
+<h3 id="defining-a-package-property">Defining a package property</h3>
+<blockquote>
+<p>The default value is the returned value if the solution is not part of a version.</p>
+</blockquote>
+<br>
+<p><strong>Example</strong></p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/packageProperties2.jpg" alt="PK"></p>
+<br>
+<h3 id="use-packageproperty-in-a-sql-script">Use PackageProperty in a Sql script</h3>
+<br>
+<p><strong>@PackageProperty[PropertyName] in a Sql script</strong></p>
+<blockquote>
+<p>A package property value can be used inside a Sql script.</p>
+<p>The returned value is a string representation of the data type. Example of use can be:</p>
+</blockquote>
+<pre><code>@PackageProperty[Profitbase.PackagePropTests.Planning.StartDate].DateExpr
+</code></pre>
+<br>
+<p><strong>Example</strong></p>
+<blockquote>
+<p>You may want to filter data based on a package property value.</p>
+</blockquote>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/packageProperties3.jpg" alt="PK"></p>
+<br>
+<p><strong>Note!</strong></p>
+<blockquote>
+<p>@PackageProperty[name].DateExpr is recommended for casting package properties to datetime.</p>
+</blockquote>
+<br>
+<pre><code>@PackageProperty[Profitbase.PackagePropertyTests.DateTime].DateTimeOffsetStr
+</code></pre>
+<pre><code>@PackageProperty[Profitbase.PackagePropertyTests.DateTime].DateTimeUtcStr
+</code></pre>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/pkprp1.png" alt="PK"></p>
+<br>
+<h3 id="use-packageproperty-in-a-powershell-script">Use PackageProperty in a PowerShell script</h3>
+<br>
+<p><strong>@PackageProperty[PropertyName] in a PowerShell script</strong></p>
+<blockquote>
+<p>A package property value can be used inside a PowerShell script.</p>
+<p>The returned value is a string representation of the data type. Example of use can be:</p>
+</blockquote>
+<pre><code>$date = 
+[datetime]::ParseExact('@PackageProperty[Profitbase.PackagePropTests.Planning.NationalHoliday].DateStr',&quot;yyyyMMdd&quot;,[Globalization.CultureInfo]::InvariantCulture)
+Write-Output $date.Year
+</code></pre>
+<br>
+<p><strong>Example</strong></p>
+<p>Here is an example of use in PowerShell script.</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/packageProperties4.jpg" alt="PK"></p>
+<br>
+<p><strong>Note!</strong></p>
+<blockquote>
+<p>@PackageProperty[name].DateStr is recommended for getting yyyyMMdd formatted representation of date/datetime package properties.</p>
+</blockquote>
+<br>
+<pre><code> $datetimeoffset = 
+[datetimeoffset]::ParseExact('@PackageProperty[Profitbase.PackagePropertyTests.DateTime].DateTimeOffsetStr',&quot;yyyyMMdd HH:mm:ss zzz&quot;,[Globalization.CultureInfo]::InvariantCulture)
+Write-Output $datetimeoffset
+</code></pre>
+<br>
+<pre><code>$datetimeutc = 
+[datetime]::ParseExact('@PackageProperty[Profitbase.PackagePropertyTests.DateTime].DateTimeUtcStr',&quot;yyyyMMdd HH:mm:ss&quot;,[Globalization.CultureInfo]::InvariantCulture)
+Write-Output $datetimeutc
+</code></pre>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/pkprp2.png" alt="PK"></p>
+<br>
+<h3 id="use-directive-in-a-worksheet-column-expression">Use Directive in a worksheet column expression</h3>
+<br>
+<p><strong>Directive(&quot;@PackageProperty[PropertyName]&quot;) in a worksheet column expression</strong></p>
+<blockquote>
+<p>A package property value can be used inside a worksheet column’s Is Hidden Expression (Caption Expression and Is Read Only Expression is also supported).</p>
+<p>The returned object can be cast to a proper data type. Example of use can be:</p>
+</blockquote>
+<pre><code>((DateTime)Directive(&quot;@PackageProperty[Profitbase.PackageName.Planning.StartDate]&quot;)).Year == 2020
+</code></pre>
+<br>
+<p><strong>Example</strong></p>
+<blockquote>
+<p>Here is an example of use in a worksheet column Is Hidden Expression.</p>
+</blockquote>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/packageProperties5.jpg" alt="PK"></p>
+<br>
+<pre><code>((DateTimeOffset)Directive(&quot;@PackageProperty[Profitbase.PackagePropertyTests.DateTime]&quot;)) == new DateTimeOffset(new DateTime(2021, 8, 19, 16, 0, 0), new TimeSpan(2, 0, 0))
+</code></pre>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/pkprp3.png" alt="PK"></p>
+<br>
+<h3 id="use-packageproperty-in-a-data-flow">Use PackageProperty in a data flow</h3>
+<br>
+<p><strong>Use @PackageProperty in a data flow</strong></p>
+<blockquote>
+<p>A package property value can be utilized as a parameter value in a data flow.</p>
+<p>The returned value can be cast to the proper data type.</p>
+</blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<p>Adding a PowerShell script with a parameter decalaration.</p>
+</blockquote>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/packageProperties6.jpg" alt="PK"></p>
+<br>
+<h3 id="adding-a-data-flow-item-parameter">Adding a data flow item parameter</h3>
+<br>
+<p><strong>With @PackageProperty[PropertyName] as Default Value</strong></p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/packageProperties7.jpg" alt="PK"></p>
+<br>
+<p><strong>Note!</strong></p>
+<blockquote>
+<p>Use @PackageProperty[name].DateStr when dealing with dates to ensure culture invariant datetime parsing.</p>
+</blockquote>
+<br>
+<h3 id="mapping-the-parameters-in-the-run-powershell-script-arguments-section">Mapping the parameters in the Run PowerShell Script Arguments section</h3>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/packageProperties8.jpg" alt="PK"></p>
+<br>
+<h3 id="executing-the-data-flow-to-test-that-the-parameter-is-parsed-ok">Executing the data flow to test that the parameter is parsed OK</h3>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/packageProperties9.jpg" alt="PK"></p>
+<h3 id="videos">Videos</h3>
+<ul>
+<li><a href="../../../../videos/packages.html">Packages</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Package%20-%20Package%20Properties.mp4">Package Properties</a></li>
+</ul>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

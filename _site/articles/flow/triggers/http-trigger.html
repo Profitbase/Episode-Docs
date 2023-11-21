@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>HTTP trigger | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="HTTP trigger | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../public/main.js'
+    import { init } from './../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="http-trigger">HTTP trigger</h1>
+
+<p>When a Flow is executed from an HTTP request, the HTTP trigger defines how to convert the HTTP request body to a business object.<br>
+You can also get the HTTP endpoint of the Flow from the HTTP trigger. The HTTP endpoint is the URL used to execute the Flow from a 3rd party application.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You must define at least one API Key with <code>Execute</code> permissions in order to execute a Flow from a 3rd party application. A Flow will have no public HTTP endpoint unless at least one API key is defined in the tenant.</p>
+</div>
+<h2 id="example">Example</h2>
+<p>This example demonstrates how to run a Flow from the <a href="https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client">Thunder Client</a> Visual Studio Code plugin.</p>
+<p>The Flow will add a new customer to a database. The name and address of the customer is passed to the Flow via the HTTP request body.</p>
+<p>The customer object looks like this:</p>
+<pre><code class="lang-json">{
+    &quot;customerName&quot;: &quot;Hypotesia&quot;,
+    &quot;address&quot;: {
+        &quot;zip&quot;: 1000,
+        &quot;city&quot;: &quot;Stavanger&quot;,
+        &quot;street&quot;: &quot;Hypotesia Road 1&quot;,
+        &quot;country&quot;: &quot;Norway&quot;
+    }
+}
+</code></pre>
+<br>
+<h4 id="1-create-a-new-flow">1) Create a new Flow</h4>
+<p>Create a new Flow from the Portal or from the <code>File</code> menu in the Designer.</p>
+<h4 id="2-add-an-http-trigger">2) Add an HTTP trigger</h4>
+<p>Add an HTTP trigger to the Flow. This is where you define the shape of the customer object passed in from the caller. By defining the customer object, you can reference it and its properties later in the Flow.</p>
+<p><strong>1)</strong> Select the HTTP trigger and click the <code>Data Definition</code> in the <code>Properties panel</code> to define the customer object.</p>
+<p><strong>2)</strong> Choose <code>CSharp</code> as format, and define the following types.</p>
+<pre><code class="lang-csharp">public class Customer
+{
+    public string CustomerName {get;set;}
+
+    public Address Address {get;set;}
+}
+
+public record Address(int Zip, string City, string Street, string Country);
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you need to use multiple types to define the data type of a request body, the main type must be defined at the top.</p>
+</div>
+<h4 id="3-add-the-new-customer-to-the-database">3) Add the new customer to the database</h4>
+<p><strong>1)</strong> Add a SQL Server <a href="../actions/sql-server/execute-command.html">Execute command</a> action and connect the output and input ports of the HTTP trigger and Execute command action.</p>
+<p><strong>2)</strong> Select the Execute command action and define the following <code>SQL parameters</code> in the <code>Properties panel</code>.
+<img src="../../../images/http-trigger-example-sql-parameters.png" alt="img"></p>
+<p><strong>3)</strong> Define the following <code>SQL expression </code> in the <code>Properties panel</code>.</p>
+<pre><code class="lang-sql">INSERT INTO Customers (CustomerName, Zip, City, Street, Country) VALUES(@CustomerName, @Zip, @City, @Street, @Country)
+</code></pre>
+<h4 id="4-run-the-flow-from-thunder-client-in-vs-code">4) Run the Flow from Thunder Client in VS Code.</h4>
+<p><strong>1)</strong> Select the HTTP trigger and click <code>Show endpoints</code> in the <code>Properties panel</code>.</p>
+<p><strong>2)</strong> Copy the <code>Short running</code> URL to the clipboard.</p>
+<p><strong>3)</strong> Switch to the Thunder Client in VS code and create a new request.<br>
+1. Use <code>POST</code> as HTTP verb<br>
+2. Paste the URL from step 2)<br>
+3. Copy the Customer JSON object above and paste it into the JSON Content field<br>
+4. Press <code>Send</code> to execute the Flow. If everything is defined correctly, you should now have a new customer row in the database. If you do not see the expected result, you can inspect the <a href="../flows/execution-logs.html">Execution logs</a> to investigate any issues.</p>
+<p><img src="../../../images/http-trigger-example-thunder-client.PNG" alt="img"></p>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

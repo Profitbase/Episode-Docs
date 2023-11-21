@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>InVision 2022.2 change log | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="InVision 2022.2 change log | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../public/main.js'
+    import { init } from './../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="invision-20222-change-log">InVision 2022.2 change log</h1>
+
+<br>
+<p>This release of InVision mainly focuses on improvements to deploying and upgrading packages, and improvements to working with dimensions. It also contains a number of other fixes and improvements to existing features.</p>
+<h2 id="new-features">New Features</h2>
+<br>
+<h3 id="packages">Packages</h3>
+<br>
+<h4 id="upgrade-packages-in-multiple-versioned-solutions">Upgrade packages in multiple (versioned) Solutions</h4>
+<p>We now support upgrading Packages in one or more versioned Solutions. Previously, only Packages in non-versioned Solutions were upgraded, but administrators are now given the option to upgrade Packages in versioned Solutions if the version status is either Deployed or Open. That means you can patch a version while it’s in production without creating a new version to get the fix.</p>
+<br>
+<h4 id="support-for-floating-dependency-resolution">Support for floating dependency resolution</h4>
+<p>Support for floating dependency resolution of package dependencies means that package authors have greater control over which dependencies of a Package are installed or updated. All Packages have a major.minor.patch version, for example, 2.0.1.</p>
+<p>Floating dependency resolution means that the dependency version can be defined as 2.<em>.</em>, which means “install the latest v2 release of the dependency”. Likewise, <em>.</em>.*, means “install the latest version of the dependency”.</p>
+<p>As a package author, it means that, you can publish updates to dependencies without having to republish the main package but still have the latest dependencies installed when the main package is installed.</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/chLog22_2.png" alt="img"></p>
+<p>Choose a dependency resolution rule to specify which version of the dependency is installed with the Package.</p>
+<br>
+<h4 id="backups-of-solutions-are-automatically-deleted">Backups of Solutions are automatically deleted</h4>
+<p>Backups of Solutions taken during Package upgrades are now automatically deleted if the upgrade is successful. That automatically frees up disk space without any intervention from system administrators.</p>
+<br>
+<h4 id="support-for-running-post-upgrade-dataflow">Support for running post-upgrade Dataflow</h4>
+<p>This feature enables running a Dataflow after a Package has been upgraded.</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/chLog22_2_2.png" alt="img"></p>
+<br>
+<h3 id="dimension-editor">Dimension editor</h3>
+<br>
+<ul>
+<li>Support for deleting all contents in a dimension. This is often useful when you import data to a dimension for the first time and you realize that your source data is incorrect, so you need to do a complete re-import.</li>
+<li>We added an extra “+” button to each dimension member, making it quicker to add multiple child members without having to use the context menu.</li>
+<li>Fixed issue <a href="https://support.profitbase.com/platform/invision-beta/-/issues/517">#517</a>. Create dimension member, change id and move a sub-hierarchy to its child collection.</li>
+<li>Fixed issue <a href="https://support.profitbase.com/platform/invision-beta/-/issues/519">#519</a>. Issue with drag/dropping to node while the node is being auto expanded by the system.</li>
+</ul>
+<br>
+<h3 id="dimension-configuration">Dimension configuration</h3>
+<ul>
+<li>Added support for running a Dataflow after a dimension has been published.</li>
+<li>Added support for running a Dataflow after a dimension has been published <strong>to</strong>.</li>
+</ul>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/chLog22_2_3.png" alt="img"></p>
+<br>
+<h3 id="work-process">Work Process</h3>
+<br>
+<ul>
+<li>During version deployment, dependencies between packages in the same Solution are used to determine the order of package deployment and enable custom packages/extensions to reference objects in Profitbase packages (such as Planner).</li>
+</ul>
+<br>
+<h3 id="workbook">Workbook</h3>
+<br>
+<ul>
+<li>Fixed issue <a href="https://support.profitbase.com/platform/invision-beta/-/issues/442">#442</a> Copy/paste issue from spreadsheets in popups.</li>
+<li>Fixed dialog window resizing issue when an iframe is displayed.</li>
+</ul>
+<br>
+<h3 id="forms">Forms</h3>
+<br>
+<ul>
+<li>Support for <strong>async</strong> DataChangedEventHandlers. This enables async code, such as network calls, to run when a data bound property is updated by the user.</li>
+</ul>
+<br>
+<h3 id="homepage">Homepage</h3>
+<br>
+<ul>
+<li>Fixed tile image max size so that oversized custom images align with the standard design.</li>
+</ul>
+<br>
+<h3 id="macros">Macros</h3>
+<br>
+<p>We added an API for access control so that Access Group membership of the currently active user can be obtained when running macros.
+The <strong>MacroExpansionProvier.AccessControlService</strong> provides an API against a small subset of the InVision access control system.</p>
+<br>
+<h4 id="methods">Methods</h4>
+<p><code>Task&lt;bool&gt; IsMemberOfAccessGroupAsync(string identityId, string accessGroupName)</code></p>
+<br>
+<p><strong>Example</strong></p>
+<p>This example shows how to check whether the current user is a member of the “Admins” Access Group.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>We’re using Context.GetUserUniqueId() to get the id of the current user.
+<br></p>
+</div>
+<pre><code>namespace Local;
+
+using System.Threading.Tasks;
+using Profitbase.Invision.Scripting.Dynamic;
+
+public class MyMacros : MacroExpansionProvider
+{
+    public async Task&lt;string&gt; GetQuery(string input)
+    {
+        var userIsAdmin = await this.AccessControlService.IsMemberOfAccessGroupAsync(this.Context.GetUserUniqueId(), &quot;Admins&quot;);
+        if(userIsAdmin)
+        {
+            return &quot;IPAddress, CertificateRevocationDate, MachineName&quot;;
+        }
+        else
+        {
+            return &quot;MachineName&quot;;
+        }
+    }
+}
+</code></pre>
+<br>
+<h4 id="accessibility">Accessibility</h4>
+<ul>
+<li>High contrast theme image picker is now working as expected, so you can easily pick images for your high contrast theme.
+<br></li>
+</ul>
+<h4 id="misc">Misc</h4>
+<ul>
+<li>Fix issue <a href="https://support.profitbase.com/platform/invision-beta/-/issues/542">#542</a> Spreadsheet dropdown column object references were not dependency resolved the @Object[…] directive was used.</li>
+<li>Platform version, Build number and Package info (if applicable) is displayed in the Workbook Options dialog.</li>
+<li>Platform version, Server and Desktop Build number is displayed in the Desktop Application Status Bar.</li>
+<li>Build and platform version is displayed in error dialogs.</li>
+</ul>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/chLog22_2_4.png" alt="img"></p>
+<p>View the Platform, Build and optionally the Package version of the Workbook in the Options dialog.</p>
+<br>
+<h4 id="platform">Platform</h4>
+<ul>
+<li>InVision 2022.2 runs on .NET 6.</li>
+<li>All communication between application services is now using Azure Service Bus or RabbitMQ.</li>
+<li>Added support for <strong>SYS_AccessGroups</strong> SYS view. <a href="../docs/systemviews.html">Read more here</a>.</li>
+</ul>
+<br>
+<h4 id="breaking-changes">Breaking changes</h4>
+<ul>
+<li>Linked Fact and Dimensions (from Studio) is entirely removed from the platform (metadata and data is removed during the platform upgrade).</li>
+<li>OData feature is removed from the platform.</li>
+<li>The table pbSimSolutionLangText has been removed.</li>
+</ul>
+<br>
+<h3 id="installing-invision-20222">Installing InVision 2022.2</h3>
+<br>
+<p>To install InVision 2022.2 or upgrade to 2022.2, you need to use version <strong>5.3 of the installation manager</strong>.</p>
+<br>
+<h3 id="upgrading-to-invision-20222">Upgrading to InVision 2022.2</h3>
+<ol>
+<li><p>To upgrade to 2022.2, you need to use version <strong>5.3 of the installation manager</strong>.</p>
+</li>
+<li><p>Run the UpgradeDatastore.ps1 script:</p>
+</li>
+<li><p><strong>Download</strong> the UpgradeDatastore file below.</p>
+</li>
+<li><p><strong>Rename</strong> it to .zip and extract the content. (The blog platform does not allow uploading .ps1 of .zip files directly)</p>
+</li>
+<li><p><strong>Edit</strong> the <strong>UpgradeDatastore1.ps1</strong> file</p>
+</li>
+<li><p>Change $instanceToUpgrade to the name of the InVision instance you want to upgrade. If you have only one instance, or you want to upgrade all instances, set this value to <strong>“All”</strong>.</p>
+</li>
+<li><p>Change $pathToDatastoreJson to the path where Datastore.json is located. This is usually <strong>“C:\Program Files (x86)\Profitbase Installation Manager\Scripts\DataStore.json”</strong>.</p>
+</li>
+<li><p>Change $pathToInstanceTemplate to the path where instancetemplate.json is located. This is usually <strong>“C:\Program Files (x86)\Profitbase Installation Manager\Scripts\instancetemplate.json”</strong>.</p>
+</li>
+<li><p><strong>Run</strong> UpgradeDatastore.ps1</p>
+</li>
+</ol>
+<br>
+<ul>
+<li><a href="https://profitbasedocs.blob.core.windows.net/documents/UpgradeDatastore-1.docx">Here</a> you will find <strong>pdf</strong> with the <strong>UpgradeDatastore-1</strong>.</li>
+</ul>
+<br>
+<h4 id="see-also">See Also</h4>
+<ul>
+<li><a href="changelog23_7.html">Change Log 2023.6</a></li>
+<li><a href="changelog23_7.html">Change Log 2023.6</a></li>
+<li><a href="changelog23_6.html">Change Log 2023.6</a></li>
+<li><a href="changelog23_5.html">Change Log 2023.5</a></li>
+<li><a href="changelog23_4.html">Change Log 2023.4</a></li>
+<li><a href="changelog23_3.html">Change Log 2023.3</a></li>
+<li><a href="changelog23_2.html">Change Log 2023.2</a></li>
+<li><a href="changelog23_1.html">Change Log 2023.1</a></li>
+<li><a href="changelog22_5.html">Change Log 2022.5</a></li>
+<li><a href="changelog22_4.html">Change Log 2022.4</a></li>
+<li><a href="changelog22_3_2.html">Change Log 2022.3 pt 2</a></li>
+<li><a href="changelog22_3_1.html">Change Log 2022.3 pt 1</a></li>
+<li><a href="changelog22_1.html">Change Log 2022.1</a></li>
+<li><a href="changelog52.html">Change Log 5.2</a></li>
+<li><a href="changelog51.html">Change Log 5.1</a></li>
+<li><a href="changelog5.html">Change Log 5.0</a></li>
+<li><a href="changelog41.html">Change Log 4.1</a></li>
+<li><a href="changelog40.html">Change Log 4.0</a></li>
+</ul>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

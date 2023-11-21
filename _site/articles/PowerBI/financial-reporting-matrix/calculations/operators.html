@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Comparison operators | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Comparison operators | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../public/main.js'
+    import { init } from './../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h2 id="comparison-operators">Comparison operators</h2>
+
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=</td>
+<td>Assignment operator. Assigns the value on the right hand side to the variable or cell on the left hand side.  Example  X = 10;  @Amount[ItemID == &quot;A&quot;] = 25.6;</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>Greater than operator. Checks if the value on the left side is greater than the value on the right side.  Example  20 &gt; 10 returns true.  10 &gt; 20 returns false.</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>Greater than or equal. Checks if the value on the left side is greater than, or equal to the value on the right side.</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>Less than operator. Checks if the value on the left side is less than the value on the right side.  Example  20 &lt; 10 returns false.  10 &lt; 20 returns true.</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>Less than or equal operator. Checks if the value on the left side is less than, or equal to the value on the right side.</td>
+</tr>
+<tr>
+<td>==</td>
+<td>Equals operator. Checks if the value on the left side is equal to the value on the right side.  Example  1 == 1 returns true.  1 == 2 returns false.</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>Not equals operator. Checks if the value on the left side does not equal the value on the right side.  Example  1 != 1 returns false.  1 != 2 returns true.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="logical-operators">Logical operators</h2>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&amp;&amp;</td>
+<td>Conditional AND operator. Performs a logical AND of its left and right operands.  The right operand is only evaluated if the left operand is true.</td>
+</tr>
+<tr>
+<td>||</td>
+<td>Conditional OR operator. Performs a logical OR of its left and right operands.  The right operand is only evaluated if the left operand is false.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="arithmetic-operators">Arithmetic operators</h2>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>Binary operator + for numeric types sums the operands.  Binary operator + also concatenates strings if one of the operands is a string. You can also use the CONCAT function to concatenate strings.  Example  1 + 2 returns 3.</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Binary operator – subtract the second operand from the first.  Example  2 – 1 returns 1</td>
+</tr>
+<tr>
+<td>*</td>
+<td>The multiplication operator computes the product of its operands.  Example  2 * 2 returns 4</td>
+</tr>
+<tr>
+<td>/</td>
+<td>The division operator divides its first operand by its second operand  Example  2 / 2 returns 1.</td>
+</tr>
+<tr>
+<td>%</td>
+<td>The modulus operator computes the remainder after dividing its first operand by its second operand.  Example  10 % 2 returns 0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="primary-operators">Primary Operators</h2>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>. (x.y)</td>
+<td>Member access.  Example  &quot;xyx&quot;.substring(…)</td>
+</tr>
+<tr>
+<td>X?.y</td>
+<td>Null conditional member access. Returns null if the left hand operand is null.  Example  X = null;  Y = X?.substring(…)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="unary-operators">Unary operators</h2>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+ (+x)</td>
+<td>Returns the value of the operand</td>
+</tr>
+<tr>
+<td>- (-x)</td>
+<td>Numeric negation  Example  Y = -X;</td>
+</tr>
+<tr>
+<td>! (!x)</td>
+<td>Logical negation  Example  X = !true; (X becomes false)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="other-binary-operators">Other binary operators</h2>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>??</td>
+<td>Null coalescing operator.  The ?? operator checks whether the value provided on the left side of the expression is null, and if so it returns an alternate value indicated by the right side of the expression.  If the value provided on the left side of the expression isn't null, then it returns the original value  Example:  null ?? &quot;Hello&quot; returns the string Hello.  0 ?? &quot;Hello&quot; returns 0</td>
+</tr>
+</tbody>
+</table>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

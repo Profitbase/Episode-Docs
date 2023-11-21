@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>References | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="References | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../public/main.js'
+    import { init } from './../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="powershell-package-and-module-references">PowerShell Package and Module References</h3>
+
+<br>
+<p>You can add <strong>Modules</strong> and <strong>Packages</strong> as references to a script definition, to include code libraries in PS scripts.<br>
+When you execute a script, references will be installed if necessary, and be ready for use in the user part of the script.
+<br></p>
+<p><strong>Modules:</strong><br>
+These are high-level installation of packages from Microsoft’s PSGallery (<a href="https://www.powershellgallery.com/">https://www.powershellgallery.com/</a>). <strong>Invision</strong> implements Install-Module and Import-Module commands for referenced Modules.
+<br></p>
+<p><strong>Packages:</strong><br>
+These are low-level and use e.g. the default NuGet as a provider for code packages.
+You can configure providers in the app config file. <strong>InVision</strong> implements Install-Package command if necessary for referenced Packages.
+<br></p>
+<p><strong>UI:</strong><br>
+References are added from the <strong>PS Script Editor</strong> in Invision designer.</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/powershell1.png" alt="Reference Documentation" title="Reference Documentation"></p>
+<br>
+<p>Source modes has 3 options:</p>
+<ul>
+<li>References list - already referenced Modules and Packages,</li>
+<li>Search PowerShell Module Gallery,</li>
+<li>Search Packages.</li>
+</ul>
+<p>Search modes show an edit field for search text. * is added to the end.</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/powershell2.png" alt="Reference Documentation" title="Reference Documentation"></p>
+<br>
+<p>When items are returned from the <em>search</em>, images show the state as:</p>
+<ul>
+<li><strong>‘Arrow down’</strong> for reference in the open solution,</li>
+<li><strong>‘Green check’</strong> for already referenced in this script.</li>
+</ul>
+<p>The right section of the page displays details, version selection, and available commands.</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/powershell3.png" alt="Reference Documentation" title="Reference Documentation"></p>
+<br>
+<p>Commands are:</p>
+<p><strong>Add</strong><br>
+Adds a new reference with the selected/default version.</p>
+<p><strong>Update</strong><br>
+Updates existing references version.</p>
+<p><strong>Remove</strong><br>
+Delete reference.</p>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

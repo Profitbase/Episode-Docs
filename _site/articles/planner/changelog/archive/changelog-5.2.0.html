@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Changelog 5.2.0 | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Changelog 5.2.0 | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../public/main.js'
+    import { init } from './../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p>This document contains the new features and changes to Planner release 5.2.0.</p>
+<p>The top section contains an abstract of the new features and main changes. The bottom section contains a detailed list of GitLab issues registered for this release. Items marked with &quot;Bug&quot; contains bug fixes.</p>
+<p><strong>General</strong><br>
+This covers enhancements and changes applicable from platform and overall configuration.</p>
+<ul>
+<li>Administrative functions is not available under the same menu group. #847</li>
+<li>New default user groups has been introduced with much more granular control than previously.</li>
+</ul>
+<p><strong>EPM Planner</strong><br>
+This package provide the financial planning function and can be organized in processes (e.g. Forecast) and one or more versions.</p>
+<p>Changes:</p>
+<ul>
+<li><p>Account - restore default distribution key for multiple rows. #735</p>
+</li>
+<li><p>Auto-transactions in driver based models can post to other departments. #306</p>
+</li>
+<li><p>Use FTE and Headcount (new measure) to control employee related cost. Headcount is new measure that can be set similar to FTE. These measures can be used as scaling factor for employee benefits cost. #384</p>
+</li>
+<li><p>Plan proposal changes for replacing data when importing. #758</p>
+</li>
+<li><p>Changes to account dimension - removed AccountGroupID column/property. Note that this version supports parent child type dimensions and hence fixed levels is not longer an issue. #760</p>
+</li>
+<li><p>Internal: @SYS_DataSetID is not longer part of the data context. This is because versioning provides a more flexible way to deal with different datasets. #749</p>
+</li>
+<li><p>Setting for reporting and default reporting currency. #812</p>
+</li>
+<li><p>Source fact data for driver-based models viewer enhancements. #796</p>
+</li>
+<li><p>Access control ability on Project and Activity dimensions #664</p>
+</li>
+</ul>
+<p><strong>EPM Reporting Master</strong><br>
+This package provide central management of dimensions, report setup and group account mapping.</p>
+<p>Changes:</p>
+<ul>
+<li><p>Dimension Management changed and enhanced to allow parent child and properties editing and import. The concept now is to manage dimensions centrally and publish (means copy) to versions.</p>
+</li>
+<li><p>Group account mapping used to map company accounts to common set of group accounts. #846</p>
+</li>
+<li><p>Currency conversion improvements applicable to actual and plan data reporting.</p>
+</li>
+<li><p>The report &quot;Cash Monthly&quot; is changed to show adjustment made due to Plan Opening Balance when plan start date is after the first fiscal period. #870</p>
+</li>
+<li><p>This version implements central management of reports and dimensions. Report setup and dimensions can be &quot;published&quot; to other versions.</p>
+</li>
+</ul>
+<p><strong>Warning!</strong></p>
+<blockquote>
+<p>Different dimension content in different plan versions will affect how data is aggregated, filtered and presented and hence may make comparing data confusing.</p>
+</blockquote>
+<ul>
+<li>Report showing periods and trial balance report need to deal with the mix of actual data and plan data. These reports is presenting actual data in periods before plan start period and plan data in periods after. All plan data must have an opening balance which is normally generate from actual to year-to-date. However this balance can be changed manually. Using Timefunction = month will sum the OB and monthly change columns to &quot;Total&quot; column. Using Timefunction = year-to-date will include plan OB and periods sum to  &quot;CB&quot; column. #777, #828</li>
+</ul>
+<p><strong>EPM Datamart</strong><br>
+This package provide a datamart to share data between EPM applicaitons and external producres and consumers. Import, export and currency exchange rates is functions provided here.</p>
+<p>Changes:</p>
+<ul>
+<li><p>Data import now have predefined operations for all dimension and transactions types.</p>
+</li>
+<li><p>Data export got more options to deal with replacing data in destination table and test destination connection. #752 #704</p>
+</li>
+</ul>
+<p><strong>EPM Common</strong><br>
+This package provide the users and access management, work process and tasks capabilities and operations management and scheduling operations.</p>
+<p>Changes:</p>
+<ul>
+<li><p>Default roles for Planner access</p>
+</li>
+<li><p>Improvements to internal communications (Web-functions) to avoid e.g. listing wrong steps in selected operation.</p>
+</li>
+<li><p>More information available when scheduled operations fails.</p>
+</li>
+<li><p>Manage workbook and data permissions from &quot;Users and Group&quot; workbook. #810</p>
+</li>
+</ul>
+<p><strong>Bug fixes and GitLab reference list</strong></p>
+<ul>
+<li>Tasks - go to drop down incorrect in upgraded solution - #876 Bug</li>
+<li>5.2 - Simplify workbook menu - #847</li>
+<li>Cash monthly Total column for top row show wrong value when plan start is into the year - #870 Bug</li>
+<li>5.2 - Operations will not execute in deployed solution - #866 Bug</li>
+<li>INPUT report must be used for mapping accounts to reportline in the Account module - #827 Bug</li>
+<li>5.2 - Report Setup publish to version dialogue - missing buttons for executing - #867 Bug</li>
+<li>Validation error personell input - #862</li>
+<li>5.2 finance reports label - #869 - Bug</li>
+<li>Auto transactions - ability to target alternative department (other than source department) - #306</li>
+<li>Cash report with wrong cash total in version 5.1.3 - #815 Bug</li>
+<li>Dimension Manager - Department dimension - deleted member added to version dimension after publish - #863</li>
+<li>Planner Tax calculation does not include the profit ytd when plan start is into the year. - #791 Bug</li>
+<li>Finance Reports Trial Balance showing Balances (YTD) - confusing when looking at department level and company due to shortterm finance interest - #777</li>
+<li>Finance reports, difference betweene YTD and month view on department level - #828 Bug</li>
+<li>V5: Salary additional columns affected by FTE or not - #384</li>
+<li>Add Power BI reportline mapping column to Report Setup - #415</li>
+<li>Project and activity dimension (dimension expansion in general) - #339</li>
+<li>Data export - Timeout on delete when using Replace all - #752</li>
+<li>5.1.0 - data export test connection - #704</li>
+<li>5.2 Operations - issues - #845 Bug</li>
+<li>Data export - export name requirement only if source is cpv view - #814 Bug</li>
+<li>Cashflow report, CashTotalOverview, adding up OB from multiple years - #754 Bug</li>
+<li>OBDue OB value causing duplicates when TextID used to split payment - full OB value on both. #629 Bug</li>
+<li>5.2 - Implement Account mapping - legal entity specific chart of account to common chart of account - #846</li>
+<li>Plan proposal, account and driver based, delete when not matched by source - #758</li>
+<li>Planner5.2: Account dimension rework - remove AccountGroupID from Account dimension and dependencies - #760</li>
+<li>5.2 Remove @SYS_DataSetID data context filter from financial engines - #749</li>
+<li>Finance all scenario - #813</li>
+<li>Enable setting default reporting currency - #812</li>
+<li>Make Workbooks and Data Permissions available from the Users and Groups workbook - #810</li>
+<li>Source fact data enhancement - show but not edit measures loaded from external fact - #796</li>
+<li>Access control on Project and Activity dimensions - #664</li>
+<li>Measure dropdown filtering from driverbased model - #795</li>
+<li>Delete process still available in Version attributes and process administration++ - #799</li>
+<li>Import Export - 5.1.2 Enhancements - #717</li>
+<li>Loan Principal override - #698 Bug</li>
+<li>Loan principal override from date - #699</li>
+<li>Account - restore default distribution key for multiple rows - #735</li>
+<li>Plan Overview different from Finance Reports due to missing Employment Tax on pension for vacation month - #967</li>
+</ul>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

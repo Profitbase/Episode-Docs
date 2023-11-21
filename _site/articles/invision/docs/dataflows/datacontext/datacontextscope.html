@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Data Context Scope | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Data Context Scope | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h2 id="data-context-scope">Data Context Scope</h2>
+
+<p>In order for the Data Context to be applied during processing, the Data Context Scope must be set up for the Data Flow running the job. The Data Context Scope is set up from the Properties window of a Data Flow component in a Workbook.</p>
+<p>This means that every Data Flow has its own Data Context Scope, and that a Data Context Scope is bound to the state of a Workbook, for example selected filter values and Workbook variables.<br>
+The Data Context Scope is defined by Filters, Variables and Data Storages.
+<br></p>
+<h3 id="filters">Filters</h3>
+<p>In order for selected filter values in a Workbook to be used for determning the transaction set when processing data using a Data Flow, the filter must be registered in the Data Context Scope of the Data Flow. The filter must be based on a Dimension used in the star schemas of a Data Stores being processed during the Data Flow execution, or it must be based on a table resources enlisted (and configured) in the Globale Data Context. When the Data Flow is executed from a Workbook, the selected filter values will be used to determine the transaction set being processed.
+<br></p>
+<h3 id="variables">Variables</h3>
+<p>This section is used for mapping Workbook variables to Data Context Variables.</p>
+<p>In cases where it’s not pratical or possible to use filter values to determine the transaction set to process, you have the option of using arbitrary values instead. These values can be found in Workbook variables, and mapped to Data Context Variables.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When mapping Workbook variables to Data Context Variables, you reference the Workbook variable by name, not by value, meaning you can’t use the @Var[…]-expression, just the name of the variable.</p>
+</div>
+<blockquote>
+<p><strong>Example</strong></p>
+<p>A Data Flow should process data related to a specific project.
+In this case, the Workbook does not have a project filter, but a project id still need to be be part of the Data Context in order to ensure that only transactions related to the specific project is being processed.
+To make this happen, the following configuration can be applied.</p>
+<blockquote>
+<p>**1)	**Define a variable, «ProjectID», in the Globale Data Contexten and bind it to the appropriate column (ProjectID) in the Data Store(s) using a Value Binding.</p>
+<p>**2)	**Create a Workbook variable, for example «ProjectID» and assign a value to it. (_state.ProjectId = xyz)</p>
+<p>**3)	**In the Data Context Scope of the Data Flow, add a mapping from the Workbook variable to the Data Context variable. Make sure you don’t use the @Var[…]-syntax when referring to the Workbook Varialble, just the actual name of the variable.</p>
+</blockquote>
+</blockquote>
+<p><strong>Use Data Context variables as Data Flow Activity arguments</strong></p>
+<p>If you are executing Data Flows during Workflow state transitions and want to use Data Context variables to set arguments for the Data Flow Activities, you simply need to enter the name of the Data Context variable as the argument. By doing this, the value of the variable will be passed as an argument to the activity during execution.
+<br></p>
+<h3 id="data-storages">Data Storages</h3>
+<p>In cases where data sources and targets in a processing chain contains data having equal dimensionality but are logically different based on where it is stored, you can enable the Data Context to take into account the origin of the transactions being processed by setting up the Data Storages of the Data Context Scope.</p>
+<p>Filtering on Data Storages are usually supplemental to using Filters and Variables.</p>
+<p>Alternatively, you can use the <strong>SYS_DataSetID</strong> Workbook Variable if you are running in a Workflow context.
+<br></p>
+<h3 id="data-context-delegation">Data Context Delegation</h3>
+<p>Data Context Delegation is the concept of delegating the Data Context information to different columns than the columns that Data Context Slicer Repositories are associated with.</p>
+<p>For example, if the Department dimension (DC Slicer Repository) is associated with the DepartmentID column of a Data Store, View or Setting, the DepartmentID would normally be the Data Context column used for determining which transactions to process and delete when a Data Context is applied to the exeution of a Data Flow. However, if you run processes that produce data from one Department to another (such as the Spawner may do), and you want to associate the offspring transactions with their parent transactions, you need to delegate the Data Context information to a different column than the DepartmentID column.</p>
+<p>In order to do this, you need to add a DepartmentID_DCD (DCD stands for Data Context Delegate) column to the targets of the processing pipeline.</p>
+<p>Data Context Delegate columns are identified by the reserved <strong>_DCD</strong> postfix, for example DepartmentID_DCD. All columns in a Data Store, View or Setting with the _DCD postfix are considered Data Context Delegate columns in a processing pipeline, and must not be used for anything else.</p>
+<p>To enable Data Context Delegation for a database object, all you need to do is add corresponding <strong>_DCD</strong> columns for each &quot;standard&quot; Data Context column that you want to enable delegation for.</p>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

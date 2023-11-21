@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Time Frame | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Time Frame | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../public/main.js'
+    import { init } from './../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p>Time Frames specifies the core configuration used for supporting time relative features, such as Periodic Input, Rollover, and Transaction Pipeline Distribution.</p>
+<p>Time Frames are defined by a Time Dimension, a Reference Date, Calendar Type, and the Resolution. In addition, you can specify a Source Reference Date which can be used by the Pivot Transform when importing data to a Data Store.</p>
+<p>Time Frames can be configured for Data Stores, Settings, or Data Store Groups. If you configure a Time Frame for a Data Store Group, descendants of the group can inherit the Time Frame.
+For a Time Frame to have any effect, you need to add Time Frame Measure Columns to the Data Stores and Settings. Time Frame Measure Columns are special numeric columns that denote which periods in time the values of the columns apply to.</p>
+<p>You can view the Time Frame/Time Frame Measure Column concepts as a &quot;coordinate&quot; system having only an x-axis in which time flows along. The Reference Date would be the origin and the Resolution would represent the distance between each point along the axis. The location (starting date) and extent (ending date) of a Time Frame Measure Column along the axis would be determined by its Offset and Length properties.
+<br></p>
+<h3 id="configuring-time-frame-for-data-store-group">Configuring Time Frame for Data Store Group</h3>
+<p>Configuring a Time Frame for a Data Store Group enables descendant Data Stores and Settings to inherit the configuration so that all members of the group can share the same Time. To set up the Time Frame for a Data Store Group, go to the <strong>Time Frame tab</strong> in the Data Store Group editor. Refer to the following topic for setting up the Time Frame configuration.
+<br></p>
+<h3 id="configuring-time-frame-for-data-store-or-setting">Configuring Time Frame for Data Store or Setting</h3>
+<p>To configure the Time Frame for a Data Store or Setting, go to the <strong>Time Frame tab</strong> in the Data Store or Setting editor.</p>
+<p>If the Data Store or Setting is a descendant of a Data Store Group having a Time Frame configured, the Data Store or Setting can inherit the Time Frame configuration from the Data Store Group by selecting &quot;Inherit from Ancestor&quot;. When Time Frame inheritance is enabled, the Data Store or Setting inherits the Time Frame configuration from the closes Data Store Group having a valid Time Frame configuration.</p>
+<p>If the Data Store or Setting is not a descendant of a Data Store Group, or you want to use a Time Frame configuration local to the entity, you need to specify the Time Frame configuration explicitly.
+<br></p>
+<h3 id="time-frame-configuration">Time Frame Configuration</h3>
+<ul>
+<li><strong>Inherit from Ancestor</strong></li>
+</ul>
+<p>Specifies that the entity will inherit the Time Frame configuration from an entity higher in the Solution Structure. For Data Stores and Settings that are members of the same group, you would normally use inheritance to ensure they use the same Time Frame.</p>
+<ul>
+<li><strong>Time Dimension</strong></li>
+</ul>
+<p>Specifies the Time Dimension used by the Time Frame. When configuring the Time Frame for a Data Store, the Time Dimension must be added to the Data Store Layout, but it does not have to be connected to the Data Store Schema.</p>
+<ul>
+<li><strong>Resolution</strong></li>
+</ul>
+<p>Specifies the resolution for the Time Frame. Possible values are Year, Quarter, Month, Week, and Day. The resolution is the base measure for calculating the date range of a Time Frame Column based on the Length and Offset property.</p>
+<ul>
+<li><strong>Reference Date</strong></li>
+</ul>
+<p>The Reference Data specifies the origin used for calculating dates from a Time Frame. Its main function is to enable support for setting up Data Stores and Settings used for periodic input and provide the control mechanism for doing rollovers using Time Frame Columns. Imagine time flows along the x-axis, the Time Frame Columns are the points along the axis, and the Reference Date is the origin.</p>
+<p>The Reference Date is used for calculating the date range for Time Frame Columns, how data is shifted during rollovers, importing data to Data Stores using pivoting, and exporting data from Data Stores using unpivot.</p>
+<p>The Reference Date can also be referred to in scripts and data flows using one or more of the Timeframe <em>@Object[…]</em> – directives.</p>
+<ul>
+<li><strong>Source Reference Date</strong></li>
+</ul>
+<p>The Source Reference Date can be used for filtering data when importing or exporting data to Data Stores using the pivot or unpivot transforms. Using the Source Reference Date rather than hardcoded date filters should be used when the Data Store is enabled for rollover since the Source Reference Date can be updated according to the rollover delta.</p>
+<ul>
+<li><strong>Calendar Type</strong></li>
+</ul>
+<p>Specifies whether the Time Frame should use a natural or alternative (fiscal) calendar. To use an Alternative Calendar, you need to specify a Time Dimension and the columns in the Time Dimension representing the date parts (year, quarter, month, week, and day).</p>
+<br>
+<h3 id="videos">Videos</h3>
+<ul>
+<li><a href="../videos/datastores.html">Datastores</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/Data%20Store%20-%20Time%20Frame%2C%20Time%20Frame%20Columns%20and%20Rolling%20Forecast.mp4">Time Frame, Time Frame Columns and Rolling Forecast</a></li>
+</ul>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

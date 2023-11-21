@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Legal entity | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Legal entity | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p><strong>Applies to:</strong> <img src="https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png" alt="img"> Planner 4.x, 5.0 or 5.1</p>
+<h3 id="overview">Overview</h3>
+<p>Here you can manage the Legal Entity dimension attributes including adding new members.
+<br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/plannerimages/dimensions-legal-entity-and-department.jpg" alt=""></p>
+<ol>
+<li><strong>Legal entity filter</strong><br>
+Here you can make a selection to filter the department table.</li>
+<li><strong>Legal Entity</strong><br>
+Here you can add and change Legal Entities. This table is the source for the Legal Entity dimension.</li>
+<li><strong>Publish</strong><br>
+The publish button is used to put your changes to work by updating the Legal Entity dimension.
+<br></li>
+</ol>
+<p>Often legal entities are imported from an external source. In this case the default priority between the local edits and external source are as follows:</p>
+<ul>
+<li>External source will have priority for Legal entity description and will add new legal entities.</li>
+<li>Local edits will have priority for hierarchical information contained in the Hierarchy level 1-3 (see below). Local edits can also add legal entities and delete legal entities.</li>
+</ul>
+<h3 id="descriptions">Descriptions</h3>
+<p>The Legal Entity dimension is a mandatory dimension in Profitbase Planner.</p>
+<p>For the system to work properly and generate forecast and general ledger, some attributes defined here are important. These are described in detail under columns below.</p>
+<p>Columns marked with (k) is key columns that will be used to match transactions when exchange rates are deployed in calculations.</p>
+<h4 id="hierarchy">Hierarchy</h4>
+<p>The legal entity dimension hierarchy by default consists of 4 levels, including the actual legal entity, in the following order:</p>
+<ul>
+<li>Hierarchy level 1</li>
+<li>Hierarchy level 2</li>
+<li>Hierarchy level 3</li>
+<li>Legal entity</li>
+</ul>
+<p>This is reflected in the positioning of the columns from left (lowest level, i.e. Legal entity) to right (highest level, i.e. Hierarchy level 1).</p>
+<p>Note that all levels must be filled in, but padding - that is repeating - levels from one level to the next should be used if the actual hierarchy does not contain all levels, as shown in the example below:</p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/plannerimages/LegalEntityPadding.JPG" alt=""></p>
+<p>In the example, Legal entity Profitways is padded - repeated - to Hierarchy levels 3 and 2. This means that Planner renders the hierarchy skipping Hierarchy levels 3 and 2 so that when expanding level 1, the legal entity level is displayed as shown in the left margin where Profitways holding (Hierarchy level 1) expands directly to Profitways (Legal entity).</p>
+<p>The number of hierarchical levels can be changed but has to be done using the Profitbase InVision designer.</p>
+<h4 id="column-descriptions">Column Descriptions:</h4>
+<p>Columns:</p>
+<ul>
+<li><strong>Legal Entity (k)</strong><br>
+The ID text string that identifies the legal entity.</li>
+<li><strong>Legal Entity Name</strong><br>
+The descriptive name for the legal entity.</li>
+<li><strong>Curr.Func.</strong><br>
+3-character currency code that defines the currency that the legal entity uses for their finance general ledger.</li>
+<li><strong>Operation Type</strong><br>
+Dropdown list to tell what type of entity. Choices are &quot;Main&quot; which is a normal legal entity and &quot;Elimination&quot; is the entity used for eliminating intercompany transactions.</li>
+<li><strong>Default Department</strong><br>
+This dropdown list is to select the default department to be used when it is not logical nor required to specify a department. It may be required to add a department to serve this purpose. This is typically used for transactions generated at the company level such as opening balances.</li>
+</ul>
+<p><strong>Hierarchy level 3</strong><br></p>
+<ul>
+<li><strong>ID (see comments on hierarchy)</strong><br>
+ID for hierarchy level 3 nodes.</li>
+<li><strong>Name</strong><br>
+Name of hierarchy level 3 nodes.</li>
+</ul>
+<p><strong>Hierarchy level 2</strong><br></p>
+<ul>
+<li><strong>ID (see comments on hierarchy)</strong><br>
+ID for hierarchy level 2 nodes.</li>
+<li><strong>Name</strong><br>
+Name of hierarchy level 2 nodes.</li>
+</ul>
+<p><strong>Hierarchy level 1</strong><br></p>
+<ul>
+<li><strong>ID (see comments on hierarchy)</strong><br>
+ID for hierarchy level 1 nodes.</li>
+<li><strong>Name</strong><br>
+Name of hierarchy level 1 nodes.
+<br>
+<br></li>
+<li><strong>Comments</strong><br>
+Free text sting to help document settings.</li>
+<li><strong>Modify Type</strong><br>
+Read-only test to tell the last operation on each row.
+<br></li>
+</ul>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Binding Source Columns to DS Columns | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Binding Source Columns to DS Columns | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h2 id="binding-source-columns-to-ds-columns">Binding Source Columns to DS Columns</h2>
+
+<p>Source columns are bound to <a href="../../datastores.html">Data Store</a> columns by drag and drop them onto an existing Data Store column, an empty area in the Data Store column list or to the schema header. The designer will add a connection between the source and target column, which allows you to specify properties for the binding. This binding defines how data is imported from the source to the target column.
+<br></p>
+<h3 id="properties">Properties:</h3>
+<br>
+<p><code>BindingType</code></p>
+<p><strong>Default</strong></p>
+<blockquote>
+<p>For Fact sources, the default binding type is «Data&quot;. For Dimension sources, the default binding type is &quot;Relationship&quot; if there is a binding to a Fact column as well.</p>
+</blockquote>
+<p><strong>Relationship</strong></p>
+<blockquote>
+<p>If there is no Fact binding to the column, you need to set the BindingType to «Relationship&quot; for dimension bindings. This information is required for generating the correct query for loading data to a Worksheet, enable Dropdown editors to be rendered for Worksheet Drop Dow columns and determining the Data Context for a Data Store when processing transactions.</p>
+</blockquote>
+<p><strong>Data</strong></p>
+<blockquote>
+<p>Only applicable to dimension bindings. Indicates that data should be imported from the binding. The same behavior will be applied for dimension bindings that binds to Data Store Columns without fact bindings.</p>
+</blockquote>
+<p><code>Expression</code></p>
+<blockquote>
+<p>A SQL expression that represents the value you want to import. If you just want to import the data from the source column, leave this field empty. If you specify a value in this field, the resulting import statement will be similar to SELECT <code>&lt;expression&gt;</code> AS ColName …ect.</p>
+</blockquote>
+<p><code>From</code></p>
+<blockquote>
+<p>Specifies the name of the source column. If you want to fill a target column with data during import, but you do not want to get the data from a column in the source, you can leave this property empty and specify the value to import in the Expression property.</p>
+</blockquote>
+<p><code>To</code></p>
+<blockquote>
+<p>(Read-only). Specifies the name of the target column.</p>
+</blockquote>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

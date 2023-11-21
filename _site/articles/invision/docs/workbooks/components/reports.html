@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Reports | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Reports | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p>InVision supports line and chart <a href="../../sqlreports.html">reports</a>, and a single report can toggle between line and chart display mode.</p>
+<p>Reports are created by defining one or more data sets using <a href="../../sqlreports/dataqueries.html">SQL queries</a> and then mapping those data sets to chart and table reports.</p>
+<p>InVision reports can read data from any SQL source, so you can use reports to view data from any SQL Server database in addition to the InVision databases.
+<br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/sqlScr.png" alt="pic"></p>
+<h3 id="actions">Actions</h3>
+<br>
+<h4 id="loaddata">LoadData</h4>
+<ul>
+<li>Instructs the component to load data.</li>
+</ul>
+<h4 id="execute-expression">Execute Expression</h4>
+<ul>
+<li>Enables changing the caption of the report dynamically by calling SetCaption(…), SetCaptionSuffix(…) and ResetCaption().
+<br></li>
+</ul>
+<h3 id="events">Events</h3>
+<br>
+<h4 id="cell-action-link-tapped">Cell Action Link Tapped</h4>
+<ul>
+<li>This event is raised when an action link cell in a table report is clicked. The payload of the event is the name of the column that was clicked and the row object.</li>
+</ul>
+<h4 id="custom-context-menu-action-executed">Custom Context Menu Action Executed</h4>
+<ul>
+<li>This event is raised when a custom context menu action is clicked. The payload of the event is the name of the action that was clicked, the column and the row object that the cell belongs to.</li>
+</ul>
+<h4 id="-properties">@Event properties</h4>
+<p><strong>Data</strong> – Contains a reference to the data (row) object that is rendered by the clicked spreadsheet cell<br>
+<strong>Sender.ColumnName</strong> – The name of the column that was clicked<br>
+<strong>Sender.ActionName</strong> – The name of the custom context menu item action<br>
+<strong>Selection.Rows</strong> – A collection of SelectedRow objects<br>
+<strong>Selection.Cells</strong> – A collection of SelectedCell objects</p>
+<blockquote>
+<p><strong>Example</strong></p>
+<p>Show a toast notification displaying the name of the action that was executed, and the value of the ProductID of the row that was clicked.</p>
+</blockquote>
+<pre><code>ShowToastNotification(@Event.Sender.ActionName + &quot; was executed&quot;, 
+&quot;Product Id is &quot; + @Event.Data.ProductID);
+</code></pre>
+<ul>
+<li><p><strong>SelectedRow Properties:</strong>
+<br></p>
+<p><strong>RowData</strong> : object</p>
+<blockquote>
+<p>The data object of the selected cell.</p>
+</blockquote>
+<p><strong>Columns</strong> : string[]</p>
+<blockquote>
+<p>A collection of the column names that are selected for the row. The column names map directly to the field names or the RowData object.</p>
+</blockquote>
+  <br>
+</li>
+<li><p><strong>SelectedCell Properties:</strong>
+<br></p>
+<p><strong>RowData</strong> : object</p>
+<blockquote>
+<p>The data object of the selected cell.</p>
+</blockquote>
+<p><strong>Column</strong> : string[]</p>
+<blockquote>
+<p>The column name of the selected cell.</p>
+</blockquote>
+  <br>
+</li>
+</ul>
+<h4 id="chartinteractionevent">ChartInteractionEvent</h4>
+<ul>
+<li>This event can be raised from a Highchart event handler, for example the click event of a point. To raise this event, you need to add an event handler to the chart component that you want to raise that event from, and then raise the ChartInteraction event.</li>
+</ul>
+<blockquote>
+<p><strong>Example</strong></p>
+<p>To raise the ChartInteraction event when a point is clicked, add a JavaScript library to your solution and generate a default script. This will create a myUtil function object.
+Add the following function to the myUtil function object:</p>
+</blockquote>
+<pre><code>myUtil.onPointClick = function(){				
+    this.series.chart.componentContext.eventDispatcher.raiseEvent  
+    ('ChartInteraction', {x : this.x, y : this.y},  
+    this.series.chart.componentContext.componentId);
+};
+</code></pre>
+<blockquote>
+<p>The second argument is the payload you want to pass along as the event argument.</p>
+<p>Then, find the clicked event of the point of the series, and add a pointer to the function with the <strong>func::</strong> prefix.
+If your solution is called Hypotesia, and the JavaScript Solution object is called Chart Events, the correct pointer name is</p>
+</blockquote>
+<pre><code>    func::hypotesia.chartevents.myUtil.onPointClick
+</code></pre>
+<blockquote>
+<p>To display the x-value of the clicked series in a toast notification, add an ExecuteExpression action to the Workbook with the following expression:</p>
+</blockquote>
+<pre><code>    ShowToastNotification(&quot;Point clicked&quot;, &quot;X value point is &quot; + @Event.Data.x);
+</code></pre>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/func.png" alt="func" title="func"></p>
+<br>
+<h4 id="handling-the-chartinteractionevent-from-built-in-event-publishers">Handling the ChartInteractionEvent from built-in event publishers</h4>
+<p>At the moment, InVision has a built-in function (<strong>pb.chart.series.point.events.onClick</strong>) that can be set to raise the <strong>ChartInteractionEvent</strong> when a series point is clicked. The function raises the <strong>ChartInteractionEvent</strong> with a <strong>payload object</strong> containing the following properties:</p>
+<p><strong>X</strong></p>
+<blockquote>
+<p>The x-value of the clicked point</p>
+</blockquote>
+<p><strong>Y</strong></p>
+<blockquote>
+<p>The y value of the clicked point</p>
+</blockquote>
+<p><strong>low</strong></p>
+<blockquote>
+<p>The low value of the clicked point (for range series).</p>
+</blockquote>
+<p><strong>high</strong></p>
+<blockquote>
+<p>The high value of the clicked point (for range series).</p>
+</blockquote>
+<p><strong>seriesName</strong></p>
+<blockquote>
+<p>The name of the series that the point belongs to.</p>
+</blockquote>
+<p><strong>data</strong></p>
+<blockquote>
+<p>The data object of the clicked point. The data object is the entire data row that the point is rendered from.</p>
+</blockquote>
+<p>When handing the ChartInteractionEvent in a Workbook, the payload object is exposed through the **@Event.Data** property, so to get the <strong>y</strong> value of the clicked point in a Workbook event handler, you would write **@Event.Data.y.**</p>
+<br>
+<h3 id="see-also">See Also</h3>
+<ul>
+<li><a href="../../sqlreports.html">SQL Reports</a></li>
+</ul>
+<h3 id="videos">Videos</h3>
+<ul>
+<li><a href="../../../videos/sqlreports.html">SQL Reports</a></li>
+<li><a href="https://profitbasedocs.blob.core.windows.net/videos/SQL%20Reports%20-%20ChartInteractionEvent.mp4">ChartInteractionEvent</a></li>
+</ul>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

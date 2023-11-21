@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Select where you want to place your measures | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Select where you want to place your measures | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../public/main.js'
+    import { init } from './../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h2 id="select-where-you-want-to-place-your-measures">Select where you want to place your measures</h2>
+
+<p><em>(Available from v7.1)</em></p>
+<h3 id="default">Default:</h3>
+<ul>
+<li>Default view is below column headers, where each measure repeats itself under each new column header name:</li>
+</ul>
+<p><img src="https://user-images.githubusercontent.com/82056309/226594444-703c6060-3387-4e06-b64b-2357dfc72856.png" alt="image"></p>
+<h3 id="above-columns">Above Columns:</h3>
+<ul>
+<li>New view available is Above Columns, where each column header is repeated under each measure:</li>
+</ul>
+<p><img src="https://user-images.githubusercontent.com/82056309/226594573-103da42b-fec2-421c-af34-7a40545982ee.png" alt="image"></p>
+<h3 id="in-rows">In rows:</h3>
+<p><em>(Available from v7.2)</em></p>
+<ul>
+<li>New view available where measures are listed in the rows:</li>
+</ul>
+<p><img src="https://github.com/Profitbase/PowerBI-visuals-FinancialReportingMatrix/assets/82056309/fee8345f-6a58-48f4-b0e7-e677e037f7fa" alt="image"></p>
+<p><img src="https://github.com/Profitbase/PowerBI-visuals-FinancialReportingMatrix/assets/82056309/5f12646c-3c74-457f-99f4-33c1609773c7" alt="image"></p>
+<h3 id="measure-placement-setting-is-found-in-the-values-section-of-the-format-pane">Measure placement setting is found in the Values section of the Format pane:</h3>
+<p><img src="https://user-images.githubusercontent.com/82056309/226594843-9e401c53-fe22-4502-a96b-9d47f2451744.png" alt="image"></p>
+<h2 id="important-to-note">Important to note!</h2>
+<h3 id="only-one-measure">Only one measure:</h3>
+<p>If you only add one measure, the view will look the same, both for <em>Default</em> and <em>Above Columns</em> because the measure name is not visible then:</p>
+<p><img src="https://user-images.githubusercontent.com/82056309/226595339-90bd91b7-4d1b-43c3-aacc-9143f26c4fcb.png" alt="image"></p>
+<h3 id="each-measure-placement-has-its-own-set-of-applied-steps">Each Measure Placement has it's own set of Applied Steps:</h3>
+<p>If you apply steps in one Measure Placement, e.g. add custom rows, or apply conditional formatting. Those steps will only be applied in the Measure Placement they are made in.</p>
+<p>If you later decide to change Measure Placement, from <em>Default</em> to <em>Above Columns</em>, then those steps will no longer be active:</p>
+<p>In Default Measure Placement, I have added a custom column, as you can see in the applied steps. The column itself i highlighted in Yellow:</p>
+<p><img src="https://user-images.githubusercontent.com/82056309/226596548-4ec74b29-ef6c-482e-b456-c3daaf1509a3.png" alt="image"></p>
+<p>By changing Measure Placement to _Above Columns _ the column, and other applied steps, disappears:
+<img src="https://user-images.githubusercontent.com/82056309/226596727-3fe4f40c-bb68-4bd7-b764-990fd29f67bc.png" alt="image"></p>
+<p>By changing back to <em>Default</em>, it reappears:
+<img src="https://user-images.githubusercontent.com/82056309/226596939-ee83ebae-4f5e-4d38-860d-2fcb085a8841.png" alt="image"></p>
+<p>This is made by design, so please chose your layout before you start adding steps.
+If not, you might have to do it twice.</p>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

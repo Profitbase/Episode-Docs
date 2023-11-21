@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title> | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../public/main.js'
+    import { init } from './../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<p><em><strong>#Premium feature</strong></em></p>
+<p>The primary use case for the <strong>Hide empty rows</strong> feature is when you add custom subtotal rows before or after rows that may be empty in the Power BI data model for different filter contexts. For example, <code>Account X</code> may be empty for <code>Department A</code>, but not for <code>Department B</code>. You usually don't want to show empty rows, so the default setting for the &quot;Show items with no data&quot; option for a field in the Rows bucket is &quot;false&quot;. If you add a custom subtotal row relative to a row that is filtered out, the custom subtotal row will disappear because its anchor row does not exist in the data set coming from Power BI.</p>
+<p>To work around this issue, you can turn on &quot;Show items with no data&quot; for the field(s) in the Rows bucket so they are loaded from the data model, and then enable the <strong>Hide empty rows</strong> feature in the visual. This will hide the rows from the data model that is empty, but custom subtotal rows added relative to them will still appear.</p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/pbireportingmatrix/Hide_empty_rows.PNG" alt="hide empty rows"></p>
+<h4 id="always-show-custom-rows">Always show custom rows</h4>
+<p>Toggle this option off to hide custom rows that are empty.</p>
+<h4 id="always-show-json-rows">Always show JSON rows</h4>
+<p>Toggle this option off to hide rows defined using the JSON row format that are empty. The JSON row format is usually used for specifying a fixed report format, so that for example a P&amp;L always contains a fixed set of items regardless of whether they are empty or not.</p>
+<h4 id="condition">Condition</h4>
+<p>Use this field to specify a custom condition for hiding empty rows.
+For example, the following condition will hide an empty row if its row header is &quot;Sales&quot;.</p>
+<pre><code>RowHeader() == &quot;Sales&quot;
+</code></pre>
+<p>Another example is if you always want empty rows to be visible on the root level, but hide them on any sub levels. You can use the RowLevel() function for this purpose.</p>
+<pre><code>RowLevel() &gt;= 1
+</code></pre>
+<p>You can also combine multiple condition using the logical operands &amp;&amp;, ||.
+The following condition will hide empty rows if the row header equals &quot;Sales&quot; and the row is at level 1 or greater. (Row levels are 0-indexed, so rows at the root level are at level 0)</p>
+<pre><code>RowHeader() == &quot;Sales&quot; &amp;&amp; RowLevel() &gt;= 1
+</code></pre>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

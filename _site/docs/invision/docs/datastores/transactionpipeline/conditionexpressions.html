@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Condition Expressions | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Condition Expressions | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p>Condition Expressions are specified in <a href="celladapter/ruleset.html">Ruleset</a> tables and are used for dynamically evaluating the rows being processed to determine whether an output should be generated or not. The Condition Expression column must contain a C# expression that returns a Boolean value.
+<br></p>
+<h3 id="methods">Methods</h3>
+<p>The following methods can be used in a Condition Expression. In addition to these methods, all APIs from the System namespace in mscorlib.dll is available.</p>
+<p><code>double? Value()</code></p>
+<blockquote>
+<p>When used in a Spawner Ruleset Condition expression, returns the Value of the row currently being processed.  If the row is produced by the Distributer, Value() returns the distributed value for the current period. If not, Value() returns the raw value of the Computation Source Column from the Data Store.</p>
+</blockquote>
+<p><code>T CurrentPeriodValue&lt;T&gt;()</code></p>
+<blockquote>
+<p>If used when the Distributer is enabled, and the transaction being processed is generated by the Distributer, this function returns the value of the Time Frame Column in the Data Store that has a date matching the Transdate of the generated row. The Transdate of the generated row is created form based on the Time Frame information of the distribution factor column that was used for generating the value of the transaction. If used when the Distributer is not enabled, this function returns the value of the Time Frame column being processed, meaning the Computation Source Column must be a Time Frame column.</p>
+<p><strong>Example</strong></p>
+<p>Given the example below, the Computation Source Column is &quot;Total&quot;. The source row also has &quot;property&quot; columns Col01, ..., Col06 with some additional information. When the Distributer is run, it produces the output in table 3.</p>
+<p><em>Data Store</em></p>
+<table>
+<thead>
+<tr>
+<th>AccountID</th>
+<th>Total</th>
+<th>...</th>
+<th>Col01 2016.01.01</th>
+<th>...</th>
+<th>Col06 2016.06.01</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Xyz</td>
+<td>100</td>
+<td></td>
+<td>1</td>
+<td>...</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p><em>Distributor Ruleset</em></p>
+<table>
+<thead>
+<tr>
+<th>AccountID</th>
+<th>P01 2016.01.01</th>
+<th>P02 2016.02.01</th>
+<th>...</th>
+<th>P06 2016.06.01</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Xyz</td>
+<td>0.3</td>
+<td>0.4</td>
+<td>...</td>
+<td>0.5</td>
+</tr>
+</tbody>
+</table>
+<p><em>Distributed transactions</em></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>AccountID</th>
+<th>Amount</th>
+<th>Transdate</th>
+<th>...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Xyz</td>
+<td>30</td>
+<td>2016.01.01</td>
+<td>...</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Xyz</td>
+<td>50</td>
+<td>2016.06.01</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<p>When calling <code>CurrentPeriodValue&lt;int&gt;()</code> from the Spawner for row number 6, 0 is returned.
+The reason for this is that Transdate of row number 6 matches the Time Frame date of column Col06 in the Data Store.</p>
+</blockquote>
+<p><code>bool CurrentPeriodValueNotNullOr&lt;T&gt;(T value)</code></p>
+<blockquote>
+<p>Checks if the value of the Computation Source Column for the current time slot is not equal to NULL or the provided value.</p>
+<p><strong>Example</strong><br>
+Check if the value of the current time slot is not null or equal to 100.</p>
+</blockquote>
+<pre><code>CurrentPeriodValueNotNullOr&lt;decimal ?&gt;(100)
+</code></pre>
+<p><code>T ValueOfCurrentDistributionKey&lt;T&gt;() double? CurrentDistributionValue</code></p>
+<blockquote>
+<p>Checks if the value of the Computation Source Column for the current time slot is not equal to NULL or the provided value.</p>
+<p><strong>Example</strong><br>
+Check if the value of the current time slot is not null or equal to 100.</p>
+</blockquote>
+<pre><code>CurrentPeriodValueNotNullOr&lt;decimal?&gt;(100)
+</code></pre>
+<p><code>bool TransDateIsNull()</code></p>
+<blockquote>
+<p>Checks if the current time slot (Trans Date) is NULL.</p>
+</blockquote>
+<p><code>bool TransDateIsNotNull()</code></p>
+<blockquote>
+<p>Checks if the current slot (Trans Date) is not NULL.</p>
+</blockquote>
+<p><code>int YearNum()</code></p>
+<blockquote>
+<p>Returns the year of the current time slot</p>
+<p><strong>Example</strong><br>
+Check if the year of the current time slot is 2015.</p>
+</blockquote>
+<pre><code>YearNum() == 2015.
+</code></pre>
+<p><code>int Month()</code></p>
+<blockquote>
+<p>Returns the month of the current time slot.</p>
+</blockquote>
+<p><code>int Day()</code></p>
+<blockquote>
+<p>Returns the day of the current time slot.</p>
+</blockquote>
+<p><code>DateTime? CurrentTransDate</code></p>
+<br>
+<h3 id="properties">Properties</h3>
+<p>The following properties can be accessed in a Condition Expression. In addition to these properties, any column in the row currently being processed from the data source definition of the pipeline component can be read as a property.</p>
+<p><code>DateTime?CurrentTransDate</code></p>
+<blockquote>
+<p>Returns the date of the current time slot.</p>
+<p><strong>Example</strong><br>
+Check if the month of the current time slot is 5 (May)</p>
+</blockquote>
+<pre><code>CurrentTransDate.Value.Month == 5
+</code></pre>
+<br>
+<p>Using Columns as Properties in a Condition Expression
+To read values from the columns of the source row currently being processed in a Condition expression, simply refer to it as a property as shown in this example, where <strong>AccountID</strong> in the row being processed is compared to the text &quot;A1000&quot;.</p>
+<pre><code>CurrentPeriodValue&lt;decimal?&gt;() &gt; 1000 &amp;&amp; AccountID == &quot;A1000&quot;
+</code></pre>
+<p><strong>Note</strong> that you always need to consider the data types of the members in your expression. If a column is of type string (text, nvarchar, etc), you need to compare it to a string value (enclosing the value in quotation marks).</p>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

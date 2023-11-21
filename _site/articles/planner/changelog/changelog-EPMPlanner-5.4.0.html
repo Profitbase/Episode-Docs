@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Changelog EPM Planner 5.4.0 | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Changelog EPM Planner 5.4.0 | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../public/main.js'
+    import { init } from './../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p>This document contains the new features and changes to the EPM Planner release 5.4.0.</p>
+<p>This package provide the financial planning function and can be organized in processes (e.g. Forecast) and one or more versions.</p>
+<p>The top section contains an abstract of the new features and main changes. The bottom section contains a detailed list of GitLab issues registered for this release. Items marked with &quot;Bug&quot; contains bug fixes.</p>
+<p><strong>Breaking Changes:</strong></p>
+<p>These are changes that change the way Profitbase generate planner results or other changes that will require attention when upgrading and creating new version copying from existing versions.</p>
+<ul>
+<li><p>Pension calculation calculated for vacation month (where vacation month is determined from vacation pay due) by &quot;copy&quot; pension calculated from following month. This assumes salary is not payed in vacation month. This feature was implmented in Planner 5.1.0.
+<br><br>The change in Planner version 5.4.0 is that there is a &quot;Plus Vacation Mth&quot; flag in PensionDueTerm to control this feature. (#659)
+<br><br>The default for this flag is:</p>
+<ul>
+<li>On - when upgrading solutions to make behaviour compatible with behaviour before Planner 5.4.0</li>
+<li>Off - for new deployments</li>
+</ul>
+</li>
+<li><p>Pension cost posting is changed to follow salary cost transaction date. In previous versions, pension cost posting was following the salary payment due. Use Finance Settings PensionDueTerm to control pension payment due. This change will only apply when salary accrued is in different month from salary posting. (#983)</p>
+</li>
+</ul>
+<p><strong>Changes:</strong></p>
+<ul>
+<li><p><strong>Plan overview: Display transactions in company's home currency in account drill to details report</strong> Behavior of drill to detail report changed to always display transactions converted to the home currency (i.e. similar to the Account Details report) (#1275).</p>
+</li>
+<li><p>Input sheet dimension drop down lists are sorted by Description (#634)</p>
+</li>
+<li><p>Plan Overview performance improvement on summary nodes and included counterparty transactions on leaf-nodes. Update and save SalesAccountIC to ensure that counteraccounts are updated. (#1317).</p>
+</li>
+<li><p>Improved functionality when legal entity association to department is changed. Historically, a change of legal entity association to a department has caused inconsistencies. The following improvements are made: Plan over view datastore is reloaded in stead of updated, taking into account only the current association. Input data is attempted updated with the current legal entity / currency functional data leaving the input numbers as is so long as this do not cause duplicates (new association assumed to be a correction to an incorrect association in the first place). The Audit report will report any duplicate department / legal entity combinations (#225)</p>
+</li>
+<li><p>Driver based module - introduced Update method for updating data. To be used in cases when it is desirable to let the user control which input rows should exist, i.e. only existing input rows are updated, no new rows are inserted. Controlled with base setting DriverBasedLoadExternalSource (#1320)</p>
+</li>
+<li><p>Comments from input included in account drill-to-details report, available from plan overview and input modules (#479)</p>
+</li>
+<li><p>Personnel module - ability to control which cost columns the social cost override (OVR) input columns should apply to (#501).</p>
+</li>
+<li><p>Option to <strong>automatically adjust from and to dates of historic reference columns</strong> when deploying a new version using the &quot;Start fresh from new start date (reload data)&quot; option. This deployment option is typically used when deploying a new version that constitutes a new plan year (i.e. no roll forward) using an existing version (typically this year's plan) as the source version so that relevant config and settings are copied. The deployment will reload data and in order to have as correct historic reference information as possible (controls content in input sheets in Account and Driver Based), a new base setting (AutoAdjustHistRefSetup) is introduced that will (if set to TRUE which is also the default) auto adjust the from and to dates of any historic reference columns used based on the difference between the start date of the source version and the new start date. This adjustment is done prior to the reload so that the reload is affected by the adjusted from and to dates (#1306).</p>
+</li>
+<li><p><strong>Allocation functionality</strong> included in a <strong>preview</strong> state which means it is function-complete but testing, usability development and documentation/help is not complete but will be completed in later version(s). Implementation projects that require allocation functionality may however start using the functionality and report back on functional fit and encountered issues. (#130)</p>
+</li>
+<li><p>Plan overview - Dim1..Dim4 introduced as filters (#1245)</p>
+</li>
+<li><p>Investments - investment amounts eligible for Plan Overview if asset account is mapped to a Plan Overview report line (#1055). It is also possible to input investments in year prior to the plan year so that depreciation from any investments planned in the year leading up to the plan year but is not yet booked as a fixed asset is included in the plan (#978)</p>
+</li>
+<li><p>Built-in cell sum, count and average function for input sheets and reports enabled (#1319)</p>
+<p><strong>Improved customization options</strong> (ref. <a href="https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.3/Planner%20Customization%20Patterns.pdf">Customization Patterns</a>document for details):</p>
+</li>
+<li><p>Ability to execute custom script logic in FinanceAll dataflows (#1308) The FinanceAll dataflows (FinanceAllBaseline and FinanceAllScenario) source transactions from input modules and executes financial engines producing a complete future ledger. In some cases it may be desirable to introduce custom logic before the financial engines starts and after the financial engines have finished. One use case may be to add scenario data to the sales price list from say a driver-based model before the execution of financial engines if simulation on price is required.</p>
+</li>
+<li><p>Ability to configure a custom button and a custom row context menu in Plan overview and input modules for Account, Personnel and Driver based. The custom buttons and row context menus can open a custom workbook and signal the dimensional context from the calling workbook. (#1217)</p>
+</li>
+<li><p>EPM Datamart destination store for imported <strong>plan data</strong> accessible via synonym SYN_Datamart_pbTransdataSourceCMExternal. Use Data Import to import plan data from external sources that are to be included as transactions (i.e. no input) in the plan to this store. SQL Script ImportFrompbTransdataSourceCMExternal in EPM Planner can be used to import the data to a planner version identified by a ModuleExtensionID (create an operation and include script). (#1344)</p>
+</li>
+</ul>
+<p><strong>Bug fixes and GitLab reference list:</strong></p>
+<ul>
+<li>TaxPct table is not working with more than one line which means that different tax percent cannot be set for legal entities. Must use the same tax percent (average) for all legal entities. Fixed by settings on ranked in put configuration (in designer) (#1295)</li>
+<li>Plan overview: Counterparty transactions not visible on default department (#1196)</li>
+<li>Pension in vacation month handeled different in finance reports and plan overview (#1224)</li>
+<li>Finance settings: Rules with different value in key columns does not work in SalesAccountsIC table (#1243)</li>
+<li>Loan principal override error: Could not read .. RowCount (#1300)</li>
+<li>Input on Balansesheet account create transaction with wrong account type (#1304)</li>
+<li>Run dataflow (async) when opening workbooks where the user is likely to run a dataflow (#1326)</li>
+<li>Finance Reports when selecting preview dataset and report different from INPUT report may give wrong results for other PL type reports and no results for BAL type reports (#1331)</li>
+<li>Version manager -&gt; Version properties - data can be loaded when no filter is selected (#721)</li>
+<li>Investment module, postings not deleted after reloading a new version from a new start date (#1318)</li>
+<li>Account module: Periodic comparison report has incorrect monthly offset, relevant for non-standard fiscal regimes (#1321)</li>
+<li>Incorrect currency conversion at group levels on historic columns in Plan Overview (#1334)</li>
+<li>Finance Advanced Input - error received when saving payroll data at non-leaf department level (#1337)</li>
+<li>Personal Autotransaction is calculating wrong numbers with use of Headcount (#1294)</li>
+<li>Fixed Assets &quot;Declining&quot; validation error (#1301)</li>
+<li>Deviation columns - missing column totals and introduce deviation columns in account details report (#1299)</li>
+<li>Account details report - unable to use planner-internal historical datasets (#1283)</li>
+<li>Double output from preview dataset in finance reports (#1244)</li>
+<li>Plan overview - some reportlines appear with 0s in plan periods although plan contains data (after moving department to another legal entity) (#1242)</li>
+<li>Incorrect calculation of social cost from Driver based models. Occurs when saving input in a given context (#1238)</li>
+<li>Finance Advanced Input -&gt; Setup: When no model filter is selected, dimension configuration for all models are displayed (#1222)</li>
+<li>Insert new row only possible when hovering over existing rows or sum/inline filter row (#1204)</li>
+<li>Finance Reports (local to Planner) reports error when drilling from trial balance to details (#1341)</li>
+<li>Driver based models - roll over to new year caused year 2 numbers to be nulled (#1329)</li>
+<li>Import Fixed Assets from external source is not using Group Account mapping (#1346)</li>
+</ul>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

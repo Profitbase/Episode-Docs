@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Form Runtime API | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Form Runtime API | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../../public/main.js'
+    import { init } from './../../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<h4 id="services">Services</h4>
+<br>
+<p><code>dataService</code></p>
+<p>​The dataService enables developers to save and reload specific data models in a Form Schema. This feature adds extra flexibility and more fine-grained control for loading and saving data because models can be saved and loaded individually and not just with the Load and Save Data actions of the Workbook component.</p>
+<p><a href="dataserviceapi.html">Data Service API</a></p>
+<p><strong>Example</strong></p>
+<pre><code class="lang-xml">  &lt;Data&gt;
+    &lt;Models&gt;
+        &lt;Model Name=&quot;CustomerInfo&quot; Source=&quot;@Object[FormUsingDataService_Table].DbObjectName&quot; Fields=&quot;CustomerID,CustomerName,ProductID&quot; Filter=&quot;CustomerID = @CustomerID&quot; /&gt;
+    &lt;/Models&gt;
+  &lt;/Data&gt;
+  &lt;Functions&gt;
+      &lt;Function Name=&quot;saveData&quot; Async=&quot;true&quot;&gt;
+          await this.dataService.save(this.models.CustomerInfo);
+      &lt;/Function&gt;
+      &lt;Function Name=&quot;refreshData&quot; Async=&quot;true&quot;&gt;
+          this.models.CustomerInfo = await this.dataService.reload(this.models.CustomerInfo, {CustomerID: this.models.CustomerInfo.CustomerID});
+
+          // The CustomerID parameter can also be passed as a string
+          // this.models.CustomerInfo = await this.dataService.reload(this.models.CustomerInfo, {&quot;@CustomerID&quot;: this.models.CustomerInfo.CustomerID});
+      &lt;/Function&gt;
+  &lt;/Functions&gt;
+</code></pre>
+<br>
+<p><code>webFunctions</code></p>
+<p>The webFunctions service enables developers to call Web Functions from directly Forms to run backend business logic.<br>
+<a href="webfunctionsAPI.html">Web Functions API</a></p>
+<p><strong>Example</strong></p>
+<pre><code class="lang-xml">&lt;Function Name=&quot;Calculate&quot; Async=&quot;true&quot;&gt;&lt;![CDATA[
+          const result = await this.webFunctions.execute(&quot;CalculateResult&quot;, {a: 100, b: 200});
+          console.log('100 + 200 is ' + result);
+      ]]&gt;
+&lt;/Function&gt;
+</code></pre>
+<br>
+<p><code>dataBindings</code></p>
+<p>The dataBindings service enables manually forcing data transfer from binding sources to binding targets, which will trigger data-bound controls to re-render. You only need to use this feature if you need to refresh the binding target(s) regardless of whether the binding source was modified or not.</p>
+<p>An example of this is that you have multiple dropdowns data-bound to the same source, but you are using a filter function to show different subsets of the source in each dropdown. If you change the selection in one dropdown, you want the available options in the second dropdown to change.</p>
+<p><a href="databindingsAPI.html">Data Bindings API</a></p>
+<br>
+<p><strong>Example</strong></p>
+<pre><code class="lang-xml">  &lt;Function Name=&quot;foo&quot;&gt;
+          for(let binding of this.dataBindings.getBindings(this.lists.Customers)){
+                   if(binding.targetName !== 'bar'){
+                           binding.updateTarget();
+                   }
+          }
+      &lt;/Function&gt;
+</code></pre>
+<br>
+<h4 id="functions">Functions</h4>
+<p>All functions in the Form Runtime can be called through the <strong>this</strong> or <strong>functions</strong> reference. The coding language is JavaScript.</p>
+<br>
+<p><code>raiseCustomEvent(eventPayload : object)</code><br>
+<code>RaiseCustomEvent(eventPayload : object)</code></p>
+<p>Raises the Custom Event of the Form Schema with a payload, so that you can execute other Workbook Actions.
+<strong>Example:</strong></p>
+<pre><code class="lang-js">this.raiseCustomEvent({ message: &quot;Hello World &quot; });
+</code></pre>
+<br>
+<p><code>AddViewStateModel(modelName : string, data : object)</code><br>
+<code>addViewStateModel(modelName : string, data : object)</code></p>
+<p>In order for change notification (DataChangeEventHandler) to work, objects must be observable. By default, JavaScript objects are not observable, so you will not get notified when they are updated. Use the AddViewStateModel(…) function to create an observable JavaScript Object.</p>
+<p><strong>Example</strong></p>
+<pre><code class="lang-xml">&lt;EventHandlers&gt;
+      &lt;FormEventHandler On=&quot;Init&quot;&gt;
+          this.addViewStateModel(&quot;ButtonModel&quot;, {
+              IsDisabled : true
+          });
+      &lt;/FormEventHandler&gt;
+      &lt;DataChangedEventHandler Value=&quot;{Binding Path:*.*}&quot;&gt;
+          this.ViewState.ButtonModel.IsDisabled = !this.ViewState.ButtonModel.IsDisabled;
+      &lt;/DataChangedEventHandler&gt;
+  &lt;/EventHandlers&gt;
+    //Bind to ViewState Model
+&lt;Button Disabled=&quot;{Binding Path:ViewState.ButtonModel.IsDisabled}&quot;/&gt;
+</code></pre>
+<br>
+<p><code>isNumber(value : any)</code><br>
+<code>IsNumber(value : any)</code></p>
+<p>Checks if a value is a number.</p>
+<br>
+<p><code>isDate(value : any)</code><br>
+<code>IsDate(value : any)</code></p>
+<p>Checks if a value is a Date object.</p>
+<br>
+<p><code>startsWith(input : string, pattern : string, ignoreCase? : boolean = false)</code><br>
+<code>StartsWith(input : string, pattern : string, ignoreCase? : boolean = false)</code></p>
+<p>Checks if the input string starts with the pattern.</p>
+<p><strong>Example</strong></p>
+<pre><code class="lang-js">const startsWithA = this.startsWith('def', 'a', true); *startsWithA* is false.
+</code></pre>
+<br>
+<p><code>endsWith(input : string, pattern : string, ignoreCase? : boolean = false)</code><br>
+<code>EndsWith(input : string, pattern : string, ignoreCase? : boolean = false)</code></p>
+<p>Checks if the input string ends with the pattern.</p>
+<br>
+<p><code>convertTo(value : any, toDataType : string)</code><br>
+<code>ConvertTo(value : any, toDataType : string)</code></p>
+<p>Tries to convert value to the specified data type. If the conversion failes, an error is thrown.</p>
+<p><strong>Example</strong></p>
+<pre><code class="lang-js">const num = this.convertTo(&quot;123&quot;, &quot;number&quot;);
+</code></pre>
+<br>
+<p>Other:</p>
+<p><code>convertToDate(value : any, inputFormat? : string, throwOnNull? : boolean = false)</code><br>
+<code>ConvertToDate(value : any, inputFormat? : string, throwOnNull? : boolean = false)</code></p>
+<p><code>round(num : number, decimals : number)</code><br>
+<code>Round(num : number, decimals : number)</code></p>
+<br>
+<h4 id="properties">Properties</h4>
+<br>
+<p><code>controls</code><br>
+<code>Controls</code></p>
+<p>Contains a dictionary of the UI controls in the Form Schema. Each control is wrapped in a <strong>ControlProxy</strong>, which provides an API to the underlying HTML Element. The controls can be referenced as properties by name. Controls without names cannot be accessed.</p>
+<p><strong>Example</strong></p>
+<pre><code class="lang-js">Controls.input1.Disable();
+</code></pre>
+<br>
+<p><code>models</code><br>
+<code>Models</code></p>
+<p>Contains a dictionary of all models in the Form Schema. A model can be referenced as a property by its name.</p>
+<p><strong>Example</strong></p>
+<p>Given the Form Schema has a Person model, its field values can be accessed this way</p>
+<pre><code class="lang-js">const fullName = Models.Person.FirstName + &quot; &quot; + Models.Person.LastName;
+</code></pre>
+<br>
+<p><code>setModels</code><br>
+<code>SetModels</code></p>
+<p>Contains a dictionary of all Set Models in the Form Schema.</p>
+<br>
+<p><code>texts</code><br>
+<code>Texts</code></p>
+<br>
+<p><code>lists</code><br>
+<code>Lists</code></p>
+<p>Contains a dictionary of all lists in the Form Schema. When you have Dropdown controls which should provide different options based on some state, you can create your own arrays in the Form Runtime and bind the dropdowns to them.</p>
+<p><strong>Example</strong></p>
+<p>This example show how a Dropdown control can be bound to a dynamically created collection in the Form Runtime. The collection, “MyCustomList”, is created dynamically in an event handler from the “Items” list. The ItemsSource property of the Dropdown control is bound to the custom collection, so the options available to the user can be changed dynamically based on some condition.</p>
+<pre><code class="lang-xml">&lt;Dropdown ItemsSource =&quot;{Binding Path:MyCustomList}&quot;
+SelectedValue =&quot;{BindingPath:FormData.Numeric}&quot;
+DisplayMember=&quot;ID&quot;
+ValueMember=&quot;Numeric&quot;/&gt;
+this.MyCustomList = this.lists.Items.filter(function(item) {return item.Numeric &gt;= 300;});
+</code></pre>
+<br>
+<p><code>AppVariables</code></p>
+<p>Gives access to reading and writing Workbook variables.</p>
+<p><strong>Example</strong></p>
+<pre><code class="lang-js">models.Customer.ChangedBy = AppVariables.getValue(&quot;SYS&quot;).CurrentUserName;
+</code></pre>
+<br>
+<p><code>Disabled</code></p>
+<p>Use the Disable property to disable a control or set it to read-only.<br>
+The disabled property support data binding or an explicit value (true, false).</p>
+<p><strong>Example</strong></p>
+<pre><code class="lang-xml">&lt;Button Disabled=&quot;{Binding Path:Customer.NotActive}&quot;/&gt;
+or
+&lt;Button Disabled=&quot;true&quot;/&gt;
+</code></pre>
+<p>You cannot use both a Binding AND the control APIs at the same time to set the disabled state of a control.<br>
+If the Disabled property of a control has a Binding, using the control.Disable() or control.Enable() APIs will not work (binding will win).</p>
+<p>Valid values for the <strong>Disabled</strong> property:</p>
+<ul>
+<li>True</li>
+<li>False</li>
+<li>{Binding}</li>
+</ul>
+<br>
+<h4 id="custom-models">Custom models</h4>
+<p>If you need to maintain state for data that does not come from the database, you can create a custom model using the <strong>addViewStateModel(...)</strong> API.
+This creates an in-memory object that you can use to store state which also supports data binding. You can access the custom model through the <strong>ViewState</strong> API.</p>
+<pre><code class="lang-xml">&lt;FormEventHandler On=&quot;Init&quot;&gt;
+      this.addViewStateModel(&quot;MyModel&quot;, {
+         labelText : 'Hello world'
+      });
+&lt;/FormEventHandler&gt;
+</code></pre>
+<p><strong>Example</strong></p>
+<pre><code class="lang-xml">
+        &lt;Form&gt;
+        &lt;Style&gt;
+            &lt;Layouts&gt;
+            &lt;Grid Name=&quot;grid&quot; Rows=&quot;auto auto 1fr&quot; Columns=&quot;auto auto 1fr&quot; /&gt;
+            &lt;/Layouts&gt;
+        &lt;/Style&gt;
+        &lt;Texts /&gt;
+        &lt;Data&gt;
+            &lt;Models /&gt;
+            &lt;Lists /&gt;
+            &lt;SetModels /&gt;
+        &lt;/Data&gt;
+        &lt;Functions&gt;
+            &lt;Function Name=&quot;UpdateLabelText&quot;&gt;
+                this.ViewState.MyModel.labelText = &quot;Foo bar baz&quot;;
+            &lt;/Function&gt;
+        &lt;/Functions&gt;
+        &lt;EventHandlers&gt;
+            &lt;FormEventHandler On=&quot;Init&quot;&gt;
+                this.addViewStateModel(&quot;MyModel&quot;, {
+                    labelText : 'Hello world'
+                });
+            &lt;/FormEventHandler&gt;
+        &lt;/EventHandlers&gt;
+        &lt;UI Grid=&quot;grid&quot;&gt;
+            &lt;Label Text=&quot;{Binding Path:ViewState.MyModel.labelText}&quot;/&gt;
+        &lt;/UI&gt;
+        &lt;/Form&gt;
+</code></pre>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

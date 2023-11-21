@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Risk Administration | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Risk Administration | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../public/main.js'
+    import { init } from './../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h2 id="overview">Overview</h2>
+
+<p>This is the workbook where a risk administrator manages risk definitions, risk versions and categories.</p>
+<br>
+<br>
+<h2 id="settings">Settings</h2>
+<p>On this page, it is possible to adjust the risk taxonomy and categorization used in your organization. As an example, you can change the risk types used by your organization, the likelihood and impact-categories and description, currencies used, etc.</p>
+<p>All the subpages follow the same logic for editing, adding and removing rows. To change the text or description in a category, double-click the relevant cell. To or remove a field, right click in the row as shown on the picture below.</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/riskimages/risk-admin-settings.png" alt=""></p>
+<br>
+<p>In the subpage &quot;User interface&quot;, it is possible to govern which fields are mandatory to fill out when pressing &quot;Create New Risk&quot; and &quot;Add Treatment Plan&quot;. Fields marked in grey are mandatory as a system requirement.</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/riskimages/risk-admin-settings-userinterface.png" alt=""></p>
+<br>
+<br>
+<h2 id="versions">Versions</h2>
+<p>On this page, version status is governed. In this context, a version is a time-stamped version of your risk register, used to be able to track risk development over time. Whenever you want to create a new version, you should first check if all current risks have been submitted for approval. This is important in order to make sure the current risk review process is finished, and is necessary to create reports that have risk development over time.</p>
+<br>
+<p>When a new version is created, the risk review process is restarted. All previously submitted risks are &quot;unflagged&quot; and sent back to the risk owners for a new risk review.</p>
+<br>
+<p>When creating a new version, give the version a name that reflects the time period it is for (e.g. Q3 2021, June 2021, etc.). It is possible to change the names of previous versions by double-clicking the relevant cell and changing the text. The column for &quot;Active&quot; versions will always highlight the most recent iteration of the risk register as being active.</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/riskimages/risk-admin-versions.png" alt=""></p>
+<br>
+<br>
+<h2 id="category-setup">Category setup</h2>
+<p>On this page, the categories used by your organization can be adjusted. It is also possible to select which categories should be enabled for use or not. As an example you can make it possible to enter risks only at a subcategory (child)-level of a parent category by checking the individual categories.</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/riskimages/risk-admin-category.png" alt=""></p>
+<br>
+<h2 id="related-pages">Related Pages</h2>
+<ul>
+<li><a href="risks.html">Risks</a></li>
+<li><a href="risks/treatment-plan.html">Add Treatment Plan</a></li>
+<li><a href="risk-submission.html">Risk Submission</a></li>
+<li><a href="risk-reports.html">Risk reports</a></li>
+</ul>
+<br>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

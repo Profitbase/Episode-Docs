@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>On Save | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="On Save | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../public/main.js'
+    import { init } from './../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p>InVision provides a way to hook into the process of saving Worksheet and Setting data from the end user client. The hook lets you execute custom business logic such as data validation, modifying data, sending messages and so on.</p>
+<p>The custom business logic can be written in C# and T-SQL, and is executed automatically if the feature is enabled.</p>
+<p>Saving data is performed as a sequence of steps where rows scheduled for deletion is handled first, then updates, and finally new rows are added. You can write custom business logic that can execute before and after each one of these steps. The diagram below shows the pipeline being executed during a save process.</p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/worksheetsOnsave.jpg" alt="On Save"></p>
+<h4 id="onbeginsavecudpackage-data">OnBeginSave(CudPackage data)</h4>
+<p>This function executes once before any data is saved. The argument passed to the function is and object of type CudPackage (Cud = create, update, delete) containing the rows to delete, update and insert.</p>
+<h4 id="onbeforesave">OnBeforeSave</h4>
+<p><strong>(<code>IEnumerable&lt;CudRecord&gt;</code> rows, TableOperationType operationType)</strong></p>
+<p>This function executes once for each batch or rows (deletes, updates and inserts) before any data is saved.<br>
+The first argument passed to the function is the collection of rows to delete, update or insert.<br>
+The second argument passed to the function is the type of operation; Delete, Update or Insert.</p>
+<h4 id="onaftersave">OnAfterSave</h4>
+<p><strong>(<code>IEnumerable&lt;CudRecord&gt;</code> rows, TableOperationType operationType)</strong></p>
+<p>This function executes once for each batch or rows (deletes, updates, inserts) after the data has been saved to the database.<br>
+The first argument passed to the function is the collection of rows that was deleted, updated or inserted.<br>
+The second argument passed to the function is the type of operation; Delete, Update or Insert.</p>
+<h4 id="onendsavecudpackage-data">OnEndSave(CudPackage data)</h4>
+<p>This function executes one time when the all the changes have been saved to the database. The argument passed to the function is and object of type CudPackage (Cud = create, update, delete) containing the rows that was deleted, updated and inserted.</p>
+<h4 id="executing-sql-scripts-from-the-main-pipeline">Executing SQL Scripts from the main pipeline</h4>
+<p>SQL Scripts can be executed from the pipeline by calling <span style="color: blue;">Sql Execute functions</span>, passing the name of the <span style="color: blue;">name of the Sql scriptet</span> to execute. Any aruments to the script can be passed as the second parameter to the function.</p>
+<blockquote>
+<p><strong>Example</strong> – Executing a named SQL Script,&quot;Script1&quot;, without parameters.</p>
+<p>protected override void OnBeginSave(CudDataPackage data)</p>
+</blockquote>
+<pre><code>    {
+            …
+            ExecuteNonQuery(Script1);
+    }
+</code></pre>
+<blockquote>
+<p><strong>Example</strong> – Executing a SQL query without parameters</p>
+<p>protected override void OnBeginSave(CudDataPackage data)</p>
+</blockquote>
+<pre><code>{
+        …
+        var vehicleId = &quot;x&quot;;
+        ExecuteNonQuery(string.Concat(&quot;INSERT INTO Table1 (VehicleID,Distance)  
+        VALUES('&quot;, vehicleId, &quot;', 300)&quot;));
+}
+</code></pre>
+<h4 id="named-sql-scripts">Named SQL Scripts</h4>
+<p>If you want to execute sql scripts in the save pipeline, it is recommended to create Named Sql Scripts to keep the code in the main pipeline cleaner. When creating a Named Sql Script, you simply create a SQL script and assign a name to it. When you want to execute that script in the save pipeline, you simply provide the name of the script to the execute function instead of inlining the sql statement in the function. Named Sql Scripts are created using standard T-Sql syntax and optionally InVision <span style="color: blue;">direktives</span>.</p>
+<h4 id="executing-business-logic-before-save">Executing business logic before save</h4>
+<p>You can execute custom business logic before data is saved by overriding the <span style="color: blue;">OnBeginSave</span> and <span style="color: blue;">OnBeforeSave</span> methods.</p>
+<p>OnBeforeSave executes once pr batch type (Insert, Update and Delete), while OnBeginSave executes only once for the entire save process. If you override OnBeforeSave, you need to check the value of the <strong>operationType</strong> parameter to determine if the rows are inserted, updated or deleted.</p>
+<blockquote>
+<p><strong>Example</strong></p>
+<p>This example shows how to can override the OnBeginSave method to execute a SQL query for each new row being inserted during a save process. The example also shows how to create a parameterized SQL query and pass arguments using a list of QueryParam objects.</p>
+<pre><code>  protected override void OnBeginSave(CudDataPackage data)
+</code></pre>
+</blockquote>
+<pre><code>{
+    if(data.Inserts != null)
+    {
+            foreach(var row in data.Inserts)
+            {
+                    ExecuteNonQuery(&quot;Update @Object[UpdateHistory].DbObjectName  
+                    SET IsManuallyModified = 1  
+                    WHERE ItemID = @ItemID AND RegionID = @RegionID&quot;, 
+        new QueryParam[]{ new QueryParam(&quot;@ItemID&quot;, row.GetValue&lt;string&gt;(&quot;ItemID&quot;)),  
+        new QueryParam(&quot;@RegionID&quot;,row.GetValue&lt;string&gt;(&quot;RegionID&quot;))}, true);
+            }
+    }
+}
+</code></pre>
+<h4 id="excecuting-business-logic-after-save">Excecuting business logic after save</h4>
+<p>You can execute custom business logic after data has been saved by overriding the OnAfterSave or OnEndSave methods.</p>
+<p>OnAfterSave executes once pr batch type (Insert, Update and Delete), while OnEndSave executes only once for the entire save process. If you override OnAfterSave, you need to check the value of the <strong>operationType</strong> parameter to determine if the rows were inserted, updated or deleted.</p>
+<blockquote>
+<p><strong>Example</strong></p>
+<p>This example shows how to override the OnEndSave to execute a SQL query for each row that was updated during the save process. The example also shows how to create a parameterized SQL query and pass arguments using a list of QueryParam objects.</p>
+<pre><code>  protected override void OnEndSave(CudDataPackage data)
+</code></pre>
+</blockquote>
+<pre><code>    {
+        if(data.Updates != null)
+        {
+                foreach(var row in data.Updates)
+                {
+                        ExecuteNonQuery(&quot;Update @Object[UpdateHistory].DbObjectName  
+                        SET IsManuallyModified = 1  
+                        WHERE AccountID = @AccountID&quot;, 
+            new QueryParam[]{ new QueryParam(&quot;@AccountID&quot;  
+            row.GetValue&lt;string&gt;(&quot;AccountID&quot;)) }, true);
+                }
+        }
+    }
+</code></pre>
+<h4 id="queryparam">QueryParam</h4>
+<p>Used for passing arguments to parameterized SQL queries or Named SQL Scripts.</p>
+<p><strong>Constructors:</strong></p>
+<p>Method<br>
+<code>QueryParam(string paramName, object value)</code><br>
+Creates a new instance of this object.</p>
+<p><strong>Properties:</strong></p>
+<p><code>ParamName</code><br>
+<em>System.String</em><br>
+The name of the parameter specified in the SQL expression.</p>
+<p><code>ParamValue</code><br>
+<em>System.Object</em><br>
+The value of the parameter.</p>
+<h4 id="tableoperationtype">TableOperationType</h4>
+<p>Enum describing the type of operation being executed.</p>
+<p><strong>Values:</strong></p>
+<p><code>Insert</code><br>
+Rows are being inserted.</p>
+<p><code>Update</code><br>
+Rows are being updated.</p>
+<p><code>Delete</code><br>
+Rows are being deleted.</p>
+<blockquote>
+<p><strong>Example</strong></p>
+<p>This example shows to override OnAfterSave and examine the operationType parameter to determine if the rows being passed to the method will be inserted, updated or deleted.</p>
+</blockquote>
+<pre><code>protected override void OnAfterSave(IEnumerable&lt;CudRecord&gt; rows,  
+TableOperationType operationType)
+{    
+    base.OnAfterSave(rows, operationType);
+    if(operationType == TableOperationType.Update)
+    {
+        // Implementation goes here
+    }    
+}
+</code></pre>
+<h4 id="sql-execute-functions">Sql Execute functions</h4>
+<hr>
+<p><strong>ExecuteNonQuery</strong></p>
+<p>Executes a SQL expression and returns the number of rows affected.</p>
+<p><strong>Return value</strong></p>
+<p>System.Int32</p>
+<p><strong>Parameters:</strong></p>
+<p><strong>sqlQuery</strong><br>
+<code>System.String</code><br>
+A SQL expression or the name of a Named SQL Script.</p>
+<p><strong>queryParamsString</strong><br>
+<code>IEnumerable&lt;QueryParam&gt;</code><br>
+Optional. A list of arguments to pass if the SQL expression is parameterized.</p>
+<p><strong>processDirectives</strong><br>
+<code>System.Boolean</code><br>
+Optional. Default value = true. Specifies whether the SQL expression contains directives which needs to be processed.</p>
+<p><strong>connectionString</strong><br>
+<code>System.String</code><br>
+Optional. Specifies the connection string to use when executing the SQL expression.</p>
+<hr>
+<p><strong>ExecuteScalar</strong></p>
+<p>Executes the query, and returns the first column of the first row in the result set returned by the query. Additional columns or rows are ignored.</p>
+<p><strong>Return value</strong></p>
+<p>System.Object</p>
+<p><strong>Parameters:</strong></p>
+<p><strong>sqlQuery</strong><br>
+<code>System.String</code><br>
+A SQL expression or the name of a Named SQL Script.</p>
+<p><strong>queryParamsString</strong><br>
+<code>IEnumerable&lt;QueryParam&gt;</code><br>
+Optional. A list of arguments to pass if the SQL expression is parameterized.</p>
+<p><strong>processDirectives</strong><br>
+<code>System.Boolean</code><br>
+Optional. Default value = true. Specifies whether the SQL expression contains directives which needs to be processed.</p>
+<p><strong>connectionString</strong><br>
+<code>System.String</code><br>
+Optional. Specifies the connection string to use when executing the SQL expression.</p>
+<hr>
+<p><strong>ExecuteScalar &lt; T &gt;</strong></p>
+<p>Executes the query and returns the first column of the first row in the result set returned by the query. Additional columns or rows are ignored.</p>
+<p><strong>Return value</strong></p>
+<p>Objekt of type T</p>
+<p><strong>Parameters</strong></p>
+<p>See the non-generic version of <span style="color: blue;">ExecuteScalar</span></p>
+<p><strong>GetObjectConnectionString</strong></p>
+<p>Returns the database connection string for an InVision database object (Data Store, Setting, Fact, Dimension or View)</p>
+<p><strong>Return value</strong></p>
+<p>System.String</p>
+<p><strong>Parameters:</strong></p>
+<p><strong>objectName</strong><br>
+<code>System.String </code><br>
+The name of the Solution object (displayed in the Solution Explorer).</p>
+<p><strong>objectType</strong><br>
+<code>System.String </code><br>
+Optional, but must be provided if there is more than one object in the Solution with the specified name.</p>
+<br>
+<h4 id="see-also">See Also</h4>
+<ul>
+<li><a href="onsave/apireferences.html">API References</a></li>
+<li><a href="onsave/sqlscriptservice.html">Sql Script Service</a>
+<br></li>
+</ul>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

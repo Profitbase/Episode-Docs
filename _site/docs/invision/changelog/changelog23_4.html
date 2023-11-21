@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Change Log 2023.4 | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Change Log 2023.4 | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../public/main.js'
+    import { init } from './../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p>2023.4 adds numerous new features for developers and end users. Continue reading to get the highlights.</p>
+<br>
+<h3 id="package-deployment-and-upgrade-logging">Package deployment and upgrade logging</h3>
+<p>We’ve made improvements to logging during Package deployments and upgrades:</p>
+<ul>
+<li>We show the Work Process Versions, Solutions, and package versions that are upgraded. If you do a multi-version package upgrade, each Package version upgrade is listed.</li>
+<li>Non-essential log messages are no longer displayed in the compact log. This makes the log very easy to read.</li>
+<li>If an error occurs, you can switch to a detailed log view to do an investigation.</li>
+<li>You can view detailed logs about previously run Package deployments and upgrades. This is useful if some error has occurred, and you need to investigate what went wrong.</li>
+</ul>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/pacdepl.png" alt="Diff tool"></p>
+<br>
+<h3 id="data-pool">Data Pool</h3>
+<p>We now enforce the correct data types for columns in Data Pool Compound Views, so the default SQL Server data types are not applied when view source columns contain NULL values.</p>
+<br>
+<h3 id="dimensions-and-access-control">Dimensions and Access Control</h3>
+<ul>
+<li>Fixed an issue where access permissions on dimension members were not deleted if the dimension member was deleted.</li>
+<li>Fixed an issue where access permissions on non-leaf dimension members were not correctly updated if the dimension was restructured.</li>
+<li>When publishing a dimension from the Dimension Editor, you will get warnings in the log if any Ranked Input tables have references to dimension members that no longer exist.</li>
+<li>The “Publish Dimension” dialog now displays a warning when you choose to overwrite the permissions at the target dimension(s) if the source dimension has no permissions defined. This prevents users from inadvertently deleting all permissions in a Work Process Version if they publish a primary dimension and tick the “Overwrite permissions” checkbox.</li>
+</ul>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/diacctrl.png" alt="Diff tool"></p>
+<br>
+<h3 id="work-process">Work Process</h3>
+<ul>
+<li>Auto selection of Work Process Version when the user switches Work Process source version in the Create Version dialog. This change prevents the user from inadvertently creating a version from the blueprint resulting in a version with no data.</li>
+<li>When publishing a dimension from the Dimension Editor, you will get warnings in the log if any tables have references to dimension members that no longer exist.</li>
+</ul>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/wpch.png" alt="Diff tool"></p>
+<br>
+<h3 id="ranked-input-tables">Ranked input tables</h3>
+<ul>
+<li>Cells containing invalid references to dimension members are now displayed as #REF! instead of the row being removed.</li>
+<li>Clearing the source version dropdown in the Create Version dialog now displays a “Blueprint” watermark, making it obvious to the user that the new version will be created using the Blueprint as the data source.</li>
+</ul>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/rainp.png" alt="Diff tool"></p>
+<br>
+<h3 id="form-schema">Form Schema</h3>
+<ul>
+<li>Added the <strong>Readonly</strong> property to all input controls.</li>
+<li>Links in the RichTextEditor will now always open in separate windows or browser tabs, regardless of whether a Workbook is running in an iframe or not.</li>
+</ul>
+<br>
+<h3 id="filter">Filter</h3>
+<ul>
+<li>Fixed an issue with using search in hierarchical filters (for example TreeView) returned incorrect dimension member metadata for non-leaf members, causing incorrect data in reports when the filter was applied.</li>
+</ul>
+<br>
+<h3 id="powershell-filestorage-api">PowerShell FileStorage API</h3>
+<ul>
+<li>Added an API to programmatically add files to a File Storage. <a href="../docs/powershell/functiondoc/function7.html">Read more</a></li>
+<li>Added APIs to programmatically update the context for files in a File Storage. <a href="../docs/powershell/functiondoc/function7.html">Read more</a></li>
+</ul>
+<p><strong>Change the context of a file using the UpdateContextByReferenceId API</strong></p>
+<pre><code>param (
+    [Parameter (MANDATORY = $TRUE)][string] $oldClaimId,
+    [Parameter(MANDATORY = $TRUE)][string] $newClaimId
+)
+$newContext = New-Object System.Collections.Generic.Dictionary&quot;[String, Object]&quot;
+$newContext.Add(&quot;ClaimID&quot;, $newClaimId)
+$storageName = &quot;Files&quot;
+$fileInfos = [Profitbase.IO.FileStorage]::GetFileInfos($storageName, &quot;ClaimID == `&quot;${oldClaimId}`&quot;&quot;)
+foreach($fileInfo in $fileInfos)
+{
+     [Profitbase.IO.FileStorage]::UpdateContextByReferenceId($fileInfo.FileReferenceId, $newContext)
+}
+</code></pre>
+<br>
+<h3 id="tableview">TableView</h3>
+<ul>
+<li>Fixed an issue where string filters did not have a border.</li>
+<li>Fixed an issue where custom context menu actions did not work when the table was filtered.</li>
+</ul>
+<br>
+<h3 id="workbook">Workbook</h3>
+<p>You can now use JavaScript instead of Eaze when defining business logic for component actions.</p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/wbjs.png" alt="Diff tool"></p>
+<br>
+<p>By supporting JavaScript, we make it easier for new developers familiar with JavaScript to start using InVision. It also adds more flexibility, but at the same time adds a bit more complexity when working with global variables. With Eaze, any variable declared in an action handler was automatically globally available to other Workbook components as well. When using JavaScript, you need to declare global variables explicitly before they can be used.</p>
+<p>If you want to migrate from Eaze to JavaScript, you can do it gradually by changing the Script language (as shown in the screenshot below) one action handler at a time from Eaze to JavaScript. You also need to make the following changes to the existing Eaze code to make it valid JavaScript code:</p>
+<ul>
+<li>Global variables are not created on the fly. Instead, you need to declare them in the Variables dialog in the Workbook toolbar.</li>
+<li>@Var[…] is not supported. “@Var[…]” is not a valid JavaScript variable name. If you need to keep using @Var while migrating, you can use the appVariables object to read and write to @Var variables. (see the example below).</li>
+<li>You must use the await keyword if you run the Web Api, Execute Web Function and Execute SQL Script workbook actions.</li>
+<li>Use Event instead of @Event in action instructions.</li>
+</ul>
+<br>
+<p><strong>Differences between Eaze and JavaScript</strong></p>
+<pre><code>// Eaze: Execute SQL script using Eaze:
+	SetParamValue(&quot;@param1&quot;, @Event.Data.customerId);
+	_sqlScriptResponse = Execute(&quot;ExecSqlScriptFromWorkbook&quot;);
+
+// JavaScript: Execute SQL Script using JavaScript. Note the use of the await keyword and Event instead of @Event	
+	SetParamValue(&quot;@param1&quot;, Event.Data.customerId);
+	_sqlScriptResponse = await Execute(&quot;ExecSqlScriptFromWorkbook&quot;);
+</code></pre>
+<p>**Use of legacy @Var-variables**</p>
+<pre><code>this.appVariables[&quot;@Var[…]&quot;] = 'hello world';
+</code></pre>
+<br> 
+<h3 id="web-functions">Web Functions</h3>
+<ul>
+<li>When a Web Function is pasted, the endpoint name is now automatically set to the name the developer provides. This prevents duplication of endpoint names when developers copy Web Functions and forgets to update the endpoint name of the new Web Function.</li>
+<li>Added overloads to all methods in the SqlCommandService to accept an <code>IDictionary&lt;string,object&gt;</code> for SQL parameters.</li>
+</ul>
+<br>
+<p><strong>Pass sql parameters to ExecuteNonQuery using a Dictionary</strong></p>
+<pre><code>public record ClaimSubmission(string Subject, string FromEMail, DateTimeOffset SubmittedDate, string FileName, byte[] FileBytes);
+
+public sealed class MyWebFunction : WebFunction
+{
+    public async Task&lt;IActionResult&gt; Run(HttpRequest request)
+    { 
+    	HttpClient httpClient = this.HttpClientFactory.CreateClient();    
+		HttpResponseMessage response = await httpClient.GetAsync(&quot;https://localhost:7133/AzureStorageClaims/fetch-all&quot;);
+		var claimSubmissions = await response.Content.ReadFromJsonAsync&lt;List&lt;ClaimSubmission&gt;&gt;();
+		
+		foreach(var claimSubmission in claimSubmissions)
+		{
+			var claimId = Guid.NewGuid().ToString();
+			
+		    await this.SqlCommandService.ExecuteNonQueryAsync(&quot;INSERT INTO Setting_CaseBacklogtable_a0349_04062023064229147 (CaseID, Title, SubmittedDate, FromEmail) Values(@id, @title, @date, @from)&quot;,
+		    	new Dictionary&lt;string,object&gt;
+		    	{
+		    		{&quot;@id&quot;, claimId },
+		    		{&quot;@title&quot;, claimSubmission.Subject },
+		    		{&quot;@date&quot;, claimSubmission.SubmittedDate },
+		    		{&quot;@from&quot;, claimSubmission.FromEMail }
+		    	});
+		    
+		    await this.PowerShellService.ExecuteScriptByNameAsync(&quot;AddToClaimDocuments.powershell&quot;, new Dictionary&lt;string,object&gt;
+		    {
+		       {&quot;fileName&quot;, claimSubmission.FileName},
+		       {&quot;fileBytes&quot;, claimSubmission.FileBytes},
+		       {&quot;claimId&quot;, claimId}
+		    }); 
+		    
+		}
+		
+        return await Task.FromResult(Ok());
+    }
+}
+</code></pre>
+<br>
+<h3 id="support-for-defining-partitions-and-indexes">Support for defining partitions and indexes</h3>
+<p>We’ve added support for defining indexes and partitions on Data Stores and Tables which enables developers to significantly improve the performance of key parts of products and custom solutions.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Partitions and indexes can be configured in the new “Scripts” tab of Data Stores and Tables. Developers must script the entire logic related to the creation of indexes and partitions, including checking if the index or partition already exists, as shown in the screenshot below.</p>
+</div>
+<p>By pressing “Insert template”, you get a default script with template tags that you can modify to define partitions and indexes on the table.</p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/supp.png" alt="Diff tool"></p>
+<br>
+<h3 id="eaze">Eaze</h3>
+<ul>
+<li>Fixed an issue with the ArrayItemAt(collection, index) function, which did not return the expected value.</li>
+</ul>
+<br>
+<h4 id="see-also">See Also</h4>
+<ul>
+<li><a href="changelog23_6.html">Change Log 2023.6</a></li>
+<li><a href="changelog23_5.html">Change Log 2023.5</a></li>
+<li><a href="changelog23_3.html">Change Log 2023.3</a></li>
+<li><a href="changelog23_2.html">Change Log 2023.2</a></li>
+<li><a href="changelog23_1.html">Change Log 2023.1</a></li>
+<li><a href="changelog22_5.html">Change Log 2022.5</a></li>
+<li><a href="changelog22_4.html">Change Log 2022.4</a></li>
+<li><a href="changelog22_3_2.html">Change Log 2022.3 pt 2</a></li>
+<li><a href="changelog22_3_1.html">Change Log 2022.3 pt 1</a></li>
+<li><a href="changelog22_2.html">Change Log 2022.2</a></li>
+<li><a href="changelog22_1.html">Change Log 2022.1</a></li>
+<li><a href="changelog52.html">Change Log 5.2</a></li>
+<li><a href="changelog51.html">Change Log 5.1</a></li>
+<li><a href="changelog5.html">Change Log 5.0</a></li>
+<li><a href="changelog41.html">Change Log 4.1</a></li>
+<li><a href="changelog40.html">Change Log 4.0</a></li>
+</ul>
+<br>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

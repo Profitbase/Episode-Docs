@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Change Log 4.0 | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Change Log 4.0 | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../public/main.js'
+    import { init } from './../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h2 id="installing-invision-40">Installing InVision 4.0</h2>
+
+<p>To install InVision 4.0 on your local PC or on a server / VM, you need to do the following</p>
+<ol>
+<li>Contact Profitbase to get a license id.</li>
+<li>Make sure you have PowerShell 5.1 and IIS .Net core hosting bundle installed.</li>
+<li>Download and install Profitbase Installation Manager 4.</li>
+<li>Follow the instructions in the installation guide.</li>
+</ol>
+<p>You can download Profitbase Installation Manager 4 from <a href="http://download.profitbase.com/installer/">here</a> or run the following Powershell command:</p>
+<pre><code>Invoke-WebRequest -Uri “https://download.profitbase.com/installer/ProfitbaseInstallationManager v4.0.0.0.exe” -Outfile “ProfitbaseInstallationManager v4.0.0.0.exe”; Start-Process (&quot;ProfitbaseInstallationManager v4.0.0.0.exe&quot;)
+</code></pre>
+<br>
+<h2 id="upgrading-to-invision-4">Upgrading to InVision 4</h2>
+<p>Because we’ve moved to a new technology platform, you cannot automatically upgrade to InVision 4.0 from previous versions just by clicking the “Upgrade” button in the installer. Depending on which features you have used in your Solution(s), there are a few manual steps involved.</p>
+<p>Read the detailed steps about how to upgrade to InVision 4 here.</p>
+<br>
+<h2 id="new-features">New features</h2>
+<p>The focus for this release has been on moving to a new, modern technology platform. We have, however, found the time to add a few new features to please y’all.</p>
+<br>
+<h3 id="time-dimension">Time Dimension</h3>
+<p>We’ve added support for creating and managing Time Dimensions directly in InVision without having to use Profitbase Studio.</p>
+<br>
+<h3 id="monitoring-and-diagnostics-through-application-insights">Monitoring and diagnostics through Application Insights</h3>
+<p>We’ve added support for sending telemetry information to Application Insights to enable IT departments to include InVision in their standard operations and monitoring tools and processes.
+This feature is enabled by default, and sends telemetry information to Profitbase unless you change the instrumentation key during installation or manually at a later point by editing the appsettings.json configuration files.</p>
+<br>
+<h3 id="change-workbook-title-dynamically">Change Workbook Title dynamically</h3>
+<p>You an now dynamically change the Workbook Title at any time after the Workbook has been loaded by calling the SetWorkbookTitle(…) command in Execute actions on the Workbook object.</p>
+<br>
+<h2 id="bug-fixes">Bug fixes</h2>
+<p>Version 4 contains more than 50 bug fixes from version 3. Many of them were reported through our support site / user forum, and we appreciate all feedback that help us improve the product.</p>
+<br>
+<h2 id="whats-next">What’s next</h2>
+<p>Now’s where the fun begins! The last year+ has been spent on porting our entire software platform from “legacy” to a modern technology stack. This has prevented us from delivering new features and capabilities to partners and customers that help them unleash business value faster. For the next year, we’ve lined up a range of exiting new features that we know will provide great value and help you exceed your customers expectations.</p>
+<br>
+<h4 id="see-also">See Also</h4>
+<ul>
+<li><a href="changelog23_6.html">Change Log 2023.6</a></li>
+<li><a href="changelog23_5.html">Change Log 2023.5</a></li>
+<li><a href="changelog23_4.html">Change Log 2023.4</a></li>
+<li><a href="changelog23_3.html">Change Log 2023.3</a></li>
+<li><a href="changelog23_2.html">Change Log 2023.2</a></li>
+<li><a href="changelog23_1.html">Change Log 2023.1</a></li>
+<li><a href="changelog22_5.html">Change Log 2022.5</a></li>
+<li><a href="changelog22_4.html">Change Log 2022.4</a></li>
+<li><a href="changelog22_3_2.html">Change Log 2022.3 pt 2</a></li>
+<li><a href="changelog22_3_1.html">Change Log 2022.3 pt 1</a></li>
+<li><a href="changelog22_2.html">Change Log 2022.2</a></li>
+<li><a href="changelog22_1.html">Change Log 2022.1</a></li>
+<li><a href="changelog52.html">Change Log 5.2</a></li>
+<li><a href="changelog51.html">Change Log 5.1</a></li>
+<li><a href="changelog5.html">Change Log 5.0</a></li>
+<li><a href="changelog41.html">Change Log 4.1</a></li>
+</ul>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

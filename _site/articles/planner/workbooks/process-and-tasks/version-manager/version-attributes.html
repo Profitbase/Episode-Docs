@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Version attributes | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Version attributes | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="overview">Overview</h3>
+
+<p>Once created, some of the version's attributes can be maintained. This is done in the &quot;Version attributes&quot; page:</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/plannerimages/processes-and-versions-attributes.JPG" alt=""></p>
+<br>
+<p>The following attributes can be maintained:</p>
+<p><strong>Display name</strong>
+The (short) name to display in version drop downs when selecting which version to report and/or compare.
+<br></p>
+<p><strong>Avail. for operations</strong>
+Indicates whether this version is available for executing operations against. Operations are executed in the <a href="../../administration/operation-manager.html">Operation manager</a>.<br></p>
+<p>This attribute is automatically set to checked (true) when opening the version and to un-checked (false) when closing the version. The attribute is editable.
+<br></p>
+<p><strong>Current Version</strong>
+Indicates that this version is the current version for the process in question. For a version to be current, it has to be Avil. for operations.</p>
+<p>This attribute is automatically set to checked (true) when opening the version and any other version for the same process that has its Current Version checked will be un-checked so that only one version with each version is the current version.</p>
+<p>A version can be manually set as the current version by right-clicking the column and selecting the &quot;Set as current version&quot; menu.</p>
+<p><strong>Assign process tasks when version is open</strong>
+Indicates whether process tasks should be assigned to this version when the version is open. Process tasks are maintained in the <a href="../process-and-schedule-manager.html">Process and schedule manager</a>.<br></p>
+<p>This attribute is automatically set to checked (true) on the first open of the version. The attribute is editable.
+<br></p>
+<p><strong>Avail. for reporting</strong>
+Indicates whether the version is available for reporting and/or comparison. Reporting is done in the <a href="../../financial-planning/finance-reports.html">Finance reports</a>.<br></p>
+<p>This attribute is automatically set to checked (true) on the first open of the version. The attribute is editable.
+<br></p>
+<p><strong>Export name</strong>
+The export name (if any) attached to the version. Please refer to <a href="export-name.html">Export name</a> for details on export name.<br></p>
+<br>
+<p><strong>Set (export name)</strong>
+Attach an export name to the given version. Note that only one version can hold a given export names at any one time. Please refer to <a href="export-name.html">Export name</a> for details on export name.<br>
+<br></p>
+<p><strong>Comments</strong>
+Optional comments. Editable.
+<br></p>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

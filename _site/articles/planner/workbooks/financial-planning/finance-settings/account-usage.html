@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Account Usage | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Account Usage | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="overview">Overview</h3>
+
+<p>This page gives an overview of accounts usage in different settings tables. This report page is intended for debugging purposes.</p>
+<p>Instructions for use:</p>
+<ol>
+<li>You can click on column header to sort; for example sorting on Account as shown in picture above.</li>
+<li>Click on settings table in the &quot;Settings Name&quot; column. For example for Account = &quot;5010&quot; and Settings Name = &quot;PensionEmployerPct&quot; to bring up the display of 3 records in Settings Details.
+<br></li>
+</ol>
+<p><img src="https://profitbasedocs.blob.core.windows.net/plannerimages/finance-settings-account-usage.jpg" alt=""></p>
+<ol>
+<li><strong>Account Usage</strong><br>
+This table list all accounts in all settings tables. The Settings Name column provide a drilldown to see content for this account and setting table.</li>
+<li><strong>Setting Details</strong><br>
+This table will show the details on selected row in Account Usage table.
+<br></li>
+</ol>
+<h3 id="descriptions">Descriptions</h3>
+<h4 id="account-usage">Account Usage</h4>
+<ul>
+<li><strong>Legal Entity:</strong><br>
+Legal Entity ID. Note that wildcard for all Legal Entities (*) may be used here.</li>
+<li><strong>Name:</strong><br>
+Legal Entity name.</li>
+<li><strong>Dataset:</strong><br>
+Dataset ID. Note that wildcard for all datasets (*) may be used here.</li>
+<li><strong>Account:</strong><br>
+Account ID.</li>
+<li><strong>Account Description:</strong><br>
+Account name.</li>
+<li><strong>Acc Key:</strong><br>
+Account key is the system internal account.</li>
+<li><strong>Settings Name:</strong><br>
+Name of settings table. This is an action column to trigger display in Setting details to the right.</li>
+</ul>
+<br>
+<h4 id="setting-details">Setting Details</h4>
+<p>This table shows the column name and values from the selected combination of account and settings table in the table to the left.</p>
+<ul>
+<li><strong>Name</strong><br>
+Display the name of the column from the setting table.</li>
+<li><strong>Value</strong><br>
+Display the value from the row in the setting table</li>
+</ul>
+<p>Note that this table may show several records which are sorted to show same columns together for comparison.</p>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Define Calculation Flow database output | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Define Calculation Flow database output | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="define-calculation-flow-database-output">Define Calculation Flow database output</h1>
+
+<p>Defines the target table and columns where the result of a Calculation Flow should be stored.</p>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Object variable name</td>
+<td>Required</td>
+<td>The name of the variable that holds the reference to the in-memory output store while the Calculation Flow runs. This is the name of the storage variable you will be referencing in code when you want to store a calculated record or value.</td>
+</tr>
+<tr>
+<td>Connection</td>
+<td>Required</td>
+<td>A valid InVision Connection.</td>
+</tr>
+<tr>
+<td>Target table</td>
+<td>Required</td>
+<td>The table to store calculated values in.</td>
+</tr>
+<tr>
+<td>Target columns</td>
+<td>Optional</td>
+<td>The columns to store the calculated values in, and to create the target data type. If you don't specify any columns, the target type contains all columns in the target table. <strong>For performance reasons, it is recommended to specify the columns explicitly</strong>.</td>
+</tr>
+<tr>
+<td>Data mapping</td>
+<td>Optional</td>
+<td>By default, cell values from the input is copied to cells in the output if the column names match. For example, the DepartmentID from the input is copied to the DepartmentID in the output / target. If you want to control this behavior, either because you don't want auto mapping or because the column names does not match (for example source equals AccID and target equals AccountID), you can specify the mapping explicitly. Specifying the mapping explicitly also improves startup performance of the Flow.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-mapping">Data mapping</h3>
+<p>Defines the mapping between the columns in the data source and the columns in the target.</p>
+<h4 id="data-mapping-properties">Data mapping properties</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data source column</td>
+<td>The name of the column in the <a href="read-calculation-flow-db-input.html">data source / input</a></td>
+</tr>
+<tr>
+<td>Target column</td>
+<td>The name of the column in the target table</td>
+</tr>
+<tr>
+<td>Auto map data</td>
+<td>Specifies whether or not data is automatically copied from the input record to the output record when the output record is created in memory / code. Based on your use case, you will mostly want to enable this option for dimension columns, but disable it for measure / calculated columns.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="example">Example</h4>
+<p>In this simple example, we use a <a href="../../built-in/function.html">Function</a> action to calculate a tax amount based on the <code>Amount</code> field from the input record, and the <code>TaxPct</code> assumption.
+We have named our Object variable <code>Output</code>, and add a record with the calculated tax amount by calling <code>Output.Add(...)</code>.</p>
+<pre><code class="lang-csharp">public void CalcTax(MyWorkspace.Forecast_Input input)
+{
+    // Use the TaxPct assumption to find the tax percent for the Account from the input trans
+    // This works because we have called Assumptions.SetContext(...) earlier in the flow
+    var taxAmount = (Assumptions.Finance_Settings.TaxPct.GetValueOrDefault(1m) / 100.0m) * input.Amount;
+
+    // We have added an assumption called AccountMappings to the Flow. It holds the mapping between account types and the actual account ids
+    var targetAccount = Assumptions.AccountMappings.FirstOrDefault(map =&gt; map.AccountType == &quot;TaxPayable&quot;)?.TargetAccountID;
+
+    // Create an output transaction that will be stored in the database.
+    // Note: If we did not explicitly specify the AccountID and TransDate fields below, they would be copied to the output record
+    // from the input record - unless &quot;Auto map data&quot; was set to false in the Data mapping properties for those columns.
+    Output.Add(AccountID: targetAccount, Amount: taxAmount, TransDate: input.TransDate);
+}
+
+</code></pre>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

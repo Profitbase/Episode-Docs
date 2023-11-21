@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Changelog EPM Planner 5.4.1 | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Changelog EPM Planner 5.4.1 | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../public/main.js'
+    import { init } from './../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p>This document contains the new features and changes to the EPM Planner release 5.4.1.</p>
+<p>This package provide a datamart to share data between EPM applications and external producers and consumers. Import, export and currency exchange rates is functions provided here.</p>
+<p>The top section contains an abstract of the new features and main changes. The bottom section contains a detailed list of GitLab issues registered for this release. Items marked with &quot;Bug&quot; contains bug fixes.</p>
+<p><strong>Breaking Changes:</strong></p>
+<p>These are changes that is likely to cause existing configurations to present different content after upgrading a solution.</p>
+<ul>
+<li><p><strong>Generating OB</strong> The way Opening Balance (OB) is generated is changed and may cause e.g. Trial Balance to not sum to 0. This may also require to revisit configuation and customization involving OB. (#1011)</p>
+<p>Posting on internal AccountKeyID 'EquityEarningsYTD' is now removed when generating OB.</p>
+<p>The following now applies for OB:</p>
+<p>Generating OB for beginning of year (fiscal period 1): OB is generated from previous years actuals. It is assumed that last years results is posted to balance (so that each sum of balance and sum of Profit &amp; Loss is 0). If this is not the case, trial balance will not sum to 0 for OB. Users then have two options: 1) Ignore that trial balance for OB is not 0 or 2) Adjust OB by posting the difference (e.g. on balance account for other equity).</p>
+<p>When generating OB for forecast periods after beginning of year (fiscal period &gt; 1): OB is generated including YTD for Profit &amp; Loss accounts. Note that an opening balance is required for the planner posting engines to deal with due payments from e.g. receivables, payables, etc. configured in OB Due under Finance Settings.</p>
+<p>When generating OB for subsequent forecast years: Solution will close previous year and transfer results or loss to balance (default for new solutions). This is the default for new deployed solutions. For upgrade of existing solution and to maintain compatibility, the mechanism is not in effect by default. Users can use Year End Alloc in Finance Settings to configure how a profit should be used.</p>
+</li>
+</ul>
+<p><strong>Changes:</strong></p>
+<ul>
+<li><p><strong>Support for year end closing introduced</strong>. This includes year end transfer of current year's profit/loss to the balance at year end (possible to disable) and an optional setup of rules related to year end due of tax, dividend, etc. For compatibility reasons, this functionality is disabled but can be switched on in the new page Year End Alloc. in the Finance Settings workbook. (#311)</p>
+</li>
+<li><p><strong>Improved language support</strong>. Danish and Swedish introduced as new languages. Account dimension includes new Danish and Swedish language properties. Self-service setting tables for maintaining solution specific language texts such as input module heading, measures, etc as well as reports, report lines, etc.</p>
+<p>Translations tabs are found in workbooks Report Setup (dimensions, reports, report lines) and Input Settings and Administration (module specific texts). NO and EN texts are copied to the new translation table during upgrade and the NO and EN columns are closed.</p>
+<p>Note that some administrative workbooks such as Data Import &amp; Export, Operations, etc. still supports English and Norwegian only. (#1363)</p>
+</li>
+<li><p><strong>Improvements Personnel module</strong> (#1056 #1382)</p>
+<p>Attributes introduced to personnel module and associated source fact. Previously, dimensionality could be used for defining a row in the personnel module. This is often ok, but in some cases, it is not possible as changing such a value from the source will introduce a new key and duplicate the input row.</p>
+<p>A new type of column, attribute, is therefore introduced (Attr1, Attr2). Attributes are <strong>updated</strong> from source and not part of the dimensional key.</p>
+<p>Ability to control which fields are updated from source fact. Previously, all fields were updated when choosing to update existing data.</p>
+<p>Ability to define auto transaction rules based on attributes. Previously, dimensionality for department and employee alone was used.</p>
+<p>Ability to sort employees in input sheet drop down list so that new (dummy) employees appear at the top.</p>
+</li>
+<li><p><strong>Ability to save input data without submitting</strong> Introduce setting that allows for Save without submit in input modules Account, Personnel and Driver based. In some cases, submitting takes too long.</p>
+<p>Default is Auto submit data</p>
+<p>If Auto submit data is switched off, the Save button saves input data only and a Submit button appears the the user will have to click once the changes are done and saved. The Submit button will update reports. (#1387)</p>
+</li>
+<li><p>Allocation - transaction report include Legal entity, account details report will show which allocation rule that has produced the data (#1373)</p>
+</li>
+<li><p>Account drill to details report - details from the employee dimension is hidden and data is aggregated to other dimensionality present and any input comments are hidden. This applies to access from Plan Overview and modules other than Personnel as data may be sensitive (#1407)</p>
+</li>
+</ul>
+<p><strong>Bug fixes and GitLab reference list:</strong></p>
+<ul>
+<li><p>Incorrect button heading when adding custom button to driver based models (#1393)</p>
+</li>
+<li><p>Auto transactions is not working for non-summable measures in driver based models (#1389)</p>
+</li>
+<li><p>Additional dimension mapping cause double report lines (#1388)</p>
+</li>
+<li><p>Bad performance in Account details and Account details drilldown report (#1359 #1384)</p>
+</li>
+<li><p>Financial engine source - filter out transactions where accountid is null (#1381)</p>
+</li>
+<li><p>Personnel module: changes in setting table require double save to take effect (#1355)</p>
+</li>
+<li><p>Allocation transaction is deleted when Finance baseline is executed (#1400)</p>
+</li>
+<li><p>Transaction pipelines for Account, Personnel and Driver based will truncate it's target table before piping data if run out of context, e.g. from an operation (#1399)</p>
+</li>
+<li><p>Account details drill to detail report - employee information displayed when accessing report from Plan Overview (#1406)</p>
+</li>
+</ul>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

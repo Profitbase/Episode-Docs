@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Getting Started | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Getting Started | Profitbase Docs ">
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../public/main.js'
+    import { init } from './../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h2 id="abstract-intended-audience-and-pre-requisites">Abstract, intended audience and pre-requisites</h2>
+
+<p>Profitbase Risk is designed to give an organization a tool to register, manage and mitigate risks toward their core business areas. It facilitates a process where risk owners identify and categorize risks relevant to their part of the organization. Each risk is given a rating according to the likelihood that it will happen and the associated impacts. If a risk is above a certain level, a mitigation plan can be created to lower the risk.</p>
+<br>
+<p>An organization faces risks at various organizational levels and various types. A risk identified at a department level may be relevant to the company/group as a whole. As an example; an incident affecting a local IT server at a department level may very well pose a risk to the company as a whole if it contains business-critical information. Profitbase Risk manages these interdependencies by establishing multiple organizational levels and a risk review process.</p>
+<br>
+<p>The risk review process links risks at a department level with risks towards the company as a whole. In this process, users at each organizational level evaluate whether the risks they are responsible for are ready for review by the above entity (e.g. a department head, risk manager, etc). A department head/risk manager will then consider whether the risks encountered at various department levels affect the risk level faced by the company as a whole. A risk does not need to be mitigated fully to be sent to the next organizational level.</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/riskimages/risk-overview.png" alt=""></p>
+<br>
+<p>To manage risk development over time; this risk review process can follow a pre-established (or ad-hoc) pattern, for example, a quarterly risk review. When starting a new risk review process, all previously submitted risks are sent back to the risk owners at various levels in the organization for review. When risks are in review, risk owners are required to re-evaluate their previous risk assessments.</p>
+<br>
+<h2 id="navigation">Navigation</h2>
+<p>The picture below shows the menu present in all <a href="workbooks.html">workbooks</a> for navigating in Risk. Clicking the &quot;hamburger&quot; icon in the upper left corner will show the menu. Not all menu choices will be available, based on the user access.</p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/riskimages/risk-left-menu.png" alt=""></p>
+<br>
+<h2 id="audience">Audience</h2>
+<p>The intended audience of this document is Risk end users, although some of the documentation refers to aspects relevant to implementation partners configuring the solution initially and solution administrators responsible for operating it after.</p>
+<br>
+<p>Typical users can include:</p>
+<ul>
+<li><strong>Risk owner</strong> – responsible for identifying and handling risks created at a department in the organization.</li>
+<li><strong>Risk manager</strong> – evaluates risks sent in from the operational level.</li>
+<li><strong>Group risk owner</strong> – responsible for handling risks towards the group/company as a whole, based on inputs from risk owners at the department level.</li>
+<li><strong>Administrator</strong> - responsible for maintaining the Risk software, e.g., maintaining tables, processes, user access etc.</li>
+</ul>
+<br>
+<h2 id="related-pages">Related Pages</h2>
+<ul>
+<li><a href="workbooks.html">Risk workbooks</a></li>
+</ul>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

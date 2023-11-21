@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Filter | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Filter | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="filters">Filters</h3>
+
+<p>Filters are components used for setting the data context for Settings, <a href="../../worksheets.html">Worksheets</a>, <a href="reports.html">Reports</a>, <a href="workflow.html">Workflows</a>, and <a href="dataflow.html">Data Flows</a>.</p>
+<p>Once a <a href="filter.html">Filter</a> is defined, it can be used by all data context-aware components in a Solution by binding the Filter to a property of the component.</p>
+<p>A Filter is defined as a reference to table resource (<a href="../../dimensions.html">Dimension</a>, Fact, Setting, <a href="../../datastores.html">Data Store</a>, or a <a href="../../views.html">View</a>) and by a configuration describing how to read data from the table resource.
+<br></p>
+<blockquote>
+<p>Place the chosen filter in your solution by dragging and dropping it from the Toolbox in Workbook designer.</p>
+</blockquote>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/filtersinworkbook.png" alt="Filter"></p>
+<br>
+<blockquote>
+<p>Set the properties of the filter.</p>
+</blockquote>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/filtersinworkbookproperties.png" alt="Filter">
+<br></p>
+<blockquote>
+<p>Make sure that your filter will load when you open your Solution. Open Workbook Events and drag and drop an Action from the Available Actions list.</p>
+</blockquote>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/workbookaction.png" alt="Filter">
+<br></p>
+<blockquote>
+<p>Than set the <a href="../programmingmodel/interactionmodel/workbookevents.html">Events</a>, <a href="../programmingmodel/interactionmodel/workbookactions.html">Actions</a> and <a href="">Instructions</a> of the Filter.</p>
+</blockquote>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/filtersinworkbookevents.png" alt="Filter">
+<br></p>
+<h3 id="show-and-hide-filters">Show and Hide Filters</h3>
+<blockquote>
+<p>You can toggle the visibility of a filter in a Workbook on and off.</p>
+</blockquote>
+<p><strong>Option 1:</strong></p>
+<p>Specify the <strong>Is Hidden</strong> or <strong>Is Hidden Expression</strong> property in the Filter property pane.
+The <strong>Is Hidden Expression</strong> is a C# expression that must return true or false. If you specify an <strong>Is Hidden Expression</strong>, it will override the <strong>Is Hidden</strong> property.</p>
+<p>Both of these properties are evaluated only once and sets the initial visibility of the filter.</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/hideFilter2.png" alt="Filter">
+<br></p>
+<p><strong>Option 2:</strong></p>
+<p>Use the <strong>Execute Expression</strong> action of a filter to toggle its visibility on and off by using one of the following functions:</p>
+<pre><code>    Hide();
+    HideIf(boolean expression);
+    Show();
+    ShowIf(boolean expression);
+</code></pre>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/hideFilter3.png" alt="Filter"></p>
+<br>
+<h3 id="filter-headings">Filter headings</h3>
+<br>
+<p><strong>Option 1:</strong></p>
+<p>Use the Header or the Header Expression property in the Filter property pane.
+The Header property specifies the default heading of the filter.
+The Header Expression property is a C# expression that must return a string. If you specify a Header Expression, it will override the Header property.</p>
+<p>Both of these properties are evaluated on the server when the Workbook is loaded. This means that you cannot use any Workbook parameters in the Header Expression, and the Header Expression is evaluated only once.</p>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/filterheadings1.png" alt="fh"></p>
+<p>The most common use case for using the Header Expression is localization.<br>
+If you want to heading of the filter to display in the language of the user, you must use the Localize(...) function in the Header Expression.
+<br></p>
+<p><strong>Example:</strong></p>
+<p>Assuming that the text code &quot;TXT_Currency&quot; is a registered text code in the Localization system, the following expression will display the heading to the user in their language.</p>
+<pre><code>Localize(&quot;TXT_Currency&quot;);
+</code></pre>
+<br>
+<p><strong>Option 2:</strong></p>
+<p>Use the Execute Expression action of a filter to dynamically change the heading by using <strong>one</strong> of the following instructions:</p>
+<pre><code>SetHeader(text: string); // Changes the header
+SetHeaderSuffix(suffix: string); // Appends a suffix to the default header
+ResetHeader(); // Resets the header back to the default value
+</code></pre>
+<br>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/filterheadings2.png" alt="fh"></p>
+<br>
+<h3 id="see-also">See Also</h3>
+<ul>
+<li><a href="../../filters/index.html">More about Filters</a></li>
+<li><a href="../../tables/filters.html">Filtering Tables</a></li>
+<li><a href="../../worksheets/filters.html">Filtering Worksheets</a></li>
+</ul>
+<h3 id="videos">Videos</h3>
+<ul>
+<li><a href="../../../videos/filters.html">Filters</a></li>
+</ul>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

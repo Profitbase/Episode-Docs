@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Account mapping | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Account mapping | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../../public/main.js'
+    import { init } from './../../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../../index.html">
+            <img id="logo" class="svg" src="../../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+
+<p><strong>Applies to:</strong> <img src="https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png" alt="img"> Planner 5.2 or later.</p>
+<h1 id="overview">Overview</h1>
+<p>This is the page for defining the mapping between report lines and accounts.</p>
+<p>Select a report in the left margin in order to display and edit the associated report lines.</p>
+<p>If you need to create a new report or maintain the properties of an existing one, click the Add.. link in the upper right corner in the left margin. This takes you to <a href="reports.html">Reports</a></p>
+<p>When changes are done and saved, click the Publish button to publish these changes to relevant versioned solutions. Clicking Publish will reveal a pop-up in which versions can be selected.
+<br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/enduserhelp/images/AccountMapping.JPG" alt="img"></p>
+<h3 id="column-descriptions">Column Descriptions</h3>
+<ul>
+<li><strong>Report Line ID</strong><br>
+Readonly on this page, see <a href="report-lines.html">Report lines</a> for details.</li>
+<li><strong>Report Line</strong><br>
+Readonly on this page, see <a href="report-lines.html">Report lines</a> for details.</li>
+<li><strong>Formula</strong><br>
+Readonly on this page, see <a href="report-lines.html">Report lines</a> for details.</li>
+<li><strong>Sign Factor</strong><br>
+Readonly on this page, see <a href="report-lines.html">Report lines</a> for details.</li>
+<li><strong>Accounts (from-to, acc1, acc2..)</strong><br>
+Set this account mapping to determine which account to be aggregated to this reporting line. Expression can be intervals: Start and end accounts separated by dash (&quot;-&quot;) and single accounts separated by comma (&quot;,&quot;). For example 3000-31999,3200,3210,3500-3599.<br>
+As an alternative method, the account selector in the right margin may be used. Click the Edit link for the report line in question to reveal the accounts available for selection. Accounts already mapped are marked and the report line id that they are mapped to is show. Tick / un-tick accounts as appropriate and click the Save mapping button. Note that the selections made will overwrite the content in the &quot;Accounts (from-to, acc1, acc2, ..) cell.</li>
+<li><strong>Default Account ID</strong> (from Planner 5)<br>
+Default account. This is the default account which allows one account to represent the report line. <br></li>
+<li><strong>Edit</strong><br>
+Activates alternative mapping of mapping accounts to report line. The mapper is displayed in the right margin. See also explanation above.</li>
+</ul>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

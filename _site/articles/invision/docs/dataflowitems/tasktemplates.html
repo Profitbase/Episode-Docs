@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Tasks Templates | Profitbase Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Tasks Templates | Profitbase Docs ">
+      
+      <link rel="icon" href="../../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../../public/main.js'
+    import { init } from './../../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h3 id="tasks-templates">Tasks Templates</h3>
+
+<p>Task Templates contain Tasks being executed by Data Flow Items.
+<br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/DataFlowItemTasks%20(1).png" alt="pic">
+<br>
+InVision has a number of built-in Tasks that can be used out of the box by adding them to the Data Flow Item under the Task folder.
+<br>
+<br></p>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/DataFlowItemTasks%20(2).png" alt="pic"></p>
+<h3 id="generic-sql-tasks">Generic Sql Tasks</h3>
+<br>
+<h4 id="generic-sql-script">Generic Sql Script</h4>
+<p>Executes a T-Sql script which does not return a value.<br>
+<strong>Return value</strong> : None
+<br></p>
+<h4 id="create-random-object-name">Create Random Object Name</h4>
+<p>Generates a random name that can be used as a Table or View name.<br>
+<strong>Return value</strong> : Database Object Name : String
+<br></p>
+<h4 id="create-database-table">Create Database Table</h4>
+<p>Create a database table from the schema configuration and returns the name of the table. If the name is not specified, a random name will be used.<br>
+<strong>Return value</strong> : The name of the table that was created</p>
+<br>
+<h4 id="copy-database-table">Copy Database Table</h4>
+<p>Creates a table based on the schema of the souce table and returns the name of the table that was created. En kan spesifisere om innhold skal kopieres i tillegg til skjema.<br>
+If the name of the target table is not specified, or is set to <strong>Auto</strong>, a random name will be created.<br>
+<strong>Return value</strong> : The name of the table that was created</p>
+<br>
+<h4 id="update-database-table">Update Database Table</h4>
+<p>Updates a target table by merging in new and updates values from a source table. No rows will be deleted from the target table.<br>
+<strong>Return value</strong> : None
+<br></p>
+<h4 id="drop-database-table">Drop Database Table</h4>
+<p>Drops a table from the database.<br>
+<strong>Return value</strong> : The name of the table that was dropped
+<br></p>
+<h4 id="change-data-capture--is-enabled-for-database">Change Data Capture – Is Enabled for Database</h4>
+<p>Checks if Change Data Capture is enabled for the Database.<br>
+<strong>Return value</strong> : Boolean (true / false)
+<br></p>
+<h4 id="change-data-capture--enable-for-database">Change Data Capture – Enable for Database</h4>
+<p>Enables Change Data Capture for the database and returns a value indicating wether the operation was successful.<br>
+<strong>Return value</strong> : Boolean (true/false)
+<br></p>
+<h4 id="change-data-capture--disable-for-database">Change Data Capture – Disable for Database</h4>
+<p>Disables Change Data Capture for the database and returns a value indicating wether the operation was successful.<br>
+<strong>Return value</strong> : Boolean (true/false)
+<br></p>
+<h4 id="change-data-capture--is-enabled-for-table">Change Data Capture – Is Enabled for Table</h4>
+<p>Checks if Change Data Capture is enabled for the database table.<br>
+<strong>Return value</strong> : Boolean (true/false)
+<br></p>
+<h4 id="change-data-capture--enable-for-table">Change Data Capture – Enable for Table</h4>
+<p>Enables Change Data Capture for a database table and returns a value indicating wether the operation was successful.<br>
+<strong>Return value</strong> : Boolean(true/false)
+<br></p>
+<h4 id="change-data-capture--disable-for-table">Change Data Capture – Disable for Table</h4>
+<p>Disables Change Data Capture for a database table and returns a value indicating wether the operation was successful.<br>
+<strong>Return value</strong> : Boolean(true/false)
+<br></p>
+<h3 id="workflow-tasks">Workflow Tasks</h3>
+<br>
+<h4 id="start-new-iteration">Start New Iteration</h4>
+<p>Starts a new iteration of the specified Workflow. If the startup activity is an <a href="../workflow/processflow/activity.html">Action Activity</a> set up for automatic execution, the activity will run and execute any attached Data Flows. Subsequent Action Activities set up for automatic execution will run in turn.
+<br></p>
+<h4 id="archive-data-set-members">Archive Data Set Members</h4>
+<p>Archives all members of the Workflow <a href="../workflow/dataset.html">dataset</a>. The archived transactions are tagged with the version id of the curent workflow iteration.
+<br></p>
+<h4 id="set-flow-control-object-state">Set Flow Control Object State</h4>
+<p>Sets the <a href="../workflow/processflow/flowcontrolconfig.html">state</a> for a <a href="../workflow/flowcontrolobj.html">Flow Control Object</a> for a specific Data Context.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>Workflow Id</code></p>
+<blockquote>
+<p>The Workflow Id, can be obtained by right clicking the Workflow in the Solution Explorer and choosing &quot;Copy Id to Clipboard&quot;.</p>
+</blockquote>
+<p><code>Flow Control Object Id</code></p>
+<blockquote>
+<p>The Id of the Flow Control Objektet. The Id is available in the Flow Control Objekt editor.</p>
+</blockquote>
+<p><code>Data Context</code></p>
+<blockquote>
+<p>The Data Context is the mechanism that defines the transaction set being processed by a Data Flow, for example a Financial Simulation, Distributor or Spawner.</p>
+</blockquote>
+<p><code>StateId</code></p>
+<blockquote>
+<p>The Id of the state to set. The Id is available in the <a href="../workflow/processflow/flowcontrolconfig.html">Flow Control Object Setup</a> editor.</p>
+</blockquote>
+<br>
+<h3 id="rollover-tasks">Rollover Tasks</h3>
+<p><img src="https://profitbasedocs.blob.core.windows.net/images/DSIt.png" alt="pic">
+<br></p>
+<h4 id="resolve-rollover-delta">Resolve Rollover Delta</h4>
+<br>
+<p><strong>Parameters:</strong></p>
+<p><code>rolloverPeriodsTableName</code></p>
+<p><code>connectionString</code></p>
+<p><code>rolloverFromKeyValue</code></p>
+<p><code>rolloverToKeyValue</code></p>
+<p><code>keyColumnName</code><br>
+Optional</p>
+<p><code>periodNumColumnName</code><br>
+Optional</p>
+<br>
+<h4 id="store-grouprun-full-rollover">Store Group/Run Full Rollover</h4>
+<p>Runs the rollover for all Rollover enabled Data Stores and Settings that are descendants of the Store Group. The actions executed for each Data Store and Setting are determined based on Rollover configuration for each Data Store and Setting.
+<br></p>
+<p><strong>Parameters:</strong></p>
+<p><code>StoreGroupId</code></p>
+<blockquote>
+<p>The metadata id of the Store Group. You can use the @Object[…].Id directive as argument to the @[StoreGroupId] parameter to specify the id.</p>
+</blockquote>
+<p><code>Rollover delta</code></p>
+<blockquote>
+<p>The number of Time Frame periods to roll forward.</p>
+</blockquote>
+<p><code>Update Independent Stores</code></p>
+<blockquote>
+<p>Specifies whether to roll forward descendant Data Stores that does not inherit the Time Frame configuration of the Store Group.</p>
+</blockquote>
+<br>
+<h4 id="store-groupset-time-frame-store-reference-date">Store Group/Set Time Frame Store Reference Date</h4>
+<p>Sets the Store Reference Date of the Time Frame for Store Group.
+<br></p>
+<p><strong>Parameters:</strong></p>
+<p><code>StoreGroupId</code></p>
+<blockquote>
+<p>The metadata id of the Store Group. You can use the @Object[…].Id directive as argument to the @[StoreGroupId] parameter to specify the id.</p>
+</blockquote>
+<p><code>newDate</code></p>
+<blockquote>
+<p>The date to set as the new Store Reference Date. Expects a value of type System.DateTime.</p>
+</blockquote>
+<br>
+<h4 id="store-groupset-time-frame-source-reference-date">Store Group/Set Time Frame Source Reference Date</h4>
+<p>Sets the Source Reference Date of the Time Frame for Store Group.</p>
+<br>
+<p><strong>Parameters:</strong></p>
+<p><code>StoreGroupId</code><br>
+The metadata id of the Store Group. You can use the @Object[…].Id directive as argument to the @[StoreGroupId] parameter to specify the id.</p>
+<p><code>newDate</code><br>
+The date to set as the new Source Reference Date. Expects a value of type System.DateTime.</p>
+<br>
+<h4 id="store-grouprollover-time-frame">Store Group/Rollover Time Frame</h4>
+<p>Calculates the new Store and Source Reference Dates of the Time Frame and updates the values.
+<br></p>
+<p><strong>Parameters:</strong></p>
+<p><code>StoreGroupId</code></p>
+<blockquote>
+<p>The metadata id of the Store Group. You can use the @Object[…].Id directive as argument to the @[StoreGroupId] parameter to specify the id.</p>
+</blockquote>
+<p><code>rolloverDelta</code></p>
+<blockquote>
+<p>The number of Time Frame periods to roll forward.</p>
+</blockquote>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
