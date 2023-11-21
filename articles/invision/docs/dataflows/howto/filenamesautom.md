@@ -1,10 +1,5 @@
----
-title: "How To Automate PowerShell Script with Data Flow"
-metaKeys: "How To get All File Names From a File Storage"
-folderOnly: "false"
-pageIndex: 9
----
 
+## How To Automate PowerShell Script with Data Flow
 
 
 ### Link to the video

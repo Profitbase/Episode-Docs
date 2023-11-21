@@ -1,8 +1,3 @@
----
-title: "Built-in Data Flow Items"
-metaKeys: "Built-in Data Flow Items, Start New Workflow Iteration, Archive Workflow Data Set Members "
-pageIndex: 1
----
 
 InVision has several built-in Data Flow Items that can be used out of the box by adding them to the control flow of a Data Flow. When adding Data Flow Items to a Data Flow, you need to review the argument list for each item.  
 Many parameters have default values specified, but you need to make sure that these are the arguments you want to pass to the Data Flow Item when it's executed.

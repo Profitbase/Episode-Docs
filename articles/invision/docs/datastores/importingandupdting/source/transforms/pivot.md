@@ -1,10 +1,5 @@
----
-title: "Pivot"
-metaKeys: "PIVOT, UNPIVOT, change, table-valued, rotates, expression, turning, values, multiple columns, output, aggregation, opposite, operation, Grouping and Filtering, Time Dimension, Data Store, periodic format, source, alias, Aggregate Transform,  Join on, Match on, Include in result,  function"
-pageIndex: 3
----
 
-
+## Pivot
 
 You can use the PIVOT and UNPIVOT feature to change a table-valued expression into another table. PIVOT rotates a table-valued expression by turning the unique values from one column in the expression into multiple columns in the output and performs aggregations where they are required on any remaining column values that are wanted in the final output. UNPIVOT performs the opposite operation to PIVOT by rotating columns of a table-valued expression into column values.
 

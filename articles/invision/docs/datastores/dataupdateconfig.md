@@ -1,9 +1,5 @@
----
-title: "Data Update Configuration"
-metaKeys: "The Data Update Configuration, setting up columns, Data Store"
-folderOnly: "false"
-pageIndex: 5
----
+
+## Data Update Configuration
 
 ![img](https://profitbasedocs.blob.core.windows.net/images/dataupdate.png)
 

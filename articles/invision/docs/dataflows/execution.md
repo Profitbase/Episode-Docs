@@ -1,9 +1,3 @@
----
-title: "Execution"
-metaKeys: "Execution of Data Flows using an API, Getting an API Key,  Start Execution API, Get Status API, "
-folderOnly: "false"
-pageIndex: 3
----
 
 #### How to execute a Data Flow
 We have three ways of executing a Data Flow. You can use the **Data Flow Scheduler** to schedule executions. Data Flows can be also executed through an **HTTP API** or the **Command Line**. 

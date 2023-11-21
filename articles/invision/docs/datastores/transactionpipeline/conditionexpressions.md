@@ -1,9 +1,5 @@
----
-title: "Condition Expressions"
-metaKeys: "Condition Expressions, Ruleset, Boolean, Methods, Computation Source Column, Total, AccountID"
-pageIndex: 2
----
 
+## Condition Expressions
 
 Condition Expressions are specified in [Ruleset](celladapter/ruleset.md) tables and are used for dynamically evaluating the rows being processed to determine whether an output should be generated or not. The Condition Expression column must contain a C# expression that returns a Boolean value.
 <br/>

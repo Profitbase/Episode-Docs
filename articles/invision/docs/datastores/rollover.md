@@ -1,9 +1,5 @@
----
-title: "Rollover"
-metaKeys: "Rollover, transitioning, time, Frame Reference Date, Data Store, Setting, Measure Columns, Enabled, Data Warehouse, Is Cyclic, Update from Source, Reload, Calculations"
-folderOnly: "false"
-pageIndex: 9
----
+
+## Rollover
 
 Rollover is the process of transitioning forward in time from one period to another. Executing a Rollover usually involves moving data from one period over to another and updating the [Time Frame](timeframe.md) Reference Date. The process may also contain updating or refreshing data from source systems and performing calculations.
 

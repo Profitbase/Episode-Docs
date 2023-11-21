@@ -1,9 +1,5 @@
----
-title: "Global Data Context"
-metaKeys: "Workbook variables, Slicer Repository Bindings, Data Context Scope, Value, Data Context Subjects, Value Binding, Slicer Repository Binding, Scripting "
-pageIndex: 2
----
 
+## Global Data Context
 
 ![img](https://profitbasedocs.blob.core.windows.net/images/Dcont.png)
 

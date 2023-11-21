@@ -1,10 +1,5 @@
----
-title: "Aggregate"
-metaKeys: "From, Specifies, source, column, aggregation, function, To, dimension, Match on, Specifies the column of the dimension to match against the (From) source column, Aggregate To, Include in result, value, true, alias, Transform"
-pageIndex: 1
----
 
-
+## Aggregate
 
  **Enables aggregating one or more columns from the source along a dimension.**
 

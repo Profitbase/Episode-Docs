@@ -1,9 +1,4 @@
----
-title: "Hotkeys"
-metaKeys: "Hotkeys, wcag, keyboard shortcuts, accessibility, hotkeys"
-pageIndex: 4
----
-
+### “hotkey” function
 
 InVison is equipped with a “hotkey” function. You can assign shortcut key combinations to either execute a website function or set focus to a website element. 
 

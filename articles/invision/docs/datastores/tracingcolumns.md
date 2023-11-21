@@ -1,9 +1,5 @@
----
-title: "Tracing Columns"
-metaKeys: "Tracing Columns, Transaction Pipeline, target, Data Stores, Worksheets, Business, Module, Data, Flow, SYS_TransGeneratorID, SYS_OriginID, SYS_OriginRowIdentity, SYS_OriginColumnID, SYS_DataSetID, Cell Adapter, @Object[…].DataSet "
-folderOnly: "false"
-pageIndex: 13
----
+
+## Tracing Columns
 
 Tracing Columns must exist in all [Transaction Pipeline](transactionpipeline.md) target [Data Stores](../datastores.md). Data Stores which are used for user input through [Worksheets](../worksheets.md) does normally not have Tracing Columns, because the system does not use then in that context.
 

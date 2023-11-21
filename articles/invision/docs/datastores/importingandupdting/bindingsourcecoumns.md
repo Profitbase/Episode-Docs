@@ -1,9 +1,5 @@
----
-title: "Binding Source Columns to DS Columns"
-metaKeys: "Binding source columns to Data Store columns, connection between, source, target, BindingType, Relationship, expression, ColName,  "
-pageIndex: 1
----
 
+## Binding Source Columns to DS Columns
 
 
 Source columns are bound to [Data Store](../../datastores.md) columns by drag and drop them onto an existing Data Store column, an empty area in the Data Store column list or to the schema header. The designer will add a connection between the source and target column, which allows you to specify properties for the binding. This binding defines how data is imported from the source to the target column.

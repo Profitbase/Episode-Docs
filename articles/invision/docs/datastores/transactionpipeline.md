@@ -1,9 +1,5 @@
----
-title: "Transaction Pipeline"
-metaKeys: "Transaction Pipeline, target, Data Stores, Tracing Columns, spawn"
-folderOnly: "false"
-pageIndex: 14
----
+
+## Transaction Pipeline
 
 The Transaction Pipeline is a mechanism that reads a data set from a [Data Store](../datastores.md) and produces an output based on a set of business rules. You would typically run a Transaction Pipeline process if you need to periodize or distribute data from one or more columns, spawn transactions based on a set of business rules or just assign values to rows when exporting data to a target.
 

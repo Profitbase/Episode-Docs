@@ -1,9 +1,5 @@
----
-title: "Importing and Updating Data from Data Sources"
-metaKeys: "Importing, updating data,Flows, sources, star schema, SQL scripts, InVision, configuration, pivot, unpivot, aggregate, Core Set"
-folderOnly: "false"
-pageIndex: 7
----
+
+## Importing and Updating Data from Data Sources
 
 Importing and updating data to a [Data Store](../datastores.md) can be set up as part of the star schema configuration, or you can write custom SQL scripts to do the job. Updating data to a Data Store from within InVision is usually done by executing one or more [Data Flows](../dataflows/index.md) that performs the update logic defined by the star schema, or runs your custom SQL script. 
 

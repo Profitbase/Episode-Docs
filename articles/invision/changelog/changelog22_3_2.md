@@ -1,8 +1,8 @@
----
-title: "Change Log 2022.3 pt.2"
-metaKeys: ""
-pageIndex: 7
----
+
+
+# InVision 2022.3 change log - part 2
+
+<br/>
 
 ## New Features & fixes
 <br/>
@@ -256,6 +256,7 @@ https://support.profitbase.com/platform/invision-beta/-/issues/536
 
 #### See Also
 
+- [Change Log 2023.6](changelog23_7.md)
 - [Change Log 2023.6](changelog23_6.md)
 - [Change Log 2023.5](changelog23_5.md)
 - [Change Log 2023.4](changelog23_4.md)

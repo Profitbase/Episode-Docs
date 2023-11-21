@@ -1,8 +1,3 @@
----
-title: "Global Parameters"
-metaKeys: "Global Parameters, Define, Passing arguments using Global Parameters, Dataflow is executed from a Workbook, Dataflow Items "
-pageIndex: 1
----
 
 
 ### Global Parameters

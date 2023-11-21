@@ -1,11 +1,3 @@
----
-title: "How To Setup High Contrast"
-metaKeys: "How To Setup High Contrast"
-folderOnly: "false"
-pageIndex: 1
----
-
-
 
 ### Link to the video
 

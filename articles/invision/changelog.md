@@ -10,6 +10,7 @@ pageIndex: 3
 
 Learn about the cool new features, updates, and bug fixes.
 
+- [Change Log 2023.6](changelog/changelog23_7.md)
 - [Change Log 2023.6](changelog/changelog23_6.md)
 - [Change Log 2023.5](changelog/changelog23_5.md)
 - [Change Log 2023.3](changelog/changelog23_3.md)

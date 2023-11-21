@@ -1,9 +1,5 @@
----
-title: "Source"
-metaKeys: "Data Store, sources, Facts, Dimensions, Settings, Views, UsageOption, UNION, select, combining, JOIN"
-folderOnly: "false"
-pageIndex: 3
----
+
+## Source
 
 A Data Store can have multiple data sources. Valid data sources are Facts, Dimensions, Settings, Views and other Data Stores. By default, all data sources except dimensions are considered fact sources unless specified otherwise by the **UsageOption** property of the data source.
 

@@ -1,8 +1,3 @@
----
-title: "HTTP API"
-metaKeys: "Scheduled execution, parameterized, Data Flows, scheduler, command line,  SQL Server Agent, HTTP API, Authentication, get, post, put, Key, url, error response, success, Define API key in designer, API Management menu item "
-pageIndex: 2
----
 
 
 ### Execution of Data Flows using an API

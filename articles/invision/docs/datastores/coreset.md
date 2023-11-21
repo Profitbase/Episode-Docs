@@ -1,9 +1,5 @@
----
-title: "Core Set"
-metaKeys: "Core Set, content, dimensions, fact, members,  Cartesian, "
-folderOnly: "false"
-pageIndex: 3
----
+
+## Core Set
 
 The Core Set feature is used for generating rows based on the content of dimensions or fact type data sources specified as Core Set members, which does not already exist in the [Data Store](../datastores.md). The Core Set basically defines which rows should always be present in the [Data Store](../datastores.md), regardless of whether it exists in the fact source(s) or not. 
 

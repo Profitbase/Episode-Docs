@@ -1,9 +1,5 @@
----
-title: "Time Frame Measure Columns"
-metaKeys: "Time Frame Measure Columns, metadata, date"
-folderOnly: "false"
-pageIndex: 12
----
+
+## Time Frame Measure Columns
 
 Time Frame Measure Columns are special numeric columns with date/time metadata, which in conjunction with the [Time Frame](timeframe.md), associates the values of a column with an actual date/time.
 

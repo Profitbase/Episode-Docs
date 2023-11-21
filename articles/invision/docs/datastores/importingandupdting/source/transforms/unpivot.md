@@ -1,8 +1,5 @@
----
-title: "Unpivot"
-metaKeys: "UNPIVOT, PIVOT, rotating columns, Rows,  From, To, Scope, extends, Amount-Transdate, ProductID, "
-pageIndex: 4
----
+
+## Unpivot
 
 UNPIVOT performs the opposite operation to PIVOT by rotating columns of a table-valued expression into column values.
 

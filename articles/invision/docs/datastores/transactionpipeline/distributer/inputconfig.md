@@ -1,8 +1,5 @@
----
-title: "Input Configuration"
-metaKeys: "Input Configuration, column mapping, determining, distributed, Computation Source Columns, unpivot, Time Frame Measure, Function,  Distribution, Forecast, Distributer, no commit, Key Fallback, SQL, "
-pageIndex: 1
----
+
+## Input Configuration 
 
 <br/>
 

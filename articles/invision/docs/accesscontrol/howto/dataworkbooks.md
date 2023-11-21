@@ -1,11 +1,3 @@
----
-title: "How To Manage Access to Data and Workbooks"
-metaKeys: "How To Manage Access to Data and Workbooks"
-folderOnly: "false"
-pageIndex: 4
----
-
-
 
 ### Link to the video
 

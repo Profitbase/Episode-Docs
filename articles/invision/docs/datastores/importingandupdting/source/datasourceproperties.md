@@ -1,10 +1,5 @@
----
-title: "Data Source Properties"
-metaKeys: "Data Source Properties Key Column dimensions, Time, @Context.ObjectAlias,  keyword, Filter, SQL, WHERE, Worksheet, UsageOptions, Use Left Outer Join, Ignore Data, Import Raw, No Sum, Group by, CoreSet, "
-pageIndex: 1
----
 
-### Properties:
+### Data Source Properties:
 <br/>
 
 ``Key Column``  

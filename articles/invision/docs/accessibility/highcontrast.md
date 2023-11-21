@@ -1,8 +1,3 @@
----
-title: "High contrast"
-metaKeys: "High contrast mode, wcag, keyboard shortcuts, accessibility, hotkeys"
-pageIndex: 3
----
 
 ### High Contrast Theme
 

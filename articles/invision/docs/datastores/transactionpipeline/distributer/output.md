@@ -1,9 +1,5 @@
----
-title: "Output"
-metaKeys: "Target, Data Store, table, output, Value Column, Trans Date Column,Source Name, Column, Routed Values, Ruleset"
-pageIndex: 3
----
 
+## Output
 
 The Output specifies the data and output format of the Distributer component. For each source row, the Distributer will create one output row for every Ruleset factor from a distribution key passing the Relationship filter.
 

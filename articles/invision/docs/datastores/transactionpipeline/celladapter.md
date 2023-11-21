@@ -1,9 +1,5 @@
----
-title: "Cell Adapter"
-metaKeys: "Cell Adapter, Distributer, Spawner, Ruleset"
-folderOnly: "false"
-pageIndex: 1
----
+
+## Cell Adapter
 
 The Cell Adapter component assigns values from the Cell Adapter [Ruleset](celladapter/ruleset.md) table to each row matching the filter criteria of the row(s) being processed in the pipeline. 
 

@@ -1,10 +1,5 @@
----
-title: "How To Create Schema and Source Mapping"
-metaKeys: "How To Create Schema and Source Mapping"
-folderOnly: "false"
-pageIndex: 1
----
 
+## How To Create Schema and Source Mapping
 
 ### Link to the video
 

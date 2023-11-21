@@ -1,9 +1,5 @@
----
-title: "Time Frame"
-metaKeys: "enable, Periodic Input, Rollover, Time Frame"
-folderOnly: "false"
-pageIndex: 11
----
+
+## Time Frame
 
 To enable features such as [Periodic Input](periodicimput.md) and [Rollover](rollover.md), you need to set up the [Time Frame](timeframe.md) configuration for a [Data Store](../datastores.md). The Time Frame is the feature that all date-related information for Data Stores and Settings are derived from, which makes it a very important part of most InVision solutions.
 

@@ -1,10 +1,3 @@
----
-title: "How To Create Identities and Access Groups"
-metaKeys: "How To Create Identities and Access Groups"
-folderOnly: "false"
-pageIndex: 1
----
-
 
 ### Link to the video
 

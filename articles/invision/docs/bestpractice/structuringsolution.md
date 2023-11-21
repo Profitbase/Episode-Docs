@@ -1,10 +1,3 @@
----
-title: "Structuring a Solution"
-metaKeys: "Structuring a Solution, Namespace, Basic guidelines,  "
-pageIndex: 1
----
-
-
 
 ### Basic guidelines for structuring solutions
 

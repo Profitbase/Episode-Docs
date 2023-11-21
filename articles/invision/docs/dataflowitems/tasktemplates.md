@@ -1,8 +1,3 @@
----
-title: "Task Templates"
-metaKeys: "Task Templates, Generic Sql Tasks, Workflow Tasks, Rollover Tasks, Database Table, create, copy, drop, update, object, capture,  "
-pageIndex: 3
----
 
 ### Tasks Templates
 

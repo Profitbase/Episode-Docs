@@ -1,9 +1,5 @@
----
-title: "How To Set Up Time Frame"
-metaKeys: "How To Set Up Time Frame"
-folderOnly: "false"
-pageIndex: 3
----
+
+## How To Set Up Time Frame
 
 ### Link to the video
 

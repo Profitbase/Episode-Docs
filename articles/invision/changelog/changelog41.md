@@ -1,9 +1,7 @@
----
-title: "Change Log 4.1"
-metaKeys: ""
-pageIndex: 14
----
 
+# InVision 4.1 change log
+
+<br/>
 ## New features
 
 #### User management and Permissions Workbook components
@@ -201,6 +199,7 @@ The Form Schema Label had a default system style applied that was hard to overri
 
 #### See Also
 
+- [Change Log 2023.6](changelog23_7.md)
 - [Change Log 2023.6](changelog23_6.md)
 - [Change Log 2023.5](changelog23_5.md)
 - [Change Log 2023.4](changelog23_4.md)

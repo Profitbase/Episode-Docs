@@ -1,8 +1,7 @@
----
-title: "Change Log 2023.2"
-metaKeys: "2023.2 of InVision, deploy or upgrade Packages, Dataflow Completed event, installing and upgrading Packages,  PowerShell scripts from Web Functions, File Storage, Dataflows and Azure Service Bus, extensions, Kubernetes, Work Process Version deletion, deployment, dimension hierarchies, displaying TreeView in Form Schema, UploadCompleted,  "
-pageIndex: 3
----
+
+# InVision 2023.2 change log
+
+<br/>
 
 This is a minor release with a few improvements to the Package upgrade experience.
 
@@ -32,6 +31,8 @@ When enabled, the status bar will display the sum, count, and average of the sel
 
 #### See Also
 
+- [Change Log 2023.6](changelog23_7.md)
+- [Change Log 2023.6](changelog23_7.md)
 - [Change Log 2023.6](changelog23_6.md)
 - [Change Log 2023.5](changelog23_5.md)
 - [Change Log 2023.4](changelog23_4.md)

@@ -1,8 +1,7 @@
----
-title: "Bla bla bla"
-metaKeys: ""
-pageIndex: 10
----
+
+# InVision 2022.1 change log
+
+<br/>
 
 ## New Features
 
@@ -160,6 +159,7 @@ pageIndex: 10
 
 #### See Also
 
+- [Change Log 2023.6](changelog23_7.md)
 - [Change Log 2023.6](changelog23_6.md)
 - [Change Log 2023.5](changelog23_5.md)
 - [Change Log 2023.4](changelog23_4.md)

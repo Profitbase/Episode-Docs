@@ -1,8 +1,7 @@
----
-title: "Change Log 2022.3 pt.1"
-metaKeys: ""
-pageIndex: 8
----
+
+# InVision 2022.3 change log - part 1
+
+<br/>
 
 **2022.3** brings many new features and enhancements to our low-code platform. A major addition is the ability to define extensions for Packages. That enables Profitbase and partners to develop and distribute add-ons to products. You can also upgrade Packages in multiple Solutions in one go, making it much quicker to upgrade customers to new version of Planner, Risk and Consolidation.
 <br/>
@@ -168,6 +167,7 @@ Fixed bug where file dialog appears behind the dialog window.
 
 #### See Also
 
+- [Change Log 2023.6](changelog23_7.md)
 - [Change Log 2023.6](changelog23_6.md)
 - [Change Log 2023.5](changelog23_5.md)
 - [Change Log 2023.4](changelog23_4.md)

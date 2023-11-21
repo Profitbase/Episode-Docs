@@ -1,10 +1,5 @@
----
-title: "How to Automate Import of Data to Dimension"
-metaKeys: "Automating Import of Data to Dimension"
-folderOnly: "false"
-pageIndex: 7
----
 
+## How to Automate Import of Data to Dimension
 
 ### Link to the video
 

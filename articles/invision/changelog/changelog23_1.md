@@ -1,8 +1,8 @@
----
-title: "Change Log 2023.1"
-metaKeys: "2022.5 of InVision, deploy or upgrade Packages, Dataflow Completed event, installing and upgrading Packages,  PowerShell scripts from Web Functions, File Storage, Dataflows and Azure Service Bus, extensions, Kubernetes, Work Process Version deletion, deployment, dimension hierarchies, displaying TreeView in Form Schema, UploadCompleted,  "
-pageIndex: 4
----
+
+
+# InVision 2023.1 change log
+
+<br/>
 
 This release is a small service release that adds a few improvements to Workbooks, Forms, Web Functions and Table Views. We also move the platform from .NET 6 to .NET 7, which results in better performance in some key area.
 
@@ -76,6 +76,7 @@ If you want to display a dimension in a Form, you can now choose between 3 optio
 
 #### See Also
 
+- [Change Log 2023.6](changelog23_7.md)
 - [Change Log 2023.6](changelog23_6.md)
 - [Change Log 2023.5](changelog23_5.md)
 - [Change Log 2023.4](changelog23_4.md)
