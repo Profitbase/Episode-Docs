@@ -1,8 +1,5 @@
----
-title: "Ruleset"
-metaKeys: "Spawner, Ruleset, context, Distributer,  Custom Calculation Expression, nvarchar, Condition Expression Column"
-pageIndex: 2
----
+
+## Ruleset
 
 The Ruleset table for the Spawner component contains the business rules used for spawning rows from the current source row context (data source or Distributer result set). As an example, the contents of the Ruleset table may look like this:
 <br/>

@@ -1,10 +1,4 @@
----
-title: "Data Context Scope"
-metaKeys: "Data Context Scope, Data Context Delegation, Storages, Use Data Context variables as Data Flow Activity arguments, Filters"
-pageIndex: 1
----
-
-
+## Data Context Scope
 
 In order for the Data Context to be applied during processing, the Data Context Scope must be set up for the Data Flow running the job. The Data Context Scope is set up from the Properties window of a Data Flow component in a Workbook. 
 

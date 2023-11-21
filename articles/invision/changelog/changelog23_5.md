@@ -1,8 +1,8 @@
----
-title: "Change Log 2023.5"
-metaKeys: "2023.4 change log"
-pageIndex: 1
----
+
+# InVision 2023.5 change log
+
+<br/>
+
 
 2023.5 includes a range of improvements and new features, ranging from UI to infrastructure enhancements.
 
@@ -120,6 +120,7 @@ We fixed an issue with Dataflows that caused Dataflows to not complete execution
 
 #### See Also
 
+- [Change Log 2023.6](changelog23_7.md)
 - [Change Log 2023.6](changelog23_6.md)
 - [Change Log 2023.4](changelog23_4.md)
 - [Change Log 2023.3](changelog23_3.md)

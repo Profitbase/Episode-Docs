@@ -1,12 +1,11 @@
----
-title: "Change Log 5.0"
-metaKeys: ""
-pageIndex: 13
----
+
+
+# InVision 5.0 change log
+
+<br/>
 
 ## New Features
 
-<br/>
 <br/>
 
 #### Work Process and Versioning
@@ -143,6 +142,7 @@ Previously, JavaScripts defined in one Solution would be loaded to Workbooks in 
 
 #### See Also
 
+- [Change Log 2023.6](changelog23_7.md)
 - [Change Log 2023.6](changelog23_6.md)
 - [Change Log 2023.5](changelog23_5.md)
 - [Change Log 2023.4](changelog23_4.md)

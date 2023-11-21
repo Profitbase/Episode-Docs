@@ -1,9 +1,3 @@
----
-title: "Docs"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
 
 ### Hello learner!
 

@@ -1,11 +1,3 @@
----
-title: "How To Setup Hotkey"
-metaKeys: "How to Setup Hotkey"
-folderOnly: "false"
-pageIndex: 1
----
-
-
 
 ### Link to the video
 

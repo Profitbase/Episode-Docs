@@ -1,11 +1,5 @@
----
-title: "Data Context"
-metaKeys: "Data Context, transaction set, Data Flow, Financial Simulation, Distributor, Spawner, Stores,Context, InVision, Scope"
-folderOnly: "false"
-pageIndex: 2
----
 
-  
+## Data Context
 
 ![img](https://profitbasedocs.blob.core.windows.net/images/Dcont.png)
 

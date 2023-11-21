@@ -1,9 +1,5 @@
----
-title: "How To Execute from Workbook with Arguments"
-metaKeys: "How To Execute from Workbook with arguments"
-folderOnly: "false"
-pageIndex: 2
----
+
+## How To Execute from Workbook with Arguments
 
 ### Link to the video
 

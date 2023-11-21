@@ -1,8 +1,3 @@
----
-title: "Scheduling Execution"
-metaKeys: "Scheduled execution, parameterized, Data Flows, scheduler, command line,  SQL Server Agent, "
-pageIndex: 3
----
 
 ### Scheduled Execution
 

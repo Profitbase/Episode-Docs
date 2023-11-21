@@ -1,8 +1,3 @@
----
-title: "Class Libraries"
-metaKeys: "Class Libraries, Creating , ScriptMethodAttribute, Developing and deploying Class Libraries using Visual Studio, Debugging code using Visual Studio, "
-pageIndex: 2
----
 
 Class Libraries contains the functions (business logic) being executed by Data Flow Items. 
 

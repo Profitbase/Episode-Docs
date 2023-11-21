@@ -1,8 +1,7 @@
----
-title: "Change Log 2023.4"
-metaKeys: "2023.4 change log"
-pageIndex: 1
----
+
+# InVision 2023.4 change log
+
+<br/>
 
 2023.4 adds numerous new features for developers and end users. Continue reading to get the highlights.
 
@@ -210,6 +209,7 @@ By pressing “Insert template”, you get a default script with template tags t
 
 #### See Also
 
+- [Change Log 2023.6](changelog23_7.md)
 - [Change Log 2023.6](changelog23_6.md)
 - [Change Log 2023.5](changelog23_5.md)
 - [Change Log 2023.3](changelog23_3.md)

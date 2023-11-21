@@ -1,7 +1,4 @@
 
-
-INDEX
-
 ### Product directory
 
 Profitbase products for Power BI.

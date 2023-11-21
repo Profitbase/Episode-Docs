@@ -1,8 +1,3 @@
----
-title: "Aria-labelledby"
-metaKeys: "aria-labelledby, wcag, keyboard shortcuts, accessibility, hotkeys"
-pageIndex: 2
----
 
 ### Aria-labelledby
 

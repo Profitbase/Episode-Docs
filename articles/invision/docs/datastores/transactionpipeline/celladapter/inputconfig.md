@@ -1,10 +1,5 @@
----
-title: "Input Configuration"
-metaKeys: "Input Configuration, Relationship, Computation Source Columns, Cell, Adapter, Ruleset, data-value, Time Frame Measure Columns, filtering, TypeId,  No Commit, "
-pageIndex: 1
----
 
-
+## Input Configuration
 
 ### Relationship
 

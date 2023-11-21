@@ -1,9 +1,5 @@
----
-title: "Output"
-metaKeys: "Output, data, format, Cell Adapter, component, row, Ruleset, Properties, Target, Value Column, Trans Date, Computation, Source Name, Additional, mapping, Routed"
-pageIndex: 3
----
 
+## Output
 
 The Output specifies the data and output format of the Cell Adapter component. The Cell Adapter component will create one output row for each matched Ruleset row.
 <br/>

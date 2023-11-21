@@ -1,9 +1,5 @@
----
-title: "How To Set Up Rollover Calculations"
-metaKeys: "How To Set Up Rollover Calculations"
-folderOnly: "false"
-pageIndex: 4
----
+
+## How To Set Up Rollover Calculations
 
 ### Link to the video
 

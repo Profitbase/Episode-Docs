@@ -1,9 +1,5 @@
----
-title: "Output"
-metaKeys: "Output, Properties, Target, Value Column, Trans Date, Source Name, Additional, Routed Values "
-pageIndex: 3
----
 
+## Output
 
 The Output specifies the data and output format of the Spawner component. For each row in scope (either source row or rows produced by the Distributer), the Spawner will generate rows for every Ruleset entry passing the Relationship and Condition Expression filter.
 <br/>

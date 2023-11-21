@@ -1,9 +1,5 @@
----
-title: "How To Register and Execute Guest Executable"
-metaKeys: "How To Register and Execute Guest Executable"
-folderOnly: "false"
-pageIndex: 5
----
+
+## How To Register and Execute Guest Executable
 
 ### Link to the video
 

@@ -1,4 +1,4 @@
-#### Distributer
+## Distributer
 
 The Distributer component distributes the value of one or more columns across a date range based on a distribution key by creating one transaction for each date in the range.  
 For example, by applying the Distributer to a year total column using a 12-month distribution key, the Distributer will create 12 transactions by distributing the year total value across 12 periods according to the distribution key factors.  

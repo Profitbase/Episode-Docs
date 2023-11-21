@@ -1,8 +1,5 @@
----
-title: "Input Configuration"
-metaKeys: "Input Configuration, Relationship, Ruleset, Computation Source Column(s), Additional columns, Output"
-pageIndex: 1
----
+
+## Input Configuration
 
 <br/>
 

@@ -1,10 +1,3 @@
----
-title: "How To Manage Access to Workbooks"
-metaKeys: "How to Manage Access to Workbooks"
-folderOnly: "false"
-pageIndex: 3
----
-
 
 ### Link to the video
 

@@ -1,9 +1,5 @@
----
-title: "How To Parameterize the execution of Data Flows"
-metaKeys: "How To Parameterize the execution of Data Flows"
-folderOnly: "false"
-pageIndex: 1
----
+
+## How To Parameterize the execution of Data Flows
 
 ### Link to the docs
 

@@ -1,10 +1,5 @@
----
-title: "Parameterization"
-metaKeys: "Parameterization "
-folderOnly: "false"
-pageIndex: 4
----
 
+## Parameterization
 
 Parameterization of Data Flows enables you to provide input to the steps and control flow logic during execution.
 <br/>

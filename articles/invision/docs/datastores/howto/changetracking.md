@@ -1,9 +1,5 @@
----
-title: "How To Change Tracking"
-metaKeys: "How To Change Tracking"
-folderOnly: "false"
-pageIndex: 2
----
+
+## How To Change Tracking
 
 ### Link to the video
 

@@ -1,9 +1,3 @@
----
-title: "Data Permissions"
-metaKeys: "Data Permission, Default Identity, InVision 5., Access Control"
-folderOnly: "false"
-pageIndex: 5
----
 
 ### Data Permissions 
 

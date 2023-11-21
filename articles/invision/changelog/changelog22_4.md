@@ -1,8 +1,8 @@
----
-title: "Change Log 2022.4"
-metaKeys: ""
-pageIndex: 6
----
+
+
+# InVision 2022.4 change log
+
+<br/>
 
 Here is our 2022.4 release with added capabilities to Dimensions, File Storage, TableView, and Package Management. Additionally, we’ve fixed many issues and added a brand new Stepper component.
 
@@ -147,6 +147,7 @@ This feature enables users to enter a search term on hierarchical filters to fin
 
 #### See Also
 
+- [Change Log 2023.6](changelog23_7.md)
 - [Change Log 2023.6](changelog23_6.md)
 - [Change Log 2023.5](changelog23_5.md)
 - [Change Log 2023.4](changelog23_4.md)

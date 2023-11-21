@@ -1,9 +1,5 @@
----
-title: "Creating Schema"
-metaKeys: "Creating Schema"
-folderOnly: "false"
-pageIndex: 4
----
+
+## Creating Schema
 
 ![img](https://profitbasedocs.blob.core.windows.net/images/datastores.png)
 

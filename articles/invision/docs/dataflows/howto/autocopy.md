@@ -1,10 +1,5 @@
----
-title: "How to Automate Import of the Primary Dimension"
-metaKeys: "Automating Import of the Primary Dimension"
-folderOnly: "false"
-pageIndex: 6
----
 
+## How to Automate Import of the Primary Dimension
 
 ### Link to the video
 

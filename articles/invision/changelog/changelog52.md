@@ -1,8 +1,7 @@
----
-title: "Change Log 5.2"
-metaKeys: ""
-pageIndex: 11
----
+
+# InVision 5.2 change log
+
+<br/>
 
 ## New Features
 
@@ -79,6 +78,7 @@ When cloning Solutions, you can now specify how permissions are copied from the 
 
 #### See Also
 
+- [Change Log 2023.6](changelog23_7.md)
 - [Change Log 2023.6](changelog23_6.md)
 - [Change Log 2023.5](changelog23_5.md)
 - [Change Log 2023.4](changelog23_4.md)

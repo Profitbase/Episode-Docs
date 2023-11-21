@@ -1,9 +1,5 @@
----
-title: "How To Execute Using dfcmdutil Command Line Tool"
-metaKeys: "How To Execute Using dfcmdutil Command Line Tool"
-folderOnly: "false"
-pageIndex: 3
----
+
+## How To Execute Using dfcmdutil Command Line Tool
 
 ### Link to the video
 

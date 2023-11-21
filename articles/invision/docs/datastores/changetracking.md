@@ -1,9 +1,5 @@
----
-title: "Change Tracking"
-metaKeys: "Change Tracking, logs, changes, identities, editing, data, Worksheets, Data Flows, SQL Server, Data Store, Group, Properties tab, Track, True, database, new value,  Insert, Update, Delete"
-folderOnly: "false"
-pageIndex: 2
----
+
+## Change Tracking
 
 Change Tracking logs changes made by identities when editing data in [Worksheets](../worksheets.md). [Change Tracking](howto/changetracking.md) does not record changes made by system processes or [Data Flows](../dataflows/index.md). If you need to log all changes made by Data Flows or scripts, you can use the Change Data Capture feature in SQL Server.
 

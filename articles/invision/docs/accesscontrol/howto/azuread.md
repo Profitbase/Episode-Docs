@@ -1,9 +1,3 @@
----
-title: "How To Create and Manage Azure AD Identities and Access Groups"
-metaKeys: "How To Create and Manage Azure AD Identities and Access Groups"
-folderOnly: "false"
-pageIndex: 2
----
 
 ### Link to the video
 

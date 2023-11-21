@@ -1,10 +1,3 @@
----
-title: "HTTP API"
-metaKeys: "HTTP API, Authentication, get, post, put, Key, url, error response, success, Scheduled execution, parameterized, Data Flows, scheduler, command line,  SQL Server Agent, Identities"
-folderOnly: "false"
-pageIndex: 6
----
-
 
 ### Manage Access Control using an API
 

@@ -1,5 +1,8 @@
 
-![](https://profitbasedocs.blob.core.windows.net/imagestitlesites/Docu.png)
+
+### Product directory
+
+Explore guides and articles by product.
 
 <div class="flex-container">
 
@@ -8,9 +11,9 @@
             <img src="https://profitbasedocs.blob.core.windows.net/imagestitlesites/powerBIheader2.png" alt="PowerBI">
         </a> </br>
         <a href="articles/PowerBI/power-bi.md" class="custom-link">
-            PowerBI Custom Visuals
+            Power BI Custom Visuals
         </a>
-    <p>Advanced Reporting, Simplified with Profitbase and PowerBI.</p>
+    <p>Advanced Reporting, Simplified with Profitbase and Power BI.</p>
             <a href="articles/PowerBI/power-bi.md" class="custom-link-mini">
             Read more...
         </a>

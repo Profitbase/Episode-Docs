@@ -1,8 +1,8 @@
----
-title: "Change Log 2023.3"
-metaKeys: "2023.3 change log"
-pageIndex: 2
----
+
+
+# InVision 2023.3 change log
+
+<br/>
 
 InVision 2023.3 introduces a diffing tool to view and compare all changes to any Solution object + a few other minor improvements.
 
@@ -40,6 +40,7 @@ console.log("100 + 200 is " + result);
 
 #### See Also
 
+- [Change Log 2023.6](changelog23_7.md)
 - [Change Log 2023.6](changelog23_6.md)
 - [Change Log 2023.5](changelog23_5.md)
 - [Change Log 2023.4](changelog23_4.md)

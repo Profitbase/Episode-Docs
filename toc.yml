@@ -1,6 +1,5 @@
-
   items:
-  - name: PowerBI
+  - name: Power BI
     href: articles/PowerBI/toc.yml    
   - name: Budgeting and forecasting
     href: articles/planner/toc.yml

@@ -1,10 +1,5 @@
----
-title: "How to Check if Dataflow Succeeded using @Event.Data.Success condition"
-metaKeys: "Automating Import of Data to Dimension, @Event.Data.Success condition"
-folderOnly: "false"
-pageIndex: 8
----
 
+## How to Check if Dataflow Succeeded using @Event.Data.Success condition
 
 ### Link to the video
 

@@ -1,8 +1,8 @@
----
-title: "Change Log 2022.5"
-metaKeys: "2022.5 of InVision, deploy or upgrade Packages, Dataflow Completed event, installing and upgrading Packages,  PowerShell scripts from Web Functions, File Storage, Dataflows and Azure Service Bus, extensions, Kubernetes, Work Process Version deletion, deployment, dimension hierarchies, displaying TreeView in Form Schema, UploadCompleted,  "
-pageIndex: 5
----
+
+
+# InVision 2022.5 change log
+
+<br/>
 
 We’ve just released version 2022.5 of InVision, our low-code platform to build business apps. In addition to a number of bug fixes, the most important feature of this version is the ability to deploy or upgrade Packages created on older versions of the platform. That will enable us to release new versions of the platform at a much higher cadence in the future, so expect a new version to drop about every 2 weeks starting January 2023.
 
@@ -43,6 +43,7 @@ We’ve just released version 2022.5 of InVision, our low-code platform to build
 
 #### See Also
 
+- [Change Log 2023.6](changelog23_7.md)
 - [Change Log 2023.6](changelog23_6.md)
 - [Change Log 2023.5](changelog23_5.md)
 - [Change Log 2023.4](changelog23_4.md)

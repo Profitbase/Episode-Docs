@@ -1,9 +1,3 @@
----
-title: "Workbook Permissions"
-metaKeys: "Workbook Permissions, Identities, Access Groups, Data Permissions"
-folderOnly: "false"
-pageIndex: 4
----
 
 ### Workbook Permissions 
 

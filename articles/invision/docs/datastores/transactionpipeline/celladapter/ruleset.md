@@ -1,9 +1,5 @@
----
-title: "Ruleset"
-metaKeys: "Ruleset, table, Cell Adapter, assign values, row, processed, Required Columns, TypeID, values, pipeline, output, Compuration, Expression, Condition"
-pageIndex: 2
----
 
+## Ruleset
 
 The Ruleset table for the Cell Adapter component specifies the business rules used by the component to assign values to each row being processed. The table must have the following configuration:
 <br/>

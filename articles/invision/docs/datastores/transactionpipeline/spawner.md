@@ -1,10 +1,5 @@
----
-title: "Spawner"
-metaKeys: "Spawner, transactions, filter, Ruleset,  "
-folderOnly: "false"
-pageIndex: 4
----
 
+## Spawner
 
 The Spawner component produces transactions based on source rows passing the filter and the business logic specified in the Spawner Ruleset. Based on the Ruleset, the Spawner may spawn zero or many rows from a single source row. 
 
