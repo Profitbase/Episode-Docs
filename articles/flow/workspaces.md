@@ -4,7 +4,7 @@ A Workspace is a logical container for Flows and artifacts. Workspace artifacts 
 
 ## Workspace Objects
 
-Workspace Objects are reusable objects that consist of multiple values, for example a SQL Server connection having a server name, database name, username, and password. Instead of defining a different connection for every SQL Server action in a Flow, you can reuse an existing connection object and manage its settings once.
+Workspace Objects are reusable objects that consist of multiple values, for example a SQL Server connection having a server name, database name, username, and password. Instead of defining a different connection for every SQL Server action in a Flow, you can reuse an existing connection object and manage its settings in one central location.
 
 [Read more about Workspace Objects](workspaces/workspace-objects.md)
 
