@@ -61,33 +61,23 @@
   - name: "Actions"
     items:
     - name: "Azure Blob Storage"
-      items:
-      - name: "Get Blob names"
-        href: actions/azure-blob-storage/get-blob-names.md
-      - name: "Read Blob"
-        href: actions/azure-blob-storage/read-blob.md
-      - name: "Stream Blob"
-        href: actions/azure-blob-storage/stream-blob.md
-      - name: "Upload Blob"
-        href: actions/azure-blob-storage/upload-blob.md
-      - name: "Append to Blob"
-        href: actions/azure-blob-storage/append-to-blob.md
-      - name: "Delete Blob"
-        href: actions/azure-blob-storage/delete-blob.md
+      href: actions/azure-blob-storage/toc.yml
     - name: "Azure Event Hub"
-      items:
-      - name: "Publish Event"
-        href: actions/azure-event-hub/publish-event.md
+      href: actions/azure-event-hub/toc.yml      
     - name: "Azure Service Bus"
-      items:
-      - name: "Send Message"
-        href: actions/azure-service-bus/send-message.md
+      href: actions/azure-service-bus/toc.yml      
     - name: "Built-in (Flow)"
       href: actions/built-in/toc.yml
     - name: "CSV"
       href: actions/csv/toc.yml
     - name: "Excel"
       href: actions/excel/toc.yml
+    - name: "FTP / SFTP"
+      href: actions/ftp/toc.yml
+    - name: "GitHub"
+      href: actions/github/toc.yml
+    - name: "GraphQL request"
+      href: actions/graphql/toc.yml
     - name: "HTTP"
       href: actions/http/toc.yml
     - name: 'Profitbase InVision'

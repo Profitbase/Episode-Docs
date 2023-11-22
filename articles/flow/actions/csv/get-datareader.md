@@ -1,9 +1,9 @@
 # Get DataReader
 
-Provides a DataReader for reading a foward-only stream of rows from CSV file.
-The input can be either a byte array or a Stream.
+Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) for reading a foward-only stream of rows from CSV file.
+The input can be either a byte array or a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream).
 
-This action is typically used when you need to import large CSV files to a database. The DataReader can be used directly as input to actions such as the [SQL Server Insert Data](../sql-server/insert-data.md) action.
+This action is typically used when you need to import large CSV files to a database. The [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) can be used directly as input to actions such as the [SQL Server Insert Data](../sql-server/insert-data.md) action.
 
 ### Properties
 
