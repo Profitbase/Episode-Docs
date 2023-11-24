@@ -80,8 +80,10 @@
       href: actions/graphql/toc.yml
     - name: "HTTP"
       href: actions/http/toc.yml
-    - name: 'Profitbase InVision'
+    - name: "Profitbase InVision"
       href: actions/profitbase-invision/toc.yml
+    - name: "SendGrid"
+      href: actions/sendgrid/toc.yml
     - name: "SQL Server"
       href: actions/sql-server/toc.yml
   - name: "Triggers"
