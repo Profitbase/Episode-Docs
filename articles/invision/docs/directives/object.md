@@ -1,11 +1,5 @@
----
-title: "Object Directives"
-metaKeys: "Object, type, property, directives, Dimension, Fact, DataStore, Setting, DataFlow, StoreGroup, Script, View, Workflow "
-folderOnly: "false"
-pageIndex: 3
----
 
-
+# Object Directives
 
 **@Object[name[,object type]].< property > directives**
 

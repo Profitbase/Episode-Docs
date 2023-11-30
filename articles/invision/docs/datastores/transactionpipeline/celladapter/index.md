@@ -1,4 +1,4 @@
-## Cell adapter
+# Cell adapter
 
 
 The Cell Adapter component assigns values from the Cell Adapter [Ruleset](ruleset.md) table to each row matching the filter criteria of the row(s) being processed in the pipeline. 
@@ -15,7 +15,7 @@ Specifies the Setting table acting as the Cell Adapter Ruleset.
 
 <br/>
 
-#### See Also
+## See Also
 
 * [Input Configuration](inputconfig.md)
 

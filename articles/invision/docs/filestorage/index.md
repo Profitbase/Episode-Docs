@@ -1,10 +1,9 @@
-<br/>
+# File Storage
 
 ![File Storage](https://profitbasedocs.blob.core.windows.net/images/FileStorage_Panel.PNG)
 
 <br/>
 
-#### File Storage
 
 File Storage enables users to upload download and manage files. 
 
@@ -13,7 +12,7 @@ File Storage enables users to upload download and manage files.
 
 
 
-#### Configuration
+## Configuration
 
 <br/>
 
@@ -40,7 +39,7 @@ By setting the [Context](context.md), you associate the File Storage to the [Fil
 
 <br/>
 
-#### Data
+## Data
 Here you will find saved files with default File Storage references, more filters you use, more columns with references([context keys](./context.md)) will appear.
 <br/>
 
@@ -66,7 +65,7 @@ Here you will find saved files with default File Storage references, more filter
 
 <br/>
 
-#### How to get all file names from a File Storage
+## How to get all file names from a File Storage
 
 The example below shows how to get all file names from a File Storage and insert the file names to "MY TABLE" in the InVision database.
 
@@ -103,7 +102,7 @@ foreach($fileInfo in $fileInfos)
 
 
 
-#### See Also
+## See Also
 
 - [How to's](howto/index.md)
 - [File Storage Setup](setup.md)
@@ -113,7 +112,7 @@ foreach($fileInfo in $fileInfos)
 
 <br/>
 
-#### Videos
+## Videos
 
 - [File Storage](../../videos/filestorage.md)
 - [File Storage - Basics](https://profitbasedocs.blob.core.windows.net/videos/File%20Storage%20-%20Basics.mp4)

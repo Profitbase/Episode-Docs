@@ -1,9 +1,5 @@
----
-title: "Form Runtime"
-metaKeys: "Form Runtime, context, Event Handlers, Control APIs"
-folderOnly: "false"
-pageIndex: 1
----
+
+# Form Runtime
 
 The Form Runtime is the context in which all Functions and Event Handles execute. All valid Functions and Event Handlers declared in a Form Schema are added as instance functions to the Form Runtime, and can be called by eachother through the **this** or **functions** keyword.
 

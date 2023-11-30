@@ -1,18 +1,13 @@
----
-title: "How To Create and Use Hierarchical Filter"
-metaKeys: "How To Create and Use Hierarchical Filter"
-folderOnly: "false"
-pageIndex: 2
----
+s
 
+# How To Create and Use Hierarchical Filter
 
-
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Filter%20-%20Creating%20and%20using%20hierarchical%20filters.mp4) you will find a video that shows how to create and Use Hierarchical Filter. [Here](../../filters/index.md) you will find [Documentation](../../filters/index.md).
 <br/>
 
-### Step by step
+## Step by step
 
 
 1. Right-click chosen folder in Solution Explorer to add a new item, choose Filters:

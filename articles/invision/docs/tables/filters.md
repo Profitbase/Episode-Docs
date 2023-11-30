@@ -1,10 +1,11 @@
 ---
-title: "Filters"
+title: ""
 metaKeys: "filtering, Workbooks, Filters configuration, Setting, column, added, endpoint(s) "
 pageIndex: 7
 ---
+# Filters
 
-### Filtering the Table
+## Filtering the Table
 To support filtering when settings are hosted in Workbooks, you need to add [Filters](../filters/index.md) to the filter configuration and specify the setting column for matching values. When filters are added to the Setting configuration, you can bound them to the filter endpoint(s) of the Setting.
 <br/>
 
@@ -16,7 +17,7 @@ To support filtering when settings are hosted in Workbooks, you need to add [Fil
 >Bind the Filter in the Table properties in Workbook designer.
 
 ![Filter](https://profitbasedocs.blob.core.windows.net/images/filtersintables2.png)
-### Properties
+## Properties
 <br/>
 
 **Filter Name**  
@@ -28,9 +29,9 @@ To support filtering when settings are hosted in Workbooks, you need to add [Fil
 **Accept Wildcard**  
 >If the Setting column used formatching values contains a the **'*'**-value, meaning that it acts as a fallback matching anything not explicitly matched in other rows in the data set, and you want to include these rows in the data set of the grid, the value of thisproperty must be NULL (default dash) or True (checked).
 
-### See Also
+## See Also
 * [More about Filters](../filters/index.md)
 * [Filtering Worksheets](../worksheets/filters.md)
 
-### Videos
+## Videos
 * [Filters](../../videos/filters.md)

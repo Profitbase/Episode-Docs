@@ -1,10 +1,10 @@
 
-## Ruleset
+# Ruleset
 
 The Ruleset table for the Cell Adapter component specifies the business rules used by the component to assign values to each row being processed. The table must have the following configuration:
 <br/>
 
-### Required Columns
+## Required Columns
 
 *	**One or more columns for row matching**
 
@@ -15,7 +15,7 @@ In addition to the TypeID column which specifies the rule set category, you woul
 These columns contain the values to be assigned to the generated rows when the TypeID and row matching columns have been evaluated.
 <br/>
 
-### Optional Columns
+## Optional Columns
 
 *	**TypeID**  
 

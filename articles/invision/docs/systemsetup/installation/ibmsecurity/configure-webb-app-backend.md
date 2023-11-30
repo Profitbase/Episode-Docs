@@ -1,18 +1,15 @@
----
-title: "Configure Web App and Backend"
-metaKeys: "Configure Web App and Backend"
-pageIndex: 1
----
 
 
+# Configure Web App and Backend
 
-### About Configuration
+
+## About Configuration
 
 Here you will find a description of how to configure the Profitbase InVision Web App and backend to use IBM Security Verify for authentication.
 
 <br/>
 
-### Authorization configuration in appsettings.json
+## Authorization configuration in appsettings.json
 
 
 

@@ -1,9 +1,5 @@
----
-title: "Stacked Column Headers"
-metaKeys: "Stacked Column Headers, top of eachother, dragging, dropping them to grouping"
-pageIndex: 12
----
 
+# Stacked Column Headers
 
 Stacked Column Headers enables multiple rows of headers by grouping and stacking them on top of eachother.  
 

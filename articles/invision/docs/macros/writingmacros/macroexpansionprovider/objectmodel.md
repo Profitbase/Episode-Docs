@@ -1,14 +1,7 @@
----
-title: "ObjectModel"
-metaKeys: "Writing macros, Accessing arguments, Function , Non-function macros, Expansion, MacroExpansionProvider API, SqlCommandService, ObjectModel "
-pageIndex: 4
----
 
+# ObjectModel
 
-
-
-
-### MacroExpansionProvider.ObjectModel
+## MacroExpansionProvider.ObjectModel
 
 The ObjectModel API provides access to metatadata information about the objects in the solution, for example getting connection strings, database table names for materialized objects, column names in the materialized objects etc. (Examples further down).
 <br/>
@@ -27,7 +20,7 @@ The ObjectModel API provides access to metatadata information about the objects 
 >Returns an instance of a metdata provider service for the dimension with the specified name.
 
 
-### IObjectModelReference
+## IObjectModelReference
 <br/>
 
 **Method:**

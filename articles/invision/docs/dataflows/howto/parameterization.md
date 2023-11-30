@@ -1,12 +1,12 @@
 
-## How To Parameterize the execution of Data Flows
+# How To Parameterize the execution of Data Flows
 
-### Link to the docs
+## Link to the docs
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flow%20-%20Introduction%20to%20parameterization.mp4) you will find video that shows how to Parameterize the execution of Data Flows. [Here](parameterization.md) you will find [Documentation](parameterization.md).
 <br/>
 
-### Step by step
+## Step by step
 
 
 1. Right-click chosen folder in Solution Explorer to add a new item, create Data Flow than Data Flow Item:

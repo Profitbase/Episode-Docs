@@ -1,12 +1,4 @@
----
-title: "InVision Training Case"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
-
-
-### Hello learner!
+# Hello learner!
 
 This document is a guide to build a small Profitbase Planning solution. The idea is that the user should get a basic understanding of how to build a planning solution and the most common features of Profitbase LOW CODE. 
 
@@ -16,6 +8,6 @@ The goal for this guide is to build a small planning solution for product sales.
 
 ![Docs](https://profitbasedocs.blob.core.windows.net/images/doc.png "Docs")
 
-### InVision Training Case
+## InVision Training Case
 
 * [Here](https://profitbasedocs.blob.core.windows.net/documents/PB%20-%20InVision%20Training%20Case.pdf) you will find **pdf** with the training case. 

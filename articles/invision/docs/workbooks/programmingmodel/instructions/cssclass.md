@@ -1,11 +1,4 @@
----
-title: "CssClass"
-metaKeys: "CssClass, Add, Remove, Toggle"
-folderOnly: "false"
-pageIndex: 5
----
-
-### AddCssClass
+# AddCssClass
 
 <br/>
 
@@ -32,7 +25,7 @@ AddCssClass("hightlight underline");
 
 <br/>
 
-### RemoveCssClass
+## RemoveCssClass
 
 <br/>
 
@@ -60,7 +53,7 @@ RemoveCssClass("hightlight underline");
 
 <br/>
 
-### ToggleCssClass
+## ToggleCssClass
 
 <br/>
 
@@ -89,7 +82,7 @@ ToggleClass("hightlight", X == 250);
 
 <br/>
 
-### Videos
+## Videos
 
 * [Themes and Styles](../../../../videos/themesandstyles.md)
 * [Styling - Adding a Css Class](https://profitbasedocs.blob.core.windows.net/videos/Styling%20-%20AddCssClass.mp4)

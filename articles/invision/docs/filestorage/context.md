@@ -1,13 +1,7 @@
----
-title: "Context"
-metaKeys: "Context, Allowed File Extensions, Max File Size, MB"
-folderOnly: "false"
-pageIndex: 3
----
+
+# Context
 
 ![fs](https://profitbasedocs.blob.core.windows.net/images/filestorageCT.png)
-
-### Context
 
 By setting the Context you connect the File Storage to the [Filter](../filters/index.md). You can have multiple filters attached to the File Storage. 
 <br/>
@@ -23,7 +17,7 @@ By setting the Context you connect the File Storage to the [Filter](../filters/i
 <br/>
 
 
-### Options
+## Options
 <br/>
 
 **Allowed File Extensions**
@@ -40,7 +34,7 @@ By setting the Context you connect the File Storage to the [Filter](../filters/i
 
 
 
-### Videos
+## Videos
 
 - [File Storage](../../videos/filestorage.md)
 - [File Storage - Basics](https://profitbasedocs.blob.core.windows.net/videos/File%20Storage%20-%20Basics.mp4)

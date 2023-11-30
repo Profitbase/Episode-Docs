@@ -1,11 +1,11 @@
-
-### Link to the video
+# How to Setup High contrast
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Accessibiblity%20-%20high%20contrast.mp4) you will find video that shows how to Setup High Contrast. [Here](..//highcontrast.md) you will find [Documentation](..//highcontrast.md).
 <br/>
 
 
-### Step by step
+## Step by step
 
 
 1.  Go to settings on the client side:

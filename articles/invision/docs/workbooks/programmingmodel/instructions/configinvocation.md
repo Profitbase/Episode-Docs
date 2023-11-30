@@ -1,11 +1,4 @@
----
-title: "ConfigureInvocation"
-metaKeys: "ConfigureInvocation, "
-folderOnly: "false"
-pageIndex: 2
----
-
-### ConfigureInvocation(...)
+# ConfigureInvocation(...)
 
 <br/>
 

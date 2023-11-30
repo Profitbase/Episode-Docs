@@ -1,11 +1,5 @@
----
-title: "Layout"
-metaKeys: "UI, Text Control, Controls,  Editable, Layout control, create sub layout containers, grids, form schema, child, nested"
-pageIndex: 11
----
 
-
-
+# Layout
 
 Inherits from [Control](control.md).
 

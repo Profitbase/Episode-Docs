@@ -1,4 +1,4 @@
-## Data Context Scope
+# Data Context Scope
 
 In order for the Data Context to be applied during processing, the Data Context Scope must be set up for the Data Flow running the job. The Data Context Scope is set up from the Properties window of a Data Flow component in a Workbook. 
 
@@ -6,12 +6,12 @@ This means that every Data Flow has its own Data Context Scope, and that a Data 
 The Data Context Scope is defined by Filters, Variables and Data Storages.
 <br/>
 
-### Filters
+## Filters
 
 In order for selected filter values in a Workbook to be used for determning the transaction set when processing data using a Data Flow, the filter must be registered in the Data Context Scope of the Data Flow. The filter must be based on a Dimension used in the star schemas of a Data Stores being processed during the Data Flow execution, or it must be based on a table resources enlisted (and configured) in the Globale Data Context. When the Data Flow is executed from a Workbook, the selected filter values will be used to determine the transaction set being processed.
 <br/>
 
-### Variables
+## Variables
 
 This section is used for mapping Workbook variables to Data Context Variables.
 
@@ -40,7 +40,7 @@ In cases where it’s not pratical or possible to use filter values to determine
 If you are executing Data Flows during Workflow state transitions and want to use Data Context variables to set arguments for the Data Flow Activities, you simply need to enter the name of the Data Context variable as the argument. By doing this, the value of the variable will be passed as an argument to the activity during execution.
 <br/>
 
-### Data Storages
+## Data Storages
 
 In cases where data sources and targets in a processing chain contains data having equal dimensionality but are logically different based on where it is stored, you can enable the Data Context to take into account the origin of the transactions being processed by setting up the Data Storages of the Data Context Scope. 
 
@@ -49,7 +49,7 @@ Filtering on Data Storages are usually supplemental to using Filters and Variabl
 Alternatively, you can use the **SYS_DataSetID** Workbook Variable if you are running in a Workflow context. 
 <br/>
 
-### Data Context Delegation
+## Data Context Delegation
 
 Data Context Delegation is the concept of delegating the Data Context information to different columns than the columns that Data Context Slicer Repositories are associated with.
  

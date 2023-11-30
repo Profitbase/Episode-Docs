@@ -1,9 +1,5 @@
----
-title: "Workflow"
-metaKeys: "Workflow, configuring and driving a business process, budgeting or forecasting, data sets, versioning, archiving and rollover"
-folderOnly: "false"
-pageIndex: 32
----
+
+# Workflow
 
 A Workflow is used for configuring and driving a business process, for example, budgeting or forecasting. A Workflow consists of a sequence of activities managing resources for input and data processing.
 
@@ -11,7 +7,7 @@ Management and actions related to data sets, versioning, archiving and rollover 
 
 <br/>
 
-#### See Also
+## See Also
 
 - [Data Set](workflow/dataset.md)
 - [Flow Control Objects](workflow/flowcontrolobj.md)

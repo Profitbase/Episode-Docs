@@ -1,8 +1,5 @@
----
-title: "Control API"
-metaKeys: "ControlProxy API, hide, hideIf, show, showIf, AddCss, collapse, SetValidity, validateRequired, NativeElement, RemoveCss, ToggleCss, Disable, DisableIf, Enable, EnableIf, SetIsEnabled "
-pageIndex: 2
----
+
+# Control API
 
 `hide()`  
 Hides a control by setting its visibility property to hidden. This will not remove the control from the DOM.

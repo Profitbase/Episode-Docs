@@ -1,13 +1,4 @@
----
-title: "Work Process Editor"
-metaKeys: "Work Process Editor, "
-folderOnly: "false"
-pageIndex: 20
----
-
-
-
-### Work Process Editor
+# Work Process Editor
 
 Work Process editor is a full-screen component for managing Work Processes and Versions.
 
@@ -18,7 +9,7 @@ Work Process editor is a full-screen component for managing Work Processes and V
 <br/>
 
 
-### Events
+## Events
 
 
 
@@ -43,13 +34,13 @@ This event is raised when a user deletes a Work Process. The @Event payload cont
 
 <br/>
 
-### See Also  
+## See Also  
 
 * [Work Process](../../workprocess.md)
 
 <br/>
 
-### Videos
+## Videos
 
 * [Work Process](../../../videos/workprocess.md)
 * [Work Process - Basics](https://profitbasedocs.blob.core.windows.net/videos/Work%20Process%20-%20Basics.mp4)

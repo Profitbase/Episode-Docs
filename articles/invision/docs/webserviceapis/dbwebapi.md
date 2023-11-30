@@ -1,23 +1,18 @@
----
-title: "DB Web API"
-metaKeys: "JavaScript, Download File, API Endpoints, Get Value from InVision Table, Request, Query string parameters, Db Web API, REST, query, Database, tables, data, get, Method"
-folderOnly: "false"
-pageIndex: 1
----
 
+# DB Web API
 
 The Db Web API is a REST web API that lets you query InVision Database tables for data.
 <br/>
 
-### API Endpoints
+## API Endpoints
 <br/>
 
-#### Get Value from InVision Table
+### Get Value from InVision Table
 
 Returns a single value from an InVision table object. You can specify search criteria and other options using query string parameters.
 <br/>
 
-#### Request
+### Request
 <br/>
 
 **Method:**
@@ -57,7 +52,7 @@ Optional. Enables you to explicitly set the content-disposition header of the re
 <br/>
 
 
-#### Download File from InVision Table
+### Download File from InVision Table
 
 Returns a file from an InVision table object. You can specify a search criteria and other options using query string parameters.
 
@@ -67,7 +62,7 @@ To use this API, the table must be a File Storage table, meaning it must at leas
 
 <br/>
 
-#### Request
+### Request
 <br/>
 
 **Method:**
@@ -98,7 +93,7 @@ Optional. The default value is **attachment**. Enables you to explicitly set the
 
 <br/>
 
-### Querying with the API
+## Querying with the API
 
 Use the q query string parameter to specify the filter to apply to the query. The filter has the following form ``q = {<eaze expression>}``.
 <br/>

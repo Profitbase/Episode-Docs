@@ -1,8 +1,5 @@
----
-title: "RichTextEditor"
-metaKeys: "UI, Text Control, Controls,  Editable, Text formatting, bold, underline, italic, colorization, Font selection, Font sizing, Text alignment, Lists, Embedding images, Embedding links, Embedding code"
-pageIndex: 13
----
+
+# RichTextEditor
 
 Inherits from [Editable Control](editablecontrol.md).
 
@@ -103,7 +100,7 @@ Specifies the hotkey for the control.
 
 <br/>
 
-### Videos
+## Videos
 
 - [Form Schemas](../../../../videos/formschemas.md)
 

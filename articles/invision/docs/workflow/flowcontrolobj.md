@@ -1,9 +1,5 @@
----
-title: "Flow Control Objects"
-metaKeys: "Flow Control Objects, State Context, Reporting Column, Relay State To,  Resources"
-pageIndex: 2
----
 
+# Flow Control Objects
 
 Flow Control Objects are used for managing the state and controlling user access for performing actions (input, running scripts and data flows etc) on resources under Workflow control. You would normally have one Flow Control Object pr workflow sub process, where a sub process may be an entity called "Salary", containing the worksheets, settings, data flows etc handling input and business logic related to "Salary".
 

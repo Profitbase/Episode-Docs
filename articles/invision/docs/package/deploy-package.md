@@ -1,10 +1,7 @@
----
-title: "Deploy Package"
-metaKeys: "package deploy"
-pageIndex: 3
----
 
-### Deploy Package
+# Deploy Package
+
+## Deploy Package
 
 A Package can be deployed to a Solution by right-clicking a folder and choosing **Deploy Package**.
 You can deploy Packages from either the Profitbase Store, or from file. To deploy from file, you need a valid `.pbpck` file which has been created using the InVision Designer.
@@ -20,7 +17,7 @@ You can deploy Packages from either the Profitbase Store, or from file. To deplo
 
 <br/>
 
-### Videos
+## Videos
 
 * [Packages](../../videos/packages.md)
 * [Deploy](https://profitbasedocs.blob.core.windows.net/videos/Packages%20-%20Deploy.mp4)

@@ -1,5 +1,5 @@
 
-### Data Stores
+# Data Stores
 
 <br/>
 
@@ -32,7 +32,7 @@ In addition to the core setup of the Data Store where you define the schema and 
 
 <br/>
 
-### See Also
+## See Also
 
 - [How to's](./howto/index.md)
 
@@ -64,6 +64,6 @@ In addition to the core setup of the Data Store where you define the schema and 
 
 <br/>
 
-### Videos
+## Videos
 
 - [Data Stores](../../videos/datastores.md)

@@ -1,13 +1,4 @@
----
-title: "Step by Step Guide"
-metaKeys: "package property, the returned, Package Upgrade Template"
-pageIndex: 1
----
-
-
-
-### Modify the PackageUpgradeTemplate:
-
+# Modify the PackageUpgradeTemplate:
 
 1. Set/check the the version attribute [PackageUpgrade("1.0.0","2.0.0")] in the V1ToV2Upgrader class in the V1ToV2 folder.
 2. Add/paste a **.pbpck** file (i.e. named V1ToV2.pbpck) into the V1ToV2 folder.

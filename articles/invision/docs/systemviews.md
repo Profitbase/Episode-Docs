@@ -1,11 +1,7 @@
----
-title: "System Views"
-metaKeys: "System Views, SYS_Objects, SYS_AccessGroups, SYS_ObjectPermissions, SYS_WorkProcessVersions, SYS_Solutions, SYS_Tables, SYS_ObjectPermissions "
-folderOnly: "false"
-pageIndex: 21
----
 
-#### SYS_AccessGroups
+# System Views
+
+## SYS_AccessGroups
 <br/>
 
 Returns information about all Access Groups.
@@ -21,7 +17,7 @@ SELECT [AccessGroupID]
 
 <br/>
 
-#### SYS_Objects
+## SYS_Objects
 
 <br/>
 
@@ -44,7 +40,7 @@ SELECT [ObjectID]
 
 <br/>
 
-#### SYS_ObjectPermissions
+## SYS_ObjectPermissions
 
 <br/>
 
@@ -77,7 +73,7 @@ WHERE UserUID = 'user id' AND ObjectID = 'object id'
 
 
 
-#### SYS_WorkProcessVersions
+## SYS_WorkProcessVersions
 
 <br/>
 
@@ -95,7 +91,7 @@ SELECT [WorkProcess_ID]
 
 <br/>
 
-#### SYS_Solutions
+## SYS_Solutions
 
 <br/>
 Returns information about Solutions.
@@ -115,7 +111,7 @@ SELECT [SolutionID]
 
 <br/>
 
-#### SYS_Tables
+## SYS_Tables
 
 <br/>
 Returns information about all tables and views in Solutions.

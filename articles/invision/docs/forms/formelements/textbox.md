@@ -1,9 +1,5 @@
----
-title: "TextBox"
-metaKeys: "TextBox, Select Value Query, Max Length, Save Data Expression "
-pageIndex: 4
----
 
+# TextBox
 
 <br/>
 
@@ -15,7 +11,7 @@ ___
 
 
 
-#### Enables displaying and editing data as a text value
+## Enables displaying and editing data as a text value
 
 **Select Value Query**
 

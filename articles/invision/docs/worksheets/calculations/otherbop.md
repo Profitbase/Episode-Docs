@@ -1,10 +1,7 @@
----
-title: "Other Binary Operators"
-metaKeys: "Other binary operators"
-pageIndex: 15
----
 
-#### Null coalescing operator.
+# Other Binary Operators
+
+## Null coalescing operator.
 
 ``??``
 

@@ -1,14 +1,14 @@
 
-## How To Set Up Time Frame
+# How To Set Up Time Frame
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Data%20Store%20-%20Time%20Frame%2C%20Time%20Frame%20Columns%20and%20Rolling%20Forecast.mp4) you will find video that shows How To Set Up Time Frame. [Here](../../datastores/timeframe.md) you will find [Documentation about Time Frame](../../datastores/timeframe.md), [here](../../datastores/timeframemeasurecolumns.md) you will find [Documentation about Time Frame Columns](../../datastores/timeframemeasurecolumns.md).
  <br/>
 
 
 
-### Step by step
+## Step by step
 
 
 1. Sdd Time Frame columns:

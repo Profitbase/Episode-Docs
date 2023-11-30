@@ -1,12 +1,8 @@
----
-title: "On-premise Installation"
-metaKeys: "Installation, .NET 4.8, Azure Service Bus subscription,  Manager, path, Instance Name, Website Name, Domain, Database Server, Service User, Service User Password, Azure Service Bus connection string, Azure Service Bus topic"
-folderOnly: "false"
-pageIndex: 3
----
+
+# On-premise Installation
 
 
-### Installation on Application Server
+## Installation on Application Server
 
 1.  Make sure **.NET 4.8** is installed on the application server.
 2.  Set up an **Azure Service Bus subscription**.
@@ -29,10 +25,10 @@ pageIndex: 3
 
 <br/>
 
-### Using Profitbase Installation Manager
+## Using Profitbase Installation Manager
 <br/>
 
-#### About
+### About
 
 Profitbase Installation Manager installs InVision instances into sub folders of its own installation path. Already installed instances are upgraded using Profitbase Installation Manager.
 The default installation path for the installation manager is
@@ -48,7 +44,7 @@ InVision instances will be installed in
 ```
 <br/>
 
-### Setting up a new InVision instance
+## Setting up a new InVision instance
 
 1. Start the **Profitbase Installation Manager**
 
@@ -72,7 +68,7 @@ InVision instances will be installed in
 6. Press **Install**
 <br/>
 
-### Instance settings
+## Instance settings
 
 During the installation process, you need to configure the following settings:
 
@@ -110,7 +106,7 @@ Endpoint=sb://yoursubscription.servicebus.windows.net/
 
 <br/>
 
-### Default ports
+## Default ports
 <br/>
 
 
@@ -126,7 +122,7 @@ Endpoint=sb://yoursubscription.servicebus.windows.net/
 
 <br/>
 
-### Firewall settings
+## Firewall settings
 
 The following table describes the application services requiring internet access.
 <br/>
@@ -143,7 +139,7 @@ The following table describes the application services requiring internet access
 <br/>
 
 
-### See Also 
+## See Also 
 
 * [Ports and Firewall Settings](onpreminstallation/portsfirewall.md)  
 
@@ -154,6 +150,6 @@ The following table describes the application services requiring internet access
 
 <br/>
 
-### Videos
+## Videos
 * [Installation](../../../videos/gettingstarted/installation.md)
 * [Upgrading of  the InVision Instance](https://profitbasedocs.blob.core.windows.net/videos/Installation%20and%20Setup%20-%20upgrading%20of%20%20the%20InVision%20instance.mp4)

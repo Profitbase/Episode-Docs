@@ -1,11 +1,11 @@
 
-## Custom SQL
+# Custom SQL
 
 Enables you to write a custom SQL expression acting as a view on top of the data source to import data from.
 
 <br/>
 
-### Supported directives
+## Supported directives
 
 *	**@Context.OriginalSource**
 

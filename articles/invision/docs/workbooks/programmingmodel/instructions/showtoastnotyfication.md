@@ -1,11 +1,4 @@
----
-title: "ShowToastNotification"
-metaKeys: "ShowToastNotification, "
-folderOnly: "false"
-pageIndex: 36
----
-
-### ShowToastNotification(...)
+# ShowToastNotification(...)
 
 <br/>
 

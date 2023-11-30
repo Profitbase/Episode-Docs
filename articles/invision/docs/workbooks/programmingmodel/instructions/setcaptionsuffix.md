@@ -1,11 +1,4 @@
----
-title: "SetCaptionSuffix"
-metaKeys: "SetCaptionSuffix"
-folderOnly: "false"
-pageIndex: 25
----
-
-### SetCaptionSuffix function
+# SetCaptionSuffix function
 
 <br/>
 

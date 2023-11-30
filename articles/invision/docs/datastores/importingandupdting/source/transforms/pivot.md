@@ -1,11 +1,11 @@
 
-## Pivot
+# Pivot
 
 You can use the PIVOT and UNPIVOT feature to change a table-valued expression into another table. PIVOT rotates a table-valued expression by turning the unique values from one column in the expression into multiple columns in the output and performs aggregations where they are required on any remaining column values that are wanted in the final output. UNPIVOT performs the opposite operation to PIVOT by rotating columns of a table-valued expression into column values.
 
 <br/>
 
-### Grouping and Filtering
+## Grouping and Filtering
 
 *	**Use Time Dimension for Grouping and Filtering**
 
@@ -21,7 +21,7 @@ You can use the PIVOT and UNPIVOT feature to change a table-valued expression in
 
 <br/>
 
-### Columns
+## Columns
 Specifies the non-pivoted columns in the PIVOT transform.
 
 *	**Source Column**
@@ -58,7 +58,7 @@ Specifies the non-pivoted columns in the PIVOT transform.
 
 <br/>
 
-### Pivot Columns
+## Pivot Columns
 
 Specifies the pivoted columns in the PIVOT transform.
 
@@ -75,6 +75,6 @@ Specifies the pivoted columns in the PIVOT transform.
    
 <br/>
 
-### Target
+## Target
 
 Specifies the target column of the pivot function.

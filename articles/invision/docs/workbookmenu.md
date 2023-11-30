@@ -1,11 +1,4 @@
----
-title: "Workbook Menu"
-metaKeys: "Workbook Menu, Structuring, Work Processes, "
-folderOnly: "false"
-pageIndex: 30
----
-
-### Workbook Menu
+# Workbook Menu
 
 The Workbook Menu enables users to quickly explore and navigate between the different [Workbooks](workbooks.md) that they have access to. Workbooks belonging to [Work Processes](workprocess.md) are automatically grouped by the Work Process and version they belong to.
 
@@ -14,7 +7,7 @@ The system comes with a default menu, but you can create additional menus if you
 If you have a large custom solution for production management, you might or might not want all the Workbooks from your production management app in the same menu as your financial planning app. With the option to create multiple Workbook menus, customers get the option to decide how they want their [identities](accesscontrol/identities.md) to be able to navigate between all the Workbooks they have access to. Some would like to have everything available on the same menu, while others like to keep things focused.
 <br/>
 
-### Structuring
+## Structuring
 
 A menu can be structured with folders, Workbooks, and Work Processes using the InVision Designer.
 <br/>
@@ -71,7 +64,7 @@ Placing a Work Process in the menu using the Work Process configuration screen:
 
 <br/>
 
-### Videos
+## Videos
 
 - [Workbook Menu](../videos/workbookmenu.md)
 - [Basics](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20Menu.mp4)

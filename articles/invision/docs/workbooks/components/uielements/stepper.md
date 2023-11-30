@@ -1,9 +1,5 @@
----
-title: "Stepper"
-metaKeys: "Stepper, organize content, steps, Edit , api, Execute Expression, Enable, disable, Go To Step,  Set Step Is Completed"
-folderOnly: "false"
-pageIndex: 6
----
+
+# Stepper
 
 ![stepper](https://profitbasedocs.blob.core.windows.net/images/stepper.png)
 
@@ -12,7 +8,7 @@ The Stepper Control lets you organize content in tabs, and each tab can host a s
 You can drag and drop a Stepper Control onto a page from the [UI Elements](../uielements.md) toolbox folder. 
 <br/>
 
-### Steps
+## Steps
 
 To add Steps, click **Edit Steps** in the Property pane.  
 Using the Steps editor, you can manage stepps by setting the header texts and contents.
@@ -23,7 +19,7 @@ To set the contents of a step, choose a [Subscreen](../../subscreens.md) from th
 > [Subscreen](../../subscreens.md) can only be used once, so if you don’t see a Subscreen in the dropdown, this means that it is already in use somewhere else in the [Workbook](../../../workbooks.md).
 <br/>
 
-#### Steps properties:
+### Steps properties:
 
 **Header**
 >The text displayed as the step header.
@@ -38,7 +34,7 @@ To set the contents of a step, choose a [Subscreen](../../subscreens.md) from th
 <br/>
 
 
-### Stepper API
+## Stepper API
 
 You can use the Stepper API to control different states of the Steps dynamically, such as the header texts and enabled/disabled states. 
 
@@ -46,11 +42,11 @@ The Stepper API can be called from the **Execute Expression**, **Set Step Is Com
 
 <br/>
 
-### Actions
+## Actions
 
 <br/>
 
-#### Set Step Is Completed(...)
+### Set Step Is Completed(...)
 
 Checks out the step when completed.  
 
@@ -60,7 +56,7 @@ Arguments("Step1", true)
 
 <br/>
 
-#### Go To Step(...)
+### Go To Step(...)
 
 Switches dynamically to the chosen step.  
 
@@ -70,11 +66,11 @@ Arguments("Step3")
 
 <br/>
 
-### Events
+## Events
 
 <br/>
 
-#### Step Navigated To
+### Step Navigated To
 
 Executes an expression when the conditions are met.
 
@@ -97,7 +93,7 @@ StepperItem("Step3").Disable()
 ![img](https://profitbasedocs.blob.core.windows.net/images/stepperEx.png)
 <br/>
 
-#### StepperItem(...)
+### StepperItem(...)
 
 Returns a reference to a Stepper instance which has the following API.  
 
@@ -108,7 +104,7 @@ StepperItem("step name")
 
 <br/>
 
-#### SetHeader(...)
+### SetHeader(...)
 
 Sets the header of a step.
 
@@ -129,7 +125,7 @@ SetHeader(text : string | Eaze expression)
 
 <br/>
 
-#### SetHeaderSuffix(...)
+### SetHeaderSuffix(...)
 
 Adds a suffix to the original tab header. The optional whitespaceBetween enables you to determine whether you want whitespace between the base header text and the suffix (the default is true).
 
@@ -149,7 +145,7 @@ SetHeaderSuffix(text : string | Eaze expression[, whitespaceBetween | boolean = 
 
 <br/>
 
-#### ResetHeader(...)  
+### ResetHeader(...)  
 
 Resets the header to its original value.
 <br/>
@@ -162,7 +158,7 @@ Resets the header to its original value.
 
 <br/>
 
-#### Disable(...)
+### Disable(...)
 
 Lets you specify whether a tab is disabled or not. 
 
@@ -186,7 +182,7 @@ Disable([disable:boolean = true])
 
 <br/>
 
-#### Enable(...)
+### Enable(...)
 
 Lets you specify whether a step is enabled or not.
 
@@ -212,7 +208,7 @@ Enable([enable:boolean = true])
 
 
 
-### Videos
+## Videos
 
 * [Workbooks](../../../../videos/workbooks.md)
 * [Stepper](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20Stepper.mp4)

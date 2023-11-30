@@ -1,4 +1,4 @@
-# Sqlscripts
+# SQL scripts
 
 * [Howto](./howto.md)
 

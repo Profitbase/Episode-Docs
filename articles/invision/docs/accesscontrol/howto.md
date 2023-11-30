@@ -1,9 +1,9 @@
-
+# How to's
 In this section, you will find a list of shortcuts to different subjects about Access Control.
 
 <br/>
 
-#### See Also  
+## See Also  
 
 * [How To Create Identities and Access Groups](howto/identities.md)
 * [How To Create and Manage Azure AD Identities and Access Groups](howto/azuread.md)

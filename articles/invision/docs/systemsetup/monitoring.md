@@ -1,15 +1,12 @@
----
-title: "Monitoring"
-metaKeys: "Telemetry, Monitoring, Dispatcher, Scheduler, Worker, WebApp Setting, Application, disable, enable, ApplicationInsights"
-pageIndex: 5
----
+
+# Monitoring
 
 Telemetry and health state configuration can be edited in the **appsettings.json** file for the **Dispatcher**, **Scheduler**, **Worker** and **WebApp** services.
 
 <br/>
 
 
-### Setting up Application Insights
+## Setting up Application Insights
 
 To enable heartbeat metrics and/or logging to Application Insights; edit the following sections to set the instrumentation key and heartbeat interval:
 
@@ -31,7 +28,7 @@ To enable heartbeat metrics and/or logging to Application Insights; edit the fol
 
 <br/>
 
-### Setting up health checks
+## Setting up health checks
 
 To disable ApplicationInsights or change the health state path; edit the following sections:
 
@@ -59,7 +56,7 @@ To disable ApplicationInsights or change the health state path; edit the followi
 
 <br/>
 
-### See Also  
+## See Also  
 * [HTTP API](monitoring/httpapi.md)
   
 <br/>

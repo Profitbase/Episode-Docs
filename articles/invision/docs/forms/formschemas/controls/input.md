@@ -1,8 +1,5 @@
----
-title: "Input"
-metaKeys: "UI, Text Control, Controls,  Editable, html, input, bind, model, value, type, text, number, checkbox, date, email, month, password, time, url, week"
-pageIndex: 9
----
+
+# Input
 
 Inherits from [Editable Control](editablecontrol.md).
 
@@ -81,7 +78,7 @@ Specifies the hotkey for the control.
 
 <br/>
 
-### Videos
+## Videos
 
 - [Form Schemas](../../../../videos/formschemas.md)
 

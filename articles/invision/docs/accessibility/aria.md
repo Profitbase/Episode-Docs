@@ -1,5 +1,5 @@
 
-### Aria-labelledby
+# Aria-labelledby
 
 The aria-labelledby attribute establishes relationships between objects and their label(s), and its value should be one or more element IDs, which refer to elements that have the text needed for labeling. List multiple element IDs in a space delimited fashion.
 
@@ -9,7 +9,7 @@ Assistive technology, such as screen readers, use this attribute to catalog the 
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/aria.png)
 
-#### Videos
+## Videos
 
 - [Accessibility](../../videos/accessibility.md)
   

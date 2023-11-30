@@ -1,9 +1,5 @@
----
-title: "Home Page"
-metaKeys: "Home Page, Customizing, WorkbookId , Order , ImageUrl , CssClass  "
-folderOnly: "false"
-pageIndex: 14
----
+
+# Home Page
 
 ### Customizing the Home Page Layout
 
@@ -49,13 +45,13 @@ The configuration enables you to define Workbook groups and the order of which t
 To configure a WorkbookTile, you need to set the WorkbookId attribute. The value of the attribute is the object id of the Workbook that can be found by right-clicking the Workbook in the Solution Explorer and "Copy Id to Clipboard".
 <br/>
 
-#### Workbook as a Homepage
+## Workbook as a Homepage
 
 You can configure a Workbook to be the landing page of InVision instead of the default system homepage. This enables you to create a fully customized and actionable landing page for users instead of just a Workbook launcher portal.
 ![pic](https://profitbasedocs.blob.core.windows.net/images/wbasSp.png)
 <br/>
 
-#### WorkbookGroup properities
+## WorkbookGroup properities
 
 - **Heading** specifies the default heading for the group in the Homepage or the heading of the Group in the Workbook Menu (sidebar)
 
@@ -63,7 +59,7 @@ You can configure a Workbook to be the landing page of InVision instead of the d
 
 - **MenuImage** specifies the image displayed as the Group node in the Workbook Menu.
 
-#### WorkbookTile properties
+## WorkbookTile properties
 
 - **WorkbookId** specifies the Id of the Workbook that the tile should represent. Available Workbooks without matching tile Ids will be rendered after the configured tiles using a default style template.
 

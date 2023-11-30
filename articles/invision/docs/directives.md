@@ -1,11 +1,4 @@
----
-title: "Directives"
-metaKeys: "InVision directives, Solutions, created, combination of configuration, scripting, Microsoft SQL Server, database backend,  .NET framework, "
-folderOnly: "false"
-pageIndex: 10
----
-
-#### InVision Directives
+# InVision Directives
 
 InVision Solutions are created using a combination of configuration and scripting. Standard features are set up using configuration, while scripting is used for implementing **custom features**.
 
@@ -15,7 +8,7 @@ InVision directives are used as a bridge between custom scripts and the InVision
 
 <br/>
 
-#### See Also
+## See Also
 
 - [How to's](directives/howto.md)
 - [C# Directives](directives/csharpdirectives.md)

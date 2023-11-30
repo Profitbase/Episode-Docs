@@ -1,20 +1,13 @@
----
-title: "How To Create Stepper"
-metaKeys: "how to, Creating Workbook, Pages, Adding Parts and The Layout System"
-folderOnly: "false"
-pageIndex: 3
----
 
+# How To Create Stepper
 
-
-
-### Link to the video
+## Link to the video
 
 Under [this](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20Stepper.mp4) link you will find a video that shows how to create Stepper. [Here](../components/uielements/stepper.md) you will find [Documentation](../components/uielements/stepper.md).
 <br/>
 <br/>
 
-### Step by step
+## Step by step
 
 
 1. Go to the Subscreens tab and add as many as you need:

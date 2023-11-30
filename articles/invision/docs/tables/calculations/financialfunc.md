@@ -1,9 +1,5 @@
----
-title: "Financial Functions"
-metaKeys: "Financial functions, AMORLINCMTH, AMORLINC"
-pageIndex: 9
----
 
+# Financial Functions
 
 
  * **AMORLINC(cost : number, date_purchased : Date, first_period : Date, salvage : number ,period : number ,rate : number [,basis : number])**

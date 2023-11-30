@@ -1,10 +1,7 @@
----
-title: "Filters"
-metaKeys: "filtering, Workbooks, Filters configuration, Setting, column, added, endpoint "
-pageIndex: 9
----
 
-### Filtering Worksheets
+# Filters
+
+## Filtering Worksheets
 To enable filtering for the [Worksheet](../worksheets.md), you must add a [Filter](../filters/index.md) to the Filters section of the Worksheet designer. This will create a filter endpoint that you must bind to a filter instance in the [Workbook](../workbooks.md) designer.
 
 When adding a filter to the Worksheet, you need to specify the [Data Store](../datastores.md) column to filter by. To specify the Data Store column to filter by, select the filter in the Filter Section of the Worksheet and then select the Data Store column from the properties editor.
@@ -27,9 +24,9 @@ To enable the filter column to be auto populated when a user adds a new row to t
 <br/>
 
 
-### See Also
+## See Also
 * [More about Filters](../filters/index.md)
 * [Filtering Tables](../tables/filters.md)
 
-### Videos
+## Videos
 * [Filters](../../videos/filters.md)

@@ -1,9 +1,5 @@
----
-title: "Run SQL Script from Workbook"
-metaKeys: "Run SQL Script"
-folderOnly: "false"
-pageIndex: 3
----
+
+# Run SQL Script from Workbook
 
 To run a SQL Script from a Workbook, use the `Execute SQL Script` Workbook action found in the Action list (see image below).
 ![Run SQL Script from Workbook](https://profitbasedocs.blob.core.windows.net/images/Run_SQLScript_From_Workbook.png)

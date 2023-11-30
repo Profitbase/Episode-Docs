@@ -1,16 +1,12 @@
----
-title: "How To Stack Components"
-metaKeys: "how to, Creating Pages, Adding Parts and The Layout System, Workbook as a Home Page"
-folderOnly: "false"
-pageIndex: 11
----
 
-### Link to the documentation
+# How To Stack Components
+
+## Link to the documentation
 
 Under [this](componentstacking.md) link you will find a documentation about [Component Stacking](componentstacking.md). 
 <br/>
 
-### How to change Z-Index
+## How to change Z-Index
 
 **Do it locally:**
 

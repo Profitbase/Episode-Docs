@@ -1,8 +1,5 @@
----
-title: "Row Collection Functions"
-metaKeys: "Row Collection Functions, ADDROWFIRST, ADDROWLAST, ADDROWAFTER, ADDROWBEFORE, IsSummaryRow, IsRowLocked "
-pageIndex: 16
----
+
+# Row Collection Functions
 
 
 ``ADDROWFIRST(JSON object)``

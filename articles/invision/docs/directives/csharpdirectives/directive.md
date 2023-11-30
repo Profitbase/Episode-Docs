@@ -1,9 +1,5 @@
----
-title: "Directive(“directive expression”) : System.Object"
-metaKeys: "Directive, expression, System, Object, Setting, Page, Part, dynamic, filter,  "
-folderOnly: "false"
-pageIndex: 2
----
+
+# Directive(“directive expression”) : System.Object
 
 
 

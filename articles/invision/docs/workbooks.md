@@ -1,11 +1,4 @@
----
-title: "Workbooks"
-metaKeys: "Workbooks, interfaces of InVision, Form Elements, Input Elements, File Upload, Button, Label, Filter, Image, iFrame, Data Flow, Scripts, Workflow, Extension, Reports, Tab Control, Form Schemas, Progress Indicator, Interaction Tracing, Title Expression, Page Title Casing, App Leave Behaviour, Workbook Properties"
-folderOnly: "false"
-pageIndex: 31
----
-
-### Workbooks
+# Workbooks
 
 Workbooks are the end-user interfaces of InVision. A Workbook consists of one or multiple pages, and each page contains one or more [components](workbooks/components.md), for example, [Worksheets](worksheets.md), [Reports](workbooks/components/reports.md), [Filters](filters/index.md), [Buttons](workbooks/components/uielements/button.md), [Labels](workbooks/components/uielements/label.md), etc.
 
@@ -21,7 +14,7 @@ from version 5.0 you can configure a Workbook to be the landing page of InVision
 
 <br/>
 
-### Workbook Properties
+## Workbook Properties
 
 **App Leave Behaviour**
 
@@ -54,7 +47,7 @@ from version 5.0 you can configure a Workbook to be the landing page of InVision
 
 <br/>
 
-### See Also
+## See Also
 
 - [How to's](workbooks/howto.md)
 - [Programming Model](workbooks/programmingmodel.md)
@@ -64,7 +57,7 @@ from version 5.0 you can configure a Workbook to be the landing page of InVision
 - [Themes and Styles](workbooks/themesandstyles.md)
 - [Workbook Menu](workbookmenu.md)
 
-### Videos
+## Videos
 
 - [Workbooks](../videos/workbooks.md)
 - [Basics - Creating Pages, Adding Parts and The Layout System](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20Basics%20-%20creating%20pages%2C%20adding%20parts%2C%20the%20layout%20system.mp4)

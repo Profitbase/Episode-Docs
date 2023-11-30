@@ -1,7 +1,7 @@
 
-## How To Control Flow and Branching
+# How To Control Flow and Branching
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flow%20-%20Control%20Flow%20and%20Branching.mp4) you will find a video that shows how to Control Flow and Branching. [Here](../../dataflows/index.md) you will find [Documentation](../../dataflows/index.md).
 <br/>
@@ -9,7 +9,7 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flo
 
 
 
-### Step by step
+## Step by step
 
 
 1. Configure control flow logic:

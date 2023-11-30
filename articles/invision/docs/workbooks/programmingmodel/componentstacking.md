@@ -1,9 +1,5 @@
----
-title: "Component Stacking"
-metaKeys: "Component Stacking (Z-Index), Selected Pane, Toggle ZIndex Stacking Disabled "
-folderOnly: "false"
-pageIndex: 1
----
+
+# Component Stacking
 
 **Component Stacking (Z-Index)**
 

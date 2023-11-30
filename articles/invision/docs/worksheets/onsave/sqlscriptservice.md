@@ -1,11 +1,5 @@
----
-title: "Sql Script Service"
-metaKeys: "LoadByName, LoadById, ExecuteScalarByName, ExecuteScalarById, ExecuteNonQueryByName, ExecuteNonQueryById, calling a SqlScriptService method, Worksheet base class APIs "
-folderOnly: "false"
-pageIndex: 2
----
 
-#### Sql Script Service
+# Sql Script Service
 
 Use the SqlScriptService to run a SQL Script when a Worksheet or Table is saved.
 
@@ -42,7 +36,7 @@ Use the SqlScriptService to run a SQL Script when a Worksheet or Table is saved.
 
 <br/>
 
-### SqlScriptService methods
+## SqlScriptService methods
 <br/>
 
 **ExecuteNonQueryById**

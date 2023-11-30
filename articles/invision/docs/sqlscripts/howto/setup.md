@@ -1,19 +1,14 @@
----
-title: "How To Create and Execute from Data Flow"
-metaKeys: "How To Create and Execute from Data Flow"
-folderOnly: "false"
-pageIndex: 1
----
+
+# How To Create and Execute from Data Flow
 
 
-
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/SQL%20Script%20-%20Create%20and%20execute%20from%20Data%20Flow.mp4) you will find video that shows how to Create and Execute from Data Flow.
 <br/>
 
 
-### Step by step
+## Step by step
 
 
 1.  Create a Sql Script:

@@ -1,19 +1,14 @@
----
-title: "How To  Create Charts"
-metaKeys: "How To  Create Charts"
-folderOnly: "false"
-pageIndex: 2
----
+
+# How To Create Charts
 
 
-
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/SQL%20Report%20Charts.mp4) you will find video that shows how to  Create Charts. 
 <br/>
 
 
-### Step by step
+## Step by step
 
 See [this](basics.md) subject first.
 

@@ -1,9 +1,5 @@
----
-title: "Editable Control (base)"
-metaKeys: "UI, Controls, Control, directly, use, Editable, TabIndex, FormatString, Placeholder, PlaceholderTextCode, PlaceholderExpression, Form Schema, tab index, formatting of the input, Numbro, Moment, date input, translation, "
-folderOnly: "false"
-pageIndex: 20
----
+
+# Editable Control (base)
 
 Inherits from [Control](control.md).
 
@@ -11,7 +7,7 @@ You cannot use this control directly in your configuration.
 
 <br/>
 
-#### Properties
+## Properties
 
 <br/>
 

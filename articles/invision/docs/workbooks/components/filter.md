@@ -1,11 +1,4 @@
----
-title: "Filter"
-metaKeys: "dynamic headings, components, Show and Hide, Localize "
-folderOnly: "false"
-pageIndex: 7
----
-
-### Filters
+# Filters
 
 Filters are components used for setting the data context for Settings, [Worksheets](../../worksheets.md), [Reports](reports.md), [Workflows](workflow.md), and [Data Flows](dataflow.md).
 
@@ -39,7 +32,7 @@ A Filter is defined as a reference to table resource ([Dimension](../../dimensio
 
 
 
-### Show and Hide Filters
+## Show and Hide Filters
 
 
 >You can toggle the visibility of a filter in a Workbook on and off.
@@ -73,7 +66,7 @@ Use the **Execute Expression** action of a filter to toggle its visibility on an
 
 
 
-### Filter headings
+## Filter headings
 
 <br/>
 
@@ -124,11 +117,11 @@ ResetHeader(); // Resets the header back to the default value
 
 
 
-### See Also
+## See Also
 * [More about Filters](../../filters/index.md)
 * [Filtering Tables](../../tables/filters.md)
 * [Filtering Worksheets](../../worksheets/filters.md)
 
-### Videos
+## Videos
 
 * [Filters](../../../videos/filters.md)

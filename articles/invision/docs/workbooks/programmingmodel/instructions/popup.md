@@ -1,11 +1,4 @@
----
-title: "Popup"
-metaKeys: "Popup"
-folderOnly: "false"
-pageIndex: 19
----
-
-### Popup
+# Popup
 
 <br/>
 
@@ -64,7 +57,7 @@ ClosePopup("My Popup");
 
 <br/>
 
-### Videos
+## Videos
 
 * [Workbooks](../../../../videos/workbooks.md)
 * [Creating Popups](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20Creating%20Popups.mp4)

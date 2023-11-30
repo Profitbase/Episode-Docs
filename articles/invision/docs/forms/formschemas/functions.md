@@ -1,11 +1,5 @@
----
-title: "Functions"
-metaKeys: " Functions, business logic, javascript, form runtime, name parameters, function body"
-folderOnly: "false"
-pageIndex: 6
----
-
-                                                                 
+                                                            
+# Functions
 
 Using Functions, you can define your own, reusable functions (business logic) that you can call from within Event Handlers or other Functions. This enables you to reuse code and reduce code duplication for business logic within Form Schemas.
 
@@ -72,7 +66,7 @@ ___
 
 <br/>
 
-### Videos 
+## Videos 
 
 * [Form Schemas](../../../videos/formschemas.md)
 * [Functions](https://profitbasedocs.blob.core.windows.net/videos/Form%20Schema%20-%20Function.mp4)

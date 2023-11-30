@@ -1,16 +1,12 @@
----
-title: "How to Enable Support for Multiple Languages"
-metaKeys: "How to Enable Support for Multiple Languages"
-folderOnly: "false"
-pageIndex: 2
----
 
-### Link to the video
+# How to Enable Support for Multiple Languages
+
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Dim%20Translations%20Members.mp4) you will find video that shows how to enable support for multiple languages.
 <br/>
 
-### Step by step
+## Step by step
 
 
 1. In the configuration tab, choose optional language(s) for translation:

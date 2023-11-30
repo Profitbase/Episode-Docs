@@ -1,19 +1,14 @@
----
-title: "How To Set Up File Click Action"
-metaKeys: "How To Set Up File Click Action"
-folderOnly: "false"
-pageIndex: 4
----
 
+# How To Set Up File Click Action
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/File%20Storage%20-%20File%20Click%20Actions.mp4) you will find video that shows How To Set Up File Click Action in the [File Storage](../../filestorage.md).
 
 <br/>
 
 
-### Step by step
+## Step by step
 
 
 1. Choos one of the behaviours in the File Storage properties box:

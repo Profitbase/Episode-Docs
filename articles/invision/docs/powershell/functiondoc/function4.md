@@ -1,8 +1,5 @@
----
-title: "Profitbase.Data.SqlScript functions"
-metaKeys: "[Profitbase.Data.SqlScript]::ExecuteReader, $result = [Profitbase.Data.SqlScript]::ExecuteNonQueryByName($scriptName [, $sqlParameters]), $result = [Profitbase.Data.SqlScript]::ExecuteNonQueryById($scriptId [, $sqlParameters]), $objectResult = [Profitbase.Data.SqlScript]::ExecuteScalarByName($scriptName [, $sqlParameters]), $objectResult = [Profitbase.Data.SqlScript]::ExecuteScalarById($scriptId [, $sqlParameters]), $dataTable = [Profitbase.Data.SqlScript]::LoadTableByName($scriptName [, $sqlParameters]), $dataTable = [Profitbase.Data.SqlScript]::LoadTableById($scriptId [, $sqlParameters]), $sqlDataReader = [Profitbase.Data.SqlScript]::ExecuteReaderByName($scriptName [, $sqlParameters]), $sqlDataReader = [Profitbase.Data.SqlScript]::ExecuteReaderById($scriptId [, $sqlParameters]), Executes the defined SQL Script, [Profitbase.Data.SqlScript]::ExecuteNonQuery, [Profitbase.Data.SqlScript]::ExecuteScalar, [Profitbase.Data.SqlScript]::LoadTable, [Profitbase.Data.SqlScript]::ExecuteReader "
-pageIndex: 4
----
+
+# Profitbase.Data.SqlScript functions
 
 These functions use SQL Scripts stored in InVision. Scripts can be addressed by Name or Id.
 
@@ -89,7 +86,7 @@ $readerHadRows = $reader.HasRows
 $reader.Close() # Closes reader and connection
 ```
 
-### Videos
+## Videos
 
 - [PowerShell](../../../videos/powershell.md)
 - [ExecuteScalarByName](https://profitbasedocs.blob.core.windows.net/videos/PS%20-%20execute%20scalar%20SQL.mp4)

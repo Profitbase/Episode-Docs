@@ -1,10 +1,5 @@
----
-title: "Data Flow"
-metaKeys: "Data Flow, Data Context Variables Assignment, Actions, start, stop, events, completed, executing, parameterized execution, "
-folderOnly: "false"
-pageIndex: 2
----
 
+# Data Flow
 
 In order to execute Data Flows from a [Workbook](../../workbooks.md), you need to add them to a page. If you do not want to show the execution log of a Data Flow to the user, you can add it to a hidden page. You can still indicate that some process is running by adding spinners and starting and stopping them when the Data Flow starts and stops.
 
@@ -15,7 +10,7 @@ In order to execute Data Flows from a [Workbook](../../workbooks.md), you need t
 
 <br/>
 
-### Actions
+## Actions
 
 *	**Start**  
 It starts an asynchronous execution of the Data Flow. This action does not wait for the Data Flow to complete its execution, it returns immediately once the execution has started. 
@@ -26,20 +21,20 @@ Sends a request to the server asking to stop the current execution of the Data F
 
 <br/>
 
-### Events
+## Events
 
 *	**Completed**  
 The Completed event is raised when the Data Flow completes execution. The event is raised when the Data Flow completes normally, and after an abort request has been sent by the Stop action.
 
 <br/>
 
-### Executing Data Flows
+## Executing Data Flows
 
 To start executing a Data Flow from a Workbook, you need to call the **Start Action** of the Data Flow. Calling the Start action will start a new instance of the Data Flow. When the Start action returns, it means that the execution has started, not that the Data Flow has run to completion. When the Data Flow has run to completion, the Data Flow raises the **Completed** event. 
 
 <br/>
 
-### Parameterized execution
+## Parameterized execution
 
 To pass arguments to a Data Flow being executed from a Workbook, you need to edit the Arguments property of the Data Flow part from the Workbook designer.
 
@@ -71,7 +66,7 @@ To override the default values, you can use variables, the Filter(…) function,
 
 <br/>
 
-### Data Context Scope
+## Data Context Scope
 
 To apply a Data Context for transactions, being processed based on states (selected filter values and variables) in the Workbook, you need to specify the Data Context Scope for the Data Flow. 
 
@@ -116,7 +111,7 @@ If you didn't get the expected result after setting up the Data Context, probabl
 
 <br/>
 
-### Runtime information
+## Runtime information
 
 When a Data Flow is started, InVision creates a variable with the name of the Data Flow part and assigns an info object to the variable containing a TaskId and DataFlowId property. 
 
@@ -143,7 +138,7 @@ If you are creating custom Data Flow Items, the TaskId and DataFlowId can be rea
 
 <br/>
 
-### Logging
+## Logging
 
 To display the Data Flow while it’s running, you need to set the Show Execution Log property to True in the properties editor. Also, the Data Flow cannot be hosted on a hidden page.
 
@@ -152,7 +147,7 @@ To display the Data Flow while it’s running, you need to set the Show Executio
 
 <br/>
 
-### Error notifications
+## Error notifications
 
 To enable error notifications, you need to set the **Popup Execution Errors** property to True in the Properties editor.
 
@@ -162,13 +157,13 @@ To enable error notifications, you need to set the **Popup Execution Errors** pr
 
 <br/>
 
-### See Also
+## See Also
 * [More about Data Flows](../../dataflows/index.md)
 * [Execution of Data Flows](../../dataflows/execution/index.md)
 * [Data Context](../../dataflows/datacontext/index.md)
 <br/>
 
-### Videos
+## Videos
 
 * [Data Flows](../../../videos/dataflows.md)
 * [Introduction to Parameterization](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flow%20-%20Introduction%20to%20parameterization.mp4)

@@ -1,17 +1,13 @@
----
-title: "How To Create a Custom Row"
-metaKeys: "How To Create a Custom Row"
-folderOnly: "false"
-pageIndex: 3
----
+
+# How To Create a Custom Row
 
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Worksheet%20-%20Custom%20Row.mp4) you will find a video that shows how to create a Custom Row. [Here](../customrows.md) you will find [Documentation](../customrows.md).
 <br/>
 
-### Step by step
+## Step by step
 
 
 1. Choose a column and go to Custom Rows window:

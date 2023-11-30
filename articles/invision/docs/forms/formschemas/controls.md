@@ -1,15 +1,11 @@
----
-title: "Controls"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 3
----
+
+# Controls
 
 Controls are the basic building blocks for creating forms and can be used to display or edit data, and perform an action.
 
 <br/>
 
-### See Also
+## See Also
 
 - [Button](controls/button.md)
 - [DatePicker](controls/datepicker.md)
@@ -35,7 +31,7 @@ Controls are the basic building blocks for creating forms and can be used to dis
 
 <br/>
 
-### Videos
+## Videos
 
 - [Form Schemas](../../../videos/formschemas.md)
 

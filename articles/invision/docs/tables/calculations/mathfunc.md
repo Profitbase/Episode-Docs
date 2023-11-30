@@ -1,8 +1,5 @@
----
-title: "Math / Trig Functions"
-metaKeys: "Math, Trig functions, ABS, ACOS, ASIN, ATAN, ATAN2, CEILING, COS, EXP, FLOOR, LN, LOG, LOG10, MOD, POW, expression, number, RAND, ROUND, SIGN, SIN, SQRT, SUM, TAN, NUM_MIN "
-pageIndex: 13
----
+
+# Math / Trig Functions
 
 
 ``ABS(x : number | <expression>)``

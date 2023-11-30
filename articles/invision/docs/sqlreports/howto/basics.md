@@ -1,19 +1,15 @@
----
-title: "How To Create SQL Reports"
-metaKeys: "How To Create SQL Reports"
-folderOnly: "false"
-pageIndex: 1
----
 
 
+# How To Create SQL Reports
 
-### Link to the video
+
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/SQL%20Report%20Intro%20basics.mp4) you will find video that shows how to Create SQL Reports. 
 <br/>
 
 
-### Step by step
+## Step by step
 
 
 1.  Create datasets with SQL scripts:

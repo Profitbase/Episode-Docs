@@ -1,18 +1,14 @@
----
-title: "How To Create a Package"
-metaKeys: "How To Create a Package"
-folderOnly: "false"
-pageIndex: 1
----
+
+# How To Create a Package
 
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Package%20-%20Create%20Package.mp4) you will find video that shows how to Create a Package. [Here](../../package.md) you will find [Documentation](../../package.md).
 <br/>
 
 
-### Step by step
+## Step by step
 
 
 1. Right-click chosen folder in Solution Explorer to add a new item, choose Package:

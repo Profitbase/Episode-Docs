@@ -1,9 +1,5 @@
----
-title: "Iterations, Archiving and Versioning"
-metaKeys: "Iterations, archiving and versioning, "
-pageIndex: 3
----
 
+# Iterations, Archiving and Versioning
 
 The execution of a Workflow is called an iteration, which has a start and an end. An iteration can be started from InVision Dev Studio, the Workflow Panel hosted in a Workbook, or from a (scheduled) Data Flow. The start and end activities can be of any type, but you would normally start and finish with Action Activities performing rollover and archiving respectively.
 

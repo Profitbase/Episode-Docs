@@ -1,32 +1,27 @@
----
-title: "Tables"
-metaKeys: "Intro - Creating, editing, table schema, columns and their properties"
-pageIndex: 16
----
 
+# Tables
 
-
-### Intro - Creating, Editing, Table Schema, Columns and Their Properties
+## Intro - Creating, Editing, Table Schema, Columns and Their Properties
 [Documentation](../docs/tables.md)
 
 ![video](https://profitbasedocs.blob.core.windows.net/videos/Tables%20-%20Intro%20-%20creating%2C%20editing%2C%20table%20schema%2C%20columns%20and%20their%20properties.mp4)
 <br/>
 
-###  Table Events - Cell Action Link Tapped
+##  Table Events - Cell Action Link Tapped
 [Documentation](../docs/tables/howto/table-events-cell-action-link.md)
 
 ![video](https://profitbasedocs.blob.core.windows.net/videos/Table%20Events%20-%20Cell%20Action%20Link%20Tapped.mp4)
 
 <br/>
 
-###  Table Events - Cell Action Link Tapped example 2
+##  Table Events - Cell Action Link Tapped example 2
 [Documentation](../docs/tables/howto/table-events-cell-action-link.md)
 
 ![video](https://profitbasedocs.blob.core.windows.net/videos/Table%20Events%20-%20Cell%20Action%20Link%20Tapped%20(2).mp4)
 
 <br/>
 
-###  Table Events - Data Modified and Item Added Events
+##  Table Events - Data Modified and Item Added Events
 [Documentation](../docs/tables/howto/table-events-cell-action-link.md)
 
 
@@ -34,7 +29,7 @@ pageIndex: 16
 
 <br/>
 
-### Modifying Spreadsheets With Custom JavaScript
+## Modifying Spreadsheets With Custom JavaScript
 [Documentation](../docs/javascript.md)
 
 
@@ -42,42 +37,42 @@ pageIndex: 16
 
 <br/>
 
-### Custom Query
+## Custom Query
 [Documentation](../docs/tables/customquery.md)
 
 ![video](https://profitbasedocs.blob.core.windows.net/videos/Worksheet%20-%20Custom%20Query.mp4)
 
 <br/>
 
-### Cell and Row Styling Functions
+## Cell and Row Styling Functions
 [Documentation](../docs/tables/calculations/cellnrowstylfunc.md)
 
 ![video](https://profitbasedocs.blob.core.windows.net/videos/Worksheet%20-%20Cell%20and%20Row%20Styling%20Functions.mp4)
 
 <br/>
 
-### Cell Validation in Table
+## Cell Validation in Table
 [Documentation](../docs/tables/cellvalidation.md)
 
 ![video](https://profitbasedocs.blob.core.windows.net/videos/Spreadsheet%20-%20Cell%20Validation.mp4)
 
 <br/>
 
-### Dropdown Selection
+## Dropdown Selection
 [Documentation - Dropdown Selection](../docs/tables/columnproperties/dropdownselection.md)
 
 ![video](https://profitbasedocs.blob.core.windows.net/videos/Worksheet%20-%20Dropdown%20Selection.mp4)
 
 <br/>
 
-### Column captions for Time Frame Columns
+## Column captions for Time Frame Columns
 [Documentation - Column captions](../docs/tables/colcaptions.md)
 
 ![video](https://profitbasedocs.blob.core.windows.net/videos/Worksheet%20-%20Column%20captions%20for%20Time%20Frame%20Columns.mp4)
 
 <br/>
 
-### Documentation  
+## Documentation  
 
 * [Tables](../docs/tables.md)
 

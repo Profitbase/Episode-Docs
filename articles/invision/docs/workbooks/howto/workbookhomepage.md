@@ -1,22 +1,13 @@
----
-title: "How To Set Up Workbook as a Home Page"
-metaKeys: "how to, Creating Pages, Adding Parts and The Layout System, Workbook as a Home Page"
-folderOnly: "false"
-pageIndex: 7
----
 
- 
+# How To Set Up Workbook as a Home Page
 
-
-
-
-### Link to the video
+## Link to the video
 
 Under [this](https://profitbasedocs.blob.core.windows.net/videos/Workbooks%20-%20Workbook%20as%20a%20Homepage.mp4) link you will find a video that shows how to set up a Workbook as a Home Page. [More](../../homepage.md) about [Home Page](../../homepage.md).
 <br/>
 <br/>
 
-### Step by step
+## Step by step
 
 
 1. To set up Workbook as a Home Page you need to click the checkboks "Use as Startpage":

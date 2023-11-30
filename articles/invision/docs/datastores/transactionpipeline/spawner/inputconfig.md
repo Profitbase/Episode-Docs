@@ -1,14 +1,14 @@
 
-## Input Configuration
+# Input Configuration
 
 <br/>
 
-### Relationship
+## Relationship
 
 Specifies the column mapping used for determining which rows from the source table gets processed by the Spawner when the pipeline is run. In addition to this mapping, the Spawner Ruleset table may extend the filter by specifying a Condition Expression column containing a logical expression indicating whether rows should be spawned from on the source row or not. The rows from the source table not passing the filtering step are ignored by the component.
 <br/>
 
-### Computation Source Column(s)
+## Computation Source Column(s)
 
 Specifies the column(s) to process. For each source row passing the Relationship (and optionally Condition Expression) filter, the spawner will produce rows based on the Ruleset configuration. The number of rows generated for every source row depends on the number of matches found in the Ruleset table. Note! The columns defined in this list must be Time Frame Measure Columns unless the Distributer is enabled, in which case the transaction date is derived from the current batch of distributed transactions.
 <br/>
@@ -51,7 +51,7 @@ Month() != 7 && Month() != 8
 <br/>
 
 
-### Additional columns
+## Additional columns
 
 Additional columns defines a list of columns that can be included in the output with the standard output. To output the additional columns, they need to be mapped to target columns in the **Additional Output** list of the Output configuration.
 <br/>

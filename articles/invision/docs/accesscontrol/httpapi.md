@@ -1,19 +1,19 @@
-
-### Manage Access Control using an API
+# Getting an API Key
+## Manage Access Control using an API
 
 Access control can be managed through an **HTTP API**. To manage Identities/Groups/Access Control through the API, you need an **API Key** and the **API address**.
 
 
 <br/>
 
-### Getting an API Key
+## Getting an API Key
 
 To get an API Key to use with the Access Control Management API, go to **Application Menu -> API Management -> Edit**. In the **Access Control** tab, find an existing key or create a new one. Use the API Key in the **url** or header in the request (see the **example** below).
 
 
 <br/>
 
-### Define API key in designer
+## Define API key in designer
 
 1. Click the Edit command under the API Management menu item.
 2. Select the Access Control tab.
@@ -26,7 +26,7 @@ To get an API Key to use with the Access Control Management API, go to **Applica
 
 
 
-### Get Identities API
+## Get Identities API
 
 This API gets a list of existing Identities.
 
@@ -43,7 +43,8 @@ GET
 *Required*  
 api_key=[api key]
 
-**Note!** Optionally, you can provide the API key as a header named x-api-key
+> [!NOTE]
+> Optionally, you can provide the API key as a header named x-api-key
 
 **Success Response**
 
@@ -87,7 +88,7 @@ https://mydomain.com/invision/api/v1/accesscontrol/identities?api_key=2b206745-6
 
 <br/>
 
-### Get Identity API
+## Get Identity API
 
 This API gets the properties of an existing Identity.
 
@@ -104,7 +105,8 @@ GET
 *Required*  
 api_key=[api key]
 
-**Note!** Optionally, you can provide the API key as a header named x-api-key
+> [!NOTE]
+> Optionally, you can provide the API key as a header named x-api-key
 
 **Success Response**
 
@@ -142,7 +144,7 @@ https://mydomain.com/invision/api/v1/accesscontrol/identities/04f0bc48-a51d-4339
  
 <br/>
 
-### Add Identity API
+## Add Identity API
 
 This API adds an Identity.
 
@@ -159,7 +161,8 @@ POST
 *Required*  
 api_key=[api key]
 
-**Note!** Optionally, you can provide the API key as a header named x-api-key
+> [!NOTE]
+> Optionally, you can provide the API key as a header named x-api-key
 
  
 
@@ -198,7 +201,7 @@ https://mydomain.com/invision/api/v1/accesscontrol/identities?api_key=2b206745-6
  
 <br/>
 
-### Update Identity API
+## Update Identity API
 
 This API updates an Identity.
 
@@ -215,7 +218,8 @@ PUT
 *Required*  
 api_key=[api key]
 
-**Note!** Optionally, you can provide the API key as a header named x-api-key
+> [!NOTE]
+> Optionally, you can provide the API key as a header named x-api-key
 
  
 
@@ -254,7 +258,7 @@ https://mydomain.com/invision/api/v1/accesscontrol/identities/04f0bc48-a51d-4339
  
 <br/>
 
-### Delete Identity API
+## Delete Identity API
 
 This API deletes an Identity.
 
@@ -271,7 +275,8 @@ DELETE
 *Required*  
 api_key=[api key]
 
-**Note!** Optionally, you can provide the API key as a header named x-api-key
+> [!NOTE]
+> Optionally, you can provide the API key as a header named x-api-key
 
  
 
@@ -290,7 +295,7 @@ https://mydomain.com/invision/api/v1/accesscontrol/identities/04f0bc48-a51d-4339
  
 <br/>
 
-### Get Identity Access Groups API
+## Get Identity Access Groups API
 
 This API gets a list of an Identity’s Access Groups.
 
@@ -307,7 +312,8 @@ GET
 Required
 api_key=[api key]
 
-**Note!** Optionally, you can provide the API key as a header named x-api-key
+> [!NOTE]
+> Optionally, you can provide the API key as a header named x-api-key
 
 **Success Response**
 
@@ -344,7 +350,7 @@ https://mydomain.com/invision/api/v1/accesscontrol/identities/cafdd2dd-f709-4841
 
 <br/>
 
-### Get Access Group Identities API
+## Get Access Group Identities API
 
 This API gets a list of existing Identities in an Access Group.
 
@@ -361,7 +367,8 @@ GET
 *Required*  
 api_key=[api key]
 
-**Note!** Optionally, you can provide the API key as a header named x-api-key
+> [!NOTE]
+> Optionally, you can provide the API key as a header named x-api-key
 
 **Success Response**
 
@@ -403,7 +410,7 @@ https://mydomain.com/invision/api/v1/accesscontrol/accessgroups/cafdd2dd-f709-48
 
 <br/>
 
-### Add Access Group Identity API
+## Add Access Group Identity API
 
 Using the IdentityID, you can add an identity to an Access Group.
 
@@ -416,7 +423,8 @@ Using the IdentityID, you can add an identity to an Access Group.
 *Required*  
 api_key=[api key]
 
-**Note!** Optionally, you can provide the api key as a header named x-api-key
+> [!NOTE]
+> Optionally, you can provide the api key as a header named x-api-key
 
 **Method**
 
@@ -436,7 +444,7 @@ https://mydomain.com/invision/api/v1/accesscontrol/accessgroups/cafdd2dd-f709-48
 
 <br/>
 
-### Delete Access Group Identity API
+## Delete Access Group Identity API
 
 Using the **IdentityID**, you can add an identity to the Access Group.
 
@@ -449,7 +457,8 @@ Using the **IdentityID**, you can add an identity to the Access Group.
 *Required*  
 api_key=[api key]
 
-**Note!** Optionally, you can provide the api key as a header named x-api-key
+> [!NOTE]
+> Optionally, you can provide the api key as a header named x-api-key
 
 **Method**
 
@@ -470,7 +479,7 @@ https://mydomain.com/invision/api/v1/accesscontrol/accessgroups/cafdd2dd-f709-48
 
 <br/>
 
-### Get Access Groups API
+## Get Access Groups API
 
 This API gets a list of all  Access Groups.
 
@@ -486,7 +495,8 @@ GET
 
 Required api_key=[api key]
 
-**Note!** Optionally, you can provide the API key as a header named x-api-key
+> [!NOTE]
+> Optionally, you can provide the API key as a header named x-api-key
 
 **Success Response**
 
@@ -532,12 +542,12 @@ https://mydomain.com/invision/api/v1/accesscontrol/accessgroups?api_key=2b206745
 
 <br/>
 
-### See Also 
+## See Also 
 * [Identities](identities.md)
 
 <br/>
 
-### Videos
+## Videos
 
 * [Access Control](../../videos/accesscontrol.md)
 * [Create and Manage Azure AD Identities and Access Groups](https://profitbasedocs.blob.core.windows.net/videos/Users%20and%20Permissions%20-%20Create%20and%20Manage%20Azure%20AD%20Users%20and%20User%20Groups.mp4)

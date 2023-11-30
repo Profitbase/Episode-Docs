@@ -1,11 +1,11 @@
-
-### Link to the video
+# How to Create Identities and Access Groups
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Identities%20and%20Access%20Groups.mp4) you will find video that shows how to Create Identities and Access Groups. [Here](../identities.md) you will find [Documentation](../identities.md).
 <br/>
 
 
-### Step by step
+## Step by step
 
 
 1. Go to Access Groups tab and click Create:

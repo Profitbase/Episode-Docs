@@ -1,10 +1,5 @@
----
-title: "JSON Data API"
-metaKeys: "Table Data API, Getting an API Key, Object Data API, HTTP protocol, JSON, metchod, get, url params, Success, Response, error"
-folderOnly: "false"
-pageIndex: 2
----
 
+# JSON Data API
 
 The Data API lets you fetch data from InVision database objects (tables and views) using the HTTP protocol. The data is returned as an array of JSON objects. The main advantage of using the Data API instead of the OData API is better performance for large data sets and that you can use API Key authentication which may be easier for some clients. 
 
@@ -13,7 +8,7 @@ The Data API lets you fetch data from InVision database objects (tables and view
 
 <br/>
 
-### Getting an API Key
+## Getting an API Key
 
 To use the Data API, you need to use API Key authentication. The API Key is sent as part of the request, so you should make sure that you are always using an https connection.
 
@@ -24,7 +19,7 @@ In the Data tab, find an existing key or create a new. Use the API Key in the UR
 
 <br/>
 
-### Table Data API
+## Table Data API
 
 Use the Table Data API to fetch data from tables and views in the InVision database. The Table Data API has better performance for large data sets than the OData APIs, and provide a simpler to use authentication mechanism (API Key) for some clients.
 <br/>
@@ -43,7 +38,8 @@ GET
 >
 >api_key=[api key]
 >
->**Note!**  
+>> [!NOTE]
+>  
 >Optionally, you can provide the API key as a header named x-api-key
 >
 >*Optional*
@@ -72,7 +68,7 @@ https://mydomain.com/invision/api/pub/v1/db/tables/Store_PriceListStore_09202012
 
 <br/>
 
-### Object Data API
+## Object Data API
 
 Use the Object Data API to fetch data from DB object type Solution Objects (Data Stores, Tables, Views, Facts, Dimensions) in the InVision database. The Object Data API has better performance for large data sets than the OData APIs and provides a simpler to use an authentication mechanism (API Key) for some clients. The Object Data API and Table Data API has the same performance characteristics and offer the same features, they just differ in how the objects are addressed (Solution Object Names vs materialized DB object names).
 <br/>
@@ -91,7 +87,8 @@ GET
 >
 >api_key=[api key]
 >
->**Note!**  
+>> [!NOTE]
+>  
 >Optionally, you can provide the API key as a header named x-api-key
 >
 >*Optional*
@@ -117,6 +114,6 @@ Code: 500 Internal Server Error
 
 <br/>
 
-### Videos
+## Videos
 
 * [JSON Data API](../../videos/jsondataapi.md)

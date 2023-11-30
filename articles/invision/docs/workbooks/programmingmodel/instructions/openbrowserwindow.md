@@ -1,11 +1,4 @@
----
-title: "OpenBrowserWindow"
-metaKeys: "OpenBrowserWindow"
-folderOnly: "false"
-pageIndex: 17
----
-
-### OpenBrowserWindow(...)
+# OpenBrowserWindow(...)
 
 <br/>
 

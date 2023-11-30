@@ -1,11 +1,4 @@
----
-title: "EnableIf"
-metaKeys: "EnableIf, "
-folderOnly: "false"
-pageIndex: 6
----
-
-### EnableIf(...)
+# EnableIf(...)
 
 <br/>
 

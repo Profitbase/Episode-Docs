@@ -1,5 +1,5 @@
 
-## Change Tracking
+# Change Tracking
 
 Change Tracking logs changes made by identities when editing data in [Worksheets](../worksheets.md). [Change Tracking](howto/changetracking.md) does not record changes made by system processes or [Data Flows](../dataflows/index.md). If you need to log all changes made by Data Flows or scripts, you can use the Change Data Capture feature in SQL Server.
 
@@ -18,7 +18,7 @@ The Change Tracking table contains information about which row and column were c
 ![img](https://profitbasedocs.blob.core.windows.net/images/change%20tracking.png)
 
 
-### Column:
+## Column:
 <br/>
 
 **PBRowIdentity**  
@@ -47,6 +47,6 @@ When the change was committed to the database.
 
 <br/>
 
-### Videos
+## Videos
 * [Data Stores](../../videos/datastores.md)
 * [Change Tracking](https://profitbasedocs.blob.core.windows.net/videos/DS%20change%20tracking.mp4)

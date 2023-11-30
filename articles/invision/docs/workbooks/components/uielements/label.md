@@ -1,9 +1,5 @@
----
-title: "Label"
-metaKeys: "Label, Static text, Dynamic,styling, Translation, Localize, displays text, Workbook, Translation, "
-folderOnly: "false"
-pageIndex: 5
----
+
+# Label
 
 
 <br/>
@@ -16,11 +12,11 @@ ___
 
 A Label displays text. The text of Labels can be changed dynamically based on states in the Workbook when events are fired.
 
-### Static text
+## Static text
 
 To specify a static text, simply enter it into the Text-property of the Label.
 
-### Dynamic text
+## Dynamic text
 
 The text of a Label can be changed dynamically based on variables or selected filter values. 
 
@@ -86,7 +82,7 @@ Assuming the name of the Label is LBL_MyLabel, the expression will be:
 
 <br/>
 
-### Dynamic styling
+## Dynamic styling
 
 A Label can be dynamically styled by calling the [AddCssClass(…)](../../programmingmodel/instructions/cssclass.md), [RemoveCssClass(…)](../../programmingmodel/instructions/cssclass.md) and [ToggleCssClass(…)](../../programmingmodel/instructions/cssclass.md) functions in an ExecuteExpression action.
 
@@ -104,7 +100,7 @@ A Label can be dynamically styled by calling the [AddCssClass(…)](../../progra
 
 <br/>
 
-### Translation
+## Translation
 
 Text that changes dynamically on the client can be translated using the [Localize(…)](../../../directives/csharpdirectives/localize.md) function inside the [SetText(…)](../../programmingmodel/instructions/settext.md) of [SetTextIf(…)](../../programmingmodel/instructions/settextif.md) functions.
 
@@ -116,7 +112,7 @@ Localize(text_code : string, interpolationParams? : JSON object)
 <br/>
 
 
-#### Parameters
+### Parameters
 
 *	**text_code**  
 the text code to translate. The text code must be registered in pbSimLangText with Type $AppUIResource.
@@ -127,7 +123,7 @@ A JSON object with the interpolation information
 <br/>
 
 
-#### Suppose pbSimLangText has contains the following entries:
+### Suppose pbSimLangText has contains the following entries:
 <br/>
 
 
@@ -157,14 +153,14 @@ A JSON object with the interpolation information
 
 <br/>
 
-### See Also
+## See Also
 
 * [More about Label in Forms](../../../forms/formelements/label.md)
 
 <br/>
 
 
-### Videos
+## Videos
 
 * [Workbooks](../../../../videos/workbooks.md)
 * [Components - Label](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20Label.mp4)

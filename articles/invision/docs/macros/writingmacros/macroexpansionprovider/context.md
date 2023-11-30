@@ -1,12 +1,6 @@
----
-title: "Context"
-metaKeys: "Writing macros, Accessing arguments, Function , Non-function macros, Expansion, MacroExpansionProvider API, SqlCommandService, ObjectModel "
-pageIndex: 2
----
+# Context
 
-#### Context
-
-### MacroExpansionProvider.Context
+## MacroExpansionProvider.Context
 
 The Context API provides information about the current execution context of the macros. For example, for macros in a SQL Script, the current execution context of the macros is the invocation of the SQL Script.
 

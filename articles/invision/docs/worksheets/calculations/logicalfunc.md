@@ -1,8 +1,5 @@
----
-title: "Logical Functions"
-metaKeys: "Logical functions, NOT, IF, true, false, COALESCE, FIRSTNOTNULL, ISNULL, ISNULLORZERO, ISNUMBER, ISNUMERIC, ISERROR, IFERROR, replacement, expression, ISNULLOREMPTYSTR, NZ "
-pageIndex: 11
----
+
+# Logical Functions
 
 ``TRUE()``
 

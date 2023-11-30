@@ -1,16 +1,12 @@
----
-title: "AccessControlService"
-metaKeys: "Writing macros, AccessControlService, Accessing arguments, Function , Non-function macros, Expansion, MacroExpansionProvider API, SqlCommandService, ObjectModel, HasWorkbookPageAccessAsync, HasWorkbookAccessAsync, HasObjectAccessAsync, IsMemberOfAccessGroupAsync "
-pageIndex: 1
----
 
+# AccessControlService
 
-### MacroExpansionProvider.AccessControlService
+## MacroExpansionProvider.AccessControlService
 
 The AccessControlService provides an API against a small subset of the InVision access control system.
 <br/>
 
-### Methods:
+## Methods:
 
 >**IsMemberOfAccessGroupAsync**
 

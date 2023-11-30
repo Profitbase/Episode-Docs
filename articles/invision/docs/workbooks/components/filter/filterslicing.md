@@ -1,9 +1,5 @@
----
-title: "Filter slicing"
-metaKeys: "Filter slicing"
-folderOnly: "false"
-pageIndex: 1
----
+
+# Filter slicing
 
 You can slice hierarchical filters, so they only contain items specified in list of leaf level members.
 
@@ -45,6 +41,6 @@ To achieve this, you need to call the **SetLeafLevelConstraints(…)** and speci
 <br/>
 
 
-### Videos
+## Videos
 
 * [Workbooks](../../../../videos/workbooks.md)

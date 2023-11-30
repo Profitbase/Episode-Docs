@@ -1,12 +1,7 @@
----
-title: "Standard Directives"
-metaKeys: "Standard Directives, Param, CurrentUserName, LanguageTwoLetter, Language, LCID, returns"
-folderOnly: "false"
-pageIndex: 4
----
 
+# Standard Directives
 
-#### Custom Parameters @< Param >
+## Custom Parameters @< Param >
 
 
 
@@ -39,32 +34,32 @@ Returns the  user name of the currently logged in user. The token can be used in
 
 <br/>
 
-#### @CurrentUserUID
+## @CurrentUserUID
 
 Returns the unique ID of the user account as registered in the user management system.
 <br/>
 
-#### @CurrentUserFullName 
+## @CurrentUserFullName 
 
 Returns the full name of the user (FirstName + LastName) as registered in the user management system.
 <br/>
 
-#### @CurrentUserEmail 
+## @CurrentUserEmail 
 
 This directive returns an Email of the user registered in the user management system.
 <br/>
 
-#### @Language
+## @Language
 
 Returns the language code specified for the currently logged in user. The token can be used in Data Queries invoked from a Workbook, and will be resolved at the server.
 <br/>
 
-#### @LanguageTwoLetter
+## @LanguageTwoLetter
 
 Returns the ISO 639-1 two letter language code for the currently logged in user. The token can be used in Data Queries invoked from a Workbook, and will be resolved at the server.
 <br/>
 
-#### @LCID
+## @LCID
 
 Returns the Locale ID for the currently logged in user. The token can be used in Data Queries invoked from a Workbook, and will be resolved at the server.
 http://msdn.microsoft.com/nb-no/goglobal/bb964664.aspx
@@ -72,13 +67,13 @@ http://msdn.microsoft.com/nb-no/goglobal/bb964664.aspx
 
 <br/>
 
-#### @CurrentSolutionID
+## @CurrentSolutionID
 
 Returns the id of the Solution.
 
 <br/>
 
-#### @CurrentWorkProcessVersionID
+## @CurrentWorkProcessVersionID
 
 Returns the id of the Work Process Version that the Solution belongs to. 
 

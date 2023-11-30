@@ -1,11 +1,4 @@
----
-title: "Localize"
-metaKeys: "Localize, textcode, translating text, language selected by the logged in user, Caption Expressions, Name, labeling UI elements, configure translations"
-folderOnly: "false"
-pageIndex: 3
----
-
-#### Localize
+# Localize
 >
 >```
 >Localize(textCode : string);
@@ -38,8 +31,8 @@ Localize("AccountID")
 
 
 
-#### See Also
+## See Also
 * [Caption Expression](../../worksheets/columnproperties/caption.md)
 
-#### Videos
+## Videos
 * [Localization](../../../videos/localization.md)

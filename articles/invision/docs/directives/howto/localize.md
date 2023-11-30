@@ -1,19 +1,13 @@
----
-title: "How To Set Up Translations"
-metaKeys: "How To Setup Translations"
-folderOnly: "false"
-pageIndex: 1
----
 
+# How To Set Up Translations
 
-
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Localisation.mp4) you will find video that shows how to Setup Translations. [Here](../csharpdirectives/localize.md) you will find [Documentation](../csharpdirectives/localize.md).
 <br/>
 
 
-### Step by step
+## Step by step
 
 
 1.  Open Localization editor, add translations that you want to use:

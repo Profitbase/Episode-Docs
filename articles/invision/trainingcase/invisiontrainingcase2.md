@@ -1,12 +1,8 @@
----
-title: "Solution Training Case"
-metaKeys: "Form Schema, Table, Custom Cell Renderer, Table View, Filter, Dimension, Themes and styling, Creating and setting up the Workbook, Overview, create solution, step by step, Profitbase LOW CODE, components, ow to create solution, Add page and setup,  how to change logo, edit System Theme Variables, without using css styles, customize a Table View, how to customize cells, Create the Grid, Model, property, Action Link Column, OnTapped, Load action, SetParamValue "
-folderOnly: "false"
-pageIndex: 2
----
+
+# Solution Training Case
 
  
-### Hello learner!
+## Hello learner!
 
 In this section, we will create together a solution. Under [this](https://profitbasedocs.blob.core.windows.net/videos/MovieMania.mp4) link you will find video that shows that process step by step.
 In every part of that case you will also find [Documentation](../docs/index.md).
@@ -17,7 +13,7 @@ In every part of that case you will also find [Documentation](../docs/index.md).
 
 <br/>
 
-### Overview
+## Overview
 
 This document is a guide to build a small Profitbase Solution. The idea is that the user should get a basic understanding of how to build a planning solution and the most common features of Profitbase LOW CODE.
 
@@ -28,7 +24,7 @@ Using this simple example, we want to show you how the Invision LOW CODE can be 
 
 <br/>
 
-### 1. Creating and setting up the Workbook
+## 1. Creating and setting up the Workbook
 
 > In this section you will find instruction on how to create solution, [Structure Folders](../docs/bestpractice/structuringsolution.md), and setup [Access Control](../docs/accesscontrol/index.md).  
 > See also [Interface Introduction Video](https://profitbasedocs.blob.core.windows.net/videos/Getting%20Started%20-%20Interface%20Introduction.mp4), [Access Control Videos](../videos/accesscontrol.md).
@@ -64,7 +60,7 @@ Using this simple example, we want to show you how the Invision LOW CODE can be 
 
 <br/>
 
-### 2. Themes and styling
+## 2. Themes and styling
 
 <br/>
 
@@ -95,7 +91,7 @@ Using this simple example, we want to show you how the Invision LOW CODE can be 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/MovMania%20(9).png)
 <br/>
 
-### 3. Dimension
+## 3. Dimension
 
 <br/>
 
@@ -134,7 +130,7 @@ Using this simple example, we want to show you how the Invision LOW CODE can be 
 
 <br/>
 
-### 4. Filter
+## 4. Filter
 
 <br/>
 
@@ -167,7 +163,7 @@ Using this simple example, we want to show you how the Invision LOW CODE can be 
 
 <br/>
 
-### 5. Table View
+## 5. Table View
 
 <br/>
 
@@ -223,7 +219,7 @@ Using this simple example, we want to show you how the Invision LOW CODE can be 
 
 <br/>
 
-### 6. Custom Cell Renderer
+## 6. Custom Cell Renderer
 
 <br/>
 
@@ -246,7 +242,7 @@ Using this simple example, we want to show you how the Invision LOW CODE can be 
 
 <br/>
 
-### 7. Table 
+## 7. Table 
 
 <br/>
 
@@ -273,7 +269,7 @@ Using this simple example, we want to show you how the Invision LOW CODE can be 
 <br/>
 
 
-### 8. Form Schema 
+## 8. Form Schema 
 
 <br/>
 

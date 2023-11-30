@@ -1,5 +1,5 @@
 
-### Tasks Templates
+# Tasks Templates
 
 Task Templates contain Tasks being executed by Data Flow Items.
 <br/>
@@ -13,31 +13,31 @@ InVision has a number of built-in Tasks that can be used out of the box by addin
 ![pic](https://profitbasedocs.blob.core.windows.net/images/DataFlowItemTasks%20(2).png)
 
 
-### Generic Sql Tasks
+## Generic Sql Tasks
 <br/>
 
-#### Generic Sql Script
+### Generic Sql Script
 
 Executes a T-Sql script which does not return a value.  
 **Return value** : None
 <br/>
 
 
-#### Create Random Object Name
+### Create Random Object Name
 
 Generates a random name that can be used as a Table or View name.  
 **Return value** : Database Object Name : String
 <br/>
 
 
-#### Create Database Table
+### Create Database Table
 
 Create a database table from the schema configuration and returns the name of the table. If the name is not specified, a random name will be used.  
 **Return value** : The name of the table that was created
 
 <br/>
 
-#### Copy Database Table
+### Copy Database Table
 
 Creates a table based on the schema of the souce table and returns the name of the table that was created. En kan spesifisere om innhold skal kopieres i tillegg til skjema.  
 If the name of the target table is not specified, or is set to **Auto**, a random name will be created.  
@@ -45,37 +45,37 @@ If the name of the target table is not specified, or is set to **Auto**, a rando
 
 <br/>
 
-#### Update Database Table
+### Update Database Table
 
 Updates a target table by merging in new and updates values from a source table. No rows will be deleted from the target table.  
 **Return value** : None
 <br/>
 
-#### Drop Database Table
+### Drop Database Table
 
 Drops a table from the database.  
 **Return value** : The name of the table that was dropped
 <br/>
 
-#### Change Data Capture – Is Enabled for Database
+### Change Data Capture – Is Enabled for Database
 
 Checks if Change Data Capture is enabled for the Database.  
 **Return value** : Boolean (true / false)
 <br/>
 
-#### Change Data Capture – Enable for Database
+### Change Data Capture – Enable for Database
 
 Enables Change Data Capture for the database and returns a value indicating wether the operation was successful.  
 **Return value** : Boolean (true/false)
 <br/>
 
-#### Change Data Capture – Disable for Database
+### Change Data Capture – Disable for Database
 
 Disables Change Data Capture for the database and returns a value indicating wether the operation was successful.  
 **Return value** : Boolean (true/false)
 <br/>
 
-#### Change Data Capture – Is Enabled for Table
+### Change Data Capture – Is Enabled for Table
 
 Checks if Change Data Capture is enabled for the database table.  
 **Return value** : Boolean (true/false)

@@ -1,10 +1,6 @@
----
-title: "Image"
-metaKeys: "Image, LoadData, SetSrc"
-folderOnly: "false"
-pageIndex: 4
----
 
+
+# Image
  
 <br/>
 
@@ -16,7 +12,7 @@ pageIndex: 4
 
 Displays an image in a Workbook. Use the LoadData action and call the [SetSrc(…)](../../programmingmodel/instructions/setsrc.md) function to specify the image source (url) dynamically, or set the **Source property** to specify a static or initial image source.
 
-### Actions
+## Actions
 
 * **LoadData**  
   Use this action to refresh the image displayed by calling the [SetSrc(…)](../../programmingmodel/instructions/setsrc.md) function. If you just want to display a static image, specify the url in the Source property of the component.
@@ -35,6 +31,6 @@ Use the "asFile" query string parameter to specify that you want the API to serv
 
 
 
-#### Videos
+## Videos
 
 * [Styling - Using Custom Images](../../../../videos/themesandstyles.md)

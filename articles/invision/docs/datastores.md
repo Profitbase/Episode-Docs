@@ -1,11 +1,4 @@
----
-title: "Data Stores"
-metaKeys: "Data Stores, SQL Server tables, processing, fact, dimension, create star schema, Create Worksheets, integrate, script, dimensions, Enable foreign key constraints, set, function, Flow, core setup, Rollover, Periodic Input, Core Set, Transaction Pipeline"
-folderOnly: "false"
-pageIndex: 8
----
-
-### Data Stores
+# Data Stores
 
 Data Stores are the primary data repositories of your Solution. Data Stores should be used for storing the master data and processing results for your business modules, while Tables should contain configuration data for business rules and utility functions.
 
@@ -36,7 +29,7 @@ In addition to the core setup of the Data Store where you define the schema and 
 
 <br/>
 
-### See Also
+## See Also
 
 - [How to's](datastores/howto.md)
 
@@ -68,6 +61,6 @@ In addition to the core setup of the Data Store where you define the schema and 
 
 <br/>
 
-### Videos
+## Videos
 
 - [Data Stores](../videos/datastores.md)

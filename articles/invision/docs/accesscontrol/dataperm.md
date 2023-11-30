@@ -1,5 +1,5 @@
 
-### Data Permissions 
+# Data Permissions 
 
 Access to resources, such as [Workbooks](../workbooks.md), Data, and APIs are granted to [Access Groups](accessgroups.md). You can grant that access by setting Data Permissions. 
 
@@ -8,7 +8,7 @@ Access to resources, such as [Workbooks](../workbooks.md), Data, and APIs are gr
 Every time a new workbook is created the access need to be granted.
 <br/>
 
-###	Granting Data Permission
+##	Granting Data Permission
 
 <br/>
 
@@ -34,12 +34,12 @@ You can now test different identity accesses by moving your identity from Admin 
 
 <br/>
 
-### See Also 
+## See Also 
 
 * [Data Permissions Editor](../workbooks/components/accesscontrol/dataperm.md)
 
 <br/>
 
-### Videos
+## Videos
 
 * [Access Control](../../videos/accesscontrol.md)

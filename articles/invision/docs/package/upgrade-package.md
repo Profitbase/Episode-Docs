@@ -1,11 +1,4 @@
----
-title: "Upgrade Package"
-metaKeys: "package deploy"
-folderOnly: "false"
-pageIndex: 4
----
-
-#### Upgrade Package
+# Upgrade Package
 
 Installed Packages can be upgraded to newer versions. When a Package is upgraded, the currently installed version of the Package is deleted before the new version is installed. This means that any customizations made to the Package will be lost. 
 
@@ -19,7 +12,7 @@ Installed Packages can be upgraded to newer versions. When a Package is upgraded
 
 <br/>
 
-### Upgrade Package
+## Upgrade Package
 
 1. Open a Solution and find the Package that you want to upgrade
 2. Press **Upgrade**. Then choose an available upgrade from the Profitbase Store, or choose a `.pckup` file.
@@ -27,14 +20,14 @@ Installed Packages can be upgraded to newer versions. When a Package is upgraded
 
 <br/>
 
-### See Also
+## See Also
 
 - [Production Upgrade](upgrade-package/production-upgrade.md)
 
 
 <br/>
 
-### Videos
+## Videos
 
 * [Packages](../../videos/packages.md)
 * [Upgrade](https://profitbasedocs.blob.core.windows.net/videos/Packages%20-%20Upgrade.mp4)

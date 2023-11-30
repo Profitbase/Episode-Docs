@@ -1,13 +1,8 @@
----
-title: "Workflow"
-metaKeys: "Workflow, Iteration management and reports, Status Report, Workflow Work Unit, Events,  State Changed"
-folderOnly: "false"
-pageIndex: 20
----
 
 
+# Workflow
 
-### Iteration management and reports
+## Iteration management and reports
 
 [Workflows](../../workflow.md) defined in the Solution are listed in the [Workbook](../../workbooks.md) Toolbox and can be added to the Workbook by dragging and dropping them onto [pages](../pages.md). When a Workflow part is added to a Workbook, you can enable the user interface for [Iteration Management](../programmingmodel/interactionmodel.md) and/or reporting the status.
 
@@ -37,7 +32,7 @@ For every Flow Control Object, the state and number of members holding the state
 
 By selecting a state, all members of the state are displayed.
 
-### Workflow Work Unit
+## Workflow Work Unit
 
 Workflow Work Units defined in the Solution are listed in the Workbook Toolbox and can be added to the Workbook by dragging and dropping them onto pages.
 
@@ -47,7 +42,7 @@ The Work Unit object is rendered as a dropdown containing the states available f
 
 When the user has changed the state, it needs to be saved. To save the selected state, the Save Action of the part needs to be executed. When the state has been saved, the dropdown list will automatically update to reflect the new available settable states. 
 
-### Events
+## Events
 
 **State Changed**
 
@@ -59,6 +54,6 @@ When the user has changed the state, it needs to be saved. To save the selected 
 
 
 
-### See Also
+## See Also
 
 * [Workflow](../../workflow.md)

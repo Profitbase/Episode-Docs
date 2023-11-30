@@ -1,11 +1,5 @@
----
-title: "Custom Action Conditions"
-metaKeys: "Custom Action conditions, custom context menu, IsEmailNotificationEnabled"
-folderOnly: "false"
-pageIndex: 5
 
----
-
+# Custom Action Conditions
 
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/customAction1.png)

@@ -1,12 +1,12 @@
-
-### Link to the video
+# How to Manage Access to Workbooks
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Access%20Control%20-%20Manage%20access%20to%20Workbooks.mp4) you will find a video that shows how to Manage Access to Workbooks. [Here](../workbookperm.md) you will find [Documentation](../workbookperm.md).
 <br/>
 
 <br/>
 
-### Step by step
+## Step by step
 
 
 1. Go to the “Workbook Permission” tab,

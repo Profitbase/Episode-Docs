@@ -1,11 +1,4 @@
----
-title: "Table View"
-metaKeys: "Table View, Data, Grid layout and behavior, How to create dynamic and localized column captions, render the custom cell content, format cells, define context menu actions, filter on one or more columns, pin columns to left or right"
-folderOnly: "false"
-pageIndex: 23
----
-
-### Table View
+# Table View
 
 Table View is used for displaying data in a read-only data grid. Compared to spreadsheet [tables](tables.md) ([Worksheet](worksheets.md), Table, and [SQL Report](sqlreports.md)) which is used for editing data, Table View is used for displaying data in a user-friendly and nicely formatted way. The component has built-in features for selection, sorting, filtering, formatting, and custom renderers.
 
@@ -13,7 +6,7 @@ Table View is used for displaying data in a read-only data grid. Compared to spr
 
 ![TbV](https://profitbasedocs.blob.core.windows.net/images/TbView1.png)
 
-### Data
+## Data
 
 Use a SQL query to define the data set that is displayed in a Table View. You can load data from any database table or view it in the Solution database. To enable access control, use filters that reference dimensions using the same syntax that you are using to create SQL Reports.
 
@@ -21,7 +14,7 @@ You can also use macros to create highly dynamic queries using C#.
 
 <br/>
 
-### Data Grid layout and behavior
+## Data Grid layout and behavior
 
 The Data Grid tab in the Table View designer is where you create the layout and behavior by adding columns from the data set and setting properties for selection, paging, and filtering.
 
@@ -36,7 +29,7 @@ Before you can create the layout, run the (Data Source) SQL query so that you ca
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/dtgrid.png)
 
-### How to create dynamic and localized column captions
+## How to create dynamic and localized column captions
 
 If you need a dynamic column caption, or you need to support localization, use the **Caption Expression** to create a C# expression that returns a string.
 <br/>
@@ -51,7 +44,7 @@ Localize("AccountID")
 
 <br/>
 
-### How to render the custom cell content
+## How to render the custom cell content
 
 Use the Renderer column property to define a JavaScript function that returns the HTML element to render in the cell.
 
@@ -80,12 +73,12 @@ function(eventArgs, services){
 
 <br/>
 
-### How to format cells
+## How to format cells
 
 You can format numeric and date/datetime cells using the **Format String** or **Formatter** property.
 <br/>
 
-### How to define context menu actions
+## How to define context menu actions
 
 You can define custom actions pr column that the user can execute. Custom actions are defined with the **Context Menu Actions** property.
 
@@ -115,7 +108,7 @@ When a user executes an action, the action can be acted upon in the Workbook by 
 
 <br/>
 
-### How to filter on one or more columns
+## How to filter on one or more columns
 
 To enable filtering on one or more columns, set the **Enable filter** property to the true for each column that you want to filter on. This will add a filtering option for the column to the filter bar at the top of the Table View component in the Workbook.
 
@@ -128,7 +121,7 @@ If you want to instead enable the user to pick from a list of values in the colu
 ![pic](https://profitbasedocs.blob.core.windows.net/images/enableFil1.png)
 <br/>
 
-### How to use row selectability
+## How to use row selectability
 
 <br/>
 
@@ -157,7 +150,7 @@ function (args: {rows: any[], row: any, variables: {[index: string]: any}}): boo
 ```
 <br/>
 
-### Rerender
+## Rerender
 
 <br/>
 
@@ -183,7 +176,7 @@ This action can be called in the interaction window of the control.
 
 <br/>
 
-### How to pin columns to left or right
+## How to pin columns to left or right
 
 You can pin columns to left or right using the **Fixed State** property.
 
@@ -191,7 +184,7 @@ You can pin columns to left or right using the **Fixed State** property.
 
 <br/>
 
-### How to declare filter
+## How to declare filter
 
 You can filter table view using [hierarchical filter](filters/howto/hierarchicalfilter.md), to do that you need to declare that filter in the load query. You will find more [here](sqlreports/dataqueries.md) in [Data Queries](sqlreports/dataqueries.md) subject, and in this [example](tableview/howto/filter.md).
 

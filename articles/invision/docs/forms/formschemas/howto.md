@@ -1,15 +1,11 @@
----
-title: "How to's"
-metaKeys: "how to "
-folderOnly: "false"
-pageIndex: 1
----
+
+# How to's
 
 In this section, you will find a list of shortcuts to different subjects about Form Schemas.
 
 <br/>
 
-#### See Also  
+## See Also  
 
 * [How To Setup Controls](howto/controls.md)
 * [How To Setup a Dropdown](howto/dropdown.md)

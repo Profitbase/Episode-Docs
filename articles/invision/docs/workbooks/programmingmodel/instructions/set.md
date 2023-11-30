@@ -1,11 +1,4 @@
----
-title: "Set"
-metaKeys: "Set"
-folderOnly: "false"
-pageIndex: 22
----
-
-### Set function
+# Set function
 
 <br/>
 
@@ -17,7 +10,7 @@ Set(value : object | Eaze expression [, levelNum : number | Eaze expression])
 We use **Set(…)** in **SetFilterValue** actions for specifying the newly selected value of the filter. For example, when a custom context menu item is invoked or the Action Link Column is clicked. 
 <br/>
 
-### Parameters
+## Parameters
 
 ``value expression``
 
@@ -31,7 +24,7 @@ We use **Set(…)** in **SetFilterValue** actions for specifying the newly selec
 
 <br/>
 
-### Example
+## Example
 
 >This example shows how to set set the selected value of the filter to the value of the DepartmentID of row that was clicked or right clicked in a Worksheet or Report.
 

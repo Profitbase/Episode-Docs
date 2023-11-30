@@ -1,13 +1,13 @@
 
-## Input Configuration
+# Input Configuration
 
-### Relationship
+## Relationship
 
 Specifies the column mapping used for determining which rows from the source table gets processed by the Cell Adapter component when the pipeline is run. In addition to this mapping, the Cell Adapter Ruleset table may extend the filter by specifying a Condition Expression column containing a logical expression that determines if the row should be processed or not. The rows from the source table not passing the filtering step are ignored by the component.	
 
 <br/>
 
-### Computation Source Column(s)
+## Computation Source Column(s)
 
 Specifies the column(s) to unpivot (to a data-value pair) and write to the target. The Cell Adapter component will generate rows for each item defined in the list if the source row passes the filtering step. The number of rows generated from each source row depends on the number of matches found in the Ruleset table. The columns defined in this list must be **Time Frame Measure Columns** so they can be unpivoted and written as date-value pairs to the target.
 
@@ -34,7 +34,7 @@ Specifies the column(s) to unpivot (to a data-value pair) and write to the targe
 
 <br/>
 
-### Additional columns
+## Additional columns
 
 Additional columns is a list of columns that can be included in the output with the standard output. To output the additional columns, they need to be mapped to target columns in the **Additional Output** list of the Output configuration.
 

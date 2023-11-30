@@ -1,11 +1,4 @@
----
-title: "SetSrc"
-metaKeys: "SetSrc"
-folderOnly: "false"
-pageIndex: 32
----
-
-### SetSrc function
+# SetSrc function
 
 <br/>
 
@@ -15,7 +8,7 @@ SetSrc(url : string)
 This function sets the Image source of an Image Workbook component when called in its Load Data Action.
 <br/>
 
-### Example
+## Example
 
 "AssetLib" is a table in a Solution, having and "ID" and "FileName" column.
 

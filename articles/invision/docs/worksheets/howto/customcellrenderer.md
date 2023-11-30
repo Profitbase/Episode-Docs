@@ -1,17 +1,12 @@
----
-title: "How to Use Cell Renderers"
-metaKeys: "How to use Cell Renderers"
-folderOnly: "false"
-pageIndex: 1
----
 
+# How to Use Cell Renderers
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Spreadsheet%20-%20Column%20Properties%20-%20Custom%20Cell%20Renderer.mp4) you will find a video that shows how to use Cell Renderers. [Here](../columnproperties/cellrenderer.md) you will find [Documentation](../columnproperties/cellrenderer.md).
 <br/>
 
-### Step by step
+## Step by step
 
 
 1. Go to the schema tab and choose a column that you want to enhance:

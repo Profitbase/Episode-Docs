@@ -1,8 +1,6 @@
----
-title: "Keywords"
-metaKeys: "Keywords, false, true, null, this, "
-pageIndex: 10
----
+
+# Keywords
+
 
 ``false``
 

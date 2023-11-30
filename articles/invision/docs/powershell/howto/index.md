@@ -1,4 +1,4 @@
-# Howto
+# How to's
 
 * [Filenames](./filenames.md)
 * [Filenamesautom](./filenamesautom.md)

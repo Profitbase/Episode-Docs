@@ -1,11 +1,4 @@
----
-title: "GetActivePage"
-metaKeys: "GetActivePage"
-folderOnly: "false"
-pageIndex: 9
----
-
-### GetActivePage function
+# GetActivePage function
 
 <br/>
 
@@ -18,7 +11,7 @@ GetActivePage() : {Name : string, Id : string}
 **GetActivePage** returns an object describing the currently active page.
 <br/>
 
-#### Example
+## Example
 >
 >The following statement gets information about the currently active page, and checks whether or not the name equals "MyPage".
 >

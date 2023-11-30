@@ -1,5 +1,5 @@
 
-## Ruleset
+# Ruleset
 
 The Ruleset table for the Distributer component contains the distribution keys and configuration used for distributing the values of Computation Source Columns to a Value-Transdate format over multiple rows. The table must have the following configuration:
 

@@ -1,24 +1,17 @@
----
-title: "Workbook Actions"
-metaKeys: "Workbook Actions, ExecuteExpression, InvokeActionGroup, WebApi,	DownloadFile "
-folderOnly: "false"
-pageIndex: 2
----
 
+# Workbook Actions
 
-
-
-###	ExecuteExpression
+##	ExecuteExpression
 
  Executes one or more **instructions**.
 <br/>
 
-### InvokeActionGroup
+## InvokeActionGroup
 
  Invokes another Action Group. Configure the invocation using the ConfigureInvocation(…) function.
 <br/>
 
-### WebApi
+## WebApi
 
  Invokes an HTTP request by calling one of the following methods in the expression:
 
@@ -41,7 +34,7 @@ Add **headers** by calling the AddHeader(name, value) method.
 
 <br/>
 
-### DownloadFile
+## DownloadFile
 
  Downloads a file to the browser by calling one of the following methods in the expression:
     

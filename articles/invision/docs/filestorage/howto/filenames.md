@@ -1,18 +1,13 @@
----
-title: "How To get All File Names From a File Storage"
-metaKeys: "How To get All File Names From a File Storage"
-folderOnly: "false"
-pageIndex: 3
----
 
+# How To get All File Names From a File Storage
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/PowerShell%20-%20file%20name%20export.mp4) you will find video that shows How To get All File Names From a [File Storage](../../filestorage.md) and insert the file names to "MY TABLE" in the InVision database using PowerShell. [Here](../../powershell/commands.md) you will find [Documentation](../../powershell/commands.md).
 <br/>
 
 
-### Step by step
+## Step by step
 
 
 1. Right-click chosen folder in Solution Explorer to add a new item, choose PowerShell:

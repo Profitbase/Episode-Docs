@@ -1,18 +1,13 @@
----
-title: "How To Create a Time Dimension"
-metaKeys: "How To Create a Time Dimension"
-folderOnly: "false"
-pageIndex: 6
----
 
+# How To Create a Time Dimension
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Creating%20a%20Time%20Dimension.mp4) you will find video that shows how to Create a Time Dimension. [Here](../../dimensions.md) you will find [Documentation](../../dimensions.md).
 <br/>
 
 
-### Step by step
+## Step by step
 
 
 1. Create Time Dimension and set it up:

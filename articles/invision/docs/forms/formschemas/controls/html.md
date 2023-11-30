@@ -1,8 +1,5 @@
----
-title: "Html"
-metaKeys: "UI, Text Control, Controls, custom HTML, form schema, displaying information, text, images, "
-pageIndex: 7
----
+
+# Html
 
 Inherits from [Control](control.md).
 

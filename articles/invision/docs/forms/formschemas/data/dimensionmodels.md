@@ -1,8 +1,5 @@
----
-title: "Dimension Models"
-metaKeys: "Dimension Models, data, objects, database, displayed, modified, user, interface, Form Schema, instance, table, view, custom query, name, source, fields, filter, insertkey, autoinsert, save, load, query, connectiongstring"
-pageIndex: 3
----
+
+# Dimension Models
 
 Dimension Models are data sources for controls that can display data in a hierarchical view, for example, the [TreeView](../controls/treeview.md) control.
 
@@ -10,7 +7,7 @@ Dimension Models are read-only and cannot be modified and saved back to the data
 
 <br/>
 
-### Properties:
+## Properties:
 
 <br/>
 
@@ -102,6 +99,6 @@ The AccessControl property is set to Custom so that all users can see the entire
 
 <br/>
 
-#### Videos
+## Videos
 
 * [Form Schemas](../../../../videos/formschemas.md)

@@ -1,9 +1,5 @@
----
-title: "Conditional Cell Read Only state"
-metaKeys: "Conditional Cell Read Only state, Name, Disabled, Target, Statement,  "
-pageIndex: 5
----
 
+# Conditional Cell Read Only state
 
 You can specify a column to be read only, but if you need the read only state of cells to be set individually based on the contents of the grid (or by hard coded values), you must configure Cell Read Only Rules. The Cell Read Only Rules use the formula syntax to address and evaluate the read only state of cells.
 

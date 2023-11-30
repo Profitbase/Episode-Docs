@@ -1,13 +1,4 @@
----
-title: "Macros"
-metaKeys: "Macros, dynamically create, execute SQL queries, combined with standard SQL"
-folderOnly: "false"
-pageIndex: 16
----
-
-<br/>
-
-#### Macros
+# Macros
 
 Macros can be used in Reports and SQL Scripts to dynamically create and execute SQL queries at runtime without using SQL string concatenation to construct them and sp_executesql for execution. Macros are written in C#, which offers great flexibility in how and which macros you want to create.
 
@@ -40,11 +31,11 @@ The query below shows an example of how macros can be combined with standard SQL
 
 <br/>
 
-#### See Also
+## See Also
 
 - [Using Macros in SQL Statements](macros/usingmacros.md)
 - [Writing Macros](macros/writingmacros.md)
 
-#### Video
+## Video
 * [Macro Expansion](../videos/tableview.md)
 * [Table View - Macro Expansion](https://profitbasedocs.blob.core.windows.net/videos/Table%20View%20-%20Macro%20Expansion.mp4)

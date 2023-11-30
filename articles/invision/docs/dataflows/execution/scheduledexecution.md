@@ -1,5 +1,5 @@
 
-### Scheduled Execution
+# Scheduled Execution
 
 Use the **Data Flow Scheduler** to schedule executions of Data Flows.
 
@@ -13,7 +13,7 @@ After you have created a scheduled job, you can edit it to specify arguments. Wh
 
 <br/>
 
-### Scheduling Data Flow Execution for InVision 2.7 and earlier
+## Scheduling Data Flow Execution for InVision 2.7 and earlier
 
 Data Flows can be executed from the command line by running dfcmdutil.exe located in the InVision Worker Service install folder.
 
@@ -34,7 +34,7 @@ dfcmdutil /run updatesales
 
 <br/>
 
-### Scheduled execution using SQL Server Agent
+## Scheduled execution using SQL Server Agent
 
 Scheduled execution of a Data Flow using SQL Server Agent can be set up as a job running a .bat-file using the xp_cmdshell command. This section shows an example of how this can be set up.
 
@@ -69,7 +69,7 @@ Scheduled execution of a Data Flow using SQL Server Agent can be set up as a job
             xp_cmdshell c:\Profitbase\Jobs\schedule1.bat
 
 
-### Videos
+## Videos
 
 * [Data Flow](../../../videos/dataflows.md)
 * [Execute from Workbook with arguments](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flow%20-%20Execute%20from%20Workbook%20with%20arguments.mp4)

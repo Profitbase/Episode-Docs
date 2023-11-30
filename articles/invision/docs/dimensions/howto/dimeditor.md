@@ -1,18 +1,14 @@
----
-title: "How To use Dimension Editor"
-metaKeys: "How To use Dimension Editor"
-folderOnly: "false"
-pageIndex: 1
----
+
+# How To use Dimension Editor
 
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Dim%20Editor.mp4) you will find video that shows how to use Dimension Editor. [Here](../../dimensions.md) you will find [Documentation](../../dimensions.md).
 <br/>
 
 
-### Step by step
+## Step by step
 
 
 1. In the Solution Explorer, right-click a Folder and choose “Add Item”, then choose “Dimension” from the list:

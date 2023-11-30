@@ -1,11 +1,5 @@
----
-title: "Data Flow Items"
-metaKeys: "Data Flow Items, defining, business logic"
-folderOnly: "false"
-pageIndex: 5
----
 
-
+# Data Flow Items
 
 ![img](https://profitbasedocs.blob.core.windows.net/images/DFit.png)
 
@@ -19,7 +13,7 @@ A single Data Flow Item can execute one or many tasks, which may range from pred
 In addition to predefined or custom **SQL** tasks, you can embed and execute **C#** code from within a Data Flow or even reference custom **.NET** libraries (.dlls) for execution.
 <br/>
 
-#### See Also
+## See Also
 
 - [Built-in Data Flow Items](dataflowitems/builtindfitems.md)
 - [Task Templates](dataflowitems/tasktemplates.md)

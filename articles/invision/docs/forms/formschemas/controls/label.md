@@ -1,8 +1,5 @@
----
-title: "Label"
-metaKeys: "UI, Text Control, Controls,  label, text, specify text, property, model, explicitly, localization, TextCode"
-pageIndex: 10
----
+
+# Label
 
 Inherits from [Text Control](textcontrol.md).
 
@@ -56,7 +53,7 @@ Notice that the **LabelFor** of the Label refers to the **Name** of the Input.
 
 <br/>
 
-### Videos
+## Videos
 
 - [Form Schemas](../../../../videos/formschemas.md)
 

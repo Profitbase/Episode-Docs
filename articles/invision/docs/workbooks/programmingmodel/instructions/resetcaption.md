@@ -1,11 +1,5 @@
----
-title: "ResetCaption"
-metaKeys: "ResetCaption"
-folderOnly: "false"
-pageIndex: 21
----
 
-### ResetCaption(...)
+# ResetCaption(...)
 
 <br/>
 

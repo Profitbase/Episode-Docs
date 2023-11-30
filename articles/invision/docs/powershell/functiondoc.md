@@ -1,13 +1,10 @@
----
-title: "Functions"
-metaKeys: "Pb. (dot-sourcing), $PbRunContext (system variable), Profitbase.Data.SqlCommand functions, Profitbase.Data.SqlScript functions, Profitbase.PS.PsScript.Execute, Profitbase.IO, Profitbase.FileStorage "
-folderOnly: "false"
-pageIndex: 4
----
+
+# Functions
+
 
 In PowerShell, functions are defined using the "function" keyword, followed by the function name enclosed in curly braces. The body of the function, where the code to be executed is defined, is contained within those curly braces.
 
-#### See Also
+## See Also
 
 * [Pb. (dot-sourcing)](functiondoc/function1.md)
 
@@ -25,7 +22,7 @@ In PowerShell, functions are defined using the "function" keyword, followed by t
 
 <br/>
 
-#### Videos
+## Videos
 
 [PowerShell - Profitbase.Data.SqlCommand function example](https://profitbasedocs.blob.core.windows.net/videos/powershell%20-%20SQL%20Command.mp4)
 

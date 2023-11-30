@@ -1,14 +1,7 @@
----
-title: "Comparison Operators"
-metaKeys: "Comparison operators"
-pageIndex: 6
----
 
+# Comparison Operators
 
-
-
-
-#### Assignment operator.
+## Assignment operator.
 
 ``=``
 
@@ -20,7 +13,7 @@ X = 10;
 @Amount[ItemID == "A"] = 25.6; 	
 ```
 
-#### Greater than operator.   
+## Greater than operator.   
 ``>``
 
 Checks if the value on the left side is greater than the value on the right side. 
@@ -31,7 +24,7 @@ Checks if the value on the left side is greater than the value on the right side
 10 > 20 returns false.
 ```
 
-####  Greater than or equal.
+##  Greater than or equal.
 ``>=``
 
 Checks if the value on the left side is greater than, or equal to the value on the right side.
@@ -43,7 +36,7 @@ Checks if the value on the left side is greater than, or equal to the value on t
 ```
 
 
-####  Less than operator.
+##  Less than operator.
 ``<``
 
 Checks if the value on the left side is less than the value on the right side. 
@@ -53,7 +46,7 @@ Checks if the value on the left side is less than the value on the right side.
 10 < 20 returns true.
 ```
 
-####  Less than or equal operator.
+##  Less than or equal operator.
 ``<=`` 
 
 Checks if the value on the left side is less than, or equal to the value on the right side.
@@ -66,7 +59,7 @@ Checks if the value on the left side is less than, or equal to the value on the 
 ```
 
 
-####  Equals operator. 
+##  Equals operator. 
 ``==``
 
 Checks if the value on the left side is equal to the value on the right side. 
@@ -77,7 +70,7 @@ Checks if the value on the left side is equal to the value on the right side.
 1 == 2 returns false.
 ```
 
-#### Not equals operator. 
+## Not equals operator. 
 ``!=``
 
 Checks if the value on the left side does not equal the value on the right side. 

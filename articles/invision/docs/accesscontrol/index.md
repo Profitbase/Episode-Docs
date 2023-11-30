@@ -1,5 +1,5 @@
 
-### Accesscontrol
+# Accesscontrol
 
 <br/>
 
@@ -7,7 +7,7 @@
 
 <br/>
 
-### Introduction
+## Introduction
 
 Access control is a security technique that regulates who can view or use resources in a computing environment. It is a fundamental concept in security that minimizes risk to the business or organization.
 
@@ -19,7 +19,7 @@ Access control can be managed through an [HTTP API](httpapi.md). To manage Ident
 
 <br/>
 
-### See Also
+## See Also
 
 - [How to's](howto.md)
 - [Access Groups](accessgroups.md)
@@ -30,7 +30,7 @@ Access control can be managed through an [HTTP API](httpapi.md). To manage Ident
 
 <br/>
 
-### Videos
+## Videos
 
 - [Access Control](../../videos/accesscontrol.md)
 - [Identities and Access Groups](https://profitbasedocs.blob.core.windows.net/videos/Users%20and%20Permissions%20-%20Users%20and%20User%20Groups.mp4)

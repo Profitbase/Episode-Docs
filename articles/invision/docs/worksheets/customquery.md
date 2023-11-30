@@ -1,10 +1,7 @@
----
-title: "Custom Query"
-metaKeys: "Custom Query, load data, Sync with Designer, View Standard,  "
-pageIndex: 6
----
 
-### Custom Query Description
+# Custom Query
+
+## Custom Query Description
 
 <br/>
 
@@ -32,7 +29,7 @@ When using custom queries for Worksheets, remember to include any **_PBComment**
 
 <br/>
 
-### Videos
+## Videos
 
 * [Worksheet](../../videos/worksheet.md)
 * [Custom Query](https://profitbasedocs.blob.core.windows.net/videos/Worksheet%20-%20Custom%20Query.mp4)

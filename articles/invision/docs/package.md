@@ -1,11 +1,4 @@
----
-title: "Packages"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 17
----
-
-#### Package
+# Package
 
 Packages encapsulate data, business logic, and UI as self-contained business solutions which can be deployed and upgraded from file or Profitbase Store.
 
@@ -14,7 +7,7 @@ Examples of Packages are Profitbase Planner, Risk, and Consolidation.
 You can create custom Packages that extend other Packages (such as Planner). “Custom” Packages are just Packages so they can be deployed and upgraded the same way as official Profitbase Packages like Planner and Risk.
 <br/>
 
-#### See Also
+## See Also
 
 * [How to's](package/howto.md)
 * [Develop Package](package/develop-package.md)
@@ -24,7 +17,7 @@ You can create custom Packages that extend other Packages (such as Planner). “
 
 <br/>
 
-#### Videos
+## Videos
 
 
 * [Packages](../videos/packages.md)

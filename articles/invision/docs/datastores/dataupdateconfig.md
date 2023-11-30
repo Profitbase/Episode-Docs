@@ -1,5 +1,5 @@
 
-## Data Update Configuration
+# Data Update Configuration
 
 ![img](https://profitbasedocs.blob.core.windows.net/images/dataupdate.png)
 
@@ -9,7 +9,7 @@ The Data Update Configuration is used for setting up which columns should be upd
 
 <br/>
 
-### Properties:
+## Properties:
 <br/>
 
 **Keys**  

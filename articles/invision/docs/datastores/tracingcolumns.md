@@ -1,5 +1,5 @@
 
-## Tracing Columns
+# Tracing Columns
 
 Tracing Columns must exist in all [Transaction Pipeline](transactionpipeline.md) target [Data Stores](../datastores.md). Data Stores which are used for user input through [Worksheets](../worksheets.md) does normally not have Tracing Columns, because the system does not use then in that context.
 

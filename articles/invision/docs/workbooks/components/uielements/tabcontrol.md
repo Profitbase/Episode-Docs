@@ -1,9 +1,5 @@
----
-title: "TabControl"
-metaKeys: "Tab Control, organize content, tabs, Edit , api, Execute Expression, Enable, disable"
-folderOnly: "false"
-pageIndex: 7
----
+
+# TabControl
 
 
 <br/>
@@ -19,7 +15,7 @@ The Tab Control lets you organize content in tabs, and each tab can host a singl
 You can drag and drop a Tab Control onto a page from the UI Elements toolbox folder. 
 <br/>
 
-### Tabs
+## Tabs
 
 To add Tabs, click **Edit Tabs** in the Property pane.  
 Using the Tabs editor, you can manage the tab items of your Tab Control by setting the header texts and contents.
@@ -30,7 +26,7 @@ To set the contents of a tab, choose a Subscreen from the **Contents** dropdown.
 > Subscreen can only be used once, so if you don’t see a Subscreen in the dropdown, this means that it is already in use somewhere else in the Workbook.
 <br/>
 
-#### Tab properties:
+### Tab properties:
 
 **Header**
 >The text displayed as the tab header.
@@ -45,7 +41,7 @@ To set the contents of a tab, choose a Subscreen from the **Contents** dropdown.
 <br/>
 
 
-#### Tabs API
+### Tabs API
 
 You can use the Tabs API to control different states of the tabs dynamically, such as the header texts and enabled/disabled states. 
 
@@ -53,7 +49,7 @@ The Tabs API can be called from the **Execute Expression** action of the Tab Con
 
 <br/>
 
-### TabItem(...)
+## TabItem(...)
 
 Returns a reference to a Tab instance which has the following API.  
 
@@ -64,7 +60,7 @@ TabItem("tab name")
 
 <br/>
 
-### SetHeader(...)
+## SetHeader(...)
 
 Sets the header of a tab.
 
@@ -85,7 +81,7 @@ SetHeader(text : string | Eaze expression)
 
 <br/>
 
-### SetHeaderSuffix(...)
+## SetHeaderSuffix(...)
 
 Adds a suffix to the original tab header. The optional whitespaceBetween enables you to determine whether you want whitespace between the base header text and the suffix (the default is true).
 
@@ -105,7 +101,7 @@ SetHeaderSuffix(text : string | Eaze expression[, whitespaceBetween | boolean = 
 
 <br/>
 
-### ResetHeader(...)  
+## ResetHeader(...)  
 
 Resets the header to its original value.
 <br/>
@@ -118,7 +114,7 @@ Resets the header to its original value.
 
 <br/>
 
-### Disable(...)
+## Disable(...)
 
 Lets you specify whether a tab is disabled or not. 
 
@@ -142,7 +138,7 @@ Disable([disable:boolean = true])
 
 <br/>
 
-### Enable(...)
+## Enable(...)
 
 Lets you specify whether a tab is enabled or not.
 

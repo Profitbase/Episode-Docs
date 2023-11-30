@@ -1,10 +1,7 @@
----
-title: "Data Service API"
-metaKeys: "Form Runtime API, Data Service API, Event Handlers, Functions, raiseWorkbookComponentEvent, AddViewStateModel, isNumber, isDate, startsWith, endsWith, convertTo, rounds, controls, models, setModels, texts, lists, AppVariables, disables "
-pageIndex: 4
----
 
-#### Data Service
+# Data Service API
+
+## Data Service
 
 <br/>
 

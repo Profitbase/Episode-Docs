@@ -1,12 +1,9 @@
----
-title: "Using the XML Editor"
-metaKeys: "Using the XML Editor"
-pageIndex: 8
----
+
+# Using the XML Editor
 
 The Desktop Designer contains an XML editor for editing different markups. Here are some hits on built-in functions.
 
-#### Inserting tags:  
+## Inserting tags:  
 Start typing the opening token < for the tag and a popup will show which tags are available for use. Select a tag and hit enter to enter the tag into the code. 
 
 >**Example**
@@ -35,7 +32,7 @@ Place the cursor after the opening tag text and before the closing token and pus
 
 <br/>
 
-#### Videos
+## Videos
 
 * [Form Schemas](../../../videos/formschemas.md)
 * [Layout and Styling](https://profitbasedocs.blob.core.windows.net/videos/Form%20Schema%20-%20Layout%20and%20styling.mp4)

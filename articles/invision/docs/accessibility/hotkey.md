@@ -1,4 +1,4 @@
-### “hotkey” function
+# “hotkey” function
 
 InVison is equipped with a “hotkey” function. You can assign shortcut key combinations to either execute a website function or set focus to a website element. 
 
@@ -6,7 +6,7 @@ Developers can create custom hotkeys for all components that support user intera
 
 <br/>
 
-### Built-in Hotkeys:
+## Built-in Hotkeys:
 
 - **Ctrl+Alt+1:** Show/hide left panel (if present)
 - **Ctrl+Alt+2:** Show/hide top panel (if present)
@@ -26,7 +26,7 @@ Top panel:
 
 <br/>
 
-### How to set up a Hotkey in the Workbook
+## How to set up a Hotkey in the Workbook
 
 <br/>
 
@@ -41,7 +41,7 @@ Top panel:
 
 <br/>
 
-### Hotkeys in Form Schema
+## Hotkeys in Form Schema
 
 You can assign a hotkey to almost every control in the Form Schema, to do that use the Hotkey property.
 <br/>
@@ -58,7 +58,7 @@ You can assign a hotkey to almost every control in the Form Schema, to do that u
 
 
 
-#### Videos
+### Videos
 
 - [Accessibility](../../videos/accessibility.md)
 - [Hotkey](https://profitbasedocs.blob.core.windows.net/videos/Accessibiblity%20-%20hotkeys.mp4)

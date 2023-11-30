@@ -1,19 +1,15 @@
----
-title: "How to Use Custom Cell Renderer in Table View"
-metaKeys: "How to use Custom Cell Renderer in Table View"
-folderOnly: "false"
-pageIndex: 6
----
+
+# How to Use Custom Cell Renderer in Table View
 
 
 
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Table%20View%20-%20Custom%20Cell%20Renderer.mp4) you will find a video that shows how to use Custom Cell Renderer in Table View. 
 <br/>
 
-### Step by step
+## Step by step
 
 
 1. Go to the data grid tab and choose a column that you want to enhance:

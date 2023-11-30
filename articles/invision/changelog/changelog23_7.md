@@ -44,7 +44,8 @@ An icon to the right of the dimension indicates whether access control permissio
 ![img](../../../images/invision/release_notes_20237_aclpermissions_dimtag.png)
 
 Display a list of all members with access control permissions applied, and quickly navigate to the member in the dimension.
-**NOTE!** Because the top node displayed in the ACL editor is NOT an actual dimension member (it's simply the hierarchy name), that values is not displayed in the popup.
+> [!NOTE]
+> Because the top node displayed in the ACL editor is NOT an actual dimension member (it's simply the hierarchy name), that values is not displayed in the popup.
 ![img](../../../images/invision/release_notes_20237_aclpermissions_goto_dimmember.png)
 
 ### Solution access control permission enforcement change
@@ -61,10 +62,10 @@ All Solutions that **does not** have any permissions defined, will now be access
 
 <br/>
 
-## Runtime stability and resilience  
+## Runtime stability and resiliency  
 
 - Dataflow executions are now _throttled_ if the server receives too many requests. This may be cause users having to wait longer for completion of submitted work, such as having financial reports updated after a "Save" in Planner.
 - Prevent failing Dataflows during Work Process deployments from blocking new deployments indefinitely.
-- InVision will now automatically retry running SQL Scripts that fails because of deadlocks
+- InVision will not automatically retry running SQL Scripts that fails because of deadlocks
 - Transaction pipeline now has a timeout of 300 seconds (5 minutes) for inserting data. This prevents indefinite waits if SQL Server for some reason decides to suspend the operation.
-- Dataflow Worker now waits for an amount of time (default is 10 minutes) before shutting down after completing its final job. This shortens the wait time for the first user that submits a new job when the pressure on the system is low.
+- Dataflow Worker now waits for an amout of time (default is 10 minutes) before shutting down after completing its final job. This shortens the wait time for the first user that submits a new job when the pressure on the system is low.

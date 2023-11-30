@@ -1,15 +1,11 @@
----
-title: "How to's"
-metaKeys: "how to "
-folderOnly: "false"
-pageIndex: 1
----
+
+# How to's
 
 In this section, you will find a list of shortcuts to different subjects about Worksheets.
 
 <br/>
 
-#### See Also  
+## See Also  
 
 * [How to Use Cell Renderers](howto/customcellrenderer.md)
 * [How To Modify Spreadsheets With Custom JS](howto/javascript.md)

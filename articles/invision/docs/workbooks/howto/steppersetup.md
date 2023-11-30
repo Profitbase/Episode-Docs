@@ -1,20 +1,14 @@
----
-title: "How To Set Up Buttons in Stepper"
-metaKeys: "how to, Creating Workbook, Pages, Adding Parts and The Layout System"
-folderOnly: "false"
-pageIndex: 4
----
 
 
+# How To Set Up Buttons in Stepper
 
-
-### Link to the video
+## Link to the video
 
 Under [this](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20Stepper.mp4) link you will find a video that shows how to set up buttons in Stepper. [Here](../components/uielements/stepper.md) you will find [Documentation](../components/uielements/stepper.md).
 <br/>
 <br/>
 
-### Step by step
+## Step by step
 
 
 1. Drag and drop a button to the subscreen.

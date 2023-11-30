@@ -1,10 +1,5 @@
----
-title: "File Storage"
-metaKeys: "File Storage"
-folderOnly: "false"
-pageIndex: 5
----
 
+# File Storage
 
 
 File Storage is a flexible system to let users work with attachments in the [Workbook](../../workbooks.md).
@@ -21,7 +16,7 @@ Each component can have different context as described in link below.
 <br/>
 
 
-### Actions
+## Actions
 
 * **Load Data**
 
@@ -29,7 +24,7 @@ Call this action to load or refresh data.
 
 <br/>
 
-### Events
+## Events
 
 * **Upload Completed**
 
@@ -56,11 +51,11 @@ This event is raised when a user deletes a file. The @Event payload contains the
 
 <br/>
 
-### Properties
+## Properties
 
 <br/>
 
-#### Behavior
+### Behavior
 
 * **File selection**
 
@@ -86,13 +81,13 @@ The developer can specify what happens when a user clicks a file in a File Stora
 
 <br/>
 
-#### See Also
+### See Also
 
 - [File Storage](../../filestorage.md)
 
 <br/>
 
-### Videos
+## Videos
 
 * [File Storage](../../../videos/filestorage.md)
 * [File Click Action](https://profitbasedocs.blob.core.windows.net/videos/File%20Storage%20-%20File%20Click%20Actions.mp4)

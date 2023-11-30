@@ -1,11 +1,4 @@
----
-title: "SetSrcIf"
-metaKeys: "SetSrcIf"
-folderOnly: "false"
-pageIndex: 33
----
-
-### SetSrcIf function
+# SetSrcIf function
 
 <br/>
 

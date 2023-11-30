@@ -1,17 +1,12 @@
----
-title: "Control (base)"
-metaKeys: "UI, Text Control, Controls,  Editable, control object, base control, inherit from, Name, CssClass, AddCss(…), RemoveCss(…), ToggleCss(…), Margin, MinWidth, HorizontalAlignment, within the grid, VerticalAlignment, Row, RowSpan, Column, ColumnSpan"
-folderOnly: "false"
-pageIndex: 19
----
 
 
+# Control (base)
 
 A base control object that cannot be directly used in your configuration. This is the base control that all other controls inherit from.
 
 <br/>
 
-### Properties
+## Properties
 
 <br/>
 
@@ -88,7 +83,7 @@ A base control object that cannot be directly used in your configuration. This i
 
 
 
-### Hotkeys in Form Schema
+## Hotkeys in Form Schema
 
 Yo can assign a hotkey to almost every control in the Form Schema, to do that use the Hotkey property.
 <br/>
@@ -104,7 +99,7 @@ Yo can assign a hotkey to almost every control in the Form Schema, to do that us
 <br/>
 
 
-### See Also
+## See Also
 * [Text Control](textcontrol.md)
 * [Editable Control](editablecontrol.md)
 * [Image](image.md)

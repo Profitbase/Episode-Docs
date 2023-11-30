@@ -1,8 +1,5 @@
----
-title: "TabControl"
-metaKeys: "UI, Text Control, Controls,  Editable, tabs, collection"
-pageIndex: 15
----
+
+# TabControl
 
 Inherits from [Control](control.md).
 
@@ -42,12 +39,12 @@ A collection of tabs. See example below:
 
 <br/>
 
-#### See Also
+## See Also
 
 - [More about TabControl](../../../workbooks/components/uielements/tabcontrol.md)
 
 <br/>
 
-#### Videos
+## Videos
 
 - [Subscreens in Tabs](../../../../videos/workbooks.md)

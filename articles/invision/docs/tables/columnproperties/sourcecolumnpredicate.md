@@ -1,8 +1,5 @@
----
-title: "Source Column Predicate"
-metaKeys: "Editing column layout, Default Value, Name, Caption, Expression, Store Column Binding, Order By, Dropdown Selection, custom parameters, format, formatter"
-pageIndex: 10
----
+
+# Source Column Predicate
 
 
 A JavaScript function expression, the name of a function defined in a Solution JavaScript, or a regex which returns a boolean value indicating whether a (template) column should be rendered for the data set column or not.

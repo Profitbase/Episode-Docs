@@ -1,12 +1,7 @@
----
-title: "How To Create a Dropdown"
-metaKeys: "How To Create a Dropdown"
-folderOnly: "false"
-pageIndex: 8
----
 
+# How To Create a Dropdown
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Dropdown.mp4) you will find a video that shows how to create a Dropdown, under [this one](https://profitbasedocs.blob.core.windows.net/videos/Worksheet%20-%20Dropdown%20Selection.mp4) is video about Dropdown Selection.  
 
@@ -17,7 +12,7 @@ Here you will find links to:
   
 <br/>
 
-### Step by step - Dropdown Selection
+## Step by step - Dropdown Selection
 
 
 1. Go to the schema tab and choose a column, open Dropdown Selection window:

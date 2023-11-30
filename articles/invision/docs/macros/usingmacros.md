@@ -1,9 +1,5 @@
----
-title: "Using Macros in SQL Statements"
-metaKeys: "Using macros in SQL statements, To add a macro to a SQL query, MyWhereClause"
-pageIndex: 2
----
 
+# Using Macros in SQL Statements
 
 You can put macros into any part of a SQL Script or Report query. Macros are not constraind to any particular part of SQL queries, for example WHERE clauses. You can even define your entire SQL query using just macros. 
 

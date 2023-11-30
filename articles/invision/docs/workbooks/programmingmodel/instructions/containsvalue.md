@@ -1,11 +1,4 @@
----
-title: "Contains"
-metaKeys: "Contains"
-folderOnly: "false"
-pageIndex: 4
----
-
-### Contains function
+# Contains function
 
 <br/>
 

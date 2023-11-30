@@ -1,11 +1,4 @@
----
-title: "SetTextIf"
-metaKeys: "SetTextIf"
-folderOnly: "false"
-pageIndex: 35
----
-
-### SetTextIf function
+# SetTextIf function
 
 
 <br/>

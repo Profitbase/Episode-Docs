@@ -1,9 +1,5 @@
----
-title: "Data Flows"
-metaKeys: "Data Flows, Data Flow Items, logic, Decision, InVision Dev Studio "
-folderOnly: "false"
-pageIndex: 6
----
+
+# Data Flows
 
 
 ![img](https://profitbasedocs.blob.core.windows.net/images/DFny.png)
@@ -19,7 +15,7 @@ A Data Flow can be viewed as a computer program that can take input, do some wor
 Data Flows can be executed from InVision Dev Studio, any [Workbook](./workbooks/index.md), and the command line. Additionally, a Data Flow can be executed through a REST API.
 <br/>
 
-#### See Also
+## See Also
 
 - [How to's](./dataflows/howto.md)
 - [More about Data Flows](./workbooks/components/dataflow.md)
@@ -28,7 +24,7 @@ Data Flows can be executed from InVision Dev Studio, any [Workbook](./workbooks/
 - [Parameterization](./dataflows/parametrization/index.md)
   <br/>
 
-#### Videos
+## Videos
 
 - [Data Flows](../videos/dataflows.md)
 - [Introduction to Parameterization](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flow%20-%20Introduction%20to%20parameterization.mp4)

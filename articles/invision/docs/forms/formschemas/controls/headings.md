@@ -1,8 +1,5 @@
----
-title: "Headings"
-metaKeys: "UI, Text Control, Controls,  Editable, input, heading, html, CssClass, property, standard style, "
-pageIndex: 6
----
+
+# Headings
 
 Inherits from Text [Text Control](textcontrol.md).
 
@@ -14,7 +11,7 @@ Inherits from Text [Text Control](textcontrol.md).
 
 ---
 
-### Heading1
+## Heading1
 
 Represents a heading with a standard style. You can change the style of the heading by setting its CssClass property.
 
@@ -27,7 +24,7 @@ Represents a heading with a standard style. You can change the style of the head
 Text="Customer Information" TextCode="C_CustomerInfoHeading" />
 ```
 
-### Heading2
+## Heading2
 
 Represents a heading with a standard style. You can change the style of the heading by setting its CssClass property.
 
@@ -40,7 +37,7 @@ Represents a heading with a standard style. You can change the style of the head
     Text="Customer Information" TextCode="C_CustomerInfoHeading" />
 ```
 
-### Heading3
+## Heading3
 
 Represents a heading with a standard style. You can change the style of the heading by setting its CssClass property.
 

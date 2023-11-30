@@ -1,17 +1,13 @@
----
-title: "How To Define Admin in Work Process"
-metaKeys: "How To Define Admin in Work Process"
-folderOnly: "false"
-pageIndex: 5
----
+
+# How To Define Admin in Work Process
 
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Identities%20client%20side%20%20-%20Basics.mp4) you will find a video that shows how to Define Admin in Work Process. [Here](../../accesscontrol/index.md) you will find [Documentation](../../accesscontrol/index.md).
 <br/>
 
-### Step by step
+## Step by step
 
 
 1. In Configuration of every Work Process you'll find a list of Process administrators:

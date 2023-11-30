@@ -1,9 +1,5 @@
----
-title: "Web Functions"
-metaKeys: "Web Functions, Azure Functions, Services,  microservices, execute, write, test, host,  Workbooks"
-folderOnly: "false"
-pageIndex: 28
----
+
+# Web Functions
 
 Web Functions enables you to easily **write**, **test**, **host** and **execute** custom HTTP APIs (Web Services) in InVision. Typical use cases for Web Functions are:
 
@@ -19,7 +15,7 @@ Web Functions are written in **C#**.
 <br/>
 
  
-#### Creating Web Functions
+## Creating Web Functions
  
 When you create a new Web Function, the default template will look like this:
 
@@ -67,7 +63,7 @@ A Web Function can inherit from the **WebFunction base class**. This gives you a
 
 
 
-#### See Also
+## See Also
 
 - [Run WebFunctions from Workbooks](webfunctions/calling.md)
 - [Run WebFunctions from Forms](webfunctions/run-from-forms.md)

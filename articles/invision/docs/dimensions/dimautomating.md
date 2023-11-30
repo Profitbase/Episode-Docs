@@ -1,12 +1,6 @@
----
-title: "Automating Import in Dimension"
-metaKeys: "Automating import of data to dimensions, Automating Import of the Primary Dimension "
-folderOnly: "false"
-pageIndex: 3
----
+# Dimension automating
 
-
-### Automating import of data to dimensions
+## Automating import of data to dimensions
 
 You can import data to dimensions through Dataflows and staging tables. 
 
@@ -26,7 +20,7 @@ You can import data to dimensions through Dataflows and staging tables.
 
 <br/>
 
-### Automating Import of the Primary Dimension
+## Automating Import of the Primary Dimension
 
 You can pull in a dimension definition (including data) from a different solution. You can do that by using dataflows. This means that you can automatically copy the data and configuration of a Primary Dimension into another Solution (usually a versioned Solution).
 1. Create a Dataflow and Dataflow Item in the target solution. The primary dimension is imported into the target.
@@ -43,14 +37,14 @@ You can pull in a dimension definition (including data) from a different solutio
 
 <br/>
 
-#### See Also
+### See Also
 
 - [How to's - Automating import of data to dimensions](howto/autoimport.md)
 - [How to's -Automating Import of the Primary Dimension](howto/autocopy.md)
 
 <br/>
 
-#### Videos
+### Videos
 
 - [Automating Import of Data to Dimension](https://profitbasedocs.blob.core.windows.net/videos/Automating%20Import%20of%20Data%20to%20Dimension.mp4)
 - [Automating Import of the Primary Dimension](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Import%20Primary%20Dimension.mp4)

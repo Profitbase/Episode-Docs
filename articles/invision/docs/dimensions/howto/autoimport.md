@@ -1,18 +1,14 @@
----
-title: "How to Automate Import of Data to Dimension"
-metaKeys: "Automating Import of Data to Dimension"
-folderOnly: "false"
-pageIndex: 4
----
 
-### Link to the video
+# How to Automate Import of Data to Dimension
+
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Automating%20Import%20of%20Data%20to%20Dimension.mp4), you will find a video that shows how to automate import of data to a dimension.  
 Read more about defining dimensions [here](../../dimensions.md).
 
 <br/>
 
-### Step by step
+## Step by step
 
 1. Create a table containing the columns you want to import into the dimension. The columns in the staging table must match the dimension table columns by name and data type:
 

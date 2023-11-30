@@ -1,8 +1,5 @@
----
-title: "Lists"
-metaKeys: "Lists, data, sources, controls, render, collection, items "
-pageIndex: 1
----
+
+# Lists
 
 Lists are data sources for controls that render a collection of items, such as Dropdowns. Lists, unlike Models, cannot be modified and saved by the user. Lists are similar to Set Models, except they cannot be modified and saved back to the database.
 
@@ -27,6 +24,6 @@ ValueMember="ProductID"/>
 
 <br/>
 
-#### Videos
+## Videos
 
 - [Form Schemas](../../../../videos/formschemas.md)

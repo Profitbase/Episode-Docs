@@ -1,8 +1,5 @@
----
-title: "Data Set"
-metaKeys: "Data Set Properties, Workbooks, name, SYS_DataSetID, flows, Workflow, designer, Filtering"
-pageIndex: 1
----
+
+# Data Set
 
 The Data Set configuration of a [Workflow](../workflow.md) defines the data belonging to the business process. [Data Stores](../datastores/index.md), Settings and [Views](../views.md) in the data set are archived by executing a [Data Flow](../dataflows/index.md) containing the Archive Workflow Data Set Members [data flow item](../dataflowitems/index.md). As an example, a data flow for archiving the data set members can be added to an Action Activity as the last phase of a Workflow.  
 
@@ -10,7 +7,7 @@ Archive objects are created for every Data Store, Setting and View in the data s
 
 <br/>
 
-### Data Set Properties
+## Data Set Properties
 
 *	**Name**
 
@@ -25,7 +22,7 @@ Archive objects are created for every Data Store, Setting and View in the data s
 
 <br/>
 
-### Filtering by Data Set when executing Data Flows
+## Filtering by Data Set when executing Data Flows
 <br/>
 
 When executing Data Flows containing Data Flow Items configured to filter data by the **SYS_DataSetID** column, for example the Financial Simulation Engines, the Data Set name needs to be passed as part of the arguments to the Data Flow. 

@@ -1,6 +1,4 @@
-
-
-###	Source Mapping
+#	Source Mapping
 
 In this **Example** we use Data Store that we created [here](creatingschema.md).
 
@@ -51,6 +49,6 @@ This uses the query you entered in the SQL Transform field to load the selected 
 
 <br/>
 
-### Videos
+## Videos
 * [Data Stores](../../videos/datastores.md)
 * [Basics - Creating Schema and Source Mapping](https://profitbasedocs.blob.core.windows.net/videos/DS%20Basic%20-Creating%20Schema%20and%20source%20maping.mp4)

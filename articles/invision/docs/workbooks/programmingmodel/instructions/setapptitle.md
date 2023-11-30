@@ -1,11 +1,4 @@
----
-title: "SetAppTitle"
-metaKeys: "SetAppTitle"
-folderOnly: "false"
-pageIndex: 23
----
-
-### SetAppTitle function
+# SetAppTitle function
 
 <br/>
 
@@ -16,7 +9,7 @@ SetAppTitle(title : string)
 This function sets the title of the Workbook App (browser tab title). **SetAppTitle(…)** can be called from an Execute Expression action.
 <br/>
 
-### Example
+## Example
 
 >This example shows how to change the title of the browser tab.
 

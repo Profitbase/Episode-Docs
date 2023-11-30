@@ -1,5 +1,5 @@
 
-## Unpivot
+# Unpivot
 
 UNPIVOT performs the opposite operation to PIVOT by rotating columns of a table-valued expression into column values.
 
@@ -25,11 +25,11 @@ Unpivot to (example)
 <br/>
 
 
-### Columns
+## Columns
 Specifies the non-pivoted columns. Together with any Scope columns, these values from these columns make up the key for each row produced by the Unpivot function.
 <br/>
 
-### Rows
+## Rows
 
 Specifies the configuration for creating rows of data from source columns.
 * **From**

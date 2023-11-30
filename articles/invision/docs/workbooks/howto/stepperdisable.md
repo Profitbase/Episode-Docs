@@ -1,20 +1,13 @@
----
-title: "How To use Step Navigated To Event in Stepper"
-metaKeys: "how to, Creating Workbook, Pages, Adding Parts and The Layout System"
-folderOnly: "false"
-pageIndex: 5
----
 
+# How To use Step Navigated To Event in Stepper
 
-
-
-### Link to the video
+## Link to the video
 
 Under [this](https://profitbasedocs.blob.core.windows.net/videos/Stepper%20-%20Step%20Navigated%20To.mp4) link you will find a video that shows how to use Step Navigated To Event in Stepper. [Here](../components/uielements/stepper.md) you will find [Documentation](../components/uielements/stepper.md).
 <br/>
 <br/>
 
-### Step by step
+## Step by step
 
 
 1. Edit interactions for the stepper, add "Step Navigated To Event", and write a condition.

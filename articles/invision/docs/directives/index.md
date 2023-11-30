@@ -1,4 +1,4 @@
-#### InVision Directives
+# InVision Directives
 
 InVision Solutions are created using a combination of configuration and scripting. Standard features are set up using configuration, while scripting is used for implementing **custom features**.
 
@@ -8,7 +8,7 @@ InVision directives are used as a bridge between custom scripts and the InVision
 
 <br/>
 
-#### See Also
+## See Also
 
 - [How to's](howto/index.md)
 - [C# Directives](csharpdirectives/index.md)

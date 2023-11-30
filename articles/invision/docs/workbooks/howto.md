@@ -1,15 +1,11 @@
----
-title: "How to's"
-metaKeys: "how to "
-folderOnly: "false"
-pageIndex: 1
----
+
+# How to's
 
 In this section, you will find a list of shortcuts to different subjects about Workbooks.
 
 <br/>
 
-#### See Also  
+## See Also  
 
 * [How to create a Workbook - Basics](howto/creatingworkbook.md)
 * [How To Create Subscreens in Tabs](howto/subscreens.md)

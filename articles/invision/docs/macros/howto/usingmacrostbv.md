@@ -1,16 +1,12 @@
----
-title: "How to use Macros in the TableView"
-metaKeys: "how to, Macros in the TableView"
-folderOnly: "false"
-pageIndex: 1
----
 
-### Link to the video
+# How to use Macros in the TableView
+
+## Link to the video
 
 Under [this](https://profitbasedocs.blob.core.windows.net/videos/Table%20View%20-%20Macro%20Expansion.mp4) link you will find a video that shows how to use [Macros](../../macros.md) in the [TableView](../../tableview.md). 
 <br/>
 
-### Step by step
+## Step by step
 
 1. Write your macro in data source tab in the macro expression section:
 

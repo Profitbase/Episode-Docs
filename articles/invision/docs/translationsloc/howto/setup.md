@@ -1,19 +1,15 @@
----
-title: "How To Setup Translations"
-metaKeys: "How To Setup Translations"
-folderOnly: "false"
-pageIndex: 1
----
 
 
+# How To Setup Translations
 
-### Link to the video
+
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Localisation.mp4) you will find video that shows how to Setup Translations. 
 <br/>
 
 
-### Step by step
+## Step by step
 
 
 1.  Open Localization editor, add translations that you want to use:

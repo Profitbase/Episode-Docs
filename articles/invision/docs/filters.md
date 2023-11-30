@@ -1,9 +1,5 @@
----
-title: "Filters"
-metaKeys: "Filters, Properties, Creating, components,  Solution, by Hierarchy, Column,  "
-folderOnly: "false"
-pageIndex: 12
----
+
+# Filters
 
 Filters are components used for setting the data context for Settings, [Worksheets](worksheets.md), [Reports](sqlreports.md), [Workflows](workflow.md), and [Data Flows](dataflows/index.md).
 
@@ -12,7 +8,7 @@ Once a Filter is defined, it can be used by all data context-aware components in
 A Filter is defined as a reference to table resource ([Dimension](dimensions.md), Fact, Setting, [Data Store](datastores.md), or a [View](views.md)) and by a configuration describing how to read data from the [table](tables.md) resource.
 <br/>
 
-### Creating a Filter
+## Creating a Filter
 
 Filters are contained in **Filter Collections** and can be created from Data Stores, Settings, Dimensions, and Views. To create a Filter, you first need a Filter Container. Filter Containers are added to the Solution from the Solution Explorer and can contain any number of Filters.
 
@@ -24,7 +20,7 @@ When using a Dimension as the table resource, you can choose between "Filter by 
 ![Filter](https://profitbasedocs.blob.core.windows.net/images/filterscreating.png)
 <br/>
 
-### Filter Properties
+## Filter Properties
 
 <br/>
 
@@ -122,14 +118,14 @@ _Default Value Expression_
 
 <br/>
 
-### See Also
+## See Also
 
 
 - [How to's](filters/howto/index.md)
 - [Filtering Tables](tables/filters.md)
 - [Filtering Worksheets](worksheets/filters.md)
 
-### Videos
+## Videos
 
 - [Filters](../videos/filters.md)
 - [Creating and Using Flat Filters](https://profitbasedocs.blob.core.windows.net/videos/Filters%20-%20Creating%20and%20using%20flat%20filters.mp4)

@@ -1,12 +1,5 @@
----
-title: "Dimension Composition"
-metaKeys: "Dimension Composition, generate a dimension, based on the property, value of members, source, levels, structures "
-folderOnly: "false"
-pageIndex: 2
----
 
-
-### Dimension Composition
+# Dimension Composition
 
 
 <br/>
@@ -40,7 +33,7 @@ You compose a dimension by adding levels and picking members from other dimensio
 
 <br/>
 
-### Videos
+## Videos
 
 - [Dimension Editor](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Dim%20Editor.mp4)
 - [Dimension Composition](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Dimension%20Composition.mp4)

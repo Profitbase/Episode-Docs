@@ -1,8 +1,5 @@
----
-title: "Camera"
-metaKeys: "Camera, UI, Text Control, Controls, on click, click, clicks, button, call function"
-pageIndex: 2
----
+
+# Camera
 
 <br/>
 
@@ -69,7 +66,7 @@ This example shows how to use the Camera control to take a picture and display t
 
 <br/>
 
-### Videos
+## Videos
 
 - [Form Schemas](../../../../videos/formschemas.md)
 

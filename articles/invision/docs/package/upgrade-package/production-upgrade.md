@@ -1,18 +1,16 @@
----
-title: "Production Upgrade"
-metaKeys: "package property,Package Management, the returned, "
-pageIndex: 1
----
 
 
+# Production Upgrade
 
-###  Upgrade packages
+
+##  Upgrade packages
 
 <br/>
 
 Use the Package Management screen to view all installed packages and upgrade to the latest version.
 
->**Note!** that this requires an internet connection.
+>> [!NOTE]
+> that this requires an internet connection.
 
 If a newer version of a Package is available, a blue "arrow up" icon is displayed:
 
@@ -57,7 +55,7 @@ When there are no upgrades available for a Package, it's marked with a green sym
 
 <br/>
 
-### Videos
+## Videos
 
 * [Packages](../../../videos/packages.md)
 * [Packages - Package Management Screen](https://profitbasedocs.blob.core.windows.net/videos/Package%20Management.mp4)

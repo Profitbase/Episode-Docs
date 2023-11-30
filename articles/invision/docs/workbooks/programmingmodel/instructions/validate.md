@@ -1,11 +1,4 @@
----
-title: "Validate"
-metaKeys: "Validate, ValidateDataAction"
-folderOnly: "false"
-pageIndex: 37
----
-
-### Validate(...)
+# Validate(...)
 
 <br/>
 

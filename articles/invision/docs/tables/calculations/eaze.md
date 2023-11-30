@@ -1,9 +1,5 @@
----
-title: "Eaze"
-metaKeys: "Eaze formulas, executing, cell, calculations, data grids"
-pageIndex: 8
----
 
+# Eaze
 
 Eaze formulas are used for executing cell calculations in data grids.
 

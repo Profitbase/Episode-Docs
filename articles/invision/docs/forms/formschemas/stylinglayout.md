@@ -1,12 +1,9 @@
----
-title: "Styling and Layout"
-metaKeys: "Styling and Layout, Css Element, Grid Layouts, properties "
-pageIndex: 7
----
+
+# Styling and Layout
 
 The Style section contains the styling and layout options that are used to describe how the contents of the Form Schema should be displayed (font size, colors, control arrangements, sizes etc). You can use the global (Solution) css styles for styling Forms contents just like any other component in InVision, but each Form Schema will most likely have their own requirements for layout, so keeping them tied together is usually the best option.
 
-#### Css Element
+## Css Element
 
 The Css element contains your custom css styles that can be applied to the controls inside the Form Schema. Each control has a CssClass attribute, which allow you to add custom css styles to it. In addition, the css styles within this element can be applied to controls through the Form Schema API.
 
@@ -76,7 +73,7 @@ If you need to use the full Css Grid Layout, or some other layout schema (for ex
 
 
 
-#### Videos
+## Videos
 
 * [Form Schemas](../../../videos/formschemas.md)
 * [Styling and Layout](https://profitbasedocs.blob.core.windows.net/videos/Form%20Schema%20-%20Layout%20and%20styling.mp4)

@@ -1,16 +1,12 @@
----
-title: "How To Set Up a File Storage"
-metaKeys: "how to, Set Up a File Storage"
-folderOnly: "false"
-pageIndex: 2
----
 
-### Link to the video
+# How To Set Up a File Storage
+
+## Link to the video
 
 Under [this](https://profitbasedocs.blob.core.windows.net/videos/File%20Storage%20-%20Basics.mp4) link you will find a video that shows how to create amd set upa  [File Storage](../../filestorage.md). 
 <br/>
 
-### Step by step
+## Step by step
 
 
 1. Open workbook interactions window, next step is to add a Execute Expression action to create the _state variable:

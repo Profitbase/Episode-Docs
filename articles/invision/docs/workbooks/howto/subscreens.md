@@ -1,20 +1,13 @@
----
-title: "How To Create Subscreens in Tabs"
-metaKeys: "how to, Creating Workbook, Pages, Adding Parts and The Layout System"
-folderOnly: "false"
-pageIndex: 2
----
 
+# How To Create Subscreens in Tabs
 
-
-
-### Link to the video
+## Link to the video
 
 Under [this](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20Sub%20Screens%20in%20Tabs.mp4) link you will find a video that shows how to create Subscreens in Tabs. [Here](../subscreens.md) you will find [Documentation](../subscreens.md).
 <br/>
 <br/>
 
-### Step by step
+## Step by step
 
 
 1. Go to the Subscreens tab and add as many as you need:

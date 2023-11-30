@@ -1,19 +1,12 @@
----
-title: ""
-metaKeys: "How To Setup Azure Service Bus"
-folderOnly: "false"
-pageIndex: 3
----
+# How To Setup Azure Service Bus
 
-#### How To Setup Azure Service Bus
-
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Installation%20and%20Setup%20-%20Setup%20Azure%20Service%20Bus.mp4) you will find video that shows how to Setup Azure Service Bus. [Here](../installation/azureactdirauthent.md) you will find [Documentation](../installation/azureactdirauthent.md).
 <br/>
 
 
-### Step by step
+## Step by step
 
 
 1. Create a Service Bus:

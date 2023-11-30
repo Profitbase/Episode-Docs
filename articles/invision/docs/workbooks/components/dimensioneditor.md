@@ -1,11 +1,4 @@
----
-title: "Dimension Editor"
-metaKeys: "Dimension editor, Composition"
-folderOnly: "false"
-pageIndex: 3
----
-
-### Dimension editor
+# Dimension editor
 
 Dimension editor is a full-screen component to edit dimensions.
 
@@ -13,7 +6,7 @@ Dimension editor is a full-screen component to edit dimensions.
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTdimEd%20(10).png)
 
-### Build the dimension and edit dimension data 
+## Build the dimension and edit dimension data 
 
 To build the dimension and edit data, you need to use the Dimension Editor in a Workbook.
 
@@ -61,7 +54,7 @@ To organize dimension members in a hierarchical structure, you can do the follow
 
 <br/>
 
-### Dimension Composition
+## Dimension Composition
 
 
 <br/>
@@ -92,7 +85,7 @@ You compose a dimension by adding levels and picking members from other dimensio
 ![img](https://profitbasedocs.blob.core.windows.net/images/dimChLog.png)
 
 
-### See Also
+## See Also
 
 * [Dimension](../../dimensions.md)
 * [How To use Dimension Editor](../../dimensions/howto/dimeditor.md)
@@ -101,7 +94,7 @@ You compose a dimension by adding levels and picking members from other dimensio
  
  
 
-### Videos
+## Videos
 
 - [Dimension Editor](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Dim%20Editor.mp4)
 - [Dimension Composition](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Dimension%20Composition.mp4)

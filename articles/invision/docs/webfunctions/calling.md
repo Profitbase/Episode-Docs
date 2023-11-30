@@ -1,17 +1,14 @@
----
-title: "Run WebFunctions from Workbooks"
-metaKeys: "Calling Web Functions from a Workbook, HttpGet, HttpPost, HttpPut, HttpPatch, HttpDelete, methods, WebApi action "
-pageIndex: 1
----
 
-### Run Web Functions from a Workbook
+# Run WebFunctions from Workbooks
+
+## Run Web Functions from a Workbook
 
 There are two ways you can run Web Functions from a Workbook.
 
 1. Use the **Execute Web Function** action. Recommended for most purposes.
 2. Use the generic **Web Api** action if you need to run a Web Function that is a different Solution than the Workbook.
 
-#### Use the Execute Web Function action
+### Use the Execute Web Function action
 
 The recommended way to run a Web Function is to use the **Execute Web Function** action from the Workbook Actions list as shown in the image below.  
 <br/>
@@ -39,7 +36,7 @@ _response = Execute("UpdateCustomer");
 // Use _response.Data to access the value returned from the Web Function in subsequent Workbook component actions.
 ```
 
-##### Web Function implementation
+#### Web Function implementation
 
 The sample implementation below shows how to use the `GetRequestBodyAsync` and `GetRequestQueryString` methods to read the data and query string sent from the Workbook.
 
@@ -71,7 +68,7 @@ namespace Custom.WebFunctions
 <br/>
 <br/>
 
-#### Use the generic Web Api action
+### Use the generic Web Api action
 
 If you need to run Web Functions that are in different Solutions than the Workbook, use the generic **WebApi Action**, paired with `HttpGet(…)`, `HttpPost(…)`, `HttpPut(…)`, `HttpPatch(…)` or `HttpDelete(…)` methods to configure the request.
 
@@ -81,7 +78,7 @@ All the Http methods returns a response handle that you can use to obtain any da
 
 <br/>
 
-### Endpoints
+## Endpoints
 
 <br/>
 

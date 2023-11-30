@@ -1,11 +1,4 @@
----
-title: "AddHeader"
-metaKeys: "AddHeader, "
-folderOnly: "false"
-pageIndex: 1
----
-
-### AddHeader(...)
+# AddHeader(...)
 
 <br/>
 

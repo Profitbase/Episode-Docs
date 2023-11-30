@@ -1,17 +1,13 @@
----
-title: "Column Captions"
-metaKeys: "Column captions, Time Frame, Columns, data, DateStart, DateEnd, Year Functions, YearNum, Year , NYearNum, NYear , YearNumStart , NYearNumStart , YearNumEnd, NYearNumEnd , Month Functions, MonthNum , NMonthNum , MonthNum, MonthNumStart , NMonthNumStart , MonthNumStart,MonthNumEnd , NMonthNumEnd , MonthNumEnd, MonthNameStart, MonthNameEnd, Week Functions, WeekNum, NWeekNum, WeekNumStart, NWeekNumStart, WeekNumStart, WeekNumEnd, NWeekNumEnd, WeekNumEnd, DayOfWeekNameStart, DayOfWeekNameEnd, DayOfWeekNum, NDayOrWeekNum, DayOfWeekNumStart, NDayOrWeekNumStart, DayOfWeekNumEnd, NDayOrWeekNumEnd, Day of Month Functions, DayOfMonthNum, NDayOfMonthNum, DayOfMonthNumStart, NDayOfMonthNumStart, DayOfMonthNumStart, DayOfMonthNumEnd, NDayOfMonthNumEnd, DayOfMonthNumEnd "
-pageIndex: 4
----
+
+# Column Captions
 
 
-
-#### Column captions for Time Frame Columns
+## Column captions for Time Frame Columns
 
 Time Frame columns represents data relatively to the Time Frame Reference Date of the repository. The Reference Date changes during Rollovers, and which means that the captions of the Time Frame columns should change. To make the captions follow along as the Time Frame changes without having to update them manually, the Caption Expression properties must be C# scripts that calls Time Frame relative functions which returns the date information for the column.
 <br/>
 
-#### Functions:
+## Functions:
 
 ``DateStart()``  
 >*string*  
@@ -31,7 +27,7 @@ Time Frame columns represents data relatively to the Time Frame Reference Date o
 
 <br/>
 
-#### Year Functions:
+## Year Functions:
 
 ``YearNum()``  
 >*string*  
@@ -56,7 +52,7 @@ Time Frame columns represents data relatively to the Time Frame Reference Date o
 
 <br/>
 
-#### Month Functions:
+## Month Functions:
 
 ``MonthNum()``  
 >*string*  
@@ -99,7 +95,7 @@ Gets the month num of the end date that the column represents, using the specifi
 
 <br/>
 
-#### Week Functions:
+## Week Functions:
 
 ``WeekNum()``  
 >*string*  
@@ -132,7 +128,7 @@ Gets the week of the year from the end date that the column represents, using th
 
 <br/>
 
-#### Day of Week Functions:
+## Day of Week Functions:
 
 ``DayOfWeekName()``  
 >*string*  
@@ -169,7 +165,7 @@ Gets the week day number from the end date that the column represents.
 
 <br/>
 
-#### Day of Month Functions: 
+## Day of Month Functions: 
 
 ``DayOfMonthNum()``  
 >*string*  
@@ -214,7 +210,7 @@ Gets the month day number from the end date that the column represents, using th
     MonthNameStart().Substring(0,3) + ". " + YearNum() returns the text Jan. 2021
 
 
-#### Videos
+## Videos
 
 * [Worksheet](../../videos/worksheet.md)
 * [Column captions for Time Frame Columns](https://profitbasedocs.blob.core.windows.net/videos/Worksheet%20-%20Column%20captions%20for%20Time%20Frame%20Columns.mp4)

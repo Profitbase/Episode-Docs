@@ -1,8 +1,5 @@
----
-title: "Text Functions"
-metaKeys: "Text functions, CONCAT, SUBSTRING, input, string, start, number, SPLIT, LEFT, LEN, LOWER, REPLACE, RIGHT, REPLACE, TOSTRING, TOSTRING, value, formatString, TRIM, UPPER, TONUMBER, NEWLINE "
-pageIndex: 19
----
+
+# Text Functions
 
 ``CONCAT(…t:string)``
 >Concatenates a comma separated list of strings. 

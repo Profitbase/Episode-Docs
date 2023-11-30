@@ -1,9 +1,5 @@
----
-title: "Dimensions"
-metaKeys: "Dimensions, InVision Solution, Data Connection, Editor Toolbox, Data Store, editor, Solution Explorer, Data Connection, Datawarehouse, binding, Importing and updating metadata, context menu, loading, Dimension Composition, generate a dimension, based on the property, value of members, source, levels, structures  "
-folderOnly: "false"
-pageIndex: 9
----
+
+# Dimensions
 
 Dimensions lets you define hierarchical data structures which can be used in filters and reporting, both within Profitbase InVision, and in 3rd party tools such as Power BI.  
 Dimension can have any number of levels, and each level has an id, name, and optional translations for different languages.  
@@ -27,7 +23,7 @@ The example below shows the columns in a table for a two-level dimension (L1 and
 
 <br/>
 
-### How to create a dimension
+## How to create a dimension
 
 1. Start the **Designer** and open a **Solution**.
 2. In the **Solution Explorer**, right-click a Folder and choose **“Add Item”**, then choose **“Dimension”** from the list.
@@ -35,7 +31,7 @@ The example below shows the columns in a table for a two-level dimension (L1 and
 
 <br/>
 
-### Enable support for multiple languages
+## Enable support for multiple languages
 
 If you want to enable the dimension to support different languages for displaying members, select one or more languages in the **Languages dropdown**. The language-specific names for each dimension member are managed in the Dimension Editor.
 
@@ -45,7 +41,7 @@ If you want to enable the dimension to support different languages for displayin
 
 <br/>
 
-### Primary Dimension
+## Primary Dimension
 
 Specifying a dimension as a Primary Dimension means that it appears in the list of "primary dimensions" in the Dimension Editor without users first having to select a specific Solution. 
 
@@ -59,7 +55,7 @@ Think of primary dimensions as a central repository of dimensions that can be mo
 
 <br/>
 
-### Properties
+## Properties
 
 Dimension members can have zero or more properties. For example, products in a Product dimension can have properties such as weight, height, color, etc. Each property is materialized as a column in the dimension table.
 
@@ -81,7 +77,7 @@ Use this feature if you want users to select from a set of predefined values whe
 
 <br/>
 
-### Extension properties
+## Extension properties
 
 Extension properties enable partners and customers to extend dimensions in installed Packages (for example, Planner) with custom properties. That makes it possible to use standard dimensions for custom Power BI reporting or EPM custom extensions.  
 Custom properties will not be removed when the dimension is upgraded during a Package upgrade.
@@ -93,13 +89,13 @@ Custom properties will not be removed when the dimension is upgraded during a Pa
 
 <br/>
 
-### Level names
+## Level names
 
 By default, column names for all levels except the leaf level are auto-generated using the format L[level number], for example, L1, L2. If you want to override the naming for each level column, you can specify this in the Level Names list.
 
 <br/>
 
-### Options / Empty member
+## Options / Empty member
 
 If you need the dimension to always contain an empty member, enable the Include Empty Member option.
 
@@ -107,13 +103,13 @@ This option is typically used when you are using the dimension as a source for a
 
 <br/>
 
-### Options / Dimension Composition
+## Options / Dimension Composition
 
 Go to [Dimension Composition](dimensions/dimcomposition.md).
 
 <br/>
 
-### Build the dimension and edit dimension data 
+## Build the dimension and edit dimension data 
 
 To build the dimension and edit data, you need to use the Dimension Editor in a Workbook.
 
@@ -181,7 +177,7 @@ If you want to preview how the dimension looks in different languages, use the �
 
 <br/>
 
-### Publishing a dimension
+## Publishing a dimension
 
 The changes you make in the Dimension Editor are not fully applied until you have **published** the changes. That means that you can edit the data and hierarchy, save it, and continue working until you are satisfied with the result. Before applying those changes to the actual data model used by Data Stores, Filters, Tables, etc.
 
@@ -193,13 +189,13 @@ When you publish a dimension, it will always be published to the Solution which 
 
 <br/>
 
-#### See Also
+### See Also
 
 - [How to's](dimensions/howto.md)
 
 <br/>
 
-#### Videos
+### Videos
 
 - [Dimensions](../videos/dimensions.md)
 - [Dimension Editor](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Dim%20Editor.mp4)

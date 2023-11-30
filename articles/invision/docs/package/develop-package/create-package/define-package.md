@@ -1,10 +1,5 @@
----
-title: "Define Package"
-metaKeys: "Define Package"
-pageIndex: 1
----
 
-### Define Package
+# Define Package
 
 When defining a Package, you should consider all the following points.
 <br/>
@@ -23,7 +18,7 @@ b.  Upgrade Scripts
 <br/>
 
 
-### 1. Version
+## 1. Version
 
 If you want to make the Package deployable and upgradable, you need to bump the version before making an official release. To make an official release of the Package, press the “Create Package” button in the toolbar and choose “Release” as Deployment mode.
 
@@ -33,7 +28,7 @@ If you want to make the Package deployable and upgradable, you need to bump the 
 
 <br/>
 
-### 2. Package Type
+## 2. Package Type
 
 You should always specify the Package Type, making it easy for users to find and upgrade packages using the Package Management screen.  
 Specifying the Package Type does not have any other impact than making it easier for users to find what they're looking for (Products or Libraries) when deploying or upgrading packages. 
@@ -48,7 +43,7 @@ Specifying the Package Type does not have any other impact than making it easier
 
 <br/>
 
-### 3. Define Package Documentation link:
+## 3. Define Package Documentation link:
 
 You can specify the Package Documentation link, making it easy for users to find useful informations.  
 
@@ -58,7 +53,7 @@ You can specify the Package Documentation link, making it easy for users to find
 
 <br/>
 
-### 4. Post Deployment Action
+## 4. Post Deployment Action
 
 If you need to run a Data Flow after a Package has been deployed to do some initialization or any other type of work, specify the Data Flow you want to run as the Post Deployment Action. The Data Flow will run as the last step of the deployment process.
 
@@ -68,7 +63,7 @@ If you need to run a Data Flow after a Package has been deployed to do some init
 
 <br/>
 
-### 5. Package Data
+## 5. Package Data
 
 By default, only metadata configuration is included when exporting a Package using the Create Package button. This means that when the Package is deployed, it will not contain any information such as sample data, settings, assumptions, etc. To deploy data with the Package, you must add the relevant tables to the Package data list. This makes it much quicker for a customer to get started using your Package.
 
@@ -78,7 +73,7 @@ By default, only metadata configuration is included when exporting a Package usi
 
 <br/>
 
-### 6. Package Properties
+## 6. Package Properties
 
 Package Properties are variables that can be used by functionality within the Solution that the Package is deployed. The most common case for Package Properties is when Packages are used in Work Processes. Package Properties defines the settings for Work Process Versions that process owners can manage to configure Work Process Versions. Examples of typical Package Properties are planning period start dates and end dates.
 
@@ -93,7 +88,7 @@ It needs to be unique, because different packages can be deployed to the same So
 <br/>
 
 
-### 7. Work Process Integration
+## 7. Work Process Integration
 
 <br/>
 
@@ -136,7 +131,7 @@ The following applies for the scripts:
 
 <br/>
 
-### 8. Dependencies
+## 8. Dependencies
 
 If a Package is dependent upon another Package, you need to add the dependency to the “Package Dependencies” list. By defining dependencies, the system will automatically install or update dependencies when the Package itself is installed or updated to new versions. 
 
@@ -145,7 +140,7 @@ If a Package is dependent upon another Package, you need to add the dependency t
 >  You need to register immediate dependencies, meaning you don’t need to register dependencies of dependencies. When exporting the Package, the system will automatically examine all dependencies and their dependencies, recursively.
 
 
-### Videos
+## Videos
 
 * [Packages](../../../../videos/packages.md)
 * [Define Package](https://profitbasedocs.blob.core.windows.net/videos/Packages%20-%20Define%20Package.mp4)

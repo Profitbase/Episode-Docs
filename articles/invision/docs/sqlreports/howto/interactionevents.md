@@ -5,15 +5,16 @@ folderOnly: "false"
 pageIndex: 3
 ---
 
+# 
 
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/SQL%20Reports%20-%20ChartInteractionEvent.mp4) you will find video that shows how to Use ChartInteractionEvent. 
 <br/>
 
 
-### Step by step
+## Step by step
 
 
 1.  Create a Script:

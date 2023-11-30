@@ -1,10 +1,5 @@
----
-title: "Caption Formatter"
-metaKeys: "Editing column layout, Default Value, Name, Caption, Expression, Store Column Binding, Order By, Dropdown Selection, custom parameters, format, formatter"
-pageIndex: 3
----
 
-
+# Caption Formatter
 
 A JavaScript function expression or the name of a function defined in a Solution JavaScript which returns the caption for the column. The following arguments are passed to the function:
 

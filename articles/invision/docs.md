@@ -1,5 +1,5 @@
 
-### Hello learner!
+# Hello learner!
 
 Welcome to the Profitbase InVision docs!
 You can explore the different topics from the left side bar, or use the search bar at the top of the page.

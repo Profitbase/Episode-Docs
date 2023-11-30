@@ -1,11 +1,7 @@
----
-title: "Http"
-metaKeys: "Http, Get, Post, Put, Patch, Delete "
-folderOnly: "false"
-pageIndex: 11
----
 
-### Get
+# Http
+
+## Get
 
 <br/>
 
@@ -32,7 +28,7 @@ Input_ProductName.Value = _requestHandle.Data.ProductName;
 
 <br/>
 
-### Post
+## Post
 
 ```
 HttpPost(url : string, httpContent : object)
@@ -41,7 +37,7 @@ HttpPost(url : string, httpContent : object)
 When called from a WebApi action, issues an Http POST request to the specified address.
 <br/>
 
-### Put
+## Put
 
 ```
 HttpPut(url : string, httpContent : object)
@@ -49,7 +45,7 @@ HttpPut(url : string, httpContent : object)
 When called from a WebApi action, issues an Http PUT request to the specified address.
 <br/>
 
-### Patch
+## Patch
 
 ```
 HttpPatch(url : string, httpContent : object)
@@ -73,7 +69,7 @@ Input_Level.Value = _requestHandle.Data;
 
 <br/>
 
-### Delete
+## Delete
 
 ```
 HttpDelete(url : string)

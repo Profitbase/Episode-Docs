@@ -1,8 +1,5 @@
----
-title: "AppVariables in Formulas"
-metaKeys: "AppVariables in formulas, Workbook, AppVariables.TheVariable, Executing formulas after getValue"
-pageIndex: 1
----
+
+# AppVariables in Formulas
 
 AppVariables enable you to use Workbook variables in spreadsheet formulas. This is useful if you have some constant or other value that is set outside the spreadsheet that you want to use in your formulas.
 

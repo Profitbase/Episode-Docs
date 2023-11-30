@@ -1,19 +1,15 @@
----
-title: "SQL Scripts"
-metaKeys: "SQL Scripts, Solution, script editor, Data Flows, Workbooks, Specifying the Script Id, Executing SQL Scripts from Workbooks"
-folderOnly: "false"
-pageIndex: 20
----
+
+# SQL Scripts
 
 You can add custom SQL Scripts to your Solution and execute them from the script editor, Data Flows, Workbooks, Web Functions or PowerShell.
 <br/>
 
-#### Defining SQL Scripts
+## Defining SQL Scripts
 
 You can add SQL scripts to folders and Data Stores in your Solution. Any valid T-SQL Script can be executed from InVision, and you can also use [InVision Standard Directives](directives.md) to more easily address objects and properties in your Solution.
 <br/>
 
-#### Executing SQL Scripts from Data Flows
+## Executing SQL Scripts from Data Flows
 
 Scripts are executed as Tasks in Data Flow Items hosted in Data Flows.
 
@@ -37,7 +33,7 @@ Next, you need to configure the new task by:
 
 <br/>
 
-#### Executing SQL Scripts from Workbooks
+## Executing SQL Scripts from Workbooks
 
 To execute a SQL Script from a Workbook, you have 3 options:  
 
@@ -47,12 +43,12 @@ To execute a SQL Script from a Workbook, you have 3 options:
 
 <br/>
 
-### See Also
+## See Also
 
 - [More about Scripts](../docs/workbooks/components/script.md)
 
 <br/>
 
-#### Videos
+## Videos
 
 - [SQL Scripts](../videos/sqlscripts.md)

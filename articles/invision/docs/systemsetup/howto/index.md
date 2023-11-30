@@ -1,4 +1,4 @@
-# Howto
+# How to's
 
 * [Ad authentication](./ad-authentication.md)
 * [Azure registration](./azure-registration.md)

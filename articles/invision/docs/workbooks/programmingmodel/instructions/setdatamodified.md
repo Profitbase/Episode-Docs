@@ -1,11 +1,4 @@
----
-title: "SetDataModified"
-metaKeys: "SetDataModified"
-folderOnly: "false"
-pageIndex: 26
----
-
-### SetDataModified
+# SetDataModified
 
 <br/>
 

@@ -1,25 +1,19 @@
----
-title: "Rendering Items"
-metaKeys: "UI, ItemsSource, items, property, array, objects, List, SetModel, listbox, ValueMember, ItemTemplate, DisplayMember, ValueMember, layout, display, The Data Context, keyword, bind, $Data keyword, "
-pageIndex: 1
----
 
-
-
+# Rendering Items
 
 To render items, the **ItemsSource** property must reference an array of objects, a List, or a SetModel. Next, you need to specify either the **DisplayMember** and **ValueMember** or the **ItemTemplate**.
 
-#### DisplayMember/ValueMember
+## DisplayMember/ValueMember
 
 The DisplayMember / ValueMember option will simply display a list of strings and can be used if you just need to display a basic list of values.
 
-#### ItemTemplate
+## ItemTemplate
 
 The ItemTemplate enables you to customize how you want each item in the listbox to be displayed, using all the available UI controls.
 
 The ItemTemplate must contain a single [Layout](../layout.md) element. Within the Layout element, you can use all the available UI controls to specify how you want each item to be displayed. You are not restricted to simply displaying data in a listbox. You can add input controls with data bindings to edit data and action controls (such as Buttons) to raise events and perform custom operations.
 
-#### The Data Context
+## The Data Context
 
 The default Data Context for a listbox item is the data item that is rendered. To data bind to a property of a data item, you simply refer to the property using the binding syntax, for example
 
@@ -29,7 +23,7 @@ If you need to bind to something outside the default Data Context, for example a
 
     Text={Binding Path:Models.MyModel.MyProperty}
 
-#### The $Data keyword
+## The $Data keyword
 
 The $Data keyword is a refererence to the data item from the items source that is rendered in the listbox item. You can pass this value to function callbacks (for example the Click function for Buttons), if you want to add custom interactions to listbox items, for example
 

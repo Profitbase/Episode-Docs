@@ -1,17 +1,13 @@
----
-title: "iFrame"
-metaKeys: "iFrame, Actions, Load Data, Execute Expression, Send Message, events, Message Received "
-folderOnly: "false"
-pageIndex: 3
----
 
+
+# iFrame
 
 
 
 The iFrame component lets you embed external content, such as InFront or Power BI reports, in a Workbook. Use the **LoadData** action and call the [SetSrc(…)](../../programmingmodel/instructions/setsrc.md) function to specify the source url dynamically, or set the Source property to specify a static or initial source.
 <br/>
 
-### Actions
+## Actions
 
 *	**Load Data**  
 Use this action to refresh or change the contents displayed by calling the [SetSrc(…)](../../programmingmodel/instructions/setsrc.md) function. If you just want to display static content, specify the url in the Source property of the component.
@@ -38,7 +34,7 @@ ConfigureMessage({"MyMessage" : "Hello World"}, "*");
 
 <br/>
 
-### Events
+## Events
 
 *	**Message Received**  
 Receives messages sent from the iframe content window. Use the @Event.Data property access the received message.
@@ -52,7 +48,7 @@ Receives messages sent from the iframe content window. Use the @Event.Data prope
 <br/>
 
 
-### Videos
+## Videos
 
 * [Workbooks](../../../../videos/workbooks.md)
 * [Components - iFrame - Basics](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20Iframe%20-%20Basics.mp4)

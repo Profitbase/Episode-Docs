@@ -1,10 +1,4 @@
----
-title: "SplitButton"
-metaKeys: "form, splitbutton, button, ItemsSourceFilter, To specify a collection of sub-actions, value, type, disabled, Text Control, SplitButtonItemTemplate, Click, StopClickEventPropagation, "
-pageIndex: 14
----
-
-#### SplitButton
+# SplitButton
 
 ![SplitButton](https://profitbasedocs.blob.core.windows.net/images/FormSchema_SplitButton.PNG)
 <br/>
@@ -161,7 +155,7 @@ Specifies the hotkey for the control.
 
 <br/>
 
-### Videos
+## Videos
 
 - [Form Schemas](../../../../videos/formschemas.md)
 

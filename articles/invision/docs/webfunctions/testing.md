@@ -1,10 +1,4 @@
----
-title: "Testing"
-metaKeys: "Testing Web Functions, examine, request, Body"
-pageIndex: 7
----
-
-### Testing Web Functions
+# Testing Web Functions
 
 <br/>
 

@@ -1,11 +1,7 @@
----
-title: "Var"
-metaKeys: "Var"
-folderOnly: "false"
-pageIndex: 38
----
 
-### Variable
+# Var
+
+## Variable
 
 <br/>
 
@@ -21,7 +17,7 @@ The variable is automatically created the first time a value is assigned to it.
 
 <br/>
 
-### Setting a variable
+## Setting a variable
 
 <br/>
 
@@ -62,7 +58,7 @@ You can assign values to variables from other sources such as context variables 
 
 <br/>
 
-### Reading a variable
+## Reading a variable
 
 <br/>
 
@@ -89,7 +85,7 @@ OpenBrowserWindow(CONCAT("http://api.company.com/appendix/", @Event.Data.Prosjek
 ```
 <br/>
 
-### Nullify a variable
+## Nullify a variable
 
 <br/>
 
@@ -100,7 +96,7 @@ To nullify a variable, assign null to the variable.
 ```
 <br/>
 
-### Assign a unique value to a variable 
+## Assign a unique value to a variable 
 
 <br/>
 

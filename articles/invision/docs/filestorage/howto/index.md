@@ -1,8 +1,10 @@
+# How to's
+
 In this section, you will find a list of shortcuts for different subjects about  [File Storage](../../filestorage/index.md).
 
 <br/>
 
-#### See Also  
+## See Also  
 
 * [How to create a File Storage - Basics](creatingfilestorage.md)
 * [How to Set Up a File Storage](settingfilestorage.md)

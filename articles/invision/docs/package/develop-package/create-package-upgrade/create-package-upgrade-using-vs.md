@@ -1,13 +1,8 @@
----
-title: "Create Package Upgrade using Visual Studio"
-metaKeys: "package upgrade"
-folderOnly: "false"
-pageIndex: 1
----
 
+# Create Package Upgrade using Visual Studio
 This topic describes how to create a Package Upgrade using Visual Studio.
 
-### Project template and dotnet commands
+## Project template and dotnet commands
 
 <br/>
 
@@ -18,7 +13,7 @@ This topic describes how to create a Package Upgrade using Visual Studio.
 
 <br/>
 
-### Install the Project Template
+## Install the Project Template
 
 If this is the first time you create a Package Upgrade on your machine, you need to install the project template.
 
@@ -28,7 +23,7 @@ dotnet new -i Profitbase.Invision.PackageUpgrade.Project
 
 <br/>
 
-### Create the project
+## Create the project
 
 Use the following command to create a new project. Choose a suitable name for your project instead of 'MyPackageUpgrade'.
 
@@ -40,7 +35,7 @@ You can also create the project directly from `File -> New -> Project` in Visual
 
 <br/>
 
-### Implement the project
+## Implement the project
 
 1. Open the .csproj-file using Visual Studio.
 2. Follow the steps in the `README` file
@@ -56,6 +51,6 @@ You can also create the project directly from `File -> New -> Project` in Visual
 
 
 
-#### See Also
+## See Also
 
 - [Step by Step Guide](create-package-upgrade-using-vs/upgrade-stepbystep.md)

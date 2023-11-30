@@ -1,8 +1,5 @@
----
-title: "Profitbase.IO"
-metaKeys: "Profitbase.IO, [Profitbase.IO.Directory]::CreateTransientDirectory, $folder.FullName, $folder.ToString(), $folder.CreateFile, $folder.OpenFile, $folder.DeleteFile, $folder.Delete, [Profitbase.IO.Directory]::Delete, Opens a FileStream"
-pageIndex: 6
----
+
+# Profitbase.IO
 
 Profitbase.IO allows for using a transient folder to process files. In SaaS solutions, the Solution Devs will not be able to put a file on any disk, so the scripts should use transient folders for file handling.  
 Transient folders and their contents are deleted once the script execution finishes (if there are no file locks).

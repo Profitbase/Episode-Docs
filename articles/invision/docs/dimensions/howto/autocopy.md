@@ -1,19 +1,15 @@
----
-title: "How to Automate Import of the Primary Dimension"
-metaKeys: "Automating Import of the Primary Dimension"
-folderOnly: "false"
-pageIndex: 4
----
 
 
-### Link to the video
+# How to Automate Import of the Primary Dimension
+
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Import%20Primary%20Dimension.mp4), you will find a video that shows how to automate copying a Primary Dimension into a Solution.  
 Read more about defining dimensions [here](../../dimensions.md).
 
 <br/>
 
-### Step by step
+## Step by step
 
 1. Create the dimension in another Solution (usually a versioned Solution):
 
