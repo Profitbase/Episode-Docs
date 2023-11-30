@@ -1,11 +1,4 @@
----
-title: "IsFilterSet"
-metaKeys: "IsFilterSet"
-folderOnly: "false"
-pageIndex: 13
----
-
-### IsFilterSet function
+# IsFilterSet function
 
 <br/>
 

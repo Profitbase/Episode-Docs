@@ -1,12 +1,4 @@
----
-title: "Package Properties"
-metaKeys: "package property, the returned, "
-pageIndex: 2
----
-
-
-
-### Package Properties
+# Package Properties
 
 <br/>
 
@@ -20,7 +12,7 @@ There are ten supported property types. They are listed here:
 
 <br/>
 
-### Defining a package property
+## Defining a package property
 
 >The default value is the returned value if the solution is not part of a version. 
 
@@ -37,7 +29,7 @@ There are ten supported property types. They are listed here:
 
 
 
-### Use PackageProperty in a Sql script
+## Use PackageProperty in a Sql script
 
 <br/>
 
@@ -64,7 +56,8 @@ There are ten supported property types. They are listed here:
 
 <br/>
 
-**Note!**  
+> [!NOTE]
+>  
 >@PackageProperty[name].DateExpr is recommended for casting package properties to datetime.
 
 <br/>
@@ -84,7 +77,7 @@ There are ten supported property types. They are listed here:
 
 <br/>
 
-### Use PackageProperty in a PowerShell script
+## Use PackageProperty in a PowerShell script
 
 <br/>
 
@@ -111,7 +104,8 @@ Here is an example of use in PowerShell script.
 
 <br/>
 
-**Note!**  
+> [!NOTE]
+>  
 >@PackageProperty[name].DateStr is recommended for getting yyyyMMdd formatted representation of date/datetime package properties.
 
 <br/>
@@ -137,7 +131,7 @@ Write-Output $datetimeutc
 <br/>
 
 
-### Use Directive in a worksheet column expression
+## Use Directive in a worksheet column expression
 
 <br/>
 
@@ -173,7 +167,7 @@ Write-Output $datetimeutc
 
 <br/>
 
-### Use PackageProperty in a data flow
+## Use PackageProperty in a data flow
 
 <br/>
 
@@ -193,7 +187,7 @@ Write-Output $datetimeutc
 
 <br/>
 
-### Adding a data flow item parameter
+## Adding a data flow item parameter
 
 <br/>
 
@@ -205,12 +199,13 @@ Write-Output $datetimeutc
 
 <br/>
 
-**Note!**  
+> [!NOTE]
+>  
 >Use @PackageProperty[name].DateStr when dealing with dates to ensure culture invariant datetime parsing.
 
 <br/>
 
-### Mapping the parameters in the Run PowerShell Script Arguments section
+## Mapping the parameters in the Run PowerShell Script Arguments section
 
 <br/>
 
@@ -218,7 +213,7 @@ Write-Output $datetimeutc
 
 <br/>
 
-### Executing the data flow to test that the parameter is parsed OK
+## Executing the data flow to test that the parameter is parsed OK
 
 <br/>
 
@@ -226,7 +221,7 @@ Write-Output $datetimeutc
 
 
 
-### Videos
+## Videos
 
 * [Packages](../../../../videos/packages.md)
 * [Package Properties](https://profitbasedocs.blob.core.windows.net/videos/Package%20-%20Package%20Properties.mp4)

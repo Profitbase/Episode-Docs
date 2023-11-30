@@ -1,19 +1,14 @@
----
-title: "How To Create A Work Process Version"
-metaKeys: "How To Create A Work Process Version"
-folderOnly: "false"
-pageIndex: 2
----
+
+# How To Create A Work Process Version
 
 
-
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Work%20Process%20Versions.mp4) you will find video that shows how to Create A Work Process Version. [Here](../workprocessversions.md) you will find [Documentation](../workprocessversions.md).
 <br/>
 
 
-### Step by step
+## Step by step
 
 
 1. Create new version:

@@ -1,10 +1,5 @@
----
-title: "Run SQL Script when saving Worksheets or Tables"
-metaKeys: "LoadByName, LoadById, ExecuteScalarByName, ExecuteScalarById, ExecuteNonQueryByName, ExecuteNonQueryById, calling a SqlScriptService method, Worksheet base class APIs "
-folderOnly: "false"
-pageIndex: 2
----
 
+# Run SQL Script when saving Worksheets or Tables
 
 If you need to run a [SQL Script](../../sqlscripts.md) when saving Worksheet or Table data, use the SqlScriptService in the **Save Data | On Save Script**.
 
@@ -38,7 +33,7 @@ If you need to run a [SQL Script](../../sqlscripts.md) when saving Worksheet or 
 ```
 <br/>
 
-### SqlScriptService methods
+## SqlScriptService methods
 <br/>
 
 `ExecuteNonQueryById`

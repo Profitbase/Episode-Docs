@@ -1,11 +1,4 @@
----
-title: "SetCaption"
-metaKeys: "SetCaption"
-folderOnly: "false"
-pageIndex: 24
----
-
-### SetCaption function
+# SetCaption function
 
 <br/>
 

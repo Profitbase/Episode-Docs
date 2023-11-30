@@ -1,8 +1,5 @@
----
-title: "Button"
-metaKeys: "UI, Text Control, Controls, on click, click, clicks, button, call function"
-pageIndex: 1
----
+
+# Button
 
 Inherits from [Text Control](textcontrol.md).
 
@@ -80,7 +77,7 @@ Specifies the hotkey for the control.
 
 <br/>
 
-### Videos
+## Videos
 
 - [Form Schemas](../../../../videos/formschemas.md)
 

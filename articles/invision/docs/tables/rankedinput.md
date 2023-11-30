@@ -1,10 +1,6 @@
----
-title: "Ranked Input"
-metaKeys: "Ranked Input, different levels of dimensions, column, Compile on Save, solution model, compiled , updated, Specifisity,  "
-pageIndex: 9
----
 
-### What is Ranked Input
+# Ranked Input
+## What is Ranked Input
 
 Ranked Input enables providing input relative to different levels of dimensions. When data is saved, the Setting is "compiled" by unwrapping the data at the lowest level of the dimension based on the Ranked Input data.  
 If there is more than one column set up as a Ranked Input column, the result of the compilation will be the Cartesian product of the values at the lowest level of the dimensions.
@@ -12,7 +8,7 @@ If there is more than one column set up as a Ranked Input column, the result of 
 
 <br/>
 
-### Compile on Save
+## Compile on Save
 
 Enable this option to automatically compile the setting table when data is saved.  
 
@@ -21,7 +17,7 @@ Enable this option to automatically compile the setting table when data is saved
 
 <br/>
 
-### Automatically recompile when Ranked Input Column Source is updated
+## Automatically recompile when Ranked Input Column Source is updated
 
 >Enabled by default.  
 >*Requires that the solution model is compiled*. 
@@ -37,7 +33,7 @@ If you are updating both dimensions, it is faster to disable this feature and co
 
 <br/>
 
-### Specificity
+## Specificity
 
 The Ranked Input data set is compiled based on specificity, where the order of the rows determines the specificity from lower to higher (think of it as a reversed rank). 
 

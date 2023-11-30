@@ -1,9 +1,5 @@
----
-title: "SQL Reports"
-metaKeys: "Sql Reports, New Default Data Set, Query Definitions, Writing custom event handlers for Chart events,  "
-folderOnly: "false"
-pageIndex: 19
----
+
+# SQL Reports
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/sqlScr.png)
 
@@ -14,7 +10,7 @@ Reports are created by defining one or more data sets using SQL queries and then
 InVision reports can read data from any SQL source, so you can use reports to view data from any SQL Server database in addition to the InVision databases.
 <br/>
 
-### Query Definitions
+## Query Definitions
 
 The data sets for the line and chart reports are created using standard SQL queries and [SQL direktives](sqlreports/dataqueries.md), called [Data Queries](sqlreports/dataqueries.md). A Report definition can contain multiple data sets used for displaying the same data in different ways. For example, you can use one data set for the chart and a different data set for the line report. Or you can use multiple data sets in the same chart and display then as different series.
 
@@ -23,7 +19,7 @@ The data sets are listed in the Data Sets list of the Report editor. To create a
 Default queries for reading data from InVision table resources such as Data Stores and Views can be added by drag and drop resource objects from the Database Resources Toolbox onto the query editor.
 <br/>
 
-### Writing custom event handlers for Chart events
+## Writing custom event handlers for Chart events
 
 Profitbase InVision is using Highcharts for rendering charts. If you want to write custom event handlers for events such as when a user clicks a point in a series, or when the user hovers the mouse over a point, you should first read the documentation for Highcharts on how to handle the different types of events and what data is available to an event handler function when the event is raised.
 
@@ -59,7 +55,7 @@ func::mySolution.myChartEventHandlers.myUtil.onClick (Note the func:: designatio
 
 <br/>
 
-### See Also
+## See Also
 
 - [How to's](sqlreports/howto.md)
 - [Reports](../docs/workbooks/components/reports.md)
@@ -67,7 +63,7 @@ func::mySolution.myChartEventHandlers.myUtil.onClick (Note the func:: designatio
 - [Data Queries](sqlreports/dataqueries.md)
 
 
-### Videos
+## Videos
 
 * [SQL Reports](../videos/sqlreports.md)
 * [SQL Reports - Basics](https://profitbasedocs.blob.core.windows.net/videos/SQL%20Report%20Intro%20basics.mp4)

@@ -1,8 +1,5 @@
----
-title: "Dropdown"
-metaKeys: "Dropdown, Enabled editing data using a dropdown list, Value Member, Display Member, Save Data Expression"
-pageIndex: 2
----
+
+# Dropdown
 
 <br/>
 
@@ -11,7 +8,7 @@ pageIndex: 2
 <br/>
 
 
-#### Enabled editing data using a dropdown list.
+## Enabled editing data using a dropdown list.
 
 **Select Value Query**
 
@@ -58,13 +55,13 @@ INSERT (TKey1,TKey2,Value) VALUES([Source].Key1,Source.Key2,@FormElementValue())
 
 <br/>
 
-#### See Also
+## See Also
 
 * [Dropdown - Control](../formschemas/controls/dropdown.md)
 * [Dropdown Selection](../../worksheets/columnproperties/dropdownselection.md)
 
 <br/>
 
-#### Videos
+## Videos
 
 * [Dropdown](https://profitbasedocs.blob.core.windows.net/videos/Dropdown.mp4)

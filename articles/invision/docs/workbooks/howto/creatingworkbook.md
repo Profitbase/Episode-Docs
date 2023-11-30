@@ -1,16 +1,12 @@
----
-title: "How To Create a Workbook"
-metaKeys: "how to, Creating Pages, Adding Parts and The Layout System"
-folderOnly: "false"
-pageIndex: 1
----
 
-### Link to the video
+# How To Create a Workbook
+
+## Link to the video
 
 Under [this](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20Basics%20-%20creating%20pages%2C%20adding%20parts%2C%20the%20layout%20system.mp4) link you will find a video that shows how to create a Workbook, add a page and components to it. 
 <br/>
 
-### Step by step
+## Step by step
 
 1. Right-click chosen folder in Solution Explorer to add a new item:
 

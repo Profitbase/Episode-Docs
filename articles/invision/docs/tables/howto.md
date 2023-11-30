@@ -1,15 +1,10 @@
----
-title: "How to's"
-metaKeys: "how to "
-folderOnly: "false"
-pageIndex: 1
----
+# How to's
 
 In this section, you will find a list of shortcuts to different subjects about Tables.
 
 <br/>
 
-#### See Also  
+# See Also  
 
 * [How To Use Cell Validation](howto/cellvalidation.md) 
 * [How to Create and Edit Table Schema](howto/creatingtable.md)

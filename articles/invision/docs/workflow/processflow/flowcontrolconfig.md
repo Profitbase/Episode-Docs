@@ -1,10 +1,7 @@
----
-title: "Configuration"
-metaKeys: "Flow Control Objects, Configuration, State,  Permission, type, Permission"
-pageIndex: 2
----
 
-### Flow Control Object State Configuration
+# Configuration
+
+## Flow Control Object State Configuration
 
 Flow Control Object State Configuration
 The [Flow Control Object](../flowcontrolobj.md) configuration of a Workflow Activity or Connection contains a list of the Flow Control Objects defined in the Workflow.  When setting up the State Configuration for an Activity or Connection, you specify which states the Flow Control Object can hold at a specific phase of the Workflow. Depending on the type of activity, the states can be set by a user, a Data Flow or by the system. 

@@ -1,19 +1,15 @@
----
-title: "How To Create a Popup"
-metaKeys: "how to, Creating Pages, how to create a Popup, Adding Parts and The Layout System, Workbook as a Home Page"
-folderOnly: "false"
-pageIndex: 6
----
+
+# How To Create a Popup
 
 
-### Link to the video
+## Link to the video
 
 Under [this](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20Creating%20Popups.mp4) link you will find a video that shows how to create a Popup. [Here](../programmingmodel/instructions/popup.md) you will find [Documentation](../programmingmodel/instructions/popup.md).
 
 <br/>
 
 
-### Step by step
+## Step by step
 
 
 1. Check "Display in Popup" option in the Page Properties box:

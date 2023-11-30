@@ -1,12 +1,9 @@
----
-title: "References"
-metaKeys: ""
-pageIndex: 2
----
+
+# References
 
 
 
-### PowerShell Package and Module References
+## PowerShell Package and Module References
 <br/>
 
 You can add **Modules** and **Packages** as references to a script definition, to include code libraries in PS scripts.  

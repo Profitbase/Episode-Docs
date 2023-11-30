@@ -1,11 +1,4 @@
----
-title: "LoadOptions"
-metaKeys: "LoadOptions"
-folderOnly: "false"
-pageIndex: 16
----
-
-### LoadOptions
+# LoadOptions
 
 <br/>
 
@@ -15,7 +8,7 @@ LoadOptions(condition : boolean);
 
 <br/>
 
-### LoadOptions(expression : Eaze expression)
+## LoadOptions(expression : Eaze expression)
 
 **LoadOptions(…)** is used for specifying whether the items of Dropdown Form Elements should be (re)loaded when the LoadData Action is executed.
 
@@ -27,7 +20,7 @@ You should use LoadOptions() when the items collection needs to be refreshed fro
 
 <br/>
 
-#### Example 
+### Example 
 >
 ```
 LoadOptions(); // evaluates to true

@@ -1,12 +1,5 @@
----
-title: "On Save"
-metaKeys: "On Save, data validation, modifying data, sending messages and so on, Named SQL Scripts, Executing business logic before, after save, GetValue, CudDataPackage, QueryParam, TableOperationType, ExecuteNonQuery, ExecuteScalar, ExecuteScalar  "
-folderOnly: "false"
-pageIndex: 10
 
----
-
-
+# On Save
 
 InVision provides a way to hook into the process of saving Worksheet and Setting data from the end user client. The hook lets you execute custom business logic such as data validation, modifying data, sending messages and so on.
 

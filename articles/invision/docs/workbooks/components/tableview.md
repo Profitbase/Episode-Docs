@@ -1,11 +1,5 @@
----
-title: "Table View"
-metaKeys: "Table View, "
-folderOnly: "false"
-pageIndex: 19
----
 
-
+# Table View
 
 [Table View](../../tableview.md) is used for displaying data in a read-only data grid. Compared to spreadsheet tables ([Worksheet](../../worksheets.md), [Table](../../tables.md), and [SQL Report](../../sqlreports.md)) which are used for editing data, Table View is used for displaying data in a nicely formatted way.
 
@@ -20,7 +14,7 @@ The component has built-in features for selection, sorting, filtering, formattin
 <br/>
 
 
-### Actions
+## Actions
 
 <br/>
 
@@ -32,7 +26,7 @@ The component has built-in features for selection, sorting, filtering, formattin
 <br/>
 
 
-### Events
+## Events
 <br/>
 
 **Cell Action Link Tapped**
@@ -41,7 +35,8 @@ The component has built-in features for selection, sorting, filtering, formattin
 
 <br/>
 
-**Note!** The “Data” property contains the fields and values of the clicked row, so it will be different for each Table View instance, depending on how the data source is defined.
+> [!NOTE]
+> The “Data” property contains the fields and values of the clicked row, so it will be different for each Table View instance, depending on how the data source is defined.
 
 ```
 {
@@ -69,7 +64,8 @@ The component has built-in features for selection, sorting, filtering, formattin
 
 <br/>
 
-**Note!** The “Data” property contains the fields and values of the clicked row. The Selection property contains the fields and values of the currently selected rows. These objects will be different for each Table View instance, depending on how the data source is defined.
+> [!NOTE]
+> The “Data” property contains the fields and values of the clicked row. The Selection property contains the fields and values of the currently selected rows. These objects will be different for each Table View instance, depending on how the data source is defined.
 
 ```
 {
@@ -148,7 +144,8 @@ The @Event payload will contain the following data:
 
 <br/>
 
-**Note!** The “Data.SelectedItems and Data.ChangedItems” objects contain the fields and values of the clicked selected rows, so it will be different for each Table View instance, depending on how the data source is defined.
+> [!NOTE]
+> The “Data.SelectedItems and Data.ChangedItems” objects contain the fields and values of the clicked selected rows, so it will be different for each Table View instance, depending on how the data source is defined.
 
 ```
 {
@@ -184,7 +181,8 @@ The **ChangedItems** contains the items which were affected by the last change (
 
 <br/>
 
-**Note!** The “Data.RowData” property contains the fields and values of the clicked row, so it will be different for each Table View instance, depending on how the data source is defined.
+> [!NOTE]
+> The “Data.RowData” property contains the fields and values of the clicked row, so it will be different for each Table View instance, depending on how the data source is defined.
 
 ```
 
@@ -202,7 +200,7 @@ The **ChangedItems** contains the items which were affected by the last change (
 
 <br/>
 
-#### Videos
+### Videos
 
 * [Table View](../../../videos/tableview.md)
 * [Table View - Basics](https://profitbasedocs.blob.core.windows.net/videos/Table%20View%20-%20Basics.mp4)

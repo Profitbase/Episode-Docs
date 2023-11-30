@@ -1,10 +1,7 @@
----
-title: "Accessing Arguments"
-metaKeys: "Writing macros, Accessing arguments, Function , Non-function macros, Expansion, MacroExpansionProvider API, SqlCommandService, ObjectModel "
-pageIndex: 3
----
 
-#### How to access
+# Accessing Arguments
+
+## How to access
 
 To access the arguments passed to the executed object (SQL Script, Report, etc), you can use the Context.Arguments API.
 

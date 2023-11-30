@@ -1,8 +1,5 @@
----
-title: "Service User Accounts"
-metaKeys: "Administrator, SQL server, Db Owner, database, user, log, linked, permision, Profitbase Studio"
-pageIndex: 2
----
+
+# Service User Accounts
 
 The Profitbase InVision **AppPool**, **Dispatcher** and **Worker** processes requires the following permissions
 

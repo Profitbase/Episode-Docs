@@ -1,8 +1,5 @@
----
-title: "Row Styling"
-metaKeys: "Row Styling, CSS styles, individually, Eaze expressions "
-pageIndex: 11
----
+
+# Row Styling
 
 You can style rows individually by creating CSS styles and assigning them to rows writing Eaze expressions. 
 
@@ -19,7 +16,7 @@ You can style rows individually by creating CSS styles and assigning them to row
     SETROWSTYLE(ObjectId == -1, "CustomRowStyle");
 
 
-#### Styling the Summary Row
+## Styling the Summary Row
 
 The summary row is a special row that is pinned to the bottom of the spreadsheet by InVision. In order to style this row, you can use SetRowStyle(…) just like with any other row in combination with the IsSummaryRow(row) and GetCallContextRow() functions for determining whether a row is the summary row.
 

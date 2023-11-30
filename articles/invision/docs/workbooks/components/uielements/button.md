@@ -1,9 +1,5 @@
----
-title: "Button"
-metaKeys: "Button, Events, Enabling and disabling, Explicit , Conditional , Dynamic styling"
-folderOnly: "false"
-pageIndex: 1
----
+
+# Button
 
 ![btn](https://profitbasedocs.blob.core.windows.net/images/btnUI.png)
 
@@ -13,7 +9,7 @@ The **Button** component defines a clickable button. Inside a Button element you
 
 <br/>
 
-### Actions
+## Actions
 
 *	**Enable**  
 Enables the button.
@@ -30,14 +26,14 @@ Disables the button.
 
 <br/>
 
-### Events
+## Events
 
 *	**TappedEvent**  
 This event is raised when the button is clicked or tapped.
 
 <br/>
 
-### Enabling and disabling
+## Enabling and disabling
 
 *	**Explicit enabling and disabling**  
 A Button can be explicitly enabled and disabled by executing the Enable and Disable actions when handling an event. You would typically do this when executing a long-running task, by disabling the button when the task starts end to enable it when the task finishes.
@@ -74,7 +70,7 @@ EnableIf(Filter("Filters", "Department").SelectedValue.Level >= 2);
 <br/>
 
 
-### Dynamic styling
+## Dynamic styling
 
 A Button can be dynamically styled by calling the AddCssClass(…), RemoveCssClass(…) and ToggleCssClass(…) functions in an ExecuteExpression action.
 
@@ -99,7 +95,7 @@ ToggleCssClass("highlight", x == 250);
 <br/>
 
 
-### Videos
+## Videos
 
 * [Workbooks](../../../../videos/workbooks.md)
 * [Components - Buttons](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20Buttons.mp4)

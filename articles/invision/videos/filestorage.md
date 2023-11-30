@@ -1,26 +1,21 @@
----
-title: "File Storage"
-metaKeys: "File Storage setup, modes"
-pageIndex: 7
----
 
+# File Storage
 
-
-### File Storage - Basics
+## File Storage - Basics
 [Documentation](../docs/filestorage.md)
 
 ![video](https://profitbasedocs.blob.core.windows.net/videos/File%20Storage%20-%20Basics.mp4)
 <br/>
 
 
-### PowerShell - How To get All File Names From a File Storage
+## PowerShell - How To get All File Names From a File Storage
 [Documentation](../docs/powershell/commands.md)
 
 ![video](https://profitbasedocs.blob.core.windows.net/videos/PowerShell%20-%20file%20name%20export.mp4)
 
 <br/>
 
-### How To Automate PowerShell Script with Data Flow 
+## How To Automate PowerShell Script with Data Flow 
 
 (continuation of previous video)
 
@@ -31,7 +26,7 @@ pageIndex: 7
 
 <br/>
 
-### File Storage - File Click Action
+## File Storage - File Click Action
 [Documentation](../docs/workbooks/components/filestorage.md)
 
 ![video](https://profitbasedocs.blob.core.windows.net/videos/File%20Storage%20-%20File%20Click%20Actions.mp4)
@@ -41,6 +36,6 @@ pageIndex: 7
 
 
 
-### Documentation  
+## Documentation  
 
 * [File Storage](../docs/filestorage.md)

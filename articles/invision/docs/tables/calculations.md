@@ -1,12 +1,8 @@
----
-title: "Calculations"
-metaKeys: "Calculations,"
-folderOnly: "false"
-pageIndex: 2
----
+
+# Calculations
 
 
-### See Also
+## See Also
 
 * [AppVariables in Formulas](calculations/appvariables.md)
 * [Arithmetic Operators](calculations/arithmeticop.md)

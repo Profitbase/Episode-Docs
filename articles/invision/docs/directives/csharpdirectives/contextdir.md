@@ -1,10 +1,4 @@
----
-title: "Context Directives"
-metaKeys: " Data Flow Item argument directives, Object, Context, StoreDBConnectionString, Context, SolutionId, Context, SolutionDBConnectionString, Context, "
-folderOnly: "false"
-pageIndex: 1
----
-
+# Context Directives
 
 
 Arguments can be passed to Data Flow Items using directives. Directives enables arguments to be resolved based on the execution context of the Data Flow, and by addressing Solution resources without using hard to read and maintain metadata ids.

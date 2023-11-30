@@ -1,11 +1,12 @@
+# how to Setup Hotkey
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Accessibiblity%20-%20hotkeys.mp4) you will find video that shows how to Setup Hotkey. [Here](../hotkey.md) you will find [Documentation](../hotkey.md).
 <br/>
 
 
-### Step by step
+## Step by step
 
 
 1.  Create a Form Schema:

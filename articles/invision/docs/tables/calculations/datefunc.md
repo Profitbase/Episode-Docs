@@ -1,8 +1,6 @@
----
-title: "Date Functions"
-metaKeys: "Date functions, DATE, DATEVALUE, DATE, TODATE, NOW, FORMATDATE, TZUTC, date, TZLocal"
-pageIndex: 7
----
+
+# Date Functions
+
 
  ``DATE(year [,month,day,hours,min,sec, ms])``
  

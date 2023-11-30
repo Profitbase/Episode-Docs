@@ -1,9 +1,5 @@
----
-title: "Access Control"
-metaKeys: "Access control, Data Permissions, Identities, Workbook, HTTP API"
-folderOnly: "false"
-pageIndex: 2
----
+
+# Access Control
 
 ![img](https://profitbasedocs.blob.core.windows.net/images/accCtrl.png)
 

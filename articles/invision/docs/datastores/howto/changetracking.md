@@ -1,13 +1,13 @@
 
-## How To Change Tracking
+# How To Change Tracking
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/DS%20change%20tracking.mp4) you will find video that shows how to Change Tracking. [Here](../../datastores/changetracking.md) you will find [Documentation](../../datastores/changetracking.md).
 <br/>
 
 
-### Change Tracking
+## Change Tracking
 
 
 

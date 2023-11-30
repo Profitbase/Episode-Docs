@@ -1,14 +1,14 @@
 
-## Input Configuration 
+# Input Configuration 
 
 <br/>
 
-### Relationship
+## Relationship
 
 Specifies the column mapping used for determining which distribution key is used for computing the value of resulting transactions. When a row from the source table does not match, the incoming value from the Computation Source Column is distributed evenly across the resulting transactions.
 <br/>
 
-### Computation Source Column(s)
+## Computation Source Column(s)
 
 Specifies the column(s) to unpivot (to a date-value pair) and write to the target. For each column in the list, the Distributer generates one row for every distribution key value. 
 

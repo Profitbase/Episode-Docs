@@ -1,13 +1,7 @@
----
-title: "Azure Active Directory Authentication"
-metaKeys: "Azure Active directory authentication, Designer,Directory, client, tenant, Authentication using Microsoft Azure Active Directory, Configure Azure AD Application, registrations, Web Client, Permissions, Authentication,  Access tokens, configuring the InVision web site, New client secret, API Permissions, Grant consent, ID tokens, Implicit grant, IdentityConfig, Client install,identityconfig.json, OpenIDConnect_Web.config, Web.config, auth:idp, appSetting, AzureAD,“Access"
-pageIndex: 1
----
-
-### Authentication using Microsoft Azure Active Directory
+# Authentication using Microsoft Azure Active Directory
 <br/>
 
-### Configure your Azure AD Application
+## Configure your Azure AD Application
 
 1. Log on to your Azure Active Directory management portal
 2. In the Portal, select your AD.  
@@ -19,7 +13,7 @@ pageIndex: 1
 <br/>
 
 
-### Web Client
+## Web Client
 
 Create an application that represents the Web Client, and configure:
 <br/>
@@ -28,10 +22,10 @@ Create an application that represents the Web Client, and configure:
 ![Permissions and Authentication](https://profitbasedocs.blob.core.windows.net/images/upa3.png "Permissions and Authentication")
 <br/>
 
-#### Application (client) ID  
+### Application (client) ID  
 This id is automatically generated for you, and you will need this later when configuring the InVision web site.
 
-#### Directory (tenant) ID  
+### Directory (tenant) ID  
 This is “you”, and you will need this id when configuring the InVision web site.
 <br/>
 
@@ -127,7 +121,7 @@ Change:
 <br/>
 
 
-### Designer
+## Designer
    
 Create an application that represents the Designer, and configure.
 
@@ -169,7 +163,7 @@ Make sure to **Grant consent**  (grant admin consent for Default Directory).
 <br/>
 
 
-#### Configure the Client and Designer Web Site
+### Configure the Client and Designer Web Site
 
 1.	Go the the **IdentityConfig** folder in the **Client install** folder and open **identityconfig.json** for editing.
 
@@ -200,7 +194,7 @@ Your tenant id. You find your Tenant Id in the Overview screen of your App Regis
 
 <br/>
 
-### Videos
+## Videos
 
 
 * [Installation and Setup](../../../videos/gettingstarted/installation.md)

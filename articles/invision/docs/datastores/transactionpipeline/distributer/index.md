@@ -1,4 +1,4 @@
-## Distributer
+# Distributer
 
 The Distributer component distributes the value of one or more columns across a date range based on a distribution key by creating one transaction for each date in the range.  
 For example, by applying the Distributer to a year total column using a 12-month distribution key, the Distributer will create 12 transactions by distributing the year total value across 12 periods according to the distribution key factors.  
@@ -17,7 +17,7 @@ Specifies the Setting table acting as the Distributer Ruleset.
 Specifies the column in the data source that contains the distribution key identifier to use for a specific row. When using this option, a corresponding Distribution Key column needs to be set up by the Distributer Ruleset used for resolving the matching distribution key (row). You should only use this option if you need to explicitly specify the distribution key to use in addition to the Relationship configuration.
 <br/>
 
-#### See Also 
+## See Also 
 
 * [Input Configuration](inputconfig.md)
 

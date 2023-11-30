@@ -1,19 +1,12 @@
----
-title: ""
-metaKeys: "How To Install Desktop Designer and Connect to Service"
-folderOnly: "false"
-pageIndex: 1
----
+# How To Upgrade the InVision Instance
 
-#### How To Upgrade the InVision Instance
-
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Installation%20and%20Setup%20-%20Install%20Desktop%20Designer%20and%20Connect%20to%20Service.mp4) you will find video that shows How To Install Desktop Designer and Connect to Service. [Here](../installation.md) you will find [Documentation](../installation.md).
 <br/>
 
 
-### Step by step
+## Step by step
 
 
 1. Connect to an instance using Windows Authentication:

@@ -1,9 +1,5 @@
----
-title: "Data Queries"
-metaKeys: "Data Queries, SQL Directives, standard, Declare, Object, Id, Values, Custom Parameters "
-folderOnly: "false"
-pageIndex: 3
----
+
+# Data Queries
 
 
 
@@ -12,7 +8,7 @@ Data Queries are scripts used for loading and saving data. Data Queries are writ
 When creating Data Queries, you can access any SQL data source by providing the connection string. When accessing InVision resources, you do not need to specify a connection string.
 <br/>
 
-### SQL Directives
+## SQL Directives
 
 SQL directives are instructions added to standard SQL expressions which are executed by InVision before sending the query to the database. Before SQL queries are executed, InVision scans for SQL directives and changes the queries accordingly. SQL directives are required when filter values or parameters are passed during execution time and when you want to refer to Solution database objects without hard coding the table or column names. 
 <br/>
@@ -111,7 +107,7 @@ SQL directives are instructions added to standard SQL expressions which are exec
 >@Values_LessThanOrEqual(alias[,mapTo,AND | OR])
 >Similar to the @Values_GreatherThan, except that comparison operator is ‘<=’ (less than or equal)
 
-### Custom Parameters
+## Custom Parameters
 
 You can add custom parameters directly to queries which enables filtering without using SQL directives. 
 
@@ -129,7 +125,7 @@ To pass values to custom parameters, you need to use the [SetParamValue(…)]() 
 
 <br/>
 
-#### Videos
+### Videos
 
 - [Table View](../../videos/tableview.md)
 - [Table View - Declaring Filter](https://profitbasedocs.blob.core.windows.net/videos/Table%20View%20-%20Declaring%20Filter.mp4)

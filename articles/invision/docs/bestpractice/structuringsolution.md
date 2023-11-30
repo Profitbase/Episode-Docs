@@ -1,5 +1,5 @@
 
-### Basic guidelines for structuring solutions
+# Basic guidelines for structuring solutions
 
 When building an InVision Solution, you are free to structure your Solution as you see fit. InVision does not require you to follow any patterns or rules as to how you organize the components of the Solution. However, the recommended approach is to structure your solution components by feature/business area, not type. As an example, the structure of «MySolution», containing Budget, Forecast, and Booking, may look like this:
 <br/>
@@ -19,7 +19,7 @@ My Solution
 
 <br/>
 
-### Namespace - Logical structuring
+## Namespace - Logical structuring
 
 Namespaces in InVision are used for defining the logical structure of the Solution. The contents of the toolboxes are organized based on the namespacing information specified for each Solution Explorer Object, so that it's easier to navigate and find what you're looking for.
 

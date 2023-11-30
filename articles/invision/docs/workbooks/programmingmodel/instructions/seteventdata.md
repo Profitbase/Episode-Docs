@@ -1,11 +1,4 @@
----
-title: "SetEventData"
-metaKeys: "SetEventData"
-folderOnly: "false"
-pageIndex: 27
----
-
-### SetEventData function
+# SetEventData function
 
 <br/>
 
@@ -17,7 +10,7 @@ SetEventData(eventData : any)
 We can call **SetEventData(…)** from the Raise Custom Event action in Subscreens. Calling SetEventData(…) let you explicitly set the event data passed to the event handler.
 <br/>
 
-### Example
+## Example
 Below we have a few examples of how to call SetEventData(…) to pass a custom object as the event data to event handlers.
 <br/>
 

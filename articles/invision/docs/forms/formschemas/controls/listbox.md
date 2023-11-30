@@ -1,15 +1,11 @@
----
-title: "Listbox"
-metaKeys: "UI, SetModel, Control, List, Listbox, Controls,  Editable, ItemsSource, ItemsSourceFilter, DisplayMember, ValueMember, SelectedValue, KeyProp, ItemSelected, ItemTemplate, binding, collection, Form Runtime, "
-folderOnly: "false"
-pageIndex: 12
----
+
+# Listbox
 
 Inherits from [Editable Control](editablecontrol.md).
 
 <br/>
 
-#### Properties
+## Properties
 
 <br/>
 

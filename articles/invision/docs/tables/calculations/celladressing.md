@@ -1,8 +1,5 @@
----
-title: "Cell Addressing"
-metaKeys: "Cell Addressing, column, Row selector expression, "
-pageIndex: 4
----
+
+# Cell Addressing
 
 To address a cell, you need to specify the name of the column, and optionally a row selector expression.  
 If you do not specify a row selector expression, the right hand side expression will be evaluated for every cell in the column.

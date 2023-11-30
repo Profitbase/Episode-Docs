@@ -1,10 +1,10 @@
 
-## Creating Schema
+# Creating Schema
 
 ![img](https://profitbasedocs.blob.core.windows.net/images/datastores.png)
 
 
-###	Creating Data Store Schema 
+##	Creating Data Store Schema 
 
 Our Product Sales data store will consist of these columns: 
 
@@ -47,6 +47,6 @@ Your time frame columns now represent each month from the reference date in the 
 
 Check out how to Mapp the Source [Here](sourcemapping.md).
 
-### Videos
+## Videos
 * [Data Stores](../../videos/datastores.md)
 * [Basics - Creating Schema and Source Mapping](https://profitbasedocs.blob.core.windows.net/videos/DS%20Basic%20-Creating%20Schema%20and%20source%20maping.mp4)

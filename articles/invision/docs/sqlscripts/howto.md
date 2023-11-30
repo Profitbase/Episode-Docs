@@ -1,15 +1,9 @@
----
-title: "How to's"
-metaKeys: "how to "
-folderOnly: "false"
-pageIndex: 1
----
-
+# How to's
 In this section, you will find a list of shortcuts to different subjects about SQL Scripts.
 
 <br/>
 
-#### See Also  
+## See Also  
 
 * [Create and Execute from Data Flow](howto/setup.md)
 * [Run SQL Script when saving Worksheets or Tables](howto/sqlscriptservice.md)

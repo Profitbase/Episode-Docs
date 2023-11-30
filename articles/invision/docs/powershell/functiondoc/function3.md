@@ -1,8 +1,5 @@
----
-title: "Profitbase.Data.SqlCommand functions"
-metaKeys: "Profitbase.Data.SqlCommand functions, $result = [Profitbase.Data.SqlCommand]::ExecuteNonQuery($command [,$sqlParameters]), $dataTable = [Profitbase.Data.SqlCommand]::LoadTable($query [,$sqlParameters]), $objectResult = [Profitbase.Data.SqlCommand]::ExecuteScalar($query [,$sqlParameters]), $reader = [Profitbase.Data.SqlCommand]::ExecuteReader($query [,$sqlParameters]), Executes a SQL query, SqlDataReader, database connection,  "
-pageIndex: 3
----
+
+# Profitbase.Data.SqlCommand functions
 
 `$result = [Profitbase.Data.SqlCommand]::ExecuteNonQuery($command [,$sqlParameters])`  
 Executes a Transact-SQL statement against the solution database connection and returns the number of rows affected.
@@ -21,7 +18,8 @@ Executes a SQL query and returns the first column of the first row in the result
 
 `$reader = [Profitbase.Data.SqlCommand]::ExecuteReader($query [,$sqlParameters])`  
 Executes a SQL query against the solution database connection and returns a SqlDataReader object that can be used to read field and row data.  
-**Note!** The SqlDataReader object should always be closed after processing to avoid leaving database connection open longer than necessary.
+> [!NOTE]
+> The SqlDataReader object should always be closed after processing to avoid leaving database connection open longer than necessary.
 
 <br/>
 
@@ -79,7 +77,7 @@ $reader.Close()
 
 <br/>
 
-#### Videos
+## Videos
 
 - [PowerShell](../../../videos/powershell.md)
 - [PowerShell - Profitbase.Data.SqlCommand function example](https://profitbasedocs.blob.core.windows.net/videos/powershell%20-%20SQL%20Command.mp4)

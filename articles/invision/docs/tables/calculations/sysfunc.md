@@ -1,8 +1,5 @@
----
-title: "System Functions"
-metaKeys: "System Functions, ARRAY, NEWID, ENVIRONMENT, EVAL, expression, string, JsonParse, value, JsonStringify, text, ApiBase "
-pageIndex: 18
----
+
+# System Functions
 
 ``ARRAY(…args)``
 

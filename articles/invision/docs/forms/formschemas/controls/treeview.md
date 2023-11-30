@@ -1,8 +1,5 @@
----
-title: "TreeView"
-metaKeys: "TreeView ,UI, Text Control, Controls,  Editable, Layout control, create sub layout containers, grids, form schema, child, nested"
-pageIndex: 18
----
+
+# TreeView
 
 Inherits from [Control](control.md).
 
@@ -173,7 +170,8 @@ A DimensionModel must have a Name and a Source. The **Name** is the **name of th
 
 The **Source** is the **name of the dimension** in your Solution. It is **NOT** the database table name of the dimension. Also, you cannot use the @Object[…].DbObjectName directive as Source.
 
-**Note!** that you cannot use legacy Wide or Linked dimensions as sources for DimensionModels.
+> [!NOTE]
+> that you cannot use legacy Wide or Linked dimensions as sources for DimensionModels.
 
 <br/>
 
@@ -203,7 +201,7 @@ The **Source** is the **name of the dimension** in your Solution. It is **NOT** 
 </Form>
 ```
 
-### Videos
+## Videos
 
 - [Form Schemas](../../../../videos/formschemas.md)
 

@@ -1,5 +1,5 @@
 
-## Ruleset
+# Ruleset
 
 The Ruleset table for the Spawner component contains the business rules used for spawning rows from the current source row context (data source or Distributer result set). As an example, the contents of the Ruleset table may look like this:
 <br/>
@@ -21,7 +21,7 @@ The Ruleset table for the Spawner component contains the business rules used for
 2.	*If the source row column mapped to ProductID equals 51, and the source row ProjectID equals "P-100" and source row CustomerID equals "C-500", then multiply the current value (YearTotal) by 0.3 and return the value.*
 <br/>
 
-### Properties:
+## Properties:
 
 *	**Use Custom Calculation Expression**
 

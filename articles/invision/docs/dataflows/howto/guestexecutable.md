@@ -1,14 +1,14 @@
 
-## How To Register and Execute Guest Executable
+# How To Register and Execute Guest Executable
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Guest%20Executables%20-%20Basics.mp4) you will find a video that shows how to Register and Execute Guest Executable. [Here](../../dataflows/index.md) you will find [Documentation](../../dataflows/index.md).
 <br/>
 
 
 
-### Step by step
+## Step by step
 
 
 1. Open Guest Executable to register a new one:

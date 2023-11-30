@@ -1,8 +1,5 @@
----
-title: "ToggleButton"
-metaKeys: "UI, Text Control, Controls, on click, button, call function"
-pageIndex: 17
----
+
+# ToggleButton
 
 ![toggle](https://profitbasedocs.blob.core.windows.net/images/toggle1.png)
 ![toggle](https://profitbasedocs.blob.core.windows.net/images/toggle2.png)
@@ -104,7 +101,7 @@ Specifies the hotkey for the control.
 
 <br/>
 
-### Videos
+## Videos
 
 - [Form Schemas](../../../../videos/formschemas.md)
 

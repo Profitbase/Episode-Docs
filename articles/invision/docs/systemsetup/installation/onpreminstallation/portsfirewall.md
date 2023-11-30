@@ -1,12 +1,8 @@
----
-title: "Ports and Firewall Settings"
-metaKeys: "Firewall settings, Default ports"
-pageIndex: 1
----
+
+# Ports and Firewall Settings
 
 
-
-### Default ports
+## Default ports
 <br/>
 
 
@@ -22,7 +18,7 @@ pageIndex: 1
 
 <br/>
 
-### Firewall settings
+## Firewall settings
 
 The following table describes the application services requiring internet access.
 <br/>
@@ -39,5 +35,5 @@ The following table describes the application services requiring internet access
 
 <br/>
 
-### Videos 
+## Videos 
 * [Installation](../../../../videos/gettingstarted/installation.md)

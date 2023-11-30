@@ -1,14 +1,7 @@
----
-title: "Context Menu Options Conditions"
-metaKeys: "Context Menu Options conditions, write a condition, function,"
-folderOnly: "false"
-pageIndex: 5
----
 
-
+# Context Menu Options Conditions
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/contextMenu2.png)
-
 
 <br/>
 
@@ -22,7 +15,7 @@ Use this option if an option needs to be conditionally available, for example, b
 
 <br/>
 
-#### How to write a condition
+## How to write a condition
 
 *	A condition is a function with a parameter called args. The args parameter contains information about 
     *	The row(s) that is currently selected, including the row that was right clicked. 

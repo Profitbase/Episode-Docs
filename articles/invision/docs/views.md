@@ -1,9 +1,5 @@
----
-title: "View"
-metaKeys: "InVision, supports, adding Views,  Solution, Auto Create,  Template Deployment "
-folderOnly: "false"
-pageIndex: 27
----
+
+# View
 
 InVision supports creating database Views. 
 <br/>
@@ -13,7 +9,7 @@ InVision supports creating database Views.
 <br/>
 
 
-### Properties
+## Properties
 
 <br/>
 
@@ -30,7 +26,7 @@ InVision supports creating database Views.
 
 <br/>
 
-### Videos
+## Videos
 
 - [View Basics](https://profitbasedocs.blob.core.windows.net/videos/View%20-%20Basics.mp4)
 

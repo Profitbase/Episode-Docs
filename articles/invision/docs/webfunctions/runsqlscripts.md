@@ -1,8 +1,5 @@
----
-title: "Run Sql Scripts from Web Functions"
-metaKeys: "How to run Sql Scripts Web Functions, Run method, SqlScriptService, API,  SQL, "
-pageIndex: 4
----
+
+# Run Sql Scripts from Web Functions
 
 ## WebFunction base class APIs
 

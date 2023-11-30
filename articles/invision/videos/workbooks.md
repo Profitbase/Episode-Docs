@@ -1,19 +1,14 @@
----
-title: "Workbooks"
-metaKeys: "Form Elements, Input Elements, Subscreens in Tabs, File Upload, Button, Label, Filter, Image, iFrame, Data Flow, Scripts, Workflow, Extension, Reports, Tab Control, Form Schemas, Progress Indicator, Creating Pages, Adding Parts and The Layout System, "
-folderOnly: "false"
-pageIndex: 21
----
 
+# Workbooks
 
-###  Basics - Creating Pages, Adding Parts and The Layout System
+##  Basics - Creating Pages, Adding Parts and The Layout System
 [Documentation](../docs/workbooks.md)
 
 ![video](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20Basics%20-%20creating%20pages%2C%20adding%20parts%2C%20the%20layout%20system.mp4)
 
 <br/>
 
-###  Subscreens in Tabs
+##  Subscreens in Tabs
 [Documentation](../docs/workbooks/subscreens.md)
 
 
@@ -21,7 +16,7 @@ pageIndex: 21
 
 <br/>
 
-###  Creating Popups
+##  Creating Popups
 [Documentation](../docs/workbooks/programmingmodel/instructions/popup.md)
 
 
@@ -29,7 +24,7 @@ pageIndex: 21
  
 <br/>
 
-### Workbook as a Home Page
+## Workbook as a Home Page
 [Workbooks](../docs/workbooks.md) 
 
 
@@ -38,14 +33,14 @@ pageIndex: 21
 <br/>
 
 
-### See Also 
+## See Also 
 
 * [Components](workbooks/components.md)
 * [Interactions](workbooks/interactions.md)
 
 
 
-### Documentation 
+## Documentation 
 
 * [Workbooks](../docs/workbooks.md)
 * [Components](../docs/workbooks/components.md)

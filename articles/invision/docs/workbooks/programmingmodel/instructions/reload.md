@@ -1,11 +1,7 @@
----
-title: "Reload"
-metaKeys: "Reload"
-folderOnly: "false"
-pageIndex: 20
----
 
-### ReloadDropdownItems
+# Reload
+
+## ReloadDropdownItems
 
 <br/>
 
@@ -40,7 +36,7 @@ ReloadDropDownItems(BooleanValue);
 ReloadDropDownItems(_x == "Yes" && IsFilterSet("Filters", "Department"));
 ```
 
-### ReloadLayout
+## ReloadLayout
 
 ```
 ReloadLayout(value : boolean | Eaze expression)

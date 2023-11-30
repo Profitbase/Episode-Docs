@@ -1,11 +1,4 @@
----
-title: "Layout"
-metaKeys: "dragging and dropping, layout, Columns and column properties,  Context Menu Actions, Dropdown Selection, Display From Dropdown Source, Ranked Input Settings,  Trim whicespace on save, Data Type, Default Value, Is Key Column, Width Type, Css Class, "
-pageIndex: 8
----
-<br/>
-
-### Table Layout
+# Table Layout
 <br/>
 
 Specify the table **SCHEMA** by adding columns and setting properties for each of them. You add columns by dragging and dropping them from the Toolbox onto the columns list in the schema designer. 
@@ -15,7 +8,7 @@ Specify the table **SCHEMA** by adding columns and setting properties for each o
 <br/>
 
 
-### Column properties
+## Column properties
 <br/>
 
 **Css Class**  
@@ -23,7 +16,8 @@ Specify the table **SCHEMA** by adding columns and setting properties for each o
 
 **Ranked Input Settings**  
 >Enable Ranked Input mode for the Setting.  
-**Note!** Ranked Input columns must be Primary Key columns.
+> [!NOTE]
+> Ranked Input columns must be Primary Key columns.
 
 **Data Type**  
 >The SQL data type of the column.
@@ -33,7 +27,7 @@ Specify the table **SCHEMA** by adding columns and setting properties for each o
 
 <br/>
 
-### See Also
+## See Also
 
 * [Basic Column Properties](../worksheets/columnproperties/basiccolproperties.md)
 * [Caption and Caption Expression](../worksheets/columnproperties/caption.md)

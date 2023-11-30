@@ -1,8 +1,5 @@
----
-title: "TextArea"
-metaKeys: "UI, Text Control, Controls,  Editable, input, TextArea, multi line text, model, binding syntax"
-pageIndex: 16
----
+
+# TextArea
 
 Inherits from [Editable Control](editablecontrol.md).
 

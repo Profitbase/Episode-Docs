@@ -1,11 +1,4 @@
----
-title: "SetReadOnly"
-metaKeys: "SetReadOnly"
-folderOnly: "false"
-pageIndex: 31
----
-
-### SetReadOnly function
+# SetReadOnly function
 
 <br/>
 

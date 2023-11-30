@@ -1,11 +1,4 @@
----
-title: "SetParamValue"
-metaKeys: "SetParamValue"
-folderOnly: "false"
-pageIndex: 30
----
-
-### SetParamValue function
+# SetParamValue function
 
 <br/>
 
@@ -16,7 +9,7 @@ SetParamValue(paramName : string, paramValue : any);
 ```
 <br/>
 
-### Example
+## Example
 
 >This example shows how to supply arguments to a parameterized query.
 >

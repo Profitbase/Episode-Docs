@@ -1,23 +1,19 @@
----
-title: "Subscreens"
-metaKeys: "Subscreens, Split your pages into smaller, components, create, Tab Controls, Building, Interaction Logic, Raising events, outbound communication, add "
-folderOnly: "false"
-pageIndex: 5
----
+
+# Subscreens
 
 ![stepper](https://profitbasedocs.blob.core.windows.net/images/stepper.png)
 
 
-**Subscreens have two functions: **
+**Subscreens have two functions:**
 
 1.	Split your pages into smaller, more manageable components.
 2.	Use them to create the contents of Tab Controls.
 
-### Building Subscreens
+## Building Subscreens
 
 You build and manage subscreens in the [Workbook](../workbooks.md) Designer. Like [Pages](pages.md), [Subscreens](howto/subscreens.md) consists of business logic (events and actions) and components such as Buttons, Filters, and Spreadsheets. Components are added to Subscreens by dragging and dropping items from the toolbox and organized in a grid layout (along rows and columns).
 
-### Interaction Logic
+## Interaction Logic
 
 Subscreen components (such as buttons), can invoke actions on another component in the Subscreen, but cannot invoke actions on components outside the Subscreen. 
 
@@ -43,7 +39,7 @@ Instead, you need to create **Custom Actions** for the Subscreen and call these 
 
 To create Custom Actions for a Subscreen, open the Subscreen in edit mode (click to focus) and click **Edit** in the **Properties** pane. This will bring up the Custom Actions editor, where you can create, edit, and delete custom actions. The custom actions of Subscreens will be available in the Event handler editor of all other components added to pages.
 
-### Using Subscreens
+## Using Subscreens
 
 Once a Subscreen has been created, it can be added to a Page or set as the content of a Tab Control Item. 
 
@@ -58,7 +54,7 @@ Once a Subscreen has been created, it can be added to a Page or set as the conte
 
 <br/>
 
-### Videos
+## Videos
 
 * [Workbooks](../../videos/workbooks.md)
 * [Subscreens in Tabs](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20Sub%20Screens%20in%20Tabs.mp4)

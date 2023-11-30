@@ -1,8 +1,5 @@
----
-title: "Date for Time Frame Columns in Formulas"
-metaKeys: "Using, date, Time Frame, Columns, formulas"
-pageIndex: 20
----
+
+# Date for Time Frame Columns in Formulas
 
 
 If you need to use the date of a Time Frame column in a Worksheet formula, you can use the reserved **@Property[<column_name>.Date]** expression.

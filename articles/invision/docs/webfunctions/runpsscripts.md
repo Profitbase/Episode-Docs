@@ -1,10 +1,8 @@
----
-title: "Run PowerShell Scripts from Web Functions"
-metaKeys: "How to run PowerShell scripts from Web Functions, PowerShellService, PowerShell"
-pageIndex: 3
----
 
-### Example
+
+# Run PowerShell Scripts from Web Functions
+
+## Example
 
 <br/>
 

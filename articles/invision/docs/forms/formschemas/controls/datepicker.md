@@ -1,8 +1,5 @@
----
-title: "DatePicker "
-metaKeys: "DatePicker , hotkeys, value, type, disabled, Editable Control"
-pageIndex: 3
----
+
+# DatePicker
 
 Inherits from [Editable Control](editablecontrol.md).
 <br/>
@@ -80,7 +77,7 @@ Specifies the hotkey for the control.
 
 <br/>
 
-#### Videos
+## Videos
 
 - [Form Schemas](../../../../videos/formschemas.md)
 - [DatePicker](https://profitbasedocs.blob.core.windows.net/videos/Form%20Schema%20-%20DatePicker.mp4)

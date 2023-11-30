@@ -1,11 +1,7 @@
----
-title: "Troubleshooting"
-metaKeys: "Troubleshooting, Solutions, faq, questions, error message, MethodNotAllowed, "
-folderOnly: "false"
-pageIndex: 26
----
 
-### Q : I cannot open a Solution, because it does not exist in the list of Solutions in the start page
+# Troubleshooting
+
+## Q : I cannot open a Solution, because it does not exist in the list of Solutions in the start page
 
 A : This probably means that you do not have access to the Solution using your current credentials. You need to contact your Solution administrator to be granted access.
 
@@ -13,7 +9,7 @@ If you are a Solution administrator, you can delete the contents of pbSolutionOb
 
 
 
-### Q : I am getting an error message with a 405 MethodNotAllowed error when trying to install the license or activating the software.
+## Q : I am getting an error message with a 405 MethodNotAllowed error when trying to install the license or activating the software.
 
 A : This means that the web server does not accept all HTTP verbs, such as GET, PUT, POST, and DELETE.
 The most likely cause for this is that WebDAV is installed, so you need to uninstall/turn the feature off.  

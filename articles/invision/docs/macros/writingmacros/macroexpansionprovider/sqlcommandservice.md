@@ -1,13 +1,7 @@
----
-title: "SqlCommandService"
-metaKeys: "Writing macros, Accessing arguments, Function , Non-function macros, Expansion, MacroExpansionProvider API, SqlCommandService, ObjectModel "
-pageIndex: 3
----
 
+# SqlCommandService
 
-
-
-### MacroExpansionProvider.SqlCommandService
+## MacroExpansionProvider.SqlCommandService
 
 The SqlCommandService provides an API to execute arbitrary sql commands. (Examples further down).
 <br/>

@@ -1,4 +1,4 @@
-# Howto
+# How to's
 
 * [RunSqlScriptFromWorkbook](./runSqlScriptFromWorkbook.md)
 * [Setup](./setup.md)

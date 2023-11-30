@@ -1,11 +1,7 @@
----
-title: "Themes and Styles"
-metaKeys: "Data Grid, Generic style sheet, CSS class"
-folderOnly: "false"
-pageIndex: 6
----
 
-### Style Sheets
+# Themes and Styles
+
+## Style Sheets
 There are two types of Style Sheets:
 * Data Grid Style Sheet
 * Generic style sheet
@@ -13,7 +9,7 @@ There are two types of Style Sheets:
 A grid arranges its children into rows and columns.
 
 
-### Creating a new Theme
+## Creating a new Theme
 
 1. Click on the **“Themes and Styling”** tab.
 2. Click on the **“New”** button.
@@ -77,11 +73,11 @@ Profitbase LOW CODE uses **CSS** to style and format our solution. We are going 
 
 <!--<br/>
 
-### Difference between ... -->
+## Difference between ... -->
 
 <br/>
 
-### Videos
+## Videos
 
 * [Themes and Styles](../../videos/themesandstyles.md)
 * [Styling - Using custom images](https://profitbasedocs.blob.core.windows.net/videos/Styling%20-%20Using%20custom%20images.mp4)

@@ -1,8 +1,5 @@
----
-title: "Profitbase.IO.FileStorage"
-metaKeys: "Profitbase.IO.FileStorage, [byte[]] $fileContent = [Profitbase.IO.FileStorage]::ReadAllBytes($storageName, $fileName), [byte[]] $fileContent = [Profitbase.IO.FileStorage]::ReadAllBytesByReferenceId($fileReferenceId), [Profitbase.IO.FileStorage]::DeleteFile($storageName, $fileName), [Profitbase.IO.FileStorage]:: DeleteFileByReferenceId ($fileReferenceId), [string[]] $fileNames = [Profitbase.IO.FileStorage]::GetFileNames($storageName [,$contextQuery [,$mimeTye]] ), [Profitbase.IO.FSFileInfo[]] $fileInfos = [Profitbase.IO.FileStorage]::GetFileInfos($storageName [,$contextQuery [,$mimeTye]] ), Read a Powershell script, "
-pageIndex: 7
----
+
+# Profitbase.IO.FileStorage
 
 Use the Profitbase.IO.FileStorage API for querying, reading and writing to File Storage objects.
 <br/>

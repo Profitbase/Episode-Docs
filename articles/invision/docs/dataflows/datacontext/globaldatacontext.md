@@ -1,5 +1,4 @@
-
-## Global Data Context
+# Global Data Context
 
 ![img](https://profitbasedocs.blob.core.windows.net/images/Dcont.png)
 
@@ -9,7 +8,7 @@ The Global Data Context is configured once pr Solution, and specifies the resour
 
 <br/>
 
-### Slicer Repositories
+## Slicer Repositories
 
 Slicer Repositories are table resources (Dimensions, Facts, Settings and Data Stores) that can be used to determine the transaction set to process when a data source (Data Store or View) does not have a star schema that the Data Context can be derived from. Once a table resources is registered in the Global Data Context, it can be applied in **Slicer Repository Bindings** for  **Data Context Subjects**.
 
@@ -25,7 +24,7 @@ Slicer Repositories are table resources (Dimensions, Facts, Settings and Data St
 
 <br/>
 
-### Data Context Variables
+## Data Context Variables
 
 Data Context Variables are declarations of resources that can be referenced in **Value Bindings**  when arbitrary values should be used to determine the transaction set to process.
 
@@ -38,7 +37,7 @@ Values are assigned to Data Context Variabels listed in the **Data Context Scope
 
 <br/>
 
-### Data Context Subjects
+## Data Context Subjects
 
 Data Context Subjects are data sources and targets which are sliced by the Data Context during processing. Data Context Subjects can be Data Stores or Views.  
 If the star schema configuration of a Data Store provides sufficient information to determine the transaction set during read and write operations, the Data Store does not need to be enlisted in the Global Data Context. 
@@ -94,6 +93,6 @@ Since Views does not have a star schema configuration, any View being part of a 
 
 <br/>
 
-### Scripting the Global Data Context
+## Scripting the Global Data Context
 
 When creating a template that requires a Global Data Context configuration, you need to include a script to create the GDC at the end of the template deployment process. To do this, you need to create a Data Flow that executes when the template is deployed, an in that Data Flow, add a task that calls the *Profitbase.Invision.Cmd.ExecuteScript* function. The easiest way of doing this is to add it from the **Data Flow Item Templates toolbox** -> **Command Tasks** -> **Execute Command Script**. In the GDC screen, generate the script and copy it into the Command Script text input field of the Execute Command Script Task in the Data Flow Item.

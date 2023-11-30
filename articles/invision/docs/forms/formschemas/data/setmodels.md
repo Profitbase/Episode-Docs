@@ -1,8 +1,5 @@
----
-title: "Set Models"
-metaKeys: "Set Models, properties,  data, objects, database, displayed, modified, user, interface, Form Schema, instance, table, view, custom query, name, source, fields, filter, insertkey, autoinsert, save, load, query, connectiongstring"
-pageIndex: 4
----
+
+# Set Models
 
 Set Models are similar to Lists, except their contents can be modified and saved back to the database. Set Models represents a collection of objects which is read from the database, can be modified in the user interface, and then saved back to the database. You would typically use a Set Model for displaying and editing data in a Listbox.
 
@@ -34,41 +31,41 @@ This example shows how to load all employees in a department and display them in
 
 ---
 
-### Set Model Properties:
+## Set Model Properties:
 
 <br/>
 
-#### Name
+### Name
 
 The name of the model. **Required**.
 
 <br/>
 
-#### Source
+### Source
 
 The database object to read from. Source can either be a View, Table or @Object[…].DbObjectName reference. **Required unless LoadQuery is specified.**
 
 <br/>
 
-#### Fields
+### Fields
 
 Specifies the members of the Model, and the columns containing the data for the model. **Required unless SaveQuery is specified.**.
 
 <br/>
 
-#### Filter
+### Filter
 
 Specifies the WHERE clause. This property is ignored if the LoadQuery is specified. **Optional**.
 
 <br/>
 
-#### ItemKey
+### ItemKey
 
 Specifies the WHERE clause that identifies a single row in the set. This property is used when data is saved to the database. **Required** if you want to save data.
 
 <br/>
 
-#### InsertKey
+### InsertKey
 
 When a Set Model is saved, it will either do an Update or Insert pr row, based on whether the row mathing a key exists or not. The InsertKey is a comma separated list of tokens that specifies the mapping between parameters and key columns not already contained in the Fields property, that is required to insert a new row. The insert key must be on the form **Column1 = @Param1, Column2 = @Param2, ... **
 
@@ -82,11 +79,11 @@ When a Set Model is saved, it will either do an Update or Insert pr row, based o
 
 <br/>
 
-#### AutoInsert
+### AutoInsert
 
 When saving Set Model data, and no custom SaveQuery is specified, InVision will do an update for each Set Model object if a matching row already exist, or an Insert if no matching row exist. If, for some reason, you don’t want an insert to happen, you need to explicitly set this property to false. **Optional**. The default value is true.
 
-#### SaveQuery
+### SaveQuery
 
 If data is not to be saved to the source table, or if you need to use a custom SQL to save the data correctly, you need to provide the query manually. The SaveQuery executes pr Set Model item. **Optional.**
 
@@ -104,7 +101,7 @@ If data is not to be saved to the source table, or if you need to use a custom S
 
 <br/>
 
-#### LoadQuery
+### LoadQuery
 
 Use the load query if you want to provide a custom query for loading items into the Set Model. For example, if you need to pull in data from multiple tables, or if you need to apply transformation during load. **Optional.**
 
@@ -118,13 +115,13 @@ Use the load query if you want to provide a custom query for loading items into 
 </SetModel>
 ```
 
-#### ConnectionString
+### ConnectionString
 
 If the source table is not in the InVision database, you need to specify the connection string. **Optional.**
 
 <br/>
 
-### Videos
+## Videos
 
 - [Form Schemas](../../../../videos/formschemas.md)
 - [Listbox - Basics](https://profitbasedocs.blob.core.windows.net/videos/FormSchema-Listbox-Basics.mp4)

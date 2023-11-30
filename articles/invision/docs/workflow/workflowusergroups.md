@@ -1,10 +1,5 @@
----
-title: "Workflow Access Groups"
-metaKeys: "Workflow Access Group, layer, grouping, standard, identities, Objects,  "
-folderOnly: "false"
-pageIndex: 6
----
 
+# Workflow Access Groups
 
 
 A Workflow [Access Group](../accesscontrol/accessgroups.md) contains the [identities](../accesscontrol/identities.md) and/or access groups that can participate in a [Workflow](../workflow.md).

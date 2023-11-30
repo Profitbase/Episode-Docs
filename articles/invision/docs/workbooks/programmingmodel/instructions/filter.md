@@ -1,11 +1,4 @@
----
-title: "Filter"
-metaKeys: "Filter"
-folderOnly: "false"
-pageIndex: 8
----
-
-### Filter function
+# Filter function
 
 <br/>
 
@@ -38,7 +31,7 @@ The Filter(…) function returns an object with the following properties:
 
 <br/>
 
-### SelectedFilterItems
+## SelectedFilterItems
 <br/>
 
 ``Items``
@@ -51,7 +44,7 @@ The Filter(…) function returns an object with the following properties:
 
 <br/>
 
-### SelectedFilterItem
+## SelectedFilterItem
 <br/>
 
 ``Id``
@@ -76,7 +69,7 @@ The Filter(…) function returns an object with the following properties:
 
 <br/>
 
-#### Example
+### Example
 
 >
 >This example shows a few ways to use the Filter function

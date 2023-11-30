@@ -1,8 +1,5 @@
----
-title: "Statistical Functions"
-metaKeys: "Statistical functions, AVERAGE, AVERAGEA, COUNT, COUNTA, COUNTBLANK, MAX, MAXA, expression, boolean, string, MIN, MINA, STDEV, STDEVA, STDEVP, STDEVPA, VAR, VARA, VARP, VARPA "
-pageIndex: 17
----
+
+# Statistical Functions
 
 ``AVERAGE(…x : number | <expression>)`` 
 

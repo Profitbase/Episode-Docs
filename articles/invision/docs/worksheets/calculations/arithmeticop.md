@@ -1,8 +1,5 @@
----
-title: "Arithmetic Operators"
-metaKeys: "Arithmetic operators"
-pageIndex: 2
----
+
+# Arithmetic Operators
 
 ``Operator +`` 
 

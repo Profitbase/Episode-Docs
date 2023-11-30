@@ -1,9 +1,5 @@
----
-title: "Misc Functions"
-metaKeys: "Misc Functions, LHS, LHSVALUE, prop name, tmpl_foreach_operand, formula, operand template "
-pageIndex: 14
----
 
+# Misc Functions
 
 ``LHS()``
 >Returns the object on the left side of the = sign. 

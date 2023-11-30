@@ -1,11 +1,4 @@
----
-title: "ConfigureMessage"
-metaKeys: "ConfigureMessage, "
-folderOnly: "false"
-pageIndex: 3
----
-
-### ConfigureMessage(...)
+# ConfigureMessage(...)
 
 <br/>
 
@@ -40,6 +33,6 @@ ConfigureMessage("xx123", "hypotesia\bg", "Hi");
 
 <br/>
 
-### Videos
+## Videos
 
 * [Sending Messages Between Workbooks](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20Interactions%20-%20Sending%20Messages%20Between%20Workbooks.mp4)

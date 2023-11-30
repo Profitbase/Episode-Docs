@@ -1,16 +1,12 @@
----
-title: "File Storage Setup"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
 
-### Supported storage mediums
+# File Storage Setup
+
+## Supported storage mediums
 
 Before you can use  [File Storage](../filestorage.md), you need to set up how the files should be physically stored. You do this by specifying a _file storage provider_, such as Azure Blob Storage or a disk.
 <br/>
 
-#### Configuring Azure Blob Storage
+### Configuring Azure Blob Storage
 
 Using this option, files will be stored in Azure Blob Storage.
 
@@ -39,7 +35,7 @@ To configure Azure Blob Storage, perform the following steps
 
 <br/>
 
-#### Configuring Local disk
+### Configuring Local disk
 
 Using this option, files will be stored on a disk drive under the specified path.
 
@@ -69,7 +65,7 @@ When using local disk as the physical file storage, it is important to set up ba
 
 <br/>
 
-### Videos
+## Videos
 
 - [File Storage](../../videos/filestorage.md)
 - [File Storage - Basics](https://profitbasedocs.blob.core.windows.net/videos/File%20Storage%20-%20Basics.mp4)

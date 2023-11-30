@@ -1,5 +1,5 @@
 
-## Data Context
+# Data Context
 
 ![img](https://profitbasedocs.blob.core.windows.net/images/Dcont.png)
 
@@ -17,7 +17,7 @@ To enable other resources (dimensions not being part of star schemas, tables, an
 
 <br/>
 
-#### See Also
+## See Also
 
 * [Data Context Scope](datacontext/datacontextscope.md)
 * [Global Data Context](datacontext/globaldatacontext.md)

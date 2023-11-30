@@ -1,15 +1,11 @@
----
-title: "HTTP API"
-metaKeys: "operations, logging, monitoring, Calling, API, Key, query, string, URL parameters"
-folderOnly: "false"
-pageIndex: 5
----
+
+# HTTP API
 
 The Log API lets you fetch log information from Profitbase InVision for Ops and Log Analysis using tools such Splunk, Datadog and Logstash.
 
 <br/>
 
-### Calling the API
+## Calling the API
 
 To call the API, you need an API Key.  
 The API Key must be included in each request using a query string parameter or an HTTP header.
@@ -27,7 +23,7 @@ To send the API Key in a header, add a header with the name **x-api-key** and th
 
 <br/>
 
-### Creating an API Key
+## Creating an API Key
 
 To create an API Key, go to **Application Menu -> API Management -> Edit**. In the **Monitoring** tab, find an existing key or create a new one.
 
@@ -37,7 +33,7 @@ To create an API Key, go to **Application Menu -> API Management -> Edit**. In t
 
 <br/>
 
-### API Definition
+## API Definition
 
 **[GET]** api/v1/monitoring
 

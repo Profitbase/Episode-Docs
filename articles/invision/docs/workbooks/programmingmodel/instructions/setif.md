@@ -1,11 +1,4 @@
----
-title: "SetIf"
-metaKeys: "SetIf"
-folderOnly: "false"
-pageIndex: 29
----
-
-### SetIf function
+# SetIf function
 
 <br/>
 
@@ -15,7 +8,7 @@ SetIf(condition : boolean | Eaze expression, value : object | Eaze expression, l
 **SetIf(…)** is used in SetFilterValue actions for conditionally setting a new selected value for the filter, for example when a custom context menu item or Action Link Column is clicked.
 <br/>
 
-### Parameters
+## Parameters
 <br/>
 
 ``condition``
@@ -34,7 +27,7 @@ SetIf(condition : boolean | Eaze expression, value : object | Eaze expression, l
 
 <br/>
 
-### Example
+## Example
 
 >This example shows how to set the selected value of the filter to the value of the DepartmentID of a row that was clicked or right-clicked in a Worksheet or Report.
 

@@ -1,11 +1,4 @@
----
-title: "SetFieldValue"
-metaKeys: "SetFieldValue"
-folderOnly: "false"
-pageIndex: 28
----
-
-### SetFieldValue function
+# SetFieldValue function
 
 <br/>
 
@@ -17,7 +10,7 @@ SetFieldValue(targetObject : object, targetProperty : string, value : any | Eaze
 We use **SetFieldValue(…)** for setting a property of an object when an event is handled.
 <br/>
 
-### Parameters
+## Parameters
 <br/>
 
 ``targetObject``
@@ -34,7 +27,7 @@ We use **SetFieldValue(…)** for setting a property of an object when an event 
 
 <br/>
 
-### Example
+## Example
 
 >This example shows how to set the ProductID property of a new row being added to a Worksheet based on the value of a variable.
 When a new row is added, the ItemAdded event is raised. The object in context of the event is the new row. The instruction is set a Workbook ExecuteExpression action.

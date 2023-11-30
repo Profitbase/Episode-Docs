@@ -1,10 +1,7 @@
----
-title: "Run SQL Commands from Web Functions"
-metaKeys: "How to Run SQL Commands from Web Functions, SqlScriptService, API,  SQL, "
-pageIndex: 5
----
 
-### SqlCommandService
+# Run SQL Commands from Web Functions
+
+## SqlCommandService
 
 To run SQL queries against the InVision database from Web Functions, use the SqlCommandService. If you need to run queries against external SQL databases, use the method overloads with connectionString parameters.
 
@@ -29,7 +26,7 @@ More examples are available in the Samples window in the Invision Desktop Design
 <br/>
 <br/>
 
-#### Methods
+### Methods
 
 `LoadDataTableAsync`
 

@@ -1,5 +1,5 @@
 
-## Time Frame Measure Columns
+# Time Frame Measure Columns
 
 Time Frame Measure Columns are special numeric columns with date/time metadata, which in conjunction with the [Time Frame](timeframe.md), associates the values of a column with an actual date/time.
 
@@ -49,7 +49,7 @@ Length 1 will represent the end date of 2014.01.01 + 1 month = 2014.01.31
 
 <br/>
 
-#### Videos
+## Videos
 
 * [Datastores](../../videos/datastores.md)
 * [Time Frame, Time Frame Columns and Rolling Forecast](https://profitbasedocs.blob.core.windows.net/videos/Data%20Store%20-%20Time%20Frame%2C%20Time%20Frame%20Columns%20and%20Rolling%20Forecast.mp4)

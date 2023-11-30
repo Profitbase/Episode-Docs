@@ -1,19 +1,12 @@
----
-title: "Extension"
-metaKeys: "Plugins, Extension"
-folderOnly: "false"
-pageIndex: 4
----
 
-
-
+# Extension
 
 ## invision-extensions-iframe-sdk
 A small utility library for communicating between Profitbase InVision and an iframe extension app.
 
 <br/>
 
-### Installation
+## Installation
 
 Using npm:
 ```

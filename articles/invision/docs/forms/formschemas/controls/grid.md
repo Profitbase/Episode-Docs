@@ -1,8 +1,5 @@
----
-title: "Grid"
-metaKeys: "UI, Text Control, Controls,  Editable, Layout control, create sub layout containers, grids, form schema, child, nested"
-pageIndex: 5
----
+
+# Grid
 
 Inherits from [Control](control.md).
 
@@ -90,7 +87,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas
 
 <br/>
 
-### Videos
+## Videos
 
 - [Form Schemas](../../../../videos/formschemas.md)
 

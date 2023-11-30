@@ -1,18 +1,13 @@
----
-title: "How to Create a Table View"
-metaKeys: "How to Create a Table View"
-folderOnly: "false"
-pageIndex: 1
----
+
+# How to Create a Table View
 
 
-
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Table%20View%20-%20Basics.mp4) you will find a video that shows How to Create a Table View. 
 <br/>
 
-### Step by step
+## Step by step
 
 1. Right-click chosen folder in Solution Explorer to add a new item, choose a Table View:
 

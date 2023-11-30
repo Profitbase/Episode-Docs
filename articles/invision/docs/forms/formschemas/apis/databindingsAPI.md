@@ -1,14 +1,11 @@
----
-title: "Data Bindings API"
-metaKeys: "Data Bindings API, getBindings(model) : { updateTarget: () => void, targetName: string }[], array of bindings, specified model, Get bindings "
-pageIndex: 3
----
+
+# Data Bindings API
 
 You can use the Data Binding API to manually force a data transfer from the binding source to the binding target, effectively triggering a re-render of the data-bound UI element.
 
 <br/>
 
-#### Get bindings
+## Get bindings
 
 `getBindings(model) : { updateTarget: () => void, targetName: string }[]`
 

@@ -1,8 +1,5 @@
----
-title: "Web Functions API"
-metaKeys: ""
-pageIndex: 5
----
+
+# Web Functions API
 
 You can use the Web Functions API to run Web Functions from a Form.  
 <br/>
@@ -38,5 +35,6 @@ Asynchronously executes a Web Function in the current Solution and returns the r
 
 `execute(webFunctionEndpointName: string, data: any = null) : Promise<any>`
 
-**Note!**  
+> [!NOTE]
+>  
 The _Web Function Endpoint Name_ is displayed in the Web Function configuration editor in the Designer.

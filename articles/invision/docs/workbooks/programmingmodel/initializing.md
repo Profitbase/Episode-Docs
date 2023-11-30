@@ -1,10 +1,5 @@
----
-title: "Initializing From URL"
-metaKeys: "Initializing from URL (query string)"
-folderOnly: "false"
-pageIndex: 2
----
 
+# Initializing From URL
 
 **Initializing from URL (query string)**
 

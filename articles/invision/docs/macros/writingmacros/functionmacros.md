@@ -1,11 +1,5 @@
----
-title: "Function Macros"
-metaKeys: "Writing macros, Accessing arguments, Function , Non-function macros, Expansion, MacroExpansionProvider API, SqlCommandService, ObjectModel "
-pageIndex: 1
----
 
-
-### Function macros
+# Function macros
 
 Function macros have the following characteristics:
 
@@ -46,7 +40,7 @@ SELECT {{MyRowCount(30}} … which will produce SELECT TOP 30 …
 
 <br/>
 
-### Non-function macros
+## Non-function macros
 
 Non-function macros have the following characteristics:
 

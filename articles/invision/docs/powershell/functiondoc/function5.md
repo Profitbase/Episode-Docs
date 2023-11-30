@@ -1,8 +1,5 @@
----
-title: "Profitbase.PS.PsScript.Execute"
-metaKeys: "Profitbase.PS.PsScript.Execute, [Profitbase.PS.PsScript]::Execute, $results = [Profitbase.PS.PsScript]::ExecuteByName($scriptName, $parameters), $results = [Profitbase.PS.PsScript]::ExecuteById($scriptId, $parameters), PSDataCollection<PSObject>, Executes the PowerShell Script defined in the solution, "
-pageIndex: 5
----
+
+# Profitbase.PS.PsScript.Execute
 
 These functions use Powershell Scripts stored in InVision (not on the disk). Scripts can be addressed by their Name or their Id (contentId). This feature meets the need to execute a script without requiring access to the disk.
 

@@ -1,17 +1,12 @@
----
-title: "How To Use a Custom Query"
-metaKeys: "How To Use a Custom Query"
-folderOnly: "false"
-pageIndex: 4
----
 
+# How To Use a Custom Query
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Worksheet%20-%20Custom%20Query.mp4) you will find a video that shows how to use a Custom Query. [Here](../customquery.md) you will find [Documentation](../customquery.md).
 <br/>
 
-### Step by step
+## Step by step
 
 
 1. Check "Use custom query to load data" in the Load Data section:

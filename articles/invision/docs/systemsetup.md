@@ -1,16 +1,12 @@
----
-title: "System Setup"
-metaKeys: " "
-folderOnly: "false"
-pageIndex: 1
----
+
+# System Setup
 
 This section describes the administration and security options in System Setup, as well as the options available through the administrative views.
 
 
 <br/>
 
-#### See Also  
+## See Also  
 
 * [How to's](systemsetup/howto.md)
 * [System Requirements](systemsetup/systemrequirements.md)

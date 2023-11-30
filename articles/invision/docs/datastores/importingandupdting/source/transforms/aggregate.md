@@ -1,5 +1,5 @@
 
-## Aggregate
+# Aggregate
 
  **Enables aggregating one or more columns from the source along a dimension.**
 

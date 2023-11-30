@@ -1,17 +1,10 @@
----
-title: "Dropdown Selection"
-metaKeys: "Editing column layout, Default Value, Name, Caption, Expression, Store Column Binding, Order By, dropdown selection, custom parameters, format, formatter"
-pageIndex: 6
----
-
-
-### Dropdown Selection
+# Dropdown Selection
 
 Specifies whether the column editor should be a dropdown editor. The configuration for setting up a Dropdown editor column depends on whether the column is a **standard column** or a **linked dimension column**.
 
 <br/>
 
-#### Options
+## Options
 <br/>
 
 
@@ -36,17 +29,19 @@ Specifies whether the column editor should be a dropdown editor. The configurati
 
 <br/>
 
-### Setting up Dropdown for a linked dimension column
+## Setting up Dropdown for a linked dimension column
 
 <br/>
 
->**Note!** 
+>> [!NOTE]
+> 
 >
 >*(Only applies to Worksheets)*
 
   When setting up Dropdown editing for a linked dimension column, you first need to ensure that the Data Store column that the dimension is bound to in the star schema configuration is added to the Worksheet.
 
->**Note!** 
+>> [!NOTE]
+> 
 >
 >*If there is no fact data source attached to the Data Store column, you need to ensure that the dimension binding type is set to "Relationship".*
 
@@ -57,7 +52,7 @@ To enable Dropdown editing of the column, check "Enable Dropdown Selection" in t
 
 <br/>
 
-### Setting up Dropdown for a standard column
+## Setting up Dropdown for a standard column
 
 <br/>
 
@@ -94,7 +89,7 @@ When setting up Dropdown editing of a standard column, you need to specify where
 
 <br/>
 
-### Custom Display Column Expression
+## Custom Display Column Expression
 
   A Sql expression that returns the value to display in the Dropdown column.  
 
@@ -132,7 +127,7 @@ Suppose you have a Worksheet with a linked dimension column and want to enable D
 <br/>
 
 
-### Filter
+## Filter
 
   A Sql expression used in a WHERE clause to filter the values of the Dropdown editor.
 
@@ -167,7 +162,7 @@ Suppose you have a Worksheet with a linked dimension column and want to enable D
 <br/>
 
 
-### Order By
+## Order By
 
 
   A SQL expression used for ordering the values of the Dropdown editor.
@@ -182,14 +177,14 @@ Suppose you have a Worksheet with a linked dimension column and want to enable D
 
 <br/>
 
-### See Also
+## See Also
 * [Dropdown - Form Elements](../../forms/formelements/dropdown.md)
 * [Dropdown - Control](../../forms/formschemas/controls/dropdown.md)
 
 
 <br/>
 
-#### Videos
+## Videos
 
 
 * [Dropdown Selection](https://profitbasedocs.blob.core.windows.net/videos/Worksheet%20-%20Dropdown%20Selection.mp4)

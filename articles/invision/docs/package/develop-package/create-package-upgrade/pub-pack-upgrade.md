@@ -1,11 +1,4 @@
----
-title: "Publish Package Upgrade"
-metaKeys: "package property, the returned, Publish package upgrade files, Package Upgrade Template, File Creator"
-pageIndex: 2
----
-
-
-### Publish package upgrade (Azure blobstorage)
+# Publish package upgrade (Azure blobstorage)
 
 <br/>
 
@@ -34,6 +27,8 @@ pbstore -u "mypackage.pckup"
 
 <br/>
 
-**Note!** If your package has dependencies, you must upload the dependencies first.
+> [!NOTE]
+> If your package has dependencies, you must upload the dependencies first.
+
 <br/>
 

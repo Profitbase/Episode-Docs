@@ -1,9 +1,5 @@
----
-title: "Create Package"
-metaKeys: "package Create"
-folderOnly: "false"
-pageIndex: 1
----
+
+# Create Package
 
 In this section, you will find documentation about [defining](create-package/define-package.md), [exporting](create-package/export-package.md) , and [publishing](create-package/publ-packages.md) packages. 
 

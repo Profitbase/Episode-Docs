@@ -1,13 +1,13 @@
 
-## How To Set Up Rollover Calculations
+# How To Set Up Rollover Calculations
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/DS%20-%20Rollover%20Calculations.mp4) you will find video that shows How To Set Up Rollover Calculations. [Here](../../datastores/rollover.md) you will find [Documentation](../../datastores/rollover.md).
 <br/>
 
 
-### Step by step
+## Step by step
 
 
 

@@ -1,10 +1,4 @@
----
-title: "Formatter"
-metaKeys: "Editing column layout, Default Value, Name, Caption, Expression, Store Column Binding, Order By, Dropdown Selection, custom parameters, format, formatter"
-pageIndex: 7
----
-
-#### Formatter
+# Formatter
 
 A JavaScript function expression, or the name of a function defined in a solution JavaScript. The formatter returns the value to display in the cells of the column.
  

@@ -1,9 +1,5 @@
----
-title: "Access Control Editors"
-metaKeys: "Access Control editors "
-folderOnly: "false"
-pageIndex: 1
----
+
+# Access Control Editors
 
 Access Control consists of 4 full screen components that can be added to a workbook:
 

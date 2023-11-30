@@ -1,8 +1,6 @@
----
-title: "Examples"
-metaKeys: ""
-pageIndex: 5
----
+
+# Examples
+
 
 **Example 1**  
 The example below shows how to get all file names from a File Storage and insert the file names to "MY TABLE" in the InVision database.

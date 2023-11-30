@@ -1,18 +1,14 @@
----
-title: "How To Compose Dimension"
-metaKeys: "Dimension composition"
-folderOnly: "false"
-pageIndex: 7
----
 
-### Link to the video
+# How To Compose Dimension
+
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Dimension%20Composition.mp4) you will find a video that shows how to create a Composite Dimension.  
 Read more about defining dimensions [here](../../dimensions.md).
 
 <br/>
 
-### Step by step
+## Step by step
 
 1. Check out "Allow Composition" box in the Options tab, to enable a dimension to be composable. A Composite Dimension is a "virtual" dimension that is made up of data from other dimensions. If you change a source dimension, the changes are automatically reflected in the Composite Dimension.
 

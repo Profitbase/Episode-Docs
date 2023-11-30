@@ -1,10 +1,10 @@
 
-## Parameterization
+# Parameterization
 
 Parameterization of Data Flows enables you to provide input to the steps and control flow logic during execution.
 <br/>
 
-### Parameterized execution
+## Parameterized execution
 
 To pass arguments to a Data Flow being executed from a Workbook, you need to edit the Arguments property of the Data Flow part from the Workbook designer.
 
@@ -34,12 +34,12 @@ To override the default values, you can use variables, the Filter(…) function,
 
 <br/>
 
-#### See Also
+## See Also
 * [Global Parameters](parametrization/globalparameters.md)
 * [Programmatically change Global Parameters](parametrization/programmatically-set-glob-param.md)
 <br/>
 
-#### Videos
+## Videos
 
 * [Data Flows](../../videos/dataflows.md)
 * [Introduction to Parameterization](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flow%20-%20Introduction%20to%20parameterization.mp4)

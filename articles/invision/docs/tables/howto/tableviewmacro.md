@@ -1,17 +1,13 @@
----
-title: "How to use Macro Expansion in Table View"
-metaKeys: "How to Use Macro Expansion in Table View"
-folderOnly: "false"
-pageIndex: 5
----
+
+# How to use Macro Expansion in Table View
 
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Table%20View%20-%20Macro%20Expansion.mp4)  you will find a video that shows how to use Macro Expansion in Table View. 
 <br/>
 
-### Step by step
+## Step by step
 
 
 1. Profitbase InVision provides you sample macros:

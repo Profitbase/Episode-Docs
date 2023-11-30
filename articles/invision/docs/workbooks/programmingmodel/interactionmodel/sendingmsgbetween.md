@@ -1,11 +1,5 @@
----
-title: "Sending Messages Between Workbooks"
-metaKeys: "Sending messages between Workbooks, Receiving, Object Properties, ToWorkbookId, ToUserName, MessageCode, Message, Data"
-folderOnly: "false"
-pageIndex: 1
----
 
-
+# Sending Messages Between Workbooks
 
 [Workbooks](../../../workbooks.md) can send and receive messages from other Workbooks running on the same website. 
 Messages are being sent by executing SendMessage Actions by providing the receiver address and the payload by calling the [ConfigureMessage(…)](../instructions/configuremessage.md) function.
@@ -94,6 +88,6 @@ When creating a message object, you can assign values to the properties from var
 
 <br/>
 
-### Videos 
+## Videos 
 
 * [Sending Messages Between Workbooks](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20Interactions%20-%20Sending%20Messages%20Between%20Workbooks.mp4)

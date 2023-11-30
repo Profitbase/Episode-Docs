@@ -1,6 +1,4 @@
-
-
-### Global Parameters
+# Global Parameters
 
 
 Global Parameters can be used to pass arguments to all Dataflow Items in a Dataflow. Arguments are automatically passed to each item that has parameters with the same name. For example, if you have a Global Parameter named @Param1 and a Dataflow Item with a parameter named @Param1, the Global Parameter value is **automatically** passed to the Dataflow Item parameter.
@@ -16,7 +14,7 @@ In order to easily pass a department id to all items during execution, simply de
 When the main Dataflow is executed, the department id is automatically passed to all Dataflow Items.
 <br/>
 
-### Define Global Parameters
+## Define Global Parameters
 
 To define Global Parameters, click "Dataflow Properties" in the Dataflow editor screen and open the editor from the Properties panel.
 
@@ -31,7 +29,7 @@ In the Parameters dialog, add parameters and optionally provide default values.
 ![pic](https://profitbasedocs.blob.core.windows.net/images/glparam2.png)
 <br/>
 
-### Passing arguments using Global Parameters
+## Passing arguments using Global Parameters
 
 When a Dataflow is executed from a Workbook, you can pass arguments to the Dataflow from the Arguments property of the Dataflow Workbook component.
 
@@ -42,7 +40,7 @@ Switch to the Global arguments tab and provide a value for each parameter.
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/glparam3.png)
 
-<!-- ### Videos
+<!-- ## Videos
 
 * [Data Flow](../../../../videos/dataflows)
 * []() -->

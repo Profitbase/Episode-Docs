@@ -1,9 +1,6 @@
----
-title: "Date Picker"
-metaKeys: "Date Picker, Max Value Query, Selected Value Query, Save Data Expression"
-pageIndex: 1
----
 
+
+# Date Picker
 
 
 ![dpic](https://profitbasedocs.blob.core.windows.net/images/DPic.png)

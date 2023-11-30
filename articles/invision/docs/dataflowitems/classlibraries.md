@@ -1,4 +1,4 @@
-
+# Class Libraries
 Class Libraries contains the functions (business logic) being executed by Data Flow Items. 
 
 Class Libraries can be written directly in Data Flow Item as Scripts, or using any tool able to produce a .dll and then linked into InVision by referencing the .dll(s). 
@@ -132,7 +132,8 @@ This section describes how to develop, deploy and debug Class Libraries using Vi
          *	``xcopy "$(TargetDir)Hypotesia.BusinessLogic.dll" <path to worker service> /y``
          *	``xcopy "$(TargetDir)Hypotesia.BusinessLogic.dll" <path to designer website bin folder> /y``
 
-         **Note!** You may not have permissions to write to these folders by default. If not, open Properties for each folder and go to **Security** -> **Edit**, and make sure you have at least Modify, Read and Write permissions.
+         > [!NOTE]
+> You may not have permissions to write to these folders by default. If not, open Properties for each folder and go to **Security** -> **Edit**, and make sure you have at least Modify, Read and Write permissions.
 
 2.	Navigate to ``<designer website folder>\InVisionServices\Data`` and open **DPDServiceConfig.Custom.xml** for editing.  
 (Make sure you have at least write and modify permissions).
@@ -153,7 +154,8 @@ Once you have everything set up, you can go ahead and build your project. If you
 
 Once a Class Library has been compiled into an assembly and deployed to the Worker Service, you can debug it from Visual Studio by attaching to the (Worker Service) process, **dfworker.exe**.
 
-**Note!** In order to attach to the dfworker.exe process, make sure you’re running Visual Studio as Administrator.
+> [!NOTE]
+> In order to attach to the dfworker.exe process, make sure you’re running Visual Studio as Administrator.
 <br/><br/>
 
 **To attach to a process:**

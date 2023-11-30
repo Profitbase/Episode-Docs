@@ -1,10 +1,10 @@
 
-## Output
+# Output
 
 The Output specifies the data and output format of the Cell Adapter component. The Cell Adapter component will create one output row for each matched Ruleset row.
 <br/>
 
-### Properties:
+## Properties:
 
 *	**Target** 
 

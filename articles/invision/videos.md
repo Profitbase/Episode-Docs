@@ -1,13 +1,8 @@
----
-title: "Videos"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
+# Videos
 
-### Hello learner!
+# Hello learner!
 
-In this part of the documentation, you will find videos showing features and tools that you can find in Profitbase InVision.  
+In this part of the documentation, you will find **videos** showing features and tools that you can find in Profitbase InVision.  
 
 All videos contain talking bubbles. When displayed, the video will pause for 5 seconds.
 

@@ -1,11 +1,8 @@
----
-title: "How to Configure Translation of Dimensions Name"
-metaKeys: "How to configure translation of Dimension Name"
-folderOnly: "false"
-pageIndex: 3
----
 
-### Link to the video
+
+# How to Configure Translation of Dimensions Name
+
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Dim%20Translations%20Name.mp4) you will find video that shows how to configure translation of dimensions name.
 
@@ -19,7 +16,7 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Dim%20Tran
 <br/>
 
 
-### Option 1 
+## Option 1 
 
 >**Use text code translations.**
 
@@ -39,7 +36,7 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Dim%20Tran
 
 
 
-### Option 2 
+## Option 2 
 
 >**Use the @Object[...].Lookup directive.**
 

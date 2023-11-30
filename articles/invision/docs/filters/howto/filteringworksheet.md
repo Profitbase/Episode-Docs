@@ -1,17 +1,12 @@
----
-title: "How To Filter the Worksheet"
-metaKeys: "How To Filter the Worksheet"
-folderOnly: "false"
-pageIndex: 4
----
 
+# How To Filter the Worksheet
 
-### Link to the docs
+## Link to the docs
 
 Under [this link](../../worksheets/filters.md) you will find documentation on how to Filter the Worksheet.
 <br/>
 
-### Step by step
+## Step by step
 
 >You add a filter to the Filters section of the Worksheet designer by dragging and dropping it.
 

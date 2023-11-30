@@ -1,9 +1,5 @@
----
-title: "Parameters "
-metaKeys: "Parameters "
-folderOnly: "false"
-pageIndex: 3
----
+
+# Parameters
 
 To receive input for execution, use Powershell parameters (**param**).
 
@@ -25,6 +21,6 @@ You will find more about the subject in PowerShell Documentation [here](https://
 
 <br/>
 
-#### Videos
+## Videos
 
 - [PowerShell](../../videos/powershell.md)

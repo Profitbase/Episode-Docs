@@ -1,14 +1,8 @@
----
-title: "Programming Model"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 4
----
-#### Programming Model
+# Programming Model
 In this section you will find a set of concepts used to configure your solution. Learn about interactions, actions and events below.
 <br/>
 
-#### See Also 
+## See Also 
 
 * [Component Stacking](programmingmodel/componentstacking.md)
 * [Initialaizing from URL](programmingmodel/initializing.md)

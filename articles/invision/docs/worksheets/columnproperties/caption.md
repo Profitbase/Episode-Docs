@@ -1,16 +1,9 @@
----
-title: "Caption"
-metaKeys: "Editing column layout, Default Value, Name, Caption, Expression, Store Column Binding, Order By, Dropdown Selection, custom parameters, format, formatter"
-pageIndex: 2
----
-
-
-#### Caption
+# Caption
 
 The caption of the column displayed in the data grid. If no Caption or Caption expression is specified, the column Name is used as the caption.
 <br/>
 
-#### Caption Expression
+## Caption Expression
 
 A C#.NET expression returning a string used as the caption of the column in the data grid. Localization is supported by using the Localize-directive referring a text code registed in pbSimLangText.
 
@@ -51,6 +44,6 @@ In addition to the standard caption expression library, Time Frame columns can u
 ><br/>
 ><br/>
 
-#### Videos about 
+## Videos about 
 
 * [Localization](../../../videos/localization.md) 

@@ -1,24 +1,20 @@
----
-title: "Work Process"
-metaKeys: "Work Process, Tasks and Workbooks, Version, blueprint "
-pageIndex: 22
----
 
+# Work Process
 
-### Work Process - Basics
+## Work Process - Basics
 [Documentation](../docs/workprocess.md)
 
 ![video](https://profitbasedocs.blob.core.windows.net/videos/Work%20Process%20-%20Basics.mp4)
 
 <br/>
 
-### Work Process - Versions
+## Work Process - Versions
 [Documentation](../docs/workprocess/workprocessversions.md)
 
 ![video](https://profitbasedocs.blob.core.windows.net/videos/Work%20Process%20Versions.mp4)
 
 <br/>
 
-### Documentation
+## Documentation
 
 * [Work Process](../docs/workprocess.md)

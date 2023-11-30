@@ -1,18 +1,13 @@
----
-title: "How to Use Styling Functions"
-metaKeys: "How to Use Styling Functions"
-folderOnly: "false"
-pageIndex: 6
----
 
 
+# How to Use Styling Functions
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Worksheet%20-%20Cell%20and%20Row%20Styling%20Functions.mp4) you will find a video that shows how to use a Cell and Row Styling Functions. [Here](../calculations/cellnrowstylfunc.md) you will find [Documentation](../calculations/cellnrowstylfunc.md).
 <br/>
 
-### Step by step
+## Step by step
 
 
 1. Go to the configuration tab and open styles window:

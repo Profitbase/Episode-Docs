@@ -1,4 +1,4 @@
-# Formelements
+# Form elements
 
 * [Datepicker](./datepicker.md)
 * [Dropdown](./dropdown.md)

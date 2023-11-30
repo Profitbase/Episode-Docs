@@ -1,15 +1,11 @@
----
-title: "How to's"
-metaKeys: "how to "
-folderOnly: "false"
-pageIndex: 1
----
+
+# How to's
 
 In this section, you will find a list of shortcuts to different subjects about Filters.
 
 <br/>
 
-#### See Also  
+## See Also  
 
 * [How To Create and Use Flat Filter](howto/flatfilter.md)
 * [How To Create and Use Hierarchical Filter](howto/hierarchicalfilter.md)

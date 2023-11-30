@@ -1,30 +1,24 @@
----
-title: "Script"
-metaKeys: "Script, Execute, Actions, Executing scripts, Parameterized execution, Script return values, "
-folderOnly: "false"
-pageIndex: 16
----
 
- 
+ # Script
 
 To execute Script from a [Workbook](../../workbooks.md), it needs to be added to a page. A script does not have a user interface, so you would normally add all scripts to a hidden page. 
 
 <br/>
 
-### Actions
+## Actions
 
 *	**Execute**  
 Executes the script. Any arguments are passed by calling SetParamValue(…) one or many times (one for each argument to pass)
 
 <br/>
 
-### Executing scripts
+## Executing scripts
 
 To execute a Script, you need to call the Execute Action of the Script when an event is raised, for example from a button or context menu. When calling the Execute Action, it will wait until the script has finished executing. 
 
 <br/>
 
-### Parameterized execution
+## Parameterized execution
 
 Arguments are passed to a Script using the SetParamValue instruction in the Execute Action handler.
 
@@ -45,7 +39,7 @@ Arguments are passed to a Script using the SetParamValue instruction in the Exec
 
 <br/>
 
-### Script return values
+## Script return values
 
 If you have enabled the Script to return data, the first row of the result set returned by the query is serialized an object and assigned to a variable with the same as the Script Workbook part. Starting with version 2.2.3, if your query returns multiple rows, you can access the entire collection of rows as an array through the ALL_ROWS property on the object assigned to the variable.
 
@@ -94,11 +88,11 @@ If you have enabled the Script to return data, the first row of the result set r
 
 <br/>
 
-### See Also
+## See Also
 * [More about Scripts](../../../docs/sqlscripts.md)
 
 <br/>
 
-### Videos
+## Videos
 
 * [Scripts](../../../videos/sqlscripts.md)

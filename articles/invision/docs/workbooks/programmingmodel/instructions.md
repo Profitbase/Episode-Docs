@@ -1,19 +1,11 @@
----
-title: "Instructions"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 3
----
-
-
-#### Instructions
+# Instructions
 By using Instructions you can run tasks or extend the standard behavior of Actions. You can also add multiple instructions to Actions. Remember to terminate every instruction by a semicolon.
 
 ![Instructions](https://profitbasedocs.blob.core.windows.net/images/instructions.png)
 
 <br/>
 
-#### See Also  
+## See Also  
 
 * [AddHeader(...)](instructions/addheader.md)
 * [ConfigureInvocation(...)](instructions/configinvocation.md)

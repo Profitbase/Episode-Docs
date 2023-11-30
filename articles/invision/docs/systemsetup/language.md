@@ -1,9 +1,5 @@
----
-title: "Language Settings"
-metaKeys: "Concurrency Control and multi-user support, check in chesk out, "
-pageIndex: 4
----
 
+# Language Settings
 
 
 ### End-User Client Language Settings
@@ -11,7 +7,7 @@ pageIndex: 4
 Language settings can be set by each user individually from the Options settings at the right side of the Workbook menu bar. When choosing a language, this setting will apply to all Workbooks that the user has access to. 
 <br/>
 
-#### For on-premise installation
+## For on-premise installation
 
 A default language for the entire web site can be specified by editing the appsettings.json file and adding or editing the "DefaultCulture" appSetting as shown in the example below.
 
@@ -26,5 +22,5 @@ If the user has not selected a language, and there is no default language specif
 
 <br/>
 
-### See Also
+## See Also
 [Translations](../translationsloc.md)

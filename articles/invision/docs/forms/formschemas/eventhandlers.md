@@ -1,8 +1,5 @@
----
-title: "Event Handlers"
-metaKeys: "Event Handlers, FormEventHandler, DataChangedEventHandler, model, modelName, propertyName, newValue, oldValue, Listening, changes, $ "
-pageIndex: 5
----
+
+# Event Handlers
 
 There are two types of event handlers – FormEventHandler and DataChangeEventHandler.
 
@@ -12,7 +9,7 @@ There are two types of event handlers – FormEventHandler and DataChangeEventHa
 Event handlers contains plain JavaScript, which is executed every time an event handler runs. In event handlers and functions, you can access the [Form Runtime](apis/formruntime.md) and [Control APIs](apis/controlproxyAPI.md) that lets you call methods on controls, do validation, do calculations, raise Workbook events and more.
 <br/>
 
-#### FormEventHandler
+## FormEventHandler
 
 FormEventHandlers contains JavaScript code, and you can access the [Form Runtime](apis/formruntime.md) and [Control APIs](apis.md) that lets you call methods on controls, do validation, do calculations, raise Workbook events and more.  
 FormEventHandler is executed when a form event is raised. There are currently two form events.
@@ -87,7 +84,7 @@ The Unload event is raised when the Form Schema is unloaded from the DOM. You ca
 
 <br/>
 
-#### DataChangedEventHandler
+## DataChangedEventHandler
 
 DataChangedEventHandlers are bound to properties in Models, and executes when fields change. DataChangeEventHandlers can listen for changes to a specific property, or to all properties in a Model.
 <br/>

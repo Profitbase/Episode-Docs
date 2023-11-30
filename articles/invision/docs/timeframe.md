@@ -1,9 +1,5 @@
----
-title: "Time Frame"
-metaKeys: "Configuring Time Frame for Data Store Group, Setting, Inherit from Ancestor, Time Dimension, Resolution, Reference Date, Calendar Type "
-folderOnly: "false"
-pageIndex: 24
----
+
+# Time Frame
 
 Time Frames specifies the core configuration used for supporting time relative features, such as Periodic Input, Rollover, and Transaction Pipeline Distribution.
 
@@ -15,12 +11,12 @@ For a Time Frame to have any effect, you need to add Time Frame Measure Columns 
 You can view the Time Frame/Time Frame Measure Column concepts as a "coordinate" system having only an x-axis in which time flows along. The Reference Date would be the origin and the Resolution would represent the distance between each point along the axis. The location (starting date) and extent (ending date) of a Time Frame Measure Column along the axis would be determined by its Offset and Length properties.
 <br/>
 
-### Configuring Time Frame for Data Store Group
+## Configuring Time Frame for Data Store Group
 
 Configuring a Time Frame for a Data Store Group enables descendant Data Stores and Settings to inherit the configuration so that all members of the group can share the same Time. To set up the Time Frame for a Data Store Group, go to the **Time Frame tab** in the Data Store Group editor. Refer to the following topic for setting up the Time Frame configuration.
 <br/>
 
-### Configuring Time Frame for Data Store or Setting
+## Configuring Time Frame for Data Store or Setting
 
 To configure the Time Frame for a Data Store or Setting, go to the **Time Frame tab** in the Data Store or Setting editor.
 
@@ -29,7 +25,7 @@ If the Data Store or Setting is a descendant of a Data Store Group having a Time
 If the Data Store or Setting is not a descendant of a Data Store Group, or you want to use a Time Frame configuration local to the entity, you need to specify the Time Frame configuration explicitly.
 <br/>
 
-### Time Frame Configuration
+## Time Frame Configuration
 
 - **Inherit from Ancestor**
 
@@ -61,7 +57,7 @@ Specifies whether the Time Frame should use a natural or alternative (fiscal) ca
 
 <br/>
 
-### Videos
+## Videos
 
 - [Datastores](../videos/datastores.md)
 - [Time Frame, Time Frame Columns and Rolling Forecast](https://profitbasedocs.blob.core.windows.net/videos/Data%20Store%20-%20Time%20Frame%2C%20Time%20Frame%20Columns%20and%20Rolling%20Forecast.mp4)

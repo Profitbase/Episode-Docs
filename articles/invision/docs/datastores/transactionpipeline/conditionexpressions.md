@@ -1,10 +1,10 @@
 
-## Condition Expressions
+# Condition Expressions
 
 Condition Expressions are specified in [Ruleset](celladapter/ruleset.md) tables and are used for dynamically evaluating the rows being processed to determine whether an output should be generated or not. The Condition Expression column must contain a C# expression that returns a Boolean value.
 <br/>
 
-### Methods
+## Methods
 
 The following methods can be used in a Condition Expression. In addition to these methods, all APIs from the System namespace in mscorlib.dll is available.
 
@@ -87,7 +87,7 @@ YearNum() == 2015.
 
 <br/>
 
-### Properties
+## Properties
 
 The following properties can be accessed in a Condition Expression. In addition to these properties, any column in the row currently being processed from the data source definition of the pipeline component can be read as a property.
 

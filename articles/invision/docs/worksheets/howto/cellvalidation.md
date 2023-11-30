@@ -1,17 +1,12 @@
----
-title: "How To Use Cell Validation in Spreadsheets"
-metaKeys: "How To Use Cell Validation in Spreadsheets"
-folderOnly: "false"
-pageIndex: 7
----
 
- 
-### Link to the video
+# How To Use Cell Validation in Spreadsheets
+
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Spreadsheet%20-%20Cell%20Validation.mp4) you will find a video that shows how to use a Cell Validation in Spreadsheets. [Here](../cellvalidation.md) you will find [Documentation](../cellvalidation.md).
 <br/>
 
-### Step by step
+## Step by step
 
 
 1. Go to the configuration tab and open rules editor window:

@@ -1,19 +1,14 @@
----
-title: "How To Automate PowerShell Script with Data Flow"
-metaKeys: "How To get All File Names From a File Storage"
-folderOnly: "false"
-pageIndex: 1
----
+
+# How To Automate PowerShell Script with Data Flow
 
 
-
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/PowerShell%20-%20How%20To%20Automate%20Script%20with%20Data%20Flow.mp4) you will find video that shows How To Automate PowerShell Script with [Data Flow](../../dataflows/index.md). [Here](../commands.md) you will find [Documentation about used command](../commands.md).
 <br/>
 
 
-### Step by step
+## Step by step
 
 
 1. Right-click chosen folder in Solution Explorer to add a new item, choose Data Flow and Data Flow Iem:

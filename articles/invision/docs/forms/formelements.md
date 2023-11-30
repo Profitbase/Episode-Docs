@@ -1,11 +1,7 @@
----
-title: "Form Elements"
-metaKeys: "Form Elements and Form Element Collections, Label, TextBox,  Dropdown, Date Picker, "
-folderOnly: "false"
-pageIndex: 2
----
 
-#### Form Elements and Form Element Collections
+# Form Elements
+
+## Form Elements and Form Element Collections
 
 Form Elements are components, for example, text boxes, dropdown lists, and date pickers used to display and/or edit a uniquely identifiable value. Form Elements are first configured in the Solution and then added to Workbooks where the user interaction can take place.
 
@@ -21,17 +17,17 @@ To enable loading and saving data, you need to specify [Data Queries](../sqlrepo
 > Filter directives are not supported by Form Element Data Queries because Form Elements can display and edit a single value and filter directives kan return multiple values. To enable filtering in Form Element Data Queries, use custom parameters.
 <br/>
 
-##### Selected Value - @FormElementValue()
+## Selected Value - @FormElementValue()
 
 The @FormElementValue() – directive is used in the Save Data Expression to refer to the value selected or entered by the user. The TextBox and Dropdown examples show the use of the @FormElementValue directive.
 
 <br/>
 
-#### More about Form Elements
+## More about Form Elements
 
 * [Form Elements](../workbooks/components/formelements.md)
 
-#### See Also
+## See Also
 
 * [Date Picker](formelements/datepicker.md)
 * [Dropdown](formelements/dropdown.md)

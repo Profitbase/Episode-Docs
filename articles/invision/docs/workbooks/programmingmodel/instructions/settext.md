@@ -1,11 +1,4 @@
----
-title: "SetText"
-metaKeys: "SetText"
-folderOnly: "false"
-pageIndex: 34
----
-
-### SetText function
+# SetText function
 
 <br/>
 

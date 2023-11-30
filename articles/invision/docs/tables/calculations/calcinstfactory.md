@@ -1,8 +1,5 @@
----
-title: "Calculation Instance Factory"
-metaKeys: "Calculation Instance Factory, JavaScript library, perform, spreadsheet calculations, other spreadsheets loaded in the Workbook, Eaze, Factory Function "
-pageIndex: 3
----
+
+# Calculation Instance Factory
 
 You can use this feature when you need / want to use a custom JavaScript library to perform the spreadsheet calculations instead of using standard formulas. You would want to use this option over standard formulas when one or more of the following applies:
 
@@ -16,7 +13,7 @@ You can use this feature when you need / want to use a custom JavaScript library
 
 5.	You want one instance of the calculation service pr spreadsheet.
 
-#### Setting up a Calculation Instance Factory
+## Setting up a Calculation Instance Factory
 
 To set up a Calculation Instance Factory, click "Insert Configuration Template".  
 This will create an Xml configuration like the one below:
@@ -43,15 +40,15 @@ This will create an Xml configuration like the one below:
 At the moment, only SQL Scripts that returns data are supported.  
 You can specify the Id of the SQL Script either using the actual object id, or using the ``@Object[<name>].Id`` syntax.
 
-#### What is a Calculation Service
+## What is a Calculation Service
 
 A calculation service is simply a JavaScript object that has the necessary business logic to perform some operation on data related to a spreadsheet. 
 
-#### What is the Factory Function
+## What is the Factory Function
 
 A factory function is a function that creates an instance of a calculation service and returns it to the spreadsheet calculation engine.
 
-#### Creating a Calculation Service and Factory Function
+## Creating a Calculation Service and Factory Function
 
 You have two options for creating a calculation service and factory function:
 
@@ -65,7 +62,7 @@ You have two options for creating a calculation service and factory function:
 
 ___
 
-#### Primary Operators
+## Primary Operators
 
 [Operator . (x.y)]()
 
@@ -86,7 +83,7 @@ Y = X?.substring(…)
 
 ___
 
-#### Unary operators
+## Unary operators
 
 
 [Operator + (+x)]()

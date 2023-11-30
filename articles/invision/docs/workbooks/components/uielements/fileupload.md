@@ -1,9 +1,5 @@
----
-title: "File Upload"
-metaKeys: "File Upload, Events, Properties, Accept Media Type, Upload Target Solution Object Name, Upload Target Ur,  Upload Arguments Expression,"
-folderOnly: "false"
-pageIndex: 2
----
+
+# File Upload
 
 ![upploadUI](https://profitbasedocs.blob.core.windows.net/images/upploadUI.png)
 <br/>
@@ -12,7 +8,7 @@ pageIndex: 2
 
 Provides file upload support from Workbooks. The user can upload one or many files in the same batch.
 
-### Events
+## Events
 
 
 *	**CompletedEvent**  
@@ -31,7 +27,7 @@ This event is raised when the file upload has completed. The event payload conta
         }
     }
 
-### Properties
+## Properties
 
 
 *	**Accept Media Type**  
@@ -61,7 +57,7 @@ SetParamValue("CustomerID", _customer.CustomerID);
 
 <br/>
 
-### Videos
+## Videos
 
 * [Workbooks](../../../../videos/workbooks.md)
 * [Components - File Upload](https://profitbasedocs.blob.core.windows.net/videos/Workbooks%20-%20File%20Upload.mp4)

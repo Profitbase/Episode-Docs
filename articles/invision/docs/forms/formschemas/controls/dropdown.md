@@ -1,8 +1,5 @@
----
-title: "Dropdown"
-metaKeys: "Dropdown, control, UI, ItemsSource, ItemsSourceFilter, DisplayMember, ValueMember, SelectedValue, ItemSelected, Editable Control"
-pageIndex: 4
----
+
+# Dropdown
 
 <br/>
 
@@ -218,14 +215,14 @@ Specifies the hotkey for the control.
 
 <br/>
 
-#### See Also
+## See Also
 
 - [Dropdown - Form Elements](../../formelements/dropdown.md)
 - [Dropdown Selection](../../../worksheets/columnproperties/dropdownselection.md)
 
 <br/>
 
-#### Videos
+## Videos
 
 - [Form Schemas](../../../../videos/formschemas.md)
 - [Dropdown](https://profitbasedocs.blob.core.windows.net/videos/Form%20Schema%20-%20dropdown%20basics.mp4)

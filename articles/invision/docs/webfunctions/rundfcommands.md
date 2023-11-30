@@ -1,10 +1,7 @@
----
-title: "Run Data Flow Commands from Web Functions"
-metaKeys: "How to Run DataFlow Commands from Web Functions, SqlScriptService, API,  SQL, "
-pageIndex: 6
----
 
-### DataFlowService
+# Run Data Flow Commands from Web Functions
+
+## DataFlowService
 
 To run Data Flow commands against the InVision database from Web Functions, use the DataFlowService.
 

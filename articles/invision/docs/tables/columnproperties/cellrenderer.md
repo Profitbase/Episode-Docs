@@ -1,10 +1,4 @@
----
-title: "Cell Renderer"
-metaKeys: "Editing column layout, Default Value, Name, Caption, Expression, Store Column Binding, Order By, Dropdown Selection, custom parameters, format, formatter"
-pageIndex: 4
----
-
-### Custom Cell Rendering
+# Custom Cell Rendering
 
 Use cell renderers to define custom rendering of cells in spreadsheets ([Tables](../../tables.md), [Worksheets](../../worksheets.md) and [SQL Reports](../../sqlreports.md)).  
 
@@ -37,7 +31,7 @@ Cell Renderers will only be executed for text, numeric and date columns. Cell Re
 
 ---
 
-### Function argument: eventArgs
+## Function argument: eventArgs
 
 The event argument passed to the cell renderer function has the following properties (note the camel casing):
 <br/>
@@ -59,7 +53,7 @@ The data object for the entire row.
 
 ---
 
-### Function argument: services
+## Function argument: services
 
 The **services** argument provides access to the Workbook API for raising the Custom Event on spreadsheet components (Tabels, Worksheets and SQL Reports) from custom rendered cells. This makes it possible to trigger actions in a Workbook when a user performs some action in a custom rendered cell.  
 <br/>
@@ -87,7 +81,7 @@ Provides access to the eventDispatcher service that enables raising the Custom E
 
 <br/>
 
-### Videos
+## Videos
 * [Worksheet](../../../videos/worksheet.md)
 * [Custom Cell Rendering](https://profitbasedocs.blob.core.windows.net/videos/Spreadsheet%20-%20Column%20Properties%20-%20Custom%20Cell%20Renderer.mp4)
 * [Custom Cell Rendering in Table View](https://profitbasedocs.blob.core.windows.net/videos/Table%20View%20-%20Custom%20Cell%20Renderer.mp4)

@@ -1,12 +1,8 @@
----
-title: "How To Use Step Name Directive"
-metaKeys: "How To Use Step Name Directive"
-folderOnly: "false"
-pageIndex: 4
----
+
+# How To Use Step Name Directive
 
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flow%20-%20Control%20Flow%20and%20Branching.mp4) you will find a video that shows how to Use Step Name Directive. [Here](../../dataflows/index.md) you will find [Documentation](../../dataflows/index.md).
 <br/>
@@ -14,7 +10,7 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flo
 
 
 
-### Step by step
+## Step by step
 
 
 1. Configure control flow logic:

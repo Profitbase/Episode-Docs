@@ -1,10 +1,7 @@
----
-title: "Cell and Row Styling Functions"
-metaKeys: "Cell, Row Styling Functions, SETROWSTYLE, css class "
-pageIndex: 5
----
 
-### Styling Functions
+# Cell and Row Styling Functions
+
+## Styling Functions
 
 You can style Rows and Cells individually by creating CSS styles and assigning them to rows writing Eaze expressions.
 
@@ -40,6 +37,6 @@ SETCELLSTYLE(Total < 1000, "Total", "RedCell");
 
 <br/>
 
-### Videos
+## Videos
 * [Worksheet](../../../videos/worksheet.md)
 * [Cell and Row Styling Functions](https://profitbasedocs.blob.core.windows.net/videos/Worksheet%20-%20Cell%20and%20Row%20Styling%20Functions.mp4)

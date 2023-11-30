@@ -1,9 +1,5 @@
----
-title: "How to Set Cell Action Link Tapped Event"
-metaKeys: "How to set Cell Action Link Tapped Event"
-folderOnly: "false"
-pageIndex: 2
----
+
+# How to Set Cell Action Link Tapped Event
 
 In this section, you will find examples on how to Set Cell Action Link Tapped Event. 
 
@@ -13,7 +9,7 @@ In this section, you will find examples on how to Set Cell Action Link Tapped Ev
   
 <br/>
 
-### Step by step
+## Step by step
 
 
 1. Choose css class for the column:

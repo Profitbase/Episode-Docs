@@ -1,10 +1,7 @@
----
-title: "Custom Rows"
-metaKeys: "Custom rows, data grid, ObjectId manually, Amount "
-pageIndex: 7
----
 
-### How to add a Custom Row
+# Custom Rows
+
+## How to add a Custom Row
 We can add custom rows to the contents of the data grid by specifying the location relative to the actual rows loaded from the data source.  To create a custom row, you need to specify the ObjectId manually.   
 
 The ObjectId must be unique for every custom row in the grid, and it must be a negative value starting at -1. 
@@ -31,7 +28,7 @@ Use the **ADDROWFIRST**, **ADDROWLAST**, **ADDROWBEFORE**, and **ADDROWAFTER** f
 
 <br/>
 
-### Videos
+## Videos
 
 * [Worksheet](../../videos/worksheet.md)
 * [Custom Row](https://profitbasedocs.blob.core.windows.net/videos/Worksheet%20-%20Custom%20Row.mp4)

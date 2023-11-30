@@ -1,14 +1,8 @@
----
-title: "Components"
-metaKeys: "Components, UI elements, Form Elements, Input Elements, File Upload, Button, Label, Filter, Image, iFrame, Data Flow, Scripts, Workflow, Extension, Reports, Tab Control, Form Schemas, Progress Indicator "
-folderOnly: "false"
-pageIndex: 2
----
-#### Components
+# Components
 In this section, you will find Components. Interactive building blocks for creating a user interface. You can add a component to your solution by drag end dropping it from the ToolBox.
 <br/>
 
-#### See Also  
+## See Also  
 
 * [UI elements](components/uielements.md)
 * [Access Control Editors](components/accesscontrol.md)

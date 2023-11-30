@@ -1,12 +1,8 @@
----
-title: "Charts Formatting"
-metaKeys: "Data Queries, SQL Directives, standard, Declare, Object, Id, Values, Custom Parameters "
-folderOnly: "false"
-pageIndex: 2
----
+
+# Charts Formatting
 
 
-### General pie chart properties
+## General pie chart properties
 
 <br/>
 
@@ -162,7 +158,7 @@ or the index of the axis in the yAxis array, with 0 being the first.
 
 <br/>
 
-### Advanced pie chart properties
+## Advanced pie chart properties
 
 <br/>
 

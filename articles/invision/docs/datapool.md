@@ -1,11 +1,4 @@
----
-title: "Data Pool"
-metaKeys: "Data pool, Compound views, Synonyms, Browse Data, Join, Refresh, View Information,  Leave, SQL Server tables, processing, fact, dimension, create star schema, Create Worksheets, integrate, script, dimensions, Enable foreign key constraints, set, function, Flow, core setup, Rollover, Periodic Input, Core Set, Transaction Pipeline"
-folderOnly: "false"
-pageIndex: 7
----
-
-### Data Pool
+# Data Pool
 
 <br/>
 A data pool is a collection of tables and views that serves as a data integration point.
@@ -22,7 +15,7 @@ It can be implemented through:
 
 <br/>
 
-### Compound view
+## Compound view
 
 <br/>
 
@@ -51,7 +44,7 @@ The name of the Compound View can consist of characters from **a-z/A-Z**, number
 
 <br/>
 
-### Synonym
+## Synonym
 
 A synonym can be applied to [Data Store](datastores.md), [Dimensions](dimensions.md) (linked and local.md), [Tables](tables.md), and [View](views.md).
 

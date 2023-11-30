@@ -1,9 +1,5 @@
----
-title: "Display Modes"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 4
----
+
+# Display Modes
 
 You can toggle between two display modes. Panel or Button Display Mode.
 <br/>
@@ -15,7 +11,7 @@ You can toggle between two display modes. Panel or Button Display Mode.
 
 <br/>
 
-### Panel Display Mode
+## Panel Display Mode
 >Panel Display Mode displays everything. You have easy access to actions such as deleting, downloading, or uploading files.
 
 <br/>
@@ -24,7 +20,7 @@ You can toggle between two display modes. Panel or Button Display Mode.
 
 <br/>
 
-### Button Display Mode
+## Button Display Mode
 >Button Display Mode doesn't take as much space, also displays the number of attachments.
 
 
@@ -39,7 +35,7 @@ You can toggle between two display modes. Panel or Button Display Mode.
 
 <br/>
 
-### Videos
+## Videos
 
 - [File Storage](../../videos/filestorage.md)
 - [File Storage - Basics](https://profitbasedocs.blob.core.windows.net/videos/File%20Storage%20-%20Basics.mp4)

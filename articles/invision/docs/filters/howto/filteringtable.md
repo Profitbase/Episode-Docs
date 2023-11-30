@@ -1,17 +1,12 @@
----
-title: "How to Filter the Table"
-metaKeys: "How to Filter the Table"
-folderOnly: "false"
-pageIndex: 3
----
 
+# How to Filter the Table
 
-### Link to the docs
+## Link to the docs
 
 Under [this link](../../tables/filters.md) you will find documentation on how to Filter the Table.
 <br/>
 
-### Step by step
+## Step by step
 
 
 >You add a filter to the Filters section of the Table by g and droping it.
@@ -22,5 +17,3 @@ Under [this link](../../tables/filters.md) you will find documentation on how to
 >Bind the Filter in the Table properties in Workbook designer.
 
 ![Filter](https://profitbasedocs.blob.core.windows.net/images/filtersintables2.png)
-### Properties
-<br/>

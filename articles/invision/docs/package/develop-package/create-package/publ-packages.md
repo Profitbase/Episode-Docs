@@ -1,10 +1,4 @@
----
-title: "Publish Packages"
-metaKeys: "package upgrade, Publish packages "
-pageIndex: 4
----
-
-### Publish packages (Azure blobstorage)
+# Publish packages (Azure blobstorage)
 
 
 <br/>
@@ -34,6 +28,7 @@ pbstore -u "mypackage.pbpck"
 
 <br/>
 
-**Note!** If your package has dependencies, you must upload the dependencies first.
+> [!NOTE]
+> If your package has dependencies, you must upload the dependencies first.
 <br/>
 

@@ -1,11 +1,4 @@
----
-title: "IsHostPageActive"
-metaKeys: "IsHostPageActive, "
-folderOnly: "false"
-pageIndex: 14
----
-
-### IsHostPageActive(...)
+# IsHostPageActive(...)
 
 <br/>
 

@@ -1,11 +1,7 @@
----
-title: "Data"
-metaKeys: "Data, Lists, data sources, controls, collection of items, Dropdowns, Set Models, contents, modified, database, Models, data objects."
-folderOnly: "false"
-pageIndex: 4
----
 
-### Data Models
+# Data
+
+## Data Models
 
 This section describes the different types of data models that can be used in forms.
 A data model is used for either displaying data (for example a list of customers), or editing data.
@@ -21,7 +17,7 @@ A (data) Model represents a single object instance, and contains one or more fie
 **Dimension Models** are data sources for controls that can display data in a hierarchical view, for example, the [TreeView](./controls/treeview.md) control.  
 Dimension Models are read-only and cannot be modified and saved back to the database.
 
-### See Also
+## See Also
 
 - [Lists](data/lists.md)
 - [Models](data/models.md)
@@ -30,7 +26,7 @@ Dimension Models are read-only and cannot be modified and saved back to the data
 
 <br/>
 
-### Videos
+## Videos
 
 - [Form Schemas](../../../videos/formschemas.md)
 - [Layout and Styling](https://profitbasedocs.blob.core.windows.net/videos/Form%20Schema%20-%20Layout%20and%20styling.mp4)

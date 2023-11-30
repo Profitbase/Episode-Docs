@@ -1,9 +1,5 @@
----
-title: "Text Control (base)"
-metaKeys: "UI, Text Control, Controls,  Editable, TextCode, TextExpression, FormatString, input, numeric, formatting, format, display, user interface, translation, displayed, C# expression, "
-folderOnly: "false"
-pageIndex: 21
----
+
+# Text Control (base)
 
 Inherits from [Control](control.md).
 
@@ -11,7 +7,7 @@ You cannot use this control directly in your configuration.
 
 <br/>
 
-#### Properties
+## Properties
 
 <br/>
 
@@ -35,7 +31,7 @@ Specifies the formatting of the input. If this is a numeric input control, use [
 
 <br/>
 
-### See Also
+## See Also
 
 - [Button](button.md)
 - [Labels](label.md)

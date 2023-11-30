@@ -1,16 +1,12 @@
----
-title: "How To Create a File Storage"
-metaKeys: "how to, Creating a File Storage"
-folderOnly: "false"
-pageIndex: 1
----
 
-### Link to the video
+# How To Create a File Storage
+
+## Link to the video
 
 Under [this](https://profitbasedocs.blob.core.windows.net/videos/File%20Storage%20-%20Basics.mp4) link you will find a video that shows how to create a  [File Storage](../../filestorage.md). 
 <br/>
 
-### Step by step
+## Step by step
 
 1. Right-click chosen folder in Solution Explorer to add a new item, choose File Storage and name it.
 

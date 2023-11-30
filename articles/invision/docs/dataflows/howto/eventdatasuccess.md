@@ -1,13 +1,13 @@
 
-## How to Check if Dataflow Succeeded using @Event.Data.Success condition
+# How to Check if Dataflow Succeeded using @Event.Data.Success condition
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/DF%20-%20Check%20if%20dataflow%20succeeded%20or%20not.mp4) you will find video that shows how to check if dataflow succeeded or not, using **@Event.Data.Success** condition.
 <br/>
 
 
-### Step by step
+## Step by step
 
 
 1. Create a Data Flow than Data Flow Item:

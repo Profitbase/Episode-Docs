@@ -1,8 +1,5 @@
----
-title: "Image"
-metaKeys: "UI, Text Control, Controls,  Editable, image, source, click, url"
-pageIndex: 8
----
+
+# Image
 
 <br/>
 
@@ -63,7 +60,7 @@ Specifies the hotkey for the control.
 
 <br/>
 
-### Videos
+## Videos
 
 - [Form Schemas](../../../../videos/formschemas.md)
 

@@ -1,4 +1,5 @@
-# Howto
+# How to's
+
 
 * [Filteringtable](./filteringtable.md)
 * [Filteringworksheet](./filteringworksheet.md)

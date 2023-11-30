@@ -1,11 +1,4 @@
----
-title: "OpenSpreadsheetEditor"
-metaKeys: "OpenSpreadsheetEditor, "
-folderOnly: "false"
-pageIndex: 18
----
-
-### OpenSpreadsheetEditor(...)
+# OpenSpreadsheetEditor(...)
 
 <br/>
 

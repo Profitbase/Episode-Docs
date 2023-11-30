@@ -1,11 +1,4 @@
----
-title: "HasFilterChanged"
-metaKeys: "HasFilterChanged, "
-folderOnly: "false"
-pageIndex: 10
----
-
-### HasFilterChanged(...)
+# HasFilterChanged(...)
 
 <br/>
 

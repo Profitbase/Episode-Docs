@@ -14,66 +14,53 @@ If there is something you can't find answers to, please contact [Support](https:
 
 ![Docs](https://profitbasedocs.blob.core.windows.net/images/dodocs.png "Docs")
 
-# Docs
 
-* [Accesscontrol](../docs/accesscontrol/index.md)
+# Documentation directory
 
-* [Accessibility](./accessibility/accessibility.md)
+Read about the **key features** of **Profitbase InVision**. Check out the following topics to learn how to build, run, and deploy your Solution in InVision.
 
-* [Bestpractice](./bestpractice.md)
-
-* [Dataflowitems](./dataflowitems/index.md)
-
-* [Dataflows](./dataflows/index.md)
-
-* [Datapool](./datapool.md)
-* [Datastores](./datastores/index.md)
-
-* [Dimensions](./dimensions/index.md)
-
-* [Directives](./directives/index.md)
-
-* [Filestorage](./filestorage/index.md)
-
-* [Filters](./filters/index.md)
-
-* [Forms](./forms/index.md)
-
-* [Homepage](./homepage/index.md)
-
-* [Javascript](./javascript.md)
-* [Macros](./macros/index.md)
-
-* [Package](./package/index.md)
-
-* [Powershell](./powershell/index.md)
-
-* [Sqlreports](./sqlreports/index.md)
-
-* [Sqlscripts](./sqlscripts/index.md)
-
-* [Systemsetup](./systemsetup/index.md)
-
-* [Systemviews](./systemviews.md)
-* [Tables](./tables/index.md)
-
-* [Tableview](./tableview/index.md)
-
-* [Timeframe](./timeframe.md)
-* [Translationsloc](./translationsloc/index.md)
-
-* [Troubleshooting](./troubleshooting.md)
-* [Views](./views.md)
-* [Webfunctions](./webfunctions/index.md)
-
-* [Webserviceapis](./webserviceapis/index.md)
-
-* [Workbookmenu](./workbookmenu.md)
-* [Workbooks](./workbooks/index.md)
-
-* [Workflow](./workflow/index.md)
-
-* [Workprocess](./workprocess/index.md)
-
-* [Worksheets](./worksheets/index.md)
-
+<div class="column-container">
+    <div class="column">
+        <ul>
+            <li><a href="systemsetup.md">System Setup</a></li>
+            <li><a href="accesscontrol.md">Access Control</a></li>
+            <li><a href="accessibility.md">Accessibility</a></li>
+            <li><a href="bestpractice/index.md">Best Practice</a></li>
+            <li><a href="dataflowitems.md">Data Flow Items</a></li>
+            <li><a href="dataflows.md">Data Flows</a></li>
+            <li><a href="datapool.md">Data Pool</a></li>
+            <li><a href="datastores.md">Data Stores</a></li>
+            <li><a href="dimensions.md">Dimensions</a></li>
+            <li><a href="directives.md">Directives</a></li>
+            <li><a href="filestorage.md">File Storage</a></li>
+            <li><a href="filters.md">Filters</a></li>
+            <li><a href="forms.md">Forms</a></li>
+            <li><a href="homepage.md">Home Page</a></li>
+            <li><a href="javascript.md">JavaScript</a></li>
+            <li><a href="macros.md">Macros</a></li>
+            <li><a href="package.md">Packages</a></li>
+        </ul>
+    </div>
+    <div class="column">
+        <ul>
+            <li><a href="powershell.md">PowerShell</a></li>
+            <li><a href="sqlreports.md">SQL Reports</a></li>
+            <li><a href="sqlscripts.md">SQL Scripts</a></li>
+            <li><a href="systemviews.md">System Views</a></li>
+            <li><a href="tables.md">Tables</a></li>
+            <li><a href="tableview.md">Table View</a></li>
+            <li><a href="timeframe.md">Time Frame</a></li>
+            <li><a href="translationsloc.md">Translations / Localization</a></li>
+            <li><a href="troubleshooting.md">Troubleshooting</a></li>
+            <li><a href="views.md">Views</a></li>
+            <li><a href="webfunctions.md">Web Functions</a></li>
+            <li><a href="webserviceapis.md">Web Service APIs</a></li>
+            <li><a href="workbooks.md">Workbooks</a></li>
+            <li><a href="workbookmenu.md">Workbook Menu</a></li>
+            <li><a href="workflow.md">Workflow</a></li>
+            <li><a href="workprocess.md">Work Process</a></li>
+            <li><a href="worksheets.md">Worksheets</a></li>
+        </ul>
+    </div>
+</div>
+</div>

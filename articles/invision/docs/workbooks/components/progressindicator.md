@@ -1,19 +1,15 @@
----
-title: "Progress Indicator"
-metaKeys: "Progress Indicator, displays, spinner, text, long running tasks, execution of Data Flows, displaying, UI."
-folderOnly: "false"
-pageIndex: 14
----
+
+# Progress Indicator
 
 The progress indicator displays a spinner and text that can be started and stopped for long-running tasks, such as the execution of [Data Flows](../../dataflows/index.md) when you're not displaying the Data Flow execution UI.
 
-### Actions
+## Actions
 
 *	**ExecuteExpression**
 
  Use this action to dynamically style the Progress Indicator by calling the [AddCssClass(…)](), [RemoveCssClass(…)]() and [ToggleCssClass(…)]() functions.
 
-### Dynamic styling
+## Dynamic styling
 
 A Progress Indicator can be dynamically styled by calling the [AddCssClass(…)](), [RemoveCssClass(…)]() and [ToggleCssClass(…)]() functions in the ExecuteExpression action.
 

@@ -1,11 +1,4 @@
----
-title: "LoadMinMaxValues"
-metaKeys: "LoadMinMaxValues"
-folderOnly: "false"
-pageIndex: 15
----
-
-### LoadMinMaxValues
+# LoadMinMaxValues
 
 <br/>
 
@@ -18,7 +11,7 @@ LoadMinMaxValues(conditions : boolean);
 LoadMinMaxValues(…) is used for specifying whether min and max values should be (re)loaded during a LoadData Action for Form Elements supporting range constraint, for example, the Date Picker Form Element.
 <br/>
 
-#### Example 
+## Example 
 >
 ```
 LoadMinMaxValues(); // evaluates to true

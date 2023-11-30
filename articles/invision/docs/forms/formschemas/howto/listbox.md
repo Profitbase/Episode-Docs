@@ -1,17 +1,12 @@
----
-title: "How To Use a Listbox"
-metaKeys: "How To Use a Listbox"
-folderOnly: "false"
-pageIndex: 1
----
 
+# How To Use a Listbox
 
-### Link to the video
+## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/FormSchema-Listbox-Basics.mp4) you will find a video that shows how to use a Listbox. [Here](../../formschemas/controls/listbox.md) you will find [Documentation](../../formschemas/controls/listbox.md).
 <br/>
 
-### Step by step
+## Step by step
 
 
 1. Right-click chosen folder in Solution Explorer to add a new item, choose Form Schema:

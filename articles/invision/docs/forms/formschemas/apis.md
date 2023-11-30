@@ -1,13 +1,9 @@
----
-title: "APIs"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
+
+# APIs
 
 In this section you will find some useful properties, custom functions and event handlers, and data models for the API. 
 
-### See Also
+## See Also
 
 * [Form Runtime](apis/formruntime.md)
 * [Control APIs](apis/controlproxyAPI.md)

@@ -1,8 +1,5 @@
----
-title: "Pb. (dot-sourcing)"
-metaKeys: "Pb. (dot-sourcing), PowerShell, ps1, pointing to a script, SaaS, Embed PowerShell Script, Excel Impl, Excel Functions, Pb. Example Excel, Import-ExcelData, Sql w macro, Test macro, Microsoft.Data.SqlClient, Pb. 'Sql w macro' "
-pageIndex: 1
----
+
+# Pb. (dot-sourcing)
 
 PowerShell supports **dot-sourcing**. You can type a dot (**.**) followed by a **space**, followed by a **ps1** file name pointing to a script you want to include in the current script context. 
 

@@ -1,5 +1,5 @@
 
-## Core Set
+# Core Set
 
 The Core Set feature is used for generating rows based on the content of dimensions or fact type data sources specified as Core Set members, which does not already exist in the [Data Store](../datastores.md). The Core Set basically defines which rows should always be present in the [Data Store](../datastores.md), regardless of whether it exists in the fact source(s) or not. 
 
@@ -43,7 +43,7 @@ After running a data update (or reload), the Data Store will contain the followi
 The Core Set feature adds rows to the Data Store by combining the content of the Core Set dimensions and then adds the missing rows to the Data Store.
 <br/>
 
-### Core Set Members
+## Core Set Members
 
 The Core Set Members are the table resources used for producing the Cartesian product of rows that makes up the core data set of the [Data Store](../datastores.md) which is the rows that should always be present in the repository. 
 > [!NOTE]

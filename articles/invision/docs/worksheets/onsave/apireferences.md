@@ -1,13 +1,7 @@
----
-title: "API References"
-metaKeys: "On Save, data validation, modifying data, sending messages and so on, Named SQL Scripts, Executing business logic before, after save, GetValue, CudDataPackage, QueryParam, TableOperationType, ExecuteNonQuery, ExecuteScalar, ExecuteScalar "
-pageIndex: 1
----
 
+# API References
 
-
-
-#### CudDataPackage
+## CudDataPackage
 
 CudDataPackage contains all rows to insert, update or delete during a save process.  
 
@@ -63,7 +57,7 @@ Custom parameters passed from the client using SetParamValue(“@Param”, value
     }
 
 
-#### CudRecord	
+## CudRecord	
 
 CudRecord represents a row to insert, update or delete. The values of the row can be read from or written to by using an indexer or the GetValue method described below. The Values collection of the object allows you to iterate over all the values of the row.
 
@@ -106,7 +100,7 @@ Returns the cell value of the specified column. If the column does not exist, a 
     }
 
 
-#### CudValue
+## CudValue
 
 Represents a cell value.
 

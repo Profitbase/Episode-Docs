@@ -1,10 +1,7 @@
----
-title: "Form Runtime API"
-metaKeys: "Form Runtime API, Event Handlers, Functions, raiseWorkbookComponentEvent, AddViewStateModel, isNumber, isDate, startsWith, endsWith, convertTo, rounds, Unload, controls, models, setModels, texts, lists, AppVariables, disables "
-pageIndex: 6
----
 
-#### Services
+# Form Runtime API
+
+## Services
 
 <br/>
 
@@ -78,7 +75,7 @@ An example of this is that you have multiple dropdowns data-bound to the same so
 
 <br/>
 
-#### Functions
+## Functions
 
 All functions in the Form Runtime can be called through the **this** or **functions** reference. The coding language is JavaScript.
 
@@ -177,7 +174,7 @@ Other:
 
 <br/>
 
-#### Properties
+## Properties
 
 <br/>
 
@@ -276,7 +273,7 @@ Valid values for the **Disabled** property:
 
 <br/>
 
-#### Custom models
+## Custom models
 
 If you need to maintain state for data that does not come from the database, you can create a custom model using the **addViewStateModel(...)** API.
 This creates an in-memory object that you can use to store state which also supports data binding. You can access the custom model through the **ViewState** API.

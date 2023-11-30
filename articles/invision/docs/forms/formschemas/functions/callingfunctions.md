@@ -1,8 +1,5 @@
----
-title: "Calling Functions from External Events"
-metaKeys: "Calling functions from external events"
-pageIndex: 1
----
+
+# Calling Functions from External Events
 
 You can call a function in a Form Schema from other Workbook components or events by executing the **Execute Function** action on the Form Schema. You can also pass arguments to the function.
 
@@ -14,7 +11,7 @@ To call a function in a Form Schema on some event, for example, a button click, 
 
 <br/>
 
-### Videos 
+## Videos 
 
 * [Form Schemas](../../../../videos/formschemas.md)
 * [Calling Functions from External Events](https://profitbasedocs.blob.core.windows.net/videos/Form%20schema%20-%20Calling%20Functions.mp4)

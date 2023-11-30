@@ -1,15 +1,11 @@
----
-title: "Form Schemas"
-metaKeys: "Form Schemas, built-in layout and styling system, validation, event and programming API, hosted, Workbooks"
-folderOnly: "false"
-pageIndex: 3
----
+
+# Form Schemas
 
 Form Schemas consists of multipe controls that are data bound to models which are loaded and saved in a single batch. Form Schemas have their own built-in layout and styling system, validation, event and programming API, but are hosted in [Workbooks](../workbooks.md) just like any other component.
 
 <br/>
 
-### See Also
+## See Also
 * [APIs](formschemas/apis.md)
 * [Controls](formschemas/controls.md)
 * [Data](formschemas/data.md)
@@ -29,7 +25,7 @@ Form Schemas consists of multipe controls that are data bound to models which ar
 
 <br/>
 
-#### Videos
+## Videos
 
 * [Form Schemas](../../videos/formschemas.md)
 * [Layout and Styling](https://profitbasedocs.blob.core.windows.net/videos/Form%20Schema%20-%20Layout%20and%20styling.mp4)

@@ -1,11 +1,4 @@
----
-title: "IsAppReadOnly"
-metaKeys: "IsAppReadOnly()"
-folderOnly: "false"
-pageIndex: 12
----
-
-### IsAppReadOnly function
+# IsAppReadOnly function
 
 <br/>
 

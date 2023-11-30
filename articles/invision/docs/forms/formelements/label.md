@@ -1,8 +1,5 @@
----
-title: "Label"
-metaKeys: " Label, read only value , query, "
-pageIndex: 3
----
+
+# Label
 
 <br/>
 
@@ -12,7 +9,7 @@ pageIndex: 3
 
 ___                                                                 
 
-### Presents data as a read only value 
+## Presents data as a read only value 
 
 **Select Value Query ** 
 
@@ -27,6 +24,6 @@ Specifies the Data Query which returns a single value which is displayed to the 
 
 <br/>
 
-### See Also
+## See Also
 
 * [More about Label](../../workbooks/components/uielements/label.md) 

@@ -1,9 +1,6 @@
----
-title: "Reports"
-metaKeys: "Reports, Actions, LoadData, Execute Expression, Events, Cell Action Link Tapped, Custom Context Menu Action Executed, @Event properties, SelectedRow,  SelectedCell, ChartInteractionEvent, Handling the ChartInteractionEvent from built-in event publishers "
-folderOnly: "false"
-pageIndex: 15
----
+
+# Reports
+
 InVision supports line and chart [reports](../../sqlreports.md), and a single report can toggle between line and chart display mode.
 
 Reports are created by defining one or more data sets using [SQL queries](../../sqlreports/dataqueries.md) and then mapping those data sets to chart and table reports.
@@ -14,30 +11,30 @@ InVision reports can read data from any SQL source, so you can use reports to vi
 ![pic](https://profitbasedocs.blob.core.windows.net/images/sqlScr.png)
 
 
-### Actions
+## Actions
 <br/>
 
-#### LoadData
+### LoadData
 
 *	Instructs the component to load data.	
 
-#### Execute Expression
+### Execute Expression
 
 *	Enables changing the caption of the report dynamically by calling SetCaption(…), SetCaptionSuffix(…) and ResetCaption(). 
 <br/>
 
-### Events
+## Events
 <br/>
 
-#### Cell Action Link Tapped
+### Cell Action Link Tapped
 
 *	This event is raised when an action link cell in a table report is clicked. The payload of the event is the name of the column that was clicked and the row object.
 
-#### Custom Context Menu Action Executed
+### Custom Context Menu Action Executed
 
 *	This event is raised when a custom context menu action is clicked. The payload of the event is the name of the action that was clicked, the column and the row object that the cell belongs to.
 
- #### @Event properties
+ ### @Event properties
 
  **Data** – Contains a reference to the data (row) object that is rendered by the clicked spreadsheet cell  
  **Sender.ColumnName** – The name of the column that was clicked  
@@ -81,7 +78,7 @@ ShowToastNotification(@Event.Sender.ActionName + " was executed",
 
     <br/>
 
-#### ChartInteractionEvent
+### ChartInteractionEvent
 
 *	This event can be raised from a Highchart event handler, for example the click event of a point. To raise this event, you need to add an event handler to the chart component that you want to raise that event from, and then raise the ChartInteraction event.
 
@@ -117,7 +114,7 @@ ShowToastNotification(@Event.Sender.ActionName + " was executed",
 
 <br/>
 
-#### Handling the ChartInteractionEvent from built-in event publishers
+### Handling the ChartInteractionEvent from built-in event publishers
 
 At the moment, InVision has a built-in function (**pb.chart.series.point.events.onClick**) that can be set to raise the **ChartInteractionEvent** when a series point is clicked. The function raises the **ChartInteractionEvent** with a **payload object** containing the following properties:
 
@@ -143,10 +140,10 @@ When handing the ChartInteractionEvent in a Workbook, the payload object is expo
 
 <br/>
 
-### See Also
+## See Also
 * [SQL Reports](../../sqlreports.md)
 
-### Videos 
+## Videos 
 
 * [SQL Reports](../../../videos/sqlreports.md)
 * [ChartInteractionEvent](https://profitbasedocs.blob.core.windows.net/videos/SQL%20Reports%20-%20ChartInteractionEvent.mp4)

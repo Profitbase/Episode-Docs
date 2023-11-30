@@ -1,5 +1,5 @@
 
-## Periodic Input
+# Periodic Input
 
 To enable Periodic Input for Data Stores and Settings, you first need to configure the [Time Frame](timeframe.md) for the repositories or the repository group. A Time Frame can be configured for a Data Store Group or Data Stores and Settings individually. Having configured a valid Time Frame, you need to add [Time Frame](timeframe.md) Measure Columns to the repository. 
 

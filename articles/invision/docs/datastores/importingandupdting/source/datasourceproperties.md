@@ -1,5 +1,4 @@
-
-### Data Source Properties:
+# Data Source Properties
 <br/>
 
 ``Key Column``  

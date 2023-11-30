@@ -1,18 +1,14 @@
----
-title: "Variables"
-metaKeys: "Global, System Variables, SYS.CurrentUserName, SYS.SYS_DataSetID, SYS.SolutionId, SYS.WorkbookId, QSP.<query string parameter> "
-folderOnly: "false"
-pageIndex: 5
----
+
+# Variables
 
 
-### Global variables
+## Global variables
 
 The [Workbook](../../workbooks.md) session maintains a set of variables accessible everywhere in the Workbook. Variables can be created or assigned to when an ExecuteExpression Action is called.
 
 It is recommended to always use standard (Eaze) variables, however, @Var[…] instruction is supported for backward compatibility and it also allows you to use variables that contain whitespace characters.
 
-### System Variables
+## System Variables
 
 The following variables are set by the system. System variables are globally available.
 

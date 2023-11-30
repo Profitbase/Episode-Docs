@@ -1,4 +1,4 @@
-# Howto
+# How to's
 
 * [Cellvalidation](./cellvalidation.md)
 * [Creatingtable](./creatingtable.md)
