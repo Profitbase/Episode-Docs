@@ -1,8 +1,4 @@
-# Getting Started"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
+# Getting Started
 
 ## Abstract, intended audience and pre-requisites
 

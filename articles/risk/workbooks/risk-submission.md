@@ -1,8 +1,4 @@
-# Risk submission"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
+# Risk submission
 
 ## Overview
 

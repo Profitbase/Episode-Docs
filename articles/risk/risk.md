@@ -1,8 +1,5 @@
-# Risk"
-metaKeys: "About Profitbase InVision, Application Development, platform, build flexible business solutions, components, business modules,  integrate, RESTful Web API, connecting directly to the SQL data storage, extended, custom, Profitbase InVision Designer, developer tool, Microsoft Visual Studio, features, code libraries, packages, prebuilt Solution components, Templates, Solution components"
-folderOnly: "false"
-pageIndex: 2
----
+# Risk
+
 
 ## About Profitbase Risk
 

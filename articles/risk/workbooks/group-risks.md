@@ -1,8 +1,4 @@
-# Group risks"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 3
----
+# Group risks
 
 ## Overview
 

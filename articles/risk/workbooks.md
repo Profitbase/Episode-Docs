@@ -1,8 +1,5 @@
-# Workbooks"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 3
----
+# Workbooks
+
 ## Overview
 Profitbase Risk provides a Web interface organized in Workbooks grouped as listed below. It is the same grouping that will appear in the menu in every workbook.
 
