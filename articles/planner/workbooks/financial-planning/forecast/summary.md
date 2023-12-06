@@ -1,11 +1,5 @@
----
-title: "Summary"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
-
-### Overview
+# Summary
+## Overview
 This is the Profit and Loss overview page for the Forecast process. It acts as a summary for the forecasting done so far as well as a navigation page to the various input modules used for detailing the forecast. The summary is, with exception of the Comment column, read only.
 <br/>
 
@@ -24,12 +18,12 @@ Launch drop down selector for launching specific input modules. When selecting a
 
 <br/>
 
-### Video
+## Video
 ![Introduction](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/ForecastSummary.mp4)
 
 <br/>
 
-### Column Descriptions
+## Column Descriptions
 
 - **Report**<br/>
 By clicking the Report column (one of the report lines) or the link icon to its left, the input module associated with that report line will launch and replace the summary page. This would be the normal procedure when you want to view input details or perform detailed input to that report line. The input module can also be launched in a new window by right-clicking the link symbol and selecting the "Open in new window" option
@@ -55,7 +49,7 @@ Long term forecast, that are the year totals of forecast input for years beyond 
 - **Comment** <br/>
 Input column for commenting a specific report line. To save the comments, click the "Save" button.
 
-### How to`s
+## How to`s
 
 <br/>
 

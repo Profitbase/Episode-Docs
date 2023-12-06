@@ -1,17 +1,12 @@
----
-title: "All tasks"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
-### Overview
+# All tasks
+## Overview
 Excel-type listing of all tasks. Here, you can view or find all tasks, using the filters and/or the text search.
 
 ![](https://profitbasedocs.blob.core.windows.net/plannerimages/AllTasks.png)
 
 <br/>
 
-### Column Descriptions
+## Column Descriptions
 
 - **View task**<br/>
 The task name is a link that will open the [create and edit form](../../../workbooks/process-and-tasks/tasks/create-edit-task.md)

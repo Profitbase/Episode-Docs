@@ -69,3 +69,26 @@ All Solutions that **does not** have any permissions defined, will now be access
 - InVision will not automatically retry running SQL Scripts that fails because of deadlocks
 - Transaction pipeline now has a timeout of 300 seconds (5 minutes) for inserting data. This prevents indefinite waits if SQL Server for some reason decides to suspend the operation.
 - Dataflow Worker now waits for an amout of time (default is 10 minutes) before shutting down after completing its final job. This shortens the wait time for the first user that submits a new job when the pressure on the system is low.
+
+
+#### See Also
+
+- [Change Log 2023.6](changelog23_6.md)
+- [Change Log 2023.5](changelog23_5.md)
+- [Change Log 2023.4](changelog23_4.md)
+- [Change Log 2023.3](changelog23_3.md)
+- [Change Log 2023.2](changelog23_2.md)
+- [Change Log 2023.1](changelog23_1.md)
+- [Change Log 2022.5](changelog22_5.md)
+- [Change Log 2022.4](changelog22_4.md)
+- [Change Log 2022.3 pt 2](changelog22_3_2.md)
+- [Change Log 2022.3 pt 1](changelog22_3_1.md)
+- [Change Log 2022.2](changelog22_2.md)
+- [Change Log 2022.1](changelog22_1.md)
+- [Change Log 5.2](changelog52.md)
+- [Change Log 5.1](changelog51.md)
+- [Change Log 5.0](changelog5.md)
+- [Change Log 4.1](changelog41.md)
+- [Change Log 4.0](changelog40.md)
+
+<br/>

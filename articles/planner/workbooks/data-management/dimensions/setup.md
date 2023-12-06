@@ -1,16 +1,12 @@
----
-title: "Setup"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 6
----
-# Overview - Import from / export to external source
+# Setup
+
+## Overview - Import from / export to external source
 
 Setup that controls how dimensional data is imported from and/or exported to external sources and targets.
 
 ![](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/DimensionSetup.JPG)
 
-### Column Descriptions
+## Column Descriptions
 
 - **Dimension**<br/>
 The dimension in question. Readonly.

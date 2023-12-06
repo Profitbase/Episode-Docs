@@ -1,10 +1,5 @@
----
-title: "User management"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
-### Overview
+# User management
+## Overview
 
 Access to resources, such as Workbooks, Data, and APIs are granted to User Groups. User Groups contain (user or group) accounts from Windows or Azure AD.
 
@@ -14,7 +9,7 @@ When you "add" users, you connect to the identity provider that the system is se
 
 <br/>
 
-### Add a user
+## Add a user
 
 1. Click on the "User management" tab at the top
 2. Click on the + button in the "Users" section to add a new user
@@ -35,7 +30,7 @@ If the email reported by Azure is wrong, you can override this field using the [
 
 <br/>
 
-### Add user to a group
+## Add user to a group
 
 1. Select the user in the list
 2. His current group assignments will be listed

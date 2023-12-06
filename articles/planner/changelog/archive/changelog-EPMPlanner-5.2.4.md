@@ -1,8 +1,4 @@
----
-title: "Changelog EPM Planner 5.2.4"
-metaKeys: "Changelog"
-pageIndex: 88
----
+# Changelog EPM Planner 5.2.4
 
 **Changes:**
 

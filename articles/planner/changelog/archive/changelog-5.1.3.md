@@ -1,8 +1,5 @@
----
-title: "Changelog 5.1.3"
-metaKeys: "About Profitbase InVision, terminology, Concepts Clarification, Platform ,Customer solution, Product, EPM suite, Business module, Base package, Configuration, Modification, Custom, Work Process/process, Version, Task, Settings, Calculation, Planning vs budget/forecast, Sandbox, Planner, Standard Planner, Extended Planner, Simulation, Sensitivity, Analysis, Assumption, Blueprint, Blueprint solution, Package, Template, Data Mart, Data Pool, Compound View, InVision Solution, Platform upgrade, Package upgrade, Synonym, Cloning of solution, Partner, Implementation, Referral, Full, InVision "
-pageIndex: 100
----
+# Changelog 5.1.3
+
 There are only bug-fixes in this 5.1.3 update release
 
 **EPM Planner**

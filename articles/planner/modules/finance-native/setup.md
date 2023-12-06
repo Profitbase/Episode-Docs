@@ -1,11 +1,5 @@
----
-title: "Setup"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 3
----
-
-### Overview
+# Setup
+## Overview
 Enables setup of input models for the finance advanced input module.<br/>
 <br/>
 Use the New button to create a new model. Once created, the model will appear in the model filter, select it to view and edit it's configuration.<br/>
@@ -21,7 +15,7 @@ The model configuration consists of a dimension setup, an engine selection and (
 
 ![](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/FinanceNativeSetup.JPG)
 
-### How to`s
+## How to`s
 
 <br/>
 

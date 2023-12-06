@@ -1,5 +1,4 @@
----
-title: ""
+# "
 metaKeys: "Other binary operators"
 pageIndex: 15
 ---

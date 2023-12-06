@@ -1,10 +1,5 @@
----
-title: "Processes"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
-### Overview
+# Processes
+## Overview
 Add / Edit / Remove processes.
 
 ![](https://profitbasedocs.blob.core.windows.net/plannerimages/processes.JPG)

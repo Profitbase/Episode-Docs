@@ -1,21 +1,15 @@
----
-title: "Getting Started"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
-
-### Abstract, intended audience and pre-requisites
+# Getting Started
+## Abstract, intended audience and pre-requisites
 The Profitbase Planner Configuration and Operation series consist of several documents dealing with the configuration and operation of individual Planner modules and functions.
 <br/>
 
-### Modules
+## Modules
 Planner modules are operational input modules that contributors to the work processes use to prepare the Profit & Loss (P&L) of their respective areas of responsibility. Different modules will typically cover parts of the P&L such as sales, personnel, cost, etc.
 
 ![](https://profitbasedocs.blob.core.windows.net/plannerimages/getting-started-modules.jpg)
 <br/>
 
-#### List of Modules
+### List of Modules
 - [Account Module](modules/account.md)
 - [Personnel Module](modules/personnel.md)
 - [CapEx Module](workbooks/financial-planning/capex.md)
@@ -45,9 +39,9 @@ or<br/>
 and the input provided by the contributors are transformed into P&L transactions and fed back to the summary workbooks resulting in a P&L work-in-progress report summary.
 <br/>
 
-### Audience
+## Audience
 The intended audience of this document is Planner end users although some of the documentation refers to aspects relevant to implementation partners configuring the solution initially and solution administrators responsible for operating it thereafter.
 <br/>
 
-### Related Pages
+## Related Pages
 -  [Common functionality](getting-started/common-functionality.md)

@@ -1,12 +1,5 @@
----
-title: "Override dataset mapping"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 4
----
-
-
-### Overview
+# Override dataset mapping
+## Overview
 
 If the default source dataset mapping done on the main page does not cover the mapping needs for all cases, this detailed map can be used to pin point specific mappings for specific parts of the organization.
 

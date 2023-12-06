@@ -1,10 +1,5 @@
----
-title: "Process and Tasks"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
-### Overview
+# Process and Tasks
+## Overview
 Here you find workbooks for setting up a work process and manage processes, versions, recurring process tasks and ad-hoc tasks.
 
    - **[Tasks](../../workbooks/process-and-tasks/tasks.md)**<br/>

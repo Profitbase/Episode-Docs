@@ -1,5 +1,4 @@
----
-title: "How to Use Custom Cell Renderer in Table View"
+# How to Use Custom Cell Renderer in Table View"
 metaKeys: "How to use Custom Cell Renderer in Table View"
 folderOnly: "false"
 pageIndex: 3

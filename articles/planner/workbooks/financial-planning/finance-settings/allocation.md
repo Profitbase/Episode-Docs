@@ -1,9 +1,4 @@
----
-title: "Allocation"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 11
----
+# Allocation
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.4 or later.  <br/>
 

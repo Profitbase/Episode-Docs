@@ -1,13 +1,8 @@
----
-title: "Setup"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 8
----
+# Setup
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4
 
-### Overview
+## Overview
 In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
 <br/>
 
@@ -17,13 +12,13 @@ In publishing and graphic design, Lorem ipsum is a placeholder text commonly use
 2. **Tables View**<br/>The right area will display the selected tables and allows users to edit content.
 <br/>
 
-### Descriptions
+## Descriptions
 
 Each table and columns are described below.
 
 Key columns used for matching when looking up correct setting is marked (k).
 
-#### Time: Start and range
+### Time: Start and range
 This table defines the start date and length for each planning dataset (i.e. Forecast and Budget).
 
 Columns:
@@ -36,7 +31,7 @@ Read-only columns that shows the start date for current Forecast and Budget data
 Selection of time range that allows for up to 7 years planning.
 <br/>
 
-#### Fiscal Calendar Offset
+### Fiscal Calendar Offset
 This table is used to define a Fiscal year and periods that is offset from a normal calendar. Leaving this table empty will use the calendar.
 
 Columns:
@@ -55,7 +50,7 @@ Setting "Fiscal Start Date" = 2020-08-01 and "Fiscal Year" = 2021 will set the s
 Setting "Fiscal Start Date" = 2020-01-01 and "Fiscal Year" = 2020 is equivalent to using an empty table.
 <br/>
 
-#### Dataset
+### Dataset
 This table define the dataset and their naming, including translations.
 
 Columns:
@@ -75,7 +70,7 @@ English translation for name.
 
 **Note that the built-in Planner logic is limited to planning datasets identified as "Forecast" and "Budget". Custom-built extensions will be required to work with other planning datasets.**<br/>
 
-#### Source: map Account to Engine
+### Source: map Account to Engine
 This table maps input accounts to the different posting engines.
 
 Columns:
@@ -92,7 +87,7 @@ Engine name.
 Be careful when doing the mapping to avoid sending any account to just one engine.
 <br/>
 
-#### System: Fallback Accounts
+### System: Fallback Accounts
 This table maps internal account keys to your accounts. There are already quite a few tables where account use is defined but there will be accounts and in particular balance accounts that are used but not mapped elsewhere. Please check Finance Reports Trial Balance report for accounts that are used but not mapped.
 
 Columns:
@@ -107,7 +102,7 @@ Dataset is one of 'Forecast' or 'Budget'.
 Your account to be used.
 <br/>
 
-#### CurrencyReportID
+### CurrencyReportID
 This table defines the currency to be used as default reporting currency during simulation.
 
 Columns:

@@ -1,15 +1,10 @@
----
-title: "Process tasks"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
-### Overview
+# Process tasks
+## Overview
 Process tasks are recurring tasks that are based on specific events (example: month end closing).
 <br/>
 Those tasks are assigned to roles and distributed as tasks to every user of the role.
 
-### Column Descriptions
+## Column Descriptions
 
 - **Task Name**
 The name of the task.

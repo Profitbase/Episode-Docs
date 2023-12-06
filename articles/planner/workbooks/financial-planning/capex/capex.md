@@ -1,11 +1,5 @@
----
-title: "CapEx"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
-
-### Overview
+# CapEx
+## Overview
 This is the input module in which planned investments are input.
 
 Only investments input for periods post the start of plan will be considered in the plan.
@@ -41,12 +35,12 @@ Trend displaying the cash flow of the investments. Note the two buttons in the u
 <br/>
 
 
-### Video
+## Video
 ![Introduction - Input](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/CapEx.mp4)<br/>
 
 <br/>
 
-### Column Descriptions
+## Column Descriptions
 
 Note that the heading of the columns and their visibility can be configured and may thus differ from the example.
 
@@ -71,7 +65,7 @@ Input field enabling textual comments to be associated with the input for a spec
 
 <br/>
 
-### How to`s
+## How to`s
 
 <br/>
 

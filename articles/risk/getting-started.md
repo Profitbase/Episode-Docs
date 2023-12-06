@@ -1,5 +1,4 @@
----
-title: "Getting Started"
+# Getting Started"
 metaKeys: ""
 folderOnly: "false"
 pageIndex: 1

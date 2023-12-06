@@ -1,10 +1,6 @@
----
-title: "Statistics"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 3
----
-# Overview
+# Statistics
+
+## Overview
 Two pie charts. One showing the usage of task types and the other gives an overview of task due dates.
 <br/>
 

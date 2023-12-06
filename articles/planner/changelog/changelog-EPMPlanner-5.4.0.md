@@ -1,8 +1,4 @@
----
-title: "Changelog EPM Planner 5.4.0"
-metaKeys: "Changelog"
-pageIndex: 80
----
+# Changelog EPM Planner 5.4.0
 
 This document contains the new features and changes to the EPM Planner release 5.4.0.
 

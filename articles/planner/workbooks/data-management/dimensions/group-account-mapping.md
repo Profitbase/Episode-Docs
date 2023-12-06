@@ -1,10 +1,6 @@
----
-title: "Group Account Mapping"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
-# Overview
+# Group Account Mapping
+
+## Overview
 Profitbase EPM makes use of a common account dimension, common across all legal entities.
 
 Group Account Mapping allows you to map company-specific source accounts to the group accounts used in Profitbase EPM.
@@ -13,7 +9,7 @@ When external ledger data is imported to Profitbase EPM, this mapping is used. A
 
 ![](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/GroupAccountMapping.JPG)
 
-### Column Descriptions
+## Column Descriptions
 
 - **Legal Entity**<br/>
 The Legal entity to which the local or source account belongs. Mandatory. Select from the drop down list.

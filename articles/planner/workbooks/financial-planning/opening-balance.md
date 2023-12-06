@@ -1,11 +1,5 @@
----
-title: "Opening Balance"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 8
----
-
-### Overview
+# Opening Balance
+## Overview
 The purpose of Opening Balance is to inspect and adjust opening balance values as generated from historical actual finance general ledger.
 
 You can generate the opening balance for dataset according to forecast start date and budget start date. These dates are controlled by roll forward for forecast and budget datasets.
@@ -14,7 +8,7 @@ After importing and generating the opening balance for selected dataset and date
 
 This adjusted balance will be used in the following simulations and subject to settings under Finance Settings and OBDue. Here you can control how payables, receivable and other payments of opening balance will be treated.
 
-### How OB works
+## How OB works
 
 Opening Balances (OB) in finance accounting is the amount of funds on a company's account at the beginning of a fiscal year. Hence OB is relevant for all finance general ledger datasets that include balance accounts. For Planner the typical datasets are:
  - Actual - historic booked values. The date for the OB actual is the first day of the fiscal year (or any date in the first fiscal period)
@@ -39,13 +33,13 @@ OB provides a clean cut between actual funds on accounts up until plan start dat
 
  How to proceed with Profitbase Planner to deal with opening balances.
 
- #### 1. Create OB
+ ### 1. Create OB
 
 In the Opening Balances workbook you can created the opening balance. Here you can also create overrides to adjust the OB available from actual data. This may be necessary for example at the beginning of the year when previous year is not closed and hence an actual OB is not completed or accurate, you can make necessary adjustments. In order for the system to make best judgements about receivables and payables, Planner use the OB from the last 3 months.
 
 Details on how adjust opening balances  can be found here: [Generate and Edit Opening Balance](opening-balance/edit.md)
 
-#### 2. OB Due rules
+### 2. OB Due rules
 
 In "Finance Settings" workbook there is a page "OB Due" that allows you to define payment due rules. Here you can define which accounts, how much as amount or percent to be payed and when.
 
@@ -53,13 +47,13 @@ Remember that the rules set here will have a big impact on the cashflow. For exa
 
 More details on this can be found here: [OB Due](finance-settings/obdue.md)
 
-#### 3. Simulate the general ledger
+### 3. Simulate the general ledger
 
 For the steps above to take effect the general ledger has to be calculated applying OB and due rules in order to generate payment transactions. This is done under "Operation Manager" running the job to simulate the general ledger ("Process finance baseline"). Normally this job is schedule to run automatic at regular intervals.
 
 More details on this can be found here: [Operation Manager](../../workbooks/administration/operation-manager.md)
 
-#### 4. Review results
+### 4. Review results
 
 To verify and check results you should use the "Finance Reports". The most relevant reports are:
  - [Trial Balance](../../workbooks/financial-planning/finance-reports/trial-balance.md) will show the period amounts on each account including the year OB. Remember that Forecast will show a combination of actual and plan data for the periods.
@@ -67,12 +61,12 @@ To verify and check results you should use the "Finance Reports". The most relev
 
 <br/>
 
-### Content
+## Content
 
 - [Generate and Edit Opening Balance](opening-balance/edit.md)
 - [Opening Balance Report](opening-balance/report.md)
 
-### Related Pages
+## Related Pages
 -  [OBDue Finance Settings](../../workbooks/financial-planning/finance-settings/obdue.md)
 -  [Forecast Admin - control Forecast Opening Balance date](../../workbooks/administration/input-settings-and-administration/forecast-admin.md)
 -  [Budget Admin - control Budget Opening Balance date](../../workbooks/administration/input-settings-and-administration/budget-admin.md)

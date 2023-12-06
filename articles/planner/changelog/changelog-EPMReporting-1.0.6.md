@@ -1,8 +1,4 @@
----
-title: "Changelog EPM Reporting 1.0.6"
-metaKeys: "Changelog"
-pageIndex: 81
----
+# Changelog EPM Reporting 1.0.6
 
 This document contains the new features and changes to EPM Reporting package release 1.0.6 and EPM Finance Reports 1.0.1.
 

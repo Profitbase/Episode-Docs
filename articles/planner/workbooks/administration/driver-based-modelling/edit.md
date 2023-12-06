@@ -1,11 +1,5 @@
----
-title: "Edit"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 10
----
-
-### Overview
+# Edit
+## Overview
 This page allows you to edit model-specific properties such as description, access and so on.
 <br/>
 

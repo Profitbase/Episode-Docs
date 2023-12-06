@@ -1,13 +1,8 @@
----
-title: "Setup report"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 9
----
+# Setup report
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x, 5.0 and 5.1
 
-# Overview
+## Overview
 This is to create and edit the report lines for each report, including styling and formulas for sub-totals.
 
 The important things that can be done here are:
@@ -39,7 +34,7 @@ Apart from the normal Save and Refresh buttons there are a few more:
 Right-click mouse to insert a new row for new report.
 <br/>
 
-### Column Descriptions
+## Column Descriptions
 
 - **Report ID (k)**<br/>
 ID text string to uniquely identify the report. Read-only field that is set when selecting report in the next column.

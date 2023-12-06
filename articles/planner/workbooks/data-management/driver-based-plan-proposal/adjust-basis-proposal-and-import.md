@@ -1,12 +1,5 @@
----
-title: "2. Adjust basis proposal and import"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
-
-
-### Overview
+# 2. Adjust basis proposal and import
+## Overview
 
 In this screen, the basis proposal can be viewed, adjusted and then finally imported as a proposal into the account module.
 

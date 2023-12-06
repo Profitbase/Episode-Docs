@@ -1,25 +1,19 @@
----
-title: "Setup"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 3
----
-
-### Overview
+# Setup
+## Overview
 This is the setup page for the loan module. On this page, you can configure settings such depreciation accounts, depreciation rates and so on as well as configure the input page in terms of which columns to include and how to name them.<br/>
 A separate document deals with the setup, please refer to the "How to's" link below.<br/>
 <br/>
 
 ![](https://profitbasedocs.blob.core.windows.net/plannerimages/CapExSetup.JPG)
 
-### Descriptions
+## Descriptions
 
 Each table and columns are described below.
 
 Key columns used for matching when looking up correct setting is marked (k).
 
 
-#### Investment: Depreciation
+### Investment: Depreciation
 This table defines settings for investments depreciation. Different settings can be applied to all og specific companies and Asset Groups and yielding From Date.
 
 Columns:
@@ -46,7 +40,7 @@ This is the counter-account to depreciation which is a balance account for accru
 Free text string to help document settings.
 <br/>
 
-#### Investment: Accounts
+### Investment: Accounts
 This table defines the accounts involved with investments.
 
 Columns:
@@ -65,7 +59,7 @@ This is the account for agio and disagio. When investing and paying in foreign c
 Free text string to help document settings.
 <br/>
 
-#### DecliningBalance StopValue
+### DecliningBalance StopValue
 This table defines the default residual value limit and will be used whenever the ResidualValue is left out from Investment: Depreciation above.
 
 Columns:
@@ -80,7 +74,7 @@ Defines the residual value limit to stop depreciation calculation.
 Free text string to help document settings.
 <br/>
 
-### How to`s
+## How to`s
 
 <br/>
 

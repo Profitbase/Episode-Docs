@@ -1,10 +1,5 @@
----
-title: "Data permissions"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 4
----
-### Overview
+# Data permissions
+## Overview
 
 Data permissions are used to limit or grant access to dimensions.<br/>
 Here, the **department** is considered the most important dimension. <br/>

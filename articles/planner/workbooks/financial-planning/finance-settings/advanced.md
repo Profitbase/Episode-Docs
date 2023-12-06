@@ -1,22 +1,17 @@
----
-title: "Advanced"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 9
----
+# Advanced
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.2 or later.
 
-### Overview
+## Overview
 
 
-### Descriptions
+## Descriptions
 
 Each table and columns are described below.
 
 Key columns used for matching when looking up correct setting is marked (k).
 
-####Advanced: Misc. postings
+### Advanced: Misc. postings
 This module allows you to post miscellaneous debit/credit postings that are required to make up the complete virtual ledger such as tax, bookkeeping of profit/loss, etc.
 
 Due to the nature of the module, both an account and a counter account is involved even for transactions within the same legal entity (double entry accounting).

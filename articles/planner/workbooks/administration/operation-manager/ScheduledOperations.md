@@ -1,12 +1,8 @@
----
-title: "Scheduled Operations"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
+# Scheduled Operations
+
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Common 5.3.0 or later
 
-### Overview
+## Overview
 
 This page is used to schedule background operations that keep the system updated.
 
@@ -16,7 +12,7 @@ This page is designed to be more accessible and makes use of the [Operations](Op
 
 A warning icon ![img](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/warning_24.png)  will show if any problems are detected, such as no steps defined, or taret object not found in system. Click that icon to see the warning message.
 
-####  Active functions in the listing:
+###  Active functions in the listing:
 
 These are the most commonly used functions on this page, and have therefore been added directly in the listing:
 
@@ -31,7 +27,7 @@ These are the most commonly used functions on this page, and have therefore been
 
 
 
-#### Click on the 3 dots menu in the operations list to view all possible actions:
+### Click on the 3 dots menu in the operations list to view all possible actions:
 
 
 **Edit** - Edit an operation : Rename, add translation, set the category or add a comment.
@@ -53,7 +49,7 @@ These are the most commonly used functions on this page, and have therefore been
 
 
 
-#### Version Execution Mode
+### Version Execution Mode
 
 Select from the list of Processes using the checkbox.
 
@@ -61,7 +57,7 @@ When a Process has been selected, "Current Version" will be selected by default,
 
 ![](https://profitbasedocs.blob.core.windows.net/plannerimages/versionexecutionmode.png)
 
-#### Steps
+### Steps
 
 Steps on this page should only consist of "[Operations](Operations.md)", defined on page 2.
 
@@ -72,7 +68,7 @@ Hovering a step, will also display 4 small buttons to navigate to the operation 
 To add a step, use the (orange) Actions menu top right: a popup will appear, so you can select an [Operation](Operations.md) from the list. Optionally, give it a more user friendly name and proper translation.
 
 
-#### Schedule
+### Schedule
 
 To add a schedule, use the (orange) Actions menu top right: a popup will appear where you can specify any type of time interval, daily, weekly, monthly or a CRON expression (advanced).
 
@@ -81,7 +77,7 @@ Multiple Schedules can be combined to produce very specific plans.
 To delete a schedule, hover over it, and click the trash icon.
 
 
-### Related Pages
+## Related Pages
 
 [Operations](Operations.md)
 

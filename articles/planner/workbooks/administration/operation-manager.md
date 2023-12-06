@@ -1,15 +1,11 @@
----
-title: "Operation Manager"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
+# Operation Manager
+
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.0 or later
 
-### Overview
+## Overview
 Create, edit, add, delete or schedule operations.
 
-### Related Pages
+## Related Pages
 [Scheduled Operations](operation-manager/ScheduledOperations.md)  
 [Operations](operation-manager/Operations.md)  
 

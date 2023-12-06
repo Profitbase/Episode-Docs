@@ -1,11 +1,6 @@
----
-title: "Account details"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
+# Account details
 
-### Overview
+## Overview
 This is the input page of the Account module and is where any detailed planning per account takes place.
 <br/>
 
@@ -41,13 +36,13 @@ In the left section, the mandatory Department filter is displayed. The content o
 <br/>
 
 
-### Video
+## Video
 
 ![Introduction](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/AccountInput.mp4)
 
 <br/>
 
-### Column Descriptions
+## Column Descriptions
 
 - **Account**<br/>
 The account to which the input will be associated. If historical reference columns are included, the input sheet for a particular department will be pre-filled with the accounts that the department historically have used.<br/>
@@ -71,7 +66,7 @@ Input field enabling textual comments to be associated with the input for a spec
 
 <br/>
 
-### How to`s
+## How to`s
 
 <br/>
 

@@ -1,11 +1,5 @@
----
-title: "Account Details Report"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 3
----
-
-### Overview
+# Account Details Report
+## Overview
 This page displays budget details per account for a given report line.<br/>
 The report will typically include transactions produced by multiple input modules.
 <br/>

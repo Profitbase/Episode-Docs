@@ -153,7 +153,7 @@
       - name: Worksheet
         href: videos/worksheet.md
     - name: Change log
-      href: changelog/index.md
+      href: changelog.md
       items:
       - name: Change log 2023.7
         href: changelog/changelog23_7.md

@@ -1,13 +1,8 @@
----
-title: "Additional dim. mapping"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 7
----
+# Additional dim. mapping
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.2 or later.
 
-# Overview
+## Overview
 
 Normally, an account is mapped to a single report line for any given report. In some cases, however, additional dimensionality is required to define the mapping to a reportline. For example if a given account is split between two report lines depending on the value of the Activity dimension.
 
@@ -19,7 +14,7 @@ Select the report in question in the leftmost filter to display the current addi
 
 ![img](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/AdditionalDimMapping1.JPG)
 
-### Column Descriptions
+## Column Descriptions
 
 - **Report Line ID**<br/>
 The Report Line ID for the line of the currently selected report. Readonly.<br/>

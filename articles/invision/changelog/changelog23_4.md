@@ -209,7 +209,7 @@ By pressing “Insert template”, you get a default script with template tags t
 
 #### See Also
 
-- [Change Log 2023.6](changelog23_7.md)
+- [Change Log 2023.7](changelog23_7.md)
 - [Change Log 2023.6](changelog23_6.md)
 - [Change Log 2023.5](changelog23_5.md)
 - [Change Log 2023.3](changelog23_3.md)

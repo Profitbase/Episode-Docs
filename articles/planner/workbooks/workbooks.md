@@ -1,10 +1,5 @@
----
-title: "Workbooks"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 3
----
-### Overview
+# Workbooks
+## Overview
 Profitbase Planner provides a Web interface organized in Workbooks that are grouped as listed below. This is the same grouping that will appear in the menu in every workbook. See the example in the picture below.
 
 ![](https://profitbasedocs.blob.core.windows.net/plannerimages/menu.jpg)
@@ -13,7 +8,7 @@ Users with access restrictions will not have access to the full set of workbooks
 
 The full set of workbook groups and workbooks are:
 
-#### Financial Planning
+## Financial Planning
 Here you find workbooks related to Forecast and Budget input and settings for finance simulation.
 
 - **[CapEx](financial-planning/capex.md)**<br/>
@@ -39,7 +34,7 @@ Plan input to Budget.
 - **[Forecast](financial-planning/forecast.md)**<br/>
 Plan input to rolling Forecast.
 
-####Process and tasks
+## Process and tasks
 Here you find workbooks for setting up a work process and manage process tasks and ad-hoc tasks.
 
    - **[Tasks](process-and-tasks/tasks.md)**<br/>
@@ -54,7 +49,7 @@ Here you find workbooks for setting up a work process and manage process tasks a
    - **[Version Manager](process-and-tasks/version-manager.md)**<br/>
    Create and manage the work process.
 
-####Data management
+## Data management
 Here you find workbooks for managing data such as exchange rates, dimension data, and transaction data.
 
    - **[Source fact data](data-management/report-setup.md)**<br/>
@@ -80,7 +75,7 @@ Here you find workbooks for managing data such as exchange rates, dimension data
    - **[Dimensions and Currency exchange rates](data-management/dimensions-and-currency-exchange-rates.md)**<br/>
    Management exchange rates and edit dimensional content.
 
-####Administration
+## Administration
 Here you find workbooks for user access, system setup, and data process flow for operation.
 
    - **[Operation Manager](administration/operation-manager.md)**<br/>

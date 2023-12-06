@@ -1,8 +1,4 @@
----
-title: "Changelog EPM Common 5.2.6"
-metaKeys: "Changelog"
-pageIndex: 90
----
+# Changelog EPM Common 5.2.6
 
 **Changes:**
 

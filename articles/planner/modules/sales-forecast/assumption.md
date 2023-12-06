@@ -1,11 +1,5 @@
----
-title: "Assumption"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 4
----
-
-### Overview
+# Assumption
+## Overview
 Display the assumption values for a measure of that type, i.e. a lookup type of measure, for example a unit price.<br/>
 Subject to configuration, you may override the central (default) value and revert to use the central (default) value.<br/>
 <br/>

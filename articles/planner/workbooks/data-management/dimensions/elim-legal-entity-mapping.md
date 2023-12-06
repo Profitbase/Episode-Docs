@@ -1,16 +1,12 @@
----
-title: "Elim. Legal Entity Mapping"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 5
----
-# Overview
+# Elim. Legal Entity Mapping
+-
+## Overview
 
 Allows you to map elimination companies to trade between operational companies. Applicable in stituations where intercompany trading takes place.
 
 ![](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/ElimLegalEntity.JPG)
 
-### Column Descriptions
+## Column Descriptions
 
 - **Legal Entity**<br/>
 The source Legal entity of the intercompany relation. Mandatory. Select from the drop down list.

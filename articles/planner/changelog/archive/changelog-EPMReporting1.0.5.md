@@ -1,8 +1,4 @@
----
-title: "Changelog EPM Reporting 1.0.5"
-metaKeys: "Changelog"
-pageIndex: 85
----
+# Changelog EPM Reporting 1.0.5
 
 **Changes:**
 

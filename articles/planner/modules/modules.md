@@ -1,10 +1,5 @@
----
-title: "Modules"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
-### Overview
+# Modules
+## Overview
 The success of most rolling Forecast solutions is largely dependent on how easy and efficient is it for the casual user to provide input. Planner, therefore, offers a rich set of Modules to make it convenient for users to provide input on:
 
 - [Input on Account](account.md) - traditional and easy but not necessarily easy for non-finance users.

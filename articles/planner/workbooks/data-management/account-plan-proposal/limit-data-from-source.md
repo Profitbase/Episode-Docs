@@ -1,12 +1,5 @@
----
-title: "Limit data from source"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 3
----
-
-
-### Overview
+# Limit data from source
+## Overview
 
 In this screen, the report lines that constitute the report found in the Plan overview workbook are displayed. Typically, the account module is used for only a subset of these report lines. If so, the proposal should be narrowed down to reflect this.
 

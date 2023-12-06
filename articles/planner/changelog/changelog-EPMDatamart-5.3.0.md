@@ -1,8 +1,4 @@
----
-title: "Changelog EPM Datamart 5.3.0 & 5.3.1"
-metaKeys: "Changelog"
-pageIndex: 83
----
+# Changelog EPM Datamart 5.3.0 & 5.3.1
 
 This document contains the new features and changes to the EPM Datamart release 5.3.0.
 

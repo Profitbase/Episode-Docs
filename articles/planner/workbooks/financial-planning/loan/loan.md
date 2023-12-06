@@ -1,11 +1,5 @@
----
-title: "Loan"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
-
-### Overview
+# Loan
+## Overview
 This is the input module in which to plan loans.
 
 <br/>
@@ -31,12 +25,12 @@ Select the appropriate tab to view the report or trend therein.
 <br/>
 
 
-### Video
+## Video
 ![Introduction - Input](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/Loan.mp4)<br/>
 
 <br/>
 
-### Column Descriptions
+## Column Descriptions
 
 Note that the heading of the columns and their visibility can be configured and may thus differ from the example.<br/>
 
@@ -76,7 +70,7 @@ Input field enabling textual comments to be associated with the input for a spec
 
 <br/>
 
-### How to`s
+## How to`s
 
 <br/>
 

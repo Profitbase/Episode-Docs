@@ -1,13 +1,8 @@
----
-title: "Manage comments"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 5
----
+# Manage comments
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.2 or later.
 
-### Overview
+## Overview
 
 In this page you are able to add one or more comments to a specific report line in Plan summary. Comments may be added at any hierarchical level with respect to the (mandatory) Departmentment filter and the (optional) Activity and Project filters.
 
@@ -17,7 +12,7 @@ Enter your new comment in the Leave new comment textbox and click Save. The new 
 
 ![](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/PlanOverviewLastCommented.JPG)
 
-### Column Descriptions (Previous comments)
+## Column Descriptions (Previous comments)
 
 - **Comment**<br/>
 The comment previously given. Editable.

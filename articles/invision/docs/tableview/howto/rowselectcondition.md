@@ -1,5 +1,4 @@
----
-title: "How to Use Row Selectability Condition"
+# How to Use Row Selectability Condition"
 metaKeys: "How to Use Row Selectability Condition"
 folderOnly: "false"
 pageIndex: 5

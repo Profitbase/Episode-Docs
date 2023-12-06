@@ -1,11 +1,5 @@
----
-title: "Import data"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
-
-### Overview
+# Import data
+## Overview
 
 This module is used to import data from external sources, such as CSV files from an Azure blob storage or any SQL database accessible from the Planner database.
 <br/>
@@ -14,10 +8,7 @@ This module is used to import data from external sources, such as CSV files from
 Each import "ruleset" created can either be started manually from the Data Import module, or be used to generate an operation (todo: link to Operation Manager).
 <br/>
 
-
 The general principle for Data Import jobs is:
-<br/>
-
 <br/>
 
 1 - Data must first be copied into an SQL temporary table, within Profitbase Planner.
@@ -33,15 +24,10 @@ The general principle for Data Import jobs is:
 
 <br/>
 
-
 Buttons will become active once the required information has been set up.
 <br/>
 
-
-<br/>
-
-
-#### Creating a new RuleSet for Data Import
+## Creating a new RuleSet for Data Import
 <br/>
 
 Click an existing RuleSet in the list to open it.
@@ -57,7 +43,7 @@ Each section for the ruleset will be described below.
 <br/>
 
 
-#### DATA IMPORT RULESET
+## DATA IMPORT RULESET
 
 <br/>
 
@@ -110,7 +96,7 @@ These 2 options are particularly useful when import jobs are automated with [Sch
 
 
 
-#### CONFIGURE SOURCE: AZURE BLOB STORAGE - CSV FILE (Option 1)
+## CONFIGURE SOURCE: AZURE BLOB STORAGE - CSV FILE (Option 1)
 
 <br/>
 
@@ -130,7 +116,7 @@ These 2 options are particularly useful when import jobs are automated with [Sch
 <br/>
 
 
-#### CONFIGURE SOURCE: DIRECT SQL (Option 2)
+## CONFIGURE SOURCE: DIRECT SQL (Option 2)
 
 <br/>
 
@@ -143,7 +129,7 @@ These 2 options are particularly useful when import jobs are automated with [Sch
 <br/>
 
 
-#### CONFIGURE TEMPORARY TABLE
+## CONFIGURE TEMPORARY TABLE
 
 <br/>
 
@@ -162,7 +148,7 @@ A preview button can be used to view the status of that table (if it exists).
 Once the temporary data has data, the column mapping must be set up between this temporary (staging) table and the final destination, as column names or types could differ.
 
 
-#### COLUMN MAPPING
+## COLUMN MAPPING
 
 <br/>
 
@@ -208,7 +194,7 @@ After the column mapping has been saved, a summary will be displayed in the fina
 <br/>
 
 
-#### (Optional) Creating Operations to automate Data Imports
+## (Optional) Creating Operations to automate Data Imports
 
 To run an import job, click the "Execute Now" button.
 
@@ -218,7 +204,7 @@ If you wish to automate this job or just expose it to the "Operation Manager" mo
 
 If you select multiple rulesets on the ruleset selection screen, that "Create Operation" button will create one operation with all the selections. The default name of the operation will become all ruleset names, comma separated (but may be renamed).
 
-### Related Pages
+## Related Pages
 
 [Scheduled Operations](../../administration/operation-manager/ScheduledOperations.md)
 [Operations](../../administration/operation-manager/Operations.md)

@@ -1,13 +1,8 @@
----
-title: "View report data"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 11
----
+# View report data
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4  (removed from Planner 5).
 
-# Overview
+## Overview
 This is to inspect report setup. Since the purpose of this report is to inspect and test report setups, this report contains a mix of normal report data and definitions used to control the report such as formula and style.
 
 With reference to the screen:
@@ -20,7 +15,7 @@ The upper right "Forecast start" tells which calendar period the forecast start.
 2. **Content Section** <br/>
 The content section shows the reporting lines including sub-totals per period for a selected year. The Forecast dataset is composed of Actual data for periods before the Forecast start and Forecast input data from the Forecast start period (as shown in the upper right in the report).
 
-### Filter Descriptions
+## Filter Descriptions
 Filter selections available apart from Department are:
 
 - **Report**<br/>This allows for selecting between different report configurations
@@ -30,7 +25,7 @@ Filter selections available apart from Department are:
 - **Time function**<br/>Selecting Month will show the numbers for each month. Selecting Year-to-date will show the sum of this and preceding periods including OB for balance type reports. To see balanced you have to use Year-to-date.
 - **Currency**<br/>Choose which currency to the used in the report. Average rate for each period is used for currency conversion.
 
-### Column Descriptions
+## Column Descriptions
 
 - **ID**<br/>
 The unique identity for the report line.

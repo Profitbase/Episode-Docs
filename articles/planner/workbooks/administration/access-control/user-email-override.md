@@ -1,10 +1,5 @@
----
-title: "User email override"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 5
----
-### Overview
+# User email override
+## Overview
 
 If the email reported by Azure/Active Directory is wrong, you can override this field here.
 

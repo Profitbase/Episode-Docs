@@ -1,11 +1,5 @@
----
-title: "GM% periodic override"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
-
-### Overview
+# GM% periodic override
+## Overview
 The purpose of this page is to allow for overriding the GM% per period. The page is accessed from the Sales details page of the Sales by GM module.
 <br/>
 
@@ -19,7 +13,7 @@ To discard any changes made or to close the page, click the "Close" button.
 
 <br/>
 
-### Column Descriptions
+## Column Descriptions
 
 - **Product ("ProductID_Name" in the example):**<br/>
 The Product for the row in question.

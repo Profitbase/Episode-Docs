@@ -1,13 +1,8 @@
----
-title: "Operation execution log"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 6
----
+# Operation execution log
 
  **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x
  
-### Overview
+## Overview
 
 The execution history of an operation can be found here:
 

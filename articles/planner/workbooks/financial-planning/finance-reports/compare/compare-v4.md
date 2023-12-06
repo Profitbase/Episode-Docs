@@ -1,13 +1,8 @@
----
-title: "Compare - Planner 4"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
+# Compare - Planner 4
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4
 
-### Overview
+## Overview
 This report is used for comparing actual results against budget and forecast. The forecast dataset is combining actual data up until forecast start and forecast data from forecast start and forward. 
 
 This report contains sections to comparing the selected period, year-to-date, rest-of-year and year-total.
@@ -32,7 +27,7 @@ The content section shows the reporting lines including rows for sub-totals. The
 
 The Forecast dataset is composed of Actual data for periods before the Forecast start and Forecast input data from the Forecast start period (as shown in the upper right in the report).
 
-### Filter Descriptions
+## Filter Descriptions
 Filter selections available apart from Department are:
 
 - **Report**<br/>Allow selecting different report configurations.
@@ -43,7 +38,7 @@ Filter selections available apart from Department are:
 - **Timefunction**<br/>Not relevant for this report setup.
 - **Currency**<br/>Choose which currency to the used in the report. Average rate for each period is used for currency conversion.
 
-### Column Descriptions
+## Column Descriptions
 
 Number-columns explained:
 
@@ -55,7 +50,7 @@ Number-columns explained:
 - **Act.+Forecast**<br/> This contains the sum of Actual year-to-date and Forecast rest-of-year. Note that the selected month controls the year-to-date and rest-of-year.
 - **Act.+Budget**<br/> This contains the sum of Actual year-to-date and Budget rest-of-year. Note that the selected month controls the year-to-date and rest-of-year.
 
-### How to`s
+## How to`s
 
 <br/>
 

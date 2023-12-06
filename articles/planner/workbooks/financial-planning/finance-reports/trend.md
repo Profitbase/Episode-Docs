@@ -1,13 +1,8 @@
----
-title: "Trend"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 7
----
+# Trend
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5 or later.
 
-### Overview
+## Overview
 This report shows the line graph over periods for all report lines enabled for trending.
 Report lines available for trending (selectable item to the right) is a subset of all report lines. The set enabled for trending is configured when defining the report lines.
 
@@ -33,7 +28,7 @@ The content section shows graph lines for all report lines that are configured e
 
 The graph shows 3 fiscal years of data and 12 periods per year. The selected fiscal year appears as the middle year.
 
-### Filter Descriptions
+## Filter Descriptions
 Filter selections available apart from Department are:
 
 - **Report**<br/>Allows for selecting between different report configurations
@@ -45,7 +40,7 @@ Filter selections available apart from Department are:
 
 Note that optional columns and filter under "Options" is not available for this report.
 
-### Graph Descriptions
+## Graph Descriptions
 
 Each graph line represents a reporting line enabled for trending in the selected report. The amount is plotted on a per million scale. Moving the mouse over a period, will show a shared tooltip that present all amounts for the period.
 
@@ -53,7 +48,7 @@ Click on the bottom legend to toggle on/off graph lines. This is useful to enabl
 
 The graph series appearing here is configured in the [Report Setup](../../data-management/report-setup.md).
 
-### How to`s
+## How to`s
 
 <br/>
 

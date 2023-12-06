@@ -1,8 +1,5 @@
----
-title: "Changelog 5.2.1"
-metaKeys: "About Profitbase InVision, terminology, Concepts Clarification, Platform ,Customer solution, Product, EPM suite, Business module, Base package, Configuration, Modification, Custom, Work Process/process, Version, Task, Settings, Calculation, Planning vs budget/forecast, Sandbox, Planner, Standard Planner, Extended Planner, Simulation, Sensitivity, Analysis, Assumption, Blueprint, Blueprint solution, Package, Template, Data Mart, Data Pool, Compound View, InVision Solution, Platform upgrade, Package upgrade, Synonym, Cloning of solution, Partner, Implementation, Referral, Full, InVision "
-pageIndex: 98
----
+# Changelog 5.2.1
+
 The top section contains an abstract of the new features and main changes. The bottom section contains a detailed list of GitLab issues registered for this release. Items marked with "Bug" contains bug fixes.
 
 **General**

@@ -1,5 +1,4 @@
----
-title: "How to's"
+# How to's"
 metaKeys: "how to "
 folderOnly: "false"
 pageIndex: 1

@@ -1,11 +1,5 @@
----
-title: "Trend"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
-
-### Overview
+# Trend
+## Overview
 This page enables graphical trending of the individual report lines in the Profit & Loss report.
 <br/>
 

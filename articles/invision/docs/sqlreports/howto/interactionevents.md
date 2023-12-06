@@ -1,5 +1,4 @@
----
-title: "How To Use ChartInteractionEvent"
+# How To Use ChartInteractionEvent"
 metaKeys: "How To Use ChartInteractionEvent"
 folderOnly: "false"
 pageIndex: 3

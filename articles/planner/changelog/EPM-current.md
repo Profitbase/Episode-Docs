@@ -1,9 +1,4 @@
----
-title: "Profitbase EPM - current version"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
+# Profitbase EPM - current version
 
 **Last updated:** October 3rd 2023
 

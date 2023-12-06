@@ -1,10 +1,5 @@
----
-title: "Sales details"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
-### Overview
+# Sales details
+## Overview
 This is the the Sales by GM% input module and is where any detailed budgeting of sales per product and market (and possibly other dimensions) takes place. 
 <br/>
 
@@ -25,12 +20,12 @@ The account report display the financial effect of the input made and is updated
 <br/>
 
 
-### Video
+## Video
 ![Introduction](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/SalesGMInput.mp4)
 
 <br/>
 
-### Column Descriptions
+## Column Descriptions
 
 - **Product, Market and possibly other dimensions depending on the configuration**<br/>
 
@@ -72,7 +67,7 @@ Input field enabling textual comments to be associated with the input for a spec
 
 <br/>
 
-### How to`s
+## How to`s
 
 <br/>
 

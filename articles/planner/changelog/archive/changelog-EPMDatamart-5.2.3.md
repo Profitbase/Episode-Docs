@@ -1,8 +1,4 @@
----
-title: "Changelog EPM Datamart 5.2.3"
-metaKeys: "Changelog"
-pageIndex: 96
----
+# Changelog EPM Datamart 5.2.3
 
 **Changes**
 

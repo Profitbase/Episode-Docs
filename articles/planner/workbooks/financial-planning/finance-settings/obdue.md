@@ -1,11 +1,6 @@
----
-title: "OBDue"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 7
----
+# OBDue
 
-### Overview
+## Overview
 This page contains settings related to how to use the opening balance with respect to opening values and accounts payable and receivable.
 <br/>
 
@@ -15,13 +10,13 @@ This page contains settings related to how to use the opening balance with respe
 2. **Tables View**<br/>The right area will display the selected tables and allows users to edit content.
 <br/>
 
-### Descriptions
+## Descriptions
 
 Each table and columns are described below.
 
 Key columns used for matching when looking up correct setting is marked (k).
 
-####OBDue: Other Payable
+### OBDue: Other Payable
 This table defines how payables in opening balance will be paid.
 
 Columns:
@@ -66,7 +61,7 @@ Free text string to help document settings.
 A simple way to use a setting that will last across period rollovers for forecast, is to leave the DueDate empty, specify Due % and PlusDays. This way the percent of the balance will be paid the number of days after the OB-date or plan start date (OB-date should be on plan start date).
 <br/>
 
-####OBDue: Other Receivable
+### OBDue: Other Receivable
 This table defines how receivable in the opening balance should be paid.
 
 Columns:
@@ -102,7 +97,7 @@ Free text string to help document settings.
 A simple way to use a setting that will last across period rollovers for forecast, is to leave the DueDate empty, specify Due % and PlusDays. This way the percent of the balance will be paid the number of days after the OB-date or plan start date.
 <br/>
 
-####OBDue: Terms
+### OBDue: Terms
 This table defines alternative accounts for different type of term payments such as VAT and employer tax, tax payment, duty etc.
 
 Columns:
@@ -121,7 +116,7 @@ Alternative account for short-term credit (e.g. tax payment)
 Free text string to help document settings.
 <br/>
 
-#### OBDue: Agio- / Disagio Accounts
+### OBDue: Agio- / Disagio Accounts
 
 - **Legal Entity (k)**<br/>
 Legal Entity applicable.
@@ -136,7 +131,7 @@ Counter account for agio-disagio.
 - **Comments**<br/>
 Free text string to help document settings.
 
-### Examples
+## Examples
 
 The following will describe a few typical examples for how to set up due payments based on opening balance:
 - Vacation Pay
@@ -145,7 +140,7 @@ The following will describe a few typical examples for how to set up due payment
 
 Any of the others will be similar to these 3 examples.<br/><br/>
 
-#### Vacation Pay Explained
+### Vacation Pay Explained
 
 Vacation pay is normally (in Norway) earned the calendar year before it is paid. Vacation pay is due for example June every year for the vacation pay accrued the year before.
 

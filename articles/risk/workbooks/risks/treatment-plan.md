@@ -1,5 +1,4 @@
----
-title: "Add treatment plan"
+# Add treatment plan"
 metaKeys: ""
 folderOnly: "false"
 pageIndex: 2

@@ -1,11 +1,5 @@
----
-title: "Account Usage"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 9
----
-
-### Overview
+# Account Usage
+## Overview
 This page gives an overview of accounts usage in different settings tables. This report page is intended for debugging purposes.
 
 Instructions for use:
@@ -22,8 +16,8 @@ This table list all accounts in all settings tables. The Settings Name column pr
 This table will show the details on selected row in Account Usage table.
 <br/>
 
-### Descriptions
-#### Account Usage
+## Descriptions
+### Account Usage
 
 - **Legal Entity:**<br/>
 Legal Entity ID. Note that wildcard for all Legal Entities (*) may be used here.
@@ -42,7 +36,7 @@ Name of settings table. This is an action column to trigger display in Setting d
 
 <br/>
 
-#### Setting Details
+### Setting Details
 This table shows the column name and values from the selected combination of account and settings table in the table to the left.
 
 - **Name**<br/>

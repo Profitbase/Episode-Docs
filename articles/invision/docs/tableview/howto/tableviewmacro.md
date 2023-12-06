@@ -1,5 +1,4 @@
----
-title: "How to use Macro Expansion in Table View"
+# How to use Macro Expansion in Table View"
 metaKeys: "How to Use Macro Expansion in Table View"
 folderOnly: "false"
 pageIndex: 2
