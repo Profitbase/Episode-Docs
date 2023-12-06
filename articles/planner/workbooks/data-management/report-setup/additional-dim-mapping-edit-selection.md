@@ -1,13 +1,8 @@
----
-title: "Additional dim. mapping - Edit selection"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 8
----
+# Additional dim. mapping - Edit selection
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.2 or later.
 
-# Overview
+## Overview
 
 This page allows you to define the mapping between additional dimensions (to account) to the selected report line.
 

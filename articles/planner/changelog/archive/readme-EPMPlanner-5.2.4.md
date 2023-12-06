@@ -1,8 +1,4 @@
----
-title: "Upgrade notes EPM Planner 5.2.4"
-metaKeys: "Changelog"
-pageIndex: 1002
----
+# Upgrade notes EPM Planner 5.2.4
 
 Supports upgrade to Planner 5.2.4 from Planner 5.0.x, 5.1.x, 5.2.0, 5.2.1, 5.2.2 and 5.2.3
 

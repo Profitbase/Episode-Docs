@@ -1,19 +1,15 @@
----
-title: "Translations"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 4
----
+# Translations
+
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.4.1 or later.<br/>
 
-# Overview
+## Overview
 This page allows you to maintain translation related to reports, report lines amd dimensions.<br/>
 
 Select the type from the Type drop down and the lanuage of choice from the Language drop down.
 
 ![](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/ReportSetupTranslations.JPG)
 
-### Column Descriptions
+## Column Descriptions
 
 - **Type**<br/>
 The type, either ReportID, ReportLineID or DimensionID. Mandatory. Filled in from the selection made in the type drop down.
@@ -26,7 +22,7 @@ The translated text. Mandatory.
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.2 or later.
 
-# Overview
+## Overview
 This is the page for defining report line translations.
 
 Select a report in the left margin in order to display and edit the associated report lines.  
@@ -38,7 +34,7 @@ When changes are done and saved, click the Publish button to publish these chang
 
 ![img](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/ReportLineTranslations.JPG)
 
-### Column Descriptions
+## Column Descriptions
 
 - **Report Line ID**<br/>
 Readonly on this page, see [Report lines](report-lines.md) for details.

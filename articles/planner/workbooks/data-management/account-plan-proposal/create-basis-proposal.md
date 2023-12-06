@@ -1,12 +1,5 @@
----
-title: "1. Create basis proposal"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
-
-
-### Overview
+# 1. Create basis proposal
+## Overview
 
 This is the main screen for defining the basis proposal. A quick guide to the process is shown in the workbook itself.
 
@@ -22,7 +15,7 @@ Once, the "map source datasets to plan" table is set up, consider the other opti
 
 To finish off the basis proposal section, click the "Create basis proposal" button. This will produce the basis proposal that will be found on the following page [2. Adjust basis proposal and import](adjust-basis-proposal-and-import.md) and can be further detailed and finally imported there.
 
-### Map source datasets to plan
+## Map source datasets to plan
 
 This screen defines how the plan will be pre-filled with data from the source dataset(s). In its simplest form, the plan is filled from a specific source dataset, for example using the source dataset constituted by last year's actuals:
 
@@ -40,7 +33,7 @@ This can be achieved by detailing the "Map source datasets to plan" table with m
 ![](https://profitbasedocs.blob.core.windows.net/plannerimages/map-source-datasets-to-plan2.JPG)
 
 
-#### Columns
+### Columns
 
 - **Plan - Legal Entity**<br/>
 The part of the organization that this source dataset mapping applies to. Note that a hierarchical selection (ranked input) applies. Please refer to the general description of ranked input selection [Common functionality](../../../getting-started/common-functionality.md) 
@@ -51,9 +44,9 @@ The (source) date from which the proposal is drawn.
 - **Source - Dataset**<br/>
 The (source) dataset from which the proposal is drawn. Select from the drop down that will include standard datasets such as Actuals as well as plan versions that are made available for use. 
 
-#### Options
+### Options
 
-#### Limit data from source
+### Limit data from source
 
 In most cases, the use of the account module is limited to operational expenses as other more specific modules such as driver based and personnel are used for sales, payroll and so on. 
 
@@ -63,7 +56,7 @@ This can be done by clicking the "Limit data from source" button.
 
 Refer to [Limit data from source](limit-data-from-source.md)
 
-#### Account - dimensions
+### Account - dimensions
 
 When creating the proposal, it is recommended to review the account module dimensions settings for the current version. Specifically, the level of details used, i.e. which optional dimensions are visible, and more specifically whether or not details for any of those optional dimensions should be drawn from the source. 
 
@@ -78,13 +71,13 @@ This can be achieved in the "Account - dimensions" screen by:
 
 ![](https://profitbasedocs.blob.core.windows.net/plannerimages/account-dimensions.JPG)
 
-#### Override dataset mapping
+### Override dataset mapping
 
 Although the "Map source datasets to plan" definition outlined above will normally suffice, cases may exist where it is necessary to override this mapping for certain parts of the organization, for example for a new department for which no source data exists and where the source of the proposal may in fact be taken from another, comparable, department. Such overrides may be set by clicking the "Override dataset mapping" button.
 
 Refer to [Override dataset mapping](override-dataset-selection.md)
 
-#### Set adjustment factors
+### Set adjustment factors
 
 By default, a 1:1 relationship is made between the amounts in the source datasets and what will constitute the proposed amounts. In some cases, however, it may be required to adjust those amounts, for example accounting for general changes in consumption prices or expectations for the future. Such factors can be set, by clicking the "Set factor adjustments" button.
 

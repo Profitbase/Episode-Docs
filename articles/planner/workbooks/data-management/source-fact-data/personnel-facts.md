@@ -1,11 +1,5 @@
----
-title: "Personnel facts"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
-
-### Overview
+# Personnel facts
+## Overview
 This is the Personnel facts page that allows you to input personnel fact data as the basis for the personnel input module.
 <br/>
 
@@ -20,7 +14,7 @@ This is the Personnel facts page that allows you to input personnel fact data as
 <br/>
 The fact source data contain current FTE, monthly salary and other personnel data (subject to configuration) data per department/employee combinations:
 
- ### Column Descriptions
+## Column Descriptions
 
 - **Departm.:**<br/>
 The department id, mandatory.
@@ -89,7 +83,7 @@ To check which combinations will be processed into the budget and forecast modul
 
 Modules can be updated manually by clicking the “Update forecast”/”Update budget” buttons.
 
-### How to`s
+## How to`s
 
 <br/>
 

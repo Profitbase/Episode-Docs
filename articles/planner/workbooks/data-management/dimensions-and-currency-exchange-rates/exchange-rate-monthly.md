@@ -1,11 +1,5 @@
----
-title: "Exchange rate monthly"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
-
-### Overview
+# Exchange rate monthly
+## Overview
 Here you can override and inspect the monthly exchange rates including regenerating the monthly rates.
 <br/>
 
@@ -19,7 +13,7 @@ The publish button is used to generate monthly rates based on daily exchange rat
 3. **Exchange Rates Monthly**<br/>
 The table to the right shows the daily exchange rates generated. Using the filter capabilities, you can inspect exchange rates between different combination of currencies.
 
-### Descriptions
+## Descriptions
 
 Monthly average exchange rates are used for most currency conversions. An exception is the simulation to generate the general ledger which will use any level of detail down to daily exchange rate. To get the same currency
 
@@ -27,7 +21,7 @@ Each table and columns is described below.
 
 Columns marked with (k) is key columns that will be used to match transactions when exchange rates are deployed in calculations.
 
-#### Exchange Rate Historical Monthly Override
+### Exchange Rate Historical Monthly Override
 This table allows you to override monthly exchange rates.
 
 Columns:
@@ -58,7 +52,7 @@ Note that all rates must be input as the rate that you use to convert an amount 
 Exchange rates are published on all business days depending on the publisher working calendar. Therefore you will not get exchange rates published on public holidays. That is why the term "rate days" is used above.
 <br/>
 
-#### Exchange Rates Monthly
+### Exchange Rates Monthly
 This table is a report (read-only) showing the generated monthly rates. Selecting From Currency, To Currency and Year you can inspect any rate.
 
 The Comments column is here used to tell that this is historical rate or forecast (i.e. future) rate.

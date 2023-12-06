@@ -1,13 +1,7 @@
----
-title: "Cash Monthly"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 5
----
-
+# Cash Monthly
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5 or later.
 
-### Overview
+## Overview
 This report shows how cash is developing over the periods of a year. 
 <br/>
 
@@ -26,7 +20,7 @@ Starting with the upper left "Cash Available OB", cash movements in and out is d
 3. **Left Section** <br/>
 The left section contains the Department filter and gives the ability to slice data according to an organization hierarchy. 
 
-### Filter Descriptions
+## Filter Descriptions
 Filter selections available apart from Department are:
 
 - **Fiscal Year** <br/>
@@ -40,13 +34,13 @@ Choose which currency to the used in the report. Average rate for each period is
 
 Note that optional columns and filter under "Options" is not available for this report.
 
-### Column Descriptions
+## Column Descriptions
 Number-columns explained:
 
 - **MMM YY** <br/> these 12 columns contain numbers from the selected dataset and shows the changes for each period.
 - **Total** <br/> shows the sum of changes over the period.
 
-### How to`s
+## How to`s
 
 <br/>
 

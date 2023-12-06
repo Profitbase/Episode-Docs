@@ -1,11 +1,6 @@
----
-title: "Setup"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 4
----
+# Setup
 
-### Overview
+## Overview
 This page allows you to configure the Profit and Loss input modules such as Personnel and Account. By configuration means the dimensionality, the use of historical reference columns and so on.<br/>
 You can also name the modules, control their availability to end-users and how the individual modules are tied to specific report lines of the profit and loss summary report used in the:<br/>
 
@@ -29,13 +24,13 @@ This is where you can tie an input module to a specific report line. This tie co
 Please refer to the relevant module document in the "How to's" section below for details.
 <br/>
 
-### The Base settings table
+## The Base settings table
 
 ![](https://profitbasedocs.blob.core.windows.net/plannerimages/base-settings.JPG)
 
 The Base settings table contains settings that span all profit and loss input modules.
 
-### Column Descriptions
+## Column Descriptions
 
 - **Setting ID**<br/>
 
@@ -80,7 +75,7 @@ NOTE: in such scenarios, no set should be named Actual in the external source. N
 
 Short description of the individual setting.<br/>
 
-### How to`s
+## How to`s
 
 <br/>
 

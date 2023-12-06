@@ -1,13 +1,8 @@
----
-title: "Department"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 4
----
+# Department
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x, 5.0 or 5.1
 
-### Overview
+## Overview
 Here you can manage the Department dimension hierarchy and attributes including adding new departments. This table is the source for the Department dimension.
 <br/>
 
@@ -26,7 +21,7 @@ Often departments are imported from an external source. In this case the default
 - External source will have priority for Department Description, legal entity associations and will add new departments.
 - Local edits will have priority for hierarchical information contained in the Hierarchy level 1-6 (see below). Local edits can also add departments and delete departments.
 
-### Descriptions
+## Descriptions
 
 The Department dimension is a mandatory dimension in Profitbase Planner. Departments represent the input level for budgets and forecasts. Each department must belong to one legal entity.
 
@@ -34,7 +29,7 @@ Note that the ID for department must be unique across all companies. One way to 
 
 Columns marked with (k) is key columns that will be used to match transactions when exchange rates are deployed in calculations.
 
-#### Hierarchy
+### Hierarchy
 
 The department dimension hierarchy by default consists of 8 levels, including the actual department and the legal entity, in the following order:
 
@@ -59,7 +54,7 @@ The same applies to Legal entity that is padded - repeated - to Hierarchy level 
 
 The number of hierarchical levels can be changed but has to be done using the Profitbase InVision designer. Legal entity does not have to be a level in the hierarchy, but it has to be present in the table and filled in.
 
-#### Column Descriptions:
+### Column Descriptions:
 
 - **Departm. (k)**<br/>
 Department ID text string to identify the department.

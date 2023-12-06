@@ -1,13 +1,8 @@
----
-title: "Finance advanced input"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 4
----
+# Finance advanced input
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.3 or later
 
-### Overview
+## Overview
 This is the Finance advanced input module. It allows input directly on the native financial engine sources Sales, Purchase, Payroll and Expense. The module may be used in cases where other, operationalized modules can not be used or for gaining a better understanding of the financial engines themselves and the transactions they produce.<br/>
 
 A major difference compared to ther modules, is the transactional nature of the input, each input specifies the transaction date.<br/>
@@ -23,12 +18,12 @@ Multiple input models can be set up in the Setup page in which a selection of en
 Models that are published contribute to the plan while data from unpublished models is ignored.<br/>
 <br/>
 
-### Related Pages
+## Related Pages
 -  [Source data](finance-native/input-data.md)<br/>
 -  [Report](finance-native/report.md)<br/>
 -  [Setup](finance-native/setup.md)<br/>
 
-### How to`s
+## How to`s
 
 <br/>
 

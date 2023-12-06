@@ -1,8 +1,4 @@
----
-title: "Changelog 5.2.2"
-metaKeys: "Changelog"
-pageIndex: 97
----
+# Changelog 5.2.2
 
 The top section contains an abstract of the new features and main changes. The bottom section contains a detailed list of GitLab issues registered for this release. Items marked with "Bug" contains bug fixes.
 

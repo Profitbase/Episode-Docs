@@ -1,10 +1,5 @@
----
-title: "Financial Planning"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
-### Overview
+# Financial Planning
+## Overview
 Here you find workbooks related to plan input and settings for finance simulation.
 
 - **[CapEx](../../workbooks/financial-planning/capex.md)**<br/>

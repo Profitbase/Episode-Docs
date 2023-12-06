@@ -1,8 +1,4 @@
----
-title: "Changelog EPM Reporting 1.0.7 and EPM Finance Reports 1.0.2"
-metaKeys: "Changelog"
-pageIndex: 77
----
+# Changelog EPM Reporting 1.0.7 and EPM Finance Reports 1.0.2
 
 This document contains the new features and changes to the EPM Reporting 1.0.7 and REP Finance Reports 1.0.2.
 

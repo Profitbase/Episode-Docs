@@ -1,17 +1,13 @@
----
-title: "Plan overview"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
+# Plan overview
+
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5 or later<br/>
 
-### Overview
+## Overview
 This is the main workbook for planning profit and loss and is likely to be the most commonly used workbook for the contributors to the plan. It serves as a plan-in-progress overview and as a launch site for the various input modules used for detailed planning.
 
 <br/>
 
-### Related Pages
+## Related Pages
 -  [Summary](../../workbooks/financial-planning/plan-overview/summary.md)
 -  [Account details report](../../workbooks/financial-planning/plan-overview/account-details.md)
 -  [Trend](../../workbooks/financial-planning/plan-overview/trend.md)
@@ -20,7 +16,7 @@ This is the main workbook for planning profit and loss and is likely to be the m
 
 <br/>
 
-### How to`s
+## How to`s
 
 <br/>
 

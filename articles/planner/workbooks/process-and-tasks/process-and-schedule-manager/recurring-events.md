@@ -1,10 +1,5 @@
----
-title: "Recurring events"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 3
----
-### Overview
+# Recurring events
+## Overview
 
 Create or modify events. 
 The schedule is defined on [Rec. Event Calendar](rec-event-calendar.md)
@@ -12,7 +7,7 @@ The schedule is defined on [Rec. Event Calendar](rec-event-calendar.md)
 
 ![](https://profitbasedocs.blob.core.windows.net/plannerimages/RecEvent.png)
 
-### Column Descriptions
+## Column Descriptions
 
 - **Event**<br/>
 Abbreviation of the event name. Must be unique.

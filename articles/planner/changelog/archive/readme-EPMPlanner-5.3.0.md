@@ -1,8 +1,4 @@
----
-title: "Upgrade notes EPM Planner 5.3.0"
-metaKeys: "Changelog"
-pageIndex: 1001
----
+# Upgrade notes EPM Planner 5.3.0
 
 Supports upgrade to Planner 5.3.0 from Planner 5.0.x, 5.1.x, 5.2.x
 

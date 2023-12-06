@@ -1,11 +1,5 @@
----
-title: "Delete"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 8
----
-
-### Overview
+# Delete
+## Overview
 This page allows you to delete the model data or the complete model, including data and its configuration and settings.
 <br/>
 

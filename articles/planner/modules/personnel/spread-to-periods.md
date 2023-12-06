@@ -1,11 +1,5 @@
----
-title: "Spread to periods"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 5
----
-
-### Overview
+# Spread to periods
+## Overview
 This is the page for defining how per-month-per-FTE input values given for an employee/employee category should be spread to periods. The default spread is an even spread, that is the per-month-per-FTE input value is spread to all periods with a value identical to the input value.
 <br/>
 
@@ -20,7 +14,7 @@ In the example, a spread key for Bonus has been added to employee Lisa. The effe
 
 <br/>
 
-### Column Descriptions
+## Column Descriptions
 
 - **Employee:**<br/>
 The employee/employee category to apply the spread key to.

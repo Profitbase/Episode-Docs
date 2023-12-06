@@ -1,10 +1,5 @@
----
-title: "Tasks"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
-### Overview
+# Tasks
+## Overview
 This workbook is used to manage all assigned tasks.
 <br/>
 
@@ -20,7 +15,7 @@ Some tasks will be automatically pushed to users from the process tasks, which a
 <br/>
 Other tasks can be created and assigned to users on an "ad-hoc" basis.
 
-### Related Pages
+## Related Pages
 - [My tasks](../../workbooks/process-and-tasks/tasks/my-tasks.md)
 - [All tasks](../../workbooks/process-and-tasks/tasks/all-tasks.md)
 - [Statistics](../../workbooks/process-and-tasks/tasks/statistics.md)

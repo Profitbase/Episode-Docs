@@ -1,13 +1,8 @@
----
-title: "Cash"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 4
----
+# Cash
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5 or later.
 
-### Overview
+## Overview
 This report gives an insight to the cash simulation and is hence only applicable for plan dataset versions. 3 charts are used to show different degree of detail for cash development from simulating based on plan input on operation, loan, investments.
 
 To use this report:
@@ -32,7 +27,7 @@ The left section contains the Department filter and gives the ability to slice d
 5. **Cash Detail** - shows details for cash in and out such as vacation pay, VAT due, salary pay, etc.
 The Forecast dataset is input data only from the Forecast start period (as shown in the upper right in the report).
 
-### Filter Descriptions
+## Filter Descriptions
 Filter selections available apart from Department are:
 
 - **Fiscal Year**<br/>Select start year to look at data.
@@ -43,7 +38,7 @@ Filter selections available apart from Department are:
 
 Note that optional columns and filter under "Options" is not available for this report.
 
-### Graph Descriptions
+## Graph Descriptions
 
 For all graphs there are a "total cash" line that is sum of all bars. One exception to this is the Cash Total which also contains the opening balance. For a plan dataset (e.g. Forecast), the cash total line contains the aggregated cash from Actual dataset for periods before the forecast start period. All other lines and contributions are from simulations for plan dataset version from Forecast and Budget processes.
 
@@ -51,7 +46,7 @@ In general, for Actual data there will not be sufficient details from the Genera
 
 Note that you can click on the ledger to toggle on/off any of the graph elements. This can make it easier to see smaller value items since the graph rescale when large values is toggled off.
 
-### How to`s
+## How to`s
 
 <br/>
 

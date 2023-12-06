@@ -1,9 +1,4 @@
----
-title: "Changelog EPM Datamart 5.2.5"
-metaKeys: "Changelog"
-pageIndex: 87
----
-
+# Changelog EPM Datamart 5.2.5
 **Changes:**
 
 - Data Import / Export - Copy Ruleset function (#1177)

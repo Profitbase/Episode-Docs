@@ -1,13 +1,8 @@
----
-title: "Report lines"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
+# Report lines
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.2 or later.
 
-# Overview
+## Overview
 This is the page for maintaining report lines and their main properties, such as visual appearance, etc..  
 
 Select a report in the left margin in order to display and edit the associated report lines.  
@@ -42,7 +37,7 @@ For details on the formatting options, please refer to Profitbase Financial Repo
 
 Various options regardingf legacy Profitbase reporting. Relevant only if you use Profitbase legacy reporting.
 
-### Column Descriptions
+## Column Descriptions
 
 - **Report Line ID**<br/>
 ID text string to uniquely identify the report line. Recommended naming convention is to use a prefix that identifies the report followed by the part to identify the line. All IDs should have the same length and the IDs determine the sorting sequence of the report lines. Note that the example above allows for inserting lines between the IDs without extending or changing the names of other report lines.

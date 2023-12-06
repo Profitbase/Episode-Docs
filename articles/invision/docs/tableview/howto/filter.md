@@ -1,5 +1,4 @@
----
-title: "How to Use Hierarchical Filter in Table View"
+# How to Use Hierarchical Filter in Table View"
 metaKeys: "How to Use Hierarchical Filter in Table View, Declare_FilterAlias"
 folderOnly: "false"
 pageIndex: 4

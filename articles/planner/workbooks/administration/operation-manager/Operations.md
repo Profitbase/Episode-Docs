@@ -1,12 +1,8 @@
----
-title: "Operations"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
+# Operations
+
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Common 5.3.0 or later
 
-### Overview
+## Overview
 
 This page is used to create operations that are made available as steps for the [Scheduled Operations](ScheduledOperations.md) on page 1.
 
@@ -62,7 +58,7 @@ The Object selection dropdown has text search enabled to help find the step.
 
 Arguments (advanced) may be added to objects of the type SQL Script and PowerShell. The Data Import module, for example, makes use of these arguments.
 
-### Related Pages
+## Related Pages
 
 [Scheduled Operations](ScheduledOperations.md)
 

@@ -1,11 +1,5 @@
----
-title: "Connections"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 4
----
-
-### Overview
+# Connections
+## Overview
 
 From Datamart version 5.3.0, the concept of reusable connections has been added. Instead of setting up all the connection fields one by one for each ruleset, you can now define all avaliable connections in one place, and reuse them.
 
@@ -14,7 +8,7 @@ The connections can be SQL Databases or Azure Blob Storages, and can be used for
 When upgrading from a previous version, all existing connections will be created using all existing rulesets.
 
 
-#### SQL Database
+## SQL Database
 
 Required Fields:
 <br/>
@@ -24,7 +18,7 @@ Required Fields:
 <br/>
 - User / Password: Credentials used to connect.
 
-#### Azure Blob Storage
+## Azure Blob Storage
 
 Required Fields:
 <br/>

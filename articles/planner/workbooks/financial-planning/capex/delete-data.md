@@ -1,11 +1,5 @@
----
-title: "Delete data"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 4
----
-
-### Overview
+# Delete data
+## Overview
 This page allows you to delete investment data for a given year.<br/>
 This will typically be a function that you might do for historical years, i.e. in order to delete investments that are no longer relevant.
 <br/>

@@ -1,18 +1,13 @@
----
-title: "Currency exchange rates and calendar"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
+# Currency exchange rates and calendar
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5 or later
 
-### Overview
+## Overview
 This is the workbook for maintaining currency exchange rates and the global calendar.
 
 <br/>
 
-### Related Pages
+## Related Pages
 
 -  [Exchange rates daily](dimensions-and-currency-exchange-rates/exchange-rate-daily.md)
 -  [Exchange rate monthly](dimensions-and-currency-exchange-rates/exchange-rate-monthly.md)
@@ -21,7 +16,7 @@ This is the workbook for maintaining currency exchange rates and the global cale
 
 <br/>
 
-### How to`s
+## How to`s
 
 <br/>
 

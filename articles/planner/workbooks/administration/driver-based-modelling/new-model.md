@@ -1,11 +1,5 @@
----
-title: "New model"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 5
----
-
-### Overview
+# New model
+## Overview
 This page allows you to create a new driver based model.
 <br/>
 

@@ -1,11 +1,6 @@
----
-title: "Expense"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 4
----
+# Expense
 
-### Overview
+## Overview
 This page contains settings related to operating expenses.
 <br/>
 
@@ -15,13 +10,13 @@ This page contains settings related to operating expenses.
 2. **Tables View**<br/>The right area will display the selected tables and allows users to edit content.
 <br/>
 
-### Descriptions
+## Descriptions
 
 Each table and columns are described below.
 
 Key columns used for matching when looking up correct setting is marked (k).
 
-#### Expense: Accounts
+### Expense: Accounts
 This table identifies the accounts to be used when creating expense transactions.
 
 Columns:
@@ -46,7 +41,7 @@ Account for employment tax.
 Free text string to help document settings.
 <br/>
 
-#### Expense: Days Of Credit
+### Expense: Days Of Credit
 This table defines the number of days until expenses will be paid.
 
 Columns:
@@ -67,7 +62,7 @@ Number of days to payment.
 Free text string to help document settings.
 <br/>
 
-#### Expense: Accrued
+### Expense: Accrued
 This table is used to define expenses that are accrued for payment at regular terms.
 
 Columns:
@@ -97,7 +92,7 @@ Free text string to help document settings.
 
 <br/>
 
-#### NonCash: Counter Account
+### NonCash: Counter Account
 Transactions matching these settings (Legal Entity and Account) will be posted as "non-cash". A non-cash transaction means that the input transactions matching LegalEntity and Account will generate a transaction on selected counteraccount only - not involving any payments.  
 
 Note that any other functions that would involve this account will be deactivated for this Legal Entity and Account combination.

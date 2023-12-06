@@ -1,11 +1,5 @@
----
-title: "Exchange rate daily"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
-
-### Overview
+# Exchange rate daily
+## Overview
 This page is to manage exchange rates.
 <br/>
 
@@ -22,7 +16,7 @@ The publish button is used to process any changes and overrides to exchange rate
 3. **Exchange Rates Daily**<br/>
 The table to the right shows the daily exchange rates generated from historical and future rates. Using the filter capabilities, you can inspect exchange rates between different  combination of currencies.
 
-### Descriptions
+## Descriptions
 
 By default the system will import historical exchange rates and rely on the Exchange Rate table for future rates. Note that future rates will be generated after the last historical date.
 
@@ -36,7 +30,7 @@ Each table and columns is describe below.
 
 Columns marked with (k) is key columns that will be used to match transactions when exchange rates are deployed in calculations.
 
-#### Exchange Rate
+### Exchange Rate
 This table controls the exchange rates and is in itself sufficient to run Profitbase Planner with exchange rates.
 
 Please ensure that you define exchange rates early enough to cover dates from the beginning of fiscal year. This is because simulation may use (depending on your settings) due payments using opening balance. Failing to do so will cause the simulation to not be able to complete correctly. Every exchange rate will last from the date given and until a new Value is provided on a new From Date.
@@ -61,7 +55,7 @@ Exchange rate that can be used for scenario simulation purposes and is the low r
 Free text sting to help document settings.
 <br/>
 
-#### Exchange Rate Historical Daily Override
+### Exchange Rate Historical Daily Override
 This table  is used to override historical exchange rates and allows for specifying from and to currency to make it convenient to input familiar rates.
 
 Note that each row here will only override historical rates (not future rates) and only for the "From Date" date.
@@ -80,7 +74,7 @@ This is the rate that you use to convert an amount in currency as defined in Fro
 Free text sting to help document settings.
 <br/>
 
-#### Exchange Rates Daily
+### Exchange Rates Daily
 This table is a report (read-only) showing the generated daily rates. Selecting From Currency, To Currency and Year you can inspect any rate.
 
 The Comments column is here used to tell that this is historical rate or forecast (i.e. future) rate.

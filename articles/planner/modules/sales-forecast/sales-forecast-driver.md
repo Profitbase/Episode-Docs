@@ -1,11 +1,5 @@
----
-title: "Sales main driver"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
-
-### Overview
+# Sales main driver
+## Overview
 This is the Sales main driver view in which the driver can be adjusted and the financial effect of doing so can be viewed.
 
 <br/>
@@ -30,12 +24,12 @@ Note that for forecasting, the current year (this year) will consist of a set of
 <br/>
 
 
-### Video
+## Video
 ![Introduction](https://profitbasedocs.blob.core.windows.net/enduserhelp/videos/ForecastSalesInput.mp4)<br/>
 
 <br/>
 
-### Column Descriptions 
+## Column Descriptions 
 
 - **Go to detail pop-up icon**<br/>
 
@@ -90,7 +84,7 @@ Input field enabling textual comments to be associated with the input for a spec
 
 <br/>
 
-### How to`s
+## How to`s
 
 <br/>
 

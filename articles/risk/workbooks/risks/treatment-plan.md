@@ -1,9 +1,4 @@
----
-title: "Add treatment plan"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
+# Add treatment plan
 
 ## Add a treatment plan
 

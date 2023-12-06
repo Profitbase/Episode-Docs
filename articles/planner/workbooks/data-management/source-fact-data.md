@@ -1,23 +1,17 @@
----
-title: "Source fact data"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 3
----
-
-### Overview
+# Source fact data
+## Overview
 This is the workbook to use for entering source fact data for the Personnel and Sales forecast modules. Note that for some solutions, this source fact data may be imported from external sources and may not be maintained locally in Planner<br/>
 - Personnel facts - the current FTE and monthly salary data for employees/employee categories planned. Any content will initialize (fill) the budget and forecast input modules.
 - Sales forecast facts - historical (reference) data for measures, e.g. actual prices and rates. Any content will initialize (fill) the sales forecast input module.
 <br/>
 
-### Related Pages
+## Related Pages
 -  [Personnel facts](source-fact-data/personnel-facts.md)
 -  [Sales forecast facts](source-fact-data/sales-forecast-facts.md)
 
 <br/>
 
-### How to`s
+## How to`s
 
 <br/>
 

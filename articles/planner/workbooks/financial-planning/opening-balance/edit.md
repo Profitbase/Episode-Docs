@@ -1,11 +1,5 @@
----
-title: "Edit"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
-
-### Overview
+# Edit
+## Overview
 This page allows for adjusting opening balances for Forecast and Budget dataset and with start date as controlled by the roll-forward process.
 <br/>
 
@@ -36,7 +30,7 @@ During simulation these values are deployed according to [Finance Settings OBDue
 Providing the balance for the last 3 month helps the system to deal with due payments on the balance. Providing the last full year balance help the system to apply e.g. vacation pay based on last year actual.
 
 
-### Column Descriptions
+## Column Descriptions
 
 - **Account**<br/>
 Account id and description.

@@ -1,11 +1,5 @@
----
-title: "Exclude dimension items"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 9
----
-
-### Overview
+# Exclude dimension items
+## Overview
 This page allows you to exclude certain dimension members from being available for end-users when using this model.
 <br/>
 

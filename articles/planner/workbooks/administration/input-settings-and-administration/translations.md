@@ -1,19 +1,15 @@
----
-title: "Translations"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 8
----
+# Translations Overview
+
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.4.1 or later.<br/>
 
-# Overview
+
 This page allows you to maintain translation related to input modules and models you have created for the driver based and finance advanced modules.<br/>
 
 Select the input module from the Input module drop down and the lanuage of choice from the Language drop down.
 
 ![](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/InputSettingsTranslations.JPG)
 
-### Column Descriptions
+## Column Descriptions
 
 - **ModuleExtensionID**<br/>
 The module ID. Mandatory. Filled in from the selection made in the Input module drop down.

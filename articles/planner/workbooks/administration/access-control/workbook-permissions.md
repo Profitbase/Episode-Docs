@@ -1,10 +1,5 @@
----
-title: "Workbook permissions"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 3
----
-### Overview
+# Workbook permissions
+## Overview
 
 1. Go to the "Workbook Permission" tab
 2. Highlight your solution or appropriate node in the "Workbook and Pages" section

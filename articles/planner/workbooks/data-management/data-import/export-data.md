@@ -1,11 +1,5 @@
----
-title: "Export data"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 3
----
-
-### Overview
+# Export data
+## Overview
 
 This module is used to export data from Profitbase Planner to external sources, such as CSV files in Azure blob storages or any SQL database made available.
 <br/>
@@ -15,7 +9,7 @@ Each export "ruleset" created can either be started manually from the Data Expor
 
 The general principle for Data Export jobs is:
 <br/>
-<br/>
+
 1 - Select a source within Profitbase Planner.
 <br/>
 2 - Column Mapping must be set up to match the correct columns between the source table or view, and the actual destination table. This step allows for SQL transform formulas.
@@ -31,7 +25,7 @@ Buttons will become active once the required information has been set up.
 
 <br/>
 
-#### Creating a new RuleSet for Data Export
+## Creating a new RuleSet for Data Export
 <br/>
 Click an existing RuleSet in the list to open it.
 <br/>
@@ -42,7 +36,7 @@ Each section for the ruleset will be described below.
 
 <br/>
 
-#### DATA EXPORT RULESET
+## DATA EXPORT RULESET
 
 <br/>
 <b>Ruleset name:</b> A short name for the data import job, so it can easily be identified in the list.
@@ -58,7 +52,7 @@ A "Test Connection" button is available, and will also be automatically triggere
 
 <br/>
 
-#### CONFIGURE DESTINATION: AZURE BLOB STORAGE - CSV FILE (Option 1)
+## CONFIGURE DESTINATION: AZURE BLOB STORAGE - CSV FILE (Option 1)
 
 <br/>
 <b>File name:</b> The file will be created with that name. If a file exists with the same name, it will be overwritten.
@@ -72,7 +66,7 @@ A "Test Connection" button is available, and will also be automatically triggere
 
 <br/>
 
-#### CONFIGURE DESTINATION: DIRECT SQL (Option 2)
+## CONFIGURE DESTINATION: DIRECT SQL (Option 2)
 
 <br/>
 <b>Destination table:</b> Select from the list of tables on the destination. If the connection fails, this list will be empty.
@@ -88,7 +82,7 @@ A "Test Connection" button is available, and will also be automatically triggere
  - Stored Procedure: Select from the list of stored procedures found on the destination.
 <br/>
 
-#### COLUMN MAPPING
+## COLUMN MAPPING
 
 <br/>
 Mandatory step to perform the copy of data from the SQL temporary table to the final destination.
@@ -121,7 +115,7 @@ Clicking auto-cast, will use any mappings set up, and automatically add a transf
 
 <br/>
 
-#### (Optional) Creating Operations to automate Data Exports
+## (Optional) Creating Operations to automate Data Exports
 
 To run an export job, click the "Execute Now" button.
 <br/>
@@ -130,7 +124,7 @@ This will perform all the steps above, which consists of one step, a dataflow wi
 If you wish to automate this job or just expose it to the "Operation Manager" module of the Profitbase Planner, the "Create Operation" button will create an operation with the same name as the ruleset, under the application "EPMDataMart" and the category "Data Export".
 <br/>
 
-### Related Pages
+## Related Pages
 
 [Data Import](import-data.md)
 [Scheduled Operations](../../administration/operation-manager/ScheduledOperations.md)

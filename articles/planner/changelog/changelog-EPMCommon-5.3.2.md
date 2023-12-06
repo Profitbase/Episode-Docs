@@ -1,8 +1,4 @@
----
-title: "Changelog EPM Common 5.3.2"
-metaKeys: "Changelog"
-pageIndex: 78
----
+# Changelog EPM Common 5.3.2
 
 This document contains the new features and changes to the EPM Common release 5.3.2.
 

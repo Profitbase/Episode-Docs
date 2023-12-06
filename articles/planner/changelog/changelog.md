@@ -1,9 +1,5 @@
----
-title: "Changelog"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 99
----
+# Changelog
+
 ### What's new?
 Learn about the cool new features, updates, and bug fixes.
 

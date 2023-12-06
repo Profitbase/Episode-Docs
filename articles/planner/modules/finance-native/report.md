@@ -1,18 +1,13 @@
----
-title: "Report"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
+# Report
 
-### Overview
+## Overview
 Enables reporting on the data produced by the selected input model.<br/>
 Set a dimensional context and click the Refresh button to load the report. If no data is presented, this may be due to the model not being published or due to the finance baseline not being run. Click the Exexute baseline button to run the finance baseline.<br/>
 <br/>
 
 ![](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/FinanceNativeReport.JPG)
 
-### How to`s
+## How to`s
 
 <br/>
 

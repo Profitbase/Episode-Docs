@@ -1,9 +1,4 @@
----
-title: "Market"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 7
----
+# Market
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x, 5.0 or 5.1
 

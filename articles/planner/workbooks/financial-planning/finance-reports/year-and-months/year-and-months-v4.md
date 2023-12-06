@@ -1,13 +1,8 @@
----
-title: "Year and Months - Planner 4"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
+# Year and Months - Planner 4
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4
 
-### Overview
+## Overview
 This report provides a period view for selected Report showing all periods of the selected year. For Profit & Loss type of reports, a total sum over periods for the year is provided. For Balance Sheet type reports, an Opening Balance (OB) and Closing Balance (CB) are provided.
 
 See an example of this report in picture below.
@@ -23,7 +18,7 @@ The upper right "Forecast start" tells which calendar period the forecast start.
 2. **Content Section** <br/>
 The content section shows the reporting lines including sub-totals per period for a selected year. The Forecast dataset is composed of Actual data for periods before the Forecast start and Forecast input data from the Forecast start period (as shown in the upper right in the report).
 
-### Filter Descriptions
+## Filter Descriptions
 Filter selections available apart from Department are:
 
 - **Report**<br/>This allows for selecting between different report configurations
@@ -34,7 +29,7 @@ Filter selections available apart from Department are:
 - **Timefunction**<br/>Selecting Month will show the numbers for each month. Selecting Year-to-date will show the sum of this and preceding periods including OB for balance type reports. To see balanced you must use Year-to-date.
 - **Currency**<br/>Choose which currency to the used in the report. Average rate for each period is used for currency conversion.
 
-### Column Descriptions
+## Column Descriptions
 The number columns explained:
 
 - **MMM YY**<br/> These 12 columns contain numbers from the selected dataset.
@@ -42,7 +37,7 @@ The number columns explained:
 - **OB**<br/> This is the Opening Balance and is only visible for Balance Sheet type reports.
 - **CB**<br/> This is the Closing Balance and is only visible for Balance Sheet type reports. This is the sum of the OB and the 12 periods.
 
-### How to`s
+## How to`s
 
 <br/>
 

@@ -1,10 +1,5 @@
----
-title: "Setup"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 7
----
-### Overview
+# Setup
+## Overview
 1. Configure additional task types and their labels.
 <br/>
 2. Configure workbooks and their labels.

@@ -1,11 +1,5 @@
----
-title: "Fixed Assets"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 6
----
-
-### Overview
+# Fixed Assets
+## Overview
 This page defines input and settings form fixed assets.
 <br/>
 
@@ -15,13 +9,13 @@ This page defines input and settings form fixed assets.
 2. **Tables View**<br/>The right area will display the selected tables and allows users to edit content.
 <br/>
 
-### Descriptions
+## Descriptions
 
 Each table and columns are described below.
 
 Key columns used for matching when looking up correct setting is marked (k).
 
-####FixedAsset
+### FixedAsset
 This table is the input table for defining fixed asset balance and depreciation.
 
 You can choose to register assets using the purchase value and purchase date or purchase value and accumulated depreciations up until the opening balance date.
@@ -76,7 +70,7 @@ Free text string to help document settings.
 Optional dimensions
 <br/>
 
-####DecliningBalance StopValue
+### DecliningBalance StopValue
 This table defines when depreciation assets will stop.
 
 Columns:

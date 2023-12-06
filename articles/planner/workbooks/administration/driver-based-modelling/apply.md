@@ -1,11 +1,5 @@
----
-title: "Apply changes to model"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 6
----
-
-### Overview
+# Apply changes to model
+## Overview
 This page allows you to apply any model configuration changes to the model and to update the model with historical data.
 <br/>
 

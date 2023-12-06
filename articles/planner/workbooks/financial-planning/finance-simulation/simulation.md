@@ -1,11 +1,6 @@
----
-title: "Simulation"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
+# Simulation
 
-### Overview
+## Overview
 Simulation is used to calculate how the finance general ledger will develop into the future. Simulation is based on user input and parameter settings. User input is different transactions on expected sales, purchase, payroll and expenses. Finance settings cover parameters on which accounts to use and different rates to be applied to input.
 
 A baseline is always calculated and is normally done by a scheduled task.
@@ -37,11 +32,11 @@ Best case is to increase the sales by 20% (Best = 1.2) and worst case is that sa
 
 <br/>
 
-### Descriptions
+## Descriptions
 
 The scale factor tables are described below and columns that are key columns is marked with (k).
 
-#### Sales: Source Factor
+### Sales: Source Factor
 Set the scale factor to scale sales input.
 
 Columns:
@@ -68,7 +63,7 @@ Set a number to scale the sales input to the factor that represent and decrease 
 Free text sting to help document settings.
 <br/>
 
-#### Salary: Source Factor
+### Salary: Source Factor
 Set the scale factor to scale salary input.
 
 Columns:
@@ -93,7 +88,7 @@ Set a number that represent an increase in total salary cost.
 Free text sting to help document settings.
 <br/>
 
-####  Expense: Source Factor
+###  Expense: Source Factor
 Set the scale factor to scale expense input.
 
 Columns:
@@ -118,7 +113,7 @@ Set a number that represent an increase in total expense.
 Free text sting to help document settings.
 <br/>
 
-#### Purchase: Source Factor
+### Purchase: Source Factor
 Set the scale factor to scale purchase input.
 
 Columns:

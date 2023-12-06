@@ -1,11 +1,6 @@
----
-title: "Calculation"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 7
----
+# Calculation
 
-### Overview
+## Overview
 This page allows you to define a calculation tied to a model measure.
 <br/>
 

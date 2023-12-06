@@ -1,14 +1,9 @@
----
-title: "Process and schedule manager"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
-### Overview
+# Process and schedule manager
+## Overview
 Administrator workbook for all process tasks and recurring events.
 <br/>
 
-### Related Pages
+## Related Pages
 - [Process tasks](process-and-schedule-manager/process-tasks.md)
 - [Processes](process-and-schedule-manager/processes.md)
 - [Recurring events](process-and-schedule-manager/recurring-events.md)

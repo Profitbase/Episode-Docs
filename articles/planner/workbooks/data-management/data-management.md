@@ -1,10 +1,6 @@
----
-title: "Data Management"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 3
----
-### Overview
+# Data Management
+
+## Overview
 Here you find workbooks for managing data such as exchange rates, dimension data and transaction data.
 
    - **[Source fact data](source-fact-data.md)**<br/>

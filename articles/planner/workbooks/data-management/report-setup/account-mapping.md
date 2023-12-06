@@ -1,13 +1,8 @@
----
-title: "Account mapping"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 3
----
+# Account mapping
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.2 or later.
 
-# Overview
+## Overview
 This is the page for defining the mapping between report lines and accounts.
 
 Select a report in the left margin in order to display and edit the associated report lines.  
@@ -19,7 +14,7 @@ When changes are done and saved, click the Publish button to publish these chang
 
 ![img](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/AccountMapping.JPG)
 
-### Column Descriptions
+# Column Descriptions
 
 - **Report Line ID**<br/>
 Readonly on this page, see [Report lines](report-lines.md) for details.

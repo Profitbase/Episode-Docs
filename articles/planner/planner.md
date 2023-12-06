@@ -1,11 +1,5 @@
----
-title: "Planner"
-metaKeys: "About Profitbase InVision, Application Development, platform, build flexible business solutions, components, business modules,  integrate, RESTful Web API, connecting directly to the SQL data storage, extended, custom, Profitbase InVision Designer, developer tool, Microsoft Visual Studio, features, code libraries, packages, prebuilt Solution components, Templates, Solution components"
-folderOnly: "false"
-pageIndex: 1
----
-
-### About Profitbase Planner
+# Planner
+## About Profitbase Planner
 
 Profitbase Planner is a financial planning tool covering the annual budgeting and rolling forecast processes.
 
@@ -32,7 +26,7 @@ The hamburger menu will reflect the work processes and versions created.
 
 <br/>
 
-### About Profitbase Planner
+## About Profitbase Planner
 
 Profitbase Planner provides the ability to do extensive and accurate planning for financial planning processes such as rolling forecast and budget. The main parts of Planner are:
 

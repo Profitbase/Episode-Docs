@@ -1,11 +1,6 @@
----
-title: "Account Details Report"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 3
----
+# Account Details Report
 
-### Overview
+## Overview
 This page displays forecast details per account for a given report line.<br/>
 The report will typically include transactions produced by multiple input modules.
 <br/>

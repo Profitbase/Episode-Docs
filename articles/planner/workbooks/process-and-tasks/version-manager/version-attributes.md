@@ -1,10 +1,5 @@
----
-title: "Version attributes"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 2
----
-### Overview
+# Version attributes
+## Overview
 Once created, some of the version's attributes can be maintained. This is done in the "Version attributes" page:
 
 <br/>

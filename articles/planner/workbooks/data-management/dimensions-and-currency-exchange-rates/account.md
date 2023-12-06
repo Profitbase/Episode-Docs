@@ -1,9 +1,4 @@
----
-title: "Account"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 5
----
+# Account
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x, 5.0 or 5.1
 
@@ -27,7 +22,7 @@ Often accounts are imported from an external source. In this case the default pr
 
 If you choose to edit account description or translations and delete an account that is imported from external source, the edits will be overwritten, and the deleted account will be added from external source.
 
-#### Hierarchy
+## Hierarchy
 
 The account dimension hierarchy by default consists of 4 levels, including the actual account, in the following order:
 
@@ -50,7 +45,7 @@ The account dimension hierarchy is used for defining Finance settings and not fo
 
 When designing this hierarchy, the main consideration should therefore be the granularity most suitable for defining finance settings.<br/>
 
-### Column Descriptions
+## Column Descriptions
 
 - **Account**<br/>
 The account identifier.

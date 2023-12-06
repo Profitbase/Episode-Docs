@@ -1,9 +1,4 @@
----
-title: "Create New Risk"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
+# Create New Risk
 
 ## Create New Risk
 

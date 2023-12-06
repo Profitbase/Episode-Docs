@@ -1,13 +1,8 @@
----
-title: "Reports"
-metaKeys: ""
-folderOnly: "false"
-pageIndex: 1
----
+# Reports
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4 or later.
 
-# Overview
+## Overview
 This is to define new reports and edit attributes related to reports.
 
 A report is the entity that hold a set of report lines. Reports are used to define typical finance reports such as Profit & Loss, Balance and Cashflow.  
@@ -20,7 +15,7 @@ Note that from Planner 5.2, this page renders in a pop-up as opposed to a separa
 Right-click mouse to insert a new row for new report.
 <br/>
 
-### Column Descriptions
+## Column Descriptions
 
 - **Report ID (k)**<br/>
 ID text string to uniquely identify the report. Mandatory.
