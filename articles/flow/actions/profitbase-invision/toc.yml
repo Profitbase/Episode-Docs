@@ -8,6 +8,8 @@
   href: "get-db-table-name-for-object.md"
 - name: "Get database table name for Dimension"
   href: "get-db-table-name-for-dimension.md"
+- name: "Get Data Store metadata"
+  href: "get-data-store-metadata.md"
 - name: "Calculation Flow"
   items: 
   - name: "Overview"
