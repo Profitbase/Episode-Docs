@@ -20,6 +20,9 @@
     href: "calculation-flow/distribution-keys.md"
   - name: "Auto transactions"
     href: "calculation-flow/auto-transactions.md"
+    items: 
+    - name: "FilterByContext"
+      href: "calculation-flow/auto-transactions/auto-transaction-filter-by-context.md"
   - name: "Read Calculation Flow DB Input"
     href: "calculation-flow/read-calculation-flow-db-input.md"
   - name: "Define Calculation Flow DB Output"

@@ -27,7 +27,7 @@ To generate auto transactions, do the following:
 
 | Name                            | Description                                  |
 |---------------------------------|----------------------------------------------|
-| FilterByContext(bool)           | Returns the Auto Transactions having key match against the data source input row currently used as context. | 
+| [FilterByContext(bool)](auto-transactions/auto-transaction-filter-by-context.md)           | Returns the Auto Transactions having key match against the data source input row currently used as context. | 
 | FilterByContextDistinctByTypeField(bool) | Returns the Auto Transactions having key match against the data source input row currently used as context, also filtered by the `Auto Transaction type` property. If you have specified the `Auto transaction type` property, you should use this API to avoid the possibility of getting duplicates. |
 | UseContext(input)               |                                              |
 | Set{FieldId}Context(string)     | Sets the value used for matching against {FieldId} in the Auto Transaction table. For example, `SetDepartmentIDContext("a")` will set "a" as the value to match against the `DepartmentID` field in the Auto Transaction table. Use the `Get{FieldId}Context()` and `Set{FieldId}Context()` when you need to change the search context on a granular level, for example if you generate Auto Transactions in a Distribution Key loop.  |
