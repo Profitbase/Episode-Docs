@@ -9,6 +9,27 @@ Setting this value to true will include the fallback Auto Transaction row (if sp
 The fallback Auto Transaction row is the row where the "All Level" value is set on all key columns. 
 Use this feature if you want to define an Auto Transaction that should _always_ be created, in addition to specific ones.
 
+### Pseudo
+
+**AutoTrans**
+
+| X    | Y   | Value  |
+|------|-----|--------|
+| *    | *   | 100    |
+| A    | B   | 200    |
+| A.1  | C.1 | 300    |
+| B    | B.1 | 400    |
+
+```dos
+
+input = { X = "A", Y = "B" }
+
+AutoTrans.UseContext(input);
+
+AutoTrans.FilterByContext() will return (A,B,200)
+AutoTrans.FilterByContext(true) will return [(A,B,200), (*,*,100)]
+```
+
 ### Example
 
 ```csharp
