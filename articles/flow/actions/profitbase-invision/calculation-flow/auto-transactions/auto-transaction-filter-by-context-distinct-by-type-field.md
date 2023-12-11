@@ -1,6 +1,6 @@
-# AutoTransaction.FilterByContext
+# AutoTransaction.FilterByContextDistinctByTypeField
 
-Returns the Auto Transactions having keys matching the key of the data source input row currently used as context.  
+Returns the Auto Transactions having keys matching the key of the data source input row currently used as context, in addition to also filtering by the `Auto Transaction type` property. If you have specified the `Auto transaction type` property, you must use this API to avoid the possibility of getting multiple matches pr Auto Transaction type.
 
 ## Parameters
 
@@ -8,10 +8,6 @@ Returns the Auto Transactions having keys matching the key of the data source in
 Setting this value to true will include the fallback Auto Transaction row (if specified) even if exact matches were found.  
 The fallback Auto Transaction row is the row where the "All Level" value is set on all key columns associated with dimensions. 
 Use this feature if you want to define an Auto Transaction that should _always_ be created, in addition to specific ones.
-
-### Pseudo
-
-The following example shows what will be returned from the "MySet" Auto Transaction table given the context {X,Y}.
 
 **Dimension X**  
 All  
@@ -29,10 +25,10 @@ All
 
 **MySet**
 
-| X    | Y   | Value  |
-|------|-----|--------|
-| *    | *   | 100    |
-| A    | T   | 200    |
+| X    | Y   | Value  | Type      |
+|------|-----|--------|-----------|
+| *    | *   | 100    | Phone     |
+| A    | T   | 200    | 
 | A.1  | T.1 | 300    |
 | B    | T.1 | 400    |
 
@@ -62,7 +58,7 @@ This example shows how to create one output transaction pr employee benefit for 
 
 ```csharp
 // Returns which employee benefits to generate for the given context.
-foreach(var autoTrans in this.AutoTransactions.EmployeeBenefits.FilterByContext())
+foreach(var autoTrans in this.AutoTransactions.EmployeeBenefits.FilterByContextDistinctByTypeField())
 {
     this.Output.Add(AccountID: autoTrans.TargetAccountID, Amount: amount * autoTrans.Factor);
 }
@@ -75,7 +71,7 @@ This example shows how to create one output transaction pr employee benefit for 
 ```csharp
 
 // Returns which employee benefits to generate for the given context, including the fallback row if present.
-foreach(var autoTrans in this.AutoTransactions.EmployeeBenefits.FilterByContext(true))
+foreach(var autoTrans in this.AutoTransactions.EmployeeBenefits.FilterByContextDistinctByTypeField(true))
 {
     this.Output.Add(AccountID: autoTrans.TargetAccountID, Amount: amount * autoTrans.Factor);
 }

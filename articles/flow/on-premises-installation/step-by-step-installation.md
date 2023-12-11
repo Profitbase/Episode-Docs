@@ -65,7 +65,7 @@ Under **API Permissions**, enable the following **Delegated permissions** for **
 1) In the Azure portal, choose an existing Service Bus Namespace or create a new one.
 2) Create queue **profitbase-flow-[instance name]-execution-queue**
 2) Create topic **profitbase-flow-[instance name]-change-notification-topic**
-3) Create topic **profitbase-flow-[instance name]-execution-broacast-topic**
+3) Create topic **profitbase-flow-[instance name]-execution-broadcast-topic**
 
 > [!NOTE]
 > You can name the queue and topics however you want. The names above are just a naming convention.

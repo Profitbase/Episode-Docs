@@ -23,6 +23,8 @@
     items: 
     - name: "FilterByContext"
       href: "calculation-flow/auto-transactions/auto-transaction-filter-by-context.md"
+    - name: "FilterByContextDistinctByTypeField"
+      href: "calculation-flow/auto-transactions/auto-transaction-filter-by-context-distinct-by-type-field.md"
   - name: "Read Calculation Flow DB Input"
     href: "calculation-flow/read-calculation-flow-db-input.md"
   - name: "Define Calculation Flow DB Output"
