@@ -39,6 +39,8 @@
     href: "calculation-flow/table-relationship.md"
   - name: "Parameter relationship"
     href: "calculation-flow/parameter-relationship.md"
+  - name: "Set lookups"
+    href: "calculation-flow/set-lookups.md"
 - name: "SQL Script"
   items:
     - name: "Execute SQL Script"
