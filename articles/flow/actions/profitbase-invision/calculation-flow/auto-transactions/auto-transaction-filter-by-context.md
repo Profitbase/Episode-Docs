@@ -14,20 +14,24 @@ Use this feature if you want to define an Auto Transaction that should _always_ 
 The following example shows what will be returned from the "MySet" Auto Transaction table given the context {X,Y}.
 
 **Dimension X**  
+
+```md
 All  
 |-- A  
 |---- A.1  
 |-- B  
 |---- B.1  
+```
 
-<br/>
 **Dimension Y**  
+
+```md
 All  
 |-- T  
 |---- T.1  
+```
 
-
-**MySet**
+**MySet (Auto Transactions)**
 
 | X    | Y   | Value  |
 |------|-----|--------|
@@ -80,3 +84,8 @@ foreach(var autoTrans in this.AutoTransactions.EmployeeBenefits.FilterByContext(
     this.Output.Add(AccountID: autoTrans.TargetAccountID, Amount: amount * autoTrans.Factor);
 }
 ```
+
+#### Continue reading
+
+To understand more about how the FilterByContext API works, read about:  
+[Set lookups](../set-lookups.md)
