@@ -8,6 +8,8 @@
   href: "get-db-table-name-for-object.md"
 - name: "Get database table name for Dimension"
   href: "get-db-table-name-for-dimension.md"
+- name: "Get Data Store metadata"
+  href: "get-data-store-metadata.md"
 - name: "Calculation Flow"
   items: 
   - name: "Overview"
@@ -18,6 +20,11 @@
     href: "calculation-flow/distribution-keys.md"
   - name: "Auto transactions"
     href: "calculation-flow/auto-transactions.md"
+    items: 
+    - name: "FilterByContext"
+      href: "calculation-flow/auto-transactions/auto-transaction-filter-by-context.md"
+    - name: "FilterByContextDistinctByTypeField"
+      href: "calculation-flow/auto-transactions/auto-transaction-filter-by-context-distinct-by-type-field.md"
   - name: "Read Calculation Flow DB Input"
     href: "calculation-flow/read-calculation-flow-db-input.md"
   - name: "Define Calculation Flow DB Output"
@@ -32,6 +39,8 @@
     href: "calculation-flow/table-relationship.md"
   - name: "Parameter relationship"
     href: "calculation-flow/parameter-relationship.md"
+  - name: "Set lookups"
+    href: "calculation-flow/set-lookups.md"
 - name: "SQL Script"
   items:
     - name: "Execute SQL Script"
