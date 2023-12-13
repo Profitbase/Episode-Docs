@@ -16,15 +16,20 @@ this.Assumptions.UseContext(myInputRow);
 ```
 
 Matching is performed by comparing values for each key column in order from first to last defined. When a match in a key column is found, it is assigned a weight based on the index of the key column. If the key column is associated with a dimension, the calculated weight includes the level at which the matching dimension member id is found (meaning members deeper in a dimension gives a higher weight).  
-The sum of all key matches or a `Set` row makes up its total `Match Score`.
+The sum of all key matches or a `Set` row makes up its total `Match Score`, and the set rows returned from FilterByContext / FilterByContextDistinctByTypeField are ordered so that the rows with the highest match score appears first in the sequence.
+
+The section below describes in rough details how key matching is performed (although not even remotely close to how it is actually done)
 
 ```dos
+
+Pseudo code
+
 matches = []
 for each setRow in Set.rows
     matchScore = 0
     matchCount = 0
     for each keyColumn in setRow.keyColumns
-        if(isMatch(keyColumn.AccountID, myInputRow.AccountID))
+        if(isMatch(keyColumn.[ColumnX], myInputRow.[ColumnX]))
             matchScore += calcWeight()
             matchCount = matchCount + 1
     if(matchCount equals setRow.keyColumns.count) // only include the row if all key columns matched
