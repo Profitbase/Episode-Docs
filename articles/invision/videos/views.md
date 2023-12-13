@@ -4,7 +4,7 @@
 ## View - Basic
 [Documentation](../docs/views.md)
 
-![video](https://profitbasedocs.blob.core.windows.net/videos/View%20-%20Basics.mp4)
+> [!Video https://profitbasedocs.blob.core.windows.net/videos/View%20-%20Basics.mp4]
 
 <br/>
 
