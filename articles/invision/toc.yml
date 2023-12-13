@@ -92,10 +92,10 @@
       - name: Worksheets
         href: docs/worksheets/toc.yml
     - name: Videos
-      href: videos/index.md
+      href: videos.md
       items:
       - name: Getting started
-        href: videos/gettingstarted/index.md
+        href: videos/gettingstarted.md
         items:
         - name: Installation and setup
           href: videos/gettingstarted/installation.md
@@ -142,7 +142,7 @@
       - name: Workbook menu
         href: videos/workbookmenu.md
       - name: Workbooks
-        href: videos/workbooks/index.md
+        href: videos/workbooks.md
         items:
         - name: Components
           href: videos/workbooks/components.md

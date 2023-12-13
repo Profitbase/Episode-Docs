@@ -1,5 +1,7 @@
 - name: Overview
   href: power-bi.md
+- name: Videos
+  href: power-bi-videos.md
 - name: Financial Reporting Matrix
   href: financial-reporting-matrix/toc.yml
 - name: Profitbase Gantt for Power BI

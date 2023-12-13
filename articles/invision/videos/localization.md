@@ -4,7 +4,7 @@
 ## Localization - Translations
 [Documentation](../docs/translationsloc.md)
 
-![video](https://profitbasedocs.blob.core.windows.net/videos/Localisation.mp4)
+> [!Video https://profitbasedocs.blob.core.windows.net/videos/Localisation.mp4]
 
 <br/>
 
