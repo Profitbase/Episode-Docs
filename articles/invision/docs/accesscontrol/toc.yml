@@ -3,7 +3,7 @@
         - name: How to's
           href: howto/index.md
           items:
-          - name: How To Create and Manage Azure AD Identities and Access Groups
+          - name: How To Create and Manage Microsoft Entra ID Identities and Access Groups
             href: howto/azuread.md
           - name: How To Manage Access to Data and Workbooks
             href: howto/dataworkbooks.md

@@ -26,7 +26,7 @@ This event is raised after the user clicks on Publish for each component.
 ## Videos
 
 * [Access Control](../../../../videos/accesscontrol.md)
-* [Create and Manage Azure AD Identities and Access Groups](https://profitbasedocs.blob.core.windows.net/videos/Users%20and%20Permissions%20-%20Create%20and%20Manage%20Azure%20AD%20Users%20and%20User%20Groups.mp4)
+* [Create and Manage Microsoft Entra ID Identities and Access Groups](https://profitbasedocs.blob.core.windows.net/videos/Users%20and%20Permissions%20-%20Create%20and%20Manage%20Azure%20AD%20Users%20and%20User%20Groups.mp4)
 * [Access Group Management](https://profitbasedocs.blob.core.windows.net/videos/Access%20Control%20-%20Access%20groups.mp4)
 
 <br/>

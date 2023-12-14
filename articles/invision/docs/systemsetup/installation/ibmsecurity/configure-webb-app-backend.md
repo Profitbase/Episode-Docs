@@ -13,7 +13,7 @@ Here you will find a description of how to configure the Profitbase InVision Web
 
 
 
-The main difference between Azure AD and IBM Security Verify is that you need to specify the **OpenIdConnect/Configuration/TokenEndpoint** when authenticating using IBM Security Verify.
+The main difference between Microsoft Entra ID and IBM Security Verify is that you need to specify the **OpenIdConnect/Configuration/TokenEndpoint** when authenticating using IBM Security Verify.
 
 The **Authority** and **TokenEndpoint** addresses should be similar to what's in the template below, but it may be different.  
 The correct identity provider information can be obtained by examining the IBM Security Verify endpoint document found in the IBM Security Verify portal.  

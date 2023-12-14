@@ -14,7 +14,7 @@ To install Profitbase Flow on a local machine / VM, you need to do the following
 
 **During the installation you also need to**
 
-1)	Create an Azure AD Application Registration. Please see the details in the [installation guide](on-premises-installation/step-by-step-installation.md).
+1)	Create a Microsoft Entra ID Application Registration. Please see the details in the [installation guide](on-premises-installation/step-by-step-installation.md).
 2)	Configure Azure Service Bus or install RabbitMQ. Please see the details in the [installation guide](on-premises-installation/step-by-step-installation.md).
 
 ## Installation guide

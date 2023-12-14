@@ -1,5 +1,19 @@
 
-# Resources
+# Overview
+
+Profitbase InVision is a low-code platform that enables businesses to rapidly build, deploy and manage software applications without using professional developers.
+
+<figure style="display: flex;flex-direction: column;align-items: center;">
+     <img src="/images/invision/invision_overview.png" style="width:100%">
+    <figcaption style="text-align:center"><b>Profitbase InVision - build robust and flexible business apps with low-code</b></figcaption>
+</figure>
+
+<br/>
+<br/>
+
+## Table of contents
+
+Read about the **key features** of **Profitbase InVision**. Check out the following topics to learn how to build, run, and deploy your Solution in InVision.
 
 <div class="new-flex-container">
     <div class="new-flex-column">
@@ -23,10 +37,6 @@
 </div>
 
 
-
-# Documentation directory
-
-Read about the **key features** of **Profitbase InVision**. Check out the following topics to learn how to build, run, and deploy your Solution in InVision.
 <div class="column-container">
     <div class="column">
         <ul>

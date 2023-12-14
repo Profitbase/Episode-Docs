@@ -1,8 +1,8 @@
 # Access Groups
 
-Access to resources, such as [Workbooks](../workbooks.md), Data, and APIs are granted to Access Groups. Access Groups contain (identity or group) accounts from Windows or Azure AD.
+Access to resources, such as [Workbooks](../workbooks.md), Data, and APIs are granted to Access Groups. Access Groups contains identity or group accounts from Windows AD or Microsoft Entra ID.
 
-You can add or import your identities.
+You can add or import identities.
 
 When you "add" identities, you connect to the identity provider that the system is set up to use (for example Windows or Azure Active Directory).
 
@@ -25,4 +25,4 @@ When you "import" identities, you can paste a list of identities (typically from
 ## Videos
 
 * [Access Control](../../videos/accesscontrol.md)
-* [Create and Manage Azure AD Identities and Access Groups](https://profitbasedocs.blob.core.windows.net/videos/Users%20and%20Permissions%20-%20Create%20and%20Manage%20Azure%20AD%20Users%20and%20User%20Groups.mp4)
+* [Create and Manage Microsoft Entra ID Identities and Access Groups](https://profitbasedocs.blob.core.windows.net/videos/Users%20and%20Permissions%20-%20Create%20and%20Manage%20Azure%20AD%20Users%20and%20User%20Groups.mp4)

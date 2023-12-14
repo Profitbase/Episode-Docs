@@ -8,7 +8,7 @@
 
 <br/>
 
-## Create and Manage Azure AD Identities and Access Groups
+## Create and Manage Microsoft Entra ID Identities and Access Groups
 [Documentation](../docs/accesscontrol/accessgroups.md)
 
 > [!Video https://profitbasedocs.blob.core.windows.net/videos/Users%20and%20Permissions%20-%20Create%20and%20Manage%20Azure%20AD%20Users%20and%20User%20Groups.mp4]

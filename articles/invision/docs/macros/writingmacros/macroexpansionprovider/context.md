@@ -28,7 +28,7 @@ The **Context** has the following APIs
 >The id of the currently logged-in user, for example, user@corp.com.
 
 ``GetUserUniqueId() : string``
->Returns the ID of the user account of the currently logged in user. If Azure AD is used as the identity provider, this is the OID (GUID) coming from Azure AD. If Windows AD is used, the ID is the SID.
+>Returns the ID of the user account of the currently logged in user. If Microsoft Entra ID is used as the identity provider, this is the OID (GUID) coming from Microsoft Entra ID. If Windows AD is used, the ID is the SID.
 
 ``LanguageCode : string``
 >The culture name in the format languagecode2-country/regioncode2, for example, EN-US.

@@ -10,7 +10,7 @@
 
 <br/>
 
-In addition to Windows and Azure AD, we now also support IBM Security Verify as an authentication provider. This means that customers using IBM Cloud can now use InVision, and manage identities in IBM Cloud instead of having to use Azure AD.
+In addition to Windows and Microsoft Entra ID, we now also support IBM Security Verify as an authentication provider. This means that customers using IBM Cloud can now use InVision, and manage identities in IBM Cloud instead of having to use Microsoft Entra ID.
 [Read more…](../docs/systemsetup/installation/ibmsecurity.md)
 
 <br/>

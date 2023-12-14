@@ -1,7 +1,7 @@
 # User management
 ## Overview
 
-Access to resources, such as Workbooks, Data, and APIs are granted to User Groups. User Groups contain (user or group) accounts from Windows or Azure AD.
+Access to resources, such as Workbooks, Data, and APIs are granted to User Groups. User Groups contain (user or group) accounts from Windows or Microsoft Entra ID.
 
 You can add or import your users.
 
