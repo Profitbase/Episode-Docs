@@ -1,10 +1,10 @@
 # Authentication using Microsoft Azure Active Directory
 <br/>
 
-## Configure your Azure AD Application
+## Configure your Microsoft Entra ID Application
 
 1. Log on to your Azure Active Directory management portal
-2. In the Portal, select your AD.  
+2. In the Portal, select your Entra ID instance.  
 3. Select “App registrations”, and “New registrations”
 <br/>
 
@@ -32,7 +32,7 @@ This is “you”, and you will need this id when configuring the InVision web s
 *“Authentication”* 
 
 **Redirect URI**  
-Add the redirect URI(s) (as type “Web”) that represents the physical address(es) for your app to which Azure AD sends security tokens for authenticated identities. 
+Add the redirect URI(s) (as type “Web”) that represents the physical address(es) for your app to which Microsoft Entra ID sends security tokens for authenticated identities. 
 
 **Implicit grant**  
 Check for both “Access tokens” and “ID tokens”.
@@ -136,7 +136,7 @@ This is your tenant id, and you will need this id when configuring the InVision 
 *“Authentication”*
 
 **Redirect URI**  
-Add the redirect URI(s) (as type “Public client (mobile & desktop)”) that represents the physical address(es) for your app to which Azure AD sends security tokens for authenticated identities. 
+Add the redirect URI(s) (as type “Public client (mobile & desktop)”) that represents the physical address(es) for your app to which Microsoft Entra ID sends security tokens for authenticated identities. 
 
 **Implicit grant**  
 Check for “ID tokens”.
@@ -170,16 +170,16 @@ Make sure to **Grant consent**  (grant admin consent for Default Directory).
 2.	In the openIdConnect section, set the following properties.
 
 *	**clientId**  
-Copy the Client ID value from the Azure AD Application Configuration.
+Copy the Client ID value from the Microsoft Entra ID Application Configuration.
 
 *	**authority**  
-Azure AD instance + Tenant ID, for example https://login.microsoftonline.com/profitbase.no.
+Microsoft Entra ID instance + Tenant ID, for example https://login.microsoftonline.com/profitbase.no.
 
 *	**redirectUri**  
-The physical address of the web application, for example https://myserver/invision. This value must one of the Reply Url's configured in the Azure AD Application Configuration (step 4e above).
+The physical address of the web application, for example https://myserver/invision. This value must one of the Reply Url's configured in the Microsoft Entra ID Application Configuration (step 4e above).
 
 *	**clientSecret**  
-One of the keys from the Azure AD Application Configuration (step 4c above).
+One of the keys from the Microsoft Entra ID Application Configuration (step 4c above).
 
 *	**tenant**  
 Your tenant id. You find your Tenant Id in the Overview screen of your App Registration.
@@ -202,4 +202,4 @@ Your tenant id. You find your Tenant Id in the Overview screen of your App Regis
 * [Create Azure App Registration](https://profitbasedocs.blob.core.windows.net/videos/Installation%20and%20Setup%20-%20Create%20Azure%20App%20Registration.mp4)
 * [Setup Azure Service Bus](https://profitbasedocs.blob.core.windows.net/videos/Installation%20and%20Setup%20-%20Setup%20Azure%20Service%20Bus.mp4)
 * [InVision Service with Azure Active Directory Authentication](https://profitbasedocs.blob.core.windows.net/videos/Installation%20and%20Setup%20-%20InVision%20Service%20with%20Azure%20Active%20Directory%20Authentication.mp4)
-* [Create and Manage Azure AD Identities and Access Groups](https://profitbasedocs.blob.core.windows.net/videos/Users%20and%20Permissions%20-%20Create%20and%20Manage%20Azure%20AD%20Users%20and%20User%20Groups.mp4)
+* [Create and Manage Microsoft Entra ID Identities and Access Groups](https://profitbasedocs.blob.core.windows.net/videos/Users%20and%20Permissions%20-%20Create%20and%20Manage%20Azure%20AD%20Users%20and%20User%20Groups.mp4)

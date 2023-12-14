@@ -112,7 +112,7 @@ We added support for defining translations for dimension members using the Desig
 - The Scheduler Worker service has been replaced by the System Worker service
 - Logs are automatically purged
 - MVT has been ported to .NET 5
-- pbACUserDirectory is automatically updated from Windows or Azure AD
+- pbACUserDirectory is automatically updated from Windows or Microsoft Entra ID
 
 <br/>
 

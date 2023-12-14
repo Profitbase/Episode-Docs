@@ -72,7 +72,7 @@ The following example will listen for changes to all properties of all items the
 
 The following new user info directives has been added, and can be used wherever @CurrentUserName currently can be used (SQL Scripts, custom queries, SQL reports, etc)
 
-- **@CurrentUserUID** returns the ID or the user account from the identity provider (Windows or Azure AD) that is currently logged in. If the system is set up to use Windows AD, the SID will be returned. If the system is set up to use Azure AD, the OID will be returned.
+- **@CurrentUserUID** returns the ID or the user account from the identity provider (Windows or Microsoft Entra ID) that is currently logged in. If the system is set up to use Windows AD, the SID will be returned. If the system is set up to use Microsoft Entra ID, the OID will be returned.
 - **@CurrentUserFullName** returns the full name (first and last name) of the logged in user.
 - **@CurrentUserEMail** returns the email of the currently logged in user.
 
@@ -113,7 +113,7 @@ If you have a Solution Object open for edit when performing a checkout, we now a
 >  Any changes you have made before checkout is discarded.  
 <br/>
 
-#### Simplify Azure AD redirect URI handling
+#### Simplify Microsoft Entra ID redirect URI handling
 
 [#183](https://cutt.ly/NdMocPj)
 This enhancement makes it easier to set up the correct redirect URI in the Azure App Registration because the application will always use a lowercase redirect URI, not the casing entered by the user.
@@ -161,7 +161,7 @@ The Form Schema Label had a default system style applied that was hard to overri
 
 [#157](https://cutt.ly/vdMowj7) Form Schema Init Event runs multiple times
 
-[#156](https://cutt.ly/RdMoeo2) Designer Azure AD Login cache pr user
+[#156](https://cutt.ly/RdMoeo2) Designer Microsoft Entra ID Login cache pr user
 
 [#149](https://cutt.ly/UdMorgC) Dropdown text cropped
 

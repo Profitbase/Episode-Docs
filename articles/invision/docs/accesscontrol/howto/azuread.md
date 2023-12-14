@@ -1,8 +1,8 @@
-# How to create and manage Azure AD Identities and Access Groups
+# How to create and manage Microsoft Entra ID Identities and Access Groups
 
 ## Link to the video
 
-Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Users%20and%20Permissions%20-%20Create%20and%20Manage%20Azure%20AD%20Users%20and%20User%20Groups.mp4) you will find video that shows how to create and manage Azure AD Identities and Access Groups. [Here](../accessgroups.md) you will find [Documentation](../accessgroups.md).
+Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Users%20and%20Permissions%20-%20Create%20and%20Manage%20Azure%20AD%20Users%20and%20User%20Groups.mp4) you will find video that shows how to create and manage Microsoft Entra ID Identities and Access Groups. [Here](../accessgroups.md) you will find [Documentation](../accessgroups.md).
 <br/>
 
 

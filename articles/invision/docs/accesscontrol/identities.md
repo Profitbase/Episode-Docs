@@ -1,11 +1,11 @@
 
 # Identities
 
-Access to resources, such as Workbooks, Data, and APIs are granted to Access Groups. Access Groups contain (identity or group) accounts from Windows or Azure AD.
+Access to resources, such as Workbooks, Data, and APIs are granted to Access Groups. Access Groups contains identity or group accounts from Windows AD or Microsoft Entra ID.
 
 You can add or import your identities.
 
-When you "add" identities, you connect to the identity provider that the system is set up to use (for example Windows or Azure Active Directory).
+When you "add" identities, you connect to the identity provider that the system is set up to use (for example Windows or Microsoft Entra ID).
 
 When you "import" identities, you can paste a list of identities (typically from an Excel file).
 <br/>

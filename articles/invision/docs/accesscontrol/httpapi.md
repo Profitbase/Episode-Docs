@@ -550,4 +550,4 @@ https://mydomain.com/invision/api/v1/accesscontrol/accessgroups?api_key=2b206745
 ## Videos
 
 * [Access Control](../../videos/accesscontrol.md)
-* [Create and Manage Azure AD Identities and Access Groups](https://profitbasedocs.blob.core.windows.net/videos/Users%20and%20Permissions%20-%20Create%20and%20Manage%20Azure%20AD%20Users%20and%20User%20Groups.mp4)
+* [Create and Manage Microsoft Entra ID Identities and Access Groups](https://profitbasedocs.blob.core.windows.net/videos/Users%20and%20Permissions%20-%20Create%20and%20Manage%20Azure%20AD%20Users%20and%20User%20Groups.mp4)
