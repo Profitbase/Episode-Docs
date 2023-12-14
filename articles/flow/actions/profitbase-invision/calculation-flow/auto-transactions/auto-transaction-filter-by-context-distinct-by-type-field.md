@@ -1,6 +1,6 @@
 # AutoTransaction.FilterByContextDistinctByTypeField
 
-Returns the Auto Transactions having keys matching the key of the data source input row currently used as context, in addition to also filtering by the `Auto Transaction type` property. If you have specified the `Auto transaction type` property, you must use this API to avoid the possibility of getting multiple matches pr Auto Transaction type.
+Returns the Auto Transactions having keys matching the key(s) of the data source input row currently used as context, in addition to also filtering by the `Auto Transaction type` property. If you have specified the `Auto transaction type` property, you must use this API to avoid the possibility of getting multiple matches pr Auto Transaction type.
 
 ## Parameters
 
