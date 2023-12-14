@@ -1,1 +1,3 @@
 # DistributionKey.FilterByContextDistinctByTypeField
+
+Returns the Distribution Key rules having keys matching the key(s) of the data source input row currently used as context, in addition to also filtering by the `Distribution Key type` property. If you have specified the `Distribution Key type` property, you must use this API to avoid the possibility of getting duplicate Distribution Key rules for a given type.

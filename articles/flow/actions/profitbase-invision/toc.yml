@@ -18,6 +18,11 @@
     href: "calculation-flow/assumptions.md"
   - name: "Distribution keys"
     href: "calculation-flow/distribution-keys.md"
+    items:
+      - name: "FilterByContext"
+        href: "calculation-flow/distribution-keys/distribution-key-filter-by-context.md"
+      - name: "FilterByContextDistinctByTypeField"
+        href: "calculation-flow/distribution-keys/distribution-key-filter-by-context-distinct-by-type-field.md"
   - name: "Auto transactions"
     href: "calculation-flow/auto-transactions.md"
     items: 
