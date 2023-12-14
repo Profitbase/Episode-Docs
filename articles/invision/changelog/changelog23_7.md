@@ -68,7 +68,7 @@ All Solutions that **does not** have any permissions defined, will now be access
 - Prevent failing Dataflows during Work Process deployments from blocking new deployments indefinitely.
 - InVision will now automatically retry running SQL Scripts that fails because of deadlocks
 - Transaction pipeline now has a timeout of 300 seconds (5 minutes) for inserting data. This prevents indefinite waits if SQL Server for some reason decides to suspend the operation.
-- Dataflow Worker now waits for an amout of time (default is 10 minutes) before shutting down after completing its final job. This shortens the wait time for the first user that submits a new job when the pressure on the system is low.
+- Dataflow Worker now waits for an amout of time (default is 10 minutes) before shutting down after completing its last job. This shortens the wait time for the first user that submits a new job when the pressure on the system is low.
 
 
 #### See Also
