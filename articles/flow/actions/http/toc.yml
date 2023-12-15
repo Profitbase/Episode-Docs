@@ -1,4 +1,6 @@
 - name: "HTTP request"
   href: "http-request.md"
+- name: "HTTP send file"
+  href: "http-send-file.md"
 - name: "Return File HTTP response"
   href: "return-file-http-response.md"
