@@ -1,6 +1,6 @@
-# Execute command
+# Get single value
 
-Executes a SQL command in a SQL Server database, which returns the number of rows affected.
+Executes a SQL command in a SQL Server database which returns a single value.
 
 ## Example: How to use parameters
 
@@ -25,4 +25,4 @@ SELECT * FROM {TableName}
 
 ## Returns
 
-[Int32](https://learn.microsoft.com/en-us/dotnet/api/system.int32) The number of rows affected.
+Returns a .NET value of type as specified by `Result variable type`.
