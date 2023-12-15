@@ -20,10 +20,10 @@ Keys in most Assumptions are associated with dimensions, for example the Departm
 
 ## Example
 
-In the table above, `(Californa, Bikes)` returns `14.1 %` because there is no exact mapping in the table, so California is resolved as a child of 'United States', and Bikes is a child of 'All'.
-`(California, Skates)` returns `12.6 %` because there is an exact mapping in the assumption table.
-`(Alaska, Bikes)` returns `8 %` because there is an exact mapping in the assumption table. 
-`(Arizona, Skis)` returns `14.1 %` because neither Arizona nor Skis is in the table, but they are children of 'United States' and 'All' respectivly.
+In the table above, `(Californa, Bikes)` returns `14.1 %` because there is no exact mapping in the table, so California is resolved as a child of 'United States', and Bikes is a child of 'All'.  
+`(California, Skates)` returns `12.6 %` because there is an exact mapping in the assumption table.  
+`(Alaska, Bikes)` returns `8 %` because there is an exact mapping in the assumption table.   
+`(Arizona, Skis)` returns `14.1 %` because neither Arizona nor Skis is in the table, but they are children of 'United States' and 'All' respectivly.  
 
 
 
