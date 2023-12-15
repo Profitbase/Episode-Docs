@@ -15,7 +15,7 @@ A Distribution Key is configured as a table, containing one or more keys (usuall
 When defining distribution keys, and they key columns (such as Department and Product above) are associated with dimensions, you can define rules at an aggregate level (such as company or product group), and the values are automatically inherited by members at lower levels in the dimensions. Values set at a lower level will override values inherited from a parent level.  
 
 > [!NOTE]
-> In cases where no Distribution Key rules match a search criteria, a default distribution key is used. The default distribution key is `1.0/n`, where n = number of periods.
+> In case there are no Distribution Key rules that match a search criteria, a default distribution key is used. The default distribution key is `1.0/n`, where n = number of periods.
 
 
 ## Properties  
