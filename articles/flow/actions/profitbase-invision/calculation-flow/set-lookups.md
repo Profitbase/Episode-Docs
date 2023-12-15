@@ -9,7 +9,7 @@ The APIs that use fast set lookups are:
 All `Sets` (Assumptions, Distribution Keys and Auto Transactions) must have at least one key column, for example `ProductID`.  
 A key column in a Set is often associated with a dimension, for example the Product dimension.  
 
-Before a set lookup can be performed using the above mentioned APIs, you must set a `context` on the `Set`. You do this by calling [Set].`UseContext(obj)` in a [Function](../../built-in/function.md) action (see example below). This sets the search criteria so that the runtime knows which values to use when searching for matching rows in a Set. The runtime knows which fields and values to compare based on the configuration of the [Assumptions](assumptions.md), [Distribution Keys](distribution-keys.md) and/or [Auto Transactions](auto-transactions.md) actions in the Flow. 
+Before a set lookup can be performed using the above mentioned APIs, you must set a `context` on the `Set`. You do this by calling [Set].`UseContext(obj)` in a [Function](../../built-in/function.md) action (see code snippet below). This sets the search criteria so that the runtime knows which values to use when searching for matching rows in a Set. The runtime knows which fields and values to compare based on the configuration of the [Assumptions](assumptions.md), [Distribution Keys](distribution-keys.md) and/or [Auto Transactions](auto-transactions.md) actions in the Flow. 
 
 ```csharp
 this.Assumptions.UseContext(myInputRow);

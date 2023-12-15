@@ -1,6 +1,6 @@
 # Auto transactions
 
-Auto Transactions enable the definition of one or more transactions derived from a source transaction or entity.    
+Auto Transactions enables defining of one or more transactions that should be derived from a source transaction or entity.    
 A typical use case for using Auto Transactions is when working with driver based (financial) models. Business drivers, such as `Human Resources`, almost always comprise sub items such as salary, health insurance, retirement plans, life insurance and so more. By using Auto Transactions, you can establish a "master-details" relationship between an entity and its sub-items. This allows for automatic generation of sub-items into your budget, forecast, or any other dataset, eliminating the need for manual entry at a granular level.
 
 
@@ -8,7 +8,7 @@ A typical use case for using Auto Transactions is when working with driver based
 
 | Name         | Type             | Description                                                |
 |--------------|------------------|------------------------------------------------------------|
-| Key columns  | Optional         | All Auto Transaction tables must have at least one logical key. If no Primary Key is defined on the table in InVision, or you want to use a different set of columns to make up the key, you can specify the key manually here. Flow uses the key to find which Auto Transactions rows to return from the `FilterByContext()` and `FilterByContextDistinctByTypeId()` methods. |
+| Key columns  | Optional         | All Auto Transaction tables must have at least one logical key. If no Primary Key is defined on the table in InVision, or you want to use a different set of columns to make up the key, you can specify the key manually here. Flow uses the key to find which Auto Transactions rows to return from the [FilterByContext()](auto-transactions/auto-transaction-filter-by-context.md) or [FilterByContextDistinctByTypeField()](auto-transactions/auto-transaction-filter-by-context-distinct-by-type-field.md) methods. |
 | Data         | Optional         | Specifies the fields / columns from the Auto Transaction table that you want to use for business logic. By default, all non-key columns are automatically available.                                                   |
 | Key mappings | Optional         | Use this option to define explicit mapping between the `Key columns` and the (corresponding) columns in the data source when names does not match. Flow determines which Auto Transactions to use by comparing the values in the `Key columns` to the corresponding columns in the input row from the data source. If not specified otherwise, it matches against columns with the same name. If you need a different behavior, you need to specify the mapping between the keys explicitly. |
 | Auto Transaction type | Optional | Specifies the name of the column that defines the Auto Transaction type. You can consider Auto Transaction type as a way to categorize Auto Transactions. For example "Company car" may be a type in the "Employee benefits" Auto Transactions table.  | 

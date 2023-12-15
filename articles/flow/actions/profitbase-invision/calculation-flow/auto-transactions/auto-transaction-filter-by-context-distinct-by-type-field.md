@@ -1,10 +1,10 @@
 # AutoTransaction.FilterByContextDistinctByTypeField
 
-Returns the Auto Transactions having keys matching the key of the data source input row currently used as context, in addition to also filtering by the `Auto Transaction type` property. If you have specified the `Auto transaction type` property, you must use this API to avoid the possibility of getting multiple matches pr Auto Transaction type.
+Returns the Auto Transactions having keys matching the key(s) of the data source input row currently used as context, in addition to also filtering by the `Auto Transaction type` property. If you have specified the `Auto transaction type` property, you must use this API to avoid the possibility of getting multiple matches pr Auto Transaction type.
 
 ## Parameters
 
-`includeFallbackValue` [Boolean](https://learn.microsoft.com/en-us/dotnet/api/system.boolean) (Optional. Default is 'false')  
+`includeFallbackValues` [Boolean](https://learn.microsoft.com/en-us/dotnet/api/system.boolean) (Optional. Default is 'false')  
 Setting this value to true will include the fallback Auto Transaction row (if specified) even if exact matches were found.  
 The fallback Auto Transaction row is the row where the "All Level" value is set on all key columns associated with dimensions. 
 Use this feature if you want to define an Auto Transaction that should _always_ be created, in addition to specific ones.

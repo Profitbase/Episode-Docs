@@ -20,7 +20,7 @@ This API can be called with a JSON or binary payload as the `HTTP body`. Use the
 #### Response
 
 **Body**  
-The API may return a `JSON object` or a binary file ([FileContentResult](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.filecontentresult)) depending on how the Flow configured. If the Flow is not configured to return any data, the returned value is `null`.
+The API may return a `JSON object` or a binary file ([FileContentResult](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.filecontentresult)) depending on how the Flow is configured. If the Flow is not configured to return any data, the returned value is `null`.
 
 **Headers**  
 `flow-job-id`: The id of the job. You can use this value to get the log for the run if you need to. 
