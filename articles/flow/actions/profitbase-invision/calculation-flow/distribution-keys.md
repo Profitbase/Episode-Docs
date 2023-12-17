@@ -22,7 +22,7 @@ When defining distribution keys, and they key columns (such as Department and Pr
 
 | Name         | Type             | Description                                                |
 |--------------|------------------|------------------------------------------------------------|
-| Key columns  | Optional         | All Distribution Key tables must have at least one logical key. If no Primary Key is defined on the table in InVision, or you want to use a different set of columns to make up the key, you can specify the key manually here. Flow uses the key to find which Distribution Key rules to return from the [FilterByContext()](distribution-keys/distribution-keys-filter-by-context.md) and [FilterByContextDistinctByTypeField()](distribution-keys/distribution-key-filter-by-context-distinct-by-type-field.md) methods. |
+| Key columns  | Optional         | All Distribution Key tables must have at least one logical key. If no Primary Key is defined on the table in InVision, or you want to use a different set of columns to make up the key, you can specify the key manually here. Flow uses the key to find which Distribution Key rules to return from the [FilterByContext()](distribution-keys/distribution-key-filter-by-context.md) and [FilterByContextDistinctByTypeField()](distribution-keys/distribution-key-filter-by-context-distinct-by-type-field.md) methods. |
 | Additional data         | Optional         | Specifies any non-key and non-periodic columns from the Distribution Key table that you want to use for business logic. |
 | Key mappings | Optional         | Use this option to define explicit mapping between the `Key columns` and the (corresponding) columns in the data source when names does not match. Flow determines which Distribution Key rules to use by comparing the values in the `Key columns` to the corresponding columns in the input row from the data source. If not specified otherwise, it matches against columns with the same name. If you need a different behavior, you need to specify the mapping between the keys explicitly. |
 | Distribution Key type | Optional | Specifies the name of the column that defines the Distribution Key type. This feature enables a value to be distributed among multiple categories in addition to multiple periods.  | 
@@ -40,7 +40,7 @@ To use Distribution Keys to distribute totals to periods, create a Flow and add 
 ![img](/images/flow/using-distribution-keys.png)
 
 **Set processing context**  
-From step 4) above, we need to set the context on the Distribution Key search index so that when we call [FilterByContext()](distribution-keys/distribution-keys-filter-by-context.md) or [FilterByContextDistinctByTypeField()](distribution-keys/distribution-key-filter-by-context-distinct-by-type-field.md), we get back the Distribution Key _rules_ that should be used distribute a (total) value to periods for the current context (for example department, employee or account).
+From step 4) above, we need to set the context on the Distribution Key search index so that when we call [FilterByContext()](distribution-keys/distribution-key-filter-by-context.md) or [FilterByContextDistinctByTypeField()](distribution-keys/distribution-key-filter-by-context-distinct-by-type-field.md), we get back the Distribution Key _rules_ that should be used distribute a (total) value to periods for the current context (for example department, employee or account).
 
 ```csharp
 

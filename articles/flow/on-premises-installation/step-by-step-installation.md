@@ -1,8 +1,8 @@
 # Step-by-step installation (On-premises)
 
-#### Step 1: Download and install .NET 7 Hosing Bundle	
+#### Step 1: Download and install .NET 8 Hosing Bundle	
 
-Download and install .NET 7 Hosing Bundle from [here](https://dotnet.microsoft.com/en-us/download/dotnet/7.0). 
+Download and install .NET 8 Hosing Bundle from [here](https://dotnet.microsoft.com/en-us/download/dotnet/8.0). 
   
 <br/>
 

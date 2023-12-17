@@ -1,10 +1,12 @@
 # Workspaces
 
-A Workspace is a logical container for Flows and artifacts. Workspace artifacts include [Workspace Variables](workspaces/workspace-variables.md) and [Workspace Objects](workspaces/workspace-objects.md), which are resources that can be shared by all Flows in the Workspace. A Workspace also defines which users have access to the Workspace.
+A Workspace is a logical container of Flows and artifacts. Workspace artifacts include [Workspace Variables](workspaces/workspace-variables.md) and [Workspace Objects](workspaces/workspace-objects.md), which are resources that can be shared by all Flows in the Workspace. A Workspace also defines which users have access to the Workspace.
 
 ## Workspace Objects
 
-Workspace Objects are reusable objects that consist of multiple values, for example a SQL Server connection having a server name, database name, username, and password. Instead of defining a different connection for every SQL Server action in a Flow, you can reuse an existing connection object and manage its settings in one central location.
+Workspace Objects are reusable objects that consist of multiple values, for example a SQL Server connection having a server name, database name, username, and password. This means that, instead of defining a different connection for every SQL Server action in a Flow, you can reuse an existing connection definition and manage its settings in one central location.  
+
+A Workspace object _property_, such as a user name in a SQL Server connection, may be a [Workspace variable](workspaces/workspace-variables.md). This means that a Workspace object may be configured to be dynamic based on which [Environment](environments.md) the Flow is in.
 
 [Read more about Workspace Objects](workspaces/workspace-objects.md)
 
