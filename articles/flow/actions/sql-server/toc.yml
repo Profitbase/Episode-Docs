@@ -14,5 +14,7 @@
   href: "check-if-table-exists.md"
 - name: "Create table"
   href: "create-table.md"
+- name: "Create table from source"
+  href: "create-table-from-source.md"
 - name: "Insert data"
   href: insert-data.md
