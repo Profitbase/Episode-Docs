@@ -55,14 +55,12 @@
     "globalMetadata": {
       "_appTitle": "Profitbase Docs",
       "_appFooter": "Created by Profitbase",
-      "_disableNavbar":true,
       "_enableSearch":true,
       "_disableContribution":false,
       "_gitContribute": {
-        "repo": "https://support.profitbase.com/docs/episode-docs.git",
         "branch": "master"
       },
-      "_gitUrlPattern": "https://support.profitbase.com/docs/episode-docs.git",
+      "_gitUrlPattern": "github",
       "_appLogoPath": "images/logo.svg",
       "_appFaviconPath": "images/favicon.ico"
     },
