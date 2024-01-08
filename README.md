@@ -17,7 +17,10 @@ To preview your changes you need to save them, generate .json and run the server
 
 ![img](https://profitbasedocs.blob.core.windows.net/images/readmePic1.png)
 
+## Local Changes the easy way
+You can also change any page in documentation by clicking contribution link(same way as the old DOCS). This will redirect you to the raw code that you can work on.
 
+![img](https://profitbasedocs.blob.core.windows.net/images/readmeEditPage.png)
 
 ## Support
 [DOCFX documentation](https://dotnet.github.io/docfx/index.html)  or ask Iza
@@ -38,6 +41,6 @@ To preview your changes you need to save them, generate .json and run the server
 
 
 ## Project status
-Phase one - all adjustments to make it work, before launching. 
+Phase four - ensouring that everyone who creates docs knows how to work with the new environment. (making docs about docs :D)
 
 🚀🚀🚀
