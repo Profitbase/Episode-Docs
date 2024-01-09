@@ -14,7 +14,7 @@ Report lines available for trending (selectable item to the right) is a subset o
 See an example of this report in picture below.
 <br/>
 
-![](../img/finance-reports-trend.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/finance-reports-trend.jpg)
 
 1. **Top and Left Section** <br/>
 The left section contains the Department filter and gives the ability to slice data according to an organization hierarchy. 

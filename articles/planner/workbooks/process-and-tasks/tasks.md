@@ -3,7 +3,7 @@
 This workbook is used to manage all assigned tasks.
 <br/>
 
-![](tasks/Img/Tasks.PNG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/Tasks.PNG)
 
 1. "My Tasks" is the front page and displays an overview of all tasks assigned to the logged in user, in the form of a "card view".
 2. "All Tasks" is a list overview of all currently assigned tasks and can be used to find any task using the provided filters.

@@ -10,7 +10,7 @@ This report contains sections to comparing the selected period, year-to-date, re
 See an example of this report in picture below.
 <br/>
 
-![](../img/finance-reports-compare.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/finance-reports-compare.jpg)
 
 1. **Top and Left Section** <br/>
 The left section contains the Department filter and gives the ability to slice data according to an organization hierarchy. 

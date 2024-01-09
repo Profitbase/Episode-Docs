@@ -30,11 +30,11 @@ The hamburger menu will reflect the work processes and versions created.
 
 Profitbase Planner provides the ability to do extensive and accurate planning for financial planning processes such as rolling forecast and budget. The main parts of Planner are:
 
-- [Finance Settings](workbooks/financial-planning/finance-settings) to set up the financial settings and assumptions.
+- [Finance Settings](workbooks/financial-planning/finance-settings.md) to set up the financial settings and assumptions.
 - [Input modules](modules/modules.md) to give users a convenient way to provide plan input on year and/or periods.
 - Finance simulation engine that process input and apply the settings to calculate balance and accurate cashflow.
 - [Finance Reports](workbooks/financial-planning/finance-reports.md) to inspect results form simulation.
-- [Operation Manager](workbooks/administration/operation-manager.mdr) to run and schedule data processing flows.
+- [Operation Manager](workbooks/administration/operation-manager.md) to run and schedule data processing flows.
 - [Data Management](workbooks/data-management/data-management.md) for manage exchange rates, dimensions and transaction tables.
 - [Administration](workbooks/administration/administration.md) to manager user access and configure input modules.
 

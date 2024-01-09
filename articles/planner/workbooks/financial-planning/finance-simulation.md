@@ -4,7 +4,7 @@ Finance Simulation provide the ability to do scenario simulation. This is done b
 <br/>
 
 ## Related Page
--  [Scenario Simulation](finance-simulation/simulation)
+-  [Scenario Simulation](finance-simulation/simulation.md)
 
 ## See also
 -  [Budget](../../workbooks/financial-planning/budget.md) is used to provide input.

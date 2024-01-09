@@ -4,7 +4,7 @@ Finance Settings contains all parameter settings that is required to do an accur
 
 The picture below is an example that will help explain how settings is organized and which concepts is applied.
 
-![](finance-settings/img/finance-settings-payroll.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/finance-settings-payroll.jpg)
 
 1. **Selecting Setting Table**<br/>The left area lists the different setting tables available for the page. Ticking here will turn on and off the table.
 2. **Tables View**<br/>The right area will display the selected tables and allows users to edit content.

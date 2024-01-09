@@ -7,7 +7,7 @@ This report provides a period view for Accounts including Opening and Closing Ba
 See an example of this report in picture below.
 <br/>
 
-![](../img/finance-reports-trial-balance.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/finance-reports-trial-balance.jpg)
 
 1. **Top and Left Section** <br/>
 The left section contains the Department filter and gives the ability to slice data according to an organization hierarchy. 

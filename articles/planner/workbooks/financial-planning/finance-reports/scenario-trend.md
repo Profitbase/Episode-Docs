@@ -27,7 +27,7 @@ The left section contains the Department filter and gives the ability to slice d
 3. **Graph Selection** <br/>
 The upper right table allows for selecting the report lines to be displayed. This is to avoid too many lines being drawn at the same time which makes it difficult to see the trend from actual continuing in forecast and budget periods. 
 
-The graph series for selection appearing here is configured in the [Report Setup](\planner\workbooks\data-management\report-setup).
+The graph series for selection appearing here is configured in the [Report Setup](../../data-management/report-setup.md).
 
 4. **Content Section** <br/>
 The content section shows graph lines for all report lines that are configured enabled for trending. The Forecast dataset is composed of Actual data for periods before the Forecast start and Forecast input data from the Forecast start period (as shown in the upper right in the report).

@@ -8,7 +8,7 @@ This report provides a period view for selected Report showing all periods of th
 See an example of this report in picture below.
 <br/>
 
-![](../img/finance-reports-year-and-months.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/finance-reports-year-and-months.jpg)
 
 1. **Top and Left Section** <br/>
 The left section contains the Department filter and gives the ability to slice data according to an organization hierarchy. 
