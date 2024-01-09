@@ -25,4 +25,4 @@ Previously, JavaScripts defined in one Solution would be loaded to Workbooks in 
 - [Worksheets](../videos/worksheet.md)
 - [Sql Reports](../videos/sqlreports.md)
 - [Workbooks](../videos/workbooks.md)
-- [Modifying Spreadsheets With Custom JavaScript](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20Modifying%20Spreadsheets%20With%20Custom%20JS.mp4)
+- [Modifying Spreadsheets With Custom JavaScript](https://profitbasedocs.blob.core.windows.net/videos/Spreadsheet%20-%20Modifying%20Spreadsheets%20With%20Custom%20JS.mp4)
