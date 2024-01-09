@@ -17,11 +17,11 @@ Read about the **key features** of **Profitbase InVision**. Check out the follow
 
 <div class="new-flex-container">
     <div class="new-flex-column">
-        <a href="videos/index.md">
+        <a href="videos.md">
             <img src="https://profitbasedocs.blob.core.windows.net/imagestitlesites/InvVideos.png" alt="InVision" title="InVision">
         </a>
         <ul>
-            <li><a href="videos/index.md">Videos</a></li>
+            <li><a href="videos.md">Videos</a></li>
             <li><a href="http://demo.profitbase.com/portal/#">Profitbase InVision Demos</a></li>
         </ul>
     </div>

@@ -37,7 +37,7 @@ View development of risks level over time at the group level. Functionality and 
 
 ## Risk Effect Chart
 
-This chart lets you combine the likelihood, impacts and financial impacts of various risk in a risk matrix. The coordinates of a risk is dependent on its likelihood and consequence scores. The size of the risk bubbles reflect the "estimated risk effect" e.g. the monetary value given a risk. A large bubble implies a high monetary value. The size of the bubbles can be adjusted by a system administrator, please see [Risk Administration](risks/risk-admin.md).
+This chart lets you combine the likelihood, impacts and financial impacts of various risk in a risk matrix. The coordinates of a risk is dependent on its likelihood and consequence scores. The size of the risk bubbles reflect the "estimated risk effect" e.g. the monetary value given a risk. A large bubble implies a high monetary value. The size of the bubbles can be adjusted by a system administrator, please see [Risk Administration](risk-admin.md).
 
 <br/>
 

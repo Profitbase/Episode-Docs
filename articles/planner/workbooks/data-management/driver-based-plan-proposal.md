@@ -7,11 +7,11 @@ In some cases it may be desirable to pre-fill an input module with a proposal so
 
 Please note that this workbook can only be reached via the Driver based modelling workbook, more specifically by selecting a model and clicking the link icon for the relevant measure for which you would like to set a plan proposal:
 
-![](driver-based-plan-proposal/img/driver-based-proposal-access-to.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/driver-based-proposal-access-to.JPG)
 
 Eligible measures are those defined as input measures of the model and have the "Can have plan proposal" attribute checked (default checked):
 
-![](driver-based-plan-proposal/img/driver-based-proposal-eligible-measures.JPG)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/driver-based-proposal-eligible-measures.JPG)
 
 The process of defining such a proposal contains of two steps:
 

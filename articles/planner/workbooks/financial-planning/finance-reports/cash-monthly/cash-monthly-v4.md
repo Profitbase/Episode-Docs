@@ -6,7 +6,7 @@
 This report shows how cash is developing over the periods of a year. 
 <br/>
 
-![](../img/finance-reports-cash-monthly.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/finance-reports-cash-monthly.jpg)
 
 1. **Top and Left Section** <br/>
 The left section contains the Department filter and gives the ability to slice data according to an organization hierarchy. 

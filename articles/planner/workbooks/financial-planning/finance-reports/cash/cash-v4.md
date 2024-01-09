@@ -11,7 +11,7 @@ To use this report:
 1. Click on the legends below each graph section to toggle on/off individual graph objects.
 <br/>
 
-![](../img/finance-reports-cash.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/finance-reports-cash.jpg)
 
 1. **Top and Left Section** <br/>
 The left section contains the Department filter and gives the ability to slice data according to an organization hierarchy.

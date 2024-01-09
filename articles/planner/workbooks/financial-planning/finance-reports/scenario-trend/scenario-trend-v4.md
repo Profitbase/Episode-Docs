@@ -15,7 +15,7 @@ To use this report:
 See an example of this report in picture below.
 <br/>
 
-![](../img/finance-reports-scenario-trend.jpg)
+![](https://profitbasedocs.blob.core.windows.net/plannerimages/finance-reports-scenario-trend.jpg)
 
 1. **Top and Left Section** <br/>
 The left section contains the Department filter and gives the ability to slice data according to an organization hierarchy. 

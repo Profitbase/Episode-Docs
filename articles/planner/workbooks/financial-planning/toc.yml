@@ -89,7 +89,7 @@
     href: finance-settings/setup.md
     items:
     - name: Setup
-      href: setup-v4.md
+      href: finance-settings/setup/setup-v4.md
   - name: Short-Term Cash
     href: finance-settings/short-cash.md
   - name: VAT
