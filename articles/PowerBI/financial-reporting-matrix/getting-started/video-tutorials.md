@@ -1,11 +1,33 @@
-### Demo 1
-[Demo - Create a basic income statement](https://www.youtube.com/watch?v=O0ibpu_np80)  
+<br/>
 
-### Demo 2
-[Financial Reporting Matrix v3 features](https://www.youtube.com/watch?v=jHt3l1K6At8)
+## Make a basic P&L or Income statement **Tutorial** Using Financial Reporting Matrix for Power BI
 
-### Demo 3  
-[Financial Reporting Matrix v4 features](https://www.youtube.com/watch?v=lfX0O1jMOMo)  
+<br/>
 
-### Demo 4  
-[Financial Reporting Matrix v5 features](https://www.youtube.com/watch?v=L-3vDo8Dj2k)
+> [!Video https://www.youtube.com/embed/O0ibpu_np80]
+
+<br/>
+
+## Financial Reporting Matrix V5 for Power BI demo - new features
+
+<br/>
+
+> [!Video https://www.youtube.com/embed/L-3vDo8Dj2k?list=PLIKjDnkaTRYxmEMX0kb_zRcfVMYRTruD0]
+
+<br/>
+
+## Financial Reporting Matrix V4 for Power BI demo - new features
+
+<br/>
+
+> [!Video https://www.youtube.com/embed/lfX0O1jMOMo?list=PLIKjDnkaTRYxmEMX0kb_zRcfVMYRTruD0]
+
+<br/>
+
+## Financial Reporting Matrix V3 - new features.
+
+<br/>
+
+> [!Video https://www.youtube.com/embed/jHt3l1K6At8?list=PLIKjDnkaTRYxmEMX0kb_zRcfVMYRTruD0]
+
+<br/>
