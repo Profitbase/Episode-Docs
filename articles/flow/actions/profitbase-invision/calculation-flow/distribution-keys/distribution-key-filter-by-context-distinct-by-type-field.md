@@ -2,12 +2,8 @@
 
 Returns the Distribution Key rules having keys matching the key(s) of the data source input row currently used as context, in addition to also filtering by the `Distribution Key type` property. If you have specified the `Distribution Key type` property, you must use this API to avoid the possibility of getting duplicate Distribution Key rules for a given type.
 
-## Parameters
+Note that the returned set includes rows matching by "*" / "All level" as well as items having fully qualified matches.
 
-`includeFallbackValues` [Boolean](https://learn.microsoft.com/en-us/dotnet/api/system.boolean) (Optional. Default is 'false')  
-Setting this value to true will include the fallback Distribution Key rule (if specified) even if exact matches were found.  
-The fallback Distribution Key rule is the row where the "All Level" value (or "*") is set on all key columns associated with dimensions. 
-Use this feature in the rare cases where you want to always have one default set of distributed values, in addition to values for specific key matches.
 
 > [!NOTE]
 > In case there are no Distribution Key rules that match a search criteria, a default distribution key is returned. The default distribution key is `1.0/n`, where n = number of periods.
@@ -39,7 +35,7 @@ This example shows how to distribute a value to mutliple periods for the given c
 
 ```csharp
 
-foreach(var distributionKeyRule in this.DistributionKeys.FactoryProductionPrMonth.FilterByContextDistinctByTypeField(true))
+foreach(var distributionKeyRule in this.DistributionKeys.FactoryProductionPrMonth.FilterByContextDistinctByTypeField())
 {
     // Distribute to all periods defined in the distribution key 
     foreach(var periodicValue in distributionKeyRule)
