@@ -80,6 +80,8 @@
       href: actions/graphql/toc.yml
     - name: "HTTP"
       href: actions/http/toc.yml
+    - name: "OneDrive"
+      href: actions/onedrive/toc.yml
     - name: "Profitbase InVision"
       href: actions/profitbase-invision/toc.yml
     - name: "SendGrid"

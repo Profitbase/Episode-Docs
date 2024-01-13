@@ -17,5 +17,5 @@ All properties in the `Update keys` configuration will be used in the WHERE clau
 All properties _NOT_ in the `Update keys` configuration will be used in the SET clause to identity which columns to update with data from the entity.  
 
 > [!NOTE]
-> Each property name in the entity must exist in the target table. If the collation of the database is case sensitive, the properties and columns must match by caseing in addition to name.
+> Each property name in the entity must exist in the target table. If the database collation is case sensitive, the properties and columns must match by case in addition to name.
 
