@@ -102,7 +102,7 @@ We no longer display the stack trace of error messages. If you need the stack tr
 
 #### Update Profitbase Installation Manager
 
-Before upgrading to InVision 2023.5, it important to use **Profitbase Installation Manager 5.3.0.3**. Installing or upgrading to 2023.5 using a previous version of Profitbase Installation Manager will fail.
+Before upgrading to InVision 2023.5, it is important to use **Profitbase Installation Manager 5.3.0.3**. Installing or upgrading to 2023.5 using a previous version of Profitbase Installation Manager will fail.
 
 #### Change Azure Service Bus queues
 

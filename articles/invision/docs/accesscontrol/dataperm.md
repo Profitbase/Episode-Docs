@@ -31,7 +31,16 @@ You can now test different identity accesses by moving your identity from Admin 
 **Note!**
 >Remember to add your identity back in the Admin group before you close the designer. If you close the designer before you do this, you will not be able to get back in without deleting the entire identity access configuration I the database.
 
+## View which users have access to a Workbook
 
+You can now easily see which users have access to a Workbook through group membership, both from the Designer and Web client.
+
+<br/>
+
+![img](https://profitbasedocs.blob.core.windows.net/images/permview1.png)
+<br/>
+
+![img](https://profitbasedocs.blob.core.windows.net/images/permview2.png)
 <br/>
 
 ## See Also 

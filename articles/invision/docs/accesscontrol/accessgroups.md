@@ -16,6 +16,17 @@ When you "import" identities, you can paste a list of identities (typically from
 
 <br/>
 
+## Copy users from Access Group
+
+You can copy users from one Access Group and paste to other Access Groups. If a user already exists, it will not be added to the target Access Group.
+<br/>
+
+![img](https://profitbasedocs.blob.core.windows.net/images/copyuser1.png)
+<br/>
+
+![img](https://profitbasedocs.blob.core.windows.net/images/copyuser2.png)
+<br/>
+
 ## See Also 
 * [Identities](identities.md)
 * [Access Group Editor](../workbooks/components/accesscontrol/accessgroupman.md)
