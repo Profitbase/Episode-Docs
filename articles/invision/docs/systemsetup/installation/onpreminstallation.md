@@ -21,6 +21,10 @@
 
 5.  Install **Profitbase Installation Manager 5.x.x.x.** If it does not already exist on the app server, you can download it from [here](https://download.profitbase.com/Installer/).
 
+> [!NOTE]
+> Update Profitbase Installation Manager
+> Before upgrading to InVision 2023.5 or newer, it is important to use Profitbase Installation Manager 5.3.0.3. Installing or upgrading to 2023.5 using a previous version of Profitbase Installation Manager will fail.
+
 6.  Run **Profitbase Installation Manager** to install the software and database (see instructions below). During the installation, you need to provide the **Azure Service Bus connection string** and **topic** from step **2b**.
 
 <br/>

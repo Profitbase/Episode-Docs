@@ -28,6 +28,8 @@
         - name: Components
           href: components.md
           items:
+          - name: Component placeholder
+            href: components/component_placeholder.md
           - name: Access control editors
             href: components/accesscontrol.md
             items:
