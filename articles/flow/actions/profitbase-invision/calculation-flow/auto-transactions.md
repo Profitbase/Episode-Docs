@@ -49,9 +49,16 @@ private void Calculate(MyWorkspace.ForecastInput input)
     }
 }
 ```
- 
 
 ## API
+
+### Properties
+
+| Name                            | Description                                  |
+|---------------------------------|----------------------------------------------|
+| DecayFactor                     | Used to calculate the `match score` for each Auto Transaction row returned by [FilterByContext()](auto-transactions/auto-transaction-filter-by-context.md) or [FilterByContextDistinctByTypeField()](auto-transactions/auto-transaction-filter-by-context-distinct-by-type-field.md). The default value is 0.5. The topic about [Set lookups](set-lookups.md) explains how `match score` is computed. | 
+
+### Methods
 
 | Name                            | Description                                  |
 |---------------------------------|----------------------------------------------|
@@ -60,4 +67,3 @@ private void Calculate(MyWorkspace.ForecastInput input)
 | UseContext(input)               |                                              |
 | Set{FieldId}Context(string)     | Sets the value used for matching against {FieldId} in the Auto Transaction table. For example, `SetDepartmentIDContext("a")` will set "a" as the value to match against the `DepartmentID` field in the Auto Transaction table. Use the `Get{FieldId}Context()` and `Set{FieldId}Context()` when you need to change the search context on a granular level, for example if you generate Auto Transactions in a Distribution Key loop.  |
 | Get{FieldId}Context()           | Gets the value value used for matching against {FieldId} in the Auto Transactions table. For example `GetDepartmentIDContext()` returns the `department id` that is used for matching against the `DepartmentID` field in the Auto Transaction table. |
-| DecayFactor                     | Used to calculate the `match score` for each Auto Transaction row returned by [FilterByContext()](auto-transactions/auto-transaction-filter-by-context.md) or [FilterByContextDistinctByTypeField()](auto-transactions/auto-transaction-filter-by-context-distinct-by-type-field.md). The default value is 0.5. The topic about [Set lookups](set-lookups.md) explains how `match score` is computed. |
