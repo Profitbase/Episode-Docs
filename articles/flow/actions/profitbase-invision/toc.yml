@@ -1,5 +1,10 @@
 - name: "Load dimension tree"
   href: "load-dimension-tree.md"
+  items: 
+  - name: "Dimension tree"
+    href: "load-dimension-tree/dimension-tree.md"
+  - name: "Dimension tree item"
+    href: "load-dimension-tree/dimension-tree-item.md"
 - name: "Convert DataPackage to DataTable"
   href: "convert-datapackage-to-datatable.md"
 - name: "Convert DataTable to DataPackage"
