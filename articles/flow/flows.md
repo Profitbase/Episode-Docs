@@ -10,3 +10,7 @@ To run a Flow, you have several options including
 - [Run a Flow on a schedule or recurring basis](flows/running-flows/run-scheduled.md)
 - [Run a Flow within another Flow](flows/running-flows/nested-execution.md)
 
+
+<br/>
+
+![p](https://profitbasedocs.blob.core.windows.net/flowimages/flows_1.png)
