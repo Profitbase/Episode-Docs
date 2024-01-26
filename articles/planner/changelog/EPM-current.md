@@ -20,8 +20,6 @@
 
 **Known issues**
 
-- The Finance Reports workbook accessed locally in a Planner version (relevant only if you have explicitly included the EPM Reporting package as part of your Planner process content) will fail (issue #1428). A patch can be applied to remedy this, contact Profitbase for details or consult the issue.
-- Last accessed department not set automatically (Plan Overview, Account, Personnel, Driver Based) (issue #1439). A patch can be applied to remedy this, contact Profitbase for details or consult the issue.
 
 **Patches**
 
