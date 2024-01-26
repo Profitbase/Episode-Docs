@@ -1,32 +1,25 @@
-
-- name: Changelog EPM Common 5.3.0 & 5.3.1
-  href: changelog-EPMCommon-5.3.0.md
+- name: Changelog EPM Common 5.4.0
+  href: changelog-EPMCommon-5.4.0.md
+- name: Changelog EPM Datamart 5.4.0
+  href: changelog-EPMDatamart-5.4.0.md
+- name: Changelog EPM Planner 5.5.0
+  href: changelog-EPMPlanner-5.5.0.md
+- name: Changelog EPM Reporting 1.1.0 and EPM Finance Reports 1.1.0
+  href: changelog-EPMReporting-1.1.0.md
 - name: Changelog EPM Common 5.3.2
   href: changelog-EPMCommon-5.3.2.md
-- name: Changelog EPM Datamart 5.3.0 & 5.3.1
-  href: changelog-EPMDatamart-5.3.0.md
-- name: Changelog EPM Datamart 5.3.2
-  href: changelog-EPMDatamart-5.3.2.md
-- name: Changelog EPM Datamart 5.3.3
-  href: changelog-EPMDatamart-5.3.3.md
-- name: Changelog EPM Datamart 5.3.4
-  href: changelog-EPMDatamart-5.3.4.md
 - name: Changelog EPM Datamart 5.3.6
   href: changelog-EPMDatamart-5.3.6.md
-- name: Changelog EPM Planner 5.4.0
-  href: changelog-EPMPlanner-5.4.0.md
 - name: Changelog EPM Planner 5.4.1
   href: changelog-EPMPlanner-5.4.1.md
-- name: Changelog EPM Reporting 1.0.6
-  href: changelog-EPMReporting-1.0.6.md
 - name: Changelog EPM Reporting 1.0.7 and EPM Finance Reports 1.0.2
   href: changelog-EPMReporting-1.0.7.md
 - name: Changelog
   href: changelog.md
 - name: Profitbase EPM - current version
   href: EPM-current.md
-- name: Upgrade notes EPM Planner 5.4.1
-  href: readme-EPMPlanner-5.4.1.md
+- name: Upgrade notes EPM Planner 5.5.0
+  href: readme-EPMPlanner-5.5.0.md
 - name: Archive
   href: archive.md
   items:
@@ -46,18 +39,32 @@
     href: archive/changelog-EPMCommon-5.2.6.md
   - name: Changelog EPM Common 5.2.8
     href: archive/changelog-EPMCommon-5.2.8.md
+  - name: Changelog EPM Common 5.3.0 & 5.3.1
+    href: changelog-EPMCommon-5.3.0.md
   - name: Changelog EPM Datamart 5.2.3
     href: archive/changelog-EPMDatamart-5.2.3.md
   - name: Changelog EPM Datamart 5.2.4
     href: archive/changelog-EPMDatamart-5.2.4.md
   - name: Changelog EPM Datamart 5.2.5
     href: archive/changelog-EPMDatamart-5.2.5.md
+  - name: Changelog EPM Datamart 5.3.0 & 5.3.1
+    href: changelog-EPMDatamart-5.3.0.md
+  - name: Changelog EPM Datamart 5.3.2
+    href: changelog-EPMDatamart-5.3.2.md
+  - name: Changelog EPM Datamart 5.3.3
+    href: changelog-EPMDatamart-5.3.3.md
+  - name: Changelog EPM Datamart 5.3.4
+    href: changelog-EPMDatamart-5.3.4.md  
+  - name: Changelog EPM Reporting 1.0.6
+    href: changelog-EPMReporting-1.0.6.md      
   - name: Changelog EPM Planner 5.2.3
     href: archive/changelog-EPMPlanner-5.2.3.md
   - name: Changelog EPM Planner 5.2.4
     href: archive/changelog-EPMPlanner-5.2.4.md
   - name: Changelog EPM Planner 5.3.0
     href: archive/changelog-EPMPlanner-5.3.0.md
+  - name: Changelog EPM Planner 5.4.0
+    href: changelog-EPMPlanner-5.4.0.md    
   - name: Changelog EPM Reporting 1.0.3
     href: archive/changelog-EPMReporting-1.0.3.md
   - name: Changelog EPM Reporting 1.0.4
@@ -70,3 +77,5 @@
     href: archive/readme-EPMPlanner-5.3.0.md
   - name: Upgrade notes EPM Planner 5.4.0
     href: archive/readme-EPMPlanner-5.4.0.md
+  - name: Upgrade notes EPM Planner 5.4.1
+    href: readme-EPMPlanner-5.4.1.md    
