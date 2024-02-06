@@ -4,6 +4,7 @@ In this section, you will find Components. Interactive building blocks for creat
 
 ## See Also  
 
+* [Component placeholder](components/component_placeholder.md)
 * [UI elements](components/uielements.md)
 * [Access Control Editors](components/accesscontrol.md)
 * [Data Flow](components/dataflow.md)
