@@ -55,7 +55,7 @@
     "globalMetadata": {
       "_appTitle": "Profitbase Docs",
       "_appFooter": "Created by Profitbase",
-      "_enableSearch":false,
+      "_enableSearch":true,
       "_disableContribution":false,
       "_gitContribute": {
         "branch": "master"
