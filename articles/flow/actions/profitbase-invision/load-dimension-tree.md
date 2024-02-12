@@ -5,7 +5,7 @@ Loads an entire dimension to memory as a parent-child [DimensionTree](./load-dim
 
 ## Example
 
-The example below describes how to use a [DimensionTree](./load-dimension-tree/dimension-tree.md) in a [Function](../built-in/function.md) to find a [dimension member](load-dimension-tree/dimension-member.md) by id, traversing ancestors and descendants and use dimension properties to perform business logic. 
+The example below describes how to use a [DimensionTree](./load-dimension-tree/dimension-tree.md) in a [Function](../built-in/function.md) to find a [dimension member](load-dimension-tree/dimension-tree-item.md) by id, traversing ancestors and descendants and use dimension properties to perform business logic. 
 
 1) Add a Load Dimension tree action to a Flow
 2) In the property panel, select a `Connection`
