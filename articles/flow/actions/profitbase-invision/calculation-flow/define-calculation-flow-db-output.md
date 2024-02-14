@@ -28,18 +28,18 @@ Defines the mapping between the columns in the data source and the columns in th
 
 #### Example
 
-In this simple example, we use a [Function](../../built-in/function.md) action to calculate a tax amount based on the `Amount` field from the input record, and the `TaxPct` assumption.
+In this simple example, we use a [Function](../../built-in/function.md) action to calculate a tax amount based on the `Amount` field from the input record, and the `TaxPct` parameter.
 We have named our Object variable `Output`, and add a record with the calculated tax amount by calling `Output.Add(...)`. 
 
 ```csharp
 public void CalcTax(MyWorkspace.Forecast_Input input)
 {
-    // Use the TaxPct assumption to find the tax percent for the Account from the input trans
-    // This works because we have called Assumptions.SetContext(...) earlier in the flow
-    var taxAmount = (Assumptions.Finance_Settings.TaxPct.GetValueOrDefault(1m) / 100.0m) * input.Amount;
+    // Use the TaxPct parameter to find the tax percent for the Account from the input trans
+    // This works because we have called Lookups.SetContext(...) earlier in the flow
+    var taxAmount = (Lookups.Finance_Settings.TaxPct.GetValueOrDefault(1m) / 100.0m) * input.Amount;
 
-    // We have added an assumption called AccountMappings to the Flow. It holds the mapping between account types and the actual account ids
-    var targetAccount = Assumptions.AccountMappings.FirstOrDefault(map => map.AccountType == "TaxPayable")?.TargetAccountID;
+    // We have added an lookup table called AccountMappings to the Flow. It holds the mapping between account types and the actual account ids
+    var targetAccount = Lookups.AccountMappings.FirstOrDefault(map => map.AccountType == "TaxPayable")?.TargetAccountID;
 
     // Create an output transaction that will be stored in the database.
     // Note: If we did not explicitly specify the AccountID and TransDate fields below, they would be copied to the output record

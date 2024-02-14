@@ -19,7 +19,7 @@ To use Auto Transactions to produce calculated rows, create a Flow and add the f
 1) Define Auto Transactions to use
 2) Add a [Calculation Flow db output](define-calculation-flow-db-output.md) action
 3) Add a [Calculation Flow db input](read-calculation-flow-db-input.md) action
-4) Add a [Function](../../built-in/function.md) action and call `Assumptions.UseContext(...)` (see example below).
+4) Add a [Function](../../built-in/function.md) action and call `AutoTransactions.UseContext(...)` (see example below).
 5) Add a [Function](../../built-in/function.md) action and implement the calculations (see example below).
 
 ![img](/images/flow/using-auto-transactions.png)
