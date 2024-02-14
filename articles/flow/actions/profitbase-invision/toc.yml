@@ -19,8 +19,8 @@
   items: 
   - name: "Overview"
     href: "calculation-flow/overview.md"
-  - name: "Assumptions"
-    href: "calculation-flow/assumptions.md"
+  - name: "Lookup tables"
+    href: "calculation-flow/lookup-tables.md"
   - name: "Distribution keys"
     href: "calculation-flow/distribution-keys.md"
     items:
