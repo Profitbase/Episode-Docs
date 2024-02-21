@@ -6,7 +6,7 @@ EPM Finance Reports package contains the finance report as they are deployed acr
 
 The top section contains an abstract of the new features and main changes. The bottom section contains a detailed list of GitLab issues registered for this release. Items marked with "Bug" contains bug fixes.
 
-## Changes to package EPM Reporting 1.1.0:
+## EPM Reporting 1.1.0
 
 - **Forecast Export including actuals part**. A new view CPV_Export_Planner_ReportAccountByMonthAllYear is created that will enable export of the actual periods together with plan periods. This data set contains:
   - Actual periods for the periods before plan start date

@@ -1,21 +1,19 @@
+- name: Profitbase EPM - current version
+  href: EPM-current.md
 - name: EPM Common 5.4.0
   href: changelog-EPMCommon-5.4.0.md
 - name: EPM Datamart 5.4.0
   href: changelog-EPMDatamart-5.4.0.md
 - name: EPM Planner 5.5.0
   href: changelog-EPMPlanner-5.5.0.md
-- name: EPM Reporting 1.1.0 and EPM Finance Reports 1.1.0
-  href: changelog-EPMReporting-1.1.0.md
+- name: EPM Reporting & Finance Reports
+  href: changelog-EPMReporting.md
 - name: EPM Common 5.3.2
   href: changelog-EPMCommon-5.3.2.md
 - name: EPM Datamart 5.3.6
   href: changelog-EPMDatamart-5.3.6.md
 - name: EPM Planner 5.4.1
   href: changelog-EPMPlanner-5.4.1.md
-- name: EPM Reporting 1.0.7 and EPM Finance Reports 1.0.2
-  href: changelog-EPMReporting-1.0.7.md
-- name: Profitbase EPM - current version
-  href: EPM-current.md
 - name: Upgrade notes EPM Planner 5.5.0
   href: readme-EPMPlanner-5.5.0.md
 - name: Archive
