@@ -11,10 +11,12 @@ The top section contains an abstract of the new features and main changes. The b
 These are changes that change the way Profitbase generate planner results or other changes that will require attention when upgrading and creating new version copying from existing versions.
 
 - Pension calculation calculated for vacation month (where vacation month is determined from vacation pay due) by "copy" pension calculated from following month. This assumes salary is not payed in vacation month. This feature was implmented in Planner 5.1.0.
-<br/><br/>The change in Planner version 5.4.0 is that there is a "Plus Vacation Mth" flag in PensionDueTerm to control this feature. (#659)
-<br/><br/>The default for this flag is:
-   - On - when upgrading solutions to make behaviour compatible with behaviour before Planner 5.4.0
-   - Off - for new deployments
+
+    The change in Planner version 5.4.0 is that there is a "Plus Vacation Mth" flag in PensionDueTerm to control this feature. (#659)
+
+    The default for this flag is:
+  - On - when upgrading solutions to make behaviour compatible with behaviour before Planner 5.4.0
+  - Off - for new deployments
 
 - Pension cost posting is changed to follow salary cost transaction date. In previous versions, pension cost posting was following the salary payment due. Use Finance Settings PensionDueTerm to control pension payment due. This change will only apply when salary accrued is in different month from salary posting. (#983)
 
