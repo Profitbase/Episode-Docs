@@ -17,21 +17,21 @@ These are changes that is likely to cause existing configurations to present dif
 
   The Back button will be disabled as you may switch between tabs and will be removed in a future version. Re-launching an input module from the Plan overview will relaunch it in it's existing tab. It is still possible to right-click a report line and launch the associated input module in a new window. (#1485)
 
-![image](uploads/9160991401f21489078ae072319c990b/image.png)
+![pic](https://profitbasedocs.blob.core.windows.net/plannerimages/Planner550ChangeLogImage1.JPG)
 
 - **Driver based module - ability to redistribute a total using percentages (%)** Up until now, you could redistribute data by altering the amounts in individual periods. New for this version is the ability to redistribute measures that apply for distribution using percentages. This is done in the Distribution pop-up (#1430):
 
-![image](uploads/5dadd669973aa3b63155416e41bb13ba/image.png)
+![pic](https://profitbasedocs.blob.core.windows.net/plannerimages/Planner550ChangeLogImage2.JPG)
 
 - Dimension names displayed in module specific configuration tables in individual versions even when Central dim options is  used. Central dim options allows for a central naming of dimensions. These dimensions are used for module-specific configuration and the names set centrally is now displayed in addition to the dimension key to avoid any confusion. 
 
   In addition, a message is displayed in the version specific translation table to inform that any translations for dimension names must be set in the central Report Setup workbook if central dim options is used. (#1434)
 
-![image](uploads/7effa032c6d300dfcd239e0ef800ae31/image.png)
+![pic](https://profitbasedocs.blob.core.windows.net/plannerimages/Planner550ChangeLogImage3.JPG)
 
 - Layout of the Allocation page in Finance Settings is improved by introducing a tab control with two sub screens, one for the Setup of the allocation rules and one for the QA part listing distribution keys and allocation transactions. In addition, input validation is introduced and enforced, meaning that duplicate rows can not be saved. This applies to giver-bearer and source accounts. The change is non-functional, a pure visual change to improve usability. (#1476, #1542)
 
-![image](uploads/79d23cd035b190de84a75a5bc9a75a7f/image.png)
+![pic](https://profitbasedocs.blob.core.windows.net/plannerimages/Planner550ChangeLogImage4.JPG)
 
 **ShortTermCash calculation** does not include opening balance when plan start periode is 1 (typical for yearly budget) (#1513). 
 
@@ -74,7 +74,7 @@ Package(s) changed: EPM Planner v5.5 only
 
 The error message:
 
-![image](uploads/53c03b1d7df729097e8ccd59bb0a2834/image.png)
+![pic](https://profitbasedocs.blob.core.windows.net/plannerimages/Planner550ChangeLogImage5.JPG)
 
 The reason for this is that elimination Legal Entity counterpart mapping is not defined or updated with the counterpart and elimination entity involved. (See Dimensions workbook and page for Elim.Legal Entity Mapping).
 
@@ -102,7 +102,7 @@ Package(s) changed: EPM Planner v5.5 only
 
 It will now be possible to include company tax and interest from cash an overdraft to "Plan overview" without having to change the standard configuration (#1462).
 
-![image](uploads/5ae6b5059f825a85a2633f842e4a5a40/image.png)
+![pic](https://profitbasedocs.blob.core.windows.net/plannerimages/Planner550ChangeLogImage6.JPG)
 
 The above setting will ensure that e.g. tax data from last simulation is available to be included in the input report. Note that tax data is calculated for each legal entity and hence will not be available nor correct on department level.
 
