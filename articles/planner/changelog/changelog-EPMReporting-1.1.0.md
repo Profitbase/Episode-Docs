@@ -19,7 +19,7 @@ Changed: Functional: Yes; User interface: No; Data model/schema: No
 
 - **Error message "Cannot insert the value NULL into 'ReportID'"** This error messaged is caused by deselecting the mandatory "INPUT" report in Report Setup.
 
-![image](uploads/3507b910e41af6648914497d24af1713/image.png)
+![pic](https://profitbasedocs.blob.core.windows.net/plannerimages/Reporting110ChangeLogImage1.JPG)
 
 Validation is changed to prevent users from deselecting "INPUT" report. (#997)
 
@@ -35,11 +35,11 @@ Changed: Functional: Yes; User interface: No; Data model/schema: No
 
 Periods in a fiscal year can be displayed using month or quarter (new). 
 
-![image](uploads/650db01fad9019c7dc22337b1ed812a5/image.png)
+![pic](https://profitbasedocs.blob.core.windows.net/plannerimages/Reporting110ChangeLogImage2.JPG)
 
    Likewise the compare report can now compare quarters in addition to months.
 
-![image](uploads/2e2335305c953908485c7c89765d7206/image.png)
+![pic](https://profitbasedocs.blob.core.windows.net/plannerimages/Reporting110ChangeLogImage3.JPG)
 
    Likewise drilldown to accounts is grouped by quarter.
 
