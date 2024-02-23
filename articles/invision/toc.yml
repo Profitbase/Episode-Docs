@@ -30,6 +30,8 @@
         href: docs/filestorage/toc.yml
       - name: Filters
         href: docs/filters/toc.yml
+      - name: Flows
+        href: docs/flows/toc.yml
       - name: Forms
         href: docs/forms/toc.yml
       - name: Home page
