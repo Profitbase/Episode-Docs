@@ -6,7 +6,7 @@ This package provide the users and access management, work process and tasks cap
 
 ## EPM Common Versions
 
-- [EPM Common 5.4.0](#epm-common-540)
+- [EPM Common 5.4.0](#epm-common-540) - Released 2024.02.21
 - [EPM Common 5.3.2](#epm-common-532)
 - [EPM Common 5.3.1](#epm-common-531)
 - [EPM Common 5.3.0](#epm-common-530)
