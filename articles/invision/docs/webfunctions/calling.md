@@ -29,7 +29,7 @@ Use `Execute(...)` to specify the name of the Web Function to run. `Execute(...)
 ![Run Web Function using the Execute Web Function action](https://profitbasedocs.blob.core.windows.net/images/Run_WebFunction_From_Workbook.png)
 
 ```javascript
-SetData({ CustomerId: "1234", Name: "Hypotesia" });
+SetData({ "CustomerId": "1234", "Name": "Hypotesia" });
 SetQueryString("api_key=secret");
 _response = Execute("UpdateCustomer");
 
