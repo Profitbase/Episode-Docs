@@ -117,3 +117,25 @@ article {
 .column ul li {
     margin: 5px 0;
 }
+.navbar #navbar form {
+    margin: 0 0 10px 0;
+}
+
+.navbar .navbar-nav {
+    display: none;
+    padding-bottom: 2px;
+}
+.navbar>.container-xxl {
+    padding-bottom: 2px;
+}
+form.search[id='search'] {
+    position: relative;
+    &::after {
+        content: 'Add * at the end of your search';
+        white-space: nowrap;
+        position: absolute;
+        top: 37px;
+        left: 2px;
+        font-size: 11.5px;
+    }
+}
