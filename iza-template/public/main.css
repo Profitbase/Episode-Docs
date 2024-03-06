@@ -3,13 +3,6 @@ main {
     grid-template-columns: 1fr 3fr;
 }
 
-aside {
-    /* Styles for the sidebar */
-}
-
-article {
-    /* Styles for the main content */
-}
 /* my-template/public/main.css */
 .column {
     width: calc(33.33% - 1rem); /* Adjust the width as needed */
