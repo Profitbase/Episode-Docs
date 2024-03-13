@@ -5,9 +5,8 @@
 
 - Windows Server 2012+
 - .NET Framework 4.8 (If you need to install the Designer on the Application Server)
-- .NET 7
+- [ASP.NET Core Runtime 8.x.x Windows Hosting Bundle](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 - PowerShell 7
-- ASP.NET Core Hosting Bundle
 - IIS installed (see list of enabled features below)
 
 <br/>
@@ -21,7 +20,7 @@
 
 ## Database
 
-- On-prem deployment: SQL Server 2017 Standard or higher
+- On-prem deployment: SQL Server 2019 Standard or higher
 - Azure deployment: Azure SQL Database
 
 <br/>
