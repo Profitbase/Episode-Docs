@@ -1,10 +1,8 @@
 # Profitbase EPM - current version
 
-**Last updated:** February 21th 2024
+**Last updated:** March 14th 2024
 
 ## Planner 5.5.0
-
-**NOTE** Planner 5.5.0 is currently available for early adopters, primarily ongoing implementation projects, contact Profitbase for details.
 
 **Content:**
 
