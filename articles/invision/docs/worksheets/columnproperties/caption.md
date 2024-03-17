@@ -10,39 +10,39 @@ A C#.NET expression returning a string used as the caption of the column in the 
 In addition to the standard caption expression library, Time Frame columns can use an extended library of functions to resolve the caption expression based on the Time Frame information relative to the column.
 
 **Example**
->
->We want to translate the Destination column name. In this example, we can see the English name of that column. 
+
+We want to translate the Destination column name. In this example, we can see the English name of that column. 
 <br/>
 
 ![caption expression](https://profitbasedocs.blob.core.windows.net/images/capt%20ex1.png)
 <br/>
 
->We need to use Localize-directive:
-><br/>
->
->``Localize("string textCode")``
-><br/>
->
->```
->Localize("Destination")
->```
+We need to use Localize-directive:
+<br/>
+
+`Localize("string textCode")`
+<br/>
+
+```csharp
+Localize("Destination")
+```
 <br/>
 
 ![caption expression](https://profitbasedocs.blob.core.windows.net/images/capt%20ex2.png)
 
-><br/>
->As we can see, the column caption automatically changed to Norwegian: 
->
+<br/>
+As we can see, the column caption automatically changed to Norwegian: 
+
 <br/><br/>
 
 ![caption expression](https://profitbasedocs.blob.core.windows.net/images/capt%20ex3.png)
 
-><br/>
->See how to do that step by step in our Localization video in the link below.
->
->
-><br/>
-><br/>
+<br/>
+See how to do that step by step in our Localization video in the link below.
+
+
+<br/>
+<br/>
 
 ## Videos about 
 

@@ -14,38 +14,31 @@ Having specified the Offset and Length properties of a column, the date (range) 
 
 In addition to adding support for the features mentioned above, Time Frame Measure Columns makes it easy to use the Unpivot and Pivot Data Import Transforms for Data Stores to convert between a transaction based format and a periodic format.
 
->**Example**
->
->Suppose you have the following Time Frame configuration:
->
- >Store Reference Date : 2014.01.01
->
- >Resolution : Month
->
- >Calendar Type : Natural
->
->Time Frame Measure Column «P01» has Offset and Length as follows:
->
->Offset : 0
->
->Length : 1
->
+**Example**
+
+Suppose you have the following Time Frame configuration:
+Store Reference Date : 2014.01.01  
+Resolution : Month  
+Calendar Type : Natural  
+
+Time Frame Measure Column «P01» has Offset and Length as follows:
+Offset: 0  
+Length: 1  
+
 Offset 0 will represent the start date of 2014.01.01 + 0 months = 2014.01.01.
 Length 1 will represent the end date of 2014.01.01 + 1 month = 2014.01.31
->
->**Start and end date for «P01» will be 01.01.2014-31.01.2014**
->
->Time Frame Measure Column «P03» has Offset and Length as follows:
->
->Offset : 3
->
->Length : 2
->
->Offset 3 will represent the start date of 2014.01.01 + 3 months = 2014.04.01.
->
->Length 2 will represent the end date of 2014.04.01 + 2 months = 2014.05.31.
->
->**Start and end date for «P03» will be 2014.04.01 – 2014.05.31**
+
+**Start and end date for «P01» will be 01.01.2014-31.01.2014**
+
+Time Frame Measure Column «P03» has Offset and Length as follows:  
+
+Offset: 3  
+Length: 2  
+
+Offset 3 will represent the start date of 2014.01.01 + 3 months = 2014.04.01.  
+Length 2 will represent the end date of 2014.04.01 + 2 months = 2014.05.31.  
+
+**Start and end date for «P03» will be 2014.04.01 – 2014.05.31**  
 
 <br/>
 

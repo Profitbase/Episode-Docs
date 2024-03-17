@@ -13,18 +13,18 @@ Work Process editor is a full-screen component for managing Work Processes and V
 
 
 
->**Work Process Deleted**
+**Work Process Deleted**
 
-This event is raised when a user deletes a Work Process. The @Event payload contains the following data:
+This event is raised when a user deletes a Work Process. The Event args contains the following data:
 <br/>
 
 **Example**
 
-```
+```json
 {
-“Data”: {
-  “WorkProcessID”: “<work process id>”,
-  “WorkProcessName”: “<name of the work process>”
+Data: {
+  WorkProcessID: "<work process id>",
+  WorkProcessName: "<name of the work process>"
 }
 }
 ```

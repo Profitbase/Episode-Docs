@@ -1,39 +1,39 @@
 
 # Date Functions
 
- ``DATE(year [,month,day,hours,min,sec, ms])``
+ `DATE(year [,month,day,hours,min,sec, ms])`
  
- >Creates a [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) object from the specified arguments. 
+ Creates a [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) object from the specified arguments. 
  
-``DATEVALUE(year [,month,day,hours,min,sec, ms])``   	
->Creates a [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) object from the specified arguments. 
+`DATEVALUE(year [,month,day,hours,min,sec, ms])`   	
+Creates a [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) object from the specified arguments. 
 
-``DATE(expression)``                         
+`DATE(expression)`
 
->Creates a [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) object by evaluating expression. 
+Creates a [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) object by evaluating expression. 
 
-``TODATE(expression[,input format])``        
+`TODATE(expression[,input format])`
 
->Converts a date string or number to a [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) object. If you do not specify the input format, the date string must be an ISO 8601 date string. 
->
->**Example** 
+Converts a date string or number to a [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) object. If you do not specify the input format, the date string must be an ISO 8601 date string. 
+
+**Example** 
 ```
 TODATE("2001-01-01") returns a Date object representing January 1st, 2001
 ``` 
->**Example** 
+**Example** 
 ```
 TODATE("20.12.2006", "DD.MM.YYYY") return a Date object representing Dec 20th 2006
 ```
 
-``NOW()``                                    
+`NOW()`
 
->Returns the current [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date). 
+Returns the current [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date). 
 
-``FORMATDATE(date : Date | string,format : string)`` 	
+`FORMATDATE(date : Date | string,format : string)` 	
 
->Returns a string representation of a date using the specified format and the current locale. The formatting function supports [momentjs](https://momentjs.com/) formats. If the date passed to the function is a string and not a date object, the format of the string is expected to be ISO 8601.  
+Returns a string representation of a date using the specified format and the current locale. The formatting function supports [momentjs](https://momentjs.com/) formats. If the date passed to the function is a string and not a date object, the format of the string is expected to be ISO 8601.  
 
 Other:
 
-``TZUTC(date)``                              
-``TZLocal(date)``                            
+`TZUTC(date)`  
+`TZLocal(date)` 

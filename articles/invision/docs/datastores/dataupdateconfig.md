@@ -17,8 +17,8 @@ Specify the (logical) key(s) used for determining which rows to update and optio
 
 **Values**  
 Specify the columns to update.  
->**Import new rows from source**  
+**Import new rows from source**  
 Enable this option to import rows that do not already exist in the Data Store. For rows being imported, the binding configuration of the Data Store is used, while the column list in the Data Update Configuration is ignored. 
-> 
->**Update existing rows**  
+ 
+**Update existing rows**  
 Updates existing rows with new values from the data source(s). Only the columns listed in the columns list are updated.

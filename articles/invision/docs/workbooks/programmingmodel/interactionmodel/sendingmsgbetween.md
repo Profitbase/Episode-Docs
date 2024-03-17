@@ -13,12 +13,13 @@ A message is sent using the SendMessage action and calling the [ConfigureMessage
 Messages are received by subscribing to the MessageReceivedEventet of the Workbook. When the event is raised, you can access the message object through the @Event.Data property. 
 The @Event.Data variable will contain the MessageCode, Message, and Data that was sent. You can use the message data in conditions and instructions after the message is received. 
 
->**Example**
->
->This example shows how to store the Message and Data values from a received message in two variables by calling the Execute Expression action when a message is received.
->
-        ReceivedMessage = @Event.Data.Message;
-        ReceivedData = @Event.Data.Data;
+**Example**
+
+This example shows how to store the Message and Data values from a received message in two variables by calling the Execute Expression action when a message is received.
+```javascript
+_state.receivedMessage = Event.Data.Message;
+_stateReceivedData = Event.Data.Data;
+```
 
 
 *	**The message object**  
@@ -59,32 +60,34 @@ ___
 
 Message are sent by executing a SendMessage Action and calling the ConfigureMessage function to specify the message receiver and payload.
 
->**Example**
->
->This example shows how to send a message by specifying the receiving Workbook and the message contents.  
->The SendMessage Action is found in the list of available actions of the Workbook.
->
-        ConfigureMessage("xx123", null,"Code_123","Hello World", 1000.5);
->
->Using the ConfigureMessage function, we provided the following arguments:  
->Receiver workbook : xxx123  
->Receiving user : null (everyone)  
->Message code : Code_123  
->Message : Hello world  
->Data : 1000.5 
+**Example**
+
+This example shows how to send a message by specifying the receiving Workbook and the message contents.  
+The SendMessage Action is found in the list of available actions of the Workbook.  
+
+```javascript
+ConfigureMessage("xx123", null,"Code_123","Hello World", 1000.5);
+```
+
+Using the ConfigureMessage function, we provided the following arguments:  
+Receiver workbook : xxx123  
+Receiving user : null (everyone)  
+Message code : Code_123  
+Message : Hello world  
+Data : 1000.5 
 
  
 **Using variables**
 
 When creating a message object, you can assign values to the properties from variables.
 
->**Example**
->
->This example shows how to create a message object and compile the message using the builtin system variable CurrentUserName and the CONCAT function.
->
-        ConfigureMessage("xx123",null, "Code_123",  
-        CONCAT("Hello World from ", SYS.CurrentUserName), 1000.5);
+**Example**
 
+This example shows how to create a message object and compile the message using the builtin system variable CurrentUserName and the CONCAT function.
+```javascript
+ConfigureMessage("xx123",null, "Code_123",  
+CONCAT("Hello World from ", SYS.CurrentUserName), 1000.5);
+```
 
 <br/>
 

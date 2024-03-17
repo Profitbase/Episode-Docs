@@ -67,7 +67,7 @@ ___
 [Operator . (x.y)]()
 
 Member access. 
->**Example** 
+**Example** 
 ```
 "xyx".substring(…)
 ```
@@ -75,7 +75,7 @@ Member access.
 [Operator X?.y]()
 
 Null conditional member access. Returns null if the left hand operand is null. 
->**Example** 
+**Example** 
 ```
 X = null; 
 Y = X?.substring(…)

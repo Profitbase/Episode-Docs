@@ -2,24 +2,24 @@
 
 <br/>
 
-```
+```javascript
 AddCssClass(cssClassName : string)
 ```
 Applies to Workbook Label and Button and can be called in an ExecuteExpression action.
 Adds the specified CSS class(es) (separated by spaces) to the element if they not already exist. 
 <br/>
 
->**Example 1**
->The following statement will add the CSS class "highlight" to the element if it does not already exist.
->
-```
+**Example 1**
+The following statement will add the CSS class "highlight" to the element if it does not already exist.
+
+```javascript
 AddCssClass("highlight");
 ```
->
->**Example 2**
->The following statement will add the CSS classes "highlight" and "underline" to the element if they does not already exist.
->
-```
+
+**Example 2**
+The following statement will add the CSS classes "highlight" and "underline" to the element if they does not already exist.
+
+```javascript
 AddCssClass("hightlight underline");
 ```
 
@@ -29,7 +29,7 @@ AddCssClass("hightlight underline");
 
 <br/>
 
-```
+```javascript
 RemoveCssClass(cssClassName : string)
 ```
 
@@ -37,17 +37,17 @@ Applies to Workbook Label and Button and can be called in an ExecuteExpression a
 Removes the specified CSS class(es) (separated by spaces) from the element.
 <br/>
 
->**Example 1**
->The following statement will remove the CSS class "highlight" from the element if it exist.
->
-```
+**Example 1**
+The following statement will remove the CSS class "highlight" from the element if it exist.
+
+```javascript
 RemoveCssClass("highlight");
 ```
->
->**Example 2**
->The following statement will remove the CSS classes "highlight" and "underline" from the element if they exist.
->
-```
+
+**Example 2**
+The following statement will remove the CSS classes "highlight" and "underline" from the element if they exist.
+
+```javascript
 RemoveCssClass("hightlight underline");
 ```
 
@@ -57,7 +57,7 @@ RemoveCssClass("hightlight underline");
 
 <br/>
 
-```
+```javascript
 ToggleCssClass(cssClassName : string [,condition : Boolean | Eaze expression])
 ```
 
@@ -65,17 +65,17 @@ Applies to Workbook Label and Button and can be called in an ExecuteExpression a
 Adds or removes one or more classes (separated by spaces), depending on either the class's precense or the value of the condition argument.
 <br/>
 
->**Example 1**
->The following statement will add the CSS class "highlight" to the element if it does not exist, or remove it if it does exist.
->
-```
+**Example 1**
+The following statement will add the CSS class "highlight" to the element if it does not exist, or remove it if it does exist.
+
+```javascript
 ToggleCssClass("hightlight");
 ```
->
->**Example 2**
->The following statement will add the CSS class "hightlight" to the element if the condition evaluates to true, otherwise the class will be removed.
->
-```
+
+**Example 2**
+The following statement will add the CSS class "hightlight" to the element if the condition evaluates to true, otherwise the class will be removed.
+
+```javascript
 ToggleClass("hightlight", X == 250);
 ```
 
