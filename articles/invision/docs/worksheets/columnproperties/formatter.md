@@ -6,23 +6,25 @@ A JavaScript function expression, or the name of a function defined in a solutio
 > This only affects the displayed value, not the actual value of the cells, so for example copying data will copy the actual value and not the displayed value. 
 
 
->**Example**
->
->Column1 and Column2 in the following table has the Formatter property set to:  
->**Column1** : func::examples.customCellFormatters.stringFormatter.col1Formatter  
->**Column2** : func:: examples.customCellFormatters.stringFormatter.col2Formatter
->
->
->| Column1_Operation 	| Column1 	| Column2_Operation 	| Column2 	|
+**Example**
+
+Column1 and Column2 in the following table has the Formatter property set to:  
+**Column1** : func::examples.customCellFormatters.stringFormatter.col1Formatter  
+**Column2** : func:: examples.customCellFormatters.stringFormatter.col2Formatter
+
+
+| Column1_Operation 	| Column1 	| Column2_Operation 	| Column2 	|
 |-------------------	|-------------	|-------------------	|-----------	|
 | ReverseText 	| Darth Vader 	| Enclose 	| Some text 	|
 | ToUpper 	| Darth Vader 	| ToLower 	| Some text 	|
 |  	| Darth Vader 	|  	| Some text 	|
->
->___
->
->*Formatters implementation*
->
+
+___
+
+*Formatters implementation*
+```javascript
+
+
     var examples;
     (function(examples){
         var customCellFormatters;
@@ -54,10 +56,12 @@ A JavaScript function expression, or the name of a function defined in a solutio
         })(customCellFormatters = examples.customCellFormatters 
         || (examples.customCellFormatters={}));
     })(examples || (examples = {}));
->
->Gives the following result
->
->| Column1_Operation 	| Column1 	| Column2_Operation 	| Column2 	|
+
+```
+
+Gives the following result
+
+| Column1_Operation 	| Column1 	| Column2_Operation 	| Column2 	|
 |-------------------	|-------------	|-------------------	|-------------	|
 | ReverseText 	| redaV htraD 	| Enclose 	| (Some text) 	|
 | ToUpper 	| DARTH VADER 	| ToLower 	| some text 	|

@@ -1,11 +1,4 @@
 # How to Use Row Selectability Condition"
-metaKeys: "How to Use Row Selectability Condition"
-folderOnly: "false"
-pageIndex: 5
----
-
-
-
 
 ### Link to the video
 
@@ -23,8 +16,5 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/TBV%20-%20
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/tbVsel%20(1).png)
 
-
-
 <br/>
-
 

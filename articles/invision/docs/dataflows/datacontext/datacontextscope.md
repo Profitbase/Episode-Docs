@@ -21,12 +21,12 @@ In cases where it’s not pratical or possible to use filter values to determine
 > [!NOTE]
 > When mapping Workbook variables to Data Context Variables, you reference the Workbook variable by name, not by value, meaning you can’t use the @Var[…]-expression, just the name of the variable.
 
->**Example**
->
->A Data Flow should process data related to a specific project. 
->In this case, the Workbook does not have a project filter, but a project id still need to be be part of the Data Context in order to ensure that only transactions related to the specific project is being processed.
->To make this happen, the following configuration can be applied.
->
+**Example**
+
+A Data Flow should process data related to a specific project. 
+In this case, the Workbook does not have a project filter, but a project id still need to be be part of the Data Context in order to ensure that only transactions related to the specific project is being processed.
+To make this happen, the following configuration can be applied.
+
 >>**1)	**Define a variable, «ProjectID», in the Globale Data Contexten and bind it to the appropriate column (ProjectID) in the Data Store(s) using a Value Binding.
 >>
 >>**2)	**Create a Workbook variable, for example «ProjectID» and assign a value to it. (_state.ProjectId = xyz)

@@ -16,21 +16,21 @@ To specify whether a custom context menu action should be conditionally availabl
 
 
 
->**Example** 
->
->The following example will enable a menu option if the Email field on the right click is specified, and if the Workbook variable “IsEmailNotificationEnabled” is true.
+**Example** 
 
-```
+The following example will enable a menu option if the Email field on the right click is specified, and if the Workbook variable “IsEmailNotificationEnabled” is true.
+
+```javascript
 const {selectedRows, column, variables} = args;
 // Check that the customer has a registered email, and that email notification is enabled
 return selectedRows[0].EMail?.length > 0 && variables.IsEmailNotificationEnabled;
 ```
 
 
->**Example** 
->
+**Example** 
 
-```
+
+```javascript
 // Descructure the args parameter to it's easier to work with
 // - selectedRows contains all the currently selected rows in the spreadsheet, including the row that was right clicked
 // - column holds information about the column that was right clicked (use column.name)

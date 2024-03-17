@@ -52,19 +52,20 @@ await=true (default = false)
 
 Code: 200 OK  
 Content: 
-
+```json
     {
         runId : "execution run id", 
         status : "Pending" | "Running" | "Succeeded" | "Failed" 
     }
+```
 
 **Error Response**
 
 Code: 500 Internal Server Error
 
->**Example**
->
->https://mydomain.com/invision/api/pub/v1/dataflows/2b081248-4963-43b3-ba06-5b7403d58b4d/start?api_key=dd63a1ad-60eb-4066-8d71-1721007437b4
+**Example**
+
+https://mydomain.com/invision/api/pub/v1/dataflows/2b081248-4963-43b3-ba06-5b7403d58b4d/start?api_key=dd63a1ad-60eb-4066-8d71-1721007437b4
 
 <br/>
 
@@ -74,7 +75,7 @@ Using the **RunId**, you can check the status of a Data Flow execution. You get 
 
 **URL**
 
-api/pub/v1/dataflows/< id >/runs/< runid >/status
+`api/pub/v1/dataflows/< id >/runs/< runid >/status`
 
 **URL Params**
 
@@ -93,17 +94,21 @@ GET
 
 Code: 200 OK  
 Content: 
+```json
+
+
     {
         runId : "execution run id", 
         status : "Pending" | "Running" | "Succeeded" | "Failed" 
     }
+```
 
 **Error Response**
 Code: 500 Internal Server Error
 
->**Example**
->
->https://mydomain.com/invision/api/pub/v1/dataflows/2b081248-4963-43b3-ba06-5b7403d58b4d/runs/ad73a1ad-60eb-1066-4d61-1821009431b2/status?api_key=dd63a1ad-60eb-4066-8d71-1721007437b4
+**Example**
+
+https://mydomain.com/invision/api/pub/v1/dataflows/2b081248-4963-43b3-ba06-5b7403d58b4d/runs/ad73a1ad-60eb-1066-4d61-1821009431b2/status?api_key=dd63a1ad-60eb-4066-8d71-1721007437b4
 
 ## Videos
 

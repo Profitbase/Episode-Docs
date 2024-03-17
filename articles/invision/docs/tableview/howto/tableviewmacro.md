@@ -1,9 +1,4 @@
 # How to use Macro Expansion in Table View"
-metaKeys: "How to Use Macro Expansion in Table View"
-folderOnly: "false"
-pageIndex: 2
----
-
 
 ### Link to the video
 

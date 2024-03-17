@@ -18,27 +18,26 @@ For subsequent calls to LoadData, only the grid contents is loaded.
 ReloadDropDownItems(…) optionally accepts an argument specifying if the contents of Dropdown column editors should be reloaded or not. Use this argument if the data should be reloaded conditionally, based on the value of a variable (must be a Boolean value).
 
 
->**Example**
->
->Evaluates to true.
->
-```
+**Example**
+
+Evaluates to true.  
+```javascript
 ReloadDropDownItems();
 ```
->
->Evaluates to the value held by the «BooleanValue» variable.
->
-```
+
+Evaluates to the value held by the «BooleanValue» variable.  
+```javascript
 ReloadDropDownItems(BooleanValue);
 ``` 
->Evaluates to true if variable X equals "Yes" and if the "Departments" filter has a selected value.
-```
+
+Evaluates to true if variable X equals "Yes" and if the "Departments" filter has a selected value.  
+```javascript
 ReloadDropDownItems(_x == "Yes" && IsFilterSet("Filters", "Department"));
 ```
 
 ## ReloadLayout
 
-```
+```javascript
 ReloadLayout(value : boolean | Eaze expression)
 ```
 

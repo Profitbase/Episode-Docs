@@ -5,28 +5,27 @@ The Spawner component produces transactions based on source rows passing the fil
 
 <br/>
 
->**Example**
->
- >This example shows the result of passing a source row through the Spawner using a Ruleset specifying parameters for the spawning process.
->
->
- >**Source Row**
->
->| EmployeeID 	| Transdate  	| Amount 	|
+**Example**
+
+This example shows the result of passing a source row through the Spawner using a Ruleset specifying parameters for the spawning process.
+
+**Source Row**
+
+| EmployeeID 	| Transdate  	| Amount 	|
 |------------	|------------	|--------	|
 | 51         	| 2010.03.10 	| 500000 	|
->
-><span style="color: blue;">Ruleset (snip)</span>
->
->| EmployeetID 	| TypeID         	| Value 	| Operator 	| AccountID   	|
+
+<span style="color: blue;">Ruleset (snip)</span>
+
+| EmployeetID 	| TypeID         	| Value 	| Operator 	| AccountID   	|
 |-------------	|----------------	|-------	|----------	|-------------	|
 | ...         	| ...            	| ...   	| ...      	| ...         	|
 | 51          	| EmployeeSalary 	| 0.25  	| \*       	| EmployerTax 	|
 | 51          	| EmployeeSalary 	| 150   	| =        	| Misc        	|
->
->**Output**
->
->| EmployeeID 	| Transdate  	| Amount 	| AccountID   	|
+
+**Output**
+
+| EmployeeID 	| Transdate  	| Amount 	| AccountID   	|
 |------------	|------------	|--------	|-------------	|
 | ...        	| ...        	| ...    	| ...         	|
 | 51         	| 2010.03.10 	| 125000 	| EmployerTax 	|

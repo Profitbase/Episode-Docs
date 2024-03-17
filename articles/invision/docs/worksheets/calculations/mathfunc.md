@@ -1,109 +1,106 @@
 
 # Math / Trig Functions
 
-``ABS(x : number | <expression>)``
+`ABS(x : number | <expression>)`
 
->Returns the absolute value of the argument. 
->
->**Example** 
+Returns the absolute value of the argument. 
+
+**Example** 
 ```
 ABS(-1) returns 1 
 ```
 
-``ACOS(x : number | <expression>)``
+`ACOS(x : number | <expression>)`
 
->Returns the inverse consine of x. 
->
->**Example** 
+Returns the inverse consine of x. 
+
+**Example** 
 ```
 ACOS(0.65) returns 0.863211… 
 ```
 
-```ASIN(x : number | <expression>)```
+`ASIN(x : number | <expression>)`
 
->Returns the inverse sine of x. 
->
->**Example** 
+Returns the inverse sine of x. 
+
+**Example** 
 ```
 ASIN(0.65) returns 0.70758…     
 ```
                                                                           
 
-```ATAN2(x : number | <expression>, y : number | <expression>)```	
+`ATAN2(x : number | <expression>, y : number | <expression>)`  
 
->Returns the angle (in radians) from the x-axis to a point.                 
+Returns the angle (in radians) from the x-axis to a point.  
 
-```CEILING(x : number | <expression>)```    
+`CEILING(x : number | <expression>)`    
 
->Returns the x, rounded upwards to the nearest integer.                     
-                                                                          
+Returns the x, rounded upwards to the nearest integer.  
 
-```EXP(x : number | <expression>)```
+`EXP(x : number | <expression>)`
 
->Returns E (the base of natural logarithms) to the power of x.              
+Returns E (the base of natural logarithms) to the power of x.  
 
-```FLOOR(x : number | <expression>)```    
+`FLOOR(x : number | <expression>)`  
 
->Returns x, rounded downward to the nearest integer.                        
+Returns x, rounded downward to the nearest integer.
 
-```LN(x : number | <expression>)```
+`LN(x : number | <expression>)`
 
->Returns the natural logarithm (base e) of x.                               
+Returns the natural logarithm (base e) of x.  
 
+`MOD(x : number | <expression>, y : number | <expression>)`
 
+Returns x modulus y.  
 
-```MOD(x : number | <expression>, y : number | <expression>)``` 	
+`PI()`
 
->Returns x modulus y.                                                       
+Returns PI.  
 
-```PI()```
+`POW(x : number | <expression>, y : number | <expression>)`  
 
->Returns PI.                                                                
+Returns x to the power of y.  
 
-```POW(x : number | <expression>, y : number | <expression>)```  
+`RAND()` 
 
->Returns x to the power of y.                                               
+Returns a pseudorandom number between 0 and 1.  
 
-```RAND()``` 
+`ROUND(x : number | <expression>)`
 
->Returns a pseudorandom number between 0 and 1.                             
+Returns x, rounded x to the nearest integer.  
 
-```ROUND(x : number | <expression>)```              
+`SIGN(x : number)`
 
->Returns x, rounded x to the nearest integer.                               
+Returns the sign for the number xe. -1 for negative values. 1 for positive values.
 
-```SIGN(x : number)```
+`SIN(x : number | <expression>)`
 
->Returns the sign for the number xe. -1 for negative values. 1 for positive values.
+Returns sin of x.  
 
-```SIN(x : number | <expression>)```
+`SQRT(x : number | <expression>)`
 
->Returns sin of x.                                                         
+Returns the square root of x.  
 
-```SQRT(x : number | <expression>)```
+`SUM(…x : number | <expression>)`
 
->Returns the square root of x.                                              
+Returns the sum of the arguments.  
 
-```SUM(…x : number | <expression>)```
-
->Returns the sum of the arguments. 
->
->**Example** 
+**Example** 
 ```
 SUM(1,2,3) returns 6.
 ```        
 
-```TAN(x : number | <expression>)```
+`TAN(x : number | <expression>)`
 
->Returns the tangent of an angle.                                           
+Returns the tangent of an angle.  
 
-```NUM_MIN()```
+`NUM_MIN()`
 
->Returns the minium value of the Number type.     
+Returns the minium value of the Number type.     
 
 Other:
 
-```ATAN(x : number | <expression>)```
-```COS(x : number | <expression>)```
-```LOG(x : number | <expression>)```
-```LOG10(x : number | <expression>)```                 
+`ATAN(x : number | <expression>)`  
+`COS(x : number | <expression>)`  
+ `LOG(x : number | <expression>)`  
+`LOG10(x : number | <expression>)`  

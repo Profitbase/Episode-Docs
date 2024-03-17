@@ -71,26 +71,22 @@ You can execute custom business logic before data is saved by overriding the <sp
 
 OnBeforeSave executes once pr batch type (Insert, Update and Delete), while OnBeginSave executes only once for the entire save process. If you override OnBeforeSave, you need to check the value of the **operationType** parameter to determine if the rows are inserted, updated or deleted. 
 
->**Example**
->
->This example shows how to can override the OnBeginSave method to execute a SQL query for each new row being inserted during a save process. The example also shows how to create a parameterized SQL query and pass arguments using a list of QueryParam objects.
->
->       protected override void OnBeginSave(CudDataPackage data)
->
-    {
-        if(data.Inserts != null)
-        {
-                foreach(var row in data.Inserts)
-                {
-                        ExecuteNonQuery("Update @Object[UpdateHistory].DbObjectName  
-                        SET IsManuallyModified = 1  
-                        WHERE ItemID = @ItemID AND RegionID = @RegionID", 
-            new QueryParam[]{ new QueryParam("@ItemID", row.GetValue<string>("ItemID")),  
-            new QueryParam("@RegionID",row.GetValue<string>("RegionID"))}, true);
-                }
-        }
-    }
+**Example**
 
+This example shows how to can override the OnBeginSave method to execute a SQL query for each new row being inserted during a save process. The example also shows how to create a parameterized SQL query and pass arguments using a list of QueryParam objects.
+```csharp
+protected override void OnBeginSave(CudDataPackage data)
+{
+    if(data.Inserts != null)
+    {
+            foreach(var row in data.Inserts)
+            {
+                    ExecuteNonQuery("Update @Object[UpdateHistory].DbObjectName SET IsManuallyModified = 1                     WHERE ItemID = @ItemID AND RegionID = @RegionID", 
+                    new QueryParam[]{ new QueryParam("@ItemID", row.GetValue<string>("ItemID")), new QueryParam("@RegionID",row.GetValue<string>("RegionID"))}, true);
+            }
+    }
+}
+```
 
 #### Excecuting business logic after save
 
@@ -98,26 +94,24 @@ You can execute custom business logic after data has been saved by overriding th
 
 OnAfterSave executes once pr batch type (Insert, Update and Delete), while OnEndSave executes only once for the entire save process. If you override OnAfterSave, you need to check the value of the **operationType** parameter to determine if the rows were inserted, updated or deleted. 
 
->**Example**
->
->This example shows how to override the OnEndSave to execute a SQL query for each row that was updated during the save process. The example also shows how to create a parameterized SQL query and pass arguments using a list of QueryParam objects.
->
->       protected override void OnEndSave(CudDataPackage data)
->
-        {
-            if(data.Updates != null)
-            {
-                    foreach(var row in data.Updates)
-                    {
-                            ExecuteNonQuery("Update @Object[UpdateHistory].DbObjectName  
-                            SET IsManuallyModified = 1  
-                            WHERE AccountID = @AccountID", 
-                new QueryParam[]{ new QueryParam("@AccountID"  
-                row.GetValue<string>("AccountID")) }, true);
-                    }
-            }
-        }
+**Example**
 
+This example shows how to override the OnEndSave to execute a SQL query for each row that was updated during the save process. The example also shows how to create a parameterized SQL query and pass arguments using a list of QueryParam objects.
+
+```csharp
+
+protected override void OnEndSave(CudDataPackage data)
+{
+    if(data.Updates != null)
+    {
+        foreach(var row in data.Updates)
+        {
+                ExecuteNonQuery("Update @Object[UpdateHistory].DbObjectName SET IsManuallyModified = 1 WHERE AccountID = @AccountID", 
+                new QueryParam[]{ new QueryParam("@AccountID", row.GetValue<string>("AccountID")) }, true);
+        }
+    }
+}
+```
 
 #### QueryParam
 
@@ -158,20 +152,22 @@ Rows are being updated.
 Rows are being deleted.
 
 
->**Example**
->
->This example shows to override OnAfterSave and examine the operationType parameter to determine if the rows being passed to the method will be inserted, updated or deleted. 
->
-    protected override void OnAfterSave(IEnumerable<CudRecord> rows,  
-    TableOperationType operationType)
-    {    
-        base.OnAfterSave(rows, operationType);
-        if(operationType == TableOperationType.Update)
-        {
-            // Implementation goes here
-        }    
-    }
+**Example**
 
+This example shows to override OnAfterSave and examine the operationType parameter to determine if the rows being passed to the method will be inserted, updated or deleted.  
+
+```csharp
+
+protected override void OnAfterSave(IEnumerable<CudRecord> rows,   TableOperationType operationType)
+{    
+    base.OnAfterSave(rows, operationType);
+    if(operationType == TableOperationType.Update)
+    {
+        // Implementation goes here
+    }    
+}
+
+```
 
 #### Sql Execute functions
 

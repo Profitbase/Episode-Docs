@@ -78,13 +78,13 @@ Executes an expression when the conditions are met.
 
 **Example**
 
->This example shows which condition needs to be met to disable Step3.
->
->**Condition**
+This example shows which condition needs to be met to disable Step3.
+
+**Condition**
 ```
 @Event.Data.StepName=='Step2'
 ``` 
->
+
 >**Instruction**
 ```
 StepperItem("Step3").Disable()

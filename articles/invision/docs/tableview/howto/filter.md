@@ -1,11 +1,4 @@
 # How to Use Hierarchical Filter in Table View"
-metaKeys: "How to Use Hierarchical Filter in Table View, Declare_FilterAlias"
-folderOnly: "false"
-pageIndex: 4
----
-
-
-
 
 ### Link to the video
 
@@ -15,7 +8,7 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Table%20Vi
 ### Step by step
 
 
-1. Specify filter using **@Declare_FilterAlias** directive:
+1. Specify filter using the **@Declare_FilterAlias** directive:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTtbvFil%20(1).png)
 

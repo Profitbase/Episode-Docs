@@ -14,7 +14,7 @@ There are ten supported property types. They are listed here:
 
 ## Defining a package property
 
->The default value is the returned value if the solution is not part of a version. 
+The default value is the returned value if the solution is not part of a version. 
 
 <br/>
 
@@ -36,9 +36,8 @@ There are ten supported property types. They are listed here:
 **@PackageProperty[PropertyName] in a Sql script** 
 
  
->A package property value can be used inside a Sql script. 
->
->The returned value is a string representation of the data type. Example of use can be:
+A package property value can be used inside a Sql script.  
+The returned value is a string representation of the data type. Example of use can be:
 
 ```
 @PackageProperty[Profitbase.PackagePropTests.Planning.StartDate].DateExpr
@@ -46,9 +45,8 @@ There are ten supported property types. They are listed here:
 
 <br/>
 
-**Example**  
-  
->You may want to filter data based on a package property value. 
+**Example**    
+You may want to filter data based on a package property value. 
 
 <br/>
 
@@ -83,9 +81,8 @@ There are ten supported property types. They are listed here:
 
 **@PackageProperty[PropertyName] in a PowerShell script**
 
->A package property value can be used inside a PowerShell script. 
->
->The returned value is a string representation of the data type. Example of use can be:
+A package property value can be used inside a PowerShell script. 
+The returned value is a string representation of the data type. Example of use can be:
 
 ```
 $date = 
@@ -137,9 +134,8 @@ Write-Output $datetimeutc
 
 **Directive("@PackageProperty[PropertyName]") in a worksheet column expression** 
 
->A package property value can be used inside a worksheet column’s Is Hidden Expression (Caption Expression and Is Read Only Expression is also supported).
->
->The returned object can be cast to a proper data type. Example of use can be:
+A package property value can be used inside a worksheet column’s Is Hidden Expression (Caption Expression and Is Read Only Expression is also supported).  
+The returned object can be cast to a proper data type. Example of use can be:
 
 ```
 ((DateTime)Directive("@PackageProperty[Profitbase.PackageName.Planning.StartDate]")).Year == 2020
@@ -173,13 +169,12 @@ Write-Output $datetimeutc
 
 **Use @PackageProperty in a data flow**
 
->A package property value can be utilized as a parameter value in a data flow.
->
->The returned value can be cast to the proper data type. 
+A package property value can be utilized as a parameter value in a data flow.
+The returned value can be cast to the proper data type. 
 
 **Example**
 
->Adding a PowerShell script with a parameter decalaration.
+Adding a PowerShell script with a parameter decalaration.
 
 <br/>
 

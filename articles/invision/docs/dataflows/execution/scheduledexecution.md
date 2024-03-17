@@ -25,10 +25,10 @@ To execute a Data Flow from the command line, run dfcmdutil.exe using the follow
 
     dfcmdutil.exe /run < dataflowid >
 
->**Example**
->
+**Example**
+
 Executing a Data Flow having id «updatesales»  
-```
+```dos 
 dfcmdutil /run updatesales
 ```
 
