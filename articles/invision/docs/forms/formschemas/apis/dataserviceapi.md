@@ -11,7 +11,9 @@ The Data Service can be accessed from the Form Runtime (link to) and has the fol
 
 <br/>
 
-`save(model, params?: object) : Promise<void>`
+```typescript
+save(model, params?: object) : Promise<void>
+```
 
 Saves / updates a specific model. You can optionally pass in arguments if the model does not contain sufficient data to perform the update.
 

@@ -7,7 +7,9 @@ You can use the Data Binding API to manually force a data transfer from the bind
 
 ## Get bindings
 
-`getBindings(model) : { updateTarget: () => void, targetName: string }[]`
+```typescript
+getBindings(model) : { updateTarget: () => void, targetName: string }[]
+```
 
 Gets an array of bindings associated with the specified model.
 
@@ -17,7 +19,7 @@ Gets an array of bindings associated with the specified model.
 
 The example below shows how to retrieve a list of all bindings associated with the Customers list. It then forces each binding target (UI element) to update unless it's named "bar".
 
-```
+```xml
       <Function Name="foo">
           for(let binding of this.dataBindings.getBindings(this.lists.Customers)){
                    if(binding.targetName !== 'bar'){
