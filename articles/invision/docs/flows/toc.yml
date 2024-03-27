@@ -4,3 +4,5 @@
   items:
   - name: Run Flow from Workbook
     href: how-to/run-flow-from-workbook.md
+  - name: Run Flow from Form Schema
+    href: how-to/run-flow-from-form-schema.md
