@@ -2,6 +2,11 @@
 
 Deletes a blob from an Azure Blob container.
 
+<br/>
+
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/deleteblob.png)
+
+<br/>
 
 ## Properties
 
