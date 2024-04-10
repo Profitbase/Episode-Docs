@@ -1,9 +1,10 @@
 # Break
 
-Terminates the iteration of the closest [Foreach](foreach.md) or [While](while.md) loop.
+Terminates the iteration of the (closest) Foreach or While loop.
+
 
 <br/>
 
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/builtInFlow.png)
+<!--![img](https://profitbasedocs.blob.core.windows.net/flowimages/builtInFlow.png)-->
 
 <br/>
