@@ -4,49 +4,49 @@
 
 ## Global variables
 
-The [Workbook](../../workbooks.md) session maintains a set of variables accessible everywhere in the Workbook. Variables can be created or assigned to when an ExecuteExpression Action is called.
+To define global variables, use the `Variables` popup in the Workbook menu and declare one or more variables using JavaScript. You can add as many variables as you want, but we recommend creating just a single variable named `_state` and assign an object to it. Then, use `_state` as the container to store all other state information in the Workbook when executing Workbook component actions.
 
-It is recommended to always use standard (Eaze) variables, however, @Var[…] instruction is supported for backward compatibility and it also allows you to use variables that contain whitespace characters.
+![image](../../../../../images/invision/workbook-global-variables.png)
+
 
 ## System Variables
 
-The following variables are set by the system. System variables are globally available.
+The following variables are provided by the system, and available in all Workbook component actions.  
 
-**SYS.CurrentUserName**
+# [JavaScript](#tab/javascript)
+| Name                                  | Description                             |
+|---------------------------------------|-----------------------------------------|
+| this.appVariables.SYS.CurrentUserName | Returns the user name of the currently logged-in user, for example `leia@rebellion.com` |
+| this.appVariables.SYS.SYS_DataSetID   | When the Workbook is under Workflow Control, returns the Data Set ID associated with the Workflow. |
+| this.appVariables.SYS.SolutionId      | Returns the Solution Id that the Workbook belongs to. |
+| this.appVariables.SYS.WorkbookId      | Returns the Id of the Workbook.          |
+| this.appVariables.QSP.name            | Returns the value of the query string parameter with the name 'name'. |
 
-*	Returns the user name of the currently logged-in user.
+# [Eaze](#tab/eaze)
 
-**SYS.SYS_DataSetID** 
+| Name                | Description                             |
+|---------------------|-----------------------------------------|
+| SYS.CurrentUserName | Returns the user name of the currently logged-in user, for example `leia@rebellion.com`. |
+| SYS.SYS_DataSetID   | When the Workbook is under Workflow Control, returns the Data Set ID associated with the Workflow. |
+| SYS.SolutionId      | Returns the Solution Id that the Workbook belongs to. |
+| SYS.WorkbookId      | Returns the Id of the Workbook.          |
+| QSP.name            | Returns the value of the query string parameter with the name 'name'. |
 
-*	When the Workbook is under Workflow Control, returns the Data Set ID associated with the Workflow.
+---
 
-*	For backward compatibility reasons, SYS_DataSetID can also be accessed using @Var[SYS_DataSetID].
+#### Example
 
-**SYS.SolutionId**
+This example shows how to display the name of the current user in a Label.  
+To display a dynamically evaluated text in a Label, you need to apply using the SetText – function to the Text property of the Label.
 
-*	Returns the Solution Id that the Workbook belongs to.
+**JavaScript**
+```javascript
+// To display the name of the current user, add the following expression to the Text property of a Label.
+SetText("The current user is " + this.appVariables.SYS.CurrentUserName);
+```
 
-**SYS.WorkbookId**
-
-*	Returns the Id of the Workbook.
-
-**QSP.< query string parameter >**
-
-*	Any query string parameters from the url can be accessed through the QSP system variable.  
-For example, if the url contains the query string id=124, calling QSP.id will return "124".
-
-*	For backward compatibility reasons, query string parameters can also be accessed using @Var[QSP::< param >], for example, @Var[QSP::id].
-
-
->**Example**
->
->This example shows how to display the name of the current user in a Label.  
->To display a dynamically evaluated text in a Label, you need to apply using the SetText – function to the Text property of the Label.
->
->To display the name of the current user, add the following expression to the Text property of a Label.
->
-        SetText("The current user is " + SYS.CurrentUserName);
-
-
-
-
+**Eaze**
+```javascript
+// To display the name of the current user, add the following expression to the Text property of a Label.
+SetText("The current user is " + SYS.CurrentUserName);
+```

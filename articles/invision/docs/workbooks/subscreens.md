@@ -7,7 +7,7 @@
 **Subscreens have two functions:**
 
 1.	Split your pages into smaller, more manageable components.
-2.	Use them to create the contents of Tab Controls.
+2.	Use them to create the contents of [Tab Controls](components/uielements/tabcontrol.md) and [Steppers](components/uielements/stepper.md).
 
 ## Building Subscreens
 
@@ -21,16 +21,27 @@ Subscreen components (such as buttons), can invoke actions on another component 
 
 To publish information from within a Subscreen to external components, you need to call the **Raise Custom Event** action of the Subscreen. You can pass along custom event data by calling the SetEventData(…) action instruction. If you do not call [SetEventData(…)](programmingmodel/instructions/seteventdata.md), the event data from the calling context (for example a spreadsheet cell click) is passed along.
 
->**Example**
->
->This example shows how to use the SetEventData(…) instruction to set the event data when executing the Raise Custom Event action.
->
->// Create an event data object with a property called “Message”, having the value “Hello World”
->
-        SetEventData({"Message" : "Hello World"});
->
->In the event handler, you can get the message via **@Event.Data.Message**
+**Example**
 
+This example shows how to use the SetEventData(…) instruction to set the event data when executing the Raise Custom Event action.
+
+# [JavaScript](#tab/javascript)
+```javascript
+// Create an event data object with a property called “Message”, having the value “Hello World”
+SetEventData({message : "Hello World"});
+
+// In the event handler, you can get the message via Event.Data.Message
+```
+
+# [Eaze](#tab/eaze)
+```javascript
+// Create an event data object with a property called “Message”, having the value “Hello World”
+SetEventData({"Message" : "Hello World"});
+
+// In the event handler, you can get the message via @Event.Data.Message
+```
+
+---
 
 **Custom Actions (inbound communication)**
 

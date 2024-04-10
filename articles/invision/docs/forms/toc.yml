@@ -44,6 +44,8 @@
               href: formschemas/apis/formruntime.md
             - name: Web functions API
               href: formschemas/apis/webfunctionsAPI.md
+            - name: Flow API
+              href: formschemas/apis/flow-api.md
           - name: Controls
             href: formschemas/controls.md
             items:
