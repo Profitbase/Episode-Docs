@@ -9,6 +9,6 @@ The items source is expected to be of type [IAsyncEnumerable<T>](https://learn.m
 
 <br/>
 
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/builtInFlow.png)
+<!--<!--![img](https://profitbasedocs.blob.core.windows.net/flowimages/builtInFlow.png)-->-->
 
 <br/>
