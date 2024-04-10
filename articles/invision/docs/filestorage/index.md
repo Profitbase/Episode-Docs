@@ -5,7 +5,7 @@
 <br/>
 
 
-File Storage enables users to upload download and manage files. 
+File Storage enables users to upload, download, and manage files. 
 
 
 <br/>
@@ -18,11 +18,11 @@ File Storage enables users to upload download and manage files.
 
 **Context**
 
-By setting the [Context](context.md), you associate the File Storage to the [Filter](../filters/index.md).
+The [Context](context.md), associates files with metadata, for example which department or contract the file belongs to. A common use case is to associate files with [Filters](../filters/index.md).
 
 •	Key ``<Context item>``
 
-•	Type
+•	Type - specifies the data type of the context field.
 
 ![fs](https://profitbasedocs.blob.core.windows.net/images/filestorage1.png)
 
@@ -40,10 +40,11 @@ By setting the [Context](context.md), you associate the File Storage to the [Fil
 <br/>
 
 ## Data
-Here you will find saved files with default File Storage references, more filters you use, more columns with references([context keys](./context.md)) will appear.
+
+Lists metadata information about the files in the File Storage.  
 <br/>
 
-![fs](https://profitbasedocs.blob.core.windows.net/images/filestorageData.png)
+![image](https://profitbasedocs.blob.core.windows.net/images/filestorageData.png)
 
 <br/>
 

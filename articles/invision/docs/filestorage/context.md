@@ -3,16 +3,17 @@
 
 ![fs](https://profitbasedocs.blob.core.windows.net/images/filestorageCT.png)
 
-By setting the Context you connect the File Storage to the [Filter](../filters/index.md). You can have multiple filters attached to the File Storage. 
+The [Context](context.md), associates files with metadata, for example which department or contract the file belongs to. A common use case is to associate files with [Filters](../filters/index.md).
+
 <br/>
 
-**Key** ``<Context item>``
->Set the Context by binding it to the [Data Id Column](../filters/index.md) of the [Filter](../filters/index.md).
+**Key**  
+The name of the context field.
 
-**Type**
->Choose the type of data, this parameter can't be changed later. 
+**Type**  
+The data type of the context field. This value can't be changed later. 
 
-![fs](https://profitbasedocs.blob.core.windows.net/images/filestorage1.png)
+![image](https://profitbasedocs.blob.core.windows.net/images/filestorage1.png)
 
 <br/>
 
@@ -21,13 +22,13 @@ By setting the Context you connect the File Storage to the [Filter](../filters/i
 <br/>
 
 **Allowed File Extensions**
->You can choose one or more data types. If you don't specify the data type, all of them will be allowed.
+Use this option if you want to limit which file types a user can upload. 
 
-![fs](https://profitbasedocs.blob.core.windows.net/images/filestorage2.png)
+![image](https://profitbasedocs.blob.core.windows.net/images/filestorage2.png)
 <br/>
 
 **Max File Size (MB)**
->You can specify maximum file size.
+Specifies the maximum size of files that a user is allowed to upload.
 
 ![fs](https://profitbasedocs.blob.core.windows.net/images/filestorageMB.png)
 <br/>

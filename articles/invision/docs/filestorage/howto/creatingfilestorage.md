@@ -20,7 +20,7 @@ Under [this](https://profitbasedocs.blob.core.windows.net/videos/File%20Storage%
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTFileSt%20(3).png)
 
-4. Connect it to the filter by seting the context:
+4. Connect it to the filter by setting the context:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTFileSt%20(4).png)
 

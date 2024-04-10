@@ -1,6 +1,10 @@
 
 # File Storage Setup
 
+>[!NOTE]
+> If you run Profitbase InVision as a hosted SaaS service, the File Storage configuration is automatically configured.  
+> The contents of this page only applies to on-premises deployments.
+
 ## Supported storage mediums
 
 Before you can use  [File Storage](../filestorage.md), you need to set up how the files should be physically stored. You do this by specifying a _file storage provider_, such as Azure Blob Storage or a disk.
