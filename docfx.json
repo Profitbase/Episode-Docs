@@ -53,6 +53,7 @@
       "iza-template"
     ],
     "globalMetadata": {
+      "_disableToc": false,
       "_disableNavbar": true,
       "_appTitle": "Profitbase Docs",
       "_appFooter": "Created by Profitbase",
