@@ -18,6 +18,8 @@
 
 **Known issues:**
 
+- Driverbased model: Double values in historic ref columns and plan proposal when using another version as source (#1660) A fix can be applied, check issue or contact Profitbase for details.
+
 ## Risk 1.1.1
 
 **Content:**
