@@ -1,6 +1,6 @@
 # Increment value
 
-Increments a value by a number.
+Increments a (numeric) value by a number.
 
 
 <br/>

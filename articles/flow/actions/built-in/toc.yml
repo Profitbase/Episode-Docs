@@ -30,8 +30,6 @@
   href: "function.md"
 - name: "Get Startup argument"
   href: "get-startup-argument.md"
-- name: "Get variable"
-  href: "get-variable.md"
 - name: "If"
   href: "if.md"
 - name: "If-Else"

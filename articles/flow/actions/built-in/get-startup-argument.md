@@ -2,6 +2,9 @@
 
 Gets the data (if any) passed to the Flow from the caller.
 
+>[!NOTE]
+> This action can only be used in the Main schema.
+
 
 <br/>
 
