@@ -54,7 +54,7 @@
     ],
     "globalMetadata": {
       "_disableToc": false,
-      "_disableNavbar": true,
+      "_disableNavbar": false,
       "_appTitle": "Profitbase Docs",
       "_appFooter": "Created by Profitbase",
       "_enableSearch":true,
