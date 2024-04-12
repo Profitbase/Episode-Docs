@@ -29,7 +29,7 @@ main {
     
 
 .custom-link {
-    color: #135075; /* Set link color to black */
+    color: #2B8EC8; /* Set link color to black */
     font-weight: bold; /* Make the link text bold */
     font-size: large;
     text-transform: uppercase;
@@ -39,7 +39,7 @@ main {
 
 /* Apply your custom-link styles here for the new section */
 .custom-link-mini {
-    color: #135075; 
+    color: #2B8EC8; 
      font-weight: lighter; 
     text-decoration: underline;  
 }
@@ -79,7 +79,7 @@ main {
 
 /* Apply your custom-link styles here for the new section */
 .new-custom-link {
-    color: blue; /* Example link color */
+    color: #2B8EC8; /* Example link color */
     font-weight: normal; /* Example font weight */
     text-decoration: underline; /* Example text decoration */
 }
@@ -136,4 +136,12 @@ form.search[id='search'] {
         left: 2px;
         font-size: 11.5px;
     }
+}
+
+a.edit-link {
+    color: #2B8EC8;
+}
+
+a {
+    color: #2B8EC8;
 }
