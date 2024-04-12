@@ -63,8 +63,9 @@ Using this option, files will be stored on a disk drive under the specified path
   },
 ```
 
-**NOTE!**
-When using local disk as the physical file storage, it is important to set up backup of the specified path in case of disk failure or other critical errors. Profitbase InVision does not have a built-in backup solution, so this has be set up manually.
+
+>[!NOTE]
+> When using local disk as the physical file storage, it is important to set up backup of the specified path in case of disk failure or other critical errors. Profitbase InVision does not have a built-in backup solution, so this has be set up manually.
 
 
 <br/>
