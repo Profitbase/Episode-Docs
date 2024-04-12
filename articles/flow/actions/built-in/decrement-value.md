@@ -1,6 +1,6 @@
 # Decrement value
 
-Decrements a value by a number.
+Decrements a (numeric) value by a number.
 
 
 <br/>
