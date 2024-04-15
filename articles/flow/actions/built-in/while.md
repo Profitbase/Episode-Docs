@@ -1,9 +1,7 @@
 # While (loop)
 
-Runs the loop while the condition evaluates to **true**.
+Runs a loop while its condition evaluates to `true`.
 
-<br/>
+When the condition no longer evaluates to `true`, execution continues from the `Continue` port.
 
-<!--![img](https://profitbasedocs.blob.core.windows.net/flowimages/builtInFlow.png)-->
-
-<br/>
+![image](../../../../images/flow/while.png)
