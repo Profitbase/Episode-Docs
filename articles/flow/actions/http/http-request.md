@@ -1,3 +1,3 @@
 # HTTP request
 
-Executes a HTTP request.
+Executes an HTTP request.
