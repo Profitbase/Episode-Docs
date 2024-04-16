@@ -1,20 +1,17 @@
 # Append to Blob
 
-Appends a byte array to an [Azure Append Blob](https://learn.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs#about-append-blobs).
+Appends a byte array to an [Azure Append Blob](https://learn.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs#about-append-blobs).  
 
+The example below uses the SQL Server [Get DataReader](../sql-server/get-datareader.md), [DataReader chunker](../built-in/datareader-chunker.md), [Create CSV as byte array](../csv/create-csv-as-byte-array.md) and `Append to blob` actions to export a large number of rows from a SQL Server database to Azure blob storage by splitting them into CSV files of 100 000 records each.
 
-<br/>
-
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/appendblob.png)
-
-<br/>
-
+![img](../../../../images/flow/azure-append-to-blob.png)
 
 ## Properties
 
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
 | Connection       | Required  | A [SAS Uri](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview) to an Azure Blob container.       |
-| Blob name prefix | Optional  | To filter the list of blobs, specify a string for the [prefix parameter](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-list#filter-results-with-a-prefix).**Note!** The prefix is case sensitive. |
-| Result variable name | Required | The name of the Flow variable that contains the list of the blob names. |
+| Blob name        | Required  | The name of the blob to append to. If the blob does not already exist, it is created. |
+| Blob data        | Required  | A byte array  |
+
 

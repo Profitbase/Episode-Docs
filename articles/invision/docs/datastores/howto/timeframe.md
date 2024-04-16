@@ -39,7 +39,7 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Data%20Sto
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTtimeFrame%20(8).png)
 
-8. And apply it to chosen columns:
+8. And apply it to the selected columns:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTtimeFrame%20(9).png)
 

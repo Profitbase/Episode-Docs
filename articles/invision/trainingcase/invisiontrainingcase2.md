@@ -42,7 +42,7 @@ Using this simple example, we want to show you how the Invision LOW CODE can be 
 
 <br/>
 
-3. Add page and setup chosen properties:
+3. Add page and set up the selected properties:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/MovMania%20(3).png)
 
@@ -250,7 +250,7 @@ Using this simple example, we want to show you how the Invision LOW CODE can be 
 > See also [Table Videos](../videos/tables.md) and [step by step documentation](../docs/tables/howto.md).
 <br/>
 
-1. Right-click chosen folder in Solution Explorer to add a new item, choose a Table:
+1. Right-click the selected folder in the Solution Explorer to add a new item, choose a Table:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/MovManiaTab%20(1).png)
 
@@ -278,7 +278,7 @@ Using this simple example, we want to show you how the Invision LOW CODE can be 
 > 
 <br/>
 
-1. Right-click chosen folder in Solution Explorer to add a new item, choose a Form Schema:
+1. Right-click the selected folder in the Solution Explorer to add a new item, choose a Form Schema:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/MoviemaniaFS%20(1).png)
 

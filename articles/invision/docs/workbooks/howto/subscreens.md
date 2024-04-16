@@ -22,7 +22,7 @@ Under [this](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20
    
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTsubS%20(3).png)
 
-4. When you finished setting up Subscreens, go back to the main layout and drag and drop Tab Control on the chosen page. You will find it under UI elements in Resources:
+4. When you finished setting up Subscreens, go back to the main layout and drag and drop Tab Control on the selected page. You will find it under UI elements in Resources:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTsubS%20(4).png)
 

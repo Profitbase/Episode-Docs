@@ -9,7 +9,7 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Worksheet%
 ## Step by step
 
 
-1. Go to the configuration tab and open caption expression window for chosen column:
+1. Go to the configuration tab and open caption expression window for the selected column:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTtf%20(1).png)
 

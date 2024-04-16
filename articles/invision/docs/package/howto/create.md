@@ -11,7 +11,7 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Package%20
 ## Step by step
 
 
-1. Right-click chosen folder in Solution Explorer to add a new item, choose Package:
+1. Right-click the selected folder in the Solution Explorer to add a new item, choose Package:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTpack%20(1).png)
 

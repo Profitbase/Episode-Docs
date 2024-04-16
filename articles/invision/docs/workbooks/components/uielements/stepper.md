@@ -58,7 +58,7 @@ Arguments("Step1", true)
 
 ### Go To Step(...)
 
-Switches dynamically to the chosen step.  
+Switches to the selected step.  
 
 ```
 Arguments("Step3")

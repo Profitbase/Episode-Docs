@@ -50,7 +50,7 @@ This example demonstrates how to run a Flow within another Flow. We will call th
 <br/>
 
 4) The final steps of `Create order` is to return the Order object so it can be used by the caller. 
-To do this, you can either add a [Define Type](../../actions/built-in/define-type.md) action or define the the Order object using [custom code](../defining-custom-code.md). We've chosen to use custom code in this example. 
+To do this, you can either add a [Define Type](../../actions/built-in/define-type.md) action or define the the Order object using [custom code](../defining-custom-code.md). We've opted for custom code in this example. 
 
 <br/>
 

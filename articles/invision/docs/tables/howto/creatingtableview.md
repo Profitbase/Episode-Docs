@@ -10,11 +10,11 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Table%20Vi
 
 ## Step by step
 
-1. Right-click chosen folder in Solution Explorer to add a new item, choose a Table View:
+1. Right-click the selected folder in the Solution Explorer to add a new item, choose a Table View:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTtviev%20(1).png)
 
-2. Type or paste a Query that will browse the data from the chosen Table:
+2. Type or paste a Query to browse the data from the selected table:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTtviev%20(2).png)
 

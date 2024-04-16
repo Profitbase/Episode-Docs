@@ -12,7 +12,7 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Access%20C
 1. Go to the “Workbook Permission” tab,
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTwbacc%20(1).png)
 
-2. Highlight your solution or chosen workbook in the Workbooks and Pages field,
+2. Highlight the solution or selected workbook in the Workbooks and Pages field,
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTwbacc%20(2).png)
 
 
@@ -20,7 +20,7 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Access%20C
 4. Click the “Add” button in the Permissions pop-up,
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTwbacc%20(3).png)
 
-1. Select chosen Access Group and click OK,
+1. Select the selected Access Group and click OK,
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTwbacc%20(4).png)
 
 6. Click “Save and publish”.

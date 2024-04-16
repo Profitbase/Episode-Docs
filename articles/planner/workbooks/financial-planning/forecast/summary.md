@@ -10,7 +10,7 @@ A Profit and Loss summary report that displays the forecast done so far. It cont
 2. **Trend** <br/>
 The Trend button takes you in to the Trend pop up page in which it is possible to trend the development of various report lines over time. It will vary from solution to solution which report lines are enabled for trending.
 3. **Year filter** <br/>
-The Year filter drop down selection enables you to select which (time) part of the forecast that you would like to see. Selecting this year or next year, will drill to the month level for the chosen year.
+The Year filter drop down selection enables you to select which (time) part of the forecast that you would like to see. Selecting this year or next year, will drill to the month level for the selected year.
 4. **Workflow** <br/>
 The workflow enables you to set the state of the forecast. The state set will be propagated to the input modules associated with the solution for the department currently selected. Setting the state to Finished will by default disable any further input to the input modules (depends on user's access level).
 5. **Go to input module** <br/>
