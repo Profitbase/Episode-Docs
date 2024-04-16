@@ -184,7 +184,7 @@ Use the Searchable property to enable or disable searching the dropdown items. T
 
 ```xml
 <UI Grid="grid">
-    <Dropdown Row="1" Column="1" ColumnSpan="6" Searchable="true" ItemsSource="Pilots" DisplayMember="Name" ValueMember="PilotID" SelectedValue="{Binding Path:Pilot.PilotID}" ItemSelected="chosen">
+    <Dropdown Row="1" Column="1" ColumnSpan="6" Searchable="true" ItemsSource="Pilots" DisplayMember="Name" ValueMember="PilotID" SelectedValue="{Binding Path:Pilot.PilotID}" ItemSelected="OnItemSelected">
          <ItemTemplate>
             <Layout CssClass="dropdownItemTemplateContainer">
                 <Grid Columns="150px auto 100px" Gap="4">

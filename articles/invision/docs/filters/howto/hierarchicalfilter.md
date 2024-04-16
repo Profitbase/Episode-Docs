@@ -10,7 +10,7 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Filter%20-
 ## Step by step
 
 
-1. Right-click chosen folder in Solution Explorer to add a new item, choose Filters:
+1. Right-click the selected folder in the Solution Explorer to add a new item, choose Filters:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTflF%20(1).png)
 

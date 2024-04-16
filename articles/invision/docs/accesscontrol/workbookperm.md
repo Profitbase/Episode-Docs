@@ -11,7 +11,7 @@ Every time a new workbook is created the access need to be granted.
 ##	Granting Workbook Permission
 
 1.	Go to the **“Workbook Permission”** tab,
-2.	Highlight your solution or chosen workbook in the Workbooks and Pages field, 
+2.	Highlight the Solution or selected Workbook in the Workbooks and Pages field, 
 3.	Click on the **“Edit”** button on the right-hand side of Explicit Permission,
 4.	Click the **“Add”** button in the Permissions pop-up, 
 5.	Select **“Admin”** in the access group selector and click OK,  

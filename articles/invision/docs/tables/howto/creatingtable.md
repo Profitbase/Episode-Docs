@@ -12,7 +12,7 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Tables%20-
 
 ## Step by step
 
-1. Right-click chosen folder in Solution Explorer to add a new item, choose a Table:
+1. Right-click the selected folder in the Solution Explorer to add a new item, choose a Table:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTtb%20(1).png)
 

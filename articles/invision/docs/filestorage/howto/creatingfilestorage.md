@@ -8,11 +8,11 @@ Under [this](https://profitbasedocs.blob.core.windows.net/videos/File%20Storage%
 
 ## Step by step
 
-1. Right-click chosen folder in Solution Explorer to add a new item, choose File Storage and name it.
+1. Right-click the selected folder in the Solution Explorer to add a new item, choose File Storage and name it.
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTFileSt%20(1).png)
 
-2.  Add the component by drag and drop it:
+2.  Add the component by dragging and dropping it:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTFileSt%20(2).png)
 

@@ -30,7 +30,7 @@ Top panel:
 
 <br/>
 
-- Open Hotkey Editor in the properties window for the chosen control
+- Open Hotkey Editor in the properties window for the selected control
 - Write your key combination
 - press the OK button
 - save changes made to that object

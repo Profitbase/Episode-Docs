@@ -46,7 +46,7 @@ Changed: Functional: Yes; User interface: No; Data model/schema: No
 
 - "Cash Monthly" report have incorrect cash in January for version with start month 1 (#1282)
 - "Cash Monthly" report is not loading on filter change if report is not already cashed. Navigate to other report and back to get report cashed and loaded. (#1286)
-- Filters in top section of finance reports that are not relevant for the chosen report page, are hidden but still active when moving cursor over where the filter was located. This is fixed and "hidden" filters can not be reached. (#1313)
+- Filters in top section of finance reports that are not relevant for the selected report page, are hidden but still active when moving cursor over where the filter was located. This is fixed and "hidden" filters can not be reached. (#1313)
 - "Cash Due" report changed to allow multiple cash accounts and changed bottom row to CB. Note that that cash accounts is using CashLineOfCredit mapped accounts which will limit number of cash accounts to one per Legal Entity. This limitation will also affect Opening Balance (OB). (#1323)
 - "Trial Balance" drilldown report - corrected bug for missing filter on selected scenario. (#1330)
 - Inline filtering added to drill down reports available from Finance Report (Compare page, Year and Months page, Trial Balance page and Cash Due page) (#488)

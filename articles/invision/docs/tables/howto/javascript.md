@@ -9,7 +9,7 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Spreadshee
 ## Step by step
 
 
-1. Right-click chosen folder in Solution Explorer to add a new item, choose JavaScript:
+1. Right-click the selected folder in the Solution Explorer to add a new item, choose JavaScript:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTjs%20(1).png)
 

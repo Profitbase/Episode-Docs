@@ -8,7 +8,7 @@ Under [this](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20
 
 ## Step by step
 
-1. Right-click chosen folder in Solution Explorer to add a new item:
+1. Right-click the selected folder in the Solution Explorer to add a new item:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTWb%20(1).png)
 

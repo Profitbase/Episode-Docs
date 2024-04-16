@@ -32,10 +32,10 @@ Under [this](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/stepperHT2%20(3).png)
 
-6. Add "On Tapped" event to the button.
+6. Add "On Tapped" event of the button.
    
 ![pic](https://profitbasedocs.blob.core.windows.net/images/stepperHT2%20(7).png)
 
-7. Set up chosen stepper properties.
+7. Set up the stepper properties.
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/stepperHT2%20(6).png)

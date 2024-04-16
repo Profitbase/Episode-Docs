@@ -10,7 +10,7 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/PowerShell
 ## Step by step
 
 
-1. Right-click chosen folder in Solution Explorer to add a new item, choose PowerShell:
+1. Right-click the selected folder in the Solution Explorer to add a new item, choose PowerShell:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/powershelHTgtn1.png)
 

@@ -11,7 +11,7 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/PowerShell
 ## Step by step
 
 
-1. Right-click chosen folder in Solution Explorer to add a new item, choose Data Flow and Data Flow Iem:
+1. Right-click the selected folder in the Solution Explorer to add a new item, choose Data Flow and Data Flow Iem:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/PSiDFht%20(1).png)
 

@@ -15,8 +15,8 @@ Every time a new workbook is created the access need to be granted.
 **Example**
 
 1.	Go to **“Data Permission”** tab,
-2.	Highlight the chosen Dimension, 
-3.	Highlight the chosen Hierarchy,
+2.	Highlight the selected Dimension, 
+3.	Highlight the selected Hierarchy,
 4.	Click on the **“Edit”** button on the right-hand side of Explicit Permission,
 5.	Click the **“Add”** button in the Data Access Object Permissions pop-up, 
 6.	Select **“Admin”** in the access group selector and click OK,  

@@ -25,6 +25,6 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Dim%20Tran
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTdimEd2%20(4).png)
 
-5. Last step is to switch to the chosen language:
+5. Last step is to switch to the selected language:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTdimEd2%20(5).png)

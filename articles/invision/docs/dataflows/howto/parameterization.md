@@ -9,7 +9,7 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flo
 ## Step by step
 
 
-1. Right-click chosen folder in Solution Explorer to add a new item, create Data Flow than Data Flow Item:
+1. Right-click the selected folder in the Solution Explorer to add a new item, create Data Flow than Data Flow Item:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTparams%20(1).png)
 

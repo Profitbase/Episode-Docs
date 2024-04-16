@@ -13,7 +13,7 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Accessibib
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HThothey%20(1).png)
 
-2. Add Hotkey property to chosen control:
+2. Add Hotkey property to the selected control:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HThothey%20(2).png)
 
