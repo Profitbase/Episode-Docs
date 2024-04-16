@@ -3,9 +3,11 @@
 Creates a CSV file from a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) or [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) and returns the result as a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream).
 
 
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/asStream.png)
+![img](../../../../images/flow/create-csv-as-stream.png)
 
-<br/>
+## Returns
+
+[Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream)
 
 
 ## Properties
