@@ -12,4 +12,4 @@ Reads the contents of a file in OneDrive as a stream.
 
 ## Returns
 
-A [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream) that provides access to the contents of the file. Use the stream as input to other actions, such as the [Get datareader](../excel/get-datareader.md) if you are fetcing an Excel-file from OneDrive.
+A [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream) that provides access to the contents of the file. Use the stream as input to other actions, such as the [Get datareader](../excel/get-datareader.md) if you are fetching an Excel-file from OneDrive.

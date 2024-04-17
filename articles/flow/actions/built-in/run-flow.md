@@ -1,6 +1,10 @@
 # Run Flow (nested execution)
 
-Runs a Flow inside another Flow.
+Runs a Flow and awaits its completion before continuing.
+
+Use this action if you want to run a Flow within another Flow. The main Flow will continue execution after the child Flow has completed. If a value is returned from the child Flow, it can be used in the main Flow.
+
+![img](../../../../images/flow/run-flow.png)
 
 ## Properties
 
