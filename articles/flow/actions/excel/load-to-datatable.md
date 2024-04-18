@@ -8,10 +8,10 @@ Loads the contents of an Excel sheet into memory as a [DataTable](https://learn.
 
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
-| File contents    | Required  | The [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream) or [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays) containing the Excel file raw data. |
+| File contents    | Required  | The [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream) or [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays) (`byte[]`) containing the Excel file raw data. |
 | Worksheet name   | Optional  | The name of the worksheet to read data from. If you don't specify anything, data is read from the first worksheet in the file.  |
-| Data start row   | Optional  | The index of the first row to read. If the worksheet has a header row, `Data start row` is typically `2`. |
-| Column mapping   | Required  | Configure row object.                                  |
+| Data start row   | Optional  | The row number of the first row to read. If the worksheet has a header row, `Data start row` is typically `2`. |
+| Column mapping   | Required  | Defines the mapping between the `column letters` (A,B,C, etc) in a worksheet, and the `column names` (CustomerID, Amount, etc) in the target DataTable.   |
 | Table variable name | Optional | The name of the DataTable variable returned from the action. |
 
 ## Returns
