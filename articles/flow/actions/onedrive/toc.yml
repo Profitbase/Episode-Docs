@@ -1,7 +1,13 @@
 - name: "Get files in folder"
   href: "get-files-in-folder.md"
+- name: "Foreach file"
+  href: "foreach-file.md"
 - name: "Read file as stream"
   href: "read-file-as-stream.md"
+- name: "Upload file"
+  href: "upload-file.md"
+- name: "Delete file"
+  href: "delete-file.md"
 - name: "API reference"
   items:
   - name: "OneDriveItem"
