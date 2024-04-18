@@ -4,3 +4,5 @@
   href: "load-to-datatable.md"
 - name: "Read rows"
   href: "read-rows.md"
+- name: "Export to Excel as byte array"
+  href: "export-to-excel-as-byte-array.md"
