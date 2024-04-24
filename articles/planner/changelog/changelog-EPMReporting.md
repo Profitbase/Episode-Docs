@@ -6,6 +6,7 @@ EPM Reporting package provide central management of dimensions, report setup and
 
 ## EPM Reporting versions
 
+- [EPM Reporting 1.1.1](#epm-reporting-112) - Released 2024.04.24
 - [EPM Reporting 1.1.1](#epm-reporting-111) - Released 2024.02.21
 - [EPM Reporting 1.1.0](#epm-reporting-110) - Released 2024.01.26
 - [EPM Reporting 1.0.7](#epm-reporting-107)
@@ -15,7 +16,25 @@ EPM Reporting package provide central management of dimensions, report setup and
 
 - Nothing yet
 
+## EPM Reporting 1.1.2
+
+**Changes:**
+
+- None
+
+**Fixes:**
+
+- Group account mapping - account name showing wrong language (#1658)
+- Finance Reports optional columns may not show all columns (#1653)
+- Finance Reports dropdown list man show (blank) elements due to defect in translations (#1649)
+
 ## EPM Reporting 1.1.1
+
+**Changes:**
+
+- None
+
+**Fixes:**
 
 - Timefunction filter - Norwegian characters is replaced by ? (#1635)
 - Historical numbers disapers in report lines (not trial balance) after publish changes in reports (#1634)

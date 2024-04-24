@@ -6,6 +6,7 @@ EPM Finance Reports package contains the finance report as they are deployed acr
 
 ## EPM Finance Reports Versions
 
+- [EPM Finance Reports 1.1.1](#epm-finance-reports-111) - Released 2024.04.24
 - [EPM Finance Reports 1.1.0](#epm-finance-reports-110) - Released 2024.01.26
 - [EPM Finance Reports 1.0.2](#epm-finance-reports-102)
 - [EPM Finance Reports 1.0.1](#epm-finance-reports-101)
@@ -13,6 +14,18 @@ EPM Finance Reports package contains the finance report as they are deployed acr
 ## Unreleased
 
 - Nothing yet.
+
+## EPM Finance Reports 1.1.1
+
+**Changes:**
+
+- None
+
+**Fixes:**
+
+- Year total column sum of periodes shows wrong value (#1666)
+- Trial Balance is changed to allow showing published data from Consolidation versions (#1650)
+- Wrong values for OB column in reports when adjusting OB for and plan start periode is 1 (typical for Budget) (#1632)
 
 ## EPM Finance Reports 1.1.0
 

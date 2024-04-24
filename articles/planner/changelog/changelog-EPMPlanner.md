@@ -6,6 +6,7 @@ This package provide the financial planning function and can be organized in pro
 
 ## EPM Planner Versions
 
+- [EPM Planner 5.5.1](#epm-planner-551) - Released 2024.04.24
 - [EPM Planner 5.5.0](#epm-planner-550) - Released 2024.02.21
 - [EPM Planner 5.4.1](#epm-planner-541)
 - [EPM Planner 5.4.0](#epm-planner-540)
@@ -13,6 +14,21 @@ This package provide the financial planning function and can be organized in pro
 ## Unreleased
 
 - Nothing yet
+
+## EPM Planner 5.5.1
+
+**Changes:**
+
+- None
+
+**Fixes:**
+
+- Improved performance Plan Overview and account details including drilldown (#1674)
+- Driver based - summable measures incorrectly redistributed after a central key change when plan start in months 2,3 or 4 (#1672)
+- Driverbased model: Double values in historic ref columns and plan proposal when using another version as source (#1660)
+- Account details report may not display actuals (plan start is different from start of year) (#1656)
+- Inaccuracies in Planner deviation column, dataset included OB transaction (#1648)
+- Fixed issue with Duplicate Rows and expanded Table Size in Driver-Based Model (#1629)
 
 ## EPM Planner 5.5.0
 
