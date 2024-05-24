@@ -54,6 +54,8 @@
         href: docs/sqlreports/toc.yml
       - name: SQL scripts
         href: docs/sqlscripts/toc.yml
+      - name: Stored Procedures
+        href: docs/stored-procedures.md
       - name: System views
         href: docs/systemviews.md
       - name: Tables
@@ -157,43 +159,43 @@
     - name: Change log
       href: changelog.md
       items:
-      - name: Change log 2024.1
+      - name: Changelog 2024.1
         href: changelog/changelog-2024-1.md
-      - name: Change log 2023.7
+      - name: Changelog 2023.7
         href: changelog/changelog23_7.md
-      - name: Change log 2023.6
+      - name: Changelog 2023.6
         href: changelog/changelog23_6.md
-      - name: Change log 2023.5
+      - name: Changelog 2023.5
         href: changelog/changelog23_5.md
-      - name: Change log 2023.4
+      - name: Changelog 2023.4
         href: changelog/changelog23_4.md
-      - name: Change log 2023.3
+      - name: Changelog 2023.3
         href: changelog/changelog23_3.md
-      - name: Change log 2023.2
+      - name: Changelog 2023.2
         href: changelog/changelog23_2.md
-      - name: Change log 2023.1
+      - name: Changelog 2023.1
         href: changelog/changelog23_1.md
-      - name: Change log 2022.5
+      - name: Changelog 2022.5
         href: changelog/changelog22_5.md
-      - name: Change log 2022.4
+      - name: Changelog 2022.4
         href: changelog/changelog22_4.md
-      - name: Change log 2022.3 pt.2
+      - name: Changelog 2022.3 pt.2
         href: changelog/changelog22_3_2.md
-      - name: Change log 2022.3 pt.1
+      - name: Changelog 2022.3 pt.1
         href: changelog/changelog22_3_1.md     
-      - name: Change log 2022.2
+      - name: Changelog 2022.2
         href: changelog/changelog22_2.md
-      - name: Change log 2022.1
+      - name: Changelog 2022.1
         href: changelog/changelog22_1.md
-      - name: Change log 5.2
+      - name: Changelog 5.2
         href: changelog/changelog52.md
-      - name: Change log 5.1
+      - name: Changelog 5.1
         href: changelog/changelog51.md
-      - name: Change log 5.0
+      - name: Changelog 5.0
         href: changelog/changelog5.md
-      - name: Change log 4.1
+      - name: Changelog 4.1
         href: changelog/changelog41.md
-      - name: Change log 4.0
+      - name: Changelog 4.0
         href: changelog/changelog40.md
     - name: Trainingcase
       href: trainingcase/index.md
