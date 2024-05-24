@@ -10,6 +10,7 @@ Represents an item / member of a [DimensionTree](dimension-tree.md).
 | ParentId    | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string)  | The parent id of the dimension member.                             |
 | Level       | [Byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte)      | The level of the dimension member in the dimension.                |
 | Properties  | TProps                                                                | A property object that contains dimension properties when defined. |
+| ChildCount | [Int32](https://learn.microsoft.com/en-us/dotnet/api/system.int32) | The number of children the dimension member has. |
 
 ## Methods
 
