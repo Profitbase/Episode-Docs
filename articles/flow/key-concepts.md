@@ -9,7 +9,7 @@ Development takes place via a web-based drag-and-drop interface, with execution 
 
 ## Tenants
 
-A tenant serves as the foundation for a client account, encompassing a subscription plan, user management, and associated billing information. Based on the  the subscription plan, the tenant has access to defined set of resources like CPU, networking, and memory. While typically a company corresponds to a single tenant, it's entirely feasible for a company to create multiple tenants, each of which is billed separately.
+A tenant serves as the foundation for a client account, encompassing a subscription plan, user management, API keys, and associated billing information. Based on the  the subscription plan, the tenant has access to defined set of resources like CPU, networking, and memory. While typically a company corresponds to a single tenant, it's entirely feasible for a company to create multiple tenants, each of which is billed separately.
 
 ## Workspaces
 
@@ -59,6 +59,8 @@ Actions define the business logic of a Flow. Actions are combined as a sequence 
 flowchart TD
 
 Tenant[Tenant] --> Workspaces[Workspaces]
+Tenant --> Users
+Tenant --> APKeys[API keys]
 Workspaces --> WorkspaceObjects[Workspace objects]
 Workspaces --> WorkspaceVariables[Workspace variables]
 Workspaces --> Environments[Environments]

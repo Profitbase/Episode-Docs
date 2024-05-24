@@ -6,3 +6,5 @@
     href: how-to/run-flow-from-workbook.md
   - name: Run Flow from Form Schema
     href: how-to/run-flow-from-form-schema.md
+  - name: Run long-running Flow
+    href: how-to/run-long-running-flow.md
