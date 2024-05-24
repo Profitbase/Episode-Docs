@@ -12,7 +12,14 @@
     - name: Account permissions
       href: on-premises-installation/account-permissions.md
     - name: Step-by-step installation guide
-      href: on-premises-installation/step-by-step-installation.md    
+      href: on-premises-installation/step-by-step-installation.md
+  - name: Tenants
+    href: tenants.md
+    items:
+    - name: Users
+      href: tenants/users.md
+    - name: API Keys
+      href: tenants/api-keys.md
   - name: Workspaces
     href: workspaces.md
     items:

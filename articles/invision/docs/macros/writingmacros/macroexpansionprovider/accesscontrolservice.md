@@ -6,30 +6,16 @@
 The AccessControlService provides an API against a small subset of the InVision access control system.
 <br/>
 
-## Methods:
-
->**IsMemberOfAccessGroupAsync**
+## Methods
 
 ``Task<bool> IsMemberOfAccessGroupAsync(string identityId, string accessGroupName)``
-<br/>
-
->**HasObjectAccessAsync**
 
 ``Task<bool> HasObjectAccessAsync(string identityId, string objectId)``
 
-<br/>
-
->**HasWorkbookAccessAsync**
-
 ``Task<bool> HasWorkbookAccessAsync(string identityId, string workbookName)``
-
-<br/>
-
->**HasWorkbookPageAccessAsync**
 
 ``Task<bool> HasWorkbookPageAccessAsync(string identityId, string workbookName, string pageName)``
 
-<br/>
 
 **Example:**
 
@@ -39,7 +25,7 @@ This example shows how to check whether the current user is a member of the “A
 > that we’re using Context.GetUserUniqueId() to get the id of the current user.
 
 
-```
+```csharp
 namespace Local;
     
 using System.Threading.Tasks;
@@ -61,8 +47,3 @@ public class MyMacros : MacroExpansionProvider
     }
 }
 ```
-
-
-
-<br/>
-

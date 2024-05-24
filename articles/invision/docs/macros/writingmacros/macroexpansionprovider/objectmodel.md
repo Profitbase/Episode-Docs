@@ -6,99 +6,98 @@
 The ObjectModel API provides access to metatadata information about the objects in the solution, for example getting connection strings, database table names for materialized objects, column names in the materialized objects etc. (Examples further down).
 <br/>
 
-**Method:**
+**Methods**
 
-``IObjectModelReference Object(string solutionObjectName)``
->Returns an instance of a metadata providerservice for the specified solution object.
+`IObjectModelReference Object(string solutionObjectName)`
+Returns an instance of a metadata providerservice for the specified solution object.
 
-<br/>
+`IDimensionReference Dimension(string dimensionName)`
+Returns an instance of a metdata provider service for the dimension with the specified name.
 
-
-**Method:**
-
-``IDimensionReference Dimension(string dimensionName)``
->Returns an instance of a metdata provider service for the dimension with the specified name.
-
+`ISqlScriptReference SqlScript(sqlScriptName)`  
+Returns an instance of a metadata provider service for the SQL Script with the specified name.
 
 ## IObjectModelReference
-<br/>
 
-**Method:**
+**Methods**
 
 ``IObjectModelStorageService Storage()``
->Returns an instance of a service that provides information about the materialized storage object (database table) of a solution object.
+Returns an instance of a service that provides information about the materialized storage object (database table) of a solution object.
 
-<br/>
-
-**Method:**
 
 ``IDimensionMetadataService Metadata()``
->Retuns an instance of a service that provides metadata information about the dimension.
+Retuns an instance of a service that provides metadata information about the dimension.
 
-<br/>
-
-
-
-
-
-
-### IObjectModelStorageService
+## IObjectModelStorageService
 
 Provides APIs for accessing information about the materialized storage object (database table) of a solution object
 <br/>
 
-**Method:**
+**Methods**
 
-``Task<IEnumerable<string>> GetColumnNamesAsync(bool includeSystemColumns = false)``
->Returns the column names in the database tableof the solution object.
+`Task<IEnumerable<string>> GetColumnNamesAsync(bool includeSystemColumns = false)`
+Returns the column names in the database tableof the solution object.
 
-``Task<string> GetConnectionStringAsync()``
->Returns the connection string to the database table.
+`Task<string> GetConnectionStringAsync()`
+Returns the connection string to the database table.
 
-``Task<string> GetDbObjectNameAsync()``
->Returns the database object name (table, view) of the solution object.
+`Task<string> GetDbObjectNameAsync()`
+Returns the database object name (table, view) of the solution object.
 
+## ISqlScriptReference
+
+**Methods**
+`ISqlScriptMetadataService Metadata()`  
+Returns an instance of a service that provides metadata about a SQL Script in the Solution. 
+
+## ISqlScriptMetadataService
+
+**Methods**
+`Task<string> GetSqlExpression()`  
+Returns the SQL expression defined in the SQL script. Any macros will be resolved.
 
 <br/>
 
->**Examples**
->
->The following example shows how the Context, SqlCommandService and ObjectModel API can be used to create a macro (SelectList) that returns a collection of columns that can be used as the select list of a query.
->
->
-    namespace Local
-    {
-        using System; 
-        using System.Collections.Generic;
-        using System.Threading.Tasks;
-        using System.Data.SqlClient;
-        using System.Linq;
-        using Profitbase.Invision.Scripting.Dynamic;
-        public class MyMacros : MacroExpansionProvider
-        {           
-            public async Task<string> SelectList()
+**Examples**
+
+The following example shows how the Context, SqlCommandService and ObjectModel API can be used to create a macro (SelectList) that returns a collection of columns that can be used as the select list of a query.
+
+```csharp
+
+namespace Local
+{
+    using System; 
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+    using System.Data.SqlClient;
+    using System.Linq;
+    using Profitbase.Invision.Scripting.Dynamic;
+
+    public class MyMacros : MacroExpansionProvider
+    {           
+        public async Task<string> SelectList()
+        {
+            var customerMetadataStorage = this.ObjectModel.ForObject("Customer Metadata").Storage();
+            var connectionString = await customerMetadataStorage.GetConnectionStringAsync();
+            var customerMetadataTableName = await customerMetadataStorage.GetDbObjectNameAsync();
+            var customerCategory = await this.SqlCommandService.ExecuteScalarAsync<int>(connectionString,  
+            $"SELECT CustomerCategory FROM {customerMetadataTableName} WHERE CustomerID = @customerId", 
+            new SqlParameter("@customerId", this.Context.Arguments.GetValue("@CustomerID")));
+            if(customerCategory == 1)
             {
-                var customerMetadataStorage = this.ObjectModel.ForObject("Customer Metadata").Storage();
-                var connectionString = await customerMetadataStorage.GetConnectionStringAsync();
-                var customerMetadataTableName = await customerMetadataStorage.GetDbObjectNameAsync();
-                var customerCategory = await this.SqlCommandService.ExecuteScalarAsync<int>(connectionString,  
-                $"SELECT CustomerCategory FROM {customerMetadataTableName} WHERE CustomerID = @customerId", 
-                new SqlParameter("@customerId", this.Context.Arguments.GetValue("@CustomerID")));
-                if(customerCategory == 1)
-                {
-                    return string.Join(",", (await this.ObjectModel.ForObject("Customer Sales")  
-                    .Storage().GetColumnNamesAsync()).Where(c => c.Contains("Cat1")));
-                }
-                else
-                {
-                    return string.Join(",", (await this.ObjectModel.ForObject("Customer Sales")  
-                    .Storage().GetColumnNamesAsync()).Where(c => !c.Contains("Cat1")));
-                }
+                return string.Join(",", (await this.ObjectModel.ForObject("Customer Sales")  
+                .Storage().GetColumnNamesAsync()).Where(c => c.Contains("Cat1")));
+            }
+            else
+            {
+                return string.Join(",", (await this.ObjectModel.ForObject("Customer Sales")  
+                .Storage().GetColumnNamesAsync()).Where(c => !c.Contains("Cat1")));
             }
         }
     }
+}
 
-
+```
 
 ### IDimensionMetadataService
 <br/>
@@ -106,7 +105,7 @@ Provides APIs for accessing information about the materialized storage object (d
 **Method:**
 
 ``Task<Hierarchy> GetHierarchyAsync(string? name = null)``
->Returns the hierarchy with the specified name. If no name is specified, the first hierarchy is returned.
+Returns the hierarchy with the specified name. If no name is specified, the first hierarchy is returned.
 
 <br/>
 
@@ -116,16 +115,16 @@ Provides APIs for accessing information about the materialized storage object (d
 **Methods**
 
 ``string GetIdColumn()``
->Returns the name of the leaf level column which contains the id of the dimension member
+Returns the name of the leaf level column which contains the id of the dimension member
 
 ``string GetNameColumn(string? langId = null)``
->Returns the name of the leaf level column which contains the display name of the dimension member
+Returns the name of the leaf level column which contains the display name of the dimension member
 
 ``string GetIdColumn(int level)``
->Returns the name of the column at the specified level which contains the id of the dimension member
+Returns the name of the column at the specified level which contains the id of the dimension member
 
 ``string GetNameColumn(int level, string? langId = null)``
->Returns the name of the column at the specified level which contains the display name of the dimension member
+Returns the name of the column at the specified level which contains the display name of the dimension member
 
 <br/>
 
@@ -134,13 +133,13 @@ Provides APIs for accessing information about the materialized storage object (d
 The following example shows to use the dimension metadata API to create a SQL query which will return data from the leaf and level 1.
 It will generate the following query:
 
-```
+```sql
 SELECT  L1, L1_Name,ItemID, ItemID_Name_EN 
 FROM Dim_MyDim_11062021094945 
 ```
 <br/>
 
-```
+```csharp
 namespace Local
 {
     using System; 
