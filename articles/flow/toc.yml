@@ -95,6 +95,10 @@
       href: actions/sendgrid/toc.yml
     - name: "SQL Server"
       href: actions/sql-server/toc.yml
+    - name: Visma
+      href: actions/visma/toc.yml
+    - name: Xledger
+      href: actions/xledger/toc.yml
   - name: "Triggers"
     href: triggers/toc.yml
   - name: "API reference"
