@@ -4,7 +4,7 @@ Runs a Flow and returns the response object defined by the Flow definition.
 The maximum allowed execution time is `300 seconds (5 minutes)`. If the Flow needs longer than 5 minutes to complete, use the [Submit](submit-long-running.md) API instead.
 
 ```http
-[POST] api/v1/tenants/{tenantId}/workspaces/{workspaceId}/flows/{flowId}/run?env={env}
+[POST] api/v1/tenants/{tenantId}/workspaces/{workspaceId}/flows/{flowId}/run?env={env}&api_key={apikey}
 ```
 
 View the [execution endpoints](../../flows/execution-endpoints.md) of the Flow to find the exact address to use.
@@ -16,6 +16,16 @@ This API can be called with a JSON or binary payload as the `HTTP body`. Use the
 | Parameter      | Description            |
 |----------------|------------------------|
 | env            | `Development`, `Test` or `Production` <br/> OR <br/> `0` (Development), `1` (Test), `2` (Production) |
+| api_key        | An API key with the `Execute` policy  |
+
+#### Headers
+
+| Header      | Description               |
+|-------------|---------------------------|
+| x-api-key   | An API key with the `Execute` policy  |
+
+>[!NOTE]
+> When executing a Flow using this API, you must include the API key in either the query string OR the header, but not both.
 
 #### Response
 
