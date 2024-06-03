@@ -1,9 +1,16 @@
 # Users
 
-A user is someone who interacts with the Workspace and its resources. By default, only Tenant administrators have access to a Workspace. Non-admin users need to be granted access by adding them to the list of allowed users through the Workspace details screen in the Flow Portal. 
+Only authorized users can can log in to Profitbase Flow and access tenants. In order to be authorized, the user must be registered and assigned the Admin or Member `role`.  
 
-1) From the left menu, open the Workspaces panel
-2) Select a Workspace and click the **Access** button
-3) Select (or unselect) the user(s) that you want to grant or deny access to the Workspace  
+Both admin and member users are managed in the Users screen. If you need to change any properties of a user, such as the email or role (Admin / Member), you can do this at any time after the user has been created. The changes will take effect the next time the user loads the app.  
 
-![img](../../../images/workspace-set-access.png)
+### Admin users
+
+An Admin user has access to all features and Workspaces in a Tenant, and can assign other users to the admin role.  
+
+### Member users
+
+Member users can only access the Workspace(s) they have been granted access to by administrators.  
+To grant a Member user permissions to a Workspace, go the the Workspace and [grant permissions to the user from access control screen](../workspaces/workspace-access-control.md).  
+ 
+![img](../../../images/flow/tenant-users.png)
