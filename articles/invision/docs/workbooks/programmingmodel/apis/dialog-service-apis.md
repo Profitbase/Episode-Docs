@@ -1,6 +1,6 @@
 # Dialog Service API
 
-The following APIs can be used in any Execute Expression Actions or [Form Schema functions](../../../forms/formschemas/functions.md).
+The following APIs can be used in any [Execute Expression](../interactionmodel/workbookactions.md#execute-expression) Actions or [Form Schema functions](../../../forms/formschemas/functions.md).
 
 #### showConfirm({string, string, string, string})
 #### showConfirm(string)
@@ -16,17 +16,28 @@ this.app.ui.dialogs.showConfirm(text: string): Promise<boolean>
 
 ##### Example
 
+This example shows how to ask a user to confirm that they want to delete a customer and then displays whether the customer was successfully deleted.
+
 ```javascript
-const result = await this.app.ui.dialogs.showConfirm({title: 'Delete customer', text: 'Are you sure you want to delete this customer?'});
+const result = await this.app.ui.dialogs.showConfirm({
+    title: 'Delete customer', 
+    text: 'Are you sure you want to delete this customer?'
+});
+
 if(result){
-    await this.app.services.flow.execute("Delete Customer", {
+    const success = await this.app.services.flow.execute("Delete Customer", {
         data: {
             customerId: this.app.variables._state.customerId
         }
     });
+    
+    this.app.ui.dialogs.showMessage(`The customer was ${!success ? 'NOT' : ''} deleted!`)    
 }
 ```
 
+![img](../../../../../../images/invision/dialog-service-api-example.png)
+
+<br/>
 <br/>
 
 #### showMessage({string, string, number})
@@ -48,6 +59,7 @@ this.app.ui.dialogs.showMessage({title: 'Delete customer', text: 'The customer w
 ```
 
 <br/>
+<br/>
 
 #### showChoice({string, string, number, number, array})
 
@@ -61,8 +73,13 @@ this.app.ui.dialogs.showChoice({title: string, text: string, width: number, heig
 
 ##### Example
 
+The example below shows how to display a popup that lets the user answer one of the most important and debated questions in human history.
+
 ```javascript
-const response = await this.app.ui.dialogs.showChoice({title: 'Important choice', text: 'Is pineapple OK on pizza?', options: [{
+const response = await this.app.ui.dialogs.showChoice({
+    title: 'Pizza preferences', 
+    text: 'Is pineapple on pizza ok?', 
+    options: [{
         text: 'Yes',
         value: 1
     },{
@@ -81,3 +98,5 @@ if(response === 3){
 }
 
 ```
+
+![img](../../../../../../images/invision/choice-dialog-example.png)

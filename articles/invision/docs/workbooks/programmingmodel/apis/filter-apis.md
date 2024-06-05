@@ -1,8 +1,12 @@
 # Filter Service API
 
+The following APIs can be used in any [Execute Expression](../interactionmodel/workbookactions.md#execute-expression) Actions or [Form Schema functions](../../../forms/formschemas/functions.md).
+
 #### get(string, string)
 
 Returns the filter state of a filter in the Workbook.
+
+##### API Definition
 
 ```javascript
 this.app.filters.get("groupName", "filterName") : FilterData | null

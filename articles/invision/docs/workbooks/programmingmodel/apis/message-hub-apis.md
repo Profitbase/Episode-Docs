@@ -4,7 +4,7 @@ This service enables sending messages to other Workbooks.
 
 Messages are sent between Workbooks using a fixed format message object. The message object has 5 properties, which specify the receiver address and the message contents. If you do not specify an address, the message is broadcasted to all Workbooks running on the same website.
 
-The following APIs can be used in any Execute Expression Actions or [Form Schema functions](../../../forms/formschemas/functions.md).
+The following APIs can be used in any [Execute Expression](../interactionmodel/workbookactions.md#execute-expression) Actions or [Form Schema functions](../../../forms/formschemas/functions.md).
 
 #### sendMessage({string, string, string, string, any})
 
