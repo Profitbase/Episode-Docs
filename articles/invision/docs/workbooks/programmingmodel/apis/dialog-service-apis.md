@@ -1,8 +1,13 @@
 # Dialog Service API
 
-#### showConfirm
+The following APIs can be used in any Execute Expression Actions or [Form Schema functions](../../../forms/formschemas/functions.md).
+
+#### showConfirm({string, string, string, string})
+#### showConfirm(string)
 
 Displays a confirm dialog to the user, with the options to accept or reject. If the user accepts, `true` is returned, otherwise `false`. Note that the API is asynchronous and must be awaited like shown in the example below.  
+
+##### API Definition
 
 ```javascript
 this.app.ui.dialogs.showConfirm({title: string, message: string, positiveButtonText?: string, negativeButtonText?: string }) : Promise<boolean>
@@ -22,9 +27,14 @@ if(result){
 }
 ```
 
-#### showMessage
+<br/>
+
+#### showMessage({string, string, number})
+#### showMessage(string)
 
 Displays a message box to the user.
+
+##### API Definition
 
 ```javascript
 this.app.ui.dialogs.showMessage({title: string, message: string, width?: number}) : void
@@ -37,9 +47,13 @@ this.app.ui.dialogs.showMessage(text: string): void
 this.app.ui.dialogs.showMessage({title: 'Delete customer', text: 'The customer was deleted.'});
 ```
 
-#### showChoice
+<br/>
+
+#### showChoice({string, string, number, number, array})
 
 Displays a popup to the user with multiple buttons and returns the option selected by the user. Note that the API is asynchronous and must be awaited.
+
+##### API Definition
 
 ```javascript
 this.app.ui.dialogs.showChoice({title: string, text: string, width: number, height: number, options: { text: string; value: any }[]}) : Promise<any>

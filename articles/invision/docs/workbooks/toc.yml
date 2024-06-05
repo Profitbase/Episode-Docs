@@ -205,6 +205,8 @@
                 href: programmingmodel/apis/flow-apis.md
               - name: HTTP APIs
                 href: programmingmodel/apis/http-apis.md
+              - name: Message Hub APIs
+                href: programmingmodel/apis/message-hub-apis.md
         - name: Subscreens
           href: subscreens.md
         - name: Themes and styles
