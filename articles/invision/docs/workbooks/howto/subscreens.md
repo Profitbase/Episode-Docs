@@ -10,7 +10,7 @@ Under [this](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20
 ## Step by step
 
 
-1. Go to the Subscreens tab and add as many as you need:
+1. Go to the Subscreens tab and add one Subscreen pr tab. A subscreen defines the UI in a tab.
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTsubS%20(1).png)
 
@@ -22,7 +22,7 @@ Under [this](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20
    
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTsubS%20(3).png)
 
-4. When you finished setting up Subscreens, go back to the main layout and drag and drop Tab Control on the selected page. You will find it under UI elements in Resources:
+4. When you have finished setting up Subscreens, go back to the main layout and drag and drop a Tab Control onto the selected page. You will find it under UI elements in Resources:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTsubS%20(4).png)
 
@@ -38,6 +38,6 @@ Under [this](https://profitbasedocs.blob.core.windows.net/videos/Workbook%20-%20
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTsubS%20(7).png)
 
-8. Than a Loading event for the page (Events in Page Properties box):
+8. Then a Loading event for the page (Events in Page Properties box):
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTsubS%20(9).png)

@@ -5,7 +5,7 @@ In this section you will find a set of concepts used to configure your solution.
 ## See Also 
 
 * [Component Stacking](programmingmodel/componentstacking.md)
-* [Initialaizing from URL](programmingmodel/initializing.md)
+* [Initializing from URL](howto/initializing.md)
 * [Instructions](programmingmodel/instructions.md)
 * [Interaction Model](programmingmodel/interactionmodel.md)
 * [Variables](programmingmodel/variables.md)
