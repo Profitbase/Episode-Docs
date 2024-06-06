@@ -1,7 +1,6 @@
 # Programmingmodel
 
-* [Componentstacking](./componentstacking.md)
-* [Initializing](./initializing.md)
+* [Component stacking](./componentstacking.md)
 * [Instructions](./instructions.md)
-* [Interactionmodel](./interactionmodel.md)
+* [Interaction model](./interactionmodel.md)
 * [Variables](./variables.md)

@@ -3,28 +3,30 @@
         - name: How to's
           href: howto.md
           items:
-          - name: How to work with components in workbook
+          - name: How to create a Workbook
+            href: howto/creatingworkbook.md
+          - name: How to create a popup page
+            href: howto/popup.md
+          - name: How to work with components
             href: howto/components.md
           - name: How to stack components
-            href: howto/componentstacking.md
-          - name: How to create a workbook
-            href: howto/creatingworkbook.md
-          - name: How to set up interactions in workbook
-            href: howto/interactions.md
-          - name: How to create a popup
-            href: howto/popup.md
-          - name: How to create stepper
+            href: howto/componentstacking.md          
+          - name: How to set up interactions
+            href: howto/interactions.md          
+          - name: How to create a Stepper
             href: howto/stepperbasic.md
-          - name: How to use step navigated to event in stepper
+          - name: How to use the Step Navigated To event in Stepper
             href: howto/stepperdisable.md
-          - name: How to set up buttons in stepper
+          - name: How to set up buttons in Stepper
             href: howto/steppersetup.md
-          - name: How to create subscreens in tabs
+          - name: How to create Subscreens for tabs
             href: howto/subscreens.md
-          - name: How to set up workbook as a home page
+          - name: How to configure a Workbook as the homepage
             href: howto/workbookhomepage.md
-          - name: How to set up a workbook menu
+          - name: How to define up a Workbook menu
             href: howto/workbookmenu.md
+          - name: Initialize a Workbook from the URL
+            href: howto/initializing.md
         - name: Components
           href: components.md
           items:
@@ -99,9 +101,7 @@
           href: programmingmodel.md
           items:
           - name: Component stacking
-            href: programmingmodel/componentstacking.md
-          - name: Initializing from URL
-            href: programmingmodel/initializing.md
+            href: programmingmodel/componentstacking.md          
           - name: Instructions
             href: programmingmodel/instructions.md
             items:
@@ -192,6 +192,21 @@
               href: programmingmodel/interactionmodel/workbookevents.md
           - name: Variables
             href: programmingmodel/variables.md
+          - name: APIs
+            href: programmingmodel/apis.md
+            items:
+              - name: Dialog Service APIs
+                href: programmingmodel/apis/dialog-service-apis.md
+              - name: Toast notification APIs
+                href: programmingmodel/apis/toast-notification-apis.md
+              - name: Filter APIs
+                href: programmingmodel/apis/filter-apis.md
+              - name: Flow APIs
+                href: programmingmodel/apis/flow-apis.md
+              - name: HTTP APIs
+                href: programmingmodel/apis/http-apis.md
+              - name: Message Hub APIs
+                href: programmingmodel/apis/message-hub-apis.md
         - name: Subscreens
           href: subscreens.md
         - name: Themes and styles

@@ -1,43 +1,54 @@
 
 # Workbook Actions
 
-##	ExecuteExpression
+## Execute Expression
 
- Executes one or more **instructions**.
+Executes one or more statements.
+Please refer to the [API topic](../apis.md) for further reading.  
+
+![execute expression](../../../../../../images/invision/execute-expression-action.png)
+
 <br/>
 
-## InvokeActionGroup
+## Send Message
 
- Invokes another Action Group. Configure the invocation using the ConfigureInvocation(…) function.
+Sends messages to other Workbooks.
+
+> [!IMPORTANT]
+> This API is being deprecated. Use the [Message Hub API](../apis/message-hub-apis.md) in an `Execute Expression` action instead.
+
+## Invoke Action Group
+
+Invokes another Action Group. Configure the invocation using the [ConfigureInvocation(…)](../instructions/configinvocation.md) function.
+
 <br/>
 
-## WebApi
+## Web Api
+
+> [!IMPORTANT]
+> This API is being deprecated. Use the [HTTP API](../apis/http-apis.md) in an `Execute Expression` action instead.
 
  Invokes an HTTP request by calling one of the following methods in the expression:
-
-      HttpGet(url)
-
-      HttpPost(url, httpContent)
-
-      HttpPut(url, httpContent)
-
-      HttpPatch(url, httpContent)
-
-      HttpDelete(url)
+```
+HttpGet(url)
+HttpPost(url, httpContent)
+HttpPut(url, httpContent)
+HttpPatch(url, httpContent)
+HttpDelete(url)
+```  
 
 Add **headers** by calling the AddHeader(name, value) method.
 
-
->**Example**
->
->See [this example](../../../webfunctions/calling.md) to learn how to call InVision Web Functions from a Workbook.
-
 <br/>
 
-## DownloadFile
+## Download File
 
- Downloads a file to the browser by calling one of the following methods in the expression:
-    
-      SetSrc(url)
-      SetSrcIf(boolean expression, trueUrl, falseUrl)
+> [!IMPORTANT]
+> This API is being deprecated. Use the [HTTP API](../apis/http-apis.md) or [Flow API](../apis/flow-apis.md) in an `Execute Expression` action instead.
+
+Downloads a file to the browser by calling one of the following methods in the expression:
+```
+SetSrc(url)
+SetSrcIf(boolean expression, trueUrl, falseUrl)
+```
 
