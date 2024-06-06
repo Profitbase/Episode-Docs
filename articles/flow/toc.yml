@@ -1,7 +1,9 @@
   - name: Overview
     href: flow.md
   - name: Key concepts
-    href: key-concepts.md     
+    href: key-concepts.md
+  - name: Getting started
+    href: getting-started.md
   - name: Hosting
     href: hosting.md
   - name: On-premises installation
@@ -23,6 +25,8 @@
   - name: Workspaces
     href: workspaces.md
     items:
+    - name: Create a Workspace
+      href: workspaces/create-workspace.md
     - name: Access control
       href: workspaces/workspace-access-control.md
     - name: Workspace Variables
@@ -34,8 +38,8 @@
   - name: Flows
     href: flows.md
     items:
-    - name: Schemas
-      href: flows/schemas.md    
+    - name: Flowcharts
+      href: flows/flowcharts.md    
     - name: Actions and Triggers
       href: flows/actions-and-triggers.md      
     - name: Defining custom code within schemas
@@ -57,49 +61,49 @@
       href: flows/long-vs-short-running-flows.md
     - name: Debugging and logging
       href: flows/debugging-and-logging.md
-    - name: "Execution logs"
+    - name: Execution logs
       href: flows/execution-logs.md
-    - name: "Execution endpoints"
+    - name: Execution endpoints
       href: flows/execution-endpoints.md
     - name: Publish a Flow
       href: flows/publishing-flow.md
     - name: Modularization and extensions
       href: flows/modularization-and-extensions.md
-  - name: "Actions"
+  - name: Actions
     items:
-    - name: "Azure Blob Storage"
+    - name: Azure Blob Storage
       href: actions/azure-blob-storage/toc.yml
-    - name: "Azure Event Hub"
+    - name: Azure Event Hub
       href: actions/azure-event-hub/toc.yml      
-    - name: "Azure Service Bus"
+    - name: Azure Service Bus
       href: actions/azure-service-bus/toc.yml      
     - name: "Built-in (Flow)"
       href: actions/built-in/toc.yml
-    - name: "CSV"
+    - name: CSV
       href: actions/csv/toc.yml
-    - name: "Excel"
+    - name: Excel
       href: actions/excel/toc.yml
-    - name: "FTP / SFTP"
+    - name: FTP / SFTP
       href: actions/ftp/toc.yml
-    - name: "GitHub"
+    - name: GitHub
       href: actions/github/toc.yml
-    - name: "GraphQL request"
+    - name: GraphQL request
       href: actions/graphql/toc.yml
-    - name: "HTTP"
+    - name: HTTP
       href: actions/http/toc.yml
-    - name: "OneDrive"
+    - name: OneDrive
       href: actions/onedrive/toc.yml
-    - name: "Profitbase InVision"
+    - name: Profitbase InVision
       href: actions/profitbase-invision/toc.yml
-    - name: "SendGrid"
+    - name: SendGrid
       href: actions/sendgrid/toc.yml
-    - name: "SQL Server"
+    - name: SQL Server
       href: actions/sql-server/toc.yml
     - name: Visma
       href: actions/visma/toc.yml
     - name: Xledger
       href: actions/xledger/toc.yml
-  - name: "Triggers"
+  - name: Triggers
     href: triggers/toc.yml
-  - name: "API reference"
+  - name: API reference
     href: api-reference/toc.yml
