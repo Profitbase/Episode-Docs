@@ -38,6 +38,8 @@
   - name: Flows
     href: flows.md
     items:
+    - name: Create a Flow
+      href: flows/create-flow.md
     - name: Flowcharts
       href: flows/flowcharts.md    
     - name: Actions and Triggers

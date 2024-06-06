@@ -2,7 +2,7 @@
 
 1. [Create a Workspace](./workspaces/create-workspace.md)
 2. [Optional] [Grant permissions to the Workspace](./workspaces/workspace-access-control.md)
-3. Create a Flow
+3. [Create a Flow](./flows/create-flow.md)  
 
 ## Run Flows
 
