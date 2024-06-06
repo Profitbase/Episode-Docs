@@ -10,10 +10,19 @@ Executes a short-running Flow in the current Solution and returns data if the Fl
 
 ```javascript
 this.app.services.flow.execute(flowName: string, {
+    solutionId?: string,
     environment?: string,
     data: {}
 }) : Promise<any>
 ```
+
+| Property       |  Description                           |
+|----------------|----------------------------------------|
+| flowName       | The name of the Flow in the Solution to execute. |
+| solutionId     | Optional. Specify this property if you want to run a named Flow that belongs to a differnet Solution than the open Workbook. |
+| environment    | Optional. Specify this option of you want to override the FLOW_ENVIRONMENT Solution Variable. |
+| data           | Optional. Specifies the arguments to send to the Flow.  |
+
 
 ##### Example
 
@@ -42,6 +51,7 @@ Executes a short-running Flow that returns a file, and downloads the file. Use t
 ```javascript
 
 this.app.services.flow.download(flowName: string, {
+    solutionId?: string,
     environment?: string,
     data: {}
 }) : Promise<void>
