@@ -1,4 +1,4 @@
-# Schemas
+# Flowcharts
 
 Each Flow has at least one flowchart, which is called "Main". This is where you define the main sequence of actions that drive the business logic.
 
