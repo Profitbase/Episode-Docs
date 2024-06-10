@@ -8,6 +8,7 @@ The following APIs can be used in any [Execute Expression Actions](../programmin
 [HTTP APIs](./apis/http-apis.md)  
 [Message Hub APIs](./apis/message-hub-apis.md)  
 [Toast Notification APIs](./apis/toast-notification-apis.md)  
+[Localization APIs](./apis/localization-apis.md)  
 
 
 ## Generic networking API
