@@ -82,6 +82,8 @@
               href: formschemas/controls/splitbutton.md
             - name: Tabcontrol
               href: formschemas/controls/tabcontrol.md
+            - name: Text
+              href: formschemas/controls/text.md
             - name: Textarea
               href: formschemas/controls/textarea.md
             - name: Togglebutton
