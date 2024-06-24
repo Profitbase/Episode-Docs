@@ -35,12 +35,7 @@
       - name: Forms
         href: docs/forms/toc.yml
       - name: Header
-        href: docs/header.md
-        items:
-        - name: AppHeader section
-          href: docs/header/header-section.md
-        - name: Feedback
-          href: docs/header/feedback.md
+        href: docs/header/toc.yml
       - name: Home page
         href: docs/homepage.md
         items:
