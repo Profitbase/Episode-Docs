@@ -10,6 +10,8 @@
   href: "datareader-iterator.md"
 - name: "Declare variable"
   href: "declare-variable.md"
+- name: "Declare variables"
+  href: "declare-variables.md"
 - name: "Decrement value"
   href: "decrement-value.md"
 - name: "Define type"

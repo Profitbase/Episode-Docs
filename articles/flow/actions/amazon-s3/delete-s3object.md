@@ -8,5 +8,5 @@ Deletes a S3 object from a bucket.
 
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
-| Connection       | Required  | A [SAS Uri](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview) to an Azure Blob container.       |
-| Blob name        | Required  | The name of the blob to delete.                        |
+| Connection       | Required  | A SAS Uri to an Amazon S3 bucket.        |
+| Amazon S3 object name        | Required  | The name of the object to delete.          |
