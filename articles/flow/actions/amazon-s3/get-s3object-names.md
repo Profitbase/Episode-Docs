@@ -11,15 +11,20 @@ Use this action if you need a list of all the object names in a Bucket. If you o
 
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
+| Title            | Required  |      |
 | Connection       | Required  | A SAS Uri to an Amazon S3 object.       |
-| Amazon S3 object name prefix | Optional  | To filter the list of objects, specify a string for the prefix parameter. **Note!** The prefix is case sensitive. |
-| Result variable name | Required | The name of the Flow variable that contains the list of the blob names. |
-
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/bucket4.png)
+| Object name prefix filter       | Optional  | Prefix filter for object names. **Note!** The prefix is case sensitive.  |
+| Result variable name | Required | The name of the Flow variable that contains the list of the objects names. |
+| Description | Optional | |
 
 <br/>
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/bucket2.png)
 
+<br/>
+
+Object name prefix filter:
+
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/bucket4.png)
 
 

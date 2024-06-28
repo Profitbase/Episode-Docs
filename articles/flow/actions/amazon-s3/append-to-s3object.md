@@ -9,8 +9,10 @@ Appends a byte array to an [Amazon S3 ](https://docs.aws.amazon.com/s3/?nc2=h_ql
 
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
-| Connection       | Required  | A SAS Uri to an Amazon S3 bucket.       |
-| Bucket name        | Required  | The name of the bucket to append to. If the bucket does not already exist, it is created. |
-| Bucket data        | Required  | A byte array  |
+| Title            | Required  |      |
+| Connection       | Required  | A SAS Uri to an Amazon S3 object.       |
+| Object name        | Required  | The name of the object to append to. If the object doesn't exist yet, it is created. |
+| Object data        | Required  | A byte array  |
+| Description | Optional | |
 
 

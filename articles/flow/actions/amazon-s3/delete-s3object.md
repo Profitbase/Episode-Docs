@@ -8,5 +8,7 @@ Deletes a S3 object from a bucket.
 
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
-| Connection       | Required  | A SAS Uri to an Amazon S3 bucket.        |
-| Amazon S3 object name        | Required  | The name of the object to delete.          |
+| Title            | Required  |      |
+| Connection       | Required  | A SAS Uri to an Amazon S3 object.       |
+| Object name        | Required  | The name of the object to delete. |
+| Description | Optional | |

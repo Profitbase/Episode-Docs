@@ -1,8 +1,8 @@
 # Upload Amazon S3 object
 
-Uploads a byte array or [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream) to an Azure Blob container.
+Uploads a byte array or [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream) to an Azure object container.
 
-![img](../../../../images/flow/upload-to-asb-blob.png)
+![img](https://profitbasedocs.object.core.windows.net/flowimages/uppload-s3obj.png)
 
 <br/>
 
@@ -10,8 +10,10 @@ Uploads a byte array or [Stream](https://learn.microsoft.com/en-us/dotnet/api/sy
 
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
-| Connection       | Required  | A [SAS Uri](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview) to an Azure Blob container.       |
-| Blob name        | Required  | The name of the blob (file)  |
-| Blob data        | Required  | The data to upload. It must be a byte array or [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream) |
-| Overwrite if blob already exists | Optional | If not checked, the action will fail if a blob with the same name already exists. |
+| Title            | Required  |      |
+| Connection       | Required  | A [SAS Uri](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview) to an Azure object container.       |
+| Object name        | Required  | The name of the object (file)  |
+| Object data        | Required  | The data to upload. It must be a byte array or [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream) |
+| Overwrite if object already exists | Optional | If not checked, the action will fail if a object with the same name already exists. |
+| Description | Optional | |
 
