@@ -1,26 +1,30 @@
-# Create Parquet as stream
+# Create Parquet as a stream
 
-Creates a CSV file from a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) or [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) and returns the result as a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream).
+Creates a Parquet file from a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) or [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) and returns the result as a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream).
 
+**Example**
 
-![img](../../../../images/flow/create-csv-as-stream.png)
+Using data table as Source:
+
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/parquet-as-stream1.png)
+
+<br/>
 
 ## Returns
 
 [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream)
 
+<br/>
 
 ## Properties
 
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
-| Source type       |   | DataReader/Table.       |
-| Source | Required  | Select the source for data. |
-| Header row |  |  |
-| Column delimiter | Default | Default is coma. |
-| Row delimiter | Default | Default is \\r\\n.  |
-| Quote character | Default | Default is double quote("). |
-| Quote all fields |  |  |
-| Date format | Default | Default is dd.MM.yyyy. |
-| Number decimal separator | Default | Default is (.). |
-| Result variable name | Optional |  |
+| Title       | Required |        |
+| Source | Required  | Select from a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) or [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable). |
+| Result variable name | Required |  |
+| Description | Optional | |
+
+<br/>
+
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/parquet-as-stream2.png)
