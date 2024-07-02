@@ -12,6 +12,6 @@ This value overrides the **Is Hidden** property.
 **Example**
 
 ```
-(bool)viewByYear==true
+(bool)@viewByYear==true
 ```
 

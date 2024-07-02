@@ -1,0 +1,4 @@
+- name: "Create Parqet as byte array"
+  href: "create-parquet-as-byte-array.md"
+- name: "Create Parquet as stream"
+  href: "create-parquet-as-stream.md"

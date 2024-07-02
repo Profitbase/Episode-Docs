@@ -34,6 +34,8 @@
         href: docs/flows/toc.yml
       - name: Forms
         href: docs/forms/toc.yml
+      - name: Header
+        href: docs/header/toc.yml
       - name: Home page
         href: docs/homepage.md
         items:
@@ -50,6 +52,8 @@
         href: docs/package/toc.yml
       - name: PowerShell
         href: docs/powershell/toc.yml
+      - name: Solution variables
+        href: docs/solution-variables.md
       - name: SQL reports
         href: docs/sqlreports/toc.yml
       - name: SQL scripts

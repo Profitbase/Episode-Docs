@@ -3,8 +3,8 @@
 Declares a variable to store data while the Flow is executing.
 
 - You can declare as many variables as you want
-- A variable can be either `global` or `local` (default). A `local` variable can only be used within the `scope` it is declare in. A `global` variable can be used in the entire Flow, both within [Functions](function.md) and Extension flowcharts.
-- A variable cannot be referenced unless it is assigned a value. (It will not appear in variable selectors, for example if you try to use it as argument to a [Function](function.md)). Note that this is true for both `global`and `local` variables.
+- A variable can be either `global` or `local` (default). A `local` variable can only be used within the `scope` it is declared in. A `global` variable can be used in the entire Flow, both within [Functions](function.md) and Extension flowcharts.
+- A variable cannot be referenced unless it is assigned a value. (It will not appear in variable selectors, for example, if you try to use it as an argument to a [Function](function.md)). Note that this is true for both `global` and `local` variables.
 
 
 ![image](../../../../images/flow/declare-variable.png)
