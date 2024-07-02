@@ -1,13 +1,15 @@
 # Foreach Amazon S3 object name
 
-Iterates over a list of all Amazon S3 object names in an Amazon Bucket. 
+Iterates over a list of all Amazon S3 object names in the Amazon Bucket. 
 
-![img](../../../../images/flow/foreach-blob-name.png)
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/foreach-amaz.png)
 
 ## Properties
 
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
-| Connection       | Required  | A SAS Uri to an Amazon S3 bucket.      |
-| Amazon S3 object name prexix | Required  | The name of the object to filter. **Note!** The prefix is case sensitive. |
-| Amazon S3 object name | Required | The name of the Flow variable that contains the current S3 object name in the list. |
+| Title            | Required  |      |
+| Connection       | Required  | A SAS Uri to an Amazon S3 object.        |
+| Object name prefix filter       | Optional  | Prefix filter for object names. **Note!** The prefix is case sensitive.  |
+| Object name        | Required  | The name of the object to read from. |
+| Description | Optional | |

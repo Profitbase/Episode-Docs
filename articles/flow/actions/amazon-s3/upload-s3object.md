@@ -2,7 +2,7 @@
 
 Uploads a byte array or [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream) to an Azure object container.
 
-![img](https://profitbasedocs.object.core.windows.net/flowimages/uppload-s3obj.png)
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/uppload-s3obj.png)
 
 <br/>
 

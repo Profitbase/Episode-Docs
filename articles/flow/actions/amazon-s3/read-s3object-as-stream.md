@@ -9,7 +9,7 @@ For example, a CSV file can be loaded using the [Get DataReader](../csv/get-data
 > [!CAUTION]
 > Trying to load a Stream using an incompatible action will fail.
 
-![img](../../../../images/flow/read-blob-as-stream.png)
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/read-as-stream-amaz.png)
 
 ## Returns
 
@@ -19,6 +19,8 @@ For example, a CSV file can be loaded using the [Get DataReader](../csv/get-data
 
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
-| Connection       | Required  | A [SAS Uri](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview) to an Azure Blob container.       |
-| Blob name prefix | Optional  | To filter the list of blobs, specify a string for the [prefix parameter](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-list#filter-results-with-a-prefix). **Note!** The prefix is case sensitive. |
-| Result variable name | Required | The name of the Flow variable that contains the list of the blob names. |
+| Title            | Required  |      |
+| Connection       | Required  | A SAS Uri to an Amazon S3 object.        |
+| Object name        | Required  | The name of the object to read from. |
+| Result variable name | Required | The name of the Flow variable that contains the list of the object names. |
+| Description | Optional | |
