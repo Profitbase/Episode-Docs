@@ -1,0 +1,19 @@
+# Delete work process version
+
+
+This action deletes a version of a work process along with its associated solution.
+
+![wpv](https://profitbasedocs.blob.core.windows.net/flowimages/Delete-wpv.png)
+
+## Properties
+
+| Name                 | Type     | Description                         |
+|----------------------|----------|-------------------------------------|
+| Title                | Optional |                                     |
+| Connection           | Required | InVision connection                 |
+| Work Process Version | Required | Select or enter Work Process Version to delete |
+| Include information messages in log | Optional |                      |
+| Force delete | Optional |                      |
+| Changed by           | Optional | Enter the user Id to use in InVision's "Changed by" |
+| Result variable name | Optional | Name of the variable containing the result status   |
+| Description          | Optional |                                     |
