@@ -101,6 +101,8 @@
       href: actions/parquet/toc.yml
     - name: Profitbase InVision
       href: actions/profitbase-invision/toc.yml
+    - name: Security
+      href: actions/security/toc.yml
     - name: SendGrid
       href: actions/sendgrid/toc.yml
     - name: SQL Server
