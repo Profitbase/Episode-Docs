@@ -10,10 +10,10 @@ Iterates over a list of blob information in an Azure blob container.
 
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
-| Title | Optional |  |
+| Title |   |  |
 | Connection       | Required  | A [SAS Uri](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview) to an Azure Blob container.       |
 | Blob name prefix filter| Optional  | Prefix filter for blob properties **Note!** The prefix is case sensitive. |
-| Blob info | Optional |  |
+| Blob info | Optional | The name of the Flow variable that contains the blob info |
 | Description | Optional |  |
 
 <br/>

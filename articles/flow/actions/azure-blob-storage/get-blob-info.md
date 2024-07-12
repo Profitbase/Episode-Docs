@@ -10,7 +10,7 @@ Gets detailed information for a specific blob in an Azure Blob container. Use th
 
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
-| Title | Optional |  |
+| Title |   |  |
 | Connection       | Required  | A [SAS Uri](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview) to an Azure Blob container.       |
 | Blob name | Required | The name of the blob from the list. |
 | Result variable name | Required | The name of the Flow variable that contains the list of the blob properties. |
