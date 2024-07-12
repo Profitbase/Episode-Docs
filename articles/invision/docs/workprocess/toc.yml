@@ -7,9 +7,9 @@
             href: howto/clientside.md
           - name: How to setup work process
             href: howto/setup.md
-          - name: How to create a work process version
+          - name: How to create a Work Process Version
             href: howto/versioning.md
         - name: Work process configuration
           href: workprocessconfiguration.md
-        - name: Work process versions
+        - name: Work Process Versions
           href: workprocessversions.md

@@ -1,25 +1,26 @@
-# Create work process version
+# Create Work Process Version
 
 This action creates a new version of an existing work process in a draft state. In the "version properties", you can add parameters to define specific details for this version.
+
+![wpv](https://profitbasedocs.blob.core.windows.net/flowimages/Create-wpv%20(2).png)
 
 ## Properties 
 
 | Name                 | Type     | Description                         |
 |----------------------|----------|-------------------------------------|
-| Title                | Optional |                                     |
+| Title                |          |                                     |
 | Connection           | Required | InVision connection                 |
-| Work Process         | Required | Select Work Process from the list   |
-| Version name         | Optional |                                     |
+| Work Process         | Required | Select Work Process from the list, from a variable or enter the id manually.   |
+| Version name         | Required | Name of the new version to create.   |
 | Version describtion  | Optional |                                     |
-| Source Version       | Required | Select sourde version from the list |
-| Copy permissions     | Required | true or false                       |
-| Version Properties   | Optional |                                     |
+| Source Version       | Optional | Select source version from the list, from a variable or enter the id manually. |
+| Copy permissions     | Optional | Copy permission from source Version, true or false.  |
+| Version Properties   | Optional | Version properties is defined by the Work Process. Fill in the values is the pop-up dialog. |
 | Created by           | Optional |                                     |
-| Result variable name | Required |                                     |
+| Result variable name | Required | Name of the result variable containing the id of the new Version. |
 | Description          | Optional |                                     |
 
 
-![wpv](https://profitbasedocs.blob.core.windows.net/flowimages/Create-wpv%20(2).png)
 
 ![wpv](https://profitbasedocs.blob.core.windows.net/flowimages/Create-wpv%20(1).png)
 

@@ -10,7 +10,7 @@ Sends a message to an Azure Service Bus Queue or Topic.
 
 | Name           | Type     | Description                                      |
 |----------------|----------|--------------------------------------------------|
-| Title          | Optional |                                                  |
+| Title          |          |                                                  |
 | Send to        | Optional |                                                  |
 | Connection     | Required | A SAS Uri connection to an Azure Blob container. |
 | Content        | Optional | Select or enter the content                      |

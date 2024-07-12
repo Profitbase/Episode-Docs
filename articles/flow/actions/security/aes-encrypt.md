@@ -8,7 +8,7 @@ This action allows users to encrypt content using the AES algorithm.
 
 | Name                 | Type     | Description                         |
 |----------------------|----------|-------------------------------------|
-|   Encryption key              | Required | The key used to encrypt the content. This is required by the AES algorithm                                    |
+|   Encryption key              | Required | The key used to encrypt the content. This is required by the AES algorithm. The length of the key is 256bit.                                    |
 |  Initialization vector          | Required |  The vector used to encrypt the content.  |
 | Input content    | Required |  The content to be encrypted (string or byte array). |
 | Output variable name | Required | The name of the output variable. |
