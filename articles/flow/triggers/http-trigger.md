@@ -26,6 +26,23 @@ The customer object looks like this:
 ```
 <br/>
 
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/http-trigger.png)
+
+<br/>
+
+## Properties
+
+| Name                 | Type     | Description                         |
+|----------------------|----------|-------------------------------------|
+| Title                |          | Title for the HTTP trigger, describing its purpose or action. |
+| Output data type           | Required |The type of data returned by the HTTP trigger after processing the request. |
+| Default data | Optional | Default input data used if no data is provided in the request; useful for testing with mock data. |
+| Show endpoints |  | Option to display HTTP trigger endpoints, providing the URL for external application calls.|
+| Data variable name          | Optional | Name of the variable containing the data. |
+| Description          | Optional |                                     |
+
+<br/>
+
 #### 1) Create a new Flow
 
 Create a new Flow from the Portal or from the `File` menu in the Designer.

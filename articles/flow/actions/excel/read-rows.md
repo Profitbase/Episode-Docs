@@ -20,3 +20,11 @@ Iterates over rows in an Excel sheet.
 | Row variable name | Optional |  |
 | Row data type | Optional |  |
 
+<br/>
+
+### Automatic column mapping
+
+Columns can be mapped automatically by using the "Map from sample file" option.
+
+
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/getDataReaderEx2.png)
