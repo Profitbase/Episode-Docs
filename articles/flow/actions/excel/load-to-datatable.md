@@ -14,6 +14,17 @@ Loads the contents of an Excel sheet into memory as a [DataTable](https://learn.
 | Column mapping   | Required  | Defines the mapping between the `column letters` (A,B,C, etc) in a worksheet, and the `column names` (CustomerID, Amount, etc) in the target DataTable.   |
 | Table variable name | Optional | The name of the DataTable variable returned from the action. |
 
+<br/>
+
+### Automatic column mapping
+
+Columns can be mapped automatically by using the "Map from sample file" option.
+
+
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/getDataReaderEx2.png)
+
+
 ## Returns
 
 [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) containing data from all rows and columns as specified by the `Data start row` and `Column mapping` properties.
+

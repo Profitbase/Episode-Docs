@@ -14,7 +14,7 @@ Creates a CSV file from a [DataReader](https://learn.microsoft.com/en-us/dotnet/
 
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
-| Source type       |   | DataReader/Table.       |
+| Title       |  Required |        |
 | Source | Required  | Select the source for data. |
 | Header row |  |  |
 | Column delimiter | Default | Default is coma. |
@@ -24,3 +24,4 @@ Creates a CSV file from a [DataReader](https://learn.microsoft.com/en-us/dotnet/
 | Date format | Default | Default is dd.MM.yyyy. |
 | Number decimal separator | Default | Default is (.). |
 | Result variable name | Optional |  |
+| Description | Optional |  |
