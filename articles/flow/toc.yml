@@ -95,6 +95,8 @@
       href: actions/graphql/toc.yml
     - name: HTTP
       href: actions/http/toc.yml
+    - name: Microsoft Fabric
+      href: actions/microsoft-fabric/toc.yml
     - name: OneDrive
       href: actions/onedrive/toc.yml
     - name: Parquet
