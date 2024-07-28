@@ -12,3 +12,29 @@ Some Microsoft Fabric REST API breaks large data sets up into smaller chunks whe
 
 The `REST API Request action` handles pagination automatically for you, so you don't have to make multiple calls in order to get all records if the Fabric API splits the data set into multiple pages.  
 Note that when you call an API that might return a paginated response, you are requierd to define the return type as [List&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) or a type **derived** from [List&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1).
+
+### Long running operations
+When a Fabric API performs an operation that takes some time to complete, it may return before the operation has completed. If you want to wait for the completion of the operation before continuing execution of the Flow, you need to manually poll for the result by making repeated requests using an operation id and location returned from the first response. [Read more about Long running operations here](https://learn.microsoft.com/en-us/rest/api/fabric/articles/long-running-operation).  
+
+When you call a long running API, you should define the return type so that it contains the following properties:
+```
+location: string
+retryAfter: int
+operationId: string
+```
+
+For example
+```csharp
+public class ItemCreatedResponse
+{
+    public string Location {get; set;}
+    public string RetryAfter {get; set;}
+    public string Location {get; set;}
+
+    public string? Id { get; set; }
+    public string? DisplayName { get; set; }
+    public string? Description { get; set; }
+    public string? Type { get; set; }
+    public string? WorkspaceId { get; set; }
+}
+```
