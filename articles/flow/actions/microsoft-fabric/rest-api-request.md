@@ -23,11 +23,12 @@ retryAfter: int
 operationId: string
 ```
 
-For example
+For example, if you call the [Create Item API](https://learn.microsoft.com/en-us/rest/api/fabric/core/items/create-item?tabs=HTTP), your result data type definition should look like this:  
+
 ```csharp
 public class ItemCreatedResponse
 {
-    public string Location {get; set;}
+    public string OperationId {get; set;}
     public string RetryAfter {get; set;}
     public string Location {get; set;}
 
@@ -38,3 +39,6 @@ public class ItemCreatedResponse
     public string? WorkspaceId { get; set; }
 }
 ```
+
+If the item was created immediately, the OperationId and Location properties will be null, while the Id, DisplayName etc properties will have a value.  
+If you the item is being provisioned, you need to use the OperationId and Location to make repeated requests until the API responds with a null-value for the OperationId property.
