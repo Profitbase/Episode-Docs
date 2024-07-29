@@ -44,8 +44,10 @@
       href: flows/flowcharts.md    
     - name: Actions and Triggers
       href: flows/actions-and-triggers.md      
-    - name: Defining custom code within schemas
+    - name: Defining custom code in Flowcharts
       href: flows/defining-custom-code.md
+    - name: Definining custom types
+      href: flows/defining-custom-types.md
     - name: Running Flows
       href: flows/running-flows.md
       items:
@@ -95,6 +97,8 @@
       href: actions/graphql/toc.yml
     - name: HTTP
       href: actions/http/toc.yml
+    - name: Microsoft Fabric
+      href: actions/microsoft-fabric/toc.yml
     - name: OneDrive
       href: actions/onedrive/toc.yml
     - name: Parquet
