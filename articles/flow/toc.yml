@@ -44,8 +44,10 @@
       href: flows/flowcharts.md    
     - name: Actions and Triggers
       href: flows/actions-and-triggers.md      
-    - name: Defining custom code within schemas
+    - name: Defining custom code in Flowcharts
       href: flows/defining-custom-code.md
+    - name: Definining custom types
+      href: flows/defining-custom-types.md
     - name: Running Flows
       href: flows/running-flows.md
       items:

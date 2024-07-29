@@ -1,11 +1,11 @@
 # Microsoft Fabric Connection
 
 Because Microsoft Fabric only allows authenticated requests, you need to create a connection before you can make any API calls.  
-The Microsoft Fabric Connection is used by the [Microsoft Fabric REST API] actions to automatically authenticate when calling the Microsoft Fabric REST API.
+The Microsoft Fabric Connection is used by the [Microsoft Fabric REST API](./rest-api-request.md) action to automatically authenticate when calling the [Microsoft Fabric REST API](https://learn.microsoft.com/en-us/rest/api/fabric/articles/).
 
 
 ### 1. Create a Microsoft Entra ID App (Service Princpial)  
-You first need to create a Microsoft Entra ID App by [following these instructions](https://learn.microsoft.com/en-us/rest/api/fabric/articles/get-started/create-entra-app). The Entra ID App, also knows as a "Service Principal", is the entity that will be granted permissions to call one or more Fabric APIs. You can think of the Entra ID App as a (service) user.  
+You first need to create a Microsoft Entra ID App by following [these instructions](https://learn.microsoft.com/en-us/rest/api/fabric/articles/get-started/create-entra-app). The Entra ID App, also knows as a "Service Principal", is the entity that will be granted permissions to call one or more Fabric APIs. You can think of the Entra ID App as a (service) user.  
 
 ### 2. Grant permissions to the the Entra ID App (Service Principal)
 When the Entra ID App (also known as a "Service Principal") has been created, the next thing you need to do is grant it access to the service(s) and resources in Fabric that you want to access throught the Fabric API.  
