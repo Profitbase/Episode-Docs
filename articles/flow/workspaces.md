@@ -1,6 +1,6 @@
 # Workspaces
 
-A Workspace is a logical container of Flows and artifacts. Workspace artifacts include [Workspace Variables](workspaces/workspace-variables.md) and [Workspace Objects](workspaces/workspace-objects.md), which are resources that can be shared by all Flows in the Workspace. A Workspace also defines which users have access to the Workspace.
+A Workspace contains Flows and artifacts, such as [Workspace Variables](workspaces/workspace-variables.md) and [Workspace Objects](workspaces/workspace-objects.md). Workspace Variables and Workspace Objects are resources that can be shared by all Flows in the Workspace. A Workspace also defines user access.
 
 ## Workspace Objects
 
