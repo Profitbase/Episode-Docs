@@ -33,22 +33,25 @@ The image below shows how to [get a list of all available items in a Workspace](
 ![img](/images/flow/microsoft-fabric-rest-api-request-example1.png)
 
 #### Use a request template (Optional)
-The `REST API Request action` in Flow include templates for commonly used APIs. To use a template, click the `New Request` button in the configuration editor and choose a template for the request you want to make. It will automatically fill in the HTTP Method, URL and return type (Response). If the API requires a body, a template for the request body is also added. Note that it's just a template, so you need to provide the actual request body yourself by referring to the [Fabric API documentation](https://learn.microsoft.com/en-us/rest/api/fabric/articles/using-fabric-apis).
+The `REST API Request action` in Flow include templates for commonly used APIs. To use a template, click the `New Request` button in the configuration editor and choose a template for the request you want to make. It will automatically fill in the HTTP Method, URL and return type (Response). If the API requires a body, a template for the request body is also added. Note that it's just a template, so you need to provide the actual request body yourself by referring to the [Fabric API documentation.](https://learn.microsoft.com/en-us/rest/api/fabric/articles/using-fabric-apis)
 
 ![img](/images/flow/microsoft-fabric-rest-api-request-template.png)  
 
 #### Defining the Response  
-When a Fabric API returns a value, and you want to use that value later in the Flow, you need to specify the data type of the returned value in the Response tab. If you created the request from a template (described above), the response data type is set automatically for you. If you're making a custom request, you need to first define a type, and then select the type in the Response tab. When you define the data type, it is important that it matches the data structure as described by the Fabric API documentation for the request. To define a custom data type, please [read more here](../../flows/defining-custom-types.md).  
+When a Fabric API returns a value, and you want to use the value later in the Flow, you need to specify the data type of the returned value in the Response tab. If you created the request from a template (described above), the response data type is set automatically for you. If you're making a custom request (not using a template, or modified a template request), you need to first [define a custom data type](../../flows/defining-custom-types.md), and then select the data type in the Response tab. When you define the data type, it is important that it matches the data structure as described by the Fabric API documentation for the request. To define a custom data type, please [read more here.](../../flows/defining-custom-types.md)  
 
+![img](/images/flow/microsoft-fabric-rest-api-request-response.png)  
+
+<br/>
 
 ### Pagination  
-Some Microsoft Fabric REST APIs break large data sets up into smaller chunks when delivering data to clients. [You can read more about this feature here](https://learn.microsoft.com/en-us/rest/api/fabric/articles/pagination). 
+Some Microsoft Fabric REST APIs break large datasets into smaller chunks when delivering data to clients. [You can read more about this feature here.](https://learn.microsoft.com/en-us/rest/api/fabric/articles/pagination)  
 
-The `REST API Request action` handles pagination automatically for you, so you don't have to make multiple calls in order to get all records if the Fabric API splits the data set into multiple pages.  
+The `REST API Request action` handles pagination automatically for you, so you don't have to make multiple calls in order to get all records if the Fabric API splits the dataset into multiple pages.  
 Note that when you call an API that _might_ return a paginated response, you are required to define the return type as [List&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) or a type **derived** from [List&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1).
 
 ### Long running operations
-When a Fabric API performs an operation that takes some time to complete, it may return before the operation is still being processed. If you want to wait for the completion of the operation before continuing execution of the Flow, you need to manually poll for the result by making repeated requests using the operation id and location returned from the first response. For more details, [read about Long running operations here](https://learn.microsoft.com/en-us/rest/api/fabric/articles/long-running-operation).  
+When a Fabric API performs an operation that takes some time to complete, it may return before the operation is still being processed. If you want to wait for the completion of the operation before continuing execution of the Flow, you need to manually poll for the result by making repeated requests using the operation id and location returned from the first response. For more details, [read about Long running operations here.](https://learn.microsoft.com/en-us/rest/api/fabric/articles/long-running-operation)  
 
 When you call a long running API, you should define the return type so that it contains the following properties:
 ```
