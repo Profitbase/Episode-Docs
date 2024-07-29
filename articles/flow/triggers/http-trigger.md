@@ -6,6 +6,26 @@ You can also get the HTTP endpoint of the Flow from the HTTP trigger. The HTTP e
 > [!Note]
 > You must define at least one API Key with `Execute` permissions in order to execute a Flow from a 3rd party application. A Flow will have no public HTTP endpoint unless at least one API key is defined in the tenant.
 
+## Properties
+
+| Name                 | Type     | Description                         |
+|----------------------|----------|-------------------------------------|
+| Title                |          | Title for the HTTP trigger, describing its purpose or action. |
+| Output data type           | Required |The type of data returned by the HTTP trigger after processing the request. |
+| Default data | Optional | Default input data used if no data is provided in the request; useful for testing with mock data. |
+| Show endpoints |  | Option to display HTTP trigger endpoints, providing the URL for external application calls.|
+| Data variable name          | Optional | Name of the variable containing the data. |
+| Description          | Optional |                                     |
+
+## Default data
+While developing a Flow that will be executed from 3rd party clients like Profitbase InVision or custom apps, you most likely want to test the Flow by executing it from the Designer. This way, you don't have to switch to the 3rd party apps to do test runs.  
+If the Flow expects a parameter, you can use the `Default data` property to define a mock business object that is used when the Flow executes. Note that the Default data object is also used as parameter data if no data is passed from the caller (3rd party app), so remember to remove the Default data definition when you're done developing the Flow (unless you want to enable a fallback value if 3rd party clients do not provide a value to the parameter).
+
+
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/http-trigger.png)
+
+<br/>
+
 ## Example
 
 This example demonstrates how to run a Flow from the [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) Visual Studio Code plugin.  
@@ -24,23 +44,6 @@ The customer object looks like this:
     }
 }
 ```
-<br/>
-
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/http-trigger.png)
-
-<br/>
-
-## Properties
-
-| Name                 | Type     | Description                         |
-|----------------------|----------|-------------------------------------|
-| Title                |          | Title for the HTTP trigger, describing its purpose or action. |
-| Output data type           | Required |The type of data returned by the HTTP trigger after processing the request. |
-| Default data | Optional | Default input data used if no data is provided in the request; useful for testing with mock data. |
-| Show endpoints |  | Option to display HTTP trigger endpoints, providing the URL for external application calls.|
-| Data variable name          | Optional | Name of the variable containing the data. |
-| Description          | Optional |                                     |
-
 <br/>
 
 #### 1) Create a new Flow
