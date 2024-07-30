@@ -1,6 +1,6 @@
 # Send message
 
-Sends a message to an Azure Service Bus Queue or Topic.
+Sends a message to an [Azure Service Bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview) Queue or Topic.
 
 <br/>
 
@@ -12,11 +12,11 @@ Sends a message to an Azure Service Bus Queue or Topic.
 |----------------|----------|--------------------------------------------------|
 | Title          |          |                                                  |
 | Send to        | Optional |                                                  |
-| Connection     | Required | A SAS Uri connection to an Azure Blob container. |
-| Content        | Optional | Select or enter the content                      |
-| Content type   | Optional | Select the contents MIME type                    |
-| Subject        | Optional | Enter subject/label                              |
-| Message Id     | Optional | Enter message Id                                 |
-| Correlation Id | Optional | Enter correlation Id                             |
+| Connection     | Required | Connection name and string.                      |
+| Content        | Optional | Select or enter the content.                      |
+| Content type   | Optional | Select the contents MIME type.                    |
+| Subject        | Optional | Enter subject/label.                              |
+| Message Id     | Optional | Enter message Id.                                 |
+| Correlation Id | Optional | Enter correlation Id.                             |
 | Reply to       | Optional |                                                  |
 | Description    | Optional |                                                  |
