@@ -11,9 +11,9 @@ Iterates over a list of blob information in an Azure blob container.
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
 | Title |   |  |
-| Connection       | Required  | A [SAS Uri](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview) to an Azure Blob container.       |
+| Connection       | Required  | A [SAS Uri](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview) to an Azure Blob container or connection string and container name.       |
 | Blob name prefix filter| Optional  | Prefix filter for blob properties **Note!** The prefix is case sensitive. |
-| Blob info | Optional | The name of the Flow variable that contains the blob info |
+| Blob info | Optional | The name of the Flow variable that contains the blob info. |
 | Description | Optional |  |
 
 <br/>
