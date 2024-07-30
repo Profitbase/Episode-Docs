@@ -1,6 +1,6 @@
 # Publish Event
 
-Publishes an event to Azure Event Hub.
+Publishes an event to [Azure Event Hub](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-about).
 
 <br/>
 
@@ -13,5 +13,5 @@ Publishes an event to Azure Event Hub.
 
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
-| Connection       | Required  | A SAS Uri connection to an Azure Blob container.       |
+| Connection       | Required  | Connection name and string.       |
 | Message | Required | Select or enter the message to publish. |
