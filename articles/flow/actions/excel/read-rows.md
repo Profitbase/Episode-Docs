@@ -13,12 +13,14 @@ Iterates over rows in an Excel sheet.
 
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
-| File contents | Required  | Select the File contents. |
+| Title |   |  |
+| File contents | Required  | Select the file contents (Stream or byte array). |
 | Worksheet name | Optional | Select or enter Worksheets name. |
 | Data start row | Optional |  |
 | Column mapping | Required | Configure row object. |
-| Row variable name | Optional |  |
-| Row data type | Optional |  |
+| Row variable name | Optional | The name of the Row variable. |
+| Row data type | Read-only |  |
+| Description | Optional | |
 
 <br/>
 

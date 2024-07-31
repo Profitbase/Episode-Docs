@@ -14,10 +14,12 @@ Iterates over records in a CSV file.
 
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
-| File contents       | Required  | Select the file contents.       |
+| Title |   |  |
+| File contents       | Required  | Select the file contents (Stream or byte array).      |
 | Data start row | Optional  | Choose the row. |
 | Column mapping | Required | Configure row object. |
 | Data import options | Optional | Skip empty, fail. |
 | Field parser | Optional | Custom field parser. |
-| Row variable name | Optional |  |
-| Row data type | Optional |  |
+| Row variable name | Optional | The name of the Row variable. |
+| Row data type | Read-only |  |
+| Description | Optional | |

@@ -20,7 +20,7 @@ Using data table as Source:
 
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
-| Title       | Required |        |
+| Title       |  |        |
 | Source | Required  | Select from a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) or [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable). |
 | Result variable name | Required |  |
 | Description | Optional | |
