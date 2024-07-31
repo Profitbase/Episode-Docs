@@ -13,7 +13,7 @@ Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
 | Title  | Optional |        |
-| File contents | Required  | Select the File contents. |
+| File contents | Required  | Select the file contents (Stream or byte array). |
 | Worksheet name | Optional | Select or enter Worksheets name. |
 | Data start row | Optional |  |
 | Column mapping | Required | Configure row object. |
