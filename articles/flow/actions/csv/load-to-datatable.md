@@ -14,9 +14,9 @@ Loads the contents of a CSV file into memory as a [DataTable](https://learn.micr
 
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
-| File contents       | Required  | Select the file contents.       |
+| File contents       | Required  | Select the file contents (Stream or byte array).       |
 | Data start row | Optional  | Choose the row. |
 | Column mapping | Required | Configure row object. |
 | Data import options | Optional | Skip empty, fail. |
 | Field parser | Optional | Custom field parser. |
-| Table variable name | Optional |  |
+| Table variable name | Optional | The name of the DataTable variable. |
