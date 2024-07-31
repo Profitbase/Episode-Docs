@@ -73,9 +73,9 @@ In the response tab, you can choose from the following respones types:
 
 | Content type       | Description                            |
 |--------------------|----------------------------------------|
-| String             | The string (text) format is usually used to represent complex business objects, (for example a Customer object), data sets, or simple values like text, numbers or dates. When an API returns business objects, it is usually returned in a [JSON](https://en.wikipedia.org/wiki/JSON) format. You can pass it through the [Convert](../built-in/convert.md) action to convert it to a strongly typed objects you can work with. |
+| String             | The string (text) format is usually used to represent complex business objects, (for example a Customer object), data sets, or simple values like text, numbers or dates. When an API returns business objects, it is usually returned in a [JSON](https://en.wikipedia.org/wiki/JSON) format. You can pass it through the [Convert](../built-in/convert.md) action to convert it to strongly typed objects you can work with. |
 | Byte array         | When an API returns a byte array, it usually represents the contents of a file. However, you must read the API docs to know what you are receiving. | 
-| Byte array from base64 encoded string |  Use this option if the API you are calling returns binary data as base64 encoded strings instead of in raw binary format. By choosing this option, Flow will automatically convert the response into a byte array for you. You need to read the documentation of the API you are calling to determine whether this is the right option or not.  |  
+| Byte array from base64 encoded string |  Use this option if the API you are calling returns binary data as base64 encoded strings instead of raw binary format. By choosing this option, Flow will automatically convert the response to a byte array for you. Refer to the API documentation to determine if this option is appropriate.  |  
 
 
 To convert the response body from its raw format to data you can work with (known as "deserialization"), you need to pass it through the [Convert](../built-in/convert.md) action and specify the data type that you want to deserialize it to. 
