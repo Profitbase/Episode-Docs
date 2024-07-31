@@ -93,6 +93,8 @@ If you simply want to kick off a long running operation and don't wait for its c
 
 ![img](/images/flow/microsoft-fabric-rest-api-request-wait.png)
 
+<br/>
+
 ##### Handle polling manually
 If you don't want Flow to automatically wait for long running operations to complete, but want to handle this yourself, you need to manually poll for the result by making repeated requests using the operation id and location returned from the first response. For more details, [read about Long running operations here.](https://learn.microsoft.com/en-us/rest/api/fabric/articles/long-running-operation)  
 
