@@ -59,13 +59,13 @@ To use a variable as the body payload, simply switch to the `Body` tab and selec
 You can manually construct the HTTP body by building a [JSON](https://en.wikipedia.org/wiki/JSON) object. 
 - A JSON object must begin with `{` and end with `}`.  
 - Property names must be quoted in double quotes.
-- String and date values must be quoted in double quotes.
+- `String` and `date` values must be quoted in double quotes.
 - Properties must be separated by commas.
 
 When building the JSON object, you can combine hard-code values and variables as shown in the screenshot below.
 
 > [!NOTE]
-> You must remember to add quotes around string values, like shown with the `format` property below. Flow does not know which data type a property expects, so you will have to add quotes manually.
+> You must remember to add quotes around `string` and `date` values, like shown with the `format` property below. Flow does not know which data type a property expects, so you will have to add quotes manually.
 
 ![img](/images/flow/microsoft-fabric-rest-api-json-body.png)
 
