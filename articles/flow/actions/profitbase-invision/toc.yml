@@ -39,6 +39,8 @@
   href: "convert-datapackage-to-datatable.md"
 - name: "Convert DataTable to DataPackage"
   href: "convert-datatable-to-datapackage.md"
+- name: "Deploy Stored Procedure"
+  href: "deploy-stored-procedure.md"
 - name: "File Storage"
   items:
     - name: "Add file to File Storage"
