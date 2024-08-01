@@ -9,7 +9,7 @@ This action creates a new version of an existing work process in a draft state. 
 | Name                 | Type     | Description                         |
 |----------------------|----------|-------------------------------------|
 | Title                |          |                                     |
-| Connection           | Required | InVision connection                 |
+| Connection           | Required | InVision connection.                 |
 | Work Process         | Required | Select Work Process from the list, from a variable or enter the id manually.   |
 | Version name         | Required | Name of the new version to create.   |
 | Version describtion  | Optional |                                     |
