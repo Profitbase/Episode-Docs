@@ -10,7 +10,7 @@ This action deletes a version of a work process along with its associated soluti
 | Name                 | Type     | Description                         |
 |----------------------|----------|-------------------------------------|
 | Title                |          |                                     |
-| Connection           | Required | InVision connection                 |
+| Connection           | Required | InVision connection.                 |
 | Work Process Version | Required | Select or enter Work Process Version to delete |
 | Include information messages in log | Optional | If to show inforation messages from InVision in the Flow's log. |
 | Force delete | Optional |                      |

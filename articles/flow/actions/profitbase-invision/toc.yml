@@ -67,6 +67,8 @@
   href: "get-data-store-metadata.md"
 - name: "Get Dimension DataReader"
   href: "get-dimension-datareader.md"
+- name: "Import data to Dimension"
+  href: "import-data-to-dimension.md"
 - name: "Load dimension tree"
   href: "load-dimension-tree.md"
   items: 
