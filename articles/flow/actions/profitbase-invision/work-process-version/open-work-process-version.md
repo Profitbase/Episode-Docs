@@ -10,7 +10,7 @@ This action opens a version of a work process for input. The state of this versi
 | Name                 | Type     | Description                         |
 |----------------------|----------|-------------------------------------|
 | Title                |          |                                     |
-| Connection           | Required | InVision connection                 |
+| Connection           | Required | InVision connection.                 |
 | Work Process Version | Required | Select or enter id of the Work Process Version that you want to open |
 | Include information messages in log | Optional |If to show inforation messages from InVision in the Flow's log. |
 | Changed by           | Optional | Enter the user Id to use in InVision's "Changed by" |
