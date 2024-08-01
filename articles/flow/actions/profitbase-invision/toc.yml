@@ -41,6 +41,8 @@
   href: "convert-datatable-to-datapackage.md"
 - name: "Deploy Stored Procedure"
   href: "deploy-stored-procedure.md"
+- name: "Deploy View"
+  href: "deploy-view.md"
 - name: "File Storage"
   items:
     - name: "Add file to File Storage"

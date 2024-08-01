@@ -2,6 +2,21 @@
 
 Configures the Flow to be triggered on a schedule.
 
+
+
+![sch tr](https://profitbasedocs.blob.core.windows.net/flowimages/schedule_trigger_5.png) 
+
+## Properties 
+
+| Name                 | Type     | Description                         |
+|----------------------|----------|-------------------------------------|
+| Title                |          |                                     |
+| Schedule           | Required | Configure the schedule.                 |
+| Data configuration | Optional | Define trigger data.   |
+| Data variable name | Optional | Name of the variable containing the data. |
+| Disabled          | Optional |                                     |
+| Description          | Optional |                                     |
+
 ## Step by step
 <br/>
 
