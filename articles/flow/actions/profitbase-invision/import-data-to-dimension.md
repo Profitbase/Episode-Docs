@@ -23,7 +23,8 @@ Imports data into an InVision Dimension from an [IDataReader](https://learn.micr
 
 To import data into a dimension, the columns in the data source (for example SQL Server source table, Excel of Parquet file) must match the table schema of the `parent-child table` of the target dimension.
 
-A parent-child table always has at least 4 columns: `ID`, `ParentID`, `Name` and `SortIndex`. The data type of the first 3 columns is usually `varchar` or `nvarchar`, but other data types may also be used.
+A parent-child table always has at least 4 columns: `ID`, `ParentID`, `Name` and `SortIndex`. The data type of the first 3 columns is usually `varchar` or `nvarchar`, but other data types may also be used.  
+The data type of `SortIndex` is always `int`.
 
 The dimension may also have `properties`, for example `Weight`, `Price` and `Color`. If so, the parent-child table additionally includes one column pr property.
 
