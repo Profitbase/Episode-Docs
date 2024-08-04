@@ -9,19 +9,19 @@ Then use the parameters in the query.
 
 ```sql
 
-SELECT * FROM Users WHERE UserId = @UserId
+SELECT [Name] FROM Users WHERE UserId = @UserId
 
 ```
-
 
 ## Example: How to use variables in the command expression
 
-To use a variable in a SQL query as part of the expression, you need to first [declare a variable](../built-in/declare-variable.md) as `Global` and [assign a value to the variable](../built-in/set-variable.md).
+To use Flow variables in a SQL query as part of the expression, you need to first [declare a variable](../built-in/declare-variable.md) as `Global` and [assign a value to the variable](../built-in/set-variable.md).  
+Then, enclose the variable in curly brackets like with the `TableName` variable shown in the example below.
 
 ```sql
-SELECT * FROM {TableName}
+-- We have declared a Flow variable named TableName and assigned a value to it in a previous action.
+SELECT [Name] FROM {TableName} WHERE UserId = @UserId
 ```
-
 
 ## Returns
 
