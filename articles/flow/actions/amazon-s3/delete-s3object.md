@@ -1,4 +1,4 @@
-# Delete Amazon S3 object
+# Delete S3 object
 
 Deletes a S3 object from a bucket.
 
@@ -6,9 +6,9 @@ Deletes a S3 object from a bucket.
 
 ## Properties
 
-| Name             | Type      |Description                                             |
-|------------------|-----------|--------------------------------------------------------|
-| Title            | Required  |      |
-| Connection       | Required  | Access key id, access key secret, bucket name and region connecting to an Amazon S3 bucket.       |
-| Object name        | Required  | The name of the object to delete. |
-| Description | Optional | |
+| Name        | Type     | Description                                                                                 |
+| ----------- | -------- | ------------------------------------------------------------------------------------------- |
+| Title       | Required |                                                                                             |
+| Connection  | Required | Access key id, access key secret, bucket name and region connecting to an Amazon S3 bucket. |
+| Object name | Required | The name of the object to delete.                                                           |
+| Description | Optional |                                                                                             |

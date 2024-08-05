@@ -1,4 +1,4 @@
-# Get Amazon S3 object names
+# Get S3 object names
 
 Gets a list of all object names in the Bucket container where, the S3 object is for example `myfile.txt`.
 
@@ -6,16 +6,15 @@ Use this action if you need a list of all the object names in a Bucket. If you o
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/bucket3.png)
 
-
 ## Properties
 
-| Name             | Type      |Description                                             |
-|------------------|-----------|--------------------------------------------------------|
-| Title            | Required  |      |
-| Connection       | Required  | Access key id, access key secret, bucket name and region connecting to an Amazon S3 bucket.       |
-| Object name prefix filter       | Optional  | Prefix filter for object names. **Note!** The prefix is case sensitive.  |
-| Result variable name | Required | The name of the Flow variable that contains the list of the objects names. |
-| Description | Optional | |
+| Name                      | Type     | Description                                                                                 |
+| ------------------------- | -------- | ------------------------------------------------------------------------------------------- |
+| Title                     | Required |                                                                                             |
+| Connection                | Required | Access key id, access key secret, bucket name and region connecting to an Amazon S3 bucket. |
+| Object name prefix filter | Optional | Prefix filter for object names. **Note!** The prefix is case sensitive.                     |
+| Result variable name      | Required | The name of the Flow variable that contains the list of the objects names.                  |
+| Description               | Optional |                                                                                             |
 
 <br/>
 
@@ -26,5 +25,3 @@ Use this action if you need a list of all the object names in a Bucket. If you o
 Object name prefix filter:
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/bucket4.png)
-
-
