@@ -1,4 +1,4 @@
-# Read file as stream
+# Read file from OneDrive as stream
 
 Reads the contents of a file in OneDrive as a stream.
 
@@ -6,16 +6,15 @@ Reads the contents of a file in OneDrive as a stream.
 
 ## Properties
 
-| Name                  | Type      | Description        |
-|-----------------------|-----------|--------------------|
-| Connection            | Required  | The connection to the OneDrive account. Setting up a connection requires a Microsoft `Work or School account`.|
-| File                  | Required  | The path to the file in OneDrive. When using a [OneDriveItem](./api-reference/onedrive-item.md), use the `Path` property like shown in the example image below.  |
-| Result variable name  | Required  | The name of the variable containing the file stream. |
+| Name                 | Type     | Description                                                                                                                                                     |
+| -------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Connection           | Required | The connection to the OneDrive account. Setting up a connection requires a Microsoft `Work or School account`.                                                  |
+| File                 | Required | The path to the file in OneDrive. When using a [OneDriveItem](./api-reference/onedrive-item.md), use the `Path` property like shown in the example image below. |
+| Result variable name | Required | The name of the variable containing the file stream.                                                                                                            |
 
 ## Returns
 
 A [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream) that provides access to the contents of the file. Use the stream as input to other actions, for example the [Get DataReader](../excel/get-datareader.md) if you are fetching an Excel-file from OneDrive.
-
 
 > [!NOTE]
 > When you want to read a file in OneDrive, you need to provide the `path` to the file, not the name. When using a [OneDriveItem](./api-reference/onedrive-item.md) as input, select the `Path` property like shown below.  

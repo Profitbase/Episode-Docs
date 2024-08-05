@@ -1,4 +1,4 @@
-# Get files in folder
+# Get files in OneDrive
 
 Gets a list of files and folders in a OneDrive folder.
 
@@ -6,12 +6,12 @@ Gets a list of files and folders in a OneDrive folder.
 
 ## Properties
 
-| Name                 | Type      | Description                                     |
-|----------------------|-----------|-------------------------------------------------| 
-| Connection           | Required  | The connection to the OneDrive account. Setting up a connection requires a Microsoft `Work or School account`. |
-| Folder               | Optional  | The OneDrive folder to read from.               |
-| Include folders      | Optional  | True to include folders in the list of [OneDriveItems](./api-reference/onedrive-item.md) to return. |
-| Result variable name | Required  | The name of the variable that contains the list of [OneDriveItems](./api-reference/onedrive-item.md) returned. |
+| Name                 | Type     | Description                                                                                                    |
+| -------------------- | -------- | -------------------------------------------------------------------------------------------------------------- |
+| Connection           | Required | The connection to the OneDrive account. Setting up a connection requires a Microsoft `Work or School account`. |
+| Folder               | Optional | The OneDrive folder to read from.                                                                              |
+| Include folders      | Optional | True to include folders in the list of [OneDriveItems](./api-reference/onedrive-item.md) to return.            |
+| Result variable name | Required | The name of the variable that contains the list of [OneDriveItems](./api-reference/onedrive-item.md) returned. |
 
 ## Returns
 
