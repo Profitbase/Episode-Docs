@@ -13,8 +13,8 @@ Imports data into an InVision Dimension from an [IDataReader](https://learn.micr
 | Connection           | Required | InVision connection.                                   |
 | Source               | Required | The data source must be an [IDataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) or a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) with columns matching the parent-child table schema. For further details, please read the [Data import format](#data-import-format) section below. |
 | Dimension            | Required | Select the dimension to import data to.                |
-| Overwrite user edits | Optional | Specify if user edits should be overwritten. The default is `false`.   |
-| Import empty values  | Optional | Specify whether or not ignore data that. The default is `true`.  |
+| Overwrite user edits | Optional | This option is applicable only when updating an existing dimension member. It determines whether manual changes made by the user to a dimension member's properties since the last import should be retained or overwritten. By default, user edits are preserved. However, setting this option to true will overwrite all manual user edits. Use this option with caution.   |
+| Import empty values  | Optional | This option is applicable only when updating an existing dimension member. It determines whether empty values (e.g., null or empty strings) should be imported and allowed to overwrite existing property values for a dimension member. By default, this is prevented. However, setting this option to true allows overwriting existing property values from previous imports with empty values. Use this option with caution.  |
 | Created by           | Optional |                                                        |
 | Result variable name | Optional | Name of the variable containing boolean `true` or `false` to indicate whether the import succeeded or not. |
 | Description          | Optional |                                                        |

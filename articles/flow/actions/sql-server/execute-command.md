@@ -5,6 +5,22 @@ Executes a SQL command in a SQL Server database, and returns the number of rows 
 > [!NOTE]
 > This action does not return the result of the executed query. It simply return the number of rows affected by the query.
 
+
+<!--![img](https://profitbasedocs.blob.core.windows.net/flowimages/HTTP-get-file.png)-->
+
+
+
+## Properties
+
+| Name         | Data type       | Description                                       |
+|--------------|-----------------|---------------------------------------------------|
+| Title           |           |                        |
+| Connection         | Required   | InVision SQL Server connection. |
+|SQL expression and parameters   | Required      | Enter SQL expression and optional parameters. |
+| Result variable name | Optional  | Name of the variable containing the number of rows affected.  |
+|Command timeout (sec) | Optional | Command timeout in seconds.|
+|   Description   |           |                  |
+
 ## Example: How to use parameters
 
 To use parameters in the query, declare and assign variables in the `SQL parameters` property.  
