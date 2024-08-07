@@ -1,10 +1,9 @@
-# Get DataReader
+# Get DataReader from CSV file
 
 Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) for reading a foward-only stream of rows from CSV file.
 The input can be either a byte array or a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream).
 
 This action is typically used when you need to import large CSV files to a database. The [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) can be used directly as input to actions such as the [SQL Server Insert Data](../sql-server/insert-data.md) action.
-
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/getDataReaderCSV.png)
 
@@ -12,6 +11,7 @@ This action is typically used when you need to import large CSV files to a datab
 
 ### Properties
 
+<!-- prettier-ignore-->
 | Name                     | Type           | Description                                                                                          |
 |--------------------------|----------------|------------------------------------------------------------------------------------------------------|
 | Title                    |                | An optional title for the action                                                                     |
@@ -21,4 +21,4 @@ This action is typically used when you need to import large CSV files to a datab
 | [Data import options](configuration-properties/data-import-options.md)      | Optional       | Specifies options for error handling and how the contents of the file is parsed, such as date and number formattings. |
 | [Field parser](configuration-properties/field-parser.md)             | Optional       | Provides a way to customize how field values are parsed during import.                             |
 | DataReader variable name | Required       | The name of the variable you can use to reference the DataReader in other actions.                   | 
-| Description | Optional       |                  | 
+| Description | Optional       |                  |
