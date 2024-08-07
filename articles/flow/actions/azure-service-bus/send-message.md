@@ -11,12 +11,12 @@ Sends a message to an [Azure Service Bus](https://learn.microsoft.com/en-us/azur
 | Name           | Type     | Description                                      |
 |----------------|----------|--------------------------------------------------|
 | Title          |          |                                                  |
-| Send to        | Optional |                                                  |
+| Send to        | Optional |  Topic/Queue.                                    |
 | Connection     | Required | Connection name and string.                      |
-| Content        | Optional | Select or enter the content.                      |
-| Content type   | Optional | Select the contents MIME type.                    |
-| Subject        | Optional | Enter subject/label.                              |
-| Message Id     | Optional | Enter message Id.                                 |
-| Correlation Id | Optional | Enter correlation Id.                             |
-| Reply to       | Optional |                                                  |
+| Content        | Optional | Select or enter the content.                     |
+| Content type   | Optional | Select the contents MIME type.                   |
+| Subject        | Optional | Enter subject/label.                             |
+| Message Id     | Optional | Enter message Id.                                |
+| Correlation Id | Optional | Enter correlation Id.                            |
+| Reply to       | Optional | Enter Reply to.                                  |
 | Description    | Optional |                                                  |
