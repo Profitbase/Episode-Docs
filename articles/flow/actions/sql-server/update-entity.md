@@ -19,3 +19,18 @@ All properties _NOT_ in the `Update keys` configuration will be used in the SET 
 > [!NOTE]
 > Each property name in the entity must exist in the target table. If the database collation is case sensitive, the properties and columns must match by case in addition to name.
 
+
+
+
+## Properties
+
+| Name         | Data type       | Description                                       |
+|--------------|-----------------|---------------------------------------------------|
+| Title           |           |                        |
+| Connection         | Required   | InVision SQL Server connection. |
+| Source   | Required |  |
+| Table name | Required  |   |
+| Update key | Required  |   |
+| Result variable name | Optional  | Name of resulting list of entities variable  |
+| Command timeout (sec) | Optional | Command timeout in seconds.|
+| Description   |           |                  |

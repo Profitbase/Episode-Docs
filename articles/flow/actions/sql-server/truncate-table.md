@@ -1,8 +1,8 @@
-# Delete table
+# Truncate table
 
-Deletes a table from a SQL Server database.  
+Truncates(empties) a table in a SQL Server database.
 
-If the table does not exist, this action does nothing (no error is raised).
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/SQL-example.png)
 
 ## Properties
 
@@ -10,6 +10,6 @@ If the table does not exist, this action does nothing (no error is raised).
 |--------------|-----------------|---------------------------------------------------|
 | Title           |           |                        |
 | Connection         | Required   | InVision SQL Server connection. |
-| Table name   | Required      |  |
+| Table name  | Required  | Enter or select the table name. |
 | Command timeout (sec) | Optional | Command timeout in seconds.|
-|   Description   |           |                  |
+| Description   |           |                  |
