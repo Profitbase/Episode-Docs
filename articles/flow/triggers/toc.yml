@@ -1,3 +1,9 @@
+- name: "Azure Blob Storage"
+  items:
+  - name: "Blob trigger"
+    href: "azure-blob-storage/blob-trigger.md"
+  - name: "Incremental Blob trigger"
+    href: "azure-blob-storage/incremental-blob-trigger.md"
 - name: "Azure Service Bus"
   items:
   - name: "Queue trigger"
