@@ -10,7 +10,7 @@ Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data
 
 | Name                 | Type     | Description                                                                                                   |
 | -------------------- | -------- | ------------------------------------------------------------------------------------------------------------- |
-| Title                | Optional |                                                                                                               |
+| Title                |  |                                                                                                               |
 | File contents        | Required | Select the file contents (Stream or byte array).                                                              |
 | Sheet name           | Optional | Specifies the name of the sheet to read data from. Defaults to the first sheet in the file if not specified.  |
 | Data start row       | Optional | The row number of the first row to read. If the worksheet has a header row, `Data start row` is typically `2` |
