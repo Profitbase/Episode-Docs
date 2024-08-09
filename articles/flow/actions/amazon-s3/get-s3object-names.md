@@ -10,7 +10,7 @@ Use this action if you need a list of all the object names in a Bucket. If you o
 
 | Name                      | Type     | Description                                                                                 |
 | ------------------------- | -------- | ------------------------------------------------------------------------------------------- |
-| Title                     | Required |                                                                                             |
+| Title                     | |                                                                                             |
 | Connection                | Required | Access key id, access key secret, bucket name and region connecting to an Amazon S3 bucket. |
 | Object name prefix filter | Optional | Prefix filter for object names. **Note!** The prefix is case sensitive.                     |
 | Result variable name      | Required | The name of the Flow variable that contains the list of the objects names.                  |

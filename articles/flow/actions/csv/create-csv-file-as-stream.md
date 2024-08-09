@@ -12,7 +12,7 @@ Creates a CSV file from a [DataReader](https://learn.microsoft.com/en-us/dotnet/
 
 | Name                     | Type     | Description                 |
 | ------------------------ | -------- | --------------------------- |
-| Title                    | Optional |                             |
+| Title                    |          |                             |
 | Source                   | Required | Select the source for data. |
 | Header row               |          |                             |
 | Column delimiter         | Default  | Default is coma.            |

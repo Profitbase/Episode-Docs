@@ -5,3 +5,25 @@ Creates an Excel file from a [DataTable](https://learn.microsoft.com/en-us/dotne
 ## Returns
 
 Returns the Excel file serialized as a [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays)
+
+<br/>
+
+## Properties
+
+| Name                 | Type     | Description                                                                                                   |
+| -------------------- | -------- | ------------------------------------------------------------------------------------------------------------- |
+| Title                |          |                                                                                                               |
+| Source               | Required | Select DataTable or DataReades.                                                              |
+| Sheet name           | Optional | Specifies the name of the sheet to read data from. Defaults to the first sheet in the file if not specified.  |
+| Column mapping       | Optional | Defines the mapping between Excel column letters and business object property names.                          |
+| Worksheet formatting options | Optional |                                                                                                       |
+| Byte array variable name | Optional |                                                                                                           |
+| Description | Optional |                                                                                                                        |
+
+<br/>
+
+### Automatic column mapping
+
+Columns can be mapped automatically by using the "Map from sample file" option.
+
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/getDataReaderEx2.png)
