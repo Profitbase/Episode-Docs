@@ -10,7 +10,7 @@ You can also get the HTTP endpoint of the Flow from the HTTP trigger. The HTTP e
 
 | Name                 | Type     | Description                         |
 |----------------------|----------|-------------------------------------|
-| Title                |          | Title for the HTTP trigger, describing its purpose or action. |
+| Title                |          |  |
 | Output data type           | Required |The type of data returned by the HTTP trigger after processing the request. |
 | Default data | Optional | Default input data used if no data is provided in the request; useful for testing with mock data. |
 | Show endpoints |  | Option to display HTTP trigger endpoints, providing the URL for external application calls.|

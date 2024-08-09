@@ -1,6 +1,6 @@
 # Read rows from CSV file
 
-Iterates over records in a CSV file.
+Iterates over rows in a CSV file.
 
 <br/>
 

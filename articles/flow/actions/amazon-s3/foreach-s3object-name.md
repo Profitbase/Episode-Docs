@@ -8,7 +8,7 @@ Iterates over a list of all Amazon S3 object names in the Amazon Bucket.
 
 | Name                      | Type     | Description                                                                                 |
 | ------------------------- | -------- | ------------------------------------------------------------------------------------------- |
-| Title                     | Required |                                                                                             |
+| Title                     | |                                                                                             |
 | Connection                | Required | Access key id, access key secret, bucket name and region connecting to an Amazon S3 bucket. |
 | Object name prefix filter | Optional | Prefix filter for object names. **Note!** The prefix is case sensitive.                     |
 | Object name               | Required | The name of the object to read from.                                                        |
