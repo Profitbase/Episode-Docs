@@ -1,4 +1,4 @@
-# Worksheet Properties"
+# Worksheet Properties
 metaKeys: "Worksheet Properties. Add Row Settings, Hide Grid Lines, Is Row Selector Visible, Is Row Locking Enabled, Is Summary Row Enabled, Allow Sorting, Inline Filtering, Allowed Input Level, Context Menu Options"
 folderOnly: "false"
 pageIndex: 13
