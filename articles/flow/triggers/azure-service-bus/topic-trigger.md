@@ -13,7 +13,7 @@ Configures the flow to automatically run by checking periodically for new messag
 |----------------|----------|--------------------------------------------------|
 | Title          |          |                                                  |
 | Connection     | Required | Connection name and string.                      |
-| Subscribtion name| Required | Name of the topic subscribtion.                |
+| Subscribtion name| Optional | Name of the topic subscribtion.                |
 | Polling frequency| Optional | Schedule configuration of the trigger.         |
 | Output data type | Optional | Select the data type of the trigger output.    |
 | Disabled       | Optional |                                                  |
