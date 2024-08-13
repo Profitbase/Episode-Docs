@@ -74,8 +74,10 @@ If you want to display a dimension in a Form, you can now choose between 3 optio
 - Fixed an issue that prevented Solution developers from reordering sibling custom context menu items in Table Views, Worksheets and Tables.
 - Fixed an issue with dropdowns displayed in popups, where users had to select a value twice for the selection to apply.
 
-#### See Also
+### See Also
 
+- [Change Log 2024.2](changelog24_2.md)
+- [Change Log 2024.1](changelog24_1.md)
 - [Change Log 2023.7](changelog23_7.md)
 - [Change Log 2023.6](changelog23_6.md)
 - [Change Log 2023.5](changelog23_5.md)

@@ -168,7 +168,7 @@ foreach($fileInfo in $fileInfos)
 [Profitbase.Data.SqlCommand]::ExecuteNonQuery("DELETE FROM Files WHERE [FileSpreadSessionID] = '" + $sessionId + "'")
 ```
 
-#### See Also
+### See Also
 
 * [File Storage](../filestorage.md)
 

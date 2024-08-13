@@ -71,8 +71,10 @@ All Solutions that **does not** have any permissions defined, will now be access
 - Dataflow Worker now waits for an amout of time (default is 10 minutes) before shutting down after completing its last job. This shortens the wait time for the first user that submits a new job when the pressure on the system is low.
 
 
-#### See Also
+### See Also
 
+- [Change Log 2024.2](changelog24_2.md)
+- [Change Log 2024.1](changelog24_1.md)
 - [Change Log 2023.6](changelog23_6.md)
 - [Change Log 2023.5](changelog23_5.md)
 - [Change Log 2023.4](changelog23_4.md)

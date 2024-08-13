@@ -5,7 +5,7 @@ In this section, you will find a list of shortcuts to different subjects about T
 
 <br/>
 
-#### See Also  
+### See Also  
 
 * [How To Setup Translation](howto/setup.md)
 

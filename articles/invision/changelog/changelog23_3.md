@@ -38,8 +38,10 @@ console.log("100 + 200 is " + result);
 - Fixed an issue where the search result list in filters wrapped items with long names onto new lines instead of showing a horizontal scroll bar.
 - Fixed an issue with generation of compound views during Package upgrade and deployment caused by invalid or missing view source tables.
 
-#### See Also
+### See Also
 
+- [Change Log 2024.2](changelog24_2.md)
+- [Change Log 2024.1](changelog24_1.md)
 - [Change Log 2023.7](changelog23_7.md)
 - [Change Log 2023.6](changelog23_6.md)
 - [Change Log 2023.5](changelog23_5.md)

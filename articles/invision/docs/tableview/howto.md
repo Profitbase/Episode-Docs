@@ -8,7 +8,7 @@ In this section, you will find a list of shortcuts to different subjects about T
 
 <br/>
 
-#### See Also  
+### See Also  
 
 * [How to Create a Table View](howto/creatingtableview.md)
 * [How to Use Macro Expansion in Table View](howto/tableviewmacro.md)

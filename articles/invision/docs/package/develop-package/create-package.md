@@ -5,7 +5,7 @@ In this section, you will find documentation about [defining](create-package/def
 
 You will also find docs about package [properties](create-package/packageproperty.md).
 
-#### See Also
+### See Also
 
 - [Define Package](create-package/define-package.md)
 - [Package Properties](create-package/packageproperty.md)

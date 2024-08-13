@@ -4,7 +4,7 @@ In this section, you will find a list of shortcuts to different subjects about S
 
 <br/>
 
-#### See Also  
+### See Also  
 
 * [How To Create SQL Reports](howto/basics.md)
 * [How To Create Charts](howto/charts.md)
