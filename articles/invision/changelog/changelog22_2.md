@@ -217,9 +217,10 @@ To install InVision 2022.2 or upgrade to 2022.2, you need to use version **5.3 o
 
 <br/>
 
-#### See Also
+### See Also
 
-
+- [Change Log 2024.2](changelog24_2.md)
+- [Change Log 2024.1](changelog24_1.md)
 - [Change Log 2023.7](changelog23_7.md)
 - [Change Log 2023.6](changelog23_6.md)
 - [Change Log 2023.5](changelog23_5.md)

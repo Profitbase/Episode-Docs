@@ -15,7 +15,7 @@ Access control can be managed through an [HTTP API](accesscontrol/httpapi.md). T
 
 <br/>
 
-#### See Also
+### See Also
 
 - [How to's](accesscontrol/howto.md)
 - [Access Groups](accesscontrol/accessgroups.md)

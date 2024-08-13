@@ -3,7 +3,7 @@ In this section, you will find a list of shortcuts to different subjects about d
 
 <br/>
 
-#### See Also  
+### See Also  
 
 - [How To use Dimension Editor](howto/dimeditor.md)
 - [How to Enable Support for Multiple Languages](howto/multilang.md)

@@ -254,8 +254,10 @@ https://support.profitbase.com/platform/invision-beta/-/issues/536
 
 <br/>
 
-#### See Also
+### See Also
 
+- [Change Log 2024.2](changelog24_2.md)
+- [Change Log 2024.1](changelog24_1.md)
 - [Change Log 2023.7](changelog23_7.md)
 - [Change Log 2023.6](changelog23_6.md)
 - [Change Log 2023.5](changelog23_5.md)

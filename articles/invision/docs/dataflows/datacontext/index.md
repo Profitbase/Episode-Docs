@@ -18,7 +18,7 @@ To enable other resources (dimensions not being part of star schemas, tables, an
 
 <br/>
 
-#### See Also
+### See Also
 
 * [Data Context Scope](./datacontextscope.md)
 * [Global Data Context](./globaldatacontext.md)

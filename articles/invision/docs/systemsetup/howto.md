@@ -5,7 +5,7 @@ In this section, you will find a list of shortcuts to different subjects about D
 
 <br/>
 
-#### See Also  
+### See Also  
 
 * [How To Install Desktop Designer and Connect to Service](howto/install.md)
 * [How To Create Azure App Registration](howto/azure-registration.md)
