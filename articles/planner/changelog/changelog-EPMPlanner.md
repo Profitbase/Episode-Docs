@@ -13,7 +13,11 @@ This package provide the financial planning function and can be organized in pro
 
 ## Unreleased
 
-- Nothing yet
+**Changes:**
+
+**Fixes:**
+
+- In ReportLineSetup the column IncludeAccountsExp had the wrong datatype set. This caused report publication to fail when a lot of accounts where mapped.
 
 ## EPM Planner 5.5.1
 
