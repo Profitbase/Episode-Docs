@@ -1,11 +1,10 @@
 
 # On-premise Installation
 
-
 ## Installation on Application Server
 
-1.  Make sure **.NET 4.8** is installed on the application server.
-2.  Set up an **Azure Service Bus subscription**.
+1. Make sure **.NET 4.8** is installed on the application server.
+2. Set up an **Azure Service Bus subscription**.
 
     a) Ensure that port **443**, **5671** and **5672** are open on the application server to enable communication with Microsoft Azure (\*.servicebus.windows.net).
 
@@ -15,38 +14,34 @@
 
     - From the topic, copy the **Primary Connection String**. You will need it later when running the installation. It should be on the form _Endpoint=sb://yoursubscription.servicebus.windows.net/;SharedAccessKeyName=SendListen;SharedAccessKey=YOUR_KEY=;EntityPath=YOUR_TOPIC_
 
-3.  Make sure Powershell version v5.1 or higher is installed.
-    
-4.  Make sure ASP.Net Core Hosting Bundle is installed. 
+3. Make sure Powershell version v5.1 or higher is installed.
 
-5.  Install **Profitbase Installation Manager 5.x.x.x.** If it does not already exist on the app server, you can download it from [here](https://download.profitbase.com/Installer/).
+4. Make sure ASP.Net Core Hosting Bundle is installed.
+
+5. Install **Profitbase Installation Manager 5.x.x.x.** If it does not already exist on the app server, you can download it from [here](https://download.profitbase.com/Installer/).
 
 > [!NOTE]
 > Update Profitbase Installation Manager
-> Before upgrading to InVision 2023.5 or newer, it is important to use Profitbase Installation Manager 5.3.0.3. Installing or upgrading to 2023.5 using a previous version of Profitbase Installation Manager will fail.
+> Always make sure you have the latest Installation Manager before upgrading.
 
-6.  Run **Profitbase Installation Manager** to install the software and database (see instructions below). During the installation, you need to provide the **Azure Service Bus connection string** and **topic** from step **2b**.
-
-<br/>
+6. Run **Profitbase Installation Manager** to install the software and database (see instructions below). During the installation, you need to provide the **Azure Service Bus connection string** and **topic** from step **2b**.  
 
 ## Using Profitbase Installation Manager
-<br/>
 
 ### About
 
 Profitbase Installation Manager installs InVision instances into sub folders of its own installation path. Already installed instances are upgraded using Profitbase Installation Manager.
 The default installation path for the installation manager is
 
-```
+'''dos
 C:\Program Files (x86)\Profitbase Installation Manager
-```
+'''
 
 InVision instances will be installed in
 
-```
+```dos
 [Installation Manager path]\InVision\[instance]
 ```
-<br/>
 
 ## Setting up a new InVision instance
 
@@ -69,8 +64,7 @@ InVision instances will be installed in
 
 5. Press **Validate input**
 
-6. Press **Install**
-<br/>
+6. Press **Install**  
 
 ## Instance settings
 
@@ -99,38 +93,28 @@ During the installation process, you need to configure the following settings:
 
 **Azure Service Bus connection string**  
 >On the form  
-```
-Endpoint=sb://yoursubscription.servicebus.windows.net/  
-;SharedAccessKeyName=SendListen;SharedAccessKey=YOUR_KEY=;EntityPath=YOUR_TOPIC
+
+```json
+Endpoint=sb://yoursubscription.servicebus.windows.net/;SharedAccessKeyName=SendListen;SharedAccessKey=YOUR_KEY=;EntityPath=YOUR_TOPIC
 ```
 
 **Azure Service Bus Topic**  
 >The name of the topic. Get it from the EntityPath token of the connection string.
 
-
-<br/>
-
 ## Default ports
-<br/>
-
 
 > [!NOTE]
-> The port numbers are incremented for each installed instance. The actual port used when installing an instance, is displayed in the Installation Manager. 
-<br/>
+> The port numbers are incremented for each installed instance. The actual port used when installing an instance, is displayed in the Installation Manager.  
 
-| Port Number | Description                                                                                                                                                                                     |
+| Port Number | Description |
 | :---------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 12311       | Used by the Data Flow **Dispatcher service** to accept job requests from the Data Flow Task Worker. (For example if the Worker invokes a Batch or Data Flow activity that requires load balancing). |
 | 12310       | Used by the Data Flow Task **Worker service** to accept job requests from the Data Flow Task Manager                                                                                                |
 | 12312       | Data Flow Scheduler                                                                                                                                                                             |
 
-<br/>
-
 ## Firewall settings
 
-The following table describes the application services requiring internet access.
-<br/>
-
+The following table describes the application services requiring internet access.  
 
 | External endpoint                    | Port | Service Description                   |
 | ------------------------------------ | ---- | ------------------------------------- |
@@ -139,21 +123,40 @@ The following table describes the application services requiring internet access
 | \*.servicebus.windows.net            | 5671 | Azure Service Bus endpoint (AMQP)     |
 | \*.servicebus.windows.net            | 5672 | Azure Service Bus endpoint (AMQP)     |
 
+## Offline Install
 
-<br/>
+- Make sure you download the latest version of Profitbase Installation Manager.
+- Download the proper version of InVision from the URL below.
 
+### Offline URLs
 
-## See Also 
+#### Profitbase Installation Manager
 
-* [Ports and Firewall Settings](onpreminstallation/portsfirewall.md)  
+- Latest version of Profitbase Installation Manager
+https://store.profitbase.com/api/v5/installationmanager/download/latest
+- Information about the latest version
+https://store.profitbase.com/api/v5/installationmanager/latest
+- Get a list of all available versions
+https://store.profitbase.com/api/v5/installationmanager/versions
+- To get a specific version of Profitbase Installation Manager
+https://store.profitbase.com/api/v5/installationmanager/{blobName}
 
-* [Service User Accounts](onpreminstallation/serviceuseraccounts.md)  
+### InVision
+
+- Download latest version of InVision
+https://store.profitbase.com/api/v5/systems/invision/download/latest
+- Information about the latest version
+https://store.profitbase.com/api/v5/systems/invision/current
+
+## See Also
+
+- [Ports and Firewall Settings](onpreminstallation/portsfirewall.md)  
+
+- [Service User Accounts](onpreminstallation/serviceuseraccounts.md)  
   
-* [System Requirements](../systemrequirements.md) 
-   
-
-<br/>
+- [System Requirements](../systemrequirements.md)
 
 ## Videos
-* [Installation](../../../videos/gettingstarted/installation.md)
-* [Upgrading of  the InVision Instance](https://profitbasedocs.blob.core.windows.net/videos/Installation%20and%20Setup%20-%20upgrading%20of%20%20the%20InVision%20instance.mp4)
+
+- [Installation](../../../videos/gettingstarted/installation.md)
+- [Upgrading of  the InVision Instance](https://profitbasedocs.blob.core.windows.net/videos/Installation%20and%20Setup%20-%20upgrading%20of%20%20the%20InVision%20instance.mp4)
