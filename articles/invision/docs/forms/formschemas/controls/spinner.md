@@ -1,6 +1,7 @@
 # Spinner
 
-![Spinner](https://profitbasedocs.blob.core.windows.net/images/FormSchema_Spinner.PNG)
+![Spinner](https://profitbasedocs.blob.core.windows.net/images/FormSchema_Spinner.png)
+
 <br/>
 
 Inherits from [Text Control](textcontrol.md).
@@ -66,7 +67,7 @@ This example shows how to call a function and activate the Spinner when the Butt
   	<Button Row="1" Column="2" CssClass="button" Text="Stop spinner" Click="StopSpinner"/>
   	<Spinner  Row="2" Name="spinner" Text="Processing task..." TextPosition="left"/>
   </UI>
-</Form>Name=""
+</Form>
 ```
 
 <br/>
