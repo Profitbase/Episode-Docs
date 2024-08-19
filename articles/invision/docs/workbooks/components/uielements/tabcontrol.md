@@ -49,7 +49,7 @@ The Tabs API can be called from the **Execute Expression** action of the Tab Con
 
 <br/>
 
-## TabItem(...)
+### TabItem(...)
 
 Returns a reference to a Tab instance which has the following API.  
 
@@ -60,7 +60,7 @@ TabItem("tab name")
 
 <br/>
 
-## SetHeader(...)
+### SetHeader(...)
 
 Sets the header of a tab.
 
@@ -81,7 +81,7 @@ SetHeader(text : string | Eaze expression)
 
 <br/>
 
-## SetHeaderSuffix(...)
+### SetHeaderSuffix(...)
 
 Adds a suffix to the original tab header. The optional whitespaceBetween enables you to determine whether you want whitespace between the base header text and the suffix (the default is true).
 
@@ -101,7 +101,7 @@ SetHeaderSuffix(text : string | Eaze expression[, whitespaceBetween | boolean = 
 
 <br/>
 
-## ResetHeader(...)  
+### ResetHeader(...)  
 
 Resets the header to its original value.
 <br/>
@@ -114,7 +114,7 @@ Resets the header to its original value.
 
 <br/>
 
-## Disable(...)
+### Disable(...)
 
 Lets you specify whether a tab is disabled or not. 
 
@@ -138,7 +138,7 @@ Disable([disable:boolean = true])
 
 <br/>
 
-## Enable(...)
+### Enable(...)
 
 Lets you specify whether a tab is enabled or not.
 
@@ -161,6 +161,40 @@ Enable([enable:boolean = true])
 
 
 <br/>
+
+
+### Change tab using OnTapped Event 
+
+This functionality allows to switch Tabs using other controls such as Button.
+
+<br/>
+
+![img](https://profitbasedocs.blob.core.windows.net/images/onTappedTab0.png)
+
+<br/>
+
+
+**1. Activating using Event **OnTapped** in the button control on the main Page:**
+
+![img](https://profitbasedocs.blob.core.windows.net/images/onTappedTab1.png)
+
+<br/>
+
+
+**2. Activating using Event **OnTapped** in the button control inside of the SubScreen:**
+
+
+![img](https://profitbasedocs.blob.core.windows.net/images/onTappedTab2.png)
+
+<br/>
+
+
+Activate the tab by adding Custom event to the TabControl:
+
+![img](https://profitbasedocs.blob.core.windows.net/images/onTappedTab3.png)
+
+<br/>
+
 
 ### See Also
 * [More about TabControl](../../../forms/formschemas/controls/tabcontrol.md)
