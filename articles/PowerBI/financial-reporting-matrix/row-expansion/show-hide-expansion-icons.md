@@ -2,6 +2,7 @@ This option enables you to control whether the +/- (expansion icons) should be d
 
 You set this option in **Row expansion** -> **Show +/- icons**.  
 
-**Note!** In addition to this option, allowing row expansion can be specified pr row by **right clicking** the row in e**dit mode**. The pr row setting will override the Show +/- icons setting.
+> [!NOTE]
+> In addition to this option, allowing row expansion can be specified pr row by **right clicking** the row in e**dit mode**. The pr row setting will override the Show +/- icons setting.
 
 ![Show / Hide expansion icons](https://profitbasedocs.blob.core.windows.net/pbireportingmatrix/ShowHidePlusMinusIcons.png)

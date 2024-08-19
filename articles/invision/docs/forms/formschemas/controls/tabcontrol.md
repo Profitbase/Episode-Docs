@@ -11,13 +11,14 @@ Inherits from [Control](control.md).
 
 <br/>
 
-**Property:**
+## Properties:
 
 <br/>
 
-`Tabs`
+### Tab
 
 A collection of tabs. See example below:
+
 **Example**
 
 ```xml
@@ -38,6 +39,34 @@ A collection of tabs. See example below:
 ```
 
 <br/>
+
+### SelectedTab
+
+Defines which tab should be default.
+
+> [!NOTE]
+>  **SelectedTab** atributes value must be the same as the "Name" attribute of the chosen tab.
+
+**Example**
+
+```xml
+<TabControl Row="5" ColumnSpan="2" Name="Accounting" SelectedTab="Income">
+        <Tab Name="Customers" Header="Customers" >
+            <Grid Rows="auto auto 1fr" Columns="auto auto 1fr">
+                ...content
+            </Grid>
+        </Tab>
+        <Tab Name="Income" Header="Income" >
+            <Grid Rows="auto auto 1fr" Columns="auto auto 1fr">
+               ...content
+            </Grid>
+        </Tab>
+</TabControl>
+```
+
+<br/>
+
+
 
 ## See Also
 
