@@ -3,7 +3,7 @@
 Sets a Transaction Scope ensuring all SQL operations either succeds, or fails.
 
 
-<!--![img](https://profitbasedocs.blob.core.windows.net/flowimages/HTTP-get-file.png)-->
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/transaction-scope.png)
 
 
 

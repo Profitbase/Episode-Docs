@@ -12,6 +12,7 @@ An `entity` is a .NET object with one or more properties, for example
 public record Customer(string VATNumber, string Name, string Address);
 ```
 
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/get-entity.png)
 
 ## Properties
 

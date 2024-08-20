@@ -2,7 +2,7 @@
 
 Executes a SQL command in a SQL Server database which returns a single value.
 
-<!--![img](https://profitbasedocs.blob.core.windows.net/flowimages/HTTP-get-file.png)-->
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/get-single-value.png)
 
 
 ## Properties

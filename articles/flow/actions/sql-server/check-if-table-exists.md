@@ -2,7 +2,7 @@
 
 Checks if a table with the specified name exists in a SQL Server database.
 
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/SQL-example.png)
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/check-if-table-exist.png)
 
 ## Properties
 

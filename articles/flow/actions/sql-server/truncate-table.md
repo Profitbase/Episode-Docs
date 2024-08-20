@@ -13,3 +13,8 @@ Truncates(empties) a table in a SQL Server database.
 | Table name  | Required  | Enter or select the table name. |
 | Command timeout (sec) | Optional | Command timeout in seconds.|
 | Description   |           |                  |
+
+
+
+
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/truncate-table.png)

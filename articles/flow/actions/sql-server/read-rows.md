@@ -4,6 +4,7 @@ Iterates over rows in a SQL Server database.
 
 
 
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/read-rows.png)
 
 ## Properties
 
