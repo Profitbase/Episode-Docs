@@ -1,2 +1,6 @@
 - name: Send email
   href: send-email.md
+- name: Send email from a shared mailbox
+  href: send-email-from-shared-mailbox.md
+- name: Microsoft 365 Outlook connection
+  href: outlook-connection.md
