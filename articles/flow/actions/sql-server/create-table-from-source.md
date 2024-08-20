@@ -4,6 +4,9 @@ Creates a table from an existing table or view in a SQL Server database.
 
 This action creates a copy of another table in a SQL Server database by coping its schema. Note that data is _not_ copied.
 
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/create-table-from-source.png)
+
+
 ## Properties
 
 | Name         | Data type       | Description                                       |

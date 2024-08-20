@@ -19,6 +19,10 @@ List<Customer> customers;
 A [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) of custom .NET objects with properties specified by the `Entity properties` configuration.
 
 
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/get-entities.png)
+
+
+
 ## Properties
 
 | Name         | Data type       | Description                                       |

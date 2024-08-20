@@ -6,7 +6,7 @@ If the table already exists, this action does nothing (no error is raised).
 
 
 
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/SQL-example.png)
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/create-table.png)
 
 ## Properties
 

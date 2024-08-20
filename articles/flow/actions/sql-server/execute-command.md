@@ -6,7 +6,7 @@ Executes a SQL command in a SQL Server database, and returns the number of rows 
 > This action does not return the result of the executed query. It simply return the number of rows affected by the query.
 
 
-<!--![img](https://profitbasedocs.blob.core.windows.net/flowimages/HTTP-get-file.png)-->
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/execute-command.png)
 
 
 
