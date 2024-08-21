@@ -6,3 +6,5 @@
   href: "http-send-file.md"
 - name: "Return File HTTP response"
   href: "return-file-http-response.md"
+- name: HTTP Authentication
+  href: http-authentication.md
