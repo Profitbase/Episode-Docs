@@ -19,7 +19,7 @@ Return value used:
 | Title                |          |                                                                                                                                                                                      |
 | Source               | Required | Select from a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) or [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable). |
 | Result variable name | Optional |                                          |
-| Description          | Optional |                                           |
+| Description          | Optional |  Additional notes or comments about the action or configuration. |
 
 <br/>
 

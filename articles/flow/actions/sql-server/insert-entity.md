@@ -24,4 +24,4 @@ INSERT INTO tableName (Property1, Property2) VALUES(entity.Property1, enity.Prop
 | Table name | Required  |   |
 | Result variable name | Required  | Name of the variable returning number of rows affected.   |
 | Command timeout (sec) | Optional | Command timeout in seconds.|
-| Description   |           |                  |
+| Description   | Optional | Additional notes or comments about the action or configuration. |

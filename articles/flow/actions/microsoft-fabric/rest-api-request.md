@@ -7,8 +7,8 @@ The REST API Request action enables you to call [Microsoft Fabric REST APIs](htt
 
 ## Properties
 
-| Name          | Type     | Description                                                                                                                                                      |
-| ------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name          | Type     | Description   |
+| ------------- | -------- | ----------------------- |
 | Connection    | Required | The connection used to make an authenticated request to Microsoft Fabric. To create a Connection, [please follow these steps](./microsoft-fabric-connection.md). |
 | Configuration | Required | Specifies the HTTP request to the Fabric API, including the HTTP method, URL, parameters and return type.                                                        |
 

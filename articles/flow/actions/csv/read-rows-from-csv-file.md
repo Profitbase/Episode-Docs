@@ -20,4 +20,4 @@ Iterates over rows in a CSV file.
 | Field parser        | Optional  | Custom field parser.                             |
 | Row variable name   | Optional  | The name of the Row variable.                    |
 | Row data type       | Read-only |                                                  |
-| Description         | Optional  |                                                  |
+| Description         | Optional  | Additional notes or comments about the action or configuration. |

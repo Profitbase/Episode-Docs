@@ -22,4 +22,4 @@ Creates a CSV file from a [DataReader](https://learn.microsoft.com/en-us/dotnet/
 | Date format              | Default  | Default is dd.MM.yyyy.      |
 | Number decimal separator | Default  | Default is (.).             |
 | Result variable name     | Optional |                             |
-| Description              | Optional |                             |
+| Description              | Optional |  Additional notes or comments about the action or configuration. |

@@ -35,4 +35,4 @@ A [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic
 | Result variable name | Required  | Name of resulting list of entities variable  |
 | Result data type | Optional  |   |
 | Command timeout (sec) | Optional | Command timeout in seconds.|
-| Description   |           |                  |
+| Description   | Optional | Additional notes or comments about the action or configuration. |

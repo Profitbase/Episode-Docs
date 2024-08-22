@@ -16,7 +16,7 @@ Loads the contents of an Excel sheet into memory as a [DataTable](https://learn.
 | Data start row      | Optional | The row number of the first row to read. If the worksheet has a header row, `Data start row` is typically `2`.   |
 | Column mapping      | Required | Defines the mapping between the `column letters` (A,B,C, etc) in a worksheet, and the `column names` (CustomerID, Amount, etc) in the target DataTable. |
 | Table variable name | Optional | The name of the DataTable variable returned from the action. |
-| Description | Optional |               |
+| Description | Optional | Additional notes or comments about the action or configuration. |
 
 <br/>
 

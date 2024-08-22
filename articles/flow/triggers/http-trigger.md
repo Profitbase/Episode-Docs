@@ -15,7 +15,7 @@ You can also get the HTTP endpoint of the Flow from the HTTP trigger. The HTTP e
 | Default data | Optional | Default input data used if no data is provided in the request; useful for testing with mock data. |
 | Show endpoints |  | Option to display HTTP trigger endpoints, providing the URL for external application calls.|
 | Data variable name          | Optional | Name of the variable containing the data. |
-| Description          | Optional |                                     |
+| Description          | Optional |  Additional notes or comments about the trigger's purpose or configuration.   |
 
 ## Default data
 While developing a Flow that will be executed from 3rd party clients like Profitbase InVision or custom apps, you most likely want to test the Flow by executing it from the Designer. This way, you don't have to switch to the 3rd party apps to do test runs.  

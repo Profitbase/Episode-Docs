@@ -15,4 +15,4 @@ This action opens a version of a work process for input. The state of this versi
 | Include information messages in log | Optional |If to show inforation messages from InVision in the Flow's log. |
 | Changed by           | Optional | Enter the user Id to use in InVision's "Changed by" |
 | Result variable name | Optional | Name of the variable containing a true/false result. |
-| Description          | Optional |                                     |
+| Description          | Optional |  Additional notes or comments about the action or configuration. |

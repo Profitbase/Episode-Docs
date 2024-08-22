@@ -14,8 +14,8 @@ Configures the Flow to be triggered on a schedule.
 | Schedule           | Required | Configure the schedule.                 |
 | Data configuration | Optional | Define trigger data.   |
 | Data variable name | Optional | Name of the variable containing the data. |
-| Disabled          | Optional |                                     |
-| Description          | Optional |                                     |
+| Disabled          | Optional | Boolean value indicating whether the trigger is disabled (true/false). |
+| Description          | Optional |  Additional notes or comments about the trigger's purpose or configuration. |
 
 ## Step by step
 <br/>

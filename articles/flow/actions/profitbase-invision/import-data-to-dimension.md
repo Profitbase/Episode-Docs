@@ -17,7 +17,7 @@ Imports data into an InVision Dimension from an [IDataReader](https://learn.micr
 | Import empty values  | Optional | This option is applicable only when updating an existing dimension member. It determines whether empty values (e.g., null or empty strings) should be imported and allowed to overwrite existing property values for a dimension member. By default, this is prevented. However, setting this option to true allows overwriting existing property values from previous imports with empty values. Use this option with caution.  |
 | Created by           | Optional |                                                        |
 | Result variable name | Optional | Name of the variable containing boolean `true` or `false` to indicate whether the import succeeded or not. |
-| Description          | Optional |                                                        |
+| Description          | Optional |  Additional notes or comments about the action or configuration. |
 
 ### Data import format
 

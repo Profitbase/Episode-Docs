@@ -18,7 +18,7 @@ This action creates a new version of an existing work process in a draft state. 
 | Version Properties   | Optional | Version properties is defined by the Work Process. Fill in the values is the pop-up dialog. |
 | Created by           | Optional |                                     |
 | Result variable name | Required | Name of the result variable containing the id of the new Version. |
-| Description          | Optional |                                     |
+| Description          | Optional |  Additional notes or comments about the action or configuration. |
 
 
 

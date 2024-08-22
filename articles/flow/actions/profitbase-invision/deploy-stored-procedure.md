@@ -13,4 +13,4 @@ Recreates a Stored Procedure based on definition from Profitbase InVision.
 | Connection           | Required | InVision connection.                 |
 | Stored Procedure     | Required | Select or enter the ID of the Stored Procedure.   |
 | Result variable name | Optional | Name of the result variable containing the result. |
-| Description          | Optional |                                     |
+| Description          | Optional |  Additional notes or comments about the action or configuration. |

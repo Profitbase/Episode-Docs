@@ -16,7 +16,7 @@ Configures the flow to automatically run by periodically fetching a list of all 
 | Connection     | Required | Connection name and string.                      |
 | Polling frequency| Optional | Schedule configuration of the trigger.         |
 | Blob name prefix filter | Optional | Prefix filter for blob names.           |
-| Disabled       | Optional |                                                  |
+| Disabled       | Optional | Boolean value indicating whether the trigger is disabled (true/false).|
 | Blob name      | Optional |                                                  |
-| Description    | Optional |                                                  |
+| Description    | Optional | Additional notes or comments about the trigger's purpose or configuration.  |
 

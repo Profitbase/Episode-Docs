@@ -15,7 +15,7 @@ Configures the flow to automatically run by checking periodically for new messag
 | Connection     | Required | Connection name and string.                      |
 | Polling frequency| Optional | Schedule configuration of the trigger.         |
 | Output data type | Optional | Select the data type of the trigger output.    |
-| Disabled       | Optional |                                                  |
+| Disabled       | Optional | Boolean value indicating whether the trigger is disabled (true/false). |
 | Data variable name | Optional |                                              |
-| Description    | Optional |                                                  |
+| Description    | Optional | Additional notes or comments about the trigger's purpose or configuration.  |
 

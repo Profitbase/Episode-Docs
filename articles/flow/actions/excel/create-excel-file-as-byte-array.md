@@ -18,7 +18,7 @@ Returns the Excel file serialized as a [byte](https://learn.microsoft.com/en-us/
 | Column mapping       | Optional | Defines the mapping between Excel column letters and business object property names.                          |
 | Worksheet formatting options | Optional |                                                                                                       |
 | Byte array variable name | Optional |                                                                                                           |
-| Description | Optional |                                                                                                                        |
+| Description | Optional |  Additional notes or comments about the action or configuration. |
 
 <br/>
 

@@ -13,4 +13,4 @@ Provides a DataReader for reading a forward-only stream of rows from an InVision
 | Dimension | Required  | Choose a dimension from the dropdown list. |
 | Table type | Optional | Wide or Parent-Child dimension table |
 | Reader Variable name   | Optional | The name of the Flow variable that contains the reader |
-| Description | Optional |  |
+| Description | Optional | Additional notes or comments about the action or configuration.  |

@@ -16,4 +16,4 @@ Inserts data into a SQL Server database from a [DataReader](https://learn.micros
 | Batch size   | Optional   | Enter batch size. |
 | Result variable name | Optional  | Name of the variable containing the number of rows affected.  |
 | Command timeout (sec) | Optional | Command timeout in seconds.|
-| Description   |           |                  |
+| Description   | Optional | Additional notes or comments about the action or configuration.|
