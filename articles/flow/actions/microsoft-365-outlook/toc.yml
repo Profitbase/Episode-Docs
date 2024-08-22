@@ -4,5 +4,7 @@
   href: send-email-from-shared-mailbox.md
 - name: Get attachment
   href: get-attachment.md
+- name: Foreach attachment
+  href: foreach-attachment.md
 - name: Microsoft 365 Outlook connection
   href: outlook-connection.md

@@ -6,7 +6,7 @@ Use this action to run a Flow when a new mail arrives in a Microsoft 365 Outlook
 
 ## Attachments
 
-When the trigger runs, only metadata about attachments (if any) in the message is returned. To get the actual content of the attachments, you need to use actions such as the [Get attachment](../../actions/microsoft-365-outlook/get-attachment.md) action to download the files.
+When the trigger runs, only metadata about attachments (if any) in the message is returned. To get the actual content of the attachments, you need to use actions such as the [Get attachment](../../actions/microsoft-365-outlook/get-attachment.md) or [Foreach attachment](../../actions/microsoft-365-outlook/foreach-attachment.md) actions to download the files.
 
 ## Properties
 
