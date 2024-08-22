@@ -44,8 +44,7 @@ A collection of tabs. See example below:
 
 Defines which tab should be default.
 
-> [!NOTE]
->  **SelectedTab** atributes value must be the same as the "Name" attribute of the chosen tab.
+
 
 **Example**
 
