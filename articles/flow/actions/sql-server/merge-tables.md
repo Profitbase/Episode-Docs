@@ -18,4 +18,4 @@ This action provides a lightweight wrapper for the [Merge](https://learn.microso
 | Merge configuration | Required  | Select or edit merge configuration.  |
 | Result variable name | Required  | Name of the variable returning number of rows affected. |
 | Command timeout (sec) | Optional | Command timeout in seconds.|
-| Description   |           |                  |
+| Description   | Optional | Additional notes or comments about the action or configuration. |

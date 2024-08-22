@@ -16,7 +16,7 @@ Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data
 | File contents        | Required | Select the file contents (Stream or byte array). |
 | Column mapping       | Required | Configure row object.                            |
 | Reader variable name | Optional | The name of the DataReader variable.             |
-| Description          | Optional |                                                  |
+| Description          | Optional |  Additional notes or comments about the action or configuration. |
 
 <br/>
 

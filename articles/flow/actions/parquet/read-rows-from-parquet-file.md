@@ -17,7 +17,7 @@ Iterates over rows in a Parquet file.
 | Column mapping    | Required  | Configure row object.                                                      |
 | Row variable name | Optional  | The name of the Row variable.                                              |
 | Row data type     | Read-only | The name of the data type used to represent a row, for example 'Customer'. |
-| Description       | Optional  |                                                                            |
+| Description       | Optional  |  Additional notes or comments about the action or configuration.  |
 
 <br/>
 

@@ -17,4 +17,4 @@ Iterates over rows in a SQL Server database.
 | Row variable name | Required  | Name of Row variable.  |
 | Row data type | Optional  |   |
 | Command timeout (sec) | Optional | Command timeout in seconds.|
-| Description   |           |                  |
+| Description   | Optional | Additional notes or comments about the action or configuration. |

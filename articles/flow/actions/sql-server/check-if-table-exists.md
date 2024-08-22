@@ -12,7 +12,7 @@ Checks if a table with the specified name exists in a SQL Server database.
 | Connection    | Required   | InVision SQL Server connection. |
 | Table name   | Required   | The name of a table. |
 |Command timeout (sec) | Optional | Command timeout in seconds.|
-| Description   |           |                  |
+| Description   | Optional | Additional notes or comments about the action or configuration. |
 
 ## Returns
 

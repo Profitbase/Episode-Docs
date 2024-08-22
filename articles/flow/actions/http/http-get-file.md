@@ -11,10 +11,10 @@ Gets file from an HTTP endpoint.
 |--------------|-----------------|---------------------------------------------------|
 | Title           |           |                        |
 | URI         | Required   | Select or enter the URI |
-|Query parameters   | Optional      | Define Query parameters.    |
+| Query parameters   | Optional      | Define Query parameters.    |
 | Headers | Optional  | Define Headers.  |
-|Return variable name | Optional | Name of the variable.|
-|   Description   |           |                  |
+| Return variable name | Optional | Name of the variable.|
+| Description | Optional | Additional notes or comments about the action or configuration. |
 
 
 

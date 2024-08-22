@@ -25,4 +25,4 @@ public record Customer(string VATNumber, string Name, string Address);
 | Entity properties | Required  |   |
 | Result variable name | Required  | Name of resulting variable  |
 | Command timeout (sec) | Optional | Command timeout in seconds.|
-| Description   |           |                  |
+| Description   |  Optional  |  Additional notes or comments about the action or configuration. |

@@ -23,4 +23,4 @@ For example, an Excel file can be loaded using the [Get DataReader for Excel she
 | Connection           | Required | Access key id, access key secret, bucket name and region connecting to an Amazon S3 bucket. |
 | Object name          | Required | The name of the object to read from.                                                        |
 | Result variable name | Required | The name of the Flow variable that contains the list of the object names.                   |
-| Description          | Optional |                                                                                             |
+| Description          | Optional |  Additional notes or comments about the action or configuration.  |

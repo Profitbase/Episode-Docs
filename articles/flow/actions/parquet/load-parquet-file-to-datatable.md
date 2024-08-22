@@ -16,7 +16,7 @@ Loads the contents of a Parquet file into memory as a [DataTable](https://learn.
 | File contents       | Required | Select the file contents (Stream or byte array). |
 | Column mapping      | Required | Configure row object.                            |
 | Table variable name | Optional | The name of the DataTable variable.              |
-| Description         | Optional |                                                  |
+| Description         | Optional |  Additional notes or comments about the action or configuration. |
 
 <br/>
 

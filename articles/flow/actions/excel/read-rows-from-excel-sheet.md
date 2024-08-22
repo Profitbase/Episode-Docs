@@ -18,7 +18,7 @@ Iterates over rows in an Excel sheet. Each row is represented by a business obje
 | Column mapping    | Required  | Defines the mapping between Excel column letters and business object property names.           |
 | Row variable name | Optional  | The name of the Row (business object) variable.                                                |
 | Row data type     | Read-only | Displays the name of the data type (business object) that contains the data of the row.        |
-| Description       | Optional  |                                                                                                |
+| Description       | Optional  |  Additional notes or comments about the action or configuration.  |
 
 <br/>
 

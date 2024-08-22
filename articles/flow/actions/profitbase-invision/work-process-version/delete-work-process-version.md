@@ -16,4 +16,4 @@ This action deletes a version of a work process along with its associated soluti
 | Force delete | Optional |                      |
 | Changed by           | Optional | Enter the user Id to use in InVision's "Changed by" |
 | Result variable name | Optional | Name of the variable containing a true/false result.  |
-| Description          | Optional |                                     |
+| Description          | Optional |  Additional notes or comments about the action or configuration. |

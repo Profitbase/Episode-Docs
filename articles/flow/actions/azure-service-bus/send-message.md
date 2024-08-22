@@ -19,4 +19,4 @@ Sends a message to an [Azure Service Bus](https://learn.microsoft.com/en-us/azur
 | Message Id     | Optional | Enter message Id.                                |
 | Correlation Id | Optional | Enter correlation Id.                            |
 | Reply to       | Optional | Enter Reply to.                                  |
-| Description    | Optional |                                                  |
+| Description    | Optional |  Additional notes or comments about the action or configuration. |

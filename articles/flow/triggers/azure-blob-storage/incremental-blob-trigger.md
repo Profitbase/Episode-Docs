@@ -15,7 +15,7 @@ Configures the flow to automatically run by periodically checking for new or mod
 | Connection     | Required | Connection name and string.                      |
 | Polling frequency| Optional | Schedule configuration of the trigger.         |
 | Number of blobs | Optional |                                                 |
-| Disabled       | Optional |                                                  |
+| Disabled       | Optional | Boolean value indicating whether the trigger is disabled (true/false).|
 | Blob name      | Optional |                                                  |
-| Description    | Optional |                                                  |
+| Description    | Optional |  Additional notes or comments about the trigger's purpose or configuration.  |
 

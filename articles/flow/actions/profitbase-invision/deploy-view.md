@@ -13,4 +13,4 @@ Recreates a View based on definition from Profitbase InVision.
 | Connection           | Required | InVision connection.                 |
 | View                 | Required | Select or enter the ID of the InVision View.   |
 | Result variable name | Optional | Name of the result variable containing the result. |
-| Description          | Optional |                                     |
+| Description          | Optional |  Additional notes or comments about the action or configuration. |

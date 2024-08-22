@@ -15,5 +15,5 @@ Uploads a byte array or [Stream](https://learn.microsoft.com/en-us/dotnet/api/sy
 | Object name        | Required  | The name of the object (file)  |
 | Object data        | Required  | The data to upload. It must be a byte array or [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream) |
 | Overwrite if object already exists | Optional | If not checked, the action will fail if a object with the same name already exists. |
-| Description | Optional | |
+| Description | Optional | Additional notes or comments about the action or configuration. |
 

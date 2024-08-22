@@ -12,7 +12,7 @@ Truncates(empties) a table in a SQL Server database.
 | Connection         | Required   | InVision SQL Server connection. |
 | Table name  | Required  | Enter or select the table name. |
 | Command timeout (sec) | Optional | Command timeout in seconds.|
-| Description   |           |                  |
+| Description   | Optional | Additional notes or comments about the action or configuration. |
 
 
 

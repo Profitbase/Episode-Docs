@@ -34,4 +34,4 @@ All properties _NOT_ in the `Update keys` configuration will be used in the SET 
 | Update key | Required  |   |
 | Result variable name | Optional  | Name of resulting list of entities variable  |
 | Command timeout (sec) | Optional | Command timeout in seconds.|
-| Description   |           |                  |
+| Description   | Optional | Additional notes or comments about the action or configuration. |
