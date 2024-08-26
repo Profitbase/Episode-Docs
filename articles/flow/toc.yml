@@ -119,3 +119,8 @@
     href: triggers/toc.yml
   - name: API reference
     href: api-reference/toc.yml
+  - name: Change log
+    href: changelog.md
+    items:
+    - name: August 2024
+      href: changelog/changelog24_1.md
