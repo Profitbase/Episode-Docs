@@ -201,8 +201,7 @@ When you publish a dimension, it will always be published to the Solution which 
 - [Dimension Composition](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Dimension%20Composition.mp4)
 - [Create and Display Dimension](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Create%20and%20display%20dimension.mp4)
 - [Create a Time Dimension](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Creating%20a%20Time%20Dimension.mp4)
-- [Automating Import of Data to Dimension](https://profitbasedocs.blob.core.windows.net/videos/Automating%20Import%20of%20Data%20to%20Dimension.mp4)
-- [Automating Import of the Primary Dimension](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Import%20Primary%20Dimension.mp4)
+
 <br/>
 
 

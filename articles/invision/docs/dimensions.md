@@ -103,9 +103,15 @@ This option is typically used when you are using the dimension as a source for a
 
 <br/>
 
-## Options / Dimension Composition
+## Options / Composition
 
-Go to [Dimension Composition](dimensions/dimcomposition.md).
+Go to [Dimension composition](dimensions/dimcomposition.md).
+
+<br/>
+
+## Options / Post publish actions
+
+ Go to [Post publish actions](dimensions/post-publish-actions.md).
 
 <br/>
 
