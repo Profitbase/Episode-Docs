@@ -1,14 +1,11 @@
-# "
-metaKeys: "filtering, Workbooks, Filters configuration, Setting, column, added, endpoint(s) "
-pageIndex: 7
----
+
 # Filters
 
 ## Filtering the Table
 To support filtering when settings are hosted in Workbooks, you need to add [Filters](../filters/index.md) to the filter configuration and specify the setting column for matching values. When filters are added to the Setting configuration, you can bound them to the filter endpoint(s) of the Setting.
 <br/>
 
->You add a filter to the Filters section of the Table by g and droping it.
+>You add a filter to the Filters section of the Table by dragging and droping it.
 
 ![Filter](https://profitbasedocs.blob.core.windows.net/images/filtersintables1.png)
 <br/>

@@ -3,10 +3,6 @@
         - name: How to's
           href: howto/index.md
           items:
-          - name: How to automate copying a primary dimension into the solution
-            href: howto/autocopy.md
-          - name: How to automate data import
-            href: howto/autoimport.md
           - name: How to create and display a dimension
             href: howto/createdim.md
           - name: How to create a composite dimension
@@ -23,3 +19,5 @@
           href: dimautomating.md
         - name: Dimension composition
           href: dimcomposition.md
+        - name: Post publish actions
+          href: post-publish-actions.md
