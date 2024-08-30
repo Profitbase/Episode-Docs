@@ -1,13 +1,8 @@
-# Dimension automating
+
+[!INCLUDE [Import Data to Dimension](../../../flow/actions/profitbase-invision/import-data-to-dimension.md)]
 
 
-<br/>
-
-
->[!NOTE]
-> A faster way to import data into a dimension is by using the Flow Action: [Import Data to Dimension](../../../flow/actions/profitbase-invision/import-data-to-dimension.md). This method allows direct importing from an IDataReader or DataTable, which typically originates from a database table or a file (Excel, Parquet, CSV). It bypasses the need for staging tables and Dataflows, streamlining the process by enabling direct data imports, saving time and reducing complexity.
-
-## Automating import of data to dimensions
+# Legacy Process: Automating Import of Data to Dimensions
 
 You can import data to dimensions through Dataflows and staging tables. 
 
@@ -27,7 +22,7 @@ You can import data to dimensions through Dataflows and staging tables.
 
 <br/>
 
-## Automating Import of the Primary Dimension
+# Automating Import of the Primary Dimension
 
 You can pull in a dimension definition (including data) from a different solution. You can do that by using dataflows. This means that you can automatically copy the data and configuration of a Primary Dimension into another Solution (usually a versioned Solution).
 1. Create a Dataflow and Dataflow Item in the target solution. The primary dimension is imported into the target.
