@@ -1,8 +1,8 @@
-# When a new email arrives
+# When a new email arrives in a shared mailbox
 
-Runs the Flow when a new email arrives in a Microsoft 365 mailbox.
+Runs the Flow when a new email arrives in a shared Microsoft 365 mailbox.
 
-Use this action to run a Flow when a new mail arrives in a Microsoft 365 Outlook mailbox. To do this, you need to create a [Microsoft 365 Outlook connection](../../actions/microsoft-365-outlook/outlook-connection.md) by logging on with an account having access to the mailbox.
+Use this action to run a Flow when a new mail arrives in a shared Microsoft 365 Outlook mailbox. To do this, you need to create a [Microsoft 365 Outlook connection](../../actions/microsoft-365-outlook/outlook-connection.md) by logging on with an account having access to the shared mailbox.
 
 ## Properties
 
@@ -12,6 +12,7 @@ Use this action to run a Flow when a new mail arrives in a Microsoft 365 Outlook
 | Connection          | Required  | Specifies the [Microsoft 365 Outlook connection](../../actions/microsoft-365-outlook/outlook-connection.md) that the trigger should use to check for new emails. |
 | Polling interval    | Required  | Specifies how often to check for new emails.              |
 | Disabled            | Optional  | Specifies if the trigger should be disabled. You may want to disable the trigger in the Development and Test environment once you have published to Production. |
+| Shared email account| Required  | Specifies the email address of the shared email account to monitor, for example `support@corp.com`.   |
 | Filter              | Optional  | Specifies optional filters to restrict which emails to receive. See detailed description below. | 
 | Folder              | Optional  | Specifies the folder to monitor for new emails. If not specified, all folders are monitored. |
 | Include attachments | Optional  | Specifies whether or not to fetch the contents of all attachments when the trigger runs.  |
