@@ -16,7 +16,7 @@ Use this action to send emails from a `personal` Microsoft 365 Outlook mailbox. 
 <!--prettier-ignore-->
 | Name        | Type     | Description                                                                                                                       |
 | ----------- | -------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| Connection  | Required | A [Microsoft 365 Outlook connection](./outlook-connection.md) which has been granted access to sending email from a personal email account. The `sender` address will be the email account used to log on when creating the M365 Outlook connection. |
+| Connection  | Required | A [Microsoft 365 Outlook connection](./outlook-connection.md) which grants Profitbase Flow access to sending email from a personal email account. The `sender` address will be the email account used to log on when creating the M365 Outlook connection. |
 | Subject     | Optional | The email subject.                                                                                                                 |
 | Message     | Optional | The email message.                                                                                                                 |
 | Attachments | Optional | Any attachments to include in the email.                                                                                          |

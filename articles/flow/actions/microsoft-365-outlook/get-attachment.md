@@ -9,9 +9,9 @@ Use this action to fetch the contents of a specific attachment.
 
 ## Properties
 
-| Property      | Type     | Description                                                                           |
-| ------------- | -------- | ------------------------------------------------------------------------------------- |
-| Connection    | Required | Specifies the [Microsoft 365 Outlook connection](./outlook-connection.md) that the    |
-| Message Id    | Required | The id of the email message that contains the attachment.                             |
-| Attachment Id | Required | The id of the attachment in the email message.                                        |
-| Email account | Optional | Specify the the email account if you are getting attachmetns from a `shared mailbox`. |
+| Property      | Type     | Description                                                                                                             |
+| ------------- | -------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Connection    | Required | A [Microsoft 365 Outlook connection](./outlook-connection.md) which grants Profitbase Flow access to the email account. |
+| Message Id    | Required | The id of the email message that contains the attachment.                                                               |
+| Attachment Id | Required | The id of the attachment in the email message.                                                                          |
+| Email account | Optional | Specify the email account only if you are getting attachments from a `shared mailbox`.                                  |
