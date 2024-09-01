@@ -2,7 +2,7 @@
 
 Runs the Flow when a new email arrives in a Microsoft 365 mailbox.
 
-Use this action to run a Flow when a new mail arrives in a Microsoft 365 Outlook mailbox. To do this, you need to create a [Microsoft 365 Outlook connection](../../actions/microsoft-365-outlook/outlook-connection.md) by logging on with an account having access to the mailbox.
+Use this action to run a Flow when a new mail arrives in a Microsoft 365 Outlook mailbox. If you don't already have one, you need to first create a [Microsoft 365 Outlook connection](../../actions/microsoft-365-outlook/outlook-connection.md) by logging on with an account having access to the mailbox.
 
 ## Properties
 
