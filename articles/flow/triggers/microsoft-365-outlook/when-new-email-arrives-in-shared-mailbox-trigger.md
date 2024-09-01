@@ -4,6 +4,8 @@ Runs the Flow when a new email arrives in a shared Microsoft 365 mailbox.
 
 Use this action to run a Flow when a new mail arrives in a shared Microsoft 365 Outlook mailbox. If you don't already have one, you need to first create a [Microsoft 365 Outlook connection](../../actions/microsoft-365-outlook/outlook-connection.md) by logging on with an account having access to the shared mailbox.
 
+![img](/images/flow/microsoft-365-outlook-when-email-arrives.png)
+
 ## Properties
 
 <!--prettier-ignore-->
@@ -15,7 +17,7 @@ Use this action to run a Flow when a new mail arrives in a shared Microsoft 365 
 | Shared email account| Required  | Specifies the email address of the shared email account to monitor, for example `support@corp.com`.   |
 | Filter              | Optional  | Specifies optional filters to restrict which emails to receive. See detailed description below. | 
 | Folder              | Optional  | Specifies the folder to monitor for new emails. If not specified, all folders are monitored. |
-| Include attachments | Optional  | Specifies whether or not to fetch the contents of all attachments when the trigger runs.  |
+| Include attachments | Optional  | Specifies whether or not to fetch the contents of all attachments when the trigger runs. [Read more about this option below](#attachments). |
 | Output name         | Required  | The name of the output variable that represents the received mail message. You can change it from the default `mailMessage` to something that more clearly describes the received mail, for example `customerFeedbackMessage`. |
 
 #### Filter
