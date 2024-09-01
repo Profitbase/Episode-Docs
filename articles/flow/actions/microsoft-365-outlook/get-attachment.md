@@ -4,11 +4,14 @@ Gets an attachment from an email in Microsoft 365 Outlook.
 
 ![img](/images/flow/microsoft-365-outlook-get-attachment.png)
 
-When email messages are retrieved by Profitbase Flow, only metadata about attachments are included. The actual content of the attachments must be fetched using separate actions, such as the `Get attachment` action described in this topic.
+When email messages are retrieved by Profitbase Flow, you may specify whether or not to include the contents of all attachments by default.
+Use this action to fetch the contents of a specific attachment.
 
 ## Properties
 
-| Property      | Type     | Description                                               |
-| ------------- | -------- | --------------------------------------------------------- |
-| Message Id    | Required | The id of the email message that contains the attachment. |
-| Attachment Id | Required | The id of the attachment in the email message.            |
+| Property      | Type     | Description                                                                           |
+| ------------- | -------- | ------------------------------------------------------------------------------------- |
+| Connection    | Required | Specifies the [Microsoft 365 Outlook connection](./outlook-connection.md) that the    |
+| Message Id    | Required | The id of the email message that contains the attachment.                             |
+| Attachment Id | Required | The id of the attachment in the email message.                                        |
+| Email account | Optional | Specify the the email account if you are getting attachmetns from a `shared mailbox`. |
