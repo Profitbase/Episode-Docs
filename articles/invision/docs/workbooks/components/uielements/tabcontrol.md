@@ -4,7 +4,7 @@
 
 <br/>
 
-![btn](https://profitbasedocs.blob.core.windows.net/images/tabctrol.png)
+![btn](https://profitbasedocs.blob.core.windows.net/images/onTappedTab0.png)
 
 <br/>
 
@@ -165,7 +165,7 @@ Enable([enable:boolean = true])
 
 ### Change tab using OnTapped Event 
 
-This functionality allows to switch Tabs using other controls such as Button.
+This functionality provides a programmatic way to switch between tabs within the TabControl. To enable it use the [activateTab("nameOfTab")](../../../forms/formschemas/controls/tabcontrol.md) function that provides a programmatic way to switch between tabs within the TabControl. 
 
 <br/>
 
