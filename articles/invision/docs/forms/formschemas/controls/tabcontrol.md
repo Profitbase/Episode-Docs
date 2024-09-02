@@ -5,7 +5,7 @@ Inherits from [Control](control.md).
 
 <br/>
 
-![btn](https://profitbasedocs.blob.core.windows.net/images/tabctrol.png)
+![btn](https://profitbasedocs.blob.core.windows.net/images/onTappedTab0.png)
 
 <br/>
 
@@ -65,6 +65,70 @@ Defines which tab should be default.
 
 <br/>
 
+
+### activateTab
+
+The **activateTab("nameOfTab")** function provides a programmatic way to switch between tabs within the TabControl. By passing the nameOfTab as an argument, the function dynamically activates the specified tab, making it visible to the user. 
+
+This method can be used in various scenarios such as button clicks, form initialization, or any custom event, allowing for seamless navigation and enhanced user interactions within multi-tabbed interfaces.
+
+
+
+**Example**
+
+```xml
+<Functions>
+  <Function Name="ChangeTab" Parameters="args">
+    <![CDATA[
+      console.log(args);
+      controls.tc.activateTab(args.tabname);
+    ]]>
+  </Function>
+</Functions>
+
+<EventHandlers>
+  <FormEventHandler On="Init">
+    <![CDATA[
+      //controls.tc.activateTab('Three');
+    ]]>
+  </FormEventHandler>
+</EventHandlers>
+
+<UI Grid="grid">
+  <TabControl Name="tc" SelectedTab="Two">
+    <Tab Name="One" Header="One">
+      <Grid>
+        <Label Text="One" />
+      </Grid>
+    </Tab>
+    <Tab Name="Two" Header="Two">
+      <Grid>
+        <Label Text="Two" />
+      </Grid>
+    </Tab>
+    <Tab Name="Three" Header="Three">
+      <Grid>
+        <Label Text="Three" />
+      </Grid>
+    </Tab>
+    <Tab Name="Four" Header="Four">
+      <Grid>
+        <Label Text="Four" />
+      </Grid>
+    </Tab>
+    <Tab Name="Five" Header="Five">
+      <Grid>
+        <Label Text="Five" />
+      </Grid>
+    </Tab>
+  </TabControl>
+</UI>
+
+```
+
+<br/>
+
+See how to [Change tab using OnTapped event in the button](../../../workbooks/components/uielements/tabcontrol.md).
 
 
 ## See Also
