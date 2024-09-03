@@ -70,7 +70,7 @@ Defines which tab should be default.
 
 The **activateTab("nameOfTab")** function provides a programmatic way to switch between tabs within the TabControl. By passing the nameOfTab as an argument, the function dynamically activates the specified tab, making it visible to the user. 
 
-This method can be used in various scenarios such as button clicks, form initialization, or any custom event, allowing for seamless navigation and enhanced user interactions within multi-tabbed interfaces.
+This method can be used in various scenarios such as [button](button.md) clicks, form initialization, or any custom event, allowing for seamless navigation and enhanced user interactions within multi-tabbed interfaces.
 
 
 
@@ -127,8 +127,6 @@ This method can be used in various scenarios such as button clicks, form initial
 ```
 
 <br/>
-
-See how to [Change tab using OnTapped event in the button](../../../workbooks/components/uielements/tabcontrol.md).
 
 
 ## See Also
