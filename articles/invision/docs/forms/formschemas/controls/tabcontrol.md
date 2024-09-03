@@ -76,52 +76,62 @@ This method can be used in various scenarios such as [button](button.md) clicks,
 
 **Example**
 
+In this example, after clicking the button you will be moved to the *Inventory* Tab.
+
+![activateTab](https://profitbasedocs.blob.core.windows.net/images/activateTab.png)
+
 ```xml
-<Functions>
-  <Function Name="ChangeTab" Parameters="args">
+  <Functions>
+  <Function Name="ChangeTab" Parameters="tabname">
     <![CDATA[
-      console.log(args);
-      controls.tc.activateTab(args.tabname);
+      console.log('Changing tab to: ' + tabname);
+      controls.tc.activateTab(tabname);
     ]]>
   </Function>
 </Functions>
 
 <EventHandlers>
-  <FormEventHandler On="Init">
-    <![CDATA[
-      //controls.tc.activateTab('Three');
-    ]]>
-  </FormEventHandler>
 </EventHandlers>
 
 <UI Grid="grid">
-  <TabControl Name="tc" SelectedTab="Two">
-    <Tab Name="One" Header="One">
-      <Grid>
-        <Label Text="One" />
+  <Grid RowDefinitions="Auto, *">
+    <!-- TabControl -->
+    <Grid Row="2">
+      <TabControl Name="tc" SelectedTab="One">
+        <Tab Name="One" Header="Customers">
+          <Grid>
+            <Label Text="Manage customer data and view customer details." />
+          </Grid>
+        </Tab>
+        <Tab Name="Two" Header="Budget">
+          <Grid>
+            <Label Text="Track your budget allocations, expenses, and forecasts." />
+          </Grid>
+        </Tab>
+        <Tab Name="Three" Header="Employees">
+          <Grid>
+            <Label Text="Overview of employee details and management." />
+          </Grid>
+        </Tab>
+        <Tab Name="Four" Header="Inventory">
+          <Grid>
+            <Label Text="Inventory management and stock levels." />
+          </Grid>
+        </Tab>
+        <Tab Name="Five" Header="Reports">
+          <Grid>
+            <Label Text="Generate and view financial and operational reports." />
+          </Grid>
+        </Tab>
+      </TabControl>
+    </Grid>
+    <!--  Button -->
+    <Grid Row="1">
+      <Grid Margin="20,10,20,10">
+        <Button Text="Go to Inventory" Click="ChangeTab('Four')" />
       </Grid>
-    </Tab>
-    <Tab Name="Two" Header="Two">
-      <Grid>
-        <Label Text="Two" />
-      </Grid>
-    </Tab>
-    <Tab Name="Three" Header="Three">
-      <Grid>
-        <Label Text="Three" />
-      </Grid>
-    </Tab>
-    <Tab Name="Four" Header="Four">
-      <Grid>
-        <Label Text="Four" />
-      </Grid>
-    </Tab>
-    <Tab Name="Five" Header="Five">
-      <Grid>
-        <Label Text="Five" />
-      </Grid>
-    </Tab>
-  </TabControl>
+    </Grid>
+  </Grid>
 </UI>
 
 ```

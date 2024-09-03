@@ -121,10 +121,6 @@
   href: triggers/toc.yml
 - name: API reference
   href: api-reference/toc.yml
-- name: Triggers
-  href: triggers/toc.yml
-- name: API reference
-  href: api-reference/toc.yml
 - name: Change log
   href: changelog.md
   items:
