@@ -1,10 +1,11 @@
 # Load file to DataTable
 
-Loads data from PostgreSQL database into memory as a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) object.
+Loads data from PostgreSQL database into memory as a .
+Executes an SQL query on a PostgreSQL database and retrieves the result into a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) object. This action is commonly used to load data from the database for further processing, allowing you to work with the data within your workflow. You can specify the SQL query to fetch data and the DataTable variable will store the resulting rows, making them accessible for other actions in your process.
 
 <br/>
 
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/postgre-execute-command.png)
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/postgre-load-dataTB.png)
 
 <br/>
 

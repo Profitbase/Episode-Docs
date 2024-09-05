@@ -1,6 +1,6 @@
 # Execute command
 
-Executes n SQL command in a PostgreSQL database and returns the number of rows affected.
+Executes an SQL command on a PostgreSQL database. This action is useful when you want to perform database operations such as updating, deleting, or inserting records. The command will execute the provided SQL statement and return the number of rows affected by the operation.
 
 <br/>
 
@@ -20,3 +20,4 @@ Executes n SQL command in a PostgreSQL database and returns the number of rows a
 | Description                 | Optional | Any additional notes or information relevant to the execution command or the SQL operation.       |
 
 <br/>
+
