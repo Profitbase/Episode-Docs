@@ -105,6 +105,8 @@
       href: actions/microsoft-365-outlook/toc.yml
     - name: Parquet
       href: actions/parquet/toc.yml
+    - name: PostgreSql
+      href: actions/postgre-sql/toc.yml
     - name: Profitbase InVision
       href: actions/profitbase-invision/toc.yml
     - name: Security
