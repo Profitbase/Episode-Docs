@@ -8,10 +8,10 @@ Truncates(empties) a table in a SQL Server database.
 
 | Name         | Data type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
-| Title           |           |                        |
+| Title           |  Optional | The title or name of the command.      |
 | Connection         | Required   | InVision SQL Server connection. |
 | Table name  | Required  | Enter or select the table name. |
-| Command timeout (sec) | Optional | Command timeout in seconds.|
+| Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description   | Optional | Additional notes or comments about the action or configuration. |
 
 

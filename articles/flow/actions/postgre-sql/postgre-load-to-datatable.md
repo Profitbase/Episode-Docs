@@ -1,6 +1,6 @@
-# Load file to DataTable
+# Load to DataTable
 
-Executes an SQL query on a PostgreSQL database and retrieves the result to a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) object. This action is commonly used to load data from the database for further processing, allowing you to work with the data within your workflow. You can specify the SQL query to fetch data and the DataTable variable will store the resulting rows, making them accessible for other actions in your process.
+Loads data from a PostgreSQL database into memory as a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) object.
 
 <br/>
 
@@ -15,7 +15,7 @@ Executes an SQL query on a PostgreSQL database and retrieves the result to a [Da
 | --------------------------- | -------- | ------------------------------------------------------------------------------------------------ |
 | Title                       | Optional | The title or name of the action.                                                                 |
 | Connection                  | Required | Select a database connection.                                                                    |
-| SQL expression and parameters | Required | Enter the SQL query or command to execute along with any parameters.                             |
+| SQL expression and parameters | Required | The command to execute along with any parameters.                               |
 | Table variable name         | Optional | Name of the DataTable variable that stores the result of the query.                              |
-| Command timeout (seconds)   | Optional | Specify the time limit in seconds for the query execution before it times out.                    |
+| Command timeout (seconds)   | Optional | The time limit for command execution before it times out. Default is 120 seconds.                |
 | Description                 | Optional | Any additional notes or information relevant to the DataTable action.                            |

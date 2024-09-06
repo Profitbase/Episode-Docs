@@ -14,12 +14,12 @@ Executes a SQL command in a SQL Server database, and returns the number of rows 
 
 | Name         | Data type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
-| Title           |           |                        |
-| Connection         | Required   | InVision SQL Server connection. |
-|SQL expression and parameters   | Required      | Enter SQL expression and optional parameters. |
-| Result variable name | Optional  | Name of the variable containing the number of rows affected.  |
-|Command timeout (sec) | Optional | Command timeout in seconds.|
-|   Description   |           |                  |
+| Title           |  Optional | The title or name of the command.        |
+| Connection         | Required   | The SQL Server connection. |
+|SQL expression and parameters   | Required      | The command to execute along with any parameters. |
+| Result variable name | Optional  | The name of the variable containing the number of rows affected.  |
+|Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.  |
+| Description   | Optional | Additional notes or comments about the action or configuration. |
 
 ## Example: How to use parameters
 

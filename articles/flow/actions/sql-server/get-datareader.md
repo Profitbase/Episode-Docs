@@ -8,12 +8,12 @@ Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data
 
 | Name         | Data type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
-| Title           |           |                        |
-| Connection         | Required   | InVision SQL Server connection. |
-|SQL expression and parameters   | Required      | Enter SQL expression and optional parameters. |
+| Title           | Optional | The title or name of the command.     |
+| Connection         | Required   | The SQL Server connection. |
+|SQL expression and parameters   | Required      | The command to execute along with any parameters.   |
 | Reader variable name | Optional  | Name of the variable.  |
-|Command timeout (sec) | Optional | Command timeout in seconds.|
-|   Description   |           |                  |
+|Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
+| Description   | Optional | Additional notes or comments about the action or configuration. |
 
 
 ## Returns

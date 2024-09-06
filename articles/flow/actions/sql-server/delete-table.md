@@ -12,8 +12,8 @@ If the table does not exist, this action does nothing (no error is raised).
 
 | Name         | Data type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
-| Title           |           |                        |
-| Connection         | Required   | InVision SQL Server connection. |
+| Title           |  Optional | The title or name of the command.     |
+| Connection         | Required   | The SQL Server connection. |
 | Table name   | Required      |  |
-| Command timeout (sec) | Optional | Command timeout in seconds.|
-|   Description   |           |                  |
+| Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds. |
+| Description   | Optional | Additional notes or comments about the action or configuration. |

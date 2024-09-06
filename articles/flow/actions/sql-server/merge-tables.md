@@ -17,5 +17,5 @@ This action provides a lightweight wrapper for the [Merge](https://learn.microso
 | Target table | Required  |  Select or enter target table name. |
 | Merge configuration | Required  | Select or edit merge configuration.  |
 | Result variable name | Required  | Name of the variable returning number of rows affected. |
-| Command timeout (sec) | Optional | Command timeout in seconds.|
+| Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description   | Optional | Additional notes or comments about the action or configuration. |
