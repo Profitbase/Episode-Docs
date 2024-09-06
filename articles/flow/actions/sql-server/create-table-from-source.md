@@ -11,13 +11,13 @@ This action creates a copy of another table in a SQL Server database by coping i
 
 | Name         | Data type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
-| Title           |           |                        |
-| Connection         | Required   | InVision SQL Server connection. |
+| Title           |  Optional | The title or name of the command.            |
+| Connection         | Required   | SQL Server connection. |
 |Source Table | Required      | Select or enter source table name. |
 | Target table | Required  | Select or enter target table name.  |
 | Replace existing table   |           |                  |
 | Copy Primary Key   |           |                  |
 |  Copy Foreign Key(s)     |           |                  |
 |    Copy Index(es)     |           |                  |
-|Command timeout (sec) | Optional | Command timeout in seconds.|
-|   Description   |           |                  |
+|Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
+| Description   | Optional | Additional notes or comments about the action or configuration. |

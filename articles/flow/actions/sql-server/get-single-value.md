@@ -9,13 +9,13 @@ Executes a SQL command in a SQL Server database which returns a single value.
 
 | Name         | Data type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
-| Title           |           |                        |
+| Title           |   Optional | The title or name of the command.    |
 | Connection         | Required   | InVision SQL Server connection. |
-|SQL expression and parameters   | Required      | Enter SQL expression and optional parameters. |
+|SQL expression and parameters   | Required      | The command to execute along with any parameters.   |
 | Result variable name | Optional  | Name of the variable.  |
 | Result variable type | Optional  | Type of the variable.  |
-|Command timeout (sec) | Optional | Command timeout in seconds.|
-|   Description   |           |                  |
+|Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
+| Description   | Optional | Additional notes or comments about the action or configuration. |
 
 ## Example: How to use parameters
 
