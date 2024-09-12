@@ -34,13 +34,24 @@ When the Entra ID App (also known as a "Service Principal") has been created, th
 
    <br/>
 
+## Create a Dynamics 365 Business Central APIv2 Connection
+
+When you have configured a Microsoft Entra ID App with permissions to call the Business Central API, you can create the connection that Flow will use to make the API requests.
+
+To create a Dynamics 365 Business Central APIv2 Connection, add a Dynamics 365 action, for example the [REST API Request with paging](./rest-api-request-with-paging.md) action, to a Flowchart and select it. Then click the `Connection` property in the `Property panel`.
+
 ![img](/images/flow/dynamics365-bc-api-connection.png)
 
-## Properties
+### Properties
 
-| Name                         | Type     | Description                                                                                  |
-| ---------------------------- | -------- | -------------------------------------------------------------------------------------------- |
-| Tenant Id                    | Required | The Entra Tenant Id associated with the Dynamics 365 Business Central subscription           |
-| Client Id                    | Required | The id of the Entra ID App which has been granted access to the Business Central API.        |
-| Client secret                | Required | The client secret of the Entra ID App which has been granted access to Business Central API. |
-| Business Central Environment | Required | The Business Central environment to target (Production, Sandbox, Text, etc)                  |
+| Name                                      | Type     | Description                                                                                  |
+| ----------------------------------------- | -------- | -------------------------------------------------------------------------------------------- |
+| Tenant Id                                 | Required | The Entra Tenant Id associated with the Dynamics 365 Business Central subscription           |
+| Client Id                                 | Required | The id of the Entra ID App which has been granted access to the Business Central API.        |
+| Client secret                             | Required | The client secret of the Entra ID App which has been granted access to Business Central API. |
+| Dynamics 365 Business Central Environment | Required | The Business Central environment to target (Production, Sandbox, Test, etc)                  |
+
+## Edit a Dynamics 365 Business Central APIv2 Connection
+
+To edit an existing Business Central connection, go to `Resources` -> `Workspace Objects` in the Designer application top bar, and locate the connection.  
+Read more about Workspace Objects [here](../../../workspaces/workspace-objects.md).
