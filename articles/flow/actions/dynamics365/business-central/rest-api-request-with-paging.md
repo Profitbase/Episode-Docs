@@ -10,7 +10,7 @@ The `REST API Request with paging` action handles paging automatically for you, 
 
 The Dynamics 365 Business Central API has the following limits: [API limits](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v2.0/dynamics-current-limits).
 
-The `REST API Request with paging` action handles the following API limits interally:
+The `REST API Request with paging` action attempts to handle the following API limits automatically:
 
 - `429 - Too many request` : Flow will attempt to handle this limit by retrying the request using a retry policy. If the retry attempt(s) fail, an error is raised. This error can be handled in the On Error execution out port, for example by using the [Wait](../../built-in/wait.md) action to perform a manual retry.
 
@@ -19,8 +19,9 @@ The `REST API Request with paging` action handles the following API limits inter
 | Name          | Type     | Description                                                                                                                                                                         |
 | ------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Connection    | Required | The [Dynamics 365 Business Central connection](./dynamics365-business-central-api-v2-connection.md) used to make an authenticated request to the Dynamics 365 Business Central API. |
-| Configuration | Required |                                                                                                                                                                                     |
+| Configuration | Required | Defines the HTTP request to make to the API. See details below.                                                                                                                     |
 
 ## Returns
 
-The return type is defined when configuring the action.
+The return type is defined when configuring the action. It can be a custom data type or the raw JSON response from the API.  
+We recommend using the built-in [HttpResponse&lt;T&gt;](../../../api-reference/built-in-types/http-response.md) type because it will include additional information about the response, such as the HTTP status code.

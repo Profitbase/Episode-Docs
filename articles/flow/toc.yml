@@ -87,6 +87,8 @@
       href: actions/built-in/toc.yml
     - name: CSV
       href: actions/csv/toc.yml
+    - name: Dynamics 365
+      href: actions/dynamics365/toc.yml
     - name: Excel
       href: actions/excel/toc.yml
     - name: FTP / SFTP
@@ -126,5 +128,5 @@
 - name: Change log
   href: changelog.md
   items:
-  - name: August 2024
-    href: changelog/changelog24_1.md
+    - name: August 2024
+      href: changelog/changelog24_1.md
