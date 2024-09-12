@@ -1,18 +1,11 @@
 # REST API Request with paging
 
-The REST API Request action enables you to call [Dynamics 365 Business Central v2 APIs](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v2.0/) to connect apps. A typical use case is to create data integrations for pulling data from Dynamics 365 Business Central into a datawarehouse / data platform.
+The `REST API Request with paging` action enables you to call [Dynamics 365 Business Central v2 APIs](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v2.0/) and retrive large amounts of data. A typical use case is to create data integrations for pulling data from Dynamics 365 Business Central into a datawarehouse / data platform.
 
-## Response paging
+> [!NOTE]
+> This action also works for APIs that does not return paged responses, in which case the response will contain only a single page.
 
-The `REST API Request with paging` action handles paging automatically for you, by returning one page at a time until the Dynamics 365 Business Central API returns no more pages. Note that this action also works for APIs that does not return paged responses, in which case the response will contain only a single page.
-
-## API limits
-
-The Dynamics 365 Business Central API has the following limits: [API limits](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v2.0/dynamics-current-limits).
-
-The `REST API Request with paging` action attempts to handle the following API limits automatically:
-
-- `429 - Too many request` : Flow will attempt to handle this limit by retrying the request using a retry policy. If the retry attempt(s) fail, an error is raised. This error can be handled in the `On Error` execution port, for example by using the [Wait](../../built-in/wait.md) action to perform a manual retry.
+![img](/images/flow/dynamics365-bc-api-request-with-paging.png)
 
 ## Properties
 
@@ -41,3 +34,15 @@ To define a request manually, please refer to the [Dynamics 365 Business Central
 1. Define the `Method` (`GET`, `PUT`, `POST`, `DELETE`, etc ). Most APIs for fetching data requires the `GET` method.
 2. Define the `URI`. This is the API endpoint, for example `companies(id)/accounts`. If a query requires parameters (for example the company id in this example), insert a variable from Flow using the popup that appears when the URI editor gets focus.
 3. Define the `Response`. The default response type is [HttpResponse&lt;string&gt;](../../../api-reference/built-in-types/http-response.md). This means you get back the raw JSON response from the API. You can change the data type to a custom type if you want to, but keep in mind that this will allocate more memory and impact performance negatively for large data sets such as dimensions and general ledger queries.
+
+## Response paging
+
+The `REST API Request with paging` action handles paging automatically for you, by returning one page at a time until the Dynamics 365 Business Central API returns no more pages. Note that this action also works for APIs that does not return paged responses, in which case the response will contain only a single page.
+
+## API limits
+
+The Dynamics 365 Business Central API has the following limits: [API limits](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v2.0/dynamics-current-limits).
+
+The `REST API Request with paging` action attempts to handle the following API limits automatically:
+
+- `429 - Too many request` : Flow will attempt to handle this limit by retrying the request using a retry policy. If the retry attempt(s) fail, an error is raised. This error can be handled in the `On Error` execution port, for example by using the [Wait](../../built-in/wait.md) action to perform a manual retry.
