@@ -1,4 +1,4 @@
-# HttpResponse&lt;T$gt;
+# HttpResponse&lt;T&gt;
 
 Contains information about a response from an HTTP API, including the received data.
 
