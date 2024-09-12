@@ -9,6 +9,7 @@ The `REST API Request with paging` action enables you to call [Dynamics 365 Busi
 
 ## Properties
 
+<!--prettier-ignore-->
 | Name          | Type     | Description                                                                                                                                                                         |
 | ------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Connection    | Required | The [Dynamics 365 Business Central connection](./dynamics365-business-central-api-v2-connection.md) used to make an authenticated request to the Dynamics 365 Business Central API. |
