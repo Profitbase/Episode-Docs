@@ -21,7 +21,8 @@ To start contributing to the docs, do the following
 3) Use `kebab case` for folder, image and document names that consists of multiple words  
    ✅: my-name-is-slim-shady  
    :x:: myNameIsSlimShady
-
+4) Prefer using one `toc.yml` file pr logical subject. If a toc.yml gets large and has many contributors, split it up into multiple toc.yml files (for example one pr folder / sub-topic)
+   
 ![image](https://github.com/user-attachments/assets/078f54e2-0b11-4af3-b265-28056f04e7d5)
 
 When contributing, use standard git workflow 
