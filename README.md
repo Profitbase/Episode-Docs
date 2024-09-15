@@ -16,8 +16,11 @@ To start contributing to the docs, do the following
 
 ## Authoring docs
 
-This is a monorepo for all Profitbase product docs.  
-You put the docs in the appropriate `articles\[product]` folder, and images in the `images\[product]` folder. You can add sub-folders as you see fit, but use naming that makes sense and is easy to understand. 
+1) This is a monorepo for all Profitbase product docs.  
+2) You put the docs in the appropriate `articles\[product]` folder, and images in the `images\[product]` folder. You can add sub-folders as you see fit, but use naming that makes sense and is easy to understand.
+3) Use `kebab case` for folder, image and document names that consists of multiple words  
+   ✅: my-name-is-slim-shady  
+   :x:: myNameIsSlimShady
 
 ![image](https://github.com/user-attachments/assets/078f54e2-0b11-4af3-b265-28056f04e7d5)
 
