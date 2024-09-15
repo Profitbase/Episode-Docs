@@ -1,46 +1,32 @@
 # Tech Wars: Episode Docs - May the Knowledge Be with You 💫
 
-## Description
-New documentation will be a DOCFX project.
-[Documentation](https://dotnet.github.io/docfx/index.html) 
+We use **docfx** by Microsoft for docs. Read about it [here](https://dotnet.github.io/docfx/). 
 
-## Installation
-**TODO** 🚀 Quick start
-[DOCFX documentation](https://dotnet.github.io/docfx/index.html) 
+## Get Started
 
-## Local Changes in Docfx project
-We work on files in the articles folder:
+To start contributing to the docs, do the following
 
-![img](https://profitbasedocs.blob.core.windows.net/images/readmePic2.png)
+ 1) Make sure you have the [.NET SDK](https://dotnet.microsoft.com/en-us/download) installed.
+ 2) Open a terminal and run (anywhere) 
+`dotnet tool update -g docfx`
+ 3) On your local machine, create a folder and Git Clone this project to the folder.
+ 4) In the terminal, go to the docfx project folder and run  
+    `docfx docfx.json --serve`
+5) You can now preview the docs on http://localhost:8080
 
-To preview your changes you need to save them, generate .json and run the server again.
+## Authoring docs
 
-![img](https://profitbasedocs.blob.core.windows.net/images/readmePic1.png)
+This is a monorepo for all Profitbase product docs.  
+You put the docs in the appropriate `articles\[product]` folder, and images in the `images\[product]` folder. You can add sub-folders as you see fit, but use naming that makes sense and is easy to understand. 
 
-## Local Changes the easy way
-You can also change any page in documentation by clicking contribution link(same way as the old DOCS). This will redirect you to the raw code that you can work on.
+![image](https://github.com/user-attachments/assets/078f54e2-0b11-4af3-b265-28056f04e7d5)
 
-![img](https://profitbasedocs.blob.core.windows.net/images/readmeEditPage.png)
+When contributing, use standard git workflow 
+1) Create a new branch
+2) Do commits
+3) Create a PR
 
-## Support
-[DOCFX documentation](https://dotnet.github.io/docfx/index.html)  or ask Iza
+Docfx does not support hot reload, so you need to run
+`docfx docfx.json --serve`
+and refresh the browser to review any changes you make.
 
-![img](https://profitbasedocs.blob.core.windows.net/images/readmePic4.jpg)
-
-## Roadmap
-* Step one: make it work with InVision DOCS 💫
- * removing all the differences and bugs from the previous environment.
- * making sure all works properly
- * enhance graphic side of it / make it sexy 🚀
- * mastering DOCFX 🧐
-* Step two: launching and integrating with old DOCS
-* Step three: adding other Documentations to it, making it a GLOBAL DOCS platform.
-* Step four: ensouring that everyone who creates docs knows how to work with the new environment. (making docs about docs :D)
-
-![img](https://profitbasedocs.blob.core.windows.net/images/readmePic3.jpg)
-
-
-## Project status
-Phase four - ensouring that everyone who creates docs knows how to work with the new environment. (making docs about docs :D)
-
-🚀🚀🚀
