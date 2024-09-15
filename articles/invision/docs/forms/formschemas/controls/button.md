@@ -1,4 +1,3 @@
-
 # Button
 
 Inherits from [Text Control](textcontrol.md).
@@ -17,7 +16,7 @@ Inherits from [Text Control](textcontrol.md).
 
 Specifies the name of the Function to call when the user clicks the button.
 
-**Example**
+### Example
 
 ```xml
 <Button Name="Button1" Text="Click me" Click="ShowAlert"/>
@@ -36,7 +35,16 @@ This example shows how to call a function when the button is clicked, passing an
 Use the Disabled property to disable a control or set it to read-only.  
 The disabled property support data binding or an explicit value (true, false).
 
-**Example**
+Valid values for the **Disabled** property:
+
+- True
+- False
+- {Binding}
+
+You cannot use both a Binding AND the control APIs at the same time to set the disabled state of a control.  
+If the Disabled property of a control has a Binding, using the control.Disable() or control.Enable() APIs will not work (binding will win).
+
+### Example
 
 ```xml
 <Button Disabled="{Binding Path:Customer.NotActive}"/>
@@ -44,20 +52,11 @@ or
 <Button Disabled="true"/>
 ```
 
-You cannot use both a Binding AND the control APIs at the same time to set the disabled state of a control.  
-If the Disabled property of a control has a Binding, using the control.Disable() or control.Enable() APIs will not work (binding will win).
-
-Valid values for the **Disabled** property:
-
-- True
-- False
-- {Binding}
-
 <br/>
 
 `Type`
 
-Specifies the default look of the button. Valid values are "Default", "Primary", "Secondary", "Confirm", "Link"
+Specifies the default look of the button. Valid values are "Default", "Primary", "Secondary", "Confirm", and "Link".
 
 <br/>
 
@@ -65,30 +64,17 @@ Specifies the default look of the button. Valid values are "Default", "Primary",
 
 Specifies the hotkey for the control.
 
-**Example**
+### Example
 
 ```xml
-<Input Hotkey="Alt+B"/>
+<Button Hotkey="Alt + B" Name="Button1" Text="Click me" Row="1" ColumnSpan="2" Click="ShowAlert('My Message')"/>
 ```
 
 <br/>
 
-![img](https://profitbasedocs.blob.core.windows.net/images/hotkeys.png)
+### Example
 
-<br/>
-
-
-`activateTab`
-
-The **activateTab("nameOfTab")** function provides a programmatic way to switch between tabs within the TabControl. By passing the nameOfTab as an argument, the function dynamically activates the specified tab, making it visible to the user. 
-
-This method can be used in various scenarios such as [button](button.md) clicks, form initialization, or any custom event, allowing for seamless navigation and enhanced user interactions within multi-tabbed interfaces.
-
-
-
-**Example**
-
-In this example, after clicking the button you will be moved to the *Inventory* Tab.
+This example shows how to programmatically activate (select) a tab when a button is clicked.
 
 ![activateTab](https://profitbasedocs.blob.core.windows.net/images/activateTab.png)
 
@@ -149,7 +135,6 @@ In this example, after clicking the button you will be moved to the *Inventory* 
 ```
 
 <br/>
-
 
 ## Videos
 

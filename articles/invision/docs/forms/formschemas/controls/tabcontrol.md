@@ -1,4 +1,3 @@
-
 # TabControl
 
 Inherits from [Control](control.md).
@@ -44,8 +43,6 @@ A collection of tabs. See example below:
 
 Defines which tab should be default.
 
-
-
 **Example**
 
 ```xml
@@ -65,18 +62,15 @@ Defines which tab should be default.
 
 <br/>
 
-
 ### activateTab
 
-The **activateTab("nameOfTab")** function provides a programmatic way to switch between tabs within the TabControl. By passing the nameOfTab as an argument, the function dynamically activates the specified tab, making it visible to the user. 
+The **activateTab("name of Tab")** function provides a programmatic way to switch between tabs within the TabControl. By passing the name of the tab as the argument, the function activates the specified tab, making it the selected tab in the Tab Control.
 
 This method can be used in various scenarios such as [button](button.md) clicks, form initialization, or any custom event, allowing for seamless navigation and enhanced user interactions within multi-tabbed interfaces.
 
-
-
 **Example**
 
-In this example, after clicking the button you will be moved to the *Inventory* Tab.
+In this example, after clicking the button you will be moved to the _Inventory_ Tab.
 
 ![activateTab](https://profitbasedocs.blob.core.windows.net/images/activateTab.png)
 
@@ -137,7 +131,6 @@ In this example, after clicking the button you will be moved to the *Inventory* 
 ```
 
 <br/>
-
 
 ## See Also
 
