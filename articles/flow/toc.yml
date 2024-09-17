@@ -117,6 +117,8 @@
       href: actions/sendgrid/toc.yml
     - name: SQL Server
       href: actions/sql-server/toc.yml
+    - name: Snowflake
+      href: actions/snowflake/toc.yml
     - name: Visma
       href: actions/visma/toc.yml
     - name: Xledger
