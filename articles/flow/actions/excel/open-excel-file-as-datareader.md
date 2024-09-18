@@ -1,4 +1,4 @@
-# Get DataReader for Excel sheet
+# Open Excel file as DataReader
 
 Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) for reading a forward-only stream or rows from an Excel sheet.
 
@@ -12,7 +12,7 @@ Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data
 | -------------------- | -------- | ------------------------------------------------------------------------------------------------------------- |
 | Title                |  |                                                                                                               |
 | File contents        | Required | Select the file contents (Stream or byte array).                                                              |
-| Sheet name           | Optional | Specifies the name of the sheet to read data from. Defaults to the first sheet in the file if not specified.  |
+| Sheet name           | Optional | The name of the sheet(s) from which to read data. If you don't specify anything, data is read from the first sheet in the file. When specifying multiple sheets, use a semicolon to separate sheet names. In the rare case that a sheet name contains a semicolon, use square brackets around the sheet name.       |
 | Data start row       | Optional | The row number of the first row to read. If the worksheet has a header row, `Data start row` is typically `2` |
 | Column mapping       | Required | Defines the mapping between Excel column letters and business object property names.                          |
 | Reader variable name | Optional |                                                                                                               |

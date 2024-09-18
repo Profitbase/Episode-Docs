@@ -1,4 +1,4 @@
-# Get DataReader for CSV file
+# Open CSV file as DataReader
 
 Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) for reading a foward-only stream or rows from CSV file.
 The input can be either a byte array or a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream).

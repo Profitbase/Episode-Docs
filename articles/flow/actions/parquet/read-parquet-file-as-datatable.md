@@ -1,4 +1,4 @@
-# Load Parquet file to DataTable
+# Read Parquet file as DataTable
 
 Loads the contents of a Parquet file into memory as a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) object.
 

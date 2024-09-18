@@ -1,4 +1,4 @@
-# Load Excel sheet to DataTable
+# Read Excel file as DataTable
 
 Loads the contents of an Excel sheet into memory as a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable).
 
@@ -12,7 +12,7 @@ Loads the contents of an Excel sheet into memory as a [DataTable](https://learn.
 | ------------------- | -------- | --------------------------------------------- |
 | Title                |          |            |
 | File contents       | Required | Select the file contents (Stream or byte array).      |
-| Sheet name          | Optional | The name of the worksheet to read data from. If you don't specify anything, data is read from the first worksheet in the file.      |
+| Sheet name          | Optional | The name of the sheet(s) from which to read data. If you don't specify anything, data is read from the first sheet in the file. When specifying multiple sheets, use a semicolon to separate sheet names. In the rare case that a sheet name contains a semicolon, use square brackets around the sheet name.       |
 | Data start row      | Optional | The row number of the first row to read. If the worksheet has a header row, `Data start row` is typically `2`.   |
 | Column mapping      | Required | Defines the mapping between the `column letters` (A,B,C, etc) in a worksheet, and the `column names` (CustomerID, Amount, etc) in the target DataTable. |
 | Table variable name | Optional | The name of the DataTable variable returned from the action. |
