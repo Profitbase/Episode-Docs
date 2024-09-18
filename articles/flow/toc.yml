@@ -108,7 +108,7 @@
     - name: Parquet
       href: actions/parquet/toc.yml
     - name: PostgreSql
-      href: actions/postgre-sql/toc.yml
+      href: actions/postgresql/toc.yml
     - name: Profitbase InVision
       href: actions/profitbase-invision/toc.yml
     - name: Security
