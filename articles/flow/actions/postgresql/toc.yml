@@ -1,0 +1,6 @@
+- name: "Execute command"
+  href: "postgresql-execute-command.md"
+- name: "Insert data"
+  href: "postgresql-insert-data.md"
+- name: "Load to Datatable"
+  href: "postgresql-load-to-datatable.md"

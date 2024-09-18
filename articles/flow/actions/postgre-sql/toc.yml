@@ -1,4 +1,0 @@
-- name: "Execute command"
-  href: "postgre-execute-command.md"
-- name: "Load to Datatable"
-  href: "postgre-load-to-datatable.md"
