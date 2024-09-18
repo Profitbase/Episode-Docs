@@ -10,7 +10,7 @@ Inserts data into a SQL Server database from a [DataReader](https://learn.micros
 | Name         | Data type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
 | Title           |           |                        |
-| Connection | Required   | InVision SQL Server connection. |
+| Connection | Required   | The SQL Server connection. |
 | Source  | Required   |Select the source for data. |
 | Destination table   | Required   | Select or enter the name of the table to inert info. |
 | Batch size   | Optional   | Enter batch size. |

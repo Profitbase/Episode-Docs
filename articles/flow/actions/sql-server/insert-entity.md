@@ -19,7 +19,7 @@ INSERT INTO tableName (Property1, Property2) VALUES(entity.Property1, enity.Prop
 | Name         | Data type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
 | Title           |           |                        |
-| Connection         | Required   | InVision SQL Server connection. |
+| Connection         | Required   | The SQL Server connection. |
 | Entity | Raquired  |   |
 | Table name | Required  |   |
 | Result variable name | Required  | Name of the variable returning number of rows affected.   |

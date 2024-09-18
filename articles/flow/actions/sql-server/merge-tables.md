@@ -12,7 +12,7 @@ This action provides a lightweight wrapper for the [Merge](https://learn.microso
 | Name         | Data type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
 | Title           |           |                        |
-| Connection         | Required   | InVision SQL Server connection. |
+| Connection         | Required   | The SQL Server connection. |
 | Source   | Required      | Select or enter source table/view to merge from. |
 | Target table | Required  |  Select or enter target table name. |
 | Merge configuration | Required  | Select or edit merge configuration.  |
