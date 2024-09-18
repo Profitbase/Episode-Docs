@@ -12,7 +12,7 @@ This action creates a copy of another table in a SQL Server database by coping i
 | Name         | Data type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
 | Title           |  Optional | The title or name of the command.            |
-| Connection         | Required   | SQL Server connection. |
+| Connection         | Required   | The SQL Server connection. |
 |Source Table | Required      | Select or enter source table name. |
 | Target table | Required  | Select or enter target table name.  |
 | Replace existing table   |           |                  |

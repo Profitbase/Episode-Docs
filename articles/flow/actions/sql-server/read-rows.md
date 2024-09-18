@@ -11,7 +11,7 @@ Iterates over rows in a SQL Server database.
 | Name         | Data type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
 | Title           | Optional | The title or name of the command.     |
-| Connection         | Required   | InVision SQL Server connection. |
+| Connection         | Required   | The SQL Server connection. |
 | SQL expression and parameters   | Required      | The command to execute along with any parameters.   |
 | Row to entity maping | Required  |   |
 | Row variable name | Required  | Name of Row variable.  |

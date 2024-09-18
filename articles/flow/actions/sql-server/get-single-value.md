@@ -10,7 +10,7 @@ Executes a SQL command in a SQL Server database which returns a single value.
 | Name         | Data type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
 | Title           |   Optional | The title or name of the command.    |
-| Connection         | Required   | InVision SQL Server connection. |
+| Connection         | Required   | The SQL Server connection. |
 |SQL expression and parameters   | Required      | The command to execute along with any parameters.   |
 | Result variable name | Optional  | Name of the variable.  |
 | Result variable type | Optional  | Type of the variable.  |

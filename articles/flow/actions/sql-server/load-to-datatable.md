@@ -15,7 +15,7 @@ Loads data from a SQL Server database into memory as a [DataTable](https://learn
 | Name         | Data type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
 | Title           |  Optional | The title or name of the command.     |
-| Connection         | Required   | InVision SQL Server connection. |
+| Connection         | Required   | The SQL Server connection. |
 | SQL expression and parameters   | Required      | The command to execute along with any parameters.   |
 | Table variable name | Optional  |   |
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|

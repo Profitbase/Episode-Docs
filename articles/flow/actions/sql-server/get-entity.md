@@ -19,7 +19,7 @@ public record Customer(string VATNumber, string Name, string Address);
 | Name         | Data type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
 | Title           |   Optional | The title or name of the command.      |
-| Connection         | Required   | InVision SQL Server connection. |
+| Connection         | Required   | The SQL Server connection. |
 | SQL expression and parameters   | Required      | The command to execute along with any parameters.   |
 | Entity name | Optional  |   |
 | Entity properties | Required  |   |

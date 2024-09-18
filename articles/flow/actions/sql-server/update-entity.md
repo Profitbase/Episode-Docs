@@ -28,7 +28,7 @@ All properties _NOT_ in the `Update keys` configuration will be used in the SET 
 | Name         | Data type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
 | Title           |  Optional | The title or name of the command.    |
-| Connection         | Required   | InVision SQL Server connection. |
+| Connection         | Required   | The SQL Server connection. |
 | Source   | Required |  |
 | Table name | Required  |   |
 | Update key | Required  |   |
