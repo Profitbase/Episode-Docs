@@ -13,11 +13,11 @@ Iterates over rows in a CSV file.
 | Name                | Type      | Description                                      |
 | ------------------- | --------- | ------------------------------------------------ |
 | Title               |           |                                                  |
-| File contents       | Required  | Select the file contents (Stream or byte array). |
-| Data start row      | Optional  | Choose the row.                                  |
-| Column mapping      | Required  | Configure row object.                            |
-| Data import options | Optional  | Skip empty, fail.                                |
-| Field parser        | Optional  | Custom field parser.                             |
-| Row variable name   | Optional  | The name of the Row variable.                    |
+| File contents       | Required  | The contents of the file, provided as either a stream or a byte array. |
+| Data start row           | Optional | Specifies the index of the row where the data starts. If the file has a header row, the data start row is typically 2. If the files does not have a header row, the start row is usually 1. |
+| [Column mapping](configuration-properties/column-mapping.md) | Required       | The mapping between the field indices and field data types in the file, and the columns in the final data set. |
+| [Data import options](configuration-properties/data-import-options.md)      | Optional       | Specifies options for error handling and how the contents of the file is parsed, such as date and number formattings. |
+| [Field parser](configuration-properties/field-parser.md)             | Optional       | Provides a way to customize how field values are parsed during import.    
+| Row variable name   | Optional  | The name of the variable you can use to reference the Row in other actions.                      |
 | Row data type       | Read-only |                                                  |
 | Description         | Optional  | Additional notes or comments about the action or configuration. |

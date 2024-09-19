@@ -4,7 +4,7 @@ Reads the contents of an [Azure Blob](https://learn.microsoft.com/en-us/azure/st
 
 Once you have the blob contents, you must _load_ it using a compatible action in order to make use of the data.
 
-For example, an Excel file can be loaded using the [Get DataReader for Excel sheet](../excel/get-datareader-for-excel-sheet.md), [Load Excel sheet to DataTable](../excel/load-excel-sheet-to-datatable.md), or [Read rows from Excel sheet](../excel/read-rows-from-excel-sheet.md) actions. Once loaded, you can start working with the data in the Excel file.
+For example, an Excel file can be loaded using the [Open Excel file as DataReader](../excel/open-excel-file-as-datareader.md), [Read Excel file as DataTable](../excel/read-excel-file-as-datatable.md), or [Read rows from Excel file](../excel/read-rows-from-excel-file.md) actions. Once loaded, you can start working with the data in the Excel file.
 
 > [!CAUTION]
 > Trying to load a byte array using an incompatible action will fail.
@@ -20,6 +20,6 @@ For example, an Excel file can be loaded using the [Get DataReader for Excel she
 <!--prettier-ignore-->
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
-| Connection       | Required  | A [SAS Uri](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview) to an Azure Blob container or connection string and container name.       |
+| Connection       | Required  | The Azure Blob Container Connection. Choose either 1. A [SAS URI](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview) to an Azure Blob container or 2. A Storage account connection string and container name.       |
 | Blob name prefix | Optional  | To filter the list of blobs, specify a string for the [prefix parameter](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-list#filter-results-with-a-prefix). **Note!** The prefix is case sensitive. |
 | Result variable name | Required | The name of the Flow variable that contains the list of the blob names. |

@@ -23,8 +23,8 @@ Returns the Excel file serialized as a [byte](https://learn.microsoft.com/en-us/
 | Name                 | Type     | Description                                                                                                                                                                          |
 | -------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Title                |          |                                                                                                                                                                                      |
-| Source               | Required | Select from a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) or [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable). |
-| Result variable name | Optional |                                          |
+| Source               | Required | Specifies the source of the data, which can either be a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) or [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable). |
+| Result variable name | Optional | The name of the variable you can use to reference the byte array in other actions.  |
 | Description          | Optional |  Additional notes or comments about the action or configuration. |
 
 <br/>

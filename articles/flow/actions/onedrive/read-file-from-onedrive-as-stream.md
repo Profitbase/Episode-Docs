@@ -14,7 +14,7 @@ Reads the contents of a file in OneDrive as a stream.
 
 ## Returns
 
-A [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream) that provides access to the contents of the file. Use the stream as input to other actions, for example the [Get DataReader for Excel sheet](../excel/get-datareader-for-excel-sheet.md) if you are fetching an Excel-file from OneDrive.
+A [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream) that provides access to the contents of the file. Use the stream as input to other actions, for example the [Open Excel file as DataReader](../excel/open-excel-file-as-datareader.md) if you are fetching an Excel-file from OneDrive.
 
 > [!NOTE]
 > When you want to read a file in OneDrive, you need to provide the `path` to the file, not the name. When using a [OneDriveItem](./api-reference/onedrive-item.md) as input, select the `Path` property like shown below.  

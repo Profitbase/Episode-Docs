@@ -66,7 +66,7 @@ We now support encryption and decryption of data using the AES algorithm through
 
 
 ## Excel  
-The [Get DataReader for Excel sheet](../actions/excel/get-datareader-for-excel-sheet.md), [Load Excel sheet to DataTable](../actions/excel/load-excel-sheet-to-datatable.md), and [Read rows from Excel sheet](../actions/excel/read-rows-from-excel-sheet.md) actions now support auto-mapping of columns by providing a (sample) file. This removes the tedious work of mapping Excel column letters to business column names (such as Account, Department, etc.) and specifying the correct data type for each column when you want to import data from Excel to a target such as a database.
+The [Open Excel file as DataReader](../actions/excel/open-excel-file-as-datareader.md), [Read Excel file as DataTable](../actions/excel/read-excel-file-as-datatable.md), and [Read rows from Excel file](../actions/excel/read-rows-from-excel-file.md) actions now support auto-mapping of columns by providing a (sample) file. This removes the tedious work of mapping Excel column letters to business column names (such as Account, Department, etc.) and specifying the correct data type for each column when you want to import data from Excel to a target such as a database.
 
 <br/>
 
