@@ -13,11 +13,11 @@ Returns the Excel file serialized as a [byte](https://learn.microsoft.com/en-us/
 | Name                 | Type     | Description                                                                                                   |
 | -------------------- | -------- | ------------------------------------------------------------------------------------------------------------- |
 | Title                |          |                                                                                                               |
-| Source               | Required | Select DataTable or DataReader.                                                              |
+| Source               | Required | Specifies the source of the data, which can either be a DataTable or DataReader.                              |
 | Sheet name           | Optional | Specifies a worksheet name. |
 | Column mapping       | Optional | Defines the mapping between Excel column letters and business object property names.                          |
-| Worksheet formatting options | Optional |                                                                                                       |
-| Byte array variable name | Optional |                                                                                                           |
+| Worksheet formatting options | Optional | Specifies detailed formatting options.                                                                                                       |
+| Byte array variable name | Optional | The name of the variable you can use to reference the byte array in other actions.                                                                                                           |
 | Description | Optional |  Additional notes or comments about the action or configuration. |
 
 <br/>

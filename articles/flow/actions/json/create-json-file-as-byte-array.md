@@ -19,6 +19,6 @@ Returns the JSON file serialized as a [byte](https://learn.microsoft.com/en-us/d
 | Name                     | Type     | Description                 |
 | ------------------------ | -------- | --------------------------- |
 | Title                    |          |                             |
-| JSON string                   | Required | Select the JSON string. |
+| JSON string                   | Required | A JSON-formatted string that provides the data. |
 | Result variable name     | Optional | The name of the byte array variable returned from the action.                             |
 | Description              | Optional |  Additional notes or comments about the action or configuration. |

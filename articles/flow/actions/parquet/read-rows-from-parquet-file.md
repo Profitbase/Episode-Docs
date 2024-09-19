@@ -13,8 +13,8 @@ Iterates over rows in a Parquet file.
 | Name              | Type      | Description                                                                |
 | ----------------- | --------- | -------------------------------------------------------------------------- |
 | Title             |           |                                                                            |
-| File contents     | Required  | Select the file contents (Stream or byte array).                           |
-| Column mapping    | Required  | Configure row object.                                                      |
+| File contents | Required       |  The contents of the file, provided as either a stream or a byte array. |
+| Column mapping    | Required  | Defines the mapping between Parquet column names and business object property names.           |
 | Row variable name | Optional  | The name of the Row variable.                                              |
 | Row data type     | Read-only | The name of the data type used to represent a row, for example 'Customer'. |
 | Description       | Optional  |  Additional notes or comments about the action or configuration.  |

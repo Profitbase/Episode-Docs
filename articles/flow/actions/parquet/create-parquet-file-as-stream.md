@@ -21,8 +21,8 @@ Using data table as Source:
 | Name                 | Type     | Description                                                                             |
 | -------------------- | -------- | ------------------- |
 | Title                |          |                                                           |
-| Source               | Required | Select from a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) or [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable). |
-| Result variable name | Required |                                                                                                                                                                                      |
+| Source               | Required | Specifies the source of the data, which can either be a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) or [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable). |
+| Result variable name | Required | The name of the variable you can use to reference the Stream in other actions.                                               |
 | Description  | Optional |   Additional notes or comments about the action or configuration.  |
 
 <br/>
