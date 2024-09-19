@@ -35,7 +35,7 @@ Then, enclose the variable in curly brackets like with the `TableName` variable 
 
 ```sql
 -- We have declared a Flow variable named TableName and assigned a value to it in a previous action.
-SELECT Dispaly_Name FROM {TableName} WHERE USER_ID = :UserId
+SELECT Display_Name FROM {TableName} WHERE USER_ID = :UserId
 ```
 
 ## Returns
