@@ -99,6 +99,8 @@
       href: actions/graphql/toc.yml
     - name: HTTP
       href: actions/http/toc.yml
+    - name: JSON
+      href: actions/json/toc.yml
     - name: Microsoft Fabric
       href: actions/microsoft-fabric/toc.yml
     - name: OneDrive
