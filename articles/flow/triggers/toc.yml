@@ -4,6 +4,10 @@
       href: "azure-blob-storage/blob-trigger.md"
     - name: "Incremental Blob trigger"
       href: "azure-blob-storage/incremental-blob-trigger.md"
+- name: "Azure Event Hub"
+  items:
+    - name: "Event hub trigger"
+      href: "azure-event-hub/event-hub-trigger.md"
 - name: "Azure Service Bus"
   items:
     - name: "Queue trigger"
