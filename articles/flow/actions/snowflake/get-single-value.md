@@ -2,16 +2,14 @@
 
 Executes a query command in a Snowflake database which returns a single value.
 
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/get-single-value.png)
-
 
 ## Properties
 
 | Name         | Data type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
 | Title           |   Optional | The title or name of the command.    |
-| Connection         | Required   | The SQL Server connection. |
-|SQL expression and parameters   | Required      | The command to execute along with any parameters.   |
+| Connection         | Required   | The Snowflake connection. |
+| Expression and parameters   | Required      | The command to execute along with any parameters.   |
 | Result variable name | Optional  | Name of the variable.  |
 | Result variable type | Optional  | Type of the variable.  |
 |Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
