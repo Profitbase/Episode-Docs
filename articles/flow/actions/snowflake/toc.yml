@@ -1,2 +1,6 @@
-- name: "Snowflake Execute Command"
+- name: "Execute Command"
   href: "execute-non-query-command.md"
+- name: "Get single value"
+  href: "get-single-value.md"
+- name: "Get DataReader"
+  href: "get-datareader.md"
