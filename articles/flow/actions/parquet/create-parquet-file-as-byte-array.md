@@ -12,6 +12,12 @@ Return value used:
 
 <br/>
 
+## Returns
+
+Returns the Excel file serialized as a [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays)
+
+<br/>
+
 ## Properties
 
 | Name                 | Type     | Description                                                                                                                                                                          |
