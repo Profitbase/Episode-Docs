@@ -11,7 +11,7 @@ To run a Flow within another Flow, use the [Run Flow](../../actions/built-in/run
 
 If the Flow you want to run supports parameterization, you can specify an argument to pass to the Flow. All Flows technically accepts a single argument, but it's up to the implementer to decide whether to use that data or not. It is also up to the implementer to decide the format of the input data. It can be anything from a simple numeric value to a complex business object. To know the type and format of the data you can pass in, you need to open the Flow you want to run and examine its configuration. If the Flow is implemented following best practices, it should have a [Flow trigger](../../triggers/flow-trigger.md) which optionally defines the parameter type definition.
 
-## Return data
+## Returns
 
 If the Flow you want to run returns data, you can use the data returned as input to actions later in the Flow. Note, however, that the data returned is typed as [System.Object](https://learn.microsoft.com/en-us/dotnet/api/system.object), so you almost always have to convert it to a type known by the calling Flow before you can use as input to other actions. 
 
