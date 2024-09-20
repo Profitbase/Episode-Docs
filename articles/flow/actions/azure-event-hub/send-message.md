@@ -1,6 +1,6 @@
-# Publish Event
+# Send message
 
-Publishes an event to [Azure Event Hub](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-features).
+Sends a message to an [Azure Event Hub](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-features).
 
 ![img](/images/flow/aeh-publish.png)
 
