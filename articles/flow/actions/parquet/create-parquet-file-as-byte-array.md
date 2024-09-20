@@ -1,4 +1,4 @@
-# Create Parquet file as a byte array
+# Create Parquet file as byte array
 
 Creates a Parquet file from a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) or [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) and returns the result as a byte array.
 
