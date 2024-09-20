@@ -1,2 +1,2 @@
-- name: "Publish event"
-  href: "publish-event.md"
+- name: "Send message"
+  href: "send-message.md"
