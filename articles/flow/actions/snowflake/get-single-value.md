@@ -5,10 +5,10 @@ Executes a query command in a Snowflake database which returns a single value.
 
 ## Properties
 
-| Name         | Data type       | Description                                       |
+| Name         | Type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
 | Title           |   Optional | The title or name of the command.    |
-| Connection         | Required   | The Snowflake connection. |
+| Connection         | Required   | The Snowflake [connection](./connecting-to-snowflake.md). |
 | Expression and parameters   | Required      | The command to execute along with any parameters.   |
 | Result variable name | Optional  | Name of the variable.  |
 | Result variable type | Optional  | Type of the variable.  |

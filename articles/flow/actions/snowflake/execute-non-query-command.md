@@ -7,10 +7,10 @@ Executes a SQL command in a Snowflake database, and returns the number of rows a
 
 ## Properties
 
-| Name                      | Data type | Description                                                                       |
+| Name                      | Type | Description                                                                       |
 | ------------------------- | --------- | --------------------------------------------------------------------------------- |
 | Title                     | Optional  | The title or name of the command.                                                 |
-| Connection                | Required  | The Snowflake connection.                                                         |
+| Connection                | Required  | [The Snowflake connection](./connecting-to-snowflake.md).                         |
 | Expression and parameters | Required  | The command to execute along with any parameters.                                 |
 | Result variable name      | Optional  | The name of the variable containing the number of rows affected.                  |
 | Command timeout (sec)     | Optional  | The time limit for command execution before it times out. Default is 120 seconds. |

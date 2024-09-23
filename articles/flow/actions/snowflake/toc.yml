@@ -3,4 +3,6 @@
 - name: "Get single value"
   href: "get-single-value.md"
 - name: "Get DataReader"
-  href: "get-datareader.md"
+  href: "get-datareader.md"  
+- name: "Connecting"
+  href: "connecting-to-snowflake.md"
