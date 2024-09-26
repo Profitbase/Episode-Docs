@@ -44,6 +44,8 @@
   href: "rethrow-exception.md"
 - name: "Return"  
   href: "return.md"
+- name: "Remove InVision object from cache"
+  href: "remove-invision-object-from-cache.md"
 - name: "Run Flow"  
   href: "run-flow.md"
 - name: "Start Flow"  

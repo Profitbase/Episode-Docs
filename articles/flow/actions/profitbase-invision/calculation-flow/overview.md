@@ -1,11 +1,11 @@
 # Calculation Flow
 
-A Calculation Flow consists of a series of actions that define how to create financial calculations for Profitbase InVision.  
-The primary steps of a Calculation Flow are outlined below.
+Calculation Flows run the calculations and generate data for financial models. They consist of a series of actions that read data and assumptions, execute calculations, and store the output back into InVision, ready to be viewed in Power BI or other data visualization tools.  
 
-A Calculation Flow usually has one or more sets of parameters. It also has an input data set, a number of calculations, and an output.  
+A Calculation Flow usually has one or more sets of parameters. It also has an input data set (for example business drivers like FTEs), a number of calculations, and an output.  
 The most used parameter types are [Lookup Tables](lookup-tables.md), [Distribution Keys](distribution-keys.md) and [Auto Transactions](auto-transactions.md).
 
+The primary steps of a Calculation Flow are outlined below.  
 
 ```mermaid
 flowchart LR
