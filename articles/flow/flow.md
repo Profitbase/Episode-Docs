@@ -2,28 +2,30 @@
 
 # What is Profitbase Flow
 
-Profitbase Flow enables businesses to automate digital processes and integrate data from various sources through a user-friendly drag-and-drop interface. 
+Profitbase Flow enables the office of finance within organizations to automate digital processes and integrate data from disparate sources. It is a cloud service for building and running programs using "boxes and arrows" to perform automated business operations.
 
-**Digital process automation**
+#### Financial modelling
 
--	Create, visualize, and manage complex business processes with a user-friendly drag-and-drop interface.
--	Orchestrate processes between different business applications.
--	Monitor and respond to events from external systems, such as incoming emails, message brokers, or changes in 3rd party applications.
+-  Build financial models as chains of calculations, business rules, and data operations in visual diagrams.
 
-**Data integrations**
+#### Data integration
+-   Connect to ERP systems, databases, APIs, and cloud services.
+-	Extract, transform, cleanse, validate and enrich data from disparate data sources.  
+-   Build unified data models for reporting and analysis
 
--	Easily connect to various data sources, including databases, APIs, cloud services and ERP systems.
--	Transform, cleanse, validate and enrich data as it flows through the system to ensure data quality and consistency.
--	Keep data synchronized across systems in real-time or on a scheduled basis to support up-to-date decision making. 
+#### Application integration
+-	Connect disparate business applications through APIs and orchestrate operations across them.  
 
-**Business rules and high-performance calculations over large volumes of data**
+#### Automate digital processes
+
+-	Build and run complex digital business processes using "boxes and arrows". Write code when you have to - or want to.
+-	Automate manual tasks.
+-	Monitor and respond to events in business systems.
+
+#### Build business rules engines
 
 -	Build business rules engines for any type of business area, including finance, operations, IT, HR, sales, and marketing. 
--	Perform complex calculations over large volumes of data at high speed to get immediate feedback on input.
-
-**Build APIs**
-
--	Make your services and data available through highly available, secure APIs.
+-	Perform complex calculations and data operations on large volumes of data at high speed.
 
 <br/>
 
