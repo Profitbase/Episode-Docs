@@ -2,7 +2,7 @@
 
 # What is Profitbase Flow
 
-Profitbase Flow enables the office of finance within organizations to automate digital processes and integrate data from disparate sources. It is a cloud service for building and running programs using "boxes and arrows" to perform automated business operations.
+Profitbase Flow enables the office of finance to build financial models, automate digital processes and integrate data from disparate sources. It lets you build and run workloads using a visual "boxes and arrows" interface, which includes a toolbox for integrating with a wide range of commonly used services, APIs, databases, files, and data structures.
 
 #### Financial modelling
 
@@ -14,13 +14,14 @@ Profitbase Flow enables the office of finance within organizations to automate d
 -   Build unified data models for reporting and analysis
 
 #### Application integration
--	Connect disparate business applications through APIs and orchestrate operations across them.  
+-	Connect to business applications through GraphQL or regular HTTP APIs.  
+-   Orchestrate operations and move data across systems.
 
 #### Automate digital processes
 
 -	Build and run complex digital business processes using "boxes and arrows". Write code when you have to - or want to.
 -	Automate manual tasks.
--	Monitor and respond to events in business systems.
+-	Monitor and respond to events.
 
 #### Build business rules engines
 
