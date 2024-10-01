@@ -6,6 +6,10 @@ Use this action if you need a list of all the object names in a Bucket. If you o
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/bucket3.png)
 
+## Returns
+[List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1)<[string](https://learn.microsoft.com/en-us/dotnet/api/system.string)> containing S3 object names.
+
+
 ## Properties
 
 | Name                      | Type     | Description                                                                                 |
@@ -14,11 +18,7 @@ Use this action if you need a list of all the object names in a Bucket. If you o
 | Connection                | Required | Access key id, access key secret, bucket name and region connecting to an Amazon S3 bucket. |
 | Object name prefix filter | Optional | Prefix filter for object names. **Note!** The prefix is case sensitive.                     |
 | Result variable name      | Required | The name of the Flow variable that contains the list of the objects names.                  |
-| Description               | Optional |  Additional notes or comments about the action or configuration. |
-
-<br/>
-
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/bucket2.png)
+| Description               | Optional | Additional notes or comments about the action or configuration. |
 
 <br/>
 
