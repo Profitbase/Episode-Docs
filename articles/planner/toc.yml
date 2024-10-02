@@ -5,6 +5,8 @@
   items:
   - name: Common functionality
     href: getting-started/common-functionality.md
+  - name: Data import best practises
+    href: getting-started/data-import-best-practises.md
 - name: Modules
   href: modules/toc.yml
 - name: Workbooks
