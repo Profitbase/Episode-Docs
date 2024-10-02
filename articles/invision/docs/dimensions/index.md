@@ -1,8 +1,6 @@
 # Dimensions
 
-Dimensions lets you define hierarchical data structures which can be used in filters and reporting, both within Profitbase InVision, and in 3rd party tools such as Power BI.  
-Dimension can have any number of levels, and each level has an id, name, and optional translations for different languages.  
-Dimension can also have properties, which is a way to define “features” of dimension members (for example, weight, color, length, etc.). 
+Dimensions allow you to define hierarchical data structures that can be used for filtering and reporting, both within Profitbase InVision and in third-party tools like Power BI. They can have multiple levels, each with an ID, name, and optional translations for different languages. Additionally, dimensions can include properties, which represent attributes of dimension members, such as weight, color, or length.
 
 Dimensions are always stored as **wide** tables in the database, but you can **edit** them as parent-child hierarchies in the dimension editor. 
 
@@ -102,9 +100,15 @@ This option is typically used when you are using the dimension as a source for a
 
 <br/>
 
-## Options / Dimension Composition
+## Options / Composition
 
-Go to [Dimension Composition](dimcomposition.md).
+Go to [Dimension composition](dimcomposition.md).
+
+<br/>
+
+## Options / Post publish actions
+
+ Go to [Post publish actions](post-publish-actions.md).
 
 <br/>
 
@@ -188,12 +192,6 @@ When you publish a dimension, it will always be published to the Solution which 
 
 <br/>
 
-### See Also
-
-- [How to's](howto.md)
-
-<br/>
-
 ### Videos
 
 - [Dimensions](../../videos/dimensions.md)
@@ -201,7 +199,9 @@ When you publish a dimension, it will always be published to the Solution which 
 - [Dimension Composition](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Dimension%20Composition.mp4)
 - [Create and Display Dimension](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Create%20and%20display%20dimension.mp4)
 - [Create a Time Dimension](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Creating%20a%20Time%20Dimension.mp4)
-
+- [Automating Import of Data to Dimension](https://profitbasedocs.blob.core.windows.net/videos/Automating%20Import%20of%20Data%20to%20Dimension.mp4)
+- [Automating Import of the Primary Dimension](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Import%20Primary%20Dimension.mp4)
 <br/>
+
 
 

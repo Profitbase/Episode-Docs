@@ -1,8 +1,13 @@
 
-[!INCLUDE [Import Data to Dimension](../../../flow/actions/profitbase-invision/import-data-to-dimension.md)]
+# Import data to dimension
+
+The preferred way to import data to a dimension is using the [Import data to dimension](/articles/flow/actions/profitbase-invision/import-data-to-dimension.md) action in Flow.
 
 
-# Legacy Process: Automating Import of Data to Dimensions
+### Import of Data to Dimensions using Dataflow (Legacy)
+
+> [!IMPORTANT]
+> Importing data to dimensions using Dataflows is being deprecated. Use the [Import data to dimension](/articles/flow/actions/profitbase-invision/import-data-to-dimension.md) action in Flow instead.
 
 You can import data to dimensions through Dataflows and staging tables. 
 

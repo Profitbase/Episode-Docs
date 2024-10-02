@@ -30,7 +30,7 @@ Read about the **key features** of **Profitbase InVision**. Check out the follow
             <li><a href="dataflows.md">Data Flows</a></li>
             <li><a href="datapool.md">Data Pool</a></li>
             <li><a href="datastores.md">Data Stores</a></li>
-            <li><a href="dimensions.md">Dimensions</a></li>
+            <li><a href="dimensions/index.md">Dimensions</a></li>
             <li><a href="directives.md">Directives</a></li>
             <li><a href="filestorage.md">File Storage</a></li>
             <li><a href="filters.md">Filters</a></li>

@@ -46,7 +46,7 @@ The name of the Compound View can consist of characters from **a-z/A-Z**, number
 
 ## Synonym
 
-A synonym can be applied to [Data Store](datastores.md), [Dimensions](dimensions.md) (linked and local.md), [Tables](tables.md), and [View](views.md).
+A synonym can be applied to [Data Store](datastores.md), [Dimensions](./dimensions/index.md) (linked and local.md), [Tables](tables.md), and [View](views.md).
 
 Synonyms are using the Microsoft SQL Server synonym functionality with some additions.
 

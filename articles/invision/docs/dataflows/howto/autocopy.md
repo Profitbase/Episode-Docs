@@ -2,7 +2,7 @@
 
 ## Link to the video
 
-Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Import%20Primary%20Dimension.mp4) you will find video that shows how to automate import of the primary dimension. [Here](../../dimensions.md) you will find [Documentation](../../dimensions.md).
+Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Import%20Primary%20Dimension.mp4), you will find video that shows how to automate import of the primary dimension. Read more about dimensions [here](../../dimensions/index.md).
 <br/>
 
 
