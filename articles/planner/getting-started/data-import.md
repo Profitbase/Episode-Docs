@@ -17,6 +17,11 @@ This document describes the process of importing data into Profitbase Planner fr
   - Example transactions: gltF001202402.csv
   - Example opening balances: gloF001202401.csv
 
+## Dimension files
+
+- For smaller (less than 10k rows) dimensions we usually just update all the rows every time.
+- For larger dimensions it can we beneficial to see if it can be imported incrementally.
+
 ## Validate the file before attempting to import
 
 The easiest way to validate the CSV file is downloading the file and opening it in Visual Studio Code with the Rainbow CSV extension installed.
