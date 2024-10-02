@@ -8,10 +8,10 @@ Please note that any non-visual characters such as as carriage return, line feed
 
 | Dimension    | Mandatory | Comment  |
 | :---         | :---:    | :---     |
-| [Account](#account-dimension-details)      | Mandatory | |
-| [Currency](#currency-dimension-details)     | Mandatory | |
-| [Department](#department-dimension-details)   | Mandatory | |
-| Legal Entity | Mandatory | |
+| [Account](#account-details)      | Mandatory | |
+| [Currency](#currency-details)     | Mandatory | |
+| [Department](#department-details)   | Mandatory | |
+| [Legal Entity](#legalentity-details) | Mandatory | |
 | Activity     | Optional  | |
 | Asset Group  | Optional | |
 | Dim1         | Optional | |
@@ -41,7 +41,7 @@ Please note that any non-visual characters such as as carriage return, line feed
 | Report Setup | Mandatory | |
 | Time | Mandatory | Usually generated inside the solution.  |
 
-## Account Dimension Details
+## Account Details
 
 This should be the common / corporate charter of accounts.
 
@@ -54,14 +54,14 @@ This should be the common / corporate charter of accounts.
 | AccTypeID | Grouping for Profit & Loss and Balance accounts | Mandatory | Valid values are PL and BAL. |
 | AllowInput | Marks the accounts that will be allowed plan input | Mandatory | Valid values are 1 and 0. |
 
-## Currency Dimension Details
+## Currency Details
 
 | Column Name    | Description | Mandatory  | Comment |
 | :--- | :--- | :--- | :--- |
 | ID | ID for the Currency | Mandatory | Must be unique. |
 | Name | Usually the same as ID for currency | Mandatory | |
 
-## Department Dimension Details
+## Department Details
 
 Please note that the LegalEntityIDs should be different from the DepartmentIDs. If such cases of equality exist, the best practice would be to prefix the source DepartmentIDs with LegalEntityID before making use of them in Planner. For example, if both a LegalEntityID and a DepartmentID equals ‘pro’, best practice would be to rename the DepartmentID to ‘pro.pro’ thus making it unique.
 
@@ -73,3 +73,14 @@ It is important that DepartmentIDs of the dimension corresponds to the IDs used 
 | Name | Name for the Department | Mandatory | |
 | ParentID | ID for the parent node | Optional | Must be a valid ID or NULL. Any ID with ParentID = NULL is placed at the root level. |
 | LegalEntityID | ID for the Legal Entity that the department belongs to. | Mandatory | All departments must be tagged with a valid LegalEntityID. |
+
+## Legal Entity Details
+
+| Column Name    | Description | Mandatory  | Comment |
+| :--- | :--- | :--- | :--- |
+| ID | ID for the Legal Entity | Mandatory | |
+| Name | Name for the Legal Entity | Mandatory | |
+| ParentID | ID for the parent node | Optional | Must be a valid ID or NULL. Any ID with ParentID = NULL is placed at the root level |
+| FunctionalCurrencyID | Home currency for this Legal Entity | Mandatory | |
+| OperationTypeID | Type of Legal Entity | Mandatory | Valid options are Main and Elimination. |
+| DefaultDepartmentID | Default department for the Legal Entity | Mandatory | Used for situations where a department is not normally given, such as opening balances. |
