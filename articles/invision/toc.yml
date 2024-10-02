@@ -14,19 +14,19 @@
         items:
         - name: Structuring a Solution
           href: docs/bestpractice/structuringsolution.md
-      - name: Data flow items
+      - name: Dataflow items
         href: docs/dataflowitems/toc.yml
-      - name: Data flows
+      - name: Dataflows
         href: docs/dataflows/toc.yml
       - name: Data pool
         href: docs/datapool.md
-      - name: Data stores
+      - name: Data Stores
         href: docs/datastores/toc.yml
       - name: Dimensions
         href: docs/dimensions/toc.yml
       - name: Directives
         href: docs/directives/toc.yml
-      - name: File storage
+      - name: File Storage
         href: docs/filestorage/toc.yml
       - name: Filters
         href: docs/filters/toc.yml
@@ -36,13 +36,13 @@
         href: docs/forms/toc.yml
       - name: Header
         href: docs/header/toc.yml
-      - name: Home page
+      - name: Homepage
         href: docs/homepage.md
         items:
         - name: How to's
           href: docs/homepage/howto.md
           items:
-          - name: How to set up workbook as a home page
+          - name: How to set up workbook as a homepage
             href: docs/homepage/howto/homepage.md
       - name: Javascript
         href: docs/javascript.md
@@ -54,9 +54,9 @@
         href: docs/powershell/toc.yml
       - name: Solution variables
         href: docs/solution-variables.md
-      - name: SQL reports
+      - name: SQL Reports
         href: docs/sqlreports/toc.yml
-      - name: SQL scripts
+      - name: SQL Scripts
         href: docs/sqlscripts/toc.yml
       - name: Stored Procedures
         href: docs/stored-procedures.md
@@ -64,7 +64,7 @@
         href: docs/systemviews.md
       - name: Tables
         href: docs/tables/toc.yml
-      - name: Table view
+      - name: TableView
         href: docs/tableview/toc.yml
       - name: Time frame
         href: docs/timeframe.md
@@ -80,7 +80,7 @@
         href: docs/troubleshooting.md
       - name: Views
         href: docs/views.md
-      - name: Web functions
+      - name: Web Functions
         href: docs/webfunctions/toc.yml
       - name: Web service APIs
         href: docs/webserviceapis.md
@@ -95,7 +95,7 @@
         href: docs/workbooks/toc.yml
       - name: Workflow
         href: docs/workflow/toc.yml
-      - name: Work process
+      - name: Work Process
         href: docs/workprocess/toc.yml
       - name: Worksheets
         href: docs/worksheets/toc.yml
