@@ -4,7 +4,7 @@
 ## Link to the video
 
 Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Dimension%20Composition.mp4) you will find a video that shows how to create a Composite Dimension.  
-Read more about defining dimensions [here](../../dimensions.md).
+Read more about defining dimensions [here](../index.md).
 
 <br/>
 

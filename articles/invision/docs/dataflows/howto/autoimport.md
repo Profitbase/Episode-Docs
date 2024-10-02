@@ -3,7 +3,7 @@
 
 ## Link to the video
 
-Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Automating%20Import%20of%20Data%20to%20Dimension.mp4) you will find video that shows how to automate import of data to dimension. [Here](../../dimensions.md) you will find [Documentation](../../dimensions.md).
+Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Automating%20Import%20of%20Data%20to%20Dimension.mp4) you will find video that shows how to automate import of data to dimension. Read more about dimensions [here](../../dimensions/index.md).
 <br/>
 
 

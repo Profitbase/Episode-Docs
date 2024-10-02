@@ -14,7 +14,7 @@ The contents of the Worksheet displayed to a user can be restricted by defining 
 
 ## Creating a Worksheet
 
-To create a Worksheet, right-click a Data Store in the Solution Explorer and select "New Worksheet". The newly created Worksheet will be bound to the Data Store, from which you can add columns and [dimensions](dimensions.md) when designing the layout of the sheet.
+To create a Worksheet, right-click a Data Store in the Solution Explorer and select "New Worksheet". The newly created Worksheet will be bound to the Data Store, from which you can add columns and [dimensions](./dimensions/index.md) when designing the layout of the sheet.
 <br/>
 
 ## Adding columns

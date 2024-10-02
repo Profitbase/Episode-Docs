@@ -34,13 +34,13 @@
 
 
 ## Automating Import of Data to Dimension
-[Documentation](../docs/dimensions.md)
+[Documentation](../docs/dimensions/index.md)
 
 > [!Video https://profitbasedocs.blob.core.windows.net/videos/Automating%20Import%20of%20Data%20to%20Dimension.mp4]
 <br/>
 
 ## Automating Import of the Primary Dimension
-[Documentation](../docs/dimensions.md)
+[Documentation](../docs/dimensions/index.md)
 
 > [!Video https://profitbasedocs.blob.core.windows.net/videos/Dimension%20-%20Import%20Primary%20Dimension.mp4]
 <br/>
