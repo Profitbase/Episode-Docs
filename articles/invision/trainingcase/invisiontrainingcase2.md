@@ -95,8 +95,8 @@ Using this simple example, we want to show you how the Invision LOW CODE can be 
 
 <br/>
 
-> In this section you will find instruction on how to create a [Dimension](../docs/dimensions.md).  
-> See also [Dimension Videos](../videos/dimensions.md) and [step by step documentation](../docs/dimensions/howto.md).
+> In this section you will find instruction on how to create a [Dimension](../docs/dimensions/index.md).  
+> See also [Dimension Videos](../videos/dimensions.md) and [step by step documentation](../docs/dimensions/howto/index.md).
 
 <br/>
 

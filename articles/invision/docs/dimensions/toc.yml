@@ -1,5 +1,5 @@
         - name: Overview
-          href: ../dimensions.md
+          href: index.md
         - name: How to's
           href: howto/index.md
           items:

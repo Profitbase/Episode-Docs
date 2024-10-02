@@ -87,7 +87,7 @@ You compose a dimension by adding levels and picking members from other dimensio
 
 ## See Also
 
-* [Dimension](../../dimensions.md)
+* [Dimension](../../dimensions/index.md)
 * [How To use Dimension Editor](../../dimensions/howto/dimeditor.md)
   
 <br/>

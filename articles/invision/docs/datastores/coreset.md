@@ -23,7 +23,7 @@ For example, suppose you have the following 2 rows in the [Data Store](../datast
 <br/>
 
 
-Next, you set up the Core Set feature to include the Account and Product [dimensions](../dimensions.md). The Account Dimension contains accounts 3000 and 3001, while the Product Dimension contains products PY-9983, PY-9975, and PY-9900.
+Next, you set up the Core Set feature to include the Account and Product [dimensions](../dimensions/index.md). The Account Dimension contains accounts 3000 and 3001, while the Product Dimension contains products PY-9983, PY-9975, and PY-9900.
 
 After running a data update (or reload), the Data Store will contain the following rows:
 <br/>

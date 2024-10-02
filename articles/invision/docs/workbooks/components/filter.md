@@ -4,7 +4,7 @@ Filters are components used for setting the data context for Settings, [Workshee
 
 Once a [Filter](filter.md) is defined, it can be used by all data context-aware components in a Solution by binding the Filter to a property of the component.
 
-A Filter is defined as a reference to table resource ([Dimension](../../dimensions.md), Fact, Setting, [Data Store](../../datastores.md), or a [View](../../views.md)) and by a configuration describing how to read data from the table resource.
+A Filter is defined as a reference to table resource ([Dimension](../../dimensions/index.md), Fact, Setting, [Data Store](../../datastores.md), or a [View](../../views.md)) and by a configuration describing how to read data from the table resource.
 <br/>
 
 >Place the selected filter in the UI by dragging and dropping it from the Toolbox in Workbook designer.
