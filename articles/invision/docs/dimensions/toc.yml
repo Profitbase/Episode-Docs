@@ -15,6 +15,8 @@
             href: howto/timedim.md
           - name: How to configure translation of dimension name
             href: howto/transl.md
+          - name: Set default data for new dimension members
+            href: howto/set-default-data-for-new-dimension-members.md
         - name: Automating import of data to dimensions
           href: dimautomating.md
         - name: Dimension composition
