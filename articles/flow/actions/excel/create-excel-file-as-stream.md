@@ -2,6 +2,9 @@
 
 Creates an Excel file from a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) or [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) and returns the result as a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream).
 
+
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/getDataReaderEx1.png)
+
 ## Returns
 
 Returns the Excel file as a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream)
