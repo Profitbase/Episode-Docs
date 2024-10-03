@@ -2,6 +2,7 @@
 
 Executes a query command in a Snowflake database which returns a single value.
 
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/snowflake-get-single-value.png)
 
 ## Properties
 
@@ -14,6 +15,10 @@ Executes a query command in a Snowflake database which returns a single value.
 | Result variable type | Optional  | Type of the variable.  |
 |Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description   | Optional | Additional notes or comments about the action or configuration. |
+
+## Returns
+
+Returns a .NET value of type as specified by `Result variable type`.
 
 ## Example: How to use parameters
 
@@ -35,7 +40,3 @@ Then, enclose the variable in curly brackets like with the `TableName` variable 
 -- We have declared a Flow variable named TableName and assigned a value to it in a previous action.
 SELECT Display_Name FROM {TableName} WHERE USER_ID = :UserId
 ```
-
-## Returns
-
-Returns a .NET value of type as specified by `Result variable type`.

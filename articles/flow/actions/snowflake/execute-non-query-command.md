@@ -5,6 +5,8 @@ Executes a SQL command in a Snowflake database, and returns the number of rows a
 > [!NOTE]
 > This action does not return the result of the executed query. It simply return the number of rows affected by the query.
 
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/snowflake-execute-command.png)
+
 ## Properties
 
 | Name                      | Type | Description                                                                       |
@@ -15,6 +17,10 @@ Executes a SQL command in a Snowflake database, and returns the number of rows a
 | Result variable name      | Optional  | The name of the variable containing the number of rows affected.                  |
 | Command timeout (sec)     | Optional  | The time limit for command execution before it times out. Default is 120 seconds. |
 | Description               | Optional  | Additional notes or comments about the action or configuration.                   |
+
+## Returns
+
+[Int32](https://learn.microsoft.com/en-us/dotnet/api/system.int32) The number of rows affected.
 
 ## Example: How to use parameters
 
@@ -35,7 +41,3 @@ Then, enclose the variable in curly brackets like with the `TableName` variable 
 -- We have declared a Flow variable named TableName and assigned a value to it in a previous action.
 SELECT Display_Name FROM {TableName} WHERE USER_ID = :UserId
 ```
-
-## Returns
-
-[Int32](https://learn.microsoft.com/en-us/dotnet/api/system.int32) The number of rows affected.
