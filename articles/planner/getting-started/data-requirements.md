@@ -11,7 +11,7 @@ Please note that any non-visual characters such as as carriage return, line feed
 | [Account](#account-details)      | Mandatory | |
 | [Currency](#currency-details)     | Mandatory | |
 | [Department](#department-details)   | Mandatory | |
-| [Legal Entity](#legalentity-details) | Mandatory | |
+| [Legal Entity](#legal-entity-details) | Mandatory | |
 | Activity     | Optional  | |
 | Asset Group  | Optional | |
 | Dim1         | Optional | |
