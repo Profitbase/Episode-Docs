@@ -2,7 +2,7 @@
 
 Inserts data into a Snowflake database from a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) or a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable).
 
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/snowflake-insert-data.png)
+![img](../../../../images/flow/snowflake-insert-data.png)
 
 ## Properties
 

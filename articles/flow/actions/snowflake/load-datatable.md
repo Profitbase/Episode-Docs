@@ -2,7 +2,7 @@
 
 Loads data from a Snowflake database into memory as a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) object.
 
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/snowflake-load-datatable.png)
+![img](../../../../images/flow/snowflake-load-datatable.png)
 
 ## Properties
 

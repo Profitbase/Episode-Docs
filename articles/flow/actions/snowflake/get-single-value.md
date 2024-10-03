@@ -2,7 +2,7 @@
 
 Executes a query command in a Snowflake database which returns a single value.
 
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/snowflake-get-single-value.png)
+![img](../../../../images/flow/snowflake-get-single-value.png)
 
 ## Properties
 
