@@ -1,6 +1,8 @@
-# Copy data
+# Copy Into
 
 Copies data from a source file in a Snowflake Stage into a destination table. Supported file types is CSV, Parguet and JSON.
+
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/snowflake-copy-data.png)
 
 ## Properties
 
@@ -15,6 +17,9 @@ Copies data from a source file in a Snowflake Stage into a destination table. Su
 | Result variable name | Optional | Name of the result variable containing the number of inserted rows. |
 | Description | Optional | Additional notes or comments about the action or configuration. |
 
+## Returns 
+
+Optional: [Int32](https://learn.microsoft.com/en-us/dotnet/api/system.int32) The number of rows affected/inserted.
 
 ## File format settings 
 
@@ -26,8 +31,7 @@ Copies data from a source file in a Snowflake Stage into a destination table. Su
 ### Options for Parquet files
 
 
-## Notes
-
+> [!NOTE]
 - The Stage must exist, and can be setup up to e.g. be an Microsoft Azure Blob storage or an Amazon S3 Bucket.
 - Parquet is not available yet due to date parsing issues.
 
