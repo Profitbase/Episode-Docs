@@ -6,6 +6,6 @@
 Learn about the cool new features, updates, and bug fixes.
 
 
-
-- [August 2024](changelog/changelog24_1.md)
+- [September 2024](changelog/changelog24_september.md)
+- [August 2024](changelog/changelog24_august.md)
 

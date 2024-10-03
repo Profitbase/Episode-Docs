@@ -43,6 +43,7 @@ We’ve just released version 2022.5 of InVision, our low-code platform to build
 
 ### See Also
 
+- [Change Log 2024.3](changelog24_3.md)
 - [Change Log 2024.2](changelog24_2.md)
 - [Change Log 2024.1](changelog24_1.md)
 - [Change Log 2023.7](changelog23_7.md)
