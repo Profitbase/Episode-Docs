@@ -5,7 +5,7 @@ Executes a SQL command in a Snowflake database, and returns the number of rows a
 > [!NOTE]
 > This action does not return the result of the executed query. It simply return the number of rows affected by the query.
 
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/snowflake-execute-command.png)
+![img](../../../../images/flow/snowflake-execute-command.png)
 
 ## Properties
 

@@ -25,7 +25,7 @@ A Snowflake connection consists of the following fields:
 (For a detaild documentation, click here)[https://github.com/snowflakedb/snowflake-connector-net/blob/master/doc/Connecting.md].
 
 ## Sample connection 
-![img](/images/flow/action-snowflake-connection.png)
+![img](../../../../images/flow/action-snowflake-connection.png)
 
 ## Custom connection string
 

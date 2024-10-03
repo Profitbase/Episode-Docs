@@ -9,6 +9,6 @@
 - name: "Insert Data"
   href: "insert-data.md"
 - name: "Copy Into"
-  href: "copy-data.md"  
+  href: "copy-into.md"
 - name: "Connecting"
   href: "connecting-to-snowflake.md"
