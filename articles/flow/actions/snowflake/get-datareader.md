@@ -1,6 +1,8 @@
 # Get DataReader
 
-Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqldatareader) for reading a forward-only stream or rows from a Snowflake database.
+Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqldatareader) for reading a forward-only stream of rows from a Snowflake database.
+
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/snowflake-get-datareader.png)
 
 ## Properties
 
@@ -12,7 +14,6 @@ Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data
 | Reader variable name | Optional  | Name of the variable.  |
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description   | Optional | Additional notes or comments about the action or configuration. |
-
 
 ## Returns
 
