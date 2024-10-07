@@ -13,6 +13,14 @@ This package provide a datamart to share data between EPM applications and exter
 - [EPM Datamart 5.3.2](#epm-datamart-532)
 - [EPM Datamart 5.3.0](#epm-datamart-530)
 
+## Unreleased
+
+**Changes:**
+
+**Fixes:**
+
+- Limit file upload size for Data Import/Export to 100 mb (#1804)
+
 ## EPM Datamart 5.4.0
 
 **Changes:**
@@ -32,14 +40,16 @@ This package provide a datamart to share data between EPM applications and exter
 - A new target "FINANCE_ACTUAL" has been created to make it easier and more efficient to import finance actual data ( https://support.profitbase.com/solutions/planner/-/issues/1624).
 
 Data is imported as a slice of data for some or all legal entities and some or all fiscal periods.
-This will make it faster to do incremental data loading by: 
-  - Replace imported fiscal periods where imported fiscal periods determined by filter on source or CSV file(s) content
-  - Replace imported or all legal entity fiscal periods loaded
-  - From Operations this load is now compleded in one step (where pbTransdataActual and ReportAccountByMonthActual is updated in same operation).
+This will make it faster to do incremental data loading by:
+
+- Replace imported fiscal periods where imported fiscal periods determined by filter on source or CSV file(s) content.
+- Replace imported or all legal entity fiscal periods loaded
+- From Operations this load is now compleded in one step (where pbTransdataActual and ReportAccountByMonthActual is updated in same operation).
 
 This require customers to ensure that finance actual data is not loaded to both pbTransdataHistory and FINANCE_ACTUAL (table pbTransdataActual).
 
-Note that a new mandatory column, FiscalPeriod, must be mapped for this to work. 
+Note that a new mandatory column, FiscalPeriod, must be mapped for this to work.
+
 - Data Import (Azure) greatly increased performance.
 - Data Import - Azure method - Add support for more complex SQL expressions. Was previously limited to simple "Linq" expressions. Now supports more advanced SQL. ( <https://support.profitbase.com/solutions/planner/-/issues/1412>)
 - Data Import - File Cleaning option ( <https://support.profitbase.com/solutions/planner/-/issues/1620>)
