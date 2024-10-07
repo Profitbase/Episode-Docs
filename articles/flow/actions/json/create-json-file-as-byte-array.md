@@ -10,7 +10,7 @@ Creates a JSON file from a [string](https://learn.microsoft.com/en-us/dotnet/api
 
 ## Returns
 
-Returns the JSON file serialized as a [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays)
+Returns the JSON file serialized as a [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays).
 
 <br/>
 
