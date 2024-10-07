@@ -17,7 +17,8 @@ This package provide the financial planning function and can be organized in pro
 
 **Fixes:**
 
-- In ReportLineSetup the column IncludeAccountsExp had the wrong datatype set. This caused report publication to fail when a lot of accounts where mapped.
+- Limit file types allowed (.doc,.docx,.gif,.jpeg,.jpg,.pdf,.png,.ppt,.pptx,.txt,.xls,.xlsx) to upload and upload size to 100 mb (#1806)
+- In ReportLineSetup the column IncludeAccountsExp had the wrong datatype set. This caused report publication to fail when a lot of accounts where mapped. (#1736)
 
 ## EPM Planner 5.5.1
 

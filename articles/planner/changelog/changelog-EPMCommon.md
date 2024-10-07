@@ -13,7 +13,11 @@ This package provide the users and access management, work process and tasks cap
 
 ## Unreleased
 
-- Nothing yet
+**Changes:**
+
+**Fixes:**
+
+- Limit file types allowed (.doc,.docx,.gif,.jpeg,.jpg,.pdf,.png,.ppt,.pptx,.txt,.xls,.xlsx) to upload and upload size to 100 mb (#1805)
 
 ## EPM Common 5.4.0
 
