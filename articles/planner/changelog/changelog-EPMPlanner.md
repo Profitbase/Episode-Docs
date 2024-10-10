@@ -6,6 +6,8 @@ This package provide the financial planning function and can be organized in pro
 
 ## EPM Planner Versions
 
+- [EPM Planner 6.0.1](#epm-planner-601) - Released 2024.09.27
+- [EPM Planner 6.0.0](#epm-planner-600) - Released 2024.08.29
 - [EPM Planner 5.5.1](#epm-planner-551) - Released 2024.04.24
 - [EPM Planner 5.5.0](#epm-planner-550) - Released 2024.02.21
 - [EPM Planner 5.4.1](#epm-planner-541)
@@ -18,7 +20,69 @@ This package provide the financial planning function and can be organized in pro
 **Fixes:**
 
 - Limit file types allowed (.doc,.docx,.gif,.jpeg,.jpg,.pdf,.png,.ppt,.pptx,.txt,.xls,.xlsx) to upload and upload size to 100 mb (#1806)
-- In ReportLineSetup the column IncludeAccountsExp had the wrong datatype set. This caused report publication to fail when a lot of accounts where mapped. (#1736)
+
+## EPM Planner 6.0.1
+
+**Changes:**
+
+- Plan overview - ability to click a sum line and still go to an input module (#1784)
+- Personell module - adding a new employee - FTEs and headcount is not updated when navigating to FTE and headcount tab (#1772)
+- Driver based - make calculated measures aware of Historic override formula (#1755)
+
+**Fixes:**
+
+- Driver based modelling - save distribution keys may render a key violation error (#1786)
+- Flow transaction tables not partitioned after a version deployment (#1782)
+- Driver based flow - incorrect delete batch size setting (#1776)
+- Driver based workbook - calculations not performed when saving from driver page in a multi department context when flow is activated (#1780)
+- Flow pipelines do not generate employer tax on generated pension cost (#1767)
+- Script fails as query optimizer runs out of resources due to too complex queries (#1745)
+- Language code nn causes error when loading account module (#1758)
+- Headcount for year 2 not visible in long term in Personnel module (#1766)
+- Delete Driver based module does not remove transaction data from flow tables (#1771)
+- Operation "Empty base data" does not empty flow transaction tables (#1770)
+- Depreciation on Fixed Assets does not show up in Plan overview (#1769)
+- Flow: Error message when deploying new version (#1762)
+- Flow pipelines do not remove transaction data when all input rows for given department are removed (#1765)
+- Driver based - historic numbers generated for hidden dimensions (#1750)
+- Driver based - not able to drag cell values (#1787)
+- Personnel - incorrect account mapping for salary when more than one salary account is used (#1789)
+
+## EPM Planner 6.0.0
+
+### Breaking Changes
+
+Planner 6.0.0 supports flow based transaction pipelines (optional). If used, the following breaking changes apply:
+
+- The use of condition expressions in auto transaction configurations is no longer supported. Separate columns for period based condition exists to support previous expressions such as month() == 12. Manual
+configuration is required to migrate expressions to new condition columns.
+- The use of custom pre- / post- transaction pipeline scripts require manual configuration in flows. Consult the "Planner customization patterns" document for details.
+
+**Changes:**
+
+- Performance improvement for the transaction processing (save in input modules). (#1680)
+- Driver based: the account details report is no longer placed in the main screen of the module but is accessible as a pop-up using the $ sign in relevant rows - $ in the sum row will display the account details report for all rows in context.(#1701)
+-The Back button is removed from all input modules (#1640)
+- Support for company specific planning processes (#1669)
+- Driver based - offset calculations requires multipls recalculations if one or more referenced measures are themselves calculated measures (#1739)
+- Allow for more space in data-dense pages (#1557)
+- Increaese filter widths to 352 pixles on right filter and 256 on left filter for Plan Overview and Finance Reports (#1690)
+- Allocation - increase precission and scale for keys (factors) (#1723)
+- Update input modules with legal entity from dimension (#1693)
+- Navigation: Opening modules from different versions, loads exsisting page in browser (#1685)
+- Historical reference columns - introduce relative date expressions to improve rolling forecast automation (#1684)
+- L12M column in account details report (#1681)
+- Personnel: FTE and HC columns are not configurable with respect to using override columns for employer tax, etc (#1642)
+- Performance improvement - worksheet load (#1679)
+
+**Fixes:**
+
+- Plan overview -> account details. Incorrect format configuration used (#1738)
+- ReportLineSetup wrong datatype in IncludeAccountsExp (#1736)
+- Account / Personnel - not able to drag cell values (#1735)
+- Discrepancies in Historical Reference Columns when using previous versions as historical reference (#1672)
+- Plan overview - historic columns not currency converted on aggregate levels if dimensional columns are null (historic data source) (#1629)
+- Driver based - change dimensionality gives error message if a specific row context is chosen using the $ row-icon (#1628)
 
 ## EPM Planner 5.5.1
 
