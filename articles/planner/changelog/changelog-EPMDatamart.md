@@ -6,6 +6,7 @@ This package provide a datamart to share data between EPM applications and exter
 
 ## EPM Datamart Versions
 
+- [EPM Datamart 5.5.0](#epm-datamart-550) - Released 
 - [EPM Datamart 5.4.0](#epm-datamart-540) - Released 2024.02.21
 - [EPM Datamart 5.3.6](#epm-datamart-536)
 - [EPM Datamart 5.3.4](#epm-datamart-534)
@@ -21,23 +22,39 @@ This package provide a datamart to share data between EPM applications and exter
 
 - Limit file upload size for Data Import/Export to 100 mb (#1804)
 
+## EPM Datamart 5.5.0
+
+**Changes:**
+
+- New workbook "System Configuration": (#1580)
+  - Configure which database objects to expose to the data import and export modules.
+  - Option to give friendly names and descriptions to each object.
+  - Configure Instance settings in UI for Datamart and Common (previously done by running scripts in designer)
+  - Azure Function URLs visible and editable in UI.
+  - New import option can be configured per import object: "Incremental File Reload", enables a secondary file prefix to specify periods to import based on file name patterns YYYY or YYYYMM. (#1690)
+- Data Export: new option to create multiple files, by specifying a maximum file size. If exceeded, multiple files will be created. Each file will have a suffix [FileName]_[file number].csv (#1617)
+- Data Import: new options for "custom" merge method. Enables abort copying data from temporary table to final destination if row count decreases or is 0 (#1655)
+- Data Import: Warn user when changing fields that trigger autosave. A (modal) confirm box implemented when changing destination for import or connection. (#1689)
+- Currency Exchange Rates Monthly Override decimals - Changed format to 5 decimals. (#1662)
+- Azure Functions upgraded with newest packages and upgraded .NET framework to 8.0. Greatly improves performance and stability. (#1707)
+
 ## EPM Datamart 5.4.0
 
 **Changes:**
 
-- New Config setting to set Azure Hosted or on Premise ( <https://support.profitbase.com/solutions/planner/-/issues/1621>)
-- Data Import - Temp Table Name read-only. ( <https://support.profitbase.com/solutions/planner/-/issues/1600>)
+- New Config setting to set Azure Hosted or on Premise (#1621)
+- Data Import - Temp Table Name read-only. (#1600)
   - Reduces the chance of error by multiple rulesets using the same temp table (may arise from copying a ruleset, or user input using a common word such as "ledger").
   - Guarantees that it is unique per ruleset.
   - Makes maintenance and clean up easier (clean up improved in 5.4.0).
   - One field less for the user to worry about.
   - Still readable if user needs it for debug purposes.
 - Data Import Destinations dropdown sorting updated to show most relevant tables first.
-- Data Import form disabled while saving / loading to prevent input while saving ( <https://support.profitbase.com/solutions/planner/-/issues/1445>)
+- Data Import form disabled while saving / loading to prevent input while saving (#1445)
 
 **Enhancement:**
 
-- A new target "FINANCE_ACTUAL" has been created to make it easier and more efficient to import finance actual data ( https://support.profitbase.com/solutions/planner/-/issues/1624).
+- A new target "FINANCE_ACTUAL" has been created to make it easier and more efficient to import finance actual data (#1624).
 
 Data is imported as a slice of data for some or all legal entities and some or all fiscal periods.
 This will make it faster to do incremental data loading by:
@@ -51,32 +68,32 @@ This require customers to ensure that finance actual data is not loaded to both 
 Note that a new mandatory column, FiscalPeriod, must be mapped for this to work.
 
 - Data Import (Azure) greatly increased performance.
-- Data Import - Azure method - Add support for more complex SQL expressions. Was previously limited to simple "Linq" expressions. Now supports more advanced SQL. ( <https://support.profitbase.com/solutions/planner/-/issues/1412>)
-- Data Import - File Cleaning option ( <https://support.profitbase.com/solutions/planner/-/issues/1620>)
+- Data Import - Azure method - Add support for more complex SQL expressions. Was previously limited to simple "Linq" expressions. Now supports more advanced SQL. (#1412)
+- Data Import - File Cleaning option (#1620)
   - File Cleaning is now an option you can set per ruleset. If on, the source files will be overwritten by a cleaning routine.
   - This removes some ASCII symbols, whitespace at end of file, etc..
-  - Deprecates this issue: <https://support.profitbase.com/solutions/planner/-/issues/1575>
-- Add custom File Import Destinations ( <https://support.profitbase.com/solutions/planner/-/issues/1608>)
+  - Deprecates this issue: #1575
+- Add custom File Import Destinations (#1608)
 - Add Operation Launcher in Data Import / Export. It is now possible to configure Operations to be launchable from Data Import / Export.
 - Data Import improved auto cast for import of empty values into numeric fields.
-- Data Import Column Mapping (AutoCast) - Replace decimal separators (space or apostrophe) from csv with nothing for numeric fields. ( <https://support.profitbase.com/solutions/planner/-/issues/1572>)
+- Data Import Column Mapping (AutoCast) - Replace decimal separators (space or apostrophe) from csv with nothing for numeric fields. (#1572)
 
   (Reduce further errors converting nvarchar to numeric problems)
-- Data Import Auto Cast for column mapping improved to better handle decimals ( <https://support.profitbase.com/solutions/planner/-/issues/1587>)
+- Data Import Auto Cast for column mapping improved to better handle decimals (#1587)
   - Simpler formula that will handle more scenarios, whether using SQL import or CSV import.
 
     And will help seeing less of the annoying "Error converting data type varchar to numeric. "
-- Data Import Column mapping - More space for SQL formulas ( <https://support.profitbase.com/solutions/planner/-/issues/1586>)
+- Data Import Column mapping - More space for SQL formulas (#1586)
 - Data Export performance increased. (Automatically fetches WorkProcessVersionID when ExportName is specified.)
-- Optimize and enable finance actual data import and enable for reporting ( <https://support.profitbase.com/solutions/planner/-/issues/1597>)
+- Optimize and enable finance actual data import and enable for reporting (#1597)
 
 **Bug fixes:**
 
-- Data Import run as operation ignores "Auto Archive" setting ( <https://support.profitbase.com/solutions/planner/-/issues/1619>)
-- Excel Export in DataMart Export (restored) ( <https://support.profitbase.com/solutions/planner/-/issues/1609>)
-- Timeout increased for Import jobs run from operations ( <https://support.profitbase.com/solutions/planner/-/issues/1583>)
-- Incorrect last modified date shown for destination in Data Import. ( <https://support.profitbase.com/solutions/planner/-/issues/1584>)
-- Currency exchange rates - not generated after 2028 ( <https://support.profitbase.com/solutions/planner/-/issues/1565>)
+- Data Import run as operation ignores "Auto Archive" setting (#1619)
+- Excel Export in DataMart Export (restored) (#1609)
+- Timeout increased for Import jobs run from operations (#1583)
+- Incorrect last modified date shown for destination in Data Import. (#1584)
+- Currency exchange rates - not generated after 2028 (#1565)
 - File Import of empty values into numeric fields now properly handled.
 
 ## EPM Datamart 5.3.6
@@ -86,22 +103,22 @@ Note that a new mandatory column, FiscalPeriod, must be mapped for this to work.
 Mostly affects instances hosted by Profitbase/Microsoft Azure (.biz domains):
 
 - Data Import Archive functionality restored.
-- Data Import Blank Rows handled (<https://support.profitbase.com/solutions/planner/-/issues/1488>)
-- Importing a large number of CSV files from Blob storage (<https://support.profitbase.com/solutions/planner/-/issues/1489>)
-- Data Export improved efficiency. (<https://support.profitbase.com/solutions/planner/-/issues/1471>)
+- Data Import Blank Rows handled (#1488)
+- Importing a large number of CSV files from Blob storage (#1489)
+- Data Export improved efficiency. (#1471)
 - Hosting environment for import export functions moved to more efficient deployment slot.
 
 ## EPM Datamart 5.3.4
 
 **Bug fixes:**
 
-- Import from Blob fails due to Azure Storage version being incompatible and mismatch in encryption of connection string sent to Azure Functions (<https://support.profitbase.com/solutions/planner/-/issues/1432>)
+- Import from Blob fails due to Azure Storage version being incompatible and mismatch in encryption of connection string sent to Azure Functions (#1432)
 
 ## EPM Datamart 5.3.3
 
 **Changes:**
 
-- <https://support.profitbase.com/solutions/planner/-/issues/1424>
+- #1424
 - Preview popups of temp data and destination data, increase displayed rows from 200 to 1000.
 - Client side filtering enabled for preview popups.
 - Added option of (server side) data filtering for those 1000 rows.
@@ -113,30 +130,30 @@ Mostly affects instances hosted by Profitbase/Microsoft Azure (.biz domains):
 
 **Bug fixes:**
 
-- Auto Cast bug fixed; caused wrong type to be used in some cases. (<https://support.profitbase.com/solutions/planner/-/issues/1421>)
-- 5.3.2 Datamart Column Mapping collation error.  (<https://support.profitbase.com/solutions/planner/-/issues/1414>)
-- 5.3.2 Datamart Data Import Error; New "EPM Assemblies". (<https://support.profitbase.com/solutions/planner/-/issues/1425>)
+- Auto Cast bug fixed; caused wrong type to be used in some cases. (#1421)
+- 5.3.2 Datamart Column Mapping collation error.  (#1414)
+- 5.3.2 Datamart Data Import Error; New "EPM Assemblies". (#1425)
 
 ## EPM Datamart 5.3.2
 
 **Changes:**
 
-- Added logging for import & export jobs. Available under the "..." menu. (<https://support.profitbase.com/solutions/planner/-/issues/1351>)
-- File Import: Improved handling of nullable and numeric fields (<https://support.profitbase.com/solutions/planner/-/issues/1353>)
-- File Import - New dropdown to explicitly specify the incoming date format. (<https://support.profitbase.com/solutions/planner/-/issues/1307>)
+- Added logging for import & export jobs. Available under the "..." menu. (#1351)
+- File Import: Improved handling of nullable and numeric fields (#1353)
+- File Import - New dropdown to explicitly specify the incoming date format. (#1307)
 
 **Bug fixes:**
 
-- File Import context menu not active. (<https://support.profitbase.com/solutions/planner/-/issues/1352>)
-- Fix for collation error in column mapping for data import.  (<https://support.profitbase.com/solutions/planner/-/issues/1376>)
+- File Import context menu not active. (#1352)
+- Fix for collation error in column mapping for data import.  (#1376)
 
 ## EPM Datamart 5.3.1
 
 **Bug fixes:**
 
-- Data Import fails when hosted by Profitbase and using SQL to SQL import - **Critical** (<https://support.profitbase.com/solutions/planner/-/issues/1354>)
-- Date Error popup on some client PCs when loading or saving import rulesets. (<https://support.profitbase.com/solutions/planner/-/issues/1350>)
-- Data Import / Export errors when hosted in offline setup(<https://support.profitbase.com/solutions/planner/-/issues/1358>)
+- Data Import fails when hosted by Profitbase and using SQL to SQL import - **Critical** (#1354)
+- Date Error popup on some client PCs when loading or saving import rulesets. (#1350)
+- Data Import / Export errors when hosted in offline setup(#1358)
 
 ## EPM Datamart 5.3.0
 
