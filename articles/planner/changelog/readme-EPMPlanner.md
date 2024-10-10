@@ -2,8 +2,76 @@
 
 ## Upgrade notes
 
+- [EPM Planner 6.0.0](#epm-planner-600)
 - [EPM Planner 5.5.0](#epm-planner-550)
 - [EPM Planner 5.4.1](#epm-planner-541)
+
+## EPM Planner 6.0.1
+
+Supports upgrade to Planner 6.0.1 from Planner 5.2.4 or newer versions (see note below).
+
+When upgrading to the next version after 6.0.1, upgrading from versions older than 5.3.0 will no longer be supported. It is therefore strongly recommended to keep your Planner version as up to date as possible.
+
+Requirements: Profitbase InVision platform version 2024.2 AND Profitbase Flow 1.2 and a Planner solution upgraded to 5.5.1 using the standard procedure
+
+**NOTE:** The solution you want to upgrade MUST be connected to Flow BEFORE you upgrade, contact Profitbase to make sure that that is the case or how to connect.
+
+**NOTE:** Planner 6.0.1 is currently not available for upgrade from the Profitbase store and has to be upgraded from file. Priority to be given to projects under implementation and existing solution with performance issues related to the transaction processing loop. It is required that the solution that you want to upgrade is upgraded to Planner 5.5.1 using the standard procedure beforehand and that you upgrade a single Planner version to 6.0.1 first.
+
+**NOTE:** Planner 6.0.1 has some breaking changes that may require you to make changes to your solution. This applies to:
+
+- The use of auto transaction condition expressions. This is no longer supported, however separate condition columns exist for defining period-based expressions to cater for old expressions such as month() == 12.
+- The use of transaction pipeline custom scripts: requires you to connect these manually in the pre-/post- custom sub flows that are available in the standard flows. Contact Profitbase for details and/or consult the latest version of the "Planner Customization Patterns" documentation).
+- Having switched to using flow pipelines, new PL transaction tables are used. This applies to pbTransdataPLSourcexyz, new tables suffixed with Flow. This may require you to alter custom logic.
+
+**Notes:**
+
+After upgrading to Planner 6.0.1, you can switch to using flow based transaction pipelines by:
+
+- Executing script "ActivateFlowPipelines"
+- Make a change (e.g. change a comment cell) in each of the distribution key settings for account, personnel and driver based and save. This can be done from the workbook Input settings and administration
+- Opening each of the associated flows from the InVison designer and execute them.
+- (it is possible to switch back to the traditional dataflow based pipelines by executing the script "DeActivateFlowPipelines" and thereafter executing the dataflow based transaction pipelines)
+
+**Involves packages:**
+
+- EPM Planner (Package upgraded to: 6.0.1)
+
+**Known issues:** [GitHub Milestone](https://github.com/Profitbase/Planner/milestone/65)
+
+## EPM Planner 6.0.0
+
+Supports upgrade to Planner 6.0.0 from Planner 5.5.1 (see note below).
+
+When upgrading to the next version after 6.0.0, upgrading from versions older than 5.2.4 will no longer be supported. It is therefore strongly recommended to keep your Planner version as up to date as possible.
+
+Requirements: Profitbase InVision platform version 2024.2 AND Profitbase Flow 1.0 and a Planner solution upgraded to 5.5.1 using the standard procedure
+
+**NOTE:** The solution you want to upgrade MUST be connected to Flow BEFORE you upgrade, contact Profitbase to make sure that that is the case or how to connect.
+
+**NOTE:** Planner 6.0.0 is currently not available for upgrade from the Profitbase store and has to be upgraded from file. Priority to be given to projects under implementation and existing solution with performance issues related to the transaction processing loop. It is required that the solution that you want to upgrade is upgraded to Planner 5.5.1 using the standard procedure beforehand and that you upgrade a single Planner version to 6.0.0 first.
+
+**NOTE:** Planner 6.0.0 has some breaking changes that may require you to make changes to your solution. This applies to:
+
+- The use of auto transaction condition expressions. This is no longer supported, however separate condition columns exist for defining period-based expressions to cater for old expressions such as month() == 12.
+- The use of transaction pipeline custom scripts: requires you to connect these manually in the pre-/post- custom sub flows that are available in the standard flows. Contact Profitbase for details and/or consult the latest version of the "Planner Customization Patterns" documentation).
+- Having switched to using flow pipelines, new PL transaction tables are used. This applies to pbTransdataPLSourcexyz, new tables suffixed with Flow. This may require you to alter custom logic.
+
+**NOTE:** Flow HR pipeline does not currently support long term planning. Support will be added in a later version.
+
+**Notes:**
+After upgrading to Planner 6.0.0, you can switch to using flow based transaction pipelines by:
+
+- Executing script "ActivateFlowPipelines"
+- Make a change (e.g. change a comment cell) in each of the distribution key settings for account, personnel and driver based and save. This can be done from the workbook Input settings and administration
+- Opening each of the associated flows from the InVison designer and execute them.
+- (it is possible to switch back to the traditional dataflow based pipelines by executing the script "DeActivateFlowPipelines" and thereafter executing the dataflow based transaction pipelines)
+
+**Involves packages:**
+
+- EPM Planner (Package upgraded to: 6.0.0)
+
+**Known issues:** [GitHub Milestone](https://github.com/Profitbase/Planner/milestone/64)
 
 ## EPM Planner 5.5.0
 

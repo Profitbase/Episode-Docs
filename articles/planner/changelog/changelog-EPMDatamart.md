@@ -6,7 +6,7 @@ This package provide a datamart to share data between EPM applications and exter
 
 ## EPM Datamart Versions
 
-- [EPM Datamart 5.5.0](#epm-datamart-550) - Released 
+- [EPM Datamart 5.5.0](#epm-datamart-550) - Released 2024.06.05
 - [EPM Datamart 5.4.0](#epm-datamart-540) - Released 2024.02.21
 - [EPM Datamart 5.3.6](#epm-datamart-536)
 - [EPM Datamart 5.3.4](#epm-datamart-534)
