@@ -1,4 +1,6 @@
 - name: REST API request
   href: rest-api-request.md
+- name: Create Data Pipeline
+  href: create-data-pipeline.md
 - name: Microsoft Fabric Connection
   href: microsoft-fabric-connection.md
