@@ -2,7 +2,7 @@
 
 Loads the contents of an Excel sheet into memory as a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable).
 
-![img](../../../../images/flow/excel-load-to-datatable.png)
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/read-excel-file-as-datatable.png)
 
 
 ## Properties
