@@ -83,7 +83,9 @@
     - name: "Execute PowerShell script"
       href: "powershell/execute-powershell-script.md"
     - name: "Execute long-running PowerShell script"
-      href: "powershell/execute-long-running-powershell-script.md"    
+      href: "powershell/execute-long-running-powershell-script.md"  
+- name: "Publish Dimension"
+  href: "publish-dimension.md" 
 - name: "SQL Script"
   items:
     - name: "Execute SQL Script"
