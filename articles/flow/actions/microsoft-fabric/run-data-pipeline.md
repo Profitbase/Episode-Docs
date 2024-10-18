@@ -16,6 +16,7 @@ This action will run a Data Pipeline and wait for it to complete before executin
 | Workspace     | Required | The Workspace that contains the Data Pipeline to run. You can specify the `id` of the Workspace by typing it into the editor, selecting a (string) variable, or selecting it from the list of Workspace displayed in the popup. |
 | Pipeline      | Required | The Data Pipeline to run. You can specify the `id` of the Data Pipeline by typing it into the editor, selecting a (string) variable, or selecting it from the list of Data Pipelines displayed in the popup.  |
 | Execution data    | Optional | Use this property to specify arguments if the Data Pipeline to run is parameterized.  |
+| Raise exception on failure | Optional | Specifies whether Flow should raise an exception if the Data Pipeline completes with status `Failed`. When an exception is raised, the Flow terminates with an error immediately. If this property is set to false, you will have to examine the `Status` property of the result (see below) yourself and determine what to do. |
 
 ## Returns
 This action returns a **DataPipelineRunCompleted** response with the following properties:
@@ -30,7 +31,9 @@ This action returns a **DataPipelineRunCompleted** response with the following p
 
 <br/>
 
-## Example
+## Example - Execution data
+
+Suppose you want to run a Data Pipeline that has a parameter named `secondsToWait`. This example shows the Execution data payload to use for specifying a 20 second wait.
 
 ```json
 {
