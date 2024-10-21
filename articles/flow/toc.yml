@@ -87,6 +87,8 @@
       href: actions/built-in/toc.yml
     - name: CSV
       href: actions/csv/toc.yml
+    - name: Databricks
+      href: actions/databricks/toc.yml
     - name: Dynamics 365
       href: actions/dynamics365/toc.yml
     - name: Excel
