@@ -41,3 +41,28 @@ var targetAccount = Lookups.AccountMappings.FirstOrDefault(map => map.AccountTyp
 Output.Add(AccountID: targetAccount, Amount: taxAmount, TransDate: input.TransDate);
 
 ```
+
+## Using FromDate  
+Data in Lookup tables such as finance settings is often related to date and time, for example tax periods, and interest payments. 
+
+By convention, when a Lookup table contains a column named `FromDate`, the result of a lookup will be filtered based on the dates in this column by limiting the result to only include matches for rows having a date _greater or equal_ to the date specified when calling `LookupTable.UseTimeframe(...)`.
+
+**To use FromDate as a condition in Lookup tables, you need to do the following:**
+1) Add the FromDate column as a `Data` column. _Note! It cannot be a Key column, even if it's part of the primary key. Key columns are matched by equality, which is not how FromDate should be evaluated._
+2) Set the current timeframe by calling `Lookups.UseTimeframe(...)` or `Lookups.MyTable.UseTimeframe(...)` in a Function. This must be done prior to doing a lookup as shown in the example below (You only need to call UseTimeframe when the date changes, not every time you want to do a lookup).
+
+
+### Example using FromDate
+```csharp
+public void Calculate(ForecastInput sourceTransRow)
+{
+    Lookups.UseContext(sourceTransRow);
+
+    // Call UseTimeframe to specify to Flow which date to use as a reference date when doing a lookup
+    Lookups.UseTimeframe(sourceTransRow.TransDate);
+
+    // Because Flow was told the reference date (by calling UseTimeframe) in the line above, 
+    // you now get back the price of the product applicable for sourceTransRow.TransDate 
+    var totalAmount = Lookups.ProductPriceByPeriod.Price * sourceTransRow.Qty;
+}
+```
