@@ -97,6 +97,8 @@
       href: actions/ftp/toc.yml
     - name: GitHub
       href: actions/github/toc.yml
+    - name: Google BigQuery
+      href: actions/google-bigquery/toc.yml
     - name: GraphQL request
       href: actions/graphql/toc.yml
     - name: HTTP
