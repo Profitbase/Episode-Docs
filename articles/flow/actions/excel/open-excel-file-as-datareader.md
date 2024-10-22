@@ -1,6 +1,6 @@
 # Open Excel file as DataReader
 
-Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) for reading a forward-only stream or rows from an Excel sheet.
+Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) for reading a forward-only stream of rows from an Excel sheet.
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/getDataReaderEx.png)
 
