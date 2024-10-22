@@ -1,2 +1,2 @@
-- name: "Read rows"
-  href: "read-rows.md"
+- name: "Read rows from Azure"
+  href: "azure-read-rows.md"
