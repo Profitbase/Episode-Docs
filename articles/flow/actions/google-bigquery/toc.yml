@@ -1,4 +1,4 @@
 - name: "Get DataReader"
-  href: "bigquery-get-datareader.md"
+  href: "get-datareader.md"
 - name: "Load to DataTable"
-  href: "bigquery-load-to-datatable.md"
+  href: "load-to-datatable.md"
