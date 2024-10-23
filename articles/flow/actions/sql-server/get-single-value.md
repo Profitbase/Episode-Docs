@@ -40,4 +40,4 @@ SELECT [Name] FROM {TableName} WHERE UserId = @UserId
 
 ## Returns
 
-Returns a .NET value of type as specified by `Result variable type`.
+Returns a .NET value of the type specified by `Result variable type`.

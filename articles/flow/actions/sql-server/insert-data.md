@@ -12,7 +12,7 @@ Inserts data into a SQL Server database from a [DataReader](https://learn.micros
 | Title           |           |                        |
 | Connection | Required   | The SQL Server connection. |
 | Source  | Required   |Select the source for data. |
-| Destination table   | Required   | Select or enter the name of the table to inert info. |
+| Destination table   | Required   | Select or enter the name of the table to insert info. |
 | Batch size   | Optional   | Enter batch size. |
 | Result variable name | Optional  | Name of the variable containing the number of rows affected.  |
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|

@@ -4,6 +4,10 @@ Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data
 
 ![img](../../../../images/flow/snowflake-get-datareader.png)
 
+## Returns
+
+[IDataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader)
+
 ## Properties
 
 | Name         | Type       | Description                                       |
@@ -15,6 +19,3 @@ Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description   | Optional | Additional notes or comments about the action or configuration. |
 
-## Returns
-
-[IDataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader)

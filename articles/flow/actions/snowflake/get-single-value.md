@@ -4,6 +4,10 @@ Executes a query command in a Snowflake database which returns a single value.
 
 ![img](../../../../images/flow/snowflake-get-single-value.png)
 
+## Returns
+
+Returns a .NET value of the type specified by `Result variable type`.
+
 ## Properties
 
 | Name         | Type       | Description                                       |
@@ -13,12 +17,10 @@ Executes a query command in a Snowflake database which returns a single value.
 | Expression and parameters   | Required      | The command to execute along with any parameters.   |
 | Result variable name | Optional  | Name of the variable.  |
 | Result variable type | Optional  | Type of the variable.  |
-|Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
+|Command timeout (seconds) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description   | Optional | Additional notes or comments about the action or configuration. |
 
-## Returns
 
-Returns a .NET value of type as specified by `Result variable type`.
 
 ## Example: How to use parameters
 

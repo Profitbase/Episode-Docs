@@ -3,7 +3,7 @@
 Executes a SQL command in a SQL Server database, and returns the number of rows affected by the query.
 
 > [!NOTE]
-> This action does not return the result of the executed query. It simply return the number of rows affected by the query.
+> This action does not return the result of the executed query. It simply returns the number of rows affected by the query.
 
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/execute-command.png)
@@ -17,7 +17,7 @@ Executes a SQL command in a SQL Server database, and returns the number of rows 
 | Title           |  Optional | The title or name of the command.        |
 | Connection         | Required   | The SQL Server connection. |
 |SQL expression and parameters   | Required      | The command to execute along with any parameters. |
-| Result variable name | Optional  | The name of the variable containing the number of rows affected.  |
+| Result variable name | Optional  | The name of the variable that will contain the number of rows affected.  |
 |Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.  |
 | Description   | Optional | Additional notes or comments about the action or configuration. |
 
