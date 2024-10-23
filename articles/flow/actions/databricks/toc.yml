@@ -1,2 +1,2 @@
-- name: "Read rows from Azure"
-  href: "azure-read-rows.md"
+- name: "Foreach batch"
+  href: "foreach-batch.md"
