@@ -1,3 +1,0 @@
-# Read rows from Azure
-
-Coming soon...
