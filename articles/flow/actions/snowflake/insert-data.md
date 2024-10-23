@@ -4,6 +4,11 @@ Inserts data into a Snowflake database from a [DataReader](https://learn.microso
 
 ![img](../../../../images/flow/snowflake-insert-data.png)
 
+## Returns 
+
+Optional: [Int32](https://learn.microsoft.com/en-us/dotnet/api/system.int32) The number of rows affected/inserted.
+
+
 ## Properties
 
 | Name         | Data type       | Description                                       |
@@ -11,10 +16,6 @@ Inserts data into a Snowflake database from a [DataReader](https://learn.microso
 | Title | Optional | The title or name of the command. |
 | Connection | Required |  The Snowflake [connection](./connecting-to-snowflake.md). |
 | Source | Required | Select the source for data (DataReader or DataTable). |
-| Destination table | Required | Select or enter the name of the table to inert into. |
+| Destination table | Required | Select or enter the name of the table to insertinto. |
 | Result variable name | Optional | Name of the result variable containing the number of inserted rows. |
 | Description | Optional | Additional notes or comments about the action or configuration. |
-
-## Returns 
-
-Optional: [Int32](https://learn.microsoft.com/en-us/dotnet/api/system.int32) The number of rows affected/inserted.
