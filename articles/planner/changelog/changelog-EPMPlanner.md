@@ -20,6 +20,7 @@ This package provide the financial planning function and can be organized in pro
 **Fixes:**
 
 - Limit file types allowed (.doc,.docx,.gif,.jpeg,.jpg,.pdf,.png,.ppt,.pptx,.txt,.xls,.xlsx) to upload and upload size to 100 mb (#1806)
+- Limit number of files possible to upload and disable open option (#1826)
 
 ## EPM Planner 6.0.1
 

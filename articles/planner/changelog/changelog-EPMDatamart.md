@@ -21,6 +21,7 @@ This package provide a datamart to share data between EPM applications and exter
 **Fixes:**
 
 - Limit file upload size for Data Import/Export to 100 mb (#1804)
+- Limit number of files possible to upload and disable open option (#1826)
 
 ## EPM Datamart 5.5.0
 
