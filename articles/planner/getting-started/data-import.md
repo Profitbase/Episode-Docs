@@ -20,7 +20,7 @@ This document describes the process of importing data into Profitbase Planner fr
 ## Dimension files
 
 - For smaller (less than 10k rows) dimensions we usually just update all the rows every time.
-- For larger dimensions it can we beneficial to see if it can be imported incrementally.
+- For larger dimensions it can be beneficial to see if it can be imported incrementally.
 
 ## Validate the file before attempting to import
 
