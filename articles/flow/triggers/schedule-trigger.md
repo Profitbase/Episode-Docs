@@ -11,9 +11,10 @@ Configures the Flow to be triggered on a schedule.
 | Name                 | Type     | Description                         |
 |----------------------|----------|-------------------------------------|
 | Title                |          |                                     |
-| Schedule           | Required | Configure the schedule.                 |
-| Data configuration | Optional | Define trigger data.   |
-| Data variable name | Optional | Name of the variable containing the data. |
+| Schedule           | Required | Configure the frequency of the trigger.       |
+| Payload | Optional | Define available data when the flow starts.   |
+| Output data type | Optional | Select the datatype of the trigger output. |
+| Output variable name | Optional | Name of the variable containing the data. |
 | Disabled          | Optional | Boolean value indicating whether the trigger is disabled (true/false). |
 | Description          | Optional |  Additional notes or comments about the trigger's purpose or configuration. |
 

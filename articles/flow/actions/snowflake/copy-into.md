@@ -1,6 +1,6 @@
 # Copy Into
 
-Copies data from a source file in a Snowflake Stage into a destination table. Supported file types are CSV, Parquet, and JSON.
+Copies data from a staged file to a Snowflake database.
 
 ![img](../../../../images/flow/snowflake-copy-data.png)
 

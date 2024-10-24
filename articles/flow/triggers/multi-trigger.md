@@ -20,6 +20,6 @@ The return type is TriggerOutput, which has the following proeprties:
 |----------------|----------|--------------------------------------------------|
 | Title          |  Optional | A descriptive label for the trigger configuration.|
 | Trigger Configurations     | Required | Specifies the configurations included in the trigger. |
-| Ouput variable name | Optional | Name of the variable where the trigger’s output data will be stored. |
+| Ouput variable name | Optional | Name of the variable where the trigger's output data will be stored. |
 | Disabled			| Optional | Boolean value indicating whether the trigger is disabled (true/false). |
 | Description    | Optional | Additional notes or comments about the trigger's purpose or configuration. |
