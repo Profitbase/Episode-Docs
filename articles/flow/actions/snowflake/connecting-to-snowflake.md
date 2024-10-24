@@ -2,8 +2,8 @@
 
 [Ref. Logging in to Snowflake documentation.](https://docs.snowflake.com/en/user-guide/connecting )
 
-When adding a Snowflake action, select an existing connection or create a new one. 
-To [edit existing connections](../../workspaces/workspace-objects.md), select the 'Workspace' menu and then 'Workspace Objects'.
+When adding a Snowflake action, select an [existing connection](../../workspaces/workspace-objects.md) or create a new one. 
+
 
 ## Connection details
 
@@ -29,4 +29,4 @@ A Snowflake connection consists of the following fields:
 
 ## Custom connection string
 
-A custom connection string replaces all fields except for optionally username and password. It is recommended that these are placed in the protected fields and not in the connection string.
+A custom connection string replaces all fields except for user name and password. It is recommended that these are placed in the protected fields and not in the connection string.
