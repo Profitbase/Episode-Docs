@@ -195,6 +195,8 @@
           - name: APIs
             href: programmingmodel/apis.md
             items:
+              - name: Base APIs
+                href: programmingmodel/apis/base-apis.md
               - name: Dialog Service APIs
                 href: programmingmodel/apis/dialog-service-apis.md
               - name: Toast notification APIs

@@ -6,7 +6,7 @@ A cell renderer is defined as a JavaScript function expression, or the name of a
 
 using a format: 
 
- ```
+ ```javascript
  func::myscript.myfunction
  ```
 
@@ -15,21 +15,19 @@ A cell renderer must return a DOM object that can be displayed in a spreadsheet 
 Cell Renderers will only be executed for text, numeric and date columns. Cell Renderers will not execute for Dropdown, ActionLink and other special column types.
 <br/>
 
-> **Example**
->
-> The following example shows how to write a custom cell renderer for rendering the cell contents as a button.
+**Example**
 
-        function(eventArgs, services){
-            var btn = document.createElement('button');
+The following example shows how to write a custom cell renderer for rendering the cell contents as a button.
+```javascript
+function(eventArgs, services){
+    var btn = document.createElement('button');
+    btn.style.width = '100%';
+    btn.style.height = '100%';
+    btn.innerText = services.lib.html.sanitizeHtml(eventArgs.displayValue);
+    return btn;
+}
 
-            btn.style.width = '100%';
-            btn.style.height = '100%';
-            btn.innerText = eventArgs.displayValue;
-
-            return btn;
-        }
-
----
+```
 
 ## Function argument: eventArgs
 
@@ -61,23 +59,23 @@ The **services** argument provides access to the Workbook API for raising the Cu
 **services.eventDispatcher**  
 Provides access to the eventDispatcher service that enables raising the Custom Event on the host component (Table, Worksheet or SQL Report)
 
-> **Example**
->
-> This example shows how to raise the "Custom" event of a Worksheet when a button in a custom rendered cell is clicked.
+**services.lib**  
+Provides access to the Workbook [Base API](../../workbooks/programmingmodel/apis/base-apis.md).
 
-        function(eventArgs, services){
-            var btn = document.createElement('button');
+**Example**
+This example shows how to raise the "Custom" event of a Worksheet when a button in a custom rendered cell is clicked.
 
-            btn.style.width = '100%';
-            btn.style.height = '100%';
-            btn.innerText = eventArgs.displayValue;
+```javascript
+function(eventArgs, services){
+    var btn = document.createElement('button');
+    btn.style.width = '100%';
+    btn.style.height = '100%';
+    btn.innerText = services.lib.html.sanitizeHtml(eventArgs.displayValue);
+    btn.onclick = () => services.eventDispatcher.raiseCustomEvent({row : eventArgs.rowData});
+    return btn;
+}
 
-            btn.onclick = () => services.eventDispatcher.raiseCustomEvent({row : eventArgs.rowData});
-
-            return btn;
-        }
-
-
+```
 
 <br/>
 
