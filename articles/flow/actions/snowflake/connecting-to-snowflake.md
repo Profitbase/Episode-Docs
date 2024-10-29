@@ -9,7 +9,7 @@ When adding a Snowflake action, select an [existing connection](../../workspaces
 
 A Snowflake connection consists of the following fields:
 
-| Field                | Required/Optional | Description                                                                 |
+| Name | Type | Description                                                                 |
 |----------------------|-------------------|-----------------------------------------------------------------------------|
 | Connection Name      | Required           | The name of the connection.                                                |
 | Connection Type      | Optional           | Choose between a custom connection string (see below) or the Snowflake default connection type. |
