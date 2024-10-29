@@ -2,7 +2,7 @@
 
 Creates a Data Pipeline in a Microsoft Fabric Workspace.  
 
-Use this action to automate deployments of Data Pipelines to Fabric Workspaces, for example if you want to deploy pre-configured Data Pipelines as part of data platform workloads to customers, projects or departments in the organization.
+Use this action to automate deployments of Data Pipelines to Fabric Workspaces, for example, if you want to deploy pre-configured Data Pipelines as part of data platform workloads to customers, projects or departments in the organization.
 
 ![img](/images/flow/microsoft-fabric-create-data-pipeline.png)  
 <br/>
@@ -12,9 +12,9 @@ This action returns a **DataPipeline** response with the following properties:
 
 | Name          | Type      | Description                           |
 |---------------|-----------|---------------------------------------|
-| Description   | string    | The item description                  |
+| Description   | string    | The item description.                 |
 | DisplayName   | string    | The name of the Data Pipeline (as defined by the Pipeline name property above). |
-| Id            | string    | The id of the Data Pipeline           |
+| Id            | string    | The id of the Data Pipeline.           |
 | WorkspaceId   | string    | The id of the Workspace that the pipeline was deployed to. |
 
 ## Properties

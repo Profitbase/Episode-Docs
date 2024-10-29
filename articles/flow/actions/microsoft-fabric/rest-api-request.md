@@ -23,7 +23,7 @@ To call the Microsoft Fabric REST API, you need to configure the Connection and 
 The first thing you need to do is create a [Microsoft Fabric Connection](./microsoft-fabric-connection.md). Microsoft Fabric only allows authenticated requests, so you cannot make any calls to the API until this step is done.  
 Depending on which Fabric service you want to use, you may also need to explicitly grant permissions to resources within the service itself. For example, if you want to access a Power BI resource, you need to go to the Power BI admin portal and grant the Service Principal (Entra ID App created when setting up the Microsoft Fabric Connection) access to the resource you want to access.
 
-### Configuring the request
+### Configure the request
 
 After you have configured the connection, you need to configure the request itself.  
 The [Microsoft Fabric REST API documentation](https://learn.microsoft.com/en-us/rest/api/fabric/articles/using-fabric-apis) describes all requests you can make, including parameters, request payloads and response objects. Read the documentation to understand how to form a request, including which HTTP method (GET, POST, PUT, etc) and URL to use.
@@ -86,7 +86,7 @@ When a Fabric API returns a value, and you want to use the value later in the Fl
 Some Microsoft Fabric REST APIs break large datasets into smaller chunks when delivering data to clients. [You can read more about this feature here.](https://learn.microsoft.com/en-us/rest/api/fabric/articles/pagination)
 
 The `REST API Request action` handles pagination automatically for you, so you don't have to make multiple calls in order to get all records if the Fabric API splits the dataset into multiple pages.  
-Note that when you call an API that _might_ return a paginated response, you are required to define the return type as [List&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) or a type **derived** from [List&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1).
+Note that when you call an API that _may_ return a paginated response, you are required to define the return type as [List&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) or a type **derived** from [List&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1).
 
 ### Long running operations
 
@@ -94,7 +94,7 @@ When a Fabric API performs an operation that takes some time to complete, it may
 
 ##### Fire and Forget
 
-If you simply want to kick off a long running operation and don't wait for its completion before execution of the Flow continues, uncheck the `Wait for long running operation to complete` property.
+If you want to initiate a long-running operation and don't wait for its completion before execution of the Flow continues, uncheck the `Wait for long running operation to complete` property.
 
 ![img](/images/flow/microsoft-fabric-rest-api-request-wait.png)
 
