@@ -9,13 +9,13 @@ Profitbase Flow will use the connection to access the common API endpoint:
 
 Before you can create a Dynamics 365 Business Central APIv2 Connection, you need to create a Microsoft Entra ID App (also known as a Service Principal), and grant it access to the Business Central API.
 
-#### 1. Create a Microsoft Entra ID App (Service Princpial)
+#### 1. Create a Microsoft Entra ID App (Service Principal)
 
 Start by creating a Microsoft Entra ID App to [set up Entra ID based authentication](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps#set-up-microsoft-entra-id-based-authentication). The Entra ID App, also knows as a "Service Principal", is the entity that will be granted permissions to call one or more Business Central APIs. You can think of the Entra ID App as a (service) user.
 
 #### 2. Grant permissions to the the Entra ID App (Service Principal)
 
-When the Entra ID App (also known as a "Service Principal") has been created, the next thing you need to do is grant it access to the service(s) and resources in Business Central that you want to access throught the Business Central API.
+When the Entra ID App (also known as a "Service Principal") has been created, the next thing you need to do is grant it access to the service(s) and resources in Business Central that you want to access through the Business Central API.
 
 1. In your Entra ID App, go to **Manage** -> **API Permissions**.
 2. Press **Add Permissions** and select **Dynamics 365 Business Central**.

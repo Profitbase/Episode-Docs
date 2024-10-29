@@ -14,11 +14,11 @@ This action returns a **DataPipelineRunCompleted** response with the following p
 
 | Name          | Type           | Description                           |
 |---------------|----------------|---------------------------------------|
-| Id            | string         | The execution id (job id)             |
-| ItemId        | string         | The id of the Data Pipeline           |
+| Id            | string         | The execution id (job id).             |
+| ItemId        | string         | The id of the Data Pipeline.           |
 | Status        | string         | The job status. Possible values are `Cancelled`, `Completed`, `Failed`, `Deduped`.  |
-| StartTimeUtc  | [DateTimeOffset](https://learn.microsoft.com/en-us/dotnet/api/system.datetimeoffset) | Job start time in UTC |
-| EndTimeUtc    | [DateTimeOffset](https://learn.microsoft.com/en-us/dotnet/api/system.datetimeoffset) | Job end time in UTC   |
+| StartTimeUtc  | [DateTimeOffset](https://learn.microsoft.com/en-us/dotnet/api/system.datetimeoffset) | Job start time in UTC. |
+| EndTimeUtc    | [DateTimeOffset](https://learn.microsoft.com/en-us/dotnet/api/system.datetimeoffset) | Job end time in UTC.   |
 
 ## Properties
 | Name          | Type     | Description                             |
