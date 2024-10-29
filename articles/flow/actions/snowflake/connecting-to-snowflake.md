@@ -9,18 +9,24 @@ When adding a Snowflake action, select an [existing connection](../../workspaces
 
 A Snowflake connection consists of the following fields:
 
-| Field | Description |
-| --------------------- | -------------------------------------------------------------------- |
-| Connection Name | Name of the connection. Required. |
-| Connection Type | Whether to use a custom connection string (see below), or Snowflake default connection type. |
-| Account | Your full account name might include additional segments that identify the region and cloud platform where your account is hosted. |
-| Username | Required. |
-| Password | Required. |
-| Host | Optional. Specifies the hostname for your account in the following format: <ACCOUNT>.snowflakecomputing.com. |
-| Workspace | Optional workspace name. |
-| Database |  Optional database name. |
-| Schema | Optional schema name. |
-| Connection Timeout | Optional connection timeout in seconds. | 
+| Field                | Required/Optional | Description                                                                 |
+|----------------------|-------------------|-----------------------------------------------------------------------------|
+| Connection Name      | Required           | The name of the connection.                                                |
+| Connection Type      | Optional           | Choose between a custom connection string (see below) or the Snowflake default connection type. |
+| Account              | Required           | Full account name, including any segments that identify the region and cloud platform where the account is hosted. |
+| Username             | Required           | The username for the connection.                                           |
+| Password             | Required           | The password for the connection.                                           |
+| Host                 | Optional           | The hostname for your account in the following format: <ACCOUNT>.snowflakecomputing.com. |
+| Workspace            | Optional           | The workspace name.                                                        |
+| Database             | Optional           | The database name.                                                         |
+| Schema               | Optional           | The schema name.                                                           |
+| Connection Timeout    | Optional           | The connection timeout in seconds.                                         |
+
+
+
+
+
+
 
 [For a detailed documentation, click here](https://github.com/snowflakedb/snowflake-connector-net/blob/master/doc/Connecting.md).
 
