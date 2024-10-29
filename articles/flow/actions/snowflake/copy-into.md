@@ -37,7 +37,7 @@ Options for JSON files
 > [!NOTE]
 >
 >- The Stage must exist and can be set up, for example, as Microsoft Azure Blob storage or an Amazon S3 Bucket.
->- System supports the Parquet format for data storage and processing. However, it is essential to configure the appropriate transformation settings to ensure optimal performance and compatibility.
+>- In order to use Parquet format, configure the transformation settings. See example below.
 
 
 ![img](../../../../images/flow/snowflake-copy-data1.png)
