@@ -1,12 +1,14 @@
 # Copy Into
 
-Copies data from a staged file to a Snowflake database.
+Copies data from a staged file into a specified [Snowflake](https://docs.snowflake.com/en/user-guide-getting-started) database table.  
+
+A [stage](https://docs.snowflake.com/en/sql-reference/sql/create-stage) is a location within or outside Snowflake (such as Microsoft Azure Blob storage or Amazon S3) where files are stored before they are loaded into Snowflake. This action retrieves data from the selected stage, applies any specified transformations, and inserts it into the target database table, supporting various file formats (CSV, JSON, Parquet) and customizable field mappings.
 
 ![img](../../../../images/flow/snowflake-copy-data.png)
 
 ## Returns 
 
-Optional: [Int32](https://learn.microsoft.com/en-us/dotnet/api/system.int32) The number of rows affected/inserted.
+[Int32](https://learn.microsoft.com/en-us/dotnet/api/system.int32) The number of rows affected/inserted.
 
 ## Properties
 
@@ -14,7 +16,7 @@ Optional: [Int32](https://learn.microsoft.com/en-us/dotnet/api/system.int32) The
 |---------------------------|-----------|-----------------------------------------------------------------------------------------------------|
 | Title                     | Optional  | The title or name of the command.                                                                   |
 | Connection                | Required  | The Snowflake [connection](./connecting-to-snowflake.md).                                          |
-| Stage name                | Required  | Select an existing Share name (will be prefixed by @).                                             |
+| Stage name                | Required  | Select an existing [Stage](https://docs.snowflake.com/en/sql-reference/sql/create-stage) name (will be prefixed by @).                                             |
 | File name                 | Required  | Select the name of the file to import from.                                                        |
 | File format settings      | Required  | Select the file type and optional settings for parsing.                                                |
 | Destination table         | Required  | Select or enter the name of the table to copy into.                                                |
@@ -32,6 +34,10 @@ Options for CSV files
 Options for JSON files
 
 ![img](../../../../images/flow/snowflake-copy-data3.png)
+
+Options for Parquet files
+
+![img](../../../../images/flow/snowflake-copy-data4.png)
 
 
 > [!NOTE]

@@ -1,6 +1,6 @@
 # Load to Datatable
 
-Loads data from a Snowflake database into memory as a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) object.
+Loads data from a [Snowflake](https://docs.snowflake.com/en/user-guide-getting-started) database into memory as a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) object.
 
 ![img](../../../../images/flow/snowflake-load-datatable.png)
 

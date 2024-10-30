@@ -1,6 +1,6 @@
 # Execute Command
 
-Executes a SQL command in a Snowflake database, and returns the number of rows affected by the query.
+Executes a SQL command in a [Snowflake](https://docs.snowflake.com/en/user-guide-getting-started) database, and returns the number of rows affected by the query.
 
 ![img](../../../../images/flow/snowflake-execute-command.png)
 
