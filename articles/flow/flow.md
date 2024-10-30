@@ -13,20 +13,21 @@ Profitbase Flow enables the office of finance to build financial models, automat
 -	Extract, transform, cleanse, validate and enrich data from disparate data sources.  
 -   Build unified data models for reporting and analysis
 
-#### Application integration
+#### System integration
+
 -	Connect to business applications through GraphQL or regular HTTP APIs.  
--   Orchestrate operations and move data across systems.
+-   Orchestrate operations and move data between systems.
 
-#### Automate digital processes
+#### Business process automation
 
--	Build and run complex digital business processes using "boxes and arrows". Write code when you have to - or want to.
+-	Build and run advanced digital business processes using "boxes and arrows". Write code when you have to - or want to.
 -	Automate manual tasks.
 -	Monitor and respond to events.
 
-#### Build business rules engines
+#### Business rules engines
 
 -	Build business rules engines for any type of business area, including finance, operations, IT, HR, sales, and marketing. 
--	Perform complex calculations and data operations on large volumes of data at high speed.
+-	Perform advanced calculations and data operations on large volumes of data at high speed.
 
 <br/>
 
