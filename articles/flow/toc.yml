@@ -75,20 +75,20 @@
       href: flows/modularization-and-extensions.md
 - name: Actions
   items:
-    - name: Amazon S3
-      href: actions/amazon-s3/toc.yml
     - name: Azure Blob Storage
       href: actions/azure-blob-storage/toc.yml
+    - name: Azure Databricks
+      href: actions/databricks/toc.yml      
     - name: Azure Event Hub
       href: actions/azure-event-hub/toc.yml
     - name: Azure Service Bus
       href: actions/azure-service-bus/toc.yml
+    - name: Amazon S3
+      href: actions/amazon-s3/toc.yml  
     - name: "Built-in (Flow)"
       href: actions/built-in/toc.yml
     - name: CSV
       href: actions/csv/toc.yml
-    - name: Databricks
-      href: actions/databricks/toc.yml
     - name: Dynamics 365
       href: actions/dynamics365/toc.yml
     - name: Excel

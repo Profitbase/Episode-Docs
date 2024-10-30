@@ -1,6 +1,6 @@
 # Get single value
 
-Executes a query command in a Snowflake database which returns a single value.
+Executes a query command in a [Snowflake](https://docs.snowflake.com/en/user-guide-getting-started) database which returns a single value.
 
 ![img](../../../../images/flow/snowflake-get-single-value.png)
 

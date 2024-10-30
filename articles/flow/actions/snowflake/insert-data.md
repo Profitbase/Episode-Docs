@@ -1,12 +1,12 @@
 # Insert data
 
-Inserts data into a Snowflake database from a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) or a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable).
+Inserts data into a [Snowflake](https://docs.snowflake.com/en/user-guide-getting-started) database from a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) or a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable).
 
 ![img](../../../../images/flow/snowflake-insert-data.png)
 
 ## Returns 
 
-Optional: [Int32](https://learn.microsoft.com/en-us/dotnet/api/system.int32) The number of rows affected/inserted.
+[Int32](https://learn.microsoft.com/en-us/dotnet/api/system.int32) The number of rows affected/inserted.
 
 
 ## Properties

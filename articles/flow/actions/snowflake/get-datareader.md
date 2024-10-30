@@ -1,6 +1,6 @@
 # Get DataReader
 
-Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqldatareader) for reading a forward-only stream of rows from a Snowflake database.
+Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqldatareader) for reading a forward-only stream of rows from a [Snowflake](https://docs.snowflake.com/en/user-guide-getting-started) database.
 
 ![img](../../../../images/flow/snowflake-get-datareader.png)
 
