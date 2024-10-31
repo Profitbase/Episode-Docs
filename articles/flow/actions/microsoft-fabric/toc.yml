@@ -1,3 +1,5 @@
+- name: Microsoft Fabric Connection
+  href: microsoft-fabric-connection.md
 - name: REST API request
   href: rest-api-request.md
 - name: Create Data Pipeline
@@ -6,5 +8,7 @@
   href: run-data-pipeline.md
 - name: Create Lakehouse
   href: create-lakehouse.md
-- name: Microsoft Fabric Connection
-  href: microsoft-fabric-connection.md
+- name: Create Workspace
+  href: create-workspace.md
+- name: Upload to Lakehouse
+  href: upload-to-lakehouse.md

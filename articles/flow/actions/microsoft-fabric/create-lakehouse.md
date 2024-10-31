@@ -2,6 +2,8 @@
 
 Creates a Lakehouse in a Fabric Workspace.
 
+![img](../../../../images/flow/create-lakehouse.png)
+
 ## Returns
 Returns a [LakehouseInfo](#lakehouseinfo) object.
 
