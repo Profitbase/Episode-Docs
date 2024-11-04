@@ -76,9 +76,7 @@
 - name: Actions
   items:
     - name: Azure Blob Storage
-      href: actions/azure-blob-storage/toc.yml
-    - name: Azure Databricks
-      href: actions/databricks/toc.yml      
+      href: actions/azure-blob-storage/toc.yml    
     - name: Azure Event Hub
       href: actions/azure-event-hub/toc.yml
     - name: Azure Service Bus
@@ -89,6 +87,8 @@
       href: actions/built-in/toc.yml
     - name: CSV
       href: actions/csv/toc.yml
+    - name: Databricks
+      href: actions/databricks/toc.yml  
     - name: Dynamics 365
       href: actions/dynamics365/toc.yml
     - name: Excel
