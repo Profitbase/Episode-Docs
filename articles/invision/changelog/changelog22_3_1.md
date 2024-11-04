@@ -167,6 +167,7 @@ Fixed bug where file dialog appears behind the dialog window.
 
 ### See Also
 
+- [Change Log 2024.4](changelog24_4.md)
 - [Change Log 2024.3](changelog24_3.md)
 - [Change Log 2024.2](changelog24_2.md)
 - [Change Log 2024.1](changelog24_1.md)

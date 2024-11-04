@@ -2,7 +2,15 @@
 
 <br/>
 
-The September 2024 update for Profitbase Flow comes with many new features, including a **Package Manager** and integration support for **Dynamics 365 Business Central**, **Microsoft 365 Outlook**, **Snowflake**, and **PostgreSQL**, as well as improvements to existing features.
+- **September 2024 update** for Profitbase Flow includes:
+  - New **Package Manager**.
+  - Integration support for:
+    - **Dynamics 365 Business Central**
+    - **Microsoft 365 Outlook**
+    - **Snowflake**
+    - **PostgreSQL**
+  - Improvements to existing features.
+
 
 ## Package Manager
 We are excited to share that Profitbase Flow now includes a **Package Manager**. This enables users to create and share units of business logic spanning one or more flows, such as complex data integrations or automations.
@@ -66,3 +74,11 @@ We’ve made several improvements and fixes to the platform:
 - Reduced memory usage for the **background execution service** when idle in on-premise environments.
 - Support for graceful termination of the **background execution service** when **Kubernetes** scales down the host cluster.
 
+
+<br/>
+
+### See Also
+
+
+- [October 2024](changelog24_october.md)
+- [August 2024](changelog24_august.md)

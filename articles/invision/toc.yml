@@ -163,6 +163,8 @@
     - name: Change log
       href: changelog.md
       items:
+      - name: Changelog 2024.4
+        href: changelog/changelog24_4.md
       - name: Changelog 2024.3
         href: changelog/changelog24_3.md
       - name: Changelog 2024.2

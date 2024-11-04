@@ -119,3 +119,12 @@ Fixed an issue that prevented sending emails to multiple recipients.
 - You can now **copy and paste** Actions and Triggers both within the same Flow and between Flows.
 - We overhauled the **Toolbox** by adding better **icons** and explicitly displaying the **system name** (Profitbase, Azure, Visma, etc.) next to the action name.
 - You can now declare multiple variables using the new [Declare Variables](../actions/built-in/declare-variables.md) action. This removes unnecessary noise from a Flowchart when you need to use many variables.
+
+
+
+<br/>
+
+### See Also
+
+- [October 2024](changelog24_october.md)
+- [September 2024](changelog24_september.md)
