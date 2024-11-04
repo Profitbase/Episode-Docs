@@ -5,6 +5,7 @@
 
 Learn about the cool new features, updates, and bug fixes.
 
+- [Change Log 2024.4](changelog/changelog24_4.md)
 - [Change Log 2024.3](changelog/changelog24_3.md)
 - [Change Log 2024.2](changelog/changelog24_2.md)
 - [Change Log 2024.1](changelog/changelog24_1.md)

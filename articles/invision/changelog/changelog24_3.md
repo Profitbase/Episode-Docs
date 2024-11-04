@@ -60,6 +60,7 @@ We now support users being members of more than 200 Microsoft Entra user groups.
 
 ## See Also
 
+- [Change Log 2024.4](changelog24_4.md)
 - [Change Log 2024.2](changelog24_2.md)
 - [Change Log 2024.1](changelog24_1.md)
 - [Change Log 2023.7](changelog23_7.md)
