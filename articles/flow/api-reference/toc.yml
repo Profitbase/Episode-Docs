@@ -16,3 +16,5 @@
   items:
     - name: HttpReponse
       href: built-in-types/http-response.md
+- name: Data Analysis
+  href: data-analysis/toc.yml
