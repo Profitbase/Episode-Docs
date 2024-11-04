@@ -1,6 +1,9 @@
 # DataTableTransformer
 
-Modifies the schema and contents of a DataTable by applying a sequence of transformations.
+Modifies the schema and contents of a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) by applying a sequence of transformations.
+
+> [!NOTE]
+> Remember to invoke ApplyAsync() in order for the transformation to be applied.
 
 #### Example
 
@@ -23,7 +26,7 @@ var transformer = new DataTableTransformer(dataTable)
     .RenameColumn("dob", "DateOfBirth")
     .RemoveColumn("email");
 
-// Invoke ApplyAsync to apply the transformations.
+// Invoke ApplyAsync() to apply the transformations.
 await transformer.ApplyAsync();
 
 /*
@@ -62,6 +65,7 @@ Target table
 | FillMissingValues(string columnName, FillMethod fillMethod, object? value = null) | Assigns a value to all cells in the specified columns having no value (null). The specified FillMethod defines the value to be assigned to each empty cell. `value` is only used for `FillMethod.Value`. | 
 | ForEachRow(Action<DataRow> action) | Performs an action for each row in the DataTable. |
 | ComputeColumn(string columnName, Func<DataRow, object?> fn) | Invokes a function for each row in the DataTable and assigns the value returned to the specified column. |
+| ApplyAsync()  | Applies the transformations. |
 
 
 ### Examples
