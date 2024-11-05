@@ -1,16 +1,18 @@
 # DataTableTransformer
 
-Modifies the schema and contents of a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) by applying a sequence of transformations.
-
-> [!NOTE]
-> Remember to invoke ApplyAsync() in order for the transformation to be applied.
+Modifies the rows and columns of a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) by applying a sequence of one or more transformations.
 
 #### Example
 
 This example shows how to transform a DataTable using the DataTableTransformer.
+The DataTableTransformer is retuned by calling the `UseTransform()` extension method on a DataTable.
 
 ```csharp
-var transformer = new DataTableTransformer(dataTable)
+
+DataTable dataTable = ... // load the data table.
+
+// Call the UseTransform() extension method on a DataTable instance to get an instance of DataTableTransformer
+dataTable.UseTransform()
     .FillMissingValues("Age", FillMethod.Average)    
     .MergeColumns(["City", "Street"], "Address", separator: ", ")
     .ForEachRow(row =>
@@ -26,8 +28,6 @@ var transformer = new DataTableTransformer(dataTable)
     .RenameColumn("dob", "DateOfBirth")
     .RemoveColumn("email");
 
-// Invoke ApplyAsync() to apply the transformations.
-await transformer.ApplyAsync();
 
 /*
 Source table
@@ -52,70 +52,103 @@ Target table
 ## Methods
 | Name                                                       | Description                                |
 |------------------------------------------------------------|--------------------------------------------|
-| AddColumn(string columnName, string dataType)              | Adds a new colum to the DataTable.         |
+| AddColumn(string columnName, string [dataType](#data-types))              | Adds a new colum to the DataTable.         |
 | CloneColumn(string columnToClone, string nameOfNewColumn)  | Clones an existing column, along with the data. |
 | RemoveColumn(string columnName)                            | Removes a column from the DataTable.       |
-| SplitColumn(string columnName, string[] splitInto, string separator, bool expand = false, trim = true) | Splits the value of a column into multiple other columns. Set expand to `true` to keep the source column in the DataTable. This operation can only be applied to columns having data type `string`.|
+| [SplitColumn(string columnName, string[] splitInto, string separator, bool expand = false, trim = true)](#splitcolumnstring-columnname-string-splitinto-string-separator-bool-expand--false-trim--true) | Splits the value of a column into multiple other columns. This operation can only be applied to columns having data type `string`. <br/> Set `expand` to `true` to keep the source column in the DataTable. <br/> Set `trim` to `false` to not trim whitespace from the split values. |
 | MergeColumns(string[] columns, string toColumn, string separator = " ") | Merges two or more columns into a target column and removes the source columns. |
-| ConcatColumns(string[] columns, string toColumn, string separator = " ") | Merges two or more columns into a target column **without** removing the source columns. | 
+| [ConcatColumns(string[] columns, string toColumn, string separator = " ")](#concatcolumnsstring-columns-string-tocolumn-string-separator---) | Concatenates the values of two or more columns into a target column **without** removing the source columns. The values are separated by `separator`. | 
 | RenameColumn(string oldName, string newName) | Renames a column. |
-| ChangeColumnDataType(string columnName, string newDataType)| Changes the data type of a column to the specified data type. This operation will fail if the the values in the column is not convertible to the new data type. |
+| [ChangeColumnDataType(string columnName, string newDataType)](#changecolumndatatypestring-columnname-string-newdatatype)| Changes the data type of a column to the specified data type. This operation will fail if the the values in the column is not convertible to the new data type. |
 | SetColumnValue(string columnName, object value) | Assigns a value to all cells in the specified column. |
 | RemoveRowsWithMissingValues(string columnName) | Removes all rows from the DataTable where the specified column has no value (null).  |
-| FillMissingValues(string columnName, FillMethod fillMethod, object? value = null) | Assigns a value to all cells in the specified columns having no value (null). The specified FillMethod defines the value to be assigned to each empty cell. `value` is only used for `FillMethod.Value`. | 
-| ForEachRow(Action<DataRow> action) | Performs an action for each row in the DataTable. |
-| ComputeColumn(string columnName, Func<DataRow, object?> fn) | Invokes a function for each row in the DataTable and assigns the value returned to the specified column. |
-| ApplyAsync()  | Applies the transformations. |
+| [FillMissingValues(string columnName, FillMethod fillMethod, object? value = null)](#fillmissingvaluesstring-columnname-fillmethod-fillmethod-object-value--null) | Assigns a value to all cells in the specified columns having no value (null). The specified FillMethod defines the value to be assigned to each empty cell. `value` is only used for `FillMethod.Value`. | 
+| [ForEachRow(Action<DataRow> action)](#foreachrowaction-action) | Performs an action for each row in the DataTable. |
+| [ComputeColumn(string columnName, Func<DataRow, object?> fn)](#computecolumnstring-columnname-funcdatarow-object-fn) | Invokes a function for each row in the DataTable and assigns the value returned to the specified column. |
 
 
-### Examples
+<br/>
 
-#### SplitColumn(string columnName, string[] splitInto, string separator, bool expand = false, trim = true)
+### API Examples
+
+The following examples shows how to use the different transform APIs. Remember that you only need to call `UseTransform()` once, and chain multiple transforms together.
+
+##### AddColumn(string columnName, string dataType)
 
 ```csharp
-var transformer = new DataTableTransformer(dataTable)    
-    .SplitColumn("Address", ["City", "Street"], separator: ",");
-await tranformer.ApplyAsync();
+dataTable.UseTransform().AddColumn("Address", "string");
 ```
 
-#### ConcatColumns(string[] columns, string toColumn, string separator = " ")
+##### SplitColumn(string columnName, string[] splitInto, string separator, bool expand = false, trim = true)
 
 ```csharp
-var transformer = new DataTableTransformer(dataTable)    
-    .ConcatColumns(["City", "Street"], "Address", separator: ", ");
-await tranformer.ApplyAsync();
+// Create an instance of DataTableTransformer
+new DataTableTransformer(dataTable).SplitColumn("Address", ["City", "Street"], separator: ",");
+
+//  OR call the UseTransform() extension method
+dataTable.UseTransform().SplitColumn("Address", ["City", "Street"], separator: ",");
 ```
 
-#### ChangeColumnDataType(string columnName, string newDataType)
+##### ConcatColumns(string[] columns, string toColumn, string separator = " ")
 
 ```csharp
-var transformer = new DataTableTransformer(dataTable)    
+dataTable.UseTransform().ConcatColumns(["City", "Street"], "Address", separator: ", ");
+```
+
+##### ChangeColumnDataType(string columnName, string newDataType)
+
+```csharp
+dataTable.UseTransform()    
     .ChangeColumnDataType("Weight", typeof(double).FullName)
     .ChangeColumnDataType("IsStudent", "bool");
-await tranformer.ApplyAsync();
 ```
 
-#### FillMissingValues(string columnName, FillMethod fillMethod, object? value = null)
+##### FillMissingValues(string columnName, FillMethod fillMethod, object? value = null)
 
 ```csharp
-var transformer = new DataTableTransformer(dataTable)    
+var transformer = dataTable.UseTransform()    
     .FillMissingValues("Age", FillMethod.Average)
     .FillMissingValues("IsStudent", FillMethod.Value, value: true);
-await tranformer.ApplyAsync();
 ```
 
-#### ForEachRow(Action<DataRow> action)
+##### ForEachRow(Action<DataRow> action)
 
 ```csharp
-var transformer = new DataTableTransformer(dataTable)    
+var transformer = dataTable.UseTransform()
     .ForEachRow(row => row["IsAdult"] = (int)row["Age"] >= 18);
-await tranformer.ApplyAsync();
 ```
 
-#### ComputeColumn(string columnName, Func<DataRow, object?> fn)
+##### ComputeColumn(string columnName, Func<DataRow, object?> fn)
 
 ```csharp
-var transformer = new DataTableTransformer(dataTable)    
+dataTable.UseTransform()    
     .ComputeColumn("IsAdult", row => (int)row["Age"] >= 18);
-await tranformer.ApplyAsync();
+```
+
+## Data types
+
+The following data types are supported as `dataType` parameters.
+
+| Name           |  
+|----------------|
+| string         |
+| bool           |
+| byte           |
+| short          |
+| int            |
+| float          |
+| double         |
+| decimal        |
+| long           |
+| DateTime       |
+| DateTimeOffset |
+| DateOnly       |
+| TimeOnly       |
+| TimeSpan       |
+| Guid           |
+
+### Example
+
+```csharp
+dataTable.UseTransform().AddColumn("Email", "string").AddColumn("Weight", "double");
 ```
