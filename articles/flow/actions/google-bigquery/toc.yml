@@ -1,6 +1,6 @@
-- name: "Connection"
-  href: "connecting-to-bigquery.md"
 - name: "Get DataReader"
   href: "get-datareader.md"
 - name: "Load to DataTable"
   href: "load-to-datatable.md"
+- name: "Connection"
+  href: "connecting-to-bigquery.md"

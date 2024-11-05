@@ -1,5 +1,3 @@
-- name: "Connection"
-  href: "connecting-to-snowflake.md"
 - name: "Copy Into"
   href: "copy-into.md"
 - name: "Execute Command"
@@ -12,3 +10,5 @@
   href: "insert-data.md"
 - name: "Load to DataTable"
   href: "load-datatable.md"
+- name: "Connection"
+  href: "connecting-to-snowflake.md"
