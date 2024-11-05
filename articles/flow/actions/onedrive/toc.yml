@@ -1,7 +1,3 @@
-- name: "API reference"
-  items:
-    - name: "OneDriveItem"
-      href: "api-reference/onedrive-item.md"
 - name: "Delete file from OneDrive"
   href: "delete-file-from-onedrive.md"
 - name: "Foreach file in OneDrive"
@@ -12,5 +8,9 @@
   href: "read-file-from-onedrive-as-stream.md"
 - name: "Upload file to OneDrive"
   href: "upload-file-to-onedrive.md"
+- name: "API reference"
+  items:
+    - name: "OneDriveItem"
+      href: "api-reference/onedrive-item.md"
 
 

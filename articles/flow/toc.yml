@@ -4,17 +4,6 @@
   href: key-concepts.md
 - name: Getting started
   href: getting-started.md
-- name: Hosting
-  href: hosting.md
-- name: On-premises installation
-  href: on-premises-installation.md
-  items:
-    - name: System requirements
-      href: on-premises-installation/system-requirements.md
-    - name: Account permissions
-      href: on-premises-installation/account-permissions.md
-    - name: Step-by-step installation guide
-      href: on-premises-installation/step-by-step-installation.md
 - name: Tenants
   href: tenants.md
   items:
@@ -133,6 +122,17 @@
   href: triggers/toc.yml
 - name: Packages
   href: packages/packages.md
+- name: Hosting
+  href: hosting.md
+- name: On-premises installation
+  href: on-premises-installation.md
+  items:
+    - name: System requirements
+      href: on-premises-installation/system-requirements.md
+    - name: Account permissions
+      href: on-premises-installation/account-permissions.md
+    - name: Step-by-step installation guide
+      href: on-premises-installation/step-by-step-installation.md
 - name: API reference
   href: api-reference/toc.yml
 - name: Change log

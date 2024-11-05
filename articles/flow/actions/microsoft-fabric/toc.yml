@@ -1,5 +1,3 @@
-- name: Connection
-  href: microsoft-fabric-connection.md
 - name: Create Data Pipeline
   href: create-data-pipeline.md
 - name: Create Lakehouse
@@ -12,3 +10,5 @@
   href: run-data-pipeline.md
 - name: Upload to Lakehouse
   href: upload-to-lakehouse.md
+- name: Connection
+  href: microsoft-fabric-connection.md
