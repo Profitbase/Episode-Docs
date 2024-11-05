@@ -1,3 +1,5 @@
+- name: HTTP Authentication
+  href: http-authentication.md
 - name: "HTTP get file"
   href: "http-get-file.md"
 - name: "HTTP request"
@@ -6,5 +8,4 @@
   href: "http-send-file.md"
 - name: "Return File HTTP response"
   href: "return-file-http-response.md"
-- name: HTTP Authentication
-  href: http-authentication.md
+
