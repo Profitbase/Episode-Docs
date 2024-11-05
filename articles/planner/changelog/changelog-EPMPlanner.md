@@ -6,6 +6,7 @@ This package provide the financial planning function and can be organized in pro
 
 ## EPM Planner Versions
 
+- [EPM Planner 6.0.2](#epm-planner-602) - Released 2024.11.05
 - [EPM Planner 6.0.1](#epm-planner-601) - Released 2024.09.27
 - [EPM Planner 6.0.0](#epm-planner-600) - Released 2024.08.29
 - [EPM Planner 5.5.1](#epm-planner-551) - Released 2024.04.24
@@ -21,6 +22,34 @@ This package provide the financial planning function and can be organized in pro
 
 - Limit file types allowed (.doc,.docx,.gif,.jpeg,.jpg,.pdf,.png,.ppt,.pptx,.txt,.xls,.xlsx) to upload and upload size to 100 mb (#1806)
 - Limit number of files possible to upload and disable open option (#1826)
+
+## EPM Planner 6.0.2
+
+**Changes:**
+
+- OBdue amount due does not work (#1823)
+
+**Fixes:**
+
+- Translation fallback in calculation descriptions for driver based models shows id in stead of description field (#1812)
+- Driver based modelling - Process - recalculation and assumption lookup not done (#1818)
+- Plan Overview - Custom context menu is missing a valid Department context (#1817)
+- Plan overview - currency converted historical reference data at non-leaf level fail to display when blank and not null is used for default values for optional dimensions (#1819)
+- Driver based flow may fail when additional dim mapping is used (#1816)
+- Account Plan proposal using opening balanse on P/L account (#1814)
+- Personnel - changes made to Base monthly salary in Personnel details is reverted after a new change is done to FTE page (for same key ) (#1813)
+- Flow pipelines - transactional data remain when deleting all input rows for department while at a non-leaf level (#1811)
+- Driver based drill to account when at non-leaf - no data returned (#1803)
+- Loan module Added new status translation doesnt work in dropdown (#1798)
+- CapexModule - Copying data from other years does not include number of credit days (#1799)
+- Limit file types allowed to upload and upload size to 100 mb (#1806)
+- Not getting any transactions when using validate finance simulation (#1800)
+- Pipeline flows terminate after 5 minutes (#1797)
+- Plan overview slow (~20 sec) when selecting nodes (not leaf nodes) (#1802)
+- Pipeline flows may fail if input store is empty (#1796)
+- OBDueVacationPay does not work (#1824)
+- SYS_DatasetID does not allow null values in OBDue (#1822)
+- Plan overview | Account details - drill to detail may no return data when using optional filters (#1828)
 
 ## EPM Planner 6.0.1
 
