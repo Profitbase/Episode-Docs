@@ -19,3 +19,7 @@ As this node iterates over all chunks, it will return a new [IDataReader](https:
 | SQL expression    | Required   | Definition of the Databricks SQL command.				|
 | Chunk size		| Optional   | Number of rows in a chunk (default = 1000).				|
 | Row variable name | Required   | Name of the variable containing the DataReader result.	|
+
+## Limitations
+
+The maximum memory size of a chunk is 25 MB.
