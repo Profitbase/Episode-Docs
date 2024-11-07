@@ -6,6 +6,7 @@ EPM Reporting package provide central management of dimensions, report setup and
 
 ## EPM Reporting versions
 
+- [EPM Reporting 1.2.0](#epm-reporting-120) - Released 2024.
 - [EPM Reporting 1.1.1](#epm-reporting-112) - Released 2024.04.24
 - [EPM Reporting 1.1.1](#epm-reporting-111) - Released 2024.02.21
 - [EPM Reporting 1.1.0](#epm-reporting-110) - Released 2024.01.26
@@ -15,6 +16,11 @@ EPM Reporting package provide central management of dimensions, report setup and
 ## Unreleased
 
 - Nothing yet
+
+## EPM Reporting 1.2.0
+
+**Changes:**
+**Fixes:**
 
 ## EPM Reporting 1.1.2
 
