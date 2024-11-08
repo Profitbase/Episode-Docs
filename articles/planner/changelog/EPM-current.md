@@ -18,8 +18,6 @@
 
 **Known issues:**
 
-
-
 ## Risk 1.1.1
 
 **Content:**
