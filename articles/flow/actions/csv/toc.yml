@@ -1,13 +1,3 @@
-- name: "Bad data"
-  href: "bad-data.md"
-- name: "Configuration properties"
-  items:
-    - name: "Column mapping"
-      href: "configuration-properties/column-mapping.md"
-    - name: "Data import options"
-      href: "configuration-properties/data-import-options.md"
-    - name: "Field parser"
-      href: "configuration-properties/field-parser.md"
 - name: "Create CSV file as byte array"
   href: "create-csv-file-as-byte-array.md"
 - name: "Create CSV file as stream"
@@ -18,5 +8,14 @@
   href: "read-csv-file-as-datatable.md"
 - name: "Read rows from CSV file"
   href: "read-rows-from-csv-file.md"
-
+- name: "Bad data"
+  href: "bad-data.md"
+- name: "Configuration properties"
+  items:
+    - name: "Column mapping"
+      href: "configuration-properties/column-mapping.md"
+    - name: "Data import options"
+      href: "configuration-properties/data-import-options.md"
+    - name: "Field parser"
+      href: "configuration-properties/field-parser.md"
 
