@@ -35,6 +35,10 @@ In order to complete the setup on our side we need the following sent back to us
 ![Profitbase-InVision-Client-Grant-Consent](https://profitbasedocs.blob.core.windows.net/images/invision/docs/systemsetup/howto/ProfitbaseInVisionClientGrantConsent.png)
 - Go to Expose API and create an API record for InVision
 ![Profitbase-InVision-Client-Expose-API](https://profitbasedocs.blob.core.windows.net/images/invision/docs/systemsetup/howto/ProfitbaseInVisionClientExposeAPI.png)
+- Go to Authentication make sure the two checkboxes are enabled
+  - Access tokens
+  - ID tokens
+![Profitbase-InVision-Client-Authentication](https://profitbasedocs.blob.core.windows.net/images/invision/docs/systemsetup/howto/ProfitbaseClientAuthentication.png)
 - Go to Manifest and change the following two propeties
   - groupMembershipClaims set to "All"
   - isFallbackPublicClient set to false
