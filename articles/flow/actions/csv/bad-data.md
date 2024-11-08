@@ -1,10 +1,9 @@
 # Bad data
 
 When importing data from a CSV format, you often get bad data in form of badly formatted values, missing fields, or simply unexpected values.
-In a large data set, bad values may constitute a small amount of data, making them hard to track down. 
-By enabling **Error handling** behaviors in the [Data import options](configuration-properties/data-import-options.md), you can record the bad data encountered during a CSV import and investigate which rows and fields prevent a successful import.
+In a large data set, bad data is often hard to track down. By enabling **Error handling** behaviors in the [Data import options](configuration-properties/data-import-options.md), you can record the bad data encountered during a CSV import and investigate which rows and fields are causing the import to fail.
 
-Bad data is stored in the **BadData** property of the action, and can be read as an `IEnumerable<BadDataRecord>` or as an IDataReader. This makes it easy to dump the information to a database table or a file for debugging purposes.
+Bad data is stored in the **BadData** property of the action, and can be read as an `IEnumerable<BadDataRecord>` or as an `IDataReader`. This makes it easy to dump the information to a database table or a file for debugging purposes.
 
 The BadDataRecord object has the following properties:
 
