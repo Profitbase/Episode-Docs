@@ -1,12 +1,11 @@
 # Bad data
 
 When importing data from a CSV format, you often get bad data in form of badly formatted values, missing fields, or simply unexpected values.
-In a large data set, bad values may constitute a small amount of data, making them hard to track down. 
-By enabling **Error handling** behaviors in the [Data import options](configuration-properties/data-import-options.md), you can record the bad data encountered during a CSV import and investigate which rows and fields prevent a successful import.
+In a large data set, bad data is often hard to track down. By enabling **Error handling** behaviors in the [Data import options](configuration-properties/data-import-options.md), you can record the bad data encountered during a CSV import and investigate which rows and fields are causing the import to fail.
 
-Bad data is stored in the **BadData** collection of a CSV DataReader or CSV DataTable, and can be read as an `IEnumerable<BadDataRecord>` or as an IDataReader. This makes it easy to dump the information to a database table or a file for review.
+Bad data is stored in the **BadData** property of the action, and can be read as an `IEnumerable<BadDataRecord>` or as an `IDataReader`. This makes it easy to dump the information to a database table or a file for debugging purposes.
 
-The BadDataRecord has the following properties:
+The BadDataRecord object has the following properties:
 
 | Name          | Data type        | Description                                         |
 |---------------|------------------|-----------------------------------------------------|
@@ -16,10 +15,10 @@ The BadDataRecord has the following properties:
 
 <br/>
 
-#### Example
+#### Example - Dump bad data to SQL Server
 To dump bad data to a SQL Server table, do the following:
 
-1) Create a table with the following schema (You can name it whatever you like). Use the table as the **Destination table** in step 2) below.
+1) Create a table with the following schema (You can name it whatever you like).
 
 ```sql
 CREATE TABLE [dbo].[BadData](
@@ -29,6 +28,7 @@ CREATE TABLE [dbo].[BadData](
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 ```
 
-2) Add an [Insert data](../sql-server/insert-data.md) action to the Flow and choose the BadData collection as the data source.
-
+2) Add an [Insert data](../sql-server/insert-data.md) action to the Flow after the CSV reader action and connect them.
+3) Select the `Insert data` action, and in the `property panel`, choose the BadData collection from the CSV action as the `Source` property.
+4) In the `Destination table` property, specify the name of the table you created in step 1) above ("BadData").
 ![img](/images/bad_data_to_sql_server_example.png)

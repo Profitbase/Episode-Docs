@@ -43,6 +43,8 @@
   href: "deploy-stored-procedure.md"
 - name: "Deploy View"
   href: "deploy-view.md"
+- name: Execute Dataflow
+  href: "execute-dataflow.md"
 - name: "File Storage"
   items:
     - name: "Add file to File Storage"
