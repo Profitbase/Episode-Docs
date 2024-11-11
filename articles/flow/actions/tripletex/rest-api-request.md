@@ -1,7 +1,6 @@
 # REST API Request
 
-Use PowerOffice Go REST APIs (v2) to read or write data.
-
+Use Tripletex REST APIs (v2) to read or write data.
 
 ## Properties
 
