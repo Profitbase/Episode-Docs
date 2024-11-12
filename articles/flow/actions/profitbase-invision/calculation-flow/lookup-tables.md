@@ -3,6 +3,19 @@
 Lookup tables provide support for looking up values based on one or more keys. They are often used to define parameters for calculations, for example VAT, tax percent, currency exchange rates, and so on.
 Technically, a Lookup table object is made up of `Keys` and `Values`, where the Keys are used to find the parameter value(s) to use in calculations. 
 
+## Properties  
+
+| Name         | Type             | Description                                                |
+|--------------|------------------|------------------------------------------------------------|
+| Key columns  | Optional         | All Lookup tables must have at least one logical key unless you only want to run manual lookups. If no primary key is defined on the table in InVision, or you want to use a different set of columns to make up the key, you can specify the key manually here. |
+| Data         | Optional         | Specifies the fields / columns from the Lookup table that you want to use for calculation parameters and other types of business logic. By default, all non-key columns are automatically available.                                                   |
+| Key mappings | Optional         | Use this option to define explicit mapping between the `Key columns` and the (corresponding) columns in the data source when names does not match. Flow determines which Auto Transactions to use by comparing the values in the `Key columns` to the corresponding columns in the input row from the data source. If not specified otherwise, it matches against columns with the same name. If you need a different behavior, you need to specify the mapping between the keys explicitly. |
+| Options       | Optional | **Disable caching**: Enable this option if you are _generating_ the data in the Lookup table using a custom SQL script. When generating data into a table using a custom SQL script, InVision will not be able to detect the change and notify Flow to invalidate its cache. You can also use the [Remove InVision object from cache](../../built-in/remove-invision-object-from-cache.md) action to programatically evict the table from cache.  |
+
+---
+
+## Example
+
 An Lookup Table definition for made-up product fees by state may look like this: 
 
 **Product Fees**
@@ -18,7 +31,6 @@ When an Lookup Table is used in a Calculation Flow, we want to resolve the `valu
 
 Keys in most Lookup Table are associated with dimensions, for example the Department, Account or Product dimensions. This means that the _values in the `Key` columns are `dimension members`_, such as department ids, regions, account ids, product ids or product groups. Because dimensions usually have a hierarchical structure, we can define parameters at a high level, and the values will apply to all descendants. If we need to define values at a more granular level, we can pick those specific members lower in the hierarchies and apply a different values to them.
 
-## Example
 
 In the table above, `(Californa, Bikes)` returns `14.1 %` because there is no exact mapping in the table, so California is resolved as a child of 'United States', and Bikes is a child of 'All'.  
 `(California, Skates)` returns `12.6 %` because there is an exact mapping in the Lookup Table.  

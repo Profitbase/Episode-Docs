@@ -1,6 +1,6 @@
 # Distribution keys
 
-Distribution Keys enables defining rules for how a value, for example a Year Total, should be distributed or allocated among one or more periods. 
+Distribution Keys enables defining rules for how a value, for example a Year Total, should be distributed or allocated across one or more periods. 
 
 A Distribution Key is configured as a table, containing one or more keys (usually dimensions such as Department, Account, Employee or Product), and a set of period columns that represents a date and a numeric value.
 
@@ -12,7 +12,7 @@ A Distribution Key is configured as a table, containing one or more keys (usuall
 | West             | Bikes           | 1.3         | 2.6         | 0.5          | 1.2           |
 | North            | Skis            | 1.5         | 2.7         | 0.8          | 1.3           |
 
-When defining distribution keys, and they key columns (such as Department and Product above) are associated with dimensions, you can define rules at an aggregate level (such as company or product group), and the values are automatically inherited by members at lower levels in the dimensions. Values set at a lower level will override values inherited from a parent level.  
+When defining distribution keys where key columns are associated with dimensions (such as Department and Product above), you can define rules at an aggregate level (such as company or product group). The values will automatically be inherited by members at lower levels in the dimensions, even though they are not explictly mapped in the table. Values set at a lower level will override values inherited from a parent level.  
 
 > [!NOTE]
 > In case there are no Distribution Key rules that match a search criteria, a default distribution key is used. The default distribution key is `1.0/n`, where n = number of periods.
@@ -26,6 +26,7 @@ When defining distribution keys, and they key columns (such as Department and Pr
 | Additional data         | Optional         | Specifies any non-key and non-periodic columns from the Distribution Key table that you want to use for business logic. |
 | Key mappings | Optional         | Use this option to define explicit mapping between the `Key columns` and the (corresponding) columns in the data source when names does not match. Flow determines which Distribution Key rules to use by comparing the values in the `Key columns` to the corresponding columns in the input row from the data source. If not specified otherwise, it matches against columns with the same name. If you need a different behavior, you need to specify the mapping between the keys explicitly. |
 | Distribution Key type | Optional | Specifies the name of the column that defines the Distribution Key type. This feature enables a value to be distributed among multiple categories in addition to multiple periods.  | 
+| Options       | Optional | **Use even distribution key if no matches are found:** If this option is `disabled` (unchecked), and no distribution key is found for the context (for example department id) no transactions are generated for the current input row. <br/><br/> **Disable caching**: Enable this option if you are _generating_ the data in the Distribution Key table using a custom SQL script. When generating data into a table using a custom SQL script, InVision will not be able to detect the change and notify Flow to invalidate its cache. You can also use the [Remove InVision object from cache](../../built-in/remove-invision-object-from-cache.md) action to programatically evict the table from cache.  |
 
 
 ## Using Distribution Keys to distribute totals to periods
