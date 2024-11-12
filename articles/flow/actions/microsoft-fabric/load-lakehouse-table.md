@@ -8,7 +8,7 @@ Loads Lakehouse [Table](https://learn.microsoft.com/en-us/fabric/data-engineerin
 
 ## Returns
 
-Returns the [ItemCreatedResponse](#itemcreatedresponse).
+Returns the [LakehouseTableInfo](#lakehousetableinfo).
 
 
 ## Properties
@@ -20,7 +20,8 @@ Returns the [ItemCreatedResponse](#itemcreatedresponse).
 | Workspace Id         | Required   | Identifies the workspace where the Lakehouse is located.          |
 | Lakehouse Id         | Required   | Identifies the specific Lakehouse to load the table into.         |
 | Target table name    | Required   | The name of the target table where data will be loaded.           |
-| Load mode            | Required   | Defines how data should be loaded (e.g., overwrite existing data).|
+| Load mode            | Required   | Defines how data should be loaded (overwrite or append to existing data). 
+Source path type: Specifies the source path type. Either "File" or "Folder".|
 | Source path type     | Required   | Specifies the source path type, such as "File".                   |
 | Source file format   | Required   | The format of the source file, e.g., CSV.                         |
 | Source file path     | Required   | Path to the source file, specifying the location of the CSV file. |
@@ -42,7 +43,7 @@ File selector:
 ![img](../../../../images/flow/file_dial.png)
 
 
-### ItemCreatedResponse
+### LakehouseTableInfo
 
 | Name               | Type            | Description                |
 |--------------------|-----------------|----------------------------|
