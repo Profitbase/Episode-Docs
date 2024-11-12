@@ -1,12 +1,12 @@
-# Get SQL execution chunks
+# Execute SQL statement returning data
 
-Retrieves chunks of data from [Databricks](https://www.databricks.com/databricks-documentation) and iterates over them. The chunks are fetched by calling the [Execute SQL statement](https://docs.databricks.com/api/azure/workspace/statementexecution/executestatement) API.
+[Executes a SQL statement](https://docs.databricks.com/api/azure/workspace/statementexecution/executestatement) in [Databricks](https://www.databricks.com/databricks-documentation) and iterates over each chunk of data returned.
 
 ![img](../../../../images/flow/databricks.png)
 
 ## Returns
 
-As this node iterates over all chunks, it will return a new [IDataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) instance for each chunk.
+This action iterates over all chunks of data returned for the query. You will get a [IDataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) for each chunk.
 
 ## Properties
 
