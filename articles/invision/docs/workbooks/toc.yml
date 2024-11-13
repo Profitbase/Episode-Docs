@@ -58,13 +58,13 @@
             items:
             - name: Filter slicing
               href: components/filter/filterslicing.md
-          - name: Form elements
+          - name: Form Elements
             href: components/formelements.md
-          - name: Form schemas
+          - name: Forms
             href: components/formschemas.md
-          - name: Input elements
+          - name: Input Elements
             href: components/inputelement.md
-          - name: Progress indicator
+          - name: Progress Indicator
             href: components/progressindicator.md
           - name: Reports
             href: components/reports.md
@@ -72,9 +72,9 @@
             href: components/script.md
           - name: Table
             href: components/table.md
-          - name: Table view
+          - name: TableView
             href: components/tableview.md
-          - name: Ui elements
+          - name: UI Elements
             href: components/uielements.md
             items:
             - name: Button
@@ -89,7 +89,7 @@
               href: components/uielements/label.md
             - name: Stepper
               href: components/uielements/stepper.md
-            - name: Tabcontrol
+            - name: Tab Control
               href: components/uielements/tabcontrol.md
           - name: Workflow
             href: components/workflow.md

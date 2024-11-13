@@ -18,5 +18,5 @@ Returns a (numeric) value.
 |--------------|-----------------|---------------------------------------------------|
 | Title           | Optional | The title or name of the action.     |
 | Variable to increment         | Required   | The name of variable to increment. |
-| Increment by   | Required      | Write the value of incrementation.   |
+| Increment by   | Required      | The number to increment by.   |
 | Description   | Optional | Additional notes or comments about the action or configuration. |
