@@ -114,8 +114,6 @@
       href: actions/snowflake/toc.yml
     - name: SQL Server
       href: actions/sql-server/toc.yml
-    - name: Tripletex
-      href: actions/tripletex/toc.yml
     - name: Visma
       href: actions/visma/toc.yml
     - name: Xledger
