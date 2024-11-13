@@ -8,7 +8,7 @@ Loads Lakehouse [Table](https://learn.microsoft.com/en-us/fabric/data-engineerin
 
 ## Returns
 
-Returns the [ItemCreatedResponse](#itemcreatedresponse).
+Returns the [LakehouseTableInfo](#lakehousetableinfo).
 
 
 ## Properties
@@ -16,11 +16,12 @@ Returns the [ItemCreatedResponse](#itemcreatedresponse).
 | Name                 | Type       | Description                                                       |
 |----------------------|------------|-------------------------------------------------------------------|
 | Title                | Optional   | The title for the upload action to the Lakehouse.                 |
-| Connection           | Required   | The [Microsoft Fabric Connection](./microsoft-fabric-connection.md) used to make an authenticated request to the Microsoft Fabric REST API. To create a Connection, [please follow these steps](./microsoft-fabric-connection.md). Note! Make sure to choose an authentication method and user with the required priviliges. Please refer to the [Microsoft Fabric API - Run On Demand Item Job documentation](https://learn.microsoft.com/en-us/rest/api/fabric/core/job-scheduler/run-on-demand-item-job) for details.                        |
+| Connection           | Required   | The [Microsoft Fabric Connection](./microsoft-fabric-connection.md) used to make an authenticated request to the Microsoft Fabric REST API. To create a Connection, [please follow these steps](./microsoft-fabric-connection.md). Note! Make sure to choose an authentication method and user with the required priviliges.      |
 | Workspace Id         | Required   | Identifies the workspace where the Lakehouse is located.          |
 | Lakehouse Id         | Required   | Identifies the specific Lakehouse to load the table into.         |
 | Target table name    | Required   | The name of the target table where data will be loaded.           |
-| Load mode            | Required   | Defines how data should be loaded (e.g., overwrite existing data).|
+| Load mode            | Required   | Defines how data should be loaded (overwrite or append to existing data). 
+Source path type: Specifies the source path type. Either "File" or "Folder".|
 | Source path type     | Required   | Specifies the source path type, such as "File".                   |
 | Source file format   | Required   | The format of the source file, e.g., CSV.                         |
 | Source file path     | Required   | Path to the source file, specifying the location of the CSV file. |
@@ -42,7 +43,7 @@ File selector:
 ![img](../../../../images/flow/file_dial.png)
 
 
-### ItemCreatedResponse
+### LakehouseTableInfo
 
 | Name               | Type            | Description                |
 |--------------------|-----------------|----------------------------|
