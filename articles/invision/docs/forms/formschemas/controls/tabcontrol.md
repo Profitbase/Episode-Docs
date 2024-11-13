@@ -1,4 +1,4 @@
-# TabControl
+# Tab Control
 
 Inherits from [Control](control.md).
 
@@ -11,6 +11,19 @@ Inherits from [Control](control.md).
 <br/>
 
 ## Properties:
+
+Inherits from [Control](control.md).
+
+| Name         |  Description                        |
+|--------------|-------------------------------------|
+| SelectedTab  | The name of the selected tab. This value must match the `Name` property of the Tab. |
+| Borders      | Valid values are `All`, `ContentArea`, `TabStripBottom` or `None`.                  |
+
+## Events
+
+| Name             | Event args      |  Description                        |
+|------------------|-----------------|-------------------------------------|
+| SelectionChanged | selectedTabName | Raised when the selected tab is changed. [See example below](#example---tab-selection). |
 
 <br/>
 
@@ -68,19 +81,22 @@ The **activateTab("name of Tab")** function provides a programmatic way to switc
 
 This method can be used in various scenarios such as [button](button.md) clicks, form initialization, or any custom event, allowing for seamless navigation and enhanced user interactions within multi-tabbed interfaces.
 
-**Example**
+#### Example - Tab selection
 
-In this example, after clicking the button you will be moved to the _Inventory_ Tab.
+This example shows how to programatically activate a tab from a button click. It also shows how to use the `SelectedTabChanged` event to get notified when the selected / active tab is changed.
 
 ![activateTab](https://profitbasedocs.blob.core.windows.net/images/activateTab.png)
 
 ```xml
-  <Functions>
+<Functions>
   <Function Name="ChangeTab" Parameters="tabname">
     <![CDATA[
       console.log('Changing tab to: ' + tabname);
       controls.tc.activateTab(tabname);
     ]]>
+  </Function>
+  <Function Name="OnSelectedTabChanged" Parameters="selectedTabName">    
+      console.log(`The selected tab is now ${selectedTabName}.`); 
   </Function>
 </Functions>
 
@@ -91,7 +107,7 @@ In this example, after clicking the button you will be moved to the _Inventory_ 
   <Grid RowDefinitions="Auto, *">
     <!-- TabControl -->
     <Grid Row="2">
-      <TabControl Name="tc" SelectedTab="One">
+      <TabControl Name="tc" SelectedTab="One" SelectionChanged="OnSelectedTabChanged">
         <Tab Name="One" Header="Customers">
           <Grid>
             <Label Text="Manage customer data and view customer details." />

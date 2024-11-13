@@ -82,7 +82,7 @@
               href: formschemas/controls/spinner.md
             - name: Splitbutton
               href: formschemas/controls/splitbutton.md
-            - name: Tabcontrol
+            - name: Tab Control
               href: formschemas/controls/tabcontrol.md
             - name: Text
               href: formschemas/controls/text.md

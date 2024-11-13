@@ -16,5 +16,5 @@ Returns a (numeric) value.
 |--------------|-----------------|---------------------------------------------------|
 | Title           | Optional | The title or name of the action.     |
 | Variable to decrement         | Required   | The name of variable to decrement. |
-| Decrement by   | Required      | Write the value of decrementation.   |
+| Decrement by   | Required      | The number to decrement by.   |
 | Description   | Optional | Additional notes or comments about the action or configuration. |
