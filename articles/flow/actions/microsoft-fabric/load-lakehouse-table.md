@@ -16,7 +16,7 @@ Returns the [LakehouseTableInfo](#lakehousetableinfo).
 | Name                 | Type       | Description                                                       |
 |----------------------|------------|-------------------------------------------------------------------|
 | Title                | Optional   | The title for the upload action to the Lakehouse.                 |
-| Connection           | Required   | The [Microsoft Fabric Connection](./microsoft-fabric-connection.md) used to make an authenticated request to the Microsoft Fabric REST API. To create a Connection, [please follow these steps](./microsoft-fabric-connection.md). Note! Make sure to choose an authentication method and user with the required priviliges. Please refer to the [Microsoft Fabric API - Run On Demand Item Job documentation](https://learn.microsoft.com/en-us/rest/api/fabric/core/job-scheduler/run-on-demand-item-job) for details.                        |
+| Connection           | Required   | The [Microsoft Fabric Connection](./microsoft-fabric-connection.md) used to make an authenticated request to the Microsoft Fabric REST API. To create a Connection, [please follow these steps](./microsoft-fabric-connection.md). Note! Make sure to choose an authentication method and user with the required priviliges.      |
 | Workspace Id         | Required   | Identifies the workspace where the Lakehouse is located.          |
 | Lakehouse Id         | Required   | Identifies the specific Lakehouse to load the table into.         |
 | Target table name    | Required   | The name of the target table where data will be loaded.           |
