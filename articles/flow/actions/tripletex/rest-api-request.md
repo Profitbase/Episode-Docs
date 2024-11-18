@@ -1,7 +1,9 @@
 
 # Rest API Request
 
-Use [Tripletex](https://tripletex.no/v2-docs/) REST APIs to read or write data.
+Use [Tripletex](https://tripletex.no/v2-docs/) REST APIs to read or write data.  
+**Purpose:** General-purpose API call setup. It does not include specific properties for managing paginated responses.  
+**Features:** Focuses on single-response API requests or simple configurations without handling pagination.
 
 ![img](../../../../images/flow/tripletex.png)  
 <br/>
