@@ -1,12 +1,19 @@
-# REST API Request
 
-Use Tripletex REST APIs (v2) to read or write data.
+# Rest API Request
+
+Use [Tripletex](https://tripletex.no/v2-docs/) REST APIs to read or write data.  
+**Purpose:** General-purpose API call setup. It does not include specific properties for managing paginated responses.  
+**Features:** Focuses on single-response API requests or simple configurations without handling pagination.
+
+![img](../../../../images/flow/tripletex.png)  
+<br/>
 
 ## Properties
 
-| Name             | Type      |Description                                             |
-|------------------|-----------|--------------------------------------------------------|
-| Title  |   |        |
-| Connection | Required  | Select a connection. |
-| Configuration | Required | Define configuration. |
+| Name          | Type     | Description                                   |
+| ------------- | -------- | ----------------------------------------------- |
+| Title  | Optional  |  The title or name of the request.      |
+| Connection    | Required | The Tripletex Connection used to make an authenticated request to Tripletex REST API. |
+| Configuration | Required | Specifies the HTTP request to the Tripletex API, including the HTTP method, URL, parameters and return type.                                                                                                             |
 | Description | Optional | Additional notes or comments about the action or configuration. |
+
