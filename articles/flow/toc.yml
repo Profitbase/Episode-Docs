@@ -104,6 +104,8 @@
       href: actions/parquet/toc.yml
     - name: PostgreSQL
       href: actions/postgresql/toc.yml
+    - name: PowerOffice Go
+      href: actions/poweroffice-go/toc.yml
     - name: Profitbase InVision
       href: actions/profitbase-invision/toc.yml
     - name: Security
