@@ -47,10 +47,9 @@ For further processing, store the raw JSON response in a database or file storag
    - `invoice`: To work with invoices.  
    - `accountingSettings`: To manage accounting settings.  
 
-3. **Headers**: Include the required authorization token and any additional headers. Example:  
-   ```http
-   Authorization: Bearer <access_token>
-   Content-Type: application/json
+3. **Headers**: 
+
+   - Authentication is automatically set up from the connection settings.
 
 4. **Parameters**: Add query or body parameters as required by the endpoint. Use variables or fixed values based on your workflow to customize the request and ensure it retrieves or updates the desired data.  
 

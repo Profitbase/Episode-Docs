@@ -26,7 +26,7 @@ The **REST API Request with Paging** action allows you to use the [PowerOffice G
 ## Parameters  
 
 Specify query parameters as required by the API endpoint to filter or customize the results. These can include:  
-- **Paging Parameters**: Set options like `page` or `pageSize` to control the data returned per page.  
+
 - **Filters**: Narrow down results based on criteria (e.g., date ranges or specific record types).  
 - **Sorting**: Arrange results based on fields (e.g., ascending or descending order).  
 
