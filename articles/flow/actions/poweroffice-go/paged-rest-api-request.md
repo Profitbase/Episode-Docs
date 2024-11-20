@@ -2,6 +2,10 @@
 
 Use [PowerOffice Go REST APIs (v2)](https://prdm0go0stor0apiv20eurw.z6.web.core.windows.net/?urls.primaryName=Accounting%20Settings) to retrieve paginated data.
 
+The **REST API Request with Paging** action allows you to use the [PowerOffice Go REST APIs (v2)](https://prdm0go0stor0apiv20eurw.z6.web.core.windows.net/?urls.primaryName=Accounting%20Settings) to retrieve large, paginated datasets. This action simplifies working with endpoints that return multiple pages of data, such as lists of customers, invoices, or accounting records. Pagination is handled automatically, allowing you to focus on processing the data.  
+
+![img](../../../../images/flow/rest-api-paging-powerOff.png)  
+<br/>
 
 ## Properties
 
@@ -16,10 +20,18 @@ Use [PowerOffice Go REST APIs (v2)](https://prdm0go0stor0apiv20eurw.z6.web.core.
 | Description     | Optional | Additional notes or comments about the action or configuration.                               |
 
 
+## Returns  
 
-## Overview  
+The response from a PowerOffice API request can either be:  
+- A **custom data type** defined in your workflow, or  
+- The raw JSON response from the API.  
 
-The **REST API Request with Paging** action allows you to use the [PowerOffice Go REST APIs (v2)](https://prdm0go0stor0apiv20eurw.z6.web.core.windows.net/?urls.primaryName=Accounting%20Settings) to retrieve large, paginated datasets. This action simplifies working with endpoints that return multiple pages of data, such as lists of customers, invoices, or accounting records. Pagination is handled automatically, allowing you to focus on processing the data.  
+To maximize compatibility and performance, we recommend using the `HttpResponse<T>` type. This provides:  
+- The raw response body.  
+- Additional details such as the HTTP status code.  
+
+For further processing, store the raw JSON response in a database or file storage, and use data transformation tools to convert it into the required format.  
+
 
 <br/>
 

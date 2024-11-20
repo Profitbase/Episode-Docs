@@ -1,8 +1,9 @@
 
 # Rest API Request
 
-Use [Tripletex](https://tripletex.no/v2-docs/) REST APIs to read or write data.  
+Use [Tripletex](https://tripletex.no/v2-docs/) REST APIs to read or write data. 
 
+The **Tripletex REST API Request** action allows you to interact with Tripletex APIs to read or write data. You can retrieve information like customers, projects, or invoices, or update records in the Tripletex system using HTTP methods (`GET`, `POST`, `PUT`, `DELETE`, etc.).  
 
 ![img](../../../../images/flow/tripletex.png)  
 <br/>
@@ -16,11 +17,7 @@ Use [Tripletex](https://tripletex.no/v2-docs/) REST APIs to read or write data.
 | Configuration | Required | Specifies the HTTP request to the Tripletex API, including the HTTP method, URL, parameters and return type.                                                                                                             |
 | Description | Optional | Additional notes or comments about the action or configuration. |
 
-<br/>
 
-## Overview  
-
-The **Tripletex REST API Request** action allows you to interact with Tripletex APIs to read or write data. You can retrieve information like customers, projects, or invoices, or update records in the Tripletex system using HTTP methods (`GET`, `POST`, `PUT`, `DELETE`, etc.).  
 
 <br/>
 

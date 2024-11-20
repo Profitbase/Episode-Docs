@@ -3,6 +3,14 @@
 Use [PowerOffice Go REST APIs (v2)](https://prdm0go0stor0apiv20eurw.z6.web.core.windows.net/?urls.primaryName=Accounting%20Settings) to retrieve or write data.
 
 
+The **PowerOffice REST API Request** action allows you to interact with PowerOffice APIs to read or write data. You can retrieve information such as customers, invoices, or accounting settings, or update records in the PowerOffice system using HTTP methods (`GET`, `POST`, `PUT`, `DELETE`, etc.).  
+
+<br/>
+
+![img](../../../../images/flow/powerOffice-rest-api.png)  
+
+<br/>
+
 ## Properties
 
 | Name             | Type      |Description                                             |
@@ -12,11 +20,6 @@ Use [PowerOffice Go REST APIs (v2)](https://prdm0go0stor0apiv20eurw.z6.web.core.
 | Configuration | Required | Define configuration. |
 | Description | Optional | Additional notes or comments about the action or configuration. |
 
-## Overview  
-
-The **PowerOffice REST API Request** action allows you to interact with PowerOffice APIs to read or write data. You can retrieve information such as customers, invoices, or accounting settings, or update records in the PowerOffice system using HTTP methods (`GET`, `POST`, `PUT`, `DELETE`, etc.).  
-
-<br/>
 
 ## Returns  
 
