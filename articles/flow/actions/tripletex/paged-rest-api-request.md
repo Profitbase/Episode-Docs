@@ -3,6 +3,11 @@
 Use Tripletex REST [APIs (v2)](https://tripletex.no/v2-docs/) to read paged data.  
 
 
+The **REST API Request with Paging** action allows you to use the [Tripletex](https://tripletex.no/v2-docs/) REST APIs to retrieve large, paginated datasets. This action simplifies working with endpoints that return multiple pages of data, such as lists of customers, invoices, or accounting records. Pagination is handled automatically, allowing you to focus on processing the data.  
+
+![img](../../../../images/flow/rest-api-paging-trip.png)  
+<br/>
+
 ## Properties
 
 | Name            | Type     | Description                                                                                   |
