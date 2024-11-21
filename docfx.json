@@ -45,7 +45,8 @@
         "files": [
           "images/**",
           "images/logo.svg",
-          "images/favicon.ico"
+          "images/favicon.ico",
+          "iza-template/public/**"
         ]
       }
     ],
