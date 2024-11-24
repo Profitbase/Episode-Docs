@@ -58,12 +58,19 @@ main {
     text-decoration: none;
 }
 
+.doc-tile-text{
+    height: 100px;
+}
 
 /* Apply your custom-link styles here for the new section */
-.custom-link-mini {
+.link-button {
     color: #107fbe; 
-     font-weight: lighter; 
-    text-decoration: underline;  
+    font-weight: lighter;     
+    border: 1px solid #107fbe;
+    padding: 8px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 400;
 }
 
 
