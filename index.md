@@ -1,8 +1,8 @@
 
 
-### Product directory
+# Learn Profitbase
 
-Explore guides and articles by product.
+Explore what you can do with Profitbase to power every level of the organization.
 
 <div class="flex-container">
 
@@ -13,8 +13,8 @@ Explore guides and articles by product.
         <a href="articles/PowerBI/power-bi.md" class="custom-link">
             Power BI Custom Visuals
         </a>
-    <p>Advanced Reporting, Simplified with Profitbase and Power BI.</p>
-            <a href="articles/PowerBI/power-bi.md" class="custom-link-mini">
+    <p class="doc-tile-text">Advanced Reporting, Simplified with Profitbase and Power BI.</p>
+            <a href="articles/PowerBI/power-bi.md" class="link-button">
             Read more...
         </a>
 </div>
@@ -26,8 +26,8 @@ Explore guides and articles by product.
                 <a href="articles/planner/planner.md" class="custom-link">
              Budgeting and forecasting
         </a>
-    <p>Move away from Excel with our flexible Budgeting and Forecasting Software.</p>
-                    <a href="articles/planner/planner.md" class="custom-link-mini">
+    <p class="doc-tile-text">Move away from Excel with our flexible Budgeting and Forecasting Software.</p>
+                    <a href="articles/planner/planner.md" class="link-button">
              Read more...
         </a>
 </div>
@@ -39,8 +39,8 @@ Explore guides and articles by product.
                  <a href="articles/risk/risk.md" class="custom-link">
             Risk Management
         </a>
-    <p>Safeguard your company’s values and assets.</p>
-                  <a href="articles/risk/risk.md" class="custom-link-mini">
+    <p class="doc-tile-text">Safeguard your company’s values and assets.</p>
+                  <a href="articles/risk/risk.md" class="link-button">
             Read more...
         </a>
 </div>
@@ -57,8 +57,8 @@ Explore guides and articles by product.
                 <a href="articles/invision/invision.md" class="custom-link">
            Profitbase InVision
         </a>   
-    <p>Build advanced business apps with low-code.</p>
-           <a href="articles/invision/invision.md" class="custom-link-mini">
+    <p class="doc-tile-text">Build advanced business apps with low-code.</p>
+           <a href="articles/invision/invision.md" class="link-button">
            Read more...
         </a>   
 </div>
@@ -70,8 +70,8 @@ Explore guides and articles by product.
                  <a href="articles/flow/flow.md" class="custom-link">
             Profitbase Flow
         </a>
-    <p>Automate digital processes and integrate data from various sources through a user-friendly drag-and-drop interface.</p>
-                     <a href="articles/flow/flow.md" class="custom-link-mini">
+    <p class="doc-tile-text">Automate digital processes and integrate data from various sources through a user-friendly drag-and-drop interface.</p>
+                     <a href="articles/flow/flow.md" class="link-button">
             Read more...
         </a>
 </div>
@@ -83,8 +83,8 @@ Explore guides and articles by product.
                 <a href="https://www.profitbase.com" class="custom-link">
             Profitbase website 
         </a>
-    <p>Visit our website!</p>
-                    <a href="https://www.profitbase.com" class="custom-link-mini">
+    <p class="doc-tile-text">Visit our website!</p>
+                    <a href="https://www.profitbase.com" class="link-button">
             Here... 
         </a>
 </div>

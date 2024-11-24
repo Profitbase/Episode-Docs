@@ -1,6 +1,6 @@
 # DataTableTransformer
 
-Modifies the rows and columns of a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) by applying a sequence of one or more transformations.
+Modifies the rows and columns of a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) by applying a sequence of transformations.
 
 #### Example
 
