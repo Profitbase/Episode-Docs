@@ -13,15 +13,13 @@
 
 <br/>
 
-The InVision platform serves as a "Rapid Application Development" solution, empowering users to swiftly and effectively construct adaptable business solutions on a modern and robust technology stack. Users can leverage the platform's comprehensive standard components to develop a wide range of elements, including user interfaces and back-end functionality. This streamlined approach significantly reduces both cost and time when implementing projects.
+Profitbase InVision is a low-code empowering users to swiftly and effectively create adaptable business apps on a modern and robust technology stack. Users can leverage the platform's comprehensive standard components to develop a wide range of solutions, including user interfaces and back-end services. This streamlined approach significantly reduces both cost and time when implementing projects.
 
 Users utilize the Profitbase InVision Designer to construct applications, which are subsequently published as web applications within the organization. These web applications require minimal or no training to operate effectively.
 
-Within a matter of minutes, users can download prebuilt business modules and install them, tailoring them to precisely meet the specific requirements of the customer.
+Within a matter of minutes, users can install pre-built modules, and optionally customize them to precisely meet the specific requirements of the business.
 
-Profitbase InVision seamlessly integrates with other business systems through a RESTful Web API or direct connection to the SQL data storage, facilitating effortless connectivity.
-
-Users can expand Profitbase InVision's capabilities by constructing custom business modules using the Profitbase InVision Designer developer tool and Microsoft Visual Studio.
+Profitbase InVision seamlessly integrates with other business systems through REST APIs or direct connection to the SQL data storage, facilitating effortless connectivity.
 
 <br/>
 
