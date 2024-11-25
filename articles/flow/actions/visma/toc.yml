@@ -1,2 +1,4 @@
-- name: "Get Visma Business NXT data"
-  href: get-visma-business-nxt-data.md
+- name: "Visma Business NXT"
+  href: visma-business-nxt/toc.yml
+- name: "Visma Net"
+  href: visma-net/toc.yml
