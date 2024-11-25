@@ -59,7 +59,7 @@ main {
 }
 
 .doc-tile-text{
-    height: 100px;
+    min-height: 100px;
 }
 
 /* Apply your custom-link styles here for the new section */
