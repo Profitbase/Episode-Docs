@@ -4,9 +4,9 @@ Gets data from Visma Business NXT using GraphQL.
 
 This action gets data from Visma Business NXT using a GraphQL query and returns the result as a stream of rows through an  [IDataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader).  
 
-The stream can then be piped to a destination, for example a SQL Server table using the [Insert data](../sql-server/insert-data.md) action.
+The stream can then be piped to a destination, for example a SQL Server table using the [Insert data](../../sql-server/insert-data.md) action.
 
-![img](../../../../images/flow/get-visma-business-nxt-data.png)
+![img](../../../../../images/flow/get-visma-business-nxt-data.png)
 
 ## Properties
 
@@ -28,7 +28,7 @@ Defines the GraphQL query used to fetch data. You can get started quickly by cli
 ##### Variables (optional)
 
 If the query is parameterized (which it usually is), you need to map the parameters in the query to variables.  
-![img](../../../../images/flow/visma-graphql-variables.png)
+![img](../../../../../images/flow/visma-graphql-variables.png)
 
 ##### Item type mapping (required)
 
