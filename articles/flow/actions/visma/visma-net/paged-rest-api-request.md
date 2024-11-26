@@ -5,30 +5,31 @@ Use Visma.Net REST [APIs](https://integration.visma.net/API-index/) to read page
 
 The **REST API Request with Paging** action allows you to use the [Visma.Net](https://developer.visma.com/api/visma-net) REST APIs to retrieve large, paginated datasets. This action simplifies working with endpoints that return multiple pages of data, such as lists of customers, invoices, or accounting records. Pagination is handled automatically, allowing you to focus on processing the data.  
 
- TODO image..
+ <!-- TODO image.. -->
+
 <br/>
 
 ## Properties
 
 | Name            | Type     | Description                                                                                   |
-|----------------- | -------- | --------------------------------------------------------------------------------------------- |
-| Title           | Optional | The title or name of the request.                                                             |
-| Connection      | Required | The Visma.Net Connection used to make an authenticated request to Visma.Net REST API.         |
-| Configuration   | Required | Specifies the HTTP request to the Visma.Net API, including the HTTP method, URL, parameters, and return type. |
-| Start page      | Optional | The start page for data retrieval. Defaults to 1 if not specified.                            |
-| Items per page  | Optional | The number of items to retrieve per page. Defaults to 1000 if not specified.                  |
-| Max page count  | Optional | The maximum number of pages to fetch. Defaults to 9999 if not specified.                      |
+|----------------- | -------- | -------------------------------------------------------------- |
+| Title           | Optional | The title or name of the request.                         |
+| Connection      | Required | Specifies the Visma.Net connection used for authentication with the REST API.         |
+| Configuration   | Required | Defines the HTTP request to Visma.Net, including the method, URL, parameters, and return type.  |
+| Start page      | Optional | The page to begin retrieving data from. Defaults to 1 (if not specified).                            |
+| Items per page  | Optional | The number of items to retrieve per page. Defaults to 1000 (if not specified).                  |
+| Max page count  | Optional | The maximum number of pages to fetch. Defaults to 9999 (if not specified).                      |
 | Description     | Optional | Additional notes or comments about the action or configuration.                               |
 
 
 
 ## Returns  
 
-The return type for Visma.Net API actions is defined during configuration. It can be either:  
-- A **custom data type**, or  
-- The raw JSON response from the API.  
+The return type is configurable and can be:  
+- A **custom data type**.  
+- A raw JSON response from the API.  
 
-For simplicity and debugging, it’s recommended to use the built-in `HttpResponse<T>` type. This includes additional information, such as the HTTP status code, ensuring compatibility with Visma.Net API responses.  
+For simplicity and debugging, use the built-in `HttpResponse<T>` type. It provides additional metadata, such as HTTP status codes, ensuring compatibility with Visma.Net API responses.  
 
 To process the data effectively:  
 1. Store the raw response in a data repository (e.g., database or cloud storage).  
@@ -50,7 +51,8 @@ Requests to the Visma.Net API can be defined manually or by using predefined tem
    - Ensure proper encoding of any additional headers.  
 4. **Response Type**: Use `HttpResponse<string>` by default for raw JSON responses. For large responses, this minimizes memory usage and improves performance.  
 
-For endpoint-specific details, refer to the [Visma.Net API documentation](https://integration.visma.net/API-index/).  
+Refer to the [Visma.Net API documentation](https://integration.visma.net/API-index/) for endpoint-specific guidance.
+
 
 <br/>
 
@@ -67,9 +69,11 @@ Ensure your API client or workflow can handle this iterative process effectively
 <br/>
 
 ## API Limits  
-- TODO
+
+Visma.Net APIs enforce rate limits to ensure fair usage and optimal performance. These limits may vary depending on the API endpoint, account type, or subscription plan. Exceeding these limits can result in temporary restrictions, such as delayed requests or HTTP 429 (Too Many Requests) responses. 
 
 ### Best Practices for Handling API Limits:  
+
 - Implement additional retry mechanism.  
 - Optimize queries to fetch only necessary data.  
 - Monitor API usage to avoid hitting the limit during peak periods.  
