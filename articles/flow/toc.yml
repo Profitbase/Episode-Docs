@@ -72,6 +72,8 @@
       href: actions/azure-event-hub/toc.yml
     - name: Azure Service Bus
       href: actions/azure-service-bus/toc.yml
+    - name: Azure Table Storage
+      href: actions/azure-table-storage/toc.yml   
     - name: "Built-in (Flow)"
       href: actions/built-in/toc.yml
     - name: CSV
