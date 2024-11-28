@@ -1,4 +1,4 @@
-# Read JSON
+# Read JSON file as string
 
 Reads a JSON file [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays) or [stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream)and returns the result as a [string](https://learn.microsoft.com/en-us/dotnet/api/system.string).
 
