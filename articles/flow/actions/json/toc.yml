@@ -2,6 +2,8 @@
   href: "create-json-file-as-byte-array.md"
 - name: "Create JSON file as stream"
   href: "create-json-file-as-stream.md"
-- name: "Read JSON"
+- name: "Read JSON file as string"
   href: "read-json.md"
+- name: Get JSON DataReader
+  href: "get-json-datareader.md"
 
