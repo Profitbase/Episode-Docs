@@ -1,3 +1,5 @@
 - name: "Foreach Table Entity"
   href: "foreach-table-entity.md"
+- name: "Add Table Entity"
+  href: "add-table-entity.md"
 
