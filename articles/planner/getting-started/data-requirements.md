@@ -30,7 +30,7 @@ Please note that any non-visual characters such as as carriage return, line feed
 | :---         | :---:    | :---     |
 | [Ledger Fact](#ledger-fact) | Mandatory | |
 | [Personnel Fact](#personnel-fact) | Optional | |
-| [Driver Based Fact]() | Optional | |
+| [Driver Based Fact](#driver-based-fact) | Optional | |
 | [Fixed Assets]() | Optional | |
 
 ## Other data
@@ -103,12 +103,12 @@ It is important that DepartmentIDs of the dimension corresponds to the IDs used 
 | Column Name    | Description | Mandatory  | Comment |
 | :--- | :--- | :--- | :--- |
 | ID | ID for the dimension member | Mandatory | This ID must be unique |
-| Name | Friendly name for the member | Mandatory | | 
+| Name | Friendly name for the member | Mandatory | |
 | ParentID | ID for the parent node | Optional | Must be a valid ID or NULL |
 
 ## Ledger Fact
 
-### Mandatory columns
+***Mandatory columns***
 
 | Column Name | Description | Valid values | Comment |
 | :--- | :--- | :--- | :--- |
@@ -124,7 +124,7 @@ It is important that DepartmentIDs of the dimension corresponds to the IDs used 
 | AccTypeID | Classify account type for transaction | PL / BAL | PL for Profit/Loss Accounts. BAL for Balance Accounts |
 | FiscalPeriod | Specify the fiscal period for the transaction | YYYYMM | An integer representing the fiscal period |
 
-### Mandatory Consolidation, Optional Planner
+***Mandatory Consolidation, Optional Planner***
 
 | Column Name | Description | Valid values | Comment |
 | :--- | :--- | :--- | :--- |
@@ -132,7 +132,7 @@ It is important that DepartmentIDs of the dimension corresponds to the IDs used 
 | AmountForeign | Transaction amount | decimal(18,4) | Mandatory for Consolidation |
 | CpLegalEntityID | Counter Legal Entity | varchar(50) | Mandatory for Consolidation. Also for Planner if counterpart is used for budget/forecast |
 
-### Optional columns
+***Optional columns***
 
 | Column Name | Description | Valid values | Comment |
 | :--- | :--- | :--- | :--- |
@@ -147,19 +147,19 @@ It is important that DepartmentIDs of the dimension corresponds to the IDs used 
 | ProjectID | Project ID | varchar(50) ||
 | ActivityID | Activity ID | varchar(50) ||
 
-## Personnel fact
+## Personnel Fact
 
-### Mandatory columns
+***Mandatory Columns***
 
 | Column Name | Description | Valid values | Comment |
 | :--- | :--- | :--- | :--- |
 | DepartmentID | Department ID | varchar(50) | |
 | EmployeeID | Employee ID | varchar(50) ||
 | FTE | Curremt Full Time Equivalent position of the employee or group/function at the given department | decimal(18,4) ||
-| HC | The current Headcount of the employee or group/function. | decimal(18,4) |
+| HC | The current Headcount of the employee or group/function. | decimal(18,4) | |
 | MonthlySalary | The current monthly salary for a full time FTE for the employee at the given department | decimal(18,4) ||
 
-### Optional columns 
+***Optional Columns***
 
 | Column Name | Description | Valid values | Comment |
 | :--- | :--- | :--- | :--- |
@@ -182,3 +182,69 @@ It is important that DepartmentIDs of the dimension corresponds to the IDs used 
 | VacationPayPctOvr | Override value for vacation pay rate | decimal(18,4) | Note that an override value will set aside any setting regime that otherwise might apply to this row. |
 | Attr1 | Free use column for additonal dimmensions needed | varchar(50) | |
 | Attr2 | Free use column for additonal dimmensions needed | varchar(50) | |
+
+## Driver Based Fact
+
+***Mandatory Columns***
+
+| Column Name | Description | Valid values | Comment |
+| :--- | :--- | :--- | :--- |
+| DepartmentID | Department ID | varchar(50) | |
+| ProductID | Product ID | varchar(50) | |
+| MarketID | Market ID | varchar(50) ||
+| SystemModelAccountID | The measure ID | varchar(50) ||
+| Value | Amount, Quantity, Percentage depending on the nature of the measure | decimal(18,4) | Any amounts must be in the functional currency of the legal entity it belongs to. |
+| Year | Year | int | 4-digit year, for example 2025 |
+| Month | Month | int | Month Number, 1-12 |
+
+***Optional Columns***
+
+| Column Name | Description | Valid values | Comment |
+| :--- | :--- | :--- | :--- |
+| SupplierID | Supplier ID | varchar(50) ||
+| ProjectID | Project ID | varchar(50) ||
+| ActivityID | Activity ID | varchar(50) ||
+| Dim1 | Dim1 | varchar(50) ||
+| Dim2 | Dim2 | varchar(50) ||
+| Dim3 | Dim3 | varchar(50) ||
+| Dim4 | Dim4 | varchar(50) ||
+| CPLegalEntityID | Counterpart Legal Entity ID | varchar(50) ||
+
+## Fixed Assets
+
+***Mandatory Columns***
+
+| Column Name | Description | Valid values | Comment |
+| :--- | :--- | :--- | :--- |
+| LegalEntityID | Legal Entity ID | varchar(50) ||
+| TextID | Text ID | varchar(50) ||
+| AccountID | Account ID | varchar(50) ||
+| AssetCost | Asset Cost | decimal(18,4) ||
+| StartDate | Start Date for Depreciation | datetime ||
+| DepreciationPct | Depreciation % | decimal(18,4) ||
+| AccountDepreciation | Account for depreciation transactions | varchar(50) ||
+| CounterAccount | Counter account for depreciation | varchar(50) ||
+
+***Optional Columns***
+
+| Column Name | Description | Valid values | Comment |
+| :--- | :--- | :--- | :--- |
+| DepartmentID | Department ID | varchar(50) ||
+| CurrencyForeignID | Foreign Currency ID | USD / NOK / EUR.. | Any valid currency code |
+| DeprAccum | Accumulated Depreciation | decimal(18,4) ||
+| ResidualValue | Residual Value | decimal(18,4) ||
+| IsDeclining | Declining Depreciation | 1 / 0 ||
+| IsFullTaxY1 | Full Tax first year of Depreciation | 1 / 0 ||
+| DisposalDate | Disposal Date | datetime ||
+| DisposalAmount | Disposal Amount | decimal(18,4) ||
+| VATPct | VAT % | decimal(18,4) ||
+| DaysOfCredit | Days of Credit | int ||
+| AccountAgioDisagio | Agio/Disagio Account | varchar(50) ||
+| AccountProfitLoss | Profit/Loss Account | varchar(50) ||
+| ProjectID | Project ID | varchar(50) ||
+| ActivityID | Activity ID | varchar(50) ||
+| Dim1 | Dim1 | varchar(50) ||
+| Dim2 | Dim2 | varchar(50) ||
+| Dim3 | Dim3 | varchar(50) ||
+| Dim4 | Dim4 | varchar(50) ||
+| Comments | Comments | varchar(200) ||
