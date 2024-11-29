@@ -31,7 +31,7 @@ Please note that any non-visual characters such as as carriage return, line feed
 | [Ledger Fact](#ledger-fact) | Mandatory | |
 | [Personnel Fact](#personnel-fact) | Optional | |
 | [Driver Based Fact](#driver-based-fact) | Optional | |
-| [Fixed Assets]() | Optional | |
+| [Fixed Assets](#fixed-assets) | Optional | |
 
 ## Other data
 
