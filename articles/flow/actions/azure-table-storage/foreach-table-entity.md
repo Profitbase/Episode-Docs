@@ -1,30 +1,26 @@
-# Foreach Table Entity
+# For each Table Entity
 
 Iterates over a list of all entities in an Azure table. 
 
 ![img](../../../../images/flow/foreach-table-entity.png)
 
+## Returns
 
+Returns a list of the table entities.
 
 ## Properties
 
 | Name                   | Type      | Description                                                                                          |
 |------------------------|-----------|-----------------------------------------------------|
 | Title                  | Optional  | A user-defined title for the action.     |
-| Connection             | Required  | Specify the connection to the Azure Table Storage account. Choose either 1. A [SAS URI](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview) to an Azure Blob container or 2. A Storage account connection. |
-| Entity name            | Required  | The name of the table entity to iterate over.      |
-| Table Entity properties | Optional | Define the properties of the table entities to use in the iteration.   |
-| Table Entity filters   | Optional  | Configure filters to refine the list of table entities to process.   |
+| Connection             | Required  | Specify the connection to the Azure Table Storage account. |
+| Table name            | Required  | The name of the table containing data.   |
+| Entity properties | Optional | Define the properties of the table entities to use in the iteration.   |
+| Filter   | Optional  | Configure filters to refine the list of table entities to process.   |
+| Entity name            | Optional  | The name of the table entity to iterate over.      |
 
-### Connection
 
-A [SAS URI](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview) connection:
-
-![img](../../../../images/flow/foreach-table-entity3.png)
-
-A Storage account connection:
-
-![img](../../../../images/flow/foreach-table-entity4.png)
+[!INCLUDE [connection](connection.md)]
 
 ### Table Entity Properties 
 
