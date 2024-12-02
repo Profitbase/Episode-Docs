@@ -2,4 +2,5 @@
   href: "foreach-table-entity.md"
 - name: "Add Table Entity"
   href: "add-table-entity.md"
-
+- name: "Delete Table Entity"
+  href: "delete-table-entity.md"
