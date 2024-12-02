@@ -7,6 +7,17 @@ The `REST API Request with paging` action enables you to call [Dynamics 365 Busi
 
 ![img](/images/flow/dynamics365-bc-api-request-with-paging.png)
 
+<br/>
+
+## Returns
+
+The return type is defined when configuring the action. It can be a custom data type or the raw JSON response from the API.  
+We recommend using the built-in [HttpResponse&lt;T&gt;](../../../api-reference/built-in-types/http-response.md) type because it will include additional information about the response, such as the HTTP status code.
+
+We also recommend simply dumping the raw response to a data store, and then use data transformation tools to transform the data into a usable format. If you know the API returns small amounts of data (10 000 - 200 000 records), you can consider using the [Get JSON DataReader](../../json/get-json-datareader.md) to flatten JSON to a tabular format and process the data as rows and columns, for example by inserting directly to a SQL Server table.
+
+<br/>
+
 ## Properties
 
 <!--prettier-ignore-->
@@ -15,12 +26,8 @@ The `REST API Request with paging` action enables you to call [Dynamics 365 Busi
 | Connection    | Required | The [Dynamics 365 Business Central connection](./dynamics365-business-central-api-v2-connection.md) used to make an authenticated request to the Dynamics 365 Business Central API. |
 | Configuration | Required | Defines the HTTP request to make to the API. See details [below](#configuration).                                                                                                   |
 
-## Returns
 
-The return type is defined when configuring the action. It can be a custom data type or the raw JSON response from the API.  
-We recommend using the built-in [HttpResponse&lt;T&gt;](../../../api-reference/built-in-types/http-response.md) type because it will include additional information about the response, such as the HTTP status code.
-
-We recommend simply dumping the raw response to a data store, and then use data transformation tools to transform the data into a usable format.
+<br/>
 
 ## Configuration
 
@@ -41,6 +48,11 @@ To define a request manually, please refer to the [Dynamics 365 Business Central
 ## Response paging
 
 The `REST API Request with paging` action handles paging automatically for you, by returning one page at a time until the Dynamics 365 Business Central API returns no more pages. Note that this action also works for APIs that does not return paged responses, in which case the response will contain only a single page.
+
+## Error handling
+
+If an error occurs while fetching a result page from the Dynamics 365 Business Central REST API, the action will raise an error that could terminate the Flow unless it is wrapped in a [Try-Catch](../../built-in/try-catch.md) action. To prevent this, you can connect an action to the `On Error` port. The error handler will be triggered for each `page error`, allowing you to handle errors individually and preventing Flow from automatically raising an error that might terminate the running process.
+
 
 ## API limits
 
