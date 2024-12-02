@@ -1,6 +1,6 @@
 # Get JSON DataReader
 
-This action gets an [IDataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) that converts a JSON document to a tabular format (row and columns).
+This action creates an [IDataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) that converts a JSON document to a tabular format (row and columns).
 Typical use cases include inserting a JSON document into a relational database table as rows and columns, or converting JSON into other tabular formats such as Excel or Parquet files.
 
 ![img](/images/flow/json-get-json-datareader.png)
@@ -13,7 +13,7 @@ Typical use cases include inserting a JSON document into a relational database t
 | Name                     | Type                 | Description                                |
 |--------------------------|----------------------|--------------------------------------------|
 | JSON                     | Required             | A string or byte array containing data in a valid JSON format. |
-| [Schema mapping](#schema-mapping)           | Optional             | Enables manually defining the mapping between JSON properties and column names, inlcuding data types. |
+| [Schema mapping](#schema-mapping)           | Optional             | Enables manually defining the mapping between JSON properties and column names, including data types. |
 | DataReader variable name | Required             | The name of the DataReader that this action returns. You may change the name to better convey what data the DataReader contains, for example `customers` or `orders`. | 
 
 <br/>
