@@ -1,7 +1,6 @@
 # Upload to Lakehouse
 
-Uploads a file to Lakehouse in a Microsoft Fabric [Workspace](https://learn.microsoft.com/en-us/fabric/get-started/create-workspaces). Microsoft Fabric Workspace is a collaborative cloud environment for data storage, analytics, and processing, allowing teams to manage and analyze large datasets effectively.  
-[Read more](https://learn.microsoft.com/en-us/fabric/get-started/create-workspaces).
+Uploads a file to a Lakehouse in Microsoft Fabric to make it ready for analytics. 
 
 ![img](../../../../images/flow/upload-to-lakehouse.png)
 
