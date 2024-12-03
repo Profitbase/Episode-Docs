@@ -1,7 +1,7 @@
 # Load Lakehouse Table
 
 
-Loads Lakehouse [Table](https://learn.microsoft.com/en-us/fabric/data-engineering/load-to-tables).
+Loads Lakehouse [Table](https://learn.microsoft.com/en-us/fabric/data-engineering/load-to-tables) from a file or a folder containing multiple files.
 
 
 <br/>

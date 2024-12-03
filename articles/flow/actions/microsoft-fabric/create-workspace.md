@@ -1,6 +1,6 @@
 # Create Workspace
 
-Creates a [Workspace](https://learn.microsoft.com/en-us/fabric/get-started/create-workspaces) in a Microsoft Fabric. Microsoft Fabric Workspace is a collaborative cloud environment for data storage, analytics, and processing, allowing teams to manage and analyze large datasets effectively.  
+Creates a [Workspace](https://learn.microsoft.com/en-us/fabric/get-started/create-workspaces) in Microsoft Fabric. This action enables teams and organizations to automatically provision Workspaces on-demand without having to use the Fabric portal to create them manually.
 [Read more](https://learn.microsoft.com/en-us/fabric/get-started/create-workspaces).
 
 
