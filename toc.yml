@@ -1,4 +1,6 @@
   items:
+  - name: CFO Platform
+    href: articles/cfo-platform/toc.yml
   - name: Power BI
     href: articles/PowerBI/toc.yml    
   - name: Budgeting and forecasting
