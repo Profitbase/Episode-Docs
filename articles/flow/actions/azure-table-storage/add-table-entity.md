@@ -5,10 +5,6 @@ Add an entity to an Azure Table.
 ![img](../../../../images/flow/add-table-entity.png)
 
 
-## Returns
-
-Returns a list of the table entities.
-
 ## Properties
 
 | Name                   | Type       | Description          |
