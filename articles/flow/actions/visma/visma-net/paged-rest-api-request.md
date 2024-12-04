@@ -16,6 +16,7 @@ The **REST API Request with Paging** action allows you to use the [Visma.Net](ht
 | Title           | Optional | The title or name of the request.                         |
 | Connection      | Required | Specifies the Visma.Net connection used for authentication with the REST API.         |
 | Configuration   | Required | Defines the HTTP request to Visma.Net, including the method, URL, parameters, and return type.  |
+| Company Id      | Optional | The Company Id to request data from. Default company can be set in the connection.        |
 | Start page      | Optional | The page to begin retrieving data from. Defaults to 1 (if not specified).                            |
 | Items per page  | Optional | The number of items to retrieve per page. Defaults to 1000 (if not specified).                  |
 | Max page count  | Optional | The maximum number of pages to fetch. Defaults to 9999 (if not specified).                      |
@@ -25,15 +26,16 @@ The **REST API Request with Paging** action allows you to use the [Visma.Net](ht
 
 ## Returns  
 
-The return type is configurable and can be:  
-- A **custom data type**.  
-- A raw JSON response from the API.  
+Templates set the default return type. 
+For requests returning a single item, the return type is an Entity. E.g. v1\Customer\12345 returns a CustomerDTO entity.
+For API returning collections, the default return value is HtppResult<string>. This contains the result as a JSON string and the Status of the request.
 
-For simplicity and debugging, use the built-in `HttpResponse<T>` type. It provides additional metadata, such as HTTP status codes, ensuring compatibility with Visma.Net API responses.  
+> [!NOTE]
+>  If `HttpResponse` is used as a result, this will also contain errors. The `onException` port is not used.
 
 To process the data effectively:  
-1. Store the raw response in a data repository (e.g., database or cloud storage).  
-2. Transform the stored data using tools like SQL, Python, or data transformation pipelines.  
+1. Store the raw response content in a data repository (e.g., database or cloud storage).  
+2. Transform the stored data using tools like SQL, Python, or nodes such as 'Create JSON File' within data transformation pipelines.  
 
 <br/>
 
@@ -64,7 +66,10 @@ To handle paging:
 - Use the `next` link from the API response to fetch subsequent pages.  
 - Repeat until no further pages are available.  
 
-Ensure your API client or workflow can handle this iterative process effectively.  
+Ensure your API client or workflow can handle this iterative process effectively. 
+
+> [!NOTE]
+> Not all API's supports paging. Check out the [API](https://integration.visma.net/API-index/) documentation for details.
 
 <br/>
 
