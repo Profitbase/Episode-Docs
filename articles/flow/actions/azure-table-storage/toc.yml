@@ -4,3 +4,5 @@
   href: "add-table-entity.md"
 - name: "Delete Table Entity"
   href: "delete-table-entity.md"
+- name: "Update Table Entity"
+  href: "update-table-entity.md"
