@@ -25,13 +25,14 @@ const result = await this.app.ui.dialogs.showConfirm({
 });
 
 if(result){
-    const success = await this.app.services.flow.execute("Delete Customer", {
+    const response = await this.app.services.flow.execute("Delete Customer", {
         data: {
             customerId: this.app.variables._state.customerId
         }
     });
     
-    this.app.ui.dialogs.showMessage(`The customer was ${!success ? 'NOT' : ''} deleted!`)    
+    // The Delete Customer Flow returns true / false whether the customer was successfully deleted or not.
+    this.app.ui.dialogs.showMessage(`The customer was ${!response.data ? 'NOT' : ''} deleted!`)    
 }
 ```
 
