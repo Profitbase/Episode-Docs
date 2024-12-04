@@ -22,12 +22,12 @@ Returns a list of the table entities.
 
 [!INCLUDE [connection](connection.md)]
 
-### Table Entity Properties 
+### Entity Properties 
 
 ![img](../../../../images/flow/foreach-table-entity2.png)
 
 
-### Table Entity Filters
+### Filter
 
 **Simple** filtering, accepts input or variable input:
 
