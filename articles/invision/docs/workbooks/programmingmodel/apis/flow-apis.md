@@ -23,6 +23,14 @@ this.app.services.flow.execute(flowName: string, {
 | environment    | Optional. Specify this option of you want to override the FLOW_ENVIRONMENT Solution Variable. |
 | data           | Optional. Specifies the arguments to send to the Flow.  |
 
+## Returns
+
+The API returns a response object with the following properties.
+
+| Property      | Description                        |
+|---------------|------------------------------------|
+| data          | The data returned from the executed Flow (if any). This may be null, a simple value, or a complex object.  |
+| status        | The HTTP status code.              |
 
 ##### Example
 
@@ -30,14 +38,14 @@ This example shows how to run a Flow that returns a value (price) and displays t
 
 ```javascript
 
-const price = await this.app.services.flow.execute('Calculate Price', {
+const response = await this.app.services.flow.execute('Calculate Price', {
     data: {
         productId: this.app.variables._state.selectedProductId,
         qty: 30
     }
 });
 
-this.app.ui.dialogs.showMessage(`The calculated price is ${price}`);
+this.app.ui.dialogs.showMessage(`The calculated price is ${response.data}`);
 
 ```
 
