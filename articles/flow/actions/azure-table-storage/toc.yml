@@ -1,3 +1,5 @@
+- name: "Connection"
+  href: "connecting-to-azure-table-storage.md"
 - name: "For each Table Entity"
   href: "foreach-table-entity.md"
 - name: "Add Table Entity"
