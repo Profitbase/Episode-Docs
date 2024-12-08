@@ -1,4 +1,4 @@
-# Foreach Blob name
+# For each Blob name
 
 Iterates over a list of all blob names in an Azure blob container. The blob name is the name of the blob object, for example `myfile.txt`. 
 

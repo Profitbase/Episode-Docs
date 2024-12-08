@@ -27,5 +27,5 @@ Use this action to run a Flow when a new mail arrives in a shared Microsoft 365 
 ## Attachments
 
 If `Include attachments` is set to false (unchecked), only metadata about any attachments in the message is included when the trigger runs.
-If this is the case, you need to use an additional action such as [Get attachment](../../actions/microsoft-365-outlook/get-attachment.md) or [Foreach attachment](../../actions/microsoft-365-outlook/foreach-attachment.md), to get the actual file contents of the attachments.  
+If this is the case, you need to use an additional action such as [Get attachment](../../actions/microsoft-365-outlook/get-attachment.md) or [For each attachment](../../actions/microsoft-365-outlook/foreach-attachment.md), to get the actual file contents of the attachments.  
 If emails contains large attachments, and you don't need all of them when processing the messages, it is recommended to set the `Include attachments` to false, and instead selectively get attachments you need using the [Get attachment](../../actions/microsoft-365-outlook/get-attachment.md) action.

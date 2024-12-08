@@ -1,4 +1,4 @@
-# Read rows from CSV file
+# For each row in CSV file
 
 Iterates over rows in a CSV file.
 

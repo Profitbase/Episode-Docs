@@ -1,4 +1,4 @@
-# Foreach Blob info
+# For each Blob info
 
 Iterates over a list of blob information in an Azure blob container. 
 

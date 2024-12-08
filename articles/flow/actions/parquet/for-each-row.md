@@ -1,4 +1,4 @@
-# Read rows from Parquet file
+# For each row in Parquet file
 
 Iterates over rows in a Parquet file.
 

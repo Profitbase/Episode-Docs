@@ -2,7 +2,7 @@
   href: "append-to-s3object.md"
 - name: "Delete Amazon S3 object"
   href: "delete-s3object.md"
-- name: "Foreach Amazon S3 object name"
+- name: "For each Amazon S3 object name"
   href: "foreach-s3object-name.md"
 - name: "Get Amazon S3 object names"
   href: "get-s3object-names.md"

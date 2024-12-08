@@ -66,7 +66,7 @@ We now support encryption and decryption of data using the AES algorithm through
 
 
 ## Excel  
-The [Open Excel file as DataReader](../actions/excel/open-excel-file-as-datareader.md), [Read Excel file as DataTable](../actions/excel/read-excel-file-as-datatable.md), and [Read rows from Excel file](../actions/excel/read-rows-from-excel-file.md) actions now support auto-mapping of columns by providing a (sample) file. This removes the tedious work of mapping Excel column letters to business column names (such as Account, Department, etc.) and specifying the correct data type for each column when you want to import data from Excel to a target such as a database.
+The [Open Excel file as DataReader](../actions/excel/open-excel-file-as-datareader.md), [Read Excel file as DataTable](../actions/excel/read-excel-file-as-datatable.md), and [For each row in Excel file](../actions/excel/for-each-row.md) actions now support auto-mapping of columns by providing a (sample) file. This removes the tedious work of mapping Excel column letters to business column names (such as Account, Department, etc.) and specifying the correct data type for each column when you want to import data from Excel to a target such as a database.
 
 <br/>
 
@@ -93,7 +93,7 @@ Fixed an issue that prevented sending emails to multiple recipients.
 
 
 ## Azure Blob  
-- We added support for reading **Blob metadata** using the [Get Blob Info](../actions/azure-blob-storage/get-blob-info.md) and [Foreach Blob Info](../actions/azure-blob-storage/foreach-blob-info.md) actions.  
+- We added support for reading **Blob metadata** using the [Get Blob Info](../actions/azure-blob-storage/get-blob-info.md) and [For each Blob Info](../actions/azure-blob-storage/foreach-blob-info.md) actions.  
 - We now support both SAS URI and connection strings to connect to an Azure Blob Container.  
 - The [Append to Blob](../actions/azure-blob-storage/append-to-blob.md) action now supports Stream input in addition to byte array.
 

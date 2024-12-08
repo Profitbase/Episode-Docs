@@ -1,4 +1,4 @@
-# Foreach attachment
+# For each attachment
 
 Iterates over the attachments in an email in Microsoft 365 Outlook.
 

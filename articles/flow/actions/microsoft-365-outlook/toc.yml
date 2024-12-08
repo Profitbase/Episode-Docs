@@ -1,4 +1,4 @@
-- name: Foreach attachment
+- name: For each attachment
   href: foreach-attachment.md
 - name: Get attachment
   href: get-attachment.md

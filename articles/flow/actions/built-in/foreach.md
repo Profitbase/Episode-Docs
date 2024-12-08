@@ -1,4 +1,4 @@
-# Foreach (loop)
+# For each (loop)
 
 Iterates over a list of items.
 

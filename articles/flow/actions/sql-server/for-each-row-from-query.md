@@ -1,6 +1,6 @@
-# Read rows
+# For each row from query
 
-Iterates over rows in a SQL Server database.
+Iterates over the rows returned by a SQL Server database query.
 
 
 

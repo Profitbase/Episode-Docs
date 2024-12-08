@@ -1,6 +1,6 @@
 - name: "Delete file from OneDrive"
   href: "delete-file-from-onedrive.md"
-- name: "Foreach file in OneDrive"
+- name: "For each file in OneDrive"
   href: "foreach-file-in-onedrive.md"  
 - name: "Get files in OneDrive"
   href: "get-files-in-onedrive.md"
