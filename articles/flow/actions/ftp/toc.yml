@@ -4,7 +4,7 @@
   href: "download-file-as-byte-array.md"
 - name: "Download file as stream"
   href: "download-file-as-stream.md"
-- name: "Foreach file name"
+- name: "For each file name"
   href: "foreach-file-name.md"
 - name: "Get file names"
   href: "get-file-names.md"

@@ -4,7 +4,7 @@ Reads the contents of an [Azure Blob](https://learn.microsoft.com/en-us/azure/st
 
 Once you have the blob contents, you must _load_ it using a compatible action in order to make use of the data.
 
-For example, an Excel file can be loaded using the [Open Excel file as DataReader](../excel/open-excel-file-as-datareader.md), [Read Excel file as DataTable](../excel/read-excel-file-as-datatable.md), or [Read rows from Excel file](../excel/read-rows-from-excel-file.md) actions. Once loaded, you can start working with the data in the Excel file.
+For example, an Excel file can be loaded using the [Open Excel file as DataReader](../excel/open-excel-file-as-datareader.md), [Read Excel file as DataTable](../excel/read-excel-file-as-datatable.md), or [For each row in Excel file](../excel/for-each-row.md) actions. Once loaded, you can start working with the data in the Excel file.
 
 > [!CAUTION]
 > Trying to load a byte array using an incompatible action will fail.

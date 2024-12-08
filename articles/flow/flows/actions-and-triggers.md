@@ -14,7 +14,7 @@ There are a few simple rules that apply to how actions and triggers can be used 
 -	A Flow cannot have multiple entry points. An entry point is defined as an action or trigger with no inbound connections. If you add multiple entry points, Flow will execute the path with the longest chain of actions. All other actions will be ignored. 
 -	A trigger does not have parameters, but it can return an output. (All triggers except the Schedule trigger have some type of output)
 -	Actions can have parameters and return zero or one result. 
--	Some actions, such as the If-Else block and Foreach loop have multiple execution sub paths.
+-	Some actions, such as the If-Else block and For each loop have multiple execution sub paths.
 
 
 ## Inputs and outputs

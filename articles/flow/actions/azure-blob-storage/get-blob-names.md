@@ -1,7 +1,7 @@
 # Get Blob names
 
 Gets a list of all blob names in an Azure Blob container. The blob name is the name of the blob object, for example `myfile.txt`.
-Use this action if you need a list of all the blob names in a container. If you only need to iterate over the blobs in a container _one by one_, consider using the [Foreach blob name](foreach-blob-name.md) action instead.
+Use this action if you need a list of all the blob names in a container. If you only need to iterate over the blobs in a container _one by one_, consider using the [For each blob name](foreach-blob-name.md) action instead.
 
 ![img](../../../../images/flow/get-blob-names.png)
 

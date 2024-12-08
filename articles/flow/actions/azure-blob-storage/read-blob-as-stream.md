@@ -4,7 +4,7 @@ Reads the contents of an [Azure Blob](https://learn.microsoft.com/en-us/azure/st
 
 Once you have the blob contents, you must _load_ it using a compatible action in order to make use of the data.
 
-For example, a CSV file can be loaded using the [Open CSV file as DataReader](../csv/open-csv-file-as-datareader.md), [Read CSV file as DataTable](../csv/read-csv-file-as-datatable.md), or [Read rows from CSV file](../csv/read-rows-from-csv-file.md) actions. Once loaded, you can start working with the data in the CSV file.
+For example, a CSV file can be loaded using the [Open CSV file as DataReader](../csv/open-csv-file-as-datareader.md), [Read CSV file as DataTable](../csv/read-csv-file-as-datatable.md), or [For each row in CSV file](../csv/for-each-row.md) actions. Once loaded, you can start working with the data in the CSV file.
 
 > [!CAUTION]
 > Trying to load a Stream using an incompatible action will fail.
