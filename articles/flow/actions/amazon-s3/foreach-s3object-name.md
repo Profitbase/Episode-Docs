@@ -1,4 +1,4 @@
-# Foreach S3 object name
+# For each S3 object name
 
 Iterates over a list of all Amazon S3 object names in the Amazon Bucket.
 

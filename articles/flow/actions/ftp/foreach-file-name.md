@@ -1,4 +1,4 @@
-# Foreach file name
+# For each file name
 
 Iterates over a list of all file names in an FTP / SFTP directory.
 

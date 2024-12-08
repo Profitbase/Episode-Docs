@@ -1,4 +1,4 @@
-# Await ForEach
+# Await for each
 
 Iterates over an asynchronous stream of items.
 

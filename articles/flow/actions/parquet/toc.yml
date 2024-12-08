@@ -6,5 +6,5 @@
   href: "open-parquet-file-as-datareader.md"
 - name: "Read Parquet file as DataTable"
   href: "read-parquet-file-as-datatable.md"
-- name: "Read rows from Parquet file"
-  href: "read-rows-from-parquet-file.md"
+- name: "For each row in Parquet file"
+  href: "for-each-row.md"
