@@ -1,4 +1,4 @@
-# Read rows from Excel file
+# For each row in Excel file
 
 Iterates over rows in an Excel sheet. Each row is represented by a business object as defined by the `Column mapping` property.
 
