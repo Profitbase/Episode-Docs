@@ -17,6 +17,12 @@ You can deploy Packages from either the Profitbase Store, or from file. To deplo
 
 <br/>
 
+## Flow to run after deployment
+
+![img](https://profitbasedocs.blob.core.windows.net/images/packagefter-deployment.png)
+
+<br/>
+
 ## Videos
 
 * [Packages](../../videos/packages.md)

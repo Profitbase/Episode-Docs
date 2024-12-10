@@ -74,17 +74,6 @@ Use this feature if you want users to select from a set of predefined values whe
 
 <br/>
 
-## Extension properties
-
-Extension properties enable partners and customers to extend dimensions in installed Packages (for example, Planner) with custom properties. That makes it possible to use standard dimensions for custom Power BI reporting or EPM custom extensions.  
-Custom properties will not be removed when the dimension is upgraded during a Package upgrade.
-
-
-<br/>
-
-![Dimension](https://profitbasedocs.blob.core.windows.net/images/DimNyEx.png)
-
-<br/>
 
 ## Level names
 
@@ -106,11 +95,71 @@ Go to [Dimension composition](dimcomposition.md).
 
 <br/>
 
-## Options / Post publish actions
+## Options / After publish
 
- Go to [Post publish actions](post-publish-actions.md).
+ Go to [After publish](post-publish-actions.md).
 
 <br/>
+
+## Extension properties
+
+Extension properties enable partners and customers to extend dimensions in installed Packages (for example, Planner) with custom properties. That makes it possible to use standard dimensions for custom Power BI reporting or EPM custom extensions.  
+Custom properties will not be removed when the dimension is upgraded during a Package upgrade.
+
+
+<br/>
+
+![Dimension](https://profitbasedocs.blob.core.windows.net/images/DimNyEx.png)
+
+<br/>
+
+## Editor Scripts
+
+**On Item Added**
+
+- This function takes an object (newItem) with properties like id, name, isLeaf, and properties.
+
+- The properties field is an array of objects containing propertyId and value.
+
+- The function's purpose is likely to handle events when a new item is added to the dimension.
+
+
+```
+function OnItemAdded(newItem: { id: string, name: string, isLeaf: boolean, properties: Array<{ propertyId: string, value: any }> }): void {
+    // Validate the new item's properties
+    if (!newItem.id || !newItem.name) {
+        console.error("New item must have a valid 'id' and 'name'.");
+        return;
+    }
+
+    // Check if 'isLeaf' is defined and log its value
+    console.log(`New item added. Is leaf: ${newItem.isLeaf ? "Yes" : "No"}`);
+
+    // Log all the properties of the new item
+    if (newItem.properties && newItem.properties.length > 0) {
+        console.log("Properties of the new item:");
+        newItem.properties.forEach(property => {
+            console.log(`- Property ID: ${property.propertyId}, Value: ${property.value}`);
+        });
+    } else {
+        console.log("No properties found for the new item.");
+    }
+
+    // Example: Add a default property if it's missing
+    const defaultPropertyId = "defaultProperty";
+    if (!newItem.properties.some(prop => prop.propertyId === defaultPropertyId)) {
+        newItem.properties.push({
+            propertyId: defaultPropertyId,
+            value: "Default Value"
+        });
+        console.log(`Added default property '${defaultPropertyId}' to the item.`);
+    }
+
+    // Perform additional custom logic here
+    console.log("New item processing complete:", newItem);
+}
+```
+
 
 ## Build the dimension and edit dimension data 
 
