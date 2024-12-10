@@ -29,6 +29,13 @@ An Open Version can at any point in time be set to Closed, and vice versa.
 > It's entirely up to the Work Process administrator to pick a suitable time to switch states.
 <br/>
 
+## Run Flow when Work Process version status changes
+
+Specyify Flow to run when Work Process version status changes.
+
+![img](https://profitbasedocs.blob.core.windows.net/images/wpVersionChanges.png)
+
+
 ## Translations
 
 You can specify a translation for the name of the Work Process Version for each language defined in the system.
@@ -39,6 +46,7 @@ The translated name will appear in the Workbook Menu and on the homepage.
 
 Versions take up storage space and should be deleted when they are no longer in use.
 If you do not delete versions, you will run out of available storage, and will not be able to create new versions unless you move to a higher pricing tier.
+
 
 
 ## Videos

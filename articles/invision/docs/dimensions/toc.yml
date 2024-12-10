@@ -1,5 +1,10 @@
         - name: Overview
           href: index.md
+          items:
+          - name: Dimension composition
+            href: dimcomposition.md
+          - name: After publish
+            href: post-publish-actions.md
         - name: How to's
           href: howto/index.md
           items:
@@ -21,5 +26,5 @@
           href: dimautomating.md
         - name: Dimension composition
           href: dimcomposition.md
-        - name: Post publish actions
+        - name: After publish
           href: post-publish-actions.md

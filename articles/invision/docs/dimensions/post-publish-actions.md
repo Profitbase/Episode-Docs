@@ -1,17 +1,17 @@
 
-# Post publish actions
+# After publish
 
- **Post publish actions**
+ **After publish (Optional)**
 
-- Optional Flow to execute after Publish  
+- Flow to run after Publish.  
   
-- Optional Flow to execute after being Published To  
+- Flow to run after being Published To.  
 
- **(Legacy) DataFlow post publish actions**
+ **(Legacy) DataFlow  (Optional)**
 
-- Optional Data Flow to execute after Publish  
+- Data Flow to run after Publish.  
 
-- Optional Data Flow to execute after being Published To  
+- Data Flow to run after being Published To.  
 
 >[!NOTE]
 >  It is technically impossible to set both post actions as Flow **and** DataFlow simultaneously.

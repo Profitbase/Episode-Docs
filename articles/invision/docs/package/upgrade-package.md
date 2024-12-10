@@ -20,6 +20,12 @@ Installed Packages can be upgraded to newer versions. When a Package is upgraded
 
 <br/>
 
+## Flow to run after the upgrade
+
+![img](https://profitbasedocs.blob.core.windows.net/images/packagefter-deployment.png)
+
+<br/>
+
 ## See Also
 
 - [Production Upgrade](upgrade-package/production-upgrade.md)
