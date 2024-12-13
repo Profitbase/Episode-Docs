@@ -79,6 +79,6 @@ We’ve made several improvements and fixes to the platform:
 
 ### See Also
 
-
+- [December 2024](changelog24_december.md)
 - [October 2024](changelog24_october.md)
 - [August 2024](changelog24_august.md)

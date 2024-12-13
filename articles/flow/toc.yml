@@ -146,6 +146,8 @@
 - name: Change log
   href: changelog.md
   items:
+    - name: December 2024
+      href: changelog/changelog24_december.md
     - name: October 2024
       href: changelog/changelog24_october.md
     - name: September 2024

@@ -1,4 +1,4 @@
-# Profitbase Flow October 2024 Update
+# October 2024 Update
 
 Significant updates and new integrations:
   - **Google BigQuery** and **Databricks** support.
@@ -101,6 +101,6 @@ The Core library has been extended with the following functionality:
 
 ### See Also
 
-
+- [December 2024](changelog24_december.md)
 - [September 2024](changelog24_september.md)
 - [August 2024](changelog24_august.md)

@@ -1,4 +1,4 @@
-- name: "Connecting to Azure"
+- name: "Connection"
   href: "connecting-to-azure.md"
 - name: "Append to Blob"
   href: "append-to-blob.md"

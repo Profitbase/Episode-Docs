@@ -1,4 +1,4 @@
-- name: "Connecting to Azure"
+- name: "Connection"
   href: "connecting-to-azure-files.md"
 - name: "Get share items info"
   href: "get-share-items-info.md"
