@@ -6,7 +6,7 @@ Connect systems, automate repetitive tasks, reduce errors, and free your team to
 
 Integrate and orchestrate disconnected workflows across teams and departments into a unified system to enhance visibility, foster collaboration, and achieve better business outcomes.
 
--	Break data out of silos using automatic dataflows and integrations
+-	Break data out of silos using automatic dataflows and integrations | [Read more](break-data-out-of-silos.md)
 -	Continuously track events and data, and alert the right people when action is needed
 -	Display cross-functional KPIs, goals, and progress using tools like Power BI
 
