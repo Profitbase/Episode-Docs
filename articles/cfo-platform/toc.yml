@@ -1,4 +1,8 @@
 - name: Overview
   href: Overview.md
 - name: Business process automation
-  href: business-process-automation.md
+  items:
+    - name: Overview
+      href: business-process-automation/overview.md
+    - name: "Break data out of silos"
+      href: business-process-automation/break-data-out-of-silos.md
