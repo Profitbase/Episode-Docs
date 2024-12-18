@@ -10,4 +10,6 @@ This is achieved by building Flows that:
 2) Apply business logic, such as transformations, calculations, filtering, enrichments, and validations.
 3) Connect to one or more target systems to update data.
 
+<br/>
+
 ![img](/images/cfo-platform/Flow-break-data-out-of-silos.svg)
