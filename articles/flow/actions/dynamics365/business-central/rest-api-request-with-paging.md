@@ -12,7 +12,7 @@ The `REST API Request with paging` action enables you to call [Dynamics 365 Busi
 ## Returns
 
 The return type is defined when configuring the action. It can be a custom data type or the raw JSON response from the API.  
-We recommend using the built-in [HttpResponse&lt;T&gt;](../../../api-reference/built-in-types/http-response.md) type because it will include additional information about the response, such as the HTTP status code.
+We recommend using the built-in [HttpResponse&lt;T&gt;](../../../api-reference/built-in-types/http-response.md) type because it will include additional information about the response, such as the HTTP status code and error(s).
 
 We also recommend simply dumping the raw response to a data store, and then use data transformation tools to transform the data into a usable format. If you know the API returns small amounts of data (10 000 - 200 000 records), you can consider using the [Get JSON DataReader](../../json/get-json-datareader.md) to flatten JSON to a tabular format and process the data as rows and columns, for example by inserting directly to a SQL Server table.
 
@@ -51,8 +51,9 @@ The `REST API Request with paging` action handles paging automatically for you, 
 
 ## Error handling
 
-If an error occurs while fetching a result page from the Dynamics 365 Business Central REST API, the action will raise an error that could terminate the Flow unless it is wrapped in a [Try-Catch](../../built-in/try-catch.md) action. To prevent this, you can connect an action to the `On Error` port. The error handler will be triggered for each `page error`, allowing you to handle errors individually and preventing Flow from automatically raising an error that might terminate the running process.
-
+If the response from the Dynamics 365 Business Central REST API is set to [HttpResponse&lt;T&gt;](../../../api-reference/built-in-types/http-response.md), the response object has a property IsSuccess. If false, the response has an ErrorContent property that relay the error messages from the API call or from internally thrown exceptions. 
+For other response types and for severe errors, the action will raise an error that could terminate the Flow unless either the `On Error` port is connected, or it is wrapped in a [Try-Catch](../../built-in/try-catch.md) action. 
+The `On Error` error handler will be triggered for each `page error`, allowing you to handle errors individually and preventing Flow from automatically raising an error that might terminate the running process.
 
 ## API limits
 

@@ -1,9 +1,9 @@
 # REST API Request
 
-Use [PowerOffice Go REST APIs (v2)](https://prdm0go0stor0apiv20eurw.z6.web.core.windows.net/?urls.primaryName=Accounting%20Settings) to retrieve or write data.
+Use [PowerOffice Go REST APIs (v2)](https://developer.poweroffice.net)  to retrieve or write data.
 
 
-The **PowerOffice REST API Request** action allows you to interact with PowerOffice APIs to read or write data. You can retrieve information such as customers, invoices, or accounting settings, or update records in the PowerOffice system using HTTP methods (`GET`, `POST`, `PUT`, `DELETE`, etc.).  
+The **REST API Request** action allows you to interact with [PowerOffice Go REST APIs (v2)](https://prdm0go0stor0apiv20eurw.z6.web.core.windows.net) to read or write data. You can retrieve information such as customers, accounts, or employees, or update records in the PowerOffice Go system using HTTP methods (`GET`, `POST`, `PUT`, `DELETE`, etc.).  
 
 <br/>
 
@@ -20,16 +20,17 @@ The **PowerOffice REST API Request** action allows you to interact with PowerOff
 | Configuration | Required | Define configuration. |
 | Description | Optional | Additional notes or comments about the action or configuration. |
 
+<br>
 
 ## Returns  
 
 The response from a PowerOffice API request can either be:  
-- A **custom data type** defined in your workflow, or  
+- A **custom data type** defined by the template used, or  
 - The raw JSON response from the API.  
 
-To maximize compatibility and performance, we recommend using the `HttpResponse<T>` type. This provides:  
+To maximize compatibility and performance, we recommend using the [HttpResponse&lt;T&gt;](../../api-reference/built-in-types/http-response.md) type. This provides:  
 - The raw response body.  
-- Additional details such as the HTTP status code.  
+- Additional details such as the HTTP status code and any errors.  
 
 For further processing, store the raw JSON response in a database or file storage, and use data transformation tools to convert it into the required format.  
 
@@ -39,6 +40,7 @@ For further processing, store the raw JSON response in a database or file storag
 
 ### Defining a REST API Request  
 
+To define a request to the PowerOffice Go REST API, you can start from a template, or define it manually:
 1. **Method**: Choose the appropriate HTTP method for your request:  
    - `GET`: Retrieve data from PowerOffice (e.g., list customers or invoices).  
    - `POST`: Create new records (e.g., add a new invoice or customer).  
@@ -51,32 +53,28 @@ For further processing, store the raw JSON response in a database or file storag
    - `accountingSettings`: To manage accounting settings.  
 
 3. **Headers**: 
-
    - Authentication is automatically set up from the connection settings.
 
 4. **Parameters**: Add query or body parameters as required by the endpoint. Use variables or fixed values based on your workflow to customize the request and ensure it retrieves or updates the desired data.  
 
-<br/>
+5. **Response Type**: Use the default `HttpResponse<string>` to work with raw JSON data. For large datasets, this approach is recommended to reduce memory usage and improve performance.
 
-### Response Type  
-
-Use the default `HttpResponse<string>` to work with raw JSON data. This approach is especially recommended for large datasets as it minimizes memory usage and enhances performance.  
-
-For detailed information on endpoints and parameters, refer to the [PowerOffice API documentation](https://prdm0go0stor0apiv20eurw.z6.web.core.windows.net/?urls.primaryName=Accounting%20Settings).  
+![img](/images/flow/dynamics365-bc-new-request.png)
 
 <br/>
 
-### API Limits  
+## Error handling
+
+If the response from the PowerOffice Go request is set to [HttpResponse&lt;T&gt;](../../api-reference/built-in-types/http-response.md), the response object has a property IsSuccess. If false, the response has an ErrorContent property that relay the error messages from the API call or from internally thrown exceptions. 
+For other response types and for severe errors, the action will raise an error that could terminate the Flow unless either the `On Error` port is connected, or it is wrapped in a [Try-Catch](../built-in/try-catch.md) action. 
+The `On Error` error handler will be triggered for each `page error`, allowing you to handle errors individually and preventing Flow from automatically raising an error that might terminate the running process.
+
+<br>
+
+## API Limits  
 
 PowerOffice enforces rate limits to maintain stable server performance. If you exceed these limits, the API will return a `429 Too Many Requests` error.  
-
-#### Best Practices for Handling API Limits: 
- 
-- **Retry Mechanism**: Implement retries using an exponential backoff strategy.  
-- **Request Optimization**: Fetch only the necessary data to minimize API calls.  
-- **Usage Monitoring**: Track API usage to avoid hitting the limit during high-traffic periods.  
-
-For more details, visit the [PowerOffice API documentation](https://prdm0go0stor0apiv20eurw.z6.web.core.windows.net/?urls.primaryName=Accounting%20Settings).  
+The Action handles this by delaying calls and using retry. If retry limit is reached an error will be returned.
 
 <br/>
 

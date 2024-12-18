@@ -1,11 +1,11 @@
 # REST API Request with paging
 
-Use Tripletex REST [APIs (v2)](https://tripletex.no/v2-docs/) to read paged data.  
+Use [Tripletex REST APIs (v2)](https://tripletex.no/v2-docs/) to read paged data.  
 
 
-The **REST API Request with Paging** action allows you to use the [Tripletex](https://tripletex.no/v2-docs/) REST APIs to retrieve large, paginated datasets. This action simplifies working with endpoints that return multiple pages of data, such as lists of customers, invoices, or accounting records. Pagination is handled automatically, allowing you to focus on processing the data.  
+The **REST API Request with Paging** action allows you to use the [Tripletex REST APIs](https://tripletex.no/v2-docs/) to retrieve large, paginated datasets. This action simplifies working with endpoints that return multiple pages of data, such as lists of customers, invoices, or accounting records. Pagination is handled automatically, allowing you to focus on processing the data.  
 
-![img](../../../../images/flow/rest-api-paging-trip.png)  
+![img](/images/flow/rest-api-paging-trip.png)  
 <br/>
 
 ## Properties
@@ -28,21 +28,19 @@ The return type for Tripletex API actions is defined during configuration. It ca
 - A **custom data type**, or  
 - The raw JSON response from the API.  
 
-For simplicity and debugging, it’s recommended to use the built-in `HttpResponse<T>` type. This includes additional information, such as the HTTP status code, ensuring compatibility with Tripletex API responses.  
+We recommend using the built-in [HttpResponse&lt;T&gt;](../../api-reference/built-in-types/http-response.md) type because it will include additional information about the response, such as the HTTP status code and error(s).
 
-To process the data effectively:  
-1. Store the raw response in a data repository (e.g., database or cloud storage).  
-2. Transform the stored data using tools like SQL, Python, or data transformation pipelines.  
+We also recommend simply dumping the raw response to a data store, and then use data transformation tools to transform the data into a usable format. If you know the API returns small amounts of data (10 000 - 200 000 records), you can consider using the [Get JSON DataReader](../json/get-json-datareader.md) to flatten JSON to a tabular format and process the data as rows and columns, for example by inserting directly to a SQL Server table.
 
 <br/>
 
 ## Configuration  
 
-### Setting Up a Request  
+To define a request to the Tripletex REST API, you can start from a template, or define it manually.
+If you press the `New Request` button in the Configuration dialog, you can choose from a set of predefined request templates.  
 
-Requests to the Tripletex API can be defined manually or by using predefined templates.  
+### Steps for Manual Configuration:  
 
-#### Steps for Manual Configuration:  
 1. **Method**: Specify the HTTP method (`GET`, `POST`, `PUT`, `DELETE`, etc.). Use `GET` for retrieving data.  
 2. **URI**: Define the endpoint URL (e.g., `v2/project` or `v2/customer`). Pass required parameters (e.g., IDs) as query parameters or in the request body.  
 3. **Headers and Authorization**:  
@@ -52,19 +50,17 @@ Requests to the Tripletex API can be defined manually or by using predefined tem
 
 For endpoint-specific details, refer to the [Tripletex API documentation](https://tripletex.no/v2-docs/).  
 
-<br/>
-
-## Response Paging  
-
-Tripletex APIs often return paginated responses for large datasets. For example, list endpoints like `v2/project` or `v2/customer` include pagination metadata (e.g., `next`, `totalCount`).  
-
-To handle paging:  
-- Use the `next` link from the API response to fetch subsequent pages.  
-- Repeat until no further pages are available.  
-
-Ensure your API client or workflow can handle this iterative process effectively.  
+![img](/images/flow/dynamics365-bc-new-request.png)
 
 <br/>
+
+## Error handling
+
+If the response from the PowerOffice Go request is set to [HttpResponse&lt;T&gt;](../../api-reference/built-in-types/http-response.md), the response object has a property IsSuccess. If false, the response has an ErrorContent property that relay the error messages from the API call or from internally thrown exceptions. 
+For other response types and for severe errors, the action will raise an error that could terminate the Flow unless either the `On Error` port is connected, or it is wrapped in a [Try-Catch](../built-in/try-catch.md) action. 
+The `On Error` error handler will be triggered for each `page error`, allowing you to handle errors individually and preventing Flow from automatically raising an error that might terminate the running process.
+
+<br>
 
 ## API Limits  
 

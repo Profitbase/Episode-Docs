@@ -1,11 +1,14 @@
 
 # Rest API Request
 
-Use [Tripletex](https://tripletex.no/v2-docs/) REST APIs to read or write data. 
+Use [Tripletex REST APIs](https://tripletex.no/v2-docs/) to read or write data. 
 
 The **Tripletex REST API Request** action allows you to interact with Tripletex APIs to read or write data. You can retrieve information like customers, projects, or invoices, or update records in the Tripletex system using HTTP methods (`GET`, `POST`, `PUT`, `DELETE`, etc.).  
 
-![img](../../../../images/flow/tripletex.png)  
+<br>
+
+![img](../../../../images/flow/tripletex.png) 
+
 <br/>
 
 ## Properties
@@ -18,18 +21,17 @@ The **Tripletex REST API Request** action allows you to interact with Tripletex 
 | Description | Optional | Additional notes or comments about the action or configuration. |
 
 
-
 <br/>
 
 ## Returns  
 
 The response from a Tripletex API request can either be:  
-- A **custom data type** defined in your workflow, or  
+- A **custom data type** defined by the template, or  
 - The raw JSON response from the API.  
 
-To maximize compatibility and performance, we recommend using the `HttpResponse<T>` type. This provides:  
+To maximize compatibility and performance, we recommend using the [HttpResponse&lt;T&gt;](../../api-reference/built-in-types/http-response.md) type. This provides:  
 - The raw response body.  
-- Additional details such as the HTTP status code.  
+- Additional details such as the HTTP status code and any errors.  
 
 For further processing, store the raw JSON response in a database or file storage, and use data transformation tools to convert it into the required format.  
 
@@ -39,6 +41,7 @@ For further processing, store the raw JSON response in a database or file storag
 
 ### Defining a REST API Request  
 
+To define a request to the Tripletex REST API, you can start from a template, or define it manually:
 1. **Method**: Choose the appropriate HTTP method for your request:  
    - `GET`: Retrieve data from Tripletex (e.g., list customers or projects).  
    - `POST`: Create new records (e.g., add a new invoice).  
@@ -51,15 +54,23 @@ For further processing, store the raw JSON response in a database or file storag
    - `invoice`: To handle invoices.  
 
 3. **Headers**: 
-
   - Authentication is automatically set up from the connection settings.
  
-
 4. **Parameters**: Add query or body parameters as required by the endpoint. Use variables or fixed values based on your workflow.
 
 5. **Response Type**: Use the default `HttpResponse<string>` to work with raw JSON data. For large datasets, this approach is recommended to reduce memory usage and improve performance.
 
+![img](/images/flow/dynamics365-bc-new-request.png)
+
 <br/>
+
+## Error handling
+
+If the response from the Tripletex API request is set to [HttpResponse&lt;T&gt;](../../api-reference/built-in-types/http-response.md), the response object has a property IsSuccess. If false, the response has an ErrorContent property that relay the error messages from the API call or from internally thrown exceptions. 
+For other response types and for severe errors, the action will raise an error that could terminate the Flow unless either the `On Error` port is connected, or it is wrapped in a [Try-Catch](../built-in/try-catch.md) action. 
+The `On Error` error handler will be triggered for each `page error`, allowing you to handle errors individually and preventing Flow from automatically raising an error that might terminate the running process.
+
+<br>
 
 ## API Limits  
 
