@@ -6,10 +6,21 @@ Connect systems, automate repetitive tasks, reduce errors, and free your team to
 
 Integrate and orchestrate disconnected workflows across teams and departments into a unified system to enhance visibility, foster collaboration, and achieve better business outcomes.
 
--	Break data out of silos using automatic dataflows and integrations | [Read more](break-data-out-of-silos.md)
--	Continuously track events and data, and alert the right people when action is needed
--	Display cross-functional KPIs, goals, and progress using tools like Power BI
+<div class="box-two-column">
+    <div class="box-left">
+        <img src="../../../images/cfo-platform/Flow-system-integration-pipeline.svg" alt="Break data out of silos">
+    </div>
+    <div class="box-right box-vertical-self-center">
+        <ul class="box-list">
+            <li>Break data out of silos using automatic dataflows and integrations | <a href="break-data-out-of-silos.md" class="new-custom-link">Read more</a></li>
+            <li>Continuously track events and data, and alert the right people when action is needed</li>
+            <li>Display cross-functional KPIs, goals, and progress using tools like Power BI</li>
+        </ul>        
+    </div>
+</div>
 
+<br/>
+<br/>
 
 ## Transform manual, spreadsheet-driven processes
 
