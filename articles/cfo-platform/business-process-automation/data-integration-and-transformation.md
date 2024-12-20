@@ -19,4 +19,14 @@ Flows that support this process typically does the following:
 <br/>
 
 ### Example - Connect your ERP system and data platform for reporting
-Let's look at an example of how an integration between your ERP system and Microsoft Fabric data platform can be set up using Profitbase Flow. We'll set up an automatic integration that continually pulls the general ledger from Visma Business NXT and synchronizes it to Microsoft Fabric for reporing in Power BI.
+Here’s an example of setting up an integration between your ERP system and the Microsoft Fabric data platform using Profitbase Flow. We'll configure an automated process to continuously retrieve the latest general ledger transactions from Visma.Net and upload them to Microsoft Fabric for reporting in Power BI. The entire configuration can be set up with virtually no code.
+
+The Flow does the following:
+1) **Run on a schedule:** The first step is to add a [Schedule trigger](../../flow/triggers/schedule-trigger.md) to make the Flow run automatically on a schedule, for example nightly or hourly. 
+2) **Retrieve the last fetch time:** To avoid reloading the entire general ledger every time, we first retrieve the last fetch date/time and record the current time for the next execution. In this example, we store this information in an Azure SQL database, but any supported storage option can be used.
+3) **Fetch new transactions:** Using the Visma.Net REST API and the [paged REST APIs action](../../flow/actions/visma/visma-net/paged-rest-api-request.md), we fetch GL transactions newer than the last fetch date/time. The transactions are returned in JSON format as paginated chunks, which we upload to Microsoft Fabric one at a time.
+4) **Convert JSON to Parquet:** Since JSON is inefficient for tabular data, we use the [JSON Data Reader](../../flow/actions/json/get-json-datareader.md) and [Create Parquet file as stream](../../flow/actions/parquet/create-parquet-file-as-stream.md) actions to convert the data into a format optimized for data analysis.
+5) **Upload to Microsoft Fabric:** Finally, the Parquet file is uploaded to Microsoft Fabric using the [Upload to Lakehouse](../../flow/actions/microsoft-fabric/upload-to-lakehouse.md) action.
+
+
+![img](/images/cfo-platform/example-vismanet-to-fabric-integration.png)
