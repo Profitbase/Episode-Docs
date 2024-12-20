@@ -19,7 +19,7 @@ Flows that support this process typically does the following:
 <br/>
 
 ### Example - Connect your ERP system and data platform for reporting
-Here’s an example of setting up an integration between your ERP system and the Microsoft Fabric data platform using Profitbase Flow. We'll configure an automated process to continuously retrieve the latest general ledger transactions from Visma.Net and upload them to Microsoft Fabric for reporting in Power BI. The entire configuration can be set up with virtually no code.
+Here’s an example of setting up an integration between Visma.Net (ERP) and Microsoft Fabric using Profitbase Flow. We'll configure an automated process to continuously retrieve the latest general ledger transactions and upload them to Microsoft Fabric for reporting in Power BI. The entire configuration can be set up with virtually no code.
 
 The Flow does the following:
 1) **Run on a schedule:** The first step is to add a [Schedule trigger](../../flow/triggers/schedule-trigger.md) to make the Flow run automatically on a schedule, for example nightly or hourly. 
