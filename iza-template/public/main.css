@@ -29,32 +29,46 @@ main {
     margin-bottom: 3rem; /* Add vertical spacing between columns */
 }
 
-.box-two-column {
+.box-image-first {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: minmax(auto, 1fr) 1fr;
+    grid-gap: 48px;
+    padding: 16px;    
+}
+
+.box-image-last {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 1fr);
     grid-gap: 48px;
     padding: 16px;    
 }
 
 .box-blue {
-    background-color: aliceblue;    
-    border: 1px solid whitesmoke;
+    background-color: #f8f9fa;    
+    border: 1px solid #dee2e6;
     border-radius: 8px;
 }
 
-.box-left {
+.box-first {
     grid-column: 1;        
 }
 
-.box-left img {    
+.box-last {
+    grid-column: 2;    
+}
+
+.box-first img {    
     height: 100%;
     max-height: 300px;    
     object-fit: contain;
 }
 
-.box-right {
-    grid-column: 2;    
+.box-last img {    
+    height: 100%;
+    max-height: 300px;    
+    object-fit: contain;
 }
+
 
 .box-list li {
     margin:20px 0;

@@ -7,11 +7,11 @@ Connect systems, automate repetitive tasks, reduce errors, and free your team to
 ## Integrate disconnected workflows
 
 
-<div class="box-two-column box-blue">
-    <div class="box-left">
+<div class="box-image-first box-blue">
+    <div class="box-first">
         <img src="../../../images/cfo-platform/workflow-integration.svg" alt="Break data out of silos">
     </div>
-    <div class="box-right">
+    <div class="box-last">
         <span class="box-topic-text">
             Integrate and orchestrate disconnected workflows across teams and departments into a unified system to enhance visibility, foster collaboration, and achieve better business outcomes.
         </span>
@@ -28,26 +28,37 @@ Connect systems, automate repetitive tasks, reduce errors, and free your team to
 
 ## Transform manual, spreadsheet-driven processes
 
-Transform fragile, disconnected and complex spreadsheet workflows into robust, collaborative and easy-to-use apps with intelligent automation.
-
--	Convert disparate spreadsheets into web applications with data stored in a centralized database
--	Automate data collection, consolidation and reconciliation
--	Reduce errors by defining business rules and formulas that users cannot break
--	Build, manage and publish low-code apps
--	Control user access and permissions to display only relevant information
+<div class="box-image-last">
+    <div class="box-first">
+            <span class="box-topic-text">
+                Transform fragile, disconnected and complex spreadsheet workflows into robust, collaborative and easy-to-use apps with intelligent automation.
+            </span>
+            <ul class="box-list">
+                <li>Convert disparate spreadsheets into web applications with data stored in a centralized database.</li>
+                <li>Automate data collection, consolidation and reconciliation.</li>
+                <li>Reduce errors by defining business rules and formulas that users cannot break.</li>
+                <li>Build, manage and publish low-code apps.</li>
+                <li>Control user access and permissions to display only relevant information.</li>
+            </ul>        
+     </div>
+    <div class="box-last">
+        <img src="../../../images/cfo-platform/transform-spreadsheet-driven-processes.svg" alt="Break data out of silos">
+    </div>
+    
+</div>
 
 <br/>
 <br/>
 
 ## Connect business systems through APIs and automated dataflows
 
-<div class="box-two-column box-blue">
-    <div class="box-left">
+<div class="box-image-first box-blue">
+    <div class="box-first">
         <img src="../../../images/cfo-platform/Flow-system-integration-pipeline.svg" alt="Connect business systems through APIs and automated dataflows">
     </div>
-    <div class="box-right">
+    <div class="box-last">
         <span class="box-topic-text">
-            Create seamless connections between business applications with automated dataflows to enable live data synchronization, ensuring accurate and up-to-date information across all systems. Say goodbye to manual data entry - remove silos, improve collaboration, and make your apps work for you instead of the other way around.
+            Create seamless connections between business applications with automated dataflows to enable live data synchronization, ensuring accurate and up-to-date information across all systems.
         </span>
         <ul class="box-list">
             <li>Eliminate the need for manual data entry.</li>
