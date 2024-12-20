@@ -31,33 +31,37 @@ main {
 
 .box-two-column {
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr;
-    grid-gap: 20px;
-    max-height: 300px;
+    grid-template-columns: auto 1fr;
+    grid-gap: 48px;
+    padding: 16px;    
+}
+
+.box-blue {
+    background-color: aliceblue;    
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
 }
 
 .box-left {
-    grid-column: 1;    
-    max-height: 300px;
+    grid-column: 1;        
 }
 
-.box-left img {
-    width: 100%;
+.box-left img {    
     height: 100%;
+    max-height: 300px;    
     object-fit: contain;
 }
 
 .box-right {
-    grid-column: 2;
-    max-height: 300px;
-}
-
-.box-vertical-self-center {
-    align-self: center;
+    grid-column: 2;    
 }
 
 .box-list li {
     margin:20px 0;
+}
+
+.box-topic-text {
+    font-size: 22px;
 }
 
 
