@@ -31,7 +31,7 @@ Connect systems, automate repetitive tasks, reduce errors, and free your team to
 <div class="box-image-last">
     <div class="box-first">
             <span class="box-topic-text">
-                Transform fragile, disconnected and complex spreadsheet workflows into robust, collaborative and easy-to-use apps with intelligent automation.
+                Transform fragile, disconnected and complex spreadsheet workflows into robust, collaborative and easy-to-use apps with built-in automation.
             </span>
             <ul class="box-list">
                 <li>Convert disparate spreadsheets into web applications with data stored in a centralized database.</li>
@@ -42,7 +42,7 @@ Connect systems, automate repetitive tasks, reduce errors, and free your team to
             </ul>        
      </div>
     <div class="box-last">
-        <img src="../../../images/cfo-platform/transform-spreadsheet-driven-processes.svg" alt="Break data out of silos">
+        <img src="../../../images/cfo-platform/transform-spreadsheet-driven-processes-simple.svg" alt="Transform spreadsheet driven processes">
     </div>
     
 </div>
