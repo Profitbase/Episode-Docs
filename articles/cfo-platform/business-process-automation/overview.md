@@ -7,16 +7,16 @@ Connect systems, automate repetitive tasks, reduce errors, and free your team to
 ## Integrate disconnected workflows
 
 
-<div class="box-image-first box-blue">
-    <div class="box-first">
+<div class="box-1 box-block">
+    <div class="box-1-image">
         <img src="../../../images/cfo-platform/workflow-integration.svg" alt="Break data out of silos">
     </div>
-    <div class="box-last">
-        <span class="box-topic-text">
-            Integrate and orchestrate disconnected workflows across teams and departments into a unified system to enhance visibility, foster collaboration, and achieve better business outcomes.
-        </span>
+    <span class="box-intro-text box-1-intro">
+        Integrate and orchestrate disconnected workflows across teams and departments into a unified system to enhance visibility, foster collaboration, and achieve better business outcomes.
+    </span>
+    <div class="box-1-feature-list">        
         <ul class="box-list">
-            <li>Break data out of silos using automatic dataflows and integrations. <br/>  <a href="data-integration-and-transformation.md" class="new-custom-link">Read more</a></li>
+            <li> <a href="data-integration-and-transformation.md" class="box-feature-link">Break data out of silos using automatic dataflows and integrations.</a></li>
             <li>Continuously track events and data, and alert the right people when action is needed.</li>
             <li>Display cross-functional KPIs, goals, and progress using tools like Power BI.</li>
         </ul>        
@@ -28,11 +28,11 @@ Connect systems, automate repetitive tasks, reduce errors, and free your team to
 
 ## Transform manual, spreadsheet-driven processes
 
-<div class="box-image-last">
-    <div class="box-first">
-            <span class="box-topic-text">
-                Transform fragile, disconnected and complex spreadsheet workflows into robust, collaborative and easy-to-use apps with intelligent automation.
-            </span>
+<div class="box-2">
+    <span class="box-intro-text box-2-intro">
+        Transform fragile, disconnected and complex spreadsheet workflows into robust, collaborative and easy-to-use apps with built-in automation.
+    </span>
+    <div class="box-2-feature-list">            
             <ul class="box-list">
                 <li>Convert disparate spreadsheets into web applications with data stored in a centralized database.</li>
                 <li>Automate data collection, consolidation and reconciliation.</li>
@@ -41,8 +41,8 @@ Connect systems, automate repetitive tasks, reduce errors, and free your team to
                 <li>Control user access and permissions to display only relevant information.</li>
             </ul>        
      </div>
-    <div class="box-last">
-        <img src="../../../images/cfo-platform/transform-spreadsheet-driven-processes.svg" alt="Break data out of silos">
+    <div class="box-2-image">
+        <img src="../../../images/cfo-platform/transform-spreadsheet-driven-processes-simple.svg" alt="Transform spreadsheet driven processes">
     </div>
     
 </div>
@@ -52,17 +52,17 @@ Connect systems, automate repetitive tasks, reduce errors, and free your team to
 
 ## Connect business systems through APIs and automated dataflows
 
-<div class="box-image-first box-blue">
-    <div class="box-first">
+<div class="box-1 box-block">
+    <div class="box-1-image">
         <img src="../../../images/cfo-platform/Flow-system-integration-pipeline.svg" alt="Connect business systems through APIs and automated dataflows">
     </div>
-    <div class="box-last">
-        <span class="box-topic-text">
+    <span class="box-intro-text box-1-intro">
             Create seamless connections between business applications with automated dataflows to enable live data synchronization, ensuring accurate and up-to-date information across all systems.
         </span>
+    <div class="box-1-feature-list">        
         <ul class="box-list">
             <li>Eliminate the need for manual data entry.</li>
-            <li>Easily move data between different systems.<br/>  <a href="data-integration-and-transformation.md" class="new-custom-link">Read more</a></li>
+            <li><a href="data-integration-and-transformation.md" class="box-feature-link">Easily move data between different systems.</a></li>
             <li>Run automations on a schedule, in response to events, or through APIs from third-party apps.</li>
             <li>Build, manage and automate integrations with drag and drop or code.</li>
         </ul>        
