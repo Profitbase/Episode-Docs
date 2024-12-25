@@ -6,3 +6,7 @@
       href: business-process-automation/overview.md
     - name: "Data integration and transformation"
       href: business-process-automation/data-integration-and-transformation.md
+- name: Data platform
+  items:
+    - name: Overview
+      href: data-platform/overview.md    
