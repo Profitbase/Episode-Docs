@@ -16,7 +16,7 @@ Connect systems, automate repetitive tasks, reduce errors, and free your team to
     </span>
     <div class="box-1-feature-list">        
         <ul class="box-list">
-            <li> <a href="data-integration-and-transformation.md" class="box-feature-link">Break data out of silos using automatic dataflows and integrations.</a></li>
+            <li> <a href="data-integration-and-transformation.md" class="box-feature-link">Break data out of silos using automated dataflows and integrations.</a></li>
             <li><a href="data-monitoring-and-alerts.md" class="box-feature-link">Continuously track events and data, and alert the right people when action is needed.</a></li>
             <li>Display cross-functional KPIs, goals, and progress using tools like Power BI.</li>
         </ul>        
