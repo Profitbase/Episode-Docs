@@ -1,6 +1,6 @@
 # Get entities
 
-Gets a list of entities based on a query agains a SQL Server database.
+Gets a list of entities from a query against a SQL Server database.
 
 An `entity` is a .NET object with one or more properties, for example
 
