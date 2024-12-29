@@ -2,7 +2,7 @@
 
 [Profitbase Flow](../../flow/flow.md) offers extensive support for connectors and data adapters across various systems, including databases, ERP systems, email, collaboration tools, cloud storage, files and many more
 
-As data is updated in disparate systems by users or applications, Profitbase Flow can pick up these changes and automatically take action to synchronize the data or apply changes to other systems.
+As data is updated in disparate systems by users or applications, Profitbase Flow can pick up these changes and automatically take action to synchronize the data or apply changes to other systems. This makes data flow seamlessly between systems without manual user intervention.
 
 Flows that support this process typically does the following:
 
@@ -22,7 +22,7 @@ Flows that support this process typically does the following:
 Here’s an example of setting up an integration between Visma.Net (ERP) and Microsoft Fabric using Profitbase Flow. We'll configure an automated process to continuously retrieve the latest general ledger transactions and upload them to Microsoft Fabric for reporting in Power BI. The entire configuration can be set up with virtually no code.
 
 The Flow does the following:
-1) **Run on a schedule:** The first step is to add a [Schedule trigger](../../flow/triggers/schedule-trigger.md) to make the Flow run automatically on a schedule, for example nightly or hourly. 
+1) **Run on a schedule:** The first step is to add a [Schedule trigger](../../flow/triggers/schedule-trigger.md) to make the Flow run repeatedly on a schedule, for example nightly or hourly. 
 2) **Retrieve the last fetch time:** To avoid reloading the entire general ledger every time, we first retrieve the last fetch date/time and record the current time for the next execution. In this example, we store this information in an Azure SQL database, but any supported storage option can be used.
 3) **Fetch new transactions:** Using the Visma.Net REST API and the [paged REST APIs action](../../flow/actions/visma/visma-net/paged-rest-api-request.md), we fetch GL transactions newer than the last fetch date/time. The transactions are returned in JSON format as paginated chunks, which we upload to Microsoft Fabric one at a time.
 4) **Convert JSON to Parquet:** Since JSON is inefficient for tabular data, we use the [JSON Data Reader](../../flow/actions/json/get-json-datareader.md) and [Create Parquet file as stream](../../flow/actions/parquet/create-parquet-file-as-stream.md) actions to convert the data into a format optimized for data analysis.
