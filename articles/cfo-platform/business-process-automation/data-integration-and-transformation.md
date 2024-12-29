@@ -2,7 +2,7 @@
 
 [Profitbase Flow](../../flow/flow.md) offers extensive support for connectors and data adapters across various systems, including databases, ERP systems, email, collaboration tools, cloud storage, files and many more
 
-As data is updated in disparate systems by users or applications, Profitbase Flow can pick up these changes and automatically take action to synchronize the data or apply changes to other systems.
+As data is updated in disparate systems by users or applications, Profitbase Flow can pick up these changes and automatically take action to synchronize the data or apply changes to other systems. This makes data flow seamlessly between systems without manual user intervention.
 
 Flows that support this process typically does the following:
 
