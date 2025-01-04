@@ -12,9 +12,11 @@ To address shortcomings of spreadsheets, consider moving to web apps with data s
 
 #### 5. Handle large and complex models
 **Data size**  
-When using spreadsheets like Excel or Google Sheets, there is a limit to the size of how large models can be. When the become too large, they take a long time to load, or simply will not load at all.
+Spreadsheets like Excel and Google Sheets have limitations on both data size (rows and columns) and complexity (formulas). When spreadsheets grow too large, they may fail to load or perform poorly. This happens because the processing is done entirely on your local computer, whether in the browser or the Excel desktop application.
 
-Profitbase Web apps does not have this limitation, as data is stored in a database and all heavy data processing is done on the backend. Only the data that a user needs to see is loaded to the UI, which is a very small part of the entire model.
+Currently, both Excel and Google Sheets have practical limits of around 1 million rows. However, financial models for even small to mid-sized companies often require handling 10–100 million rows, far exceeding these constraints.
+
+Profitbase web apps are not constrained by these limitations, as data is stored in a database, and model calculations run on a server (either cloud or on-premises). Only the data and calculations needed by the user runs in the browser. When users save changes, calculations run in the cloud, updating the model quickly. Even with large models exceeding 100 million rows, this process is very fast and usually takes less than a second. 
 
 **Complexity**  
 The business logic in (large) spreadsheets is hard to understand because it is comprised of a web of formulas and cell addresses with "meaningless" names. You have to jump back and forth between cells and sheets to understand what is going on, and you quickly loose track of where you are and what you are looking at. Also, the inability to document what you are doing and effectively test formulas or parts of the model in isolation, makes building and maintaing complex spreadsheets hard.
