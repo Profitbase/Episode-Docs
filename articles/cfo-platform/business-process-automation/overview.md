@@ -34,7 +34,7 @@ Connect systems, automate repetitive tasks, reduce errors, and free your team to
     </span>
     <div class="box-2-feature-list">            
             <ul class="box-list">
-                <li>Convert disparate spreadsheets into web applications with data stored in a centralized database.</li>
+                <li><a href="convert-spreadsheets-to-web-apps.md" class="box-feature-link"> Convert disparate spreadsheets into web applications with data stored in a centralized database.</a></li>
                 <li>Automate data collection, consolidation and reconciliation.</li>
                 <li>Reduce errors by defining business rules and formulas that users cannot break.</li>
                 <li>Build, manage and publish low-code apps.</li>
