@@ -8,7 +8,7 @@ To address shortcomings of spreadsheets, consider moving to web apps with data s
 
 #### 3. Versioning and revisions
 
-#### 4. Automate consolidation and reconciliacion
+#### 4. Automate consolidation and reconciliation
 
 #### 5. Handle large and complex models
 **Data size**  
