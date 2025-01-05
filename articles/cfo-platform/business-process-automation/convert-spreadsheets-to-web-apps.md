@@ -4,11 +4,11 @@ To address shortcomings of spreadsheets, consider moving to web apps with data s
 #### 1. Enable distributed input with multiple contributors
 To get input from different users through spreadsheets like Excel or Google Sheets, you need to make copies and share them via email or file shares. You then need to collect, consolidate and reconcile the data when users has completed their input. Needless to say, when the number of users grow, this process becomes error prone and time consuming.
 
-With Profitbase web apps, you only share the link to app. When users open the app in the browser, the built-in access control system ensures that they only see the screens and data they are authroize to see, for example only the data for their department.  
+With Profitbase web apps, you only share a link to app. When users open the app in the browser, the built-in access control system ensures they only see the screens and data they are authroize to see, for example only the data for their department.  
 
-Relevant data, filters, dropdown options, reports, tables, formulas, validation rules etc are loaded from the common data model. This guides users through the input process, making sure the input the provide follows business rules.
-  
-When users saves their work, the data is stored in a central database. The system ensures consistency and validity through the common data model, eliminating the need to do manual consolidation and reconciliation. 
+Reports, filters, dropdown options, data grids, formulas, validation rules and other relevant data is loaded from the common data model. This guides users through the input process, making sure the input they provide follows business rules.
+
+When users saves their work, the data is stored back to the central database through the common data model, eliminating the need to do manual consolidation and reconciliation. 
 
 #### 2. Apply security and access control
 When users open a Profitbase Workbook, the built-in access control system ensures that they only see the screens and data they are authroize to see. This means that even if someone accidentally get a link to a Workbook, or get their access revoked, they will be blocked. 
