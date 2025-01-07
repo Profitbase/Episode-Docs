@@ -1,15 +1,15 @@
 # Convert spreadsheets to Profitbase Workbooks
 
-Profitbase Workbooks are web apps with data stored in a central database.
-To address shortcomings of spreadsheets, consider moving to Profitbase Workbooks for any of the following reasons:  
+Profitbase Workbooks are robust and flexible business web apps, storing data in a central database.
+If you’re looking to overcome the limitations and challenges of spreadsheets, here are some compelling reasons to switch to Profitbase Workbooks:  
 <br/>   
 
 #### 1. Enable distributed input with multiple contributors
-To get input from different users through spreadsheets like Excel or Google Sheets, you need to make copies and share them via email or file shares. You then need to collect, consolidate and reconcile the data when users has completed their input. Needless to say, when the number of users grow, this process becomes error prone and time consuming.
+Collecting input from multiple users using spreadsheets like Excel or Google Sheets usually involves sharing copies via email or file shares. Once users submit their input, you must manually collect, consolidate, and reconcile the data — a process that becomes increasingly error-prone and time-consuming as the number of users grows.
 
-With Profitbase Workbooks, you only share a link to a browser app. When users open the app in the browser, the built-in access control system ensures they only see the screens and data they are authroize to see, for example only data for their department.  
+With Profitbase Workbooks, you simply share a link to a browser-based app. Built-in access controls ensure users see only the data and screens they are authorized to access, such as information specific to their department.  
 
-Reports, filters, dropdown options, data grids, formulas, validation rules and other relevant data is loaded from the common data model. This guides users through the input process, making sure the input they provide follows business rules.
+Reports, filters, dropdown options, data grids, formulas, validation rules and more is loaded from the common data model. This guides users through the input process, ensuring compliance with business rules.
 
 When users saves their work, the data is stored back to the central database through the common data model, eliminating the need to do manual collection, consolidation and reconciliation of data. 
 
@@ -27,21 +27,45 @@ Inventory <--> User7[User]
 Inventory <--> User8[User]
 ```
 
-#### 2. Apply security and access control
-When users open a Profitbase Workbook, the built-in access control system ensures that they only see the screens and data they are authroized to see. This means that even if someone accidentally get a link to a Workbook, or get their access revoked, they will be blocked. 
+<br/>
+<br/>
 
-Power users or administrators can easily manage access through the admin portal, and grant access to users or groups. The access control system is very flexible, but most commonly access is granted based on role and / or affiliation, for example which department or project users belong to.
+#### 2. Apply security and access control
+When users open a Profitbase Workbook, the built-in access control system ensures they only see the screens and data they are authorized to access. If someone unintentionally receives a link or has their access revoked, they will be automatically blocked from viewing the Workbook.
+
+Access can be managed by power users or administrators through the admin portal, allowing permissions to be granted to individuals or groups. While the access control system is highly flexible, it is most commonly configured based on roles or affiliations, such as a user’s department or project membership.
+
+<br/>
 
 #### 3. Versioning and revisions
-"Versions and revisions" means different things depending on which context you are in. 
-1) Versions and revisions of data, for example budget versions where you have to do multiple iterations to get to the goal.
-2) Versions and revisions of data models and business logic for existing data. For example, you need to change existing calculations or add more business logic and analysis. 
+"Versions and revisions" can mean different things: 
+1) **Versions and revisions of data**, for example budget versions where you have to do multiple iterations to get to the goal.
+2) **Versions and revisions of data models and business logic** for existing data. For example, you need to modify the data model or add more  calculations.
 
-Profitbase has built-in, out-of-the-box features for handling both of these scenarios.
+**Versions and revisions of data**  
+To learn about versions and revisions of data, please read the topic about [Work Processes](../../invision/docs/workprocess/index.md).
+
+**Versions and revisions of data models and business logic**  
+Profitbase Workbooks are web apps that automatically update whenever their configuration is changed. Since the configuration is stored in a central repository, updates to reports, client-side formulas, or forms are instantly reflected for all users. Similarly, changes to the data model, calculations, or dataflows take effect immediately across the entire system, thanks to its cloud-based architecture.
+
+Unlike spreadsheets, which typically embed both data and business logic within individual files, Profitbase Workbooks eliminate the need to share new copies or links after making updates. Once changes are applied, the system updates automatically — no further action required.
+
+```mermaid
+flowchart LR
+DT[Dev tool] --> R{Central metadata repository} --> DM[Data model]
+R --> BL[Business logic]
+R --> W[Workbooks Web UI]
+```
+
+<br/>
+<br/>
 
 #### 4. Automate collection, consolidation, and reconciliation of data
-Profitbase Workbooks share a common data model and stores all information in a central database. The common data model consolidates user input in a single repository, and ensures data integrity and consistent formats.
-Common challenges with spreadsheets like varying data structures, units or measures, duplicate entries, inconsistent use of ids (e.g customer IDs, order IDs), data formats, and incorrect formulas are eliminated with Profitase Workbooks because of the common data model. It is the single source of truth for data input, reports, dropdowns, and filters, and ensures that user input adheres to business rules. Between the user interface and the data model sits the business logic middleware, which is reposible for transforming, validating and processing data between the format it is presented in, and the format it is stored in.  
+Profitbase Workbooks share a common data model and store all information in a central database. This common data model consolidates user input into a single repository, ensuring data integrity and consistent formats throughout the system.
+
+Common issues associated with spreadsheets—such as inconsistent data structures, varying units or measures, duplicate entries, improper use of IDs (e.g., customer or order IDs), data format discrepancies, and incorrect formulas — are eliminated with Profitbase Workbooks. The common data model serves as the single source of truth for user input, reports, dropdowns, and filters, enforcing adherence to business rules.
+
+Sitting between the user interface and the data model is the business logic middleware. This layer is responsible for transforming, validating, and processing data between the format presented to users and the format stored in the database.  
 
 ```mermaid
 flowchart BT
@@ -51,6 +75,9 @@ BL <--> User2[HR]
 BL <--> User3[Inventory]
 BL <--> User4[Project]
 ```
+
+<br/>
+<br/>
 
 #### 5. Handle large and complex models
 **Data size**  
@@ -76,13 +103,17 @@ Equivalent Excel formula. What F3 and Parameters!B2 refers to is not immediately
 =F3+F3*Parameters!B2
 ```
 
+<br/>
+
 #### 6. Ensure consistency and reliability
 If you share spreadsheets via email or file shares, can you be confident that users does not accidently modify or delete formulas, breaks links or data source connections? Can you be sure you are getting back the same version of the spreadsheet that you sent out? Can you be sure  everyone is using the same assumptions and parameters?
 
 Profitbase Workbooks restrict end users to _editing only data_, not formulas, data connections, or business logic. Modifications to business logic and configuration are limited to power users. Additionally, the built-in access control system ensures users can only view and edit the data they are authorized to access. This guarantees everyone works with the same up-to-date model, assumptions, parameters, and formulas. As users input data, it is immediately synchronized with the central database, ensuring consistency and up-to-date data across the system.
 
+<br/>
+
 #### 7. Eliminate key person dependency
-Too often, only a single person fully understands the spreadsheet model, and they are the only one who can make changes without risking breaking it. What if this person leaves the company or becomes unavailable for any reason?  
+Too often, only a single person fully understands the spreadsheet model, and they are the only one who can make changes without risk of breaking it. What if this person leaves the company or becomes unavailable for any reason?  
 
 Considering Profitbase Workbooks are also built by people, the main difference is the tools and technology used to build the solutions as described in [section 5 above](#5-handle-large-and-complex-models). Because the tools makes the models easier to understand, maintain, and modify by other users besides the original author, this removes the dependency on a single person. Obviously, understanding the business is still required, but the technical aspects (like formulas and data flows) are greatly simplified. 
 
