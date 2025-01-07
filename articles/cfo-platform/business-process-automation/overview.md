@@ -34,8 +34,8 @@ Connect systems, automate repetitive tasks, reduce errors, and free your team to
     </span>
     <div class="box-2-feature-list">            
             <ul class="box-list">
-                <li>Convert disparate spreadsheets into web applications with data stored in a centralized database.</li>
-                <li>Automate data collection, consolidation and reconciliation.</li>
+                <li><a href="convert-spreadsheets-to-web-apps.md" class="box-feature-link"> Convert disparate spreadsheets into Profitbase Workbooks with data stored in a centralized database.</a></li>
+                <li><a href="convert-spreadsheets-to-web-apps.md#4-automate-collection-consolidation-and-reconciliation-of-data" class="box-feature-link">Automate collection, consolidation, and reconciliation of data.</a></li>
                 <li>Reduce errors by defining business rules and formulas that users cannot break.</li>
                 <li>Build, manage and publish low-code apps.</li>
                 <li>Control user access and permissions to display only relevant information.</li>

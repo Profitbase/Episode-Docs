@@ -8,6 +8,8 @@
       href: business-process-automation/data-integration-and-transformation.md
     - name: Data monitoring and alerts
       href: business-process-automation/data-monitoring-and-alerts.md
+    - name: Convert spreadsheets to web apps
+      href: business-process-automation/convert-spreadsheets-to-web-apps.md
 - name: Data platform
   items:
     - name: Overview
