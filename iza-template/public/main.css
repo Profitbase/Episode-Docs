@@ -3,6 +3,14 @@ main {
     grid-template-columns: 1fr 3fr;
 }
 
+html {
+    color-scheme: light;
+}
+
+.theme-toggle {
+    display: none;
+}
+
 .container {
     max-width: none;
 }

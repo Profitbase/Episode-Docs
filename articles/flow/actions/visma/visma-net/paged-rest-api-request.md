@@ -31,7 +31,9 @@ The return type is defined when configuring the action. It can be a custom data 
 For templated requests returning a single item, the return type is an Entity. E.g. v1\Customer\12345 returns a CustomerDTO entity.
 For API returning collections, the default return value is [HttpResponse&lt;T&gt;](../../../api-reference/built-in-types/http-response.md). This contains the result as a JSON string and the Status and any errors of the request.
 
-We also recommend simply dumping the raw response to a data store, and then use data transformation tools to transform the data into a usable format. If you know the API returns small amounts of data (10 000 - 200 000 records), you can consider using the [Get JSON DataReader](../../json/get-json-datareader.md) to flatten JSON to a tabular format and process the data as rows and columns, for example by inserting directly to a SQL Server table.
+
+We recommend dumping the raw response into a data store and using data transformation tools to convert it into a usable format. If the API returns a relatively small dataset (10,000–200,000 records), consider using the [Get JSON DataReader](../../json/get-json-datareader.md) to flatten the JSON into a tabular format. This allows you to process the data as rows and columns, such as by inserting it directly into a SQL Server table.
+
 
 <br/>
 
@@ -55,9 +57,12 @@ Refer to the [Visma.Net API documentation](https://integration.visma.net/API-ind
 
 ## Error handling
 
-If the response from the Visma.Net request is set to [HttpResponse&lt;T&gt;](../../../api-reference/built-in-types/http-response.md), the response object has a property IsSuccess. If false, the response has an ErrorContent property that relay the error messages from the API call or from internally thrown exceptions. 
-For other response types and for severe errors, the action will raise an error that could terminate the Flow unless either the `On Error` port is connected, or it is wrapped in a [Try-Catch](../../built-in/try-catch.md) action. 
-The `On Error` error handler will be triggered for each `page error`, allowing you to handle errors individually and preventing Flow from automatically raising an error that might terminate the running process.
+If the response from the Visma.Net request is of type [HttpResponse&lt;T&gt;](../../../api-reference/built-in-types/http-response.md), the response object includes an `IsSuccess` property. If `IsSuccess` is `false`, the response object contains an `ErrorContent` property that relays error messages from the API call or internally thrown exceptions.  
+
+For other response types and severe errors, the action will raise an error that could terminate the Flow unless the `On Error` port is connected or the action is wrapped in a [Try-Catch](../../built-in/try-catch.md) block.  
+
+The `On Error` handler is triggered for each `page error`, allowing you to handle errors individually and prevent the Flow from automatically raising an error that might terminate the running process.
+
 
 <br>
 
