@@ -66,9 +66,11 @@ To define a request to the Tripletex REST API, you can start from a template, or
 
 ## Error handling
 
-If the response from the Tripletex API request is set to [HttpResponse&lt;T&gt;](../../api-reference/built-in-types/http-response.md), the response object has a property IsSuccess. If false, the response has an ErrorContent property that relay the error messages from the API call or from internally thrown exceptions. 
-For other response types and for severe errors, the action will raise an error that could terminate the Flow unless either the `On Error` port is connected, or it is wrapped in a [Try-Catch](../built-in/try-catch.md) action. 
-The `On Error` error handler will be triggered for each `page error`, allowing you to handle errors individually and preventing Flow from automatically raising an error that might terminate the running process.
+If the response from the PowerOffice Go request is of type [HttpResponse&lt;T&gt;](../../api-reference/built-in-types/http-response.md), the response object includes an `IsSuccess` property. If `IsSuccess` is false, the response object will contain an `ErrorContent` property, which relays error messages from the API call or internally thrown exceptions.
+
+For other response types or severe errors, the action will raise an error that could terminate the Flow unless the On Error port is connected or the action is wrapped in a [Try-Catch](../built-in/try-catch.md) block.
+
+The `On Error` handler is triggered for each page error, allowing you to manage errors individually and prevent the Flow from automatically raising an error that might terminate the running process.
 
 <br>
 

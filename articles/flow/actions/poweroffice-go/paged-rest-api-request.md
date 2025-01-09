@@ -2,7 +2,8 @@
 
 Use [PowerOffice Go REST APIs (v2)](https://developer.poweroffice.net) to retrieve paginated data.
 
-The **REST API Request with Paging** action allows you to use the [PowerOffice Go REST APIs (v2)](https://prdm0go0stor0apiv20eurw.z6.web.core.windows.net) to retrieve large, paginated datasets. This action simplifies working with endpoints that return multiple pages of data, such as lists of customers, invoices, or accounting records. Pagination is handled automatically, allowing you to focus on processing the data.  
+
+The REST **API Request with Paging** action enables you to interact with the [PowerOffice Go REST APIs (v2)](https://prdm0go0stor0apiv20eurw.z6.web.core.windows.net) to retrieve large, paginated datasets. This action simplifies working with endpoints that return multiple pages of data, such as customer lists, invoices, or accounting records. Pagination is managed automatically, allowing you to focus on processing the data.
 
 ![img](/images/flow/rest-api-paging-powerOff.png)  
 <br/>
@@ -26,7 +27,7 @@ The **REST API Request with Paging** action allows you to use the [PowerOffice G
 The return type is defined when configuring the action. It can be a custom data type set by e.g. the template,or the raw JSON response from the API.  
 We recommend using the built-in [HttpResponse&lt;T&gt;](../../api-reference/built-in-types/http-response.md) type because it will include additional information about the response, such as the HTTP status code and error(s).
 
-We also recommend simply dumping the raw response to a data store, and then use data transformation tools to transform the data into a usable format. If you know the API returns small amounts of data (10 000 - 200 000 records), you can consider using the [Get JSON DataReader](../json/get-json-datareader.md) to flatten JSON to a tabular format and process the data as rows and columns, for example by inserting directly to a SQL Server table.
+We recommend dumping the raw response into a data store and using data transformation tools to convert it into a usable format. If the API returns a relatively small dataset (10,000–200,000 records), consider using the [Get JSON DataReader](../json/get-json-datareader.md) to flatten the JSON into a tabular format. This allows you to process the data as rows and columns, such as by inserting it directly into a SQL Server table.
 
 <br/>
 
@@ -55,7 +56,7 @@ For a comprehensive guide to PowerOffice Go endpoints and parameter options, vis
 
 ## Error handling
 
-If the response from the PowerOffice Go request is set to [HttpResponse&lt;T&gt;](../../api-reference/built-in-types/http-response.md), the response object has a property IsSuccess. If false, the response has an ErrorContent property that relay the error messages from the API call or from internally thrown exceptions. 
+If the response from the Dynamics 365 Business Central REST API is set to [HttpResponse&lt;T&gt;](../../api-reference/built-in-types/http-response.md), the response object includes an `IsSuccess` property. When `IsSuccess` is false, the response has an `ErrorContent` property that relay the error messages from the API call or from internally thrown exceptions. 
 For other response types and for severe errors, the action will raise an error that could terminate the Flow unless either the `On Error` port is connected, or it is wrapped in a [Try-Catch](../built-in/try-catch.md) action. 
 The `On Error` error handler will be triggered for each `page error`, allowing you to handle errors individually and preventing Flow from automatically raising an error that might terminate the running process.
 
