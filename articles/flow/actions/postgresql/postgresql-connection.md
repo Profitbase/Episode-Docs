@@ -21,7 +21,7 @@ A PostgreSQL connection consists of the following properties:
 
 ### Steps to Configure
 1. Provide a **Name** for the connection.
-2. Choose **PostgreSQL Authentication** as the connection type.
+2. Choose **PostgreSQL Authentication** or a **Custom Connection String** as the connection type.
 3. Enter the **Server Name**, **Database Name**, **Username**, and **Password**.
 4. (Optional) Set the **Connection Timeout** if required.
 5. Click **Test Connection** to verify the details.
@@ -32,3 +32,9 @@ A PostgreSQL connection consists of the following properties:
 - For enhanced security, store sensitive credentials securely.
 - Use the default timeout unless your environment requires a different configuration.
 
+
+![alt text](../../../../images/flow/postgresql-connection1.png)
+
+</br>
+
+![alt text](../../../../images/flow/postgresql-connection2.png)
