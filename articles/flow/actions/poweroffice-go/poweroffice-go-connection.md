@@ -13,3 +13,4 @@ A PowerOffice connection consists of the following properties:
 | Subscription Key                   | Optional    | An API key to access specific PowerOffice services.   |
 | Use PowerOffice Go test environment | Optional    | Enables testing in a sandbox environment when checked. |
 
+![img](../../../../images/flow/powerofficego-connection.png)
