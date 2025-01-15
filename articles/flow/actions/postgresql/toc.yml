@@ -1,3 +1,5 @@
+- name: "Connection"
+  href: "postgresql-connection.md"
 - name: "Execute command"
   href: "execute-command.md"
 - name: "Get DataReader"
@@ -12,5 +14,3 @@
   href: "insert-data.md"
 - name: "Load to DataTable"
   href: "load-to-datatable.md"
-- name: "Connection"
-  href: "postgresql-connection.md"
