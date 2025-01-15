@@ -11,3 +11,14 @@ Declares a variable to store data while the Flow is executing.
 
 [Read more about variables in .NET here](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/variables)
 
+
+## Properties
+
+| Name            | Type      | Description                                               |
+|-----------------|-----------|-----------------------------------------------------------|
+| Variable Name   | Optional  | The name of the variable.                                  |
+| Data Type       | Optional  | The type of data the variable holds.                      |
+| Initial Value   | Optional  | A value or a C# expression to initialize the variable.     |
+| Global          | Optional  | Indicates whether the variable is global (default is not). |
+| Description     | Optional  | A brief description of the variable's purpose.            |
+

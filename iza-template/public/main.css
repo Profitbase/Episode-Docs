@@ -6,8 +6,7 @@ main {
 html {
     color-scheme: light;
 }
-
-.theme-toggle {
+.dropdown[title="Change theme"] {
     display: none;
 }
 

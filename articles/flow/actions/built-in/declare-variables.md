@@ -9,3 +9,10 @@ Declares multiple variables simultaneously to store data while the Flow is execu
 
 [Read more about variables in .NET here](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/variables)
 
+## Properties
+
+| Name            | Type      | Description                                               |
+|-----------------|-----------|-----------------------------------------------------------|
+| Title                     | Optional  | The title or name of the action.                                                 |
+| Variables   | Requires  | Defined variables.                                  |
+| Description     | Optional  | A brief description of the variable's purpose.            |

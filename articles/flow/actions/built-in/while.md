@@ -10,7 +10,7 @@ When the condition no longer evaluates to `true`, execution continues from the `
 |---------------------------------|-------------|-------------------------------------------------------|
 | Title                 | Optional    | Name of the loop.                       |
 | Condition                  | Required    | Specify condition.         |
-| Maximum number of iterations                  | Optional    | Sets a limit on the number of iterations the loop can perform before termination. If set to 0 or left blank, the loop will have no limit and may run forever. Default is 10 000.|
+| Maximum number of iterations                  | Optional    | Sets a limit on the number of iterations the loop can perform before termination. If set to 0 or left blank, the loop will have no limit and may run forever. Default value is 10 000.|
 | Description              | Optional    | Additional notes or comments about the action or configuration.    |
 
 ## Maximum number of iterations

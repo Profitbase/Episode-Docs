@@ -1,2 +1,4 @@
+- name: "Connection"
+  href: connecting-to-xledger.md
 - name: "Get Xledger data"
   href: get-xledger-data.md

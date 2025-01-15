@@ -1,6 +1,4 @@
 export default {
-    defaultTheme: 'light',
-    themeDark: 'disabled',
     iconLinks: [
       {
         icon: 'linkedin',
