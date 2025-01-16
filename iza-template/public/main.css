@@ -6,8 +6,9 @@ main {
 html {
     color-scheme: light;
 }
-.dropdown[title="Change theme"] {
-    display: none;
+/* Hide the theme toggle button */
+#navbar form .dropdown-toggle {
+    display: none !important;
 }
 
 .container {
