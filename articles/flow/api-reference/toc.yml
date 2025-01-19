@@ -14,6 +14,8 @@
       href: "logs/get-run-log.md"
 - name: Built-in types
   items:
+    - name: "DeltaSet"
+      href: "built-in-types/deltaset.md"
     - name: HttpReponse
       href: built-in-types/http-response.md
 - name: Data Analysis

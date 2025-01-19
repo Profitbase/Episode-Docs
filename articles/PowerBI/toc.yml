@@ -6,5 +6,7 @@
   href: financial-reporting-matrix/toc.yml
 - name: Profitbase Gantt for Power BI
   href: gantt/toc.yml
+- name: Profitbase Writeback Table
+  href: writeback-table/toc.yml
 - name: Profitbase Risk Matrix
   href: risk-matrix/toc.yml

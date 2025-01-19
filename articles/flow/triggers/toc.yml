@@ -26,5 +26,9 @@
       href: "microsoft-365-outlook/when-new-email-arrives-trigger.md"
     - name: "When a new email arrives in a shared mailbox"
       href: "microsoft-365-outlook/when-new-email-arrives-in-shared-mailbox-trigger.md"
+- name: "Power BI"
+  items:
+    - name: "Writeback Table trigger"
+      href: "power-bi/writeback-table-trigger.md"
 - name: "Schedule trigger"
   href: "schedule-trigger.md"
