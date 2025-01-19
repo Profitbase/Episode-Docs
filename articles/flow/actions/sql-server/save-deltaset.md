@@ -11,8 +11,17 @@ A typical use case for this action is to save the changes made by users in the [
 |--------------|-----------|---------------------------------------------|
 | Title        | Optional  | A descriptive title of the action.          |
 | Connection   | Required  | The connection to the SQL Server / Azure SQL database. |
-| Table name   | Required  | The name of the table where data should be stored. If this is not the same table as the data is read from in the Power BI model, make sure that the target table contains columns with names and data types matching the source as defined in the columns definition of the Writeback Table visual. |
-| Save data options | Optional | For advanced scenarios (see below), use this option to override which columns to allow saving data to, and which columns to compare on for updates and deletes.  |  
+| Table name   | Required  | The name of the table where data will be stored. If this differs from the table the data is read from in the Power BI model, ensure the target table has columns with matching names and data types as defined in the column definitions of the Writeback Table visual. |
+| [Save data options](#save-data-options) | Optional | For advanced scenarios (see below), use this option to override the default behavior for applying DeltaSet changes.  |  
 | Command timeout | Optional | The time limit in seconds for command execution before it times out. Default is 120 seconds.|
 
 ### Save data options
+
+![img](/images/flow/deltaset-metadata-options.png)
+
+| Property                 | Description                          |
+|--------------------------|--------------------------------------|
+| Column name              | The name of the column that you want to specify a behavior for.  |
+| Use as update or delete key | By enabling this option, Flow will match by this column when updating or deleting rows instead of using the columns defined as keys in the [DeltaCells](../../api-reference/built-in-types/deltaset.md#deltacell).  |
+| Allow updating data in this column | You can set this option to `false` to explicitly prevent this column from being updated, even though the DeltaSet contains changes for the column.   |
+| Enable identity insert  | Enable this option if you need to enable inserting data to an identity column. In most databases, if you try to insert data to an identity column, the operation will fail unless explicitly enabled. |
