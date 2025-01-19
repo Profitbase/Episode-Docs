@@ -2,7 +2,7 @@
 
 Saves all changes in a DeltaSet to an Azure SQL or SQL Server table.  
 
-A typical use case for this action is to save the changes made by users in the [Writeback Table](../../../PowerBI/writeback-table/overview.md) for Power BI. This action will save all changes made by the user in Power BI by eiter inserting, updating, or deleting rows in the SQL Server / Azure SQL target table.
+A typical use case for this action is to save the changes made by users in the [Writeback Table](../../../PowerBI/writeback-table/overview.md) for Power BI. This action will save all changes made by the user in Power BI by either inserting, updating, or deleting rows in the SQL Server / Azure SQL target table.
 
 ## Properties
 | Name         | Type      | Description                                 |
