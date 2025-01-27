@@ -1,7 +1,7 @@
 
 #### Application server requirements
 
-This depends on your expected workload. The minimum specs are:
+The minimum specs are:
 
 -	Windows Server 2022 or higher
 -	[ASP.NET Core Runtime 8.x.x Windows Hosting Bundle](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
