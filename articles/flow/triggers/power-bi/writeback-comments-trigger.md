@@ -2,9 +2,9 @@
 
 The trigger defines the starting point of a Flow that stores comments from the [Writeback Comments Power BI](../../../PowerBI/writeback-comments/overview.md) visual.
 
-To create a Flow that saves the comments from the Writeback Comments visual, add this trigger to the Flow. The trigger starts the Flow when the user presses the `Save` button of the Writeback Comments visual in Power BI, and outputs a [DeltaSet](../../api-reference/built-in-types/deltaset.md) containing the changes made by the user. You then need to add an action for the specific target system that you want to save the changes to, for example [SQL Server / Azure SQL](../../actions/sql-server/save-deltaset.md), PostgreSQL or [Snowflake](../../actions/snowflake/save-deltaset.md).
+To create a Flow that saves comments from the Writeback Comments visual, add this trigger. It starts the Flow when the user presses the `Save` button in the [Writeback Comments visual](../../../PowerBI/writeback-comments/overview.md), and outputs a [DeltaSet](../../api-reference/built-in-types/deltaset.md) containing the change made by the user. You then need to add an action for the specific target system that you want to save the comments to, for example [SQL Server / Azure SQL](../../actions/sql-server/save-deltaset.md), PostgreSQL or [Snowflake](../../actions/snowflake/save-deltaset.md).
 
-![img](/images/flow/powerbi-writeback-table-trigger.png)
+![img](/images/flow/powerbi-writeback-comments-trigger.png)
 
 ## Properties
 | Name            | Type            | Description                               |
@@ -12,7 +12,7 @@ To create a Flow that saves the comments from the Writeback Comments visual, add
 | Test data       | Optional        | Use this property to define test data to save to a database, file or service. The test data is only used when you run the Flow manually from the Designer during development. The test data is NOT used when data is saved from the Power BI user interface. [See below](#test-data-format) for a description of the required format. | 
 
 ## Returns
-The trigger returns a [DeltaSet](../../api-reference/built-in-types/deltaset.md) containing the comments and associated context to save to a database, file, or service.  
+The trigger returns a [DeltaSet](../../api-reference/built-in-types/deltaset.md) containing the comments to save to a database, file, or service.  
 The DeltaSet can be passed to an action that saves the changes to a database, file or service.  
 
 The following actions currently supports saving DeltaSet changes:  
