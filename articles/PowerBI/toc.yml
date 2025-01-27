@@ -4,9 +4,11 @@
   href: power-bi-videos.md
 - name: Financial Reporting Matrix
   href: financial-reporting-matrix/toc.yml
-- name: Profitbase Gantt for Power BI
+- name: Gantt
   href: gantt/toc.yml
-- name: Profitbase Writeback Table
+- name: Writeback Table
   href: writeback-table/toc.yml
-- name: Profitbase Risk Matrix
+- name: Writeback Comments
+  href: writeback-comments/toc.yml
+- name: Risk Matrix
   href: risk-matrix/toc.yml
