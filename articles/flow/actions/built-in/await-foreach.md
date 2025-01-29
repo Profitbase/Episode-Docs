@@ -8,3 +8,12 @@ The items source is expected to be of type [IAsyncEnumerable<T>](https://learn.m
 
 
 
+
+## Properties
+
+| Name           | Type      | Description                                                   |
+|---------------|-----------|---------------------------------------------------------------|
+| Title         | Optional  | The title or name of the action.                              |
+| Items         | Required  | The asynchronous collection of items to iterate over.        |
+| Loop Variable | Optional  | The variable that holds the current item in each iteration.  |
+| Description   | Optional  | Additional notes or comments about the action or configuration. |
