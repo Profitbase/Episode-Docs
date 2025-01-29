@@ -81,6 +81,8 @@
               href: components/uielements/button.md
             - name: File upload
               href: components/uielements/fileupload.md
+            - name: Heading
+              href: components/uielements/heading.md
             - name: Iframe
               href: components/uielements/iframe.md
             - name: Image
