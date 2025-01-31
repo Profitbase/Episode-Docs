@@ -2,7 +2,6 @@
 
 Reads the contents of a file in OneDrive as a byte array.
 
-
 ## Properties
 
 | Name                 | Type     | Description                                                                                                                                                     |
@@ -19,4 +18,3 @@ Returns the file serialized as a [byte](https://learn.microsoft.com/en-us/dotnet
 > When you want to read a file in OneDrive, you need to provide the `path` to the file, not the name. When using a [OneDriveItem](./api-reference/onedrive-item.md) as input, select the `Path` property like shown below.  
 > [OneDriveItems](./api-reference/onedrive-item.md) are returned from the [For each file in OneDrive](foreach-file-in-onedrive.md) and [Get files in OneDrive](get-files-in-onedrive.md) actions.
 
-![img](../../../../images/flow/onedrive-read-file-as-stream-select-file.png)
