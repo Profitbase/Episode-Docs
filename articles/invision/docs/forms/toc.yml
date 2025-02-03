@@ -90,6 +90,8 @@
               href: formschemas/controls/textarea.md
             - name: Togglebutton
               href: formschemas/controls/togglebutton.md
+            - name: Toolbar
+              href: formschemas/controls/toolbar.md
             - name: Treeview
               href: formschemas/controls/treeview.md
             - name: Control (base)
