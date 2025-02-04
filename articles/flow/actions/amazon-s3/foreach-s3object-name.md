@@ -4,6 +4,11 @@ Iterates over a list of all Amazon S3 object names in the Amazon Bucket.
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/foreach-amaz.png)
 
+**Example**
+
+This flow validate that the number of products is exactly 17 before proceeding with processing individual product names. If the count is incorrect, it stops and logs an error. Otherwise, it continues processing the object names in a loop.
+
+
 ## Properties
 
 | Name                      | Type     | Description                                                                                 |
