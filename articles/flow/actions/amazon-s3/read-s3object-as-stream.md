@@ -2,6 +2,8 @@
 
 Reads the contents of an Azure Blob as a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream). Prefer using streaming over [Read Blob as byte array] if possible. Streaming is generally faster and uses less memory, because streaming doesn't require loading the entire blob into memory before you can start working with the data.
 
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/read-as-stream-amaz.png)
+
 > [!NOTE]
 > If you need to read the file multiple times, for example processing its contents and then sending the file somewhere else (such as to an archive), you MUST use the byte array option instead of streaming because the stream can only read once.
 
@@ -11,8 +13,6 @@ For example, a CSV file can be loaded using the [Open CSV file as DataReader](..
 
 > [!CAUTION]
 > Trying to load a Stream using an incompatible action will fail.
-
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/read-as-stream-amaz.png)
 
 ## Returns
 
