@@ -6,6 +6,8 @@
   href: create-workspace.md
 - name: Load Lakehouse Table
   href: load-lakehouse-table.md
+- name: Refresh semantic model
+  href: refresh-semantic-model.md
 - name: REST API request
   href: rest-api-request.md
 - name: Run Data Pipeline
