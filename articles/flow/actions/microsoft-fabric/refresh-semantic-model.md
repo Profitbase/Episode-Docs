@@ -41,19 +41,28 @@ This action returns a response object with the following properties.
 <br/>
 
 ## Default parameters
-The action calls the Power BI Refresh API with the default parameters as specified [here](https://learn.microsoft.com/en-us/power-bi/connect-data/asynchronous-refresh#parameters).
+The Power BI Refresh API is called with the `Retry count` and `Refresh type` properties as specified in the properties list above.  
+The remaining parameters use default values as specified [here](https://learn.microsoft.com/en-us/power-bi/connect-data/asynchronous-refresh#parameters).
+
+
+
 
 <br/>
 
 ## Considerations and limitations
 
-Please refer to the Power BI API documentation [here](https://learn.microsoft.com/en-us/power-bi/connect-data/asynchronous-refresh#considerations-and-limitations) to learn about limitations and considerations when using this action.  
+Please refer to the Power BI API documentation [here](https://learn.microsoft.com/en-us/power-bi/connect-data/asynchronous-refresh#considerations-and-limitations) to learn about limitations and considerations when refreshing semantic models.  
 
-**Semantic model eviction**
+> [!NOTE]
+> PowerBI accepts only one refresh operation at a time for a model. If there's a current running refresh and another request is submitted, Power BI raises an error and returns a `400 Bad Request` HTTP status code.
+
+**Semantic model eviction**  
 If the Power BI API returns an error describing that the semantic model has been evicted during the refresh operation, Flow automatically retries the refresh one time. Read more about [model eviction here](https://learn.microsoft.com/en-us/power-bi/enterprise/service-premium-large-models#semantic-model-eviction). 
 
-**Large semantic models**
+**Large semantic models**  
 [Considerations and limitations for large semantic models](https://learn.microsoft.com/en-us/power-bi/enterprise/service-premium-large-models#considerations-and-limitations)
+
+<br/>
 
 ## Error handling
 
@@ -64,6 +73,4 @@ If the Power BI API returns an error describing that the semantic model has been
 You can implement a custom retry logic by wrapping the action in a [Try-Catch](../built-in/try-catch.md) action inside a [While](../built-in/while.md)-loop using a counter to break out of the loop after a certain number of retries.  
 If you have enabled the `Raise exception on failure` property, you can handle all errors in the Catch-route and break the loop if you don't want to retry the refresh. (Remeber to also exit the loop when the refresh completes without failure.)
 
-> [!NOTE]
-> PowerBI accepts only one refresh operation at a time for a model. If there's a current running refresh and another request is submitted, Power BI raises an error and returns a `400 Bad Request` HTTP status code.
 
