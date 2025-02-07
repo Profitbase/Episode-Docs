@@ -1,19 +1,38 @@
 # Connecting to Azure Files
 
-When adding a [Azure Files](https://azure.microsoft.com/en-us/products/storage/files) action, select an [existing connection](../../workspaces/workspace-objects.md) or create a new one. 
+When adding a [Azure Files](https://azure.microsoft.com/en-us/products/storage/files) action, select an [existing connection](../../workspaces/workspace-objects.md) or create a new one.
 
 ## Connection details
 
 An Azure Files connection consists of the following fields:
 
-| Field                         |       | Description                               |
-|-------------------------------|------------------|-------------------------|
-| Connection name   |       Required      | Name of the connection.        |
-| Connection type   |       Required      | Select 'Connection string and Share name'. More options to come..  |
-| Share name        |       Required      | The Azure Files Share name.    |
-| Default directory |       Optional      | An optional directory on the share |
+| Field             |          | Description                                                              |
+| ----------------- | -------- | ------------------------------------------------------------------------ |
+| Connection name   | Required | Name of the connection.                                                  |
+| Connection type   | Required | Select either 'Connection String and Share name' or 'SAS URI for Share'. |
+| Default directory | Optional | An optional directory on the share                                       |
 
+<br/>
+
+### Additional properties for 'Connection String and Share name'
+
+| Field             |          | Description                                      |
+| ----------------- | -------- | ------------------------------------------------ |
+| Connection String | Required | The connection string for the Azure Files Share. |
+| Share name        | Required | The Azure Files Share name.                      |
+
+<br/>
+
+### Additional properties for 'SAS URI for Share'
+
+| Field   |          | Description                            |
+| ------- | -------- | -------------------------------------- |
+| SAS URI | Required | An valid SAS URI for a specific Share. |
+
+<br/>
 
 ## Mounting an Azure File share to a local drive letter
 
-Click [here](https://learn.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-windows) for instructions. 
+You can assign and conect a drive letter on your local machine to an Azure File Share.
+
+Click [here](https://learn.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-windows) for instructions on mounting or using UNC paths.
