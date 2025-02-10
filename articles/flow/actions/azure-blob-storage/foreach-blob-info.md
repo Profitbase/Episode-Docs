@@ -11,26 +11,9 @@ Iterates over a list of blob information in an Azure blob container.
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
 | Title |   |  |
-| Connection       | Required  | The Azure Blob Container Connection. Choose either 1. A [SAS URI](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview) to an Azure Blob container or 2. A Storage account connection string and container name.       |
+| Connection       | Required  | The [Azure Blob container connection](./azure-blob-container-connection.md). The currently supported options are `SAS URI` and `Connection string + container name`.    |
+| Dynamic connection | Optional   | A connection dynamically created using the [Create Azure Blob container connection](./create-azure-blob-container-connection.md) action.    |
 | Blob name prefix filter| Optional  | Prefix filter for blob properties **Note!** The prefix is case sensitive. |
 | Blob info | Optional | The name of the Flow variable that contains the blob info. |
 | Description | Optional | Additional notes or comments about the action or configuration.  |
 
-<br/>
-
-## Add a condition - if
-
-Read more about [Condition - If here](../built-in/if.md).
-
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/foreach-blob-info2.png)
-
-<br/>
-
-## Add a function 
-
-Read more about [Function here](../built-in/function.md)
-
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/foreach-blob-info3.png)
-
-
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/foreach-blob-info4.png)
