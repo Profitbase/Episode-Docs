@@ -1,7 +1,9 @@
 - name: "Connection"
-  href: "connecting-to-azure.md"
+  href: "azure-blob-container-connection.md"
 - name: "Append to Blob"
   href: "append-to-blob.md"
+- name: Create Azure Blob container connection
+  href: "create-azure-blob-container-connection.md"
 - name: "Delete Blob"
   href: "delete-blob.md"
 - name: "For each Blob info"
