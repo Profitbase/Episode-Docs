@@ -1,6 +1,6 @@
 # If-Else
 
-Defines an If-Else decision with multiple outcomes.
+Defines an If-Else decision with **multiple** outcomes.
 
 <br/>
 
