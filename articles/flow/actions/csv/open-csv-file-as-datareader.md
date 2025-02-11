@@ -34,3 +34,14 @@ In a large data set, bad values may constitute a small amount of data, making th
 By enabling **Error handling** behaviors in the [Data import options](configuration-properties/data-import-options.md), you can record the bad data encountered during a CSV import and investigate which rows and fields prevent a successful import.
 
 [Read about handling bad data here](bad-data.md)
+
+<br/>
+
+## Videos
+
+#### Dump CSV file from Azure Blob container to Azure SQL table
+This video demonstrates how to import all records from a CSV file into an Azure SQL table.  
+In the demo, no data import options (such as data type conversion, number or date formatting) are specified, meaning the data is imported as raw text.  
+
+![video](https://profitbasedocs.blob.core.windows.net/videos/Flow-Dump-CSV-file-to-Azure-SQL.mp4)
+
