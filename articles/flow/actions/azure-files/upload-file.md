@@ -1,6 +1,6 @@
 # Upload file to a share
 
-Upload a file to an [Azure Files](https://azure.microsoft.com/en-us/products/storage/files) share.
+Upload a file to an [Azure Files](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction) share.
 
 ## Properties
 

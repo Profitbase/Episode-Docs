@@ -1,3 +1,3 @@
 # Delete directory
 
-Deletes a directory from an [Azure Files](https://azure.microsoft.com/en-us/products/storage/files) share.
+Deletes a directory from an [Azure Files](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction) share.
