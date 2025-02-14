@@ -15,16 +15,12 @@ Inherits from [Control](control.md).
 
 | Name         |  Description                        |
 |--------------|-------------------------------------|
-| Name  | The name of the toolbar |
-| Borders      | Defines the visibility of borders (true/false values for different sides) |
-| Spacing  | Specifies the spacing between toolbar items (e.g., normal, compact) |
-| Size      |  Determines the size of the toolbar (e.g., small, medium, large)  |
+| Name  | The name of the toolbar. |
+| Borders      | Defines the visibility of borders. |
+| Spacing  | Specifies the spacing between toolbar items. |
+| Size      |  Determines the size of the toolbar.  |
 
-## Events
 
-| Name             | Event args      |  Description                        |
-|------------------|-----------------|-------------------------------------|
-| Clicked | Event args | Triggered when the toolbar button is clicked. |
 
 <br/>
 

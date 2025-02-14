@@ -1,6 +1,6 @@
 # Connecting to Azure Files
 
-When adding a [Azure Files](https://azure.microsoft.com/en-us/products/storage/files) action, select an [existing connection](../../workspaces/workspace-objects.md) or create a new one.
+When adding a [Azure Files](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction) action, select an [existing connection](../../workspaces/workspace-objects.md) or create a new one.
 
 ## Connection details
 
@@ -21,6 +21,8 @@ An Azure Files connection consists of the following fields:
 | Connection String | Required | The connection string for the Azure Files Share. |
 | Share name        | Required | The Azure Files Share name.                      |
 
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/connectionAzFile.png)
+
 <br/>
 
 ### Additional properties for 'SAS URI for Share'
@@ -28,6 +30,8 @@ An Azure Files connection consists of the following fields:
 | Field   |          | Description                            |
 | ------- | -------- | -------------------------------------- |
 | SAS URI | Required | An valid SAS URI for a specific Share. |
+
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/connectionAzFile2.png)
 
 <br/>
 

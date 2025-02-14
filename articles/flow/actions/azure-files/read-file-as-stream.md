@@ -1,6 +1,6 @@
 # Read file from share as stream
 
-Reads the contents of a file in an [Azure Files](https://azure.microsoft.com/en-us/products/storage/files) share as a stream.
+Reads the contents of a file in an [Azure Files](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction) share as a stream.
 
 ## Properties
 
