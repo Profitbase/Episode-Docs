@@ -16,13 +16,14 @@ public record Customer(string VATNumber, string Name, string Address);
 
 ## Properties
 
-| Name         | Data type       | Description                                       |
+| Name         | Type            | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
-| Title           |   Optional | The title or name of the command.      |
-| Connection         | Required   | The SQL Server connection. |
+| Title              | Optional        | A descriptive title for the action.               |
+| Connection      | (Required) | The [SQL Server Connection](./connection.md).         |
+| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
 | SQL expression and parameters   | Required      | The command to execute along with any parameters.   |
-| Entity name | Optional  |   |
-| Entity properties | Required  |   |
-| Result variable name | Required  | Name of resulting variable  |
+| Entity name | Optional  | Name of the entity data type returned. |
+| Entity properties | Required  | Name of the properties and its data types.  |
+| Result variable name | Required  | Name of resulting variable containing the entity.  |
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description   |  Optional  |  Additional notes or comments about the action or configuration. |

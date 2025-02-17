@@ -1,6 +1,6 @@
 # Get Visma Business NXT data
 
-Gets data from Visma Business NXT using GraphQL.
+Gets data from [Visma Business NXT API](https://docs.vismasoftware.no/businessnxtapi/) using GraphQL.
 
 This action gets data from Visma Business NXT using a GraphQL query and returns the result as a stream of rows through an  [IDataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader).  
 
@@ -12,7 +12,8 @@ The stream can then be piped to a destination, for example a SQL Server table us
 
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
-| Connection       | Required  | A Visma Open Id connection. You need to specify the `Client Id`, `Client secret` and the `Customer Id`. You can find these values in the Visma developer portal. |  
+| Connection       | Required  | The [Visma Open Id connection](./connection.md). You need to specify the `Client Id`, `Client secret` and the `Customer Id`. You can find these values in the Visma developer portal. |  
+ Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
 | GraphQL configuration | Required | Lets you define the GraphQL query, GraphQL query variables and the data definition format of the rows returned from the GraphQL query. |  
 
 <br/>

@@ -36,3 +36,7 @@
   href: "truncate-table.md"
 - name: "Update entity"
   href: "update-entity.md"
+- name: "Create connection"
+  href: create-connection.md
+- name: "About SQL Server connection"
+- href: connection.md

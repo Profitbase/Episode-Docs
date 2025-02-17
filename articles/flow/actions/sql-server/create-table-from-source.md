@@ -9,15 +9,16 @@ This action creates a copy of another table in a SQL Server database by coping i
 
 ## Properties
 
-| Name         | Data type       | Description                                       |
+| Name         | Type            | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
-| Title           |  Optional | The title or name of the command.            |
-| Connection         | Required   | The SQL Server connection. |
-|Source Table | Required      | Select or enter source table name. |
-| Target table | Required  | Select or enter target table name.  |
-| Replace existing table   |           |                  |
-| Copy Primary Key   |           |                  |
-|  Copy Foreign Key(s)     |           |                  |
-|    Copy Index(es)     |           |                  |
-|Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
+| Title              | Optional        | A descriptive title for the action.               |
+| Connection      | (Required) | The [SQL Server Connection](./connection.md).         |
+| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
+| Source Table | Required | Select or enter source table name. |
+| Target table | Required | Select or enter target table name.  |
+| Replace existing table | Optional |  Check if You want to replace the table or an error will be thrown if it already exists. |
+| Copy Primary Key   | Optional | This will copy the primary key from Source to Target. |
+| Copy Foreign Key(s) | Optional | This will copy any foreign keys from Source to Target. |
+| Copy Index(es) | Optional | This will copy the any index from Source to Target. |
+| Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description   | Optional | Additional notes or comments about the action or configuration. |

@@ -25,14 +25,17 @@ A [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic
 
 ## Properties
 
-| Name         | Data type       | Description                                       |
+| Name         | Type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
 | Title           |  Optional | The title or name of the command.      |
-| Connection         | Required   | The SQL Server connection. |
+| Connection      | (Required) | The [SQL Server Connection](./connection.md).         |
+| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
 | SQL expression and parameters   | Required      | The command to execute along with any parameters.   |
-| Entity name | Optional  |   |
-| Entity properties | Required  |   |
+| Row variable name | Required  | Name of Row variable.  |
+| Row data type | Optional  | Name of the created entity type.  |
+| Entity name | Optional  | Name of Row entity.  |
+| Entity properties | Required  |  Name and data type of the propertis in each entity  |
 | Result variable name | Required  | Name of resulting list of entities variable  |
-| Result data type | Optional  |   |
+| Result data type | Optional  |  Name of the created entity list type.  |
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description   | Optional | Additional notes or comments about the action or configuration. |
