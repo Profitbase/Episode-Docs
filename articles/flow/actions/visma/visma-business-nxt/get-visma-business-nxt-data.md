@@ -13,7 +13,7 @@ The stream can then be piped to a destination, for example a SQL Server table us
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
 | Connection       | Required  | The [Visma Open Id connection](./connection.md). You need to specify the `Client Id`, `Client secret` and the `Customer Id`. You can find these values in the Visma developer portal. |  
- Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
+| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
 | GraphQL configuration | Required | Lets you define the GraphQL query, GraphQL query variables and the data definition format of the rows returned from the GraphQL query. |  
 
 <br/>

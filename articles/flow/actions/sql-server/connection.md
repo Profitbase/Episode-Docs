@@ -38,4 +38,5 @@ A connection type (or authentication type) must be selected before entering othe
 
 
 <br/>
+
 Note: A [Dynamic Connection](./create-connection.md) can replace the default connection described here.

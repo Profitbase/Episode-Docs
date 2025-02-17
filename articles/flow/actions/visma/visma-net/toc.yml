@@ -3,4 +3,4 @@
 - name: "Create connection"
   href: create-connection.md
 - name: "About Visma.Net Connection"
-  href: connection.md
+  href: visma-net-connection.md

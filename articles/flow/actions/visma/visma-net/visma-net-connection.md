@@ -18,4 +18,5 @@ A Visma Businnes NXT connection consists of the following properties:
 
 
 <br/>
+
 Note: A [Dynamic Connection](./create-connection.md) can replace the default connection described here.

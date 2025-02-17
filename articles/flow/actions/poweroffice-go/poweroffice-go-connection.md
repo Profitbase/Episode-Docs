@@ -19,4 +19,5 @@ A [PowerOffice Go connection](https://developer.poweroffice.net/documentation/au
 
 
 <br/>
+
 Note: A [Dynamic Connection](./create-connection.md) can replace the default connection described here.

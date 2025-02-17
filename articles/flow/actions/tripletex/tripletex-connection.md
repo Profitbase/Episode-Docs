@@ -8,7 +8,7 @@ A Tripletex connection consists of the following properties:
 
 
 
-| Name                            | Data Type   | Description                                           |
+| Name                            | Type        | Description                                           |
 |---------------------------------|-------------|-------------------------------------------------------|
 | Connection Name                 | Required    | Name of the connection object.                       |
 | Consumer token                  | Required    | A token used to authenticate the consumer.           |
@@ -20,4 +20,5 @@ A Tripletex connection consists of the following properties:
 
 
 <br/>
+
 Note: A [Dynamic Connection](./create-connection.md) can replace the default connection described here.
