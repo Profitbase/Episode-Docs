@@ -10,7 +10,8 @@ A typical use case for this action is to save the changes made by users in the [
 | Name         | Type      | Description                                 |
 |--------------|-----------|---------------------------------------------|
 | Title        | Optional  | A descriptive title of the action.          |
-| Connection   | Required  | The connection to the SQL Server / Azure SQL database. |
+| Connection      | (Required) | The [SQL Server Connection](./connection.md).         |
+| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
 | DeltaSet     | Required  | The DeltaSet to save to the target table.   |
 | Target table | Required  | The name of the table where data will be stored. If this differs from the table the data is read from in the Power BI model, ensure the target table has columns with matching names and data types as defined in the column definitions of the Writeback Table visual. |
 | [Save data options](#save-data-options) | Optional | For advanced scenarios (see below), use this option to override the default behavior for applying DeltaSet changes.  |  

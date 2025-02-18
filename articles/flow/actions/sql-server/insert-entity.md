@@ -16,12 +16,13 @@ INSERT INTO tableName (Property1, Property2) VALUES(entity.Property1, enity.Prop
 
 ## Properties
 
-| Name         | Data type       | Description                                       |
+| Name         | Type            | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
-| Title           |           |                        |
-| Connection         | Required   | The SQL Server connection. |
-| Entity | Raquired  |   |
-| Table name | Required  |   |
-| Result variable name | Required  | Name of the variable returning number of rows affected.   |
+| Title              | Optional        | A descriptive title for the action.               |
+| Connection      | (Required) | The [SQL Server Connection](./connection.md).         |
+| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
+| Entity | Raquired  | Select the entity (object) to insert.   |
+| Table name | Required  | Select where to insert the data.  |
+| Result variable name | Optional  | Name of the variable returning number of rows affected.   |
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description   | Optional | Additional notes or comments about the action or configuration. |

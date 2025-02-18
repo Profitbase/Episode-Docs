@@ -7,14 +7,15 @@ Executes a SQL command in a SQL Server database which returns a single value.
 
 ## Properties
 
-| Name         | Data type       | Description                                       |
+| Name         | Type            | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
-| Title           |   Optional | The title or name of the command.    |
-| Connection         | Required   | The SQL Server connection. |
-|SQL expression and parameters   | Required      | The command to execute along with any parameters.   |
-| Result variable name | Optional  | Name of the variable.  |
-| Result variable type | Optional  | Type of the variable.  |
-|Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
+| Title              | Optional        | A descriptive title for the action.               |
+| Connection      | (Required) | The [SQL Server Connection](./connection.md).         |
+| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
+| SQL expression and parameters   | Required      | The command to execute along with any parameters.   |
+| Result variable name | Required  | Name of the variable.  |
+| Result variable type | Required  | Type of the variable.  |
+| Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description   | Optional | Additional notes or comments about the action or configuration. |
 
 ## Example: How to use parameters

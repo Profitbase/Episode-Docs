@@ -14,7 +14,8 @@ The **REST API Request with Paging** action allows you to use the [Visma.Net](ht
 | Name            | Type     | Description                                                                                   |
 |----------------- | -------- | -------------------------------------------------------------- |
 | Title           | Optional | The title or name of the request.                         |
-| Connection      | Required | Specifies the Visma.Net connection used for authentication with the REST API.         |
+| Connection      | Required | The [Visma.Net Connection](./visma-net-connection.md) used to make an authenticated request to Tripletex REST API.         |
+| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
 | Configuration   | Required | Defines the HTTP request to Visma.Net, including the method, URL, parameters, and return type.  |
 | Company Id      | Optional | The Company Id to request data from. Default company can be set in the connection.        |
 | Start page      | Optional | The page to begin retrieving data from. Defaults to 1 (if not specified).                            |

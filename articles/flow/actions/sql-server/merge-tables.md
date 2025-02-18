@@ -9,13 +9,14 @@ This action provides a lightweight wrapper for the [Merge](https://learn.microso
 
 ## Properties
 
-| Name         | Data type       | Description                                       |
+| Name         | Type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
-| Title           |           |                        |
-| Connection         | Required   | The SQL Server connection. |
+| Title              | Optional        | A descriptive title for the action.               |
+| Connection      | (Required) | The [SQL Server Connection](./connection.md).         |
+| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
 | Source   | Required      | Select or enter source table/view to merge from. |
 | Target table | Required  |  Select or enter target table name. |
 | Merge configuration | Required  | Select or edit merge configuration.  |
-| Result variable name | Required  | Name of the variable returning number of rows affected. |
+| Result variable name | Optional  | Name of the variable returning number of rows affected. |
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description   | Optional | Additional notes or comments about the action or configuration. |

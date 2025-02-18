@@ -13,7 +13,8 @@ The REST **API Request with Paging** action enables you to interact with the [Po
 | Name            | Type     | Description                                                                                   |
 |----------------- | -------- | --------------------------------------------------------------------------------------------- |
 | Title           | Optional | The title or name of the request.                              |
-| Connection      | Required | The PowerOffice Connection used to make an authenticated request to PowerOffice REST API.         |
+| Connection      | Required | The [PowerOffice Go Connection](./poweroffice-go-connection.md) used to make an authenticated request to PowerOffice Go REST API.     |
+| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
 | Configuration   | Required | Specifies the HTTP request to the PowerOffice API, including the HTTP method, URL, parameters, and return type. |
 | Start page     | Optional | The starting page of the data retrieval. Defaults to 1 if not specified.           |
 | Items per page  | Optional | The number of items to retrieve per page. Defaults to 5000 if not specified.                  |

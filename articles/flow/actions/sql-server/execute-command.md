@@ -12,13 +12,14 @@ Executes a SQL command in a SQL Server database, and returns the number of rows 
 
 ## Properties
 
-| Name         | Data type       | Description                                       |
+| Name         | Type            | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
 | Title           |  Optional | The title or name of the command.        |
-| Connection         | Required   | The SQL Server connection. |
-|SQL expression and parameters   | Required      | The command to execute along with any parameters. |
+| Connection      | (Required) | The [SQL Server Connection](./connection.md).         |
+| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
+| SQL expression and parameters   | Required      | The command to execute along with any parameters. |
 | Result variable name | Optional  | The name of the variable that will contain the number of rows affected.  |
-|Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.  |
+| Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.  |
 | Description   | Optional | Additional notes or comments about the action or configuration. |
 
 ## Example: How to use parameters
