@@ -11,7 +11,7 @@ Iterates over the rows returned by a SQL Server database query.
 | Name         | Type            | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
 | Title           | Optional | The title or name of the command.     |
-| Connection      | (Required) | The [SQL Server Connection](./connection.md).         |
+| Connection      | Required | The [SQL Server Connection](./connection.md).         |
 | Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
 | SQL expression and parameters   | Required      | The command to execute along with any parameters.   |
 | Row to entity maping | Required  | Mapping between column and daentity property including data typ.   |

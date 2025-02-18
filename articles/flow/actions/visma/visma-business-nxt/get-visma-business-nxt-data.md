@@ -22,7 +22,7 @@ The stream can then be piped to a destination, for example a SQL Server table us
 
 The following describes the GraphQL configuration setup.  
 
-##### GraphQL Expression (required)
+##### GraphQL Expression Required
 
 Defines the GraphQL query used to fetch data. You can get started quickly by clicking `Create from template` and use it as a starting point.  
 
@@ -31,6 +31,6 @@ Defines the GraphQL query used to fetch data. You can get started quickly by cli
 If the query is parameterized (which it usually is), you need to map the parameters in the query to variables.  
 ![img](../../../../../images/flow/visma-graphql-variables.png)
 
-##### Item type mapping (required)
+##### Item type mapping Required
 
 The `Item type mapping` describes the data definition of the entities returned from the GraphQL query. You need to specify the data type (String, Integer, DateTime, etc) of each field that you want to include from the query, so Flow can convert it to objects that can be used by subsequent actions.  
