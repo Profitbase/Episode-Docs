@@ -15,7 +15,7 @@ Executes a SQL command in a SQL Server database, and returns the number of rows 
 | Name         | Type            | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
 | Title           |  Optional | The title or name of the command.        |
-| Connection      | (Required) | The [SQL Server Connection](./connection.md).         |
+| Connection      | Required | The [SQL Server Connection](./connection.md).         |
 | Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
 | SQL expression and parameters   | Required      | The command to execute along with any parameters. |
 | Result variable name | Optional  | The name of the variable that will contain the number of rows affected.  |

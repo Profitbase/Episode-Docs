@@ -10,7 +10,7 @@ Executes a SQL command in a SQL Server database which returns a single value.
 | Name         | Type            | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
 | Title              | Optional        | A descriptive title for the action.               |
-| Connection      | (Required) | The [SQL Server Connection](./connection.md).         |
+| Connection      | Required | The [SQL Server Connection](./connection.md).         |
 | Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
 | SQL expression and parameters   | Required      | The command to execute along with any parameters.   |
 | Result variable name | Required  | Name of the variable.  |

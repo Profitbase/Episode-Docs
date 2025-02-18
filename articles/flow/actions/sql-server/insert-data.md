@@ -11,7 +11,7 @@ Use this action when you have many rows that you need to insert to a table.
 | Name               | Type            | Description                                       |
 |--------------------|-----------------|---------------------------------------------------|
 | Title              | Optional        | A descriptive title for the action.               |
-| Connection      | (Required) | The [SQL Server Connection](./connection.md).         |
+| Connection      | Required | The [SQL Server Connection](./connection.md).         |
 | Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
 | Source             | Required        | The data to insert. This can be a DataReader or a DataTable. |
 | Destination table  | Required        | Select or enter the name of the table to insert info. |

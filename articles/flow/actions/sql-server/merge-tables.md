@@ -12,7 +12,7 @@ This action provides a lightweight wrapper for the [Merge](https://learn.microso
 | Name         | Type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
 | Title              | Optional        | A descriptive title for the action.               |
-| Connection      | (Required) | The [SQL Server Connection](./connection.md).         |
+| Connection      | Required | The [SQL Server Connection](./connection.md).         |
 | Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
 | Source   | Required      | Select or enter source table/view to merge from. |
 | Target table | Required  |  Select or enter target table name. |
