@@ -2,6 +2,8 @@
 
 Reads the contents of an [Azure Blob](https://learn.microsoft.com/en-us/azure/storage/blobs/) into memory as a byte array. You can compare this to downloading a file. For peformance reasons, prefer using [streaming](read-blob-as-stream.md) over reading as byte array if possible. Streaming is generally faster and uses less memory, because streaming doesn't require loading the entire blob into memory before you can start working with the data.
 
+![img](../../../../images/flow/read-blob-as-byte-array.PNG)
+
 > [!NOTE]
 > If you need to read the file multiple times, for example processing its contents and then sending the file somewhere else (such as to an archive), you MUST use the byte array option instead of streaming because the stream can only read once.
 
@@ -12,7 +14,7 @@ For example, an Excel file can be loaded using the [Open Excel file as DataReade
 > [!CAUTION]
 > Trying to load a byte array using an incompatible action will fail.
 
-![img](../../../../images/flow/read-blob-as-byte-array.PNG)
+
 
 ## Returns
 
