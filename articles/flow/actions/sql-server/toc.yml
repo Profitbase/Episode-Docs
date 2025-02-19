@@ -7,7 +7,7 @@
 - name: "Delete table"
   href: "delete-table.md"
 - name: "Execute command"
-  href: execute-command.md
+  href: "execute-command.md"
 - name: "For each row from query"
   href: "for-each-row-from-query.md"
 - name: "Get DataReader"
@@ -19,9 +19,9 @@
 - name: "Get single value"
   href: "get-single-value.md"
 - name: "Insert data"
-  href: insert-data.md
+  href: "insert-data.md"
 - name: "Insert or Update row"
-  href: insert-or-update-row.md
+  href: "insert-or-update-row.md"
 - name: "Insert entity"
   href: "insert-entity.md"
 - name: "Load to DataTable"
@@ -39,4 +39,4 @@
 - name: "Create connection"
   href: "create-connection.md"
 - name: "About SQL Server connection"
-- href: "connection.md"
+  href: "connection.md"
