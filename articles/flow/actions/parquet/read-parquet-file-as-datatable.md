@@ -13,8 +13,8 @@ Loads the contents of a Parquet file into memory as a [DataTable](https://learn.
 | Name                | Type     | Description                                      |
 | ------------------- | -------- | ------------------------------------------------ |
 | Title               |          |                                                  |
-| File contents | Required       |  The contents of the file, provided as either a stream or a byte array. |
-| Column mapping      | Required | Defines the mapping between the column names in the Parquet file, and the `column names` (CustomerID, Amount, etc) in the target DataTable. |
+| File contents       | Required |  The contents of the file, provided as either a stream or a byte array. |
+| Column mapping      | Optional | Defines a mapping between columns in the Parquet file, and the output format of the reader. You can also define this option to skip columns from the Parquet file, typically when you don't want to read all the data from the file. |
 | Table variable name | Optional | The name of the DataTable variable.              |
 | Description         | Optional |  Additional notes or comments about the action or configuration. |
 
