@@ -2,6 +2,8 @@
   href: "create-json-file-as-byte-array.md"
 - name: "Create JSON file as stream"
   href: "create-json-file-as-stream.md"
+- name: Convert JSON to DataTable
+  href: get-json-datatable.md
 - name: "Read JSON file as string"
   href: "read-json.md"
 - name: Get JSON DataReader
