@@ -7,15 +7,12 @@ Creates a new directory in a [Azure Files](https://learn.microsoft.com/en-us/azu
 
 **Example** ![img](../../../../images/strz.jpg)
 
-<<<<<<< HEAD
-The example above illustrates how to first create a folder, and then transfer files from Azure Blob Storage to an Azure Files Share. Used actions: 1. Create directory 2. [Read Blob as byte array](../azure-blob-storage/read-blob-as-byte-array.md) 3. [Upload file to a share](upload-file.md).
+The example above illustrates how to first create a folder, and then transfer files from Azure Blob Storage to an Azure Files Share. Used actions: 1. `Create directory` 2. [Read Blob as byte array](../azure-blob-storage/read-blob-as-byte-array.md) 3. [Upload file to a share](upload-file.md).
 
 </br>
 
 ## Properties
-=======
-The example above illustrates how to first create a folder, and then transfer files from Azure Blob Storage to an Azure Files share. Used actions: 1. `Create directory`, 2: [Read Blob as byte array](../azure-blob-storage/read-blob-as-byte-array.md) 3. [Upload file to a share](upload-file.md).
->>>>>>> 18ca4e533397b2ccd4f736dc22faa4100e6f3bde
+
 
 | Name                        | Type      | Description |
 |-----------------------------|-----------|--------------------------------------------------------|

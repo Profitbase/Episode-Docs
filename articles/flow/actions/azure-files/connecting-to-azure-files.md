@@ -11,10 +11,6 @@ An Azure Files connection consists of the following fields:
 | Connection name   | Required | Name of the connection.                                                  |
 | Connection type   | Required | Select either 'Connection String and Share name' or 'SAS URI for Share'. |
 | Default directory | Optional | Use this option to limit the scope of the connection to a specific root directory. **NOTE!** This directory must already exist. Use this option only if you want to limit the scope of which directories actions using this connection can use.  |
-<<<<<<< HEAD
-
-=======
->>>>>>> 18ca4e533397b2ccd4f736dc22faa4100e6f3bde
 
 <br/>
 
