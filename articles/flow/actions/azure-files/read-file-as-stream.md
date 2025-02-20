@@ -2,6 +2,14 @@
 
 Reads the contents of a file in an [Azure Files](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction) share as a stream.
 
+![img](../../../../images/flow/Read-file-from-share-as-stream.png)
+
+**Example** ![img](../../../../images/strz.jpg)
+
+The example above demonstrates a file processing and cleanup operation. This flow retrieves a file from shared storage, converts its content to a JSON string, and then cleans up by deleting the associated directory.  Used actions: 1. Read file from share as stream 2. [Read JSON file as string](../json/read-json.md) 3. [Delete directory](delete-directory.md).
+
+</br>
+
 ## Properties
 
 | Name             | Type      |Description                                             |
