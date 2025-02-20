@@ -4,9 +4,9 @@ Upload a file to an [Azure Files](https://learn.microsoft.com/en-us/azure/storag
 
 ![img](../../../../images/flow/upload-file-flow.png)
 
-**Example**
+**Example** ![img](../../../../images/strz.jpg)
 
-In this example a company wants to transfer reports from their Azure Blob Storage to Azure File Share. Used actions: 1. [Create directory](create-directory.md) 2. [Read Blob as byte array](../azure-blob-storage/read-blob-as-byte-array.md) 3. Upload file to a share.
+The example above illustrates how to first create a folder, and then transfer files from Azure Blob Storage to an Azure Files share. Used actions: 1. [Create directory](create-directory.md) 2. [Read Blob as byte array](../azure-blob-storage/read-blob-as-byte-array.md) 3. Upload file to a share.
 
 
 
