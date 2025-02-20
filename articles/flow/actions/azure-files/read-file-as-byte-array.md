@@ -7,11 +7,14 @@ Reads the contents of a file in an [Azure Files](https://learn.microsoft.com/en-
 
 **Example** ![img](../../../../images/strz.jpg)
 
-The example above demonstrates a file processing and cleanup operation. This flow retrieves a file from shared storage, converts its content to a JSON string, and then cleans up by deleting the associated directory.  Used actions: 1. Read file from share as byte array 2. [Read JSON file as string](../json/read-json.md) 3. [Delete directory](delete-directory.md).
+The example above takes a file from storage, reads its JSON content, saves the data to a database, and then deletes the storage folder to keep things tidy.  Used actions: 1. Read file from share as byte array 2. [Get JSON DataReader](../json/get-json-datareader.md) 3. [Insert rows](../sql-server/insert-data.md) 4. [Delete directory](delete-directory.md).
 
 </br>
 
 
+## Returns
+
+[Byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays)
 
 ## Properties
 
@@ -21,6 +24,3 @@ The example above demonstrates a file processing and cleanup operation. This flo
 | File name  | Required | The name and full path to the file to download.                          |
 
 
-## Returns
-
-[Byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays)

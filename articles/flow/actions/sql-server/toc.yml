@@ -18,7 +18,7 @@
   href: "get-entities.md"
 - name: "Get single value"
   href: "get-single-value.md"
-- name: "Insert data"
+- name: "Insert rows"
   href: "insert-data.md"
 - name: "Insert or Update row"
   href: "insert-or-update-row.md"
