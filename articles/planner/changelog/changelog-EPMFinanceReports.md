@@ -6,6 +6,7 @@ EPM Finance Reports package contains the finance report as they are deployed acr
 
 ## EPM Finance Reports Versions
 
+- [EPM Finance Reports 1.2.2](#epm-finance-reports-122) - Released 2025.02.24
 - [EPM Finance Reports 1.1.1](#epm-finance-reports-111) - Released 2024.04.24
 - [EPM Finance Reports 1.1.0](#epm-finance-reports-110) - Released 2024.01.26
 - [EPM Finance Reports 1.0.2](#epm-finance-reports-102)
@@ -14,6 +15,12 @@ EPM Finance Reports package contains the finance report as they are deployed acr
 ## Unreleased
 
 - Nothing yet.
+
+## EPM Finance Reports 1.2.2
+
+**Changes:**
+
+**Fixes:**
 
 ## EPM Finance Reports 1.1.1
 
