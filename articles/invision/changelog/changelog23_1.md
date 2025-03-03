@@ -75,7 +75,7 @@ If you want to display a dimension in a Form, you can now choose between 3 optio
 - Fixed an issue with dropdowns displayed in popups, where users had to select a value twice for the selection to apply.
 
 ### See Also
-
+- [Change Log 2025.1](changelog25_1.md)
 - [Change Log 2024.4](changelog24_4.md)
 - [Change Log 2024.3](changelog24_3.md)
 - [Change Log 2024.2](changelog24_2.md)

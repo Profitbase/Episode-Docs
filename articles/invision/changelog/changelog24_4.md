@@ -63,6 +63,7 @@ We’ve made the following changes to the platform which will improve performanc
 
 ## See Also
 
+- [Change Log 2025.1](changelog25_1.md)
 - [Change Log 2024.2](changelog24_2.md)
 - [Change Log 2024.1](changelog24_1.md)
 - [Change Log 2023.7](changelog23_7.md)

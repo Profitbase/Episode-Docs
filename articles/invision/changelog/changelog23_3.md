@@ -39,7 +39,7 @@ console.log("100 + 200 is " + result);
 - Fixed an issue with generation of compound views during Package upgrade and deployment caused by invalid or missing view source tables.
 
 ### See Also
-
+- [Change Log 2025.1](changelog25_1.md)
 - [Change Log 2024.4](changelog24_4.md)
 - [Change Log 2024.3](changelog24_3.md)
 - [Change Log 2024.2](changelog24_2.md)

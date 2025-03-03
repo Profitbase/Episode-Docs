@@ -101,6 +101,7 @@ The Core library has been extended with the following functionality:
 
 ### See Also
 
+- [February 2025](changelog25_february.md)
 - [December 2024](changelog24_december.md)
 - [September 2024](changelog24_september.md)
 - [August 2024](changelog24_august.md)
