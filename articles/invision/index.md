@@ -3,7 +3,7 @@
 
 # Profitbase Invision
 
-* [Changelog](./changelog/index.md)
+* [Changelog](./changelog.md)
 * [Docs](./docs/index.md)
 * [Trainingcase](./trainingcase/index.md)
 
