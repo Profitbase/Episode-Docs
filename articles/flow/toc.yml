@@ -69,7 +69,9 @@
     - name: Azure Blob Storage
       href: actions/azure-blob-storage/toc.yml    
     - name: Azure Files
-      href: actions/azure-files/toc.yml    
+      href: actions/azure-files/toc.yml
+    - name: Azure OpenAI
+      href: actions/azure-openai/toc.yml        
     - name: Azure Event Hub
       href: actions/azure-event-hub/toc.yml
     - name: Azure Service Bus
