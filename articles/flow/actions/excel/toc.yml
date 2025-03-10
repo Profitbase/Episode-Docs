@@ -8,3 +8,5 @@
   href: "read-excel-file-as-datatable.md"
 - name: "For each row in Excel file"
   href: "for-each-row.md"
+- name: "Markdown from a Excel file"
+  href: create-from-excel.md
