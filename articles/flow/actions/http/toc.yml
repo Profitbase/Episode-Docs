@@ -8,6 +8,6 @@
   href: "http-send-file.md"
 - name: "Return File HTTP response"
   href: "return-file-http-response.md"
-- name: "Get site map"
+- name: "Get sitemap"
   href: "get-sitemap.md"
 
