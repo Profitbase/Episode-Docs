@@ -108,10 +108,14 @@
       href: actions/microsoft-365-outlook/toc.yml
     - name: Parquet
       href: actions/parquet/toc.yml
+    - name: PDF
+      href: actions/pdf/toc.yml
     - name: PostgreSQL
       href: actions/postgresql/toc.yml
     - name: PowerOffice Go
       href: actions/poweroffice-go/toc.yml
+    - name: PowerPoint
+      href: actions/powerpoint/toc.yml
     - name: Profitbase InVision
       href: actions/profitbase-invision/toc.yml
     - name: Security
@@ -126,6 +130,8 @@
       href: actions/tripletex/toc.yml
     - name: Visma
       href: actions/visma/toc.yml
+    - name: Word
+      href: actions/word/toc.yml
     - name: Xledger
       href: actions/xledger/toc.yml
 - name: Triggers
