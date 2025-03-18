@@ -1,2 +1,4 @@
+- name: "Connection"
+  href: "azure-openai-connection.md"
 - name: "Chat completion"
   href: "chat-completion.md"
