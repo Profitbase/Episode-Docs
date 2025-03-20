@@ -1,3 +1,5 @@
+- name: "Connection"
+  href: "connecting-to-amazon-s3.md"
 - name: "Append to Amazon S3 object"
   href: "append-to-s3object.md"
 - name: "Delete Amazon S3 object"
