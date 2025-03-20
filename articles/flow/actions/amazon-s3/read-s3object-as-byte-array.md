@@ -23,8 +23,8 @@ For example, an Excel file can be loaded using the [Open Excel file as DataReade
 
 | Name                 | Type     | Description                                                                                 |
 | -------------------- | -------- | ------------------------------------------------------------------------------------------- |
-| Title                | |                                                                                             |
-| Connection           | Required | Access key id, access key secret, bucket name and region connecting to an Amazon S3 bucket. |
+| Title       | Optional |  The title of the action.   |
+| Connection           | Required | Specify the [connection](connecting-to-amazon-s3.md) to the Amazon S3 bucket. |
 | Object name          | Required | The name of the object to read from.                                                        |
 | Result variable name | Required | The name of the Flow variable that contains the list of the object names.                   |
 | Description          | Optional |  Additional notes or comments about the action or configuration.  |

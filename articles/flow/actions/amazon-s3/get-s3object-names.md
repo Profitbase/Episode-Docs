@@ -18,8 +18,8 @@ This flow scans a list of object names and checks if a specific file (UC036_Prod
 
 | Name                      | Type     | Description                                                                                 |
 | ------------------------- | -------- | ------------------------------------------------------------------------------------------- |
-| Title                     | |                                                                                             |
-| Connection                | Required | Access key id, access key secret, bucket name and region connecting to an Amazon S3 bucket. |
+| Title       | Optional |  The title of the action.   |
+| Connection                | Required | Specify the [connection](connecting-to-amazon-s3.md) to the Amazon S3 bucket. |
 | Object name prefix filter | Optional | Prefix filter for object names. **Note!** The prefix is case sensitive.                     |
 | Result variable name      | Required | The name of the Flow variable that contains the list of the objects names.                  |
 | Description               | Optional | Additional notes or comments about the action or configuration. |
