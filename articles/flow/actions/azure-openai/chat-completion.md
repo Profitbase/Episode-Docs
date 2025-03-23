@@ -9,8 +9,8 @@ The **Chat Completion** returns the response from an [Azure OpenAI](https://lear
 | Name                  | Type      | Description |
 |-----------------------|-----------|-------------|
 | Title             | Optional  | The title of the action. |
-| Connection        | Required  | Defines the [connection](azure-openai-connection.md) to **Azure OpenAI**, ensuring communication with the service. |
-| Deployment Name   | Required  | Specifies the model deployment name, which corresponds to the custom name chosen during model deployment in the Azure portal. Found under **Resource Management** > **Model Deployments**. |
+| Connection        | Required  | Defines the [connection](azure-openai-connection.md) to **Azure OpenAI**. |
+| Deployment Name   | Required  | Specifies the model deployment name, which corresponds to the custom name chosen during model deployment in the Azure portal or in [Azure AI Foundry](https://ai.azure.com) ([see below](#deployment-name)). In the Azure Portal, the deployment name can be found under **Resource Management** > **Model Deployments**. |
 | User Prompt       | Required  | The input message from the user, which the model processes to generate a response. |
 | System Prompt     | Optional  | A system-level instruction that guides the model’s behavior and response style. |
 | History           | Optional  | A record of past interactions that provides context to the conversation, helping the model maintain continuity. |
@@ -18,4 +18,11 @@ The **Chat Completion** returns the response from an [Azure OpenAI](https://lear
 | Max Completion Tokens | Optional | Sets a limit on the number of tokens (words, characters, or pieces of text) in the model’s response. |
 | Result Variable Name | Optional | Stores the generated AI response. Default: "response". |
 | Description       | Optional  | Additional details or notes regarding the chat completion setup. |
+
+<br/>
+
+#### Deployment name
+To find the Deployment name, look in the `Deployments` screen in [Azure AI Foundry](https://ai.azure.com).  
+
+![img](/images/flow/azure-openai-deploymentname.png)
 
