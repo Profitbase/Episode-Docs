@@ -1,3 +1,5 @@
+- name: Agent tool
+  href: agent-tool.md
 - name: For each attachment
   href: foreach-attachment.md
 - name: Get attachment

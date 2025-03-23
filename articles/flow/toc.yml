@@ -64,6 +64,8 @@
       href: flows/modularization-and-extensions.md
 - name: Actions
   items:
+    - name: Agents
+      href: actions/agents/toc.yml
     - name: Amazon S3
       href: actions/amazon-s3/toc.yml 
     - name: Azure Blob Storage
@@ -100,6 +102,8 @@
       href: actions/http/toc.yml
     - name: JSON
       href: actions/json/toc.yml
+    - name: Markdown
+      href: actions/markdown/toc.yml
     - name: Microsoft Fabric
       href: actions/microsoft-fabric/toc.yml
     - name: OneDrive

@@ -1,3 +1,5 @@
+- name: "Agent tool"
+  href: "agent-tool.md"
 - name: "Delete file from OneDrive"
   href: "delete-file-from-onedrive.md"
 - name: "For each file in OneDrive"

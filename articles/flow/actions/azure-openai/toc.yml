@@ -2,3 +2,5 @@
   href: "azure-openai-connection.md"
 - name: "Chat completion"
   href: "chat-completion.md"
+- name: "Azure OpenAI chat model"
+  href: "agent-chat-model.md"
