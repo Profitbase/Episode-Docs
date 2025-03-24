@@ -108,6 +108,8 @@
       href: actions/microsoft-fabric/toc.yml
     - name: OneDrive
       href: actions/onedrive/toc.yml
+    - name: OpenAI
+      href: actions/openai/toc.yml        
     - name: Outlook (Microsoft 365)
       href: actions/microsoft-365-outlook/toc.yml
     - name: Parquet

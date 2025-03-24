@@ -1,0 +1,4 @@
+- name: "Connection"
+  href: "openai-connection.md"
+- name: "Chat completion"
+  href: "chat-completion.md"
