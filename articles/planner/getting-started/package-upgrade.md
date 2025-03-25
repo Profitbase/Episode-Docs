@@ -6,7 +6,7 @@
 - Don't upgrade more than 3 versions at a time
 - Create a new version to test the new changes. Make sure the version is not opened. 
 
-## When upgrading across multiple versions: 
+## When upgrading across multiple versions 
 - Do upgrades one package at a time using package manager. 
   - The order is: Datamart, Common, Reporting, Planner
 - Upgrade the version you created to test.
