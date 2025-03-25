@@ -10,6 +10,15 @@ The duration of the pause varies pr service, but it is not uncommon having wait 
 
 Before the Restart Flow action, you need to store the current state (using any data storage action), and design the Flow so that it loads any state at the beginning of each run.
 
+![stfl](../../../../images/flow/restart-flow.png)
+
+**Example** ![img](../../../../images/strz.jpg)
+
+This flow retrieves financial data from XLedger, stores it in a database, and checks if there are remaining credits. If credits are available, it continues fetching data. If the 50,000 credit limit is reached, the flow restarts after a 60-minute delay to resume processing.
+
+
+
+
 ## Properties 
 
 | Name        | Type      | Description |
