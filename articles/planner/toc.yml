@@ -9,6 +9,8 @@
     href: getting-started/data-import.md
   - name: Data Requirements
     href: getting-started/data-requirements.md
+  - name: Package Upgrade
+    href: getting-started/package-upgrade.md
 - name: Modules
   href: modules/toc.yml
 - name: Workbooks
