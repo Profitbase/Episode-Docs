@@ -12,6 +12,9 @@ To run a Flow from a 3rd party application, you must use one of the API endpoint
 
 ![img](../../../../images/running1.png)
 
+<br/>
+<br/>
+
 ## Execute short-running Flows
 
 To execute a **short-running** Flow, use the [Short-running HTTP API](../../api-reference/execute-flow/run.md) endpoint. The API will return when the Flow has completed executing. If the Flow is configured to return a value, object or a file, you can read the result from the HTTP response body. For non-binary data, data is returned as JSON. The format is defined by the data type of the value that the Flow is configured to return from its [Return action](../../actions/built-in/return.md). 
@@ -19,6 +22,9 @@ To execute a **short-running** Flow, use the [Short-running HTTP API](../../api-
 <br/>
 
 ![img](../../../../images/running2.png)
+
+<br/>
+<br/>
 
 ## Execute long-running Flows
 
@@ -28,3 +34,12 @@ To execute a **long-running** Flow, use the [Long-running HTTP API](../../api-re
 
 ![img](../../../../images/running3.png)
 
+<br/>
+<br/>
+
+## Execute streaming Flows
+To execute a **streaming** Flow, use the [Streaming HTTP API](../../api-reference//execute-flow/run-streaming.md) endpoint. The API will return a stream of data until the Flow has completed executing.
+
+<br/>
+
+![img](/images/flow/streaming-api-endpoint.png)

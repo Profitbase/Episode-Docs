@@ -2,6 +2,8 @@
   items:
     - name: "Run"
       href: "execute-flow/run.md"
+    - name: "Run streaming"
+      href: "execute-flow/run-streaming.md"
     - name: "Submit"
       href: "execute-flow/submit-long-running.md"
     - name: "Poll"
