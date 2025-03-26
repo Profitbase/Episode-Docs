@@ -38,7 +38,7 @@ To execute a **long-running** Flow, use the [Long-running HTTP API](../../api-re
 <br/>
 
 ## Execute streaming Flows
-To execute a **streaming** Flow, use the [Streaming HTTP API](../../api-reference//execute-flow/run-streaming.md) endpoint. The API will return a stream of data until the Flow has completed executing.
+To execute a **streaming** Flow, use the [Streaming HTTP API](../../api-reference//execute-flow/stream.md) endpoint. The API will return a stream of data until the Flow has completed executing.
 
 <br/>
 
