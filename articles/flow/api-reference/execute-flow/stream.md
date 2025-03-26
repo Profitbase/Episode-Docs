@@ -4,7 +4,7 @@ Runs a Flow that asynchronously streams data back to the client.
 The maximum allowed execution time is `300 seconds (5 minutes)`. 
 
 ```http
-[POST] api/v1/tenants/{tenantId}/workspaces/{workspaceId}/flows/{flowId}/run-streaming?env={env}&api_key={apikey}
+[POST] api/v1/tenants/{tenantId}/workspaces/{workspaceId}/flows/{flowId}/stream?env={env}&api_key={apikey}
 ```
 
 View the [execution endpoints](../../flows/execution-endpoints.md) of the Flow to find the exact address to use.
