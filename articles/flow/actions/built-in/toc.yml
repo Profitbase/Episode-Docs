@@ -62,3 +62,7 @@
   href: "wait.md"
 - name: "While"
   href: "while.md"
+- name: "Yield break"
+  href: "yield-break.md"
+- name: "Yield return"
+  href: "yield-return.md"
