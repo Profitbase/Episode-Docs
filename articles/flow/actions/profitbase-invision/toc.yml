@@ -98,6 +98,10 @@
       href: "sql-script/execute-sql-script-returning-single-value.md"
     - name: "Execute SQL Script returning DataPackage"
       href: "sql-script/execute-sql-script-returning-datapackage.md"
+- name: Table
+  items:
+    - name: "Refresh Table artifacts"
+      href: "table/refresh-table-artifacts.md"      
 - name: "Work Process Version"
   items:
     - name: "Create Work Process Version"
