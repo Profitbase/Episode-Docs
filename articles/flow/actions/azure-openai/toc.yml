@@ -4,3 +4,6 @@
   href: "chat-completion.md"
 - name: "Azure OpenAI chat model"
   href: "agent-chat-model.md"
+- name: "Text embedding generator"
+  href: "text-embedding-generator.md"
+ 
