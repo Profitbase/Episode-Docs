@@ -16,6 +16,13 @@ Change tracking enables the following:
 
 <br/>
 
+# Enable change tracking
+To enable change tracking, the visual needs to obtain information about the signed-in user. For this purpose, the visual uses a Microsoft Entra ID API provided by Power BI. To enable the API, please ensure that:  
+- [Required] [Enable AppSource Custom Visuals SSO](../enable-entraid-api.md#1-enable-appsource-custom-visuals-sso-required)
+- [Optional] [Apply admin consent on behalf of the organization](../enable-entraid-api.md#2-grant-admin-consent-on-behalf-of-the-organization-optional).
+
+<br/>
+
 #### Disable change tracking
 To disable change tracking, select `None` in the dropdown list.
 

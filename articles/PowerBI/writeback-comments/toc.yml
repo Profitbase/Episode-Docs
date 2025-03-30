@@ -2,15 +2,15 @@
   href: overview.md
 - name: Getting started
   href: getting-started.md
-- name: Enable Entra ID integration
-  href: enable-entraid-integration.md
+- name: Enable Entra ID API access
+  href: enable-entraid-api.md
 - name: Configuration
   items: 
   - name: License
     href: configuration/license.md
   - name: API  
     href: configuration/api.md
-  - name: Editor type
-    href: configuration/editor-type.md
+  - name: Editor
+    href: configuration/editor.md
   - name: Change tracking
     href: configuration/change-tracking.md
