@@ -13,8 +13,7 @@ An Azure OpenAI connection consists of the following fields:
 | **Name**           | Name of the connection.                                      |
 | **API Key**        | The API key used for authentication.                        |
 | **Endpoint**       | The endpoint URL for the Azure OpenAI instance.             |
-| **Deployment Name** | The name of the deployed AI model instance.                 |
-| **Current API Key** | The current API key, if updating an existing connection.            |
+
 
 ![image](../../../../images/flow/azure-openai-connection2.png)
 
