@@ -1,2 +1,4 @@
-- name: "Markdown from a PDF file"
-  href: create-from-pdf.md
+- name: "Convert a PDF file to Markdown"
+  href: "convert-to-markdown.md"
+- name: "Split a PDF document"
+  href: "split-document.md"

@@ -10,5 +10,7 @@
   href: "return-file-http-response.md"
 - name: "Get sitemap"
   href: "get-sitemap.md"
-- name: "Markdown from an URL"
-  href: create-from-url.md
+- name: "Convert a URL to Markdown"
+  href: "convert-url-to-markdown.md"
+- name: "Convert HTML to Markdown"
+  href: "convert-html-to-markdown.md"
