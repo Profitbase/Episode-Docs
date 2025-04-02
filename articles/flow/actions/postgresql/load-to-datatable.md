@@ -14,7 +14,7 @@ Loads data from a PostgreSQL database into memory as a [DataTable](https://learn
 | Name                        | Type     | Description                                                                                      |
 | --------------------------- | -------- | ------------------------------------------------------------------------------------------------ |
 | Title                       | Optional | The title or name of the action.                                                                 |
-| Connection                  | Required | The PostgreSQL database connection.                                                                    |
+| Connection                  | Required | The PostgreSQL database [connection](postgresql-connection.md).   |
 | SQL expression and parameters | Required | The command to execute along with any parameters.                               |
 | Table variable name         | Optional | Name of the DataTable variable that stores the result of the query.                              |
 | Command timeout (seconds)   | Optional | The time limit for command execution before it times out. Default is 120 seconds.                |

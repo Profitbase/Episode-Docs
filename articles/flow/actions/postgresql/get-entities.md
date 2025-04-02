@@ -23,7 +23,7 @@ A [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic
 | Name                        | Data Type       | Description                             |
 |-----------------------------|-----------------|----------|
 | Title                       | Optional        | The title or name of the command.      |
-| Connection                  | Required        | The PostgreSQL database connection.    |
+| Connection                  | Required        | The PostgreSQL database [connection](postgresql-connection.md).    |
 | SQL expression and parameters | Required      | The SQL command to execute along with any parameters.|
 | Entity name                 | Optional        | The name of the entity being retrieved.|
 | Entity properties           | Required        | The properties or fields of the entity to configure.    |

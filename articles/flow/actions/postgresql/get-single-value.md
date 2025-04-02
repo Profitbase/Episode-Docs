@@ -17,7 +17,7 @@ Returns a .NET value of the type specified by `Result variable type`.
 | Name | Data Type       | Description    |
 |-----------------------------|-----------------|----|
 | Title       | Optional        | The title or name of the command.        |
-| Connection              | Required        | The PostgreSQL database connection.      |
+| Connection              | Required        | The PostgreSQL database [connection](postgresql-connection.md).      |
 | SQL expression and parameters | Required   | The SQL command to execute along with any parameters.    |
 | Result variable name    | Optional        | The name of the variable that stores the result of the SQL query.    |
 | Result variable type    | Optional        | Specifies the data type of the result variable (e.g., String, Number).          |
