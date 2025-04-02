@@ -9,7 +9,7 @@ Inserts data into a PostgreSQL database from a [DataReader](https://learn.micros
 | Name         | Data type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
 | Title           |           |                        |
-| Connection | Required   | The PostgreSQL database connection. |
+| Connection | Required   | The PostgreSQL database [connection](postgresql-connection.md). |
 | Source  | Required   |Select the source for data. |
 | Destination table   | Required   | Select or enter the name of the table to insert info. |
 | Description   | Optional | Additional notes or comments about the action or configuration.|
