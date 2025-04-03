@@ -4,7 +4,7 @@ Uploads a byte array or [Stream](https://learn.microsoft.com/en-us/dotnet/api/sy
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/uppload-s3obj.png)
 
-**Example**
+**Example** ![img](../../../../images/strz.jpg)
 
 This setup ensures that data is either appended to an existing file or a new file is uploaded. If the flow is connected to an external data pipeline or storage system, it should work efficiently.
 
