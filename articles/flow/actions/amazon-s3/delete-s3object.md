@@ -2,7 +2,11 @@
 
 Deletes a S3 object from a bucket.
 
-![img](../../../../images/flow/delete-object.png)
+![img](../../../../images/flow/delete-amazonS3obj.png)
+
+**Example** ![img](../../../../images/strz.jpg)
+
+This flow scans a list of object names and checks for files that include “2015” in their names. If such files are found, they are deleted.
 
 ## Properties
 
