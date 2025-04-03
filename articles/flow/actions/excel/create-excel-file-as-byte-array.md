@@ -14,7 +14,7 @@ Returns the Excel file serialized as a [byte](https://learn.microsoft.com/en-us/
 
 | Name                 | Type     | Description                                                                                                   |
 | -------------------- | -------- | ------------------------------------------------------------------------------------------------------------- |
-| Title                |          |                                                                                                               |
+| Title                | Optional |   The title of the action.                    |
 | Source               | Required | Specifies the source of the data, which can either be a DataTable or DataReader.                              |
 | Sheet name           | Optional | Specifies a worksheet name. |
 | Column mapping       | Optional | Defines the mapping between Excel column letters and business object property names.                          |
