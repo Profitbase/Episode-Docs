@@ -1,14 +1,13 @@
 # Convert a URL adresse to Markdown
 
-[Markdown](https://en.wikipedia.org/wiki/Markdown) is a simplified text format. 
-It can be used to feed an AI chat with knowledge through RAG (Retrieval-Augmented Generation).
+[Markdown](https://en.wikipedia.org/wiki/Markdown) is a lightweight text format. It can be used to provide knowledge to an AI chat through RAG (Retrieval-Augmented Generation).
 
 
 <br/>
 
 ## Returns
 
-This action returns a string with the markdown.
+This action returns a string containing the Markdown text format.
 
 <br/>
 
@@ -16,7 +15,7 @@ This action returns a string with the markdown.
 
 | Name                 | Type     | Description                                                                                                   |
 | -------------------- | -------- | ------------------------------------------------------------------------------------------------------------- |
-| Title                | Required |                                                                                                               |
+| Title                | Optional |   The title of the action.                    |
 | URL                  | Required | Specifies the adresse to a web page.                        |
 | Result variable name | Required | The name of the Markdown variable returned from the action. |
 | Description          | Optional | Additional notes or comments about the action or configuration. |

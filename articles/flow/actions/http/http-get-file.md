@@ -9,7 +9,7 @@ Gets file from an HTTP endpoint.
 
 | Name         | Data type       | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
-| Title           |           |                        |
+| Title                | Optional |   The title of the action.                    |
 | URI         | Required   | Select or enter the URI |
 | Query parameters   | Optional      | Define Query parameters.    |
 | Headers | Optional  | Define Headers.  |
