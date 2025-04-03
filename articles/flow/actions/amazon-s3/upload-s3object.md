@@ -6,8 +6,7 @@ Uploads a byte array or [Stream](https://learn.microsoft.com/en-us/dotnet/api/sy
 
 **Example** ![img](../../../../images/strz.jpg)
 
-This setup ensures that data is either appended to an existing file or a new file is uploaded. If the flow is connected to an external data pipeline or storage system, it should work efficiently.
-
+This flow ensures that data is either appended to an existing file or a new object is uploaded. 
 
 <br/>
 
