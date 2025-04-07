@@ -4,8 +4,7 @@ Appends a byte array or stream to an [Amazon S3 ](https://docs.aws.amazon.com/s3
 
 ![img](../../../../images/flow/appendAmazon.png)
 
-**Example** ![img](../../../../images/strz.jpg)
-
+**Example** ![img](../../../../images/strz.jpg)  
 This flow ensures that data is either appended to an existing file or a new object is uploaded. 
 
 ## Properties

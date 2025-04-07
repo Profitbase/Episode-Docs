@@ -4,11 +4,8 @@ Uploads a byte array or [Stream](https://learn.microsoft.com/en-us/dotnet/api/sy
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/uppload-s3obj.png)
 
-**Example** ![img](../../../../images/strz.jpg)
-
+**Example** ![img](../../../../images/strz.jpg)  
 This flow ensures that data is either appended to an existing file or a new object is uploaded. 
-
-<br/>
 
 ## Properties
 

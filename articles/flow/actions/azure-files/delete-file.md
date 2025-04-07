@@ -5,8 +5,7 @@ Deletes a file from an [Azure Files](https://learn.microsoft.com/en-us/azure/sto
 
 ![img](../../../../images/flow/Get-share-items-info.png)
 
-**Example** ![img](../../../../images/strz.jpg)
-
+**Example** ![img](../../../../images/strz.jpg)  
 Example above retrieves all files from a share ([Get Share Items Info](get-share-items-info.md)), checks conditions to filter relevant files ([Foreach](../built-in/foreach.md)), and safely removes matched file (Delete file).
 
 

@@ -4,9 +4,10 @@ Reads the contents of an Azure Blob as a [Stream](https://learn.microsoft.com/en
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/read-as-stream-amaz.png)
 
-**Example** ![img](../../../../images/strz.jpg)
-
+**Example** ![img](../../../../images/strz.jpg)  
 The flow reads an S3 object as a stream, loads the data into a DataTable, and then inserts it into a database.
+</br>
+</br>
 
 > [!NOTE]
 > If you need to read the file multiple times, for example processing its contents and then sending the file somewhere else (such as to an archive), you MUST use the byte array option instead of streaming because the stream can only read once.

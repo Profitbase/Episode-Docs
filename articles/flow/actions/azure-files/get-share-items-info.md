@@ -4,8 +4,7 @@ Retrieves a list of information about files or directories from an [Azure Files]
 
 ![img](../../../../images/flow/Get-share-items-info.png)
 
-**Example** ![img](../../../../images/strz.jpg)
-
+**Example** ![img](../../../../images/strz.jpg)  
 Example above retrieves all files from a share (Get Share Items Info), checks conditions to filter relevant files ([Foreach](../built-in/foreach.md)), and safely removes matched file ([Delete file](delete-file.md)).
 
 

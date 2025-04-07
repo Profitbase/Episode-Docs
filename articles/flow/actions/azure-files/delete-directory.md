@@ -5,9 +5,7 @@ Deletes a directory from an [Azure Files](https://learn.microsoft.com/en-us/azur
 
 ![img](../../../../images/flow/delete-directory-in-file.png)
 
-**Example** ![img](../../../../images/strz.jpg)
-
-
+**Example** ![img](../../../../images/strz.jpg)  
 The example above takes a file from storage, reads its JSON content, saves the data to a database, and then deletes the storage folder to keep things tidy.  Used actions: 1. [Read file from share as byte array](../azure-files/read-file-as-byte-array.md) 2. [Get JSON DataReader](../json/get-json-datareader.md) 3. [Insert rows](../sql-server/insert-data.md) 4. Delete directory.
 
 </br>
