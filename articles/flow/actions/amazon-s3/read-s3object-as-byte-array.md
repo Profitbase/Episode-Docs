@@ -4,9 +4,10 @@ Reads the contents of an Amazon S3 object into memory as a byte array. You can c
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/read-as-byte.png)
 
-**Example** ![img](../../../../images/strz.jpg)
-
+**Example** ![img](../../../../images/strz.jpg)  
 This flow ensures that the object is moved from a staging area to the main storage and then the corresponding table is cleared.
+</br>
+</br>
 
 > [!NOTE]
 > If you need to read the file multiple times, for example processing its contents and then sending the file somewhere else (such as to an archive), you MUST use the byte array option instead of streaming because the stream can only read once.

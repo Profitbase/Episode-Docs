@@ -6,8 +6,7 @@ Use this action if you need a list of all the object names in a Bucket. If you o
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/getS3objNames.png)
 
-**Example** ![img](../../../../images/strz.jpg)
-
+**Example** ![img](../../../../images/strz.jpg)  
 This flow scans a list of object names and checks if a specific file (UC036_Products.xlsx) exists. If found, it could trigger further processing. If not, it may continue checking or exit.
 
 ## Returns
