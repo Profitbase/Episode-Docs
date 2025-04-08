@@ -1,6 +1,12 @@
 # Getting started
 
-To get started using the Writeback comments visual, please watch this video, or follow the steps below.
+To get started using the Writeback Comments visual, please watch this video, or follow the steps below.
+
+![video](https://www.youtube.com/watch?v=PAAViWwxLdA)
+
+## Step-by-step guide
+If videos are not your thing, here's a step-by-step guide to get started with the Writeback Comments visual.
+<br/>
 
 #### 1) Get the visual from AppSource or org.store
 In PowerBI, go to the `Visualizations` panel and click `Get more visuals`.  
