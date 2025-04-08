@@ -5,7 +5,7 @@ To get started using the Writeback Comments visual, please watch this video, or 
 ![video](https://www.youtube.com/watch?v=PAAViWwxLdA)
 
 ## Step-by-step guide
-If videos are not your thing, here's a step-by-step guide to get started with the Writeback Comments visual.
+If videos aren’t your thing, here’s a step-by-step guide to help you get started with the Writeback Comments visual.
 <br/>
 
 #### 1) Get the visual from AppSource or org.store
