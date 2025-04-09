@@ -4,6 +4,9 @@ Reads the contents of an [Azure Blob](https://learn.microsoft.com/en-us/azure/st
 
 ![img](../../../../images/flow/read-blob-as-byte-array.PNG)
 
+**Example** ![img](../../../../images/strz.jpg)  
+This flow iterates through blob files in Azure Blob Storage, checks if each file is an Excel file, reads the valid Excel files as byte arrays, and then converts those byte arrays into DataTables for further processing. Used actions: [For each Blob name](foreach-blob-name.md), [If](../built-in/if.md). [Read Blob as byte array]().
+
 > [!NOTE]
 > If you need to read the file multiple times, for example processing its contents and then sending the file somewhere else (such as to an archive), you MUST use the byte array option instead of streaming because the stream can only read once.
 

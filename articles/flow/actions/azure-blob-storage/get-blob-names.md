@@ -7,7 +7,7 @@ Use this action if you need a list of all the blob names in a container. If you 
 
 
 **Example** ![img](../../../../images/strz.jpg)  
-A company stores customer invoices as PDFs in an Azure Blob Storage container. This flow retrieves all invoice file names, processes each invoice, and updates a database with relevant details. Used actions: 1. **Get Blob names** 2. [For each Blob name](foreach-blob-name.md) 3. [Function](../built-in/function.md).
+A company stores customer invoices as PDFs in an Azure Blob Storage container. This flow retrieves all invoice file names, processes each invoice, and updates a database with relevant details. Used actions: [Get Blob names](), [For each Blob name](foreach-blob-name.md) and [Function](../built-in/function.md).
 
 
 
