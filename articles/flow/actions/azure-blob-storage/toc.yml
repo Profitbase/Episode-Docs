@@ -1,5 +1,7 @@
 - name: "Connection"
   href: "azure-blob-container-connection.md"
+- name: Agent Tool
+  href: agent-tool.md
 - name: "Append to Blob"
   href: "append-to-blob.md"
 - name: Create Azure Blob container connection
