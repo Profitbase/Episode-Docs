@@ -23,4 +23,4 @@ The `Capabilities` property specifies what the agent is allowed to do.
 | List blobs            | Specifies whether the tool is allowed to list blobs in an Azure Blob container. |
 | Read (download) blobs | Specifies whether the tool is allowed to read blobs from a container. |
 | Write (upload) blobs  | Specifies whether the tool is allowed write (upload) blobs to a container. |
-| Delete blobs          | Specifies whether the tool is allowed delete blobs from a container.
+| Delete blobs          | Specifies whether the tool is allowed delete blobs from a container. |
