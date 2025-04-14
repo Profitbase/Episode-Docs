@@ -2,6 +2,13 @@
 
 Reads the contents of an [Azure Blob](https://learn.microsoft.com/en-us/azure/storage/blobs/) as a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream). Prefer using streaming over [Read Blob as byte array](read-blob-as-byte-array.md) if possible. Streaming is generally faster and uses less memory, because streaming doesn't require loading the entire blob into memory before you can start working with the data.
 
+![img](../../../../images/flow/read-blob-as-stream.png)
+
+**Example** ![img](../../../../images/strz.jpg)  
+This flow iterates through blob files in Azure Blob Storage, checks if the content is inside a CSV file, reads the blob as a stream, and finally reads the CSV file as a stream of records. Used actions: [Get Blob info](), [If](../built-in/if.md) and [Read Blob as byte array](read-blob-as-byte-array.md).
+
+
+
 > [!NOTE]
 > If you need to read the file multiple times, for example processing its contents and then sending the file somewhere else (such as to an archive), you MUST use the byte array option instead of streaming because the stream can only read once.
 
@@ -12,7 +19,6 @@ For example, a CSV file can be loaded using the [Open CSV file as DataReader](..
 > [!CAUTION]
 > Trying to load a Stream using an incompatible action will fail.
 
-![img](../../../../images/flow/read-blob-as-stream.png)
 
 ## Returns
 

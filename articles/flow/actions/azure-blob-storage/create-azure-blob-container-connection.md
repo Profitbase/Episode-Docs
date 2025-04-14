@@ -8,6 +8,11 @@ This enables dynamically connecting to different Azure Blob containers based on 
 
 ![img](/images/flow/azure-blob-create-container-connection.png)
 
+**Example** ![img](../../../../images/strz.jpg)  
+This flow creates a connection to an Azure Blob Storage container and reads a CSV file from it for further processing.  
+Actions used in the flow are: PostgreSQL [Get entity](../postgresql/get-entity.md), [Create Azure Blob container connection](), [Read Blob as stream](read-blob-as-stream.md) and [Open CSV file as DataReader](../csv/open-csv-file-as-datareader.md). 
+
+
 ## SAS URI
 
 [Read about SAS URI for Azure Blob container connections here](./azure-blob-container-connection.md#sas-uri)
