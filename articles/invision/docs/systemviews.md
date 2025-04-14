@@ -26,16 +26,18 @@ Returns information about Solution objects.
 **Example**
 
 ```
-SELECT [ObjectID]
-      ,[Name]
-      ,[SolutionID]
-      ,[ObjectType]
-      ,[ObjectSubType]
-      ,[WorkProcess_ID]
-      ,[WorkProcess_Name]
-      ,[WorkProcessVersion_ID]
+SELECT [ObjectID]       
+      ,[Name]       
+      ,[SolutionID]       
+      ,[ObjectType]       
+      ,[ObjectSubType]       
+      ,[WorkProcess_ID]       
+      ,[WorkProcess_Name]       
+      ,[WorkProcessVersion_ID]       
       ,[WorkProcessVersion_Name]
-  FROM [SYS_Objects]
+      ,[Description]
+      ,[Comments]
+FROM [SYS_Objects]
 ```
 
 <br/>
