@@ -2,6 +2,27 @@
 
 Defines an AI Agent that can use tools to perform actions, for example fetching data or calling APIs.
 
+The example below shows an agent that reads all Word documents in a OneDrive folder, summarizes them, and emails the summaries along with the original documents as attachments. The following prompts are used:  
+
+**System prompt**  
+```txt
+You are an agent that will use the tools provided to you to perform the tasks requested by the user.  
+If you cannot perform the task, stop without any retries.
+```
+
+**User prompt**  
+```txt
+From OneDrive, get all Word (.docx) documents in the 'Work' folder.
+For each document, get the file and create a summary.
+Send an email from luke.skywalker@rebellion.com to darth.vader@empire.com that contains all the summaries.  
+Use the subject: 'Summary'.
+Include all the Word documents as attachments to the email.
+```
+
+![img](/images/flow/tools-agent-example1.png)
+
+<br/>
+
 ## Properties
 | Name            | Type         | Description                         |
 |-----------------|--------------|-------------------------------------|
