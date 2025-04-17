@@ -1,3 +1,7 @@
+- name: AI
+  items:
+    - name: Chat completion trigger
+      href: "ai/chat-completion-trigger.md"
 - name: "Azure Blob Storage"
   items:
     - name: "Blob trigger"
