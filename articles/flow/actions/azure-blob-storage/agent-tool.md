@@ -3,7 +3,7 @@
 Defines an AI Tool that enables the [Tools AI Agent](../agents/tools-ai-agent.md) to access Azure Blob Storage to perform actions.
 
 The example below illustrates using the [Tools AI Agent](../agents/tools-ai-agent.md) to retrieve a list of all blobs in an Azure Storage container and return the result as a JSON string. We then convert the returned JSON string to a business object containing the list of files so we can use later in the Flow.  
-The Tools AI Agent uses the chat model to reason about how to perform the task given the tools provided to it. The `Azure Blob Storage Agent Tool`  supports reading information about blobs in an Azure Storage container (see [capabilities](#capabilities) below), so the tool will be used by the agent  to complete the task.  
+The Tools AI Agent uses the chat model to reason about how to perform the task given the tools provided to it. The `Azure Blob Storage Agent Tool`  supports reading information about blobs in an Azure Storage container (see [capabilities](#capabilities) below), so the tool will be used by the agent to complete the task.  
 
 The following prompts are used:  
 
@@ -34,7 +34,7 @@ Do NOT wrap the response in Markdown annotation.
 
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
-| Title            | Optional  |                                             |
+| Title            | Optional  |The title of the tool.  |
 | Connection       | Required  | The [Azure Blob container connection](./azure-blob-container-connection.md). The currently supported options are `SAS URI` and `Connection string + container name`.    |
 | Dynamic connection | Optional   | A connection dynamically created using the [Create Azure Blob container connection](./create-azure-blob-container-connection.md) action.    |
 | Capabilities     | Optional | Specifies what actions the tool is allowed to perform. [See details below](#capabilities). |
