@@ -4,6 +4,8 @@
   href: "chat-completion.md"
 - name: "Chat model"
   href: "agent-chat-model.md"
+- name: Generate embedding
+  href: generate-embedding.md
 - name: "Text embedding generator"
   href: "text-embedding-generator.md"
  
