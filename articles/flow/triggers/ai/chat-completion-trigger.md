@@ -2,7 +2,7 @@
 
 Defines the entry point for a Flow that executes an AI chat completion request.  
 
-You'll typically use this trigger when you want to implement a Flow that serves the backend for an interactive chat, allowing users to have a conversation with an AI by asking questions and follow-up questions. The trigger also supports scenarios such as RAG by providing a context property that can be used to help the LLM generate more relevant responses.
+You'll typically use this trigger when you want to implement a Flow that serves as the backend for an interactive chat, allowing users to have a conversation with an AI by asking questions and follow-up questions. The trigger also provides a context property, allowing arbitrary data to be passed to the Flow to use for filtering or other types of business logic, supporting workloads such as RAG to help the LLM generate more relevant responses.
 
 ![img](/images/flow/chat-completion-trigger.png)
 
@@ -34,7 +34,7 @@ The trigger outputs a `ChatCompletionRequest` object with the following properti
 |----------------|---------|--------------------------|
 | SessionId      | String  | The id of the chat session provided by the client. Use this value to store and retrive the chat history between requests, enabling users to ask follow-up questions. |
 | Prompt         | String  | The question asked by the user. |
-| Context        | String  | A value provided by the client (for example a product id, file name or JSON string) that can be used to provide context to the chat completion process (for example as additional parameters to vector search queries) |
+| Context        | String  | A value provided by the client (for example a product id, file name or JSON string) that can be used to provide context to the chat completion process (for example as additional parameters to vector search) |
 
 
 ## Description
