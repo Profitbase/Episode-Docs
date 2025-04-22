@@ -6,6 +6,12 @@ Delete an entity from an Azure Table.
 
 
 
+**Example** ![img](../../../../images/strz.jpg)  
+This flow [iterates](foreach-table-entity.md) through each employee in an Azure Table, checks if they’ve been inactive for over 12 months based on `lastLoginDate`, and deletes them. It processes each employee one by one, then ends with a 'Done' step once all are evaluated.
+
+</br>
+
+
 ## Properties
 
 | Name                   | Type       | Description                |
