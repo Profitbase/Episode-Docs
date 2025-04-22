@@ -1,8 +1,14 @@
-# Update Table Entity
+# Update Entity
 
 Update an entity in an Azure Table.
 
 ![img](../../../../images/flow/update-table-entity.png)
+
+
+**Example** ![img](../../../../images/strz.jpg)  
+This flow [iterates](foreach-table-entity.md) through each employee in an Azure Table, checks if they’ve been inactive for over 30 days based on `lastLoginDate`, and updates their status to "inactive" if needed. It processes each employee one by one, then ends with a 'Done' step once all are evaluated.
+
+</br>
 
 ## Properties  
 

@@ -1,8 +1,14 @@
-# For each Table Entity
+# For each Entity
 
 Iterates over a list of all entities in an Azure table. 
 
 ![img](../../../../images/flow/foreach-table-entity.png)
+
+
+**Example** ![img](../../../../images/strz.jpg)  
+This flow iterates through each employee in an Azure Table, checks if they’ve been inactive for over 30 days based on `lastLoginDate`, and [updates](update-table-entity.md) their status to "inactive" if needed. It processes each employee one by one, then ends with a 'Done' step once all are evaluated.
+
+</br>
 
 ## Returns
 

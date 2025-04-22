@@ -4,6 +4,12 @@ Sends a message to an [Azure Service Bus](https://learn.microsoft.com/en-us/azur
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/sendmsg.png)
 
+**Example** ![img](../../../../images/strz.jpg)  
+This flow runs daily, reads rows of overdue customer payments from a table, sends each as a JSON message to an Azure Service Bus queue, and logs each sent message.
+
+
+
+
 ## Properties
 
 | Name           | Type     | Description                                      |
