@@ -6,8 +6,7 @@ Use this action if you have a DataReader where you need to perform one or more c
 
 ![img](../../../../images/flow/datareader-iterator.png)
 
-**Example**
-
+**Example** ![img](../../../../images/strz.jpg)  
 This flow can be used to read and process customer orders from a [CSV file](../csv/open-csv-file-as-datareader.md), applying two actions to each record (e.g., validating the order and updating inventory). Read more about [Function](../built-in/function.md).
 
 ## Returns

@@ -5,6 +5,10 @@ You should also use this action if you need to convert JSON, streams, byte array
 
 ![img](../../../../images/flow/convert.png)
 
+**Example** ![img](../../../../images/strz.jpg)  
+This flow illustrates using the [Tools AI Agent](../agents/tools-ai-agent.md) to retrieve a list of all blobs in an Azure Storage container and return the result as a JSON string. We then convert the returned JSON string to a business object containing the list of files so we can add it to the table.
+</br>
+
 The Convert action supports the following conversions:
 
 | From type               | To type                                 |
