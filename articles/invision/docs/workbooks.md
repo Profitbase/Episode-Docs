@@ -6,44 +6,26 @@ A Workbook also has left, top, and right sections which can be used for hosting 
 
 <br/>
 
-from version 5.0 you can configure a Workbook to be the landing page of InVision instead of the default system [home page](homepage.md). This enables you to create a fully customized and actionable landing page for users instead of just a Workbook launcher portal.
+## Start page
+You can configure a Workbook to be the landing page of InVision instead of the default system [home page](homepage.md). This enables you to create a tailored and interactive landing page for users, taking them straight to the work at hand.
 
 <br/>
 
-![hp](https://profitbasedocs.blob.core.windows.net/images/homePage.png)
+![img](https://profitbasedocs.blob.core.windows.net/images/homePage.png)
 
 <br/>
 
 ## Workbook Properties
 
-**App Leave Behaviour**
-
-> Specify whether the user is prompted to save unsaved changes when closing the browser tab. By default, the user will be prompted if there are unsaved changes.
-
-> _Default_  
-> _None_  
-> _Request_ User Confirmation
-
-<br/>
-
-**Page Title Casing**
-
-> Specifies whether to transform all page titles to upper case or use the casing specified in the title.
-
-> Default  
-> Upper case
-
-<br/>
-
-**Title Expression**
-
-> Specify the title dinamically.
-
-<br/>
-
-**Interaction Tracing**
-
-> Specifies whether interaction tracing (for example variable assignment) is written to the browser console.
+| Name                    | Description                  |
+|-------------------------|------------------------------|    
+| App Leave Behavior      | Specify whether the user is prompted to save unsaved changes when closing the browser tab. By default, the user will be prompted if there are unsaved changes. |
+| Page title casing       | Specifies whether to transform all page titles to upper case or use the casing specified in the title.  |
+| Title Expression        | Enables dynamic page titles. The most common use case is to use the Localize()-function to display the page title in the language of the user. |
+| Interaction tracing     | Used for debugging during development. Specifies whether interaction tracing (for example variable assignment) is written to the browser console. |
+| Icon                    | The icon displayed for the Workbook in the Workbook Menu | 
+| Hide Header             | Specifies whether the Workbook header is hidden. Typically used if you want to embed the Workbook in another web app using an iframe. |
+| Hide NavBar             | Specifies whether the page navigation bar is hidden. Typically used if you want to embed the Workbook in another web app using an iframe. |
 
 <br/>
 
