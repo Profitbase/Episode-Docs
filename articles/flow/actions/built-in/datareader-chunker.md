@@ -7,7 +7,7 @@ For example, if you need to export millions of rows from a database to a CSV fil
 
 
 
-![img](../../../../images/flow/datareader-chunker.png)
+![img](../../../../images/flow/datareader-chunker.png)  
 
 **Example** ![img](../../../../images/strz.jpg)  
 This flow example shows a process that reads data from a database, splits records into multiple chunks, converts each chunk into CSV format, and appends it to a blob storage.  

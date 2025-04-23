@@ -4,6 +4,10 @@ Terminates (exits) the closest enclosing [Foreach](foreach.md) or [While](while.
 
 ![img](../../../../images/flow/break.png)
 
+**Example** ![img](../../../../images/strz.jpg)  
+This flow continuously checks if the system is in maintenance mode, and immediately exits the loop using a Break node when maintenance is detected, allowing the process to continue with alternate actions outside the loop.
+</br>
+
 ## Properties
 
 | Name                      | Type | Description                                                                       |
