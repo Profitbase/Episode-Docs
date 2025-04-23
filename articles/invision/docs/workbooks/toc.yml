@@ -27,6 +27,12 @@
             href: howto/workbookmenu.md
           - name: Initialize a Workbook from the URL
             href: howto/initializing.md
+        - name: Pages
+          href: pages.md
+        - name: Popups
+          href: popups.md
+        - name: Drawers 
+          href: drawers.md
         - name: Components
           href: components.md
           items:
@@ -97,8 +103,6 @@
             href: components/workflow.md
           - name: Work process editor
             href: components/workprocesseditor.md
-        - name: Pages
-          href: pages.md
         - name: Programming model
           href: programmingmodel.md
           items:
