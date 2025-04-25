@@ -65,7 +65,9 @@
 - name: Actions
   items:
     - name: Agents
-      href: actions/agents/toc.yml
+      href: actions/agents/toc.yml      
+    - name: AI
+      href: actions/ai/toc.yml
     - name: Amazon S3
       href: actions/amazon-s3/toc.yml 
     - name: Azure Blob Storage
