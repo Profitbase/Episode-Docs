@@ -1,13 +1,13 @@
-# Get issues
+# Read Content as stream
 
-Gets a list of issues from a GitHub repository.
-
-
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/github-get-issues.png)
+Reads a file from GitHub repository content as a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream). Prefer using streaming over [Read Content as byte array](read-content-as-byte-array.md) if possible. Streaming is generally faster and uses less memory, because streaming doesn't require loading the entire blob into memory before you can start working with the data.
 
 
-*Example** ![img](../../../../images/strz.jpg)  
-This flow get a list of issues from in GitHub repository. For each issue, comments ar read and stored in an SQL server table.
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/github-read-as-stream.png)
+
+
+**Example** ![img](../../../../images/strz.jpg)  
+This flow iterates through content, streams the file, and uploads the file to an Profitbase Invision File Storage.
 
 
 ## Properties
@@ -15,14 +15,12 @@ This flow get a list of issues from in GitHub repository. For each issue, commen
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
 | Title  | Optional | The title of the action.   |
-| Authentication |  Optional | Select an authentication token. |
+| Authentication |  Optional | Select an authentication token. See below. |
 | Repository owner | Required | Select or enter the repository owner. |
 | Repository name | Required | Select or enter the repository name. |
-| Number of pages to fetch | Optional | Limit the number of pages to get. |
-| Issues per page | Optional | Set the number of issues per page (1-200). |
-| Issues since | Optional | Set the start date for issues |
-| Additional options | Optional | The configuration dialog contains settings for Issue state (Open, Closed), Sort options and Text format for result (Text | HTML | Raw). |
-| Result variable name | Optional | Name of the variable containing the comment list. |
+| Branch | Optional | Select or enter a branch name. |
+| Content Path | Required | Path to a content (file) to stream. |
+| Return variable name | Optional | Name of the variable containing the stream. |
 | Description | Optional | Additional notes or comments about the action or configuration. |
 
 
