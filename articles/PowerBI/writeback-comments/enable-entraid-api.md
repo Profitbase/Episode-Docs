@@ -21,7 +21,7 @@ The first time the visual calls the Entra ID API, the user is presented with a U
 To avoid requiring all users go through this consent flow, you can ask a Microsoft Entra ID administrator in your organization to enter the following url in the browser and consent on behalf of the organization.
 
 ```
-https://login.microsoftonline.com/common/adminconsent?client_id=5f804a63-f38e-402a-833b-73ab3f892380&redirect_uri=https%3A%2F%2Fprofitbase-powerbi-visuals-writeback-table
+https://login.microsoftonline.com/common/adminconsent?client_id=ccd28c52-6516-4634-9d08-cbac9b093b2c&redirect_uri=https://profitbase-powerbi-visuals-writeback-comments
 ```
 
 After having completed the consent flow, the following Entreprise App registration should be visible in Microsoft Entra ID.
