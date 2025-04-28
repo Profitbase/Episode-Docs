@@ -1,13 +1,14 @@
-# Get issues
+# Read Content as byte array
 
-Gets a list of issues from a GitHub repository.
-
-
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/github-get-issues.png)
+Reads a file from GitHub repository content into memory as a byte array. 
+If you need to read the file multiple times, for example processing its contents and then sending the file somewhere else (such as to an archive), you should use the byte array option instead of streaming because the stream can only read once.
 
 
-*Example** ![img](../../../../images/strz.jpg)  
-This flow get a list of issues from in GitHub repository. For each issue, comments ar read and stored in an SQL server table.
+![img](https://profitbasedocs.blob.core.windows.net/flowimages/github-read-as-byte-array.png)
+
+
+**Example** ![img](../../../../images/strz.jpg)  
+This flow iterates through content, reads the file as byte array, and uploads the file to an Profitbase Invision File Storage.
 
 
 ## Properties
@@ -15,14 +16,12 @@ This flow get a list of issues from in GitHub repository. For each issue, commen
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
 | Title  | Optional | The title of the action.   |
-| Authentication |  Optional | Select an authentication token. |
+| Authentication |  Optional | Select an authentication token. See below. |
 | Repository owner | Required | Select or enter the repository owner. |
 | Repository name | Required | Select or enter the repository name. |
-| Number of pages to fetch | Optional | Limit the number of pages to get. |
-| Issues per page | Optional | Set the number of issues per page (1-200). |
-| Issues since | Optional | Set the start date for issues |
-| Additional options | Optional | The configuration dialog contains settings for Issue state (Open, Closed), Sort options and Text format for result (Text | HTML | Raw). |
-| Result variable name | Optional | Name of the variable containing the comment list. |
+| Branch | Optional | Select or enter a branch name. |
+| Content Path | Required | Path to a content (file) to stream. |
+| Return variable name | Optional | Name of the variable containing the byte array. |
 | Description | Optional | Additional notes or comments about the action or configuration. |
 
 
