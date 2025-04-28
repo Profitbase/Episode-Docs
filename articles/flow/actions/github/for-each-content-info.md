@@ -20,7 +20,7 @@ This flow iterates through content, reads the file, and uploads the file to an P
 | Repository name | Required | Select or enter the repository name. |
 | Branch | Optional | Select or enter a branch name. |
 | Path | Optional | Path to list content from. |
-| RegEx Filter | Optional | Filter expression to reduce files by a name or extension pattern. |
+| Content Filter | Optional | Filter expression to reduce files by a name or extension pattern. See below. |
 | Include content in sub directories | - | Check to include content in sub directories. |
 | Include directories | - | Check to include directories in result. |
 | Return variable name | Optional | Name of the variable containing the current Content Information object. |
