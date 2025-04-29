@@ -1,0 +1,9 @@
+- name: "Connection"
+  href: "adobe-connection.md"
+- name: "PDF to docx as byte array"
+  href: "pdf-to-docx-as-byte-array.md"
+- name: "PDF to docx as stream"
+  href: "pdf-to-docx-as-stream.md"
+
+
+ 
