@@ -1,13 +1,13 @@
 # For each Content Information
 
-Iterates over a list of content information from a GitHub repository. Each content item contains a name, type, and URL to a file or directory.
+Iterates over a list of files and directories (commonly referred to as `content`) in a GitHub repository. Each content item contains a Name, Type, and URL to a file or directory.
 
 
 ![img](../../../../images/flow/github-foreach.png)
 
 
 **Example** ![img](../../../../images/strz.jpg)  
-This flow iterates through content, reads the file, and uploads the file to an Profitbase Invision File Storage.
+This Flow copies files from a Github repository to an InVision File Storage. It iterates through files in a Github repository, reads each file, and uploads them to the Profitbase Invision File Storage.
 
 
 ## Properties
@@ -16,13 +16,13 @@ This flow iterates through content, reads the file, and uploads the file to an P
 |------------------|-----------|--------------------------------------------------------|
 | Title  | Optional | The title of the action.   |
 | Authentication |  Optional | Select an authentication token. |
-| Repository owner | Required | Select or enter the repository owner. |
+| Repository owner | Required | Select or enter the repository owner. This is typically the name of the organization (for example `microsoft`) or person that owns the repository.  |
 | Repository name | Required | Select or enter the repository name. |
 | Branch | Optional | Select or enter a branch name. |
-| Path | Optional | Path to list content from. |
-| Content Filter | Optional | Filter expression to reduce files by a name or extension pattern. See below. |
-| Include content in subdirectories | - | Check to Include content in subdirectories. |
-| Include directories | - | Check to include directories in the result. |
+| Path | Optional | The root path from which to list contents. |
+| Content name filter | Optional | A regex expression applied to the content `Name` to filter the items returned. [See example below](#filter). |
+| Include content in subdirectories | - | Specifies whether or not to recursively include files and directories in subdirectories. |
+| Include directories | - | Specifies whether or not directories (and not only files) should be included int he result. |
 | Return variable name | Optional | Name of the variable containing the current Content Information object. |
 | Description | Optional | Additional notes or comments about the action or configuration. |
 
@@ -46,4 +46,8 @@ Authentication is done with an authentication token. Click [here](https://docs.c
 
 Filters are based on [Regular Expressions](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference) (Reg.Ex).
 
-To e.g. getting files ending with extension .md (markdown), the expression will be: '/\.md$/'
+**Example**
+To specify a filter that only returns Markdown (.md) files, use the following regex:
+```
+/\.md$/
+```
