@@ -10,14 +10,14 @@ The **Button** component defines a clickable button.
 
 ## Actions
 
-- **Enable**  
-  Enables the button.
+**Enable**  
+Enables the button.
 
-- **Disable**  
-  Disables the button.
+**Disable**  
+Disables the button.
 
-- **ExecuteExpression**  
-  Evaluates the:
+**ExecuteExpression**  
+Evaluates the:
 
   - EnableIf statement to determine if the button should be enabled or disabled. If True is returned, the button is enabled. If false is returned, it’s disabled.
 
@@ -27,19 +27,19 @@ The **Button** component defines a clickable button.
 
 ## Events
 
-- **TappedEvent**  
-  This event is raised when the button is clicked or tapped.
+**TappedEvent**  
+This event is raised when the button is clicked or tapped.
 
 <br/>
 
 ## Enabling and disabling
 
-- **Explicit enabling and disabling**  
-  A Button can be explicitly enabled and disabled by executing the Enable and Disable actions when handling an event. You would typically do this when executing a long-running task, by disabling the button when the task starts end to enable it when the task finishes.
+**Explicit enabling and disabling**  
+A Button can be explicitly enabled and disabled by executing the Enable and Disable actions when handling an event. You would typically do this when executing a long-running task, by disabling the button when the task starts end to enable it when the task finishes.
 
-- **Conditional enabling and disabling**  
-  A Button can be enabled or disabled based on the state of a filter or a variable.
-  Conditional enabling and disabling is performed by executing the EnableIf(..) instruction in the ExecuteExpression action of the button.
+**Conditional enabling and disabling**  
+A Button can be enabled or disabled based on the state of a filter or a variable.
+Conditional enabling and disabling is performed by executing the EnableIf(..) instruction in the ExecuteExpression action of the button.
 
 <br/>
 
