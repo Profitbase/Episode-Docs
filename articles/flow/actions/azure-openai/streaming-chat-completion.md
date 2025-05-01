@@ -1,8 +1,17 @@
 
 
-# Chat Completion
+# Streaming chat completion
 
-The **Chat Completion** returns the response from an [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/) chat model based on user input. 
+The **Streaming chat completion** action streams the response from an [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/) chat model one token at a time, until the response is complete.
+
+You will typically use this action to build backends for chat clients.
+
+![img](/images/flow/azure-openai-streaming-chat-completion.png)
+
+**Example** ![img](../../../../images/strz.jpg)  
+The example above shows a Flow that provides chat completions to a chat client. We're using [PostgreSQL vector search](../postgresql/vector-search.md) to enable RAG, and SQL Server to store and retrieve the chat history so that users can ask follow-up questions.
+
+<br/>
 
 ## Properties
 
