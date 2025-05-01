@@ -2,7 +2,7 @@
 
 # Streaming chat completion
 
-The **Streaming chat completion** action streams the response from an [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/) chat model one token at a time, until the response is complete.
+The **Streaming chat completion** action streams the response from an [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/) chat model one message at a time, until the response is complete.
 
 You will typically use this action to build backends for chat clients.
 
