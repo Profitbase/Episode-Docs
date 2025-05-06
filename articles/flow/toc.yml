@@ -102,6 +102,8 @@
       href: actions/google-bigquery/toc.yml
     - name: GraphQL request
       href: actions/graphql/toc.yml
+    - name: HTML
+      href: actions/html/toc.yml
     - name: HTTP
       href: actions/http/toc.yml
     - name: JSON
