@@ -1,2 +1,2 @@
-- name: "Get SQL execution chunks"
+- name: "Execute SQL statement returning data"
   href: "get-sql-execution-chunks.md"
