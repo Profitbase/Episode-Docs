@@ -83,6 +83,8 @@
           - name: UI Elements
             href: components/uielements.md
             items:
+            - name: App Header Button
+              href: components/uielements/app-header-button.md 
             - name: Button
               href: components/uielements/button.md
             - name: File upload

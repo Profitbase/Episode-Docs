@@ -14,17 +14,17 @@ In your Fabric portal, go to the Admin section, search for `AppSource Custom Vis
 
 <br/>
 
-## 2) Grant Admin consent on behalf of the organization (Optional)
+## 2) Grant Admin consent on behalf of the organization (Required)
 
-The first time the visual calls the Entra ID API, the user is presented with a UI (provided by Microsoft) that takes them through the consent flow. 
-
-To avoid requiring all users go through this consent flow, you can ask a Microsoft Entra ID administrator in your organization to enter the following url in the browser and consent on behalf of the organization.
+A **Microsoft Entra ID administrator** in your organization (the customer) must grant consent on behalf of the organization by entering the url below in a browser and complete the consent flow. Make sure that the user that performs this task is [authorized to grant consent on behalf organization](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/grant-admin-consent).
 
 ```
-https://login.microsoftonline.com/common/adminconsent?client_id=ccd28c52-6516-4634-9d08-cbac9b093b2c&redirect_uri=https://profitbase-powerbi-visuals-writeback-comments
+https://login.microsoftonline.com/{your entra tenant id}/adminconsent?client_id=ccd28c52-6516-4634-9d08-cbac9b093b2c
 ```
+<br/>
 
-After having completed the consent flow, the following Entreprise App registration should be visible in Microsoft Entra ID.
+After having completed the consent flow, the following Entreprise App registration should be visible in Microsoft Entra ID.  
+
 ![img](/images/powerbi/writeback-comments/enterprise-app-registration.png)
 
 <br/>
