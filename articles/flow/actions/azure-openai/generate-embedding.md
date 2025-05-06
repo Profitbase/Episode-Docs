@@ -4,6 +4,7 @@ Generates an embedding vector using an Azure OpenAI embedding model.
 
 Use this action when you want to generate an embedding vector to do manual vector operations (write your own queries) against databases like PostgreSQL or Azure SQL, for example vector search or inserting / updating vector records. 
 
+
 ## Properties
 
 | Name            | Type                   | Description                             |

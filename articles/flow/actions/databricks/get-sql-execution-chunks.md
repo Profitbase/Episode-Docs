@@ -4,6 +4,9 @@
 
 ![img](../../../../images/flow/databricks.png)
 
+**Example** ![img](../../../../images/strz.jpg)  
+This flow reads customer data, transforms it, iterates over it, and inserts it into a database. 
+
 ## Returns
 
 This action iterates over all chunks of data returned for the query. You will get a [IDataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) for each chunk.
@@ -16,9 +19,9 @@ This action iterates over all chunks of data returned for the query. You will ge
 | Warehouse Id      | Required   | Id of the Databricks SQL Warehouse.						|
 | Catalog           | Optional   | Name of the Databricks [catalog](https://learn.microsoft.com/en-us/azure/databricks/introduction/).  |
 | Schema            | Optional   | Name of the Databricks schema.							|
-| SQL expression    | Required   | Definition of the Databricks SQL command.				|
-| Chunk size		| Optional   | Number of rows in a chunk (default = 1000).				|
-| Row variable name | Required   | Name of the variable containing the DataReader result.	|
+| SQL expression and parameters   | Required   | Definition of the Databricks SQL command.				|
+| Chunk variable name | Optional   | Name of the variable containing the DataReader result.				|
+
 
 ## Limitations
 
