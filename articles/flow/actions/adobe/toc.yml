@@ -1,9 +1,9 @@
 - name: "Connection"
   href: "adobe-connection.md"
-- name: "PDF to docx as byte array"
-  href: "pdf-to-docx-as-byte-array.md"
-- name: "PDF to docx as stream"
-  href: "pdf-to-docx-as-stream.md"
+- name: "Convert PDF file to non-PDF file as byte array"
+  href: "pdf-to-non-pdf-as-byte-array.md"
+- name: "Convert PDF file to non-PDF file as stream"
+  href: "pdf-to-non-pdf-as-stream.md"
 
 
  
