@@ -16,4 +16,4 @@ A typical use case for this action is storing information from a website (such a
 
 ## Returns
 
-Returns the HTML input as a [string](https://learn.microsoft.com/en-us/dotnet/api/system.), with relative URLs replaced by absolute URLs.
+Returns the HTML input as a [string](https://learn.microsoft.com/en-us/dotnet/api/system.string), with relative URLs replaced by absolute URLs.
