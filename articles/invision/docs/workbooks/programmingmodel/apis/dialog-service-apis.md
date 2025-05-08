@@ -2,7 +2,7 @@
 
 The following APIs can be used in any [Execute Expression](../interactionmodel/workbookactions.md#execute-expression) Actions or [Form Schema functions](../../../forms/formschemas/functions.md).
 
-#### showConfirm({string, string, string, string})
+#### showConfirm({string, string, string, string, number, number})
 #### showConfirm(string)
 
 Displays a confirm dialog to the user, with the options to accept or reject. If the user accepts, `true` is returned, otherwise `false`. Note that the API is asynchronous and must be awaited like shown in the example below.  
@@ -10,7 +10,7 @@ Displays a confirm dialog to the user, with the options to accept or reject. If 
 ##### API Definition
 
 ```javascript
-this.app.ui.dialogs.showConfirm({title: string, message: string, positiveButtonText?: string, negativeButtonText?: string }) : Promise<boolean>
+this.app.ui.dialogs.showConfirm({title: string, message: string, positiveButtonText?: string, negativeButtonText?: string, width?: number, height?: number }) : Promise<boolean>
 this.app.ui.dialogs.showConfirm(text: string): Promise<boolean>
 ```
 
