@@ -106,7 +106,37 @@ The JSON above is converted to the following table. Note that the nested object 
 | 1234               | Luke          | Skywalker     | 2024-01-13T12:03:15  | 555.30        | true          |
 | 5678               | Darth         | Vader         | 2021-02-14T18:00:00  | -156.00       | true          |
 
----
+
+<br/>
+
+### Arrays
+When the JSON document contains array fields, it is treated as a string, meaning it will be read in its raw format. How you want to handle arrays is up to you, as it depends on your use case. You might want to simply save the data to a database as is, use a function to do custom deserialization, or simply add another `Get JSON DataReader` to the chain that converts the array fields to rows and columns.
+
+##### Example
+The example below shows how a JSON document having an array field (`orders`), is converted to a table.  
+
+```json
+[{
+   "customerId": 1234,
+   "firstName": "Luke",
+   "lastName": "Skywalker",   
+   "orders": [
+      {
+         "orderId": 1000,
+         "productId": "Y-66754",
+         "qty": 2
+      }
+   ]
+}]
+```
+
+Note that the data type of the `orders` column is `string`.
+
+| customerId         | firstName     | lastName      | orders               |
+|--------------------|---------------|---------------|----------------------|
+| 1234               | Luke          | Skywalker     | [{"orderId": 1000, "productId": "Y-66754", "qty": 2}] |
+
+<br/>
 
 ### Schema mapping
 
