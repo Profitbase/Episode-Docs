@@ -4,14 +4,14 @@ Iterates over a list of selected elements in an HTML document.
 
 A typical use case for this action is extracting relevant content (or elements) from an HTML document. 
 
-Menues, scripts, headers, and footers can be removed so that the result is the 'real' content. The extracted content elements can then be inserted into a vector database, and used for Retrieval-Augmented Generation (RAG) in an AI chat.
+Menus, scripts, headers, and footers can be removed so that the result is the 'real' content. The extracted content elements can then be inserted into a vector database, and used for Retrieval-Augmented Generation (RAG) in an AI chat.
 
 
 ![img](/images/flow/html-for-each-element.png)
 
 
 **Example** ![img](../../../../images/strz.jpg)  
-This Flow retrieves an hHTML page, extracts relevant elements using CSS selectors, fixes links in each element, and finally converts it to Markdown text,.
+This Flow retrieves an HTML page, extracts relevant elements using CSS selectors, fixes links in each element, and finally converts it to Markdown text.
 
 
 ## Properties
@@ -20,7 +20,7 @@ This Flow retrieves an hHTML page, extracts relevant elements using CSS selector
 |------------------|-----------|--------------------------------------------------------|
 | Title  | Optional | The title of the action.   |
 | HTML content | Required | The source HTML document to parse. This can be a [string](https://learn.microsoft.com/en-us/dotnet/api/system.string), a `byte array`, or a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream). |
-| CSS selectors | Required | CSS selectors is the query expression to identify elements for extraction. See below for details and examples. | 
+| CSS selectors | Required | CSS selectors are the query expressions to identify elements for extraction. See below for details and examples. | 
 | Return variable name | Optional | Name of the variable containing the current element. |
 | Description | Optional | Additional notes or comments about the action or configuration. |
 
@@ -34,7 +34,7 @@ This Flow retrieves an hHTML page, extracts relevant elements using CSS selector
 
 ## CSS Selectors
 
-Selectors can include html tags, attributes, class names, or css elements. Multiple expressions is separeted with commas.
+Selectors can include HTML tags, attributes, class names, or css elements. Multiple expressions are separated with commas.
 
 [Click here for a full reference on CSS Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors)
 

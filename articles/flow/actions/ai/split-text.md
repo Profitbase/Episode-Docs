@@ -64,3 +64,8 @@ Breaks down documents at specific Markdown headers, ideal for structured texts l
 | Headers to split on        | Optional  | Comma-separated list of Markdown headers to use as split points.           |
 | Include headers in output  | Optional  | If enabled, includes the header text in each chunk.                        |
 
+
+
+## Returns
+
+Split text returns string **textChunk**.

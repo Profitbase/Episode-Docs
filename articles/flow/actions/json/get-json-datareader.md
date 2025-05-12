@@ -34,7 +34,7 @@ When a JSON document is parsed by the DataReader, it converts `each collection o
 The _data type_ of the value is inferred from the representation of the value in the JSON document (string, number, etc). If a value is `null`, the data type cannot be inferred. 
 
 ##### Example
-The example below shows how a JSON document contining two objects in an array is converted to a table. 
+The example below shows how a JSON document containing two objects in an array is converted to a table. 
 
 ```json
 [{
@@ -74,7 +74,7 @@ The JSON above is converted to the following table.
 JSON may contain nested objects, such as Person and Address. When the DataReader encounters a nested object, it flattens the structure, using underscores ('_') to delimit each level.
 
 ##### Example
-The example below shows how a JSON document contining nested objects (`address`) are flattened to a table. 
+The example below shows how a JSON document containing nested objects (`address`) are flattened to a table. 
 
 ```json
 [{
