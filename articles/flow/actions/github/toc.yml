@@ -1,3 +1,5 @@
+- name: Getting started
+  href: getting-started.md
 - name: "Get issues"
   href: "get-issues.md"
 - name: "Get issue comments"

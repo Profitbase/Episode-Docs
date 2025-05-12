@@ -17,6 +17,8 @@ This action returns a **DataPipeline** response with the following properties:
 | Id            | string    | The id of the Data Pipeline.           |
 | WorkspaceId   | string    | The id of the Workspace that the pipeline was deployed to. |
 
+<br/>
+
 ## Properties
 | Name          | Type     | Description                             |
 |---------------|----------|-----------------------------------------|
@@ -24,6 +26,8 @@ This action returns a **DataPipeline** response with the following properties:
 | Workspace Id  | Required | The Workspace that you want to create the Data Pipeline in. |
 | Pipeline name | Required | The name of the Data Pipeline.           |
 | Definition    | Optional | If you want to create a non-empty Data Pipeline that contains actions, properties, parameters, etc, use the Definition property to specify the configuration of the pipeline as a JSON document. You can also provide the configuration as a Base64 encoded JSON string. <br/><br/>  You can get the JSON definitions via the **View --> View JSON code** tab in the Fabric user interface. [Example 1 below](#example-1---definition) shows a sample configuration of a Data Pipeline definition. <br/> <br/> The Base64 option is supported in case you get the definition as a Base64 encoded string from an API, allowing you to simply pass the value along without making any modifications.  |
+
+<br/>
 
 ## Example 1 - Definition
 
@@ -57,3 +61,12 @@ You can get the pipeline definitions via the **View --> View JSON code** tab in 
     }
 }
 ```
+
+<br/>
+
+## Videos
+
+#### Deploy data pipeline to Fabric from GitHub
+This video demonstrates how to deploy a data pipeline from GitHub to Fabric using Flow.
+
+![youtube.com](https://youtu.be/IxiR-w8oUaI)
