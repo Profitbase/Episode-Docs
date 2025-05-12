@@ -10,6 +10,7 @@ If you need to read the file multiple times, for example processing its contents
 **Example** ![img](../../../../images/strz.jpg)  
 This flow iterates through content, reads the file as byte array, and uploads the file to an Profitbase Invision File Storage.
 
+<br/>
 
 ## Properties
 
@@ -24,6 +25,7 @@ This flow iterates through content, reads the file as byte array, and uploads th
 | Return variable name | Optional | Name of the variable containing the byte array. |
 | Description | Optional | Additional notes or comments about the action or configuration. |
 
+<br/>
 
 ### Limitations
 
@@ -34,7 +36,17 @@ The primary rate limit for unauthenticated requests is 60 requests per hour.
 
 For authenticated users the rate limit is 5,000 requests per hour. If the installation is on a GitHub Enterprise Cloud organization, the installation has a rate limit of 15,000 requests per hour.
 
+<br/>
 
 ### Authentication
 
-Authentication is done with an authentication token. Click [here](https://docs.catalyst.zoho.com/en/tutorials/githubbot/java/generate-personal-access-token/) for more on creating a token.
+Authentication requires an authentication token. Click [here](https://docs.catalyst.zoho.com/en/tutorials/githubbot/java/generate-personal-access-token/) for more on creating a token. The easiest way to get started is using a [Personal Access Token](https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28#authenticating-with-a-personal-access-token).
+
+<br/>
+
+## Videos
+
+#### Deploy data pipeline to Fabric from GitHub
+This video demonstrates how to deploy a data pipeline from GitHub to Fabric using Flow.
+
+![youtube.com](https://youtu.be/IxiR-w8oUaI)
