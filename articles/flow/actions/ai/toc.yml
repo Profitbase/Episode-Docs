@@ -1,2 +1,4 @@
 - name: Split text
   href: "split-text.md"
+- name: Text splitter
+  href: "text-splitter.md"
