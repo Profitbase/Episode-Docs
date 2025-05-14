@@ -1,5 +1,6 @@
 # Convert a PDF file to a non-PDF file as stream
 
+Converts a PDF file to a target format and returns it as a stream.
 
 ![img](../../../../images/flow/convertPDFtoOther2.png)
 
@@ -17,3 +18,7 @@ This flow takes a PDF file from [OneDrive](../onedrive/read-file-from-onedrive-a
 | File contents      | Required | The input file data as stream.      |
 | Result variable name | Optional | The name of the variable in which the resulting file (converted document) will be stored. This variable can be used in subsequent steps of the flow.            |
 | Description        | Optional | A user-defined description for the action, helpful for documentation or identifying the step's purpose within a larger flow.     |
+
+## Returns
+
+A chosen format returned as a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream).
