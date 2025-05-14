@@ -1,6 +1,6 @@
 # Convert a PDF file to a non-PDF file as byte array
 
-
+Converts a PDF file to a target format and returns it as a byte array.
 
 ![img](../../../../images/flow/convertPDFtoOther.png)
 
@@ -18,3 +18,8 @@ This flow takes a PDF file from [OneDrive](../onedrive/read-file-from-onedrive-a
 | File contents      | Required | The input file data as a byte array.      |
 | Result variable name | Optional | The name of the variable in which the resulting file (converted document) will be stored. This variable can be used in subsequent steps of the flow.            |
 | Description        | Optional | A user-defined description for the action, helpful for documentation or identifying the step's purpose within a larger flow.     |
+
+
+## Returns
+
+A chosen format returned as a [Byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays).
