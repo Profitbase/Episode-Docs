@@ -1,3 +1,5 @@
+- name: Chat history truncation reducer
+  href: "chat-history-truncation-reducer.md"
 - name: Split text
   href: "split-text.md"
 - name: Text splitter
