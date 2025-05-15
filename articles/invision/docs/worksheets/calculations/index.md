@@ -3,7 +3,7 @@
 * [Appvariables](./appvariables.md)
 * [Arithmeticop](./arithmeticop.md)
 * [Calcinstfactory](./calcinstfactory.md)
-* [Celladressing](./celladressing.md)
+* [Celladdressing](./celladressing.md)
 * [Cellnrowstylfunc](./cellnrowstylfunc.md)
 * [Comparisonop](./comparisonop.md)
 * [Datefunc](./datefunc.md)

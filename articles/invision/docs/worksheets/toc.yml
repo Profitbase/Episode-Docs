@@ -30,7 +30,7 @@
             href: calculations/arithmeticop.md
           - name: Calculation instance factory
             href: calculations/calcinstfactory.md
-          - name: Cell adressing
+          - name: Cell addressing
             href: calculations/celladressing.md
           - name: Cell and row styling functions
             href: calculations/cellnrowstylfunc.md

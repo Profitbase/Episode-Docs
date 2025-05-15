@@ -3,7 +3,7 @@ Use filters to restrict which mail messages are returned.
 <!--prettier-ignore-->
 | Filter        | Description                                    |
 |---------------|------------------------------------------------|
-| From          | Specify one or more email addresses to accept messages from. To filter on multiple adresses, use semicolon as separator, for example `luke.skywalker@rebellion.com;leia@rebellion.com`. You can also specify partial addresses such as `@outlook.com` to only accept emails sent from an Outlook.com account |
+| From          | Specify one or more email addresses to accept messages from. To filter on multiple addresses, use semicolon as separator, for example `luke.skywalker@rebellion.com;leia@rebellion.com`. You can also specify partial addresses such as `@outlook.com` to only accept emails sent from an Outlook.com account |
 | Subject       | A text contained in the subject to receive. For example, using `budget version` as subject filter will accept messages with the subject `Final budget version 2024`, while messages with subject `Final version 2024` will not be accepted. |
 | Importance    | Specifies the importance of the messages to accept. If _no_ importance is selected (checked), _all_ messages are accepted.   |
 | Only with attachments | Whether or not to only accept messages with attachments. |
