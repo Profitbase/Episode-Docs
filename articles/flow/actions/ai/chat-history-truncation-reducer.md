@@ -1,6 +1,7 @@
 # Chat History Truncation Reducer
 
-Defines a chat history reducer that trims the chat to meet a target message count, but only when the history exceeds a specified threshold.
+Defines a chat history reducer that trims the conversation to a target number of messages, but only when the total exceeds a specified threshold.
+If no threshold is set, the history is trimmed whenever it exceeds the target count.
 
 ## Properties 
 
