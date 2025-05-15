@@ -1,23 +1,30 @@
-# Convert a URL adresse to Markdown
+# Convert a URL address to Markdown
 
-[Markdown](https://en.wikipedia.org/wiki/Markdown) is a lightweight text format. It can be used to provide knowledge to an AI chat through RAG (Retrieval-Augmented Generation).
 
+Returns [Markdown](https://en.wikipedia.org/wiki/Markdown) text from a URL (HTML page address).
+
+
+![img](../../../../images/flow/convert-URL-to-markdown.png)
+
+**Example** ![img](../../../../images/strz.jpg)  
+This Flow reads all URLs from a [website sitemap](get-sitemap.md), converts the HTML of each page to Markdown, [splits the content](../ai/split-text.md) into manageable chunks, [generates embeddings](../azure-openai/generate-embedding.md) for each chunk, converts them to a SQL Server-compatible format, and stores both the text and embeddings in SQL Server. It enables intelligent semantic search and retrieval of website content.
 
 <br/>
 
 ## Returns
 
-This action returns a string containing the Markdown text format.
+This action returns a string/text in markdown format.
 
 <br/>
 
 ## Properties
 
-| Name                 | Type     | Description                                                                                                   |
-| -------------------- | -------- | ------------------------------------------------------------------------------------------------------------- |
+| Name                 | Type     | Description                                                       |
+| -------------------- | -------- | --------------------------------------------------- |
 | Title                | Optional |   The title of the action.                    |
-| URL                  | Required | Specifies the adresse to a web page.                        |
-| Result variable name | Required | The name of the Markdown variable returned from the action. |
+| URL                  | Required | Specifies the addresse to a web page.                        |
+| Result variable name | Required | The name of the variable in which the result will be stored.  |
 | Description          | Optional | Additional notes or comments about the action or configuration. |
 
 <br/>
+

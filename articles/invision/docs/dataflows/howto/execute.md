@@ -18,7 +18,7 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/Data%20Flo
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTpar2%20(2).png)
 
-3. Edit data flow's Arguments in the Workbook to override the Value adressing the Textbox:
+3. Edit data flow's Arguments in the Workbook to override the Value addressing the Textbox:
    
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTpar2%20(3).png)
 

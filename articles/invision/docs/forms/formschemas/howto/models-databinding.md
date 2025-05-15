@@ -9,7 +9,7 @@ Under [this link](https://profitbasedocs.blob.core.windows.net/videos/FormSchema
 ## Step by step
 
 
-1. You adress the model in data bindings by using its name, to bind the path you use field names:
+1. You address the model in data bindings by using its name, to bind the path you use field names:
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTmod.png)
 
