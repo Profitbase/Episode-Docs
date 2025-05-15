@@ -21,42 +21,53 @@ The example above illustrates a Flow that stores a document in SQL Server. It us
 
 ## Splitter type
 
+**Required.** Allows selection of a splitting type (algorithm). Based on the selected type, a number of additional properties will be shown.
+
 </br>
 
-**Splitter type - Recursive character text splitter:**
+**Recursive character text splitter:**
 
 Splits text by characters into chunks of a specified size, optionally allowing overlap for better context retention.
 
-**Additional properties:**
 
-**Chunk size** - Maximum number of characters in each chunk.  
-**Chunk overlap** - Number of overlapping characters between chunks.  
+**Additional properties**
+
+| Name                    | Type      | Description                                           |
+|-------------------------|-----------|-------------------------------------------------------|
+| Chunk size              | Optional  | Maximum number of characters in each chunk.          |
+| Chunk overlap           | Optional  | Number of overlapping characters between chunks.     |
 
 </br>
 
-**Splitter type - Token text spiltter:**
+**Token text spiltter:**
 
 Divides text based on token count using a chosen encoding, useful for models with token limits.
 
-**Additional properties:**
 
-**Encoding name** - The name of the token encoding to be used.               
-**Max tokens** - The maximum number of tokens per chunk.                  
-**Chunk overlap** - Number of overlapping tokens between chunks.             
+**Additional properties**
+
+| Name                     | Type      | Description                                                       |
+|--------------------------|-----------|-------------------------------------------------------------------|
+| Encoding name            | Required  | The name of the token encoding to be used.                       |
+| Max tokens               | Optional  | The maximum number of tokens per chunk.                          |
+| Chunk overlap            | Optional  | Number of overlapping tokens between chunks.                     |
 
 </br>
 
-**Splitter type - Markdown header text splitter:**
+**Markdown header text splitter:**
 
 Breaks down documents at specific Markdown headers, ideal for structured texts like articles or reports.
 
-**Additional properties:**
 
-**Headers to split on** - Comma-separated list of Markdown headers to use as split points.   
-**Include headers in output** - If enabled, includes the header text in each chunk.                
+**Additional properties** 
 
+| Name                       | Type      | Description                                                                 |
+|----------------------------|-----------|-----------------------------------------------------------------------------|
+| Headers to split on        | Optional  | Comma-separated list of Markdown headers to use as split points.           |
+| Include headers in output  | Optional  | If enabled, includes the header text in each chunk.                        |
 
+</br>
 
 ## Returns
 
-Split text returns string **textChunk**.
+Split text returns string **textChunk**. 
