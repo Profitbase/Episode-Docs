@@ -10,7 +10,7 @@ This action is typically used when you need to import small to mid-sized CSV fil
 <br/>
 
 ## Properties
-
+ 
 | Name                     | Type           | Description                                                                                          |
 |--------------------------|----------------|------------------------------------------------------------------------------------------------------|
 | Title                    | Optional       | A descriptive title for the action.                                                                  |
