@@ -7,7 +7,7 @@ Splits a PDF document and returns chunks of page(s) as byte array.
 <!---![img](../../../../images/flow/convert-PDF-to-markdown.png)
 
 **Example** ![img](../../../../images/strz.jpg)  
-This Flow reads a contract (PDF file) from [OneDrive](../onedrive/read-file-from-onedrive-as-byte-array.md), converts it to Markdown, [splits the text](../ai/split-text.md) into chunks, [generates embeddings](../azure-openai/generate-embedding.md) for each chunk, converts them to a SQL Server-compatible format, and stores both the text and embeddings as vector records in SQL Server. It enables efficient semantic search and retrieval of contract content.
+This Flow reads a contract (PDF file) from [OneDrive](../onedrive/read-file-from-onedrive-as-byte-array.md), converts it to Markdown, [splits the text](../ai/split-text.md) into chunks, [generates embeddings](../azure-openai/generate-embedding.md) for each chunk, Converts the generated vector into a SQL Server-compatible format and stores the text, vector, and document reference in a SQL Server table. This table can then be used for vector search or to feed chat models with the extracted information.
 --->
 
 <br/>

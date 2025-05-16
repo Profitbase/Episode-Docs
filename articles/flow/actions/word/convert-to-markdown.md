@@ -7,7 +7,7 @@ Converts a Word file to [Markdown](https://en.wikipedia.org/wiki/Markdown).
 ![img](../../../../images/flow/convert-word-to-markdown.png)
 
 **Example** ![img](../../../../images/strz.jpg)  
-This Flow reads a documentation (Word file) from [OneDrive](../onedrive/read-file-from-onedrive-as-byte-array.md), converts it to Markdown, [splits the text](../ai/split-text.md) into chunks, [generates embeddings](../azure-openai/generate-embedding.md) for each chunk, converts them to a SQL Server-compatible format, and stores both the text and embeddings as vector records in SQL Server. It enables efficient semantic search and retrieval of Word document content.
+This Flow reads a documentation (Word file) from [OneDrive](../onedrive/read-file-from-onedrive-as-byte-array.md), converts it to Markdown, [splits the text](../ai/split-text.md) into chunks, [generates embeddings](../azure-openai/generate-embedding.md) for each chunk, converts the generated vector into a SQL Server-compatible format and stores the text, vector, and document reference in a SQL Server table. This table can then be used for [vector search](../postgresql/vector-search.md) or to feed chat models with the extracted information. 
 
 <br/>
 
