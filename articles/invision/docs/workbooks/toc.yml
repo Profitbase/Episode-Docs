@@ -219,6 +219,8 @@
                 href: programmingmodel/apis/message-hub-apis.md
               - name: Localization APIs
                 href: programmingmodel/apis/localization-apis.md
+              - name: Page APIs
+                href: programmingmodel/apis/page-apis.md
         - name: Subscreens
           href: subscreens.md
         - name: Themes and styles
