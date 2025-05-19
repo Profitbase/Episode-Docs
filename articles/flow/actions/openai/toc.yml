@@ -6,3 +6,7 @@
   href: "agent-chat-model.md"
 - name: "Generate embedding"
   href: "generate-embedding.md"
+- name: "Streaming chat completion"
+  href: "streaming-chat-completion.md"
+- name: "Text embedder"
+  href: "text-embedder.md"
