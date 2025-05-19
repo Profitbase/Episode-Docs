@@ -19,7 +19,7 @@ Calling show() and hide() on a page displayed in a [Drawer](../../drawers.md) wi
 ##### API Definition
 
 ```javascript
-this.app.ui.pages.get(pageIdOrName: string).navigateTo() : Promise<number>
-this.app.ui.pages.get(pageIdOrName: string).show() : Promise<number>
-this.app.ui.pages.get(pageIdOrName: string).hide() : Promise<number>
+this.app.ui.pages.get(pageIdOrName: string).navigateTo(): Promise<number>
+this.app.ui.pages.get(pageIdOrName: string).show(): Promise<number>
+this.app.ui.pages.get(pageIdOrName: string).hide(): Promise<number>
 ```
