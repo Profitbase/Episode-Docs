@@ -8,63 +8,49 @@ Inherits from [Text Control](textcontrol.md).
 
 <br/>
 
-**Property:**
+## Properties
+| Name                | Description                            |
+|---------------------|----------------------------------------|
+| Click               | Specifies the name of the Function to call when the user clicks the button. |
+| Disabled            | Use the Disabled property to disable a control or set it to read-only. Note that you cannot use both a Binding AND the control APIs at the same time to set the disabled state of a control. If the Disabled property of a control has a Binding, using the control.Disable() or control.Enable() APIs will not work (binding will win). The disabled property support data binding or an explicit value (true, false). |
+| Type                | Specifies the default look of the button. Valid values are `Default`, `Primary`, `Secondary`, `Confirm`, `Icon`, and `Link`.|
+| Image               | Specifies the image to display. The value can be a named image, an image in your web assets library (@images/my-image-name.png), or a URL. |
+| Hotkey              | Specifies the hotkey for the control, for example `Alt + B`. |
 
 <br/>
 
-`Click`
+### Examples
 
-Specifies the name of the Function to call when the user clicks the button.
-
-### Example
-
+**Click**
 ```xml
 <Button Name="Button1" Text="Click me" Click="ShowAlert"/>
-```
 
-This example shows how to call a function when the button is clicked, passing an argument.
-
-```xml
+<!--Pass an argument to the ShowAlert function-->
 <Button Name="Button1" Text="Click me" Click="ShowAlert('My message')"/>
+
+<!--A button displayed in a listbox, where Data represents the current data context-->
+<Button Name="Button1" Text="Click me" Click="ShowAlert(Data.MyProp)"/>
 ```
 
 <br/>
 
-`Disabled`
-
-Use the Disabled property to disable a control or set it to read-only.  
-The disabled property support data binding or an explicit value (true, false).
+**Disabled**
 
 Valid values for the **Disabled** property:
 
-- True
-- False
+- true
+- false
 - {Binding}
-
-You cannot use both a Binding AND the control APIs at the same time to set the disabled state of a control.  
-If the Disabled property of a control has a Binding, using the control.Disable() or control.Enable() APIs will not work (binding will win).
-
-### Example
 
 ```xml
 <Button Disabled="{Binding Path:Customer.NotActive}"/>
-or
+<!--or-->
 <Button Disabled="true"/>
 ```
 
 <br/>
 
-`Type`
-
-Specifies the default look of the button. Valid values are "Default", "Primary", "Secondary", "Confirm", and "Link".
-
-<br/>
-
-`Hotkey`
-
-Specifies the hotkey for the control.
-
-### Example
+**Hotkey**
 
 ```xml
 <Button Hotkey="Alt + B" Name="Button1" Text="Click me" Row="1" ColumnSpan="2" Click="ShowAlert('My Message')"/>
