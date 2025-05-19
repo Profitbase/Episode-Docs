@@ -49,6 +49,8 @@
           - name: Controls
             href: formschemas/controls.md
             items:
+            - name: App header button
+              href: formschemas/controls/app-header-button.md
             - name: Button
               href: formschemas/controls/button.md
             - name: Camera
