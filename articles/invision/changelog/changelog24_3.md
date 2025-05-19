@@ -59,7 +59,7 @@ You can now show and hide Workbook pages conditionally using one of the followin
 We now support users being members of more than 200 Microsoft Entra user groups. 
 
 ## See Also
-
+- [Change Log 2025.2](changelog25_2.md)
 - [Change Log 2025.1](changelog25_1.md)
 - [Change Log 2024.4](changelog24_4.md)
 - [Change Log 2024.2](changelog24_2.md)

@@ -72,6 +72,8 @@ All Solutions that **does not** have any permissions defined, will now be access
 
 
 ### See Also
+
+- [Change Log 2025.2](changelog25_2.md)
 - [Change Log 2025.1](changelog25_1.md)
 - [Change Log 2024.4](changelog24_4.md)
 - [Change Log 2024.3](changelog24_3.md)

@@ -34,7 +34,7 @@ Splits text by characters into chunks of a specified size, optionally allowing o
 
 | Name                    | Type      | Description                                           |
 |-------------------------|-----------|-------------------------------------------------------|
-| Chunk size              | Optional  | Maximum number of characters in each chunk.          |
+| Chunk size              | Required  | Maximum number of characters in each chunk.          |
 | Chunk overlap           | Optional  | Number of overlapping characters between chunks.     |
 
 </br>
@@ -48,8 +48,8 @@ Divides text based on token count using a chosen encoding, useful for models wit
 
 | Name                     | Type      | Description                                                       |
 |--------------------------|-----------|-------------------------------------------------------------------|
-| Encoding name            | Required  | The name of the token encoding to be used.                       |
-| Max tokens               | Optional  | The maximum number of tokens per chunk.                          |
+| Encoder name            | Required  | The name of the token encoding to be used.                       |
+| Max tokens               | Required  | The maximum number of tokens per chunk.                          |
 | Chunk overlap            | Optional  | Number of overlapping tokens between chunks.                     |
 
 </br>

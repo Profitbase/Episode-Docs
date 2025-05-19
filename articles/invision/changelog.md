@@ -5,6 +5,7 @@
 
 Learn about the cool new features, updates, and bug fixes.
 
+- [Change Log 2025.2](../invision/changelog/changelog25_2.md)
 - [Change Log 2025.1](../invision/changelog/changelog25_1.md)
 - [Change Log 2024.5](../invision/changelog/changelog24_5.md)
 - [Change Log 2025.1](../invision/changelog/changelog25_1.md)
