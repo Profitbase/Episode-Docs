@@ -18,6 +18,9 @@
       href: "configuration-properties/column-mapping.md"
     - name: "Data import options"
       href: "configuration-properties/data-import-options.md"
+    - name: "Data import options as JSON"
+      href: "json.md"
     - name: "Field parser"
       href: "configuration-properties/field-parser.md"
+
 
