@@ -3,6 +3,14 @@
 
 Streams the response from a chat completion model, one message at a time.
 
+You will typically use this action to build backends for chat clients.
+
+![img](/images/flow/openai-streaming-chat-completion.png)
+
+**Example** ![img](../../../../images/strz.jpg)  
+The example above shows a Flow that provides chat completions to a chat client. We're using [PostgreSQL vector search](../postgresql/vector-search.md) to enable RAG, and SQL Server to store and retrieve the chat history so that users can ask follow-up questions.
+
+<br/>
 
  
 ## Properties
