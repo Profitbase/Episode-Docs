@@ -5,6 +5,12 @@
 The **Chat Completion** returns the response from an [OpenAI](https://platform.openai.com/docs/api-reference/introduction) chat model given a user prompt.   
  
 
+![img](/images/flow/openAI-chat-completion.png)  
+
+**Example** ![img](../../../../images/strz.jpg)  
+This flow processes a user's chat question by first receiving it through a [Chat completion](../../triggers/ai/chat-completion-trigger.md), then converting it into a vector using a [Text embedder](text-embedder.md), performing a [Vector search](../postgresql/vector-search.md) in a postgreSQL database for relevant context, and finally passing the user input and retrieved context to OpenAI **Chat completion**, which generates a response that is returned to the client via the [Return](../built-in/return.md) node.
+
+
 ## Properties
 
 | Name                  | Type      | Description |

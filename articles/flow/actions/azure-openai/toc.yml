@@ -8,6 +8,6 @@
   href: "agent-chat-model.md"
 - name: Generate embedding
   href: generate-embedding.md
-- name: "Text embedding generator"
-  href: "text-embedding-generator.md"
+- name: "text embedder"
+  href: "text-embedder.md"
  
