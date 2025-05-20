@@ -1,15 +1,13 @@
-# Delete file
+# Delete file from a share
 
 Deletes a file from an [Azure Files](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction) share.
 
-![img](../../../../images/flow/Get-share-items-info.png)
+![img](../../../../images/flow/delete-file-from-share.png)
 
 **Example** ![img](../../../../images/strz.jpg)  
-Example above retrieves all files from a share (Get Share Items Info), iterates over each file ([Foreach](../built-in/foreach.md)), and removes each file ([Delete file](delete-file.md)).
-(If conditions are applied within the iteration, they should be defined explicitly inside the Foreach loop.)
-
-The example retrieves all files from a share using the **Get Share Items Info** action. It then iterates over each item using a Foreach loop. Each file is passed to the Delete file from a share action.  
+The example above retrieves all file informations from a share using the [Get Share Items Info](get-share-items-info.md) action. It then iterates over each item using a [For each](../built-in/foreach.md) loop. Each file is passed to the **Delete file from a share** action.  
 **Note:** The filtering logic is implemented inside the Foreach action, allowing only the relevant files to proceed to deletion.
+
 
 ## Properties
 

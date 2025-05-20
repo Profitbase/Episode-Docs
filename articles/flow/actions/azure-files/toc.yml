@@ -4,7 +4,7 @@
   href: "create-directory.md"
 - name: "Delete directory"
   href: "delete-directory.md"
-- name: "Delete file"
+- name: "Delete file from a share"
   href: "delete-file.md"
 - name: "Get share items info"
   href: "get-share-items-info.md"
