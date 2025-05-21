@@ -16,3 +16,5 @@
   href: "load-to-datatable.md"
 - name: "Search vectors"
   href: "vector-search.md"
+- name: "Vector save"
+  href: "vector-save.md"
