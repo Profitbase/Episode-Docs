@@ -1,0 +1,11 @@
+- name: Overview
+  href: ../tableexplorer.md
+- name: How to's
+  href: howto/index.md
+  items:
+  - name: How to use Context filtering
+    href: ./howto/context.md
+  - name: How to use Search
+    href: ./howto/search.md
+  - name: How to Edit table contents
+    href: ./howto/edit.md

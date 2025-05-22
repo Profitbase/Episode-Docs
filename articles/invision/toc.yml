@@ -64,6 +64,8 @@
         href: docs/systemviews.md
       - name: Tables
         href: docs/tables/toc.yml
+      - name: Table Explorer
+        href: docs/tableexplorer/toc.yml
       - name: TableView
         href: docs/tableview/toc.yml
       - name: Time frame
