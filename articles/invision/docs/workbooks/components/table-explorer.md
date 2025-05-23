@@ -8,7 +8,7 @@ The Table Explorer lets developers group tables by business domains so users can
 
 ## Getting started
 To display a Table in a Table Explorer
-1) Open a [table](../docs/tables.md) for edit in the InVision Designer. 
+1) Open a [Table](../../tables/index.md) for edit in the InVision Designer. 
 2) Switch to the **Listing** tab.
 3) Check **Display in Table Explorer(s)**
 4) Add a Table Explorer component to a Workbook (in the same Solution)
@@ -18,7 +18,7 @@ To display a Table in a Table Explorer
 ## Properties
 | Name           |  Description                                     |
 |----------------|--------------------------------------------------|
-| Context filter  | Use this property to specify which Tables to display in the Table Explorer. Only Tables with at least one matching Context string is displayed. Use semicolons (;) to define multiple filter values. <br/>For example, `Forecast; HR` will display tables having a Context strings with `Forecast` OR `HR` tokens. If this field is left blank, all Tables marked as "Display in Table Explorer(s)" in the solution will be displayed. Read more about context filtering here: [Context and context filtering](./tableexplorer/howto/context.md) |
+| Context filter  | Use this property to specify which Tables to display in the Table Explorer. Only Tables with at least one matching Context string is displayed. Use semicolons (;) to define multiple filter values. <br/>For example, `Forecast; HR` will display tables having a Context strings with `Forecast` OR `HR` tokens. If this field is left blank, all Tables marked as "Display in Table Explorer(s)" in the solution will be displayed. Read more about context filtering here: [Context and context filtering](../../tableexplorer/howto/context.md) |
 
 <br/>
 
