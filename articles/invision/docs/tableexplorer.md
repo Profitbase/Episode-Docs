@@ -1,43 +1,36 @@
 # Table Explorer
-The purpose of Table Explorer is to easily find one or more tables for a certain work area and start editing the table contents.
+The Table Explorer lets developers group tables by business domains so users can quickly discover and edit related data in a single UI instead of switching between multiple tabs, pages or Workbooks.
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/table_explorer_web_purpose.png)
 
 <br/>
 
-## Properties set on Table entity in the Listing-tab
+## Getting started
+To display a Table in a Table Explorer
+1) Open a [table](../docs/tables.md) for edit in the InVision Designer. 
+2) Switch to the **Listing** tab.
+3) Check **Display in Table Explorer(s)**
+4) Add a Table Explorer component to a Workbook (in the same Solution)
 
+![img](/images/invision/table-explorer-listing.png)
 
+<br/>
+
+## Properties
 | Name                      | Type     | Description |
 |---------------------------|----------|-------------|
-| Display in Table Explorer(s) | Optional | Toggles the visibility of the table in the Table Explorer(s). |
-| Context                   | Optional | A filter property used to limit where the table appears. Enter one or more keywords, separated by semicolons (;). These keywords act as filters in relevant views or features. [Context and context filtering](./tableexplorer/howto/context.md) |
+| Display in Table Explorer(s) | Optional | Specifies whether the Table appears in Table Explorer(s) in Workbooks. |
+| Context                   | Optional | A filter property used to categorize the table, enabling the table to appear in only select Table Explorers. For example, you can add a context string, `Budgeting and forecasting`, which makes it possible to display this table in only Table Explores having a matching Context filter (`Budgeting and forecasting`).<br/>Use semicolons (;) to specify multiple contexts. These keywords acts as possible filter values for the [Context filter](../docs/workbooks/components/table-explorer.md#properties). [See also  Context and context filtering](./tableexplorer/howto/context.md) |
 | Short Description         | Optional | Shown as a subtitle for the table in the Table Explorer. This text can be localized using the associated "Text code". |
 | Tags                      | Required | At least one tag is required. Tags help categorize and filter tables. Each tag supports localization via the provided "Text code". A table can have multiple tags. |
 
 <br/>
 
-![pic](https://profitbasedocs.blob.core.windows.net/images/table_listing_configuration.png)
-
-<br/>
 <br/>
 
-## Place on a workbook page
-The table explorer must be placed on a Workbook [Page](./workbooks/pages.md) and configured with the nesscary properties.
-
-| Name                     | Type       | Description          |
-|--------------------------|------------|-------------------|
-| Context filter                 | Optional   | A filter property. Defines which tables should appear. If this is left blank, all tables in the solution will appear. [Context and context filtering](./tableexplorer/howto/context.md)            |
-
-<br/>
-
-![pic](https://profitbasedocs.blob.core.windows.net/images/table_explorer_workbook_page.png)
-
-<br/>
-
-Ensure to load tables into the component in the Workbook when needed.
-
-![pic](https://profitbasedocs.blob.core.windows.net/images/table_explorer_workbook_interaction.png)
+## Display in a Workbook
+To display a Table Explorer in a Workbook, open the Workbook designer and drag - drop a Table Explorer component from the toolbox onto a page.  
+[Read more here](../docs/workbooks/components/table-explorer.md)  
 
 <br/>
 
