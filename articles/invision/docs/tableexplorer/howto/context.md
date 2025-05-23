@@ -1,5 +1,5 @@
 
-# Use of Context Filter
+# How to use the Context Filter
 
 Tables can be marked with one or more **contexts**, allowing the **Table Explorer** to filter and display only the relevant ones. To define the scope, assign one or more context labels to the tables — use a semicolon (`;`) to separate multiple contexts.
 

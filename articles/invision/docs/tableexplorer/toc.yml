@@ -3,9 +3,9 @@
 - name: How to's
   href: howto/index.md
   items:
-  - name: How to use Context filtering
+  - name: How to use the Context filter
     href: ./howto/context.md
   - name: How to use Search
     href: ./howto/search.md
-  - name: How to Edit table contents
+  - name: How to edit table contents
     href: ./howto/edit.md
