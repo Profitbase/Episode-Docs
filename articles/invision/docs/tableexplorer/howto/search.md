@@ -12,26 +12,25 @@ You can quickly find a table by searching its name, short description, or by usi
 
 ### **Search by Tags – Not Selected**
 
-When **"Search by Tags"** is *not* selected, the search looks for matches in the **table name** or **short description** (e.g., "vehicles").  
+When **"Search by Tags"** is *not* selected, the search looks for matches in the **table name** or **short description** (e.g., "manage").  
 It then lists all **tables** that match the search.
 
-
-![pic](https://profitbasedocs.blob.core.windows.net/images/table_explorer_web_search_tables_vehicles.png)
+![pic](https://profitbasedocs.blob.core.windows.net/images/table_explorer_search_tables.png)
 
 <br/>
 
 ### **Search by Tags – Selected**
 
-When **"Search by Tags"** *is* selected, the search checks for **tags** that match the search term (e.g., "vehicles").  
+When **"Search by Tags"** *is* selected, the search checks for **tags** that match the search term (e.g., "manage").  
 All matching **tags** are displayed. If multiple **tags** are found, they appear collapsed, concealing their associated tables.  
 To reveal the tables under a **tag**, expand the corresponding **tag** node.
 
 
-![pic](https://profitbasedocs.blob.core.windows.net/images/table_explorer_web_search_tag_vehicles.png)
+![pic](https://profitbasedocs.blob.core.windows.net/images/table_explorer_search_tags.png)
 
 If a **table** has multiple **tags**, it will appear under each relevant tag in the list — but it's still the same table.
 
 
-![pic](https://profitbasedocs.blob.core.windows.net/images/table_explorer_web_search_tag_vehicles_multiple.png)
+![pic](https://profitbasedocs.blob.core.windows.net/images/table_explorer_search_tags_multiple.png)
 
 <br/>
