@@ -126,6 +126,7 @@ Fixed an issue that prevented sending emails to multiple recipients.
 
 ### See Also
 
+- [May 2025](changelog25_may.md)
 - [February 2025](changelog25_february.md)
 - [December 2024](changelog24_december.md)
 - [October 2024](changelog24_october.md)
