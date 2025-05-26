@@ -29,7 +29,7 @@ To display a Table Explorer in a Workbook, drag and drop it from the toolbox. By
 
 <br/>
 
-Ensure to load tables into the component in the Workbook when needed.
+Run the **Load Data**-action of the Table Explorer to initialize the UI.
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/table_explorer_workbook_interaction.png)
 
