@@ -12,7 +12,7 @@ To display a Table in a Table Explorer
 3) Check **Display in Table Explorer(s)**
 4) Add a Table Explorer component to a Workbook (in the same Solution)
 
-![img](/images/invision/table-explorer-listing.png)
+![pic](https://profitbasedocs.blob.core.windows.net/images/table-explorer-listing.png)
 
 <br/>
 
@@ -20,7 +20,7 @@ To display a Table in a Table Explorer
 | Name                      | Type     | Description |
 |---------------------------|----------|-------------|
 | Display in Table Explorer(s) | Optional | Specifies whether the Table appears in Table Explorer(s) in Workbooks. |
-| Context                   | Optional | A filter property used to categorize the table, enabling the table to appear in only select Table Explorers. For example, you can add a context string, `Budgeting and forecasting`, which makes it possible to display this table in only Table Explores having a matching Context filter (`Budgeting and forecasting`).<br/>Use semicolons (;) to specify multiple contexts. These keywords acts as possible filter values for the [Context filter](../docs/workbooks/components/table-explorer.md#properties). [See also  Context and context filtering](./tableexplorer/howto/context.md) |
+| Context                   | Optional | A filter property used to categorize the table, enabling the table to appear in only select Table Explorers. For example, you can add a context string, `Budgeting and forecasting`, which makes it possible to display this table in only Table Explores having a matching Context filter (`Budgeting and forecasting`).<br/>This keyword acts as a possible filter value for the [Context filter](../docs/workbooks/components/table-explorer.md#properties). [See also  Context and context filtering](./tableexplorer/howto/context.md) |
 | Short Description         | Optional | Shown as a subtitle for the table in the Table Explorer. This text can be localized using the associated "Text code". |
 | Tags                      | Required | At least one tag is required. Tags help categorize and filter tables. Each tag supports localization via the provided "Text code". A table can have multiple tags. |
 
