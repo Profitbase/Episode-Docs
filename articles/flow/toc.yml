@@ -166,6 +166,8 @@
 - name: Change log
   href: changelog.md
   items: 
+    - name: May 2025
+      href: changelog/changelog25_may.md
     - name: February 2025
       href: changelog/changelog25_february.md
     - name: December 2024

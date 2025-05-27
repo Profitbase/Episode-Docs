@@ -148,3 +148,4 @@ You can now cancel running jobs from the dashboard. When cancelling a job, a can
 - [December 2024](changelog24_december.md)
 - [October 2024](changelog24_october.md)
 - [September 2024](changelog24_september.md)
+- [August 2024](changelog24_august.md)
