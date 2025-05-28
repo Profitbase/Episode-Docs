@@ -87,6 +87,10 @@ Modules can be updated manually by clicking the “Update forecast”/”Update 
 
 <br/>
 
+**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 6.1 or later
+
+-  [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Personnel%20module.pdf)<br/>
+
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.4 or later
 
 -  [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/v5.4/Planner%20Personnel%20module.pdf)<br/>
