@@ -14,5 +14,5 @@ Please refer to the relevant module document in the "How to's" section below for
 
 <br/>
 
--  [Configure the Account module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/v5/Planner%20Account%20module.pdf)<br/>
--  [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/v5/Planner%20Personnel%20module.pdf)<br/>
+-  [Configure the Account module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Account%20module.pdf)<br/>
+-  [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Personnel%20module.pdf)<br/>
