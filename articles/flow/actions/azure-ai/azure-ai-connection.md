@@ -56,7 +56,7 @@ If you want to use an `OpenAI` model, you must create one connection **PR** mode
 3. Fill in the required fields:
    - **Name**: Enter a unique name for this connection. Choose a name that makes it easy to understand what the connection is for.
    - **API Key**: Provide the API key associated with the deployed model.
-   - **Endpoint**: Enter the full URL of the deployed model (e.g., `https://sh-m8on2329-eastus2.cognitiveservices.azure.com/openai/deployments/gpt-4o-mini`). Note that the Endpoint contains the deployment name (gpt-4o-mini).
+   - **Endpoint**: Enter the full URL of the deployed model (e.g., `https://xx-m8on1111-eastus2.cognitiveservices.azure.com/openai/deployments/gpt-4o-mini`). Note that the Endpoint contains the deployment name (gpt-4o-mini).
 
 To find the API Key and Endpoint, go the the Azure AI Foundry portal and do the following:
 1) Click `Models + Endpoints` 
