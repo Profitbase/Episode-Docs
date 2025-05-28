@@ -79,6 +79,14 @@ Short description of the individual setting.<br/>
 
 <br/>
 
+**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 6.1 or later
+
+> [Configure the Account module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Account%20module.pdf)<br/>
+> [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Personnel%20module.pdf)<br/>
+> [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Driver%20based%20module.pdf)<br/>
+> [Configure the CapEx module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20CapEx%20module.pdf)<br/>
+> [Configure the Loan module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Loan%20module.pdf)<br/>
+
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.4 or later
 
 > [Configure the Account module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.4/Planner%20Account%20module.pdf)<br/>
