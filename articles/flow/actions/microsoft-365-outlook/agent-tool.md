@@ -2,7 +2,7 @@
 
 Defines an Outlook Tool that enables the [Tools AI Agent](../agents/tools-ai-agent.md) to access Outlook on behalf of a user.
 
-The example below shows an agent that reads all Word documents in a OneDrive folder, summarizes them, and emails the summaries using the `Outlook Agent Tool` along with the original documents as attachments. The "brain" that drives the agent, determining which tools to use, and generating the summaries, is the [Azure OpenAI chat model](../azure-openai/agent-chat-model.md).  
+The example below shows an agent that reads all Word documents in a OneDrive folder, summarizes them, and emails the summaries using the `Outlook Agent Tool` along with the original documents as attachments. The "brain" that drives the agent, determining which tools to use, and generating the summaries, is the [Azure OpenAI chat model](../azure-ai/agent-chat-model.md).  
   
 The following prompts are used:  
 

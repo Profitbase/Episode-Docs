@@ -16,8 +16,8 @@ The example above illustrates part of a Flow that stores a document into SQL Ser
 | Name            | Type                   | Description                             |
 |-----------------|------------------------|-----------------------------------------|
 | Title           | Optional               | The title of the action.                |
-| Connection      | Required               | Defines the [connection](azure-openai-connection.md) to **Azure OpenAI**. |
-| Deployment model name | Required               | Specifies the name of the deployed embedding model, which corresponds to **name** (not the model id) of the deployed embedding model in Azure Azure AI Foundry or the Azure portal. In [Azure AI Foundry](https://ai.azure.com), the deployment name can be found in the Deployments screen as shown [below](#deployment-name). <br/> **NOTE!** Make sure you select an `Embeddings` model (for example text-embedding-3-large), and not something else like _Chat completion_ or _Text to speech_.   |
+| Connection      | Required               | Defines the [connection](azure-ai-connection.md) to an **Azure AI Foundry** resource. |
+| Model           | Required               | Specifies the name of the deployed embedding model, which corresponds to the **Name** (not the model id) of the deployed embedding model in Azure Azure AI Foundry or the Azure portal. In [Azure AI Foundry](https://ai.azure.com), the deployment name can be found in the Deployments screen as shown [below](#model). <br/> **NOTE!** Make sure you select an `Embeddings` model (for example text-embedding-3-large), and not something else like _Chat completion_ or _Text to speech_.   |
 | Dimensions      | Optional               | Some embedding models (like text-embedding-3-*) support configurable dimensionalities, for example 768 or 1536. Make sure you don't specify a dimensionality greater than the max value of the model.| 
 | Input           | Required               | The (text) input that you want to generate an embedding for. |
 
@@ -51,6 +51,7 @@ WHERE VECTOR_DISTANCE('cosine', Vector, @emb) < 0.7
 
 <br/>
 
-## Deployment name
-To find the Deployment name, look in the `Deployments` screen in [Azure AI Foundry](https://ai.azure.com). 
+## Model
+To find the Model deployment name, look in `Models + Endpoints` screen in [Azure AI Foundry](https://ai.azure.com).  
+
 ![img](/images/flow/azure-openai-aifoundry-embedding-models.png)

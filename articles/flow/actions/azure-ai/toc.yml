@@ -1,5 +1,5 @@
-- name: Connection
-  href: azure-openai-connection.md
+- name: Azure AI Foundry connection
+  href: azure-ai-connection.md
 - name: Chat completion
   href: chat-completion.md
 - name: Streaming chat completion
