@@ -5,7 +5,7 @@ Split text into chunks.
 ![img](/images/flow/split-text.png)  
 
 **Example** ![img](../../../../images/strz.jpg)  
-The example above illustrates a Flow that stores a document in SQL Server. It uses the **Split text** action to divide a large document into smaller chunks. Then, for each chunk, an [embedding is generated](../azure-openai/generate-embedding.md), and the text chunk along with its corresponding embedding is stored in SQL Server as a vector record.
+The example above illustrates a Flow that stores a document in SQL Server. It uses the **Split text** action to divide a large document into smaller chunks. Then, for each chunk, an [embedding is generated](../azure-ai/generate-embedding.md), and the text chunk along with its corresponding embedding is stored in SQL Server as a vector record.
 
 ## Properties 
 

@@ -108,7 +108,7 @@ Tools enables building AI-powered automations using [AI Agents](../actions/agent
 
 - Converts text to embedding vector for vector search or vector store (e.g., SQL Server, PostgreSQL)  
 
-[Read more here](../actions/azure-openai/generate-embedding.md)
+[Read more here](../actions/azure-ai/generate-embedding.md)
 
 <br/>
 
@@ -116,7 +116,7 @@ Tools enables building AI-powered automations using [AI Agents](../actions/agent
 
 - Powers reasoning for tools like [AI Agents](../actions/agents/tools-ai-agent.md) 
 
-[Read more here](../actions/azure-openai/agent-chat-model.md)
+[Read more here](../actions/azure-ai/agent-chat-model.md)
 
 <br/>
 

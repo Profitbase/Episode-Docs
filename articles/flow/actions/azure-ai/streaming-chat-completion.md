@@ -2,7 +2,7 @@
 
 # Streaming chat completion
 
-The **Streaming chat completion** action streams the response from an [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/) chat model one message at a time, until the response is complete.
+The **Streaming chat completion** action streams the response from an [Azure AI Foundry](https://ai.azure.com/) chat model one message at a time, until the response is complete.
 
 You will typically use this action to build backends for chat clients.
 
@@ -18,8 +18,8 @@ The example above shows a Flow that provides chat completions to a chat client. 
 | Name                  | Type      | Description |
 |-----------------------|-----------|-------------|
 | Title             | Optional  | The title of the action. |
-| Connection        | Required  | Defines the [connection](azure-openai-connection.md) to **Azure OpenAI**. |
-| Deployment Name   | Required  | Specifies the model deployment name, which corresponds to the custom name chosen during model deployment in the Azure portal or in [Azure AI Foundry](https://ai.azure.com) ([see below](#deployment-name)). In the Azure Portal, the deployment name can be found under **Resource Management** > **Model Deployments**. |
+| Connection        | Required  | Defines the [connection](azure-ai-connection.md) to an **Azure AI Foundry** resource. |
+| Model             | Required  | Specifies the model deployment name, which corresponds to the **Name** (not the model id) of the deployed model in [Azure AI Foundry](https://ai.azure.com) ([see below](#model)). In the Azure Portal, the deployment name can be found under **Resource Management** > **Model Deployments**. |
 | User Prompt       | Required  | The input message from the user, which the model processes to generate a response. |
 | System Prompt     | Optional  | A system-level instruction that guides the model’s behavior and response style. |
 | History           | Optional  | A record of past interactions that provides context to the conversation, helping the model maintain continuity. |
@@ -31,8 +31,8 @@ The example above shows a Flow that provides chat completions to a chat client. 
 
 <br/>
 
-#### Deployment name
-To find the Deployment name, look in the `Deployments` screen in [Azure AI Foundry](https://ai.azure.com).  
+#### Model
+To find the Model deployment name, look in `Models + Endpoints` screen in [Azure AI Foundry](https://ai.azure.com).    
 
-![img](/images/flow/azure-openai-deploymentname.png)
+![img](/images/flow/azure-ai-foundry-deploymentname.png)
 

@@ -4,7 +4,7 @@
 
 
 **Example** ![img](../../../../images/strz.jpg)  
-This flow processes a user's chat question by first receiving it through a [Chat completion](../../triggers/ai/chat-completion-trigger.md) trigger, then converting it into a vector using a [text embedder](../azure-openai/text-embedder.md), performing a [Vector search](../postgresql/vector-search.md) in a postgreSQL database for relevant context, and finally passing the user input and retrieved context to Azure OpenAI [Chat completion](../azure-openai/chat-completion.md), which generates a response that is returned to the client via the **Return** node.
+This flow processes a user's chat question by first receiving it through a [Chat completion](../../triggers/ai/chat-completion-trigger.md) trigger, then converting it into a vector using a [text embedder](../azure-ai/text-embedder.md), performing a [Vector search](../postgresql/vector-search.md) in a postgreSQL database for relevant context, and finally passing the user input and retrieved context to Azure AI [Chat completion](../azure-ai/chat-completion.md), which generates a response that is returned to the client via the **Return** node.
 
 </br>
 
