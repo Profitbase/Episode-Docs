@@ -6,7 +6,7 @@ A typical use case for this tool is to enable an AI agent to convert Word or PDF
 
 The example below shows an agent that reads all Word documents in a OneDrive folder (using the [OneDrive Agent Tool](../onedrive/agent-tool.md)), summarizes them, and [emails](../microsoft-365-outlook/agent-tool.md) the summaries along with the original documents as attachments. 
 By providing the `Markdown Agent Tool` to the AI Agent, it can convert the Word documents into a readable text format and generate summaries from them.  
-The "brain" that drives the agent, determining which tools to use, and generating the summaries, is the [Azure OpenAI chat model](../azure-ai/agent-chat-model.md).  
+The "brain" that drives the agent, determining which tools to use, and generating the summaries, is the [Azure AI chat model](../azure-ai/agent-chat-model.md).  
 
 The following prompts are used:  
 

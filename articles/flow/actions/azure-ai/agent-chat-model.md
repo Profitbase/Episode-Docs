@@ -1,6 +1,6 @@
 # Azure AI chat model
 
-Defines an Azure OpenAI chat model that an AI Agent, for example the [Tools AI agent](../agents/tools-ai-agent.md), can use to reason about what to do.
+Defines an Azure AI (OpenAI or Foundry) chat model that an AI Agent, for example the [Tools AI agent](../agents/tools-ai-agent.md), can use to reason about what to do.
 
 The example below illustrates using the [Tools AI Agent](../agents/tools-ai-agent.md) to retrieve a list of all blobs in an Azure Storage container and return the result as a JSON string. We then convert the returned JSON string to a business object containing the list of files so we can use later in the Flow.  
 The Tools AI Agent uses the chat model to reason about how to perform the task given the tools provided to it. The [Azure Blob Storage Agent Tool](../azure-blob-storage/agent-tool.md)  supports reading information about blobs in an Azure Storage container, so the tool will be used by the agent to complete the task.  
