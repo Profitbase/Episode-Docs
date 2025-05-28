@@ -7,6 +7,13 @@ Note that the import is sensitive to the selection made in the organizational fi
 
 Note also that, by default, proposal data is added to the existing data in the module. You can, however, opt to replace existing module data by checking the "Replace existing data" check box. If contributors have started their detailed planning input, the "Replace existing data" options should be used with care as it will may lead to input data being replaced.
 
+**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 6.1 or later<br/>
+
+New import options:
+
+- Keep distribution: keep the distribution in the proposal (default = checked) or not (i.e. central distribution keys will take effect)
+- Process data: process data after plan proposal is imported (default = checked) or not.
+
 <br/>
 
 ![](https://profitbasedocs.blob.core.windows.net/plannerimages/account-proposal-import.JPG)
