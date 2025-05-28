@@ -63,6 +63,16 @@ Project id. Optional. If no value is provided, the default value # is set.
  **Activity**<br/>
 Activity id. Optional. If no value is provided, the default value # is set. 
 
+**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 6.1 or later
+
+ **Employee**<br/>
+Employee id. Optional. If no value is provided, the default value # is set. 
+
+ **Attr1**<br/>
+Attribute 1 id. Optional. If no value is provided, the default value * is set. 
+
+ **Attr2**<br/>
+Attribute 2 id. Optional. If no value is provided, the default value * is set. 
 <br/>
 
 Dimension combinations found in the source and not in the input module for either the last 12 months actuals or any of the (optional) historical reference columns, will automatically be processed into the module on forecast rollover. 
@@ -80,6 +90,10 @@ The module can also be updated manually by clicking the “Apply…” button in
 ## How to`s
 
 <br/>
+
+**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 6.1 or later
+
+-  [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Driver%20based%20module.pdf)<br/>
 
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.4 or later
 
