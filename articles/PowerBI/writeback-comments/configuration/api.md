@@ -13,7 +13,7 @@ You have two options for creating a writeback service:
 <br/>
 
 ### Writeback payload
-This section describes the data payload sent from the visual when a user saves their changes. Use this information if you plan to implement writeback manually using a Fabric User Data Function or an Azure Function. If you're using Profitbase Flow, everything is handled automatically.  
+This section describes the data payload sent from the visual when a user saves their changes. Use this information if you plan to implement writeback manually using an Azure Function. If you're using Profitbase Flow, everything is handled automatically.  
 
 ```typescript
 type WritebackPayload = {
@@ -32,7 +32,7 @@ type WritebackPayload = {
 | value        | The comments provided by the user.                 |
 | context      | The columns and values that identify the row to update. |
 | userId       | Depending on how [change tracking](./change-tracking.md) is configured, this is the OID or UPN of the logged in user.|
-| timeZone     | The IANA timezone of the user. <br/><br/> If you use Profitbase Flow to handle writeback, you can ignore this property. Everything is handled automatically.<br/><br/>If you implement writeback manually using a Fabric User Data Function or an Azure Function, you must use this property to convert any date/time values in the `context` property back to their original server values when using them in the update statement. This is because when Power BI _loads_ data to a report or dashboard, it automatically converts all dates to UTC relative to the user timezone, meaning that the date/time values on the frontend differs from the actual values stored in the  backend database or semantic model. |
+| timeZone     | The IANA timezone of the user. <br/><br/> If you use Profitbase Flow to handle writeback, you can ignore this property. Everything is handled automatically.<br/><br/>If you implement writeback manually using an Azure Function, you must use this property to convert any date/time values in the `context` property back to their original server values when using them in the update statement. This is because when Power BI _loads_ data to a report or dashboard, it automatically converts all dates to UTC relative to the user timezone, meaning that the date/time values on the frontend differs from the actual values stored in the backend database or semantic model. |
 
 **Example**
 ```json
