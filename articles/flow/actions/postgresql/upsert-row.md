@@ -13,7 +13,7 @@ The Flow above illustrates how to use the `Insert or Update row` action to save 
 | Name                  | Type     | Description                                                                       |
 | --------------------- | -------- | --------------------------------------------------------------------------------- |
 | Title                 | Optional | A descriptive title for the action.                                               |
-| Connection            | Required | The PostgreSQL connection.                                                        |
+| Connection            | Required | The PostgreSQL database [connection](postgresql-connection.md).                   |
 | Table name            | Required | The name of the table to insert or update a row.                                  |
 | Column value mapping  | Required | Defines the row to update by specifying the columns and corresponding values.     |
 | Result variable name  | Optional | Name of the variable containing the action performed.                             |
