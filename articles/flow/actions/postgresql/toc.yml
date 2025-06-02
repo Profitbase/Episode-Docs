@@ -10,6 +10,8 @@
   href: "get-entities.md"
 - name: "Get single value"
   href: "get-single-value.md"
+- name: "Insert data"
+  href: "insert-data.md"
 - name: "Insert or update row"
   href: "upsert-row.md"
 - name: "Load to DataTable"
