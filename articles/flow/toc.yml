@@ -112,6 +112,8 @@
       href: actions/markdown/toc.yml
     - name: Microsoft Fabric
       href: actions/microsoft-fabric/toc.yml
+    - name: Model Context Protocol (MCP)
+      href: actions/mcp/toc.yml
     - name: OneDrive
       href: actions/onedrive/toc.yml
     - name: OpenAI
