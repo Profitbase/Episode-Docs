@@ -14,7 +14,7 @@ ARRAY(1,4,"test")
 
 Creates a unique id with the length of 36 characters, on the form xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.
 
-`WINDOW()`
+`Window()`
 
 Returns the browser window object. Replaced ``ENVIRONMENT()`` function.
 
