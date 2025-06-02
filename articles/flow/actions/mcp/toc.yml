@@ -1,0 +1,4 @@
+- name: MCP client connection
+  href: "mcp-client-connection.md"
+- name: MCP client tool
+  href: "mcp-client-tool.md"
