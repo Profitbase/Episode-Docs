@@ -16,7 +16,7 @@ The Flow above illustrates how to use the `Insert or Update row` action to save 
 | Connection            | Required | The PostgreSQL connection.                                                        |
 | Table name            | Required | The name of the table to insert or update a row.                                  |
 | Column value mapping  | Required | Defines the row to update by specifying the columns and corresponding values.     |
-| Result variable name  | Optional | Name of the variable containing the action performed. This always                 |
+| Result variable name  | Optional | Name of the variable containing the action performed.                             |
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds. |
 | Description           | Optional | Additional notes or comments about the action.                                    |
 
