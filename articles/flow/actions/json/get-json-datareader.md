@@ -5,6 +5,12 @@ Typical use cases include inserting a JSON document into a relational database t
 
 ![img](/images/flow/json-get-json-datareader.png)
 
+
+**Example** ![img](../../../../images/strz.jpg)  
+This Flow automates the process of retrieving employee data from PowerOfficeGo, transforming a JSON document to a tabular format (row and columns), and inserting it into a database.
+
+<br/>
+
 ## Returns
 [IDataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) providing a forward-only stream of rows and columns from a JSON document.
 
@@ -14,7 +20,7 @@ Typical use cases include inserting a JSON document into a relational database t
 |--------------------------|----------------------|--------------------------------------------|
 | JSON                     | Required             | A string or byte array containing data in a valid JSON format. |
 | [Schema mapping](#schema-mapping)           | Optional             | Enables manually defining the mapping between JSON properties and column names, including data types. |
-| DataReader variable name | Required             | The name of the DataReader that this action returns. You may change the name to better convey what data the DataReader contains, for example `customers` or `orders`. | 
+| DataReader variable name | Required             | The name of the variable that contains the output from this action. | 
 
 <br/>
 
