@@ -4,6 +4,7 @@
   href: "pdf-to-non-pdf-as-byte-array.md"
 - name: "Convert PDF file to non-PDF file as stream"
   href: "pdf-to-non-pdf-as-stream.md"
-
-
- 
+- name: "Convert non-PDF file to PDF file as byte array"
+  href: "non-pdf-to-pdf-as-byte-array.md"
+- name: "Convert non-PDF file to PDF file as stream"
+  href: "non-pdf-to-pdf-as-stream.md" 
