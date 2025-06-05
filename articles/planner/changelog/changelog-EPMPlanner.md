@@ -6,6 +6,7 @@ This package provide the financial planning function and can be organized in pro
 
 ## EPM Planner Versions
 
+- [EPM Planner 6.1.0](#epm-planner-610) - Released 2025.06.05
 - [EPM Planner 6.0.3](#epm-planner-603) - Released 2025.02.17
 - [EPM Planner 6.0.2](#epm-planner-602) - Released 2024.11.05
 - [EPM Planner 6.0.1](#epm-planner-601) - Released 2024.09.27
@@ -20,6 +21,64 @@ This package provide the financial planning function and can be organized in pro
 **Changes:**
 
 **Fixes:**
+
+## EPM Planner 6.1.0
+
+**Breaking Changes:**
+
+Planner 6.1.0 use flow based transaction pipelines (introduced as optional during Planner 6.0.x, mandatory from 6.1.0). The following breaking changes apply wrt to dataflow based transaction pipelines:
+
+- The use of condition expressions in auto transaction configurations is no longer supported. Separate columns for period based condition exists to support previous expressions such as month() == 12. Manual
+  configuration is required to migrate expressions to new condition columns.
+- The use of custom pre- / post- transaction pipeline scripts require manual configuration in flows. Consult the "Planner customization patterns" document for details.
+- Driver based models now include EmployeeID (new dimension) and attributes Attr1 and Attr2. If the solution makes use of custom driver based assumption views, those views must be adjusted to include columns EmployeeID, Attr1 and Attr2 all of which are Nvarchar(50) type columns. 
+  Default value is * for all of these columns.
+
+**Changes:**
+
+- Personnel module: there is a change of behaviour related to base setting PersonnelUpdInputFromSrcFact. If set to FALSE, no input data will be changed. This applies to updating existing rows and inserting new rows (#1958)
+- Driver based module:
+	- Introduction of new dimension Employee (#909)
+	- Introduction of attributes (#1663)
+	- Ability to link models in order to process automatically. (#1861)
+	- Ability to group model import by selected dimensions (#1779)
+- Allocation: improved user interface introducing ability to select givers / bearers as well as accounts from dimensional hierarchies making selection easier and more maintanable as leaf nodes to aggregate selections are automatically compiled when involved dimensions change. 
+  (#1620)
+- Plan proposal (Account and Driver based) - new import options (https:#1847 and #1944)
+- Plan overview: "excel-like" sum, average and count display sensitive to user selection. (#1979)
+- Introduce KPI account type to cater for non-amount based data such as headcount, etc. (#1832)
+- Account, Personnel, Driver based, CapEx and Loan modules: introduce ability to set default filter values for enabled input module filters (#1962)
+- Account module: periodic comparison report displays amounts as default as opposed percentages (#1977)
+
+**Fixes:**
+
+- CapEx: column asset group is missing a translation (#1821)
+- Long term planning in personal module, issue with deleting of rows (#1836)
+- Planner engine source view - need to take into account any mapped measures from driver based models (#1830)
+- Allocation gives wrong companycode on bearer if giver is a different company than bearer (#1868)
+- LegalEntityID in input stores must be updated post publish of department dimension (#1871)
+- Account worksheet - historic ref columns do not take into account sign factor when aggregating over multiple legal entitites with different functional currencies (#1840)
+- Change dimensionality in Personal module do not copy salary increase amount (#1833)
+- Capex Module, not showing VAT part of investment (#1831)
+- Personnel: Autotransaction for additional columns with target department <> source department incorrect (flow) (#1924)
+- Personnel Change dimensionality - data not updated (#1875)
+- Triple numbers in historical column in account details report (#1965)
+- Account details report missing actuals despite having actuals in Plan overview (#1927)
+- Driverbased: Setting "navigate directly to details view" creates: Inner Exception: '@dbg' does not exist. (#1940)
+- Account Plan Proposal Disappearing after exclusion of AccountID (#1942)
+- Plan proposal, department override includes legalentity id from source department (#1857)
+- Allocation - Execution timeout received (#1853)
+- Assumption filter in driverbased module reveals other non relevant measures (#1860)
+- Preview dataset (For Finance Reports) - employer tax does not include employer tax on pension when flow pipelines are activated (#1856)
+- Plan Overview - cannot find counterpart transactions - using Flow pipeline (version Planner 6.0.3) (#1972)
+- Long term planning in personnel module (#1973)
+- Problem with long term planning in Account module (#1980)
+- Flow pipelines - I/C transactions where LegalEntity/CPLegalEntity have differing functional currency does not work (#1985)
+- FCTYearTotalFloating = FALSE is not supported when using Flow pipelines (#1839)
+- Error message when inserting a comment in the Planoverview workbook (#1882)
+- Allocation - incorrect keys for measure FTE when used in multiple models (#1885)
+- Loan validation inconsistance for FirstPrincipalDate when date is selected to be first day of next periode (allowed). (#1923)
+- Version roll forward, headcounts set incorrectly to 1 when null in personnel module (#1991)
 
 ## EPM Planner 6.0.3
 
