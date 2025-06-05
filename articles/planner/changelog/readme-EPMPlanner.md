@@ -2,10 +2,35 @@
 
 ## Upgrade notes
 
+- [EPM Planner 6.1.0](#epm-planner-610)
 - [EPM Planner 6.0.1](#epm-planner-601)
 - [EPM Planner 6.0.0](#epm-planner-600)
 - [EPM Planner 5.5.0](#epm-planner-550)
 - [EPM Planner 5.4.1](#epm-planner-541)
+
+## EPM Planner 6.1.0
+
+Supports upgrade to Planner 6.1.0 from Planner 5.4.0 or newer versions (see note below).
+
+When upgrading to the next version after 6.1.0, upgrading from versions older than 5.4.1 will no longer be supported. It is therefore strongly recommended to keep your Planner version as up to date as possible. 
+
+Furthermore, switching to flow-based transaction pipelines is currently mandatory and is done automatically as part of the upgrade process. However, the flow pipelines must be executed manually post upgrade in situation where the solution was not activated for flow pipelines prior to the upgrade.
+
+Requirements: Profitbase InVision platform version 2025.3 AND Profitbase Flow 1.6. 
+
+**NOTE:** 	The solution you want to upgrade MUST be connected to Flow BEFORE you upgrade, contact Profitbase to make sure that that is the case or how to connect.
+
+**NOTE:**	Planner 6.1.0 has some breaking changes that may require you to make changes to your solution. This applies to:
+		- The use of custom assumption views for driver based models. New fields EmployeeID, Attr1 and Attr2 has to be manually added with default values * in order to conform with new driver based assumption format.
+		- Compatibility Driver based flow interface:
+			- LinkSeq: new parameter to flow, defaults to 0
+			- Flow now incorporates FctSalesInputRecalculate sql script that will perform assumption lookup and recalculate calculated measures
+
+**Involves packages:**
+
+EPM Planner (Package upgraded to: 6.1.0)
+
+**Known issues:** [GitHub Milestone](https://github.com/Profitbase/Planner/milestone/71)
 
 ## EPM Planner 6.0.2
 
