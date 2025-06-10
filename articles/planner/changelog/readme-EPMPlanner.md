@@ -20,11 +20,11 @@ Requirements: Profitbase InVision platform version 2025.3 AND Profitbase Flow 1.
 
 **NOTE:** 	The solution you want to upgrade MUST be connected to Flow BEFORE you upgrade, contact Profitbase to make sure that that is the case or how to connect.
 
-**NOTE:**	Planner 6.1.0 has some breaking changes that may require you to make changes to your solution. This applies to:
-		- The use of custom assumption views for driver based models. New fields EmployeeID, Attr1 and Attr2 has to be manually added with default values * in order to conform with new driver based assumption format.
-		- Compatibility Driver based flow interface:
-			- LinkSeq: new parameter to flow, defaults to 0
-			- Flow now incorporates FctSalesInputRecalculate sql script that will perform assumption lookup and recalculate calculated measures
+**NOTE:**	Planner 6.1.0 has some breaking changes that may require you to make changes to your solution if you have made customizations. This applies to:</br></br>
+		- The use of custom assumption views for driver based models. New fields EmployeeID, Attr1 and Attr2 has to be manually added with default values * in order to conform with new driver based assumption format.</br></br>
+		- Compatibility Driver based flow interface:</br>
+		--- LinkSeq: new parameter to flow, defaults to 0</br>
+		--- Flow now incorporates FctSalesInputRecalculate sql script that will perform assumption lookup and recalculate calculated measures</br>
 
 **Involves packages:**
 
