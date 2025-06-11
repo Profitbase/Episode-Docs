@@ -15,7 +15,7 @@ This flow receives order data, checks if it contains the necessary details, and 
 
 | Name        | Type      | Description |
 |------------|----------|-------------|
-| Title      | Optional | The title of the flow. |
+| Title      | Optional | The title of the action. |
 | Flow       | Required | The name of the flow to start, choose existing flow from the dropdown list. |
 | Input      | Optional | The input data passed to the flow. |
 | Description | Optional | A description of the flow. |

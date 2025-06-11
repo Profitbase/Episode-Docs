@@ -21,4 +21,4 @@ This flow takes a PDF file from [OneDrive](../onedrive/read-file-from-onedrive-a
 
 ## Returns
 
-A chosen format returned as a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream).
+Returns a file on the chosen format as a  [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream).

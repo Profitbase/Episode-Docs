@@ -22,4 +22,4 @@ This flow takes a PDF file from [OneDrive](../onedrive/read-file-from-onedrive-a
 
 ## Returns
 
-A chosen format returned as a [Byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays).
+Returns a file on the chosen format as a  [Byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays).
