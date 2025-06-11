@@ -22,7 +22,7 @@ This flow retrieves financial data from XLedger, stores it in a database, and ch
 
 | Name        | Type      | Description |
 |------------|----------|-------------|
-| Title      | Optional | The title of the flow. |
+| Title      | Optional | The title of the action. |
 | Next run at | Required | The scheduled date and time (DateTimeOffset) when the flow will execute next. |
 | Input      | Optional | The input data passed to the flow. |
 | Description | Optional | A description of the flow. |
