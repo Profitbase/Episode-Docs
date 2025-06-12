@@ -107,6 +107,7 @@ SELECT [SolutionID]
       ,[WorkProcess_Name]
       ,[WorkProcessVersion_ID]
       ,[WorkProcessVersion_Name]
+      ,[FlowWorkspace_ID]
   FROM [SYS_Solutions]
 
 ```
