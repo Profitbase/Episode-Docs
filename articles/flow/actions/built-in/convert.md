@@ -16,7 +16,8 @@ The Convert action supports the following conversions:
 | Any [built-in .NET Type](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types)  | Any [built-in .NET type](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types)                  |
 | Custom type             | JSON                                    |
 | Anonymous type          | Custom type                             |
-| String                  | byte array (`byte[]`)                              |
+| String                  | byte array (`byte[]`) using UTF-8 encoding            |
+| byte array (`byte[]`)   | String using UTF-8 encoding             |
 | [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream)                  | byte array (`byte[]`)                             |
 | Object                  | JSON string encoded as UTF8 byte array  |
 | String                  | [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable)                               |
