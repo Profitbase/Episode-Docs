@@ -24,8 +24,8 @@
   href: "http-trigger.md"
 - name: MCP
   items:
-    - name: "MCP trigger"
-      href: "mcp/mcp-trigger.md"
+    - name: "MCP tool trigger"
+      href: "mcp/mcp-tool-trigger.md"
 - name: "Multi-trigger"
   href: "multi-trigger.md"
 - name: Outlook (Microsoft 365)
