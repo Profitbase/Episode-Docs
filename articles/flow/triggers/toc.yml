@@ -17,11 +17,15 @@
     - name: "Queue trigger"
       href: "azure-service-bus/queue-trigger.md"
     - name: "Topic trigger"
-      href: "azure-service-bus/topic-trigger.md"
+      href: "azure-service-bus/topic-trigger.md"    
 - name: "Flow trigger"
   href: "flow-trigger.md"
 - name: "HTTP trigger"
   href: "http-trigger.md"
+- name: MCP
+  items:
+    - name: "MCP trigger"
+      href: "mcp/mcp-trigger.md"
 - name: "Multi-trigger"
   href: "multi-trigger.md"
 - name: Outlook (Microsoft 365)
