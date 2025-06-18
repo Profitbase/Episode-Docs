@@ -20,10 +20,10 @@ This flow processes a user's chat question by first receiving it through a [Chat
 | Table                        | Required  | The name of the table where the vector search will be performed. |
 | Search text                  | Required  | The input text string used to perform the vector search; can be provided dynamically. |
 | Record definition            | Required  | The definition of columns used in the vector search. Note: The vector column is not returned. |
-| Filter                       | Optional  | A SQL WHERE clause-like filter expression (e.g., Category = 'cats'). |
+| Filter                       | Optional  | A filter expression to narrow down the records (e.g., category = blue). |
 | Top                          | Optional  | The maximum number of top results to return. |
-| Skip                         | Optional  | The number of top results to skip. |
-| [Distance function](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/distance-functions) | Optional  | The method for calculating vector similarity, CosineDistance or EuclideanDistance. |
+| Skip                         | Optional  | The number of top results to skip (default: *0*). |
+| [Distance function](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/distance-functions) | Optional  |  The method for calculating vector similarity, e.g., *Cosine Distance* (default). |
 | Score limit (0–2)            | Optional  | A threshold value that filters results based on similarity score (lower = more similar). |
 | Search result variable name  | Optional  | The name of the variable to store results, e.g. searchResult. |
 | Command timeout (seconds)    | Optional  | The timeout duration for the SQL command (in seconds). |

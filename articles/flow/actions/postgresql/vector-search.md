@@ -19,7 +19,7 @@ This flow processes a user's chat question by first receiving it through a [Chat
 | Table                    | Required  | The name of the table where the vector search will be performed. |
 | Search text              | Required  | The input text string used to perform the vector search, can be provided by a trigger (see below). |
 | Record definitions       | Required  | The definition of columns used in vector search. Note! The vector column is not part of the returned data. |
-| Filter                   | Optional  | A filter expression to narrow down the records (e.g., category == cats ). |
+| Filter                   | Optional  | A filter expression to narrow down the records (e.g., category = blue). |
 | Top                      | Optional  | The maximum number of top results to return. |
 | Skip                     | Optional  | The number of top results to skip (default: *0*). |
 | [Distance function](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/distance-functions)  | Optional  | The method for calculating vector similarity, e.g., *Cosine Distance* (default). |
