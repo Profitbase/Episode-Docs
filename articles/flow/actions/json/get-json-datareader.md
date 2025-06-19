@@ -74,10 +74,13 @@ The JSON above is converted to the following table.
 ---
 
 > [!NOTE]
-> The JSON documents must have a value format, meaning it must be a singel object starting and ending with curly brackets (`{` and `}`), or a collection of objects, starting or ending with square brackets (`[` and `]`).
+> The JSON documents must have a valid JSON format, meaning it must be a singel object starting and ending with curly brackets (`{` and `}`), OR a collection of objects, starting or ending with square brackets (`[` and `]`).
 
 ### Nested objects
 JSON may contain nested objects, such as Person and Address. When the DataReader encounters a nested object, it flattens the structure, using underscores ('_') to delimit each level.
+
+> [!IMPORTANT]
+> If a JSON document has a jagged (non-uniform) format, you must always define the [schema mapping](#schema-mapping) explicitly. This is typically the case for JSON documents containing nested objects where some of the properties may be null.
 
 ##### Example
 The example below shows how a JSON document containing nested objects (`address`) are flattened to a table. 
@@ -158,6 +161,9 @@ For example, if you want to map the JSON property `lastName` to column name `Sur
 
 ##### Column mapping for nested objects
 In a JSON document, relationships between nested objects are represented using a dot ('.'), for example `address.country`. By default, the DataReader converts this to `address_country` because using a `.` will fail when trying to save the data to most target systems. If you want to use a different column name for nested objects, you can configure a mapping for this like shown below.
+
+> [!IMPORTANT]
+> If a JSON document has a jagged (non-uniform) format, you must always define the [schema mapping](#schema-mapping) explicitly. This is typically the case for JSON documents containing nested objects where some of the properties may be null.
 
 | JSON path        | Column name     | Data type          |
 |------------------|-----------------|--------------------|
