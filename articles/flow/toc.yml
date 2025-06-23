@@ -64,8 +64,6 @@
       href: flows/modularization-and-extensions.md
 - name: Actions
   items:
-    - name: 24SevenOffice
-      href: actions/24-seven-office/toc.yml 
     - name: Adobe
       href: actions/adobe/toc.yml 
     - name: Agents
