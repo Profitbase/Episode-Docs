@@ -13,12 +13,12 @@ If the Flow you want to run supports parameterization, you can specify an argume
 
 ## Returns
 
-If the Flow you want to run returns data, you can use the data returned as input to actions later in the Flow. Note, however, that the data returned is typed as [System.Object](https://learn.microsoft.com/en-us/dotnet/api/system.object) (or [System.Collections.Generic.IAsyncEnumerable<object>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.iasyncenumerable-1) for streaming Flows), so you almost always have to convert it to a type known by the calling Flow before it can be used as input to other actions. 
+If the Flow you want to run returns data, you can use the data returned from it as input to actions later in the calling Flow. Note, however, that the data returned is typed as [System.Object](https://learn.microsoft.com/en-us/dotnet/api/system.object) (or [System.Collections.Generic.IAsyncEnumerable&lt;object&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.iasyncenumerable-1) for streaming Flows), so you almost always need to convert it to a type known by the calling Flow before it can be used as input to other actions. 
 
 To convert the returned value to a format that can be used by actions in the calling Flow, specify the `Output data type` property of the [Run Flow](../../actions/built-in/run-flow.md) action in the `Properties` panel. 
 
 > [!NOTE]
-> If you are calling a Flow that streams its result (returning an [System.Collections.Generic.IAsyncEnumerable<object>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.iasyncenumerable-1)), you cannot change its output data type. Instead, you must read the result stream using the [Await Foreach](../../actions/built-in/await-foreach.md) action.
+> If you are calling a Flow that streams its result (returning an [System.Collections.Generic.IAsyncEnumerable&lt;object&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.iasyncenumerable-1)), you cannot change its output data type. Instead, you must read the result stream using the [Await Foreach](../../actions/built-in/await-foreach.md) action and convert it to a known type using a [Convert](../../actions/built-in/convert.md) action.
  
 
 ### Example
