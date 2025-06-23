@@ -20,8 +20,18 @@ The example above illustrates a Flow that can be called by an AI agent because i
 | Annotations | Optional         | **NOTE!** Annotations are hints about the tool. It is up to MCP clients whether to use them or not.<br/><br/>**Destructive**<br/>Specifies whether the tool may perform destructive updates to its environment. <br/><br/> **Idempotent**<br/>Specifies whether calling the tool repeatedly with the same arguments will have no additional effect on its environment.<br/><br/> **Read-only**<br/>Specifies whether this tool does not modify its environment. Read-only tools do not have side effects beyond computational resource usage. They don't create, update, or delete data in any system.<br/><br/> **Open world**<br/>Specifies whether this tool may interact with an "open world" of external entities. If true, the tool may interact with an unpredictable or dynamic set of entities, like web search.|
 | Default arguments | Optional        | Specifies default arguments that is used when testing the Flow, or if no data is passed to the Flow from an AI model.  |
 | Output variable name | Required     | Specifies the name of the object returned from the trigger, which represents the data passed to the Flow from the AI model, for example `customerInfo` or `projectInfo`. |
+| Description | Optional | Defines the description of the tool to the LLM. Although this property is optional, it is strongly recommended to provide a clear and concise description of what the Flow (tool) does, so that the LLM can more easily reason about what the tool can be used for.  |
 
 <br/>
 
 ## Returns
 The MCP tool trigger returns (outputs) the object defined by its `Parameters` property (if any).
+
+<br/>
+
+## Best practice for defining an MCP tool trigger 
+
+1) Choose a clear and concise `Tool name`. This helps the LLM understand what the tool does and what it can be used for. Prefer using underscore (_) as word separators if the tool name consists of multiple words, for example `add_order` instead of `AddOrder`.
+2) When defining `Parameters`, add a `description` for every property of the type definition.
+3) When defining `Parameters`, add as few properties as possible to the type definition. Too many parameters may confuse the LLM.
+4) Always provide a short and concise `Description` of the tool in the property editor. This helps the LLM reason about what the tool should be used for.  
