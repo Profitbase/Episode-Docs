@@ -51,7 +51,7 @@
       href: "file-storage/add-file-to-file-storage.md"
     - name: "Delete file from File Storage"
       href: "file-storage/delete-file-from-file-storage.md"
-    - name: Get file info from File Storage"
+    - name: "Get file info from File Storage"
       href: "file-storage/get-file-info-from-file-storage.md"
     - name: "Get files info from File Storage"
       href: "file-storage/get-files-info-from-file-storage.md"
