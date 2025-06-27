@@ -3,6 +3,13 @@
 Defines a Text splitter object that can be used in various AI-related nodes with a "Text splitter" port. 
 
 
+![img](../../../../images/flow/text-splitter-ai.png)
+
+**Example** ![img](../../../../images/strz.jpg)  
+This flow takes a large block of text, splits it into smaller chunks, then converting it into an embedding vector using a [text embedder](../azure-ai/text-embedder.md), and saves everything into a [PostgreSQL](../postgresql/vector-save.md) database for later semantic search.
+
+<br/>
+
 ## Properties
 
 | Name                  | Type     | Description                                                                 |
