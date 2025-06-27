@@ -1,4 +1,14 @@
-# Vector save
+# Save vectors 
+
+Saves vectors in PostgreSQL database based on input text.
+
+
+![img](../../../../images/flow/vector-save.png)
+
+**Example** ![img](../../../../images/strz.jpg)  
+This flow takes a large block of text, [splits](../ai/text-splitter.md) it into smaller chunks, then converting it into an embedding vector using a [text embedder](../azure-ai/text-embedder.md), and saves everything into a PostgreSQL database for later semantic search.
+
+<br/>
 
 This action allows saving a text as a list of records in a PostgreSQL vector collection, in a specific format (Profitbase). This is done using the following steps:
 1. **Split** - The input text is split into chunks using the Text splitter (link).
