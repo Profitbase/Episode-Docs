@@ -12,3 +12,5 @@
   href: "extract-content-from-pdf-as-byte-array.md"
 - name: "Extract content from PDF as stream"
   href: "extract-content-from-pdf-as-stream.md"
+- name: Extract content from PDF as JSON
+  href: extract-content-from-pdf-as-json.md
