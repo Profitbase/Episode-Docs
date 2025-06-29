@@ -1,6 +1,6 @@
 # Convert a non-PDF file to a PDF file as byte array
 
-Converts a non-PDF file on a source format to PDF and returns it as a byte array.
+Converts a non-PDF file (Word, image, PowerPoint, etc) to PDF and returns it as a byte array.
 
 
 ![img](../../../../images/flow/convertOthertoPDF.png)
@@ -15,7 +15,7 @@ This flow takes a  documentation file (in DOCX format) from [OneDrive](../onedri
 | Name                   | Type     | Description                                                                                                                                                     |
 |------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Connection         | Required | The connection to the [Adobe PDF Services](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html).                                          |
-| Source format      | Required | The format from which the PDF will be converted. Available formats are DOC, DOCX, PPTX, RTF and XLSX.                                                                              |
+| Source format      | Required | The format from which the PDF will be converted. |
 | File contents      | Required | The input file data as a byte array.      |
 | Result variable name | Optional | The name of the variable in which the resulting file (converted document) will be stored. This variable can be used in subsequent steps of the flow.            |
 | Description        | Optional | A user-defined description for the action, helpful for documentation or identifying the step's purpose within a larger flow.     |
