@@ -38,6 +38,8 @@
   href: "if-else.md"
 - name: "Increment value"
   href: "increment-value.md"
+- name: "Log"
+  href: "log.md"
 - name: "Restart Flow"
   href: "restart-flow.md"
 - name: "Rethrow exception"
