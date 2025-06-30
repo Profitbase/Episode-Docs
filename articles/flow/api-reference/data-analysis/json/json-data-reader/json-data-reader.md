@@ -1,6 +1,6 @@
 # JsonDataReader
 
-Namespace: Profitbase.Flow.Data.Analysis
+###### Namespace: Profitbase.Flow.Data.Analysis
 
 Reads and flattens a JSON string as a sequence of rows. The JsonDataReader makes it easy to flatten and read JSON as a sequence of rows, or convert JSON to tables.  
 
