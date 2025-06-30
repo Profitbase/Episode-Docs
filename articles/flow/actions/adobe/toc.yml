@@ -14,3 +14,11 @@
   href: "extract-content-from-pdf-as-stream.md"
 - name: Extract content from PDF as JSON
   href: extract-content-from-pdf-as-json.md
+- name: "Extract content from PDF as document tree"
+  href: "extract-content-from-pdf-as-object-tree.md"
+- name: APIs
+  items:
+    - name: PdfTree
+      href: "apis/pdf-tree.md"
+    - name: PdfDocumentElement
+      href: "apis/pdf-document-element.md"
