@@ -6,7 +6,8 @@ Saves vectors in PostgreSQL database based on input text.
 ![img](../../../../images/flow/vector-save.png)
 
 **Example** ![img](../../../../images/strz.jpg)  
-This flow takes a large block of text, [splits](../ai/text-splitter.md) it into smaller chunks, then converting it into an embedding vector using a [text embedder](../azure-ai/text-embedder.md), and saves everything into a PostgreSQL database for later semantic search.
+This flow [reads](../onedrive/read-file-from-onedrive-as-byte-array.md) files from OneDrive, [converts](../built-in/convert.md) their content to text, [splits](../ai/text-splitter.md) it into chunks, generates [embedding](../azure-ai/text-embedder.md) vectors, and stores them in a PostgreSQL database for semantic search.
+
 
 <br/>
 

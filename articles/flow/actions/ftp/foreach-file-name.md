@@ -1,6 +1,6 @@
 # For each file info
 
-Iterates over a list of information per file in an FTP / SFTP directory.
+Iterates over a list of information per file in an FTP / SFTP directory and sub directories (optional).
 
 ![img](../../../../images/flow/ftp-foreach-file-info.png)
 
@@ -19,13 +19,15 @@ A **FileInfo** object which contains the following properties:
 - **LastModified** – The date and time the file was last modified.
 - **Size** – The size of the file in bytes.
 
+
+
 ## Properties
 
-| Name             | Type      |Description                                             |
-|------------------|-----------|--------------------------------------------------------|
-| Title  | Optional |   The title of the action.       |
-| Connection | Required  | Select a connection to the FTP or SFTP server where files are located. |
-| File name | Optional | Select or enter the name of the file. |
-| Directory path | Optional | Select or enter the directory to download from. |
-| Include files in sub directories | Optional |  |
-| Description   | Optional | Additional notes or comments about the action or configuration. |
+| Name                          | Type      | Description                                                                 |
+|-------------------------------|-----------|-----------------------------------------------------------------------------|
+| Title                         | Optional  | The title of the action.                                                   |
+| Connection                    | Required  | Select a connection to the FTP or SFTP server where files are located.     |
+| File name                     | Optional  | Select or enter the name of the file. |
+| Directory path                | Optional  | Select or enter the directory to look in. |
+| Include files in sub directories | Optional  | Enable this option to include files from all nested subdirectories.         |
+| Description                   | Optional  | Additional notes or comments about the action or configuration.            |
