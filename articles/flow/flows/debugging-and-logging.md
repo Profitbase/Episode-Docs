@@ -1,7 +1,8 @@
 
-#### Debugging and logging
+# Debugging and logging
 
-By default, Profitbase Flow only logs the start and end of executions. If you want to log anything else, you need to do this manually using a [Function](../actions/built-in/function.md) action and one of the `Context.Diagnostics.Log` or the shorthand `Context.Log` APIs.
+By default, Profitbase Flow only logs the start and end of executions. If you want to log anything else, you can use the [Log](../actions/built-in/log.md) action. You can also using a [Function](../actions/built-in/function.md) action and call the `Context.Log` APIs if you need fine-grained control.  
+
 
 <br/>
 
@@ -30,3 +31,17 @@ To view logs from previous runs, open the [Execution logs](execution-logs.md) wi
 <br/>
 
 ![img](../../../images/open-flow-execution-logs.png)
+
+<br/>
+
+## Logging in extension libraries
+When developing extension libraries to Flow (such as the Financials library), being able to write messages to the Flow log from within the library is often useful. To do this, call the `Context.Log.AsILogger()` API to get an [ILogger](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.ilogger) instance. You typically do this in a [Function](../actions/built-in/function.md) action, but you can also do it when declaring a variable. The messages you write through the ILogger will be displayed in the Flow log. 
+
+
+#### Example
+The example below shows how to get an ILogger instance in a [Function](../actions/built-in/function.md), and pass it to a custom library, where it can be used for writing log messages to the Flow log. 
+
+```csharp
+var myLibrary = new MyCalculationLibrary(this.Context.Log.AsILogger());
+myLibrary.Foo();
+```
