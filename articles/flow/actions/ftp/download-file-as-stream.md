@@ -11,7 +11,7 @@ This flow **downloads** an invoice as a DOCX file from an FTP server. For archiv
 
 ## Returns
 
-[Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream)
+Returns chosen file as a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream).
 
 ## Properties
 

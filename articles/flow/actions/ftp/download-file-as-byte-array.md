@@ -11,7 +11,7 @@ This flow **downloads** an invoice as a PDF file from an FTP server, [converts](
 
 ## Returns
 
-Returns chosen file as a [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays)
+Returns chosen file as a [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays).
 
 <br/>
 

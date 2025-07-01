@@ -6,7 +6,7 @@ Defines a Text splitter object that can be used in various AI-related nodes with
 ![img](../../../../images/flow/text-splitter-ai.png)
 
 **Example** ![img](../../../../images/strz.jpg)  
-This flow takes a large block of text, splits it into smaller chunks, then converting it into an embedding vector using a [text embedder](../azure-ai/text-embedder.md), and saves everything into a [PostgreSQL](../postgresql/vector-save.md) database for later semantic search.
+This flow [reads](../onedrive/read-file-from-onedrive-as-byte-array.md) files from OneDrive, [converts](../built-in/convert.md) their content to text, splits it into chunks, generates [embedding](../azure-ai/text-embedder.md) vectors, and [stores](../postgresql/vector-save.md) them in a PostgreSQL database for semantic search.
 
 <br/>
 
