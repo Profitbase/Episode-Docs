@@ -11,57 +11,31 @@ TreeView presents a hierarchical view of information, where each item can have z
 
 <br/>
 
-**Properties**
+### Properties
 
-`ItemsSource`
-
-This is the collection of items displayed in the TreeView. The ItemSource can be a SetModel, List, or DimensionModel.
-
-If the ItemsSource is a SetModel or List, you must set the ItemId and ParentItemId to specify the parent-child relationship between the items in the TreeView.
-
-If the ItemsSource is a DimensionModel, you should NOT specify the ItemId, ParentItemId, or DisplayMember.
-
-<br/>
-
-`ItemId`
-
-Specify the name of the field in the ItemSource that represents an item. If the ItemSource is a SetModel or List, you must set the ItemId.
-
-If the ItemSource is a DimensionModel, this property is ignored.
+| Name                  | Description                                    |
+|-----------------------|------------------------------------------------|
+| ItemsSource           | This is the collection of items displayed in the TreeView. The ItemSource can be a SetModel, List, or DimensionModel.<br/> If the ItemsSource is a SetModel or List, you must set the ItemId and ParentItemId to specify the parent-child relationship between the items in the TreeView. <br/> If the ItemsSource is a DimensionModel, you should NOT specify the ItemId, ParentItemId, or DisplayMember. |
+| ItemId                | Specify the name of the field in the ItemSource that represents an item. If the ItemSource is a SetModel or List, you must set the ItemId.<br/> If the ItemSource is a DimensionModel, this property is ignored. |
+| ParentItemId          | Specifies the name of the field in the ItemSource that represents the parent of an item. If the ItemSource is a SetModel or List, you must set the ParentItemId.<br/>If the ItemsSource is a DimensionModel, this property is ignored.|
+| DisplayMember         | Specifies the name of the field in the ItemSource that should be displayed as the text of an item in the TreeView. If this field is not specified, the ItemId field is displayed in the tree.<br/>If the ItemsSource is a DimensionModel, this property is ignored. |
+| CanSelectItem         | The callback function which returns `true` or `false`, indicating whether an item in the TreeView can be selected by the user. The argument passed to the function is the data object from the ItemsSource displayed in the TreeView. |
+| ItemSelected          | The function to call when an item in the TreeView is selected. The argument passed to the function is the data object from the ItemsSource displayed in the TreeView which is being clicked / selected by the user.| 
+| ItemTemplate          | Use ItemTemplate to specify the custom rendering of TreeView items, for example, if you want to render images or checkboxes. |
 
 <br/>
 
-`ParentItemId`
+## Functions
+| Name                                  | Description                            |
+|---------------------------------------|----------------------------------------|
+| expandNode(nodeId: string)            | Expands the node with the specified member id. The Id is the value of the `ItemId` property, for example the dimension member id if the TreeView is bound to a DimensionModel. |
+| setExpandedNodeIds(nodeIds: string[]) | Expands the nodes specified in the list. |
+| focusNode(nodeId: string)             | Sets focus to the node with the specified id. |
+| collapseNode(nodeId: string)          | Collapses the node with the specified id. | 
+| expandAll()                           | Expands the entire tree. |
+| collapseAll()                         | Collapses the tree.      |
+| getExpandedNodeIds()                  | Returns the ids of all expanded nodes. Use this API when you want to preserve the expansion state between sessions. |
 
-Specifies the name of the field in the ItemSource that represents the parent of an item. If the ItemSource is a SetModel or List, you must set the ParentItemId.
-
-If the ItemsSource is a DimensionModel, this property is ignored.
-
-<br/>
-
-`DisplayMember`
-
-Specifies the name of the field in the ItemSource that should be displayed as the text of an item in the TreeView. If this field is not specified, the ItemId field is displayed in the tree.
-
-If the ItemsSource is a DimensionModel, this property is ignored.
-
-<br/>
-
-`CanSelectItem`
-
-The callback function which returns true or false, indicating whether an item in the TreeView can be selected by the user. The argument passed to the function is the data object from the ItemsSource displayed in the TreeView.
-
-<br/>
-
-`ItemSelected`
-
-The function to call when an item in the TreeView is selected. The argument passed to the function is the data object from the ItemsSource displayed in the TreeView which is being clicked / selected by the user.
-
-<br/>
-
-`ItemTemplate`
-
-Use ItemTemplate to specify the custom rendering of TreeView items, for example, if you want to render images or checkboxes.
 
 <br/>
 
@@ -106,11 +80,23 @@ In this case, they happen to have similar names, but that is coincidental. The f
           // Only allow selecting items which are children of items with Id 'Root'
           return item.ParentItemID === 'Root';
       </Function>
+      <Function Name="ExpandAll">
+          this.controls.myTreeView.expandAll();
+      </Function>
+      <Function Name="ExpandJedis">
+        // Expands the node with id 'Jedis'. Note that this 'Jedis' refers to the id of the node, not the display text (They just happen to be the same in this example)
+          this.controls.myTreeView.expandNode('Jedis'); 
+      </Function>
   </Functions>
   <EventHandlers/>
   <UI Grid="grid">
-      <Grid Rows="1fr" Columns="1fr">
-          <TreeView ItemsSource="{Binding Path:TreeViewData}" Row="1" Column="1"
+      <Grid Rows="auto 1fr" Columns="1fr">
+          <Grid Columns="auto auto" Row="1" Gap="8">
+              <Button Click="ExpandAll" Text="Expand all" Column="1"/>
+              <Button Click="ExpandJedis" Text="Expand Jedis" Column="2"/>
+          </Grid>
+          
+          <TreeView Name="myTreeView" ItemsSource="{Binding Path:TreeViewData}" Row="2" Column="1"
               ItemId="ItemID"
               ParentItemId="ParentItemID"
               DisplayMember="ItemName"
