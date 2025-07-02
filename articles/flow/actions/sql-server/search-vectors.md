@@ -25,14 +25,18 @@ This flow processes a user's chat question by first receiving it through a [Chat
 | Skip                         | Optional  | The number of top results to skip (default: *0*). |
 | [Distance function](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/distance-functions) | Optional  |  The method for calculating vector similarity, e.g., *Cosine Distance* (default). |
 | Score limit (0–2)            | Optional  | A threshold value that filters results based on similarity score (lower = more similar). |
+| Prompt template              | Optional  | Controls the output format for search results. The system will replace placeholders like @[fieldName] with the relevant data. |
 | Search result variable name  | Optional  | The name of the variable to store results, e.g. searchResult. |
 | Command timeout (seconds)    | Optional  | The timeout duration for the SQL command (in seconds). |
 | Description                  | Optional  | Additional notes or metadata for the action. |
 
-## Returns 
 
-The Search vectors action returns an object containing a `ToPrompt()` function that can be used in AI completion context inputs.  
-The result object also contains a set of records with the fields defined in **Record definition**, including *key*, *content* and other *metadata fields*. 
+## Record definition
 
+You are required to specify the *key*, *content* and *vector* columns as **Field definitions**. ![img](../../../../images/strz2.jpg) 
 
 ![img](../../../../images/flow/sql-vector-search1.png)
+
+## Returns 
+
+The Search vectors action returns an object that the Chat completion Context property uses.
