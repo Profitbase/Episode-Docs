@@ -11,7 +11,7 @@ This flow processes a user's chat question by first receiving it through a [Chat
 
 </br>
 
-# Properties
+## Properties
 
 | Name                         | Type      | Description                                                                                      | 
 |------------------------------|-----------|--------------------------------------------------------------------------------------------------|
