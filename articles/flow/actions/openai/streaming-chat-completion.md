@@ -24,6 +24,7 @@ The example above shows a Flow that provides chat completions to a chat client. 
 | User prompt           | Required  | The input message from the user, which the model processes to generate a response. |
 | History               | Optional  | A record of past interactions that provides context to the conversation, helping the model maintain continuity. |
 | Context               | Optional  | Additional context information to influence the response (if supported). |
+| Prompt template   | Optional  | Defines the structure of the prompt sent to the model. The system replaces the placeholders @@context and @@userPrompt with the relevant information. |
 | Temperature           | Optional  | Controls randomness/creativity of responses. Lower = more focused; higher = more creative. Default: 0.7. |
 | Max completion tokens | Optional  | Sets a limit on the number of tokens in the model’s response. |
 | Result variable name  | Optional  | Stores the generated AI response. Default: `response`. |

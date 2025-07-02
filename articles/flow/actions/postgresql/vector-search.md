@@ -24,6 +24,7 @@ This flow processes a user's chat question by first receiving it through a [Chat
 | Skip                     | Optional  | The number of top results to skip (default: *0*). |
 | [Distance function](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/distance-functions)  | Optional  | The method for calculating vector similarity, e.g., *Cosine Distance* (default). |
 | Score limit    | Optional  | A threshold value that limits results to those with a distance score at or below this score (for e.g. CosineDistance). |
+| Prompt template            | Optional  | Controls the output format for search results. The system will replace placeholders like @[fieldName] with the relevant data. |
 | Search result variable name | Optional | The name of the variable to store results. |
 | Description              | Optional  | Any additional notes or information relevant to the search configuration. |
 
@@ -31,10 +32,12 @@ This flow processes a user's chat question by first receiving it through a [Chat
 
 ![img](../../../../images/flow/postgres-vector-search2.png)
 
-## Returns 
+## Record definition
 
-The Vector Search action returns an object containing a **ToPrompt()** function that is used by the Chat completion Context property (in the example above). The resultObject also contains a set of records containing the *key*, *content* and *vector* columns that the user has specified as **Record Definitions**. ![img](../../../../images/strz2.jpg) 
-
-
+You are required to specify the *key*, *content* and *vector* columns as **Field definitions**. ![img](../../../../images/strz2.jpg) 
 
 ![img](../../../../images/flow/postgres-vector-search3.png)
+
+## Returns 
+
+The Search vectors action returns an object that the Chat completion Context property uses.
