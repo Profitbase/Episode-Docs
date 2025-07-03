@@ -1,5 +1,6 @@
 # Search vectors
-Searches in a PostgreSQL vector database.
+
+Performs a vector search agains a PostgreSQL database and returns an [IVectorSearchResult](../../api-reference/built-in-types/ai/i-vector-search-result.md) object that can be passed to a Chat completion action.
 
 
 ![img](../../../../images/flow/postgres-vector-search.png)
@@ -32,12 +33,18 @@ This flow processes a user's chat question by first receiving it through a [Chat
 
 ![img](../../../../images/flow/postgres-vector-search2.png)
 
-## Record definition
-
-You are required to specify the *key*, *content* and *vector* columns as **Field definitions**. ![img](../../../../images/strz2.jpg) 
-
-![img](../../../../images/flow/postgres-vector-search3.png)
+<br/>
 
 ## Returns 
 
-The Search vectors action returns an object that the Chat completion Context property uses.
+The Search vectors action returns an [IVectorSearchResult](../../api-reference/built-in-types/ai/i-vector-search-result.md) object that can be passed to the Chat completion Context property.
+
+<br/>
+
+## Record definition
+
+The record defintion specifies the data returned from the search.  
+You are required to specify the **key**, **content** and **vector** fields in **Field definitions**. ![img](../../../../images/strz2.jpg) 
+
+![img](../../../../images/flow/postgres-vector-search3.png)
+

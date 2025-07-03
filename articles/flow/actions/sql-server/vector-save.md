@@ -1,6 +1,6 @@
 # Save vectors 
 
-Saves vectors in SQL server database based on input text.
+Generates and saves vector records to a SQL Server / Azure SQL database from text input.
 
 
 ![img](../../../../images/flow/vector-save-SQL.png)

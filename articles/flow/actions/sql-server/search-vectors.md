@@ -1,6 +1,6 @@
 # Search vectors
-Executes similarity searches on vector data in a SQL Server database.
 
+Performs a vector search agains a SQL Server / Azure SQL database and returns an [IVectorSearchResult](../../api-reference/built-in-types/ai/i-vector-search-result.md) object that can be passed to a Chat completion action.
 
 
 ![img](../../../../images/flow/sql-vector-search.png)
@@ -39,4 +39,4 @@ You are required to specify the *key*, *content* and *vector* columns as **Field
 
 ## Returns 
 
-The Search vectors action returns an object that the Chat completion Context property uses.
+The Search vectors action returns an [IVectorSearchResult](../../api-reference/built-in-types/ai/i-vector-search-result.md) object that can be passed to the Chat completion Context property.

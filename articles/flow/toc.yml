@@ -138,7 +138,7 @@
       href: actions/sendgrid/toc.yml
     - name: Snowflake
       href: actions/snowflake/toc.yml
-    - name: SQL Server
+    - name: SQL Server / Azure SQL
       href: actions/sql-server/toc.yml
     - name: Tripletex
       href: actions/tripletex/toc.yml

@@ -1,6 +1,6 @@
 # Save vectors 
 
-Saves vectors in PostgreSQL database based on input text.
+Generates and saves vector records to a PostgreSQL database from text input.
 
 
 ![img](../../../../images/flow/vector-save.png)
