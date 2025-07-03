@@ -1,7 +1,7 @@
 # Extract content from PDF as document tree
 
-Extracts content from a PDF file and returns it as a tree of elements.
-Use this action if you need to query the contents of a PDF document in a structured way to extract information, such as invoice details or product information. 
+Extracts content from a PDF file and returns it as a tree of elements.  
+Use this action if you need to query the contents of a PDF document in a structured way to extract information, such as invoice details or product information.   
 The action returns a [PdfTree](./apis/pdf-tree.md) that you can use in a [Function](../built-in/function.md) action to programatically read the contents of the PDF document.
 
 ![img](/images/flow/adobe-extract-pdf-content-as-document-tree.png)  
