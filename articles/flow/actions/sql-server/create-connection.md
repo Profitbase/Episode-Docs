@@ -6,8 +6,11 @@ A 'Dynamic Connection' will override the 'Connection' on flow execution.
 
 If you store the credentials for the SQL Server outside Flow (for example in your own Azure SQL or PostgreSQL database), use this action to _dynamically_ create a connection. The connection returned from the action must then be used as the input to the `Dynamic connection` property of other SQL Server actions.
 
+<br/>
 
 ## Connection details
+
+<br/>
 
 ### Connection type
 
@@ -17,7 +20,9 @@ A connection type (or authentication type) must be selected before entering othe
 - Ms Entra Service Principal - Authenticate with a Microsoft Entra service principal, using its client ID and secret
 - User Connection String - user provids his own connection string
 
-### Properties for SQL Server and Microsoft Entra Password authentication
+<br/>
+
+#### SQL Server and Microsoft Entra Password authentication
 
 | Name                |  Type     | Description                                                          |
 |---------------------|-----------|----------------------------------------------------------------------|
@@ -27,7 +32,7 @@ A connection type (or authentication type) must be selected before entering othe
 | Password            | Required  | The password associated with the User to authenticate the connection. |
 | Enable Multiple Active Result Sets | Required  | This setting allows a single database connection to run multiple queries at the same time, without waiting for one to finish before starting another.  [Read more](https://learn.microsoft.com/en-us/sql/connect/ado-net/sql/enable-multiple-active-result-sets?view=sql-server-ver16) |
 
-### Properties for Microsoft Entra Service Principal authentication
+#### Microsoft Entra Service Principal authentication
 
 | Name                |  Type    | Description                                                          |
 |---------------------|----------|----------------------------------------------------------------------|
@@ -37,7 +42,7 @@ A connection type (or authentication type) must be selected before entering othe
 | Client secret       | Required | The client secret (application secret) associated with the service principal in Azure AD. |
 | Enable Multiple Active Result Sets | Required  | This setting allows a single database connection to run multiple queries at the same time, without waiting for one to finish before starting another.  [Read more](https://learn.microsoft.com/en-us/sql/connect/ado-net/sql/enable-multiple-active-result-sets?view=sql-server-ver16) |
 
-### User Connection String
+#### User Connection String
 
 | Name                | Type     | Description                                                          |
 |---------------------|----------|----------------------------------------------------------------------|
