@@ -1,3 +1,5 @@
+- name: "Connection"
+  href: "connecting-to-ftp.md"
 - name: "Delete file"
   href: "delete-file.md"
 - name: "Download file as byte array"

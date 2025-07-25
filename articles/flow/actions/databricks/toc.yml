@@ -1,2 +1,4 @@
+- name: "Connection"
+  href: "connecting-to-databricks.md"
 - name: "Execute SQL statement returning data"
   href: "get-sql-execution-chunks.md"

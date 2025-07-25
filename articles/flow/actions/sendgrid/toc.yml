@@ -1,2 +1,4 @@
+- name: "Connection"
+  href: "sendgrid-connection.md"
 - name: "Send email"
   href: "send-email.md"

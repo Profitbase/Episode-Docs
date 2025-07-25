@@ -14,6 +14,24 @@ When adding an [Adobe PDF Services](https://opensource.adobe.com/pdftools-sdk-do
 
 <br/>
 
+> [!NOTE]
+> To use any of the Adobe service actions, you must first create and configure Adobe API credentials. This is a required step for all nodes that use Adobe services.
+> 
+> These credentials allow Profitbase Flow to authenticate with your Adobe account and access the necessary resources.
+
+### Create Adobe API Credentials
+
+Follow Adobe's documentation to:
+
+1. Register your application in the Adobe Developer Console.
+
+2. Generate the necessary credentials (e.g., Client ID, Client Secret, Technical Account ID).
+
+3. Grant the required permissions for the APIs you intend to use.
+
+Once created, these credentials must be added to the Adobe connection configuration in Flow. For detailed instructions, see the [Adobe Developer Console credentials guide](https://developer.adobe.com/developer-console/docs/guides/credentials).
+
+
 ### Creating a new connection
 
 To create a new connection:

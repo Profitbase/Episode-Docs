@@ -1,3 +1,5 @@
+- name: Connection
+  href: outlook-connection.md
 - name: Agent tool
   href: agent-tool.md
 - name: For each attachment
@@ -8,5 +10,3 @@
   href: send-email-from-shared-mailbox.md
 - name: Send email
   href: send-email.md
-- name: Microsoft 365 Outlook connection
-  href: outlook-connection.md
