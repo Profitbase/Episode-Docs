@@ -1,21 +1,52 @@
-# Microsoft 365 Outlook connection
+# Microsoft 365 Outlook Connection
 
-You need a Microsoft 365 Outlook connection to perform actions such as send mails, read mails, and triggering Flows when mails arrive.
+To perform actions such as sending emails, reading inbox content, or triggering flows based on incoming messages in **Profitbase Flow**, you need to establish a connection to your Microsoft 365 Outlook account.
 
-You create Microsoft 365 Outlook connections by clicking the `Connection` property in the Property panel of a selected Outlook action.
+<br/>
 
-By creating a connection, you grant Profitbase Flow permissions to access Outlook `on behalf` of the user account you log in with.  
-When you create the connection, you choose whether Profitbase Flow will get permissions to access `only shared mailboxes` on behalf of the user, or `any mailbox` the user has access to (including their personal mailbox).
+## Creating a New Outlook Connection
 
-> [!CAUTION]
-> If you work in a Workspace shared with other people, we recommend granting access to only `shared mailboxes`, or log on using a company service account.
+You can create an Outlook connection by selecting the **Connection** property in the property panel of an Outlook action in Flow.
 
-## Allow access to all mailboxes (personal and shared mailboxes)
+When creating the connection, you will be prompted to sign in with your Microsoft 365 credentials and decide the **scope of mailbox access**.
 
-When you choose this option (leave the `Allow access to shared mailboxes only` unchecked), you grant Profitbase Flow unrestricted access to perform any operation on mailboxes (including shared) on behalf of the user account that you log on with.
+By signing in, you authorize **Profitbase Flow** to access Microsoft Outlook **on your behalf** using delegated permissions.
 
-## Allow access to shared mailboxes only
+<br/>
 
-When you choose this option, Profitbase Flow can only perform actions on shared mailboxes that the user has access to. Even though you log on using your personal account, Profitbase Flow will only have permissions to perform actions, such as send and read mails, from `shared mailboxes` that you have access to.
+## Connection Scope Options
 
-![img](/images/flow/microsoft-365-outlook-connection-shared-only.png)
+You must choose whether Flow should have access to:
+- **All mailboxes** you have access to (including your personal mailbox), or
+- **Only shared mailboxes** that your account has access to
+
+### Allow access to all mailboxes (personal and shared)
+
+If you **leave the "Allow access to shared mailboxes only" option unchecked**, Flow will be able to:
+- Access **your personal inbox**
+- Access **all shared mailboxes** your user account has access to
+- Send, receive, and manage emails across all available mailboxes
+
+### Allow access to shared mailboxes only
+
+If you **check the "Allow access to shared mailboxes only" option**, Flow will:
+- Authenticate with your user account
+- Limit actions (read/send emails, etc.) to **shared mailboxes** only
+- **Exclude personal inbox access**
+
+> **Best practice for shared environments**  
+> If you're working in a **Workspace shared with other users**, it is recommended to:
+> - Grant access to **shared mailboxes only**, or
+> - Use a **dedicated service account** for Outlook actions
+
+<br/>
+
+![Microsoft 365 Outlook Connection - Shared Mailboxes Only](/images/flow/microsoft-365-outlook-connection-shared-only.png)
+
+<br/>
+
+## Related Documentation
+
+- [Microsoft 365 Outlook API permissions](https://learn.microsoft.com/en-us/graph/permissions-reference)
+- [Trigger flow on incoming email](https://docs.profitbase.com/articles/flow/actions/microsoft-365-outlook/trigger-on-new-mail.html)
+- [Send email using Outlook](https://docs.profitbase.com/articles/flow/actions/microsoft-365-outlook/send-email.html)

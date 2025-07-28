@@ -1,40 +1,60 @@
-# Connecting to PostgreSQL
+# PostgreSQL Connection
 
-When adding a PostgreSQL action, select an **existing connection** or create a new one.
+To interact with a PostgreSQL database using actions in **Profitbase Flow**, you need to either select an existing connection or create a new one.
 
-## Connection details
-A PostgreSQL connection consists of the following properties:
+This guide explains how to configure a PostgreSQL connection and what each field means.
 
+<br/>
 
+## 🔧 Connection Details
 
-| Name                          | Data Type   | Description                                           |
-|-------------------------------|-------------|-------------------------------------------------------|
-| Name                          | Required    | Name of the connection object.                       |
-| Connection/Authentication Type| Required    | Type of connection or authentication method used.     |
-| Server Name                   | Required    | The name or IP address of the database server.       |
-| Database Name                 | Required    | The name of the specific database to connect to.     |
-| Username                      | Required    | The username for database authentication.            |
-| Password                      | Required    | The password for database authentication.            |
-| Connection Timeout            | Optional    | Timeout duration for the connection (in seconds). Default is 60. |
+A PostgreSQL connection requires the following fields:
 
+| Field                         | Description |
+|------------------------------|-------------|
+| Name                     | A custom name for the connection. This will be shown when selecting it in Flow actions. |
+| Connection / Authentication Type | Choose between `PostgreSQL Authentication` or a `Custom Connection String`. |
+| Server Name              | The hostname or IP address of your PostgreSQL server. |
+| Database Name            | The name of the specific database to connect to. |
+| Username                 | The database user used for authentication. |
+| Password                 | The password for the specified user. |
+| Connection Timeout (optional) | Number of seconds before the connection attempt times out. Default is 60 seconds. |
 
+<br/>
 
-### Steps to Configure
+## Configuration Steps
+
 1. Provide a **Name** for the connection.
-2. Choose **PostgreSQL Authentication** or a **Custom Connection String** as the connection type.
-3. Enter the **Server Name**, **Database Name**, **Username**, and **Password**.
-4. (Optional) Set the **Connection Timeout** if required.
-5. Click **Test Connection** to verify the details.
-6. If successful, click **OK** to save the connection.
+2. Select the **Authentication Type**:
+   - `PostgreSQL Authentication` – Fill in server, database, username, and password.
+   - `Custom Connection String` – Paste a full connection string with credentials and parameters.
+3. Fill in the **Server Name**, **Database Name**, **Username**, and **Password**.
+4. (Optional) Set a **Connection Timeout** if needed.
+5. Click **Test Connection** to verify the setup.
+6. If the test is successful, click **OK** to save the connection.
 
-### Notes
-- Ensure the PostgreSQL server is accessible and credentials are correct.
-- For enhanced security, store sensitive credentials securely.
-- Use the default timeout unless your environment requires a different configuration.
+<br/>
 
+## Notes and Best Practices
 
-![alt text](../../../../images/flow/postgresql-connection1.png)
+- Ensure the PostgreSQL server is reachable from your network.
+- Use strong credentials and rotate passwords regularly.
+-  Keep the default timeout unless your environment requires a longer or shorter duration.
+- If connecting through a firewall, ensure the relevant port (default is `5432`) is open.
 
-</br>
+<br/>
 
-![alt text](../../../../images/flow/postgresql-connection2.png)
+## Screenshots
+
+### Standard Authentication
+![PostgreSQL Connection - Standard](../../../../images/flow/postgresql-connection1.png)
+
+### Custom Connection String
+![PostgreSQL Connection - Custom String](../../../../images/flow/postgresql-connection2.png)
+
+<br/>
+
+## Related documentation
+
+- [PostgreSQL connection string reference](https://www.postgresql.org/docs/current/libpq-connect.html)
+- [Flow PostgreSQL actions](https://docs.profitbase.com/articles/flow/actions/postgresql/)

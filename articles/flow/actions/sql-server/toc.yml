@@ -1,4 +1,4 @@
-- name: "SQL Server connection"
+- name: "Connection"
   href: "connection.md"
 - name: "Create connection"
   href: "create-connection.md"

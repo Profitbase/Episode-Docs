@@ -1,24 +1,49 @@
 # Connecting to Tripletex
 
-When adding a Tripletex action, select an **existing connection** or create a new one.
+To perform actions with [Tripletex](https://tripletex.no/viktig-informasjon/api/) in Profitbase Flow, you need to configure a connection. You can either select an **existing connection** or create a new one at the action level.
 
-## Connection details
-
-A Tripletex connection consists of the following properties:
-
-
-
-| Name                            | Type        | Description                                           |
-|---------------------------------|-------------|-------------------------------------------------------|
-| Connection Name                 | Required    | Name of the connection object.                       |
-| Consumer token                  | Required    | A token used to authenticate the consumer.           |
-| Employee token                  | Required    | A token used to authenticate the employee.           |
-| Default company Id              | Optional    | The ID of the default company for the connection.    |
-| Use Tripletex test environment  | Optional    | Enables testing in a sandbox environment when checked. |
-
-![img](../../../../images/flow/tripletex-connection.png)
-
+This connection allows Flow to authenticate and interact with the Tripletex API on your behalf using consumer and employee tokens.
 
 <br/>
 
-Note: A [Dynamic Connection](./create-connection.md) can replace the default connection described here.
+## Connection Details
+
+A Tripletex connection requires the following fields:
+
+| Property                        | Type     | Description |
+|---------------------------------|----------|-------------|
+| Connection Name                 | Required | A custom name for the connection object. |
+| Consumer token                  | Required | A token that authenticates the registered API consumer. |
+| Employee token                  | Required | A token that identifies the employee on whose behalf the API calls are made. |
+| Default company Id              | Optional | The ID of the company to use by default in requests. |
+| Use Tripletex test environment  | Optional | Enable this to use the Tripletex sandbox environment for testing. |
+
+<br/>
+
+## How to Create a Connection
+
+1. Add a Tripletex action to your Flow.
+2. In the **Connection** dropdown, click **Create new connection**.
+3. Fill in the required fields (tokens can be obtained from the Tripletex developer portal).
+4. (Optional) Check the test environment box for sandbox testing.
+5. Click **OK** to save the connection.
+
+<br/>
+
+## Screenshot
+
+![Tripletex Connection](../../../../images/flow/tripletex-connection.png)
+
+<br/>
+
+## Dynamic Connection
+
+A [Dynamic Connection](./create-connection.md) can override this default configuration at runtime.  
+Use this when credentials or company contexts are retrieved dynamically from other sources during flow execution.
+
+<br/>
+
+## Related Resources
+
+- [Tripletex API documentation](https://tripletex.no/viktig-informasjon/api/)
+- [Create Dynamic Tripletex Connection](./create-connection.md)

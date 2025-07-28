@@ -3,9 +3,21 @@
 When adding an [Amazon S3](https://docs.aws.amazon.com/appstudio/latest/userguide/connectors-s3.html) action, select an [existing connection](../../workspaces/workspace-objects.md) or create a new one.
 
 
+### Prerequisites
 
+Before configuring the connection, you will need the following:
 
-## Connection details
+- **Access Key ID**
+
+- **Secret Access Key**
+
+- **Region**
+
+- **Bucket Name**
+
+You can generate these credentials in the [AWS IAM Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html). Ensure the user has appropriate permissions to access the S3 bucket.
+
+### Connection details
 
 An Amazon S3 connection consists of the following fields:
 

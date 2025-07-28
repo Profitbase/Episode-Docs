@@ -1,46 +1,70 @@
-# SQL Server connection
+# SQL Server Connection
 
-When adding a SQL Server action requiering an connection, select an **existing connection** or create a new one.
-
-<br/>
-
-## Connection type
-
-A connection type (or authentication type) must be selected before entering other properties.
-- SQL Server Authentication - default, sql server user name and password
-- MS Entra Password - Authenticate with a Microsoft Entra identity's username and password
-- Ms Entra Service Principal - Authenticate with a Microsoft Entra service principal, using its client ID and secret
-- User Connection String - user provids his own connection string
+To use SQL Server actions in **Profitbase Flow**, you need to configure a connection by either selecting an **existing connection** or creating a new one.
 
 <br/>
 
-#### SQL Server and Microsoft Entra Password authentication
+## Connection Type
 
-| Name                |  Type     | Description                                                          |
-|---------------------|-----------|----------------------------------------------------------------------|
-| Server name         | Required  | The name of the SQL Server. This can be the server name, IP address, or a named instance. |
-| Database name       | Required  | Defines the specific database on the SQL Server to which the connection is made.|
-| Username            | Required  | The username (or Entra Id/e-mail) used to authenticate the connection. |
-| Password            | Required  | The password associated with the User to authenticate the connection. |
-| Enable Multiple Active Result Sets | Required  | This setting allows a single database connection to run multiple queries at the same time, without waiting for one to finish before starting another.  [Read more](https://learn.microsoft.com/en-us/sql/connect/ado-net/sql/enable-multiple-active-result-sets?view=sql-server-ver16) |
+Before entering server details, select the appropriate **connection type** (authentication method). Available options:
 
-#### Microsoft Entra Service Principal authentication
-
-| Name                |  Type    | Description                                                          |
-|---------------------|----------|----------------------------------------------------------------------|
-| Server name         | Required | The name of the SQL Server. This can be the server name, IP address, or a named instance. |
-| Database name       | Required | Defines the specific database on the SQL Server to which the connection is made.|
-| Client Id           | Required | The Client ID of the Azure AD service principal (also known as an app registration). |
-| Client secret       | Required | The client secret (application secret) associated with the service principal in Azure AD. |
-| Enable Multiple Active Result Sets | Required  | This setting allows a single database connection to run multiple queries at the same time, without waiting for one to finish before starting another.  [Read more](https://learn.microsoft.com/en-us/sql/connect/ado-net/sql/enable-multiple-active-result-sets?view=sql-server-ver16) |
-
-#### User Connection String
-
-| Name                | Type     | Description                                                          |
-|---------------------|----------|----------------------------------------------------------------------|
-| Connecion String    | Required | A full connection string that can be used to establish an Sql Server connection.  |
-
+- **SQL Server Authentication** – Use a SQL Server username and password.
+- **Microsoft Entra Password** – Authenticate using a Microsoft Entra ID (formerly Azure AD) username and password.
+- **Microsoft Entra Service Principal** – Authenticate using an Entra service principal with a client ID and secret.
+- **User Connection String** – Supply a full custom connection string manually.
 
 <br/>
 
-Note: A [Dynamic Connection](./create-connection.md) can replace the default connection described here.
+## SQL Server and Microsoft Entra Password Authentication
+
+| Property                       | Type     | Description |
+|--------------------------------|----------|-------------|
+| Server name                    | Required | The SQL Server hostname, IP address, or named instance. |
+| Database name                  | Required | The specific database to connect to. |
+| Username                       | Required | The user login or Entra ID (email address). |
+| Password                       | Required | The password for the user. |
+| Enable Multiple Active Result Sets | Required | Allows multiple concurrent queries on a single connection. [Learn more](https://learn.microsoft.com/en-us/sql/connect/ado-net/sql/enable-multiple-active-result-sets?view=sql-server-ver16). |
+
+<br/>
+
+## Microsoft Entra Service Principal Authentication
+
+| Property                       | Type     | Description |
+|--------------------------------|----------|-------------|
+| Server name                    | Required | The SQL Server hostname, IP address, or named instance. |
+| Database name                  | Required | The specific database to connect to. |
+| Client Id                      | Required | The App Registration (client) ID from Azure AD. |
+| Client secret                  | Required | The secret associated with the App Registration. |
+| Enable Multiple Active Result Sets | Required | Allows multiple concurrent queries on a single connection. [Learn more](https://learn.microsoft.com/en-us/sql/connect/ado-net/sql/enable-multiple-active-result-sets?view=sql-server-ver16). |
+
+<br/>
+
+## User Connection String
+
+| Property         | Type     | Description |
+|------------------|----------|-------------|
+| Connection String | Required | A full custom connection string that defines all necessary parameters for connecting to SQL Server. |
+
+This method bypasses form-based input and should be used by advanced users who prefer complete control over connection parameters.
+
+<br/>
+
+## Dynamic Connections
+
+A [Dynamic Connection](./create-connection.md) can override a static connection during Flow execution.  
+This is useful for scenarios where credentials or targets are determined at runtime (e.g., multi-tenant environments).
+
+<br/>
+
+## Best Practices
+
+- Validate the connection using the **Test Connection** feature before saving.
+- Store sensitive values like passwords or secrets securely using protected fields.
+- Use **Entra Service Principal** for automated, secure, and role-based integration with SQL Server in Azure.
+
+<br/>
+
+## Related Documentation
+
+- [Enable Multiple Active Result Sets](https://learn.microsoft.com/en-us/sql/connect/ado-net/sql/enable-multiple-active-result-sets?view=sql-server-ver16)
+- [Create a Dynamic SQL Server Connection](./create-connection.md)

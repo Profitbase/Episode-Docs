@@ -1,2 +1,4 @@
+- name: "Connection"
+  href: "connecting-to-azure-service-bus.md"
 - name: "Send message"
   href: "send-message.md"
