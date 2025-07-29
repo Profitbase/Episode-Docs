@@ -33,3 +33,6 @@ To edit or delete a Workspace Object, open the Workspace Objects editor from the
 
 ![img](../../../images/open-workspace-objects-editor.png)
 
+<br/>
+
+![img](../../../images/flow/open-workspace-objects-editor2.png)
