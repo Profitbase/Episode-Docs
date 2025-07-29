@@ -8,17 +8,17 @@ The connection authorizes Flow to interact with the PowerOffice Go API on your b
 
 <br/>
 
-## Connection Details
+## Connection properties
 
 A [PowerOffice Go connection](https://developer.poweroffice.net/documentation/authentication) consists of the following fields:
 
-| Field                                  | Description |
+| Name                                  | Description |
 |----------------------------------------|-------------|
-| **Connection Name**                    | Required. A user-defined name for this connection. |
-| **Client Id**                          | Required. A unique identifier for your application registered with PowerOffice Go. |
-| **Client Secret**                      | Required. A confidential string used for authenticating your client app. |
-| **Subscription Key**                   | Optional. Required if accessing APIs that need an additional API key. |
-| **Use PowerOffice Go test environment** | Optional. If checked, the connection will use demo endpoints for testing. |
+| Connection Name                    | A user-defined name for this connection. |
+| Client Id                          | A unique identifier for your application registered with PowerOffice Go. |
+| Client Secret                      | A confidential string used for authenticating your client app. |
+| Subscription Key    (optional)   |  Required if accessing APIs that need an additional API key. |
+| Use PowerOffice Go test environment  (optional) |  If checked, the connection will use demo endpoints for testing. |
 
 <br/>
 
@@ -32,7 +32,7 @@ A [PowerOffice Go connection](https://developer.poweroffice.net/documentation/au
 
 <br/>
 
-## Related Documentation
+## Related documentation
 
 - [PowerOffice Go API authentication](https://developer.poweroffice.net/documentation/authentication)
 - [Create dynamic PowerOffice Go connection](./create-connection.md)

@@ -17,9 +17,9 @@ This enables dynamically connecting to different Dynamics 365 Business Central s
 ## Properties
 
 
-| Name            | Type      | Description                                                                             |
-|-----------------|-----------|-----------------------------------------------------------------------------------------|
-| Tenant ID       | Required  | The `Microsoft Entra` Tenant Id associated with the Dynamics 365 Business Central subscription. You can find it in the Azure portal where you created the Service Principal.     |
-| Client ID       | Required  | The id of the Entra ID App which has been granted access to the Business Central API.   |
-| Client secret   | Required  | The client secret of the Entra ID App which has been granted access to Business Central API. |
-| Environment     | Required  | The Business Central environment to target (`Production`, `Sandbox`, `Test`, etc)                  |
+| Name            | Description                                                                             |
+|-----------------|-----------------------------------------------------------------------------------------|
+| Tenant ID       | The `Microsoft Entra` Tenant Id associated with the Dynamics 365 Business Central subscription. You can find it in the Azure portal where you created the Service Principal.     |
+| Client ID       | The id of the Entra ID App which has been granted access to the Business Central API.   |
+| Client secret   | The client secret of the Entra ID App which has been granted access to Business Central API. |
+| Environment     | The Business Central environment to target (`Production`, `Sandbox`, `Test`, etc)                  |

@@ -6,15 +6,15 @@ Xledger connections use API keys to authenticate against either the production o
 
 <br/>
 
-## Connection Details
+## Connection properties
 
-| Property                        | Type     | Description |
-|----------------------------------|----------|-------------|
-| Connection name                 | Required | A custom name for the connection object. |
-| Use Xledger test environment    | Optional | Enable this option to use the sandbox/test environment instead of production. |
-| API key for Production environment | Required | API key used to authenticate requests in the live Xledger system. |
-| API key for Test environment    | Optional | API key used for authentication when testing in the sandbox environment. |
-| Description                     | Optional | A short, internal note to help describe the connection purpose. |
+| Property                        | Description |
+|---------------------------------|-------------|
+| Connection name                | A custom name for the connection object. |
+| Use Xledger test environment   (optional)  | Enable this option to use the sandbox/test environment instead of production. |
+| API key for Production environment| API key used to authenticate requests in the live Xledger system. |
+| API key for Test environment    (optional) | API key used for authentication when testing in the sandbox environment. |
+| Description                    (optional)  | A short, internal note to help describe the connection purpose. |
 
 <br/>
 

@@ -9,9 +9,9 @@ This flow scans a list of object names and checks for files that include “2015
 
 ## Properties
 
-| Name        | Type     | Description                                                                                 |
-| ----------- | -------- | ------------------------------------------------------------------------------------------- |
-| Title       | Optional |  The title of the action.   |
-| Connection  | Required | Specify the [connection](connecting-to-amazon-s3.md) to the Amazon S3 bucket. |
-| Object name | Required | The name of the object to delete.                                                           |
-| Description | Optional |  Additional notes or comments about the action or configuration. |
+| Name        | Description                                                                                 |
+| -----------  | ------------------------------------------------------------------------------------------- |
+| Title  (optional) |  The title of the action.   |
+| Connection  | Specify the [connection](connecting-to-amazon-s3.md) to the Amazon S3 bucket. |
+| Object name  | The name of the object to delete.                                                           |
+| Description (optional) |  Additional notes or comments about the action or configuration. |

@@ -1,6 +1,8 @@
-- name: "Get Visma Business NXT data"
-  href: get-visma-business-nxt-data.md
-- name: "Create connection"
-  href: create-connection.md
 - name: "About Visma Business NXT connection"
-  href: "connection.md"  
+  href: "connection.md" 
+- name: "Create connection"
+  href: "create-connection.md"  
+- name: "Get Visma Business NXT data"
+  href: "get-visma-business-nxt-data.md"
+
+ 

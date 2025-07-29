@@ -14,9 +14,9 @@ To create a connection to OpenAI:
 
 <br/>
 
-## Connection Fields
+## Connection properties
 
-| Field       | Description |
+| Name       | Description |
 |-------------|-------------|
 | Name    | A custom label for the connection. This name will be shown in dropdowns when selecting the connection in actions. |
 | API Key | Your personal or organizational [OpenAI API key](https://platform.openai.com/account/api-keys). This key authorizes requests from Flow to OpenAI's endpoints. |

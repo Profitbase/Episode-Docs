@@ -2,15 +2,14 @@
 
 **Azure AI connection** enables Flow actions to interact with [Azure AI Foundry](https://ai.azure.com/) resources, such as Large Language Models (LLMs).
 
-## Connection Details
+## Connection properties
 
-Azure AI Foundry connections have the following settings:
 
-| Field          | Description                                                         |
+| Name          | Description                                                         |
 |----------------|---------------------------------------------------------------------|
-| **Name**       | Name of the connection.                                             |
-| **API Key**    | The API key used for authentication.                                |
-| **Endpoint**   | The endpoint URL for the Azure AI Foundry resource.<br/>**Note!** `OpenAI` and `Foundry` models have different Endpoint formats. See below for details. |
+| Name       | Name of the connection.                                             |
+| API Key    | The API key used for authentication.                                |
+| Endpoint   | The endpoint URL for the Azure AI Foundry resource.<br/>**Note!** `OpenAI` and `Foundry` models have different Endpoint formats. See below for details. |
 
 <br/>
 

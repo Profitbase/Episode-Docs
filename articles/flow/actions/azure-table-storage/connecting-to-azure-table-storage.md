@@ -14,11 +14,10 @@ Flow supports multiple connection methods:
 
 <br/>
 
-## Connection details
+## Connection properties
 
-An Azure Table Storage connection includes the following fields:
 
-| Field | Description |
+| Name | Description |
 |-------|-------------|
 | Connection Name | A custom label for the connection. This name will appear when selecting a connection in a Flow action. |
 | Connection Type | Choose how to connect to Azure Table Storage. Options:<br/><br/>• **SAS URI (Account or Table)**<br/>• **Connection String**<br/>• **Connection String + Table Name** |
@@ -29,11 +28,12 @@ An Azure Table Storage connection includes the following fields:
 
 This method uses a **Shared Access Signature (SAS) URI** to grant access to your Azure Table or account. It is the most secure and scoped method.
 
-| Field | Description |
+| Name | Description |
 |-------|-------------|
-| **SAS URI** | A URI that includes the SAS token, permissions, and expiration. This can either target the entire storage account or a specific table. |
+| SAS URI | A URI that includes the SAS token, permissions, and expiration. This can either target the entire storage account or a specific table. |
 
-> **Note**  
+
+> [!NOTE]
 > If your SAS URI points to the storage account, it must include permission to access table services (`ss=t`). Ensure it also includes **Table-level permissions**, such as `sp=raud` (Read, Add, Update, Delete).
 
 ### Generate a SAS URI
@@ -69,10 +69,10 @@ https://mystorageaccount.table.core.windows.net/mytable?sv=2022-11-02&ss=t&srt=s
 
 This method uses a full connection string for the Azure Storage account. You can optionally include the table name.
 
-| Field | Description |
+| Name | Description |
 |-------|-------------|
-| **Connection String** | The full connection string from Azure Storage. Grants access to all tables under that account. |
-| **Table Name** (optional) | Specify if you want the connection to always target a specific table. |
+| Connection String | The full connection string from Azure Storage. Grants access to all tables under that account. |
+| Table Name (optional) | Specify if you want the connection to always target a specific table. |
 
 ### Get the Connection String
 

@@ -8,15 +8,13 @@ Flow supports two connection methods:
 
 <br/>
 
-## Connection details
+## Connection properties
 
-An Azure Files connection includes the following fields:
-
-| Field | Description |
+| Name | Description |
 |-------|-------------|
-| **Name** | A custom label for this connection. This name will appear when selecting the connection in a Flow action. |
-| **Connection Type** | Choose how you want to authenticate with Azure Files. Two options are available:<br/><br/>• **Connection String and Share Name** – Uses a full Azure Storage connection string and the name of a specific file share.<br/>• **SAS URI for Share** – Uses a full SAS URI pointing directly to a specific file share. |
-| **Default Directory** (optional) | Allows you to restrict the scope of the connection to a specific root directory. This directory must already exist in the share. Actions using this connection will be limited to this directory and its subfolders. |
+| Name | A custom label for this connection. This name will appear when selecting the connection in a Flow action. |
+| Connection Type | Choose how you want to authenticate with Azure Files. Two options are available:<br/><br/>• **Connection String and Share Name** – Uses a full Azure Storage connection string and the name of a specific file share.<br/>• **SAS URI for Share** – Uses a full SAS URI pointing directly to a specific file share. |
+| Default Directory (optional) | Allows you to restrict the scope of the connection to a specific root directory. This directory must already exist in the share. Actions using this connection will be limited to this directory and its subfolders. |
 
 <br/>
 
@@ -24,10 +22,10 @@ An Azure Files connection includes the following fields:
 
 Use this option to connect using the Azure Storage account connection string and specify a file share name.
 
-| Field | Description |
+| Name | Description |
 |-------|-------------|
-| **Connection String** | The full connection string for the Azure Storage account. You can find this in the Azure Portal under **Storage Account → Access Keys**. |
-| **Share Name** | The name of the Azure File Share you want to access (e.g., `project-documents`). Must already exist under the storage account. |
+| Connection String | The full connection string for the Azure Storage account. You can find this in the Azure Portal under **Storage Account → Access Keys**. |
+| Share Name | The name of the Azure File Share you want to access (e.g., `project-documents`). Must already exist under the storage account. |
 
 > [!NOTE]
 > If you use an account key in the connection string, you're granting access to all file shares in the storage account. For improved security, consider using a **SAS token** in the connection string instead.
@@ -76,9 +74,9 @@ DefaultEndpointsProtocol=https;AccountName=mystorageaccount;SharedAccessSignatur
 
 Use this method to connect using a full SAS URI for a specific Azure File Share. This is the most secure and scoped method.
 
-| Field | Description |
+| Name | Description |
 |-------|-------------|
-| **SAS URI** | A valid SAS URI pointing to the Azure File Share. This URI includes permissions, expiration date, and access token. You can generate this in the Azure Portal under **Storage Account → File Shares → [Your Share] → Generate SAS**. |
+| SAS URI | A valid SAS URI pointing to the Azure File Share. This URI includes permissions, expiration date, and access token. You can generate this in the Azure Portal under **Storage Account → File Shares → [Your Share] → Generate SAS**. |
 
 <br/>
 

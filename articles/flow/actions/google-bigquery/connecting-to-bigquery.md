@@ -8,11 +8,9 @@ Profitbase Flow supports two authentication methods:
 
 <br/>
 
-## Connection details
+## Connection properties
 
-A BigQuery connection includes the following fields:
-
-| Field | Description |
+| Name | Description |
 |-------|-------------|
 | Name | A custom label for the connection. This name will appear when selecting it in a Flow action. |
 | Connection/Authentication Type | Choose between:<br/>• **User Authentication** – Login with your Google account to authorize access.<br/>• **Custom JSON String** – Provide a full connection object in JSON format (service account credentials). |
