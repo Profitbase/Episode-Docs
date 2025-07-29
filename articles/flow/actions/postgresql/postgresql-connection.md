@@ -6,11 +6,10 @@ This guide explains how to configure a PostgreSQL connection and what each field
 
 <br/>
 
-## 🔧 Connection Details
+## Connection properties
 
-A PostgreSQL connection requires the following fields:
 
-| Field                         | Description |
+| Name                         | Description |
 |------------------------------|-------------|
 | Name                     | A custom name for the connection. This will be shown when selecting it in Flow actions. |
 | Connection / Authentication Type | Choose between `PostgreSQL Authentication` or a `Custom Connection String`. |
@@ -22,7 +21,7 @@ A PostgreSQL connection requires the following fields:
 
 <br/>
 
-## Configuration Steps
+## Configuration steps
 
 1. Provide a **Name** for the connection.
 2. Select the **Authentication Type**:
@@ -35,7 +34,7 @@ A PostgreSQL connection requires the following fields:
 
 <br/>
 
-## Notes and Best Practices
+## Notes and best practices
 
 - Ensure the PostgreSQL server is reachable from your network.
 - Use strong credentials and rotate passwords regularly.
@@ -46,10 +45,10 @@ A PostgreSQL connection requires the following fields:
 
 ## Screenshots
 
-### Standard Authentication
+### Standard authentication
 ![PostgreSQL Connection - Standard](../../../../images/flow/postgresql-connection1.png)
 
-### Custom Connection String
+### Custom connection string
 ![PostgreSQL Connection - Custom String](../../../../images/flow/postgresql-connection2.png)
 
 <br/>

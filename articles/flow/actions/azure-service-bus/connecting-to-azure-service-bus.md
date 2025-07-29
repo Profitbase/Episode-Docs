@@ -6,14 +6,14 @@ Flow uses a **connection string** to securely connect to your Azure Service Bus 
 
 <br/>
 
-## Connection details
+## Connection properties
 
 An Azure Service Bus connection includes the following fields:
 
-| Field | Description |
+| Name | Description |
 |-------|-------------|
-| **Name** | A custom label for the connection. This name will appear when selecting the connection in a Flow action. |
-| **Connection String** | A full connection string that grants access to your Azure Service Bus namespace and the messaging entities within. |
+| Name | A custom label for the connection. This name will appear when selecting the connection in a Flow action. |
+| Connection String | A full connection string that grants access to your Azure Service Bus namespace and the messaging entities within. |
 
 > **TIP**  
 > Use a **shared access policy** with scoped permissions (e.g., send-only or listen-only) instead of the root policy for improved security.

@@ -6,17 +6,17 @@ This connection allows Flow to authenticate and interact with the Tripletex API 
 
 <br/>
 
-## Connection Details
+## Connection properties
 
 A Tripletex connection requires the following fields:
 
-| Property                        | Type     | Description |
-|---------------------------------|----------|-------------|
-| Connection Name                 | Required | A custom name for the connection object. |
-| Consumer token                  | Required | A token that authenticates the registered API consumer. |
-| Employee token                  | Required | A token that identifies the employee on whose behalf the API calls are made. |
-| Default company Id              | Optional | The ID of the company to use by default in requests. |
-| Use Tripletex test environment  | Optional | Enable this to use the Tripletex sandbox environment for testing. |
+| Property                          | Description |
+|----------------------------------|-------------|
+| Connection Name                  | A custom name for the connection object. |
+| Consumer token                   | A token that authenticates the registered API consumer. |
+| Employee token                   | A token that identifies the employee on whose behalf the API calls are made. |
+| Default company Id               (optional) | The ID of the company to use by default in requests. |
+| Use Tripletex test environment   (optional) | Enable this to use the Tripletex sandbox environment for testing. |
 
 <br/>
 

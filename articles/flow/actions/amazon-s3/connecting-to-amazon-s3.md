@@ -17,11 +17,11 @@ Before configuring the connection, you will need the following:
 
 You can generate these credentials in the [AWS IAM Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html). Ensure the user has appropriate permissions to access the S3 bucket.
 
-### Connection details
+### Connection properties
 
 An Amazon S3 connection consists of the following fields:
 
-| Field             | Description                                                          |
+| Name             | Description                                                          |
 | ----------------- | -------------------------------------------------------------------- |
 | Connection name   | Name of the connection.                                              |
 | Access key ID     | A unique identifier assigned by AWS that, along with the secret access key, is used for authentication when accessing AWS services. It is part of the AWS security credentials.                      |

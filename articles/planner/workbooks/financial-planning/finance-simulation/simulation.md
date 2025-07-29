@@ -22,7 +22,9 @@ Here you can select which scale factor table to work with. Ticking on table will
 4. **Scale Factor Tables**<br/> 
 Here you can edit the content and set the scale factor for simulation.
 
-**Note:** Only the "Best" and "Worst" is simulated here based on the scale factors set below.
+
+> [!NOTE]
+> Only the "Best" and "Worst" is simulated here based on the scale factors set below.
 
 The columns from left for right until and including the "From Date" are key columns that will be used to match the input transactions. For scale factor the "Baseline" is always 1.0 while the "Best" and "Worst" can be set to any factor. The factor is applied to the input source transactions amount to change the amount to: Amount * Scale Factor to be applied according to selected keys.
 

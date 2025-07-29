@@ -8,7 +8,7 @@ If you store the credentials for the SQL Server outside Flow (for example in you
 
 <br/>
 
-## Connection details
+## Connection properties
 
 <br/>
 
@@ -24,27 +24,27 @@ A connection type (or authentication type) must be selected before entering othe
 
 #### SQL Server and Microsoft Entra Password authentication
 
-| Name                |  Type     | Description                                                          |
-|---------------------|-----------|----------------------------------------------------------------------|
-| Server name         | Required  | The name of the SQL Server. This can be the server name, IP address, or a named instance. |
-| Database name       | Required  | Defines the specific database on the SQL Server to which the connection is made.|
-| Username            | Required  | The username (or Entra Id/e-mail) used to authenticate the connection. |
-| Password            | Required  | The password associated with the User to authenticate the connection. |
-| Enable Multiple Active Result Sets | Required  | This setting allows a single database connection to run multiple queries at the same time, without waiting for one to finish before starting another.  [Read more](https://learn.microsoft.com/en-us/sql/connect/ado-net/sql/enable-multiple-active-result-sets?view=sql-server-ver16) |
+| Name                  | Description                                                          |
+|----------------------|----------------------------------------------------------------------|
+| Server name          | The name of the SQL Server. This can be the server name, IP address, or a named instance. |
+| Database name        | Defines the specific database on the SQL Server to which the connection is made.|
+| Username             | The username (or Entra Id/e-mail) used to authenticate the connection. |
+| Password             | The password associated with the User to authenticate the connection. |
+| Enable Multiple Active Result Sets  | This setting allows a single database connection to run multiple queries at the same time, without waiting for one to finish before starting another.  [Read more](https://learn.microsoft.com/en-us/sql/connect/ado-net/sql/enable-multiple-active-result-sets?view=sql-server-ver16) |
 
 #### Microsoft Entra Service Principal authentication
 
-| Name                |  Type    | Description                                                          |
-|---------------------|----------|----------------------------------------------------------------------|
-| Server name         | Required | The name of the SQL Server. This can be the server name, IP address, or a named instance. |
-| Database name       | Required | Defines the specific database on the SQL Server to which the connection is made.|
-| Client Id           | Required | The Client ID of the Azure AD service principal (also known as an app registration). |
-| Client secret       | Required | The client secret (application secret) associated with the service principal in Azure AD. |
-| Enable Multiple Active Result Sets | Required  | This setting allows a single database connection to run multiple queries at the same time, without waiting for one to finish before starting another.  [Read more](https://learn.microsoft.com/en-us/sql/connect/ado-net/sql/enable-multiple-active-result-sets?view=sql-server-ver16) |
+| Name                 | Description                                                          |
+|---------------------|----------------------------------------------------------------------|
+| Server name         | The name of the SQL Server. This can be the server name, IP address, or a named instance. |
+| Database name       | Defines the specific database on the SQL Server to which the connection is made.|
+| Client Id           | The Client ID of the Azure AD service principal (also known as an app registration). |
+| Client secret       | The client secret (application secret) associated with the service principal in Azure AD. |
+| Enable Multiple Active Result Sets  | This setting allows a single database connection to run multiple queries at the same time, without waiting for one to finish before starting another.  [Read more](https://learn.microsoft.com/en-us/sql/connect/ado-net/sql/enable-multiple-active-result-sets?view=sql-server-ver16) |
 
 #### User Connection String
 
-| Name                | Type     | Description                                                          |
-|---------------------|----------|----------------------------------------------------------------------|
-| Connecion String    | Required | A full connection string that can be used to establish an Sql Server connection.  |
+| Name                | Description                                                          |
+|-------------------|----------------------------------------------------------------------|
+| Connecion String    | A full connection string that can be used to establish an Sql Server connection.  |
 

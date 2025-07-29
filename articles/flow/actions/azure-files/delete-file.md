@@ -6,7 +6,9 @@ Deletes a file from an [Azure Files](https://learn.microsoft.com/en-us/azure/sto
 
 **Example** ![img](../../../../images/strz.jpg)  
 The example above retrieves all file informations from a share using the [Get Share Items Info](get-share-items-info.md) action. It then iterates over each item using a [For each](../built-in/foreach.md) loop. Each file is passed to the **Delete file from a share** action.  
-**Note:** The filtering logic is implemented inside the Foreach action, allowing only the relevant files to proceed to deletion.
+
+> [!NOTE]
+> The filtering logic is implemented inside the Foreach action, allowing only the relevant files to proceed to deletion.
 
 
 ## Properties

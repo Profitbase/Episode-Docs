@@ -4,15 +4,13 @@ When adding a [Databricks](https://www.databricks.com/databricks-documentation) 
 
 Profitbase Flow uses a **Base URL** and a **Personal Access Token** to authenticate and execute queries securely.
 
->  
+
 
 <br/>
 
-## Connection details
+## Connection properties
 
-A Databricks connection includes the following fields:
-
-| Field | Description |
+| Name | Description |
 |-------|-------------|
 | Name | A custom label for this connection. This name will appear when selecting the connection in a Flow action. |
 | Base URL | The full URL of your Databricks workspace (e.g., `https://adb-1234567890123456.7.azuredatabricks.net`). |
@@ -31,15 +29,17 @@ A Databricks connection includes the following fields:
 3. Navigate to the **Access tokens** tab.
 4. Click **Generate new token**.
 5. Optionally, set a comment and expiry time.
-6. Copy the generated token and paste it into the **Access token** field in Profitbase Flow.
+6. Copy the generated token and paste it into the **Access token** Name in Profitbase Flow.
 
-> **Note**: You will not be able to view the token again after closing the dialog. Store it securely.
+
+> [!NOTE]
+>  You will not be able to view the token again after closing the dialog. Store it securely.
 
 <br/>
 
 **Example**
 
-| Field | Example |
+| Name | Example |
 |-------|---------|
 | Base URL | `https://adb-1234567890123456.7.azuredatabricks.net` |
 | Access token | `dapiexampletokenabcdef1234567890` |
@@ -56,6 +56,4 @@ A Databricks connection includes the following fields:
 - Consider creating dedicated service users or automation tokens for Flow.
 - Regularly **rotate tokens** and remove unused ones.
 
----
 
-Would you like to test the connection? Use the **Test connection** button to ensure your Base URL and token are valid before proceeding.

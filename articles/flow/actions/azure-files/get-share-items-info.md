@@ -6,7 +6,10 @@ Retrieves a list of information about files or directories from an [Azure Files]
 
 **Example** ![img](../../../../images/strz.jpg)  
 The example above retrieves all file informations from a share using the **Get Share Items Info** action. It then iterates over each item using a [For each](../built-in/foreach.md) loop. Each file is passed to the [Delete file from a share](delete-file.md) action.  
-**Note:** The filtering logic is implemented inside the Foreach action, allowing only the relevant files to proceed to deletion.
+
+
+> [!NOTE]
+> The filtering logic is implemented inside the Foreach action, allowing only the relevant files to proceed to deletion.
 
 ## Properties
 

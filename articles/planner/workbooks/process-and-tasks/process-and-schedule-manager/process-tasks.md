@@ -25,7 +25,10 @@ The name of the recurring [recurring event](recurring-events.md).
     - Deadline: the task will have a due date N days before (N is negative) or after (N is positive) the recurring event.
 <br/>
 
-Note: the deadline cannot be set before the assign date, which would result in tasks being overdue as they are distributed.
+
+> [!NOTE]
+>  the deadline cannot be set before the assign date, which would result in tasks being overdue as they are distributed.
+
 <br/>
 
 - **Priority**

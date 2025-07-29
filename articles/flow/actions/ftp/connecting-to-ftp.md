@@ -12,9 +12,9 @@ When adding an FTP or SFTP action, you will be prompted to select or create a co
 
 <br/>
 
-### Connection Fields
+### Connection properties
 
-| Field | Description |
+| Name | Description |
 |-------|-------------|
 | Name | A custom name for the connection. This name will be displayed in Flow when selecting the connection. |
 | Connection Type | Choose either **FTP** or **SFTP** depending on your server protocol. |
@@ -36,13 +36,14 @@ After filling out the form:
 
 <br/>
 
-## Screenshots
 
 ### FTP Configuration
-![FTP Connection](https://files.profitbasedocs.blob.core.windows.net/screenshots/ftp-connection.png)
+![FTP Connection](../../../../images/flow/ftp-connection.png)
+
+<br/>
 
 ### SFTP Configuration
-![SFTP Connection](https://files.profitbasedocs.blob.core.windows.net/screenshots/sftp-connection.png)
+![SFTP Connection](../../../../images/flow/sftp-connection.png)
 
 <br/>
 

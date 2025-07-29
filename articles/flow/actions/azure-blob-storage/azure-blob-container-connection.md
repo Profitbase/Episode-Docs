@@ -4,11 +4,10 @@ To connect to an Azure Blob container and perform actions, such as reading or up
 
 Flow currently supports connecting using `SAS URI` or `Connection string and container name`.
 
-## Connection details
+## Connection properties
 
-An Azure Blob container connection consists of the following fields:
 
-| Field             | Description                                                          |
+| Name             | Description                                                          |
 | ----------------- | -------------------------------------------------------------------- |
 | Name   | A custom label for this connection. This name will be shown when selecting the connection in a Flow action.    |
 | Connection type     | Select how you want to authenticate with Azure Blob Storage. Two options are available: **SAS URI** – A Shared Access Signature URL that grants temporary access to a blob container; **Connection String and Container Name** – Uses the full Azure Storage connection string combined with the name of a specific blob container.  |

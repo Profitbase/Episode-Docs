@@ -2,11 +2,11 @@
 
 When adding an [Adobe PDF Services](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html) action, select an [existing connection](../../workspaces/workspace-objects.md) or create a new one.
 
-## Connection details
+## Connection properties
 
 **Adobe connection**, enables integration with **Adobe PDF Services**. This connection uses the **Client ID** and **Client Secret** provided by Adobe. 
 
-| Field           | Description                                                                 |
+| Name           | Description                                                                 |
 |-----------------|-----------------------------------------------------------------------------|
 | Name            | Name of the connection.                                                     |
 | Client Id       | The client identifier obtained from the Adobe Developer Console.            |
