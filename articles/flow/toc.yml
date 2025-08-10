@@ -11,6 +11,8 @@
       href: tenants/users.md
     - name: API Keys
       href: tenants/api-keys.md
+    - name: MCP Server Settings
+      href: tenants/mcp-server-settings.md
 - name: Workspaces
   href: workspaces.md
   items:
@@ -58,6 +60,8 @@
       href: flows/execution-logs.md
     - name: Execution endpoints
       href: flows/execution-endpoints.md
+    - name: MCP Server endpoints
+      href: flows/mcp-server-endpoints.md
     - name: Publish a Flow
       href: flows/publishing-flow.md
     - name: Modularization and extensions
