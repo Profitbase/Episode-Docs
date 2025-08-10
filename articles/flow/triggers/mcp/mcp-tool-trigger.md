@@ -29,8 +29,12 @@ The MCP tool trigger returns (outputs) the object defined by its `Parameters` pr
 
 <br/>
 
-## Best practice for defining an MCP tool trigger 
+## How to use an MCP Flow from an (external) MCP Client
+Both external MCP clients (like Claude Desktop), and the [MCP Client Tool](../../actions/mcp/mcp-client-tool.md), can call MCP-enabled Flows via [MCP Server endpoints](../../flows/mcp-server-endpoints.md). You can view the MCP server endpoints from the `Resources` -> `Flow properties...` menu in the Designer, or by clicking the `Show endpoints` button in the `Property panel` of an `MCP tool trigger` node.  
 
+<br/>
+
+## Best practice for defining an MCP tool trigger 
 1) Choose a clear and concise `Tool name`. This helps the LLM understand what the tool does and what it can be used for. Prefer using underscore (_) as word separators if the tool name consists of multiple words, for example `add_order` instead of `AddOrder`.
 2) When defining `Parameters`, add a `description` for every property of the type definition.
 3) When defining `Parameters`, add as few properties as possible to the type definition. Too many parameters may confuse the LLM.

@@ -5,7 +5,7 @@ Defines an MCP Client that enables an AI agent to use tools exposed by an MCP Se
 ![img](/images/flow/mcp-client-tool.png)
 
 **Example** ![img](../../../../images/strz.jpg)  
-The example above illustrates a Flow that, on a schedule, runs an AI agent to check the production line status and notify supervisors if action needs to be taken. To query the Azure SQL–based production line system, the agent uses an Azure SQL MCP server, and then uses a Microsoft Teams MCP server to send notifications to users.
+The example above shows a Flow that runs on a schedule, using an AI agent to check the production line status and notify supervisors if action is needed.  The agent queries the Azure SQL–based production line system via an Azure SQL MCP server, then sends notifications to users through a Microsoft Teams MCP server.
 <br/>
 
 ## Properties

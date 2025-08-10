@@ -4,7 +4,7 @@ When a Flow is executed from an HTTP request, the HTTP trigger defines how to co
 You can also get the HTTP endpoint of the Flow from the HTTP trigger. The HTTP endpoint is the URL used to execute the Flow from a 3rd party application.
 
 > [!Note]
-> You must define at least one API Key with `Execute` permissions in order to execute a Flow from a 3rd party application. A Flow will have no public HTTP endpoint unless at least one API key is defined in the tenant.
+> You must define at least one [API Key](../tenants/api-keys.md) with `Execute` permissions in order to execute a Flow from a 3rd party application. A Flow will have no public HTTP endpoint unless at least one API key is defined in the tenant.
 
 ## Properties
 
