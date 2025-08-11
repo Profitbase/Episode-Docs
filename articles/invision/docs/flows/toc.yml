@@ -14,3 +14,5 @@
     href: how-to/run-flow-from-form-schema.md
   - name: Run long-running Flow
     href: how-to/run-long-running-flow.md
+  - name: Download file from Flow
+    href: how-to/download-file-from-flow.md
