@@ -47,3 +47,7 @@ Do NOT wrap the response in Markdown annotation.
 To find the Model deployment name, look in `Models + Endpoints` screen in [Azure AI Foundry](https://ai.azure.com).  
 
 ![img](/images/flow/azure-ai-foundry-deploymentname.png)
+
+<br/>
+
+[!INCLUDE [](./__videos.md)]

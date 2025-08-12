@@ -27,3 +27,8 @@ If the table already exists, this action does nothing (no error is raised).
 ### Column definition
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/col-def.png)
+
+
+<br/>
+
+[!INCLUDE [](__videos.md)]

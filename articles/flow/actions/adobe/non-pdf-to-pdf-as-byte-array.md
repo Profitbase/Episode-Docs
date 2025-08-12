@@ -24,3 +24,7 @@ This flow takes a  documentation file (in DOCX format) from [OneDrive](../onedri
 ## Returns
 
 Returns a file in the chosen format as a [Byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays).
+
+<br/>
+
+[!INCLUDE [](./__videos.md)]

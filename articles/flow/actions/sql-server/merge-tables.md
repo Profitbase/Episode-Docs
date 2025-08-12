@@ -20,3 +20,7 @@ This action provides a lightweight wrapper for the [Merge](https://learn.microso
 | Result variable name | Optional  | Name of the variable returning number of rows affected. |
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description   | Optional | Additional notes or comments about the action or configuration. |
+
+<br/>
+
+[!INCLUDE [](__videos.md)]

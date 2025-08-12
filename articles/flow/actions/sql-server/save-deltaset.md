@@ -27,3 +27,7 @@ A typical use case for this action is to save the changes made by users in the [
 | Use as update or delete key | By enabling this option, Flow will match by this column when updating or deleting rows instead of using the columns defined as keys in the [DeltaCells](../../api-reference/built-in-types/deltaset.md#deltacell).  |
 | Allow updating data in this column | You can set this option to `false` to explicitly prevent this column from being updated, even though the DeltaSet contains changes for the column.   |
 | Enable identity insert  | Enable this option if you need to enable inserting data to an identity column. In most databases, if you try to insert data to an identity column, the operation will fail unless explicitly enabled. |
+
+<br/>
+
+[!INCLUDE [](__videos.md)]

@@ -40,3 +40,7 @@ You are required to specify the *key*, *content* and *vector* columns as **Field
 ## Returns 
 
 The Search vectors action returns an [IVectorSearchResult](../../api-reference/built-in-types/ai/i-vector-search-result.md) object that can be passed to the Chat completion Context property.
+
+<br/>
+
+[!INCLUDE [](__videos.md)]

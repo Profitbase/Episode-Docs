@@ -20,5 +20,8 @@ Returns a [Workspace](https://learn.microsoft.com/en-us/fabric/get-started/works
 | Result Variable Name| Optional | The name of the variable in which the workspace result is stored. Default is `workspace`.    |
 | Description         | Optional | An additional description of the environment or other relevant information.  |
 
+<br/>
+
+[!INCLUDE [](./__videos.md)]
 
 

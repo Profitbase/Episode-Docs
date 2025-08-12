@@ -44,9 +44,5 @@ Authentication requires an authentication token. Click [here](https://docs.catal
 
 <br/>
 
-## Videos
+[!INCLUDE [](__videos.md)]
 
-#### Deploy data pipeline to Fabric from GitHub
-This video demonstrates how to deploy a data pipeline from GitHub to Fabric using Flow.
-
-![youtube.com](https://youtu.be/IxiR-w8oUaI)

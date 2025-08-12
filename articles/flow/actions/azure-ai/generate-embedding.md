@@ -55,3 +55,7 @@ WHERE VECTOR_DISTANCE('cosine', Vector, @emb) < 0.7
 To find the Model deployment name, look in `Models + Endpoints` screen in [Azure AI Foundry](https://ai.azure.com).  
 
 ![img](/images/flow/azure-openai-aifoundry-embedding-models.png)
+
+<br/>
+
+[!INCLUDE [](./__videos.md)]

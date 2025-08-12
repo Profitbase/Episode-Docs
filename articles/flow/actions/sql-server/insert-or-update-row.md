@@ -20,3 +20,8 @@ The Flow above illustrates how to use the `Insert or Update row` action to save 
 | Result variable name  | Optional | Name of the variable containing the action performed. This always returns either `INSERT` or `UPDATE`.        |
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.                             |
 | Description           | Optional | Additional notes or comments about the action.                                                                |
+
+
+<br/>
+
+[!INCLUDE [](__videos.md)]

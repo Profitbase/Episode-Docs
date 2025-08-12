@@ -124,3 +124,7 @@ Extracts content from a PDF file and returns it as a JSON string.
   ]
 }
 ```
+
+<br/>
+
+[!INCLUDE [](./__videos.md)]

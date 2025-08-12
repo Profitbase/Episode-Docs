@@ -115,3 +115,8 @@ To convert the response from a string (text) to a business object, you must do t
 <br/>
 
 ![img](/images/flow/http-request-example-convert-content.png)
+
+
+<br/>
+
+[!INCLUDE [](./__videos.md)]

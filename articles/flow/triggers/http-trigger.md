@@ -97,3 +97,15 @@ INSERT INTO Customers (CustomerName, Zip, City, Street, Country) VALUES(@Custome
        4. Press `Send` to execute the Flow. If everything is defined correctly, you should now have a new customer row in the database. If you do not see the expected result, you can inspect the [Execution logs](../flows/execution-logs.md) to investigate any issues.
        
 ![img](../../../images/http-trigger-example-thunder-client.PNG)
+
+<br/>
+
+## Videos / Getting started
+
+<br/>
+
+#### Generate a PDF file with tabular data
+This video shows how to generate a PDF file with tabular data using the Adobe PDF Services API, and download the generated file from an InVision Workbook.  
+It uses the [HTTP trigger](http-trigger.md) and [Return File HTTP Response](../actions/http/return-file-http-response.md) actions to handle the request and return the file.
+
+![youtube.com](https://www.youtube.com/watch?v=mNDQqBQRmmM)

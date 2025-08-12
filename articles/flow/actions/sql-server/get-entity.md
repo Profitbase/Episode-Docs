@@ -27,3 +27,7 @@ public record Customer(string VATNumber, string Name, string Address);
 | Result variable name | Required  | Name of resulting variable containing the entity.  |
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description   |  Optional  |  Additional notes or comments about the action or configuration. |
+
+<br/>
+
+[!INCLUDE [](__videos.md)]

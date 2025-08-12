@@ -36,3 +36,6 @@ To find the Model deployment name, look in `Models + Endpoints` screen in [Azure
 
 ![img](/images/flow/azure-ai-foundry-deploymentname.png)
 
+<br/>
+
+[!INCLUDE [](./__videos.md)]

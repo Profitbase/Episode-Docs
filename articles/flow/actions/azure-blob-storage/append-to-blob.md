@@ -19,3 +19,7 @@ Actions used in the flow are: SQL Server [Get DataReader](../sql-server/get-data
 | Blob data        | Required  | A byte array or stream input. |
 | Description |Optional|  Additional notes or comments about the action or configuration. |
 
+<br/>
+
+[!INCLUDE [](./__videos.md)]
+
