@@ -1,12 +1,7 @@
-# Getting started
-
-Profitbase Flow makes it easy to use CSV files to import and export data to databases, services and cloud storage solutions such as Amazon S3 and Azure Blob containers.  
-
+## Videos / Getting started
 This section contains videos to help you get started quickly working with CSV files using Flow.  
 
 <br/>
-
-## Videos
 
 #### Dump CSV file from Azure Blob container to Azure SQL table
 This video demonstrates how to import all records from a CSV file into an Azure SQL table.  

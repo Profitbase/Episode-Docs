@@ -36,3 +36,8 @@ All properties _NOT_ in the `Update keys` configuration will be used in the SET 
 | Result variable name | Optional  | Name of resulting list of entities variable  |
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description   | Optional | Additional notes or comments about the action or configuration. |
+
+
+<br/>
+
+[!INCLUDE [](__videos.md)]

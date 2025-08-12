@@ -131,3 +131,7 @@ This flow reads a PDF from cloud storage, extracts its content using Adobe PDF S
   ]
 }
 ```
+
+<br/>
+
+[!INCLUDE [](./__videos.md)]

@@ -24,3 +24,7 @@ Iterates over rows in a CSV file.
 | Row variable name   | Optional  | The name of the variable you can use to reference the Row in other actions.                      |
 | Row data type       | Read-only |                                                  |
 | Description         | Optional  | Additional notes or comments about the action or configuration. |
+
+<br/>
+
+[!INCLUDE [](__videos.md)]

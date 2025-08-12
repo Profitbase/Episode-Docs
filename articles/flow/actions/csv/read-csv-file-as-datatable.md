@@ -34,3 +34,7 @@ By enabling **Error handling** behaviors in the [Data import options](configurat
 
 >[!NOTE]
 > If you don't specify `Column mappings`, or specify the data type of all columns as `string`, all values in the file will be read as `text` (string). No data conversion or formatting will be performed, so you will simply get the raw data in the file. Note, however, that you should enable the `Data import options` to skip empty rows and / or missing fields in case the file itself is badly formatted. Optionally, you can use the [Open CSV file as DataReader](./open-csv-file-as-datareader.md) action instead, if you want to import empty fields when no column mappings are defined.
+
+<br/>
+
+[!INCLUDE [](__videos.md)]

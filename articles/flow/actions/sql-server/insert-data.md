@@ -32,3 +32,8 @@ The example above takes a file from storage, reads its JSON content, saves the d
 
 The target table is required to have a schema (columns and data types) that match the schema of the `Source` DataReader or DataTable.
 The columns does not have to be in the same order, but they must **match by name and data type**.
+
+
+<br/>
+
+[!INCLUDE [](__videos.md)]

@@ -18,3 +18,6 @@ This flow extracts data from a table, convert it into a CSV file, and upload it 
 | Blob data        | Required  | The data to upload. It must be a byte array or [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream) |
 | Overwrite if blob already exists | Optional | If not checked, the action will fail if a blob with the same name already exists. |
 
+<br/>
+
+[!INCLUDE [](./__videos.md)]

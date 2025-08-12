@@ -45,3 +45,7 @@ Returns a [LakehouseInfo](#lakehouseinfo) object.
 | Id                 | string          | The SQL endpoint ID.       |
 | ConnectionString   | string          | SQL endpoint connection string. |
 | ProvisioningStatus | string          | The SQL endpoint provisioning status. Values are `InProgress`, `Failed` or `Success` |
+
+<br/>
+
+[!INCLUDE [](./__videos.md)]

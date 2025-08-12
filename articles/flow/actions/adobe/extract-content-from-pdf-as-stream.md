@@ -133,4 +133,6 @@ This flow reads an invoice PDF from cloud storage, extracts its content using Ad
 }
 ```
 
+<br/>
 
+[!INCLUDE [](./__videos.md)]

@@ -22,3 +22,7 @@ This flow takes a documentation file (in DOCX format) from [OneDrive](../onedriv
 ## Returns
 
 Returns a file in the chosen format as a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream).
+
+<br/>
+
+[!INCLUDE [](./__videos.md)]

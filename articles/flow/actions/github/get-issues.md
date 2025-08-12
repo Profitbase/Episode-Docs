@@ -39,3 +39,7 @@ For authenticated users the rate limit is 5,000 requests per hour. If the instal
 ### Authentication
 
 Authentication is done with an authentication token. Click [here](https://docs.catalyst.zoho.com/en/tutorials/githubbot/java/generate-personal-access-token/) for more on creating a token.
+
+<br/>
+
+[!INCLUDE [](__videos.md)]

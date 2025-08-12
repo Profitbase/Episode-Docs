@@ -131,3 +131,8 @@ public class ItemCreatedResponse
 
 If the item was created immediately, the `OperationId` and `Location` properties will be `null`, while the Id, DisplayName etc properties will have a value.  
 If the item is being provisioned (meaning it is in the process of being created), you need to use the `OperationId` or `Location` to make repeated requests until the API responds with a null-value for the OperationId property.
+
+
+<br/>
+
+[!INCLUDE [](./__videos.md)]

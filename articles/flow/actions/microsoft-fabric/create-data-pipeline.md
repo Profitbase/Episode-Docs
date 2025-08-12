@@ -64,9 +64,6 @@ You can get the pipeline definitions via the **View --> View JSON code** tab in 
 
 <br/>
 
-## Videos
+<br/>
 
-#### Deploy data pipeline to Fabric from GitHub
-This video demonstrates how to deploy a data pipeline from GitHub to Fabric using Flow.
-
-![youtube.com](https://youtu.be/IxiR-w8oUaI)
+[!INCLUDE [](./__videos.md)]

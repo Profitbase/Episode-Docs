@@ -29,3 +29,6 @@ This action returns a **DataPipelineRunCompleted** response with the following p
 | Arguments    | Optional | Use this property to specify arguments if the Data Pipeline is parameterized. Make sure that the argument (value) you assign to each parameter has the expected data type. |
 | Raise exception on failure | Optional | Specifies whether Flow should raise an exception if the Data Pipeline completes with status `Failed`. When an exception is raised, the Flow terminates with an error immediately. If this property is set to false, you will have to examine the `Status` property of the result (see below) yourself and determine what to do. |
 
+<br/>
+
+[!INCLUDE [](./__videos.md)]

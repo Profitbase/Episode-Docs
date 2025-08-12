@@ -47,3 +47,7 @@ SELECT [Name] FROM {TableName} WHERE UserId = @UserId
 ## Returns
 
 Returns a .NET value of the type specified by `Result variable type`.
+
+<br/>
+
+[!INCLUDE [](__videos.md)]

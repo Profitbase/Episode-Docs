@@ -74,3 +74,7 @@ var subtotalComputeText = computeRow.Children[3].Children[0].Value;
 var subtotalCompute = double.Parse(subtotalComputeText, NumberStyles.Currency, CultureInfo.CreateSpecificCulture("en-US"));
 
 ```
+
+<br/>
+
+[!INCLUDE [](./__videos.md)]

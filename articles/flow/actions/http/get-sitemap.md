@@ -52,3 +52,7 @@ ChangeFrequency {
     Never
 }
 ```
+
+<br/>
+
+[!INCLUDE [](./__videos.md)]

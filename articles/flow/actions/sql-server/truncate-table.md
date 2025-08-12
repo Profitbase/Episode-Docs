@@ -19,3 +19,7 @@ Truncates(empties) a table in a SQL Server database.
 
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/truncate-table.png)
+
+<br/>
+
+[!INCLUDE [](__videos.md)]

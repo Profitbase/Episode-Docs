@@ -20,3 +20,6 @@ This flow iterates through all blobs in an Azure blob container, checks if each 
 | Blob info | Optional | The name of the Flow variable that contains the blob info. |
 | Description | Optional | Additional notes or comments about the action or configuration.  |
 
+<br/>
+
+[!INCLUDE [](./__videos.md)]

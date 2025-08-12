@@ -46,3 +46,7 @@ UPDATE {TableName} SET [Name] = @Name WHERE UserId = @UserId
 ## Returns
 
 [Int32](https://learn.microsoft.com/en-us/dotnet/api/system.int32) The number of rows affected.
+
+<br/>
+
+[!INCLUDE [](__videos.md)]

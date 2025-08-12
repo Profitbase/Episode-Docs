@@ -18,3 +18,7 @@ If the table does not exist, this action does nothing (no error is raised).
 | Table name   | Required      | Name of the table to be deleted.  |
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds. |
 | Description   | Optional | Additional notes or comments about the action or configuration. |
+
+<br/>
+
+[!INCLUDE [](__videos.md)]

@@ -33,3 +33,8 @@ Returns the Excel file serialized as a [byte](https://learn.microsoft.com/en-us/
 | Number decimal separator | Default  | Defines the character used to separate the integer part from the fractional part of a decimal number. The default is . (period), commonly used in US English. Other locales might use , (comma) as the decimal separator, especially in European countries (e.g., 123,45).            |
 | Result variable name     | Optional | The name of the variable you can use to reference the byte array in other actions.                             |
 | Description              | Optional | Additional notes or comments about the action or configuration. |
+
+
+<br/>
+
+[!INCLUDE [](__videos.md)]

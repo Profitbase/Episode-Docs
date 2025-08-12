@@ -24,3 +24,6 @@ This action returns [LakehouseFileInfo](https://learn.microsoft.com/en-us/dotnet
 | Overwrite if file already exists | Optional | Specifies whether to overwrite an existing file with the same name in the target folder.                     |
 | Description                      | Optional | A description of the file upload action for easier reference.       |
 
+<br/>
+
+[!INCLUDE [](./__videos.md)]

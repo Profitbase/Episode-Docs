@@ -51,3 +51,7 @@ File selector:
 | DisplayName        | string          | The name of the Lakehouse  |
 | WorkspaceId        | string          | The id of the Workspace    |
 | Description        | string          | The description of the Lakehouse   |
+
+<br/>
+
+[!INCLUDE [](./__videos.md)]

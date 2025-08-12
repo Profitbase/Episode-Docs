@@ -24,3 +24,7 @@ Actions used in the flow are: SQL Server [Get DataReader](), [DataReader chunker
 ## Returns
 
 [IDataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader)
+
+<br/>
+
+[!INCLUDE [](__videos.md)]
