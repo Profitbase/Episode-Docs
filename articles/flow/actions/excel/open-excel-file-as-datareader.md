@@ -24,3 +24,8 @@ Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data
 Columns can be mapped automatically by using the "Map from sample file" option.
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/getDataReaderEx2.png)
+
+
+<br/>
+
+[!INCLUDE [](./__videos.md)]

@@ -29,3 +29,8 @@ Returns the Excel file serialized as a [byte](https://learn.microsoft.com/en-us/
 Columns can be mapped automatically by using the "Map from sample file" option.
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/getDataReaderEx2.png)
+
+
+<br/>
+
+[!INCLUDE [](./__videos.md)]
