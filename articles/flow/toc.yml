@@ -171,7 +171,9 @@
   href: api-reference/toc.yml
 - name: Change log
   href: changelog.md
-  items: 
+  items:
+    - name: June 2025
+      href: changelog/changelog25_june.md 
     - name: May 2025
       href: changelog/changelog25_may.md
     - name: February 2025
