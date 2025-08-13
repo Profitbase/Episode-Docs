@@ -1,6 +1,30 @@
 
 # Control API
 
+The Control API in Profitbase Forms provides a set of methods for dynamically managing form controls at runtime. It allows developers to show or hide controls, apply or remove CSS classes, validate input, enable or disable elements, and directly access native DOM elements. This enables flexible, condition-based UI behavior and enhanced user interaction within Profitbase applications.
+
+`enableTab()`  
+Enabling tab in Form Schema using api's.
+
+**Example**
+
+```js
+controls.tabcontrol.enableTab(tabName);
+```
+
+<br/>
+
+`disableTab()`  
+Disabling tab in Form Schema using api's.
+
+**Example**
+
+```js
+controls.tabcontrol.disableTab(tabName);
+```
+
+<br/>
+
 `hide()`  
 Hides a control by setting its visibility property to hidden. This will not remove the control from the DOM.
 
