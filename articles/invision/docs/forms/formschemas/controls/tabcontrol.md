@@ -148,6 +148,44 @@ This example shows how to programatically activate a tab from a button click. It
 
 <br/>
 
+
+### enableTab and disableTab
+
+The **enable/disableTab("name of Tab")** functions allow you to programmatically control the availability of tabs within a TabControl. By specifying the tabs name, you can enable or disable user access to that tab, making it useful for guiding workflow, restricting navigation, or dynamically adjusting the interface based on user actions or conditions.
+
+This method can be used in various scenarios such as [button](button.md) clicks, form initialization, or any custom event, allowing for seamless navigation and enhanced user interactions within multi-tabbed interfaces.
+
+
+`enableTab()`  
+Enabling tab in Form Schema using api's.
+
+**Example**
+
+```js
+controls.tabcontrol.enableTab(tabName);
+```
+
+<br/>
+
+`disableTab()`  
+Disabling tab in Form Schema using api's.
+
+**Example**
+
+```js
+controls.tabcontrol.disableTab(tabName);
+```
+
+<br/>
+
+![img](/images/invision/enableTabAPI1.png)
+
+![img](/images/invision/enableTabAPI2.png)
+
+![img](/images/invision/enableTabAPI3.png)
+
+
+
 ## See Also
 
 - [More about TabControl](../../../workbooks/components/uielements/tabcontrol.md)
