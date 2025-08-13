@@ -29,3 +29,8 @@ Columns can be mapped automatically by using the "Map from sample file" option.
 ## Returns
 
 [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) containing data from all rows and columns as specified by the `Data start row` and `Column mapping` properties.
+
+
+<br/>
+
+[!INCLUDE [](./__videos.md)]

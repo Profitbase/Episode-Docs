@@ -30,3 +30,7 @@ Returns the Excel file as a [Stream](https://learn.microsoft.com/en-us/dotnet/ap
 Columns can be mapped automatically by using the "Map from sample file" option.
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/getDataReaderEx2.png)
+
+<br/>
+
+[!INCLUDE [](./__videos.md)]

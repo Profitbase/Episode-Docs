@@ -20,3 +20,8 @@ Use this action to send emails from a `personal` Microsoft 365 Outlook mailbox. 
 | Subject     | Optional | The email subject.                                                                                                                 |
 | Message     | Optional | The email message.                                                                                                                 |
 | Attachments | Optional | Any attachments to include in the email.                                                                                          |
+
+
+<br/>
+
+[!INCLUDE [](./__videos.md)]

@@ -15,3 +15,8 @@ Use this action to send emails from a `shared` Microsoft 365 Outlook mailbox. If
 | Subject     | Optional | The email subject.                                                                                                               |
 | Message     | Optional | The email message.                                                                                                               |
 | Attachments | Optional | Any attachments to include in the email.                                                                                         |
+
+
+<br/>
+
+[!INCLUDE [](./__videos.md)]
