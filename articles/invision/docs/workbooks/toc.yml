@@ -223,6 +223,8 @@
                 href: programmingmodel/apis/localization-apis.md
               - name: Page APIs
                 href: programmingmodel/apis/page-apis.md
+              - name: Section APIs
+                href: programmingmodel/apis/section-apis.md
         - name: Subscreens
           href: subscreens.md
         - name: Themes and styles
