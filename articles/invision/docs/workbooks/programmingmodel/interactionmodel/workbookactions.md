@@ -52,3 +52,18 @@ SetSrc(url)
 SetSrcIf(boolean expression, trueUrl, falseUrl)
 ```
 
+## Workbook actions and APIs to programmatically open and close sections
+
+You can open and close Workbook sections (top, left and right) either programmatically or using Workbook component actions. This offers authors of highly dynamic Workbooks more flexibility in how to build user interfaces, by automatically showing or hiding sections of the UI based on choices made by the user – or the general state of the application.
+
+![img](../../../../../../images/changelogs/inVision25_4_2.png)
+
+<br/>
+
+## Default value property for new non-null columns
+
+The Default value property is automatically applied when the schema of a table changes. This is useful when you add a new PK (or non-nullable) column to an existing table. The Default value can be a value or a function, for example NEWID().
+
+![img](../../../../../../images/changelogs/inVision25_4_3.png)
+
+<br/>

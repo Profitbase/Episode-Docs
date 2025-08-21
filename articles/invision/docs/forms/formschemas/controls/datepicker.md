@@ -77,6 +77,18 @@ Specifies the hotkey for the control.
 
 <br/>
 
+`StopClickEventPropagation`
+
+Stops the click event from propagating up the DOM tree.
+
+
+
+```xml
+<DatePicker Name="DatePicker_OrderDate" Value="{Binding Path:Order.OrderDate}" Type="DateTime" stopClickEventPropagation="true" />
+```
+
+<br/>
+
 ## Videos
 
 - [Form Schemas](../../../../videos/formschemas.md)

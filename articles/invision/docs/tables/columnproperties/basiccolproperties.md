@@ -20,6 +20,13 @@ Below you will find a list of the basic **Column Properties**.
 | Conditional formatting            | Specifies styling and formatting rules for the column based on cell values. Due to performance reasons, we recommend specifying cell formatting using [Style Formulas](../calculations/cellnrowstylfunc.md), **SetRowStyle(…)** and **SetCellStyle(…)**, instead of the Conditional Formatting feature. |
 | Summmary Function                 | Specifies which summary function to apply the the column when the Summary Row feature of the data grid is enabled. Available functions are Default, Sum, Min, Max, Count, Average and None. For numeric columns, the default is Sum and for all other columns, the default is None. |
 
+## Default value property for new non-null columns
+
+The Default value property is now automatically applied when the schema of a table changes. This is useful when you add a new PK (or non-nullable) column to an existing table. The Default value can be a value or a function, for example NEWID().
+
+![img](../../../../../images/changelogs/inVision25_4_3.png)
+
+<br/>
 
 <br/>
 

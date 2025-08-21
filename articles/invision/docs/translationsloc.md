@@ -29,6 +29,16 @@ For performance reasons, the contents of pbSimLangText is cached after the first
 When pbSimLangText has been edited, you need to reset the cache by opening the Solution, go to the **Localization**-tab in the main screen, and press "**Reset Cache**".
 <br/>
 
+##  Disable languages from being selected by users
+
+InVision comes with a set of languages natively supported by the platform. However, you don’t necessarily implement support for all the languages when building solutions. To prevent users from selecting a language you haven’t implemented support for, you can now specify which language options you want users to be able to select from, for example only English.
+
+You can now configure this behavior from the **Localization** settings in the Designer, by selecting which language options should be available to end users.  
+
+![img](../../../images/changelogs/inVision25_4_1.png)
+
+<br/>
+
 ## See Also
 
 - [How to's](translationsloc/howto.md)

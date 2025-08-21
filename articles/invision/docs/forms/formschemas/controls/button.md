@@ -58,6 +58,16 @@ Valid values for the **Disabled** property:
 
 <br/>
 
+**stopClickEventPropagation**
+
+Stops the click event from propagating up the DOM tree.
+
+```xml
+<Button Hotkey="Alt + B" Name="Button1" Text="Click me" Row="1" ColumnSpan="2" Click="ShowAlert('My Message')" stopClickEventPropagation="true"/>
+```
+
+<br/>
+
 ### Example
 
 This example shows how to programmatically activate (select) a tab when a button is clicked.
