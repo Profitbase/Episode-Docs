@@ -31,6 +31,18 @@ This example shows how to call a function when the ToggleButton is clicked, pass
 
 <br/>
 
+
+`StopClickEventPropagation`
+
+Stops the click event from propagating up the DOM tree.
+
+
+```xml
+<ToggleButton Name="ToggleButton1" Text="Click me" Click="ShowAlert" stopClickEventPropagation="true"/>
+```
+
+<br/>
+
 `Disabled`
 
 Use the Disabled property to disable a control or set it to read-only.  

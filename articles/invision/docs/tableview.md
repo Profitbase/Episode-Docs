@@ -251,6 +251,12 @@ public override ExcelExportDataCellOutput RenderDataCell(ExcelExportRenderDataCe
 
 <br/>
 
+## Selection options can be configured at Workbook component level
+
+When using TableViews to list data, you can specify the selection behavior and rules per instance instead of on the object definition level. This means you can now reuse the same TableView multiple times, but with different selection configuration. For example, you may have a Workbook with a limited (or read-only) functionality, but you want to reuse the same TableView that’s available to power users with admin permissions in another Workbook.
+
+
+![img](../../../images/changelogs/inVision25_4_4.png)
 
 
 ### Videos

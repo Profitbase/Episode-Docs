@@ -60,6 +60,17 @@ Specifies the hotkey for the control.
 
 <br/>
 
+`StopClickEventPropagation`
+
+Stops the click event from propagating up the DOM tree.
+
+
+```xml
+<Image Name="Image1" Click="ImageClicked('My image')" stopClickEventPropagation="true"/>
+```
+
+<br/>
+
 ## Videos
 
 - [Form Schemas](../../../../videos/formschemas.md)

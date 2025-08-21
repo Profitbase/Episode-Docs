@@ -215,6 +215,17 @@ Specifies the hotkey for the control.
 
 <br/>
 
+`StopClickEventPropagation`
+
+Stops the click event from propagating up the DOM tree.
+
+
+```xml
+ <Dropdown Row="1" Column="1" ColumnSpan="6" Searchable="true" ItemsSource="Pilots" DisplayMember="Name" ValueMember="PilotID" SelectedValue="{Binding Path:Pilot.PilotID}" ItemSelected="OnItemSelected" stopClickEventPropagation="true">
+```
+
+<br/>
+
 ## See Also
 
 - [Dropdown - Form Elements](../../formelements/dropdown.md)

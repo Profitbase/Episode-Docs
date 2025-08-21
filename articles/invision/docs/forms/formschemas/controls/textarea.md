@@ -50,3 +50,16 @@ Valid values for the **Disabled** property:
 - True
 - False
 - {Binding}
+
+`StopClickEventPropagation`
+
+Stops the click event from propagating up the DOM tree.
+
+**Example**
+
+```xml
+    <TextArea Row="4" Column="1" ColumnSpan="2" Value="{Binding Path:Customer.Notes}" stopClickEventPropagation="true"/>
+```
+
+
+<br/>

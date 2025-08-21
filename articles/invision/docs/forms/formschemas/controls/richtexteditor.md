@@ -100,6 +100,17 @@ Specifies the hotkey for the control.
 
 <br/>
 
+`StopClickEventPropagation`
+
+Stops the click event from propagating up the DOM tree.
+
+
+```xml
+ <RichTextEditor Row="2" Column="1" Value="{Binding Path:Document.Text}" stopClickEventPropagation="true"/>
+```
+
+<br/>
+
 ## Videos
 
 - [Form Schemas](../../../../videos/formschemas.md)
