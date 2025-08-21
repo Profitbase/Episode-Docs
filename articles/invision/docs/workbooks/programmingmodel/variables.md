@@ -32,12 +32,6 @@ The following variables are provided by the system, and available in all Workboo
 | this.appVariables.SYS.SolutionId      | Returns the Solution Id that the Workbook belongs to. |
 | this.appVariables.SYS.WorkbookId      | Returns the Id of the Workbook.          |
 | this.appVariables.QSP.name            | Returns the value of the query string parameter with the name 'name'. |
-|                                       |                                                             |
-| this.app.variables.SYS.CurrentUserName | Returns the user name of the currently logged-in user, for example `leia@rebellion.com` |
-| this.app.ariables.SYS.SYS_DataSetID    | When the Workbook is under Workflow Control, returns the Data Set ID associated with the Workflow. |
-| this.app.variables.SYS.SolutionId      | Returns the Solution Id that the Workbook belongs to. |
-| this.app.variables.SYS.WorkbookId      | Returns the Id of the Workbook.          |
-| this.app.variables.QSP.name            | Returns the value of the query string parameter with the name 'name'. |
 
 # [Eaze](#tab/eaze)
 

@@ -47,3 +47,10 @@ To enable the user to order the rows in the desired order from lowest to highest
 Next, you need to specify that the column should be used for determining the specificity by going to the **Features** -> **Ranked Input** screen and choosing the column from the specificity Dropdown list.
 
 When the specificity column has been set up, the user can move rows up and down using the context menu of the grid.
+
+<br/>
+
+## Default values
+If you want cells in new rows in Ranked Input tables to get "All level" as default values, use `DimMember(ALL_LEVEL)` as the `Default value` of columns having the `Ranked Input Settings` property defined.
+
+![img](/images/invision/ranked-input-table-default-cell-value.png)
