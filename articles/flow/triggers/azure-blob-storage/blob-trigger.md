@@ -13,7 +13,7 @@ Configures the flow to automatically run by periodically fetching a list of all 
 | Name           | Type     | Description                                      |
 |----------------|----------|--------------------------------------------------|
 | Title          |          |                                                  |
-| Connection     | Required | Connection name and string.                      |
+| Connection     | Required | [Azure Blob container connection](../../actions/azure-blob-storage/azure-blob-container-connection.md)                  |
 | Polling frequency| Optional | Schedule configuration of the trigger.         |
 | Blob name prefix filter | Optional | Prefix filter for blob names.           |
 | Disabled       | Optional | Boolean value indicating whether the trigger is disabled (true/false).|

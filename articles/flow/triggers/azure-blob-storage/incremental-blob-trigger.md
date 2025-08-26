@@ -12,7 +12,7 @@ Configures the flow to automatically run by periodically checking for new or mod
 | Name           | Type     | Description                                      |
 |----------------|----------|--------------------------------------------------|
 | Title          |          |                                                  |
-| Connection     | Required | Connection name and string.                      |
+| Connection     | Required | [Azure Blob container connection](../../actions/azure-blob-storage/azure-blob-container-connection.md)               |
 | Polling frequency| Optional | Schedule configuration of the trigger.         |
 | Number of blobs | Optional |                                                 |
 | Disabled       | Optional | Boolean value indicating whether the trigger is disabled (true/false).|
