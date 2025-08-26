@@ -64,6 +64,8 @@
             href: calculations/textfunc.md
           - name: Date for time frame columns in formulas
             href: calculations/usingdate.md
+        - name: Code-behind
+          href: code-behind.md
         - name: Cell validation
           href: cellvalidation.md
         - name: Column captions

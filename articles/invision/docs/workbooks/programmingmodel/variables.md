@@ -11,13 +11,10 @@ To define global variables, use the `Variables` popup in the Workbook menu and d
 To access a variable `_state`, use  
 
 ```javascript
-const myState = this.appVariables._state 
-```
+const myState = this.app.variables._state 
 
-or  
-
-```javascript
-const myState = this.app.variables._state
+// or using the legacy API:
+const myState = this.appVariables._state
 ```
 
 ## System Variables
@@ -27,11 +24,18 @@ The following variables are provided by the system, and available in all Workboo
 # [JavaScript](#tab/javascript)
 | Name                                  | Description                             |
 |---------------------------------------|-----------------------------------------|
+| this.app.variables.SYS.CurrentUserName | Returns the user name of the currently logged-in user, for example `leia@rebellion.com` |
+| this.app.variables.SYS.SYS_DataSetID    | When the Workbook is under Workflow Control, returns the Data Set ID associated with the Workflow. |
+| this.app.variables.SYS.SolutionId      | Returns the Solution Id that the Workbook belongs to. |
+| this.app.variables.SYS.WorkbookId      | Returns the Id of the Workbook.          |
+| this.app.variables.QSP.name            | Returns the value of the query string parameter with the name 'name'. |
+| -- Legacy API                          |                                                             |
 | this.appVariables.SYS.CurrentUserName | Returns the user name of the currently logged-in user, for example `leia@rebellion.com` |
 | this.appVariables.SYS.SYS_DataSetID   | When the Workbook is under Workflow Control, returns the Data Set ID associated with the Workflow. |
 | this.appVariables.SYS.SolutionId      | Returns the Solution Id that the Workbook belongs to. |
 | this.appVariables.SYS.WorkbookId      | Returns the Id of the Workbook.          |
 | this.appVariables.QSP.name            | Returns the value of the query string parameter with the name 'name'. |
+
 
 # [Eaze](#tab/eaze)
 
@@ -53,7 +57,7 @@ To display a dynamically evaluated text in a Label, you need to apply using the 
 **JavaScript**
 ```javascript
 // To display the name of the current user, add the following expression to the Text property of a Label.
-SetText("The current user is " + this.appVariables.SYS.CurrentUserName);
+SetText("The current user is " + this.app.variables.SYS.CurrentUserName);
 ```
 
 **Eaze**

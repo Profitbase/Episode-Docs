@@ -9,6 +9,8 @@
             href: howto/charts.md
           - name: How to use ChartInteractionEvent
             href: howto/interactionevents.md
+        - name: Code-behind
+          href: code-behind.md
         - name: Chart formatting
           href: chartformatting.md
         - name: Data queries
