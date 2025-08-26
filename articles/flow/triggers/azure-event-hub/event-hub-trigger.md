@@ -10,7 +10,7 @@ When a new message arrives in the [Azure Event hub](https://learn.microsoft.com/
 |----------------|----------|--------------------------------------------------|
 | Title          |  Optional | A descriptive label for the trigger configuration.|
 | Event Hub connection     | Required | Azure Event Hub connection used to authenticate and connect to the service. |
-| Blob storage connection     | Required | Azure Blob Storage connection used to maintain the checkpoint. |
+| Blob Container connection     | Required | [Azure Blob container connection](../../actions/azure-blob-storage/azure-blob-container-connection.md) used to maintain the checkpoint. |
 | Polling frequency| Optional | Interval or schedule for how often the trigger checks for new messages in the topic. |
 | Checkpoint batch size | Optional | Specifies the number of received event before updating the checkpoint. |
 | Consumer group | Optional | Specifies the name of the consumer group used to read the events. |
