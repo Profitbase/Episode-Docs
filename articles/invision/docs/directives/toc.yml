@@ -18,5 +18,7 @@
             href: csharpdirectives/localize.md
         - name: Object directives
           href: object.md
+        - name: SolutionVariable[Name]
+          href: solution-variable-name.md
         - name: Standard directives
           href: standarddirectives.md
