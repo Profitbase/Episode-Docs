@@ -1,9 +1,9 @@
 # Code-behind
 
-The `code-behind` lets you write JavaScript to calculate, validate and modify the data set displayed in a sheet (for example Worksheet, Table or SQL Report).
+The `code-behind` lets you write JavaScript to calculate, validate and modify the dataset displayed in a sheet (for example Worksheet, Table or SQL Report).
 To edit the code-behind, open the `Calculations` editor and switch to the `Code-behind` tab.
 
-To get started, press `Insert template`. This will give you an code-behind class where you can implement the empty callback functions.
+To get started, press `Insert template`. This will give you a code-behind class where you can implement the empty callback functions.
 
 ![img](/images/invision/datagrid-code-behind.png)
 
