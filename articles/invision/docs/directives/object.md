@@ -186,7 +186,7 @@ Gets the prepared SQL expression that calculates the date of a Time Frame column
 
 
 *	**Returns**  
-``DATEADD(<datepart>,<number>,CAST(<yyyyMMdd>) AS DateTime)``
+``CAST(<yyyyMMdd>) AS DateTime)``
 
 <br/>
 
