@@ -10,7 +10,7 @@ Displays a confirm dialog to the user, with the options to accept or reject. If 
 ##### API Definition
 
 ```javascript
-this.app.ui.dialogs.showConfirm({title: string, message: string, positiveButtonText?: string, negativeButtonText?: string, width?: number, height?: number }) : Promise<boolean>
+this.app.ui.dialogs.showConfirm({title: string, text: string, positiveButtonText?: string, negativeButtonText?: string, width?: number, height?: number }) : Promise<boolean>
 this.app.ui.dialogs.showConfirm(text: string): Promise<boolean>
 ```
 
