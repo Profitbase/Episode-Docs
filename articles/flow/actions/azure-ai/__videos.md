@@ -1,4 +1,4 @@
-## Videos / Getting started
+## Azure AI: Videos / Getting started
 This section contains videos to help you get started quickly with Azure AI in your Flow automations.  
 
 <br/>

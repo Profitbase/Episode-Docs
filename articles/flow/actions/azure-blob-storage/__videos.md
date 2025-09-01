@@ -1,7 +1,8 @@
-## Videos / Getting started
+## Azure Blob Storage: Videos / Getting started
 This section contains videos to help you get started quickly working with Azure Blob Storage using Flow.  
 
 <br/>
+
 
 #### Dump CSV file from Azure Blob container to Azure SQL table
 This video demonstrates how to import all records from a CSV file in Azure Blob Storage into an Azure SQL table.  
