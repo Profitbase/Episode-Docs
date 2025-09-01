@@ -18,6 +18,7 @@ With your Workspace created, you can now [create a Flow](./flows/create-flow.md)
 
 ![img](/images/flow/create-flow-from-portal.png)
 
+<br/>
 
 ## Run Flows
 There are multiple ways to run a Flow. The links below describe how to run Flows during development, in production, and from third-party apps.
@@ -29,3 +30,59 @@ There are multiple ways to run a Flow. The links below describe how to run Flows
 
 [Run a Flow from an InVision Workbook](../invision/docs/flows/how-to/run-flow-from-workbook.md)  
 [Run a Flow from an InVision Form](../invision/docs/flows/how-to/run-flow-from-form-schema.md)
+
+<br/>
+
+## Videos
+Get an introduction to Flow by wathing the videos below.  
+
+<br/>
+
+[!INCLUDE [](./actions/adobe/__videos.md)]  
+---
+
+<br/>
+
+[!INCLUDE [](./actions/azure-ai/__videos.md)]
+---
+
+<br/>
+
+[!INCLUDE [](./actions/azure-blob-storage/__videos.md)]
+---
+
+<br/>
+
+[!INCLUDE [](./actions/csv/__videos.md)]
+---
+
+<br/>
+
+[!INCLUDE [](./actions/excel/__videos.md)]
+---
+
+<br/>
+
+[!INCLUDE [](./actions/github/__videos.md)]
+---
+
+<br/>
+
+[!INCLUDE [](./actions/http/__videos.md)]
+---
+
+<br/>
+
+[!INCLUDE [](./actions/microsoft-365-outlook/__videos.md)]
+---
+
+<br/>
+
+[!INCLUDE [](./actions/microsoft-fabric/__videos.md)]
+---
+
+<br/>
+
+[!INCLUDE [](./actions/sql-server/__videos.md)]
+
+<br/>

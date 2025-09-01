@@ -1,4 +1,4 @@
-## Videos / Getting started
+## GitHub: Videos / Getting started
 This section contains videos to help you get started quickly with GitHub integrations in your Flow automations.  
 
 <br/>
