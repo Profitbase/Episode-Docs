@@ -53,6 +53,8 @@
             href: components/dataflow.md
           - name: Data flow schedule
             href: components/dataflowschedule.md
+          - name: Flow schedule
+            href: components/flowschedule.md
           - name: Dimension editor
             href: components/dimensioneditor.md
           - name: Extension

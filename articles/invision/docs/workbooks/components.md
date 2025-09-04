@@ -9,6 +9,7 @@ In this section, you will find Components. Interactive building blocks for creat
 * [Access Control Editors](components/accesscontrol.md)
 * [Data Flow](components/dataflow.md)
 * [Data Flow Schedule](components/dataflowschedule.md)
+* [Flow Schedule](components/flowschedule.md)
 * [Dimension Editor](components/dimensioneditor.md)
 * [Extension](components/extension.md)
 * [File Storage](components/filestorage.md)

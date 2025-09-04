@@ -8,7 +8,7 @@
   href: "get-datareader.md"
 - name: "Get single value"
   href: "get-single-value.md"
-- name: "Insert Data"
+- name: "Insert Rows"
   href: "insert-data.md"
 - name: "Load to DataTable"
   href: "load-datatable.md"
