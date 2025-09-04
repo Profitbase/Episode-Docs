@@ -46,5 +46,5 @@ A connection type (or authentication type) must be selected before entering othe
 
 | Name                | Description                                                          |
 |-------------------|----------------------------------------------------------------------|
-| Connecion String    | A full connection string that can be used to establish an Sql Server connection.  |
+| ConnectionString    | A full connection string that can be used to establish an Sql Server connection.  |
 

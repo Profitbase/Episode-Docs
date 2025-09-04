@@ -17,43 +17,50 @@ The  [Flow](../../../../flow/flow.md) Schedule component enables end users to cr
 ## How to create a New Schedule for a Flow
 <br/>
 
-To create a new Flow Schedule, you need to execute the New action of the Schedule component and provide the id of the  Flow](../..flows/index.md). You can also provide one or more parameters that you want theflow to be executed with.
+To create a new Flow Schedule, you need to execute the New action of the Schedule component and provide the id of the  [Flow](../../flows/overview.md). You can also provide one or more parameters that you want theflow to be executed with.
 
-1. Find the Flow Schedule component in the Actions explorer (for example for a button tapped event), 
-2. Drag and drop the New action into the Actions list,
-3. Use the Arguments(...) function to specify the id of theflow. Optionally, you can define parameters that will be passed to theflow when the schedule is run as the second parameter of the Arguments function.
-
-<br/>
-
-![dfs](https://profitbasedocs.blob.core.windows.net/images/dfs2.png)
+Navigate to the Flow tab and select Scheduler.   
+![dfs](../../../../../images/invision/flow-scheduler1.png)
 
 <br/>
 
-**Tip:** 
-
-Click the Snippets button above the Instructions field to view the available functions to call.
+Select the Flow you want to schedule from your solution.  
+![dfs](../../../../../images/invision/flow-scheduler2.png)
 
 <br/>
+
+Create a new job by providing a name, selecting the Flow, and configuring the schedule.  
+![dfs](../../../../../images/invision/flow-scheduler3.png)
+
+<br/>
+
+Review the list of scheduled jobs and confirm your new job is listed.  
+![dfs](../../../../../images/invision/flow-scheduler4.png)
+
+<br/>
+
+Check the execution logs to monitor the status and history of your scheduled Flow.
+![dfs](../../../../../images/invision/flow-scheduler6.png)
+
+
+<br/>
+
+
 
 ## How to Edit a Schedule
-<br/>
 
-To edit aflow Schedule, you need to provide the schedule id to the component.
-
-1. Find the Flow Schedule component in the Actions explorer (for example for a button tapped event), 
-2. Drag and drop the Load action into the Actions list,
-3. Use the Arguments(...) function to specify the id of the scheduled job to edit.
+Click Edit on the scheduled job you want to modify.  
+![dfs](../../../../../images/invision/flow-scheduler7.png)
 
 <br/>
 
-![dfs](https://profitbasedocs.blob.core.windows.net/images/dfs3.png)
+Switch to the Schedule tab to update when the job should run.  
+![dfs](../../../../../images/invision/flow-scheduler8.png)
 
 <br/>
 
----
+Optionally, define a custom Cron expression for advanced scheduling.  
+![dfs](../../../../../images/invision/flow-scheduler9.png)
 
 <br/>
 
-![dfs](https://profitbasedocs.blob.core.windows.net/images/dfs4.png)
-
-<br/>
