@@ -93,6 +93,7 @@ You must use **synonym** or a fixed known datasource when accessing data, in a s
 ![pic](https://profitbasedocs.blob.core.windows.net/images/package-configuration-form-data-synonym.png)
 
 <br/>
+<br/>
 
 ### c) Variables
 
@@ -136,8 +137,8 @@ this.app.variables.SYS.WorkProcessVersionId
 > />
 > ```
 
-
-
+<br/>
+<br/>
 
 ### d) Validation
 
