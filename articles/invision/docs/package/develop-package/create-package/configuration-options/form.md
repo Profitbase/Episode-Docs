@@ -9,52 +9,40 @@
 
 
 ### a) Design
-Create a [form](./../../../../../docs/forms/formschemas.md) residing as a sub object under the package, and then attach it to the Form-property in the 'Configuration options' section, when you have selected 'Form' as the option type.
+Create a **[Form](./../../../../../docs/forms/formschemas.md)** residing as a sub object under the package, and then attach it to the Form-property in the 'Configuration options' section, when you have selected 'Form' as the option type.
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/package-configuration-set-form.png)
 
 
-The form will be displayed with auto-height, so it is recommended that you specify the UI Grid height according to your layout needs. If you don’t specify a height, the form will automatically fill the available space.
+**Set height**<br/>
+You must set the height of the UI grid. The form will be displayed with auto-height, so you must specify the UI Grid height to avoid the design to collapse.
 
 > [!TIP]
-> **Example of styling, using the CSS-node in the form**
+> **Example of styling, using the Layouts-node in the form**
+> <br/>Setting Rows="[height]px" will give the layout one row with the specific height.
 > ```xml
-> <Css>
->    <![CDATA[
->        .main {
->            height: 300px;
->            align-items: center;
->            border: 1px solid black;
->            padding: 3px;
->        }
->    ]]>
-> </Css>
+> <Layouts>
+>   <Grid Name="grid" Rows="300px" Columns="auto" />
+> </Layouts>
 > ```
 >
-> **Example of applying the style class to the UI node**
+> **Example of applying the style to the UI node**
+> <br/>Apply the layout to the UI, and place all content inside the (one) child grid of the UI.
 > ```xml
-> <UI Grid="grid" CssClass="main" >
+> <UI Grid="grid">
+>   <Grid Rows="auto auto 1fr" Columns="auto auto 1fr">
 >       ...
+>   </Grid>
 > </UI>
 > ```
 
-**Example When the CSS property height is set**
-
-![pic](https://profitbasedocs.blob.core.windows.net/images/package-configuration-form-design-height-fixed-result.png)
-
-**Example When the CSS property height is not set**
-
-The form will fill the page.
-
-![pic](https://profitbasedocs.blob.core.windows.net/images/package-configuration-form-design-height-auto-result.png)
-
-
-
-
+<br/>
+<br/>
 
 ### b) Data source
 
-When designing the form and accessing data in the versioning context, the <strong>@Object</strong> directive **does not work** and you will need to use Synonyms.
+**Use synonym**<br/>
+You must use **synonym** or a fixed known datasource when accessing data, in a shared database. The <strong>@Object</strong> directive **does not work**.
 
 
 > [!CAUTION]
@@ -104,26 +92,33 @@ When designing the form and accessing data in the versioning context, the <stron
 **Example synonym**
 ![pic](https://profitbasedocs.blob.core.windows.net/images/package-configuration-form-data-synonym.png)
 
-
-
+<br/>
 
 ### c) Variables
 
 When the form is connected to a version, the form will have access to the **WorkProcessId** and **WorkProcessVersionId**, either via javascript or via sql parameters.
 
+**JavaScript**<br/>
+You can access the variables via the context like this:
+```javascript 
+this.app.variables.SYS.WorkProcessId
+this.app.variables.SYS.WorkProcessVersionId
+```
+
+**SQL**<br/>
+```sql
+@SYS_WorkProcessID
+@SYS_WorkProcessVersionID
+```
+
+
 > [!TIP]
-> **Example using JavaScript to access the variables**
-> <br/>
-> You can access the variables via the context like this:
-> ```javascript 
-> this.app.SYS.WorkProcessId
-> this.app.SYS.WorkProcessVersionId
-> ```
+> **Example using JavaScript to access the variables**<br/>
 > ```xml
 > <FormEventHandler On="Init">
 >   <![CDATA[
->       console.log('WorkProcessId = ' + this.app.SYS.WorkProcessId);
->       console.log('WorkProcessVersionId = ' + this.app.SYS.WorkProcessVersionId);
+>       console.log('WorkProcessId = ' + this.app.variables.SYS.WorkProcessId);
+>       console.log('WorkProcessVersionId = ' + this.app.variables.SYS.WorkProcessVersionId);
 >    ]]>
 > </FormEventHandler>
 > ```
@@ -131,12 +126,7 @@ When the form is connected to a version, the form will have access to the **Work
 
 
 > [!TIP]
-> **Example using SQL to access variables**
-> <br/>
-> ```sql
-> @SYS_WorkProcessID
-> @SYS_WorkProcessVersionID
-> ```
+> **Example using SQL to access variables**<br/>
 > ```xml
 > <SetModel Name="BudgetDataSource"
 >       Source="BUDGET_DATA" 
@@ -151,9 +141,7 @@ When the form is connected to a version, the form will have access to the **Work
 
 ### d) Validation
 
-If you need to ensure that the user has given correct and valid input before deploying or changing states, you can implement a form function that will validate the input data given by the user. 
-
-This function must be named **Validate** and return boolean.
+If you need to ensure that the user has given valid input, implement a function named **Validate** which returns true or false.
 
 **Basic example**
 ```xml
@@ -167,7 +155,7 @@ This function must be named **Validate** and return boolean.
 > [!CAUTION]
 > If the function is not implemented or is misspelled, the validation logic will treat the input as valid and proceed with the process.
 
-Validation interaction with the user must also be handled by the validation function if the user needs feedback. If there are no user interaction implemented in the form-function "Validate", on failed validation, there will be nothing informing the user of the validation result. When validation succeeds, the user will be able to continue the versioning process, hence no need for extra user interaction on success.
+Validation interaction with the user must also be handled by the validation function if the user needs feedback. If there are no user interaction implemented in the function **Validate**, on failed validation, there will be nothing informing the user of the validation result. When validation succeeds, the user will be able to continue the versioning process, hence no need for extra user interaction on success.
 
 **Example with UI**
 ```xml
