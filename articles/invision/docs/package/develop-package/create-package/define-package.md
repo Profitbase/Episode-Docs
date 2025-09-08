@@ -4,15 +4,18 @@
 When defining a Package, you should consider all the following points.
 <br/>
 
-1.	Version
-2. Package Type
-3.	Post Deployment Action
-4.	Package data
-5.	Package Properties
-6.	Work Process integration  
-a.  Data Flows  
-b.  Upgrade Scripts
-7.	Dependencies
+1.	[Version](#1-version)
+2. [Package Type](#2-package-type)
+3. [Documentation](#3-define-package-documentation-link)
+4.	[Post Deployment Action](#4-post-deployment-action)
+5.	[Package data](#5-package-data)
+6.	[Configuration options](#6-configuration-options)  
+   a.  [Package properties](#6a-package-properties)  
+   b.  [Form](#6b-form)
+7.	[Work Process integration](#7-work-process-integration)  
+   a.  [Data Flows](#7a)  
+   b.  [Upgrade Scripts](#7b)
+8.	[Dependencies](#8-dependencies)
 
 
 <br/>
@@ -43,7 +46,7 @@ Specifying the Package Type does not have any other impact than making it easier
 
 <br/>
 
-## 3. Define Package Documentation link:
+## 3. Define Package Documentation link
 
 You can specify the Package Documentation link, making it easy for users to find useful informations.  
 
@@ -73,7 +76,15 @@ By default, only metadata configuration is included when exporting a Package usi
 
 <br/>
 
-## 6. Package Properties
+## 6. Configuration options
+
+The package may be configured using either 'Package properties' or a 'Form'.
+
+![pic](https://profitbasedocs.blob.core.windows.net/images/package-configuration-options-form.png)
+
+![pic](https://profitbasedocs.blob.core.windows.net/images/package-configuration-options-properties.png)
+
+#### 6.a Package Properties
 
 Package Properties are variables that can be used by functionality within the Solution that the Package is deployed. The most common case for Package Properties is when Packages are used in Work Processes. Package Properties defines the settings for Work Process Versions that process owners can manage to configure Work Process Versions. Examples of typical Package Properties are planning period start dates and end dates.
 
@@ -85,6 +96,31 @@ It needs to be unique, because different packages can be deployed to the same So
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/pack_property.png)
 
+**More:** [Package Properties](./configuration-options/package-properties.md)
+
+#### 6.b Form
+
+While 'Package Properties' offer a simple way to define static settings, they can be limiting when more dynamic, flexible, or user-specific configuration options are needed.
+Using a Form will give full control over the settings and functions required for deployed versions. 
+
+A form allows for 
+- Custom UI for configuration: You can design tailored interfaces for setting up Package behavior.
+- Complex validation and logic: Use the Form API to enforce rules, dependencies, and dynamic defaults.
+- Improved user experience: Process owners and end-users interact with intuitive forms rather than raw property lists.
+- Version-specific settings: Forms can be tied to specific deployment versions, enabling granular control.
+
+Example use case:
+Instead of defining a static Hypotesia.StartDate property, a Form can be created with:
+- A date picker for start and end dates
+- A dropdown for selecting planning modes
+- Conditional fields that appear based on user input
+
+Create a form in the package, and attach it to the Form-property in the 'Configuration options' section.
+
+![pic](https://profitbasedocs.blob.core.windows.net/images/package-configuration-set-form.png)
+
+**More:** [Form](./configuration-options/form.md)
+
 <br/>
 
 
@@ -92,7 +128,7 @@ It needs to be unique, because different packages can be deployed to the same So
 
 <br/>
 
-**Work Process integration – Data Flows**
+<a id="7a"></a>**7.a Work Process integration – Data Flows**
 
 
 When a Package is used in Work Processes, such as budgeting and forecasting, you often need to run business logic when the Work Process Version transitions between states (Deployed, Open, Closed, Deleted). Under the Work Process tab, you can specify Data Flows to run after Work Process Versions containing this Package have entered the Deployed, Open, Closed, or Deleted state.
@@ -105,7 +141,7 @@ When a Package is used in Work Processes, such as budgeting and forecasting, you
 
 
 
-**Work Process integration – Upgrade Scripts**
+<a id="7b"></a>**7.b Work Process integration – Upgrade Scripts**
 
 Because Work Process Versions are isolated from each other, you can have different versions of the same Package in different Work Process Versions. However, if you upgrade a Package to a new version, and you create a new Work Process Version containing the **new version** of the Package but want to pull in data from a Work Process Version using an **older version** of the Package, you may get in trouble because the old version is missing data that the new version of the Package requires.
 

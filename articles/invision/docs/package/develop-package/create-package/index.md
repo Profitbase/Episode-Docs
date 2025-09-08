@@ -2,5 +2,5 @@
 
 * [Define package](./define-package.md)
 * [Export package](./export-package.md)
-* [Packageproperty](./packageproperty.md)
+* [Configuration options](./configuration-options.md)
 * [Publ packages](./publ-packages.md)

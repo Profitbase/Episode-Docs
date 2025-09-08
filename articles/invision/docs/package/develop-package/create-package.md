@@ -3,11 +3,11 @@
 
 In this section, you will find documentation about [defining](create-package/define-package.md), [exporting](create-package/export-package.md) , and [publishing](create-package/publ-packages.md) packages. 
 
-You will also find docs about package [properties](create-package/packageproperty.md).
+You will also find docs about package [properties](create-package/configuration-options.md#package-properties) and for using [form](create-package/configuration-options.md#form) in a package.
 
 ### See Also
 
 - [Define Package](create-package/define-package.md)
-- [Package Properties](create-package/packageproperty.md)
+- [Configuration options](create-package/configuration-options.md)
 - [Export Package](create-package/export-package.md) 
 - [Publish Package](create-package/publ-packages.md)

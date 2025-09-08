@@ -213,11 +213,3 @@ Adding a PowerShell script with a parameter decalaration.
 <br/>
 
 ![PK](https://profitbasedocs.blob.core.windows.net/images/packageProperties9.jpg)
-
-
-
-## Videos
-
-* [Packages](../../../../videos/packages.md)
-* [Package Properties](https://profitbasedocs.blob.core.windows.net/videos/Package%20-%20Package%20Properties.mp4)
-  

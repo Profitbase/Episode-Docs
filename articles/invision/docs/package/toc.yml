@@ -23,8 +23,13 @@
               href: develop-package/create-package/define-package.md
             - name: Export package
               href: develop-package/create-package/export-package.md
-            - name: Package properties
-              href: develop-package/create-package/packageproperty.md
+            - name: Configuration options
+              href: develop-package/create-package/configuration-options.md
+              items:
+              - name: Package properties
+                href: develop-package/create-package/configuration-options/package-properties.md
+              - name: Form
+                href: develop-package/create-package/configuration-options/form.md
             - name: Publish packages
               href: develop-package/create-package/publ-packages.md
           - name: Create package upgrade
