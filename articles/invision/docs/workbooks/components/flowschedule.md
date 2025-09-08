@@ -17,7 +17,7 @@ The  [Flow](../../../../flow/flow.md) Schedule component enables end users to cr
 ## How to create a New Schedule for a Flow
 <br/>
 
-To create a new Flow Schedule, you need to execute the New action of the Schedule component and provide the id of the  [Flow](../../flows/overview.md). You can also provide one or more parameters that you want theflow to be executed with.
+To create a new Flow Schedule, you need to execute the New action of the Schedule component and provide the id of the [Flow](../../flows/overview.md). You can also provide one or more parameters that you want the flow to be executed with.
 
 Navigate to the Flow tab and select Scheduler.   
 ![dfs](../../../../../images/invision/flow-scheduler1.png)
