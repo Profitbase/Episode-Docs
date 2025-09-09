@@ -6,7 +6,7 @@
   items:
     - name: "Blob trigger"
       href: "azure-blob-storage/blob-trigger.md"
-    - name: "Incremental Blob trigger"
+    - name: "Incremental blob trigger"
       href: "azure-blob-storage/incremental-blob-trigger.md"
 - name: "Azure Event Hub"
   items:

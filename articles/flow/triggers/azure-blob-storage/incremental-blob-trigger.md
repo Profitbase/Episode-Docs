@@ -1,21 +1,56 @@
-# Incremental Blob trigger
+# Incremental Blob Trigger
 
-Configures the flow to automatically run by periodically checking for new or modified blobs in an [Azure Blob Container](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction#containers).
+Configures the Flow to automatically run by periodically checking for **new or modified blobs** in an [Azure Blob Container](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction#containers).  
+This trigger is useful for automating processes that should only act on **freshly uploaded or updated files**, rather than scanning all blobs every time.
 
+<br/>
 
-<!--![topic](https://profitbasedocs.blob.core.windows.net/flowimages/topic-trigger.png)-->
+## When to use this trigger vs. the standard Blob trigger
 
+- Use **Incremental Blob Trigger** when:
+  - You only want to process **new or modified** files since the last run.
+  - You’re working with containers that hold many blobs and you want to avoid reprocessing unchanged files.
+  - You need to **limit how many files** are processed per run (via *Number of blobs*).
+
+- Use **Azure Blob Trigger** when:
+  - You want to regularly **list all blobs** in a container (or within a prefix).
+  - You need to process **every file**, regardless of when it was added or updated.
+  - You’re setting up a one-time or recurring job that depends on scanning a whole folder.
+
+<br/>
+
+<!--![img](/images/flow/incremental-blob-trigger.png)-->
+
+**Example**  
+This Flow monitors an Azure Blob container for new or updated files.  
+When a blob change is detected, the file is [read](../../actions/azure-blob-storage/read-blob-as-byte-array.md), and its content is loaded into a [DataTable](../../actions/sql-server/load-to-datatable.md) for further processing.
+
+<br/>
+
+<!--![img](/images/flow/incremental-blob-trigger2.png)-->
 
 ## Properties
 
+| Name               | Type     | Description |
+|--------------------|----------|-------------|
+| Title              | Optional | A custom label for this trigger. This name will appear when selecting the trigger in a Flow. |
+| Connection         | Required | An [Azure Blob container connection](../../actions/azure-blob-storage/azure-blob-container-connection.md). |
+| Polling frequency  | Optional | Defines how often the container should be checked for new or modified blobs (e.g., every 5 minutes, hourly). |
+| Number of blobs    | Optional | Limits how many new or modified blobs should be processed per polling interval. Useful for large containers or throttling. |
+| Blob name          | Optional | A specific blob name to listen for. If set, the trigger will only run when this blob is updated. |
+| Disabled           | Optional | Boolean value indicating whether the trigger is disabled (`true`/`false`). |
+| Description        | Optional | Notes or comments about the trigger’s purpose or configuration. |
 
-| Name           | Type     | Description                                      |
-|----------------|----------|--------------------------------------------------|
-| Title          |          |                                                  |
-| Connection     | Required | [Azure Blob container connection](../../actions/azure-blob-storage/azure-blob-container-connection.md)               |
-| Polling frequency| Optional | Schedule configuration of the trigger.         |
-| Number of blobs | Optional |                                                 |
-| Disabled       | Optional | Boolean value indicating whether the trigger is disabled (true/false).|
-| Blob name      | Optional |                                                  |
-| Description    | Optional |  Additional notes or comments about the trigger's purpose or configuration.  |
+<br/>
 
+**Example**
+
+Suppose you want to run a Flow whenever new sales reports are uploaded to the `reports` container.  
+You can configure the trigger as follows:
+
+- **Title:** `Sales reports trigger`  
+- **Connection:** Connection to your Azure Blob container  
+- **Polling frequency:** Every 30 minutes  
+- **Number of blobs:** 10  
+
+With this setup, the Flow will pick up **up to 10 new or updated blobs** per run, process their contents, and update your database without reprocessing older files.
