@@ -5,6 +5,22 @@ This trigger is useful for automating processes that depend on new or updated fi
 
 <br/>
 
+## When to use this trigger vs. the Incremental Blob trigger
+
+- Use **Azure Blob Trigger** when:
+  - You need to regularly **list all blobs** in a container or within a specific prefix.
+  - You want to process **every file**, regardless of when it was added or modified.
+  - You’re running scheduled jobs that depend on scanning a whole folder/container.
+  - You need a simple way to fetch files by prefix without tracking changes.
+
+- Use **Incremental Blob Trigger** when:
+  - You only want to process **new or modified** files since the last run.
+  - You’re working with large containers where scanning all blobs each time is inefficient.
+  - You want to **limit batch size** (using *Number of blobs*) to control throughput.
+  - Your workflow depends specifically on reacting to updates or new uploads.
+  
+<br/>
+
 ![img](/images/flow/blob-trigger.png)
 
 **Example**![img](../../../../images/strz.jpg)  

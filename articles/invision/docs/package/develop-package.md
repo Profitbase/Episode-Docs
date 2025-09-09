@@ -1,12 +1,12 @@
 
 # Develop Package
 
-In this section, you will find documentation about [creating](develop-package/create-package.md), [defining](develop-package/create-package/define-package.md), [exporting](develop-package/create-package/export-package.md), and [publishing](develop-package/create-package/publ-packages.md) packages. You will also find docs about [package properties](develop-package/create-package/packageproperty.md). 
+In this section, you will find documentation about [creating](../package/develop-package/create-package.md), [defining](../package/develop-package/create-package.md), [exporting](../package/develop-package/create-package/export-package.md), and [publishing](develop-package/create-package/publ-packages.md) packages. You will also find docs about [package properties](../package/develop-package/create-package/configuration-options/package-properties.md). 
 
-In the [upgrade](upgrade-package.md) section you will find subjects about [creating package upgrades using Visual Studio](develop-package/create-package-upgrade/create-package-upgrade-using-vs.md) and [publishing package upgrade](develop-package/create-package-upgrade/pub-pack-upgrade.md).
+In the [upgrade](upgrade-package.md) section you will find subjects about [creating package upgrades using Visual Studio](../package/develop-package/create-package-upgrade/create-package-upgrade-using-vs.md) and [publishing package upgrade](../package/develop-package/create-package/publ-packages.md).
 <br/>
 
 ## See Also
 
-- [Create Package](develop-package/create-package.md)
-- [Create Package Upgrade](develop-package/create-package-upgrade.md)
+- [Create Package](../package/develop-package/create-package.md)
+- [Create Package Upgrade](../package/develop-package/create-package-upgrade.md)

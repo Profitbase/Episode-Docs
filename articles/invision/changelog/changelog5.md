@@ -33,7 +33,7 @@ Another major feature of this release is the ability to upgrade Packages. This f
 #### Package Properties
 
 The Package Properties feature enables you to define key-value pairs in Packages that can be used in your business logic. The properties can be set by the user when creating a new Work Process Version if the Package is part of the Work Process blueprint.  
-[Read more...](../docs/package/develop-package/create-package/packageproperty.md)
+[Read more...](../docs/package/develop-package/create-package/configuration-options/package-properties.md)
 <br/>
 
 #### Workbook Menu

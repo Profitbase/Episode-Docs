@@ -9,7 +9,7 @@
 <br/>
 
 ## Package - Properties
-[Documentation](../docs/package/develop-package/create-package/packageproperty.md)
+[Documentation](../docs/package/develop-package/create-package/configuration-options/package-properties.md)
 
 > [!Video https://profitbasedocs.blob.core.windows.net/videos/Package%20-%20Package%20Properties.mp4]
 
