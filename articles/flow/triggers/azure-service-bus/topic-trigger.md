@@ -4,6 +4,14 @@ When a new message arrives in the [Azure Service Bus topic](https://learn.micros
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/topic-trigger.png)
 
+
+**Example**![img](../../../../images/strz.jpg)   
+This Flow listens for new customer-related messages published to an Azure Service Bus **topic**.  
+When a message arrives, the Flow checks whether the payload contains the expected customer information.  
+- If the required data exists, the customer record is inserted into the database.  
+- If the data is missing, the Flow simply continues without writing to the database (in a production scenario you might also add logging or route invalid messages to a dead-letter queue).
+
+
 ## Properties
 
 | Name           | Type     | Description                                      |
@@ -17,8 +25,10 @@ When a new message arrives in the [Azure Service Bus topic](https://learn.micros
 | Disabled       | Optional | Boolean value indicating whether the trigger is disabled (true/false). |
 | Description    | Optional | Additional notes or comments about the trigger's purpose or configuration. |
 
-## Example
 
+
+
+**Example**![img](../../../../images/strz2.jpg)   
 This flow listens for messages from an Azure Service Bus topic, deserializes them into a ``MessageObject``, and stores the data in a SQL Server table. If the table or necessary columns don't exist, they are created or modified accordingly. If no message is received, the flow logs a debug message indicating that no message was found.
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/topic-trigger2.png)
