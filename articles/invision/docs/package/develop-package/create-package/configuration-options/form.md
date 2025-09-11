@@ -1,14 +1,30 @@
 # Form
 
-&nbsp;&nbsp;&nbsp;&nbsp;a. [Design](#a-design)  
-&nbsp;&nbsp;&nbsp;&nbsp;b. [Data source](#b-data-source)    
-&nbsp;&nbsp;&nbsp;&nbsp;c. [Variables](#c-variables)    
-&nbsp;&nbsp;&nbsp;&nbsp;d. [Validation](#d-validation)  
+While 'Package Properties' offer a simple way to define static settings, they can be limiting when more dynamic, flexible, or user-specific configuration options are needed.
+Using a **[Form](./../../../../../docs/forms/formschemas.md)** will give full control over the settings and functions required for deployed versions. 
 
+A form allows for 
+- Custom UI for configuration: You can design tailored interfaces for setting up Package behavior.
+- Complex validation and logic: Use the Form API to enforce rules, dependencies, and dynamic defaults.
+- Improved user experience: Process owners and end-users interact with intuitive forms rather than raw property lists.
+- Version-specific settings: Forms can be tied to specific deployment versions, enabling granular control.
 
+Example use case:
+Instead of defining a static Hypotesia.StartDate property, a Form can be created with:
+- A date picker for start and end dates
+- A dropdown for selecting planning modes
+- Conditional fields that appear based on user input
 
+When using a **[Form](./../../../../../docs/forms/formschemas.md)** to define the configurations, there are important steps that you need to do:
 
-### a) Design
+&nbsp;&nbsp;&nbsp;&nbsp;- [Design: Set fixed height](#design)  
+&nbsp;&nbsp;&nbsp;&nbsp;- [Data source: Use synonym or known source](#data-source)    
+&nbsp;&nbsp;&nbsp;&nbsp;- [Validation: Implement function](#validation)  
+&nbsp;&nbsp;&nbsp;&nbsp;- [Variables: ProcessId and VersionId](#variables)    
+
+<br/>
+
+### Design
 Create a **[Form](./../../../../../docs/forms/formschemas.md)** residing as a sub object under the package, and then attach it to the Form-property in the 'Configuration options' section, when you have selected 'Form' as the option type.
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/package-configuration-set-form.png)
@@ -39,7 +55,7 @@ You must set the height of the UI grid. The form will be displayed with auto-hei
 <br/>
 <br/>
 
-### b) Data source
+### Data source
 
 **Use synonym**<br/>
 You must use **synonym** or a fixed known datasource when accessing data, in a shared database. The <strong>@Object</strong> directive **does not work**.
@@ -95,7 +111,41 @@ You must use **synonym** or a fixed known datasource when accessing data, in a s
 <br/>
 <br/>
 
-### c) Variables
+### Validation
+
+If you need to ensure that the user has given valid input, implement a function named **Validate** which returns true or false.
+
+**Basic example**
+```xml
+<Function Name="Validate">
+    <![CDATA[
+        // Return boolean true or false
+        return true;
+    ]]>
+</Function>
+```
+> [!CAUTION]
+> If the function is not implemented or is misspelled, the validation logic will treat the input as valid and proceed with the process.
+
+Validation interaction with the user must also be handled by the validation function if the user needs feedback. If there are no user interaction implemented in the function **Validate**, on failed validation, there will be nothing informing the user of the validation result. When validation succeeds, the user will be able to continue the versioning process, hence no need for extra user interaction on success.
+
+**Example with UI**
+```xml
+<Function Name="Validate">
+    <![CDATA[
+        
+        this.app.ui.dialogs.showMessage({title: 'Validation failed',
+                                          text: 'The input data is invalid, please fill in missing fields'});
+        
+        return false;
+    ]]>
+</Function>
+```
+
+<br/>
+<br/>
+
+### Variables
 
 When the form is connected to a version, the form will have access to the **WorkProcessId** and **WorkProcessVersionId**, either via javascript or via sql parameters.
 
@@ -139,38 +189,6 @@ this.app.variables.SYS.WorkProcessVersionId
 
 <br/>
 <br/>
-
-### d) Validation
-
-If you need to ensure that the user has given valid input, implement a function named **Validate** which returns true or false.
-
-**Basic example**
-```xml
-<Function Name="Validate">
-    <![CDATA[
-        // Return boolean true or false
-        return true;
-    ]]>
-</Function>
-```
-> [!CAUTION]
-> If the function is not implemented or is misspelled, the validation logic will treat the input as valid and proceed with the process.
-
-Validation interaction with the user must also be handled by the validation function if the user needs feedback. If there are no user interaction implemented in the function **Validate**, on failed validation, there will be nothing informing the user of the validation result. When validation succeeds, the user will be able to continue the versioning process, hence no need for extra user interaction on success.
-
-**Example with UI**
-```xml
-<Function Name="Validate">
-    <![CDATA[
-        
-        this.app.ui.dialogs.showMessage({title: 'Validation failed',
-                                          text: 'The input data is invalid, please fill in missing fields'});
-        
-        return false;
-    ]]>
-</Function>
-```
-
 
 
 **Example design**

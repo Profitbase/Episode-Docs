@@ -1,5 +1,15 @@
 # Package Properties
 
+Package Properties are variables that can be used by functionality within the Solution that the Package is deployed. The most common case for Package Properties is when Packages are used in Work Processes. Package Properties defines the settings for Work Process Versions that process owners can manage to configure Work Process Versions. Examples of typical Package Properties are planning period start dates and end dates.
+
+When creating Package Properties, it is essential to use a naming scheme that makes the property unique. For example, if you want a property named “StartDate”, and your Package is called “Hypotesia”, you should name your property “Hypotesia.StartDate”.
+
+It needs to be unique, because different packages can be deployed to the same Solution, and the scope of a Package Property is the Solution, not the Package. The reason for the scope being the Solution and not the Package is that Package Properties also serve as interfaces between Packages.
+
+<br/>
+
+![pic](https://profitbasedocs.blob.core.windows.net/images/pack_property.png)
+
 <br/>
 
 A package property can be defined inside of a Package. 
@@ -213,3 +223,10 @@ Adding a PowerShell script with a parameter decalaration.
 <br/>
 
 ![PK](https://profitbasedocs.blob.core.windows.net/images/packageProperties9.jpg)
+
+<br/>
+
+## Videos
+
+* [Packages](../../../../../videos/packages.md)
+* [Package Properties](https://profitbasedocs.blob.core.windows.net/videos/Package%20-%20Package%20Properties.mp4)
