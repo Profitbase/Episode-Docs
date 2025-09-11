@@ -15,7 +15,7 @@ The **differences** between short-running, long-running and streaming Flows are 
 
 | Feature                                                                              | Short-running             | Long-running | Streaming |
 |--------------------------------------------------------------------------------------|---------------------------|--------------|------------|
-| Max execution time                                                                   | 300 seconds (5 minutes)   | 2 hours      | 300 seconds (5 minutes) |
+| Max execution time                                                                   | 300 seconds (5 minutes)   | 8 hours      | 300 seconds (5 minutes) |
 | Can use the [Return action](../actions/built-in/return.md) to return a result directly to the caller                  | Yes                       | No           | No |
 | Can use the [Return HTTP File response action](../actions/http/return-file-http-response.md) to return a file directly to the caller | Yes                       | No           | No |
 | Can use the [Yield return action](../actions//built-in/yield-return.md) to stream data back to the caller.  | No | No | Yes |

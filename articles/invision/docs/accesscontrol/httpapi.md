@@ -1,15 +1,14 @@
-# Getting an API Key
-## Manage Access Control using an API
+# Access Control APIs
 
-Access control can be managed through an **HTTP API**. To manage Identities/Groups/Access Control through the API, you need an **API Key** and the **API address**.
+InVision provides an HTTP API for managing Identities and Access Groups.
+To manage Identities/Groups/Access Control through the API, you need to first configure an **API Key** (see below) in the Designer.
 
 
 <br/>
 
-## Getting an API Key
+## Create an API Key
 
-To get an API Key to use with the Access Control Management API, go to **Application Menu -> API Management -> Edit**. In the **Access Control** tab, find an existing key or create a new one. Use the API Key in the **url** or header in the request (see the **example** below).
-
+To create an API Key to use with the Access Control Management API, go to **Application Menu -> API Management -> Edit**. In the **Access Control** tab, find an existing key or create a new one. Use the API Key in the **url** or **header** in the request (see examples below).
 
 <br/>
 
@@ -22,510 +21,256 @@ To get an API Key to use with the Access Control Management API, go to **Applica
 <br/>
 
 ![apimanagement](https://profitbasedocs.blob.core.windows.net/images/apimanagement.png)
+
+<br/>
 <br/>
 
 
+## Authentication
+To call any of the API endpoints, you need to provide the API key.  
+You can include the API key it in the URL or as a header. For security reasons, we recommend using a header.   
 
-## Get Identities API
+#### API key as header  
 
-This API gets a list of existing Identities.
+| Header name   | Value      |
+|---------------|------------|
+| x-api-key     | MY_API_KEY |    
 
-**URL**
 
-api/v1/accesscontrol/identities
+#### API key in the URL
+https://request_address?api_key=MY_API_KEY  
 
-**Method**
-
-GET
-
-**URL Params**
-
-*Required*  
-api_key=[api key]
-
-> [!NOTE]
-> Optionally, you can provide the API key as a header named x-api-key
-
-**Success Response**
-
-Code: 200 OK
-
-Content:
+**Example**  
+`https://app.profitbase.biz/my-company/api/v1/accesscontrol/identities?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb`
 
 <br/>
 
-```
+## APIs
+
+Below is a list of all available APIs for managing identities and groups in InVision.   
+<br/>
+
+#### Get Identities
+---
+**[GET]** `/api/v1/accesscontrol/identities`  
+Lists the existing identities, such as Entra ID users or groups registered in the system.
+
+**Success Response**: 200 OK  
+**Error response**: 500 Internal Server Error
+<br/>
+
+```json
 [
-
-
   {
 
     "id": "9cbf5b23-a9d3-4743-87d7-733e0c2bd08e",
-
     "name": "Anders Andersen",
-
     "type": 0,
-
     "email": "anan@mydomain.no",
-
     "description": "anan@mydomain.no"
-
   }
-
 ]
 ```
-<br/>
 
-**Error Response**
-
-Code: 500 Internal Server Error
-
-**Example**
-
-https://mydomain.com/invision/api/v1/accesscontrol/identities?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb
-
-
+**Example**  
+GET `https://app.profitbase.biz/my-company/api/v1/accesscontrol/identities`
 
 <br/>
 
-## Get Identity API
+#### Get Identity
+---
+**[GET]** `/api/v1/accesscontrol/identities/<id>`  
+Gets the properties of an existing Identity.  
 
-This API gets the properties of an existing Identity.
-
-**URL**
-
-``api/v1/accesscontrol/identities/<id>``
-
-**Method**
-
-GET
-
-**URL Params**
-
-*Required*  
-api_key=[api key]
-
-> [!NOTE]
-> Optionally, you can provide the API key as a header named x-api-key
-
-**Success Response**
-
-Code: 200 OK
-
-Content:
+**Success response**: 200 OK  
+**Error response**: 500 Internal Server Error
 
 <br/>
 
-```
+```json
   {
-
     "id": "9cbf5b23-a9d3-4743-87d7-733e0c2bd08e",
-
     "name": "Anders Andersen",
-
     "type": 0,
-
     "email": "anan@mydomain.no",
-
     "description": "anan@mydomain.no"
-
   }
 
  ```
 
-**Error Response**
+**Example**  
+GET `https://app.profitbase.biz/my-company/api/v1/accesscontrol/identities/04f0bc48-a51d-4339-be90-f20c1787b6ea`
 
-Code: 500 Internal Server Error
-
-**Example**
-
-https://mydomain.com/invision/api/v1/accesscontrol/identities/04f0bc48-a51d-4339-be90-f20c1787b6ea?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb
-
- 
+---
 <br/>
 
-## Add Identity API
+#### Add Identity API
+---
+**[POST]** `/api/v1/accesscontrol/identities`  
+Adds an Identity.  
 
-This API adds an Identity.
-
-**URL**
-
-api/v1/accesscontrol/identities
-
-**Method**
-
-POST
-
-**URL Params**
-
-*Required*  
-api_key=[api key]
-
-> [!NOTE]
-> Optionally, you can provide the API key as a header named x-api-key
-
- 
+**Success response**: 200 OK  
+**Error response**: 500 Internal Server Error 
 
 **Body**
 
-```
+```json
   {
-
     "id": "c6c52e0d-812f-47d1-9795-eb011c2eba03",
-
     "name": "Anders Andersen",
-
     "type": 0,
-
     "email": "anan@mydomain.no",
-
     "description": "anan@mydomain.no"
-
   }
 ```
 
- 
-
-**Success Response**
-
-Code: 200 OK
-
-**Error Response**
-
-Code: 500 Internal Server Error
-
-**Example**
-
-https://mydomain.com/invision/api/v1/accesscontrol/identities?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb
+**Example**  
+POST `https://app.profitbase.biz/my-company/api/v1/accesscontrol/identities`
 
  
 <br/>
 
-## Update Identity API
+#### Update Identity
+---
+**[PUT]** `/api/v1/accesscontrol/identities/<id>`  
+Updates an Identity.  
 
-This API updates an Identity.
-
-**URL**
-
-``api/v1/accesscontrol/identities/<id>``
-
-**Method**
-
-PUT
-
-**URL Params**
-
-*Required*  
-api_key=[api key]
-
-> [!NOTE]
-> Optionally, you can provide the API key as a header named x-api-key
-
- 
+**Success response**: 200 OK  
+**Error response**: 500 Internal Server Error  
 
 **Body**
 
-```
+```json
   {
 
     "id": "c6c52e0d-812f-47d1-9795-eb011c2eba03", //will be ignored
-
     "name": "Anders Andersen",
-
     "type": 0,
-
     "email": "anan@mydomain.no",
-
     "description": "anan@mydomain.no"
-
   }
 ``` 
 
+**Example**  
+PUT `https://app.profitbase.biz/my-company/api/v1/accesscontrol/04f0bc48-a51d-4339-be90-f20c1787b6ea`
  
+<br/>
 
-**Success Response**
+#### Delete Identity
+---
+**[DELETE]** `/api/v1/accesscontrol/identities/<id>`  
+Deletes an Identity.  
 
-Code: 200 OK
+**Success response**: 200 OK  
+**Error response**: 500 Internal Server Error  
 
-**Error Response**
-
-Code: 500 Internal Server Error
-
-**Example**
-
-https://mydomain.com/invision/api/v1/accesscontrol/identities/04f0bc48-a51d-4339-be90-f20c1787b6ea?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb
+**Example**  
+DELETE `https://app.profitbase.biz/my-company/api/v1/accesscontrol/identities/04f0bc48-a51d-4339-be90-f20c1787b6ea`
 
  
 <br/>
 
-## Delete Identity API
+#### List identity memberships
+---
+**[GET]** `/api/v1/accesscontrol/identities/<id>/accessgroups`    
+Lists the access groups that an identity is member of.  
 
-This API deletes an Identity.
+**Success response**: 200 OK  
+**Error response**: 500 Internal Server Error  
 
-**URL**
-
-``api/v1/accesscontrol/identities/<id>``
-
-**Method**
-
-DELETE
-
-**URL Params**
-
-*Required*  
-api_key=[api key]
-
-> [!NOTE]
-> Optionally, you can provide the API key as a header named x-api-key
-
- 
-
-**Success Response**
-
-Code: 200 OK
-
-**Error Response**
-
-Code: 500 Internal Server Error
-
-**Example**
-
-https://mydomain.com/invision/api/v1/accesscontrol/identities/04f0bc48-a51d-4339-be90-f20c1787b6ea?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb
-
- 
-<br/>
-
-## Get Identity Access Groups API
-
-This API gets a list of an Identity’s Access Groups.
-
-**URL**
-
-``api/v1/accesscontrol/identities/<id>/accessgroups``
-
-**Method**
-
-GET
-
-**URL Params**
-
-Required
-api_key=[api key]
-
-> [!NOTE]
-> Optionally, you can provide the API key as a header named x-api-key
-
-**Success Response**
-
-Code: 200 OK
-
-**Content:**
 
 <br/>
 
-```
+```json
 [
-
-
   {
-
     "id": "2cbf5b23-a9d3-4743-87d7-733e0c2bd08e",
-
     "name": "My Access Group"
-
   }
-
 ]
-```
+```  
 
-**Error Response**
-
-Code: 500 Internal Server Error
-
-**Example**
-
-https://mydomain.com/invision/api/v1/accesscontrol/identities/cafdd2dd-f709-4841-a41d-7f2d6cdccca3/accessgroups?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb
-
+**Example**  
+GET `https://app.profitbase.biz/my-company/api/v1/accesscontrol/identities/cafdd2dd-f709-4841-a41d-7f2d6cdccca3/accessgroups`
 
 
 <br/>
 
-## Get Access Group Identities API
+#### List identities in Access Group
+---
+**[GET]** `/api/v1/accesscontrol/accessgroups/<id>/identities`  
+Lists the identities that are members of an Access Group.  
 
-This API gets a list of existing Identities in an Access Group.
-
-**URL**
-
-``api/v1/accesscontrol/accessgroups/<id>/identities``
-
-**Method**
-
-GET
-
-**URL Params**
-
-*Required*  
-api_key=[api key]
-
-> [!NOTE]
-> Optionally, you can provide the API key as a header named x-api-key
-
-**Success Response**
-
-Code: 200 OK
-
-**Content:**
+**Success response**: 200 OK  
+**Error response**: 500 Internal Server Error  
 
 <br/>
 
-```
+```json
 [
-
-
   {
-
     "id": "9cbf5b23-a9d3-4743-87d7-733e0c2bd08e",
-
     "name": "Anders Andersen",
-
     "type": 0,
-
     "email": "anan@mydomain.no",
-
     "description": "anan@mydomain.no"
-
   }
-
 ]
-```
+```  
 
-**Error Response**
-
-Code: 500 Internal Server Error
-
-**Example**
-
-https://mydomain.com/invision/api/v1/accesscontrol/accessgroups/cafdd2dd-f709-4841-a41d-7f2d6cdccca3/identities?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb
+**Example**  
+GET `https://app.profitbase.biz/my-company/api/v1/accesscontrol/accessgroups/cafdd2dd-f709-4841-a41d-7f2d6cdccca3/identities`
 
 
 <br/>
 
-## Add Access Group Identity API
+#### Add Access Group Identity  
+---
+**[POST]** `/api/v1/accesscontrol/accessgroups/<accessgroupid>/identities/<identityid>`  
+Adds an identity to an Access Group.  
 
-Using the IdentityID, you can add an identity to an Access Group.
+**Success response**: 200 OK  
+**Error response**: 500 Internal Server Error  
 
-**URL**
-
-``api/v1/accesscontrol/accessgroups/<accessgroupid>/identities/<identityid>``
-
-**URL Params**
-
-*Required*  
-api_key=[api key]
-
-> [!NOTE]
-> Optionally, you can provide the api key as a header named x-api-key
-
-**Method**
-
-POST
-
-**Success Response**
-
-Code: 200 OK
-
-**Error Response** 
-
-Code: 500 Internal Server Error
-
-**Example**
-
-https://mydomain.com/invision/api/v1/accesscontrol/accessgroups/cafdd2dd-f709-4841-a41d-7f2d6cdccca3/identities/c6c52e0d-812f-47d1-9795-eb011c2eba03?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb
+**Example**  
+POST `https://app.profitbase.biz/my-company/api/v1/accesscontrol/accessgroups/cafdd2dd-f709-4841-a41d-7f2d6cdccca3/identities/c6c52e0d-812f-47d1-9795-eb011c2eba03`
 
 <br/>
 
-## Delete Access Group Identity API
+#### Remove identity from Access Group
+---
+**[DELETE]** `/api/v1/accesscontrol/accessgroups/<accessgroupid>/identities/<identityid>`  
+Removes an identity from an Access Group.  
 
-Using the **IdentityID**, you can add an identity to the Access Group.
+**Success response**: 200 OK  
+**Error response**: 500 Internal Server Error  
 
-**URL**
-
-``api/v1/accesscontrol/accessgroups/<accessgroupid>/identities/<identityid>``
-
-**URL Params**
-
-*Required*  
-api_key=[api key]
-
-> [!NOTE]
-> Optionally, you can provide the api key as a header named x-api-key
-
-**Method**
-
-DELETE
-
-**Success Response**
-
-Code: 200 OK
-
-**Error Response** 
-
-Code: 500 Internal Server Error
-
-**Example**
-
-https://mydomain.com/invision/api/v1/accesscontrol/accessgroups/cafdd2dd-f709-4841-a41d-7f2d6cdccca3/identities/c6c52e0d-812f-47d1-9795-eb011c2eba03?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb
+**Example**  
+DELETE `https://app.profitbase.biz/my-company/api/v1/accesscontrol/accessgroups/cafdd2dd-f709-4841-a41d-7f2d6cdccca3/identities/c6c52e0d-812f-47d1-9795-eb011c2eba03`
 
 
 <br/>
 
-## Get Access Groups API
+#### List Access Groups
+---
+**[GET]** `api/v1/accesscontrol/accessgroups`  
+Lists all Access Groups.  
 
-This API gets a list of all  Access Groups.
+**Success response**: 200 OK  
+**Error response**: 500 Internal Server Error  
 
-**URL**
 
-api/v1/accesscontrol/accessgroups
-
-**Method**
-
-GET
-
-**URL Params**
-
-Required api_key=[api key]
-
-> [!NOTE]
-> Optionally, you can provide the API key as a header named x-api-key
-
-**Success Response**
-
-Code: 200 OK
-
-**Content:**
-
-```
+```json
 [
-
   {
-
     "id":"2cbf5b23-a9d3-4743-87d7-733e0c2bd08e",
-
     "name":"My Access Group"
-
   }
-
 ]
 ```
 
-
-**Error Response**
-
-Code: 500 Internal Server Error
-
-**Example**
-
-https://mydomain.com/invision/api/v1/accesscontrol/accessgroups?api_key=2b206745-6fa6-40df-a0ea-0364c091bccb
+**Example**  
+`https://app.profitbase.biz/my-company/api/v1/accesscontrol/accessgroups/`
 
  
 
