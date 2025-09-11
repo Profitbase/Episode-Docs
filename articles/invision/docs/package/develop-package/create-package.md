@@ -8,6 +8,6 @@ You will also find docs about package [properties](create-package/configuration-
 ### See Also
 
 - [Define Package](create-package/define-package.md)
-- [Configuration options](create-package/configuration-options.md)
+- [Package properties](./create-package/configuration-options/package-properties.md) or [Forms](./create-package/configuration-options/form.md)
 - [Export Package](create-package/export-package.md) 
 - [Publish Package](create-package/publ-packages.md)

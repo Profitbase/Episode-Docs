@@ -24,7 +24,6 @@
             - name: Export package
               href: develop-package/create-package/export-package.md
             - name: Configuration options
-              href: develop-package/create-package/configuration-options.md
               items:
               - name: Package properties
                 href: develop-package/create-package/configuration-options/package-properties.md

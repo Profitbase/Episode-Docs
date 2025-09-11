@@ -10,8 +10,8 @@ When defining a Package, you should consider all the following points.
 4.	[Post Deployment Action](#4-post-deployment-action)
 5.	[Package data](#5-package-data)
 6.	[Configuration options](#6-configuration-options)  
-   a.  [Package properties](#6a-package-properties)  
-   b.  [Form](#6b-form)
+     - Package properties
+     - Form
 7.	[Work Process integration](#7-work-process-integration)  
    a.  [Data Flows](#7a)  
    b.  [Upgrade Scripts](#7b)
@@ -80,46 +80,14 @@ By default, only metadata configuration is included when exporting a Package usi
 
 The package may be configured using either 'Package properties' or a 'Form'.
 
+You can configure the package with custom properties to handle values and logic. 'Package properties' is a simple option, and does not allow for much logic - to handle dynamic and complex logic, you will need to use a 'Form' to configure properties and logic.
+
+- [Package Properties](./configuration-options/package-properties.md)
+- [Form](./configuration-options/form.md)
+
+
 ![pic](https://profitbasedocs.blob.core.windows.net/images/package-configuration-options-form.png)
 
-![pic](https://profitbasedocs.blob.core.windows.net/images/package-configuration-options-properties.png)
-
-#### 6.a Package Properties
-
-Package Properties are variables that can be used by functionality within the Solution that the Package is deployed. The most common case for Package Properties is when Packages are used in Work Processes. Package Properties defines the settings for Work Process Versions that process owners can manage to configure Work Process Versions. Examples of typical Package Properties are planning period start dates and end dates.
-
-When creating Package Properties, it is essential to use a naming scheme that makes the property unique. For example, if you want a property named “StartDate”, and your Package is called “Hypotesia”, you should name your property “Hypotesia.StartDate”.
-
-It needs to be unique, because different packages can be deployed to the same Solution, and the scope of a Package Property is the Solution, not the Package. The reason for the scope being the Solution and not the Package is that Package Properties also serve as interfaces between Packages.
-
-<br/>
-
-![pic](https://profitbasedocs.blob.core.windows.net/images/pack_property.png)
-
-**More:** [Package Properties](./configuration-options/package-properties.md)
-
-#### 6.b Form
-
-While 'Package Properties' offer a simple way to define static settings, they can be limiting when more dynamic, flexible, or user-specific configuration options are needed.
-Using a Form will give full control over the settings and functions required for deployed versions. 
-
-A form allows for 
-- Custom UI for configuration: You can design tailored interfaces for setting up Package behavior.
-- Complex validation and logic: Use the Form API to enforce rules, dependencies, and dynamic defaults.
-- Improved user experience: Process owners and end-users interact with intuitive forms rather than raw property lists.
-- Version-specific settings: Forms can be tied to specific deployment versions, enabling granular control.
-
-Example use case:
-Instead of defining a static Hypotesia.StartDate property, a Form can be created with:
-- A date picker for start and end dates
-- A dropdown for selecting planning modes
-- Conditional fields that appear based on user input
-
-Create a form in the package, and attach it to the Form-property in the 'Configuration options' section.
-
-![pic](https://profitbasedocs.blob.core.windows.net/images/package-configuration-set-form.png)
-
-**More:** [Form](./configuration-options/form.md)
 
 <br/>
 
