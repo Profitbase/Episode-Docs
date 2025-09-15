@@ -2,6 +2,14 @@
 
 A Flow trigger defines the entry point of a Flow when it is executed from another Flow.
 The Flow trigger also defines how to convert data passed as input, to a format that can be used in the Flow. 
+<br/>
+
+![img](/images/flow/flow-trigger.png)
+
+**Example**![img](/images/strz.jpg)  
+This flow receives an order request, creates a new order ID, saves the order and its order lines into the database, and finally returns the completed order object back to the caller.
+
+<br/>
 
 ## Properties
 

@@ -2,9 +2,16 @@
 
 Configures the Flow to be triggered on a schedule.
 
+<br/>
+
+![sch tr](/images/flow/scheduled-trigger.png) 
 
 
-![sch tr](https://profitbasedocs.blob.core.windows.net/flowimages/schedule_trigger_5.png) 
+**Example**![img](/images/strz.jpg)  
+This flow runs on a scheduled basis and performs automated file cleanup on an FTP server. At each scheduled interval, it [retrieves](../actions/ftp/get-file-names.md) a list of files from a specified directory, checks [whether](../actions/built-in/if.md) each file is older than 7 days, and [deletes](../actions/ftp/delete-file.md) those that meet the condition. This helps keep the FTP directory tidy by automatically removing outdated files.
+
+<br/>
+
 
 ## Properties 
 

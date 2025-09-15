@@ -4,7 +4,15 @@ The trigger defines the starting point of a Flow that stores comments from the [
 
 To create a Flow that saves comments from the Writeback Comments visual, add this trigger. It starts the Flow when the user presses the `Save` button in the [Writeback Comments visual](../../../PowerBI/writeback-comments/overview.md), and outputs a [DeltaSet](../../api-reference/built-in-types/deltaset.md) containing the change made by the user. You then need to add an action for the specific target system that you want to save the comments to, for example [SQL Server / Azure SQL](../../actions/sql-server/save-deltaset.md), PostgreSQL or [Snowflake](../../actions/snowflake/save-deltaset.md).
 
+<br/>
+
 ![img](/images/flow/powerbi-writeback-comments-trigger.png)
+
+**Example**![img](/images/strz.jpg)  
+This flow is triggered when users add or update comments in a Power BI Writeback Comments visual. The trigger captures the delta set of new or changed comments, and the flow then saves this data into the designated database table. This ensures that user feedback or annotations from Power BI reports are stored centrally for later retrieval, reporting, or analysis.
+
+<br/>
+
 
 ## Properties
 | Name            | Type            | Description                               |

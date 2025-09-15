@@ -2,10 +2,10 @@
 
 Configures the flow to automatically run by checking periodically for new messages in an [Azure Service Bus Queue](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-queues-topics-subscriptions#queues).
 
-![topic](https://profitbasedocs.blob.core.windows.net/flowimages/queue-trigger.png)
+![topic](/images/flow/queue-trigger.png)
 
 
-**Example**![img](../../../../images/strz.jpg)   
+**Example**![img](/images/strz.jpg)   
 This Flow listens for new customer messages on an Azure Service Bus **queue**.  
 For each message, it validates that required customer fields are present and, if valid, inserts the record into the database.
 <br/>
