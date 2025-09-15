@@ -25,26 +25,40 @@ This flow processes a user's chat question by first receiving it through a [Chat
 | Skip                     | Optional  | The number of top results to skip (default: *0*). |
 | [Distance function](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/distance-functions)  | Optional  | The method for calculating vector similarity, e.g., *Cosine Distance* (default). |
 | Score limit    | Optional  | A threshold value that limits results to those with a distance score at or below this score (for e.g. CosineDistance). |
-| Prompt template            | Optional  | Controls the output format for search results. The system will replace placeholders like @[fieldName] with the relevant data. |
+| Prompt template            | Optional  | The prompt template controls the output format for your search results. The system replaces placeholders, such as @[fieldName], with the corresponding data from your vector search fields. See example below. |
 | Search result variable name | Optional | The name of the variable to store results. |
 | Description              | Optional  | Any additional notes or information relevant to the search configuration. |
 
 </br>
 
+#### Search text
+
+**Example** ![img](../../../../images/strz2.jpg) 
+
 ![img](../../../../images/flow/postgres-vector-search2.png)
 
 <br/>
 
-## Returns 
-
-The Search vectors action returns an [IVectorSearchResult](../../api-reference/built-in-types/ai/i-vector-search-result.md) object that can be passed to the Chat completion Context property.
-
-<br/>
-
-## Record definition
+#### Record definition
 
 The record defintion specifies the data returned from the search.  
 You are required to specify the **key**, **content** and **vector** fields in **Field definitions**. ![img](../../../../images/strz2.jpg) 
 
 ![img](../../../../images/flow/postgres-vector-search3.png)
 
+<br/>
+
+#### Prompt template
+
+The prompt template allows you to customize the format of the output from your vector search. This is useful for structuring the search results in a way that is most useful for your application.
+You can use placeholders in the format @[fieldName] to include specific data from your search results. The system will replace these placeholders with the actual values from the corresponding fields in the search results.
+
+**Example** ![img](../../../../images/strz2.jpg) 
+
+![img](../../../../images/flow/postgresql-vector-search-prompt-template.png)  
+
+<br/>
+
+## Returns 
+
+The Search vectors action returns an [IVectorSearchResult](../../api-reference/built-in-types/ai/i-vector-search-result.md) object that can be passed to the Chat completion Context property.
