@@ -4,7 +4,23 @@ Runs the Flow when a new email arrives in a Microsoft 365 mailbox.
 
 Use this action to run a Flow when a new mail arrives in a Microsoft 365 Outlook mailbox. If you don't already have one, you need to first create a [Microsoft 365 Outlook connection](../../actions/microsoft-365-outlook/outlook-connection.md) by logging on with an account having access to the mailbox.
 
+<br/>
+
 ![img](/images/flow/microsoft-365-outlook-when-email-arrives.png)
+
+
+**Example**![img](/images/strz.jpg)  
+This flow is triggered whenever a new email arrives in the connected Outlook mailbox. For each email attachment, it checks the file type and processes it accordingly:
+
+- Excel attachments are opened and their contents saved into a database.
+
+- Parquet attachments are opened and imported into a database.
+
+- CSV attachments are opened and stored in a database.
+
+- If the attachment type is unsupported, the flow continues without processing it.
+
+<br/>
 
 ## Properties
 

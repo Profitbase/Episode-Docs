@@ -2,10 +2,10 @@
 
 When a new message arrives in the [Azure Service Bus topic](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-queues-topics-subscriptions#topics-and-subscriptions) subscription, the trigger detects it and starts the flow to process or handle the message as needed. This is useful for automating workflows that depend on incoming messages from Azure Service Bus topic.
 
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/topic-trigger.png)
+![img](/images/flow/topic-trigger.png)
 
 
-**Example**![img](../../../../images/strz.jpg)   
+**Example**![img](/images/strz.jpg)   
 This Flow listens for new customer-related messages published to an Azure Service Bus **topic**.  
 When a message arrives, the Flow checks whether the payload contains the expected customer information.  
 - If the required data exists, the customer record is inserted into the database.  

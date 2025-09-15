@@ -6,6 +6,20 @@ You can also get the HTTP endpoint of the Flow from the HTTP trigger. The HTTP e
 > [!Note]
 > You must define at least one [API Key](../tenants/api-keys.md) with `Execute` permissions in order to execute a Flow from a 3rd party application. A Flow will have no public HTTP endpoint unless at least one API key is defined in the tenant.
 
+
+<br/>
+
+![img](/images/flow/http-trigger.png)
+
+**Example**![img](/images/strz.jpg)  
+This flow is triggered by an incoming HTTP request. It first retrieves the total hours used for that project and then looks up the corresponding project name. Using this information, the flow generates an HTML representation of the report and converts it into a PDF file. Finally, it returns the PDF document as part of the HTTP response to the requester.
+
+<br/>
+
+
+
+
+
 ## Properties
 
 | Name                 | Type     | Description                         |
