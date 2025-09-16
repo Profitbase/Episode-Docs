@@ -17,55 +17,80 @@ Instead of defining a static Hypotesia.StartDate property, a Form can be created
 
 When using a **[Form](./../../../../../docs/forms/formschemas.md)** to define the configurations, there are important steps that you need to do:
 
-&nbsp;&nbsp;&nbsp;&nbsp;- [Design: Set fixed height](#design)  
-&nbsp;&nbsp;&nbsp;&nbsp;- [Data source: Use synonym or known source](#data-source)    
-&nbsp;&nbsp;&nbsp;&nbsp;- [Validation: Implement function](#validation)  
+&nbsp;&nbsp;&nbsp;&nbsp;- [Set fixed height](#set-fixed-height)  
+&nbsp;&nbsp;&nbsp;&nbsp;- [Use synonym or known source for SQL data sources](#use-synonym)    
+&nbsp;&nbsp;&nbsp;&nbsp;- [Implement validation function](#validation)  
 &nbsp;&nbsp;&nbsp;&nbsp;- [Variables: ProcessId and VersionId](#variables)    
 
-<br/>
 
-### Design
 Create a **[Form](./../../../../../docs/forms/formschemas.md)** residing as a sub object under the package, and then attach it to the Form-property in the 'Configuration options' section, when you have selected 'Form' as the option type.
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/package-configuration-set-form.png)
 
+<br/>
 
-**Set height**<br/>
+### Set fixed height
 You must set the height of the UI grid. The form will be displayed with auto-height, so you must specify the UI Grid height to avoid the design to collapse.
 
-> [!TIP]
-> **Example of styling, using the Layouts-node in the form**
-> <br/>Setting Rows="[height]px" will give the layout one row with the specific height.
-> ```xml
-> <Layouts>
->   <Grid Name="grid" Rows="300px" Columns="auto" />
-> </Layouts>
-> ```
->
-> **Example of applying the style to the UI node**
-> <br/>Apply the layout to the UI, and place all content inside the (one) child grid of the UI.
-> ```xml
-> <UI Grid="grid">
->   <Grid Rows="auto auto 1fr" Columns="auto auto 1fr">
->       ...
->   </Grid>
-> </UI>
-> ```
+ **Example of styling, using the Layouts-node in the form**
+ - Setting Rows="[height]px" will give the layout one row with the specific height.
+```xml
+ <Layouts>
+   <Grid Name="grid" Rows="300px" Columns="auto" />
+ </Layouts>
+ ```
+
+ **Example of applying the style to the UI node**
+ - Apply the layout to the UI, and place all content inside the (one) child grid of the UI.
+ ```xml
+ <UI Grid="grid">
+   <Grid Rows="auto auto 1fr" Columns="auto auto 1fr">
+       ...
+   </Grid>
+ </UI>
+ ```
 
 <br/>
 <br/>
 
-### Data source
+### Use synonym
 
-**Use synonym**<br/>
-You must use **synonym** or a fixed known datasource when accessing data, in a shared database. The <strong>@Object</strong> directive **does not work**.
+You must use **synonym** or a fixed known datasource when accessing SQL data sources, in a shared database, because in draft mode, the sources will not be materialized yet, hence the <strong>@Object</strong> directive **will not work**.
 
+
+When connecting to a source you need to set the Source to a known data source, like a [synonym](../../../../../docs/datapool.md#synonym)
+
+**Example** <br/>
+When data is stored in the source table "Data", you will be unable to reference these data using the directive @Object[Data].DbObjectName directive. 
+You need to apply a synonym to your source table **"Data"** and use this as the source in your form. E.g. apply a synonym called "BUDGET_DATA" to your table "Data", and use this to reference the data.
+
+```sql
+Source="BUDGET_DATA"
+```
+
+will work
+
+```xml
+<SetModel Name="BudgetDataSource" 
+  Source="BUDGET_DATA"
+  Fields="Id,WorkProcessID,WorkProcessVersionID,StartDate,EndDate,Category,Owner,AmountAllocated,Currency,Status"
+  Filter="WorkProcessVersionID = @SYS_WorkProcessVersionID"
+  ItemKey="Id = @Id"
+/>
+```
+
+<br/>
+
+**Example synonym**<br/>
+![pic](https://profitbasedocs.blob.core.windows.net/images/package-configuration-form-data-synonym.png)
+
+<br/>
 
 > [!CAUTION]
 >  When **connectiong** to a source, and setting the Source as 
 >
 >  ```sql
->  @Object[Data].DbObjectName
+>  Source="@Object[Data].DbObjectName"
 >  ```
 >
 >  will not work
@@ -79,34 +104,6 @@ You must use **synonym** or a fixed known datasource when accessing data, in a s
 > />
 > ```
 >
-
-
-> [!TIP]
->  When connecting to a source you need to set the Source to a known data source, like a [synonym](../../../../../docs/datapool.md#synonym)
->
-> **Example** <br/>
-> When data is stored in the source table "Data", you will be unable to reference these data using the directive @Object[Data].DbObjectName directive. 
-> You need to apply a synonym to your source table **"Data"** and use this as the source in your form. E.g. apply a synonym called "BUDGET_DATA" to your table "Data", and use this to reference the data.
->
->  ```sql
->  BUDGET_DATA
->  ```
->
->  will work
->
-> ```xml
-> <SetModel Name="BudgetDataSource" 
->   Source="BUDGET_DATA"
->   Fields="Id,WorkProcessID,WorkProcessVersionID,StartDate,EndDate,Category,Owner,AmountAllocated,Currency,Status"
->   Filter="WorkProcessVersionID = @SYS_WorkProcessVersionID"
->   ItemKey="Id = @Id"
-> />
-> ```
-
-
-
-**Example synonym**
-![pic](https://profitbasedocs.blob.core.windows.net/images/package-configuration-form-data-synonym.png)
 
 <br/>
 <br/>
@@ -124,8 +121,6 @@ If you need to ensure that the user has given valid input, implement a function 
     ]]>
 </Function>
 ```
-> [!CAUTION]
-> If the function is not implemented or is misspelled, the validation logic will treat the input as valid and proceed with the process.
 
 Validation interaction with the user must also be handled by the validation function if the user needs feedback. If there are no user interaction implemented in the function **Validate**, on failed validation, there will be nothing informing the user of the validation result. When validation succeeds, the user will be able to continue the versioning process, hence no need for extra user interaction on success.
 
@@ -141,6 +136,11 @@ Validation interaction with the user must also be handled by the validation func
     ]]>
 </Function>
 ```
+
+<br/>
+
+> [!CAUTION]
+> If the function is not implemented or is misspelled, the validation logic will treat the input as valid and proceed with the process.
 
 <br/>
 <br/>
@@ -163,29 +163,27 @@ this.app.variables.SYS.WorkProcessVersionId
 ```
 
 
-> [!TIP]
-> **Example using JavaScript to access the variables**<br/>
-> ```xml
-> <FormEventHandler On="Init">
->   <![CDATA[
->       console.log('WorkProcessId = ' + this.app.variables.SYS.WorkProcessId);
->       console.log('WorkProcessVersionId = ' + this.app.variables.SYS.WorkProcessVersionId);
->    ]]>
-> </FormEventHandler>
-> ```
->
+**Example using JavaScript to access the variables**<br/>
+```xml
+<FormEventHandler On="Init">
+  <![CDATA[
+      console.log('WorkProcessId = ' + this.app.variables.SYS.WorkProcessId);
+      console.log('WorkProcessVersionId = ' + this.app.variables.SYS.WorkProcessVersionId);
+   ]]>
+</FormEventHandler>
+```
 
 
-> [!TIP]
-> **Example using SQL to access variables**<br/>
-> ```xml
-> <SetModel Name="BudgetDataSource"
->       Source="BUDGET_DATA" 
->       Fields="Id,WorkProcessID,WorkProcessVersionID,StartDate,EndDate,Category,Owner,AmountAllocated,Currency,Status"
->       Filter="WorkProcessVersionID = @SYS_WorkProcessVersionID" 
->       ItemKey="Id = @Id"
-> />
-> ```
+
+**Example using SQL to access variables**<br/>
+```xml
+<SetModel Name="BudgetDataSource"
+      Source="BUDGET_DATA" 
+      Fields="Id,WorkProcessID,WorkProcessVersionID,StartDate,EndDate,Category,Owner,AmountAllocated,Currency,Status"
+      Filter="WorkProcessVersionID = @SYS_WorkProcessVersionID" 
+      ItemKey="Id = @Id"
+/>
+```
 
 <br/>
 <br/>
