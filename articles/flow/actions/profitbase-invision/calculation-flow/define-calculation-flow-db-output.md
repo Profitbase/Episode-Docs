@@ -46,8 +46,21 @@ public void CalcTax(MyWorkspace.Forecast_Input input)
     // from the input record - unless "Auto map data" was set to false in the Data mapping properties for those columns.
     Output.Add(AccountID: targetAccount, Amount: taxAmount, TransDate: input.TransDate);
 }
-
 ```
 
+<br/>
 
+## Copy to DataTable
+To create a DataTable from the output collection, call the ToDataTable() method on the collection instance.
+You can do this inside a [Function](../../built-in/function.md), or with the [Execute object method](../../built-in/execute-object-method.md) action.
+
+The main use case is to pass calculation results from one Flow to another directly, without writing to the database as an intermediate step.  
+
+```csharp
+// Example using a Function to create a DataTable from the data in the output collection. 
+public System.Data.DataTable ConvertOutputToDataTable()
+{
+    return this.Output.ToDataTable();    
+}
+```
  

@@ -7,7 +7,6 @@ If no [Table](table-relationship.md) or [Parameter relationships](parameter-rela
 
 | Name                    | Type         | Description                                                |
 |-------------------------|--------------|------------------------------------------------------------|
-| Row variable name       | Required     |  The name of the variable that holds a reference to the row from the source table or query that is currently being processed. You don't need to change the default name, but best practices is to provide a meaningful name that makes it easier to understand what data the row represents. For example, if you are processing sales data, consider nameing the variable "salesLine". |
 | Connection              | Required     | A valid InVision Connection.                               |
 | Source table            | Required     | The table or view to read data from.                       |
 | Source columns          | Optional     | The columns to read from the Source table. If you don't specify anything, all columns are read from the source. Note this may add overhead if not all columns are needed, which will impact performance negatively.        |
@@ -16,9 +15,11 @@ If no [Table](table-relationship.md) or [Parameter relationships](parameter-rela
 | Order by columns        | Optional     | Specifies the columns to order by when reading data from the source database. |  
 | Custom data context     | Optional     | If the caller does not pass in a [Data Context](data-context.md), you can create a Data Context programatically to slice the data set being processed. The example below demonstrates how to create a custom Data Context. |
 | Source DataTable        | Optional     | Specify this property to use an existing in-memory DataTable instead of the `Source table`. In this case, no data is read from the database — only the DataTable’s rows are used. The DataTable must match the database table configuration exactly (same column names and data types). When a DataTable is used, the `Parameter relationships`, `Table relationships`, `Order by columns`, and `Custom data context` properties are ignored.| 
+| Row variable name       | Required     |  The name of the variable that holds a reference to the row from the source table or query that is currently being processed. You don't need to change the default name, but best practices is to provide a meaningful name that makes it easier to understand what data the row represents. For example, if you are processing sales data, consider naming the variable "salesLine". |
 
-### Example
-|
+<br/>
+
+### Example - Custom data context 
 This example shows how to programatically create a custom [Data Context](data-context.md) for a Calculation Flow.
 The code is defined in a [Function](../../built-in/function.md) action.
 
