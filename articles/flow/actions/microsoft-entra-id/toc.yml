@@ -1,0 +1,4 @@
+- name: "Connection"
+  href: "connecting-to-entra-id.md"
+- name: Invite User
+  href: "create-and-invite-guest-user.md"
