@@ -113,7 +113,9 @@
     - name: JSON
       href: actions/json/toc.yml
     - name: Markdown
-      href: actions/markdown/toc.yml
+      href: actions/markdown/toc.yml      
+    - name: Microsoft Entra ID
+      href: actions/microsoft-entra-id/toc.yml
     - name: Microsoft Fabric
       href: actions/microsoft-fabric/toc.yml
     - name: Model Context Protocol (MCP)
