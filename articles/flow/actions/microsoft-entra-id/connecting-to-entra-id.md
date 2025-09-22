@@ -7,8 +7,6 @@ This action establishes a connection to a Microsoft Entra ID tenant, enabling ac
 >  
 > [Read about how to create a Service Principal here](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app).
 
-![Entra ID Connection Setup](/images/flow/entra-id-connection-setup.png)
-
 ## Properties
 
 | Name            | Type     | Description                                                                 |
@@ -36,10 +34,8 @@ To use this connection, you must first set up a Microsoft Entra ID App (Service 
 2. **Grant Permissions to the Service Principal**  
    - In your Entra ID App, go to **Manage** -> **API Permissions**.
    - Click **Add Permissions** and select **Microsoft Graph**.
-   - Choose **Application permissions** and select permissions like `User.Invite.All` for inviting guest users.  
-     ![API Permissions](/images/flow/entra-id-api-permissions.png)
-   - Grant **Admin consent** for your organization.  
-     ![Grant Admin Consent](/images/flow/entra-id-grant-admin-consent.png)
+   - Choose **Application permissions** and select permissions like `User.Invite.All` for inviting guest users.
+   - Grant **Admin consent** for your organization.
    - In the Entra ID admin portal, ensure the Service Principal has access to the tenant.
 
 ## Example
@@ -47,9 +43,18 @@ To use this connection, you must first set up a Microsoft Entra ID App (Service 
 The example below illustrates using the Microsoft Entra ID Connection to invite a guest user:
 1. Configure a `Microsoft Entra ID Connection` in Workspace Objects.
 2. Use the connection in the [Invite guest user](./invite-guest-user.md) action to send an invitation.
-3. Log the response using [Log response to console](../logging/log-to-console.md).
 
 ![Example Flow](/images/flow/entra-id-connection-example.png)
+
+## Configuring a Microsoft Entra ID Connection
+
+Before using the `Invite guest user` action, you must configure a Microsoft Entra ID connection to authenticate API requests.
+
+1. Create a Microsoft Entra ID App (Service Principal) as described in the [Microsoft Entra ID documentation](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app).
+2. Grant the Service Principal the necessary permissions (e.g., `User.Invite.All`) to invite guest users.
+3. In the Flow Designer, navigate to `Resources` -> `Workspace Objects`, and create a new Entra ID connection.
+4. Provide the Tenant ID, Client ID, and Client Secret for the Entra ID App.
+5. Assign this connection to the `Connection` property of the `Invite guest user` action.
 
 ## Editing an Existing Connection
 
@@ -63,4 +68,3 @@ Read more about Workspace Objects [here](../../../workspaces/workspace-objects.m
 ## Notes
 - Ensure the Service Principal has the necessary permissions (e.g., `User.Invite.All` for inviting guest users) to perform the desired actions.
 - The Tenant ID, Client ID, and Client Secret must be valid and correspond to a properly configured Entra ID App in the Azure portal.
-- Unlike dynamic connections, this action uses static credentials configured in the Flow Designer.
