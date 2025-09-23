@@ -23,13 +23,26 @@ To use this connection, you must first set up a Microsoft Entra ID App (Service 
    Follow the [Microsoft Entra ID documentation](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app) to create a Service Principal.
 
 2. **Grant Permissions to the Service Principal**  
-   - In your Entra ID App, go to **Manage** -> **API Permissions**.
-   - Click **Add Permissions** and select **Microsoft Graph**.
-   - Choose **Application permissions** and select permissions like `User.Invite.All` for inviting guest users.
-   - Grant **Admin consent** for your organization.
-   - In the Entra ID admin portal, ensure the Service Principal has access to the tenant.
+
+In your Entra ID App, go to Manage -> API Permissions.
+Click Add Permissions and select **Microsoft Graph**.
+For **Application permissions**, select the following:
+
+   - Directory.ReadWrite.All (Read and write directory data)
+   - User.EnableDisableAccount.All (Enable and disable user accounts)
+   - User.ManageIdentities.All (Manage all users' identities)
+   - User.ReadWrite.All (Read and write all users' full profiles)
 
 ![Example app permissions](/images/flow/entra-id-invite-user-app-permissions.png)
+
+These permissions allow the app to manage users, including inviting guest users (covered by higher-privileged permissions like Directory.ReadWrite.All and User.ReadWrite.All, as User.Invite.All is not required but still valid if you prefer least-privileged access).
+
+3. **Grant Admin consent**  
+Grant Admin consent for your organization (required for the application permissions listed).
+
+![Example grant admin consent](/images/flow/entra-id-invite-user-grant-admin.png)
+
+In the Entra ID admin portal, ensure the Service Principal has access to the tenant.
 
 ## Example
 

@@ -21,7 +21,7 @@ This flow is called from an HTTP trigger and invites a guest user to a Microsoft
 | Message body             | Optional | Custom message to include in the invitation email (only applicable if Send invitation message is true).              |
 | Wait for user propagation  | Optional | Specifies whether to pause until the guest user is fully created and synced in the Entra ID tenant (default: true). |
 | Entra ID user variable name     | Required | The name of the variable that stores the response from the Entra ID API (e.g., invitation ID). |
-| Disabled  | Optional | Specifies whether the action is disabled (typically used while developing a flow).  |
+| Disabled  | Optional | Boolean value indicating whether the action is disabled (true/false).  |
 | Description              | Optional | Additional details or notes about the action.                               |
 
 ## Returns (optional)
