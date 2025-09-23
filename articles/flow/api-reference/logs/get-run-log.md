@@ -3,7 +3,7 @@
 Gets the log entries for a Flow Run.
 
 ```http
-[GET] api/v1/tenants/{tenantId}/workspaces/{workspaceId}/flows/{flowId}/diagnostics/executions/{jobId}/log
+[GET] corellia/api/v1/tenants/{tenantId}/workspaces/{workspaceId}/flows/{flowId}/diagnostics/executions/{jobId}/log
 ```
 
 #### Response

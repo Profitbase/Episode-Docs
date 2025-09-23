@@ -3,7 +3,7 @@
 Use this API to poll a long-running Flow for completion, and get log items while the Flow is running.  
 
 ```http
-[GET] api/v1/tenants/{tenantId}/workspaces/{workspaceId}/flows/{flowId}/diagnostics/executions/{jobId}/poll?logItemId={logItemId}
+[GET] corellia/api/v1/tenants/{tenantId}/workspaces/{workspaceId}/flows/{flowId}/diagnostics/executions/{jobId}/poll?logItemId={logItemId}
 ```
 
 #### Parameters

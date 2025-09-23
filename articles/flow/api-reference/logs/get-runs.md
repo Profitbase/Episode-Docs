@@ -4,7 +4,7 @@ Returns a list of all runs for the specified Flow.
 To get the details for a run, use the [Get Run Log](get-run-log.md) API.
 
 ```http
-[GET] api/v1/tenants/{tenantId}/workspaces/{workspaceId}/flows/{flowId}/diagnostics/executions?env={env}
+[GET] corellia/api/v1/tenants/{tenantId}/workspaces/{workspaceId}/flows/{flowId}/diagnostics/executions?env={env}
 ```
 
 #### Parameters
