@@ -2,7 +2,7 @@
 
 Submits a long-running Flow for execution, and returns a job id that can be used for polling for completion.  
 ```http
-[POST] api/v1/tenants/{tenantId}/workspaces/{workspaceId}/flows/{flowId}/submit?env={env}&api_key={apikey}
+[POST] corellia/api/v1/tenants/{tenantId}/workspaces/{workspaceId}/flows/{flowId}/submit?env={env}&api_key={apikey}
 ```
 
 View the [execution endpoints](../../flows/execution-endpoints.md) of the Flow to find the exact address to use.

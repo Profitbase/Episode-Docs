@@ -4,7 +4,7 @@ Runs a Flow and returns the response object defined by the Flow definition.
 The maximum allowed execution time is `300 seconds (5 minutes)`. If the Flow needs longer than 5 minutes to complete, use the [Submit](submit-long-running.md) API instead.
 
 ```http
-[POST] api/v1/tenants/{tenantId}/workspaces/{workspaceId}/flows/{flowId}/run?env={env}&api_key={apikey}
+[POST] corellia/api/v1/tenants/{tenantId}/workspaces/{workspaceId}/flows/{flowId}/run?env={env}&api_key={apikey}
 ```
 
 View the [execution endpoints](../../flows/execution-endpoints.md) of the Flow to find the exact address to use.
