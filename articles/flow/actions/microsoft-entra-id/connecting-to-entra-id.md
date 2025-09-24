@@ -24,18 +24,21 @@ To use this connection, you must first set up a Microsoft Entra ID App (Service 
 
 2. **Grant Permissions to the Service Principal**  
 
-In your Entra ID App, go to Manage -> API Permissions.
-Click Add Permissions and select **Microsoft Graph**.
-For **Application permissions**, select the following:
+In your Entra ID App, navigate to **Manage > API Permissions**. Click on **Add a permission** and select **Microsoft Graph**. Choose **Application permissions**.
 
-   - Directory.ReadWrite.All (Read and write directory data)
-   - User.EnableDisableAccount.All (Enable and disable user accounts)
-   - User.ManageIdentities.All (Manage all users' identities)
-   - User.ReadWrite.All (Read and write all users' full profiles)
+To follow the principle of least privilege, it is highly recommended to grant only the specific permissions required for the application's functionality. For inviting guest users, the preferred permission is:
+
+   - **User.Invite.All** This allows the application to invite guest users to the organization.
 
 ![Example app permissions](/images/flow/entra-id-invite-user-app-permissions.png)
 
-These permissions allow the app to manage users, including inviting guest users (covered by higher-privileged permissions like Directory.ReadWrite.All and User.ReadWrite.All, as User.Invite.All is not required but still valid if you prefer least-privileged access).
+This permission provides the necessary access to invite users without granting broader privileges to manage or modify other user properties.
+In scenarios where the application requires more extensive user management capabilities, other permissions might be necessary. However, for the sole purpose of inviting users, **User.Invite.All** is the most secure and appropriate choice. The following permissions are more privileged and should only be used if your application has other functions that specifically require them:
+
+   - **Directory.ReadWrite.All:** Grants broad access to read and write directory data.
+   - **User.ReadWrite.All:** Allows the app to read and write the full profiles of all users.
+   - **User.EnableDisableAccount.All:** Allows the application to enable and disable user accounts.
+   - **User.ManageIdentities.All:** Grants permissions to manage all users' identities.
 
 3. **Grant Admin consent**  
 Grant Admin consent for your organization (required for the application permissions listed).

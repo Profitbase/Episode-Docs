@@ -26,4 +26,9 @@ This flow is called from an HTTP trigger and invites a guest user to a Microsoft
 
 ## Returns (optional)
 
-Returns an EntraIdUser object with a single string property: OId.
+Returns an EntraIdUser object with two properties.
+
+| Name                     | Description                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| OId                      | The id of the invited guest user.                                                    |
+| InviteRedeemUrl          | The redemption URL for the invitation. This is often used as the link for the 'Accept' button in the invitation email. |
