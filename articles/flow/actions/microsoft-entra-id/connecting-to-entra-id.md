@@ -30,15 +30,18 @@ To follow the principle of least privilege, it is highly recommended to grant on
 
    - **User.Invite.All** This allows the application to invite guest users to the organization.
 
-![Example app permissions](/images/flow/entra-id-invite-user-app-permissions.png)
+![Example app permissions: User.Invite.All](/images/flow/entra-id-user-invite-all-app-permissions.png)
 
 This permission provides the necessary access to invite users without granting broader privileges to manage or modify other user properties.
+
 In scenarios where the application requires more extensive user management capabilities, other permissions might be necessary. However, for the sole purpose of inviting users, **User.Invite.All** is the most secure and appropriate choice. The following permissions are more privileged and should only be used if your application has other functions that specifically require them:
 
    - **Directory.ReadWrite.All:** Grants broad access to read and write directory data.
    - **User.ReadWrite.All:** Allows the app to read and write the full profiles of all users.
    - **User.EnableDisableAccount.All:** Allows the application to enable and disable user accounts.
    - **User.ManageIdentities.All:** Grants permissions to manage all users' identities.
+
+![Example app permissions](/images/flow/entra-id-invite-user-app-permissions.png)
 
 3. **Grant Admin consent**  
 Grant Admin consent for your organization (required for the application permissions listed).
