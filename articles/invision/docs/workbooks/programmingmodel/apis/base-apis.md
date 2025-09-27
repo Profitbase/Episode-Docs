@@ -1,5 +1,25 @@
 # Base APIs
 
+## App
+
+#### isReadOnly
+Returns true if the app (Workbook) is in read-only mode. The app may be in in read-only mode for the following reasons:  
+- The Workbook is in a closed Work Process version.
+
+##### API Definition
+```javascript
+this.app.isReadOnly: boolean
+```
+
+#### Example
+```javascript
+if(this.app.isReadOnly){
+    // Do something
+}
+```
+
+<br/>
+
 ## Core
 
 The Core API contains standard functions for working with primitive types such as strings and numbers.
@@ -31,7 +51,7 @@ this.app.lib.core.isNumeric(value: any): boolean
 ```javascript
 const guid = this.app.lib.core.newId(); // Creates a new GUID
 const isNumber = this.app.lib.core.isNumber(123); // Returns true
-const isNumeric = this.app.lig.core.isNumeric("a"); // Returns false
+const isNumeric = this.app.lib.core.isNumeric("a"); // Returns false
 ```
 
 <br/>
