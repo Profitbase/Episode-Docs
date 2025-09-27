@@ -28,6 +28,7 @@ The following variables are provided by the system, and available in all Workboo
 | this.app.variables.SYS.SYS_DataSetID    | When the Workbook is under Workflow Control, returns the Data Set ID associated with the Workflow. |
 | this.app.variables.SYS.SolutionId      | Returns the Solution Id that the Workbook belongs to. |
 | this.app.variables.SYS.WorkbookId      | Returns the Id of the Workbook.          |
+| this.app.variables.SYS.WorkProcessVersionId | Returns the ID of the Work Process version that the Workbook belongs to. Returns `undefined` if the Workbook is not in a version. |
 | this.app.variables.QSP.name            | Returns the value of the query string parameter with the name 'name'. |
 | -- Legacy API                          |                                                             |
 | this.appVariables.SYS.CurrentUserName | Returns the user name of the currently logged-in user, for example `leia@rebellion.com` |

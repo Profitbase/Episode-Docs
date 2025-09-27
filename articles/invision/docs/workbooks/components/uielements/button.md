@@ -13,8 +13,8 @@ The Button component supports the following actions.
 
 | Action              | Description                   |
 |---------------------|-------------------------------|
-| Enable              | Enables the button.           |
-| Disable             | Disables the button           |
+| Enable              | Enables the button. Note that if the `Disable if Workbook is read-only` property is enabled, and the Workbook is in read-only mode, the Enable action will have no effect. |
+| Disable             | Disables the button.          |
 | Execute expression  | The following functions are supported: <br/><br/>[EnableIf(...)](../../programmingmodel/instructions/enableif.md) to dynamically enable or disable the button.([See example below](#example---execute-expression)). <br/>[AddCssClass(…)](../../programmingmodel/instructions/cssclass.md), [RemoveCssClass(…)](../../programmingmodel/instructions/cssclass.md) and [ToggleCssClass(…)](../../programmingmodel/instructions/cssclass.md) to dynamically style the button. |
 
 
@@ -40,11 +40,14 @@ The App Header Button supports the following events.
 ## Enabling and disabling
 
 **Explicit enabling and disabling**  
-A Button can be explicitly enabled and disabled by executing the Enable and Disable actions when handling an event. You would typically do this when executing a long-running task, by disabling the button when the task starts, and enable it when the task finishes.
+A Button can be explicitly enabled and disabled by executing the `Enable` and `Disable` actions when handling an event. You would typically do this when executing a long-running task, by disabling the button when the task starts, and enable it when the task finishes.  
 
 **Conditional enabling and disabling**  
 A Button can be enabled or disabled based on the state of a filter or a variable.
 Conditional enabling and disabling is performed by executing the EnableIf(..) instruction in the ExecuteExpression action of the button.
+
+> [!NOTE]
+> If the `Disable if Workbook is read-only` property is enabled, and the Workbook is in read-only mode (for example when the Work Process version it belongs to is closed), the button will always be disabled even if you run actions to enable it.
 
 <br/>
 

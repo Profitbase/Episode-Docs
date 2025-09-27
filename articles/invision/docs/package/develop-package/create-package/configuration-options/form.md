@@ -152,8 +152,8 @@ When the form is connected to a version, the form will have access to the **Work
 **JavaScript**<br/>
 You can access the variables via the context like this:
 ```javascript 
-this.app.variables.SYS.WorkProcessId
-this.app.variables.SYS.WorkProcessVersionId
+this.app.variables.SYS.SelectedWorkProcessId
+this.app.variables.SYS.SelectedWorkProcessVersionId
 ```
 
 **SQL**<br/>
@@ -167,8 +167,8 @@ this.app.variables.SYS.WorkProcessVersionId
 ```xml
 <FormEventHandler On="Init">
   <![CDATA[
-      console.log('WorkProcessId = ' + this.app.variables.SYS.WorkProcessId);
-      console.log('WorkProcessVersionId = ' + this.app.variables.SYS.WorkProcessVersionId);
+      console.log('WorkProcessId = ' + this.app.variables.SYS.SelectedWorkProcessId);
+      console.log('WorkProcessVersionId = ' + this.app.variables.SYS.SelectedWorkProcessVersionId);
    ]]>
 </FormEventHandler>
 ```
@@ -180,7 +180,7 @@ this.app.variables.SYS.WorkProcessVersionId
 <SetModel Name="BudgetDataSource"
       Source="BUDGET_DATA" 
       Fields="Id,WorkProcessID,WorkProcessVersionID,StartDate,EndDate,Category,Owner,AmountAllocated,Currency,Status"
-      Filter="WorkProcessVersionID = @SYS_WorkProcessVersionID" 
+      Filter="WorkProcessVersionID = @SYS_SelectedWorkProcessVersionID" 
       ItemKey="Id = @Id"
 />
 ```
