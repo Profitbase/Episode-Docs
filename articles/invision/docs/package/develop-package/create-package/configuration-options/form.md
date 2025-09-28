@@ -1,105 +1,96 @@
 # Form
 
-While 'Package Properties' offer a simple way to define static settings, they can be limiting when more dynamic, flexible, or user-specific configuration options are needed.
-Using a **[Form](./../../../../../docs/forms/formschemas.md)** will give full control over the settings and functions required for deployed versions. 
+While [Package Properties](./package-properties.md) offer a simple way to define static settings, they can be limiting when more dynamic, flexible, or user-specific configuration options are needed.
+Using a [Form](./../../../../../docs/forms/formschemas.md) provides full flexibility when creating UIs for configuring Work Process versions. 
 
-A form allows for 
-- Custom UI for configuration: You can design tailored interfaces for setting up Package behavior.
-- Complex validation and logic: Use the Form API to enforce rules, dependencies, and dynamic defaults.
-- Improved user experience: Process owners and end-users interact with intuitive forms rather than raw property lists.
-- Version-specific settings: Forms can be tied to specific deployment versions, enabling granular control.
+A Form enables
+- Building fully customizable UIs for configuring Work Process versions.  
+- Creating tailored user interfaces that guides the user through the setup.  
+- Implementing advanced business logic to apply rules and validations. 
 
-Example use case:
-Instead of defining a static Hypotesia.StartDate property, a Form can be created with:
-- A date picker for start and end dates
-- A dropdown for selecting planning modes
-- Conditional fields that appear based on user input
+A common example is a Form where certain fields or options appear or disappear depending on the user’s selections in other fields.
 
-When using a **[Form](./../../../../../docs/forms/formschemas.md)** to define the configurations, there are important steps that you need to do:
+## How to create a Form for configuring Work Process versions
+When using a [Form](./../../../../../docs/forms/formschemas.md) for Work Process version configuration, there are some steps you need to follow:
 
-&nbsp;&nbsp;&nbsp;&nbsp;- [Set fixed height](#set-fixed-height)  
-&nbsp;&nbsp;&nbsp;&nbsp;- [Use synonym or known source for SQL data sources](#use-synonym)    
-&nbsp;&nbsp;&nbsp;&nbsp;- [Implement validation function](#validation)  
-&nbsp;&nbsp;&nbsp;&nbsp;- [Variables: ProcessId and VersionId](#variables)    
+- [Set a fixed height](#set-fixed-height)  
+- [Use synonyms or known fixed table names for SQL data sources](#use-synonym)    
+- [Add a validation function](#validation)  
+- [Use context specific variables to get the selected Work Process and Version IDs](#variables)    
 
+<br/>
 
-Create a **[Form](./../../../../../docs/forms/formschemas.md)** residing as a sub object under the package, and then attach it to the Form-property in the 'Configuration options' section, when you have selected 'Form' as the option type.
+### Create the Form
+The [Form](./../../../../../docs/forms/formschemas.md) must be a child or descendant of the Package it configures. Then, in the `Configuration options` of the Package, select `Form` as `Option type` and select the Form in the field below.
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/package-configuration-set-form.png)
 
 <br/>
 
 ### Set fixed height
-You must set the height of the UI grid. The form will be displayed with auto-height, so you must specify the UI Grid height to avoid the design to collapse.
+You must set the height of the Root UI grid to a `fixed size` (for example 300px), or else the Form might not display properly in the Work Process version editor.
 
  **Example of styling, using the Layouts-node in the form**
- - Setting Rows="[height]px" will give the layout one row with the specific height.
+ Setting Rows="[height]px" will give the layout one row with the specific height.  
+
 ```xml
+<Form>
  <Layouts>
-   <Grid Name="grid" Rows="300px" Columns="auto" />
+    <Grid Name="grid" Rows="300px" Columns="auto" />
  </Layouts>
- ```
-
- **Example of applying the style to the UI node**
- - Apply the layout to the UI, and place all content inside the (one) child grid of the UI.
- ```xml
+...
  <UI Grid="grid">
-   <Grid Rows="auto auto 1fr" Columns="auto auto 1fr">
-       ...
-   </Grid>
- </UI>
+    <Grid Rows="auto auto 1fr" Columns="auto auto 1fr">
+       ...your UI
+    </Grid>
+  </UI>
+</Form>
  ```
-
-<br/>
+ 
 <br/>
 
 ### Use synonym
+Unless the Work Process Version Manger _Workbook_ is in the _same Solution_ as your version setting table(s), you must use `synonyms` or static table names instead of @Object-directives in SQL queries and SQL data source names.  
 
-You must use **synonym** or a fixed known datasource when accessing SQL data sources, in a shared database, because in draft mode, the sources will not be materialized yet, hence the <strong>@Object</strong> directive **will not work**.
-
-
-When connecting to a source you need to set the Source to a known data source, like a [synonym](../../../../../docs/datapool.md#synonym)
+When specifying a data source, set the Source to a static value, like a [synonym](../../../../../docs/datapool.md#synonym)
 
 **Example** <br/>
-When data is stored in the source table "Data", you will be unable to reference these data using the directive @Object[Data].DbObjectName directive. 
-You need to apply a synonym to your source table **"Data"** and use this as the source in your form. E.g. apply a synonym called "BUDGET_DATA" to your table "Data", and use this to reference the data.
+When data is stored in the Solution object named "Data", you may be unable to reference the table using the @Object[Data].DbObjectName directive. 
+You need to apply a synonym to **"Data"** and use this as the source. In this example, we have used the synonym "BUDGET_DATA" for our "Data" table, and use this synonym in the SetModel definition.  
 
-```sql
-Source="BUDGET_DATA"
-```
-
-will work
+Note the use of the system-provided `@VM_SelectedWorkProcessVersionID` SQL parameter which contains the currently selected Work Process version in the Work Process Version Manager.
 
 ```xml
 <SetModel Name="BudgetDataSource" 
   Source="BUDGET_DATA"
   Fields="Id,WorkProcessID,WorkProcessVersionID,StartDate,EndDate,Category,Owner,AmountAllocated,Currency,Status"
-  Filter="WorkProcessVersionID = @SYS_WorkProcessVersionID"
+  Filter="WorkProcessVersionID = @VM_SelectedWorkProcessVersionID"
   ItemKey="Id = @Id"
 />
 ```
 
 <br/>
 
-**Example synonym**<br/>
+**Example synonym**  
 ![pic](https://profitbasedocs.blob.core.windows.net/images/package-configuration-form-data-synonym.png)
 
 <br/>
 
 > [!CAUTION]
->  When **connectiong** to a source, and setting the Source as 
+>  When creating a Form for editing version properties, you cannot use @Object-directives in SQL queries or as the model Source, unless the table is in the same Solution as the Work Process Version manager Workbook. Instead, use synonyms to Tables or Data Stores. 
 >
 >  ```sql
+>  -- instead of this:
 >  Source="@Object[Data].DbObjectName"
+>  -- do this (where 'My_Version_Settings' is a synonym to the table where you want to store data)
+>  Source="My_Version_Settings" 
 >  ```
->
->  will not work
 >
 > ```xml
 > <SetModel Name="BudgetDataSource" 
->   Source="@Object[Data].DbObjectName"
+>   Source="My_Version_Settings"
 >   Fields="Id,WorkProcessID,WorkProcessVersionID,StartDate,EndDate,Category,Owner,AmountAllocated,Currency,Status"
->   Filter="WorkProcessVersionID = @SYS_WorkProcessVersionID"
+>   Filter="WorkProcessVersionID = @VM_SelectedWorkProcessVersionID"
 >   ItemKey="Id = @Id"
 > />
 > ```
@@ -110,29 +101,36 @@ will work
 
 ### Validation
 
-If you need to ensure that the user has given valid input, implement a function named **Validate** which returns true or false.
+If you need to ensure that the user has provided valid input, implement a Function named `Validate` that returns `true` or `false`.  
+InVision will call this function when the Form loads, and when a user clicks the `Change status` button in the Version configuration screen. 
+For example, to prevent the user from deploying a version with invalid configuration, you must implement the `Validate` function and return `true`/`false` based on whether the configuration is valid or not.
 
 **Basic example**
 ```xml
 <Function Name="Validate">
     <![CDATA[
-        // Return boolean true or false
+        if(!this.models.VersionSettings.StartDate || this.models.VersionSettings.StartDate.getFullYear() < new Date().getFullYear()){
+           // Invalid configuration. StartDate is not set, or is in the past.
+           return false;
+        }
         return true;
     ]]>
 </Function>
 ```
 
-Validation interaction with the user must also be handled by the validation function if the user needs feedback. If there are no user interaction implemented in the function **Validate**, on failed validation, there will be nothing informing the user of the validation result. When validation succeeds, the user will be able to continue the versioning process, hence no need for extra user interaction on success.
+Any visual feedback to the user must also be handled by the Validation function, such as applying red borders around invalid fields, or displaying popup notifications. 
 
 **Example with UI**
 ```xml
 <Function Name="Validate">
     <![CDATA[
+        if(!this.models.VersionSettings.StartDate || this.models.VersionSettings.StartDate.getFullYear() < new Date().getFullYear()){
+           this.app.ui.dialogs.showMessage({title: 'Validation failed',
+                                          text: 'Start date in not specified, or in the past.'});
         
-        this.app.ui.dialogs.showMessage({title: 'Validation failed',
-                                          text: 'The input data is invalid, please fill in missing fields'});
-        
-        return false;
+           return false;
+        }
+        return true<
     ]]>
 </Function>
 ```
@@ -140,26 +138,26 @@ Validation interaction with the user must also be handled by the validation func
 <br/>
 
 > [!CAUTION]
-> If the function is not implemented or is misspelled, the validation logic will treat the input as valid and proceed with the process.
+> If the `Valdiation` function does not exist or is misspelled, InVision will skip the validation step (basically treating it as success).
 
 <br/>
 <br/>
 
 ### Variables
 
-When the form is connected to a version, the form will have access to the **WorkProcessId** and **WorkProcessVersionId**, either via javascript or via sql parameters.
+When the Form is displayed in a Work Process version editor, you can use the system-provided **SelectedWorkProcessId** and **SelectedWorkProcessVersionId** variables, either via JavaScript or via SQL parameters like shown below. They contain the IDs of the currently selected Work Process and Version in the Work Process Version Manager.
 
 **JavaScript**<br/>
 You can access the variables via the context like this:
 ```javascript 
-this.app.variables.SYS.SelectedWorkProcessId
-this.app.variables.SYS.SelectedWorkProcessVersionId
+this.app.variables.VM.SelectedWorkProcessId
+this.app.variables.VM.SelectedWorkProcessVersionId
 ```
 
 **SQL**<br/>
 ```sql
-@SYS_WorkProcessID
-@SYS_WorkProcessVersionID
+@VM_SelectedWorkProcessID
+@VM_SelectedWorkProcessVersionID
 ```
 
 
@@ -167,8 +165,8 @@ this.app.variables.SYS.SelectedWorkProcessVersionId
 ```xml
 <FormEventHandler On="Init">
   <![CDATA[
-      console.log('WorkProcessId = ' + this.app.variables.SYS.SelectedWorkProcessId);
-      console.log('WorkProcessVersionId = ' + this.app.variables.SYS.SelectedWorkProcessVersionId);
+      console.log('WorkProcessId = ' + this.app.variables.VM.SelectedWorkProcessId);
+      console.log('WorkProcessVersionId = ' + this.app.variables.VM.SelectedWorkProcessVersionId);
    ]]>
 </FormEventHandler>
 ```
@@ -180,7 +178,7 @@ this.app.variables.SYS.SelectedWorkProcessVersionId
 <SetModel Name="BudgetDataSource"
       Source="BUDGET_DATA" 
       Fields="Id,WorkProcessID,WorkProcessVersionID,StartDate,EndDate,Category,Owner,AmountAllocated,Currency,Status"
-      Filter="WorkProcessVersionID = @SYS_SelectedWorkProcessVersionID" 
+      Filter="WorkProcessVersionID = @VM_SelectedWorkProcessVersionID" 
       ItemKey="Id = @Id"
 />
 ```
