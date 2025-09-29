@@ -7,8 +7,8 @@ Hardware should be scaled based on expected load. The figures below are general 
 ## Application Server / VM  
 
 - Windows Server 2016 or higher
-- .NET Framework 4.8 (If you need to install the Designer on the Application Server)
-- [ASP.NET Core Runtime 8.x.x Windows Hosting Bundle](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+- .NET Framework 4.8 Note! Only required if you want to install the Designer on the Application Server.
+- [ASP.NET Core Runtime 9.x.x Windows Hosting Bundle](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
 - PowerShell 7
 
 ##### Minimum hardware requirements for application server
@@ -16,7 +16,7 @@ Hardware should be scaled based on expected load. The figures below are general 
 - IIS installed (see list of enabled features below)
 - CPU: 4 Cores
 - Memory: 8 GB
-- Disk Space: 50 GB
+- Disk Space: 10 GB
 
 <br/>
 
@@ -45,7 +45,7 @@ Hardware should be scaled based on expected load. The figures below are general 
 
 ## Developer
 
-- Windows 10, Windows Server 2016 or higher
+- Windows 10 or higher, Windows Server 2016 or higher
 - .NET Framework 4.8
 
 
