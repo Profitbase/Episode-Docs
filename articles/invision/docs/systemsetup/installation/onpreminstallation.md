@@ -120,6 +120,7 @@ The following table describes the application services requiring internet access
 | ------------------------------------ | ---- | ------------------------------------- |
 | https://store.profitbase.com/api/v1/ | 443  | Download business modules             |
 | https://download.profitbase.com      | 443  | Download new versions of the software |
+| \*.servicebus.windows.net            | 443 | Command control traffic to Azure Service Bus  |
 | \*.servicebus.windows.net            | 5671 | Azure Service Bus endpoint (AMQP)     |
 | \*.servicebus.windows.net            | 5672 | Azure Service Bus endpoint (AMQP)     |
 
