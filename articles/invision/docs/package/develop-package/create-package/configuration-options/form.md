@@ -145,7 +145,7 @@ Any visual feedback to the user must also be handled by the Validation function,
 
 ### Variables
 
-When the Form is displayed in a Work Process version editor, you can use the system-provided **SelectedWorkProcessId** and **SelectedWorkProcessVersionId** variables, either via JavaScript or via SQL parameters like shown below. They contain the IDs of the currently selected Work Process and Version in the Work Process Version Manager.
+When the Form is displayed in a Work Process version editor, you can use the system-provided **SelectedWorkProcessId** and **SelectedWorkProcessVersionId** variables to get the IDs of selected Work Process and Version. These variables can be used in JavaScript or as SQL parameters, as shown below.
 
 **JavaScript**<br/>
 You can access the variables via the context like this:
@@ -189,7 +189,7 @@ this.app.variables.VM.SelectedWorkProcessVersionId
 
 **Example design**
 
-![pic](https://profitbasedocs.blob.core.windows.net/images/package-configuration-form-design.png)
+![img](/images/invision/package-configuration-form.png)
 
 
 
