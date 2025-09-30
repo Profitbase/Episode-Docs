@@ -37,13 +37,12 @@ In the table above, `(Californa, Bikes)` returns `14.1 %` because there is no ex
 `(Alaska, Bikes)` returns `8 %` because there is an exact mapping in the Lookup Table.  
 `(Arizona, Skis)` returns `14.1 %` because neither Arizona nor Skis is in the table, but they are children of 'United States' and 'All' respectivly.  
 
-
-
-## Using Lookup Tables in code
+<br/>
 
 ```csharp
 
-// This works because we have called Lookups.UseContext(...) earlier in the flow
+// The member access statement 'Lookups.ProductFees.Fee' will return the Fee for the State and Product in context.
+// This works because we have called Lookups.UseContext(...) earlier in the Flow, so it knows the which State and Product is in context from the current source transaction.
 var taxAmount = (Lookups.ProductFees.Fee / 100.0) * input.Amount / 100.2;
 
 // Map to account based on calculation type
@@ -53,6 +52,8 @@ var targetAccount = Lookups.AccountMappings.FirstOrDefault(map => map.AccountTyp
 Output.Add(AccountID: targetAccount, Amount: taxAmount, TransDate: input.TransDate);
 
 ```
+
+<br/>
 
 ## Using FromDate  
 Data in Lookup tables such as finance settings is often related to date and time, for example tax periods, and interest payments. 
@@ -77,4 +78,89 @@ public void Calculate(ForecastInput sourceTransRow)
     // you now get back the price of the product applicable for sourceTransRow.TransDate 
     var totalAmount = Lookups.ProductPriceByPeriod.Price * sourceTransRow.Qty;
 }
+```
+
+<br/>
+
+### Using Lookups inside libraries  
+If you create a library of business logic (for example financial calculations) in C#, and you want to fetch data from Lookups from _within_ the library instead of having data passed _in_ as arguments, you need to use [Func](https://learn.microsoft.com/en-us/dotnet/api/system.func-2) delegates. Func delegates basically lets you define functions with one or more parameters that can return data. You can then pass the function itself to your library, and _call_ the function from your code to retrieve data from the outside.  
+
+Below is a code example with a custom PaymentCalculator class that generates a payment plan based on a total amount, and payment settings coming from a Lookup table. The Lookup table contains the payment date and percentage of total amount pr legal entity and department.  
+
+#### Example
+
+![img](/images/flow/lookup-table-example-with-callback.png)  
+
+##### 1. Your code  
+The code below is typically defined in the [Custom Code](../../../flows/defining-custom-code.md) editor in a [Flowchart](../../../flows/flowcharts.md) (box 1. in the image above), or in your own .NET library.  
+It defines a payment calculator that generates a list of payments from a `total amount` (input), and a list of due dates with percentages provided by calling the `GetPaymentPlan` Func delegate passing in the legal entity and department.  
+This is just standard C# code, and is not specific to Flow in any way.   
+
+
+```csharp
+// Your code, for example defined in the Custom Code editor in a Flowchart, or in your own .NET library. 
+public record Payment(decimal? Amount, DateTime DueDate);
+
+public sealed class PaymentCalculator
+{    
+    public Func<string, string, IEnumerable<(DateTime DueDate, decimal? PaymentPct)>> GetPaymentPlan { get;set; }
+
+    public List<Payment> CalculatePayments(string legalEntityId, string departmentId, decimal totalAmount)
+    {
+        List<Payment> payments = [];
+        // Fetch the payment plan for the legal entity and department by calling the GetPaymentPlan Func
+        foreach(var payment in this.GetPaymentPlan(legalEntityId, departmentId))
+        {
+            var paymentAmount = totalAmount * (payment.PaymentPct / 100.0m); // Assuming PaymentPct is a value between 0 and 100.
+            payments.Add(new (paymentAmount, payment.DueDate));
+        }
+
+        return payments;
+    }
+}
+
+```
+##### 2. The callback that performs the lookup agains the Lookup tables  
+Open the [Custom Code](../../../flows/defining-custom-code.md) editor and add a method like the example below. (Box 1 in the image above.)
+It defines a method that can be called from the PaymentCalculator above, to retrieve data from Lookup tables (for example all types of finance settings).
+You can name the method anything, but we're naming it GetPaymentPlan**Callback** by convention, because it's a method that's essentially passed as an argument (or property) to another method.
+
+```csharp
+// Add this code as Custom Code of the Flowchart.
+// It declares a private function in the Flow that the PaymentCalculator can call (above) to get the payment plan settings for the given legal entity and department.
+IEnumerable<(DateTime PaymentDate, decimal? PaymentPct)> GetPaymentPlanCallback(string legalEntityId, string departmentId) => 
+{
+    // Use the SetXXXContext methods to set the search scope before calling FilterByContext.
+    // This will return a list of all rows from the underlying LookupTable, 'Payments', having data for the specified legal entity and department based on wildcard or hierarchical search (meaning data may be defined on an aggregated level instead of at the specific department level).
+    foreach(var item in Lookups.Payments.SetLegalEntityIDContext(legalEntityId).SetDepartmentIDContext(departmentId).FilterByContext())
+    {
+        // Return a tuple with the payment date and pct        
+        yield return (item.PaymentDate, item.PaymentPct);
+    }
+}
+
+// You can alternatively use a standard LINQ expression to filter on an exact match for the legal entity and department using the Where()-method as shown below.
+IEnumerable<(DateTime PaymentDate, decimal? PaymentPct)> GetPaymentPlanCallback_ExactMatch(string legalEntityId, string departmentId) => 
+{    
+    // This will return a list of all rows from the underlying LookupTable, 'Payments', having rows with exact match for legal entity and department IDs.
+    foreach(var item in Lookups.Payments.Where(c => c.LegalEntityID == legalEntityId && c.DepartmentID == departmentId))
+    {
+        // Return a tuple with the payment date and pct        
+        yield return (item.PaymentDate, item.PaymentPct);
+    }
+}
+```
+
+##### 3. Pass the lookup callback to your library   
+The final step is to put the code below in a setup [Function](../../built-in/function.md) which is run **once** before looping over input transactions. (Annotated as box 2 in the image above.)   
+It assigns the `GetPaymentPlanCallback` method defined above, to the GetPaymentPlan property of the calculator class.  
+GetPaymentPlan can now be called from within the PaymentCalculator.CalulatePayments method to get a list of payments for a specific legal entity and department.
+
+```csharp
+// Optional: Create an instance of the PaymentCalculator if you have not already done this previously in the Flow.
+this.paymentCalculator = new PaymentCalculator();
+
+// Assign the GetPaymentPlanCallback method to the GetPaymentPlan property of the calculator.
+this.paymentCalculator.GetPaymentPlan = GetPaymentPlanCallback;
+
 ```
