@@ -26,20 +26,29 @@ To use this connection, you must first set up a Microsoft Entra ID App (Service 
 
 In your Entra ID App, navigate to **Manage > API Permissions**. Click on **Add a permission** and select **Microsoft Graph**. Choose **Application permissions**.
 
-To follow the principle of least privilege, it is highly recommended to grant only the specific permissions required for the application's functionality. For inviting guest users, the preferred permission is:
+To follow the principle of least privilege, only grant the permissions required for the actions you plan to use. Below is the minimum recommended (application) permission for each supported Flow action at the time of writing:
 
-   - **User.Invite.All** This allows the application to invite guest users to the organization.
+| Scenario / Action                       | Minimum permission (Application) | Notes |
+|----------------------------------------|----------------------------------|-------|
+| Invite guest user                      | **User.Invite.All**              | Required to create invitations. |
+| List users (For each user)             | **User.Read.All**                | Needed to enumerate users and access Mail property. |
+| List app registrations (For each app registration) | **Application.Read.All**         | Required to enumerate application objects. |
+| List client secrets (For each client secret) | **Application.Read.All**         | Same permission used to read application passwordCredentials. |
+
+If you only need to invite guest users, grant **User.Invite.All** and nothing more.
 
 ![Example app permissions: User.Invite.All](/images/flow/entra-id-user-invite-all-app-permissions.png)
 
-This permission provides the necessary access to invite users without granting broader privileges to manage or modify other user properties.
+For scenarios that include listing application objects or their secrets, add **Application.Read.All**. Avoid granting write permissions (e.g., Application.ReadWrite.All) unless the flow actually modifies app registrations.
 
-In scenarios where the application requires more extensive user management capabilities, other permissions might be necessary. However, for the sole purpose of inviting users, **User.Invite.All** is the most secure and appropriate choice. The following permissions are more privileged and should only be used if your application has other functions that specifically require them:
+For listing users, **User.Read.All** is the recommended baseline. (While **User.ReadBasic.All** can return a reduced set of properties, it will not expose all details your flows may rely on.)
 
-   - **Directory.ReadWrite.All:** Grants broad access to read and write directory data.
-   - **User.ReadWrite.All:** Allows the app to read and write the full profiles of all users.
-   - **User.EnableDisableAccount.All:** Allows the application to enable and disable user accounts.
-   - **User.ManageIdentities.All:** Grants permissions to manage all users' identities.
+Only grant broader or more privileged permissions if your automation explicitly requires them. Examples (do NOT add unless needed):
+
+   - **Directory.ReadWrite.All** – Broad ability to read/write directory objects.
+   - **User.ReadWrite.All** – Read/write full user profiles.
+   - **User.EnableDisableAccount.All** – Enable or disable user accounts.
+   - **User.ManageIdentities.All** – Manage user identities.
 
 ![Example app permissions](/images/flow/entra-id-invite-user-app-permissions.png)
 
