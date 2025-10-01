@@ -2,10 +2,10 @@
 
 Lists each user in a Microsoft Entra ID tenant.
 
-![Example Flow](../../../../images/flow/entra-id-invite-guest-user-example.png)
+![Example Flow](../../../../images/flow/entra-id-for-each-user-example.png)
 
 **Example** ![img](../../../../images/strz.jpg)  
-This flow is called from an HTTP trigger and invites a guest user to a Microsoft Entra ID tenant. It also sends a customized email message instead of using the default invitation message. 
+This flow is called from an HTTP trigger and loops through the existing users in a Microsoft Entra ID tenant. If a user is not a guest, the flow sends an invitation to join the tenant as a guest.
 
 ## Properties
 
@@ -14,6 +14,7 @@ This flow is called from an HTTP trigger and invites a guest user to a Microsoft
 | Title                    | Optional | The title of the action.                                                    |
 | Connection               | Required | The [Microsoft Entra ID connection](./connecting-to-entra-id.md) to the tenant. The app registration/service principal must have (at minimum) **User.Read.All** to list users (Directory.Read.All or higher privileges also work but are not required). |
 | User variable name       | Required | The name of the variable that stores the response from the Entra ID API (e.g., Mail). |
+| Include extended profile | Optional  | When true, expands the Graph query to return additional directory/profile attributes and the manager reference. Adds: accountEnabled, companyName, country, createdDateTime, department, employeeHireDate, employeeId, employeeLeaveDateTime, employeeType, mobilePhone, userType, plus manager (exposed as ManagerId). When false these fields (except basic identity fields) are omitted/null to minimize payload. Slightly higher latency and permission surface (still satisfied by User.Read.All). |
 | Disabled  | Optional | Boolean value indicating whether the action is disabled (true/false).  |
 | Description              | Optional | Additional details or notes about the action.                               |
 

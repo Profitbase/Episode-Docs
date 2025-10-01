@@ -2,10 +2,10 @@
 
 Lists each client secret for an app registration in a Microsoft Entra ID tenant.
 
-![Example Flow](../../../../images/flow/entra-id-invite-guest-user-example.png)
+![Example Flow](../../../../images/flow/entra-id-for-each-client-secret-example.png)
 
 **Example** ![img](../../../../images/strz.jpg)  
-This flow is called from an HTTP trigger and invites a guest user to a Microsoft Entra ID tenant. It also sends a customized email message instead of using the default invitation message. 
+This flow is called from an HTTP trigger and checks if there are client secrets about to expire in any of the app registrations in a Microsoft Entra ID tenant. If it is about to expire (within 30 days), the flow sends an email notification.
 
 ## Properties
 
