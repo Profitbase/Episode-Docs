@@ -1,4 +1,10 @@
-- name: "Connection"
-  href: "connecting-to-entra-id.md"
+- name: Connection
+  href: connecting-to-entra-id.md
 - name: Invite guest user
-  href: "invite-guest-user.md"
+  href: invite-guest-user.md
+- name: For each user
+  href: for-each-user.md
+- name: For each app registration
+  href: for-each-app-registration.md
+- name: For each client secret
+  href: for-each-client-secret.md
