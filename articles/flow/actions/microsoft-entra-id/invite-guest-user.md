@@ -24,7 +24,7 @@ This flow is called from an HTTP trigger and invites a guest user to a Microsoft
 | Disabled  | Optional | Boolean value indicating whether the action is disabled (true/false).  |
 | Description              | Optional | Additional details or notes about the action.                               |
 
-## Returns (optional)
+## Returns
 
 Returns an EntraIdUser object with two properties set.
 

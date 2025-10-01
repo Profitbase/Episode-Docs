@@ -5,7 +5,7 @@ Lists each user in a Microsoft Entra ID tenant.
 ![Example Flow](../../../../images/flow/entra-id-for-each-user-example.png)
 
 **Example** ![img](../../../../images/strz.jpg)  
-This flow is called from an HTTP trigger and loops through the existing users in a Microsoft Entra ID tenant. If a user is not a guest, the flow sends an invitation to join the tenant as a guest.
+This flow is called from an HTTP trigger and loops through the existing users in a Microsoft Entra ID tenant. If a user is not already a guest, the flow sends an invitation to join the tenant as a guest.
 
 ## Properties
 
@@ -18,7 +18,7 @@ This flow is called from an HTTP trigger and loops through the existing users in
 | Disabled  | Optional | Boolean value indicating whether the action is disabled (true/false).  |
 | Description              | Optional | Additional details or notes about the action.                               |
 
-## Returns (optional)
+## Returns
 
 Returns an EntraIdUser object with the following properties.
 

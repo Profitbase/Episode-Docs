@@ -18,7 +18,7 @@ This flow is called from an HTTP trigger and checks if there are client secrets 
 | Disabled  | Optional | Boolean value indicating whether the action is disabled (true/false).  |
 | Description              | Optional | Additional details or notes about the action.                               |
 
-## Returns (optional)
+## Returns
 
 Returns an `EntraIdAppRegistration` object with the following properties set.
 
