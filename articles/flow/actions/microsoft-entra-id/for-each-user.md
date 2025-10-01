@@ -14,7 +14,7 @@ This flow is called from an HTTP trigger and loops through the existing users in
 | Title                    | Optional | The title of the action.                                                    |
 | Connection               | Required | The [Microsoft Entra ID connection](./connecting-to-entra-id.md) to the tenant. The app registration/service principal must have (at minimum) **User.Read.All** to list users (Directory.Read.All or higher privileges also work but are not required). |
 | User variable name       | Required | The name of the variable that stores the response from the Entra ID API (e.g., Mail). |
-| Include extended profile | Optional  | When true, expands the Graph query to return additional directory/profile attributes and the manager reference. Adds: accountEnabled, companyName, country, createdDateTime, department, employeeHireDate, employeeId, employeeLeaveDateTime, employeeType, mobilePhone, userType, plus manager (exposed as ManagerId). When false these fields (except basic identity fields) are omitted/null to minimize payload. Slightly higher latency and permission surface (still satisfied by User.Read.All). |
+| Include extended profile | Optional  | Defaults to false. If set to true, the response will include extended directory attributes (e.g., companyName, employeeId, department) and the user's manager reference.<br>**Benefit**: Provides a richer user profile in a single query.<br>**Cost**: Results in a larger response payload and slightly higher latency. |
 | Disabled  | Optional | Boolean value indicating whether the action is disabled (true/false).  |
 | Description              | Optional | Additional details or notes about the action.                               |
 
