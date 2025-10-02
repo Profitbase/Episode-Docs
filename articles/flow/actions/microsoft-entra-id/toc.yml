@@ -6,5 +6,5 @@
   href: for-each-user.md
 - name: For each app registration
   href: for-each-app-registration.md
-- name: For each client secret
-  href: for-each-client-secret.md
+- name: For each client secret-info
+  href: for-each-client-secret-info.md
