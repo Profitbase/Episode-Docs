@@ -1,11 +1,11 @@
-# For each client secret
+# For each client secret info
 
-Lists each client secret for an app registration in a Microsoft Entra ID tenant.
+Lists all client secret information for an app registration in a Microsoft Entra ID tenant.
 
 ![Example Flow](../../../../images/flow/entra-id-for-each-client-secret-example.png)
 
 **Example** ![img](../../../../images/strz.jpg)  
-This flow is called from an HTTP trigger and checks if there are client secrets about to expire in any of the app registrations in a Microsoft Entra ID tenant. If it is about to expire (within 30 days), the flow sends an email notification.
+This flow checks if there are client secrets about to expire in any of the app registrations in a Microsoft Entra ID tenant. If it is about to expire (within 30 days), the flow sends an email notification.
 
 ## Properties
 
