@@ -1,6 +1,6 @@
 # Microsoft Entra ID Connection
 
-This action establishes a connection to a Microsoft Entra ID tenant, enabling actions like [Invite guest user](./invite-guest-user.md) to interact with the Entra ID API for managing users and resources.
+To manage users and applications in your Microsoft Entra ID tenant, you must first establish a connection. This enables you to perform actions such as inviting guest users, listing current users, and managing app registrations within your tenant.
 
 > [!NOTE]
 > Before you can create a Microsoft Entra ID Connection, you need to create a **Microsoft Entra ID App** (also known as a `Service Principal`) and grant it access to the Entra ID API. Profitbase Flow will call the Entra ID API on behalf of the Service Principal, using its credentials.  
@@ -33,7 +33,7 @@ To follow the principle of least privilege, only grant the permissions required 
 | Invite guest user                      | **User.Invite.All**              | Required to create invitations. |
 | List users (For each user)             | **User.Read.All**                | Needed to enumerate users and access Mail property. |
 | List app registrations (For each app registration) | **Application.Read.All**         | Required to enumerate application objects. |
-| List client secrets (For each client secret) | **Application.Read.All**         | Same permission used to read application passwordCredentials. |
+| List client secrets (For each client secret info) | **Application.Read.All**         | Same permission used to read application passwordCredentials. |
 
 If you only need to invite guest users, grant **User.Invite.All** and nothing more.
 
@@ -61,8 +61,6 @@ In the Entra ID admin portal, ensure the Service Principal has access to the ten
 
 ## Example
 
-The example below illustrates using the Microsoft Entra ID Connection to invite a guest user:
-1. Configure a `Microsoft Entra ID Connection` in Workspace Objects.
-2. Use the connection in the [Invite guest user](./invite-guest-user.md) action to send an invitation.
+The example below creates a Microsoft Entra ID Connection:
 
 ![Example Flow](/images/flow/entra-id-connection-example.png)

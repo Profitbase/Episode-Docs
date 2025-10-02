@@ -1,11 +1,11 @@
 # For each app registration
 
-Lists each app registration to a Microsoft Entra ID tenant.
+Lists all app registrations in a Microsoft Entra ID tenant.
 
 ![Example Flow](../../../../images/flow/entra-id-for-each-app-registration-example.png)
 
 **Example** ![img](../../../../images/strz.jpg)  
-This flow is called from an HTTP trigger and checks if there are client secrets about to expire in any of the app registrations in a Microsoft Entra ID tenant. If it is about to expire (within 30 days), the flow sends an email notification.
+This flow checks if there are client secrets about to expire in any of the app registrations in a Microsoft Entra ID tenant. If it is about to expire (within 30 days), the flow sends an email notification.
 
 ## Properties
 
@@ -26,5 +26,5 @@ Returns an `EntraIdAppRegistration` object with the following properties set.
 |--------------------|--------------------------------------------------------------------------------------|
 | Id                 | The application object ID (Application ObjectId).                                    |
 | DisplayName        | The display name of the app registration.                                            |
-| AppId              | The application (client) ID (ClientId) used for authentication.                      |
+| AppId              | The application ID (ClientId) used for authentication.                      |
 | ServicePrincipalId | The corresponding service principal object ID (if created in the tenant).            |
