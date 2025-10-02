@@ -61,6 +61,6 @@ In the Entra ID admin portal, ensure the Service Principal has access to the ten
 
 ## Example
 
-The example below creates a Microsoft Entra ID Connection:
+The example below shows a dialog that allows you to create a new Microsoft Entra ID Connection:
 
 ![Example Flow](/images/flow/entra-id-connection-example.png)

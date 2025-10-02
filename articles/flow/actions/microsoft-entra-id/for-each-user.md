@@ -38,7 +38,7 @@ Returns an EntraIdUser object with the following properties. The column "Extende
 | EmployeeType         | Yes                   | Employee type classification (e.g., Contractor, Employee). |
 | EmployeeHireDate     | Yes                   | Hire date (if exposed/licensed). |
 | EmployeeLeaveDateTime| Yes                   | Planned or actual leave/end date (if set). Requires User-LifeCycleInfo.Read.All permission. |
-| ManagerId            | Yes                   | ObjectId of the user's manager (requires extended profile and Graph expand: `$expand=manager($select=id)`). |
+| ManagerId            | Yes                   | ObjectId of the user's manager. |
 | Country              | Yes                   | Country/region value (ISO or free-form). |
 | AccountEnabled       | Yes                   | Indicates whether the account is enabled. |
 | CreatedDateTime      | Yes                   | When the user object was created in Entra ID. |
