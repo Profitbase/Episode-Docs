@@ -26,7 +26,7 @@ The Flow does the following:
 2) **Retrieve the last fetch time:** To avoid reloading the entire general ledger every time, we first retrieve the last fetch date/time and record the current time for the next execution. In this example, we store this information in an Azure SQL database, but any supported storage option can be used.
 3) **Fetch new transactions:** Using the Visma.Net REST API and the [paged REST APIs action](../../flow/actions/visma/visma-net/paged-rest-api-request.md), we fetch GL transactions newer than the last fetch date/time. The transactions are returned in JSON format as paginated chunks, which we upload to Microsoft Fabric one at a time.
 4) **Convert JSON to Parquet:** Since JSON is inefficient for tabular data, we use the [JSON Data Reader](../../flow/actions/json/get-json-datareader.md) and [Create Parquet file as stream](../../flow/actions/parquet/create-parquet-file-as-stream.md) actions to convert the data into a format optimized for data analysis.
-5) **Upload to Microsoft Fabric:** Finally, the Parquet file is uploaded to Microsoft Fabric using the [Upload to Lakehouse](../../flow/actions/microsoft-fabric/upload-to-lakehouse.md) action.
+5) **Upload to Microsoft Fabric:** Finally, the Parquet file is uploaded to Microsoft Fabric using the [Upload to Lakehouse](../../flow/actions/microsoft-fabric/upload-to-lakehouse.md) action. The data is now available for reporting and analysis in tools such as Power BI.
 
 
 ![img](/images/cfo-platform/example-vismanet-to-fabric-integration.png)
