@@ -110,6 +110,8 @@
       href: actions/html/toc.yml
     - name: HTTP
       href: actions/http/toc.yml
+    - name: Hypergene Portfolio
+      href: actions/hypergene-portfolio/toc.yml
     - name: JSON
       href: actions/json/toc.yml
     - name: Markdown
