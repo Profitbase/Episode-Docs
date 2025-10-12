@@ -3,4 +3,6 @@
 - name: Connection
   href: connection.md
 - name: Get report data
-  href: get-report-data.md  
+  href: get-report-data.md
+- name: Upload data
+  href: upload-data.md
