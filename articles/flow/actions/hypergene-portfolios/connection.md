@@ -3,6 +3,10 @@
 To connect to Hypergene Portfolios you need to specify your `login credentials` (username + password) and `Portfolio ID`.  
 Optionally, you can also specify the `Domain` if you are not hosted in the standard Portfolios cloud environment.
 
+![img](/images/flow/portfolios-connection.png)
+
+<br/>
+
 ## Properties
 | Name            | Type             | Description                      |
 |-----------------|------------------|----------------------------------|
@@ -10,6 +14,8 @@ Optionally, you can also specify the `Domain` if you are not hosted in the stand
 | Domain          | Optional         | Specify the domain if you are not hosted in the standard Portfolios cloud environment. The default value is 'hub'. |
 | User name       | Required         | The user name to authenticate with.    |
 | Password        | Required         | The password to authenticate with.     |
+
+<br/>
 
 ## Description
 If you are already familiar with the Portfolios HTTP API, defining a connection enables Flow to connect to the API v2 endpoint at `https://hub.thinking1.com/{portfolio-id}/api/v2` using the provided credentials for authentication.  
