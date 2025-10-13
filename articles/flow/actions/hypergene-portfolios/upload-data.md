@@ -21,7 +21,7 @@ The example above illustrates how to upload project expenses from an Azure SQL d
 ## Best practices using the Upload data action
 When uploading data to Hypergene Portfolios using Flow, we recommend the following:  
 - Upload data in CSV format. Use the [Create CSV as stream](../csv/create-csv-file-as-stream.md) or [Create CSV as byte array](../csv/create-csv-file-as-byte-array.md) actions to create the CSV file from tabular or string data.  
-- Use the following settings when creating CSV files to upload to Hypergene Portfolios.  
+- Use the following settings when creating CSV files to upload to Hypergene Portfolios. Note that these are the default settings used by Flow when creating CSV files, so you don't need to make any changes.    
     - Header row: `true` (default)
     - Column delimiter: `, (Comma)` (default)
     - Row delimiter: `\r\n` (default)
