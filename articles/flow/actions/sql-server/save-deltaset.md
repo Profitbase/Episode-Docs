@@ -2,7 +2,7 @@
 
 Saves all changes in a DeltaSet to an Azure SQL or SQL Server table.  
 
-A typical use case for this action is to save the changes made by users in the [Writeback Table](../../../PowerBI/writeback-table/overview.md) for Power BI. This action will save all changes made by the user in Power BI by either inserting, updating, or deleting rows in the SQL Server / Azure SQL target table.
+A typical use case for this action is to save the changes made by users in the [Writeback Table](../../../PowerBI/writeback-table/overview.md) or [Writeback Comments](../../../PowerBI/writeback-comments/overview.md) visuals for Power BI. This action will save all changes made by the user in Power BI by either inserting, updating, or deleting rows in the SQL Server / Azure SQL target table.
 
 ![img](/images/flow/sqlserver-save-deltaset.png)
 
@@ -17,7 +17,11 @@ A typical use case for this action is to save the changes made by users in the [
 | [Save data options](#save-data-options) | Optional | For advanced scenarios (see below), use this option to override the default behavior for applying DeltaSet changes.  |  
 | Command timeout | Optional | The time limit in seconds for command execution before it times out. Default is 120 seconds.|
 
+<br/>
+
 ### Save data options
+
+By default, the columns or fields you have defined as keys in the Power BI visual(s) will be used to determine which rows to update, delete or insert. This information is contained in the [DeltaSet](../../api-reference/built-in-types/deltaset.md). For example, if you have used DepartmentID and Period as key columns in the Power BI Comments visual, Flow will match on the DepartmentID and Period column in the target table to determine whether or not to do an update, insert or delete on that dimensionalitity. If, for some reason, you want to override which columns are used as qualifiers to save changes, you can use the `Save data options` configuration to handle this.
 
 ![img](/images/flow/deltaset-metadata-options.png)
 
