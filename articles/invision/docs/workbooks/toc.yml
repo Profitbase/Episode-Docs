@@ -84,6 +84,8 @@
             href: components/table-explorer.md
           - name: TableView
             href: components/tableview.md
+          - name: Worksheet
+            href: components/worksheet.md
           - name: UI Elements
             href: components/uielements.md
             items:

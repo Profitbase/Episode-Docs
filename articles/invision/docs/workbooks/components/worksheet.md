@@ -1,10 +1,4 @@
-
-# Table
-
-Tables are primarily used as utilities and for storing configuration data for business rules. Tables are materialized as SQL Server tables and can be read and written to by any SQL script or process having the required permissions. 
-<br/>
-
-![pic](https://profitbasedocs.blob.core.windows.net/images/HTtb%20(5).png)
+# Worksheet
 
 <br/>
 
@@ -85,13 +79,3 @@ The event handler will be preserved during Package upgrades, meaning customers /
 This event is raised when you add a new item to the table, for example, a new row. 
 
 <br/>
-
-
-
-
-<br/>
-
-### Videos
-
-* [Tables](../../../videos/tables.md)
-* [Interaction model](../../../videos/workbooks/interactions.md)
