@@ -16,10 +16,6 @@ This flow is triggered by an incoming HTTP request. It first retrieves the total
 
 <br/>
 
-
-
-
-
 ## Properties
 
 | Name                 | Type     | Description                         |
@@ -30,6 +26,13 @@ This flow is triggered by an incoming HTTP request. It first retrieves the total
 | Show endpoints |  | Option to display HTTP trigger endpoints, providing the URL for external application calls.|
 | Data variable name          | Optional | Name of the variable containing the data. |
 | Description          | Optional |  Additional notes or comments about the trigger's purpose or configuration.   |
+
+## Returns
+
+This trigger returns a single variable with the specified name and Output data type. 
+
+![img](../../../images/flow/schedule-trigger-output-type.png)
+<br/>
 
 ## Default data
 While developing a Flow that will be executed from 3rd party clients like Profitbase InVision or custom apps, you most likely want to test the Flow by executing it from the Designer. This way, you don't have to switch to the 3rd party apps to do test runs.  

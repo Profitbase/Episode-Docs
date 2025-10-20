@@ -44,7 +44,12 @@ This Flow monitors for updated files in Azure Blob Storage. [If](../../actions/b
 
 <br/>
 
-**Example**
+## Returns
+
+This trigger returns a list of blob names that can be iterated over using a For Each action. 
+<br/>
+
+## Example
 
 Suppose you want to run a Flow every time new invoice files are uploaded to the `invoices` container.  
 You can configure the trigger as follows:

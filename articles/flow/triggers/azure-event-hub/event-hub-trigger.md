@@ -30,4 +30,10 @@ If the message contains invoice data, it’s added to a database; otherwise the 
 
 <br/>
 
+## Returns
+
+This trigger returns a single variable with the specified name and Output data type. 
+
+![img](../../../../images/flow/schedule-trigger-output-type.png)
+<br/>
 

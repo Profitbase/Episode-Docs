@@ -25,6 +25,13 @@ This flow runs on a scheduled basis and performs automated file cleanup on an FT
 | Disabled          | Optional | Boolean value indicating whether the trigger is disabled (true/false). |
 | Description          | Optional |  Additional notes or comments about the trigger's purpose or configuration. |
 
+## Returns
+
+This trigger returns a single variable with the specified name and Output data type. 
+
+![img](../../../images/flow/schedule-trigger-output-type.png)
+<br/>
+
 ## Step by step
 <br/>
 
