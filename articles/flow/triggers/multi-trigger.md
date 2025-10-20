@@ -22,7 +22,7 @@ This flow can be triggered from multiple sources (HTTP, another flow, or a sched
 
 ## Returns
 
-The return type is TriggerOutput, which has the following proeprties:
+The return type is TriggerOutput, which has the following properties:
 
 | Name           | Type     | Description                                      |
 |----------------|----------|--------------------------------------------------|
