@@ -20,6 +20,7 @@ Returns data as a [string](https://learn.microsoft.com/en-us/dotnet/api/system.s
 ## Properties
 | Name              |  Type             | Description                      |
 |-------------------|-------------------|----------------------------------|
-| Connection        | Required          | The [connection](./connection.md) to the Hypergene Portfolios subscription. |
-| Report ID         | Required          | The id of the report to get data for. |
+| Connection        | Required          | The [connection](./connection.md) to the Hypergene Portfolios API. |
+| Portfolio         | Optional          | When specified, overrides the Portfolio ID specified in the Connection. This can be a hard coded string, a variable or the Porfolio selected from the Portfolio picker in the property editor.  |
+| Report            | Required          | The id of the report to get data for. This can be a hard coded numeric value, a variable, or the report selected from the Report picker in the property editor. |
 | Format            | Optional          | The preferred format for the returned data. Options include `JSON`, `CSV`, `HTML`, and `XML`, though not all reports support every format. You can select from the list of available formats when configuring this property. If you specify a format that the report doesn’t support (for example, when using a variable), the data will be returned in the report’s default format. |
