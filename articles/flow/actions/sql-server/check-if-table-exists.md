@@ -4,6 +4,8 @@ Checks if a table exists in a SQL Server database.
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/check-if-table-exist.png)
 
+<br/>
+
 ## Properties
 
 | Name            | Type     | Description                                       |
@@ -14,6 +16,8 @@ Checks if a table exists in a SQL Server database.
 | Table name      | Required   | The name of a table to check for. |
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description      | Optional  | Additional notes or comments about the action or configuration. |
+
+<br/>
 
 ## Returns
 

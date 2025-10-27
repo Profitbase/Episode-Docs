@@ -4,19 +4,11 @@ Gets a list of entities based on a query against a PostgreSQL database.
 
 The Get Entities action is ideal for retrieving a list of entities from a PostgreSQL database based on a query. This action is particularly useful when you need to fetch multiple records for tasks like generating reports, creating summaries, or applying bulk operations.
 
-
 <br/>
 
 ![img](../../../../images/flow/get-entities-postgres.png)
 
 <br/>
-
-
-## Returns
-
-A [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) of custom .NET objects with properties specified by the `Entity properties` configuration.
-
-
 
 ## Properties  
 
@@ -31,3 +23,10 @@ A [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic
 | Result data type        | Optional        | The type of the stored data.                               |
 | Command timeout (seconds)   | Optional        | The time limit for command execution before it times out. Default is 120 seconds.           |
 | Description                 | Optional        | Additional notes or comments about the action or configuration.                             |
+
+<br/>
+
+## Returns
+
+A [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) of custom .NET objects with properties specified by the `Entity properties` configuration.
+

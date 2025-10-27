@@ -7,9 +7,7 @@ Executes a SQL command in a [Snowflake](https://docs.snowflake.com/en/user-guide
 > [!NOTE]
 > This action does not return the result of the executed query. It simply returns the number of rows affected by the query.
 
-## Returns
-
-[Int32](https://learn.microsoft.com/en-us/dotnet/api/system.int32) The number of rows affected.
+<br/>
 
 ## Properties
 
@@ -22,6 +20,14 @@ Executes a SQL command in a [Snowflake](https://docs.snowflake.com/en/user-guide
 | Command timeout (sec)     | Optional  | The time limit for command execution before it times out. Default is 120 seconds. |
 | Description               | Optional  | Additional notes or comments about the action or configuration.                   |
 
+<br/>
+
+## Returns
+
+[Int32](https://learn.microsoft.com/en-us/dotnet/api/system.int32) The number of rows affected.
+
+<br/>
+
 ## Example: How to use parameters
 
 To use parameters in the query, declare and assign variables in the `Parameters` property.  
@@ -32,6 +38,9 @@ Then use the parameters in the query.
 SELECT Display_Name FROM Snowflake.Account_Usage.Users WHERE USER_ID = :UserId
 
 ```
+
+<br/>
+
 ## Example: How to use Flow variables in the command expression
 
 To use Flow variables in a query as part of the expression, you need to first [declare a variable](../built-in/declare-variable.md) as `Global` and [assign a value to the variable](../built-in/set-variable.md).  

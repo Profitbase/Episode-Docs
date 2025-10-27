@@ -4,8 +4,7 @@ Creates a Lakehouse in a Microsoft Fabric Workspace.
 
 ![img](../../../../images/flow/create-lakehouse.png)
 
-## Returns
-Returns a [LakehouseInfo](#lakehouseinfo) object.
+<br/>
 
 ## Properties
 | Name          | Type     | Description                             |
@@ -17,7 +16,12 @@ Returns a [LakehouseInfo](#lakehouseinfo) object.
 | Wait for provisioning to complete | Optional | Even though a Lakehouse has been created, it may take some time for all Lakehouse features to be ready for use. For example, the SQL Endpoint may not be ready for use immediately after a Lakehouse has been completed. If this property is set to `true`, Flow will wait until the SQL Endpoint has been fully provisioned before continuing execution. |
 | Result variable name| Optional | The name of the variable that contains the lakehouse info. |
 
+<br/>
 
+## Returns
+Returns a [LakehouseInfo](#lakehouseinfo) object.
+
+<br/>
 
 ### LakehouseInfo
 
@@ -29,6 +33,8 @@ Returns a [LakehouseInfo](#lakehouseinfo) object.
 | Description        | string          | The description of the Lakehouse   |
 | Properties         | [LakehouseProperties](#lakehouseproperties) | Technical information about the Lakehouse.  |
 
+<br/>
+
 ### LakehouseProperties
 
 | Name               | Type            | Description                |
@@ -37,6 +43,8 @@ Returns a [LakehouseInfo](#lakehouseinfo) object.
 | OneLakeFilesPath   | string          | OneLake path to the Lakehouse files directory. |
 | OneLakeTablesPath  | string          | OneLake path to the Lakehouse tables directory. |
 | SqlEndpointProperties | [SqlEndpointProperties](#sqlendpointproperties) | An object containing the properties of the SQL endpoint.|
+
+<br/>
 
 ### SqlEndpointProperties
 

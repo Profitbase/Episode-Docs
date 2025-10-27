@@ -14,14 +14,9 @@ This actions returns a list of entities with properties as specified by the `Ent
 List<Customer> customers;
 ```
 
-## Returns
-
-A [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) of custom .NET objects with properties specified by the `Entity properties` configuration.
-
-
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/get-entities.png)
 
-
+<br/>
 
 ## Properties
 
@@ -39,6 +34,12 @@ A [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic
 | Result data type | Optional  |  Name of the created entity list type.  |
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description   | Optional | Additional notes or comments about the action or configuration. |
+
+<br/>
+
+## Returns
+
+A [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) of custom .NET objects with properties specified by the `Entity properties` configuration.
 
 <br/>
 

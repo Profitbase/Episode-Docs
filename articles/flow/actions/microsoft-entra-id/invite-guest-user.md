@@ -7,6 +7,8 @@ Invites a guest user to a Microsoft Entra ID tenant.
 **Example** ![img](../../../../images/strz.jpg)  
 This flow invites a guest user to a Microsoft Entra ID tenant. Instead of using the default invitation message, where "Send invitation message" is set to "false," it sends a customized email using the SendGrid [Send email](../sendgrid/send-email.md) action.
 
+<br/>
+
 ## Properties
 
 | Name                     | Type     | Description                                                                 |
@@ -23,6 +25,8 @@ This flow invites a guest user to a Microsoft Entra ID tenant. Instead of using 
 | Entra ID user variable name     | Required | The name of the variable that stores the response from the Entra ID API (e.g., InviteRedeemUrl). |
 | Disabled  | Optional | Boolean value indicating whether the action is disabled (true/false).  |
 | Description              | Optional | Additional details or notes about the action.                               |
+
+<br/>
 
 ## Returns
 

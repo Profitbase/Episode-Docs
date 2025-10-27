@@ -7,9 +7,7 @@
 **Example** ![img](../../../../images/strz.jpg)  
 This flow reads customer data, transforms it, iterates over it, and inserts it into a database. 
 
-## Returns
-
-This action iterates over all chunks of data returned for the query. You will get a [IDataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) for each chunk.
+<br/>
 
 ## Properties
 
@@ -22,6 +20,13 @@ This action iterates over all chunks of data returned for the query. You will ge
 | SQL expression and parameters   | Required   | Definition of the Databricks SQL command.				|
 | Chunk variable name | Optional   | Name of the variable containing the DataReader result.				|
 
+<br/>
+
+## Returns
+
+This action iterates over all chunks of data returned for the query. You will get a [IDataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) for each chunk.
+
+<br/>
 
 ## Limitations
 

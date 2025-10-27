@@ -9,9 +9,7 @@ Use this action if you need a list of all the object names in a Bucket. If you o
 **Example** ![img](../../../../images/strz.jpg)  
 This flow scans a list of object names and checks if a specific file (UC036_Products.xlsx) exists. If found, it could trigger further processing. If not, it may continue checking or exit.
 
-## Returns
-[List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1)<[string](https://learn.microsoft.com/en-us/dotnet/api/system.string)> containing S3 object names.
-
+<br/>
 
 ## Properties
 
@@ -25,6 +23,9 @@ This flow scans a list of object names and checks if a specific file (UC036_Prod
 
 <br/>
 
-Object name prefix filter:
+## Returns
+[List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1)<[string](https://learn.microsoft.com/en-us/dotnet/api/system.string)> containing S3 object names.
 
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/bucket4.png)
+<br/>
+
+

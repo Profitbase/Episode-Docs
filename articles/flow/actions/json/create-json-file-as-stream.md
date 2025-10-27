@@ -8,10 +8,6 @@ Creates a JSON file from a [string](https://learn.microsoft.com/en-us/dotnet/api
 
 <br/>
 
-## Returns
-
-[Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream)
-
 ## Properties
 
 | Name                     | Type     | Description                 |
@@ -20,3 +16,9 @@ Creates a JSON file from a [string](https://learn.microsoft.com/en-us/dotnet/api
 | JSON string                   | Required | A JSON-formatted string that provides the data. |
 | Result variable name     | Optional | The name of the Stream variable.                             |
 | Description              | Optional |  Additional notes or comments about the action or configuration. |
+
+<br/>
+
+## Returns
+
+[Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream)

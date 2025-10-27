@@ -13,11 +13,11 @@ This flow is triggered when users add or update comments in a Power BI Writeback
 
 <br/>
 
-
 ## Properties
 | Name            | Type            | Description                               |
 |-----------------|-----------------|-------------------------------------------|
 | Test data       | Optional        | Use this property to define test data to save to a database, file or service. The test data is only used when you run the Flow manually from the Designer during development. The test data is NOT used when data is saved from the Power BI user interface. [See below](#test-data-format) for a description of the required format. | 
+<br/>
 
 ## Returns
 The trigger returns a [DeltaSet](../../api-reference/built-in-types/deltaset.md) containing the comments to save to a database, file, or service.  

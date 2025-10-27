@@ -19,9 +19,7 @@ For example, a CSV file can be loaded using the [Open CSV file as DataReader](..
 > [!CAUTION]
 > Trying to load a Stream using an incompatible action will fail.
 
-## Returns
-
-[Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream)
+<br/>
 
 ## Properties
 
@@ -32,3 +30,9 @@ For example, a CSV file can be loaded using the [Open CSV file as DataReader](..
 | Object name          | Required | The name of the object to read from.                                                        |
 | Result variable name | Required | The name of the Flow variable that contains the list of the object names.                   |
 | Description          | Optional |  Additional notes or comments about the action or configuration. |
+
+<br/>
+
+## Returns
+
+[Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream)

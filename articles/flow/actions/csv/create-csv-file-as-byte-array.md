@@ -11,11 +11,6 @@ Creates a CSV file from a [DataReader](https://learn.microsoft.com/en-us/dotnet/
 This flow example shows a process that reads data from a database, splits records into multiple chunks, converts each chunk into CSV format, and appends it to a blob storage.  
 Actions used in the flow are: SQL Server [Get DataReader](../sql-server/get-datareader.md), [DataReader chunker](../built-in/datareader-chunker.md), [Create CSV file as byte array]() and [Append to Blob](../azure-blob-storage/append-to-blob.md). 
 
-
-## Returns
-
-Returns the Excel file serialized as a [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays).
-
 <br/>
 
 ## Properties
@@ -34,6 +29,11 @@ Returns the Excel file serialized as a [byte](https://learn.microsoft.com/en-us/
 | Result variable name     | Optional | The name of the variable you can use to reference the byte array in other actions.                             |
 | Description              | Optional | Additional notes or comments about the action or configuration. |
 
+<br/>
+
+## Returns
+
+Returns the Excel file serialized as a [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays).
 
 <br/>
 

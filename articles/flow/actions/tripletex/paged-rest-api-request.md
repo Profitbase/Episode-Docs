@@ -21,7 +21,7 @@ The **REST API Request with Paging** action allows you to use the [Tripletex RES
 | Max page count  | Optional | The maximum number of pages to fetch. Defaults to 9999 if not specified.                      |
 | Description     | Optional | Additional notes or comments about the action or configuration.                               |
 
-
+<br/>
 
 ## Returns  
 

@@ -23,6 +23,14 @@ The example above shows a Flow that provides chat completions to a chat client. 
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description   | Optional | Additional notes or comments about the action or configuration. |
 
+<br/>
+
+## Returns
+
+Returns a .NET value of the type specified by `Result variable type`.
+
+<br/>
+
 ## Example: How to use parameters
 
 To use parameters in the query, declare and assign variables in the `SQL parameters` property.  
@@ -33,6 +41,7 @@ Then use the parameters in the query.
 SELECT [Name] FROM Users WHERE UserId = @UserId
 
 ```
+<br/>
 
 ## Example: How to use variables in the command expression
 
@@ -43,10 +52,6 @@ Then, enclose the variable in curly brackets like with the `TableName` variable 
 -- We have declared a Flow variable named TableName and assigned a value to it in a previous action.
 SELECT [Name] FROM {TableName} WHERE UserId = @UserId
 ```
-
-## Returns
-
-Returns a .NET value of the type specified by `Result variable type`.
 
 <br/>
 

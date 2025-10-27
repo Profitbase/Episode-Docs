@@ -19,10 +19,7 @@ For example, an Excel file can be loaded using the [Open Excel file as DataReade
 > [!CAUTION]
 > Trying to load a byte array using an incompatible action will fail.
 
-
-## Returns
-
-[Byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays)
+<br/>
 
 ## Properties
 
@@ -33,3 +30,9 @@ For example, an Excel file can be loaded using the [Open Excel file as DataReade
 | Object name          | Required | The name of the object to read from.                                                        |
 | Result variable name | Required | The name of the Flow variable that contains the list of the object names.                   |
 | Description          | Optional |  Additional notes or comments about the action or configuration.  |
+
+<br/>
+
+## Returns
+
+[Byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays)

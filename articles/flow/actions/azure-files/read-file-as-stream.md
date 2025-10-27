@@ -9,14 +9,15 @@ The example above takes a file from storage, reads its JSON content, saves the d
 
 </br>
 
-
-## Returns
-
-[Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream)
-
 ## Properties
 
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
 | Connection       | Required  | The [Azure Files connection](./connecting-to-azure-files.md) to a Share. |
 | File name        | Required  | The name and full path to the file to download. |
+
+<br/>
+
+## Returns
+
+[Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream)

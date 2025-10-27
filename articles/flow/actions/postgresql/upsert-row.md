@@ -8,6 +8,8 @@ Performs an insert or update (upsert) operation on a table row using defined col
 
 The Flow above illustrates how to use the `Insert or Update row` action to save customer information to a PostgreSQL database fetched from a web API. Actions used in this Flow are: [HTTP Request](../http/http-request.md), `Insert or update row`, and [Send email](../microsoft-365-outlook/send-email.md).
 
+<br/>
+
 ## Properties
 
 | Name                  | Type     | Description                                                                       |
@@ -19,6 +21,8 @@ The Flow above illustrates how to use the `Insert or Update row` action to save 
 | Result variable name  | Optional | Name of the variable containing the action performed.                             |
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds. |
 | Description           | Optional | Additional notes or comments about the action.                                    |
+
+<br/>
 
 ## Returns (optional)
 

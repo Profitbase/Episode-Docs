@@ -8,10 +8,6 @@ Executes a query command in a PostgreSQL database which returns a single value.
 
 <br/>
 
-## Returns
-
-Returns a .NET value of the type specified by `Result variable type`.
-
 ## Properties  
 
 | Name | Data Type       | Description    |
@@ -23,3 +19,9 @@ Returns a .NET value of the type specified by `Result variable type`.
 | Result variable type    | Optional        | Specifies the data type of the result variable (e.g., String, Number).          |
 | Command timeout (seconds) | Optional       | The time limit for command execution before it times out. Default is 120 seconds.  |
 | Description | Optional        | Additional notes or comments about the action or configuration.      |
+
+<br/>
+
+## Returns
+
+Returns a .NET value of the type specified by `Result variable type`.

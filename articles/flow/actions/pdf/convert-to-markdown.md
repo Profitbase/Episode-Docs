@@ -10,13 +10,6 @@ This Flow reads a contract (PDF file) from [OneDrive](../onedrive/read-file-from
 
 <br/>
 
-## Returns
-
-This action returns a string/text in markdown format.
-
-<br/>
-
-
 ## Properties
 
 | Name                 | Type     | Description                                                                                                   |
@@ -28,8 +21,13 @@ This action returns a string/text in markdown format.
 
 <br/>
 
+## Returns
 
-> **Note**  
+This action returns a string/text in markdown format.
+
+<br/>
+
+>[!NOTE] 
 > For best results when converting PDFs with complex content (e.g., tables, images, or multi-column layouts), it is recommended to use [Adobe "Convert a PDF file to a non-PDF file"](../adobe/pdf-to-non-pdf-as-byte-array.md) instead of the "Convert a PDF file to Markdown" action.
 
 

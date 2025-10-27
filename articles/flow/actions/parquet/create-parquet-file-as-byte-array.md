@@ -12,20 +12,20 @@ Return value used:
 
 <br/>
 
-## Returns
-
-Returns the Excel file serialized as a [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays)
-
-<br/>
-
 ## Properties
 
 | Name                 | Type     | Description                                                                                                                                                                          |
 | -------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Title                |          |                                                                                                                                                                                      |
+| Title    |    Optional      |      The title for the create action.               |
 | Source               | Required | Specifies the source of the data, which can either be a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) or [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable). |
 | Result variable name | Optional | The name of the variable you can use to reference the byte array in other actions.  |
 | Description          | Optional |  Additional notes or comments about the action or configuration. |
+
+<br/>
+
+## Returns
+
+Returns the Excel file serialized as a [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays)
 
 <br/>
 

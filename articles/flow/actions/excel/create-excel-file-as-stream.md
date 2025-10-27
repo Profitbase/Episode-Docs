@@ -5,10 +5,6 @@ Creates an Excel file from a [DataTable](https://learn.microsoft.com/en-us/dotne
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/getDataReaderEx1.png)
 
-## Returns
-
-Returns the Excel file as a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream)
-
 <br/>
 
 ## Properties
@@ -22,6 +18,12 @@ Returns the Excel file as a [Stream](https://learn.microsoft.com/en-us/dotnet/ap
 | Worksheet formatting options | Optional | Specifies detailed formatting options.                                                                                                      |
 | Byte array variable name | Optional | The name of the variable you can use to reference the Stream in other actions.                |
 | Description | Optional |  Additional notes or comments about the action or configuration. |
+
+<br/>
+
+## Returns
+
+Returns the Excel file as a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream)
 
 <br/>
 

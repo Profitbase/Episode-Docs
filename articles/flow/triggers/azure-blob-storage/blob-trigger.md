@@ -30,6 +30,8 @@ This Flow monitors for updated files in Azure Blob Storage. [If](../../actions/b
 
 ![img](/images/flow/blob-trigger2.png)
 
+<br/>
+
 ## Properties
 
 | Name                   | Type     | Description |

@@ -8,11 +8,8 @@ Converts a JSON string, byte array or file to a DataTable.
 
 **Example** ![img](../../../../images/strz.jpg)  
 This Flow automates the process of retrieving employee data from PowerOfficeGo, transforming it to a DataTable, and inserting it into a database.
+
 <br/>
-
-## Returns
-
-DataTable.
 
 ## Properties
 
@@ -22,6 +19,11 @@ DataTable.
 | [Schema mapping](#schema-mapping)           | Optional             | Enables manually defining the mapping between JSON properties and column names, including data types. |
 | DataTable variable name | Required             | The name of the variable that contains the output from this action.| 
 
+<br/>
+
+## Returns
+
+DataTable.
 <br/>
 
 ## Details

@@ -6,6 +6,8 @@ A typical use case for this action is storing information from a website (such a
 
 ![img](/images/flow/html-replace-relative-urls.png)
 
+<br/>
+
 ## Properties
 
 | Name          | Type                  | Description                            |
@@ -13,6 +15,8 @@ A typical use case for this action is storing information from a website (such a
 | HTML content  | Required              | A [string](https://learn.microsoft.com/en-us/dotnet/api/system.string), [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream) or `byte array` containing an HTML document or an HTML fragment. |
 | Base URL      | Required              | The base URL of the web site that the HTML document originates from. |
 | Result variable name | Required       | The name of the variable that contains the output from this action. |
+
+<br/>
 
 ## Returns
 

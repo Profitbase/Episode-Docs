@@ -4,15 +4,13 @@ Creates a CSV file from a [DataReader](https://learn.microsoft.com/en-us/dotnet/
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/create-csv-as-stream.png)
 
-## Returns
-
-[Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream)
+<br/>
 
 ## Properties
 
 | Name                     | Type     | Description                 |
 | ------------------------ | -------- | --------------------------- |
-| Title                    |          |                             |
+| Title                    |    Optional |  The title for the create action.  |
 | Source                   | Required | Specifies the source of the data, which can either be a DataTable or DataReader. |
 | Header row               | Default  | If true, the first row in the generated CSV file is a header row, containing column names. Default is true.             |
 | Column delimiter         | Default  | The delimiter that separates the fields on each row. The default value is , (comma).           |
@@ -24,6 +22,11 @@ Creates a CSV file from a [DataReader](https://learn.microsoft.com/en-us/dotnet/
 | Result variable name     | Optional | The name of the variable you can use to reference the Stream in other actions.                        |
 | Description              | Optional | Additional notes or comments about the action or configuration. |
 
+<br/>
+
+## Returns
+
+[Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream)
 <br/>
 
 [!INCLUDE [](__videos.md)]

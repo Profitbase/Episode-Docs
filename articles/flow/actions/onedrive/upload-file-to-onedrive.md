@@ -7,6 +7,8 @@ Uploads a file to a OneDrive folder.
 > [!NOTE]
 > This action only support uploading files up to `4MB` in size. [Read more here](https://learn.microsoft.com/en-us/onedrive/developer/rest-api/api/driveitem_put_content)
 
+<br/>
+
 ## Properties
 
 <!--prettier-ignore-->
@@ -16,6 +18,8 @@ Uploads a file to a OneDrive folder.
 | File path             | Required  | The path to where the file should be uploaded, and the name of the file, for example `MyFolder/MyFile.xlsx`. Note that you can combine variables and predefined values to construct this value.  |
 | File data             | Required  | The file data to upload. This must be a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream) or byte array. Examples of actions that return a Stream or byte array are [Export to Excel as byte array](../excel/create-excel-file-as-byte-array.md) |
 | Conflict behavior     | Required  | Defines what should happen if a file with the same name already exists. |
+
+<br/>
 
 ## Returns
 

@@ -10,10 +10,6 @@ This flow iterates through each employee in an Azure Table, checks if they’ve 
 
 </br>
 
-## Returns
-
-Returns a list of the table entities.
-
 ## Properties
 
 | Name                   | Type      | Description                                                                                          |
@@ -25,7 +21,11 @@ Returns a list of the table entities.
 | Filter   | Optional  | Configure filters to refine the list of table entities to process.   |
 | Entity name            | Optional  | The name of the table entity to iterate over.      |
 
+<br/>
 
+## Returns
+
+Returns a list of the table entities.
 
 ### Filter
 

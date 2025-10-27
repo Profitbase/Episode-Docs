@@ -12,7 +12,6 @@ This flow runs on a scheduled basis and performs automated file cleanup on an FT
 
 <br/>
 
-
 ## Properties 
 
 | Name                 | Type     | Description                         |
@@ -24,6 +23,8 @@ This flow runs on a scheduled basis and performs automated file cleanup on an FT
 | Output variable name | Optional | Name of the variable containing the data. |
 | Disabled          | Optional | Boolean value indicating whether the trigger is disabled (true/false). |
 | Description          | Optional |  Additional notes or comments about the trigger's purpose or configuration. |
+
+<br/>
 
 ## Returns
 

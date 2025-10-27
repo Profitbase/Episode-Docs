@@ -7,6 +7,8 @@ Lists all app registrations in a Microsoft Entra ID tenant.
 **Example** ![img](../../../../images/strz.jpg)  
 This flow checks if there are client secrets about to expire in any of the app registrations in a Microsoft Entra ID tenant. If it is about to expire (within 30 days), the flow sends an email notification.
 
+<br/>
+
 ## Properties
 
 | Name                     | Type     | Description                                                                 |
@@ -17,6 +19,8 @@ This flow checks if there are client secrets about to expire in any of the app r
 | App registration variable name     | Required | The name of the variable that stores the response from the Entra ID API (e.g., AppId). |
 | Disabled  | Optional | Boolean value indicating whether the action is disabled (true/false).  |
 | Description              | Optional | Additional details or notes about the action.                               |
+
+<br/>
 
 ## Returns
 

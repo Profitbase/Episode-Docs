@@ -19,10 +19,7 @@ For example, a CSV file can be loaded using the [Open CSV file as DataReader](..
 > [!CAUTION]
 > Trying to load a Stream using an incompatible action will fail.
 
-
-## Returns
-
-[Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream)
+<br/>
 
 ## Properties
 
@@ -33,6 +30,11 @@ For example, a CSV file can be loaded using the [Open CSV file as DataReader](..
 | Blob name prefix     | Optional | To filter the list of blobs, specify a string for the [prefix parameter](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-list#filter-results-with-a-prefix). **Note!** The prefix is case sensitive. |
 | Result variable name | Required | The name of the Flow variable that contains the list of the blob names.                                                                                                                                                  |
 
+<br/>
+
+## Returns
+
+[Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream)
 <br/>
 
 [!INCLUDE [](./__videos.md)]

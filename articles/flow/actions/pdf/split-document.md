@@ -33,13 +33,6 @@ When the PDF is split into multiple chunks (pages or groups of pages), each chun
 
 <br/>
 
-## Returns
-
-This action returns chunks of page(s) as a [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays).
-
-<br/>
-
-
 ## Properties
 
 | Name                 | Type     | Description                                                                                                   |
@@ -49,6 +42,12 @@ This action returns chunks of page(s) as a [byte](https://learn.microsoft.com/en
 | Pages per chunk           | Optional | Defines how many pages should be included in each chunk.                         |
 | Chunk variable name | Optional | The name of the variable in which the chunk(s) will be stored. |
 | Description          | Optional | Additional notes or comments about the action or configuration. |
+
+<br/>
+
+## Returns
+
+This action returns chunks of page(s) as a [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays).
 
 <br/>
 

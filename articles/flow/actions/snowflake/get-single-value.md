@@ -4,9 +4,7 @@ Executes a query command in a [Snowflake](https://docs.snowflake.com/en/user-gui
 
 ![img](../../../../images/flow/snowflake-get-single-value.png)
 
-## Returns
-
-Returns a .NET value of the type specified by `Result variable type`.
+<br/>
 
 ## Properties
 
@@ -20,7 +18,13 @@ Returns a .NET value of the type specified by `Result variable type`.
 |Command timeout (seconds) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description   | Optional | Additional notes or comments about the action or configuration. |
 
+<br/>
 
+## Returns
+
+Returns a .NET value of the type specified by `Result variable type`.
+
+<br/>
 
 ## Example: How to use parameters
 
@@ -32,6 +36,8 @@ Then use the parameters in the query.
 SELECT Display_Name FROM Snowflake.Account_Usage.Users WHERE USER_ID = :UserId
 
 ```
+
+<br/>
 
 ## Example: How to use variables in the command expression
 

@@ -7,11 +7,6 @@ Downloads a file from an FTP / SFTP directory into memory as a byte array.
 **Example** ![img](../../../../images/strz.jpg)  
 This flow **downloads** an invoice as a PDF file from an FTP server, [converts](../adobe/pdf-to-non-pdf-as-byte-array.md) it to a editable Word document (.docx), and [uploads](upload-file.md) the converted file back to the server in a different folder for further editing or approval.
 
-<br/>
-
-## Returns
-
-Returns chosen file as a [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays).
 
 <br/>
 
@@ -26,3 +21,9 @@ Returns chosen file as a [byte](https://learn.microsoft.com/en-us/dotnet/api/sys
 | Directory path | Optional | Select or enter the directory to download from. |
 | Return variable name | Required | Name of the variable containing the downloaded file. |
 | Description   | Optional | Additional notes or comments about the action or configuration. |
+
+<br/>
+
+## Returns
+
+Returns chosen file as a [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays).
