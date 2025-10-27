@@ -31,8 +31,8 @@ This action allows saving a text as a list of records in a PostgreSQL vector col
 | Input text         | Required  | Text to vectorize and save. Can be a variable or static string. |
 | Collection name    | Required  | The name of the table or collection in the database where vectors are saved. |
 | Record definition   | Optional  | The definition of columns used in the vector search. Note: The vector column is not returned.  |
-| Connection timeout  | Optional  |  Timeout duration for the connection (in seconds). Default is 60. |
-| Description        | Optional  | Explanation of what this action does.                                      |
+| Command timeout (seconds) | Optional       | The time limit for command execution before it times out. Default is 120 seconds.  |
+| Description | Optional        | Additional notes or comments about the action or configuration.      |
 
 </br>
 

@@ -15,4 +15,5 @@ This flow loads customer data and then inserts it into a PostgreSQL table.
 | Connection | Required   | The PostgreSQL database [connection](postgresql-connection.md). |
 | Source  | Required   |Select the source for data. |
 | Destination table   | Required   | Select or enter the name of the table to insert info. |
-| Description   | Optional | Additional notes or comments about the action or configuration.|
+| Command timeout (seconds) | Optional       | The time limit for command execution before it times out. Default is 120 seconds.  |
+| Description | Optional        | Additional notes or comments about the action or configuration.      |
