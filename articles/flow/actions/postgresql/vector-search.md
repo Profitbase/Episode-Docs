@@ -27,7 +27,8 @@ This flow processes a user's chat question by first receiving it through a [Chat
 | Score limit    | Optional  | A threshold value that limits results to those with a distance score at or below this score (for e.g. CosineDistance). |
 | Prompt template            | Optional  | The prompt template controls the output format for your search results. The system replaces placeholders, such as @[fieldName], with the corresponding data from your vector search fields. See example below. |
 | Search result variable name | Optional | The name of the variable to store results. |
-| Description              | Optional  | Any additional notes or information relevant to the search configuration. |
+| Command timeout (seconds) | Optional       | The time limit for command execution before it times out. Default is 120 seconds.  |
+| Description | Optional        | Additional notes or comments about the action or configuration.      |
 
 </br>
 
