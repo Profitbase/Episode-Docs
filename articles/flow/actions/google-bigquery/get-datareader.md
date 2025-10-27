@@ -4,9 +4,7 @@ Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/bigquery-get-datareader.png)
 
-## Returns
-
-[IDataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader)
+<br/>
 
 ## Properties
 
@@ -18,4 +16,8 @@ Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data
 | Reader variable name | Optional  | Name of the variable.  |
 | Description   | Optional | Additional notes or comments about the action or configuration. |
 
+<br/>
 
+## Returns
+
+[IDataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader)

@@ -11,9 +11,6 @@ This Flow automates the process of retrieving employee data from PowerOfficeGo, 
 
 <br/>
 
-## Returns
-[IDataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) providing a forward-only stream of rows and columns from a JSON document.
-
 ## Properties
 
 | Name                     | Type                 | Description                                |
@@ -21,6 +18,11 @@ This Flow automates the process of retrieving employee data from PowerOfficeGo, 
 | JSON                     | Required             | A string or byte array containing data in a valid JSON format. |
 | [Schema mapping](#schema-mapping)           | Optional             | Enables manually defining the mapping between JSON properties and column names, including data types. |
 | DataReader variable name | Required             | The name of the variable that contains the output from this action. | 
+
+<br/>
+
+## Returns
+[IDataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) providing a forward-only stream of rows and columns from a JSON document.
 
 <br/>
 

@@ -8,10 +8,6 @@ Reads a JSON file [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byt
 
 <br/>
 
-## Returns
-
-[string](https://learn.microsoft.com/en-us/dotnet/api/system.string)
-
 ## Properties
 
 | Name                     | Type     | Description                 |
@@ -20,3 +16,9 @@ Reads a JSON file [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byt
 | JSON                     | Required | A JSON-formatted byte array or stream that provides the data. |
 | Result variable name     | Optional | The name of the string variable.                             |
 | Description              | Optional |  Additional notes or comments about the action or configuration. |
+
+<br/>
+
+## Returns
+
+[string](https://learn.microsoft.com/en-us/dotnet/api/system.string)

@@ -3,11 +3,7 @@
 Publishes a Dimension in an InVision Solution.
 
 <!--![Publish Dimension](https://profitbasedocs.blob.core.windows.net/flowimages/deploy-stored-procedure.png)-->
-
-
-## Returns
-
-Boolean value (true or false).
+<br/>
 
 ## Properties 
 
@@ -18,3 +14,9 @@ Boolean value (true or false).
 | Dimension            | Required | Select or enter the ID of the Dimension you want to publish.         |
 | Result variable name | Optional | Name of the result variable containing the result (e.g., `isSuccess`). |
 | Description          | Optional | Additional notes or comments about the action or configuration. |
+
+<br/>
+
+## Returns
+
+Boolean value (true or false).

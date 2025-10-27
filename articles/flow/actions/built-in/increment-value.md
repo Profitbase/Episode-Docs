@@ -30,16 +30,6 @@ When the PDF is split into multiple chunks (pages or groups of pages), each chun
 
 <br/>
 
-
-
-
-
-
-<br/>
-
-## Returns
-Returns a (numeric) value.
-
 ## Properties
 
 | Name         | Data type       | Description                                       |
@@ -48,3 +38,8 @@ Returns a (numeric) value.
 | Variable to increment         | Required   | The name of variable to increment. |
 | Increment by   | Required      | The number to increment by.   |
 | Description   | Optional | Additional notes or comments about the action or configuration. |
+
+<br/>
+
+## Returns
+Returns a (numeric) value.

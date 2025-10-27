@@ -27,6 +27,8 @@ This flow is triggered by an incoming HTTP request. It first retrieves the total
 | Data variable name          | Optional | Name of the variable containing the data. |
 | Description          | Optional |  Additional notes or comments about the trigger's purpose or configuration.   |
 
+<br/>
+
 ## Returns
 
 This trigger returns a single variable with the specified name and Output data type. 

@@ -32,6 +32,12 @@ This flow processes a user's chat question by first receiving it through a [Chat
 
 <br/>
 
+## Returns 
+
+The Search vectors action returns an [IVectorSearchResult](../../api-reference/built-in-types/ai/i-vector-search-result.md) object that can be passed to the Chat completion Context property.
+
+<br/>
+
 #### Record definition
 
 You are required to specify the *key*, *content* and *vector* columns as **Field definitions**. ![img](../../../../images/strz2.jpg) 
@@ -48,12 +54,6 @@ You can use placeholders in the format @[fieldName] to include specific data fro
 **Example** ![img](../../../../images/strz2.jpg) 
 
 ![img](../../../../images/flow/sql-vector-search-prompt-template.png)  
-
-<br/>
-
-## Returns 
-
-The Search vectors action returns an [IVectorSearchResult](../../api-reference/built-in-types/ai/i-vector-search-result.md) object that can be passed to the Chat completion Context property.
 
 <br/>
 

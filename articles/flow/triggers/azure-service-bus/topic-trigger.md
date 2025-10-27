@@ -11,6 +11,7 @@ When a message arrives, the Flow checks whether the payload contains the expecte
 - If the required data exists, the customer record is inserted into the database.  
 - If the data is missing, the Flow simply continues without writing to the database (in a production scenario you might also add logging or route invalid messages to a dead-letter queue).
 
+<br/>
 
 ## Properties
 
@@ -24,6 +25,8 @@ When a message arrives, the Flow checks whether the payload contains the expecte
 | Output variable name | Required | Name of the variable where the trigger’s output data will be stored. |
 | Disabled       | Optional | Boolean value indicating whether the trigger is disabled (true/false). |
 | Description    | Optional | Additional notes or comments about the trigger's purpose or configuration. |
+
+<br/>
 
 ## Returns
 

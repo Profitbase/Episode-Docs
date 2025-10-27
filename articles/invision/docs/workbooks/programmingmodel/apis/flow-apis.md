@@ -2,9 +2,13 @@
 
 The following APIs can be used in any [Execute Expression](../interactionmodel/workbookactions.md#execute-expression) Actions or [Form Schema functions](../../../forms/formschemas/functions.md).
 
+<br/>
+
 #### execute(string, object)
 
 Executes a short-running Flow in the current Solution and returns data if the Flow is configured to do so.
+
+<br/>
 
 ##### API Definition
 
@@ -23,6 +27,8 @@ this.app.services.flow.execute(flowName: string, {
 | environment    | Optional. Specify this option of you want to override the FLOW_ENVIRONMENT Solution Variable. |
 | data           | Optional. Specifies the arguments to send to the Flow.  |
 
+<br/>
+
 ## Returns
 
 The API returns a response object with the following properties.
@@ -31,6 +37,8 @@ The API returns a response object with the following properties.
 |---------------|------------------------------------|
 | data          | The data returned from the executed Flow (if any). This may be null, a simple value, or a complex object.  |
 | status        | The HTTP status code.              |
+
+<br/>
 
 ##### Example
 
@@ -48,11 +56,12 @@ const response = await this.app.services.flow.execute('Calculate Price', {
 this.app.ui.dialogs.showMessage(`The calculated price is ${response.data}`);
 
 ```
-
+<br/>
 
 #### download(string, data)
 
 Executes a short-running Flow that returns a file, and downloads the file. Use this API if you have a Flow that returns a file that you want to download in the browser.
+<br/>
 
 ##### API Definition
 
@@ -65,6 +74,7 @@ this.app.services.flow.download(flowName: string, {
 }) : Promise<void>
 
 ```
+<br/>
 
 ##### Example
 
@@ -85,6 +95,7 @@ await this.app.services.flow.download("Export to Excel", {
 #### getExecutions(string | {objectId?: string, name?: string}, request: {solutionId?: string}): Promise<FlowExecution[]>  
 Returns an array of [FlowExecutions](#flowexecution) for the specified Flow (based on the `name` or the `objectId`).  
 You can then use the the `getExecutionLog` API to fetch the log items for the execution by providing the jobId (see example below).
+<br/>
 
 ##### API Definition
 ```javascript
@@ -95,6 +106,7 @@ this.app.services.flow.getExecutions(flowName: string | { objectId?: string, nam
 |----------------|----------------------------------------|
 | flowName | {objectId?: string, name?: string} | Specifies the name of the Flow to execute, or the Solution Object Id of the Flow to execute. The most common use case is to use the name of the Flow. If you are using the API in a generic component and you don't know the name of the Flow upfront, you can use the request object with the objectId instead (like shown in the example below). |
 | request: {solutionId?: string}    | Optional. Specify a request object with the SolutionId if you want to run a Flow in a different Solution than the Workbook. |
+<br/>
 
 ##### Example
 The example below shows how to get an array of all executions of a Flow. It then picks the first item in the array and uses the 
@@ -133,7 +145,7 @@ this.app.services.flow.getExecutionLog(flowName: string | {objectId?: string, na
 ```javascript
 type FlowEnvironment = 'Development' | 'Test' | 'Production'
 ```
-
+<br/>
 
 #### FlowExecutionState
 ```javascript
@@ -145,6 +157,7 @@ enum FlowExecutionState {
     failed = 4,
 }
 ```
+<br/>
 
 #### FlowLogType
 ```javascript
@@ -156,6 +169,7 @@ enum FlowLogType {
     error = 5
 }
 ```
+<br/>
 
 #### FlowExecution
 ```javascript
@@ -168,6 +182,7 @@ type FlowExecution = {
     endTime: "string" | null
 }
 ```
+<br/>
 
 #### FlowLogEntry
 ```javascript

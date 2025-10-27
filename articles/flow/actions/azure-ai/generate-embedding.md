@@ -21,6 +21,7 @@ The example above illustrates part of a Flow that stores a document into SQL Ser
 | Dimensions      | Optional               | Some embedding models (like text-embedding-3-*) support configurable dimensionalities, for example 768 or 1536. Make sure you don't specify a dimensionality greater than the max value of the model.| 
 | Input           | Required               | The (text) input that you want to generate an embedding for. |
 
+<br/>
 
 ## Returns
 This action returns a [ReadOnlyMemory&lt;float&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.readonlymemory-1). 

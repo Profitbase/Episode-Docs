@@ -7,9 +7,6 @@ Decrements a (numeric) value by a number.
 
 <br/>
 
-## Returns
-Returns a (numeric) value.
-
 ## Properties
 
 | Name         | Data type       | Description                                       |
@@ -18,3 +15,9 @@ Returns a (numeric) value.
 | Variable to decrement         | Required   | The name of variable to decrement. |
 | Decrement by   | Required      | The number to decrement by.   |
 | Description   | Optional | Additional notes or comments about the action or configuration. |
+
+<br/>
+
+## Returns
+
+Returns a (numeric) value.

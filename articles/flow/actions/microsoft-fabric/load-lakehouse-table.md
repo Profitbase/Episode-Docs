@@ -1,15 +1,8 @@
 # Load Lakehouse Table
 
-
 Loads Lakehouse [Table](https://learn.microsoft.com/en-us/fabric/data-engineering/load-to-tables) from a file or a folder containing multiple files.
 
-
 <br/>
-
-## Returns
-
-Returns the [LakehouseTableInfo](#lakehousetableinfo).
-
 
 ## Properties
 
@@ -29,8 +22,26 @@ Source path type: Specifies the source path type. Either "File" or "Folder".|
 | Result variable name | Optional   | The variable name to store the result of the load operation.      |
 | Description          | Optional   | Additional information about the load operation.                  |
 
+<br/>
 
-Csv settings dialog:
+## Returns
+
+Returns the [LakehouseTableInfo](#lakehousetableinfo).
+
+<br/>
+
+### LakehouseTableInfo
+
+| Name               | Type            | Description                |
+|--------------------|-----------------|----------------------------|
+| Id                 | string          | The id of the Lakehouse    |
+| DisplayName        | string          | The name of the Lakehouse  |
+| WorkspaceId        | string          | The id of the Workspace    |
+| Description        | string          | The description of the Lakehouse   |
+
+<br/>
+
+### Csv settings dialog:
 
 ![img](../../../../images/flow/csv_dial.png)
 
@@ -41,16 +52,6 @@ Folder selector:
 File selector:
 
 ![img](../../../../images/flow/file_dial.png)
-
-
-### LakehouseTableInfo
-
-| Name               | Type            | Description                |
-|--------------------|-----------------|----------------------------|
-| Id                 | string          | The id of the Lakehouse    |
-| DisplayName        | string          | The name of the Lakehouse  |
-| WorkspaceId        | string          | The id of the Workspace    |
-| Description        | string          | The description of the Lakehouse   |
 
 <br/>
 

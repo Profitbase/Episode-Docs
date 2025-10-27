@@ -2,23 +2,11 @@
 
 Gets a single entity based on a query against a PostgreSQL database.
 
-
 <br/>
 
 ![img](../../../../images/flow/get-entity-postgres.png)
 
 <br/>
-
-## Returns
-
-Returns an object with the properties specified by the `Entity properties` configuration.
-
-An `entity` is a .NET object with one or more properties, for example
-
-```csharp
-public record Customer(string VATNumber, string Name, string Address);
-```
-
 
 ## Properties  
 
@@ -32,3 +20,15 @@ public record Customer(string VATNumber, string Name, string Address);
 | Result variable name        | Optional        | The name of the variable that stores the result of the query.    |
 | Command timeout (seconds)   | Optional        | The time limit for command execution before it times out. Default is 120 seconds.           |
 | Description                 | Optional        | Additional notes or comments about the action or configuration.  |
+
+<br/>
+
+## Returns
+
+Returns an object with the properties specified by the `Entity properties` configuration.
+
+An `entity` is a .NET object with one or more properties, for example
+
+```csharp
+public record Customer(string VATNumber, string Name, string Address);
+```

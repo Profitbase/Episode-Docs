@@ -12,14 +12,14 @@ The example above illustrates how to import data from Hypergene Portfolios into 
 
 <br/>
 
-## Returns
-Returns data as a [string](https://learn.microsoft.com/en-us/dotnet/api/system.string) in the specified format (JSON, CSV, XML, or HTML). If the specified format is not supported by the report, data will be returned in the report’s default format.  
-
-<br/>
-
 ## Properties
 | Name              |  Type             | Description                      |
 |-------------------|-------------------|----------------------------------|
 | Connection        | Required          | The [connection](./connection.md) to the Hypergene Portfolios subscription. |
 | Report ID         | Required          | The id of the report to get data for. |
 | Format            | Optional          | The preferred format for the returned data. Options include `JSON`, `CSV`, `HTML`, and `XML`, though not all reports support every format. You can select from the list of available formats when configuring this property. If you specify a format that the report doesn’t support (for example, when using a variable), the data will be returned in the report’s default format. |
+
+<br/>
+
+## Returns
+Returns data as a [string](https://learn.microsoft.com/en-us/dotnet/api/system.string) in the specified format (JSON, CSV, XML, or HTML). If the specified format is not supported by the report, data will be returned in the report’s default format.  

@@ -9,18 +9,6 @@ This flow uses **For each file info** to iterate through all files in a specific
 
 <br/>
 
-## Returns
-
-A **FileInfo** object which contains the following properties:
-
-- **FileName** – The name of the file.
-- **FilePath** – The full path to the file on the FTP server.
-- **IsFolder** – Indicates whether the item is a folder (`true`) or a file (`false`).
-- **LastModified** – The date and time the file was last modified.
-- **Size** – The size of the file in bytes.
-
-
-
 ## Properties
 
 | Name                          | Type      | Description                                                                 |
@@ -31,3 +19,18 @@ A **FileInfo** object which contains the following properties:
 | Directory path                | Optional  | Select or enter the directory to look in. |
 | Include files in sub directories | Optional  | Enable this option to include files from all nested subdirectories.         |
 | Description                   | Optional  | Additional notes or comments about the action or configuration.            |
+
+<br/>
+
+## Returns
+
+A **FileInfo** object which contains the following properties:
+
+
+| Property        | Description |
+|-----------------|-------------|
+| **FileName**    | The name of the file. |
+| **FilePath**    | The full path to the file on the FTP server. |
+| **IsFolder**    | Indicates whether the item is a folder (`true`) or a file (`false`). |
+| **LastModified** | The date and time the file was last modified. |
+| **Size**        | The size of the file in bytes. |

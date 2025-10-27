@@ -4,11 +4,7 @@ Uploads a file to a Lakehouse in Microsoft Fabric to make it ready for analytics
 
 ![img](../../../../images/flow/upload-to-lakehouse.png)
 
-
-
-## Returns
-This action returns [LakehouseFileInfo](https://learn.microsoft.com/en-us/dotnet/api/azure.storage.files.datalake.models.pathinfo?view=azure-dotnet). 
-
+<br/>
 
 ## Properties
 
@@ -23,6 +19,11 @@ This action returns [LakehouseFileInfo](https://learn.microsoft.com/en-us/dotnet
 | Target file name                 | Required | The name for the uploaded file in the Lakehouse.                                             |
 | Overwrite if file already exists | Optional | Specifies whether to overwrite an existing file with the same name in the target folder.                     |
 | Description                      | Optional | A description of the file upload action for easier reference.       |
+
+<br/>
+
+## Returns
+This action returns [LakehouseFileInfo](https://learn.microsoft.com/en-us/dotnet/api/azure.storage.files.datalake.models.pathinfo?view=azure-dotnet). 
 
 <br/>
 

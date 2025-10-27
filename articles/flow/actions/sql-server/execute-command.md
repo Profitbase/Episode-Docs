@@ -8,7 +8,7 @@ Executes a SQL command in a SQL Server database, and returns the number of rows 
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/execute-command.png)
 
-
+<br/>
 
 ## Properties
 
@@ -22,6 +22,14 @@ Executes a SQL command in a SQL Server database, and returns the number of rows 
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.  |
 | Description   | Optional | Additional notes or comments about the action or configuration. |
 
+<br/>
+
+## Returns
+
+[Int32](https://learn.microsoft.com/en-us/dotnet/api/system.int32) The number of rows affected.
+
+<br/>
+
 ## Example: How to use parameters
 
 To use parameters in the query, declare and assign variables in the `SQL parameters` property.  
@@ -32,6 +40,7 @@ Then use the parameters in the query.
 UPDATE Users SET [Name] = @Name WHERE UserId = @UserId
 
 ```
+<br/>
 
 ## Example: How to use Flow variables in the command expression
 
@@ -42,10 +51,6 @@ Then, enclose the variable in curly brackets like with the `TableName` variable 
 -- We have declared a Flow variable named TableName and assigned a value to it in a previous action.
 UPDATE {TableName} SET [Name] = @Name WHERE UserId = @UserId
 ```
-
-## Returns
-
-[Int32](https://learn.microsoft.com/en-us/dotnet/api/system.int32) The number of rows affected.
 
 <br/>
 

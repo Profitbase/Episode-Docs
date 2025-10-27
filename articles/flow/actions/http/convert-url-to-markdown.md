@@ -11,12 +11,6 @@ This Flow reads all URLs from a [website sitemap](get-sitemap.md), converts the 
 
 <br/>
 
-## Returns
-
-This action returns a string/text in markdown format.
-
-<br/>
-
 ## Properties
 
 | Name                 | Type     | Description                                                       |
@@ -27,6 +21,10 @@ This action returns a string/text in markdown format.
 | Description          | Optional | Additional notes or comments about the action or configuration. |
 
 <br/>
+
+## Returns
+
+This action returns a string/text in markdown format.
 
 <br/>
 

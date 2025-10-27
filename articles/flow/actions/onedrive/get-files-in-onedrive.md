@@ -4,6 +4,8 @@ Gets a list of files and folders in a OneDrive folder.
 
 ![img](../../../../images/flow/onedrive-get-files-in-folder.png)
 
+<br/>
+
 ## Properties
 
 | Name                 | Type     | Description                                                                                                    |
@@ -12,6 +14,8 @@ Gets a list of files and folders in a OneDrive folder.
 | Folder               | Optional | The OneDrive folder to read from.                                                                              |
 | Include folders      | Optional | True to include folders in the list of [OneDriveItems](./api-reference/onedrive-item.md) to return.            |
 | Result variable name | Required | The name of the variable that contains the list of [OneDriveItems](./api-reference/onedrive-item.md) returned. |
+
+<br/>
 
 ## Returns
 

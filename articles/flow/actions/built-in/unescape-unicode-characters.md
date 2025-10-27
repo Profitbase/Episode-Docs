@@ -6,9 +6,7 @@ A typical use case for this action is when processing raw JSON returned from HTT
 
 ![img](/images/flow/unescape-unicode-characters.png)
 
-## Returns
-[String](https://learn.microsoft.com/en-us/dotnet/api/system.string) containing unescaped unicode characters.  
-Note that if the original string does not contain escaped unicode characters, the original string is returned. 
+<br/>
 
 ## Properties
 | Name                 | Type      | Description                                           |
@@ -17,6 +15,10 @@ Note that if the original string does not contain escaped unicode characters, th
 | Output variable name | Required  | The name of the variable containing the unescaped string. |
 
 <br/>
+
+## Returns
+[String](https://learn.microsoft.com/en-us/dotnet/api/system.string) containing unescaped unicode characters.  
+Note that if the original string does not contain escaped unicode characters, the original string is returned. 
 
 #### Example
 The example below shows a JSON string before and after unicode characters have been unescaped.  

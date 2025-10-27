@@ -9,10 +9,7 @@ Use this action if you need a list of all the blob names in a container. If you 
 **Example** ![img](../../../../images/strz.jpg)  
 A company stores customer invoices as PDFs in an Azure Blob Storage container. This flow retrieves all invoice file names, processes each invoice, and updates a database with relevant details. Used actions: [Get Blob names](), [For each Blob name](foreach-blob-name.md) and [Function](../built-in/function.md).
 
-
-
-## Returns
-[List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1)<[string](https://learn.microsoft.com/en-us/dotnet/api/system.string)>
+<br/>
 
 ## Properties
 
@@ -22,6 +19,11 @@ A company stores customer invoices as PDFs in an Azure Blob Storage container. T
 | Dynamic connection | Optional   | A connection dynamically created using the [Create Azure Blob container connection](./create-azure-blob-container-connection.md) action.    |
 | Blob name prefix | Optional  | To filter the list of blobs, specify a string for the [prefix parameter](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-list#filter-results-with-a-prefix). **Note!** The prefix is case sensitive. |
 | Result variable name | Required | The name of the Flow variable that contains the list of the blob names. |
+
+<br/>
+
+## Returns
+[List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1)<[string](https://learn.microsoft.com/en-us/dotnet/api/system.string)>
 
 <br/>
 

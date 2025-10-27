@@ -10,20 +10,20 @@ Using data table as Source:
 
 <br/>
 
-## Returns
-
-[Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream)
-
-<br/>
-
 ## Properties
 
 | Name                 | Type     | Description                                                                             |
 | -------------------- | -------- | ------------------- |
-| Title                |          |                                                           |
+| Title                |          |   The title for the create action.      |
 | Source               | Required | Specifies the source of the data, which can either be a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) or [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable). |
 | Result variable name | Required | The name of the variable you can use to reference the Stream in other actions.                                               |
 | Description  | Optional |   Additional notes or comments about the action or configuration.  |
+
+<br/>
+
+## Returns
+
+[Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream)
 
 <br/>
 

@@ -10,11 +10,6 @@ The example above takes a file from storage, reads its JSON content, saves the d
 
 </br>
 
-
-## Returns
-
-[Byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays)
-
 ## Properties
 
 | Name       | Type     | Description                                                              |
@@ -22,4 +17,9 @@ The example above takes a file from storage, reads its JSON content, saves the d
 | Connection | Required | The [Azure Files connection](./connecting-to-azure-files.md) to a Share. |
 | File name  | Required | The name and full path to the file to download.                          |
 
+<br/>
+
+## Returns
+
+[Byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays)
 

@@ -18,6 +18,8 @@ This flow receives an order request, creates a new order ID, saves the order and
 | Output data type     | Required   | Defines the data type of the object that the trigger outputs. By defining a data type, you define a contract of what the Flow expects as input. The trigger will try to convert input to the Flow to the specified data type. If the input cannot be converted to the specified type and format, the execution will fail. |
 | Output variable name | Required   | The name of the variable that the output from the trigger is stored in. |
 
+<br/>
+
 ## Returns
 
 This trigger returns a single variable with the specified name and Output data type. 

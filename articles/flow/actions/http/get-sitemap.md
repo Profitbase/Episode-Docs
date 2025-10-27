@@ -7,6 +7,7 @@ This action retrieves the sitemap from a given URL and returns a structured list
 
 ![Sitemap Image](/images/flow/get-sitemap.png)
 
+<br/>
 
 ## Properties
 
@@ -19,6 +20,7 @@ This action retrieves the sitemap from a given URL and returns a structured list
 | Description     | Optional | A field for adding additional details about the operation. |
 | Authentication  | Optional | Specifies authentication details needed to access the sitemap, if applicable. |
 
+<br/>
 
 ## Returns
 

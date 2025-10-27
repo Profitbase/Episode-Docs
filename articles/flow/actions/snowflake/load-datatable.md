@@ -4,9 +4,7 @@ Loads data from a [Snowflake](https://docs.snowflake.com/en/user-guide-getting-s
 
 ![img](../../../../images/flow/snowflake-load-datatable.png)
 
-## Returns
-
-[DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable)
+<br/>
 
 ## Properties
 
@@ -19,3 +17,8 @@ Loads data from a [Snowflake](https://docs.snowflake.com/en/user-guide-getting-s
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description | Optional | Additional notes or comments about the action or configuration. |
 
+<br/>
+
+## Returns
+
+[DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable)

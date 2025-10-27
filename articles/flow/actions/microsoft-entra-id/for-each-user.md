@@ -7,6 +7,8 @@ Lists all users in a Microsoft Entra ID tenant.
 **Example** ![img](../../../../images/strz.jpg)  
 This flow iterates through all existing users in a Microsoft Entra ID tenant. For each user, it checks if their email address exists within a predefined list of emails to be invited. If a match is found, the address is removed from the invitation list. Finally, the flow loops through the remaining email addresses on the list and sends each a guest invitation to join the tenant.
 
+<br/>
+
 ## Properties
 
 | Name                     | Type     | Description                                                                 |
@@ -17,6 +19,8 @@ This flow iterates through all existing users in a Microsoft Entra ID tenant. Fo
 | Include extended profile | Optional  | Defaults to false. If set to true, the response will include extended directory attributes (e.g., companyName, employeeId, department) and the user's manager reference.<br>**Benefit**: Provides a richer user profile in a single query.<br>**Cost**: Results in a larger payload and a slower response time. |
 | Disabled  | Optional | Boolean value indicating whether the action is disabled (true/false).  |
 | Description              | Optional | Additional details or notes about the action.                               |
+
+<br/>
 
 ## Returns
 

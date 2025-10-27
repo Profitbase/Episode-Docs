@@ -6,8 +6,7 @@ Creates a [Workspace](https://learn.microsoft.com/en-us/fabric/get-started/creat
 
 ![img](../../../../images/flow/create-workspace-fabric.png)
 
-## Returns
-Returns a [Workspace](https://learn.microsoft.com/en-us/fabric/get-started/workspaces) object.
+<br/>
 
 ## Properties
 
@@ -19,6 +18,11 @@ Returns a [Workspace](https://learn.microsoft.com/en-us/fabric/get-started/works
 | Capacity Id         | Optional | Specifies the [capacity](https://learn.microsoft.com/en-us/rest/api/fabric/core/capacities/list-capacities?tabs=HTTP) ID for resource allocation, where capacities are dedicated resources in Microsoft Fabric that provide the necessary compute and storage power for efficient data and analytics processing.  |
 | Result Variable Name| Optional | The name of the variable in which the workspace result is stored. Default is `workspace`.    |
 | Description         | Optional | An additional description of the environment or other relevant information.  |
+
+<br/>
+
+## Returns
+Returns a [Workspace](https://learn.microsoft.com/en-us/fabric/get-started/workspaces) object.
 
 <br/>
 

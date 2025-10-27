@@ -21,13 +21,17 @@ The example above illustrates part of a Flow that stores a document into SQL Ser
 | Dimensions      | Optional               | Some embedding models support configurable dimensionalities, for example 768 or 1536. Make sure you don't specify a dimensionality greater than the max value of the model.| 
 | Input           | Required               | The (text) input that you want to generate an embedding for. |
 
+<br/>
 
 ## Returns
 This action returns a [ReadOnlyMemory&lt;float&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.readonlymemory-1). 
 
+<br/>
+
 >[!NOTE]
 >When using `ReadOnlyMemory<float>` in database queries, you might have to manually convert it to other formats depending on which database engine you are targeting. For example, Azure SQL currently requires `ReadOnlyMemory<float>` to be converted to a string before it can be used in a query (because vector support in Azure SQL is currently in preview). However, we expect that once the VECTOR data type is GA, you will not have to do the manual conversion shown below.  
 
+<br/>
 
 **Example**  
 You can convert ReadOnlyMemory&lt;float&gt; to a string using a [Function](../built-in/function.md) action, and then use in in an Azure SQL query like shown below.

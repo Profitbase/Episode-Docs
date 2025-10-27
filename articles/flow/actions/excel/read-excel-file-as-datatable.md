@@ -4,9 +4,9 @@ Loads the contents of an Excel sheet into memory as a [DataTable](https://learn.
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/read-excel-file-as-datatable.png)
 
+<br/>
 
 ## Properties
-
 
 | Name                | Type     |Description     |
 | ------------------- | -------- | --------------------------------------------- |
@@ -20,16 +20,17 @@ Loads the contents of an Excel sheet into memory as a [DataTable](https://learn.
 
 <br/>
 
+## Returns
+
+[DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) containing data from all rows and columns as specified by the `Data start row` and `Column mapping` properties.
+
+<br/>
+
 ### Automatic column mapping
 
 Columns can be mapped automatically by using the "Map from sample file" option.
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/getDataReaderEx2.png)
-
-## Returns
-
-[DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) containing data from all rows and columns as specified by the `Data start row` and `Column mapping` properties.
-
 
 <br/>
 

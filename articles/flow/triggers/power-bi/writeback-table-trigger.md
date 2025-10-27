@@ -6,8 +6,6 @@ The [Writeback Table](../../../PowerBI/writeback-table/overview.md) enables user
 
 To create a Flow that saves the data from the Writeback Table, add this trigger. The trigger starts the Flow when the user presses the `Save` button in the [Writeback Table](../../../PowerBI/writeback-table/overview.md), and outputs a [DeltaSet](../../api-reference/built-in-types/deltaset.md) containing the changes made by the user. You then need to add an action for the specific target system that you want to save the data to, for example [SQL Server / Azure SQL](../../actions/sql-server/save-deltaset.md), PostgreSQL or [Snowflake](../../actions/snowflake/save-deltaset.md).
 
-
-
 <br/>
 
 ![img](/images/flow/powerbi-writeback-table-trigger.png)
@@ -17,11 +15,12 @@ This flow is triggered when data is written back from a Power BI Writeback Table
 
 <br/>
 
-
 ## Properties
 | Name            | Type            | Description                               |
 |-----------------|-----------------|-------------------------------------------|
 | Test data       | Optional        | Use this property to define test data to save to a database, file or service. The test data is only used when you run the Flow manually from the Designer during development. The test data is NOT used when data is saved from the Power BI user interface. [See below](#test-data-format) for a description of the required format. | 
+
+<br/>
 
 ## Returns
 The trigger returns a [DeltaSet](../../api-reference/built-in-types/deltaset.md) containing all user-made changes intended for storage in a database, file, or service.  

@@ -7,14 +7,6 @@ The `REST API Request with paging` action enables you to call [Dynamics 365 Busi
 
 ![img](/images/flow/dynamics365-bc-api-request-with-paging.png)
 
-<br/>
-
-## Returns
-
-The return type is defined when configuring the action. It can be a custom data type or the raw JSON response from the API.  
-We recommend using the built-in [HttpResponse&lt;T&gt;](../../../api-reference/built-in-types/http-response.md) type because it will include additional information about the response, such as the HTTP status code and error(s).
-
-We also recommend simply dumping the raw response to a data store, and then use data transformation tools to transform the data into a usable format. If you know the API returns small amounts of data (10 000 - 200 000 records), you can consider using the [Get JSON DataReader](../../json/get-json-datareader.md) to flatten JSON to a tabular format and process the data as rows and columns, for example by inserting directly to a SQL Server table.
 
 <br/>
 
@@ -27,6 +19,15 @@ We also recommend simply dumping the raw response to a data store, and then use 
 | Dynamic connection | Optional | Use this option of you needs to create a connection using credentials stored outside the workspace, for example in your own Azure SQL or PostgreSQL database. When this property is defined, Flow will use the `Dynamic connection` at runtime, and `Connection` only at design time. To dynamically create a connection, use the [Create Dynamics 365 Business Central connection](./create-api-connection.md) action.  |
 | Configuration | Required | Defines the HTTP request to make to the API. See details [below](#configuration).                                                                                                   |
 
+
+<br/>
+
+## Returns
+
+The return type is defined when configuring the action. It can be a custom data type or the raw JSON response from the API.  
+We recommend using the built-in [HttpResponse&lt;T&gt;](../../../api-reference/built-in-types/http-response.md) type because it will include additional information about the response, such as the HTTP status code and error(s).
+
+We also recommend simply dumping the raw response to a data store, and then use data transformation tools to transform the data into a usable format. If you know the API returns small amounts of data (10 000 - 200 000 records), you can consider using the [Get JSON DataReader](../../json/get-json-datareader.md) to flatten JSON to a tabular format and process the data as rows and columns, for example by inserting directly to a SQL Server table.
 
 <br/>
 

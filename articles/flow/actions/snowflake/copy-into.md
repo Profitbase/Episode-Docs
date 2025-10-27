@@ -6,9 +6,7 @@ A [stage](https://docs.snowflake.com/en/sql-reference/sql/create-stage) is a loc
 
 ![img](../../../../images/flow/snowflake-copy-data.png)
 
-## Returns 
-
-[Int32](https://learn.microsoft.com/en-us/dotnet/api/system.int32) The number of rows affected/inserted.
+<br/>
 
 ## Properties
 
@@ -24,6 +22,13 @@ A [stage](https://docs.snowflake.com/en/sql-reference/sql/create-stage) is a loc
 | Result variable name      | Optional  | Name of the result variable containing the number of inserted rows.                                 |
 | Description               | Optional  | Additional notes or comments about the action or configuration.                                     |
 
+<br/>
+
+## Returns 
+
+[Int32](https://learn.microsoft.com/en-us/dotnet/api/system.int32) The number of rows affected/inserted.
+
+<br/>
 
 ## File format settings 
 
@@ -39,6 +44,7 @@ Options for Parquet files
 
 ![img](../../../../images/flow/snowflake-copy-data4.png)
 
+<br/>
 
 > [!NOTE]
 >

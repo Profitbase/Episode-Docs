@@ -8,6 +8,8 @@ Provides a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data
 This flow example shows a process that reads data from a database, splits records into multiple chunks, converts each chunk into CSV format, and appends it to a blob storage.  
 Actions used in the flow are: SQL Server [Get DataReader](), [DataReader chunker](../built-in/datareader-chunker.md), [Create CSV file as byte array](../csv/create-csv-file-as-byte-array.md) and [Append to Blob](../azure-blob-storage/append-to-blob.md). 
 
+<br/>
+
 ## Properties
 
 | Name         | Type            | Description                                       |
@@ -20,6 +22,7 @@ Actions used in the flow are: SQL Server [Get DataReader](), [DataReader chunker
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description   | Optional | Additional notes or comments about the action or configuration. |
 
+<br/>
 
 ## Returns
 

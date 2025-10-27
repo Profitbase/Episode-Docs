@@ -4,10 +4,6 @@ Creates an Excel file from a [DataTable](https://learn.microsoft.com/en-us/dotne
 
 ![img](https://profitbasedocs.blob.core.windows.net/flowimages/create-excel-file-as-byte-arrayEx1.png)
 
-## Returns
-
-Returns the Excel file serialized as a [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays)
-
 <br/>
 
 ## Properties
@@ -21,6 +17,12 @@ Returns the Excel file serialized as a [byte](https://learn.microsoft.com/en-us/
 | Worksheet formatting options | Optional | Specifies detailed formatting options.                                                                                                       |
 | Byte array variable name | Optional | The name of the variable you can use to reference the byte array in other actions.                                                                                                           |
 | Description | Optional |  Additional notes or comments about the action or configuration. |
+
+<br/>
+
+## Returns
+
+Returns the Excel file serialized as a [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays)
 
 <br/>
 

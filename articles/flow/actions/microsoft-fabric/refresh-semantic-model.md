@@ -9,6 +9,8 @@ This action calls the PowerBI [Refresh](https://learn.microsoft.com/en-us/power-
 
 ![img](/images/flow/microsoft-fabric-refresh-semantic-model.png)
 
+<br/>
+
 ## Properties
 
 | Name                  | Type              | Description                                        |
@@ -30,6 +32,8 @@ This action returns a response object with the following properties.
 |---------------|------------------|-------------------------------|
 | OperationId   | String           | The id of the refresh request returned from the Power BI API. |
 | Status        | String           | `Completed`, `Failed`, `Unknown`, `Disabled`, or `Cancelled`.  |
+
+<br/>
 
 **Example**
 ```json

@@ -10,12 +10,6 @@ This Flow downloads the [HTML](http-request.md) of a specified page, converts th
 
 <br/>
 
-## Returns
-
-This action returns a string/text in markdown format.
-
-<br/>
-
 ## Properties
 
 | Name                 | Type     | Description                                                                                                   |
@@ -26,6 +20,10 @@ This action returns a string/text in markdown format.
 | Description          | Optional | Additional notes or comments about the action or configuration. |
 
 <br/>
+
+## Returns
+
+This action returns a string/text in markdown format.
 
 <br/>
 

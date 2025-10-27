@@ -1,8 +1,6 @@
 # Convert a PowerPoint file to Markdown
 
-
 Converts a PowerPoint file to [Markdown](https://en.wikipedia.org/wiki/Markdown).
-
 
 ![img](../../../../images/flow/convert-PowerPoint-to-markdown.png)
 
@@ -10,13 +8,6 @@ Converts a PowerPoint file to [Markdown](https://en.wikipedia.org/wiki/Markdown)
 This Flow reads a presentation (PowerPoint file) from [OneDrive](../onedrive/read-file-from-onedrive-as-byte-array.md), converts it to Markdown, [splits the text](../ai/split-text.md) into chunks, [generates embeddings](../azure-ai/generate-embedding.md) for each chunk, converts the generated vector into a SQL Server-compatible format and stores the text, vector, and document reference in a SQL Server table. This table can then be used for [vector search](../postgresql/vector-search.md) or to feed chat models with the extracted information.
 
 <br/>
-
-## Returns
-
-This action returns a string/text in markdown format.
-
-<br/>
-
 
 ## Properties
 
@@ -27,8 +18,8 @@ This action returns a string/text in markdown format.
 | Result variable name | Required | The name of the variable in which the result will be stored. |
 | Description          | Optional | Additional notes or comments about the action or configuration. |
 
+<br/>
 
+## Returns
 
-
-
-
+This action returns a string/text in markdown format.
