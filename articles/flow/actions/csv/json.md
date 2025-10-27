@@ -15,6 +15,7 @@ This document specifies the JSON format for the `JsonDataImportOptions` object, 
 | `AllowNonDigitCharactersInNumbers` | Boolean | No       | `null`        | If `true`, allows non-digit characters in numeric fields; `false` otherwise. |
 | `QuoteCharacter`             | String    | No       | `null`        | Single character used for quoting fields, e.g., `"\""`, `"'"`. Must be a single character. |
 | `Delimiter`                  | String    | No       | `null`        | Character or string used to separate fields, e.g., `","`, `";"`.             |
+| `EscapeCharacter`            | String    | No       | `null`        | Character used to escape special characters within fields, e.g., `"\""` or `"\\"`. Must be a single character. |
 | `Encoding`                   | Number/String/Null | No       | `null`        | Specifies the text encoding. See **Encoding Values** below.                  |
 
 <br/>
@@ -61,6 +62,7 @@ If a string is provided, it must match one of the enum names (case-insensitive).
   "AllowNonDigitCharactersInNumbers": true,
   "QuoteCharacter": "\"",
   "Delimiter": ";",
+  "EscapeCharacter": "\\",
   "Encoding": "UTF8"
 }
 ```
