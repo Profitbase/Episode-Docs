@@ -78,6 +78,9 @@ Free text string to help document settings.
 
 <br/>
 
+**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 6.1 or later
+> [Configure the CapEx module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20CapEx%20module.pdf)<br/>
+
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.2.4 or later
 > [Configure the CapEx module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2.4/Planner%20CapEx%20module.pdf)<br/>
 
