@@ -15,6 +15,10 @@ It contains an input page (Personnel Details) and associated pop-up pages for ma
 
 <br/>
 
+**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 6.1 or later
+
+-  [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Personnel%20module.pdf)<br/>
+
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.4 or later
 
 -  [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.4/Planner%20Personnel%20module.pdf)<br/>
