@@ -15,7 +15,7 @@ Supports upgrade to Planner 6.1.1 from Planner 5.4.1 or newer versions (see note
 
 When upgrading to the next version after 6.1.1, upgrading from versions older than 5.5.0 will no longer be supported. It is therefore strongly recommended to keep your Planner version as up to date as possible. 
 
-urthermore, switching to flow-based transaction pipelines is currently mandatory and is done automatically as part of the upgrade process. However, the flow pipelines must be executed manually post upgrade in situations where the solution was not activated for flow pipelines prior to the upgrade.
+Furthermore, switching to flow-based transaction pipelines is currently mandatory and is done automatically as part of the upgrade process. However, the flow pipelines must be executed manually post upgrade in situations where the solution was not activated for flow pipelines prior to the upgrade.
 
 Requirements: Profitbase InVision platform version 2025.5 AND Profitbase Flow 1.9.
 
