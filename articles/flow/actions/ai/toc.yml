@@ -1,3 +1,5 @@
+- name: Flow AI tool
+  href: "flow-ai-tool.md"
 - name: Chat history truncation reducer
   href: "chat-history-truncation-reducer.md"
 - name: Split text
