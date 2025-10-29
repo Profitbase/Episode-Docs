@@ -26,6 +26,9 @@ The module consists of a main driver view in which the driver can bet adjusted a
 
 <br/>
 
+**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 6.1 or later
+-  [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Driver%20based%20module.pdf)<br/>
+
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.4 or later
 
 -  [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.4/Planner%20Driver%20based%20module.pdf)<br/>
