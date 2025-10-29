@@ -6,6 +6,7 @@ This package provide the financial planning function and can be organized in pro
 
 ## EPM Planner Versions
 
+- [EPM Planner 6.1.1](#epm-planner-611) - Released 2025.10.29
 - [EPM Planner 6.1.0](#epm-planner-610) - Released 2025.06.05
 - [EPM Planner 6.0.3](#epm-planner-603) - Released 2025.02.17
 - [EPM Planner 6.0.2](#epm-planner-602) - Released 2024.11.05
@@ -21,6 +22,37 @@ This package provide the financial planning function and can be organized in pro
 **Changes:**
 
 **Fixes:**
+
+## EPM Planner 6.1.1
+
+**Changes:**
+
+- Driver based module:
+	- Social cost from advanced motor interface requires that involved accounts must be part of the social cost setup for payroll accounts in Finance settings. This is an intended change of behavior (#2035)
+	- This year's total in driver based models for calculated and summable measures - calculation method is changed. This is an intended change of behavior (#2012)
+	- Option to control sort order for dimensions (#2071)
+	- Allow for "easy" plan proposal from Personnel fact (#2021)
+	- Improved useability when inserting new rows to setting tables - unused dimensions hidden, automatically inserted All level selection for all non-department dimensions (#2064)
+- Personnel module: option to hide columnSalary rest of year (#2031)
+- CapEx module: new right-click menu to change dimensionality (#1912)
+- Account module: option to avoid loading actuals last 12 months (#1954)
+- Plan overview: option to include Year end due data (#1959)
+
+**Fixes:**
+- Pension in vacation month not calculated in Plan overview and Preview datasets (#2028)
+- Post pipeline transactions from custom sources (pbTransdataPLSourceCM) not visible in AccountDetails report nor Plan overview (#2052)
+- Short term finance transactions is not present in Plan overview report (#1910)
+- Long term personnel planning: data not included in financial simulation and proposed salary raise fail to take in to account the year-on-year cumulative effect. (#1973)
+- Driver based pipeline failed to produce all expected transactions (#2038)
+- Additional dim mapping (split account between multiple report lines based on dimensionality) did not give correct result (#2036)
+- Allocation keys based on report lines did not produce correct result (#2027)
+- Pipelines were sensitive to changes of case in departmentID and processed data in unexpected batches not generating complete set of transactions (#2061) 
+- Sum columnin account details (personnel) is incorrect (#2060)
+- Process in driverbased modelling - spinner stops immediately - should await the flow pipeline to finish (#2033)
+- Driver based flow - calculation script will terminate flow execution when execution time exceeeds 5 minutes (#2015)
+- Column order Account details report not intuitive (#2018)
+- Personell module process transactions from overtime column even if not mapped to account (#2006)
+- Version deployment and Update and process data operation fails when historic column configuration is incomplete or incorrect (#2024)
 
 ## EPM Planner 6.1.0
 
