@@ -13,6 +13,9 @@ It contains an input page (Account Details) and a report page (Supporting Detail
 
 <br/>
 
+**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 6.1 or later
+-  [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Account%20module.pdf)<br/>
+
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.4 or later
 
 
