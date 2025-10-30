@@ -11,10 +11,13 @@ You open the debugger dialog by either clicking the appearing button above the n
 <img src="../../../../images/debugger-open.png" alt="Opening debugger dialog">
 <p><em>Figure: The debugger dialog can be opened via the hover action button or by right-clicking the node and selecting “View debugger”.</em></p>
 
+<br>
+
 
 <img src="../../../../images/debugger-overview-full.png" alt="Debugger dialog with runs and iterations">
 <p><em>Figure: Debugger dialog showing 8 runs, each producing 6 loop iterations.</em></p>
 
+<br>
 
 Each dialog is unique to a specific session ID and node ID. If you need these IDs, you can copy them to the clipboard by clicking NID or DSID in the footer. If you try to open the same dialog twice, the existing window is simply brought to the front. The window is resizable and can remain open even during flow execution. The dialog’s data will be reloaded once the execution is complete.
 
@@ -27,7 +30,7 @@ Each dialog is unique to a specific session ID and node ID. If you need these ID
 | Run | A single execution instance of the node. |
 | Port | A specific input or output port on the node. |
 | Iteration | Sequential port trace occurrences within a run; useful when ports receive values multiple times (loops). |
-| Debugger item | Raw trace item containing metadata (e.g., run index, port id, iteration index, media type, data). |
+| Debugger item | Raw trace item containing metadata (e.g., run index, port id, iteration, media type and data). |
 
 <br>
 
@@ -40,7 +43,7 @@ The interface is split into collapsible/resizable panels on the left and a data 
 3. Iterations Panel **\***
 4. Data Panel
 
-**\*** Collapsed if the Node was executed only once during the flow execution
+**\*** Collapsed if the Node was executed only once and produced only one result on the output, during the flow execution.
 
 **Panels can be:**
 - Resized by dragging the vertical line grip.
