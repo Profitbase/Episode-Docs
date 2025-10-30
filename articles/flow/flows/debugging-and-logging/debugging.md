@@ -1,10 +1,14 @@
-# Node Debugger
+# Node debugger
 
 The node debugger lets you inspect data flowing through an individual node after a flow execution has completed in the designer. It provides a multi-panel view to explore or export the data present on a nodes input and output ports during the flow execution.
 
+>[!NOTE]
+>Data cannot be displayed in the debugger until the flow has been executed at least once (press the play button) from the designer interface. The debugger can remain open during flow execution and will display the relevant data as soon as execution completes.
+
+
 <br>
 
-## Opening the Dialog
+## Opening the dialog
 
 You open the debugger dialog by either clicking the appearing button above the node when your mouse pointer hovers over the node or by right-clicking the node and choosing 'View debugger'.
 
@@ -19,64 +23,41 @@ You open the debugger dialog by either clicking the appearing button above the n
 
 <br>
 
-Each dialog instance is tied to a session ID (DSID) and node ID (NID). If you need these IDs, click NID or DSID in the footer to copy them. If you try to open the same dialog twice, the existing window is brought to the front. The window is resizable and can remain open during flow execution. Its data reloads once the execution completes.
+Each dialog instance is associated with a session ID (DSID) and a node ID (NID). To copy these IDs, click on NID or DSID in the footer. If you attempt to open the same dialog twice, the existing window will be brought to the front. The window is resizable and can remain open while the flow executes. The data is reloaded after execution completes.
 
 <br>
 
-## Concept Glossary
+## Concept glossary
 
 | Term | Meaning |
 |------|--------|
 | Run | A single execution instance of the node. |
 | Port | A specific input or output port on the node. |
 | Iteration | A sequential occurrence of a port trace within a run (appears when a port receives values multiple times, e.g. in loops). |
-| Debugger item | A raw trace record containing metadata (run index, port id, iteration, media type, and data). |
 
 <br>
 
-## Layout Overview
-
-The interface is split into collapsible/resizable panels on the left and a data panel on the right:
-
-1. Runs Panel **\***
-2. Ports Panel
-3. Iterations Panel **\***
-4. Data Panel
-
-**\*** Collapsed if the node was executed only once and produced a single output during the flow execution.
-
-**The panels can all be:**
-- Resized by dragging the vertical line grip.
-- Collapsed/expanded with the (<) expand/collapse button.
+### Runs panel
+Shows all distinct run numbers (the number of times a node was called during the flow execution) in ascending order. Visible only when there is more than one run. Selecting a run filters the available debugger items for downstream panels.
 <br>
 <br>
 
-## Panel Details
-
-<br>
-
-### Runs Panel
-Shows all distinct run numbers (the number of times a node was called during the flow execution) in ascending order.  
-Visible only when there is more than one run. Selecting a run filters available trace items for downstream panels.
-<br>
-<br>
-
-### Ports Panel
+### Ports panel
 Lists the ports encountered in the trace data for the node.  
 Port entries display the port’s name and direction ( [IN] to the node or [OUT] from the node).  
 Selecting a port filters iterations and narrows data to that (run + port) combination.
 <br>
 <br>
 
-### Iterations Panel
-Shows iteration numbers within the selected run/port. This panel is only relevant when the node itselv iterates and produces its output value multiple times during the execution. This is typically the case for nodes that loops.
+### Iterations panel
+Shows iteration numbers within the selected run/port. This panel is only visible when the node itself iterates and produces its output value multiple times during the execution. This is typically the case for nodes that loops.
 <br>
 <br>
 
-### Data Panel
-Displays the payload of the active debugger item determined by (Run, Port, Iteration).  
+### Data panel
+Displays the data for the selected run, port, and iteration.
 
-**Table View**
+**Table view**
 - Auto-generated columns from the first object's keys.
 - Column filtering (multiple filters combine via union logic).
 - Column sorting (click arrow icons).
@@ -86,27 +67,26 @@ Displays the payload of the active debugger item determined by (Run, Port, Itera
 - Copy to clipboard (clicking a cell copies its raw value).
 - Export actions (JSON, CSV, tab-delimited).
 
-**JSON View**
+**JSON view**
 - Collapsible, pretty-formatted JSON tree.
 - Expand/collapse nodes to focus on relevant sections.
 - Inline syntax coloring for improved readability.
 - Export actions (JSON, CSV, tab-delimited).
 
-**Bindary data handling**
-- Binary / media handling: if marked binary, inline parsing is skipped; use “Open in browser” to attempt viewing. If the browser supports the media type it opens and displays the data inline. The binary file will always be downloaded to the browsers download folder.
+**Binary data handling**
+- If the data is binary use “Open in browser” to attempt viewing the content inline in the browser. The data will also be put in a file and downloaded to the browsers download folder.
 <br>
 
 <img src="../../../../images/debugger-binary-data.png" alt="Binary data handling">
-<p><em>Figure: Binary data will be attempted opened inline in the browser for some supported types. The data will always be downloaded to you download folder if the "open in browser" button is pressed.</em></p>
+<p><em>Figure: Binary data will be attempted opened inline in the browser for some supported types. The data will always be downloaded to your download folder if the "open in browser" button is pressed.</em></p>
 
 <br>
 <br>
 
-## Supported Media & Inline Preview
-
-The code attempts inline open only for commonly safe types:
+## Supported media types & inline preview
+Data described by the following media types will be opened inline in the browser when possible:
 - Text (`text/plain`, `application/json`, `text/*`)
 - Images (`image/png`, `image/jpeg`, `image/gif`, `image/webp`, etc.)
-- Simple structured formats (CSV) may open in a new tab depending on browser.
+- Simple structured formats (CSV).
 
-Unsupported or opaque types (binary blobs) are downloaded.
+Unsupported or opaque types (binary blobs) are always downloaded.
