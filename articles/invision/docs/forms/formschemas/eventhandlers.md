@@ -15,72 +15,89 @@ FormEventHandlers contains JavaScript code, and you can access the [Form Runtime
 FormEventHandler is executed when a form event is raised. There are currently two form events.
 <br/>
 
-**Init**  
+##### Init
 The Init event runs after the first render of the Form Schema. Rendering happens the first time it appears on the screen and after data has been loaded.
-
-    <EventHandlers>
-        <FormEventHandler On="Init">
-            <![CDATA[
-            // Your JavaScript goes here
-            ]]
-        </FormEventHandler>
-    </EventHandlers>
-
-<br/>
-
-> **Example**
->
-> The following event handler runs when the Init event is raised.
-
+```xml
+<EventHandlers>
     <FormEventHandler On="Init">
         <![CDATA[
-        controls.myInput.setIsEnabled(false);
-        alert('Hello world');
+        // Your JavaScript goes here
         ]]
     </FormEventHandler>
-
+</EventHandlers>
+```
 <br/>
 
-**DataLoaded**  
+**Example**
+
+The following event handler runs when the Init event is raised.
+```xml
+<FormEventHandler On="Init">
+    <![CDATA[
+    controls.myInput.setIsEnabled(false);
+    alert('Hello world');
+    ]]
+</FormEventHandler>
+```
+<br/>
+
+##### DataLoaded
 The DataLoaded event runs after data has been loaded, but before the initial render. If you need to manipulate the data before it is rendered the first time, you should use this event.
 
-    <EventHandlers>
-        <FormEventHandler On="DataLoaded">
-            <![CDATA[
-            // Your JavaScript goes here
-            ]]
-        </FormEventHandler>
-    </EventHandlers>
-
-<br/>
-
-> **Example**
->
-> The following event handler runs when the DataLoaded event is raised.
-
+```xml
+<EventHandlers>
     <FormEventHandler On="DataLoaded">
         <![CDATA[
-        this.models.Customer.Name = 'Customer 2';
+        // Your JavaScript goes here
         ]]
     </FormEventHandler>
+</EventHandlers>
+```
+<br/>
+
+**Example**  
+The following event handler runs when the DataLoaded event is raised.
+```xml
+<FormEventHandler On="DataLoaded">
+    <![CDATA[
+    this.models.Customer.Name = 'Customer 2';
+    ]]
+</FormEventHandler>
+```
 
 <br/>
 
-**Unload**
+##### AppIsReadOnlyChanged
+This event is raised when the entire Workbook changes readonly mode. This typically happens when a Work Process Version transitions between the Open and Closed state.
 
+```xml
+<EventHandlers>
+    <FormEventHandler On="AppIsReadOnlyChanged">
+        <![CDATA[
+        if(this.app.variables.isReadOnly){
+            this.controls.button1.disable();
+        }
+        ]]
+    </FormEventHandler>
+</EventHandlers>
+```
+
+<br/>
+
+**Unload**  
 The Unload event is raised when the Form Schema is unloaded from the DOM. You can use this event to unsubscribe from events raised from DOM nodes outside the Form, or do other types of cleanup.
 <br/>
 
->**Example**
+**Example**
+```xml
+<EventHandlers>
+    <FormEventHandler On="Unload">
+        // unsubscribe events, cleanup, etc
+        window.removeEventListener('click', ...); 
+    </FormEventHandler>
 
-
-    <EventHandlers>
-        <FormEventHandler On="Unload">
-            // unsubscribe events, cleanup, etc
-            window.removeEventListener('click', ...); 
-        </FormEventHandler>
-
-    </EventHandlers>
+</EventHandlers>
+```
 
 <br/>
 
@@ -89,15 +106,16 @@ The Unload event is raised when the Form Schema is unloaded from the DOM. You ca
 DataChangedEventHandlers are bound to properties in Models, and executes when fields change. DataChangeEventHandlers can listen for changes to a specific property, or to all properties in a Model.
 <br/>
 
+```xml
+<DataChangedEventHandler Value="{Binding Path:FormData.Bit}">
+    <![CDATA[
+    // Your JavaScript goes here
+    // The following variables are available in the scope
+    // $model, $modelName, $propertyName, $newValue, $oldValue);
+    ]]
+</DataChangedEventHandler>
 
-    <DataChangedEventHandler Value="{Binding Path:FormData.Bit}">
-        <![CDATA[
-        // Your JavaScript goes here
-        // The following variables are available in the scope
-        // $model, $modelName, $propertyName, $newValue, $oldValue);
-        ]]
-    </DataChangedEventHandler>
-
+```
 <br/>
 
 The DataChangeEventHandler has the following parameters, which can be accessed by your code.
@@ -126,34 +144,36 @@ To listen for changes, you need to set the Value property of the DataChangedEven
 
 <br/>
 
-> **Example**
->
-> This example show how a DataChangedEventHandler can listen for changes to the Name property of the customer Model. When Name changes, the code below is executed.
+ **Example**  
+This example show how a DataChangedEventHandler can listen for changes to the Name property of the customer Model. When Name changes, the code below is executed.
 
-    <DataChangedEventHandler Value="{Binding Path:Customer.Name}">
-        <![CDATA[
-        // call shared function
-        var isValidName = this.isValidName($newValue);
-        controls.Input1.setIsEnabled(isValidName);
-        controls.Btn_Notify.setIsEnabled(isValidName);
-        ]]
-    </DataChangedEventHandler>
+```xml
+<DataChangedEventHandler Value="{Binding Path:Customer.Name}">
+    <![CDATA[
+    // call shared function
+    var isValidName = this.isValidName($newValue);
+    controls.Input1.setIsEnabled(isValidName);
+    controls.Btn_Notify.setIsEnabled(isValidName);
+    ]]
+</DataChangedEventHandler>
+```
 
 <br/>
 
-> **Example**
->
-> This example show how a DataChangedEventHandler can listen for changes to all properties of the Customer model. By examining the $propertyName, we determine which validation to run. ValidateName(…) and ValidateEmail(…) are functions defined in the Functions section.
+**Example**  
+This example show how a DataChangedEventHandler can listen for changes to all properties of the Customer model. By examining the $propertyName, we determine which validation to run. ValidateName(…) and ValidateEmail(…) are functions defined in the Functions section.
 
-    <DataChangedEventHandler Value="{Binding Path:Customer.*}">
-        <![CDATA[
-        // The following variables are available in the scope of a DataChangedEventHandler
-        // $model, $modelName, $propertyName, $newValue, $oldValue);
-        if($propertyName === "Name"){
-            functions.ValidateName($newValue);
-        }
-        else if($propertyName === "Email"){
-            functions.ValidateEmail($newValue);
-        }
-        ]]
-    </DataChangedEventHandler>
+```xml
+<DataChangedEventHandler Value="{Binding Path:Customer.*}">
+    <![CDATA[
+    // The following variables are available in the scope of a DataChangedEventHandler
+    // $model, $modelName, $propertyName, $newValue, $oldValue);
+    if($propertyName === "Name"){
+        functions.ValidateName($newValue);
+    }
+    else if($propertyName === "Email"){
+        functions.ValidateEmail($newValue);
+    }
+    ]]
+</DataChangedEventHandler>
+```
