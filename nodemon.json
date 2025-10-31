@@ -1,0 +1,21 @@
+{
+  "watch": [
+    "articles",
+    "articles/**",
+    "toc.yml",
+    "toc.yml/**",
+    "api",
+    "*.md",
+    "**/*.md"
+  ],
+  "ext": "md,yml,json",
+  "exec": "docfx docfx.json",
+  "delay": "1000",
+  "ignore": [
+    "_site",
+    "_site/**",
+    "node_modules",
+    "node_modules/**"
+  ]
+}
+    

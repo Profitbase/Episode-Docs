@@ -1,0 +1,28 @@
+{
+  "name": "episode-docs",
+  "version": "1.0.0",
+  "description": "We use **docfx** by Microsoft for docs. Read about it [here](https://dotnet.github.io/docfx/).",
+  "main": "index.js",
+  "scripts": {
+  "build:watch": "nodemon",
+  "serve": "live-server _site --port=8080 --open=./?reload=true",
+  "dev": "concurrently \"npm:build:watch\" \"npm:serve\""
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Profitbase/Episode-Docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Profitbase/Episode-Docs/issues"
+  },
+  "homepage": "https://github.com/Profitbase/Episode-Docs#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "live-server": "^1.2.2",
+    "nodemon": "^3.1.10"
+  }
+}

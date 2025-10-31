@@ -2,6 +2,7 @@
 #    folder   #
 ###############
 /**/DROP/
+/node_modules/
 /**/TEMP/
 /**/bin/
 /**/obj/
