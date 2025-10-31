@@ -13,6 +13,11 @@ To start contributing to the docs, do the following
  4) In the terminal, go to the docfx project folder and run  
     `docfx docfx.json --serve`
 5) You can now preview the docs on http://localhost:8080
+---
+ As an alternative to the above you can navigate to the root folder of this repo and run:
+ > npm run dev
+
+ this will start the doc site and hotreload it as you change files.
 
 ## Authoring docs
 
