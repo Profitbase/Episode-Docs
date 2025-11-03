@@ -11,6 +11,9 @@ Profitbase InVision is a low-code platform that enables businesses to rapidly bu
 <br/>
 <br/>
 
+## Demo - Build a simple sales forecast application using InVision and Flow  
+> [!Video https://www.youtube.com/watch?v=W9qlUNVekIg]
+
 ## Table of contents
 
 Read about the **key features** of **Profitbase InVision**. Check out the following topics to learn how to build, run, and deploy apps using InVision.
