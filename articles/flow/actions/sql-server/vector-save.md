@@ -32,6 +32,7 @@ This action allows saving a text as a list of records in a SQL server vector col
 | Input text         | Required  | Text to vectorize and save. Can be a variable or static string. |
 | Collection name    | Required  | The name of the table or collection in the database where vectors are saved. |
 | Record definition   | Optional  | The definition of columns used in the vector search. Note: The vector column is not returned. |
+| Command timeout (seconds) | Optional       | The time limit for command execution before it times out. Default is 120 seconds.  |
 | Description        | Optional  | Explanation of what this action does.            |
 
 </br>
