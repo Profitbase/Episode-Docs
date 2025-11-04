@@ -1,7 +1,7 @@
 
-# Table
+# User chat
 
-Tables are primarily used as utilities and for storing configuration data for business rules. Tables are materialized as SQL Server tables and can be read and written to by any SQL script or process having the required permissions. 
+<!--Tables are primarily used as utilities and for storing configuration data for business rules. Tables are materialized as SQL Server tables and can be read and written to by any SQL script or process having the required permissions. 
 <br/>
 
 ![pic](https://profitbasedocs.blob.core.windows.net/images/HTtb%20(5).png)
