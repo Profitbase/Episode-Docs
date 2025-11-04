@@ -181,6 +181,10 @@
 - name: Change log
   href: changelog.md
   items:
+    - name: October 2025
+      href: changelog/changelog25_october.md 
+    - name: September 2025
+      href: changelog/changelog25_september.md
     - name: June 2025
       href: changelog/changelog25_june.md 
     - name: May 2025

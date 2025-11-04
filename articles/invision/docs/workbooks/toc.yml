@@ -107,6 +107,8 @@
               href: components/uielements/stepper.md
             - name: Tab Control
               href: components/uielements/tabcontrol.md
+          - name: User chat
+            href: components/user-chat.md
           - name: Workflow
             href: components/workflow.md
           - name: Work process editor
