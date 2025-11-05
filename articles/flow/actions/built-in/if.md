@@ -6,7 +6,7 @@ Defines an If-Else decision with **two** possible outcomes.
 ![img](../../../../images/flow/If_builtIn.png)
 
 **Example** ![img](../../../../images/strz.jpg)  
-This flow retrieves a [sitemap](../../actions/http/get-sitemap.md) from a specified URL, [validates](function.md) its structure and content, and [throws an exception](throw-exception.md) if the validation fails. You will find a detailed description of this flow [here.](function-flow.md)
+This flow retrieves a [sitemap](../../actions/http/get-sitemap.md) from a specified URL, [validates](function.md) its structure and content, and [throws an exception](throw-exception.md) if the validation fails. You will find a detailed description of this flow [here.](flow-getSitemap.md)
 
 <br/>
 

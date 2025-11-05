@@ -1,97 +1,55 @@
 
 # User chat
 
-<!--Tables are primarily used as utilities and for storing configuration data for business rules. Tables are materialized as SQL Server tables and can be read and written to by any SQL script or process having the required permissions. 
-<br/>
+The **User Chat** component provides real-time, context-aware communication directly within Workbooks. It enables end users to exchange messages related to the specific analytical context they are viewing — such as a page, dashboard, report, or even a selected record or data point.
 
-![pic](https://profitbasedocs.blob.core.windows.net/images/HTtb%20(5).png)
-
-<br/>
-
-## Actions
-<br/>
-
-### Load Data
-Use this action to load or refresh the table.
+![img](../../../../../images/changelogs/inVision25_6_1.png)
 
 <br/>
 
-### Save Data
-Use this action to save all of the changes to the database.
+## Key Capabilities
+
+- **Context-bound messaging**  
+  Each chat instance is associated with a defined context scope (e.g., workbook page, filter state, selected row or object). Messages are stored together with the assigned context to ensure discussions remain relevant to the data being reviewed.
+
+- **Multiple chat instances per Workbook**  
+  Solution developers can insert multiple independent chat components into a Workbook. This allows for fine-grained collaboration use cases such as:  
+  - One chat per page or dashboard  
+  - A global chat accessible from a popup  
+  - Chats tied to specific entities or detail views (e.g., per customer record or project)
+
+- **Real-time communication**  
+  New messages are synchronized in real time for all users currently viewing the same context.
+
+- **Notification integration**  
+  To support asynchronous collaboration, a Flow can be triggered if a user does not see a new message within **5 minutes**. The Flow can then send an external notification (Email or Microsoft Teams) to ensure users are alerted to unread messages.
+
+#### Usage Scenarios
+
+- Analyst collaboration on dashboards  
+- Cross-team review of reports  
+- Commenting on data points or anomalies  
+- Approval / feedback workflows tied to records
+
+
+
+## Display in Workbook
+
+To display a Chat in a Workbook, drag and drop it from the toolbox. You can change size and placement in the Properties panel if you want to.
+
+Run the **Load Data**-action to setup the chat on the page. Go to **Events** - **Navigate to** - **Load Data** of the Chat.
+
+
+![img](../../../../../images/invision/user_chat_1.png)
 
 <br/>
 
-### Add Item
-Use this action to add new row to the table.
+## Context Mapping
 
+Maps user chat reference contexts to values.
 
-<br/>
-
-### ExecuteExpression
-Executes one or more [instructions](../programmingmodel/instructions.md).
-
-
-<br/>
-
-### Unload Data
-Unloads the data.
-
-<br/>
-
-### Validate Data
-[Validates](../programmingmodel/instructions/validate.md) data. Run it if you want to run the Cell Validation rules before data is saved, and optionally prevent the save process for the particular Worksheet from executing if the validation fails.
-
-```
-Validate(terminateOnValidationFailed : boolean | Eaze expression)
-```
-
-
-<br/>
-
-### Recalc
-The Recalc action triggers the execution of the formulas script in the spreadsheet. You can call [SetDataModified(…)](../programmingmodel/instructions/setdatamodified.md) in Recalc actions.
-
-<br/>
-
-
-![calc](https://profitbasedocs.blob.core.windows.net/images/calculations.png)
-
-
-<br/>
-
-## Events
-<br/>
-
-### Data Modified
-This event is raised when data in a table is modified. 
- 
-<br/>
-
-### Cell Action Link Tapped
-This event is raised when an action link cell in a table is clicked. The payload of the event is the name of the column that was clicked and the row object.
-
-<br/>
-
-### Custom Context Menu Action Executed
-This event is raised when a (custom) Context Menu Action is clicked. The payload of the event is the name of the action that was clicked, the column and the row object that the cell belongs to.
-
-### Extension Context Menu Action Executed
-This event is raised when an Extension Context Menu Action is clicked. The payload of the event is the name of the action that was clicked, the column and the row object that the cell belongs to. 
-The event handler will be preserved during Package upgrades, meaning customers / partners can use this feature to extend standard products like Planner with custom business logic.
-
-<br/>
-
-### Item Added
-This event is raised when you add a new item to the table, for example, a new row. 
+![img](../../../../../images/invision/user_chat_2.png)
 
 <br/>
 
 
-
-
-<br/>
-
-### Videos
-
-* [Tables](../../../videos/tables.md)
-* [Interaction model](../../../videos/workbooks/interactions.md)
