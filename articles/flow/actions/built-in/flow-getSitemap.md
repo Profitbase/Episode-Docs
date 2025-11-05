@@ -1,15 +1,13 @@
-
-
-![img](../../../../images/flow/functionDoc.png)
-
-**Example** ![img](../../../../images/strz.jpg)  
+# Flow example
+ 
 This flow retrieves a [sitemap](../../actions/http/get-sitemap.md) from a specified URL, [validates](if.md) its structure and content, and [throws an exception](throw-exception.md) if the validation fails.
 
 <br/>
 
+![img](../../../../images/flow/flow-getSitemap.png)
 
 
-## Detailed description:
+## Step by step
 
 This flow is designed to automatically verify the integrity and completeness of a website’s sitemap and alert the user if it doesn’t meet defined criteria.  
 The flow consists of four main actions:
@@ -39,7 +37,7 @@ A custom function that checks the sitemap’s content. It verifies that:
 
 <br/>
 
-3. **Check sitemap** – Evaluates whether sitemapOk is true. If so, the flow continues. If false, it triggers an exception.
+3. **Check sitemap** – Evaluates whether **sitemapOk** is true. If so, the flow continues. If false, it triggers an exception.
 
 ![img](../../../../images/flow/functionDoc5.png)
 
