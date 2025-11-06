@@ -1,6 +1,6 @@
-# Agent memory
+# AI agent memory
 
-This action stores and retrieves agent memory (chat message history) using SQL Server.
+This action stores and retrieves AI agent memory (conversation history) using SQL Server.
 
 To enable ongoing conversations with an AI instead of starting fresh each time, you need to add memory to the agent. This allows it to recall previous exchanges when processing new requests. By remembering key details—like user preferences, goals, or past actions—the agent can personalize responses, avoid repetition, and maintain continuity. The result is more natural, efficient, and human-like interactions, where the AI can reason and adapt over time.  
 
