@@ -28,9 +28,10 @@ Include all the Word documents as attachments to the email.
 |-----------------|--------------|-------------------------------------|
 | System prompt   | Required     | The instruction given at the start of a conversation that sets the behavior, tone, and goals for the agent. It acts like a guide or personality primer, telling the chat model how it should respond (e.g., formal vs. casual), what role it should play (e.g., teacher, assistant, coder) and optionally what stategy you want it to prefer for decision making.  |
 | User prompt     | Required     | This is the actual task that the agent is given, for example "Summarize all Word documents in my OneDrive folder named 'Work', and send the summarization to my-email@corp.com."  |
+| Session ID      | Optional     | A session ID is required if you want to enable memory, aallowing for an ongoing conversation with the AI, rather than every interaction starting fresh.|
 | Chat model      | Required     | The chat model accepts a set of instructions, reasons about _how_ to solve the task and utilizes tools to achive the final outcome. |
 | Tools           | Required     | One or more tools that the agent to use to perform the tasks identified by the chat model. Tools the agent can use includes: <br/> [Azure Blob Storage Agent Tool](../azure-blob-storage/agent-tool.md) <br/> [OneDrive Agent Tool](../onedrive/agent-tool.md) <br/> [Outlook Agent Tool](../microsoft-365-outlook/agent-tool.md) <br/> [Markdown Agent Tool](../markdown/agent-tool.md)<br/>[MCP client tool](../mcp/mcp-client-tool.md)  | 
-| Memory          | Optional     |          |
+| Memory          | Optional     | Agent memory used to store and retrive a previous conversation with the agent. Allows for an ongoing conversation with the AI, rather than every interaction starting fresh. Note that memory requires a Session ID. |
 
 ### Choosing a chat model
 When choosing a chat model, it is important to choose a chat model that is capable of using tools. Not all chat models can use tools, and there's currently no official list of which chat models supports tool calling. You simply have to read the documentation for each LLM to determine whether tool / function calling is supported. A list of known LLMs with tool/function calling capabilities includes (but not limited to):  
@@ -43,4 +44,15 @@ When choosing a chat model, it is important to choose a chat model that is capab
 
 ### Choosing Tools
 When building AI agents, it's best practice to keep their area of responsibility as narrow as possible. While this may seem counterintuitive to the concept of agents, giving an agent too many tools to choose from can negatively affect its accuracy when making decisions and selecting tools. It also increases token usage, and consequently, cost.  
+
+### Memory
+To enable ongoing conversations with the AI instead of starting fresh each time, you need to add memory to the agent. This allows it to recall previous exchanges when processing new requests. By remembering key details—like user preferences, goals, or past actions—the agent can personalize responses, avoid repetition, and maintain continuity. The result is more natural, efficient, and human-like interactions, where the AI can reason and adapt over time.  
+Flow has multiple built-in memory provides, such as [Agent memory for SQL Server](../sql-server/agent-memory.md) 
+
+> [!NOTE]
+> To use memory, you need to specify a Session ID. The Session ID is normally provided by the client, because the user (client) decides when they want to start a new conversation.
+
+**Best practice when using memory**
+- Use separate memory storage for each agent. For example, when using SQL Server for agent memory, store each agent’s memory in its own table.  
+- Because the conversation history (memory) is sent with every request, consuming more and more tokens as the history grows, enable history reduction. 
 
