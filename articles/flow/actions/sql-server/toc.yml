@@ -1,5 +1,7 @@
 - name: "Connection"
   href: "connection.md"
+- name: Agent memory
+  href: "agent-memory.md"
 - name: "Create connection"
   href: "create-connection.md"
 - name: "Check if table exists"
