@@ -2,6 +2,8 @@
   href: connecting-to-entra-id.md
 - name: Invite guest user
   href: invite-guest-user.md
+- name: Create user
+  href: create-user.md
 - name: For each user
   href: for-each-user.md
 - name: For each app registration
