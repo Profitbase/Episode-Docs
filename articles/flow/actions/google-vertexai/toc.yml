@@ -1,0 +1,6 @@
+- name: "Connection"
+  href: "vertexai-connection.md"
+- name: "Chat completion"
+  href: "chat-completion.md"
+- name: "Streaming chat completion"
+  href: "streaming-chat-completion.md"
