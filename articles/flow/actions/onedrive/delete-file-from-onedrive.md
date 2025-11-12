@@ -4,6 +4,11 @@ Deletes a file from a OneDrive folder.
 
 ![delete file](../../../../images/flow/onedrive-delete-file.png)
 
+
+**Example** ![img](../../../../images/strz.jpg)  
+This flow retrieves all files from a OneDrive folder, processes only Excel files row by row, and deletes each processed file once its content has been fully handled.
+
+
 ## Properties
 
 <!--prettier-ignore-->
