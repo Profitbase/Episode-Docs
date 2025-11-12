@@ -7,8 +7,8 @@ The **Chat Completion** returns the response from a VertexAI model given a user 
 | Name                  | Type      | Description |
 |-----------------------|-----------|-------------|
 | Title             | Optional  | The title of the action. |
-| Connection        | Required  | Defines the [connection](connection.md) to **VertexAI**. |
-| Model id   | Required  | Id of the chosen [Model](https://platform.openai.com/docs/models).|
+| Connection        | Required  | Defines the [connection](vertexai-connection.md) to **VertexAI**. |
+| Model id   | Required  | Id of the chosen [Model](https://cloud.google.com/vertex-ai/generative-ai/docs/models/).|
 | User Prompt       | Required  | The input message from the user, which the model processes to generate a response. |
 | System Prompt     | Optional  | A system-level instruction that guides the model’s behavior and response style. |
 | History           | Optional  | A record of past interactions that provides context to the conversation, helping the model maintain continuity. |

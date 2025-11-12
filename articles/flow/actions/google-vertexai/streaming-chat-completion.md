@@ -13,8 +13,8 @@ You will typically use this action to build backends for chat clients.
 | Name                  | Type      | Description |
 |-----------------------|-----------|-------------|
 | Title                 | Optional  | The title of the action. |
-| Connection            | Required  | Defines the [connection](openai-connection.md) to **OpenAI**. |
-| Model id              | Required  | ID of the chosen [model](https://platform.openai.com/docs/models). |
+| Connection            | Required  | Defines the [connection](vertexai-connection.md) to **VertexAI**. |
+| Model id              | Required  | ID of the chosen [model](https://cloud.google.com/vertex-ai/generative-ai/docs/models/). |
 | System prompt         | Optional  | A system-level instruction that guides the model’s behavior and response style. |
 | User prompt           | Required  | The input message from the user, which the model processes to generate a response. |
 | History               | Optional  | A record of past interactions that provides context to the conversation, helping the model maintain continuity. |
