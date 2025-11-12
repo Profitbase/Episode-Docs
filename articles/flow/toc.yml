@@ -109,6 +109,8 @@
       href: actions/github/toc.yml
     - name: Google BigQuery
       href: actions/google-bigquery/toc.yml
+    - name: Google VertexAI
+      href: actions/google-vertexai/toc.yml
     - name: GraphQL request
       href: actions/graphql/toc.yml
     - name: HTML
