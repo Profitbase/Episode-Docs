@@ -4,6 +4,10 @@ Uploads a file to a OneDrive folder.
 
 ![img](../../../../images/flow/onedrive-upload-file.png)
 
+
+**Example** ![img](../../../../images/strz.jpg)  
+This flow reads data from SQL Server, generates an Excel file from the retrieved rows, creates a dynamic file name, and uploads the resulting file to a specified OneDrive folder.
+
 > [!NOTE]
 > This action only support uploading files up to `4MB` in size. [Read more here](https://learn.microsoft.com/en-us/onedrive/developer/rest-api/api/driveitem_put_content)
 

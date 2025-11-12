@@ -4,7 +4,9 @@ Gets a list of files and folders in a OneDrive folder.
 
 ![img](../../../../images/flow/onedrive-get-files-in-folder.png)
 
-<br/>
+**Example** ![img](../../../../images/strz.jpg)  
+This flow retrieves a list of OneDrive items (files and optionally folders) from a specified folder, identifies which of those items are Excel files, and for each Excel file reads its contents and processes the data row by row.
+
 
 ## Properties
 

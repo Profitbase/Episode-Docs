@@ -4,7 +4,8 @@ Reads the contents of a file in OneDrive as a stream.
 
 ![img](../../../../images/flow/onedrive-read-file-as-stream.png)
 
-<br/>
+**Example** ![img](../../../../images/strz.jpg)  
+This flow retrieves a list of OneDrive items (files and optionally folders) from a specified folder, identifies which of those items are Excel files, and for each Excel file reads its contents and processes the data row by row.
 
 ## Properties
 
