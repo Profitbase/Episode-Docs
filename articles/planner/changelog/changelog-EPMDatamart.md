@@ -6,6 +6,7 @@ This package provide a datamart to share data between EPM applications and exter
 
 ## EPM Datamart Versions
 
+- [EPM Datamart 6.0.0](#epm-datamart-600) - Released 2025.11.11
 - [EPM Datamart 5.5.0](#epm-datamart-550) - Released 2024.06.05
 - [EPM Datamart 5.4.0](#epm-datamart-540) - Released 2024.02.21
 - [EPM Datamart 5.3.6](#epm-datamart-536)
@@ -22,6 +23,14 @@ This package provide a datamart to share data between EPM applications and exter
 
 - Limit file upload size for Data Import/Export to 100 mb (#1804)
 - Limit number of files possible to upload and disable open option (#1826)
+
+## EPM Datamart 6.0.0
+
+**Changes:**
+
+- Data Import and Export uses Flow instead of Dataflows and Azure Functions.
+- New and immproved Column Mapping popup for import.
+- File splitting is now set with maximum rows instead of file size.
 
 ## EPM Datamart 5.5.0
 
