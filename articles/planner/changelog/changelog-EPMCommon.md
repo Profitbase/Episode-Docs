@@ -6,6 +6,7 @@ This package provide the users and access management, work process and tasks cap
 
 ## EPM Common Versions
 
+- [EPM Common 6.0.0](#epm-common-600) - Released 2025.11.11
 - [EPM Common 5.4.0](#epm-common-540) - Released 2024.02.21
 - [EPM Common 5.3.2](#epm-common-532)
 - [EPM Common 5.3.1](#epm-common-531)
@@ -20,6 +21,31 @@ This package provide the users and access management, work process and tasks cap
 - Limit file types allowed (.doc,.docx,.gif,.jpeg,.jpg,.pdf,.png,.ppt,.pptx,.txt,.xls,.xlsx) to upload and upload size to 100 mb (#1805)
 - Limit number of files possible to upload and disable open option (#1826)
 
+## EPM Common 6.0.0
+
+**Notes:**
+
+- Requires updated invision and Flow.
+- Requires [EPM Datamart 6.0.0].
+
+**Changes:**
+
+- Operations converted from Dataflow to Flow.
+- All dataflows replaced by Flows.
+
+**Enhancements:**
+
+- Operation Manager UI simplified.
+- Logging optimized and improved with Flow.
+- Email distribution uses Flow instead of SMTP settings.
+- Operation "abort on error" toggle: control whether an operation should stop or not after an error occurs.
+- Run Flows, Data Import and Data Export jobs as operation steps.
+- New pages with "All schedules" and "Activity" (list of last executed operations).
+
+**Known Issues:**
+- Manually disable any Dataflow schedules.
+- In Flow, must manually set the sendgrid api key in "Workspace Objects", called "EPMProduct". 
+  
 ## EPM Common 5.4.0
 
 **Changes:**
