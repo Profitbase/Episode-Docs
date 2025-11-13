@@ -29,7 +29,7 @@ This package provide a datamart to share data between EPM applications and exter
 **Changes:**
 
 - Data Import and Export uses Flow instead of Dataflows and Azure Functions.
-- New and immproved Column Mapping popup for import.
+- New and improved Column Mapping popup for import.
 - File splitting is now set with maximum rows instead of file size.
 
 ## EPM Datamart 5.5.0
