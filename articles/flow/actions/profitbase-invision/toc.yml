@@ -73,6 +73,10 @@
   href: "get-dimension-datareader.md"
 - name: "Import data to Dimension"
   href: "import-data-to-dimension.md"
+- name: "Publish Dimension"
+  href: "publish-dimension.md" 
+- name: "Get Primary Dimensions"
+  href: "get-primary-dimension-infos.md"
 - name: "Load dimension tree"
   href: "load-dimension-tree.md"
   items: 
@@ -86,8 +90,6 @@
       href: "powershell/execute-powershell-script.md"
     - name: "Execute long-running PowerShell script"
       href: "powershell/execute-long-running-powershell-script.md"  
-- name: "Publish Dimension"
-  href: "publish-dimension.md" 
 - name: "SQL Script"
   items:
     - name: "Execute SQL Script"
