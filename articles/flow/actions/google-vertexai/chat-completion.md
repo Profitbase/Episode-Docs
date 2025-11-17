@@ -1,14 +1,14 @@
 # Chat Completion
 
-The **Chat Completion** returns the response from a VertexAI model given a user prompt.   
+This defines a Google VertexAI chat completion model that processes a prompt, understands the user’s intent, and generates the next response. Using chat completion provides structured reasoning, allows the model to follow context, and helps maintain a coherent dialogue.   
 
-## Properties
+## Properties  ( SEE : https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/adjust-parameter-values - remove this link later)
 
 | Name                  | Type      | Description |
 |-----------------------|-----------|-------------|
 | Title             | Optional  | The title of the action. |
 | Connection        | Required  | Defines the [connection](vertexai-connection.md) to **VertexAI**. |
-| Model id   | Required  | Id of the chosen [Model](https://cloud.google.com/vertex-ai/generative-ai/docs/models/).|
+| Model id   | Required  | Id of the chosen [Model]https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions).|
 | User Prompt       | Required  | The input message from the user, which the model processes to generate a response. |
 | System Prompt     | Optional  | A system-level instruction that guides the model’s behavior and response style. |
 | History           | Optional  | A record of past interactions that provides context to the conversation, helping the model maintain continuity. |
