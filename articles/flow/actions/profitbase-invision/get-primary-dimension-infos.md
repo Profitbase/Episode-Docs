@@ -5,8 +5,7 @@ Retrieves a list of Primary Dimension information from all InVision solutions.
 ![Example Flow](../../../../images/flow/invision-get-primary-dimensions.png)
 
 **Example** ![img](../../../../images/strz.jpg)  
-This action returns a list of dimension information items. The list is iterated with [For each](../built-in/foreach.md). Each item is evaluated with an [If](../built-in/if.md) to decide whether to update. Updates are performed by starting an [update flow](../built-in/start-flow.md) and passing the dimension data as arguments.
-
+This action returns a list of dimension information items. The list is then iterated using a [For each](../built-in/foreach.md) loop, and each item is evaluated with an [If](../built-in/if.md) condition to determine whether it should be updated. When an update is required, the flow triggers an [update flow](../built-in/start-flow.md) action and passes the dimension data as arguments.
 <br/>
 
 ## Properties
