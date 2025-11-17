@@ -1,20 +1,18 @@
 
 # Streaming chat completion
 
-Streams the response from a chat completion model, one message at a time.
-
-You will typically use this action to build backends for chat clients.
+This defines a Google VertexAI streaming chat completion model that processes a prompt and delivers the response in small pieces as it is generated. Using a streaming chat completion improves responsiveness and gives the user real-time insight into the model’s output as it forms.
 
 <br/>
 
  
-## Properties
+## Properties  ( SEE : https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/adjust-parameter-values - remove this link later)
 
 | Name                  | Type      | Description |
 |-----------------------|-----------|-------------|
 | Title                 | Optional  | The title of the action. |
 | Connection            | Required  | Defines the [connection](vertexai-connection.md) to **VertexAI**. |
-| Model id              | Required  | ID of the chosen [model](https://cloud.google.com/vertex-ai/generative-ai/docs/models/). |
+| Model id              | Required  | ID of the chosen [model](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions). |
 | System prompt         | Optional  | A system-level instruction that guides the model’s behavior and response style. |
 | User prompt           | Required  | The input message from the user, which the model processes to generate a response. |
 | History               | Optional  | A record of past interactions that provides context to the conversation, helping the model maintain continuity. |
