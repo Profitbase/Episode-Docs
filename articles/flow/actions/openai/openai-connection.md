@@ -4,7 +4,7 @@ Connecting to **OpenAI** in [Profitbase Flow](https://docs.profitbase.com/articl
 
 <br/>
 
-## 🔧 Creating a New Connection
+## Creating a New Connection
 
 To create a connection to OpenAI:
 
@@ -24,12 +24,6 @@ To create a connection to OpenAI:
 **Important:**  
 - API keys can be created and managed in the [OpenAI dashboard](https://platform.openai.com/account/api-keys).  
 - Keep your key private – it grants access to your OpenAI usage quota and billing.
-
-<br/>
-
-## Screenshot
-
-![OpenAI Connection](https://docs.profitbase.com/images/flow/openai-connection1.png)
 
 <br/>
 

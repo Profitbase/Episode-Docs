@@ -1,0 +1,8 @@
+- name: Connection
+  href: anthropic-connection.md
+- name: Chat model
+  href: agent-chat-model.md
+- name: Chat completion
+  href: chat-completion.md
+- name: Streaming chat completion
+  href: streaming-chat-completion.md
