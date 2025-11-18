@@ -91,6 +91,8 @@
             items:
             - name: App Header Button
               href: components/uielements/app-header-button.md 
+            - name: App Header Notifications
+              href: components/uielements/app-header-notifications.md
             - name: Button
               href: components/uielements/button.md
             - name: File upload
