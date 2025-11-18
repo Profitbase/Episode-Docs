@@ -81,6 +81,8 @@
       href: actions/ai/toc.yml
     - name: Amazon S3
       href: actions/amazon-s3/toc.yml
+    - name: Anthropic
+      href: actions/anthropic/toc.yml
     - name: Azure AI
       href: actions/azure-ai/toc.yml
     - name: Azure Blob Storage
