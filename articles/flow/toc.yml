@@ -103,6 +103,8 @@
       href: actions/dynamics365/toc.yml
     - name: Excel
       href: actions/excel/toc.yml
+    - name: Finago Office / 24SevenOffice
+      href: actions/24-seven-office/toc.yml
     - name: FTP / SFTP
       href: actions/ftp/toc.yml
     - name: GitHub
