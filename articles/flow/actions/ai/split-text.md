@@ -48,7 +48,7 @@ Divides text based on token count using a chosen encoding, useful for models wit
 
 | Name                     | Type      | Description                                                       |
 |--------------------------|-----------|-------------------------------------------------------------------|
-| Encoder name            | Required  | The name of the token encoding to be used.                       |
+| EncodingName            | Required  | The name of the token encoding to be used.                       |
 | Max tokens               | Required  | The maximum number of tokens per chunk.                          |
 | Chunk overlap            | Optional  | Number of overlapping tokens between chunks.                     |
 
