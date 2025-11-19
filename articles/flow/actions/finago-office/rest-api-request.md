@@ -1,6 +1,6 @@
 # REST API Request
 
-The `REST API Request` action enables you to call [Finago Office/24SevenOffice API](https://rest-api.developer.24sevenoffice.com/doc/v1/) and retrive data. A typical use case is to create data integrations for pulling data from Finago Office/24SevenOffice into a data platform solution.
+The `REST API Request` action enables you to call [Finago Office (24SevenOffice) API](https://rest-api.developer.24sevenoffice.com/doc/v1/) and retrive data. A typical use case is to create data integrations for pulling data from Finago Office/24SevenOffice into a data platform solution.
 
 ![img](/images/flow/24SevenOffice-rest-api.png)
 
@@ -14,8 +14,8 @@ The example above shows a Flow that use a [dynamic connection](./create-connecti
 <!--prettier-ignore-->
 | Name          | Type     | Description                                                                                                                                                                         |
 | ------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Connection    | Required | The [Finago Office/24SevenOffice connection](./connection.md) used to make an authenticated request to the Dynamics 365 Business Central API. |
-| Dynamic connection | Optional | Use this option of you needs to create a connection using credentials stored outside the workspace, for example in your own Azure SQL or PostgreSQL database. When this property is defined, Flow will use the `Dynamic connection` at runtime, and `Connection` only at design time. To dynamically create a connection, use the [Create Dynamics Finago Office/24SevenOffice connection](./create-connection.md) action.  |
+| Connection    | Required | The [Finago Office connection](./connection.md) used to make an authenticated request to the Dynamics 365 Business Central API. |
+| Dynamic connection | Optional | Use this option of you needs to create a connection using credentials stored outside the workspace, for example in your own Azure SQL or PostgreSQL database. When this property is defined, Flow will use the `Dynamic connection` at runtime, and `Connection` only at design time. To dynamically create a connection, use the [Create Finago Office Connection](./create-connection.md) action.  |
 | Configuration | Required | Defines the HTTP request to make to the API. See details [below](#configuration).  |
 | Disabled      | Optional | Boolean value indicating whether the action is disabled (true/false). |
 | Description   | Optional | Additional details or notes about the action. |
@@ -45,4 +45,5 @@ To define a request manually, please refer to the [API documentation](https://re
 
 1. Define the `Method` (`GET`, `PUT`, `POST`, `DELETE`, etc ). Most APIs for fetching data requires the `GET` method.
 2. Define the `URI`. This is the API endpoint, for example `companies/{id}`. If a query requires parameters (for example the company id in this example), insert a variable from Flow using the popup that appears when the URI editor gets focus.
-3. Define the `Response`. The default response type is [HttpResponse&lt;string&gt;](../../api-reference/built-in-types/http-response.md). This means you get back the raw JSON response from the API. You can change the data type to a custom type if you want to, but keep in mind that this will allocate more memory and impact performance negatively for large data sets such as dimensions and general ledger queries. We recommend simply dumping the raw response to a data store (like a database or blob storage), and then use tools like dbt, SQLMesh or Azure Data Factory to transform the data into a usable format.
+3. Add optional `Query Parameters`. E.g. when requesting TransactionLines, add parameters for `dateFrom` and `dateTo` with date values (ISO format).
+4. Define the `Response`. The default response type is [HttpResponse&lt;string&gt;](../../api-reference/built-in-types/http-response.md). This means you get back the raw JSON response from the API. You can change the data type to a custom type if you want to, but keep in mind that this will allocate more memory and impact performance negatively for large data sets such as dimensions and general ledger queries. We recommend simply dumping the raw response to a data store (like a database or blob storage), and then use tools like dbt, SQLMesh or Azure Data Factory to transform the data into a usable format.

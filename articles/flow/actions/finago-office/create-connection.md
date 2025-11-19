@@ -1,6 +1,6 @@
-# Create Finago Office/24SevenOffice Connection
+# Create Finago Office Connection
 
-This action creates a connection for Finago Office / 24SevenOffice and is intended for dynamically connecting to different subscriptions based on parameters or conditions during the execution of a Flow.
+This action creates a connection for Finago Office (24SevenOffice) and is intended for dynamically connecting to different subscriptions based on parameters or conditions during the execution of a Flow.
 
 <br/>
 
@@ -29,5 +29,5 @@ If you store the credentials for 24SevenOffice outside Flow (for example, in you
 
 ## Creating Client ID with Secret
 
-You can follow the instructions as documented by [Finago Office/24SevenOffice here](https://rest-api.developer.24sevenoffice.com/doc/v1/topic/topic-get-access-token).
+You can follow the instructions as [documented by Finago Office here](https://rest-api.developer.24sevenoffice.com/doc/v1/topic/topic-get-access-token).
 
