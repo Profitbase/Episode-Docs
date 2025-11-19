@@ -8,7 +8,7 @@ Unlike the [streaming](streaming-chat-completion.md) version, this action delive
 ![img](../../../../images/flow/anthropic-chat-completion.png)
 
 **Example** ![img](../../../../images/strz.jpg)  
-This flow processes a user's chat question by first receiving it through a [Chat completion trigger](../../triggers/ai/chat-completion-trigger.md), then converting it into a vector using a [Text embedder](text-embedder.md), performing a [Vector search](../postgresql/vector-search.md) in a postgreSQL database for relevant context, and finally passing the user input and retrieved context to OpenAI **Chat completion**, which generates a response that is returned to the client via the [Return](../built-in/return.md) node.
+This flow processes a user's chat question by first receiving it through a [Chat completion trigger](../../triggers/ai/chat-completion-trigger.md), then converting it into a vector using a [Text embedder](text-embedder.md), performing a [Vector search](../postgresql/vector-search.md) in a PostgreSQL database for relevant context, and finally passing the user input and retrieved context to OpenAI **Chat completion**, which generates a response that is returned to the client via the [Return](../built-in/return.md) node.
 
 <br/>
 
@@ -28,6 +28,12 @@ This flow processes a user's chat question by first receiving it through a [Chat
 | Max Completion Tokens | Optional | The maximum number of tokens the model may generate in its response. |
 | Result Variable Name | Optional | The variable that will store the model's final output. Default: `"response"`. |
 | Description         | Optional  | Additional notes or metadata for the action. |
+
+<br/>
+
+## Returns
+
+An **AIChatCompletionResponse** (Profitbase.Flow.Extensions.AI.AIChatCompletionResponse).
 
 <br/>
 

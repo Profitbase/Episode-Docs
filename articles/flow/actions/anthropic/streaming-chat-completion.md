@@ -32,6 +32,12 @@ The Flow above shows how to provide real-time completions to a chat client. Exte
 
 <br/>
 
+## Returns
+
+An **AIChatCompletionResponse** (Profitbase.Flow.Extensions.AI.AIChatCompletionResponse).
+
+<br/>
+
 ## Prompt template
 
 The **Prompt Template** defines how the message sent to Anthropic should be structured.  
