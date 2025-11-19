@@ -6,7 +6,7 @@ This action creates a connection for Finago Office (24SevenOffice) and is intend
 
 A 'Dynamic Connection' will override the 'Connection' during flow execution.
 
-If you store the credentials for 24SevenOffice outside Flow (for example, in your own Azure SQL or PostgreSQL database), use this action to ||*dynamically* create a connection. The connection returned from the action must then be used as the input to the `Dynamic connection` property of a 24SevenOffice request action.
+If you store the credentials outside Flow (for example, in your own Azure SQL or PostgreSQL database), use this action to ||*dynamically* create a connection. The connection returned from the action can be used as the input to the `Dynamic connection` property of Finago Office request actions.
 
 
 <br/>

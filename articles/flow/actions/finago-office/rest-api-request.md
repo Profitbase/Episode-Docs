@@ -14,8 +14,8 @@ The example above shows a Flow that use a [dynamic connection](./create-connecti
 <!--prettier-ignore-->
 | Name          | Type     | Description                                                                                                                                                                         |
 | ------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Connection    | Required | The [Finago Office connection](./connection.md) used to make an authenticated request to the Dynamics 365 Business Central API. |
-| Dynamic connection | Optional | Use this option of you needs to create a connection using credentials stored outside the workspace, for example in your own Azure SQL or PostgreSQL database. When this property is defined, Flow will use the `Dynamic connection` at runtime, and `Connection` only at design time. To dynamically create a connection, use the [Create Finago Office Connection](./create-connection.md) action.  |
+| Connection    | Required | The [connection](./connection.md) used to make an authenticated request to the Finago Office REST API. |
+| Dynamic connection | Optional | Use this option of You needs to create a connection using different credentials stored outside the workspace (for example in your own database). It is also useful when To dynamically create a connection, use the [Create Finago Office Connection](./create-connection.md) action.  |
 | Configuration | Required | Defines the HTTP request to make to the API. See details [below](#configuration).  |
 | Disabled      | Optional | Boolean value indicating whether the action is disabled (true/false). |
 | Description   | Optional | Additional details or notes about the action. |
