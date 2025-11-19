@@ -131,6 +131,8 @@
       href: actions/microsoft-entra-id/toc.yml
     - name: Microsoft Fabric
       href: actions/microsoft-fabric/toc.yml
+    - name: Microsoft Teams
+      href: actions/teams/toc.yml
     - name: Model Context Protocol (MCP)
       href: actions/mcp/toc.yml
     - name: OneDrive
@@ -158,7 +160,7 @@
     - name: Snowflake
       href: actions/snowflake/toc.yml
     - name: SQL Server / Azure SQL
-      href: actions/sql-server/toc.yml
+      href: actions/sql-server/toc.yml    
     - name: Tripletex
       href: actions/tripletex/toc.yml
     - name: Visma

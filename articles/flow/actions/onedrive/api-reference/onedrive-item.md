@@ -14,3 +14,5 @@ Represents an item in Microsoft OneDrive.
 | WebUrl       | String          | The url of the file or folder.                    |
 | Path         | String          | The path of the file or folder relative to the Drive root. |
 | MediaType    | String          | The [media type](https://en.wikipedia.org/wiki/Media_type) of the file. |
+| WebDavUrl    | String          | The WebDAV URL of the file. |
+| ETag         | String          | The ETag of the drive item. |

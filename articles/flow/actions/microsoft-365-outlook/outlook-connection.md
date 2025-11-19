@@ -1,6 +1,6 @@
 # Microsoft 365 Outlook Connection
 
-To perform actions such as sending emails, reading inbox content, or triggering flows based on incoming messages in **Profitbase Flow**, you need to establish a connection to your Microsoft 365 Outlook account.
+To perform actions such as sending emails, reading inbox content, or triggering flows based on incoming messages using **Profitbase Flow**, you need to establish a connection to your Microsoft 365 Outlook account.
 
 <br/>
 
