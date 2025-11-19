@@ -92,7 +92,15 @@
             - name: App Header Button
               href: components/uielements/app-header-button.md 
             - name: App Header Notifications
-              href: components/uielements/app-header-notifications.md
+              href: components/uielements/appheadernotifications/app-header-notifications.md
+              items:
+              - name: How to's
+                href: components/uielements/appheadernotifications/howto/index.md
+                items:
+                - name: Use context text and context link
+                  href: components/uielements/appheadernotifications/howto/context-text-link.md
+                - name: Configure Notifications Context Link Clicked
+                  href: components/uielements/appheadernotifications/howto/notification-context-link-clicked.md
             - name: Button
               href: components/uielements/button.md
             - name: File upload
@@ -110,7 +118,23 @@
             - name: Tab Control
               href: components/uielements/tabcontrol.md
           - name: User chat
-            href: components/user-chat.md
+            href: components/userchat/user-chat.md
+            items:
+            - name: How to's
+              href: components/userchat/howto/index.md
+              items:
+              - name: Display in workbooks
+                href: components/userchat/howto/display-in-workbook.md
+              - name: How to map context items
+                href: components/userchat/howto/context-mapping.md
+              - name: How to use context text
+                href: components/userchat/howto/context-text.md
+              - name: How to use context link
+                href: components/userchat/howto/context-link.md
+            - name: Context items
+              href: components/userchat/context-item.md
+            - name: Capabilities
+              href: components/userchat/capabilities.md
           - name: Workflow
             href: components/workflow.md
           - name: Work process editor
