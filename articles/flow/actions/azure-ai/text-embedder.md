@@ -6,7 +6,7 @@ Defines an Azure AI text [embedder](https://learn.microsoft.com/en-us/azure/ai-s
 ![img](../../../../images/flow/generate-embedding.png)
 
 **Example** ![img](../../../../images/strz.jpg)  
-This flow processes a user's chat question by first receiving it through a [Chat completion](../../triggers/ai/chat-completion-trigger.md) trigger, then converting it into an embedding vector using a **text embedder**, and performs a [Vector search](../postgresql/vector-search.md) in a postgreSQL database for relevant context. The result from the vector search, along with the user input, is then passed to the [Chat completion](chat-completion.md), which generates the response which is returned to the client via the [Return](../built-in/return.md) node.
+This flow processes a user's chat question by first receiving it through a [Chat completion](../../triggers/ai/chat-completion-trigger.md) trigger, then converting it into an embedding vector using a **text embedder**, and performs a [Vector search](../postgresql/vector-search.md) in a PostgreSQL database for relevant context. The result from the vector search, along with the user input, is then passed to the [Chat completion](chat-completion.md), which generates the response which is returned to the client via the [Return](../built-in/return.md) node.
 
 </br>
 

@@ -16,8 +16,12 @@ This flow uses an AI Agent powered by an Anthropic chat model to retrieve a list
 | Model Id           | Required  | The identifier of the Anthropic model to use (e.g., `claude-3-5-sonnet-latest`, `claude-3-opus-latest`). The model determines the capability, response quality, and cost. |
 | Temperature        | Optional  | Controls the creativity and randomness of the model’s output. Lower values produce more precise and deterministic responses, while higher values (closer to 1.0) generate more varied and creative text. |
 | Max completion tokens | Required | Defines the maximum number of tokens the model may generate in its response. Helps control output length and cost. |
-| Result variable name | Optional | The name of the variable where the generated output will be stored. Defaults to `chatModel`. |
 | Description        | Optional  | Additional notes or context about the action. |
 
 <br/>
 
+## Returns
+
+An **AIChatCompletionResponse** (Profitbase.Flow.Extensions.AI.AIChatCompletionResponse).
+
+<br/>
