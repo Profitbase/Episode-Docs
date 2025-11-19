@@ -1,7 +1,9 @@
 # Streaming chat completion
 
-Streams the response from a chat completion model one message at a time, allowing you to handle partial output in real time until the full response is completed.  
-This action is typically used when building backends for interactive chat clients, assistant-like experiences, or any UI that needs incremental model output.
+This action defines an [Anthropic](https://docs.claude.com/en/api/overview) streaming chat completion model that processes a prompt and delivers the response in small pieces as it is generated. Using a streaming chat completion improves responsiveness and gives the user real-time insight into the model’s output as it forms.
+
+It's typically used when building backends for interactive chat clients, assistant-like experiences, or any UI that needs incremental model output.  
+Unlike the standard [chat completion](chat-completion.md), this action returns the response **incrementally as it is generated**.
 
 ![img](../../../../images/flow/anthropic-streaming-chat-completion.png)
 
@@ -15,16 +17,16 @@ The Flow above shows how to provide real-time completions to a chat client. Exte
 | Name                    | Type      | Description |
 |-------------------------|-----------|-------------|
 | Title               | Optional  | The title of the action. |
-| Connection          | Required  | Defines the [connection](anthropic-connection.md) to **Anthropic**. The connection provides the API key needed to access Anthropic models. |
+| Connection          | Required  | Defines the [connection](anthropic-connection.md) to Anthropic. The connection provides the API key needed to access Anthropic models. |
 | Model Id            | Required  | The Anthropic model ID you want to use (e.g., `claude-3-5-sonnet-latest`). |
 | System Prompt       | Optional  | High-level instructions that set the behavior, tone, and rules for the model. |
 | User Prompt         | Required  | The user message that the model responds to. |
 | History             | Optional  | Previous messages in the conversation. Helps the model maintain context and continuity. |
 | Context             | Optional  | Additional information injected into the prompt, often used with RAG to improve accuracy. Supports plain text or vector search results. |
 | Prompt Template     | Optional  | Defines the final prompt structure. The placeholders `@@context` and `@@userPrompt` will be automatically replaced. |
-| Temperature         | Optional  | Controls the creativity and randomness of the model’s output. Accepts values from 0.0 to 1.0 (default 1.0). Lower values produce more precise and deterministic responses, while higher values (closer to 1.0) generate more varied and creative text. |
-| **Max Completion Tokens** | Required | Maximum number of tokens the model can generate in its response. |
-| **Stream Variable Name | Optional | The variable name that receives each streamed message chunk. Default: `message`. |
+| Temperature         | Optional  | Controls the creativity and randomness of the model’s output. Lower values produce more precise and deterministic responses, while higher values (closer to 1.0) generate more varied and creative text. |
+| Max Completion Tokens | Required | Maximum number of tokens the model can generate in its response. |
+| Stream Variable Name | Optional | The variable name that receives each streamed message chunk. Default: `message`. |
 | Result Variable Name | Optional | Stores the final combined response after streaming completes. Default: `response`. |
 | Description        | Optional  | Additional notes or explanation for the action. |
 

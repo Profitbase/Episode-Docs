@@ -84,8 +84,6 @@
             href: components/table-explorer.md
           - name: TableView
             href: components/tableview.md
-          - name: Worksheet
-            href: components/worksheet.md
           - name: UI Elements
             href: components/uielements.md
             items:
@@ -115,6 +113,8 @@
             href: components/workflow.md
           - name: Work process editor
             href: components/workprocesseditor.md
+          - name: Worksheet
+            href: components/worksheet.md
         - name: Programming model
           href: programmingmodel.md
           items:

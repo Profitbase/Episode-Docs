@@ -2,7 +2,7 @@
 
 **Azure AI connection** enables Flow actions to interact with [Azure AI Foundry](https://ai.azure.com/) resources, such as Large Language Models (LLMs).
 
-## Connection properties
+## Properties
 
 
 | Name          | Description                                                         |

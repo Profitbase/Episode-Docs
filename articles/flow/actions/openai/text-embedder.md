@@ -1,6 +1,6 @@
 # Text embedder
 
-Defines an openAI Text embedder
+Defines an [OpenAI](https://platform.openai.com/docs) Text embedder.
 
 ![img](/images/flow/openAI-text-embeder1.png)  
 
