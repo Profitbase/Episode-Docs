@@ -2,7 +2,11 @@
 
 # Chat Completion
 
-The **Chat Completion** returns the response from an [Azure AI Foundry](https://ai.azure.com/) chat model based on user input. 
+This defines an [Azure AI Foundry](https://ai.azure.com/) chat completion model that processes a prompt, understands the user’s intent, and generates the next response. Using chat completion provides structured reasoning, allows the model to follow context, and helps maintain a coherent dialogue.   
+
+This action is typically used in flows where you need the model’s complete output in a single, finalized response instead of receiving partial tokens over time.
+Unlike the [streaming](streaming-chat-completion.md) version, this action delivers the **complete output in one response**.
+
 
 ![img](../../../../images/flow/azureOpenAI-chat-completion.png)
 
@@ -43,8 +47,8 @@ To find the Model deployment name, look in `Models + Endpoints` screen in [Azure
 The prompt template allows you to specify the format of the prompt that is sent to the language model. This is useful for customizing how context and instructions are provided to the model.
 Within the template, you can use the following placeholders:
 
-- @@context: This is replaced by the "Context" property value.
-- @@userPrompt: This is replaced by the "User prompt" property value.
+- `@@context`: This is replaced by the "Context" property value.
+- `@@userPrompt`: This is replaced by the "User prompt" property value.
 
 The system will substitute these placeholders with the corresponding values before sending the prompt to the model.
 

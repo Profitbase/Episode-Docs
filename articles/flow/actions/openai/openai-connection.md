@@ -1,20 +1,20 @@
 # OpenAI Connection
 
-Connecting to **OpenAI** in [Profitbase Flow](https://docs.profitbase.com/articles/flow/actions/openai/openai-connection.html) allows you to access powerful language and image models via the OpenAI API. You can use this connection to automate prompts, generate text, analyze content, or embed intelligent AI-powered actions into your workflows.
+The connection is part of the configuration of [OpenAI](https://platform.openai.com/docs) actions and it is required in most cases.
 
 <br/>
 
 ## Creating a New Connection
 
-To create a connection to OpenAI:
+When adding an OpenAI action (such as Agent Model or Chat Completion), you can select an **existing OpenAI connection** or **create a new one**:
 
-1. Open a Flow action that requires an OpenAI connection.
-2. Enable **Create new connection**.
+1. Click on an **OpenAI** action in order to open the Properties panel.
+2. Click on the Connection field in order to select or create a connection. In the popup that shows up click on the **New  connection** button.
 3. Fill out the required connection fields.
 
 <br/>
 
-## Connection properties
+## Properties
 
 | Name       | Description |
 |-------------|-------------|
@@ -24,16 +24,6 @@ To create a connection to OpenAI:
 **Important:**  
 - API keys can be created and managed in the [OpenAI dashboard](https://platform.openai.com/account/api-keys).  
 - Keep your key private – it grants access to your OpenAI usage quota and billing.
-
-<br/>
-
-## Testing and Usage
-
-After setting up the connection:
-
-1. Use it in any Flow action that supports OpenAI prompts (e.g., text completion, chat, embeddings).
-2. The key must have access to the models you plan to use (e.g., GPT-4, GPT-3.5-turbo, DALL·E).
-3. If your connection fails, verify the key and ensure your OpenAI organization allows API usage.
 
 <br/>
 

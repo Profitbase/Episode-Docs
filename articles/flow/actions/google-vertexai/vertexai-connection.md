@@ -1,23 +1,12 @@
 # Connecting to Google VertexAI
 
-**Vertex AI connections** enable Flow actions to interact with [Google Vertex AI](https://cloud.google.com/vertex-ai?hl=en) resources, such as Large Language Models (LLMs).
-
-## Connection properties
-
-| Name      | Description                                                                                                   |
-|-----------|---------------------------------------------------------------------------------------------------------------|
-| Name      | Name of the connection.                                                                                       |
-| Location  | Region (datacenter) where your model runs. See [Locations](https://cloud.google.com/about/locations). Example: `europe-west4`. |
-| Json key  | Service Account key for authentication (paste the full content of the JSON file acquired when creating a new key). |
-
-<br/>
-
-
-When adding a Google VertexAI action (such as Agent Model or Chat Completion), you can select an **existing VertexAI connection** or **create a new one**.
+Vertex AI connections enable Flow actions to interact with [Google Vertex AI](https://cloud.google.com/vertex-ai?hl=en) resources, such as Large Language Models (LLMs).
 
 <br/>
 
 ## How to create a new VertexAI Connection
+
+When adding a Google VertexAI action (such as Agent Model or Chat Completion), you can select an **existing VertexAI connection** or **create a new one**:
 
 1. In the Flowchart, select the action you want to connect.
 2. In the property panel, select **Connection**.
@@ -28,6 +17,16 @@ When adding a Google VertexAI action (such as Agent Model or Chat Completion), y
    - **Json key**: Paste the JSON key associated with your VertexAI account.
 
 > **Note:** Not all services are available in all locations.
+
+<br/>
+
+## Properties
+
+| Name      | Description |
+|-----------|--------------------------|
+| Name      | Name of the connection.  |
+| Location  | Region (datacenter) where your model runs. See [Locations](https://cloud.google.com/about/locations). Example: `europe-west4`. |
+| Json key  | Service Account key for authentication (paste the full content of the JSON file acquired when creating a new key). |
 
 <br/>
 
@@ -56,3 +55,4 @@ When adding a Google VertexAI action (such as Agent Model or Chat Completion), y
 4) Download the JSON key file. Paste its full content of this file into the Json key field.
 
 <br/>
+
