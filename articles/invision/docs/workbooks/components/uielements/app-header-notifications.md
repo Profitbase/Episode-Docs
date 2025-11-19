@@ -10,7 +10,9 @@ The App Header Notifications is shaped like button, showing a bell icon. When th
 
 <br/>
 
-You can access the App Header toolbar from the workbook toolbar by enabling the **_Show App Header designer_** checkbox. Then, add the **App Header Notifications** component. [Read more about App Header here](../../../header/header-section.md).
+You can access the App Header toolbar from the workbook toolbar by enabling the **_Show App Header designer_** checkbox. Then, add the **App Header Notifications** component. Read more about App Header [here](../../../header/header-section.md).
+
+<br/>
 
 ## Actions
 The App Header Notifications supports the following actions:
@@ -22,7 +24,7 @@ The App Header Notifications supports the following actions:
 | Execute expression  | Dynamically activates or deactivates the button using the EnableIf(boolean expression) function. [See example below](#example---execute-expression). |
 
 
-#### Example - Execute expression
+**Example: Execute Expression()**<br/>
 To dynamically set the enabled state of the button based on whether the _state.Counter is 0 or not, enter the following expression in the `Instructions` panel:
 
 ```javascript
@@ -59,7 +61,87 @@ Each message includes:<br/>
 
 <br/>
 
+## Context Text and Context Link
+
+If the **User Chat Workbook** component is configured with:
+
+* **Context Text**
+* **Context Link**
+
+each message will display the provided **Context Text** as a clickable link.
+
+Read more about **Context Text** in the User Chat workbook component [here](../../../workbooks/components/user-chat.md#context-text)
+
+
+***
+
+![img](/images/invision/appheader-notifications-message-ctx-link.png)
+
+**Example** ![img](../../../../../../images/strz.jpg)  
+The above example shows an example of a message where the **_Context Text_** has been set to **_Sales report_**, made clickable because the **_Context Link_** is also provided.
+
+<br/>
+
+### Notification Context Link Clicked - event
+The **App Header Notifications** component requires the event handler **_Notification Context Link Clicked_** to process context link clicks. This handler must be implemented to handle the link as needed.
+
+For example:
+
+* Process the data passed as the link argument and navigate to the desired location, workbook, page, filter, etc.
+* Navigate directly to a URL.
+
+<br/>
+
+![img](/images/invision/appheader-notifications-message-ctx-link-click-handler.png)
+
+**Example** ![img](../../../../../../images/strz.jpg)  
+The example above shows a **_Notification Context Link Clicked_** handler with an **Action** of type **Execute Expression()**, where the instruction is set to: **_alert(Event.Data)_**.
+
+<br />
+
+The argument **Event.Data** contains the value provided from the User Chat Workbook component in the **_Context Link_**-property.
+
+```javascript
+const contextLink = Event.Data
+```
+
+
+<br/>
+
+![img](/images/invision/appheader-notifications-message-ctx-link-click-handler-result.png)
+
+**Example** ![img](../../../../../../images/strz.jpg)  
+The example above shows the result of the alert function added to the instructions of the **Execute Expression()** of the handler, where the value set in **_Context Link_** property is **_page=Sales_**.
+
+Read more about **Context Link** on the User Chat workbook component [here](../../../workbooks/components/user-chat.md#context-link)
+
+The data provided can be logic data that has to be processed by the handler, or just a simple url.
+
+<br/>
+
 ## Styling
 The style of the App Header Notifications cannot be customized. This is intentional, as it inherits the standard appearance of system App Header buttons.
+
+<br/>
+
+## Examples
+
+**Example simple url**
+```javascript
+window.location.href = Event.Data
+```
+
+**Example complex data - e.g. when Event.Data is 'page=Sales'**
+```javascript
+const args = Event.Data.split('|').reduce((acc, pair) => {
+  const [key, value] = pair.split('=');
+  acc[key] = value;
+  return acc;
+}, {})
+
+window.location.href = 'myworkbook/p=' + args.page
+```
+
+
 
 
