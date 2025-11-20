@@ -11,7 +11,7 @@ The App Header Notifications is shaped like button, showing a bell icon. When th
 
 <br/>
 
-You can access the App Header toolbar from the workbook toolbar by enabling the **_Show App Header designer_** checkbox. Then, add the **App Header Notifications** component. [App Header](../../../../header/header-section.md).
+You can access the App Header toolbar from the workbook toolbar by enabling the [Show App Header designer](../../../../header/header-section.md) checkbox. Then, add the **App Header Notifications** component.
 
 <br/>
 
@@ -39,7 +39,7 @@ The App Header Notifications supports the following event:
 
 | Event name           | Description                                     |
 |----------------------|-------------------------------------------------|
-| Notification Context Link Clicked | Triggered when a context link in a message is clicked. A context link is defined in the [User Chat workbook component](../../userchat/howto/context-link.md) and stored for each message added to the chat. |
+| Notification Context Link Clicked | Triggered when a [context link](../../../components/userchat/howto/context-link.md) in a message is clicked. A context link is defined in the [User Chat workbook component](../../userchat/howto/context-link.md) and stored for each message added to the chat. |
 
 <br/>
 
@@ -48,7 +48,7 @@ When the button is clicked, a pop down will appear beneath it, showing a list of
 
 Each message includes:<br/>
 * The name of the chat solution item (or its translated name from the text code).
-* Optional context text from the User Chat Workbook component. If a context link is provided, the context text becomes clickable.
+* Optional [context text](../../../components/userchat/howto/context-text.md) from the User Chat Workbook component. If a context link is provided, the context text becomes clickable.
 * The sender’s name. 
 
 <br/>
