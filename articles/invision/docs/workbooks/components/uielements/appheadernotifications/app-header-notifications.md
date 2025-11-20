@@ -1,6 +1,6 @@
 # App Header Notifications
 
-To enable notifications for a user’s unread messages, use the **App Header Notifications** component.  
+To enable notifications for a user’s unread [chat messages](../../../components/userchat/user-chat.md), use the **App Header Notifications** component.  
 This feature is designed specifically for the App Header and should be added to the toolbar.
 
 
