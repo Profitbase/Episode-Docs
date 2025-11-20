@@ -1,6 +1,6 @@
 # Context Text
 
-A chat may be connected to a specific context which can be described in the **_Context Link_** property of the workbook component. The text described in this property will appear on each message displayed for the user in the [App Header Notifications](../../../../workbooks/components/uielements/app-header-notifications.md).
+A chat may be connected to a specific context which can be described in the **_Context Link_** property of the workbook component. The text described in this property will appear on each message displayed for the user in the [App Header Notifications](../../../../workbooks/components/uielements/appheadernotifications/app-header-notifications.md).
 
 ![img](../../../../../../../images/invision/user_chat_context_text.png)
 
