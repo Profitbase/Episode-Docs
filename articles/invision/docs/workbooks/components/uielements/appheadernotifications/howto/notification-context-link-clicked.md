@@ -15,7 +15,7 @@ The example above shows a **_Notification Context Link Clicked_** handler with a
 
 <br />
 
-The argument **Event.Data** contains the value provided from the User Chat Workbook component in the **_Context Link_**-property.
+The argument **Event.Data** contains the value provided from the User Chat Workbook component in the **_Context Link_** property.
 
 ```javascript
 const contextLink = Event.Data

@@ -2,7 +2,7 @@
 
 Each message that includes a **_Context Text_** will display this text as a link when the **_Context Link_** property of the User Chat Workbook component is set; otherwise, it will appear as plain text.
 
-This link property may be just a simple url link, or logic details to be handled by the **_Notification Context Link Clicked_** handler on the [App Header Notifications](../../../../workbooks/components/uielements/app-header-notifications.md).
+This link property may be just a simple url link, or logic details to be handled by the **_Notification Context Link Clicked_** handler on the [App Header Notifications](../../../../workbooks/components/uielements/appheadernotifications/app-header-notifications.md).
 
 ![img](../../../../../../../images/invision/user_chat_context_link.png)
 
