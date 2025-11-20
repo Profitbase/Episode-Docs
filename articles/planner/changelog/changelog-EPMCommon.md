@@ -32,6 +32,7 @@ This package provide the users and access management, work process and tasks cap
 
 - Operations converted from Dataflow to Flow.
 - All dataflows replaced by Flows.
+- Migration from Eaze to JavaScript.
 
 **Enhancements:**
 
