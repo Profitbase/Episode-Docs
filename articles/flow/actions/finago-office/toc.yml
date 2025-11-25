@@ -2,5 +2,5 @@
   href: "rest-api-request.md"
 - name: "Create connection"
   href: create-connection.md
-- name: "About Finago/24SevenOffice Connection"
+- name: "Connection"
   href: connection.md
