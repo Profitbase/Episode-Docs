@@ -4,8 +4,8 @@ As described above, in Teams an attachment is a _reference_ to a document, not t
 
 ![img](/images/flow/teams-example-send-channel-message-with-attachment.png)
 
-What we want to do is generate an Excel file with a list of TODOs and post it to a channel together with a message.
-Before we can do that, the file must exist in OneDrive or SharePoint. After generating the file, we use the [Upload file to OneDrive](../onedrive/upload-file-to-onedrive.md) action to upload it. This action returns information about the [OneDrive item](../onedrive/api-reference/onedrive-item.md), which we then use to create an attachment for the Teams message.
+Our goal is to generate an Excel file with a list of TODOs, and post it to a channel together with a message.
+To post the file as an attachment with the message, the file must exist in OneDrive or SharePoint (this is simply how MS Teams attachments work). The first thing we do is therefore to generate and upload the file. We use the [Upload file to OneDrive](../onedrive/upload-file-to-onedrive.md) action to upload it, which returns the information about the [OneDrive item](../onedrive/api-reference/onedrive-item.md) needed to create the Teams attachment.
 
 The `Generate attachment ID` is a [Function](../built-in/function.md) that simply returns a GUID as a string. We'll use the attachment ID in both the message body and the list of attachments.  
 
@@ -18,8 +18,9 @@ To define the attachment, open the Attachments property of the action and apply 
 | Content type        | The string "reference" (without quotes). | 
 | Content URL         | The OneDrive item `WebDavUrl` (Or WebUrl) property. | 
 
+<br/>
 
-Then, in the `Message`, reference the attachment using the &lt;attachment&gt; tag.  
+Then, in the `Message`, you **must** reference the attachment using the &lt;attachment&gt; tag. This is required by Microsoft Teams for including attachments in messages.   
 ```xml
 Your message...
 <attachment id="the-guid"></attachment>
