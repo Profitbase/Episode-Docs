@@ -6,6 +6,8 @@
   href: create-user.md
 - name: For each user
   href: for-each-user.md
+- name: Get user
+  href: get-user.md
 - name: For each app registration
   href: for-each-app-registration.md
 - name: For each client secret-info
