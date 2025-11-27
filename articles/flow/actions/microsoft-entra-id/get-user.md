@@ -1,15 +1,14 @@
 # Get user
 
-Gets a user from a Microsoft Entra ID tenant by one or more query parameters.
+Gets information about a user from a Microsoft Entra ID tenant by one or more query parameters.
 
 Use this if You want to get more information (like OID or UPN) about a user from e.g. mail or name. 
-An OID (or Object ID) can e.g. be used to [send](../teams/send-chat-message.md) a message to Microsoft Teams.
 
 ![img](../../../../images/flow/entra-id-get-user.png)
 
 **Example** ![img](../../../../images/strz.jpg)  
 
-This flow receives an payload from an [HTTP Trigger](../../triggers/http-trigger.md). The payload contains a users given/first name and surname. The EntraID `Get User` action described here tries to locat the user. [If](../built-in/if.md) the user exists (OID or UPN set), an message from the payload is sendt to a [chat in Teams](../teams/send-chat-message.md).
+This flow receives an payload from an [HTTP Trigger](../../triggers/http-trigger.md). The payload contains a users given name and surname. The Entra ID `Get User` action described here tries to query the user. [If](../built-in/if.md) the user exists (OID or UPN set), a message from the payload is sendt to a [chat in Teams](../teams/send-chat-message.md).
 
 <br/>
 
