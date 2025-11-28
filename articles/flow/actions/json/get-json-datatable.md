@@ -1,7 +1,13 @@
 # Convert JSON to DataTable
 
-Converts a JSON string, byte array or file to a DataTable.
+Converts a JSON string, byte array or file to a DataTable.  
+Typical use cases include inserting a JSON document into a relational database table as rows and columns, or converting JSON into other tabular formats such as Excel or Parquet files.  
 
+> [!NOTE]
+> The JSON documents must have a valid JSON format, meaning it must be a singel object starting and ending with curly brackets (`{` and `}`), OR a collection of objects, starting or ending with square brackets (`[` and `]`).  
+> The tabular data must also be present at the root level, and not in a nested field.
+
+<br/>
 
 ![img](/images/flow/json-get-json-datatable.png)
 
@@ -76,7 +82,14 @@ The JSON above is converted to the following table.
 ---
 
 > [!NOTE]
-> The JSON documents must have a valid JSON format, meaning it must be a singel object starting and ending with curly brackets (`{` and `}`), OR a collection of objects, starting or ending with square brackets (`[` and `]`).
+> The JSON documents must have a valid JSON format, meaning it must be a singel object starting and ending with curly brackets (`{` and `}`), OR a collection of objects, starting or ending with square brackets (`[` and `]`).  
+> The tabular data must also be present at the root level, and not in a nested field.
+
+<br/>
+
+[!INCLUDE [](./__data-extraction.md)] 
+
+<br/>
 
 ### Nested objects
 JSON may contain nested objects, such as Person and Address. When the DataTable encounters a nested object, it flattens the structure, using underscores ('_') to delimit each level.
