@@ -16,7 +16,7 @@ If the message contains invoice data, it’s added to a database; otherwise the 
 
 | Name           | Type     | Description                                      |
 |----------------|----------|--------------------------------------------------|
-| Title          |  Optional | A descriptive label for the trigger configuration.|
+| Title          |  Optional | A descriptive label for the trigger.|
 | Event Hub connection     | Required | Azure Event Hub connection used to authenticate and connect to the service. |
 | Blob Container connection     | Required |  An [Azure Event Hub connection](../../actions/azure-event-hub/connecting-to-azure-event-hub.md). |
 | Polling frequency| Optional | Interval or schedule for how often the trigger checks for new messages in the topic. |
