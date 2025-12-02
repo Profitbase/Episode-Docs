@@ -14,7 +14,7 @@ The example above shows a Flow that performs a chat completion. It supports foll
 
 | Name        | Type          | Description                     |
 |-------------|---------------|---------------------------------|
-| Title       | Optional      | A description of the action.    |
+| Title       | Optional      | A descriptive label for the trigger.    |
 | Test data   | Optional      | A JSON string that can be in dev mode to test the Flow before it's called from the outside (for example InVision). The JSON must have format as described in [Test data](#test-data) below. |
 | Output variable name | Required  | The name of the variable containing the `ChatCompletionRequest` object. (See [Returns](#returns below))  |
 
