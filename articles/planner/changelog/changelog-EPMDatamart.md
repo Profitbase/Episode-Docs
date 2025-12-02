@@ -31,7 +31,8 @@ This package provide a datamart to share data between EPM applications and exter
 - Data Import and Export uses Flow instead of Dataflows and Azure Functions.
 - New and improved Column Mapping popup for import.
 - File splitting is now set with maximum rows instead of file size.
-- Migration from Eaze to JavaScript. 
+- Migration from Eaze to JavaScript started.
+- Data Import & Export support .parquet file type. 
 
 ## EPM Datamart 5.5.0
 
