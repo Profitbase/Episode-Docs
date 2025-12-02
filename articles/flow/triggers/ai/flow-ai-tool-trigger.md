@@ -24,7 +24,7 @@ The example above illustrates how a Flow can expose itself as an AI tool. The AI
 | Parameters | Optional | Defines the input schema for the tool. The AI agent will use this schema when constructing tool calls. |
 | Default argument(s) | Optional | Arguments provided when the tool is invoked without explicit parameters. |
 | Output variable name | Required | The name of the variable that will hold the tool request payload passed to the Flow. |
-| Description | Optional | A description of what the tool does. This is often shown to the AI agent as documentation for the tool. |
+| Description | Optional | A description of what the tool does. |
 
 <!--### Returns  
 
