@@ -44,8 +44,9 @@ This package provide the users and access management, work process and tasks cap
 - New pages with "All schedules" and "Activity" (list of last executed operations).
 
 **Known Issues:**
-- Manually disable any Dataflow schedules.
-- In Flow, must manually set the sendgrid api key in "Workspace Objects", called "EPMProduct". 
+
+- In Flow, must manually set the sendgrid api key in "Workspace Objects", called "EPMProduct".
+- Task emails only send 1 email. (Fixed in 6.1.0)
   
 ## EPM Common 5.4.0
 
