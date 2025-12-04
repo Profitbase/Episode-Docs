@@ -1,0 +1,10 @@
+- name: Connection
+  href: connection.md
+- name: Send message in channel
+  href: send-channel-message.md
+- name: Send chat message
+  href: send-chat-message.md
+- name: API Reference
+  items:
+    - name: "Chat message"
+      href: "api-reference/chat-message.md"
