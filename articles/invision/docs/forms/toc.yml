@@ -78,6 +78,8 @@
               items:
               - name: Rendering items
                 href: formschemas/controls/listbox/renderingitems.md
+            - name: Popout
+              href: formschemas/controls/popout.md
             - name: Richtexteditor
               href: formschemas/controls/richtexteditor.md
             - name: Spinner
