@@ -5,12 +5,17 @@ This action creates a loop that exposes a `searchResult` variable containing pro
 
 Use this action when you need to process each result individually—for example, logging items, enriching data, or performing conditional logic.
 
-![img]()
+![img](../../../../images/flow/foreach-web-search-result.png)
 
 
 **Example** ![img](../../../../images/strz.jpg)  
-This flow ..
+This Flow implements an AI-driven chat endpoint that can use real-time web search to generate more accurate and up-to-date responses.  
+It uses the [Chat completion trigger](../../triggers/ai/chat-completion-trigger.md) to receive user input, processes the request through a [Tools AI agent](../agents/tools-ai-agent.md), and leverages the [Web search tool](web-search-tool.md) when the agent determines that external information is required.  
+The returned search results are then iterated using the **Foreach web search result** action, allowing each result to be inspected or processed individually before the final output is produced.
 
+The final response returned by the agent is logged for debugging or auditing purposes.
+
+The Flow is useful when building chat-based experiences that require both conversational reasoning and the ability to retrieve and process current information from the internet, such as answering questions about recent news, events, or other public data.
 
 
 <br/>
@@ -20,7 +25,7 @@ This flow ..
 | Name                | Type       | Description |
 |---------------------|------------|-------------|
 | Title           | Optional   | The title of the action. |
-| Connection      | Required   | Tavily connection used for executing the query. |
+| Connection      | Required   | Tavily [connection](connection.md) used for executing the query. |
 | Query           | Required   | The text-based search query used to retrieve results. |
 | Max results     | Optional   | Limits how many results to retrieve and iterate through. |
 | Max content length | Optional | Maximum amount of page content to fetch per result. |

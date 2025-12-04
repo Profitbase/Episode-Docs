@@ -161,6 +161,8 @@
       href: actions/snowflake/toc.yml
     - name: SQL Server / Azure SQL
       href: actions/sql-server/toc.yml    
+    - name: Tavily
+      href: actions/tavily/toc.yml   
     - name: Tripletex
       href: actions/tripletex/toc.yml
     - name: Visma
