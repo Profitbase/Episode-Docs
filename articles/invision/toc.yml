@@ -1,5 +1,7 @@
     - name: Overview
       href: invision.md
+    - name: Ask AI
+      href: ask-ai.md
     - name: Docs
       href: docs/index.md
       items:

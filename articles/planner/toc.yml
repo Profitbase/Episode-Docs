@@ -1,5 +1,7 @@
 - name: Overview
   href: planner.md
+- name: Ask AI
+  href: ask-ai.md
 - name: Getting Started
   href: getting-started.md
   items:
