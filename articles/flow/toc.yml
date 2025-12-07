@@ -4,6 +4,8 @@
   href: key-concepts.md
 - name: Getting started
   href: getting-started.md
+- name: Ask AI
+  href: ask-ai.md
 - name: Tenants
   href: tenants.md
   items:
