@@ -22,6 +22,12 @@ This flow illustrates using the [Tools AI Agent](../agents/tools-ai-agent.md) to
 
 </br>
 
+## Returns
+
+**Type:** object  
+The action returns the converted value, typed according to the target type specified in the action configuration. The returned output may be a **string**, **int**, **decimal**, **bool**, **DateTime**, **Guid**, or any other supported conversion target, depending on the selected type.
+
+
 **The Convert action supports the following conversions:**
 
 | From type               | To type                                 |

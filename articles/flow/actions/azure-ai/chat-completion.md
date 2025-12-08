@@ -35,6 +35,12 @@ This flow processes a user's chat question by first receiving it through a [Chat
 
 <br/>
 
+## Returns
+
+The action returns a single **AIChatCompletionResponse** object containing the generated message, token usage details, finish reason, and the raw Azure response.
+
+<br/>
+
 #### Models + Endpoints
 To find the Model deployment name, look in `Models + Endpoints` screen in [Azure AI Foundry](https://ai.azure.com).  
 

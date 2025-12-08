@@ -14,5 +14,5 @@ Declares multiple variables simultaneously to store data while the Flow is execu
 | Name            | Type      | Description                                               |
 |-----------------|-----------|-----------------------------------------------------------|
 | Title                     | Optional  | The title or name of the action.                                                 |
-| Variables   | Requires  | Defined variables.                                  |
+| Variables   | Required  | Defined variables.                                  |
 | Description     | Optional  | A brief description of the variable's purpose.            |
