@@ -2,7 +2,7 @@
 
 Uploads a byte array or [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream) to an Amazon S3 bucket.
 
-![img](https://profitbasedocs.blob.core.windows.net/flowimages/uppload-s3obj.png)
+![img](../../../../images/flow/uppload-s3obj.png)
 
 **Example** ![img](../../../../images/strz.jpg)  
 This flow ensures that data is either appended to an existing file or a new object is uploaded. 

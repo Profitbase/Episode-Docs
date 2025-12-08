@@ -5,7 +5,11 @@ Decrements a (numeric) value by a number.
 
 ![img](../../../../images/flow/decrement-value.png)
 
-<br/>
+
+
+**Example** ![img](../../../../images/strz.jpg)  
+This Flow demonstrates how to decrement a numeric value during execution. It begins by [retrieving](function.md) or receiving an initial number, passes it to the Decrement value action, and reduces it by the configured amount. The resulting value is then forwarded to the [next node](if-else.md), where it can be stored, evaluated, or used to control additional logic, such as implementing countdowns, retry attempts, or conditional branching.
+</br>
 
 ## Properties
 

@@ -33,6 +33,12 @@ The example above shows a Flow that provides chat completions to a chat client. 
 
 <br/>
 
+## Returns
+
+This action emits a stream of **AIChatCompletionResponse** objects, where each event contains a partial model output, usage metadata (if available), and provider-specific data.
+<br/>
+
+
 #### Models + Endpoints
 To find the Model deployment name, look in `Models + Endpoints` screen in [Azure AI Foundry](https://ai.azure.com).    
 
