@@ -104,6 +104,10 @@
   items:
     - name: "Refresh Table artifacts"
       href: "table/refresh-table-artifacts.md"      
+- name: Workflow
+  items:
+    - name: "Start new Workflow iteration"
+      href: "workflow/start-new-workflow-iteration.md"    
 - name: "Work Process Version"
   items:
     - name: "Create Work Process Version"
