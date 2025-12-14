@@ -1,0 +1,18 @@
+# Set Time Frame reference date for Data Store Group
+
+This action calls the InVision API to set the time frame reference date for a Data Store Group.
+It is typically used when starting a new [InVision Work Process version](../../../../invision/docs/workprocess/workprocessversions.md), for example at the beginning of a new forecast cycle, to define the date from which the cycle applies.  
+For instance, for a 12-month planning cycle starting in January 2025, the reference date would be set to 1 January 2025 (whether the planning cycle is 12 months or something else doesn't matter - it's just an example).
+
+![img](/images/flow/invision-store-group-set-time-frame-reference-date.png)
+<p><em>Figure: The time frame reference date of a Data Store Group is set during the setup of a forecast solution.</em></p>
+
+<br/>
+
+
+## Properties 
+| Name         | Type          | Description                    |
+|--------------|---------------|--------------------------------|
+| Connection   | Required      | A valid InVision Connection used to execute the SQL script.  |
+| Data Store Group | Required  | The ID of the Data Store Group in InVision that will be rolled forward. | 
+| Reference date | Required      | Specifies the start date for which the planning cycle applies. The value must be of type [DateOnly](https://learn.microsoft.com/en-us/dotnet/api/system.dateonly), [DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime) or [DateTimeOffset](https://learn.microsoft.com/en-us/dotnet/api/system.datetimeoffset). |
