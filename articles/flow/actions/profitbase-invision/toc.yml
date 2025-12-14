@@ -39,6 +39,12 @@
   href: "convert-datapackage-to-datatable.md"
 - name: "Convert DataTable to DataPackage"
   href: "convert-datatable-to-datapackage.md"
+- name: "Data Store Group"
+  items:
+    - name: "Run rollover"
+      href: "data-store-group/run-rollover.md"
+    - name: "Set time frame reference date"
+      href: "data-store-group/set-time-frame-reference-date.md"
 - name: "Deploy Stored Procedure"
   href: "deploy-stored-procedure.md"
 - name: "Deploy View"
