@@ -9,7 +9,7 @@ Unlike the standard [chat completion](chat-completion.md), this action returns t
 <br/>
 
  
-## Properties  ( SEE : https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/adjust-parameter-values - remove this link later)
+## Properties 
 
 | Name                  | Type      | Description |
 |-----------------------|-----------|-------------|
