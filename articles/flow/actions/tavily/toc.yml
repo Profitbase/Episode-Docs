@@ -1,6 +1,6 @@
 - name: Connection
   href: connection.md
-- name: Foreach web search result
-  href: foreach-web-search-result.md
+- name: Search web
+  href: search-web.md
 - name: Web search tool
   href: web-search-tool.md

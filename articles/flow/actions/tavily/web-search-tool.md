@@ -1,7 +1,7 @@
 # Web search tool
 
 Defines a Tavily **web search tool** that can be used by an AI Agent (Tools AI agent) or directly by an LLM as a callable tool.  
-This action performs a web search and returns structured search results that can be passed to downstream Flow nodes.
+This tool performs a web search and returns structured search results that is passed to the Agent or LLM.
 
 ![img](../../../../images/flow/web-search-tool.png)
 
@@ -25,18 +25,8 @@ The Flow is useful when building chat-based experiences that require both conver
 | Connection      | Required   | The Tavily [connection](connection.md) used to authenticate and perform the search. |
 | Max results     | Optional   | Limits the maximum number of search results returned. |
 | Max content length | Optional | The maximum total content size that can be retrieved for each result. |
-| Extract full content | Optional | If enabled, the tool attempts to scrape the full content of the referenced web pages. |
+| Include answer | Optional | When checked, the action attempts to retrieve a direct answer from the search. |
+| Extract full content | Optional | When checked, the tool attempts to retrieve full page content. |
+| Include domains | Optional | Semicolon-separated list of domains to include in the search. |
 | Request timeout (seconds) | Optional | Timeout for executing the search request. Default is 30 seconds. |
-| Result variable name | Optional | Name of the variable holding the result structure from the search tool. |
 | Description     | Optional   |  Additional notes or comments about the action or configuration. |
-
-<br/>
-
-## Returns
-
-The action returns an object containing search metadata and a collection of search results.  
-Type:  
-`TavilyWebSearchResponse`
-
-<br/>
-
