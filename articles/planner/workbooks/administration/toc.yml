@@ -103,3 +103,5 @@
     href: sales-forecast-setup/sales-forecast-facts.md
   - name: Sales forecast setup
     href: sales-forecast-setup/sales-forecast-setup.md
+- name: Data Capture
+  href: datacapture.md
