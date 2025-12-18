@@ -193,6 +193,8 @@
 - name: Change log
   href: changelog.md
   items:
+    - name: December 2025
+      href: changelog/release-notes-dec-2025.md
     - name: October 2025
       href: changelog/changelog25_october.md 
     - name: September 2025
