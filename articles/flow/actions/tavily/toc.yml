@@ -1,6 +1,6 @@
 - name: Connection
   href: connection.md
-- name: Search web
+- name: Web search
   href: search-web.md
 - name: Web search tool
   href: web-search-tool.md

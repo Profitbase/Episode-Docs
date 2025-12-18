@@ -1,6 +1,6 @@
-# Search web
+# Web search 
 
-Returns a **Tavily Search web** search result.  
+Returns a **Tavily Web search** search result.  
 This action performs a Tavily search and exposes a `searchResult` variable containing an optional Answer property and a Results array.
 
 Use this action when you need to process the result of a web search.
@@ -9,7 +9,7 @@ Use this action when you need to process the result of a web search.
 
 
 **Example** ![img](../../../../images/strz.jpg)  
-This Flow uses a [Truncate table](../../actions/sql-server/truncate-table.md) action to clear old data, perform a web search using the **Search web** action, and then uses the [Insert or update row](../../actions/sql-server/insert-or-update-row.md) action to store the search result in a database table.
+This Flow uses a [Truncate table](../../actions/sql-server/truncate-table.md) action to clear old data, perform a web search using the **Web search** action, and then uses the [Insert or update row](../../actions/sql-server/insert-or-update-row.md) action to store the search result in a database table.
 
 <br/>
 
