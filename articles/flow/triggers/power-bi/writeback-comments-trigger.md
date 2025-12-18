@@ -38,8 +38,10 @@ To manually run a Flow for testing purposes, press the `Run` button in the Flow 
 ```json
 {    
     "column": "columnName",
-    "value": "string",
-    "context": {"column1": "value1", "column2": "value2"}    
+    "value": "columnValue",
+    "context": {"keyColumn1": "keyValue1", "keyColumn2": "keyValue2"},
+    "userId": "The OID (GUID) of the user, or the UPN (user@corp.com) depending on how the visual is configured",
+    "timeZone": "The IANA time zone name (e.g. 'Europe/Oslo)"
 }
 ```
 
@@ -49,6 +51,33 @@ The example below shows a test data JSON object that describes changes to Januar
 {    
     "column": "Comments",
     "value": "This is my comment.",
-    "context": {"ProductId": "100", "SalesRepId": "56-08-12"}
+    "context": {"ProductId": "100", "SalesRepId": "56-08-12"},
+    "userId": "me@corp.com",
+    "timeZone": "Europe/Oslo"
 }
+```
+
+### How does it work
+When you configure the Comments visual in Power BI, you specify one or more `Key` column(s) and a single `Comments` column. The `Comments` column is the name of the column where comments should be stored. The `Key` column(s) identity the row.  
+
+When changes are sent to the server (Flow), it is sent as a collection of cell updates on the format:  
+```json
+{    
+    "column": "columnName",
+    "value": "columnValue",
+    "context": {"keyColumn1": "keyValue1", "keyColumn2": "keyValue2"},
+    "userId": "The OID (GUID) of the user, or the UPN (user@corp.com) depending on how the visual is configured",
+    "timeZone": "The IANA time zone name (e.g. 'Europe/Oslo)"    
+}
+```
+
+The `context` consists of the `Key` columns, `column` is the name of the column to update, and `value` is the new value of the cell.  
+
+This format will be converted to a DeltaSet as the output from the trigger. Actins like [Save DeltaSet to SQL Server](../../actions/sql-server/save-deltaset.md) or [Save DeltaSet to Snowflake](../../actions/snowflake/save-deltaset.md) will then translate the DeltaSet into database commands to apply the actual changes.
+
+For those of you familiar with SQL, this logically translates to 
+```sql
+UPDATE [Table] 
+SET columnName=@columnValue
+WHERE keyColumn1 = keyValue1 AND keyColumn2 = keyValue2
 ```
