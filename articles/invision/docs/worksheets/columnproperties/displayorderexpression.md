@@ -8,9 +8,13 @@ This value overrides the default schema layout.
 
 <br/>
 
-**Example**
+**Examples**
 
 ```
 return 1;
+```
+
+```
+return (int)Directive("@Object[Options].Lookup[{ \"ColumnId\":\"AccountID\" }][DisplayOrder]");
 ```
 
