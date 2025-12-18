@@ -93,6 +93,8 @@
             href: columnproperties/readonly.md
           - name: Source column predicate
             href: columnproperties/sourcecolumnpredicate.md
+          - name: Display Order Expression
+            href: columnproperties/displayorderexpression.md
         - name: Custom query
           href: customquery.md
         - name: Filters

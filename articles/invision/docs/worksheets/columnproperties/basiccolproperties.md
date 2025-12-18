@@ -5,6 +5,7 @@
 | Name                        | Description                         |
 |-----------------------------|-------------------------------------|
 | Name                        | The name of the column in the data set. Use the name for addressing the column in formulas. The name must be unique within the column set. Setting Columns can provide a localized caption based on the Name property if the value is registed in pbSimLangText and there is no Caption or Caption Expression providing an override Caption value.|
+| Display Order Expression    | An expression that returns an int to define the column's display order, overriding the default schema arrangement. |
 | Store Column Binding        | Specifies the id of the Data Store column that the grid column is bound to.|
 | Default value               | Specifies a default value to assign to the cell when a new row is added to the grid. |
 | Order by                    | Specifies if the Worksheet data set should be ordered by the values of the column when loaded from the server. <br/> *Priority* must be greater than 0 to order the data set by the column. Priority also specifies the index of the column in the order by clause. <br/> *Sort Descending* specifies if the values of the column should be sorted in descending order instead of ascending.|
