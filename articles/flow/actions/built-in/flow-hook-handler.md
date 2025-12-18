@@ -5,7 +5,8 @@ Defines what should happen when a Flow Hook runs.
 `Hooks handlers` are used to define the business logic of a [Hook](flow-hook.md). 
 It enables product teams to create and distribute a Flow as part of a standard product, while allowing customers to extend its functionality without breaking the standard implementation. 
 
-You can also use [Hooks](flow-hook.md) and Hook handlers to split a large Flow into smaller flowcharts.
+> [!NOTE]
+> You can also use [Hooks](flow-hook.md) and Hook handlers to split a large Flow into smaller flowcharts.
 
 To implement the business logic of a [Hook](flow-hook.md), use a Hook handler in an `Extension flowchart`, and define the business logic there.
 
