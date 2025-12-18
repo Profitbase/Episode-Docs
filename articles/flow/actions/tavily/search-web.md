@@ -1,6 +1,6 @@
 # Web search 
 
-Returns a **Tavily Web search** search result.  
+Returns a **Tavily Web search** result.  
 This action performs a Tavily search and exposes a `searchResult` variable containing an optional Answer property and a Results array.
 
 Use this action when you need to process the result of a web search.
