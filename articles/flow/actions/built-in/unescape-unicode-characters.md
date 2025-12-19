@@ -6,6 +6,9 @@ A typical use case for this action is when processing raw JSON returned from HTT
 
 ![img](/images/flow/unescape-unicode-characters.png)
 
+
+**Example** ![img](../../../../images/strz.jpg)  
+This flow demonstrates how Unescape Unicode characters converts escaped Unicode sequences (for example \u00E5, \u00F8, \u00E6) into readable characters. The flow [takes](../json/create-json-file-as-byte-array.md) an input string containing escaped Unicode values, processes it using the **Unescape Unicode characters** action, and outputs a human-readable string that is than [saved](../postgresql/insert-data.md) to the database. This is typically used when handling JSON, API responses, or encoded text to ensure correct display and further processing of international characters.
 <br/>
 
 ## Properties
