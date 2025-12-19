@@ -10,3 +10,17 @@ For example, you might want to send an email if a critical error occurs, and the
 A Try-Catch action creates a scope. You put the business logic that you want to perform in the Try block, and the error handling in the Catch block.
 
 ![img](../../../../images/flow/try-catch.png)
+
+
+**Example** ![img](../../../../images/strz.jpg)  
+This flow demonstrates how Try / Catch is used to handle runtime errors in a controlled way. The logic inside the Try block is executed first, and if any action fails, execution is redirected to the Catch block instead of stopping the entire flow. This allows the flow to handle errors gracefully—for example by logging the error, setting fallback values, or executing alternative logic—while keeping the main process robust and predictable.
+</br>
+
+## Properties
+
+| Property                   | Data type | Description |
+|----------------------------|-----------|-------------|
+| Title                  | Optional  | A descriptive name for the **Try / Catch** block. |
+| Exception variable name Optional  | Name of the variable that will store information about the exception when an error occurs in the **Try** block. |
+| Disabled               | Optional  | If enabled, the **Try / Catch** block will be skipped during flow execution. |
+| Description            | Optional  | Optional free-text description explaining the purpose of this **Try / Catch** block. |
