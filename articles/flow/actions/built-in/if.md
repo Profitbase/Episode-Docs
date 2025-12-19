@@ -2,6 +2,10 @@
 
 Defines an If-Else decision with **two** possible outcomes.
 
+Use **If** when you need to evaluate a **single condition** and execute an action **only when that condition is met**. It is ideal for simple, optional logic that should not affect the overall control flow when the condition is false.
+
+In contrast, [If-Else](if-else.md) is designed for scenarios with multiple mutually exclusive outcomes and forces the flow to choose one execution path, which can be unnecessary for straightforward checks.
+
 
 ![img](../../../../images/flow/If_builtIn.png)
 
