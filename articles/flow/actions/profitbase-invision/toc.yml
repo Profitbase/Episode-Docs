@@ -49,6 +49,10 @@
   href: "deploy-stored-procedure.md"
 - name: "Deploy View"
   href: "deploy-view.md"
+- name: Data pool
+  items:
+    - name: "Apply synonym configurations"
+      href: "data-pool/apply-synonym-configurations.md"
 - name: Execute Dataflow
   href: "execute-dataflow.md"
 - name: "File Storage"
