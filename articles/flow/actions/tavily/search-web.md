@@ -1,7 +1,7 @@
 # Web search 
 
 Returns a **Tavily Web search** result.  
-This action performs a Tavily search and exposes a `searchResult` variable containing an optional Answer property and a Results array.
+This action performs a Tavily search and exposes a `searchResult` variable containing an optional Answer property and an Items array.
 
 Use this action when you need to process the result of a web search.
 
@@ -38,6 +38,6 @@ Returns a WebSearchResult object with four properties.
 | Name                     | Description                                                                 |
 |--------------------------|-----------------------------------------------------------------------------|
 | Answer                 | The summarized answer retrieved from the search, if available.                                                    |
-| Results          | Contains a list of search result items. These items has properties called Title, URL, Score, Snippet and FullContent (extracted raw content (if enabled)) |
+| Items          | Contains a list of search result items. These items has properties called Title, URL, Score, Snippet and FullContent (extracted raw content (if enabled)) |
 | IsSuccess          | Indicates whether the search was successful. |
 | ErrorMessage          | Contains error message if the search failed. |
