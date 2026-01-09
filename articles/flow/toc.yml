@@ -109,6 +109,8 @@
       href: actions/excel/toc.yml
     - name: Finago Office
       href: actions/finago-office/toc.yml
+    - name: Fortnox
+      href: actions/fortnox/toc.yml
     - name: FTP / SFTP
       href: actions/ftp/toc.yml
     - name: GitHub
@@ -159,6 +161,8 @@
       href: actions/security/toc.yml
     - name: SendGrid
       href: actions/sendgrid/toc.yml
+    - name: SIE
+      href: actions/sie/toc.yml
     - name: Snowflake
       href: actions/snowflake/toc.yml
     - name: SQL Server / Azure SQL
