@@ -6,7 +6,7 @@ The connection is a required part of the configuration of [Tavily](https://docs.
 
 ## Creating a New Connection
  
-When adding a Tavily action (such as [Foreach web search result](foreach-web-search-result.md)), you can select an **existing Tavily connection** or **create a new one**:
+When adding a Tavily action, you can select an **existing Tavily connection** or **create a new one**:
  
 1. Click on a Tavily action in order to open the Properties panel.
 2. Click on the Connection field to select or create a connection. In the popup that shows up click on the **New connection** button.

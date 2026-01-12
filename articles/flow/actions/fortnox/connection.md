@@ -17,8 +17,8 @@ A [Fortnox connection](https://www.fortnox.se/developer/authorization/get-access
 | Connection Name  | A user-defined name for this connection. |
 | Client ID        | A unique identifier for your application registered with Fortnox. |
 | Client Secret    | A confidential string used for authenticating your client app. |
-| Tenant ID        | The identifier of the Tenant (database id)  |
-| Scope            | Select on or more [scopes](https://www.fortnox.se/developer/guides-and-good-to-know/scopes) for use in requests. |
+| Tenant ID        | The identifier of the Tenant (database id).  |
+| Scope            | Select one or more [scopes](https://www.fortnox.se/developer/guides-and-good-to-know/scopes) for use in requests. |
 
 <br/>
 
