@@ -16,6 +16,6 @@ If you store the credentials for the Fortnox outside Flow (for example in your o
 | Client ID         | Required    | A unique identifier for the client application.        |
 | Client Secret     | Required    | A confidential key used to authenticate the client.    |
 | Tenant ID         | Required    | The ID of the Tenant (database id)  |
-| Scopes            | Required    | Select on or more [scope](https://www.fortnox.se/developer/guides-and-good-to-know/scopes) for use in requests |
+| Scopes            | Required    | Select one or more [scope](https://www.fortnox.se/developer/guides-and-good-to-know/scopes) for use in requests |
 
 

@@ -14,7 +14,7 @@ The update also includes **UI and data handling fixes**, performance improvement
 
 ## User Chat for real-time collaboration
 
-The new [User Chat](../docs/workbooks/components/user-chat.md) component enables users to exchange messages and collaborate directly within the application — in the context of a specific page, dashboard, report, or even a particular row or data point.
+The new [User Chat](../docs/workbooks/components/userchat/user-chat.md) component enables users to exchange messages and collaborate directly within the application — in the context of a specific page, dashboard, report, or even a particular row or data point.
 
 Solution developers can define the chat context and include as many chat components in a Workbook as needed (e.g., one per page or a single chat in a popup).
 
