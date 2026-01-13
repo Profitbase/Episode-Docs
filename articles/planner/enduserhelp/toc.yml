@@ -1,0 +1,82 @@
+  - name: Version 6.1
+    items:
+    - name: Account module
+      href: V6.1/Profitbase_Planner_Account_module_v3_5.md
+    - name: CapEx module
+      href: V6.1/Profitbase_Planner_CapEx_module_v3_6.md
+    - name: Loan module
+      href: V6.1/Profitbase_Planner_Loan_module_v3_5.md
+    - name: Personnel module
+      href: V6.1/Profitbase_Planner_Personnel_module_v3_5.md
+    - name: Driver-based module
+      href: V6.1/Profitbase_Planner_Driver_based_module.md
+    - name: Data requirements
+      href: V6.1/Profitbase_Planner_Data_Requirements_v5_6.md
+    - name: Customization patterns
+      href: V6.1/Profitbase_Planner_Customization_Patterns.md
+  - name: Version 5.4
+    items:
+    - name: Account module
+      href: V5.4/Profitbase_Planner_Account_module_v3_4.md
+    - name: CapEx module
+      href: V5.4/Profitbase_Planner_CapEx_module_v3_4.md
+    - name: Loan module
+      href: V5.4/Profitbase_Planner_Loan_module_v3_4.md
+    - name: Personnel module
+      href: V5.4/Profitbase_Planner_Personnel_module_v3_4.md
+    - name: Driver-based module
+      href: V5.4/Profitbase_Planner_Driver_based_module_v3_4.md
+    - name: Data requirements
+      href: V5.4/Profitbase_Planner_Data_Requirements_v5_5.md
+    - name: Customization patterns
+      href: V5.4/Profitbase_Planner_Customization_Patterns_v0_5.md
+  - name: Version 5.3
+    items:
+    - name: Accounting basics
+      href: V5.3/Profitbase_Grunnleggende_om_bokforing.md
+    - name: Cash flow with Planner
+      href: V5.3/Profitbase_Kontantstrom_med_Planner.md
+    - name: Customization patterns
+      href: V5.3/Profitbase_Planner_Customization_Patterns_v0_4.md
+  - name: Version 5.2
+    items:
+    - name: Account module
+      href: V5.2/Profitbase_Planner_Account_module_v3_0.md
+    - name: CapEx module
+      href: V5.2/Profitbase_Planner_CapEx_module_v3_0.md
+    - name: Loan module
+      href: V5.2/Profitbase_Planner_Loan_module_v3_0.md
+    - name: Personnel module
+      href: V5.2/Profitbase_Planner_Personnel_module_v3_0.md
+    - name: Driver-based module
+      href: V5.2/Profitbase_Planner_Driver_based_module_v3_0.md
+    - name: Data requirements
+      href: V5.2/Profitbase_Planner_Data_Requirements_v4_1.md
+  - name: Version 5.0
+    items:
+    - name: Account module
+      href: v5/Profitbase_Planner_Account_module_v2_2.md
+    - name: CapEx module
+      href: v5/Profitbase_Planner_CapEx_module_v2_0.md
+    - name: Loan module
+      href: v5/Profitbase_Planner_Loan_module_v2_0.md
+    - name: Personnel module
+      href: v5/Profitbase_Planner_Personnel_module_v2_1.md
+    - name: Driver-based module
+      href: v5/Profitbase_Planner_Driver_based_module_v2_2.md
+    - name: Data requirements
+      href: v5/Profitbase_Planner_Data_Requirements_v2_2.md
+  - name: Account module
+    href: Profitbase_Planner_Account_module.md
+  - name: CapEx module
+    href: Profitbase_Planner_CapEx_module.md
+  - name: Data Requirements
+    href: Profitbase_Planner_Data_Requirements.md
+  - name: Loan module
+    href: Profitbase_Planner_Loan_module.md
+  - name: Personnel module
+    href: Profitbase_Planner_Personnel_module.md
+  - name: Sales by GM module
+    href: Profitbase_Planner_Sales_by_GM_module.md
+  - name: Sales forecast module
+    href: Profitbase_Planner_Sales_Forecast_module.md

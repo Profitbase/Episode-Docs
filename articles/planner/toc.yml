@@ -19,3 +19,5 @@
   href: workbooks/toc.yml
 - name: Changelog
   href: changelog/toc.yml
+- name: End user help
+  href: enduserhelp/toc.yml
