@@ -44,8 +44,8 @@ This package provide the financial planning function and can be organized in pro
     - An auto refresh is done after a click on the Recalculate button
     - Calculated measures (on-button click / sql) can now reference time through:
     	- Testing on YYYY (year), Q (quarter no.), MM (month no.), for example Case When MM > 6 Then... This also implies that there are certain reserved measure names: YYYY, Q, Qseq, MM
-    	- Making use of directives that accumulates part of the calculation over multiple periods, for example using @SumPrevQuarter (sum of previous quarter), @SumYear (sum of current year). A calculation may be of the form [Measure1] * @SumPrevQuarterStart([Messure2] + [Measure3])@SumPrevQuarterEnd where the part of the calculation enclosed between @SumPrevQuarterStart and @SumPrevQuarterEnd is calculated over the previous quarter relative to the context of [Measure1].
-- 
+    	- Making use of directives that accumulates part of the calculation over multiple periods, for example using @SumPrevQuarter (sum of previous quarter), @SumYear (sum of current year). A calculation may be of the form [Measure1] * @SumPrevQuarterStart([Measure2] + [Measure3])@SumPrevQuarterEnd where the part of the calculation enclosed between @SumPrevQuarterStart and @SumPrevQuarterEnd is calculated over the previous quarter relative to the context of [Measure1].
+- Version deployment of Planner: Planner specific dialogue reworked with parameter interdependency and validation (e.g. Action "Roll forward from source version" and the number of months) making version definition more intuitive. ("2007, #2080)
 
 ## EPM Planner 6.1.1
 
