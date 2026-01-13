@@ -1,6 +1,6 @@
 # Fortnox REST API Request
 
-The **REST API Request** action allows you to interact with [Fortnox REST API](https://apps.fortnox.se/apidocs) to read or write data. You can retrieve information such as customers, accounts, or employees, or update records in the Fortnox using HTTP methods (`GET`, `POST`, `PUT`, `DELETE`, etc.).  
+The **REST API Request** action allows you to interact with the [Fortnox REST API](https://apps.fortnox.se/apidocs) to read or write data. You can retrieve information such as customers, accounts, or employees, or update records in Fortnox using HTTP methods (`GET`, `POST`, `PUT`, `DELETE`, etc.).  
 
 
 ![img](../../../../images/flow/fortnox-rest-api.png)  
@@ -16,8 +16,8 @@ The example above shows how to read employees from Fortnox and insert the result
 | Name             | Type      |Description                                             |
 |------------------|-----------|--------------------------------------------------------|
 | Title  | Optional | The title or name of the request. |
-| Connection | Required | The [Fortnox Connection](./connection.md) used to make an authenticated request to Fortnox REST API. |
-| Dynamic connection | Optional | Use this option if you need to use a connection from the [Create Connection](./create-connection.md) action. |
+| Connection | Required | The [Fortnox Connection](./connection.md) used to make an authenticated request to the Fortnox REST API. |
+| Dynamic connection | Optional | Use this option if you need to use a connection created by the [Create Connection](./create-connection.md) action. |
 | Configuration | Required | Define configuration as described below. |
 | Description | Optional | Additional notes or comments about the action or configuration. |
 
@@ -44,7 +44,7 @@ The Fortnox REST API is large, so the template collection contains only a subset
 
 ![img](/images/flow/dynamics365-bc-new-request.png)
 
-To define a request to the Fortnox REST API, you can start from a template, or define it manually:
+
 1. **Method**: Choose the appropriate HTTP method for your request:  
    - `GET`: Retrieve data from Fortnox (e.g., get accounts or financial years).  
    - `POST`: Create new records (e.g., add a new invoice or customer).  
@@ -77,7 +77,7 @@ The `On Error` handler is triggered for each page error, allowing you to manage 
 ## API Limits  
 
 Fortnox enforces rate limits to maintain stable server performance. If you exceed these limits, the API will return a `429 Too Many Requests` error.  
-The Action handles this by delaying calls and using retry. If retry limit is reached an error will be returned.
+The action handles this by delaying calls and retrying requests. If the retry limit is reached, an error is returned.
 
 <br/>
 

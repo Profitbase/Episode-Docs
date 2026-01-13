@@ -17,7 +17,7 @@ The **REST API Request** action allows you to interact with [PowerOffice Go REST
 |------------------|-----------|--------------------------------------------------------|
 | Title  | Optional | The title or name of the request. |
 | Connection      | Required | The [PowerOffice Go Connection](./poweroffice-go-connection.md) used to make an authenticated request to PowerOffice REST API. |
-| Dynamic connection | Optional | Use this option if you need to use a connection from the [Create Connection](./create-connection.md) action. |
+| Dynamic connection | Optional | Use this option if you need to use a connection created by the [Create Connection](./create-connection.md) action. |
 | Configuration | Required | Define configuration as described below. |
 | Description | Optional | Additional notes or comments about the action or configuration. |
 
@@ -77,7 +77,7 @@ The `On Error` handler is triggered for each page error, allowing you to manage 
 ## API Limits  
 
 PowerOffice enforces rate limits to maintain stable server performance. If you exceed these limits, the API will return a `429 Too Many Requests` error.  
-The Action handles this by delaying calls and using retry. If retry limit is reached an error will be returned.
+The action handles this by delaying calls and retrying requests. If the retry limit is reached, an error is returned.
 
 <br/>
 

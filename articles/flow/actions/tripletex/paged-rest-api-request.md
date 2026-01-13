@@ -3,7 +3,7 @@
 Use [Tripletex REST APIs (v2)](https://tripletex.no/v2-docs/) to read paged data.  
 
 
-The **REST API Request with Paging** action allows you to use the [Tripletex REST APIs](https://tripletex.no/v2-docs/) to retrieve large, paginated datasets. This action simplifies working with endpoints that return multiple pages of data, such as lists of customers, invoices, or accounting records. Pagination is handled automatically, allowing you to focus on processing the data.  
+The **REST API Request with paging** action allows you to use the [Tripletex REST APIs](https://tripletex.no/v2-docs/) to retrieve large, paginated datasets. This action simplifies working with endpoints that return multiple pages of data, such as lists of customers, invoices, or accounting records. Pagination is handled automatically, allowing you to focus on processing the data.  
 
 ![img](/images/flow/rest-api-paging-trip.png)  
 <br/>
@@ -14,7 +14,7 @@ The **REST API Request with Paging** action allows you to use the [Tripletex RES
 |----------------- | -------- | --------------------------------------------------------------------------------------------- |
 | Title           | Optional | The title or name of the request.                                                             |
 | Connection      | Required | The [Tripletex Connection](./tripletex-connection.md) used to make an authenticated request to Tripletex REST API.         |
-| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
+| Dynamic connection | Optional | Use this option if you need to use a connection created by the [Create Connection](./create-connection.md) action. |
 | Configuration   | Required | Specifies the HTTP request to the Tripletex API, including the HTTP method, URL, parameters, and return type. |
 | Start index     | Optional | The starting point of the index for data retrieval. Defaults to 0 if not specified.           |
 | Items per page  | Optional | The number of items to retrieve per page. Defaults to 5000 if not specified.                  |

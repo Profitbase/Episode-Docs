@@ -1,6 +1,6 @@
 # Convert a PDF file to a non-PDF file as stream
 
-Converts a PDF file to a target format and returns it as a stream.
+Converts a PDF file to a target format and returns it as a stream object.
 
 ![img](../../../../images/flow/convertPDFtoOther2.png)
 

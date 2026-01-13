@@ -33,7 +33,7 @@ Include all the Word documents as attachments to the email.
 | Session ID      | Optional     | A session ID is required if you want to enable memory, allowing for an ongoing conversation with the AI, rather than every interaction starting fresh.|
 | Chat model      | Required     | The chat model accepts a set of instructions, reasons about _how_ to solve the task and utilizes tools to achive the final outcome. |
 | Tools           | Required     | One or more tools that the agent to use to perform the tasks identified by the chat model. Tools the agent can use includes: <br/> [Azure Blob Storage Agent Tool](../azure-blob-storage/agent-tool.md) <br/> [OneDrive Agent Tool](../onedrive/agent-tool.md) <br/> [Outlook Agent Tool](../microsoft-365-outlook/agent-tool.md) <br/> [Markdown Agent Tool](../markdown/agent-tool.md)<br/>[MCP client tool](../mcp/mcp-client-tool.md) <br/> [Flow AI tool](../ai/flow-ai-tool.md)  | 
-| Memory          | Optional     | Agent memory used to store and retrive a previous conversation with the agent. Allows for an ongoing conversation with the AI, rather than every interaction starting fresh. Note that memory requires a Session ID. |
+| Memory          | Optional     | Agent memory used to store and retrieve a previous conversation with the agent. Allows for an ongoing conversation with the AI, rather than every interaction starting fresh. Note that memory requires a Session ID. |
 
 <br/>
 

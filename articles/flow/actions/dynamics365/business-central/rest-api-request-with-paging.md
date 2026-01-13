@@ -1,6 +1,6 @@
 # REST API Request with paging
 
-The `REST API Request with paging` action enables you to call [Dynamics 365 Business Central v2 APIs](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v2.0/) and retrive large amounts of data. A typical use case is to create data integrations for pulling data from Dynamics 365 Business Central into a data platform solution.
+The `REST API Request with paging` action enables you to call [Dynamics 365 Business Central v2 APIs](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v2.0/) and retrieve large amounts of data. A typical use case is to create data integrations for pulling data from Dynamics 365 Business Central into a data platform solution.
 
 > [!NOTE]
 > This action also works for APIs that does not return paged responses, in which case the response will contain only a single page.

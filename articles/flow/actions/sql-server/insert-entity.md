@@ -20,7 +20,7 @@ INSERT INTO tableName (Property1, Property2) VALUES(entity.Property1, enity.Prop
 |--------------|-----------------|---------------------------------------------------|
 | Title              | Optional        | A descriptive title for the action.               |
 | Connection      | Required | The [SQL Server Connection](./connection.md).         |
-| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
+| Dynamic connection | Optional | Use this option if you need to use a connection created by the [Create Connection](./create-connection.md) action. |
 | Entity | Raquired  | Select the entity (object) to insert.   |
 | Table name | Required  | Select where to insert the data.  |
 | Result variable name | Optional  | Name of the variable returning number of rows affected.   |

@@ -12,7 +12,7 @@ Gets a single entity based on a query against a SQL Server database.
 |--------------|-----------------|---------------------------------------------------|
 | Title              | Optional        | A descriptive title for the action.               |
 | Connection      | Required | The [SQL Server Connection](./connection.md).         |
-| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
+| Dynamic connection | Optional | Use this option if you need to use a connection created by the [Create Connection](./create-connection.md) action. |
 | SQL expression and parameters   | Required      | The command to execute along with any parameters.   |
 | Entity name | Optional  | Name of the entity data type returned. |
 | Entity properties | Required  | Name of the properties and its data types.  |

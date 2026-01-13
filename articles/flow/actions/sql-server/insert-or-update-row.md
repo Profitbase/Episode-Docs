@@ -14,7 +14,7 @@ The Flow above illustrates how to use the `Insert or Update row` action to save 
 | --------------------- | -------- | ------------------------------------------------------------------------------------------------------------- |
 | Title                 | Optional | A descriptive title for the action.                                                                           |
 | Connection            | Required | The SQL Server connection.                                                                                    |
-| Dynamic connection    | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
+| Dynamic connection    | Optional | Use this option if you need to use a connection created by the [Create Connection](./create-connection.md) action. |
 | Table name            | Required | The name of the table to insert or update a row.                                                              |
 | Column value mapping  | Required | Defines the row to update by specifying the columns and corresponding values.                                 |
 | Result variable name  | Optional | Name of the variable containing the action performed. This always returns either `INSERT` or `UPDATE`.        |

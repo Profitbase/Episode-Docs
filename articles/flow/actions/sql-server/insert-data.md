@@ -20,7 +20,7 @@ The example above takes a file from storage, reads its JSON content, saves the d
 |--------------------|-----------------|---------------------------------------------------|
 | Title              | Optional        | A descriptive title for the action.               |
 | Connection      | Required | The [SQL Server Connection](./connection.md).         |
-| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
+| Dynamic connection | Optional | Use this option if you need to use a connection created by the [Create Connection](./create-connection.md) action. |
 | Source             | Required        | The data to insert. This can be a DataReader or a DataTable. |
 | Destination table  | Required        | Select or enter the name of the table to insert info. |
 | Batch size         | Optional        | The number of rows inserted pr batch. The default is 5000. The batch size may affect the performance of the operation, and the optimal setting may vary from case to case. |

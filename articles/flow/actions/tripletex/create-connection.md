@@ -1,6 +1,6 @@
 # Create Tripletex connection
 
-This action creates a connection for Tripletex, and is intented for dynamically connecting to different subscriptions based on parameters or conditions during the execution of a Flow.   
+This action creates a connection for Tripletex, and is intended for dynamically connecting to different subscriptions based on parameters or conditions during the execution of a Flow.   
 
 A 'Dynamic Connection' will override the 'Connection' on flow execution.
 

@@ -2,7 +2,7 @@
 
 Inherits from [Control](control.md).  
 
-The `App header button` component is **only** intented to be used when creating a Workbook Toolbar Form that is placed in the Workbook header bar.  
+The `App header button` component is **only** intended to be used when creating a Workbook Toolbar Form that is placed in the Workbook header bar.  
 The use case is for this component is to create a Workbook header toolbar that you can reuse in multiple Workbooks.
 
 ![img](/images/invision/form-schema-app-header-buttons.png)

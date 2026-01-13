@@ -3,7 +3,7 @@
 Use [PowerOffice Go REST APIs (v2)](https://developer.poweroffice.net) to retrieve paginated data.
 
 
-The REST **API Request with Paging** action enables you to interact with the [PowerOffice Go REST APIs (v2)](https://prdm0go0stor0apiv20eurw.z6.web.core.windows.net) to retrieve large, paginated datasets. This action simplifies working with endpoints that return multiple pages of data, such as customer lists, invoices, or accounting records. Pagination is managed automatically, allowing you to focus on processing the data.
+The REST **API Request with paging** action enables you to interact with the [PowerOffice Go REST APIs (v2)](https://prdm0go0stor0apiv20eurw.z6.web.core.windows.net) to retrieve large, paginated datasets. This action simplifies working with endpoints that return multiple pages of data, such as customer lists, invoices, or accounting records. Pagination is managed automatically, allowing you to focus on processing the data.
 
 ![img](/images/flow/rest-api-paging-powerOff.png)  
 
@@ -15,7 +15,7 @@ The REST **API Request with Paging** action enables you to interact with the [Po
 |----------------- | -------- | --------------------------------------------------------------------------------------------- |
 | Title           | Optional | The title or name of the request.                              |
 | Connection      | Required | The [PowerOffice Go Connection](./poweroffice-go-connection.md) used to make an authenticated request to PowerOffice Go REST API.     |
-| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
+| Dynamic connection | Optional | Use this option if you need to use a connection created by the [Create Connection](./create-connection.md) action. |
 | Configuration   | Required | Specifies the HTTP request to the PowerOffice API, including the HTTP method, URL, parameters, and return type. |
 | Start page     | Optional | The starting page of the data retrieval. Defaults to 1 if not specified.           |
 | Items per page  | Optional | The number of items to retrieve per page. Defaults to 5000 if not specified.                  |
@@ -26,7 +26,7 @@ The REST **API Request with Paging** action enables you to interact with the [Po
 
 ## Returns  
 
-The return type is defined when configuring the action. It can be a custom data type set by e.g. the template,or the raw JSON response from the API.  
+The return type is defined when configuring the action. It can be a custom data type set by the template, or the raw JSON response from the API.  
 We recommend using the built-in [HttpResponse&lt;T&gt;](../../api-reference/built-in-types/http-response.md) type because it will include additional information about the response, such as the HTTP status code and error(s).
 
 We recommend dumping the raw response into a data store and using data transformation tools to convert it into a usable format. If the API returns a relatively small dataset (10,000–200,000 records), consider using the [Get JSON DataReader](../json/get-json-datareader.md) to flatten the JSON into a tabular format. This allows you to process the data as rows and columns, such as by inserting it directly into a SQL Server table.
@@ -69,7 +69,7 @@ The `On Error` error handler will be triggered for each `page error`, allowing y
 ## API Limits  
 
 PowerOffice Go enforces rate limits to ensure system stability. If you exceed these limits, the API will return a `429 Too Many Requests` error. 
-The Action handles this by delaying calls and using retry. If retry limit is reached an error will be returned.
+The action handles this by delaying calls and retrying requests. If the retry limit is reached, an error is returned.
 
 <br/>
 
@@ -88,4 +88,4 @@ The Action handles this by delaying calls and using retry. If retry limit is rea
 
 <br/>
 
-By using the **REST API Request with Paging** action, you can effectively retrieve and handle large datasets from PowerOffice Go while adhering to best practices for performance and API compliance.
+By using the **REST API Request with paging** action, you can effectively retrieve and handle large datasets from PowerOffice Go while adhering to best practices for performance and API compliance.

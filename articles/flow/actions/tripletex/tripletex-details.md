@@ -35,7 +35,7 @@ For endpoint-specific details, refer to the [Tripletex API documentation](https:
 
 ---
 
-## Response Paging  
+## Response paging  
 
 Tripletex APIs often return paginated responses for large datasets. For example, list endpoints like `v2/project` or `v2/customer` include pagination metadata (e.g., `next`, `totalCount`).  
 
