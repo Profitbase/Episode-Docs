@@ -1,6 +1,6 @@
 # REST API Request
 
-The `REST API Request` action enables you to call [Finago Office (24SevenOffice) API](https://rest-api.developer.24sevenoffice.com/doc/v1/) and retrive data. A typical use case is to create data integrations for pulling data from Finago Office/24SevenOffice into a data platform solution.
+The `REST API Request` action enables you to call [Finago Office (24SevenOffice) API](https://rest-api.developer.24sevenoffice.com/doc/v1/) and retrieve data. A typical use case is to create data integrations for pulling data from Finago Office/24SevenOffice into a data platform solution.
 
 ![img](/images/flow/24SevenOffice-rest-api.png)
 

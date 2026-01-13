@@ -1,6 +1,6 @@
 # Create Sql Server Connection
 
-This action creates a connection for SQL Server, and is intented for dynamically connecting to different servers and databases based on parameters or conditions during the execution of a Flow.   
+This action creates a connection for SQL Server, and is intended for dynamically connecting to different servers and databases based on parameters or conditions during the execution of a Flow.   
 
 A 'Dynamic Connection' will override the 'Connection' on flow execution.
 

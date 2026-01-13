@@ -3,7 +3,7 @@
 Use [Visma.Net REST APIs](https://integration.visma.net/API-index/) to read paged data.  
 
 
-The **REST API Request with Paging** action allows you to use the [Visma.Net](https://developer.visma.com/api/visma-net) REST APIs to retrieve large, paginated datasets. This action simplifies working with endpoints that return multiple pages of data, such as lists of customers, invoices, or accounting records. Pagination is handled automatically, allowing you to focus on processing the data.  You can offcourse use it for none-paged requests also.
+The **REST API Request with paging** action allows you to use the [Visma.Net](https://developer.visma.com/api/visma-net) REST APIs to retrieve large, paginated datasets. This action simplifies working with endpoints that return multiple pages of data, such as lists of customers, invoices, or accounting records. Pagination is handled automatically, allowing you to focus on processing the data.  You can offcourse use it for none-paged requests also.
 
  <!-- TODO image.. -->
 
@@ -15,7 +15,7 @@ The **REST API Request with Paging** action allows you to use the [Visma.Net](ht
 |----------------- | -------- | -------------------------------------------------------------- |
 | Title           | Optional | The title or name of the request.                         |
 | Connection      | Required | The [Visma.Net Connection](./visma-net-connection.md) used to make an authenticated request to Tripletex REST API.         |
-| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
+| Dynamic connection | Optional | Use this option if you need to use a connection created by the [Create Connection](./create-connection.md) action. |
 | Configuration   | Required | Defines the HTTP request to Visma.Net, including the method, URL, parameters, and return type.  |
 | Company Id      | Optional | The Company Id to request data from. Default company can be set in the connection.        |
 | Start page      | Optional | The page to begin retrieving data from. Defaults to 1 (if not specified).                            |
@@ -27,7 +27,7 @@ The **REST API Request with Paging** action allows you to use the [Visma.Net](ht
 
 ## Returns  
 
-The return type is defined when configuring the action. It can be a custom data type set by e.g. the template,or the raw JSON response from the API.  
+The return type is defined when configuring the action. It can be a custom data type set by the template, or the raw JSON response from the API.  
 
 For templated requests returning a single item, the return type is an Entity. E.g. v1\Customer\12345 returns a CustomerDTO entity.
 For API returning collections, the default return value is [HttpResponse&lt;T&gt;](../../../api-reference/built-in-types/http-response.md). This contains the result as a JSON string and the Status and any errors of the request.
@@ -70,4 +70,4 @@ The `On Error` handler is triggered for each `page error`, allowing you to handl
 ## API Limits  
 
 Visma.Net APIs enforce rate limits to ensure fair usage and optimal performance. If you exceed these limits, the API will return a `429 Too Many Requests` error. 
-The Action handles this by delaying calls and using retry. If retry limit is reached an error will be returned.
+The action handles this by delaying calls and retrying requests. If the retry limit is reached, an error is returned.

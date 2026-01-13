@@ -13,7 +13,7 @@ This action creates a copy of another table in a SQL Server database by coping i
 |--------------|-----------------|---------------------------------------------------|
 | Title              | Optional        | A descriptive title for the action.               |
 | Connection      | Required | The [SQL Server Connection](./connection.md).         |
-| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
+| Dynamic connection | Optional | Use this option if you need to use a connection created by the [Create Connection](./create-connection.md) action. |
 | Source Table | Required | Select or enter source table name. |
 | Target table | Required | Select or enter target table name.  |
 | Replace existing table | Optional |  Check if You want to replace the table or an error will be thrown if it already exists. |

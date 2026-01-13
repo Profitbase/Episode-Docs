@@ -1,14 +1,14 @@
 # Fortnox REST API Request with paging
 
-Use [Fortnox REST API](https://apps.fortnox.se/apidocs) to retrieve paginated data.
+Use the [Fortnox REST API](https://apps.fortnox.se/apidocs) to retrieve paginated data.
 
-The **REST API request with Paging** action enables you to interact with the [Fortnox REST API](https://apps.fortnox.se/apidocs) to retrieve large, paginated datasets. This action simplifies working with endpoints that return multiple pages of data, such as customer lists, invoices, or accounts. Pagination is managed automatically, allowing you to focus on processing the data.
+The **REST API request with paging** action enables you to interact with the [Fortnox REST API](https://apps.fortnox.se/apidocs) to retrieve large, paginated datasets. This action simplifies working with endpoints that return multiple pages of data, such as customer lists, invoices, or accounts. Pagination is managed automatically, allowing you to focus on processing the data.
 
 ![img](/images/flow/fortnox-rest-api-paging.png)  
 
 **Example** ![img](/images/strz.jpg)
 
-In the example above, a **paginated REST API Request** is used to getting accounts and insert them into an SQL Server table. Each result from the **REST API Request** is converted using the [JSON to DataReader](../json/get-json-datareader.md) action, and then inserted using the [SQL Server Insert](../sql-server/insert-data.md) action.
+In the example above, a **paginated REST API Request** is used to retrieve accounts and insert them into an SQL Server table. Each result from the **REST API Request** is converted using the [JSON to DataReader](../json/get-json-datareader.md) action, and then inserted using the [SQL Server Insert](../sql-server/insert-data.md) action.
 
 <br/>
 
@@ -17,10 +17,10 @@ In the example above, a **paginated REST API Request** is used to getting accoun
 | Name            | Type     | Description          |
 |---------------- | -------- | ---------------------|
 | Title           | Optional | The title or name of the request.  |
-| Connection      | Required | The [Fortnox Connection](./connection.md) used to make an authenticated request to Fortnox REST API. 
-| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
+| Connection      | Required | The [Fortnox Connection](./connection.md) used to make an authenticated request to the Fortnox REST API. |
+| Dynamic connection | Optional | Use this option if you need to use a connection created by the [Create Connection](./create-connection.md) action. |
 | Configuration   | Required | Specifies the HTTP request to the Fortnox API, including the HTTP method, URL, parameters, and return type. |
-| Offset   | Optional | Offset to the starting record of the data retrieval. Defaults to 0 if not specified. |
+| Offset   | Optional | Offset to the starting record for data retrieval. Defaults to 0 if not specified. |
 | Items per page  | Optional | The number of items to retrieve per page. Defaults to 5000 if not specified.  |
 | Max page count  | Optional | The maximum number of pages to fetch. Defaults to 9999 if not specified.      |
 | Description     | Optional | Additional notes or comments about the action or configuration.               |
@@ -29,7 +29,7 @@ In the example above, a **paginated REST API Request** is used to getting accoun
 
 ## Returns  
 
-The return type is defined when configuring the action. It can be a custom data type set by e.g. the template,or the raw JSON response from the API.  
+The return type is defined when configuring the action. It can be a custom data type set by the template, or the raw JSON response from the API.  
 We recommend using the built-in [HttpResponse&lt;T&gt;](../../api-reference/built-in-types/http-response.md) type because it will include additional information about the response, such as the HTTP status code and error(s).
 
 We recommend dumping the raw response into a data store and using data transformation tools to convert it into a usable format. If the API returns a relatively small dataset (10,000–200,000 records), consider using the [Get JSON DataReader](../json/get-json-datareader.md) to flatten the JSON into a tabular format. This allows you to process the data as rows and columns, such as by inserting it directly into a SQL Server table.
@@ -78,8 +78,8 @@ The `On Error` error handler will be triggered for each `page error`, allowing y
 ## API Limits  
 
 Fortnox enforces rate limits to maintain stable server performance. If you exceed these limits, the API will return a `429 Too Many Requests` error.  
-The Action handles this by delaying calls and using retry. If retry limit is reached an error will be returned.
-his by delaying calls and using retry. If retry limit is reached an error will be returned.
+The action handles this by delaying calls and retrying requests. If the retry limit is reached, an error is returned.
+
 
 <br/>
 
@@ -98,4 +98,4 @@ his by delaying calls and using retry. If retry limit is reached an error will b
 
 <br/>
 
-By using the **REST API Request with Paging** action, you can effectively retrieve and handle large datasets from Fortnox while adhering to best practices for performance and API compliance.
+By using the **REST API Request with paging** action, you can effectively retrieve and handle large datasets from Fortnox while adhering to best practices for performance and API compliance.

@@ -1,6 +1,6 @@
 # Fortnox connection
 
-To use Fortnox actions in **Profitbase Flow**, you must either select an **existing connection** or create a new one.
+To use Fortnox actions in **Profitbase Flow**, you need to select an **existing connection** or create a new one.
 
 <br/>
 
@@ -17,7 +17,7 @@ A [Fortnox connection](https://www.fortnox.se/developer/authorization/get-access
 | Connection Name  | A user-defined name for this connection. |
 | Client ID        | A unique identifier for your application registered with Fortnox. |
 | Client Secret    | A confidential string used for authenticating your client app. |
-| Tenant ID        | The identifier of the Tenant (database id).  |
+| Tenant ID        | The identifier of the Tenant (database ID).  |
 | Scope            | Select one or more [scopes](https://www.fortnox.se/developer/guides-and-good-to-know/scopes) for use in requests. |
 
 <br/>
@@ -27,7 +27,7 @@ A [Fortnox connection](https://www.fortnox.se/developer/authorization/get-access
 <br/>
 
 > [!NOTE]
-> A [Dynamic Connection](./create-connection.md) can be used to override this default connection during flow execution.  
+> A [Dynamic Connection](./create-connection.md) can be used to override the default connection during flow execution.  
 > This is useful when connecting to different subscriptions programmatically or pulling credentials from external sources at runtime.
 
 <br/>

@@ -29,7 +29,7 @@ All properties _NOT_ in the `Update keys` configuration will be used in the SET 
 |--------------|-----------------|---------------------------------------------------|
 | Title              | Optional        | A descriptive title for the action.               |
 | Connection      | Required | The [SQL Server Connection](./connection.md).         |
-| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
+| Dynamic connection | Optional | Use this option if you need to use a connection created by the [Create Connection](./create-connection.md) action. |
 | Source   | Required | Select the entity to use in update. |
 | Table name | Required  | Select or enter the table name to insert into. |
 | Update key | Required  | Select the table columns to use for update keys.  |

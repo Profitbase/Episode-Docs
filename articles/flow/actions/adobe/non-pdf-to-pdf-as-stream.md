@@ -1,6 +1,6 @@
 # Convert a non-PDF file to a PDF file as stream
 
-Converts a non-PDF file (Word, image, PowerPoint, etc) to PDF and returns it as a stream.
+Converts a non-PDF file (Word, image, PowerPoint, etc) to PDF and returns it as a stream object.
 
 ![img](../../../../images/flow/convertOthertoPDF2.png)
 

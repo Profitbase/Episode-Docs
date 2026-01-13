@@ -24,7 +24,7 @@ List<Customer> customers;
 |--------------|-----------------|---------------------------------------------------|
 | Title           |  Optional | The title or name of the command.      |
 | Connection      | Required | The [SQL Server Connection](./connection.md).         |
-| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
+| Dynamic connection | Optional | Use this option if you need to use a connection created by the [Create Connection](./create-connection.md) action. |
 | SQL expression and parameters   | Required      | The command to execute along with any parameters.   |
 | Row variable name | Required  | Name of Row variable.  |
 | Row data type | Optional  | Name of the created entity type.  |

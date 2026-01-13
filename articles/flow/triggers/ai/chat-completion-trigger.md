@@ -34,13 +34,13 @@ The trigger outputs a `ChatCompletionRequest` object with the following properti
 
 | Property name  | Type    | Description              |
 |----------------|---------|--------------------------|
-| SessionId      | String  | The id of the chat session provided by the client. Use this value to store and retrive the chat history between requests, enabling users to ask follow-up questions. |
+| SessionId      | String  | The id of the chat session provided by the client. Use this value to store and retrieve the chat history between requests, enabling users to ask follow-up questions. |
 | Prompt         | String  | The question asked by the user. |
 | Context        | String  | A value provided by the client (for example a product id, file name or JSON string) that can be used to provide context to the chat completion process (for example as additional parameters to vector search) |
 
 <br/>
 
 ## Description
-To perform a chat completion, you need at least a `user prompt` (the question asked by the user). This is provided by the `Prompt` property of the `ChatCompletionRequest` object returned from the trigger (described above), and can be mapped to the `User prompt` property of an AI chat completion action, such as the [Azure AI chat completion](../../actions/azure-ai/chat-completion.md) action. You should also enable the user to have a conversation (asking follow-up questions) with the chat model by managing the chat history. For this purpose, use the `SessionId` to store and retrive the chat history between requests.
+To perform a chat completion, you need at least a `user prompt` (the question asked by the user). This is provided by the `Prompt` property of the `ChatCompletionRequest` object returned from the trigger (described above), and can be mapped to the `User prompt` property of an AI chat completion action, such as the [Azure AI chat completion](../../actions/azure-ai/chat-completion.md) action. You should also enable the user to have a conversation (asking follow-up questions) with the chat model by managing the chat history. For this purpose, use the `SessionId` to store and retrieve the chat history between requests.
 
-Note that a Flow (and consequently a chat completion) is stateless, so to enable users to have a conversation with an AI by asking follow-up questions, you need to provide the chat history to the chat model along with the user prompt and any other data for _every_ request. For this purpose, you can use the `SessionId` provided by the `ChatCompletionRequest` object to store and retrive the chat history from a database between requests. The SessionId is provided by the chat client, allowing users to start new sessions when they want.
+Note that a Flow (and consequently a chat completion) is stateless, so to enable users to have a conversation with an AI by asking follow-up questions, you need to provide the chat history to the chat model along with the user prompt and any other data for _every_ request. For this purpose, you can use the `SessionId` provided by the `ChatCompletionRequest` object to store and retrieve the chat history from a database between requests. The SessionId is provided by the chat client, allowing users to start new sessions when they want.

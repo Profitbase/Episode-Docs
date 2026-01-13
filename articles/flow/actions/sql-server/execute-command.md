@@ -16,7 +16,7 @@ Executes a SQL command in a SQL Server database, and returns the number of rows 
 |--------------|-----------------|---------------------------------------------------|
 | Title           |  Optional | The title or name of the command.        |
 | Connection      | Required | The [SQL Server Connection](./connection.md).         |
-| Dynamic connection | Optional | Use this option of you needs to use a connection from the [Create Connection](./create-connection.md) action. |
+| Dynamic connection | Optional | Use this option if you need to use a connection created by the [Create Connection](./create-connection.md) action. |
 | SQL expression and parameters   | Required      | The command to execute along with any parameters. |
 | Result variable name | Optional  | The name of the variable that will contain the number of rows affected.  |
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.  |
