@@ -6,6 +6,7 @@ This package provide the financial planning function and can be organized in pro
 
 ## EPM Planner Versions
 
+- [EPM Planner 6.2.0](#epm-planner-620) - Released 2026.01.16
 - [EPM Planner 6.1.1](#epm-planner-611) - Released 2025.10.29
 - [EPM Planner 6.1.0](#epm-planner-610) - Released 2025.06.05
 - [EPM Planner 6.0.3](#epm-planner-603) - Released 2025.02.17
@@ -22,6 +23,17 @@ This package provide the financial planning function and can be organized in pro
 **Changes:**
 
 **Fixes:**
+
+## EPM Planner 6.2.0
+
+**Changes:**
+
+- Planning can be done at local (companny) accounts (#2118). The change involves the account module, supporting details reports as well as finance reports. A separate dimension (AccountSrc) is used for local accounts using the group account mapping setup (Dimensions workbook) as source.
+- Right click menu "Distribute Value" is enabled in the input grid for the account, personnel, driver based  and capex modules (#1683). "Distribute Value" allows the user to select a range of input cells and then distribute a total across the selected cells by invoking this function which is found on mouse right-click in the input grid. Various distrution methods can be used such as relative add, uniform add, etc.
+- Deviation columns can now be formatted with a style for Positive and/or Negative values (#1649). Styles can be set either to red text or green text. This change affects Plan overview, the Account module and the Driver based module. Different styles can be associated with say a positive value, an example being the Plan overview where a deviation column for one reportline can get a green text if positive whereas another can get a red text if positive.
+- Driver based module:
+	- 
+- 
 
 ## EPM Planner 6.1.1
 
