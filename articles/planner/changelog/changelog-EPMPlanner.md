@@ -52,6 +52,18 @@ This package provide the financial planning function and can be organized in pro
 - Plan proposal: new import options (#1961, #2063)
 	- Driver based: Option to insert new rows (true | false, default true) and to update historical data (true | false, default true)
  	- Account: Option to insert new rows (true | false, default true).
+ 
+**Fixes:**
+- Input modules:
+	- insert new row context menu inactive outside of grid area (#2085)
+ 	- transactions not deleted when deleting ALL input rows for a department (#2137)
+- Driver based: Social cost rules (employer tax, etc.) may not apply correctly for periods after the first plan periode when auto transactions targeting departments with differing rates are used (#2093)
+- Account module:
+	- supporting details page not sensitive to selected report line (#2091)
+ 	- deviation in periodic values displayed when useing multi-department input while using distribution keys generated from historical data (#2113)
+  	- duplicate transactions when setting an explicit account context (Account filter set to explicit account) while triggering auto transactions targeting account(s) outside the set account context (#2147)
+- Personnel module: long term FTE data not deleted even though all rows (year 1 and 2) are deleted (#2110)
+- Plan overview: changes in account mapping is not updated (#2115)
 
 ## EPM Planner 6.1.1
 
