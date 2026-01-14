@@ -1,293 +1,323 @@
-# Profitbase Planner – Customization Patterns
+## Customization Patterns
 
-**Document:** Customization Patterns  
-**Company:** Profitbase AS  
-**Product:** Profitbase Planner  
-**Version:** 2.3  
-**Date:** 08.09.2025  
+Profitbase
 
----
+08.09.2025
 
-## Change log
-
-| Date | Version | Changed by | Changes |
-|---|---|---|---|
-| 31.10.2021 | 0.1 | TN | Initial content |
-| 30.11.2021 | 0.2 | TN | Extended for Planner 5.1 |
-| 27.10.2022 | 0.3 | TN | Revised for Planner 5.2.4 |
-| 01.06.2023 | 0.4 | TN | Revised for Planner 5.4.0 (Patterns 3, 7, 8) |
-| 09.12.2024 | 2.0 | TN | Updated for Planner 6.x |
-| 08.09.2025 | 2.3 | TN | Revised for Planner 6.1.1 |
+Version 2.3
 
 ---
 
-## 1. Abstract, intended audience and pre-requisites
+## Abstract, intended audience and pre-requisites
 
-This document describes common **customization patterns and best practices** for extending Profitbase Planner.
+This document aims to describe common customization patterns and best practices for making custom extensions to Profitbase Planner and is aimed at implementation partners.
 
-It is intended for **implementation partners** and assumes:
-- Strong knowledge of the Profitbase InVision Designer
-- Understanding of Planner’s data model and versioning
-
-Customizations should always live in **separate packages**, never inside the core EPM Planner package.
-
----
-
-## 2. Overview of customization patterns
+An in-depth knowledge of the Profitbase InVision designer is required.
 
 The following patterns are described:
 
-1. Create a new Planner input module extension (fully integrated)
-2. Create a new module following Planner versioning only
-3. Customize transaction pipelines  
-   - 3a. Dataflow based  
-   - 3b. Flow based
-4. Customize assumptions (lookup) measures for Driver Based module
-5. Use a custom target store for data import
-6. Use a custom source for data export
-7. Add custom button or row context menu to standard modules
-8. Import transactional plan data from an external source
-9. Register custom module with Operation Manager
-10. Link processing of Driver Based models using dynamic department mapping
+Pattern 1 - Create a new Planner input module extension that will integrate with Planner’s Plan Overview, produce financial transactions of its own, and follow Planner’s versioning.
+
+Pattern 2 - Create a new module that will follow Planner’s versioning only (subset of 1) and be present in the hamburger menu.
+
+Pattern 3 – Customize the transaction pipeline.
+
+Pattern 4 – Customize assumptions (lookup) measures for the Driver Based module.
+
+Pattern 5 – Use a custom target store for data import.
+
+Pattern 6 – Use a custom source for data export.
+
+Pattern 7 – Add custom button and/or custom row context menu in standard Planner modules.
+
+Pattern 8 – Import transactional plan data from an external source.
+
+Pattern 9 – Register custom module with the Operation Manager.
+
+Pattern 10 – Link processing of driver based models using a dynamic map of from/to departments.
 
 ---
 
-## 3. EPM Planner Custom Extension Template
+## EPM Planner Custom Extension Template
 
-A starter template exists for patterns **1** and **2**.
+This is a starter template that can should be used to rapidly set up a custom extension either for pattern 1 or 2 above.
 
-Key points:
-- Must be deployed to a solution already containing EPM Planner
-- Not self-contained
-- Uses hierarchical filters referencing Planner dimensions
+The custom extension template must be deployed to a solution in which the EPM Planner package exists already.
 
-After deployment:
-- Replace dimension IDs in markup with Planner dimension content IDs
-- Re-publish workbook access
-- Preview workbook in Designer (it will not appear in menu yet)
+The custom extension package is not self-contained as its workbook uses hierarchical filters that refer to dimensions in EPM Planner.
 
----
+Once deployed, the following markup changes must therefore be done to the hierarchical filters that refer to source dimensions that reside in EPM Planner:
 
-## 4. Pattern 1 – Create a new Planner input module extension
+[IMAGE PLACEHOLDER: hierarchical filter markup]
 
-Before creating a custom module, always evaluate whether **Driver Based models** are sufficient.
+Replace the ids in yellow with the content ids for the dimensions within EPM Planner with names as underlined in red in the image above.
 
-Rules:
-- Never use Planner objects directly in custom workbooks
-- Always create custom objects referencing Planner data
-- Custom packages must coexist with Planner blueprint solution
+You will find the id by locating the dimensions and right-click and select Copy id to clipboard:
 
-### Register module extension
+[IMAGE PLACEHOLDER: copy dimension id]
 
-Registered in:
+Save the markup.
 
-```
-@Object[ModuleExtensions,setting].dbObjectName
-```
+Assign yourself access to the workbook in the custom extension package.
 
-Key fields:
-- ModuleExtensionID
-- WorkbookID (version-specific, must be updated post-deployment)
-- WorkbookName (must be unique)
-- Published flag
-- Localized names
-- Window size and positioning
+Open the workbook by previewing it from the designer as it will not appear in the menu until the package is part of a process’ content.
+
+[IMAGE PLACEHOLDER: preview workbook]
+
+There is a basic list of todos listed in the workbook:
+
+[IMAGE PLACEHOLDER: todo list]
+
+The following two chapters explain patterns 1 and 2 more in-depth.
 
 ---
 
-## Plan Overview interaction
+## Pattern 1 - Create a new Planner input module extension
 
-Planner launches custom modules using query string context:
-- DepartmentID
-- ProjectID
-- ActivityID
-- Period filter
-- ReportLineID
-- MessageBackTo
-- Back flag
+NOTE: Before creating a new custom Planner input module extension, consider carefully if one or more driver-based models make up a “good enough” solution.
 
-Custom modules must handle missing context variables gracefully.
+NOTE: Any customizations made as additions to the EPM Planner package should be contained in separate packages.
+
+NOTE: Never use Planner objects directly in custom module workbooks.
+
+---
+
+### Register new Planner input module extension
+
+A Planner input module extension comes in the form of a workbook and associated store(s) and worksheet(s).
+
+Input module extensions are registered in @Object[ModuleExtensions,setting].dbObjectName.
+
+Relevant attributes:
+
+| Column | Description |
+|------|-------------|
+| ModuleExtensionID | The id of the module extension. |
+| WorkbookID | Version specific workbook id. |
+| WorkbookName | The workbook object name. |
+| InUse | Published or not published. |
+| ModuleExtensionID_Name | Default description. |
+| ModuleExtensionID_Name_NO | Norwegian translation. |
+| ModuleExtensionID_Name_EN | English translation. |
+| WorkbookPixelHeight | Window height. |
+| WorkbookPixelWidth | Window width. |
+| WorkbookPixelLeftAdjustment | Left adjustment. |
+| WorkbookPixelTopAdjustment | Top adjustment. |
+
+Attributes in bold above are maintainable by the user.
+
+---
+
+### Plan overview interaction
+
+The Plan overview workbook will launch the module and use query string variables:
+
+DepartmentID  
+ProjectID  
+ActivityID  
+FilterChoice  
+ReportLineID  
+MessageBackTo  
+DirtyFlagRefresh  
+RefreshSummary  
+Back  
+
+NOTE: The URL may or may not contain certain variables.
+
+The relevant filter sources:
+
+Department filter: @Object[Department,dim].dbObjectName  
+Project filter: @Object[Project,dim].dbObjectName  
+Activity filter: @Object[Activity,dim].dbObjectName  
+Period filter: @Object[FctPeriodFilterSource,view].dbObjectName  
+
+Other issues to consider:
+
+IsAppReadonly()  
+
+NoAccess message text code.
 
 ---
 
 ## Create custom financial transactions
 
-Transactions are inserted into:
+Custom financial transactions are created in @Object[pbTransdataSourceCM,store].dbObjectName.
 
-```
-@Object[pbTransdataSourceCM,store].dbObjectName
-```
+| Column | Description |
+|------|-------------|
+| LegalEntityID | Legal entity id |
+| DepartmentID | Department id |
+| DepartmentID_DCD | Department context id |
+| AccountID | Account id |
+| ProductID | Product id |
+| MarketID | Market id |
+| SupplierID | Supplier id |
+| EmployeeID | Employee id |
+| ProjectID | Project id |
+| ActivityID | Activity id |
+| Dim1 | Free dimension |
+| Dim2 | Free dimension |
+| Dim3 | Free dimension |
+| Dim4 | Free dimension |
+| CPLegalEntityID | Counterparty legal entity |
+| CPDepartmentID | Counterparty department |
+| CPAccountIDOvr | Counterparty account |
+| CategoryID | Category id |
+| TextInpID | Text id |
+| Transdate | Transaction date |
+| Amount | Amount |
+| CurrencyForeignID | Currency |
+| TransTypeID | Transaction type |
+| Qty | Quantity |
+| AccTypeID | PL |
+| ModuleExtensionID | Module id |
+| SYS_OriginID | Origin id |
+| SYS_OriginColumnID | Origin column |
+| SYS_TransGeneratorID | Generator id |
+| SYS_OriginRowIdentity | Row identity |
+| SYS_DataSetID | Obsolete |
+| Financial override columns | Optional overrides |
 
-Minimum required context:
-- ModuleExtensionID
-- DepartmentID (via DepartmentID_DCD)
-
-Transactions may be:
-- Scripted manually
-- Passed through built-in transaction pipeline
-
-When scripting:
-- Explicitly delete existing slice before insert
-- Slice by ModuleExtensionID and Department
-
----
-
-## Post-version deployment actions
-
-Custom packages must handle:
-- Initialization
-- Roll-forward
-- Pure copy
-
-Controlled via package variables:
-- Profitbase_EPM_Planner_PostDeploymentAction
-- Profitbase_EPM_Planner_RollOverDelta
-- Profitbase_EPM_Planner_StoreReferenceDate
-
-WorkbookIDs must be updated to match version context.
-
----
-
-## 5. Pattern 2 – Versioned module only
-
-Subset of Pattern 1.
-
-Used when:
-- Module follows Planner versioning
-- No transaction generation required
+The built-in transaction pipeline can be used or the data can be scripted.
 
 ---
 
-## 6. Pattern 3 – Customize transaction pipelines
+## Actions to be performed post version deployment
 
-### 3a. Dataflow based (pre 6.1)
+This section is also relevant for Pattern 2.
 
-Custom PRE and POST scripts can be registered for:
-- Account
-- Personnel
-- Driver Based
-- FinanceAll pipelines
+The custom package should have its own post version deployment dataflow:
 
-Scripts must:
-- Live in custom packages
-- Use context variables
-- Handle higher-level dimension slicing
+[IMAGE PLACEHOLDER: post deployment dataflow]
 
----
+Package variables:
 
-### 3b. Flow based (6.0+)
+Profitbase_EPM_Planner_PostDeploymentAction  
+Profitbase_EPM_Planner_RollOverDelta  
+Profitbase_EPM_Planner_StoreReferenceDate  
 
-From Planner 6.1.x, pipelines are **flow-only**.
-
-Customization is done by:
-- Adding SQL actions to `Custom pre` or `Custom post` sub-flows
-- Sub-flows are upgrade-safe
-
-Built-in transaction tables should be used:
-- pbTransdataPLSourceFlow
-- pbTransdataPLSourceHRFlow
-- pbTransdataPLSourceDriverBasedFlow
+WorkbookID must be updated post deployment.
 
 ---
 
-## Social cost handling in custom pipelines
+## Pattern 2 - Create a new module that will follow Planner’s versioning only
 
-Preferred approach:
-- Store rates on source transactions
-- Let Planner render social costs dynamically
-
-Supported overrides include:
-- VacationPayPctOvr
-- EmployerTaxPctOvr
-- PensionEmployerPctOvr
+This should be a subset of pattern 1.
 
 ---
 
-## 7. Pattern 4 – Custom assumptions for Driver Based module
+## Pattern 3a – Customize the transaction pipeline and/or FinanceAll dataflow (Dataflow based)
 
-Custom assumption source can be defined by:
-- Creating a view matching `FctSalesInputAssumptions`
-- Registering it via setting `DriverBasedCustomAssumptionView`
+Transaction pipelines can be customized with PRE and POST scripts.
 
-Rules:
-- View must be stable across queries
-- PBRowIdentity must persist
-- A measure can use either standard or custom assumptions, not both
+Scripts must use context variables:
 
----
+@ModuleExtensionID  
+@DepartmentID  
+@DepartmentColumnName  
+@ActivityID  
+@ActivityColumnName  
+@ProjectID  
+@ProjectColumnName  
 
-## 8. Pattern 5 & 6 – Custom import/export sources
+Scripts should never be created in EPM Planner package.
 
-Custom targets or sources are enabled by:
-- Creating synonyms to tables or views
-- Exposing them automatically in import/export UI
+FinanceAll dataflows can also be customized.
 
----
-
-## 9. Pattern 7 – Custom buttons and row context menus
-
-Supported in:
-- Account
-- Personnel
-- Driver Based
-- Plan Overview
-
-Configured via `ModuleExtensions` settings:
-- Enable/disable
-- Target workbook
-- Optional query string parameters
-
-Context is passed automatically depending on module type.
+[IMAGE PLACEHOLDER: FinanceAll PRE script]  
+[IMAGE PLACEHOLDER: FinanceAll POST script]
 
 ---
 
-## 10. Pattern 8 – Import transactional plan data
+## Pattern 3b – Customize the transaction pipelines (flow based)
 
-Used for:
-- External plan data inclusion
-- No user input involved
+From Planner 6.1.x, pipelines are flow based.
 
-Flow:
-1. Import to Datamart target
-2. Execute Operation:
-   - Import to CM store
-   - Reload PL source
+Custom scripts must be connected to flow sub-flows:
 
-Custom transactions must include social cost rows explicitly.
+Custom pre  
+Custom post  
 
----
+[IMAGE PLACEHOLDER: flow designer]
 
-## 11. Pattern 9 – Register module with Operation Manager
+Use built-in transaction tables:
 
-Required for:
-- Scheduling operations
-- Automation
-
-Registration is done via SQL insert into:
-```
-SYN_Common_ProcessVersion
-```
+pbTransdataPLSourceFlow  
+pbTransdataPLSourceHRFlow  
+pbTransdataPLSourceDriverBasedFlow  
 
 ---
 
-## 12. Pattern 10 – Link Driver Based model processing
+## Pattern 4 – Customize assumptions (lookup) measures for the Driver Based module
 
-Available from Planner 6.1.0.
+Custom assumption views may be created.
 
-Uses:
-- ModuleExtensionLinkDepartmentMap
-- Custom PRE pipeline scripts
-- Dynamic mapping driven by user input
+View must conform strictly to the standard format.
+
+PBRowIdentity must persist across queries.
 
 ---
 
-## 13. Data architecture and best practices
+## Pattern 5 – Use a custom target store for data import
 
-Recommendations:
-- Use `pbTransdataSourceCM` for finance source data
-- Use `pbTransdataPL` for reporting
-- Use `ReportAccountByMonth` for post-processing
-- Avoid deletes outside controlled pipelines
-- Prefer views over direct table access
+---
 
-Minimize external dependencies to reduce upgrade risk.
+## Pattern 6 – Use a custom source for data export
+
+---
+
+## Pattern 7 – Add custom button/row context menu in standard Planner modules
+
+Custom buttons and menus can be configured in ModuleExtensions.
+
+[IMAGE PLACEHOLDER: custom button configuration]
+
+Context passed includes filter values and row context.
+
+---
+
+## Pattern 8 – Import transactional plan data from an external source
+
+Use pbTransdataSourceCM.
+
+Import via Data Import and Operations.
+
+Stored procedures may need recompilation.
+
+---
+
+## Pattern 9 – Register custom module with Operation Manager
+
+Example SQL command:
+
+[IMAGE PLACEHOLDER: SQL registration example]
+
+---
+
+## Pattern 10 – Link processing of driver based models using a dynamic map of from/to departments
+
+Supported from Planner 6.1.0.
+
+Custom pre script required.
+
+[IMAGE PLACEHOLDER: dynamic department map]
+
+---
+
+## Data Architecture and Extensions
+
+Profitbase Planner Architecture.pptx
+
+Recommendation summary:
+
+Use pbTransdataSourceCM for finance transactions.  
+Use pbTransdataPL for P&L presentation.  
+Use ReportAccountByMonth for postprocessing.  
+Use SYN or CPV views where possible.  
+Avoid direct table dependencies.  
+
+Be aware that this document will be updated and extended.
+
+---
+
+

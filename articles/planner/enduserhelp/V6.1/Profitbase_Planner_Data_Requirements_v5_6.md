@@ -1,254 +1,318 @@
-# Profitbase Planner – Data Requirements
+# Data Requirements
 
-**Document:** Data Requirements  
-**Company:** Profitbase AS  
-**Product:** Profitbase Planner  
-**Version:** 5.6  
-**Date:** 09.09.2025  
+Profitbase
 
----
+09.09.2025
 
-## Change log
-
-| Date | Version | Changed by | Changes |
-|---|---|---|---|
-| 22.09.2020 | 1.0 | TN | Initial version |
-| 07.10.2020 | 1.1 | TN | Update to ledger fact |
-| 15.10.2020 | 1.2 | TN | Added URL to import template |
-| 27.10.2020 | 1.3 | TN | Clarification regarding LegalEntityID and DepartmentID |
-| 04.11.2020 | 1.4 | TN | Switching from demo to customer data |
-| 11.11.2020 | 1.5 | TN | Account dimension revision |
-| 16.11.2020 | 1.6 | TN | Legal Entity and Department revisions |
-| 17.02.2021 | 1.7 | TN | Project and Activity dimensions |
-| 18.05.2021 | 2.0 | TN | Planner v5 |
-| 27.07.2021 | 2.1 | TN | Removal of demo data |
-| 14.09.2021 | 2.2 | TN | Personnel fact revised |
-| 07.08.2022 | 3.0 | TN | Planner v5.2 |
-| 23.06.2023 | 4.0 | TN | Planner v5.4.1 |
-| 20.09.2023 | 4.1 | TR | Ledger fact correction |
-| 19.01.2024 | 5.5 | TR | FiscalPeriod mandatory |
-| 09.09.2025 | 5.6 | TN | ExternalDriverBasedFact updates |
+Version 5.6
 
 ---
 
-## 1. Planner Data Requirements
+## Planner Data Requirements
 
-This document defines the **minimum and optional data requirements** for running Profitbase Planner.
+This document defines the minimum dimension, report and transaction data that is required to run the Planner solution as well as optional data required depending on the Planner functionality used.
 
-Target audience:
-- Implementation partners
-- Technical consultants
+It also describes how external data can be imported to Profitbase Planner.
 
-Planner is delivered with demo data. During implementation, demo data must be replaced with customer data.
+The intended audience of this document is implementation partners configuring the solution initially and establishing integrations with external sources. The reader is expected to be familiar with Planner capabilities and functionality.
 
----
+Planner is deployed with initial (demo-only) data that will make Planner functional upon deployment and that may act as examples for data that is required. This applies to all data described in this document.
 
-## 2. Minimum data requirements
+Planner is self-contained with respect to dimensions and some fact data in the sense that these can be input and maintained in Planner. In practice, however, some of the dimensions and ledger transaction data will typically be imported from external sources or from files.
 
-Minimum required dimensions:
-- Legal Entity
-- Department
-- Account
-- Currency
-- Time
-- Report setup
+Planner dimensions may be maintained in the “Dimensions” workbook in the “Edit dimensions” page by selecting the appropriate dimension:
 
-Required fact data:
-- Ledger fact (Actual and optional historical datasets)
-- Currency exchange rates
+[IMAGE PLACEHOLDER: Dimensions workbook]
 
----
+Editing is done directly in the hierarchy allowing for a dynamic number of levels depending on the actual need. Changes are saved using the save button.
 
-## 2.1 Legal Entity dimension (parent/child)
+Note that certain dimensions, such as Legal Entity, Department and Account has requirements with respect to properties that must have values for Planner to work.
 
-| Column | Description | Mandatory |
-|---|---|---|
-| ID | Legal entity ID (company code) | Yes |
-| Name | Legal entity name | Yes |
-| ParentID | Parent node | Optional |
-| FunctionalCurrencyID | Home currency | Yes |
-| OperationTypeID | Main or Elimination | Yes |
-| DefaultDepartmentID | Default department | Optional |
+Note also that dimension management is by default centralized to the primary dimensions.
 
-LegalEntityIDs must match general ledger data.
+Each version has its own copy of the dimensions.
 
----
+Import-from-clipboard functionality is available using the Import icon.
 
-## 2.2 Department dimension (parent/child)
+The currency exchange rates may be maintained in the “Currency Exchange Rates and Calendar” workbook:
 
-| Column | Description | Mandatory |
-|---|---|---|
-| ID | Department ID | Yes |
-| Name | Department name | Yes |
-| ParentID | Parent node | Optional |
-| LegalEntityID | Owning legal entity | Yes |
+[IMAGE PLACEHOLDER: Currency Exchange Rates workbook]
 
-DepartmentIDs must match ledger data and should not collide with LegalEntityIDs.
+Fact data may be maintained in the “Source fact data” workbook within a specific version:
+
+[IMAGE PLACEHOLDER: Source fact data workbook]
+
+Similarly, fixed assets may be maintained in the “Finance Settings” workbook within a specific version:
+
+[IMAGE PLACEHOLDER: Finance Settings workbook]
+
+File import to the standard Planner dimension and fact formats is available in “Data Import & Export” in the “File Import” page:
+
+[IMAGE PLACEHOLDER: File import page]
+
+A more generic import option is available in the “Data Import” page.
 
 ---
 
-## 2.3 Account dimension (parent/child)
+## Minimum data requirements
 
-| Column | Description | Mandatory |
-|---|---|---|
-| ID | Account ID | Yes |
-| Name | Account name | Yes |
-| ParentID | Parent node | Optional |
-| SignFactor | Transaction sign | Yes |
-| AccTypeID | PL or BAL | Yes |
-| AllowInput | Allow planning input | Yes |
+The following are the minimum data requirements and limits the use of input modules to the Account, CapEx and Loan modules only.
 
-Planner requires a **single corporate account dimension**.
+### Required dimensions
 
----
+Legal Entity dimension – the formal company structure.
 
-## 2.4 Report setup
+Department dimension – the structure within each Legal Entity used for providing plan input and accounting transactions.
 
-Reports map:
-- Account ranges, or
-- Calculations across report lines
+Account dimension – the structure used to determine the type of transactions relative to a finance fiscal regime.
 
-### INPUT report
-- Mandatory
-- Entry point for all planning
-- Each account must appear once unless split by dimension
+Planner requires a common account dimension for all companies.
 
----
+The recommended import format for dimensions is the parent/child format.
 
-## 2.5 Sign factor
+Report Setup – setup of one or more reports containing report lines mapping to ranges of accounts.
 
-Applied at:
-- Account level
-- Report line level
+Currency dimension – defines the currencies used.
 
-Used to normalize debit/credit conventions.
+Time dimension – contains calendar with days, months and years.
+
+### Required transaction data
+
+Ledger fact – Actual and other historical finance transactions from the general ledger.
+
+Ledger fact data is required in order for opening balances to be generated.
+
+Ledger fact data is typically imported from an external source.
+
+As an alternative, a finance trial balance with opening balance per fiscal year can be used.
+
+Currency Exchange rates – historic rates should match the ERP system.
 
 ---
 
-## 2.6 Ledger fact
+## Legal Entity Dimension
 
-Supported formats:
-- Trial balance + OB (periodic)
-- Transaction format
+### Parent/child format (recommended)
 
-### Mandatory transaction columns
-
-| Column | Description |
-|---|---|
-| AccountID | Account |
-| SYS_DatasetID | Actual / Budget / Forecast |
-| LegalEntityID | Legal entity |
-| DepartmentID | Department |
-| TransTypeID | Opening or regular |
-| AmountFunctional | Amount |
-| CurrencyFunctionalID | Currency |
-| Transdate | Date |
-| AccTypeID | PL / BAL |
-| FiscalPeriod | YYYYMM |
-
-Optional dimensions:
-Product, Market, Supplier, Employee, Project, Activity, Dim1–Dim4, Counterparty.
+| # | Column name | Description | Mandatory / Optional | Comment |
+|---|------------|-------------|----------------------|---------|
+| 1 | ID | ID for the Legal entity | M | Primary Key |
+| 2 | Name | Name for the Legal entity | M | |
+| 3 | ParentID | ID for the parent node | O | NULL places at root |
+| 4 | FunctionalCurrencyID | Home currency | M | |
+| 5 | OperationTypeID | Main or Elimination | M | |
+| 6 | DefaultDepartmentID | Default department | O | |
 
 ---
 
-## 2.7 Currency exchange rates
+## Department Dimension
 
-- Historical rates imported via operation
-- Future rates maintained in Planner
+### Parent/child format (recommended)
 
----
-
-## 2.8 Time dimension
-
-- Generated automatically from Finance Settings
-- Re-generated on roll forward
-
----
-
-## 3. Optional data requirements
-
-Used when enabling:
-- Personnel module
-- Driver Based module
-- CapEx / Fixed Assets
-
-Optional dimensions:
-Product, Market, Supplier, Employee, Project, Activity, AssetGroup, Dim1–Dim4
+| # | Column name | Description | Mandatory / Optional | Comment |
+|---|------------|-------------|----------------------|---------|
+| 1 | ID | ID for the Department | M | Primary Key |
+| 2 | Name | Name for the Department | M | |
+| 3 | ParentID | ID for parent node | O | |
+| 4 | LegalEntityID | Legal entity id | M | |
 
 ---
 
-## 3.2 Personnel fact
+## Account Dimension
 
-Stores:
-- FTE
-- HC
-- Monthly salary
-- Optional payroll components
+### Parent/child format (recommended)
 
-Used by Personnel module.
+| # | Column name | Description | Mandatory / Optional | Comment |
+|---|------------|-------------|----------------------|---------|
+| 1 | ID | Account ID | M | Primary Key |
+| 2 | Name | Account name | M | |
+| 3 | ParentID | Parent account | O | |
+| 4 | SignFactor | Transaction sign | M | |
+| 5 | AccTypeID | PL or BAL | M | |
+| 6 | AllowInput | Allow planning input | M | |
 
----
-
-## 3.3 Driver based fact
-
-Stores historical values for driver-based measures.
-
-Mandatory:
-- DepartmentID
-- ProductID
-- MarketID
-- MeasureID
-- Value
-- Year, Month
-
-Optional:
-EmployeeID, ProjectID, ActivityID, Dim1–Dim4, Attr1–Attr2.
+Planner requires a common group account dimension.
 
 ---
 
-## 3.4 Fixed assets
+## Account dimension hierarchy
 
-Maintained in Finance Settings or imported from external source.
+The hierarchy is used for finance settings, not reporting.
 
----
-
-## 4. Integration
-
-Integration methods:
-- File Import (CSV)
-- Data Import (SQL / Blob)
-
-Use **SYN_Datamart_*** synonyms only.
+The default hierarchy consists of three levels: L1, L2 and L3.
 
 ---
 
-## 5. Switching from demo to customer data
+## Report setup
 
-Steps:
-1. Empty demo data (never in production)
-2. Import customer dimensions and facts
-3. Create new version
+Reports are defined in the Report Setup workbook.
 
----
+Reports either map to account ranges or calculate across report lines.
 
-## 6. Data quality audit
+Ranges are comma-separated.
 
-Planner provides:
-- Validation on import
-- Audit report with severity:
-  - Error
-  - Warning
-  - Information
-
-Audit should return zero rows before go-live.
+Formulae use arithmetic operations between ReportLineIDs.
 
 ---
 
-## 7. Legacy fixed wide formats
+## The INPUT report
 
-Supported for:
-- Legal Entity
-- Department
-- Account
+Used for the Plan Overview workbook and module launching.
 
-**Not recommended**. Parent/child format should always be used.
+An INPUT report must always be present.
+
+---
+
+## Sign factor
+
+Account sign factor switches the sign of historical and input data.
+
+Report line sign factor controls presentation sign.
+
+---
+
+## Ledger fact – Actual and historical datasets
+
+Ledger fact can be imported directly or via trial balance format.
+
+---
+
+## Finance trial balance and OB (periodic format)
+
+| # | Column name | Description | Mandatory / Optional |
+|---|------------|-------------|----------------------|
+| 1 | LegalEntityID | Legal entity id | M |
+| 2 | DepartmentID | Department id | M |
+| 3 | AccountID | Account id | M |
+| 4 | AccTypeID | PL or BAL | M |
+| 5 | DatasetID | Actual/Budget/Forecast | M |
+| 6 | FiscalYearNo | Fiscal year | M |
+| 7 | Measure | Amount or Qty | M |
+| 8 | RowIsYTD | YTD or periodic | M |
+| 9 | CurrencyID | Currency | O |
+| 10 | OB | Opening balance | O |
+| 11 | P01-P12 | Period values | O |
+
+---
+
+## Ledger fact (transaction format)
+
+Mandatory columns include:
+
+AccountID  
+SYS_DatasetID  
+LegalEntityID  
+DepartmentID  
+TransTypeID  
+CurrencyFunctionalID  
+AmountFunctional  
+Transdate  
+AccTypeID  
+FiscalPeriod  
+
+Optional dimensional columns may be included.
+
+---
+
+## Currency Exchange Rates
+
+Historical rates are imported by default from Profitbase sources.
+
+Future rates are managed in Planner.
+
+[IMAGE PLACEHOLDER: Exchange rate tables]
+
+---
+
+## Time dimension
+
+The time dimension is generated in the Finance Settings workbook.
+
+Planning horizon is selected from predefined options.
+
+---
+
+## Optional data requirements
+
+Relevant for Personnel, Driver based, CapEx and Fixed Assets modules.
+
+Optional dimensions include Product, Market, Project, Activity, Supplier, Asset Group, Dim1–Dim4 and Employee.
+
+---
+
+## Personnel fact
+
+Contains FTE, HC and salary data.
+
+Multiple optional attributes may be included.
+
+[IMAGE PLACEHOLDER: Personnel fact input]
+
+---
+
+## Driver based fact
+
+Maintained in the Source Fact Data workbook.
+
+Supports measures such as Sales Quantity.
+
+[IMAGE PLACEHOLDER: Driver based fact]
+
+---
+
+## Fixed assets
+
+Maintained in the Finance Settings workbook.
+
+[IMAGE PLACEHOLDER: Fixed assets]
+
+---
+
+## Integration
+
+Integration is done via the Data Import & Export workbook.
+
+Database synonyms prefixed with SYN_Datamart_ must be used.
+
+---
+
+## Switching from demo to customer’s data
+
+Includes emptying demo data and importing customer data.
+
+Operations must never be executed in production systems.
+
+---
+
+## Data quality audit
+
+Planner provides QA reports for identifying errors and warnings.
+
+[IMAGE PLACEHOLDER: Data quality audit]
+
+---
+
+## Dimension legacy format (fixed wide)
+
+Included for legacy purposes only.
+
+### Legal Entity dimension (fixed wide)
+
+[LEGACY TABLE PRESERVED AS IN SOURCE]
+
+---
+
+### Department dimension (fixed wide)
+
+[LEGACY TABLE PRESERVED AS IN SOURCE]
+
+---
+
+### Account dimension (fixed wide)
+
+[LEGACY TABLE PRESERVED AS IN SOURCE]
+
+---
+
+Page 13 of 13  
+Profitbase Planner Data Requirements

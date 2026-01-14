@@ -1,384 +1,367 @@
-# Profitbase Planner – Personnel module
+# Personnel module
 
-**Document:** Configuration and Operation – Personnel module  
-**Company:** Profitbase AS  
-**Product:** Profitbase Planner  
-**Version:** 3.5  
-**Date:** 26.05.2025  
+Profitbase
 
----
+26.05.2025
 
-## Change log
-
-| Date | Version | Changed by | Changes |
-|---|---|---|---|
-| 29.05.2020 | 0.0 | TN | Initial content |
-| 12.10.2020 | 1.0 | TN | Revised |
-| 19.05.2021 | 2.0 | TN | Revised for Planner v5 |
-| 07.07.2022 | 3.0 | TN | Revised for Planner v5.2 |
-| 05.12.2022 | 3.1 | TN | Revised for Planner v5.2.4 |
-| 24.02.2023 | 3.2 | TN | Revised for Planner v5.4.0 |
-| 23.06.2023 | 3.4 | TN | Revised for Planner v5.4.1 |
-| 26.05.2025 | 3.5 | TN | Revised for Planner 6.1.0 |
+Version 3.5
 
 ---
 
-## 1. Abstract, intended audience and pre-requisites
+## Abstract, intended audience and pre-requisites
 
-The Personnel module is an operational input module used to plan FTEs (Full Time Equivalents), HCs (Headcounts), and payroll-related costs.
+The Profitbase Planner Configuration and Operation series consist of several documents dealing with the configuration and operation of individual Planner modules and functions.
 
-It transforms user input into P&L transactions for:
-- Salary
-- Vacation pay
-- Employer payroll tax
-- Pension cost
-- Other personnel-related expenses
+Planner modules are operational input modules that contributors to the plan processes use to prepare the Profit & Loss (P&L) of their respective areas of responsibility. Different modules will typically cover parts of the P&L such as sales, personnel, cost, etc.
 
-Target audience:
-- Implementation partners
-- Solution administrators
+The modules are accessed from the Plan overview workbook of a given version and the input provided by the contributors are transformed into P&L transactions and fed back to the Plan overview workbook resulting in a P&L work-in-progress overview.
 
-Pre-requisites:
-- Profitbase Planner deployed
-- User access to the solution
+The intended audience of this document is implementation partners configuring the solution initially and solution administrators responsible for operating it thereafter.
+
+This document assumes that a Profitbase Planner solution has been deployed and that access to this solution is given to the reader.
 
 ---
 
-## 2. Common functionality
+## Common functionality
 
-- Changes are **not saved automatically**
-- **Save** commits changes
-- **Refresh** discards unsaved changes
-- **Ctrl + Z** undoes last unsaved change
+Changes made to input sheets are not saved automatically. To save changes, click the “Save” button. The “Save” button will remain disabled until a change has been made.
 
-### Row operations
-- Insert row
-- Insert row below
-- Insert copy of row
-- Delete row
+To undo all unsaved changes, click the “Refresh” button.
 
-Row deletion is only finalized after saving.
+To undo the last of a series of unsaved changes, click the Ctrl and Z keys simultaneously.
 
-### Ranked input
+To insert new rows to an input sheet, right-click in the sheet and select one of the available options:
 
-Ranked input allows selecting higher-level dimension members:
-- Higher rows = less specific
-- Lower rows = more specific
+- Insert row  
+- Insert row below  
+- Insert copy of row  
 
-Used across settings and configuration tables.
+To delete a row from an input sheet, right-click the row in question and select:
+
+- Delete row  
+
+Inserting and deleting rows can be controlled as part of the configuration, see Publish and name module, control row context right-click menu options.
+
+Please note, that although the row is no longer visible in the input sheet, the change must be committed using the “Save” button or undone using the “Refresh” button.
+
+In input sheets, editable fields are distinguished from non-editable fields by fill color, editable fields have by default a white fill color.
+
+In setting tables, a so-called ranked input concept is often used for the dimensional context. Ranked input allows for a high-level selection of dimensional nodes and gives the opportunity to alter the rank or specificity between rows.
+
+A ranked input cell can be set through the ranked input selector by clicking the cell value (cell will display 3 dots if no value is set):
+
+[IMAGE PLACEHOLDER: ranked input selector cell]
+
+The ranked input selector will display the dimensional hierarchy and allows for the selection of a high-level dimensional node. The selection of a high-level node implies that the setting applies to all sub-ordinate nodes.
+
+Select node and click “OK”.
+
+Click “Cancel” to leave the selector without selecting.
+
+In a table containing multiple rows, the rank or specificity of individual rows can be altered by moving the row up (decrease specificity) or down (increase specificity) by right-click the row in question and selecting:
+
+- Move up  
+- Move down  
+
+The less specific the setting is, row should be high up in the table. The more specific the setting is, the further down in the table the row should reside.
 
 ---
 
-## 3. Principle of operation
+## Principle of operation
+
+The Personnel module provides an input sheet for contributors to plan their FTEs (Full Time Equivalents) and HCs (Headcounts) and associated cost and from it creates P&L transactions for payroll related expenses including associated social cost such as vacation pay, employer tax, pension cost and so on.
+
+---
 
 ### Driver-based
 
-The Personnel module is driver-based.
+The Personnel module uses a driver-based principle in which FTEs (Full Time Equivalents) or HCs (Headcount) are the drivers subject to the configuration used.
 
-Drivers:
-- FTE
-- HC (Headcount)
+The FTE/HC is maintained in the FTE or HC pages respectively:
 
-All cost input is provided **per FTE or HC per month**.
+[IMAGE PLACEHOLDER: FTE and HC pages]
 
-Monthly P&L calculation:
+Any user input is thus provided per FTE/HC per month.
 
-```
-Amount = Input value × FTE/HC × Periodic spread key
-```
+This further implies that periodic spread keys are used (as opposed to distribution keys) to lay out the per-FTE/HC-per-month input values over time:
 
----
+[IMAGE PLACEHOLDER: periodic spread keys]
 
-## Plan by individual and/or groups
+An input value translates to a Profit & Loss amount for a given month as:
 
-Core dimensions:
-- Department
-- Employee
+[Input amount] * [FTE/HC for the month] * [Periodic spread key for month]
 
-The Employee dimension may contain:
-- Individuals
-- Groups
-- Mixed hierarchies
+In the case of April 2020 for employee Lisa:
 
-Using group levels is recommended to reduce configuration complexity.
+4000 * 1 * 1 = 4000
+
+Click the icon to view the P&L transactions generated from the row in question.
+
+[IMAGE PLACEHOLDER: P&L transactions icon]
 
 ---
 
-## Salary calculation and distribution
+### Plan by individual and/or groups
 
-Salary logic:
-- Base monthly salary defined at plan start
-- Annual raise defined by percentage and month
-- Raise may be centrally controlled or locally overridden
+The planning dimensionality used comprise of the Department and Employee dimensions and optionally dimensions as outlined in Select additional dimensionality.
 
-Salary is distributed using the **Annual Salary spread key**.
+Note that the Employee dimension may be set up with individuals or groups or a combination of the two:
 
-Vacation pay handling:
-- Vacation months use spread key values between 0 and 1
-- Optional **Reduction vacation pay factor** applies when vacation does not equal one full month
+[IMAGE PLACEHOLDER: employee hierarchy]
 
----
+As Personnel-related settings are differentiated by the Employee dimension hierarchy, it is advisable to use appropriate group levels in the dimensional hierarchy.
 
-## Dimensionality
-
-Mandatory:
-- Department
-- Employee
-
-Optional:
-- Project
-- Activity
-- Counterparty
-- Dim1–Dim4
+For details on dimension maintenance and personnel source data, please refer to Data management.
 
 ---
 
-## Attributes
+### Salary calculation and distribution
 
-- Up to **2 attributes** per row
-- Attributes do not affect row uniqueness
-- Used for:
-  - Assumption lookups
-  - Auto transactions
-  - Categorization
+Salary is always driven by FTE.
 
----
+Specific to the salary calculation, is the annual salary increase and for which month in the year it occurs.
 
-## Change dimensionality of an input row
+The Base monthly salary is the (average) monthly salary at the start of the plan and will be automatically updated when rolling over to a new year.
 
-If enabled, row dimensionality can be changed using **Change dimensionality** from the row context menu.
+The salary raise – percentage and raise month - may be set centrally with the option of local adjustment or not:
 
----
+[IMAGE PLACEHOLDER: salary raise settings]
 
-## Planning horizon
+These settings may be differentiated using more specific Department levels (and optionally employee).
 
-- Defined globally in **Finance Settings**
-- Applies to all input modules
-- Long-term planning supports year-total input only
+The input Base monthly salary is spread, taking into account the raise settings, based on the Annual Salary spread key:
 
-Long-term totals are distributed using next-year distribution patterns.
+[IMAGE PLACEHOLDER: annual salary spread key]
 
----
+If vacation pay is relevant, the Annual Salary key should reflect this by setting the key for the vacation pay month(s) to a value between 0 and 1.
 
-## Long-term planning
+For situations in which the vacation does not reflect exactly one month, the “Reduction vac. Pay factor” in the “General Settings” may be used.
 
-For years beyond next year:
-- Input is done at department level
-- Required values:
-  - FTE or HC
-  - Expected annual raise
+Salary for vacation months is calculated as:
+
+[FTE July] * [Base Mth. Salary] * (100 + [Raise 2020])/100 * [1- Annual Salary Spread key July 2020] * [Reduction vac. Pay factor] * -1
+
+Example employee Lisa:
+
+1 * 30000 * ((100 + 2)/100) * (1 – 0) * 0.1363 * -1 = -4171
 
 ---
 
-## Plan roll forward actions
+### Dimensionality
 
-### Source data updates
+The basic dimensionality of the personnel module is department and employee.
 
-On roll forward:
-- New department/employee combinations are added automatically
-- FTE, HC, and salary initialized from source fact data
+Extra dimensionality, Project, Activity, Counterpart and 4 free dimensions Dim1, Dim2, Dim3 or Dim4 may be added as needed.
 
-Existing rows may be updated if configured.
+Please refer to Select additional dimensionality for details.
 
 ---
 
-### Calculations on roll forward
+### Attributes
 
-- New months inherit last known FTE/HC
-- Salary and raise values shift forward by year
-- Long-term values are adjusted accordingly
+Attributes define additional information associated with a row such as employment type.
 
----
+Attributes are optional. Up to two attributes may be defined.
 
-## 4. Module configuration
-
-Configured in **Input Settings and Administration → Setup**.
+Please refer to Select and name input columns, set the driver for details.
 
 ---
 
-## Publish and name module
+### Change dimensionality of an input row
 
-Configurable options:
-- Module name and translations
-- Published flag
-- Row context menu permissions
-- Multi-department input
-- Input row limits
-- Auto-load and auto-submit behavior
+The current dimensionality of an existing input row may be changed by right-clicking the row in one of the dimensional columns and selecting “Change dimensionality”.
+
+[IMAGE PLACEHOLDER: change dimensionality popup]
+
+---
+
+### Planning horizon
+
+The planning time horizon is controlled in the Finance Settings workbook:
+
+[IMAGE PLACEHOLDER: Finance Settings planning horizon]
+
+This time horizon applies to all input modules.
+
+Long-term planning allows for a year-total input only.
+
+---
+
+### Long-term planning
+
+For long-term planning, input is done at department level:
+
+- FTE for given year  
+- Expected annual salary raise for given year  
+
+The detailed plan for next year is used as a basis for scaling the long-term plan.
+
+---
+
+### Plan roll forward actions
+
+The input module will be updated with source data when rolling forward.
+
+New dimensional combinations will automatically be processed into the input module.
+
+---
+
+### Source data
+
+Personnel source fact data must be kept current.
+
+[IMAGE PLACEHOLDER: source fact data]
+
+---
+
+### Calculations
+
+For rollover during a year, FTE and HC values are carried forward.
+
+For rollover to new year:
+
+- Base monthly salary is updated  
+- Raise values are shifted  
+- Long-term values are adjusted  
+
+---
+
+## Module configuration
+
+### Publish and name module, control row context right-click menu options
+
+[IMAGE PLACEHOLDER: input modules setup]
+
+| Column | Description |
+|------|-------------|
+| Input module | Name of input module |
+| Published | Published or not |
+| Description | Default name |
+| New | Allow insert |
+| Delete | Allow delete |
+| Delete (act. = 0) | Delete only if no actuals |
+| Ch. dim. | Allow change dimensionality |
+| Ch. dim. (act. = 0) | Change dim only if no actuals |
+| Multi-dept. input | Allow higher-level input |
+| Input row limit | Max row limit |
+| Auto load on filter chg. | Auto load data |
+| Auto submit data | Auto submit |
 
 ---
 
 ## Select additional dimensionality
 
-Optional dimensions can be enabled and configured as:
-- Visible
-- Mandatory
-- Filter-enabled
-- Default filter values
-
-Special note:
-- Counterparty dimension only creates counter-postings in Sales (IC) and Loan (IC) engines.
+[IMAGE PLACEHOLDER: select additional dimensionality table]
 
 ---
 
 ## Select and name input columns, set the driver
 
-Configurable per column:
-- Driver (FTE or HC)
-- Visibility and editability
-- Eligibility for:
-  - Account mapping
-  - Auto transactions
-  - Central or local spread keys
-  - Payroll overrides
-  - Source fact data updates
-
-Columns contributing to P&L **must be mapped to accounts**.
+[IMAGE PLACEHOLDER: input column setup]
 
 ---
 
 ## Translations
 
-Translations are maintained per column and UI label.
+Translations are added in the Translations tab.
 
 ---
 
 ## Attach module to input report
 
-The module can be attached to one or more **Plan Overview** report lines using:
-- Ranked department selection
-- Report line ID
-- Input module
+[IMAGE PLACEHOLDER: attach module to report]
 
 ---
 
 ## Define input column to account mapping
 
-Mapping dimensions:
-- Department
-- Employee
-- Column name
-
-Any column producing P&L transactions requires an account mapping.
+[IMAGE PLACEHOLDER: account mapping]
 
 ---
 
 ## Period filters
 
-Period filters are configured globally and control:
-- Visible filters
-- Default selection
-- Sorting
+[IMAGE PLACEHOLDER: period filters table]
 
 ---
 
-## 5. Settings
+## Settings
 
-Settings are maintained in **Input Settings and Administration**.
+### Payroll settings
 
----
-
-## Payroll settings
-
-Payroll settings define rates and rules for social costs.
+[IMAGE PLACEHOLDER: payroll settings]
 
 ---
 
-## Personnel: Accounts
+### Personnel: Accounts
 
-Defines target accounts for:
-- Employer tax
-- Pension
-- Vacation pay
-- Employer tax on vacation pay
-
----
-
-## Employer Payroll Tax %
-
-Defines employer payroll tax rates by:
-- Legal entity
-- Department
-- Dataset
-- Account
-- Effective date
+| Column | Description |
+|------|-------------|
+| Legal entity | Ranked input |
+| Dataset | Ranked input |
+| Account | Ranked input |
+| Employee | Ranked input |
+| EP Tax | Target account |
+| Pension | Target account |
+| Vacation Pay | Target account |
+| EPTOnVPay | Target account |
+| Comments | Optional |
 
 ---
 
-## Vacation Pay %
+### Employer Payroll Tax %
 
-Defines vacation pay rates using the same structure.
-
----
-
-## Pension Employer %
-
-Defines employer pension contribution rates.
+[IMAGE PLACEHOLDER: employer tax table]
 
 ---
 
-## Pension Employee %
+### Vacation Pay %
 
-Defines employee pension contribution rates.
-
----
-
-## Spread keys
-
-Spread keys distribute per-FTE/HC values across months.
-
-Defined by:
-- Department
-- Employee
-- Column name
-
-Avoid overly specific keys.
+[IMAGE PLACEHOLDER: vacation pay table]
 
 ---
 
-## General settings
+### Pension Employer %
 
-Defines:
-- Raise month
-- Raise percentages (TY, NY, NY+1)
-- Whether raises are locally editable
-- Reduction vacation pay factor
+[IMAGE PLACEHOLDER: pension employer table]
 
 ---
 
-## Auto transactions (optional)
+### Pension Employee %
 
-Rule-based additional postings.
-
-Supports:
-- Conditions
-- Operators
-- Attribute filtering
-- Optional target department override
+[IMAGE PLACEHOLDER: pension employee table]
 
 ---
 
-## 6. Data management
+### Spread keys
+
+[IMAGE PLACEHOLDER: spread keys table]
+
+---
+
+### General settings
+
+[IMAGE PLACEHOLDER: general settings]
+
+---
+
+### Auto transactions (optional)
+
+[IMAGE PLACEHOLDER: auto transactions table]
+
+---
+
+## Data management
 
 ### Employee dimension
 
-- Maintained in the Dimensions workbook
-- Centrally managed with version-specific publishing
+[IMAGE PLACEHOLDER: employee dimension]
 
 ---
 
 ### Fact source data
 
-Source fact data contains:
-- Current FTE
-- Current HC
-- Current monthly salary
-- Optional additional cost columns
-- Optional payroll override values
-- Attribute values
+[IMAGE PLACEHOLDER: personnel fact source]
 
-New combinations are added automatically on plan roll forward.
+---
 
-Manual import supports:
-- Adding new rows only
-- Updating existing rows (if enabled)

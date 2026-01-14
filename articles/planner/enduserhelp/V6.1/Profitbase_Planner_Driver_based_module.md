@@ -1,403 +1,437 @@
-# Profitbase Planner – Driver based module
+# Driver based module
 
-**Document:** Configuration and Operation – Driver based module  
-**Company:** Profitbase AS  
-**Product:** Profitbase Planner  
-**Version:** 3.6  
-**Date:** 09.09.2025  
+Profitbase
 
----
+09.09.2025
 
-## Change log
-
-| Date | Version | Changed by | Changes |
-|---|---|---|---|
-| 29.05.2020 | 0.0 | TN | Initial content |
-| 12.10.2020 | 1.0 | TN | Revised |
-| 19.05.2021 | 2.0 | TN | Revised for Planner v5 |
-| 11.08.2021 | 2.1 | TN | Added deviation columns |
-| 04.10.2021 | 2.2 | TN | Revised for v5 final |
-| 09.12.2021 | 2.3 | TN | Revised for v5.1 |
-| 07.07.2022 | 3.0 | TN | Revised for v5.2 |
-| 05.12.2022 | 3.1 | TN | Revised for v5.2.4 |
-| 24.02.2023 | 3.2 | TN | Revised for v5.4.0 |
-| 24.06.2023 | 3.4 | TN | Revised for v5.4.1 |
-| 14.05.2025 | 3.5 | TN | Revised for v6.1.0 |
-| 09.09.2025 | 3.6 | TN | Revised for v6.1.1 |
+Version 3.6
 
 ---
 
-## 1. Abstract, intended audience and pre-requisites
+## Abstract, intended audience and pre-requisites
 
-This document describes configuration and operation of the **Driver based module**, the most flexible and generic planning module in Profitbase Planner.
+The Profitbase Planner Configuration and Operation series consists of several documents dealing with the configuration and operation of individual Planner modules and functions.
 
-The module is used to model driver-based logic where one or more measures act as drivers and other measures depend on them through calculations, assumptions, or direct input.
+Planner modules are operational input modules that contributors to the plan processes use to prepare the Profit & Loss (P&L) of their respective areas of responsibility. Different modules will typically cover parts of the P&L such as sales, personnel, cost, etc.
 
-Target audience:
-- Implementation partners
-- Solution administrators
+The modules are accessed from the Plan overview workbook of a given version and the input provided by the contributors are transformed into P&L transactions and fed back to the Plan overview workbook resulting in a P&L work-in-progress overview.
 
-Pre-requisites:
-- Profitbase Planner deployed
-- User access to the solution
+The intended audience of this document is implementation partners configuring the solution initially and solution administrators responsible for operating it thereafter.
+
+This document assumes that a Profitbase Planner solution has been deployed and that access to this solution is given to the reader.
 
 ---
 
-## 2. Common functionality
+## Common functionality
 
-- Changes are **not saved automatically**
-- **Save** commits changes
-- **Refresh** discards unsaved changes
-- **Ctrl + Z** undoes last unsaved change
+Changes made to input sheets are not saved automatically. To save changes, click the “Save” button. The “Save” button will remain disabled until a change has been made.
 
-### Row operations
-- Insert row
-- Insert row below
-- Insert copy of row
-- Delete row
+To undo all unsaved changes, click the “Refresh” button.
 
-Editable fields are shown with white background.
+To undo the last of a series of unsaved changes, click the Ctrl and Z keys simultaneously.
 
-### Ranked input
+To insert new rows to an input sheet, right-click in the sheet and select one of the available options:
 
-Ranked input allows selecting higher-level dimension members:
-- Higher rows = less specific
-- Lower rows = more specific
+- Insert row  
+- Insert row below  
+- Insert copy of row  
 
-This concept is used throughout configuration tables.
+To delete a row from an input sheet, right-click the row in question and select:
+
+- Delete row  
+
+Inserting and deleting rows can be controlled as part of the configuration, see Control row context menu options (right-click).
+
+Please note, that although the row is no longer visible in the input sheet, the change must be committed using the “Save” button or undone using the “Refresh” button.
+
+In input sheets, editable fields are distinguished from non-editable fields by fill color, editable fields have by default a white fill color.
+
+In setting tables, a so-called ranked input concept is often used for the dimensional context. Ranked input allows for a high-level selection of dimensional nodes and gives the opportunity to alter the rank or specificity between rows.
+
+A ranked input cell can be set through the ranked input selector by clicking the cell value (cell will display 3 dots if no value is set):
+
+[IMAGE PLACEHOLDER: ranked input selector cell]
+
+The ranked input selector will display the dimensional hierarchy and allows for the selection of a high-level dimensional node. The selection of a high-level node implies that the setting applies to all sub-ordinate nodes.
+
+Select node and click “OK”.
+
+Click “Cancel” to leave the selector without selecting.
+
+In a table containing multiple rows, the rank or specificity of individual rows can be altered by moving the row up (decrease specificity) or down (increase specificity) by right-click the row in question and selecting:
+
+- Move up  
+- Move down  
+
+The less specific the setting is, row should be high up in the table. The more specific the setting is, the further down in the table the row should reside.
 
 ---
 
-## 3. Principle of operation
+## Principle of operation
 
 ### Driver based models
 
-A driver based model consists of:
-- One or more **driver measures**
-- Additional measures that:
-  - Take direct input
-  - Lookup assumptions
-  - Are calculated from other measures
+The driver-based module uses as the name suggests a driver-based principle.
 
-Measures render as rows in the model.
+Multiple models consisting of measures may be defined. Common to all models is the definition of one of the measures as the driving measure for that model.
 
-Icons indicate measure behavior:
-- Distribution
-- Assumption lookup
-- Calculation (auto or manual)
+[IMAGE PLACEHOLDER: driver measure overview]
 
----
+Examples of driving measures may be Sales quantity, Sales volume, FTE (Full Time Equivalents) and so on.
 
-### Distribution logic
+Click the icon to view the P&L transactions generated from the row in question.
 
-Year-total input is automatically distributed to months using:
-1. User-entered monthly values
-2. Central distribution keys
-3. Even distribution
+Additional measures make up the detail model and may take direct input, be lookups to assumptions and calculations of other measures.
 
-Distribution logic applies consistently across modules.
+Click the icon for the row in question to view the detailed model.
 
----
+Measures will render as rows of the model, for example:
 
-### Dimensionality
+[IMAGE PLACEHOLDER: model measures rows]
 
-Mandatory:
-- Department
+For details on how to set up a model, refer to Define models.
 
-Default (normally mandatory):
-- Product
-- Market
+Measures to which a distribution function is associated is identified by the icon.
 
-Optional:
-- Employee
-- Supplier
-- Project
-- Activity
-- Counterparty
-- Dim1–Dim4
+Note that it is possible to click the icon to view the distribution and any default distribution if it exists.
 
-Dimensions can be excluded per model.
+[IMAGE PLACEHOLDER: distribution icon popup]
 
----
+A year-total input is automatically spread to the plan months of that particular year. The total is spread according to the monthly distribution function tied to the product and market as follows:
 
-### Historical references
+- If a specific monthly input has been made by the user, the distribution inherent in the monthly values is used as a distribution key.
+- If not, then if a central distribution key is tied to the account, this distribution will be used.
+- If none of the above applies, the total is spread evenly over the plan months.
 
-- Last 12 months of actuals included by default
-- Up to 5 historical reference columns supported
+Please refer to Distribution keys for details on distribution keys.
 
----
+Measures that are lookup to assumptions are identified by the icon.
 
-### Planning horizon and roll forward
+Note that it is possible to click the icon to view the assumption values and to override the assumption values and reset to the default if overridden if the model allows.
 
-- Planning horizon is defined globally in Finance Settings
-- Long-term planning supports year-total input only
-- On roll forward:
-  - New source combinations are added
-  - Long-term year totals are distributed using next-year patterns
+[IMAGE PLACEHOLDER: assumptions lookup]
+
+An overridden assumption is marked by a blue left border indication.
+
+Please refer to Assumptions for details on assumptions.
+
+Measures that are calculations are identified by the icon.
+
+Note that it is possible to click the icon to reveal the formula and a formula description if set:
+
+[IMAGE PLACEHOLDER: calculation formula popup]
+
+A formula that is not executed automatically but requires the click on the “Recalculate” button is marked with a red left border indication.
+
+Please refer to Define calculations for details on calculations.
 
 ---
 
-## 4. Model configuration
+## Dimensionality
 
-Configured in **Driver based modelling workbook → Models**.
+The basic dimensionality of the driver based module is department, product, and market.
 
-Multiple input models can coexist and be published independently.
+Extra dimensionality may be added:
+
+- Employee  
+- Supplier  
+- Project  
+- Activity  
+- Counterpart  
+- Dimensions Dim1 to Dim4  
+
+For details on defining dimensionality, refer to Define dimensionality.
+
+---
+
+## Historical references
+
+The models are preset with the last 12 months of actuals.
+
+In addition to the above, up to 5 historic reference columns may be added as needed.
+
+For details on defining historical reference columns, refer to Define historical reference columns.
+
+---
+
+## Planning horizon
+
+The planning time horizon is controlled in the Finance Settings workbook:
+
+[IMAGE PLACEHOLDER: Finance Settings planning horizon]
+
+This time horizon applies to all input modules.
+
+Long-term planning allows for a year-total input only. When saving the plan, the long-term year-totals are automatically distributed to months using the distribution that is relevant to the next year’s plan for the corresponding dimensionality.
+
+Note that there is also a period filter setting that you may want to consider if you change the plan horizon.
+
+---
+
+## Plan roll forward actions
+
+The input module will be updated with source data when rolling forward.
+
+Any new combinations that exist in the driver source fact data will automatically be processed into the input module and their last 12 months actuals updated.
+
+---
+
+## Model configuration
+
+Driver based models are configured in the “Driver based modelling” workbook and the “Models” page.
+
+[IMAGE PLACEHOLDER: Driver based modelling workbook]
+
+Multiple input models can be created and published to users.
 
 ---
 
 ## Input models
 
-### Create a model
-- Click **New**
-- Define model ID and name
-- Optionally copy structure and/or data from an existing model
+### Create a new input model
 
-### Process a model
-- Regenerates P&L transactions
-- Required after structural or mapping changes
+To create a new model, click the “New …” button.
 
-### Delete a model
-Options:
-- Delete data only
-- Delete model and settings
+In the dialogue, enter a model id and a model default name.
 
-### Publish a model
-- Published models are editable by users
-- Unpublished models are admin-only
+[IMAGE PLACEHOLDER: new model dialog]
+
+If relevant, select an existing model to copy from and select whether to copy only the model and settings or the input data as well.
+
+Click “Confirm”.
 
 ---
 
-## Edit input model properties
+### Process an input model
 
-Each model defines a list of measures.
+Processing a model will re-generate any P&L transactions from the model.
 
-Key properties:
-- Driver
-- Input
-- Lookup
-- Calculation
-- Rollup behavior
-- Period aggregation (sum or average)
-- Formatting and display order
+Processing is done by clicking the “Process” button.
 
-Measures not intended to generate transactions can be excluded.
+---
+
+### Delete an existing input model
+
+An input model can be deleted by clicking the “Delete …” button.
+
+Options include:
+
+- Delete data  
+- Delete model and settings  
+
+---
+
+### Publish an input model
+
+To publish a model, check the “Published” checkbox and click the “Save” button.
+
+A model that is not published will not be editable by users.
+
+---
+
+### Edit input model properties
+
+The input models are defined in the following table:
+
+| Column | Description |
+|------|-------------|
+| Measure | MeasureID. Mandatory. |
+| Description | Default description. |
+| Driver | Measure is the driver. |
+| Input | Open for input. |
+| Lookup | Lookup assumption. |
+| Calc | Calculated measure. |
+| Calc. order | Calculation order override. |
+| Set | Calculation setup link. |
+| Total across periods | Sum or Average. |
+| Rollup | Sum or Average. |
+| Format | Number display format. |
+| Style | Row style. |
+| Sorting | Display and calc order. |
+| Excl. from trans. | Exclude from transactions. |
 
 ---
 
 ## Define calculations
 
-Two calculation types:
+Two types of calculations exist:
 
-### Cell calculations
-- Simple arithmetic (+ − * /)
-- Executed automatically
-- Formula syntax: `[MeasureID]`
+- Cell-calculations  
+- Button-click calculations  
 
-### Button-click calculations
-- SQL-based
-- Executed manually
-- Support period offsets
+Button-click calculations require the “Recalculate” button.
 
-Manual calculations are marked visually.
+[IMAGE PLACEHOLDER: calculation dialog]
 
 ---
 
 ## Define dimensionality
 
-For each dimension:
-- Visibility
-- Mandatory selection
-- Filter usage
-- Default filter values
-- Source data grouping
+The dimensionality of a model is defined in the following table:
 
-Dimension members can be excluded per model.
+| Column | Description |
+|------|-------------|
+| DimensionColumn | Dimension column id. |
+| Visible | Visible in input sheet. |
+| Mandatory | Mandatory selection. |
+| Visible as filter | Visible as slicer. |
+| Default filter value | Default value. |
+| Group source data | Group source data. |
+| Sorting | Optional sorting. |
+| Comment | Optional comment. |
 
 ---
 
 ## Define attributes
 
-- Up to 2 attributes per model
-- Attributes are not part of row uniqueness
-- Used for assumption lookups and auto transactions
+Up to two attributes can be used in any one driver based model.
 
-Each attribute supports:
-- Visibility
-- Editability
-- Mandatory flag
-- Update from source data
+Attributes are not part of the uniqueness of an input row.
+
+[IMAGE PLACEHOLDER: attributes setup]
 
 ---
 
-## Historical reference columns
+## Define historical reference columns
 
-Available:
-- Historic1–Historic5
+The historic reference columns of a model is defined in the following table:
 
-Each defines:
-- Dataset
-- Date range or relative date expression
-- Visibility and naming
-
----
-
-## Deviation columns
-
-Available:
-- Deviation1–Deviation2
-
-Deviation formulas can reference:
-- Historic columns
-- YTD, TY, NY, NYPlus1–NYPlus5
-- L12M, N12M
-
-Example:
-```
-[NY] - [TY]
-```
+| Column | Description |
+|------|-------------|
+| Column Name | Historic1–Historic5 |
+| DatasetID | Dataset origin |
+| From Date | Start date |
+| To Date | End date |
+| Use relative dates | Relative dates |
+| Description | Default name |
+| Visible | Visible in input |
 
 ---
 
-## Measures
+## Define deviation columns
 
-Measures are defined centrally.
+Deviation columns are defined in the following table:
 
-Properties include:
-- Assumption eligibility
-- Currency handling
-- Historical fact source
-- Plan proposal source
+| Column | Description |
+|------|-------------|
+| Column Name | Deviation1, Deviation2 |
+| Formula | Calculation formula |
+| Visible drivers | Visible in drivers |
+| Visible details | Visible in details |
 
-Measures can source history from:
-- Manual input
-- External driver facts
-- General ledger
-- Actualized plan data
+---
+
+## Select / unselect optional columns
+
+Optional columns related to actuals and plan periods can be selected per model.
+
+---
+
+## Translations
+
+Translations are added in the Translations tab of the Input Settings and Administration workbook.
+
+---
+
+## Define measures
+
+Measures are defined in the “Measure” page.
+
+[IMAGE PLACEHOLDER: measures table]
 
 ---
 
 ## Attach module to input report
 
-Modules are attached to:
-- Plan Overview report lines
-
-Configuration uses:
-- Ranked department selection
-- Report line ID
-- Input module
+The module can be attached to one or more report lines in the Plan Overview report.
 
 ---
 
-## Period filters and navigation
+## Period filters
 
-- Period filters are global
-- Default filter and visibility configurable
-- Drivers view and details view supported
-- Optional direct navigation to details
+Period filters are configured in the Input Settings and Administration workbook.
 
 ---
 
-## Access and input control
+## Control row context menu options
 
-- Limit access per model
-- Control row context menu options
-- Enable multi-department input
-- Set row limits
-- Control auto-load and auto-submit behavior
+Row context menu options such as New, Delete and Change dimensionality can be controlled.
 
 ---
 
-## 5. Settings
+## Multi-department input
+
+Allows input at higher-level department nodes.
+
+---
+
+## Auto submit data
+
+Controls whether Save automatically submits data.
+
+---
+
+## Settings
 
 ### Assumptions
 
-- Defined per measure
-- Shared across models
-- Dimension-aware
-- Support long-term values
+Assumptions are lookup values maintained in the Assumptions tab.
 
 ---
 
 ### Distribution keys
 
-Defined by:
-- Department
-- Product
-- Market
-- Activity
-- Project
-- Measure
-
-Avoid overly specific keys.
+Distribution keys are maintained in the Output tab.
 
 ---
 
 ### Measure to account mapping
 
-Any measure generating P&L **must be mapped to an account**.
+Measures that generate P&L transactions must be mapped to accounts.
 
 ---
 
-### Auto transactions (optional)
+### Auto transactions
 
-Rule-based additional postings.
-
-Supports:
-- Conditions
-- Operators
-- Optional target department override
+Auto-transactions trigger additional transactions based on user input.
 
 ---
 
-## Advanced configuration
+## Advanced – engine interface
 
-### Engine interface
-
-Allows:
-- Mapping measures to specific transaction columns
-- Overriding default amount mapping
-- Excluding measures from financial engines
+Advanced mapping of measures to transaction columns.
 
 ---
 
-### Linked models
+## Exclude measures from engine
 
-Allows chaining models so that processing one triggers others.
-
-Supports:
-- Execution order
-- Same or mapped department context
+Measures can be excluded from financial engines.
 
 ---
 
-## 6. Data management
+## Advanced – linked models
+
+Models can be linked so that one model triggers processing of another.
+
+---
+
+## Data management
 
 ### Dimensions
-- Centrally managed
-- Version-specific publishing supported
+
+Dimensions are maintained in the Dimensions workbook.
 
 ---
 
 ### Source fact data
 
-Used for:
-- Last 12 months actuals
-- Historical reference columns
-
-Mandatory fields:
-- Department
-- Product
-- Market
-- Year
-- Month
-- Value (home currency)
-
-New combinations are added automatically on roll forward.
+Historical data is maintained in the Source fact data workbook.
 
 ---
 
-## Using Personnel fact source
+### Using Personnel fact source
 
-Driver-based models can:
-- Use Personnel fact as plan proposal source
-- Control whether input values are updated from source data
+Personnel fact source may be used for plan proposals.
+
+---
+
