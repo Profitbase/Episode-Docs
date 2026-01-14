@@ -28,24 +28,30 @@ This package provide the financial planning function and can be organized in pro
 
 **Changes:**
 
-- Planning can be done at local (companny) accounts (#2118). The change involves the account module, supporting details reports as well as finance reports. A separate dimension (AccountSrc) is used for local accounts using the group account mapping setup (Dimensions workbook) as source.
+- Planning can be done on local (company) accounts as an option (#2118). The change involves the account module, supporting details reports as well as finance reports. A separate dimension (AccountSrc) is used for local accounts using the existing group account mapping setup (Dimensions workbook) as source.
 - Right click menu "Distribute Value" is enabled in the input grid for the account, personnel, driver based  and capex modules (#1683). "Distribute Value" allows the user to select a range of input cells and then distribute a total across the selected cells by invoking this function which is found on mouse right-click in the input grid. Various distrution methods can be used such as relative add, uniform add, etc.
 - Deviation columns can now be formatted with a style for Positive and/or Negative values (#1649). Styles can be set either to red text or green text. This change affects Plan overview, the Account module and the Driver based module. Different styles can be associated with say a positive value, an example being the Plan overview where a deviation column for one reportline can get a green text if positive whereas another can get a red text if positive.
 - Dimensional columns in input modules Account, Personnel and Driver based can be re-ordered (left to right) if the default ordering is not appropriate. This ordering will also affect the sort order with which input data is rendered when loading data. (#2145)
 - Driver based module and Driver based modelling:
 	- Visible attribute introduced for measures (#2090)
-	- Attribute values can only be altered in the input grid while a specific driver measure is selected or the model is configured to have only one driver measure (#2067)
+	- Attribute values can only be altered in the input grid on the driver page while a specific driver measure is selected or the model is configured to have only one driver measure (#2067)
 	- Attributes can be used when defining distribution rules and account mapping (#2066)
- 	- Calculated measures can be visible on the driver page so long as they are on-button click (sql) calculations
+ 	- Calculated measures can be made visible on the driver page so long as they are on-button click (sql) calculations. A Recalculate button will be visible on the driver page.
     - YTD historical period columns can be hidden when not relevant
-    - A measure's "Total across periods" setting can be none (blank) if no year totals should be calculated nor distribution of year totals to periods.
-    - The Apply button in driver based modelling is removed as this is done automatically when saving changes to the model
+    - A measure's "Total across periods" setting can be set to none (blank) if no year totals should be calculated nor any year totals be distributed to periods.
+    - The Apply button in driver based modelling is removed as this is done automatically when saving changes to the model. In the Process.. dialogue, an option is available to update historical data.
     - An "Auto refresh after save" option is introduced in driver based modelling.
-    - An auto refresh is done after a click on the Recalculate button
+    - An auto refresh is now automatically done after a click on the Recalculate button (driver- and/or details-page)
     - Calculated measures (on-button click / sql) can now reference time through:
     	- Testing on YYYY (year), Q (quarter no.), MM (month no.), for example Case When MM > 6 Then... This also implies that there are certain reserved measure names: YYYY, Q, Qseq, MM
-    	- Making use of directives that accumulates part of the calculation over multiple periods, for example using @SumPrevQuarter (sum of previous quarter), @SumYear (sum of current year). A calculation may be of the form [Measure1] * @SumPrevQuarterStart([Measure2] + [Measure3])@SumPrevQuarterEnd where the part of the calculation enclosed between @SumPrevQuarterStart and @SumPrevQuarterEnd is calculated over the previous quarter relative to the context of [Measure1].
-- Version deployment of Planner: Planner specific dialogue reworked with parameter interdependency and validation (e.g. Action "Roll forward from source version" and the number of months) making version definition more intuitive. ("2007, #2080)
+    	- Making use of directives that accumulates part of the calculation over multiple periods, for example using @SumPrevQuarter (sum of previous quarter), @SumYear (sum of current year), etc.. A calculation may be of the form [Measure1] * @SumPrevQuarterStart([Measure2] + [Measure3])@SumPrevQuarterEnd where the part of the calculation enclosed between @SumPrevQuarterStart and @SumPrevQuarterEnd is calculated over the previous quarter relative to the context of [Measure1].
+- Account module: additional dimensionality available (#2056). Dimensions Product, Market, Supplier and Employee can be used in the module when appropriate.
+- Version deployment of Planner:
+	- Planner specific version dialogue reworked with parameter interdependency and validation (e.g. Action "Roll forward from source version" and the number of months) making version definition more intuitive and less prone to inconsistent definitions. (#2007, #2080)
+	- When deploying a planner version using the "Start fresh at new start date.." action, any existing loan input data will not be removed, i.e. left as is in the source version used (#2121). This is a change of behaviour.
+- Plan proposal: new import options (#1961, #2063)
+	- Driver based: Option to insert new rows (true | false, default true) and to update historical data (true | false, default true)
+ 	- Account: Option to insert new rows (true | false, default true).
 
 ## EPM Planner 6.1.1
 
