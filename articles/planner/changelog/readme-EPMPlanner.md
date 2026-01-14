@@ -2,12 +2,28 @@
 
 ## Upgrade notes
 
+- [EPM Planner 6.2.0](#epm-planner-620)
 - [EPM Planner 6.1.1](#epm-planner-611)
 - [EPM Planner 6.1.0](#epm-planner-610)
 - [EPM Planner 6.0.1](#epm-planner-601)
 - [EPM Planner 6.0.0](#epm-planner-600)
 - [EPM Planner 5.5.0](#epm-planner-550)
 - [EPM Planner 5.4.1](#epm-planner-541)
+
+## EPM Planner 6.2.0
+Supports upgrade to Planner 6.2.0 from Planner 5.5.0 or newer versions (see note below).
+
+When upgrading to the next version after 6.2.0, upgrading from versions older than 5.5.1 will no longer be supported. It is therefore strongly recommended to keep your Planner version as up to date as possible. 
+
+Furthermore, switching to flow-based transaction pipelines is currently mandatory and is done automatically as part of the upgrade process. However, the flow pipelines must be executed manually post upgrade in situations where the solution was not activated for flow pipelines prior to the upgrade.
+
+Requirements: Profitbase InVision platform version 2025.7 AND Profitbase Flow 1.11.
+
+**NOTE:** 	The solution you want to upgrade MUST be connected to Flow BEFORE you upgrade, contact Profitbase to make sure that that is the case or how to connect.
+
+**Involves packages:**
+
+EPM Planner (Package upgraded to: 6.2.0)
 
 ## EPM Planner 6.1.1
 
