@@ -6,9 +6,6 @@ You can also name the modules, control their availability to end-users and how t
 
 Plan overview workbook (**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5 or later)<br/>
 
-or<br/>
-
-Budget and Forecast workbooks (**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x)<br/>
 <br/>
 
 ![](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/InputSettingsSetup.JPG)
@@ -79,7 +76,15 @@ Short description of the individual setting.<br/>
 
 <br/>
 
-**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 6.1 or later
+**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 6.2 or later 
+
+> [Configure the Account module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.2/Planner%20Account%20module.pdf)<br/>
+> [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.2/Planner%20Personnel%20module.pdf)<br/>
+> [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.2/Planner%20Driver%20based%20module.pdf)<br/>
+> [Configure the CapEx module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20CapEx%20module.pdf)<br/>
+> [Configure the Loan module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Loan%20module.pdf)<br/>
+
+**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 6.1 
 
 > [Configure the Account module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Account%20module.pdf)<br/>
 > [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Personnel%20module.pdf)<br/>
@@ -87,48 +92,6 @@ Short description of the individual setting.<br/>
 > [Configure the CapEx module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20CapEx%20module.pdf)<br/>
 > [Configure the Loan module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Loan%20module.pdf)<br/>
 
-**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.4 or later
-
-> [Configure the Account module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.4/Planner%20Account%20module.pdf)<br/>
-> [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.4/Planner%20Personnel%20module.pdf)<br/>
-> [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.4/Planner%20Driver%20based%20module.pdf)<br/>
-> [Configure the CapEx module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.4/Planner%20CapEx%20module.pdf)<br/>
-> [Configure the Loan module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.4/Planner%20Loan%20module.pdf)<br/>
-
-**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.2.4 or later
-
-> [Configure the Account module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2.4/Planner%20Account%20module.pdf)<br/>
-> [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2.4/Planner%20Personnel%20module.pdf)<br/>
-> [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2.4/Planner%20Driver%20based%20module.pdf)<br/>
-> [Configure the CapEx module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2.4/Planner%20CapEx%20module.pdf)<br/>
-> [Configure the Loan module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2.4/Planner%20Loan%20module.pdf)<br/>
-
-**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.2
-
-> [Configure the Account module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2/Planner%20Account%20module.pdf)<br/>
-> [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2/Planner%20Personnel%20module.pdf)<br/>
-> [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2/Planner%20Driver%20based%20module.pdf)<br/>
-> [Configure the CapEx module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2/Planner%20CapEx%20module.pdf)<br/>
-> [Configure the Loan module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2/Planner%20Loan%20module.pdf)<br/>
-
-**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5
-
-> [Configure the Account module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/v5/Planner%20Account%20module.pdf)<br/>
-> [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/v5/Planner%20Personnel%20module.pdf)<br/>
-
-Note that the Driver based, Cap Ex and Loan modules have their individual setup workbooks.
-
-> [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/v5/Planner%20Sales%20Forecast%20module.pdf)<br/>
-> [Configure the CapEx module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/v5/Planner%20CapEx%20module.pdf)<br/>
-> [Configure the Loan module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/v5/Planner%20Loan%20module.pdf)<br/>
-
-**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x
-
-> [Configure the Account module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/Planner%20Account%20module.pdf)<br/>
-> [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/Planner%20Personnel%20module.pdf)<br/>
-> [Configure the Sales by GM module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/Planner%20Sales%20By%20GM%20module.pdf)<br/>
-
-Note that the Sales forecast, CapEx and Loan modules have separate setup workbooks.
 
 > [Configure the Sales forecast module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/Planner%20Sales%20Forecast%20module.pdf)<br/>
 > [Configure the CapEx module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/Planner%20CapEx%20module.pdf)<br/>
