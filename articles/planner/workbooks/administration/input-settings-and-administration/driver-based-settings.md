@@ -13,6 +13,7 @@ Please refer to the module document in the "How to's" section below for details.
 ## How to`s
 
 <br/>
+
 **Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 6.2 or later
 -  [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.2/Planner%20Driver%20based%20module.pdf)<br/>
 
