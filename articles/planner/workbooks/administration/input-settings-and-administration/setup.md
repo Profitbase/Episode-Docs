@@ -91,8 +91,3 @@ Short description of the individual setting.<br/>
 > [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Driver%20based%20module.pdf)<br/>
 > [Configure the CapEx module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20CapEx%20module.pdf)<br/>
 > [Configure the Loan module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Loan%20module.pdf)<br/>
-
-
-> [Configure the Sales forecast module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/Planner%20Sales%20Forecast%20module.pdf)<br/>
-> [Configure the CapEx module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/Planner%20CapEx%20module.pdf)<br/>
-> [Configure the Loan module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/Planner%20Loan%20module.pdf)<br/>
