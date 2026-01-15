@@ -20,12 +20,14 @@ Furthermore, switching to flow-based transaction pipelines is currently mandator
 Requirements: Profitbase InVision platform version 2025.7 AND Profitbase Flow 1.11.
 
 **NOTE:** 	
-	- There is an ongoing process to migrate data flows to flows (data flows will be deprecated and replaced with flows). If you have used Planner dataflows in custom logic, be aware that the following data flows will no longer be available from the version preceding Planner 6.2.0:
+
+There is an ongoing process to migrate data flows to flows (data flows will be deprecated and replaced with flows). If you have used Planner dataflows in custom logic, be aware that the following data flows will no longer be available from the version preceding Planner 6.2.0:
 		- FinanceAllBaseline -> replace with 'FinanceAllBaselineFlow'
 		- FctAccInputPipeline -> replace with 'Account pipeline' (flow)
  		- FctSalaryInputPipeline -> replace with 'Salary pipeline' (flow)
 		- FctSalesInputPipeline -> replace with 'Driver based pipeline' (flow)
- 	- A number of InVision objects used pre-flow has been removed in this version, for example transaction tables and views used pre-flow. If you have custom logic, make sure to do a 'Update dependency Registry' analysis (InVision designer) to check whether any of your references to Planner are no longer valid. Contact Profitbase if you need assistance.
+		
+ A number of InVision objects used pre-flow has been removed in this version, for example transaction tables and views used pre-flow. If you have custom logic, make sure to do a 'Update dependency Registry' analysis (InVision designer) to check whether any of your references to Planner are no longer valid. Contact Profitbase if you need assistance.
  
 **NOTE:** 	The solution you want to upgrade MUST be connected to Flow BEFORE you upgrade, contact Profitbase to make sure that that is the case or how to connect.
 
