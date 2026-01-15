@@ -15,31 +15,16 @@ This is the workbook to use for entering source fact data for the Personnel and 
 
 <br/>
 
-**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.4 or later
+**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 6.2 or later
 
--  [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.4/Planner%20Personnel%20module.pdf)<br/>
--  [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.4/Planner%20Driver%20based%20module.pdf)<br/>
--  [Planner Data Requirements](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.4/Planner%20Data%20Requirements.pdf)<br/>
+-  [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.2/Planner%20Personnel%20module.pdf)<br/>
+-  [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.2/Planner%20Driver%20based%20module.pdf)<br/>
+-  [Planner Data Requirements](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Data%20Requirements.pdf)<br/>
+
+**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 6.1
+
+-  [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Personnel%20module.pdf)<br/>
+-  [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Driver%20based%20module.pdf)<br/>
+-  [Planner Data Requirements](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Data%20Requirements.pdf)<br/>
 <br/>
 
-**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.2 or later
-
--  [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2/Planner%20Personnel%20module.pdf)<br/>
--  [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2/Planner%20Driver%20based%20module.pdf)<br/>
--  [Planner Data Requirements](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2/Planner%20Data%20Requirements.pdf)<br/>
-<br/>
-
-**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.0 or 5.1
-
--  [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/v5/Planner%20Personnel%20module.pdf)<br/>
--  [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/v5/Planner%20Sales%20Forecast%20module.pdf)<br/>
--  [Planner Data Requirements](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/v5/Planner%20Data%20Requirements.pdf)<br/>
--  [Planner Data Requirements - import template](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/v5/Planner%20Data%20Requirements%20Template.xlsx)<br/>
-<br/>
-
-**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x
--  [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/Planner%20Personnel%20module.pdf)<br/>
--  [Configure the Sales forecast module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/Planner%20Sales%20Forecast%20module.pdf)<br/>
--  [Planner Data Requirements](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/Planner%20Data%20Requirements.pdf)<br/>
--  [Planner Data Requirements - import template](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/Planner%20Data%20Requirements%20Template.xlsx)<br/>
-<br/>
