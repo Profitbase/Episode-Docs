@@ -16,30 +16,18 @@ This workbook deals with topics such as:<br/>
 -  [Models](driver-based-modelling/models.md)<br/>
 -  [Measures](driver-based-modelling/measure.md)<br/>
 
-**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.0 or 5.1
--  [Dimension data](driver-based-modelling/dimension-data.md)<br/>
--  [Measure facts (driver)](driver-based-modelling/measure-facts.md)<br/>
-
 <br/>
 
 ## How to`s
 
 <br/>
 
-**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.4 or later
+**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 6.2 or later
 
--  [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.4/Planner%20Driver%20based%20module.pdf)<br/>
+-  [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.2/Planner%20Driver%20based%20module.pdf)<br/>
 
-**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.2.4 or later
+**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 6.1
 
--  [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2.4/Planner%20Driver%20based%20module.pdf)<br/>
-
-**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.2 
-
--  [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.2/Planner%20Driver%20based%20module.pdf)<br/>
-<br/>
-
-**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.0 or 5.1
--  [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/v5/Planner%20Driver%20based%20module.pdf)<br/>
+-  [Configure the Driver based module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Driver%20based%20module.pdf)<br/>
 
 <br/>
