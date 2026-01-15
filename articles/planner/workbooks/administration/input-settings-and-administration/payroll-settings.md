@@ -12,14 +12,12 @@ Please refer to the relevant module document in the "How to's" section below for
 
 <br/>
 
-**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5.4 or later
+**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 6.2 or later
 
--  [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V5.4/Planner%20Personnel%20module.pdf)<br/>
+-  [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.2/Planner%20Personnel%20module.pdf)<br/>
 
-**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 5 or later
+**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 6.1
 
--  [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/v5/Planner%20Personnel%20module.pdf)<br/>
+-  [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/V6.1/Planner%20Personnel%20module.pdf)<br/>
 
-**Applies to:** ![img](https://profitbasedocs.blob.core.windows.net/icons/yes-icon.png) Planner 4.x
 
-> [Configure the Personnel module](https://profitbasedocs.blob.core.windows.net/enduserhelp/files/Planner%20Personnel%20module.pdf)<br/>
