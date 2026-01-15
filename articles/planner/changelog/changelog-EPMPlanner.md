@@ -26,6 +26,10 @@ This package provide the financial planning function and can be organized in pro
 
 ## EPM Planner 6.2.0
 
+**Breaking Changes:**
+
+- Historical reference columns that use another version as source (as opposed to Actuals), will now return not only plandata but also historical data prior to the cut-off date (#1827). This scenario has often been resolved by using deviation column to add a historical reference column containing actuals and a historical column containing the plan data. This is a change of behaviour and a potential breaking change.
+
 **Changes:**
 
 - Planning can be done on local (company) accounts as an option (#2118). The change involves the account module, supporting details reports as well as finance reports. A separate dimension (AccountSrc) is used for local accounts using the existing group account mapping setup (Dimensions workbook) as source.
@@ -43,7 +47,7 @@ This package provide the financial planning function and can be organized in pro
     - An "Auto refresh after save" option is introduced in driver based modelling.
     - An auto refresh is now automatically done after a click on the Recalculate button (driver- and/or details-page)
     - Calculated measures (on-button click / sql) can now reference time through:
-    	- Testing on YYYY (year), Q (quarter no.), MM (month no.), for example Case When MM > 6 Then... This also implies that there are certain reserved measure names: YYYY, Q, Qseq, MM
+    	- Testing on YYYY (year), Q (quarter no.), MM (month no.), for example Case When MM > 6 Then... This also implies that there are certain reserved measure names: YYYY, Q, Qseq, MM. The token ##TY## can be used for the first plan year and will automatically be resolved. For example Case when YYYY = ##TY## Then... is resolved to Case When YYYY = 2026 Then... in a planner version with start date in 2026.
     	- Making use of directives that accumulates part of the calculation over multiple periods, for example using @SumPrevQuarter (sum of previous quarter), @SumYear (sum of current year), etc.. A calculation may be of the form [Measure1] * @SumPrevQuarterStart([Measure2] + [Measure3])@SumPrevQuarterEnd where the part of the calculation enclosed between @SumPrevQuarterStart and @SumPrevQuarterEnd is calculated over the previous quarter relative to the context of [Measure1].
 - Account module: additional dimensionality available (#2056). Dimensions Product, Market, Supplier and Employee can be used in the module when appropriate.
 - Version deployment of Planner:
@@ -52,7 +56,7 @@ This package provide the financial planning function and can be organized in pro
 - Plan proposal: new import options (#1961, #2063)
 	- Driver based: Option to insert new rows (true | false, default true) and to update historical data (true | false, default true)
  	- Account: Option to insert new rows (true | false, default true).
- 
+  
 **Fixes:**
 - Input modules:
 	- insert new row context menu inactive outside of grid area (#2085)
