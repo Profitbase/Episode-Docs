@@ -6,7 +6,7 @@ Profitbase
 
 Version 3.6
 
----
+
 
 ## Abstract, intended audience and pre-requisites
 
@@ -18,7 +18,7 @@ This document assumes that a Profitbase Planner solution has been deployed and t
 
 The CapEx module is included as a standard Profitbase Planner module.
 
----
+
 
 ## Common functionality
 
@@ -48,7 +48,7 @@ In setting tables, a so-called ranked input concept is often used for the dimens
 
 A ranked input cell can be set through the ranked input selector by clicking the cell value (cell will display 3 dots if no value is set):
 
-[IMAGE PLACEHOLDER: ranked input selector cell]
+![capExModule6_1_1](../../../../images/enduserhelp/capExModule6_1_1.png)
 
 The ranked input selector will display the dimensional hierarchy and allows for the selection of a high-level dimensional node. The selection of a high-level node implies that the setting applies to all sub-ordinate nodes.
 
@@ -63,7 +63,7 @@ In a table containing multiple rows, the rank or specificity of individual rows 
 
 The less specific the setting is, row should be high up in the table. The more specific the setting is, the further down in the table the row should reside.
 
----
+
 
 ## Principle of operation
 
@@ -73,17 +73,17 @@ The CapEx module provides an input sheet for contributors to plan investments an
 
 Investments are input by individual year by selecting the year in question from the filter dropdown list of years:
 
-[IMAGE PLACEHOLDER: year selection filter]
+![capExModule6_1_2](../../../../images/enduserhelp/capExModule6_1_2.png)
 
 For new years, it may be relevant to copy data from a previous year. This can be done by accessing the “Copy data…” button. This will reveal a popup in which year can be selected:
 
-[IMAGE PLACEHOLDER: copy data popup]
+![capExModule6_1_3](../../../../images/enduserhelp/capExModule6_1_3.png)
 
 Older data can be deleted in the “Setup” page by clicking the “Delete data…” button to reveal the following dialogue:
 
-[IMAGE PLACEHOLDER: delete data dialog]
+![capExModule6_1_4](../../../../images/enduserhelp/capExModule6_1_4.png)
 
----
+
 
 ### Flexible organizational input level
 
@@ -93,13 +93,13 @@ If a department is selected when input is done, this department is automatically
 
 If at a higher level, the legal entity and department columns are automatically visible and relevant values must be selected from the dropdown lists attached to the columns:
 
-[IMAGE PLACEHOLDER: legal entity and department columns]
+![capExModule6_1_5](../../../../images/enduserhelp/capExModule6_1_5.png)
 
 Click the icon to view the transactions generated from the row in question.
 
-[IMAGE PLACEHOLDER: generated transactions view]
+![capExModule6_1_6](../../../../images/enduserhelp/capExModule6_1_6.png)
 
----
+
 
 ### Flexible input sheet
 
@@ -109,7 +109,7 @@ Depending on the familiarity of contributors with investments, asset accounts, d
 
 By default, the depreciation rate and the start date for depreciation are input fields:
 
-[IMAGE PLACEHOLDER: default depreciation input fields]
+![capExModule6_1_7](../../../../images/enduserhelp/capExModule6_1_7.png)
 
 This can be changed so that the contributor selects from asset groups for which depreciation rates and accounts are automatically associated.
 
@@ -129,7 +129,7 @@ Extra dimensionality may be added as needed, please refer to Dimension setup for
 
 The current dimensionality of an existing input row may be changed (subject to the configuration, see Publish and name module, control row context right-click menu options by right-clicking the row in one of the dimensional columns and selecting “Change dimensionality”. This will reveal a pop-up in which a new dimensionality can be set:
 
-[IMAGE PLACEHOLDER: change dimensionality popup]
+![capExModule6_1_8](../../../../images/enduserhelp/capExModule6_1_8.png)
 
 ---
 
@@ -147,7 +147,7 @@ Please refer to Investment status for details.
 
 Select the “Input Settings and Administration” workbook and go to the “Setup” page, and edit the “Input modules” table:
 
-[IMAGE PLACEHOLDER: input modules table]
+![capExModule6_1_9](../../../../images/enduserhelp/capExModule6_1_9.png)
 
 | Column | Description |
 |------|-------------|
@@ -170,7 +170,7 @@ Select the “Input Settings and Administration” workbook and go to the “Set
 
 The CapEx module is configured in the “Setup” page of the “CapEx” workbook. In the “Setup” page, select the “Input model” tab:
 
-[IMAGE PLACEHOLDER: CapEx setup input model tab]
+![capExModule6_1_10](../../../../images/enduserhelp/capExModule6_1_10.png)
 
 The module can be published by checking the “Published” checkbox and clicking the “Save” button. Conversely, the module can be taken offline by unchecking the “Published” checkbox.
 
@@ -238,6 +238,9 @@ Investment statuses can be used to filter out certain investment.
 
 Translations are added in the Translations tab in the Input Settings and Administration workbook.
 
+![capExModule6_1_11](../../../../images/enduserhelp/capExModule6_1_11.png)
+
+
 Select CapEx as the Input module and the language of choice.
 
 Edit the Lang Text column of an item or add an item.
@@ -248,7 +251,7 @@ Edit the Lang Text column of an item or add an item.
 
 The investment settings are defined in the “Setup” page of the “CapEx” workbook. Select the “Settings” tab:
 
-[IMAGE PLACEHOLDER: CapEx settings tab]
+![capExModule6_1_12](../../../../images/enduserhelp/capExModule6_1_12.png)
 
 ### Investment Depreciation
 

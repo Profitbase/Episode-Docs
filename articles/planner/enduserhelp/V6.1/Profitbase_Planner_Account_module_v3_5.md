@@ -5,7 +5,7 @@
 26.05.2025  
 Version 3.5
 
----
+
 
 ## Abstract, intended audience and pre-requisites
 
@@ -19,7 +19,7 @@ The intended audience of this document is implementation partners configuring th
 
 This document assumes that a Profitbase Planner solution has been deployed and that access to this solution is given to the reader.
 
----
+
 
 ## Common functionality
 
@@ -49,7 +49,7 @@ In setting tables, a so-called ranked input concept is often used for the dimens
 
 A ranked input cell can be set through the ranked input selector by clicking the cell value (cell will display 3 dots if no value is set):
 
-`[IMAGE PLACEHOLDER: ranked input selector cell]`
+![accountModule6_1_1](../../../../images/enduserhelp/accountModule6_1_1.png)
 
 The ranked input selector will display the dimensional hierarchy and allows for the selection of a high-level dimensional node. The selection of a high-level node implies that the setting applies to all sub-ordinate nodes.
 
@@ -64,7 +64,7 @@ In a table containing multiple rows, the rank or specificity of individual rows 
 
 The less specific the setting is, row should be high up in the table. The more specific the setting is, the further down in the table the row should reside.
 
----
+
 
 ## Principle of operation
 
@@ -72,7 +72,7 @@ The less specific the setting is, row should be high up in the table. The more s
 
 The plan can be input as year-totals or as monthly values. This is controlled by the “Periods” button that toggles the input mode correspondingly:
 
-`[IMAGE PLACEHOLDER: Periods button toggle]`
+![accountModule6_1_2](../../../../images/enduserhelp/accountModule6_1_2.png)
 
 A year-total input is automatically spread to the plan months of that particular year. The total is spread according to the monthly distribution function tied to the account as follows:
 
@@ -81,7 +81,7 @@ A year-total input is automatically spread to the plan months of that particular
 
 The existence of a central distribution key is indicated by the following symbol:
 
-`[IMAGE PLACEHOLDER: distribution key symbol]`
+![accountModule6_1_3](../../../../images/enduserhelp/accountModule6_1_3.png)
 
 Click on the symbol to view the distribution key.
 
@@ -93,17 +93,17 @@ If monthly values are input directly, the individual monthly values in a year ar
 
 Note that you can also see the distribution of any historical and plan sets, by clicking the symbol. The result is displayed in a pop-up where you can toggle between % and absolute numbers:
 
-`[IMAGE PLACEHOLDER: distribution popup]`
+![accountModule6_1_4](../../../../images/enduserhelp/accountModule6_1_4.png)
 
 Note that you can also restore the default distribution for any row or collection of rows by right clicking the following column and select “Restore default key”. This can either be done on a specific row or on the upper-most total-row to be able to select multiple rows:
 
-`[IMAGE PLACEHOLDER: restore default key option]`
+![accountModule6_1_5](../../../../images/enduserhelp/accountModule6_1_5.png)
 
 Selecting “Restore default key” on the upper-most total-row, presents a pop-up where a selection of rows can be done. Only the rows eligible for restoring the default key i.e., rows where the user has overridden the key, are shown:
 
-`[IMAGE PLACEHOLDER: restore selection popup]`
+![accountModule6_1_6](../../../../images/enduserhelp/accountModule6_1_6.png)
 
----
+
 
 ## Dimensionality
 
@@ -119,15 +119,15 @@ Please refer to *Select additional dimensionality* for details.
 
 The current dimensionality of an existing input row may be changed (subject to the configuration, see *Publish and name module, control row context right-click menu options*) by right-clicking the row in one of the dimensional columns and selecting “Change dimensionality”. This will reveal a pop-up in which a new dimensionality can be set:
 
-`[IMAGE PLACEHOLDER: change dimensionality popup]`
+![accountModule6_1_7](../../../../images/enduserhelp/accountModule6_1_7.png)
 
----
+
 
 ## Historical references and deviation calculations
 
 The Account module is preset with the last 12 months of actuals, except if the following base setting is set to FALSE:
 
-`[IMAGE PLACEHOLDER: base setting AccountIgnoreActualsL12M]`
+![accountModule6_1_8](../../../../images/enduserhelp/accountModule6_1_8.png)
 
 Base setting AccountIgnoreActualsL12M (TRUE | FALSE), default FALSE controls if actuals last 12 months are loaded or not to the account module.
 
@@ -135,19 +135,19 @@ In addition to the above, up to 5 historic reference columns (e.g. last year’s
 
 Simple deviation calculations – columns that perform calculations between other columns present in the input sheet – may be added.
 
----
+
 
 ## Planning horizon
 
 The planning time horizon is controlled in the Finance Settings workbook:
 
-`[IMAGE PLACEHOLDER: Finance Settings planning horizon]`
+![accountModule6_1_9](../../../../images/enduserhelp/accountModule6_1_9.png)
 
 This time horizon applies to all input modules.
 
 Long-term planning allows for a year-total input only. When saving the plan, the long-term year-totals are automatically distributed to months using the distribution that is relevant to the next year’s plan for the corresponding dimensionality.
 
----
+
 
 ## Module configuration
 
@@ -155,9 +155,7 @@ Long-term planning allows for a year-total input only. When saving the plan, the
 
 Select the “Input Settings and Administration” workbook and go to the “Setup” page, and edit the “Input modules” table:
 
-`[IMAGE PLACEHOLDER: Input modules setup table]`
+![accountModule6_1_10](../../../../images/enduserhelp/accountModule6_1_10.png)
 
-
----
 
 
