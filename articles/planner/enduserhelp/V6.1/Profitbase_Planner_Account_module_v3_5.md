@@ -1,316 +1,161 @@
-# Profitbase Planner – Account module
+# Account module
 
-**Document:** Configuration and Operation – Account module  
-**Company:** Profitbase AS  
-**Product:** Profitbase Planner  
-**Version:** 3.5  
-**Date:** 26.05.2025  
+**Profitbase**
 
----
+26.05.2025  
+Version 3.5
 
-## Change log
 
-| Date | Version | Changed by | Changes |
-|---|---|---|---|
-| 29.05.2020 | 0.0 | TN | Initial content |
-| 12.10.2020 | 1.0 | TN | Revised |
-| 19.05.2021 | 2.0 | TN | Revised for Planner v5 |
-| 18.08.2021 | 2.1 | TN | Revised for Planner v5 |
-| 04.10.2021 | 2.2 | TN | Revised for Planner v5 final |
-| 07.07.2022 | 3.0 | TN | Revised for Planner v5.2 |
-| 05.12.2022 | 3.1 | TN | Revised for Planner v5.2.4 |
-| 24.02.2023 | 3.2 | TN | Revised for Planner v5.4.0 |
-| 24.06.2023 | 3.4 | TN | Revised for Planner v5.4.1 |
-| 26.05.2025 | 3.5 | TN | Revised for Planner 6.1.0 |
 
----
+## Abstract, intended audience and pre-requisites
 
-## 1. Abstract, intended audience and pre-requisites
+The Profitbase Planner Configuration and Operation series consist of several documents dealing with the configuration and operation of individual Planner modules and functions.
 
-The Account module is an operational input module used to plan costs and revenues directly on accounts.
+Planner modules are operational input modules that contributors to the plan processes use to prepare the Profit & Loss (P&L) of their respective areas of responsibility. Different modules will typically cover parts of the P&L such as sales, personnel, cost, etc.
 
-It transforms user input into P&L transactions that are processed and shown in the Plan Overview.
+The modules are accessed from the Plan overview workbook of a given version and the input provided by the contributors are transformed into P&L transactions and fed back to the Plan overview workbook resulting in a P&L work-in-progress overview.
 
-Target audience:
-- Implementation partners
-- Solution administrators
+The intended audience of this document is implementation partners configuring the solution initially and solution administrators responsible for operating it thereafter.
 
-Pre-requisites:
-- Profitbase Planner deployed
-- User access to the solution
+This document assumes that a Profitbase Planner solution has been deployed and that access to this solution is given to the reader.
 
----
 
-## 2. Common functionality
 
-- Changes are **not saved automatically**
-- **Save** commits changes
-- **Refresh** discards unsaved changes
-- **Ctrl + Z** undoes last unsaved change
+## Common functionality
 
-### Row operations
-- Insert row
-- Insert row below
-- Insert copy of row
+Changes made to input sheets are not saved automatically. To save changes, click the “Save” button. The “Save” button will remain disabled until a change has been made.
+
+To undo all unsaved changes, click the “Refresh” button.
+
+To undo the last of a series of unsaved changes, click the Ctrl and Z keys simultaneously.
+
+To insert new rows to an input sheet, right-click in the sheet and select one of the available options:
+
+- Insert row  
+- Insert row below  
+- Insert copy of row  
+
+To delete a row from an input sheet, right-click the row in question and select:
+
 - Delete row
 
-Row deletion is finalized only after saving.
+Inserting and deleting rows can be controlled as part of the configuration, see *Publish and name module, control row context right-click menu options*.
 
-### Ranked input
+Please note, that although the row is no longer visible in the input sheet, the change must be committed using the “Save” button or undone using the “Refresh” button.
 
-Ranked input allows selecting higher-level dimension members:
-- Higher rows = less specific
-- Lower rows = more specific
+In input sheets, editable fields are distinguished from non-editable fields by fill color, editable fields have by default a white fill color.
 
-Row order determines precedence.
+In setting tables, a so-called ranked input concept is often used for the dimensional context. Ranked input allows for a high-level selection of dimensional nodes and gives the opportunity to alter the rank or specificity between rows.
 
----
+A ranked input cell can be set through the ranked input selector by clicking the cell value (cell will display 3 dots if no value is set):
 
-## 3. Principle of operation
+![accountModule6_1_1](../../../../images/enduserhelp/accountModule6_1_1.png)
+
+The ranked input selector will display the dimensional hierarchy and allows for the selection of a high-level dimensional node. The selection of a high-level node implies that the setting applies to all sub-ordinate nodes.
+
+Select node and click “OK”.
+
+Click “Cancel” to leave the selector without selecting.
+
+In a table containing multiple rows, the rank or specificity of individual rows can be altered by moving the row up (decrease specificity) or down (increase specificity) by right-click the row in question and selecting:
+
+- Move up  
+- Move down  
+
+The less specific the setting is, row should be high up in the table. The more specific the setting is, the further down in the table the row should reside.
+
+
+
+## Principle of operation
 
 ### Plan by year-totals or by month
 
-Input mode is controlled by the **Periods** button.
+The plan can be input as year-totals or as monthly values. This is controlled by the “Periods” button that toggles the input mode correspondingly:
 
-**Year-total input**
-- Automatically distributed to months
-- Distribution priority:
-  1. User-entered monthly values
-  2. Central distribution key tied to the account
-  3. Even distribution
+![accountModule6_1_2](../../../../images/enduserhelp/accountModule6_1_2.png)
 
-**Monthly input**
-- Monthly values are summed to yearly total
-- Monthly pattern becomes the future distribution key
+A year-total input is automatically spread to the plan months of that particular year. The total is spread according to the monthly distribution function tied to the account as follows:
 
-Distribution keys can be viewed and restored per row.
+- If a specific monthly input has been made by the user, the distribution inherent in the monthly values is used as a distribution key.
+- If not, then if a central distribution key is tied to the account, this distribution will be used
 
----
+The existence of a central distribution key is indicated by the following symbol:
+
+![accountModule6_1_3](../../../../images/enduserhelp/accountModule6_1_3.png)
+
+Click on the symbol to view the distribution key.
+
+Please refer to *Distribution keys* for details on how to set up central distribution keys.
+
+If none of the above applies, the total is spread evenly over the plan months.
+
+If monthly values are input directly, the individual monthly values in a year are summed and the distribution used thereafter for year-total input will be the distribution inherent in those individual monthly values as edited by the user.
+
+Note that you can also see the distribution of any historical and plan sets, by clicking the symbol. The result is displayed in a pop-up where you can toggle between % and absolute numbers:
+
+![accountModule6_1_4](../../../../images/enduserhelp/accountModule6_1_4.png)
+
+Note that you can also restore the default distribution for any row or collection of rows by right clicking the following column and select “Restore default key”. This can either be done on a specific row or on the upper-most total-row to be able to select multiple rows:
+
+![accountModule6_1_5](../../../../images/enduserhelp/accountModule6_1_5.png)
+
+Selecting “Restore default key” on the upper-most total-row, presents a pop-up where a selection of rows can be done. Only the rows eligible for restoring the default key i.e., rows where the user has overridden the key, are shown:
+
+![accountModule6_1_6](../../../../images/enduserhelp/accountModule6_1_6.png)
+
+
 
 ## Dimensionality
 
-Mandatory:
-- Department
-- Account
+The basic dimensionality of the account module is department and account.
 
-Optional:
-- Project
-- Activity
-- Counterparty
-- Currency foreign
-- Dim1–Dim4
+Extra dimensionality, Project, Activity, Counterpart and 4 free dimensions Dim1, Dim2, Dim3 or Dim4 may be added as needed.
 
-Multi-currency planning is enabled by showing the Currency foreign dimension.
+The account module can also be set up for planning in multiple currencies by enabling the Currency foreign dimension.
 
----
+Please refer to *Select additional dimensionality* for details.
 
-## Change dimensionality of an input row
+### Change dimensionality of an input row
 
-If enabled, dimensionality can be changed via row context menu:
-- Right-click dimensional column
-- Select **Change dimensionality**
-- Choose new dimension members
+The current dimensionality of an existing input row may be changed (subject to the configuration, see *Publish and name module, control row context right-click menu options*) by right-clicking the row in one of the dimensional columns and selecting “Change dimensionality”. This will reveal a pop-up in which a new dimensionality can be set:
 
----
+![accountModule6_1_7](../../../../images/enduserhelp/accountModule6_1_7.png)
+
+
 
 ## Historical references and deviation calculations
 
-Default:
-- Last 12 months of actuals
+The Account module is preset with the last 12 months of actuals, except if the following base setting is set to FALSE:
 
-Controlled by base setting:
-- `AccountIgnoreActualsL12M` (default FALSE)
+![accountModule6_1_8](../../../../images/enduserhelp/accountModule6_1_8.png)
 
-Optional:
-- Up to 5 historical reference columns
-- Up to 2 deviation columns
+Base setting AccountIgnoreActualsL12M (TRUE | FALSE), default FALSE controls if actuals last 12 months are loaded or not to the account module.
 
-Deviation formulas may reference:
-- Historic1–Historic5
-- YTD, ROY, TY, NY
-- L12M, N12M
-- NYPlus1–NYPlus5
+In addition to the above, up to 5 historic reference columns (e.g. last year’s budget) may be added as needed.
 
----
+Simple deviation calculations – columns that perform calculations between other columns present in the input sheet – may be added.
+
+
 
 ## Planning horizon
 
-- Defined globally in **Finance Settings**
-- Applies to all input modules
-- Long-term planning supports year-total input only
+The planning time horizon is controlled in the Finance Settings workbook:
 
-Long-term totals are distributed using next-year patterns.
+![accountModule6_1_9](../../../../images/enduserhelp/accountModule6_1_9.png)
 
----
+This time horizon applies to all input modules.
 
-## Plan roll forward actions
+Long-term planning allows for a year-total input only. When saving the plan, the long-term year-totals are automatically distributed to months using the distribution that is relevant to the next year’s plan for the corresponding dimensionality.
 
-- Long-term year totals are converted to monthly values
-- Distribution is inherited from next-year plan
 
----
 
-## 4. Module configuration
+## Module configuration
 
-Configured in **Input Settings and Administration → Setup**.
+### Publish and name module, control row context right-click menu options
 
----
+Select the “Input Settings and Administration” workbook and go to the “Setup” page, and edit the “Input modules” table:
 
-## Publish and name module
+![accountModule6_1_10](../../../../images/enduserhelp/accountModule6_1_10.png)
 
-Configurable options:
-- Module name and translations
-- Published flag
-- Row context menu permissions
-- Multi-department input
-- Input row limits
-- Auto-load and auto-submit behavior
 
----
 
-## Select additional dimensionality
-
-Optional dimensions can be configured with:
-- Visibility
-- Mandatory selection
-- Filter usage
-- Default filter values
-- Source data grouping
-
-Grouping source data aggregates historical references.
-
----
-
-## Select, name, and define historical reference columns
-
-Historical data source:
-- `ReportAccountByMonthHistorical`
-
-Configurable per column:
-- Dataset
-- Date range
-- Visibility in summary, input, and reports
-
----
-
-## Select, name, and define deviation columns
-
-Deviation columns support simple arithmetic formulas.
-
-Examples:
-```
-[NY] - [TY]
-[Historic1] - [Historic2]
-```
-
----
-
-## Select / unselect optional columns
-
-Optional columns related to:
-- Actuals last 12 months
-- Year-to-date
-- Rest of year
-
-Visibility can be controlled separately for summary and input.
-
----
-
-## Translations
-
-Translations are maintained in **Input Settings and Administration → Translations**.
-
----
-
-## Attach module to input report
-
-The Account module is the default module.
-
-It is attached to any report line not explicitly attached to another module.
-
----
-
-## Period filters
-
-Period filters are configured globally and control:
-- Available filters
-- Default selection
-- Sorting
-
----
-
-## Disabling the Periods button
-
-The Periods button can be disabled via:
-- `AccountPeriodsButton = DISABLED`
-
-When disabled:
-- Only year-total input is allowed
-- Period filter for next 12 months cannot be used
-
----
-
-## 5. Module settings
-
-Settings are maintained in **Input Settings and Administration → Settings**.
-
----
-
-## Distribution keys
-
-Defined by:
-- Department
-- Account
-
-Rules:
-- Use ranked input
-- Avoid overly specific keys
-
-Distribution weight determines monthly allocation.
-
----
-
-## Distribution key helper
-
-The **View Historic Distribution** helper:
-- Displays historical monthly distributions
-- Supports aggregation using ranked input
-- Allows copying values into distribution keys
-
----
-
-## Override distribution using historic data
-
-Historic distributions can be converted into distribution keys.
-
-Use carefully:
-- Generates many specific keys
-- User monthly input always overrides keys
-
----
-
-## Auto transactions (optional)
-
-Rule-based additional postings.
-
-Rule components:
-- Source department
-- Source account
-- Operator and value
-- Optional condition
-- Target account
-- Optional target department
-
----
-
-## 6. High-level planning with the Account module
-
-High-level planning is supported by aggregating historical data.
-
-Requirements:
-- Disable grouping on selected dimensions
-- Provide default:
-  - Account per report line
-  - Department per legal entity
-
-Historical data is aggregated to defaults while still allowing later detail expansion.
