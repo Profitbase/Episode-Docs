@@ -6,7 +6,7 @@ This package provide the financial planning function and can be organized in pro
 
 ## EPM Planner Versions
 
-- [EPM Planner 6.2.0](#epm-planner-620) - Released 2026.01.16
+- [EPM Planner 6.2.0](#epm-planner-620) - Released 2026.01.22
 - [EPM Planner 6.1.1](#epm-planner-611) - Released 2025.10.29
 - [EPM Planner 6.1.0](#epm-planner-610) - Released 2025.06.05
 - [EPM Planner 6.0.3](#epm-planner-603) - Released 2025.02.17
