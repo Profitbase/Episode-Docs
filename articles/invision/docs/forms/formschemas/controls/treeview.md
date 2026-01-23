@@ -25,7 +25,7 @@ TreeView presents a hierarchical view of information, where each item can have z
 
 <br/>
 
-## Functions
+## Methods
 | Name                                  | Description                            |
 |---------------------------------------|----------------------------------------|
 | expandNode(nodeId: string)            | Expands the node with the specified member id. The Id is the value of the `ItemId` property, for example the dimension member id if the TreeView is bound to a DimensionModel. |

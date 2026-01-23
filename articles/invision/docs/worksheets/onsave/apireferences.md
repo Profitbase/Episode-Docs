@@ -23,7 +23,7 @@ The list of rows to update.
 `System.Collections.Generic.List<CudRecord>`  
 The list of rows to insert. 
 
-**Parameters**  
+**Params**  
 `System.Collections.Generic.Dictionary<string,object>`  
 Custom parameters passed from the client using SetParamValue(“@Param”, value);. 
 

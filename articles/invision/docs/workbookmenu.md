@@ -29,8 +29,10 @@ Work Processes should always be added to the **default system menu**. When using
 A Workbook will appear in a menu if the following holds true:
 
 - The current user has been granted access to the Workbook
+- The Workbook is marked as Published in the Workbook editor
 - The Workbook has been explicitly added to a menu, or the Workbook belongs to a Work Process with a Version that is either in the Deployed, Open or Closed state
 - While a Work Process Version is in the Deployed state, only Work Process administrators will have access to the Workbook
+
 
 <br/>
 
