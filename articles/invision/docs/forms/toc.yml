@@ -57,6 +57,8 @@
               href: formschemas/controls/camera.md
             - name: Datepicker
               href: formschemas/controls/datepicker.md
+            - name: Dropdown Treeview
+              href: formschemas/controls/dropdown-treeview.md
             - name: Dropdown
               href: formschemas/controls/dropdown.md
             - name: Grid
