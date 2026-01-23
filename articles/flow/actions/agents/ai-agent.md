@@ -15,6 +15,7 @@ Defines an AI agent designed to perform tasks on behalf of a Client (orchestrato
 |----------------|---------------|---------------------------------|
 | Name           | Required      | A human-readable name for the agent. The name helps users and other agents in understanding its purpose. |
 | Instructions   | Required      | Defines the behavior of the agent and rules it should follow. |
+| Tools usage    | Optional      | Specifies whether the agent should use tool calling directly, or write and execute code to use the tools. [Read more about this topic below.](#tools-include) |
 | Description    | Required      | A human-readable description of the agent, assisting users and other agents in understanding its purpose. |
 | Skills         | Required      | The set of skills, or distinct capabilities, that the agent can perform. |
 
@@ -29,6 +30,11 @@ Defines an AI agent designed to perform tasks on behalf of a Client (orchestrato
 | Input modes   | Recommended    | The set of supported input [Media types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types) for this skill, for example `text`, `application/json`, or `image/png`. This describes the format of the data that the agent accepts. |
 | Output modes  | Recommended    | The set of supported output [Media types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types) for this skill, for example `text`, `application/json`, or `image/png`. This describes the format of the data that the agent returns to the client agent.  |
 | Examples      | Recommended    | Example prompts or scenarios that this skill can handle. Provides a hint to the client on how to use the skill. Example: "What is the total amount for sales in region West?" |  
+
+<br/>
+
+<a name="tools-include"></a>
+[!INCLUDE [Tool](./__tools-usage.md)]
 
 <br/>
 

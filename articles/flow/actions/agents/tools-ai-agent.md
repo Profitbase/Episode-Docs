@@ -8,7 +8,7 @@ Defines an AI Agent that can use tools to perform actions, for example fetching 
 **Example** ![img](../../../../images/strz.jpg)  
 The example above shows an agent that reads all Word documents in a OneDrive folder, summarizes them, and emails the summaries along with the original documents as attachments. The following prompts are used:  
 
-**System prompt**  
+**Instructions**  
 ```txt
 You are an agent that will use the tools provided to you to perform the tasks requested by the user.  
 If you cannot perform the task, stop without any retries.
@@ -28,7 +28,8 @@ Include all the Word documents as attachments to the email.
 ## Properties
 | Name            | Type         | Description                         |
 |-----------------|--------------|-------------------------------------|
-| System prompt   | Required     | The instruction given at the start of a conversation that sets the behavior, tone, and goals for the agent. It acts like a guide or personality primer, telling the chat model how it should respond (e.g., formal vs. casual), what role it should play (e.g., teacher, assistant, coder) and optionally what stategy you want it to prefer for decision making.  |
+| Tools usage     | Optional     | Specifies whether the agent should use tool calling directly, or write and execute code to use the tools. [Read more about this topic below.](#tools-include) |
+| Instructions    | Required     | The instruction given at the start of a conversation that sets the behavior, tone, and goals for the agent. It acts like a guide or personality primer, telling the chat model how it should respond (e.g., formal vs. casual), what role it should play (e.g., teacher, assistant, coder) and optionally what stategy you want it to prefer for decision making.  |
 | User prompt     | Required     | This is the actual task that the agent is given, for example "Summarize all Word documents in my OneDrive folder named 'Work', and send the summarization to my-email@corp.com."  |
 | Session ID      | Optional     | A session ID is required if you want to enable memory, allowing for an ongoing conversation with the AI, rather than every interaction starting fresh.|
 | Chat model      | Required     | The chat model accepts a set of instructions, reasons about _how_ to solve the task and utilizes tools to achive the final outcome. |
@@ -39,16 +40,18 @@ Include all the Word documents as attachments to the email.
 
 ### Choosing a chat model
 When choosing a chat model, it is important to choose a chat model that is capable of using tools. Not all chat models can use tools, and there's currently no official list of which chat models supports tool calling. You simply have to read the documentation for each LLM to determine whether tool / function calling is supported. A list of known LLMs with tool/function calling capabilities includes (but not limited to):  
-- OpenAI models: gpt-4,gpt-4o, gpt-4o-mini
+- OpenAI models: gpt
 - Mistral AI models
-- Anthropic models: Claude 3.x Sonnet, Clause 3 Opus
-- Meta Llama 2 and 3 models
+- Anthropic models: Claude Sonnet, Claude Opus
+- Meta Llama models
 - Google Gemini models
+
+If you enable `Code mode` in the Tools usage property, note that not all AI models are capable of reliably using this mode. In general, only the advanced models like GPT 5.2 or higher, Claude Opus and Sonnt 4.5 or higher produce reliable results in this mode. Smaller models like the GPT 5 mini series, DeepSeek, Kimi2 Thinking etc, are not capable of using code mode. Note that this may change in the future, so you'll just have to try out different models to see what works.
 
 <br/>
 
-### Choosing Tools
-When building AI agents, it's best practice to keep their area of responsibility as narrow as possible. While this may seem counterintuitive to the concept of agents, giving an agent too many tools to choose from can negatively affect its accuracy when making decisions and selecting tools. It also increases token usage, and consequently, cost.  
+<a name="tools-include"></a>
+[!INCLUDE [](./__tools-usage.md)]
 
 <br/>
 
