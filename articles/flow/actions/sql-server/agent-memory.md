@@ -2,10 +2,14 @@
 
 This action stores and retrieves AI agent memory (conversation history) using SQL Server.
 
-To enable ongoing conversations with an AI instead of starting fresh each time, you need to add memory to the agent. This allows it to recall previous exchanges when processing new requests. By remembering key details—like user preferences, goals, or past actions—the agent can personalize responses, avoid repetition, and maintain continuity. The result is more natural, efficient, and human-like interactions, where the AI can reason and adapt over time.  
+To support ongoing conversations instead of starting from scratch on each request, the AI agent must be configured with memory. Memory allows the agent to retain previous messages and reuse that context when handling new requests. This enables consistent responses, reduces repetition, and preserves conversational continuity across interactions.
+
+As a result, the agent can maintain context over time and respond in a more coherent and predictable way.
 
 ![img](/images/flow/sql-server-agent-memory.png)
-<p><em>Figure: This example shows an agent using 3 tools for working with salary information and calculating a forecast. The Agent memory tracks the conversation history, allowing users to have an ongoing conversation with the agent.</em></p>
+
+**Example** ![img](../../../../images/strz.jpg)  
+This example shows an agent using 3 [Flow AI tools](../ai/flow-ai-tool.md) for working with salary information and calculating a forecast. The Agent memory tracks the conversation history, allowing users to have an ongoing conversation with the agent.
 
 <br/>
 
