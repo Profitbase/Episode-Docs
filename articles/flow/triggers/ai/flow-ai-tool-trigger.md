@@ -8,7 +8,7 @@ This trigger serves as the entry point for Flows that should behave like callabl
 ![img](../../../../images/flow/flow-ai-tool-trigger.png)  
 
 
-**Example**![img](../../../../images/strz.jpg)  
+**Example** ![img](../../../../images/strz.jpg)  
 This Flow is exposed as an AI tool using the Flow AI tool trigger.
 It allows an AI agent to call the Flow in order to generate an answer based on vector search results. 
 The Flow receives input arguments from the AI agent, retrieves relevant context from a vector store, and returns a single generated response. 
