@@ -1,5 +1,9 @@
 # Define type
 
+This action is **OBSOLETE** - use [this](../../flows/defining-custom-types.md) instead.
+
+-----
+
 Defines one or more custom data types using a type builder interface, JSON schema or C#.
 
 Use the type builder when the data type of all properties in the custom type is a [built-in .NET type](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types).  
