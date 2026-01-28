@@ -8,3 +8,4 @@ In this section, you will find a list of shortcuts to different subjects about T
 * [How to use Context filtering](context.md)
 * [How to use Search](search.md)
 * [How to edit table contents](edit.md)
+* [How to filter loaded table(s) data](filterdata.md)
