@@ -9,3 +9,5 @@
     href: ./howto/search.md
   - name: How to edit table contents
     href: ./howto/edit.md
+  - name: How to filter table data
+    href: ./howto/filterdata.md
