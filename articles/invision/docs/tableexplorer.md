@@ -34,10 +34,16 @@ To display a Table Explorer in a Workbook, open the Workbook designer and drag -
 
 <br/>
 
-## See Also
+## How to's
 
-- [Context filtering](./tableexplorer/howto/context.md)
+Tables can be marked with a **context**, allowing the **Table Explorer** to filter and display only the relevant ones. [Read more](./tableexplorer/howto/context.md)
+<br/>
 
-- [Search](./tableexplorer/howto/search.md)
+You can quickly find a table by searching its name, short description, or by using the 'Search by Tags' option to filter by specific tags. [Read more](./tableexplorer/howto/search.md)
+<br/>
 
-- [Edit](./tableexplorer/howto/edit.md)
+You can edit the table data when it is opened. [Read more](./tableexplorer/howto/edit.md)
+<br/>
+
+You can filter selected tables using the `SetParamValue()` function in the **Execute Expression** action for the **Table Explorer** component. [Read more](./tableexplorer/howto/filterdata.md)
+
