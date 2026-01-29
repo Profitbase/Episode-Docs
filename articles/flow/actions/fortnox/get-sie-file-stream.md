@@ -12,7 +12,7 @@ The Swedish **SIE (Standard Import and Export)** file format is an open, text-ba
 
 **Example** ![img](/images/strz.jpg)
 
-The example above shows how a SIE file is read from Fortnox and parsed with the [SIE file parser](../sie/file-parser.md). From the parsed result object, an [SIE DataReader](../sie/datareader.md) is used to get values to be [inserted into an SQL Server table](../sql-server/insert-data.md).
+The example above shows how a SIE file is read from Fortnox and parsed with the [Load SIE file](../sie/load-file.md). From the parsed result object's, one of the available DataReaders is  used to [insert data into an SQL Server table](../sql-server/insert-data.md).
 
 <br/>
 
