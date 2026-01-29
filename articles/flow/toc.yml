@@ -22,10 +22,12 @@
       href: workspaces/create-workspace.md
     - name: Access control
       href: workspaces/workspace-access-control.md
+    - name: API Keys
+      href: workspaces/api-keys.md
     - name: Workspace Variables
       href: workspaces/workspace-variables.md
     - name: Workspace Objects
-      href: workspaces/workspace-objects.md
+      href: workspaces/workspace-objects.md    
 - name: Environments
   href: environments.md
 - name: Flows

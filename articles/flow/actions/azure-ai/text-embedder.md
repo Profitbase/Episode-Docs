@@ -1,6 +1,7 @@
 # Text embedder
 
-Defines an Azure AI text [embedder](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/embeddings?utm_source=chatgpt.com&tabs=console).
+Defines an Azure AI text [embedder](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/embeddings?utm_source=chatgpt.com&tabs=console).  
+It is used as a tool by actions such as [Search vectors](../sql-server/search-vectors.md) and [Save vectors](../sql-server/vector-save.md) to generate embeddings when reading or writing data to a vector store.  
 
 
 ![img](../../../../images/flow/generate-embedding.png)
@@ -16,8 +17,8 @@ This flow processes a user's chat question by first receiving it through a [Chat
 | Name                  | Type      | Description |
 |-----------------------|-----------|-------------|
 | Title                | Optional  | The title of the action. |
-| Connection           | Required  | Defines the [connection](azure-ai-connection.md) to an **Azure AI Foundry** resource. |
-| Model                | Required  | Specifies the model deployment name, which corresponds to the **Name** (not the model id) of the deployed model in [Azure AI Foundry](https://ai.azure.com). In the Azure Portal, the deployment name can be found under **Resource Management** > **Model Deployments**. |
+| Connection           | Required  | Defines the [connection](azure-ai-connection.md) to an **Microsoft Foundry** resource. |
+| Model                | Required  | Specifies the model deployment name, which corresponds to the **Name** (not the model id) of the deployed model in [Microsoft Foundry](https://ai.azure.com). In the Azure Portal, the deployment name can be found under **Resource Management** > **Model Deployments**. |
 | Dimensions | Optional  |  Specifies the number of dimensions to be used. |
 | Result variable name | Required  | Defines the variable name in which the result will be stored. `TextEmbedder`![img](../../../../images/strz2.jpg). |
 | Description         | Optional  | A field to add additional details or notes about the action. |

@@ -2,7 +2,7 @@
 
 # Streaming chat completion
 
-This action defines a [Azure AI Foundry](https://ai.azure.com/) streaming chat completion model that processes a prompt and delivers the response in small pieces as it is generated. Using a streaming chat completion improves responsiveness and gives the user real-time insight into the model’s output as it forms.
+This action defines a [Microsoft Foundry](https://ai.azure.com/) streaming chat completion model that processes a prompt and delivers the response in small pieces as it is generated. Using a streaming chat completion improves responsiveness and gives the user real-time insight into the model’s output as it forms.
 
 It's typically used when building backends for interactive chat clients, assistant-like experiences, or any UI that needs incremental model output.  
 Unlike the standard [chat completion](chat-completion.md), this action returns the response **incrementally as it is generated**.
@@ -19,8 +19,8 @@ The example above shows a Flow that provides chat completions to a chat client. 
 | Name                  | Type      | Description |
 |-----------------------|-----------|-------------|
 | Title             | Optional  | The title of the action. |
-| Connection        | Required  | Defines the [connection](azure-ai-connection.md) to an **Azure AI Foundry** resource. |
-| Model             | Required  | Specifies the model deployment name, which corresponds to the **Name** (not the model id) of the deployed model in [Azure AI Foundry](https://ai.azure.com) ([see below](#models--endpoints)). In the Azure Portal, the deployment name can be found under **Resource Management** > **Model Deployments**. |
+| Connection        | Required  | Defines the [connection](azure-ai-connection.md) to an **Microsoft Foundry** resource. |
+| Model             | Required  | Specifies the model deployment name, which corresponds to the **Name** (not the model id) of the deployed model in [Microsoft Foundry](https://ai.azure.com) ([see below](#models--endpoints)). In the Azure Portal, the deployment name can be found under **Resource Management** > **Model Deployments**. |
 | User Prompt       | Required  | The input message from the user, which the model processes to generate a response. |
 | System Prompt     | Optional  | A system-level instruction that guides the model’s behavior and response style. |
 | History           | Optional  | A record of past interactions that provides context to the conversation, helping the model maintain continuity. |
@@ -39,8 +39,8 @@ This action emits a stream of **AIChatCompletionResponse** objects, where each e
 <br/>
 
 
-#### Models + Endpoints
-To find the Model deployment name, look in `Models + Endpoints` screen in [Azure AI Foundry](https://ai.azure.com).    
+#### Models
+To find the Model deployment name, look in `Models` screen in [Microsoft Foundry](https://ai.azure.com).    
 
 ![img](/images/flow/azure-ai-foundry-deploymentname.png)
 

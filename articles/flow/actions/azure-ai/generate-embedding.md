@@ -1,6 +1,6 @@
 # Generate embedding
 
-Generates an embedding vector using an Azure AI (OpenAI or Foundry) embedding model.
+Generates an embedding vector using a Microsoft Foundry embedding model.
 
 Use this action when you want to generate an embedding vector to do manual vector operations (write your own queries) against databases like PostgreSQL or Azure SQL, for example vector search or inserting / updating vector records. 
 
@@ -16,8 +16,8 @@ The example above illustrates part of a Flow that stores a document into SQL Ser
 | Name            | Type                   | Description                             |
 |-----------------|------------------------|-----------------------------------------|
 | Title           | Optional               | The title of the action.                |
-| Connection      | Required               | Defines the [connection](azure-ai-connection.md) to an **Azure AI Foundry** resource. |
-| Model           | Required               | Specifies the name of the deployed embedding model, which corresponds to the **Name** (not the model id) of the deployed embedding model in Azure Azure AI Foundry or the Azure portal. In [Azure AI Foundry](https://ai.azure.com), the deployment name can be found in the Deployments screen as shown [below](#model). <br/> **NOTE!** Make sure you select an `Embeddings` model (for example text-embedding-3-large), and not something else like _Chat completion_ or _Text to speech_.   |
+| Connection      | Required               | Defines the [connection](azure-ai-connection.md) to an **Microsoft Foundry** resource. |
+| Model           | Required               | Specifies the name of the deployed embedding model, which corresponds to the **Name** (not the model id) of the deployed embedding model in Microsoft Foundry or the Azure portal. In [Microsoft Foundry](https://ai.azure.com), the deployment name can be found in the Deployments screen as shown [below](#model). <br/> **NOTE!** Make sure you select an `Embeddings` model (for example text-embedding-3-large), and not something else like _Chat completion_ or _Text to speech_.   |
 | Dimensions      | Optional               | Some embedding models (like text-embedding-3-*) support configurable dimensionalities, for example 768 or 1536. Make sure you don't specify a dimensionality greater than the max value of the model.| 
 | Input           | Required               | The (text) input that you want to generate an embedding for. |
 
@@ -53,9 +53,9 @@ WHERE VECTOR_DISTANCE('cosine', Vector, @emb) < 0.7
 <br/>
 
 ## Model
-To find the Model deployment name, look in `Models + Endpoints` screen in [Azure AI Foundry](https://ai.azure.com).  
+To find the Model deployment name, look in `Models` screen in [Microsoft Foundry](https://ai.azure.com).  
 
-![img](/images/flow/azure-openai-aifoundry-embedding-models.png)
+![img](/images/flow/azure-ai-foundry-deploymentname.png)
 
 <br/>
 
