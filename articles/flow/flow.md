@@ -5,7 +5,7 @@
 Profitbase Flow is a low-code platform for building AI agents, data integrations, and automating workflows.
 
 #### AI agents
--  Leverage AI models from Azure AI Foundry, OpenAI, Anthropic, Google VertexAI and Mistral to build AI agents that interact with users and business systems.
+-  Leverage AI models from Microsoft Foundry, OpenAI, Anthropic, Google VertexAI and Mistral to build AI agents that interact with users and business systems.
 -  Build a mesh of agents that work together to complete complex tasks.
 -  Create agents and tools that can be used by external systems like Teams, Excel, and custom business apps.
 -  Automate knowledge work such as data analysis, reporting, and information lookup.
