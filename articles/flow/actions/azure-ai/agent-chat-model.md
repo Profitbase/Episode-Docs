@@ -37,7 +37,7 @@ Do NOT wrap the response in Markdown annotation.
 |-----------------------|-----------|-------------|
 | Title                 | Optional  | The title of the model. |
 | Connection            | Required  | Defines the [connection](azure-ai-connection.md) to **Microsoft Foundry** resource. |
-| Model                 | Required  | Specifies the model deployment name, which corresponds to the **Name** (not the model id) of the deployed model in [Microsoft Foundry](https://ai.azure.com) See [below](#models--endpoints). |
+| Model                 | Required  | Specifies the model deployment name, which corresponds to the **Name** (not the model id) of the deployed model in [Microsoft Foundry](https://ai.azure.com) See [below](#models). |
 | Temperature       | Optional  |Temperature in models controls the randomness and creativity of the generated responses. Lower temperatures (e.g., 0.2) produce more focused, predictable text, ideal for tasks that require precision. Higher temperatures (e.g., 1.5) increase creativity and variability, but may risk generating less coherent or relevant content, making it important to adjust based on your desired outcome. |
 | Max Tokens | Optional | Sets a limit on the number of tokens (words, characters, or pieces of text) in the model’s response. |
 
