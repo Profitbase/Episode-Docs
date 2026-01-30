@@ -2,8 +2,10 @@
 
 Sends diagnostics to Azure Application Insights, including a message, custom properties, severity level, and an optional exception.
 
-**Example**  
-Add a Track action at key points in a Flow to record progress, warnings, or errors to Application Insights. For instance, after processing each record, track an informational message with relevant properties; on exceptions, attach the exception with `Severity = Error`.
+![img](../../../../images/flow/azure-application-insights-track.png)
+
+**Example** ![img](../../../../images/strz.jpg)
+This flow uses a Track action to record errors to Application Insights. 
 
 ## Properties
 
