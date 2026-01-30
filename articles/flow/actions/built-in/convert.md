@@ -1,7 +1,8 @@
 # Convert
 
 Converts between objects of different data types, for example string to number or date.
-You should also use this action if you need to convert JSON, streams, byte arrays, collections or business objects / custom types.
+You should also use this action if you need to convert JSON, streams, byte arrays, collections or business objects / custom types.  
+For example, you can use this action to convert a JSON string to an object, such as a [custom type](../../flows/defining-custom-types.md).
 
 ![img](../../../../images/flow/convert.png)
 
@@ -47,4 +48,19 @@ The action returns the converted value, typed according to the target type speci
 | UTF8 JSON string        | Custom type                             |
 | UTF8 JSON string        | .NET [built-in type](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) |
 | [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable)               | [Supported collection types for deserialization](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/supported-collection-types)                          |
+
+<br/>
+
+## Example - Convert JSON to object
+To convert a JSON string to an object, you can use the `Convert` action by passing in the JSON string as the argument and specifying which object type it should be converted to.  
+
+1) In the Main Flowchart, define a [custom type](../../flows/defining-custom-types.md)  
+2) Add a `Convert` action to the Flow
+3) Select the JSON string and input (Object to convert)
+4) Select your custom type as `Type to convert to`.
+
+When defining the custom type, remember:
+- The property names in the custom type must match the property names in the JSON string. The converter is case insensitive, so casing is not required to match.
+- You can omit the properties from the JSON string that you don't care about.
+- If the JSON string represents multiple, nested objects, define all types in the Advanced tab by writing C# code instead of using the visual editor. 
 
