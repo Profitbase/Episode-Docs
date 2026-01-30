@@ -138,7 +138,7 @@
     - name: Microsoft Fabric
       href: actions/microsoft-fabric/toc.yml
     - name: Microsoft Teams
-      href: actions/teams/toc.yml
+      href: actions/microsoft-teams/toc.yml
     - name: Model Context Protocol (MCP)
       href: actions/mcp/toc.yml
     - name: OneDrive

@@ -10,7 +10,7 @@ The trigger defines the starting point of a Flow that handles [User Chat](../../
 ![img](/images/flow/invision-user-chat-trigger.png)
 
 **Example**![img](/images/strz.jpg)  
-This flow receives a list of notifications from a [User Chat](../../invision/docs/workbooks/components/userchat/user-chat.md) in InVision. A [For each](../actions/built-in/foreach.md) action iterates over received notification items. An [Function](../actions/built-in/function.md) creates a message text from the notification item, and the [Send Message](../actions//teams/send-chat-message.md) action forwards the message to an Microsft Teams channel.
+This flow receives a list of notifications from a [User Chat](../../invision/docs/workbooks/components/userchat/user-chat.md) in InVision. A [For each](../actions/built-in/foreach.md) action iterates over received notification items. An [Function](../actions/built-in/function.md) creates a message text from the notification item, and the [Send Message](../actions/microsoft-teams/send-chat-message.md) action forwards the message to an Microsft Teams channel.
 
 <br/>
 
