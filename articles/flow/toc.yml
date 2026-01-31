@@ -77,8 +77,6 @@
       href: flows/modularization-and-extensions.md
 - name: Actions
   items:
-    - name: Azure Application Insights
-      href: actions/azure-application-insights/toc.yml
     - name: Adobe
       href: actions/adobe/toc.yml 
     - name: Agents
@@ -90,7 +88,9 @@
     - name: Anthropic AI
       href: actions/anthropic/toc.yml
     - name: Azure AI
-      href: actions/azure-ai/toc.yml
+      href: actions/azure-ai/toc.yml      
+    - name: Azure Application Insights
+      href: actions/azure-application-insights/toc.yml
     - name: Azure Blob Storage
       href: actions/azure-blob-storage/toc.yml  
     - name: Azure Event Hub
