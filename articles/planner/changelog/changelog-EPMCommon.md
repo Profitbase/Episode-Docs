@@ -6,6 +6,8 @@ This package provide the users and access management, work process and tasks cap
 
 ## EPM Common Versions
 
+- [EPM Common 6.1.1](#epm-common-611) - Released 2026.01.15
+- [EPM Common 6.1.0](#epm-common-610) - Released 2026.01.
 - [EPM Common 6.0.0](#epm-common-600) - Released 2025.11.11
 - [EPM Common 5.4.0](#epm-common-540) - Released 2024.02.21
 - [EPM Common 5.3.2](#epm-common-532)
@@ -20,6 +22,34 @@ This package provide the users and access management, work process and tasks cap
 
 - Limit file types allowed (.doc,.docx,.gif,.jpeg,.jpg,.pdf,.png,.ppt,.pptx,.txt,.xls,.xlsx) to upload and upload size to 100 mb (#1805)
 - Limit number of files possible to upload and disable open option (#1826)
+
+## EPM Common 6.1.1
+
+**Notes:**
+
+- Invision version 2025.7+
+- Ensure SendGrid key is set for emails (in Flow).
+
+**Fixes:**
+
+- Scheduled Operation delete improperly handled in Common 6.0.0 and 6.1.0 ( https://github.com/Profitbase/Planner/issues/2144 )
+- Clear Operation Log button not working in 6.1.0 ( https://github.com/Profitbase/Planner/issues/2157 )
+- Potential operation errors fixed by upgrade scripts (6.0.0+ )
+
+## EPM Common 6.1.0
+
+**Notes:**
+
+- Update to 6.1.1 recommended
+
+**Enhancements:**
+
+- Code cleanup, deletion of unused items, migration to Flow.
+
+**Fixes:**
+
+- Email Flow only sending 1 email for tasks.
+- GUI fixes, translations to Norwegian.
 
 ## EPM Common 6.0.0
 
