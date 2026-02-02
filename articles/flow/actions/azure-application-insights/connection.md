@@ -1,6 +1,6 @@
 # Azure Application Insights Connection
 
-When adding an Azure Application Insights action, select an [existing connection](../../workspaces/workspace-objects.md) or create a new one.
+When adding an [Azure Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) action, select an [existing connection](../../workspaces/workspace-objects.md) or create a new one.
 
 <br/>
 
