@@ -73,7 +73,7 @@
       href: "file-storage/update-file-context-in-file-storage.md"
     - name: "Update files context in File Storage"
       href: "file-storage/update-files-context-in-file-storage.md"
-- name: "Get database table or view name for object"
+- name: "Get database object name"
   href: "get-db-table-name-for-object.md"
 - name: "Get database table name for Dimension"
   href: "get-db-table-name-for-dimension.md"
