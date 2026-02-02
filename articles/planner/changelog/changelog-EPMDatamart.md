@@ -6,6 +6,8 @@ This package provide a datamart to share data between EPM applications and exter
 
 ## EPM Datamart Versions
 
+- [EPM Datamart 6.1.1](#epm-datamart-611) - Released 2026.01.28
+- [EPM Datamart 6.1.0](#epm-datamart-610) - Released 2026.01.
 - [EPM Datamart 6.0.0](#epm-datamart-600) - Released 2025.11.11
 - [EPM Datamart 5.5.0](#epm-datamart-550) - Released 2024.06.05
 - [EPM Datamart 5.4.0](#epm-datamart-540) - Released 2024.02.21
@@ -23,6 +25,22 @@ This package provide a datamart to share data between EPM applications and exter
 
 - Limit file upload size for Data Import/Export to 100 mb (#1804)
 - Limit number of files possible to upload and disable open option (#1826)
+
+## EPM Datamart 6.1.1
+
+**Fixes:**
+
+- Data Import page slowness fixed. ( https://github.com/Profitbase/Planner/issues/2158 https://github.com/Profitbase/Planner/issues/1753 )
+- Potential collation Errors fixed ( https://github.com/Profitbase/Planner/issues/2166 ).
+- 
+- 
+
+## EPM Datamart 6.1.0
+
+**Fixes**
+
+- Data Import (no longer) needs file extension specified ( https://github.com/Profitbase/Planner/issues/2133 )
+- ReportAccountByMonthHistorical no longer write datasets to cache. ( https://github.com/Profitbase/Planner/issues/2135 )
 
 ## EPM Datamart 6.0.0
 
