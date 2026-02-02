@@ -28,12 +28,16 @@ This package provide a datamart to share data between EPM applications and exter
 
 ## EPM Datamart 6.1.1
 
+**Notes:**
+
+- Invision 2025.7+
+
 **Fixes:**
 
 - Data Import page slowness fixed. ( https://github.com/Profitbase/Planner/issues/2158 https://github.com/Profitbase/Planner/issues/1753 )
 - Potential collation Errors fixed ( https://github.com/Profitbase/Planner/issues/2166 ).
-- 
-- 
+- Error when importing to Finance Actuals - Duplicate value for Data Last Updated ( https://github.com/Profitbase/Planner/issues/2143 )
+- EPM Currency Exchange Rates - Daily Override Header ( https://github.com/Profitbase/Planner/issues/2163 )
 
 ## EPM Datamart 6.1.0
 
