@@ -5,8 +5,8 @@ Gets the database table or view name for an InVision DataStore, Table, or View.
 ![img](../../../../images/flow/getDatabaseObjectName.png)
 
 **Example** ![img](../../../../images/strz.jpg)  
-This flow is triggered via [HTTP trigger](../../triggers/http-trigger.md), [declares variables](declare-variables.md), [retrieves](../sql-server/get-datareader.md) the physical database object name for a selected DataStore, Table, or View, reads data from the database, converts the result to a [CSV stream](../csv/create-csv-file-as-stream.md), and [uploads](../azure-blob-storage/upload-blob.md) the file to blob storage.  
-The **Get database object name** action is used to resolve the actual database table or view name at runtime so it can be passed to subsequent database actions.
+This flow retrieves the name of a database table, converts the result to a [CSV file](../csv/create-csv-file-as-stream.md), and [uploads](../azure-blob-storage/upload-blob.md) that CSV to Azure Blob Storage. The flow is designed for automated data exports and supports large datasets through streaming.
+
 
 <br/>
 
@@ -20,3 +20,8 @@ The **Get database object name** action is used to resolve the actual database t
 | Result variable name | Required  | The variable that stores the resolved database table or view name.          |
 | Disabled             | Optional  | If enabled, the action is skipped during flow execution.                    |
 | Description          | Optional  | Additional notes describing the purpose of the action.                      |
+
+
+## Returns
+
+Returns the name of the database table or view as a [string](https://learn.microsoft.com/en-us/dotnet/api/system.string) value, which can be used by subsequent actions in the flow.
