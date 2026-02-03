@@ -9,10 +9,12 @@ Typical use cases:
 - A reusable flow that behaves differently based on the input passed at startup.
 - Passing parameters between flows without storing state.
 
-![img](../../../../images/flow/get-startup-argument.png)
+![img](../../../../images/flow/get-startup-argument.png) 
 
 **Example** ![img](../../../../images/strz.jpg)  
-This example shows a flow that starts with an [HTTP Trigger](../../triggers/http-trigger.md), reads the input payload using Get startup argument, [calculates](function.md) an end date based on that input, and [returns](return.md) the calculated end date to the calling flow.
+This flow is invoked via an [HTTP request](../http/http-request.md), reads the input payload using **Get startup argument**, [converts](convert.md) the received object to the required format, and [returns](return.md) the converted result back to the calling flow in the HTTP response.  The calling flow then inserts or updates the corresponding row in the database.
+
+The calling flow uses an HTTP request action with the POST method to invoke another flow. The request URI points to the endpoint of the target flow. ![img](../../../../images/strz2.jpg)
 
 ![img](../../../../images/flow/get-startup-argument1.png)
 
