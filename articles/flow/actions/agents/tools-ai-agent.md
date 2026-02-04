@@ -32,6 +32,8 @@ Include all the Word documents as attachments to the email.
 | Instructions    | Required     | The instruction given at the start of a conversation that sets the behavior, tone, and goals for the agent. It acts like a guide or personality primer, telling the chat model how it should respond (e.g., formal vs. casual), what role it should play (e.g., teacher, assistant, coder) and optionally what stategy you want it to prefer for decision making.  |
 | User prompt     | Required     | This is the actual task that the agent is given, for example "Summarize all Word documents in my OneDrive folder named 'Work', and send the summarization to my-email@corp.com."  |
 | Session ID      | Optional     | A session ID is required if you want to enable memory, allowing for an ongoing conversation with the AI, rather than every interaction starting fresh.|
+| [Output mode](#output-mode)     | Optional     | `Agent response` or `Tool result`. Specifies whether the output from the agent should be the (last) LLM response, or the raw output of the (last) tool call. [Read more about agent output mode below.](#output-mode) |
+| [Result data type](#result-data-type) | Optional    | Specifies whether you want the output of the of the agent to automatically be converted to a stronly typed object, such as a "Customer" business object or list of business objects. By default, the agent outputs text, but this option enables conversion to data objects if the agent is properly configured for that purpose. [Read more below.](#result-data-type) |
 | Chat model      | Required     | The chat model accepts a set of instructions, reasons about _how_ to solve the task and utilizes tools to achive the final outcome. |
 | Tools           | Required     | One or more tools that the agent to use to perform the tasks identified by the chat model. Tools the agent can use includes: <br/> [Azure Blob Storage Agent Tool](../azure-blob-storage/agent-tool.md) <br/> [OneDrive Agent Tool](../onedrive/agent-tool.md) <br/> [Outlook Agent Tool](../microsoft-365-outlook/agent-tool.md) <br/> [Markdown Agent Tool](../markdown/agent-tool.md)<br/>[MCP client tool](../mcp/mcp-client-tool.md) <br/> [Flow AI tool](../ai/flow-ai-tool.md)  | 
 | Memory          | Optional     | Agent memory used to store and retrieve a previous conversation with the agent. Allows for an ongoing conversation with the AI, rather than every interaction starting fresh. Note that memory requires a Session ID. |
@@ -52,6 +54,27 @@ If you enable `Code mode` in the Tools usage property, note that not all AI mode
 
 <a name="tools-include"></a>
 [!INCLUDE [](./__tools-usage.md)]
+
+<br/>
+
+### Output mode
+Options: `Agent response` or `Tool result`.  
+
+An agent can answer a question, perform a task that produces data, or perform a task without returning anything at all.  
+When you create an agent that returns data to Flow for further use, there are two ways to retrieve that data: from the last tool call or from the last LLM message.  
+Retrieving data from the last tool call gives you the raw output produced by the tool, such as a list of customers or email addresses.  
+Retrieving data from the last LLM message (`Agent response` which is the default) returns whatever the LLM chooses to produce after considering its tool calls, inputs, reasoning, and instructions.  
+If an agent is expected to return data in a specific, structured format—for example, a list of customer business objects—you should use the `Tool result` option, as it provides predictable output.  
+If an agent needs to analyze or reason about tool outputs before returning a response, you must use the `Agent response` option.
+
+<br/>
+
+### Result data type
+The `Result data type` specifies the data type returned by the action. This makes the agent’s output easier to consume in subsequent actions in the flow.  
+
+The default is `Object`, which means no conversion is performed and the action returns whatever the agent produces (depending on the selected Output mode).  
+
+The selected data type must be compatible with the response from the underlying API. For example, if the LLM or a tool call returns a JSON string and you want the action to output a strongly typed business object or value, the structure of that object must match the JSON format. Likewise, if the model or tool returns a date string and `Result data type` is set to an integer, the conversion will fail due to incompatible types.
 
 <br/>
 
