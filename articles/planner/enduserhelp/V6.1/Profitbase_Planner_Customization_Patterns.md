@@ -16,25 +16,25 @@ An in-depth knowledge of the Profitbase InVision designer is required.
 
 The following patterns are described:
 
-Pattern 1 - Create a new Planner input module extension that will integrate with Planner’s Plan Overview, produce financial transactions of its own, and follow Planner’s versioning.
+**Pattern 1** - Create a new Planner input module extension that will integrate with Planner’s Plan Overview, produce financial transactions of its own, and follow Planner’s versioning.
 
-Pattern 2 - Create a new module that will follow Planner’s versioning only (subset of 1) and be present in the hamburger menu.
+**Pattern 2** - Create a new module that will follow Planner’s versioning only (subset of 1) and be present in the hamburger menu.
 
-Pattern 3 – Customize the transaction pipeline.
+**Pattern 3** – Customize the transaction pipeline.
 
-Pattern 4 – Customize assumptions (lookup) measures for the Driver Based module.
+**Pattern 4** – Customize assumptions (lookup) measures for the Driver Based module.
 
-Pattern 5 – Use a custom target store for data import.
+**Pattern 5** – Use a custom target store for data import.
 
-Pattern 6 – Use a custom source for data export.
+**Pattern 6** – Use a custom source for data export.
 
-Pattern 7 – Add custom button and/or custom row context menu in standard Planner modules.
+**Pattern 7** – Add custom button and/or custom row context menu in standard Planner modules.
 
-Pattern 8 – Import transactional plan data from an external source.
+**Pattern 8** – Import transactional plan data from an external source.
 
-Pattern 9 – Register custom module with the Operation Manager.
+**Pattern 9** – Register custom module with the Operation Manager.
 
-Pattern 10 – Link processing of driver based models using a dynamic map of from/to departments.
+**Pattern 10** – Link processing of driver based models using a dynamic map of from/to departments.
 
 
 
@@ -68,17 +68,20 @@ There is a basic list of todos listed in the workbook:
 
 The following two chapters explain patterns 1 and 2 more in-depth. Note that much of the Planner integration specific topics are covered by the custom extension template.
 
+## Pattern 1 
 
+Create a new Planner input module extension
 
-## Pattern 1 - Create a new Planner input module extension
+> [!NOTE]
+> Before creating a new custom Planner input module extension, consider carefully if one or more driver-based models make up a “good enough” solution as they are supported and upgraded as part of standard Planner and a custom extension may thus be avoided in the first place.
 
-NOTE: Before creating a new custom Planner input module extension, consider carefully if one or more driver-based models make up a “good enough” solution as they are supported and upgraded as part of standard Planner and a custom extension may thus be avoided in the first place.
-
-NOTE: Any customizations made as additions to the EPM Planner package, should be contained in separate packages and developed in the solution that acts as the EPM Planner blueprint. This will allow for access to Planner objects using the @Object notation and any workbooks in the package that should appear in the hamburger menu can be included in the process content when creating a new Planner process:
+> [!NOTE]
+> Any customizations made as additions to the EPM Planner package, should be contained in separate packages and developed in the solution that acts as the EPM Planner blueprint. This will allow for access to Planner objects using the @Object notation and any workbooks in the package that should appear in the hamburger menu can be included in the process content when creating a new Planner process:
 
 ![customizationPatterns6_1_5](../../../../images/enduserhelp/customizationPatterns6_1_5.png)
 
-NOTE: Never use Planner objects such as filters, worksheets, setting tables, reports, etc directly in custom module workbooks. Create custom objects that refer to the data in question.
+> [!NOTE]
+> Never use Planner objects such as filters, worksheets, setting tables, reports, etc directly in custom module workbooks. Create custom objects that refer to the data in question.
 
 ### Register new Planner input module extension
 
@@ -86,13 +89,14 @@ A Planner input module extension comes in the form of a workbook and associated 
 
 Input module extensions are registered in @Object[ModuleExtensions,setting].dbObjectName.
 
-Relevant attributes:
+**Relevant attributes:**
+
  | Column | Description |
  | --- | --- |
- | ModuleExtensionID | The id of the module extension. Naming convention used by Profitbase for standard modules: Profitbase.EPM.<WorkbookName>. Propose to use <Partner>.EPM.<WorkbookName> |
+ | ModuleExtensionID | The id of the module extension. Naming convention used by Profitbase for standard modules: **Profitbase.EPM.WorkbookName**. Propose to use **Partner.EPM.WorkbookName** |
  | WorkbookID | Version specific workbook id (i.e. @Object[WorkbookName].Id). Must be updated post version deployment to reflect the actual workbook id for the version in question. |
- | WorkbookName | The workbook object name as given in the Profitbase InVision designer. NOTE: workbook names must be unique as there is no type-qualification available for workbooks when using @Object notation. |
- | InUse | Published | Not published (true | false) |
+ | WorkbookName | The workbook object name as given in the Profitbase InVision designer. NOTE workbook names must be unique as there is no type-qualification available for workbooks when using @Object notation. |
+ | InUse | Published | Not published (true/false) |
  | ModuleExtensionID_Name | Default description. |
  | ModuleExtensionID_Name_NO | Description - Norwegian translation |
  | ModuleExtensionID_Name_EN | Description - English translation |
@@ -113,17 +117,17 @@ This part is taken care of in the custom extension template.
 
 The Plan overview workbook will launch the module and use query string variables to represent the context:
 
-DepartmentID – Department filter context
+**DepartmentID** – Department filter context
 
-ProjectID – Project filter context
+**ProjectID** – Project filter context
 
-ActivityID – activity filter context
+**ActivityID** – activity filter context
 
-FilterChoice – Period filter context
+**FilterChoice** – Period filter context
 
-ReportLineID – Report line context (when launched by clicking a report line)
+**ReportLineID** – Report line context (when launched by clicking a report line)
 
-MessageBackTo – the WorkbookID for the Plan Overview workbook. If not null, this should be used for sending messages back to the Plan Overview workbook which listens for these messages. When sending messages, make sure to limit to CurrentUser or else a broadcast to all users having the Plan Overview workbook open will take place.
+**MessageBackTo** – the WorkbookID for the Plan Overview workbook. If not null, this should be used for sending messages back to the Plan Overview workbook which listens for these messages. When sending messages, make sure to limit to CurrentUser or else a broadcast to all users having the Plan Overview workbook open will take place.
 
 When data is changed: DirtyFlagRefresh
 
@@ -131,23 +135,24 @@ After transaction pipeline is completed: RefreshSummary
 
 Back – indicates whether launched in same window (1) or as new window (0). Used to activate/deactivate Back button. A click on an active Back button should execute an OpenBrowserWindow with the Plan overview workbook as the target including the query string parameters except for ReportLineID, MessageBackTo and Back (query string parameter values may have changed if user has changed the context while in module).
 
-NOTE: The URL may or may not contain certain variables, depending on the context. The custom workbook should handle situations where certain query string variables are not provided.
+> [!NOTE]
+> The URL may or may not contain certain variables, depending on the context. The custom workbook should handle situations where certain query string variables are not provided.
 
 The relevant filter sources:
 
-Department filter: @Object[Department,dim].dbObjectName
+**Department filter:** @Object[Department,dim].dbObjectName
 
-Project filter(*): @Object[Project,dim].dbObjectName
+**Project filter(*):** @Object[Project,dim].dbObjectName
 
-Activity filter(*): @Object[Activity,dim].dbObjectName
+**Activity filter(*):** @Object[Activity,dim].dbObjectName
 
-Period filter: @Object[FctPeriodFilterSource,view].dbObjectName
+**Period filter:** @Object[FctPeriodFilterSource,view].dbObjectName
 
-(*): the filters are optional, naming and visibility controlled in: @Object[InputFilters,setting].dbObjectName.
+***(*):** the filters are optional, naming and visibility controlled in: @Object[InputFilters,setting].dbObjectName.*
 
 Other issues to consider:
 
-IsAppReadonly() – to control availability of non-grid actions such as buttons (enable/disable) when a version is closed and thus editable.
+**IsAppReadonly()** – to control availability of non-grid actions such as buttons (enable/disable) when a version is closed and thus editable.
 
 User-editable attributes in @Object[ModuleExtensions,setting].dbObjectName such as name (set using SetAppTitle()) and Published. Standard Planner input modules will avoid loading filters, enabling buttons and loading data when a module is not published. A message is displayed:
 
@@ -230,9 +235,9 @@ The following part is taken care of in the custom extension template:
 
 In a transaction pipeline dataflow, the following two scripts must be executed post the creation of the transactions – they involve piping the data through to the PL (Profit & Loss) and AFP (preliminary social cost generation) stages:
 
-@Object[Reload pbTransdataPLSourceCM,script].Id
+**@Object[Reload pbTransdataPLSourceCM,script].Id
 
-@Object[Reload pbTransdataPLSourceAFP from pbTransdataPLSourceCM,script].Id
+@Object[Reload pbTransdataPLSourceAFP from pbTransdataPLSourceCM,script].Id**
 
 ![customizationPatterns6_1_9](../../../../images/enduserhelp/customizationPatterns6_1_9.png)
 
@@ -264,13 +269,13 @@ New store reference date
 
 The custom package is responsible for its own initializing and roll forward operations.
 
-If the customization is a module extension (i.e. exists in @Object[ModuleExtensions, setting].dbObjectName), the WorkbookID column must be updated to reflect the actual WorkbookID (i.e. @Object[<WorkbookName>].Id).
+If the customization is a module extension (i.e. exists in @Object[ModuleExtensions, setting].dbObjectName), the WorkbookID column must be updated to reflect the actual WorkbookID (i.e. @Object[WorkbookName].Id).
 
 If Workbook(s) are to be “go to” workbook options when creating new tasks, they must be registered in SYN_Common_Workbook in the correct process/version context:
 
 | Column | Description |
 | --- | --- |
-| WorkbookID | The workbookid found as @Object[<workbookname>].Id |
+| WorkbookID | The workbookid found as @Object[workbookname].Id |
 | WorkbookName | The default title of the workbook |
 | WorkbookName_EN | The English title of the workbook |
 | WorkbookName_NO | The Norwegian title of the workbook |
@@ -282,7 +287,8 @@ If Workbook(s) are to be “go to” workbook options when creating new tasks, t
 | Versioned | True |
 | ApplicationID | EPMPlanner |
 
-Note that this part is taken care of in the custom extension template but will require some adaptation. The following dataflow is attached to the custom extension package as a After Version Deployed dataflow:
+> [!NOTE]
+> that this part is taken care of in the custom extension template but will require some adaptation. The following dataflow is attached to the custom extension package as a After Version Deployed dataflow:
 
 ![customizationPatterns6_1_11](../../../../images/enduserhelp/customizationPatterns6_1_11.png)
 
@@ -290,11 +296,11 @@ It reads the relevant Planner package properties and splits into two control flo
 
 ![customizationPatterns6_1_12](../../../../images/enduserhelp/customizationPatterns6_1_12.png)
 
-# Pattern 2 - Create a new module that will follow Planner’s versioning only
+## Pattern 2 - Create a new module that will follow Planner’s versioning only
 
 This should be a subset of pattern 1, refer to Actions to be performed post version deployment
 
-# Pattern 3a – Customize the transaction pipeline and/or FinanceAll dataflow (Dataflow based)
+## Pattern 3a – Customize the transaction pipeline and/or FinanceAll dataflow (Dataflow based)
 
 Starting from Planner 6.0.0, the transactions pipelines support both flow and dataflow (depending on configuration). The following assumes the use of dataflow-based transaction pipelines.
 
@@ -310,21 +316,21 @@ Table for registering custom scripts: @Object[CustomPipelineScripts,setting].dbO
 
 Scripts must use context variables:
 
-@ModuleExtensionID – id defining the module or model
+**@ModuleExtensionID** – id defining the module or model
 
-@DepartmentID – selected filter value (id) in the department filter (123XYZZZYX321 outside of context)
+**@DepartmentID** – selected filter value (id) in the department filter (123XYZZZYX321 outside of context)
 
-@DepartmentColumnName * - Column name in wide dimension that represents the selected filter value, default is DepartmentID (leaf).
+**@DepartmentColumnName *** - Column name in wide dimension that represents the selected filter value, default is DepartmentID (leaf).
 
-@ActivityID * – selected filter value (id) in the department filter (123XYZZZYX321 outside of context or if dimension is not used)
+**@ActivityID *** – selected filter value (id) in the department filter (123XYZZZYX321 outside of context or if dimension is not used)
 
-@ActivityColumnName * - Column name in wide dimension that represents the selected filter value, default is ActivityID (leaf).
+**@ActivityColumnName *** - Column name in wide dimension that represents the selected filter value, default is ActivityID (leaf).
 
-@ProjectID * – selected filter value (id) in the department filter (123XYZZZYX321 outside of context or if dimension is not used)
+**@ProjectID *** – selected filter value (id) in the department filter (123XYZZZYX321 outside of context or if dimension is not used)
 
-@ProjectColumnName * - Column name in wide dimension that represents the selected filter value, default is ProjectID (leaf).
+**@ProjectColumnName *** - Column name in wide dimension that represents the selected filter value, default is ProjectID (leaf).
 
-*From Planner 5.2.4, with the introduction of multi-department input, the context slice is dynamic and script must therefore handle situations where context is defined at higher filter levels, for example @DepartmentColumnName = ‘L2’ And @DepartmentID = ‘Norway’ when pipeline is triggered from a workbook. It is suggested that the script makes use of dimension slicers that is used to control the context, for example:
+*****From Planner 5.2.4, with the introduction of multi-department input, the context slice is dynamic and script must therefore handle situations where context is defined at higher filter levels, for example @DepartmentColumnName = ‘L2’ And @DepartmentID = ‘Norway’ when pipeline is triggered from a workbook. It is suggested that the script makes use of dimension slicers that is used to control the context, for example:
 
 ![customizationPatterns6_1_14](../../../../images/enduserhelp/customizationPatterns6_1_14.png)
 
@@ -356,7 +362,7 @@ The POST script executes after the finish of the last financial engine and prior
 
 ![customizationPatterns6_1_18](../../../../images/enduserhelp/customizationPatterns6_1_18.png)
 
-# Pattern 3b – Customize the transaction pipelines (flow based)
+## Pattern 3b – Customize the transaction pipelines (flow based)
 
 From Planner 6.0.0, the transaction pipelines (Account, Personnel and Driver based) support flow and from Planner 6.1.x, the transaction pipelines are purely flow based.
 
@@ -400,7 +406,8 @@ The sql script parameters are set in the “Parameters” selection like this:
 
 ![customizationPatterns6_1_24](../../../../images/enduserhelp/customizationPatterns6_1_24.png)
 
-Note that the parameters supported are the same as described here: Pattern 3a – Customize the transaction pipeline and/or FinanceAll dataflow (Dataflow based)
+> [!NOTE]
+> that the parameters supported are the same as described here: Pattern 3a – Customize the transaction pipeline and/or FinanceAll dataflow (Dataflow based)
 
 When using pre/post transaction pipeline scripts that will add transactions, the built-in module transaction tables should be used:
 
@@ -426,37 +433,39 @@ As additional information on the source transaction itself with appropriate rate
 
 Vacation pay:
 
-AccVacPay – account for vacation pay
+**AccVacPay** – account for vacation pay
 
-RLVacPay – report line id for vacation pay
+**RLVacPay** – report line id for vacation pay
 
-VacationPayPctOvr – the vacation pay rate (e.g. 0.12 indicating 12%)
+**VacationPayPctOvr** – the vacation pay rate (e.g. 0.12 indicating 12%)
 
 Employer tax:
 
-AccEmplTax – account for employer tax
+**AccEmplTax** – account for employer tax
 
-RLEmplTax – report line id for employer tax
+**RLEmplTax** – report line id for employer tax
 
-EmployerTaxPctOvr – the employer tax rate (e.g. 0.141 indication 14.1%)
+**EmployerTaxPctOvr** – the employer tax rate (e.g. 0.141 indication 14.1%)
 
 Employer tax on vacation pay:
 
-AccEPTaxOnVacPay – account for employer tax on vacation pay
+**AccEPTaxOnVacPay** – account for employer tax on vacation pay
 
-RLEPTaxOnVacPay – report line id for employer tax on vacation pay
+**RLEPTaxOnVacPay** – report line id for employer tax on vacation pay
 
 Existing values in columns VacationPayPctOvr and EmployerTaxPctOvr used to calculate combined rate
 
 Pension employer:
 
-AccPensionEmployer – account for pension employer
+**AccPensionEmployer** – account for pension employer
 
-RLPensionEmployer – report line id for pension employer
+**RLPensionEmployer** – report line id for pension employer
 
-PensionEmployerPctOvr – the pension employer rate (e.g. 0.05 indication 5%)
+**PensionEmployerPctOvr** – the pension employer rate (e.g. 0.05 indication 5%)
 
-# Pattern 4 – Customize assumptions (lookup) measures for the Driver Based module
+## Pattern 4 
+
+Customize assumptions (lookup) measures for the Driver Based module.
 
 The standard assumption table for the driver-based module is found in the Driver based modelling workbook:
 
@@ -484,11 +493,17 @@ For any custom assumption values where all values and specific values are used, 
 
 Please also observe that the PBRowIdentity values for the custom measures must persist across queries against the view as the driver-based pipeline will query on a set of PBRowIdentities. This means that you cannot use constructs such as ROW_NUMBER() Over ( Partition..) to generate PBRowIdentity as this will result in different results for each query.
 
-# Pattern 5 – use a custom target store for data import
+## Pattern 5 
 
-# Pattern 6 – use a custom source for data export
+Use a custom target store for data import
 
-# Pattern 7 – add custom button/row context menu in standard Planner modules
+## Pattern 6 
+
+Use a custom source for data export
+
+## Pattern 7 
+
+Add custom button/row context menu in standard Planner modules
 
 From Planner 5.4.0, it is possible to enable and configure a custom button and/or a custom row context menu in modules Account, Personnel, Driver Based and the Plan overview workbook. The purpose is to enable a UI integration to custom workbooks and pass the context from the standard workbook to the custom workbook without “breaking” the standard.
 
@@ -498,7 +513,9 @@ This is set up using the Profitbase InVision designer in the setting table Modul
 
 ![customizationPatterns6_1_28](../../../../images/enduserhelp/customizationPatterns6_1_28.png)
 
-While not a module, it is also supported to add a custom button and a custom row context menu to the Plan Overview workbook. Details stored in separate columns in the ModuleExtensions table (NOTE: Row for ModuleExtensionID = Profitbase.EPM.AccountWorkbook taken into account):
+While not a module, it is also supported to add a custom button and a custom row context menu to the Plan Overview workbook. Details stored in separate columns in the ModuleExtensions table.  
+[!NOTE]
+> Row for ModuleExtensionID = Profitbase.EPM.AccountWorkbook taken into account
 
 ![customizationPatterns6_1_29](../../../../images/enduserhelp/customizationPatterns6_1_29.png)
 
@@ -586,7 +603,9 @@ Example of a SendMessage instruction back to the calling module:
 
 ConfigureMessage(@Var[MessageBackTo], SYS.CurrentUserName, "RefreshInputPage", '');
 
-# Pattern 8 – import transactional plan data from an external source.
+## Pattern 8 
+
+Import transactional plan data from an external source.
 
 In some cases plan data from external sources need to be included in the plan without involving any input, i.e. to be imported as transactional data to the plan.
 
@@ -618,13 +637,16 @@ Parameter value 123XYZZZYX321 means all.
 
 For a description of the various data fields and the requirements related to the fields, please refer to Create custom financial transactions
 
-NOTE: from 6.0.x and onwards data is returned to the plan overview and associated reports through stored procedures that are compiled to reflect the current configuration. When introducing custom transactions, these stored procedures will have to be recompiled manually in the version in which they are first introduced (later deployments will adapt so long as data exists in the CM table).
+> [!NOTE]
+> from 6.0.x and onwards data is returned to the plan overview and associated reports through stored procedures that are compiled to reflect the current configuration. When introducing custom transactions, these stored procedures will have to be recompiled manually in the version in which they are first introduced (later deployments will adapt so long as data exists in the CM table).
 
 ![customizationPatterns6_1_39](../../../../images/enduserhelp/customizationPatterns6_1_39.png)
 
 A note on social costs (vacation pay, employer tax, pension) from 6.0.x and onwards: Some transactions may produce social costs. For custom modules, these transactions are assumed to be part of the imported data, i.e. the source for imports should include separate transactions for the relevant social costs involved.
 
-# Pattern 9 – register custom module with Operation Manager
+# Pattern 9 
+
+Register custom module with Operation Manager
 
 The Operation Manager is a common resource that allows you to set up, execute and schedule operations for any module that is known to the operation manager. To make Operation manager aware of a custom module, you need to register it. This can be done by executing a sql command like the one shown below:
 
@@ -642,7 +664,9 @@ Values ('GKProsjektestimering', 'GKProsjektestimering', 'NULL', 'GKProsjektestim
 
 End
 
-# Pattern 10 – link processing of driver based models using a dynamic map of from/to departments
+## Pattern 10 
+
+Link processing of driver based models using a dynamic map of from/to departments
 
 Linking processing of driver based models is supported from Planner version 6.1.0 and is only supported for the flow based pipeline.
 
@@ -664,7 +688,7 @@ Add the script and a node that removes the ModuleExtensionLinkDepartmentMap obje
 
 ![customizationPatterns6_1_43](../../../../images/enduserhelp/customizationPatterns6_1_43.png)
 
-# Data Architecture and Extensions
+## Data Architecture and Extensions
 
 When creating extensions you need to know where to find data and where to put data and using sources and targets that will be present and most stable over version upgrades. The picture below show the main dataflow in Profitbase Planner.
 
@@ -672,7 +696,7 @@ This presentation contains figures that show how the integration describe above 
 
 Profitbase Planner Architecture.pptx
 
-Recommendation summary:
+## Recommendation summary:
 
 Use pbTransdataSourceCM when creating and inserting finance source transactions.
 
