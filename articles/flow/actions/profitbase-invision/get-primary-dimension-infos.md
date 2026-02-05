@@ -12,23 +12,26 @@ This action returns a list of dimension information items. The list is then iter
 
 | Name | Type | Description |
 |------|------|-------------|
-| Title | Optional | Action title. |
-| Connection | Required | InVision connection. |
-| Result variable name | Required | Variable name that receives the list of Primary Dimension information. |
-| Disabled | Optional | Whether the action is disabled (true/false). |
-| Description | Optional | Additional details or notes about the action. |
+| Title | Optional | The name of the action as shown in the flow. |
+| Connection | Required | A valid InVision connection used to retrieve dimension metadata. |
+| Result variable name | Required | Name of the variable that stores the list of Primary Dimension information for use in subsequent actions. |
+| Disabled | Optional | Specifies whether the action is skipped during flow execution. |
+| Description | Optional | Additional notes about the action or its configuration. |
 
 <br/>
 
 ## Returns
 
-List of Primary Dimension information:
+Returns a list of Primary Dimensions available in the connected InVision solution.
+
+Each item in the list contains the following properties:
 
 | Property | Description |
 |----------|-------------|
-| DimensionId | The ID of the dimension. |
+| DimensionId | The unique identifier of the dimension. |
 | DimensionName | The name of the dimension. |
-| SolutionId | The ID of the solution containing the dimension. |
+| SolutionId | The identifier of the solution containing the dimension. |
 | SolutionName | The name of the solution containing the dimension. |
-| ParentChildTableName | The name of the dimension's parent/child table. |
-| WideTableName | The name of the dimension's wide table. |
+| ParentChildTableName | The name of the dimension’s parent-child table. |
+| WideTableName | The name of the dimension’s wide table. |
+
