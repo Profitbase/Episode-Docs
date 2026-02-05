@@ -4,9 +4,17 @@ This action calls the InVision API to run a rollover of a Data Store Group and a
 A rollover can be applied to Data Stores and Tables having the Time Frame and Rollover features enabled. It is typically used to start a new cycle of a rolling forecast, but can be used in any cyclic process such as budgeting as well.  In essence, a rollover automatically _shifts_ data forward by a number of periods, for example a month, quarter or year. A rollover in InVision may also include other types of business logic, such as inflation adjustments.
 
 ![img](/images/flow/invision-store-group-run-rollover.png)
-<p><em>Figure: The previous forecast is rolled forward when a new cycle is started.</em></p>
+
+
+**Example** ![img](../../../../../images/strz.jpg)  
+This flow starts a new forecast cycle by rolling forward an existing Data Store Group.
+
+It is triggered on a fixed schedule, copies the current forecast version to create a new working version, and then runs a rollover on the selected Data Store Group. The rollover shifts all time-based data forward by the specified number of periods, applying the rollover logic defined in InVision for the group and its descendants.
+
+The result is a new forecast period that is pre-populated with data from the previous cycle, ready for planning or budgeting activities.
 
 <br/>
+
 
 ## Properties
 | Name             | Type         | Description               |

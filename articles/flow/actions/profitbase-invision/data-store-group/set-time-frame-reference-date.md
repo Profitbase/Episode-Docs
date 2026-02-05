@@ -5,12 +5,18 @@ It is typically used when starting a new [InVision Work Process version](../../.
 For instance, for a 12-month planning cycle starting in January 2025, the reference date would be set to January 1st 2025 (whether the planning cycle is 12 months or something else doesn't matter - it's just an example).
 
 ![img](/images/flow/invision-store-group-set-time-frame-reference-date.png)
-<p><em>Figure: The time frame reference date of a Data Store Group is set during the setup of a forecast solution.</em></p>
+
+
+**Example** ![img](../../../../../images/strz.jpg)  
+This flow sets the start date of a forecast cycle by defining the time frame reference date for a Data Store Group.
+
+It retrieves the forecast configuration, applies the reference date to the selected Data Store Group, and then opens the corresponding Work Process version. This establishes the point in time from which all time-based calculations and periods in the forecast are evaluated.
 
 <br/>
 
 
 ## Properties 
+
 | Name         | Type          | Description                    |
 |--------------|---------------|--------------------------------|
 | Connection   | Required      | A valid InVision Connection used to execute the SQL script.  |
