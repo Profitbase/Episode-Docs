@@ -24,8 +24,12 @@
   href: "flow-trigger.md"
 - name: "HTTP trigger"
   href: "http-trigger.md"
-- name: "InVision User Chat trigger"
-  href: "invision-user-chat-trigger.md"
+- name: InVision
+  items:
+    - name: "User chat trigger"
+      href: "invision/user-chat-trigger.md"
+    - name: "Send tabular data trigger"
+      href: "invision/send-tabular-data-trigger.md"
 - name: MCP
   items:
     - name: "MCP tool trigger"

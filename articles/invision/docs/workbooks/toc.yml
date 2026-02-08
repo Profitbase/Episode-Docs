@@ -217,8 +217,10 @@
               href: programmingmodel/instructions/settext.md
             - name: SetTextIf
               href: programmingmodel/instructions/settextif.md
-            - name: ShowToastNotyfication
-              href: programmingmodel/instructions/showtoastnotyfication.md
+            - name: ShowToastNotification
+              href: programmingmodel/instructions/showtoastnotification.md
+            - name: UseFlow
+              href: programmingmodel/instructions/use-flow.md
             - name: Validate
               href: programmingmodel/instructions/validate.md
             - name: Var

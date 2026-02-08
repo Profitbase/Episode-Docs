@@ -1,5 +1,5 @@
 
-# Reports
+# SQL Reports
 
 InVision supports line and chart [reports](../../sqlreports.md), and a single report can toggle between line and chart display mode.
 
@@ -16,11 +16,15 @@ InVision reports can read data from any SQL source, so you can use reports to vi
 
 ### LoadData
 
-*	Instructs the component to load data.	
+Instructs the component to load data. By default, this will load data from the InVision data model based on the configuration. If, however, you want to load data to the SQL Report using Flow instead, you can call `UseFlow(...)` in Load Data instructions.   
+Read more about calling [UseFlow here](../programmingmodel/instructions/use-flow.md).
+
+<br/>
 
 ### Execute Expression
 
-*	Enables changing the caption of the report dynamically by calling SetCaption(…), SetCaptionSuffix(…) and ResetCaption(). 
+Enables changing the caption of the report dynamically by calling SetCaption(…), SetCaptionSuffix(…) and ResetCaption(). 
+
 <br/>
 
 ## Events
@@ -28,84 +32,76 @@ InVision reports can read data from any SQL source, so you can use reports to vi
 
 ### Cell Action Link Tapped
 
-*	This event is raised when an action link cell in a table report is clicked. The payload of the event is the name of the column that was clicked and the row object.
+This event is raised when an action link cell in a table report is clicked. The payload of the event is the name of the column that was clicked and the row object.
 
 ### Custom Context Menu Action Executed
 
-*	This event is raised when a custom context menu action is clicked. The payload of the event is the name of the action that was clicked, the column and the row object that the cell belongs to.
+This event is raised when a custom context menu action is clicked. The payload of the event is the name of the action that was clicked, the column and the row object that the cell belongs to.
 
  ### @Event properties
 
  **Data** – Contains a reference to the data (row) object that is rendered by the clicked spreadsheet cell  
  **Sender.ColumnName** – The name of the column that was clicked  
  **Sender.ActionName** – The name of the custom context menu item action  
- **Selection.Rows** – A collection of SelectedRow objects  
- **Selection.Cells** – A collection of SelectedCell objects
+ **Selection.Rows** – A collection of [SelectedRow](#selectedrow-properties) objects  
+ **Selection.Cells** – A collection of [SelectedCell](#selectedcell-properties) objects
 
 
+**Example**  
+Show a toast notification displaying the name of the action that was executed, and the value of the ProductID of the row that was clicked.
 
->**Example**
->
->Show a toast notification displaying the name of the action that was executed, and the value of the ProductID of the row that was clicked.
->
-```
-ShowToastNotification(@Event.Sender.ActionName + " was executed", 
-"Product Id is " + @Event.Data.ProductID);
+```javascript
+ShowToastNotification(@Event.Sender.ActionName + " was executed", "Product Id is " + @Event.Data.ProductID);
 ```
 
 
 
-* **SelectedRow Properties:**
-    <br/>
+#### SelectedRow properties
 
-    **RowData** : object
-    >The data object of the selected cell.
-
-    **Columns** : string[]
-    >A collection of the column names that are selected for the row. The column names map directly to the field names or the RowData object. 
-
-    <br/>
+| Name     | Description                  |
+|----------|-------------------------------|
+| RowData  | The data object of the selected row, containing one property pr column |
+| Columns  | The column names of the selected. The column names map directly to the property (field) names or the RowData object. | 
 
 
-* **SelectedCell Properties:**
-    <br/>
+#### SelectedCell properties 
 
-    **RowData** : object
-    >The data object of the selected cell.
+| Name     | Description                  |
+|----------|-------------------------------|
+| RowData  | The data object of the selected row, containing one property pr column. |
+| Column   | The column name of the selected cell. For example, you can access the value of the first selected cell using `Event.Selection.Cells[0].RowData[Event.Selection.Cells[0].Column]`. |
 
-    **Column** : string[]
-    >The column name of the selected cell.
 
-    <br/>
 
 ### ChartInteractionEvent
 
-*	This event can be raised from a Highchart event handler, for example the click event of a point. To raise this event, you need to add an event handler to the chart component that you want to raise that event from, and then raise the ChartInteraction event.
+This event can be raised from a Highchart event handler, for example the click event of a point. To raise this event, you need to add an event handler to the chart component that you want to raise that event from, and then raise the ChartInteraction event.
 
+**Example**
 
+To raise the ChartInteraction event when a point is clicked, add a JavaScript library to your solution and generate a default script. This will create a myUtil function object. 
+Add the following function to the myUtil function object:
 
->**Example**
->
->To raise the ChartInteraction event when a point is clicked, add a JavaScript library to your solution and generate a default script. This will create a myUtil function object. 
->Add the following function to the myUtil function object:
->
+```javascript
     myUtil.onPointClick = function(){				
         this.series.chart.componentContext.eventDispatcher.raiseEvent  
         ('ChartInteraction', {x : this.x, y : this.y},  
         this.series.chart.componentContext.componentId);
     };
->
->The second argument is the payload you want to pass along as the event argument.
->
->Then, find the clicked event of the point of the series, and add a pointer to the function with the **func::** prefix.
->If your solution is called Hypotesia, and the JavaScript Solution object is called Chart Events, the correct pointer name is 
->
-        func::hypotesia.chartevents.myUtil.onPointClick
->
->To display the x-value of the clicked series in a toast notification, add an ExecuteExpression action to the Workbook with the following expression:
->
-        ShowToastNotification("Point clicked", "X value point is " + @Event.Data.x);
+```
 
+The second argument is the payload you want to pass along as the event argument.  
+
+Then, in the Property editor, find the clicked event of the point of the series, and add a reference to the function with the **func::** prefix.
+If your solution is called Hypotesia, and the JavaScript Solution object is called Chart Events, the correct pointer name is  
+```javascript
+        func::hypotesia.chartevents.myUtil.onPointClick
+```
+
+To display the x-value of the clicked series in a toast notification, add an ExecuteExpression action to the Workbook with the following expression:
+```javascript
+ShowToastNotification("Point clicked", "X value point is " + @Event.Data.x);
+```
 
 <br/>
 
