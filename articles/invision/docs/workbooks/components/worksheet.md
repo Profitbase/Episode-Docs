@@ -6,12 +6,41 @@
 <br/>
 
 ### Load Data
-Use this action to load or refresh the table.
+Use this action to load or refresh the table. By default, this will load data from the InVision data model based on the Worksheet configuration. If, however, you want to load data to the Worksheet using Flow instead, you can call `UseFlow(...)` in Load Data instructions.   
+Read more about calling [UseFlow here](../programmingmodel/instructions/use-flow.md).
+
+**Example - load data using Flow instead of InVision**  
+In the Load Data action of the Worksheet, add this call to the Instructions script.  
+The data will be loaded from a Flow returning a DataPackage.  
+
+```javascript
+UseFlow("Name of the Flow in the Solution");
+```
 
 <br/>
 
 ### Save Data
 Use this action to save all of the changes to the database.
+
+<br/>
+
+### Send Data
+Use this action to send the data in the Worksheet directly to Flow for processing, and optionally get back an updated data set. 
+You will typically use this action instead of `Save Data` if you want to use Flow to apply custom, server-side business logic, on the data in the Worksheet. This typically involves advanced calculations requiring access to data stored in databases or other external systems such as files or HTTP APIs. 
+If the Flow returns a [DataPackage](../../../../flow/actions/profitbase-invision/convert-datatable-to-datapackage.md), the data in the Worksheet is updated accordingly. 
+To send data in the Worksheet to Flow, call the `UseFlow(...)` function in the `Send Data` instructions.  
+Read more about calling [UseFlow here](../programmingmodel/instructions/use-flow.md).
+
+**Example**  
+```javascript
+UseFlow("Update forecast", {
+    environment: 'Production', // or 'Development' or 'Test'. Leave blank to use default
+    data: {
+        departmentId: "sales-NO",        
+        version: "Jan-26-01"
+    }
+});
+```
 
 <br/>
 

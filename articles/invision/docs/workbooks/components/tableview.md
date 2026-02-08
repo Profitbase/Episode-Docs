@@ -20,7 +20,8 @@ The component has built-in features for selection, sorting, filtering, formattin
 
 #### Load Data
 
-Call this action to load or refresh the data displayed in the Table View component. 
+Call this action to load or refresh the data displayed in the Table View component. By default, this will load data from the InVision data model based on the TableView configuration (SQL query). If, however, you want to load data to the Table View using Flow instead, you can call `UseFlow(...)` in Load Data instructions.   
+Read more about calling [UseFlow here](../programmingmodel/instructions/use-flow.md).
 
 
 <br/>
