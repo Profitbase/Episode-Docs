@@ -26,7 +26,7 @@ Cons:
 - Tool definitions are included in every request, even when most tools are not used, leading to unnecessary token consumption.  
 
 #### Code mode
-n this mode, the agent reasons about the task and inspects the APIs available through its tools to determine whether it can solve the task by writing and executing code.  
+In this mode, the agent reasons about the task and inspects the APIs available through its tools to determine whether it can solve the task by writing and executing code.  
 
 Instead of calling each tool individually, the agent generates a single piece of code that uses all required tools and then executes it. For complex, multi-step tasks, this means the agent only needs to discover the APIs, write the code, and run it — typically requiring only two or three calls rather than one per tool.  
 

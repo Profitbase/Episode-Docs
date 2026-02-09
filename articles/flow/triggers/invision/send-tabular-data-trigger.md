@@ -1,7 +1,7 @@
 # Send Tabular Data trigger
 
-Use this action to handle Send Data requests from InVision tabular components such as [Worksheets](../../../invision/docs/worksheets.md), [Tables](../../../invision/docs/tables.md), [SQL Reports](../../../invision/docs/sqlreports.md) and [Table Views](../../../invision/docs/tableview.md).
-The typical use case is to use Flow for _directly_ processing the tabular data displayed in the aforementioned InVision Workbook components without going through the InVision database. 
+Use this action to handle [Send Data](../../../invision/docs/workbooks/components/worksheet.md#send-data) requests from InVision tabular components such as [Worksheets](../../../invision/docs/worksheets.md), [Tables](../../../invision/docs/tables.md), [SQL Reports](../../../invision/docs/sqlreports.md) and [Table Views](../../../invision/docs/tableview.md).
+The typical use case is to use Flow for _directly_ processing the tabular data displayed in the aforementioned InVision Workbook components without going through the InVision database or API. 
 The trigger automatically converts the request payload to an object format that you can use in Flow to process the request.
 
 ![img](/images/flow/send-tabular-data-trigger.png)  

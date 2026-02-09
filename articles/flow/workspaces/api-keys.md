@@ -4,7 +4,7 @@ API keys are used to authenticate and authorize API calls to Profitbase Flow. It
 You can define API keys at both the [Tenant](../tenants/api-keys.md) and Workspace level.  
 
 The following apply:
-- API keys defined at the [Tenant leve](../tenants/api-keys.md) are used by default. If no API keys are defined at the Workspace level, Tenant-level API keys are valid for all API calls.
+- API keys defined at the [Tenant level](../tenants/api-keys.md) are used by default. If no API keys are defined at the Workspace level, Tenant-level API keys are valid for all API calls.
 - If API keys are defined for a Workspace, those keys must be used for API calls to resources within that Workspace. Tenant-level API keys remain valid for other Workspaces that do not have Workspace-level keys.
 - If you want Workspace-level permissions for execution, but still allow Tenant-level permissions for metadata operations (such as upgrade, rename, or clone), you can define API keys only for the relevant policy. For example, to require Workspace-level API keys for execution while allowing metadata operations to use Tenant-level API keys, define a Workspace API key for the `Execute` policy only, and not for the `Configuration` policy
 
