@@ -1,16 +1,16 @@
 # InVision User Chat notification trigger
 
-The trigger defines the starting point of a Flow that handles [User Chat](../../invision/docs/workbooks/components/userchat/user-chat.md) notifications from InVision. 
+The trigger defines the starting point of a Flow that handles [User Chat](../../../invision/docs/workbooks/components/userchat/user-chat.md) notifications from InVision. 
 
 > [!NOTE]
-> To use this trigger, a flow must be [created from, or added to InVision](../../invision/docs/flows/how-to/add-flow-to-solution.md). In InVision, the flow must then be attached to User Chat's [Context Item](../../invision/docs/workbooks/components/userchat/context-item.md).
+> To use this trigger, a flow must be [created from, or added to InVision](../../../invision/docs/flows/how-to/add-flow-to-solution.md). In InVision, the flow must then be attached to User Chat's [Context Item](../../../invision/docs/workbooks/components/userchat/context-item.md).
 
 <br/>
 
 ![img](/images/flow/invision-user-chat-trigger.png)
 
 **Example**![img](/images/strz.jpg)  
-This flow receives a list of notifications from a [User Chat](../../invision/docs/workbooks/components/userchat/user-chat.md) in InVision. A [For each](../actions/built-in/foreach.md) action iterates over received notification items. An [Function](../actions/built-in/function.md) creates a message text from the notification item, and the [Send Message](../actions/microsoft-teams/send-chat-message.md) action forwards the message to an Microsft Teams channel.
+This flow receives a list of notifications from a [User Chat](../../../invision/docs/workbooks/components/userchat/user-chat.md) in InVision. A [For each](../../actions/built-in/foreach.md) action iterates over received notification items. An [Function](../../actions/built-in/function.md) creates a message text from the notification item, and the [Send Message](../../actions/microsoft-teams/send-chat-message.md) action forwards the message to an Microsft Teams channel.
 
 <br/>
 
@@ -47,8 +47,8 @@ Each message item (UserChatMessage) in `NewMessages` property above has the foll
 | UserName     | Name of the User that has added the message. |
 | Content      | The message text. |
 | ChatName     | Name of the chat. |
-| ContextText  | The Context Text is described [here](../../invision/docs/workbooks/components/userchat/howto/context-text.md). |
-| ContextLink  | The Context Link as described [here](../../invision/docs/workbooks/components/userchat/howto/context-link.md). |
+| ContextText  | The Context Text is described [here](../../../invision/docs/workbooks/components/userchat/howto/context-text.md). |
+| ContextLink  | The Context Link as described [here](../../../invision/docs/workbooks/components/userchat/howto/context-link.md). |
 | Timestamp    | Date/time when the message was added. |
 | EditTimestamp | Date/time when the message was optional edited.|
 

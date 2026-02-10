@@ -15,7 +15,7 @@ It reads data from a file stored in [Blob Storage](../azure-blob-storage/read-bl
 | Name                 | Type     | Description                                            |
 | -------------------- | -------- | ------------------------------------------------------ |
 | Title                | Optional | The name of the action as shown in the flow.        |
-| Connection           | Required | A valid InVision connection used to perform the import.       |
+| Connection           | Required | A valid [InVision Connection](invision-connection.md) used to perform the import.       |
 | Source               | Required | The data source must be an [IDataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) or a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) with columns matching the parent-child table schema. For further details, please read the [Data import format](#data-import-format) section below. |
 | Dimension            | Required | The dimension to import data into.       |
 | Overwrite user edits | Optional | This option is applicable only when updating an existing dimension member. It determines whether manual changes made by the user to a dimension member's properties since the last import should be retained or overwritten. By default, user edits are preserved. However, setting this option to true will overwrite all manual user edits. Use this option with caution. |

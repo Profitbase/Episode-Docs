@@ -7,7 +7,7 @@ If no [Table](table-relationship.md) or [Parameter relationships](parameter-rela
 
 | Name                    | Type         | Description                                                |
 |-------------------------|--------------|------------------------------------------------------------|
-| Connection              | Required     | A valid InVision Connection.                               |
+| Connection              | Required     | A valid [InVision Connection](../invision-connection.md).                               |
 | Source table            | Required     | The table or view to read data from.                       |
 | Source columns          | Optional     | The columns to read from the Source table. If you don't specify anything, all columns are read from the source. Note this may add overhead if not all columns are needed, which will impact performance negatively.        |
 | Table relationships     | Optional     | The [Table relationship](table-relationship.md) is used to slice the data set being processed. <br/><br/>When a Calculation Flow is executed, the calling context (for example InVision) may pass in a [Data Context](data-context.md) which specifies the context of which the Flow is run. This is typically a selected filter item, for example a specific department or an account group, or a selection of items from multiple different filters.<br/><br/>Under the hoods, the [Table relationships](table-relationship.md) along with the [Data Context](data-context.md) creates a SQL JOIN that defines the data being processed.<br/><br/>If neither this nor the Parameter relationships property is defined, or the caller does not pass in a Data Context, all rows from the Source table is processed.               |

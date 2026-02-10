@@ -13,7 +13,7 @@ It is triggered via [HTTP](../../triggers/http-trigger.md), [retrieves](../sql-s
 | Name | Type | Description |
 |-----|------|-------------|
 | Title | Optional | The name of the action as shown in the flow. |
-| Connection | Required | A valid InVision connection used to deploy the stored procedure. |
+| Connection | Required | A valid [InVision Connection](invision-connection.md) used to deploy the stored procedure. |
 | Stored Procedure | Required | The ID of the stored procedure definition in InVision to be deployed. |
 | Result variable name | Optional | Name of the variable that stores the deployment result, allowing it to be used by subsequent actions. |
 | Description | Optional | Additional notes about the action or its configuration. |
