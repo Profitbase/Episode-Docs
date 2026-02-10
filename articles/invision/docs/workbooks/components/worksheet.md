@@ -42,6 +42,8 @@ UseFlow("Update forecast", {
 });
 ```
 
+![img](/images/invision/send-data-use-flow.png)
+
 <br/>
 
 ### Add Item

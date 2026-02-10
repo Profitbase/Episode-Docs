@@ -53,3 +53,7 @@ UseFlow("Update forecast", {
 // You can also pass parameters to Flow using SetParamValue
 SetParamValue("@DataSetId", _state.DataSetId);
 ```
+
+<br/>
+
+![img](/images/invision/load-data-use-flow.png)
