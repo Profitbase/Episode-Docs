@@ -169,6 +169,8 @@
     - name: Change log
       href: changelog.md
       items:
+      - name: Changelog 2026.1
+        href: changelog/changelog26_1.md  
       - name: Changelog 2025.6
         href: changelog/changelog25_6.md
       - name: Changelog 2025.5
