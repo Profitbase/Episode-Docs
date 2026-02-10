@@ -35,6 +35,6 @@
 * [Setsrcif](./setsrcif.md)
 * [Settext](./settext.md)
 * [Settextif](./settextif.md)
-* [Showtoastnotyfication](./showtoastnotyfication.md)
+* [Showtoastnotyfication](./showtoastnotification.md)
 * [Validate](./validate.md)
 * [Var](./var.md)

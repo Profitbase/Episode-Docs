@@ -9,8 +9,8 @@ Publishes a Dimension in an InVision Solution.
 
 | Name                 | Type     | Description                                      |
 |----------------------|----------|--------------------------------------------------|
-| Title                |          |                               |
-| Connection           | Required | InVision connection.                             |
+| Title                |          |   A descriptive title for the action.      |
+| Connection           | Required | [InVision Connection](invision-connection.md).                             |
 | Dimension            | Required | Select or enter the ID of the Dimension you want to publish.         |
 | Result variable name | Optional | Name of the result variable containing the result (e.g., `isSuccess`). |
 | Description          | Optional | Additional notes or comments about the action or configuration. |

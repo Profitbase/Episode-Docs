@@ -13,7 +13,7 @@ Executes a Dataflow in an InVision Solution.
 | Name                 | Type     | Description                                       |
 |----------------------|----------|---------------------------------------------------|
 | Title                | Optional | A descriptive title for the action.               |
-| Connection           | Required | InVision connection.                              |
+| Connection           | Required | [InVision Connection](invision-connection.md).                              |
 | Dataflow             | Required | The ID of the Dataflow to run.                    |
 | Execution arguments  | Optional | Specifies the arguments passed to the Dataflow. The arguments must be specified as a JSON string as shown in the [example below](#execution-arguments).  |
 | Description          | Optional | Additional notes or comments that describe the action. |

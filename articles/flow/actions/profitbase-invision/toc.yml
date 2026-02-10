@@ -1,4 +1,6 @@
 
+- name: "Connection"
+  href: "invision-connection.md"
 - name: "Calculation Flow"
   items: 
   - name: "Overview"

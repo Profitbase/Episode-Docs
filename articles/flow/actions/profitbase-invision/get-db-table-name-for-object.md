@@ -15,7 +15,7 @@ This flow retrieves the name of a database table, converts the result to a [CSV 
 | Name                 | Data Type | Description                                                                 |
 |----------------------|-----------|-----------------------------------------------------------------------------|
 | Title                | Optional  | The title or name of the action.                                            |
-| Connection           | Required  | The InVision connection used to resolve the database object.                |
+| Connection           | Required  | The [InVision Connection](invision-connection.md) used to resolve the database object.                |
 | Table object         | Required  | The DataStore, Table, or View for which the database object name is resolved.|
 | Result variable name | Required  | The variable that stores the resolved database table or view name.          |
 | Disabled             | Optional  | If enabled, the action is skipped during flow execution.                    |

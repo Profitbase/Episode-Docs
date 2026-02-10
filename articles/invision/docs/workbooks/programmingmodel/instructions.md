@@ -41,7 +41,7 @@ By using Instructions you can run tasks or extend the standard behavior of Actio
 * [SetSrcIf(...)](instructions/setsrcif.md)
 * [SetText(...)](instructions/settext.md)
 * [SetTextIf(...)](instructions/settextif.md)
-* [ShowToastNotyfication(...)](instructions/showtoastnotyfication.md)
+* [ShowToastNotyfication(...)](instructions/showtoastnotification.md)
 * [Validate(...)](instructions/validate.md)
 * [@Var[Variable_name]](instructions/var.md)
 

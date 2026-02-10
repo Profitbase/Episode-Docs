@@ -8,8 +8,8 @@ This action deploys a version of a work process. It creates a solution based on 
 
 | Name                 | Type     | Description                         |
 |----------------------|----------|-------------------------------------|
-| Title                |          |                                     |
-| Connection           | Required | InVision connection                 |
+| Title                |          |  A descriptive title for the action.     |
+| Connection           | Required | [InVision Connection](../invision-connection.md).                 |
 | Work Process Version | Required | Select Work Process Version from the list |
 | Include information messages in log | Optional | If to show inforation messages from InVision in the Flow's log. |
 | Changed by           | Optional | Enter the user Id to use in InVision's "Changed by" |
