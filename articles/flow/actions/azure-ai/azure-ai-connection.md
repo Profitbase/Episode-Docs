@@ -99,3 +99,12 @@ To find the API Key and Endpoint, go the the Microsoft Foundry portal and do the
 5) Copy the (API) Key
 
 ![img](/images/flow/azure-ai-foundry-connection-openai-model.png)
+
+<br/>
+
+## Dynamic Connections
+
+A Dynamic Connection can override a static connection during Flow execution.  
+This is useful for scenarios where credentials or targets are determined at runtime (e.g., multi-tenant environments).
+
+<br/>

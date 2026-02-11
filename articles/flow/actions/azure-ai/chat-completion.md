@@ -22,6 +22,7 @@ This flow processes a user's chat question by first receiving it through a [Chat
 |-----------------------|-----------|-------------|
 | Title             | Optional  | The title of the action. |
 | Connection        | Required  | Defines the [connection](azure-ai-connection.md) to **Microsoft Foundry** resource. |
+| Enable dynamic connection   | Optional  |    A 'Dynamic Connection' will override the 'Connection' on flow execution.   |
 | Model             | Required  | Specifies the model deployment name, which corresponds to the custom name chosen during model deployment in the Azure portal or in [Microsoft Foundry](https://ai.azure.com) ([see below](#models--endpoints)). In the Azure Portal, the deployment name can be found under **Resource Management** > **Model Deployments**. |
 | User Prompt       | Required  | The input message from the user, which the model processes to generate a response. |
 | System Prompt     | Optional  | A system-level instruction that guides the model’s behavior and response style. |
