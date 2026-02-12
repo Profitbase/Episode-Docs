@@ -2,6 +2,8 @@
   href: overview.md
 - name: Microsoft Foundry connection
   href: azure-ai-connection.md
+- name: Create Azure AI connection
+  href: create-connection.md
 - name: Chat completion
   href: chat-completion.md
 - name: Streaming chat completion
