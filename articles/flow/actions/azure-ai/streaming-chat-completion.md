@@ -20,7 +20,7 @@ The example above shows a Flow that provides chat completions to a chat client. 
 |-----------------------|-----------|-------------|
 | Title             | Optional  | The title of the action. |
 | Connection        | Required  | Defines the [connection](azure-ai-connection.md) to an **Microsoft Foundry** resource. |
-| Enable dynamic connection   | Optional  |    A 'Dynamic Connection' will override the 'Connection' on flow execution.   |
+| Enable dynamic connection   | Optional  |    A [Dynamic Connection](create-connection.md) will override the [connection](azure-ai-connection.md) on flow execution.  |
 | Model             | Required  | Specifies the model deployment name, which corresponds to the **Name** (not the model id) of the deployed model in [Microsoft Foundry](https://ai.azure.com) ([see below](#models)). In the Azure Portal, the deployment name can be found under **Resource Management** > **Model Deployments**. |
 | User Prompt       | Required  | The input message from the user, which the model processes to generate a response. |
 | System Prompt     | Optional  | A system-level instruction that guides the model’s behavior and response style. |

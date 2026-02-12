@@ -104,7 +104,7 @@ To find the API Key and Endpoint, go the the Microsoft Foundry portal and do the
 
 ## Dynamic Connections
 
-A Dynamic Connection can override a static connection during Flow execution.  
+A [Dynamic Connection](create-connection.md) can override a static connection during Flow execution.  
 This is useful for scenarios where credentials or targets are determined at runtime (e.g., multi-tenant environments).
 
 <br/>
