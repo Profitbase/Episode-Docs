@@ -91,7 +91,7 @@ The Send Tabular Data trigger makes it easy to use Flow as a backend service for
 - Specifying `Context` for Save vectors is now optional if you handle deletion of old vectors manually
 - You can now edit connections directly from the Connection property of actions, instead of going through the Workspace Objects popup
 - Parquet: Support handling of tinyint (8 bit) and smallint (16 bit)
-- Improved handling of process termination during Flow executions - Flows will not be marked as Failed if the process is terminated by Azure Kubernetes Services. This typically happens when memory limits are exceeded.
+- Improved handling of process termination during Flow executions - Flows will now be marked as Failed if the process is terminated by Azure Kubernetes Services. This typically happens when memory limits are exceeded.
 - Introduced basic memory throttling to long-running jobs, meaning the system applies back-pressure to the worker queue if available memory is low and will delay starting background jobs.
 - Support for search in SQL and PostgreSQL object explorers
 - We extended the Outlook connector to support fetching emails from [personal](../actions/microsoft-365-outlook/for-each-email.md) and [shared](../actions/microsoft-365-outlook/for-each-email-in-shared-mailbox.md) mailboxes.
