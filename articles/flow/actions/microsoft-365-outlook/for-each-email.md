@@ -1,7 +1,9 @@
 # For each email
 
 Iterates over a list of emails in Microsoft 365 Outlook. 
-Use this action to fetch emails from Outlook and process them one by one. 
+Use this action to fetch emails from a personal mailbox in Outlook and process them one by one. 
+
+<br/>
 
 ## Properties
 
@@ -9,16 +11,26 @@ Use this action to fetch emails from Outlook and process them one by one.
 | Property            | Type      | Description                                               |
 |---------------------|-----------------------------------------------------------------------|
 | Connection          | Required  | Specifies the [Microsoft 365 Outlook connection](outlook-connection.md) that the trigger should use to check for new emails. |
-| Polling interval    | Required  | Specifies how often to check for new emails.              |
 | Disabled            | Optional  | Specifies if the action should be disabled.  |
 | Filter              | Optional  | Specifies optional filters to restrict which emails to fetch. See detailed description below. | 
 | Folder              | Optional  | Specifies the folder to fetch emails from. |
 | Include attachments | Optional  | Specifies whether or not to fetch the contents of all attachments when the action runs. [Read more about this option below](#attachments). |
 | Output name         | Required  | The name of the output variable that represents the retrieved mail message. You can change it from the default `mailMessage` to something that more clearly describes the received mail, for example `customerFeedbackMessage`. |
 
+<br/>
+
+## Returns
+Each email message contains the following properties:
+
+[!INCLUDE [mailmessage](__mailMessage.md.md)]
+
+<br/>
+
 #### Filter
 
 [!INCLUDE [filters](mail-filters-paragraph.md)]
+
+<br/>
 
 ## Attachments
 
