@@ -5,6 +5,11 @@ Use this action to fetch emails from a shared mailbox in Outlook and process the
 
 <br/>
 
+![img](/images/flow/outlook-for-each-email.png)
+<p><em>Figure: Fetching received and sent emails and saving them to a database and then compiling mail threads based on conversation ids.</em></p>
+
+<br/>
+
 ## Properties
 
 <!--prettier-ignore-->
@@ -23,13 +28,13 @@ Use this action to fetch emails from a shared mailbox in Outlook and process the
 ## Returns
 Each email message contains the following properties:
 
-[!INCLUDE [mailmessage](__mailMessage.md.md)]
+[!INCLUDE [](__mailMessage.md)]
 
 <br/>
 
 #### Filter
 
-[!INCLUDE [filters](mail-filters-paragraph.md)]
+[!INCLUDE [](mail-filters-paragraph.md)]
 
 <br/>
 

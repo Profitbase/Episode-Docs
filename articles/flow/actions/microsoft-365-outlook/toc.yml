@@ -12,3 +12,7 @@
   href: send-email-from-shared-mailbox.md
 - name: Send email
   href: send-email.md
+- name: For each email
+  href: for-each-email.md
+- name: For each email in shared mailbox
+  href: for-each-email-in-shared-mailbox.md
