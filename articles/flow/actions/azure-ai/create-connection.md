@@ -2,7 +2,8 @@
 
 This action creates an Azure AI [connection](azure-ai-connection.md) that can be used by Azure AI actions during Flow execution.
 
-It allows you to dynamically provide the API key and endpoint at runtime instead of relying on a predefined connection. The connection returned from this action can be used as input to the **Dynamic connection** property in Azure AI request actions.
+It allows you to dynamically provide the API key and endpoint at runtime instead of relying on a predefined connection. The connection returned from this action can be used as input to the **Dynamic connection** property in Azure AI request actions.  
+A typical use case is when you want a reusable Flows, but each customer needs separate AI model subscriptions in Microsoft Foundry so quotas (token usage), billing and other options can be managed individually. 
 
 <br/> 
 

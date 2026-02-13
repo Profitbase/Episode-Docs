@@ -41,6 +41,9 @@ This gives Flow developers full control over what type of data they want to coll
 <br/>
 
 ## Dynamic connections for Microsoft Foundry actions
+With support for [dynamically creating connections to Microsoft Foundry models](../actions/azure-ai/create-connection.md), you can create AI-powered automations that use subscriptions managed outside of Flow. For example, you want to create a generic AI chat solution in Flow, but each customer needs separate AI model subscriptions in Microsoft Foundry so quotas (token usage), billing and other options can be managed individually. 
+
+![img](/images/flow/azureAI-create-connection.png) 
 
 <br/>
 
@@ -57,6 +60,7 @@ The [Tools AI Agent](../actions/agents/tools-ai-agent.md) and [A2A AI Agent](../
 In `Code mode`, instead of calling each tool individually, the agent generates a single piece of code that uses all required tools and then executes it. For complex, multi-step tasks, this means the agent only needs to discover the APIs, write the code, and run it — typically requiring only two or three calls rather than one per tool.
 
 `Code mode` should be considered for complex, multi-step tasks that require passing large amounts of data data between tools (like files or datasets). In these scenarios, code mode generally performs better and consumes considerably fewer tokens than standard tools calling.  
+Also, because data is not passed between tools via the LLM, this means that sensitive business data is far less exposed (often not at all) than when regular tool calling is used.  
 
 ![img](/images/flow/release-notes-feb26-agent-code-mode.png)
 
@@ -90,6 +94,7 @@ The Send Tabular Data trigger makes it easy to use Flow as a backend service for
 - Improved handling of process termination during Flow executions - Flows will not be marked as Failed if the process is terminated by Azure Kubernetes Services. This typically happens when memory limits are exceeded.
 - Introduced basic memory throttling to long-running jobs, meaning the system applies back-pressure to the worker queue if available memory is low and will delay starting background jobs.
 - Support for search in SQL and PostgreSQL object explorers
+- We extended the Outlook connector to support fetching emails from [personal](../actions/microsoft-365-outlook/for-each-email.md) and [shared](../actions/microsoft-365-outlook/for-each-email-in-shared-mailbox.md) mailboxes.
 
 <br/>
 

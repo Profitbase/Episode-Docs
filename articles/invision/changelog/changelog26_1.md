@@ -1,5 +1,8 @@
 # InVision 2026.1 relase notes
 
+This release introduces several new features for data handling and workbook customization. Table filters can now be controlled dynamically through workbook variables, Startpages can be configured per Access Group, and Flow can be used as a backend for data loading and processing. Forms have been updated with additional heading options, and custom cell renderers are now available for data grids.  
+The application has also been upgraded to React 19.
+
 <br/>
 <br/>
 
