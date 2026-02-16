@@ -22,3 +22,17 @@ By default, the fiscal and calendar years are expected to be the same. If your f
 The calendar start date of your fiscal year. Mandatory.
 - **Fiscal year**<br/>
 Which fiscal year does the Fiscal start date belong to. Mandatory.
+
+A note on fiscal offset with respect to budget and forecast:
+
+A version's start date will be set as a fiscal start date. As an example, in a solution where the fiscal year starts on November 1st, a version for the **fiscal** year 2026 is created with a new start date January 1st 2026.
+
+![](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/FiscalOffsetExample.JPG)
+
+Any historical reference columns defined, will have their from and to-dates defined according to a normal **calendar** regime:
+
+![](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/FiscalHistorical.JPG)
+
+The period filters presented to the user in for example the plan overview will relate to the **fiscal** period and display the **calendar** periods that corresponds to the fiscal period:
+
+![](https://profitbasedocs.blob.core.windows.net/enduserhelp/images/FiscalPlanOverview.JPG)
