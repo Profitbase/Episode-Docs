@@ -7,7 +7,8 @@ Re-throws the exception that is currently being handled by a catch block.
 ![img](../../../../images/flow/rethrow-exeption.png)
 
 **Example** ![img](../../../../images/strz.jpg)  
-This flow executes a budget [calculation](function.md) inside nested [Try/Catch](try-catch.md) blocks. If the calculation completes successfully, the result is returned and the new budget is inserted into the database. If an error occurs during the calculation, the exception is rethrown to stop execution and signal the failure to the calling flow. The flow is intentionally structured to ensure that database insertion only happens after a successful calculation and that errors are not handled silently or converted into partial results.
+This flow executes a budget [calculation](function.md) inside a [Try/Catch](try-catch.md) block to control how errors are handled. On the **Try** path, it runs *Calculate budget*. If the calculation completes successfully, execution continues through the **Continue** output to the rest of the flow. If an exception occurs, execution moves to **Catch**, where the error is written using [Log](log.md). The flow then calls **Rethrow Exception**, which propagates the original error back to the caller instead of handling it locally. Successful executions continue downstream, while failures are explicitly returned to the calling flow.
+
 
 ## Properties
 
