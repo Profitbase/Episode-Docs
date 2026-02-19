@@ -27,7 +27,7 @@ Use this action to fetch emails from a personal mailbox in Outlook and process t
 ## Returns
 Each email message contains the following properties:
 
-[!INCLUDE [mailmessage](__mailMessage.md.md)]
+[!INCLUDE [mailmessage](__mailMessage.md)]
 
 <br/>
 
