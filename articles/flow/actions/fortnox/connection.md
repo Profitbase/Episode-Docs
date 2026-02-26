@@ -32,6 +32,19 @@ A [Fortnox connection](https://www.fortnox.se/developer/authorization/get-access
 
 <br/>
 
+## Getting Activation/Access Code 
+
+In order to use Fortnox actions and connections, You will need to activate access by getting an Access Code the first time.
+
+1) Start by clicking on **Request Access** 
+2) A new tab (window) in the browser will be opened redirecting to Foortnox.
+3) This is the Fortnox activation page where You must login to Fortnox, select tenant, and accept scope.
+4) After confirmation you will be directed to an empty page (connect-microsoft.profitbase.com). Close the browser tab.
+5) Click on **Get Access Code** to get the code. You can then copy it to the clipbord and store it.
+
+<br/>
+
+
 ## Related documentation
 
 - [Fortnox API authentication](https://www.fortnox.se/developer/authorization/get-access-token-using-client-credentials)
