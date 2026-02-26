@@ -59,7 +59,7 @@ This action returns an **SIEResultObject**.
 | PeriodBudget   | IDataReader |  Budget for account for the period. |
 | PeriodBalance  | IDataReader | Period saldo for account for the period. |
 | ProfitLossBalance | IDataReader | Profit/loss account balance for the period. |
-| Transactions   | IDataReader | Transaction items. |
+| Transactions   | IDataReader | Transaction items (Voucher transaction rows including Voucer information). |
 | FinancialYears | IDataReader | Financial year from which the exported data is retrieved. |
 | Accounts       | IDataReader | Account information. |
 | Dimensions     | IDataReader | Dimensions. |
@@ -96,7 +96,7 @@ This action returns an **SIEResultObject**.
 | PeriodBudgetList | #BUDGET | SiePeriodValue |  Budget for account for the period. |
 | PeriodBalanceList | #PSALDO | SiePeriodValue | Period saldo for account for the period. |
 | ProfitLossBalanceList | #RES | SiePeriodValue | Profit/loss account balance for the period. |
-| TransactionsList | #TRANS | SiePeriodValue | Transaction items. |
+| TransactionsList | #TRANS | SieVoucherTransaciton | Transaction items. |
 | FinancialYearsList | #RAR | SieBookingYear | Financial year from which the exported data is retrieved. |
 | AccountsList | #KONTO | SieAccount | Account information. |
 | DimensionsList | #DIM | SieDimension | Dimensions. |

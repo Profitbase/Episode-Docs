@@ -32,6 +32,8 @@
   href: "insert-entity.md"
 - name: "Load to DataTable"
   href: "load-to-datatable.md"
+- name: "Load DeltaTable"
+  href: "load-deltatable.md"
 - name: "Merge tables"
   href: "merge-tables.md"
 - name: "Save DeltaSet"
