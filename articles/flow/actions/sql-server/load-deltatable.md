@@ -70,3 +70,4 @@ The following notes and recommendations apply:
 - If no columns are checked for **Compare by**, all columns are used for comparison.
 - If no unique column combinations exist, the **DeltaTable** will only contain Deletes and Inserts. **Important:** Delete rows before inserting new rows.
 - Avoid use of collation if possible; collation casting costs resources and increases time spent.
+- If collation is not defiened, collstion differences is detected and handeled.
