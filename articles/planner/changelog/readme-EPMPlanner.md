@@ -40,6 +40,8 @@ EPM Finance Reports (Package upgraded to: 1.2.3)
 EPM Common (Package upgraded to: 6.1.1)
 EPM Datamart (Package upgraded to: 6.1.1)
 
+**Known issues:** [GitHub Milestone](https://github.com/Profitbase/Planner/milestone/80)
+
 ## EPM Planner 6.1.1
 
 Supports upgrade to Planner 6.1.1 from Planner 5.4.1 or newer versions (see note below).
