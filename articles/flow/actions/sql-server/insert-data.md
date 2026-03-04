@@ -44,9 +44,9 @@ The columns do not need to be in the same order, but they must **match by name a
 
 > [!NOTE]
 > If you get the error: **"The locale id '...' of the source column '...' and the locale id '...' of the destination column '...' do not match."**, it means the collation is different between the source and target columns (or the default set per database).
-> To avoid this:
-> - Use a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) instead of a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) as the **Source**.
-> - Convert the COLLATION to match the target when using [SQL Server Get DataReader]. For example: `SELECT ..., CONVERT(varchar(...), [column name] COLLATE target_collation_name) AS [column name], ...`
+> To avoid this, either 
+> - use a [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) instead of a [DataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.idatareader) as the **Source**.
+> - or convert the COLLATION to match the target when using [SQL Server Get DataReader]. For example: `SELECT ..., CONVERT(varchar(...), [column name] COLLATE target_collation_name) AS [column name], ...`
 
 
 <br/>
