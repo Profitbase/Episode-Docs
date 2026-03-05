@@ -7,7 +7,7 @@ The preferred way to import data to a dimension is using the [Import data to dim
 ### Import of Data to Dimensions using Dataflow (Legacy)
 
 > [!IMPORTANT]
-> Importing data to dimensions using Dataflows is being deprecated. Use the [Import data to dimension](/articles/flow/actions/profitbase-invision/import-data-to-dimension.md) action in Flow instead.
+> Importing data to dimensions using Dataflows is being deprecated. Use the [Import data to dimension](../../../flow/actions/profitbase-invision/import-data-to-dimension.md)  action in Flow instead.
 
 You can import data to dimensions through Dataflows and staging tables. 
 
