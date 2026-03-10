@@ -29,6 +29,8 @@ The example above shows a Flow that provides chat completions to a chat client. 
 | Temperature           | Optional  | Controls randomness/creativity of responses. Lower = more focused; higher = more creative. Default: 0.7. |
 | Max completion tokens | Optional  | Sets a limit on the number of tokens in the model’s response. |
 | Result variable name  | Optional  | Stores the generated AI response. Default: `response`. |
+| Enable Grounding        | Optional  | Enables  web search to improve factual reliability by using external or structured context sources. |
+| Disabled                | Optional  | If enabled, the action will be skipped during flow execution. |
 | Description           | Optional  | Additional details or notes regarding the chat completion setup. |
 
 <br/>
