@@ -30,6 +30,8 @@ The example above shows a Flow that provides chat completions to a chat client. 
 | Temperature       | Optional  |Temperature in models controls the randomness and creativity of the generated responses. Lower temperatures (e.g., 0.2) produce more focused, predictable text, ideal for tasks that require precision. Higher temperatures (e.g., 1.5) increase creativity and variability, but may risk generating less coherent or relevant content, making it important to adjust based on your desired outcome.  The default is 0.7 if nothing is defined by the user.|
 | Max Completion Tokens | Optional | Sets a limit on the number of tokens (words, characters, or pieces of text) in the model’s response. |
 | Result Variable Name | Optional | Stores the generated AI response. Default: "response". |
+| Enable Grounding        | Optional  | Enables grounding to improve factual accuracy using external or structured context. |
+| Disabled                | Optional  | If enabled, the action is skipped during flow execution. |
 | Description       | Optional  | Additional details or notes regarding the chat completion setup. |
 
 <br/>

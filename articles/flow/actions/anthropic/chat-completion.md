@@ -12,22 +12,26 @@ This flow processes a user's chat question by first receiving it through a [Chat
 
 <br/>
 
+
 ## Properties
 
 | Name                    | Type      | Description |
 |-------------------------|-----------|-------------|
-| Title               | Optional  | The title of the action. |
-| Connection          | Required  | Defines the [connection](anthropic-connection.md) to Anthropic. The connection provides the API key needed to access Anthropic models. |
-| Model Id            | Required  | The Anthropic model ID to use (e.g., `claude-3-5-sonnet-latest`). |
-| User Prompt         | Required  | The user's message to which the model should respond. |
-| System Prompt       | Optional  | High-level instructions guiding the model’s behavior, tone, and response style. |
-| History             | Optional  | A list of previous messages that helps the model maintain continuity across the conversation. |
-| Context             | Optional  | Additional domain or RAG-based context injected into the prompt. Supports plain text or vector search results. |
-| Prompt Template     | Optional  | Defines the structure of the message sent to the model. The placeholders `@@context` and `@@userPrompt` will be automatically replaced with their values. |
-| Temperature         | Optional  | Controls the creativity and randomness of the model’s output. Lower values produce more precise and deterministic responses, while higher values (closer to 1.0) generate more varied and creative text. |
-| Max Completion Tokens | Optional | The maximum number of tokens the model may generate in its response. |
-| Result Variable Name | Optional | The variable that will store the model's final output. Default: `"response"`. |
-| Description         | Optional  | Additional notes or metadata for the action. |
+| Title                   | Optional  | The title of the action. |
+| Connection              | Required  | Defines the [connection](anthropic-connection.md) to Anthropic. The connection provides the API key required to access Anthropic models. |
+| Model Id                | Required  | The Anthropic model ID to use (for example `claude-3-5-sonnet-latest`). |
+| System Prompt           | Optional  | High-level instructions that guide the model’s behavior, tone, and response style. |
+| User Prompt             | Required  | The user's message that will be sent to the model. |
+| History                 | Optional  | A list of previous messages used to maintain conversation context between requests. |
+| Context                 | Optional  | Additional contextual information provided to the model, such as domain knowledge or retrieved data. |
+| Prompt Template         | Optional  | Defines the structure of the prompt sent to the model. Placeholders such as `@@context` and `@@userPrompt` are automatically replaced with their values. |
+| Temperature             | Optional  | Controls the randomness of the model output. Lower values make responses more deterministic, while higher values produce more varied results. |
+| Max Completion Tokens   | Required  | The maximum number of tokens the model is allowed to generate in its response. |
+| Result Variable Name    | Optional  | The variable name that stores the model response. Default value: `response`. |
+| Enable Grounding        | Optional  | Enables  web search to improve factual reliability by using external or structured context sources. |
+| Enable Web Fetch        | Optional  | Allows the model to retrieve information from the web when generating responses. |
+| Disabled                | Optional  | If enabled, the action will be skipped during flow execution. |
+| Description             | Optional  | Additional notes or metadata describing the purpose of the action. |
 
 <br/>
 
