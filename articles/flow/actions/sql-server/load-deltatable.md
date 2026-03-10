@@ -1,6 +1,6 @@
 # Load DeltaTable
 
-This action compares a source table against a target table and detects differences. The differences are then stored in a **DeltaTable**. This table contains the mapped columns and a row state column. The values in the **row state column** indicate whether to use Insert, Update, or Delete when using the **DeltaTable** to update any target systems.
+This action compares a source table with a target table and detects inserted, updated, and deleted rows. The differences are stored in a **DeltaTable** that contains the mapped columns and a row state column named `__rowState`. The [row state column](#row-state) indicates whether a row in the source table is inserted, updated or deleted relative to the target table. The DeltaTable can then be used to update the target table by applying only the changed rows.
 
 <br>
 
@@ -12,7 +12,7 @@ This flow example shows a process that loads a DeltaTable by comparing a source 
 
 <br/>
 
-## Properties
+### Properties
 
 | Name         | Type            | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
@@ -20,7 +20,7 @@ This flow example shows a process that loads a DeltaTable by comparing a source 
 | Connection   | Required        | The [SQL Server Connection](./connection.md).     |
 | Dynamic connection | Optional  | Use this option if you need to use a connection created by the [Create Connection](./create-connection.md) action. |
 | Source table name  | Required  | Source table name to load from. |
-| Delta table name   | Required  | Delta table to fill with changes. |
+| Delta table name   | Required  | Delta table to fill with changes. Flow automatically creates this table. |
 | Target table name  | Required  | Target table to compare against.|
 | Column Settings    | Required  | List of columns to use in DeltaTable. See below for details. |
 | Result variable name | Optional  | The name of the variable returning the number of rows in the DeltaSet table.  |
@@ -29,7 +29,40 @@ This flow example shows a process that loads a DeltaTable by comparing a source 
 
 <br/>
 
-## Column Settings
+## Returns
+Returns the number of rows in the DeltaTable. 
+
+<br/>
+
+## How to use
+The purpose of this action is to update a target table with changes from a source table using the minimum number of row operations (only rows that have been inserted, updated, or deleted are affected).
+
+1) **Specify the source table.**  
+This table is typically populated by another process, such as a data import from an ERP system. It represents the current state of the source system.  
+
+2) **Specify the target table.**  
+The target table represents the state of the target system. Flow uses this table together with the source table to determine the differences and populate the DeltaTable. 
+
+3) **Specify the DeltaTable.**  
+This table contains the differences between the source and target tables — which rows in the source have been inserted (new), updated, or deleted relative to the target table since the last synchronization.  
+
+    Specify a table name that does not already exist in the database. Flow will take ownership of the table and create, update, or drop it as needed.  
+    _The DeltaTable should not be relied upon by other systems._
+
+4) **Configure the `Column settings` property**  
+Specify which columns from the source should be included in the DeltaTable.
+   * Add all columns that should be synchronized from source to target.
+   * Select the column(s) used for comparison.  
+    The correct choice depends on how the source system works. If the source system provides a logical key and a “last changed” timestamp column, you can use those for comparison (for example ProductID and LastUpdated).  
+    For performance reasons, choose as few columns as possible while still ensuring that rows can be uniquely identified.<br/><br/>  
+
+5) **Keep the target table synchronized if the final destination is outside the database.**  
+If you are using Flow to build a staging database, make sure that the target table is also kept in sync with the final destination. Otherwise, the DeltaTable may be calculated incorrectly the next time the Flow runs. 
+
+
+<br/>
+
+### Column Settings
 
 ![img](/images/flow/sql-server-load-deltatable-columns.png)
 
@@ -47,21 +80,21 @@ The columns defined in the list will be added to the **DeltaTable**.
 
 <br/>
 
-## Row State
+### Row State
 
-The DeltaTable contains a column **__rowState** (of type tinyint). 
+The DeltaTable contains a column **__rowState** (of type tinyint) that indicates which action to apply when updating the target table.
 
 | Value  | Description |
 |--------|-------------|
-| 1 | Row to be **Deleted** |
-| 2 | Row to be **Inserted** |
-| 4 | Row to be **Updated** |
+| 1 | Row should be **Deleted** from the target table. |
+| 2 | Row should be **Inserted** to the target table.|
+| 4 | Row should be **Updated** in the target table. |
 
 <br/>
 
 ## Details / Notes
 
-In order to compare source and target tables, each table will be scanned once to detect differences. Large tables may affect overall performance of the SQL server.
+In order to compare source and target tables, each table will be scanned to detect differences. Large tables may affect overall performance of the operation.
 
 <br/>
 
