@@ -55,4 +55,4 @@ The Chat Feedback trigger acts as the entry point for a Flow-based backend that 
 
 ![img](/images/flow/AIChat-ui-example.png)
 
-**Example**![img](../../../../images/strz.jpg) The example above shows the Invision AI Chat component displaying two responses, each showing which feedback option was selected for that response.
+**Example**![img](../../../../images/strz.jpg) The example above shows the [Invision AI Chat component](../../../invision/docs/ai-chat/overview.md) displaying two responses, each showing which feedback option was selected for that response. 
