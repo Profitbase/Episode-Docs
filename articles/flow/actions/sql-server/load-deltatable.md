@@ -12,7 +12,7 @@ This flow example shows a process that loads a DeltaTable by comparing a source 
 
 <br/>
 
-## Properties
+### Properties
 
 | Name         | Type            | Description                                       |
 |--------------|-----------------|---------------------------------------------------|
@@ -29,33 +29,8 @@ This flow example shows a process that loads a DeltaTable by comparing a source 
 
 <br/>
 
-## Column Settings
-
-![img](/images/flow/sql-server-load-deltatable-columns.png)
-
-To use the columns from the Source Table, click on **Create from source table**. You can also define columns manually by using **Add**.
-The columns defined in the list will be added to the **DeltaTable**.
-
-<br/>
-
-| Property   | Type            | Description     |
-|------------|-----------------|-----------------|
-| Name       | Required        | Name of the column to include. |
-| SQL Type   | Required        | SQL Data Type name             |
-| Compare by | Optional        | If the column is included in comparison between source and target. |
-| Collation  | Optional        | If the collation is different between source and target, the collation is used in comparison and in DeltaTable. | 
-
-<br/>
-
-## Row State
-
-The DeltaTable contains a column **__rowState** (of type tinyint). The column indicates which action to apply when updating the target table.
-
-| Value  | Description |
-|--------|-------------|
-| 1 | Row should be **Deleted** from the target table. |
-| 2 | Row should be **Inserted** to the target table.|
-| 4 | Row should be **Updated** in the target table. |
+## Returns
+Returns the number of rows in the DeltaTable. 
 
 <br/>
 
@@ -77,15 +52,43 @@ This table contains the differences between the source and target tables — whi
 4) **Configure the `Column settings` property**  
 Specify which columns from the source should be included in the DeltaTable.
    * Add all columns that should be synchronized from source to target.
-   * Select the column(s) used for comparison.
-
-<br/>
+   * Select the column(s) used for comparison.  
     The correct choice depends on how the source system works. If the source system provides a logical key and a “last changed” timestamp column, you can use those for comparison (for example ProductID and LastUpdated).  
-    For performance reasons, choose as few columns as possible while still ensuring that rows can be uniquely identified.  
+    For performance reasons, choose as few columns as possible while still ensuring that rows can be uniquely identified.<br/><br/>  
 
 5) **Keep the target table synchronized if the final destination is outside the database.**  
 If you are using Flow to build a staging database, make sure that the target table is also kept in sync with the final destination. Otherwise, the DeltaTable may be calculated incorrectly the next time the Flow runs. 
 
+
+<br/>
+
+### Column Settings
+
+![img](/images/flow/sql-server-load-deltatable-columns.png)
+
+To use the columns from the Source Table, click on **Create from source table**. You can also define columns manually by using **Add**.
+The columns defined in the list will be added to the **DeltaTable**.
+
+<br/>
+
+| Property   | Type            | Description     |
+|------------|-----------------|-----------------|
+| Name       | Required        | Name of the column to include. |
+| SQL Type   | Required        | SQL Data Type name             |
+| Compare by | Optional        | If the column is included in comparison between source and target. |
+| Collation  | Optional        | If the collation is different between source and target, the collation is used in comparison and in DeltaTable. | 
+
+<br/>
+
+### Row State
+
+The DeltaTable contains a column **__rowState** (of type tinyint) that indicates which action to apply when updating the target table.
+
+| Value  | Description |
+|--------|-------------|
+| 1 | Row should be **Deleted** from the target table. |
+| 2 | Row should be **Inserted** to the target table.|
+| 4 | Row should be **Updated** in the target table. |
 
 <br/>
 
