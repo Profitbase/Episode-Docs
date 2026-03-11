@@ -6,6 +6,7 @@ This package provide the financial planning function and can be organized in pro
 
 ## EPM Planner Versions
 
+- [EPM Planner 6.2.1](#epm-planner-621) - Released 2026.03.13
 - [EPM Planner 6.2.0](#epm-planner-620) - Released 2026.01.22
 - [EPM Planner 6.1.1](#epm-planner-611) - Released 2025.10.29
 - [EPM Planner 6.1.0](#epm-planner-610) - Released 2025.06.05
@@ -23,6 +24,43 @@ This package provide the financial planning function and can be organized in pro
 **Changes:**
 
 **Fixes:**
+
+## EPM Planner 6.2.1
+
+**Breaking Changes:**
+
+- If you use custom assumption view for driver based assumptions, the following columns must be added to the view to make it adhere to the new format given an increased long term planning horizon of 2 + 10 years (#2167). All columns decimal(18,4):
+- FctNYPlus6
+- FctNYPlus7
+- FctNYPlus8
+- FctNYPlus9
+- FctNYPlus10
+
+**Changes:**
+
+- Long term planning horizon increased by 5 years to 2 + 10 years (#2167)
+- Driver based: calculations are validated on save in the calculation definition page in Driver based modelling (#2199)
+- Account module: Insert copy of row will keep the periods changed state of the source row (#2188)
+
+**Fixes:**
+
+- Personnell long term planning issues: missing cumulative salary increase (#2181), long term years missing (#2177) and scaling of long term data not updated after save or rollover (#2211)
+- Fiscal year offset: actuals ytd part of historical reference data did not apply the fiscal offset correctly in account details report (#2187)
+- Plan overview:
+   - use of historic reference column Historic3 did not return any data (#2171)
+   - drill to details from account details displayed all the account's transactions even if account was split over multiple report lines (#2204)
+- Account module: opening balance was incorrectly included in first period of the year, this also applies to account details reports (#2202)
+- Personnel module: unable to input vacation pay override values (#2173)
+- Driver based module:
+   - incorrect historical reference data (#2193)
+   - error message when deleting input rows (#2183)
+   - account details report missed social cost transactions if target account was itself a social cost account (#2182)
+- Account, Personnel and Driver based modules:
+   - auto transactions targeting departments in other legal entities got the soure row's legal entity (#2208)
+   - pipeline processing of input data did not set a default sign factor if account did not have a sign factor set. Default now set to 1 (#2186)
+- Version deployment: version deployment failed due when reapplying column store indexes (SQL server version dependant) (#2207)
+- Certain operations might fail when deploying report setup if historical trend series used that referenced report linescontaining formulae where the denominator was 0 (divide by zero) (#2191)
+- Saving module extension setting (Input settings and administration) gave an error message (#2172)
 
 ## EPM Planner 6.2.0
 
