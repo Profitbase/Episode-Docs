@@ -37,6 +37,8 @@ There is an ongoing process to migrate data flows to flows (data flows will be d
 
 EPM Planner (Package upgraded to: 6.2.1)
 
+**Known issues:** [GitHub Milestone](https://github.com/Profitbase/Planner/milestone/84)
+
 ## EPM Planner 6.2.0
 Supports upgrade to Planner 6.2.0 from Planner 5.5.0 or newer versions (see note below).
 
