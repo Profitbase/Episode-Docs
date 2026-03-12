@@ -19,11 +19,11 @@ The sum of FTEs planned for next year for the department in question. This is a 
 - **Raise next year ("2021" in the example):**<br/>
 The average annual raise planned for all employees/employee categories for the department in question. This is a reference value and not editable in this (long term) view.
 
-- **FTE next year plus 1-5 ("2022-2026" in the example):**<br/>
-The total FTEs planned for next year plus 1-5 for the department in question (1-5 subject to solution configuration). These are input fields. 
+- **FTE next year plus 1-10 ("2022-2026" in the example):**<br/>
+The total FTEs planned for next year plus 1-10 for the department in question (1-10 subject to solution configuration). These are input fields. 
 
-- **Raise next year plus 1-5 ("2022-2026" in the example):**<br/>
-The average annual raise planned for the department in question (1-5 subject to solution configuration). These are input fields. 
+- **Raise next year plus 1-10 ("2022-2026" in the example):**<br/>
+The average annual raise planned for the department in question (1-10 subject to solution configuration). These are input fields. 
 
 - **Comment** <br/>
 Input field enabling textual comments to be associated with the input for a specific line.
