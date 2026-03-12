@@ -1,6 +1,6 @@
 # AI chat
 
-The AI chat component lets you add AI chats to Workbooks that users can interact with to ask questions or perform task.
+The [AI chat component](../workbooks/components/ai-chat.md) lets you add AI chats to Workbooks that users can interact with to ask questions or perform task.
 
 ![img](/images/invision/ai-chat.png)
 
