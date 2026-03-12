@@ -36,8 +36,6 @@
         - name: Components
           href: components.md
           items:
-          - name: Component placeholder
-            href: components/component_placeholder.md
           - name: Access control editors
             href: components/accesscontrol.md
             items:
@@ -49,12 +47,14 @@
               href: components/accesscontrol/identitymanagement.md
             - name: Workbook permissions
               href: components/accesscontrol/workbookperm.md
+          - name: AI Chat
+            href: components/ai-chat.md
+          - name: Component placeholder
+            href: components/component_placeholder.md
           - name: Data flow
             href: components/dataflow.md
           - name: Data flow schedule
             href: components/dataflowschedule.md
-          - name: Flow schedule
-            href: components/flowschedule.md
           - name: Dimension editor
             href: components/dimensioneditor.md
           - name: Extension
@@ -66,6 +66,8 @@
             items:
             - name: Filter slicing
               href: components/filter/filterslicing.md
+          - name: Flow schedule
+            href: components/flowschedule.md
           - name: Form Elements
             href: components/formelements.md
           - name: Forms
