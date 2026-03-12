@@ -2,6 +2,7 @@
 
 ## Upgrade notes
 
+- [EPM Planner 6.2.1](#epm-planner-621)
 - [EPM Planner 6.2.0](#epm-planner-620)
 - [EPM Planner 6.1.1](#epm-planner-611)
 - [EPM Planner 6.1.0](#epm-planner-610)
@@ -9,6 +10,32 @@
 - [EPM Planner 6.0.0](#epm-planner-600)
 - [EPM Planner 5.5.0](#epm-planner-550)
 - [EPM Planner 5.4.1](#epm-planner-541)
+
+## EPM Planner 6.2.1
+Supports upgrade to Planner 6.2.1 from Planner 5.5.1 or newer versions (see note below).
+
+When upgrading to the next version after 6.2.1, upgrading from versions older than 6.0.3 will no longer be supported. It is therefore strongly recommended to keep your Planner version as up to date as possible. 
+
+Furthermore, switching to flow-based transaction pipelines is currently mandatory and is done automatically as part of the upgrade process. However, the flow pipelines must be executed manually post upgrade in situations where the solution was not activated for flow pipelines prior to the upgrade.
+
+Requirements: Profitbase InVision platform version 2026.1 AND Profitbase Flow 1.12.
+
+**NOTE:** 	
+
+There is an ongoing process to migrate data flows to flows (data flows will be deprecated and replaced with flows). If you have used Planner dataflows in custom logic, be aware that the following data flows will no longer be available from the version preceding Planner 6.2.1:
+
+	FinanceAllBaseline (dataflow) -> replace with 'FinanceAllBaselineFlow' (flow)
+	FctAccInputPipeline (dataflow) -> replace with 'Account pipeline' (flow)
+	FctSalaryInputPipeline (dataflow) -> replace with 'Salary pipeline' (flow)
+	FctSalesInputPipeline (dataflow) -> replace with 'Driver based pipeline' (flow)
+		
+ A number of InVision objects used pre-flow has been removed in this version, for example transaction tables and views used pre-flow. If you have custom logic, make sure to do a 'Update dependency Registry' analysis (InVision designer) to check whether any of your references to Planner are no longer valid. Contact Profitbase if you need assistance.
+ 
+**NOTE:** 	The solution you want to upgrade MUST be connected to Flow BEFORE you upgrade, contact Profitbase to make sure that that is the case or how to connect.
+
+**Involves packages:**
+
+EPM Planner (Package upgraded to: 6.2.1)
 
 ## EPM Planner 6.2.0
 Supports upgrade to Planner 6.2.0 from Planner 5.5.0 or newer versions (see note below).
