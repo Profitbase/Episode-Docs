@@ -30,11 +30,12 @@ This package provide the financial planning function and can be organized in pro
 **Breaking Changes:**
 
 - If you use custom assumption view for driver based assumptions, the following columns must be added to the view to make it adhere to the new format given an increased long term planning horizon of 2 + 10 years (#2167). All columns decimal(18,4):
-- FctNYPlus6
-- FctNYPlus7
-- FctNYPlus8
-- FctNYPlus9
-- FctNYPlus10
+  
+   - FctNYPlus6
+   - FctNYPlus7
+   - FctNYPlus8
+   - FctNYPlus9
+   - FctNYPlus10
 
 **Changes:**
 
