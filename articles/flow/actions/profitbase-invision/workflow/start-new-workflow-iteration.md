@@ -4,6 +4,9 @@ This action starts a new [Workflow](../../../../invision/docs/workflow/index.md)
 
 ![img](/images/flow/invision-start-workflow-iteration.png)
 
+
+**Example** ![img](../../../../../images/strz.jpg)  
+This flow automatically starts a new workflow iteration on a schedule and then notifies managers about it.
 <br/>
 
 ## Properties
