@@ -9,7 +9,7 @@ Users can interact with the chat to ask questions or trigger AI-powered tasks. T
 
 ## Configuration
 
-The AI Chat component must be connected to a **Flow** that performs the chat completion. The Flow receives the user message, processes it (for example using an LLM or RAG pipeline), and returns the generated response.
+The AI Chat component must be connected to a **Flow** that performs the chat completion ([Anthropic AI](../../../../flow/actions/anthropic/chat-completion.md), [Azure AI](../../../../flow/actions/azure-ai/chat-completion.md), [Google VertexAI](../../../../flow/actions/google-vertexai/chat-completion.md) or [OpenAI](../../../../flow/actions/openai/chat-completion.md)). The Flow receives the user message, processes it (for example using an LLM or RAG pipeline), and returns the generated response.
 
 ### Chat completion
 
@@ -31,19 +31,14 @@ When a user sends a message in the chat:
 3. The Flow returns the response.
 4. The response is displayed in the chat interface.
 
-Typical implementations include:
-
-- LLM-based question answering
-- Retrieval-augmented generation (RAG)
-- Task automation using AI
-- Querying internal documents or datasets
-
 ### Enable feedback
 
-When **Enable feedback** is enabled, the chat interface displays feedback controls for each AI response.  
+When enabling feedback, the chat interface displays feedback controls for each AI response.  
 Users can provide feedback indicating whether the response was helpful or not.
 
-This feature is typically used to:
+![pic](../../../../../images/flow/AIChat-ui-example.png)
+
+This feature can be used to:
 
 - Monitor AI quality
 - Collect user feedback on generated responses
@@ -52,21 +47,15 @@ This feature is typically used to:
 
 ### Feedback Flow
 
-If feedback is enabled, you can specify a **Feedback Flow** to capture and process the submitted feedback.
+If feedback is enabled, you can specify a **Feedback Flow** to capture and process the submitted feedback.  
+Feedback is captured using the [Chat feedback trigger](../../../../flow/triggers/ai/chat-feedback-trigger.md) in Flow.
 
 When a user submits feedback:
 
 1. The chat component sends the feedback data to the configured Flow.
 2. The Flow can store the feedback, log it, or trigger further processing.
 
-Typical use cases include:
 
-- Logging feedback in a database
-- Tracking response quality metrics
-- Sending alerts for negative feedback
-- Using feedback to improve AI prompts or training datasets
-
-For more advanced scenarios, feedback can also be captured using the **Chat feedback trigger** in Flow.
 
 ## Events
 
