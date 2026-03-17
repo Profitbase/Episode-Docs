@@ -39,6 +39,8 @@ EPM Planner (Package upgraded to: 6.2.1)
 
 **Known issues:** [GitHub Milestone](https://github.com/Profitbase/Planner/milestone/84)
 
+**NOTE also specifically** that in some solutions, typically deployed 2023 or prior, may have issues with upgrading the blueprint version due to a platform change relating to table naming. To check whether this may be an issue, open the InVision designer and browse a table such as CashInterestPct and study the table name presented in the browser. If the name is of the form Setting_CashInterestPct_5b199_0919202504015431 you are all right. If it is of the form Setting_CashInterestPct_090620211160304 (effective a timestamp at the end ddmmyyyy, etc), you are not all right and that particular blueprint cannot be upgraded. The workaround for this is to upgrade versions (they will normally not have this problem assuming they have been deployed after 2023) and set one of them as the blueprint version once upgraded. If you need any help with this, please contact Profitbase.
+
 ## EPM Planner 6.2.0
 Supports upgrade to Planner 6.2.0 from Planner 5.5.0 or newer versions (see note below).
 
