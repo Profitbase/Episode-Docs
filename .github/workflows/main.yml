@@ -28,3 +28,18 @@ jobs:
  
       - name: Build DocFX site
         run: docfx ${{ env.DOCFX_CONFIG }}
+      - name: Azure Login
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+ 
+      - name: Upload to Azure Blob Storage
+        uses: azure/CLI@v2
+        with:
+          azcliversion: latest
+          inlineScript: |
+            az storage blob sync \
+              --source "${{ env.DOCFX_OUTPUT }}" \
+              --container '$web' \
+              --account-name "${{ secrets.STORAGE_ACCOUNT_NAME }}" \
+              --delete-destination true
