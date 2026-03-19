@@ -10,9 +10,8 @@ permissions:
   contents: read
  
 env:
-  DOCFX_VERSION: "2.77.0"
   # Set this to the path of your docfx.json (relative to repo root)
-  DOCFX_CONFIG: "docs/docfx.json"
+  DOCFX_CONFIG: "docfx.json"
   # Output folder defined in your docfx.json "dest" field
   DOCFX_OUTPUT: "_site"
  
@@ -22,15 +21,10 @@ jobs:
  
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
- 
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: "8.x"
+        uses: actions/checkout@v5
  
       - name: Install DocFX
-        run: dotnet tool install --global docfx --version ${{ env.DOCFX_VERSION }}
+        run: dotnet tool install --global docfx
  
       - name: Build DocFX site
         run: docfx ${{ env.DOCFX_CONFIG }}
