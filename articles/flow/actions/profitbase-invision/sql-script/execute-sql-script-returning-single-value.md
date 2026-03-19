@@ -1,6 +1,6 @@
 # Execute SQL Script returning a single value.
 
-Executes an [SQL Script](/articles/invision/docs/sqlscripts.md) defined in an InVision Solution that returns a single value.
+Executes an [SQL Script](../../../../invision/docs/sqlscripts.md) defined in an InVision Solution that returns a single value.
 
 ![img](../../../../../images/flow/execute-sql-script-returning-single-value.png) 
 
@@ -24,3 +24,7 @@ This flow executes a SQL query defined in an InVision Solution to retrieve a sin
 | Result variable type | Required   | The data type of the return value (e.g., String, Number, Boolean).                             |
 | Disabled             | Optional   | When enabled, the action is skipped during runtime.                                             |
 | Description          | Optional   | Additional notes describing the purpose or usage of the action.                                |
+
+## Returns
+
+Returns the result of the SQL script execution, which may include returned data (such as rows), output parameters, or execution status depending on how the SQL script is defined.
