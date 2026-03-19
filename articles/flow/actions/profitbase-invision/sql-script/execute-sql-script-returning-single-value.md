@@ -17,7 +17,7 @@ This flow executes a SQL query defined in an InVision Solution to retrieve a sin
 |----------------------|------------|-------------------------------------------------------------------------------------------------|
 | Title                | Optional   | A custom title for the action. If not specified, the default action name is used.              |
 | Connection           | Required   | A valid [InVision Connection](../invision-connection.md) used to execute the SQL script.                                     |
-| SQL Script           | Required   | The InVision SQL script to execute. Returns a single scalar value.                  |
+| SQL Script           | Required   | The InVision SQL script to execute. Returns a single scalar value. This script is created and stored in InVision.  |
 | Language             | Optional   | The language or dialect of the SQL script, when applicable.                                     |
 | Parameters           | Optional   | Defines input parameters for the SQL script.                                                    |
 | Result variable name | Required   | The name of the variable where the scalar result will be stored.                                |

@@ -24,7 +24,7 @@ To work with the data returned from the action, convert the result to a .NET Dat
 |----------------------|----------|-------------|
 | Title                | Optional | A descriptive label for the action displayed in the Flow editor. |
 | Connection           | Required | Defines the [InVision connection](../invision-connection.md) used to execute the SQL script. |
-| SQL Script           | Required | The SQL script to execute. This must be an existing InVision DataPackage SQL Script. |
+| SQL Script           | Required | The InVision SQL Script to execute. This script is created and stored in InVision. |
 | Language             | Optional | Specifies the language context used during execution, typically for localization or translations. |
 | Parameters           | Optional | Defines input parameters passed to the SQL script. Supports static or dynamic parameter mapping. |
 | Result variable name | Optional | The name of the variable that will store the returned DataPackage. |
@@ -34,4 +34,4 @@ To work with the data returned from the action, convert the result to a .NET Dat
 
 ## Returns
 
-Returns the result of the SQL script execution, `true` if the SQL script runs successfully, otherwise `false`.
+Returns a DataPackage containing the result of the SQL script execution.
