@@ -1,0 +1,36 @@
+name: Build and Deploy DocFX Site
+ 
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+ 
+permissions:
+  contents: read
+ 
+env:
+  DOCFX_VERSION: "2.77.0"
+  # Set this to the path of your docfx.json (relative to repo root)
+  DOCFX_CONFIG: "docs/docfx.json"
+  # Output folder defined in your docfx.json "dest" field
+  DOCFX_OUTPUT: "_site"
+ 
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+ 
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.x"
+ 
+      - name: Install DocFX
+        run: dotnet tool install --global docfx --version ${{ env.DOCFX_VERSION }}
+ 
+      - name: Build DocFX site
+        run: docfx ${{ env.DOCFX_CONFIG }}
