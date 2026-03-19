@@ -6,7 +6,7 @@ Executes an [SQL Script](../../../../invision/docs/sqlscripts.md) defined in an 
 ![img](../../../../../images/flow/executeSQLscript.png) 
 
 **Example** ![img](../../../../../images/strz.jpg)  
-This flow [prepares](../../built-in/function.md) a language setting and a parameter object, then executes a SQL script that inserts data into a database using those inputs.
+This flow [prepares](../../built-in/function.md) a language setting and a parameters object, then executes a SQL script that inserts data into a database using those inputs.
 
 >[!NOTE]
 > If your SQL Script may take longer than 5 minutes to execute, use the [Long Running SQL Script](execute-long-running-sql-script.md) action instead of the regular SQL Script action.
