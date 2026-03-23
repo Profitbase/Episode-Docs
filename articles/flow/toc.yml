@@ -163,6 +163,8 @@
       href: actions/powerpoint/toc.yml
     - name: Profitbase InVision
       href: actions/profitbase-invision/toc.yml
+    - name: RabbitMQ
+      href: actions/rabbitmq/toc.yml
     - name: Security
       href: actions/security/toc.yml
     - name: SendGrid
