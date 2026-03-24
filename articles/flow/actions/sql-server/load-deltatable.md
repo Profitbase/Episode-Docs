@@ -1,14 +1,16 @@
 # Load DeltaTable
 
 This action compares a source table with a target table and detects inserted, updated, and deleted rows. The differences are stored in a **DeltaTable** that contains the mapped columns and a row state column named `__rowState`. The [row state column](#row-state) indicates whether a row in the source table is inserted, updated or deleted relative to the target table. The DeltaTable can then be used to update the target table by applying only the changed rows.
+<br/>
+If **Incremental Historic mode** is selected, the **DeltaTable** will contain multiple change sets grouped by an **Batch number** that is incremented per load. 
 
-<br>
+<br/>
 
 ![img](/images/flow/sql-server-load-deltatable.png)
 
 **Example** ![img](../../../../images/strz.jpg)  
 
-This flow example shows a process that loads a DeltaTable by comparing a source that, for example, is updated by an ERP system action against a target table. The content of the DeltaTable is then used to update a target using delete, update, and insert actions.
+This flow example shows a process that loads a DeltaTable by comparing a source and target table. The source table, for example, is updated by loading transactions using the [Load SIE file](../sie/load-file.md) originating from an ERP system, and then [inserting results](./insert-data.md). After the **DeltaTable** is loaded, a message is sendt using the [RabbitMQ publish message action](../rabbitmq/publish-message.md).
 
 <br/>
 
@@ -22,7 +24,7 @@ This flow example shows a process that loads a DeltaTable by comparing a source 
 | Source table name  | Required  | Source table name to load from. |
 | Delta table name   | Required  | Delta table to fill with changes. Flow automatically creates this table. |
 | Target table name  | Required  | Target table to compare against.|
-| Column Settings    | Required  | List of columns to use in DeltaTable. See below for details. |
+| Columns and load settings | Required  | List of columns to use in DeltaTable, and settings for historical mode. See below for details. |
 | Result variable name | Optional  | The name of the variable returning the number of rows in the DeltaSet table.  |
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description   | Optional | Additional notes or comments about the action or configuration. |
@@ -30,7 +32,7 @@ This flow example shows a process that loads a DeltaTable by comparing a source 
 <br/>
 
 ## Returns
-Returns the number of rows in the DeltaTable. 
+Returns the number of new rows loaded to the DeltaTable. 
 
 <br/>
 
@@ -49,16 +51,20 @@ This table contains the differences between the source and target tables — whi
     Specify a table name that does not already exist in the database. Flow will take ownership of the table and create, update, or drop it as needed.  
     _The DeltaTable should not be relied upon by other systems._
 
-4) **Configure the `Column settings` property**  
+4) **Configure the Column Settings**  
 Specify which columns from the source should be included in the DeltaTable.
    * Add all columns that should be synchronized from source to target.
-   * Select the column(s) used for comparison.  
-    The correct choice depends on how the source system works. If the source system provides a logical key and a “last changed” timestamp column, you can use those for comparison (for example ProductID and LastUpdated).  
-    For performance reasons, choose as few columns as possible while still ensuring that rows can be uniquely identified.<br/><br/>  
+   * Select the Key columns (1 or more colums that make the row unique).
+   * Select the column(s) used for comparison.      
+    For performance reasons, choose as few columns as possible while still ensuring that rows can be uniquely identified (keys), and changes detected (comparion).<br/><br/>  
 
-5) **Keep the target table synchronized if the final destination is outside the database.**  
-If you are using Flow to build a staging database, make sure that the target table is also kept in sync with the final destination. Otherwise, the DeltaTable may be calculated incorrectly the next time the Flow runs. 
+5) **Incremental history mode**  
+When checked, the **DeltTable** will contain multiple loads (separeted with an __batchNo column incremented for each load). To limmit the size of the DeltaTable, set the **Days To Keep** value resulting that older row will be deleted. <br />
+When not checked, the DeltaTable will be **truncated** befor each load. 
 
+6) **Keep the target table synchronized**  
+If you are using Flow to build a staging database, make sure that the target table is also kept in sync with the final destination. Otherwise, the DeltaTable may be calculated incorrectly the next time the Flow runs.<br/>
+When the **Update target table** is checked, it will be merged with the DeltaTable: Otherwise do it with other SQL server actions etc.
 
 <br/>
 
@@ -71,12 +77,13 @@ The columns defined in the list will be added to the **DeltaTable**.
 
 <br/>
 
-| Property   | Type            | Description     |
-|------------|-----------------|-----------------|
-| Name       | Required        | Name of the column to include. |
-| SQL Type   | Required        | SQL Data Type name             |
-| Compare by | Optional        | If the column is included in comparison between source and target. |
-| Collation  | Optional        | If the collation is different between source and target, the collation is used in comparison and in DeltaTable. | 
+| Property   | Description     |
+|------------|-----------------|
+| Name       | Name of the column to include. |
+| SQL Type   | SQL Data Type name             |
+| Key (join by) | One or more key columns that make the row unique (will be used in SQL join) | 
+| Compare by | If the column is included in comparison between source and target (using hashing). |
+| Collation  | If the collation is different between source and target, the collation is used in comparison and in DeltaTable. | 
 
 <br/>
 
@@ -86,21 +93,22 @@ The DeltaTable contains a column **__rowState** (of type tinyint) that indicates
 
 | Value  | Description |
 |--------|-------------|
-| 1 | Row should be **Deleted** from the target table. |
-| 2 | Row should be **Inserted** to the target table.|
-| 4 | Row should be **Updated** in the target table. |
+| 1 | Row should be **Inserted** to the target table.|
+| 2 | Row should be **Updated** in the target table. |
+| 4 | Row should be **Deleted** from the target table. |
 
 <br/>
 
 ## Details / Notes
 
-In order to compare source and target tables, each table will be scanned to detect differences. Large tables may affect overall performance of the operation.
+In order to compare source and target tables, each table will be scanned (once) to detect differences. Large tables may affect overall performance of the operation.
 
 <br/>
 
 The following notes and recommendations apply:
-- If unique keys or IDs (including combinations) exist, use them for comparison.
-- If no columns are checked for **Compare by**, all columns are used for comparison.
-- If no unique column combinations exist, the **DeltaTable** will only contain Deletes and Inserts. **Important:** Delete rows before inserting new rows.
+- If no **Keys** are checked, all columns will be used in join.
+- If no **Compare by** are checked, all columns are used for comparison.
+- If no unique column combinations exist for keys, the **DeltaTable** will only contain Deletes and Inserts. **Important:** Delete rows before inserting new rows.
 - Avoid use of collation if possible; collation casting costs resources and increases time spent.
-- If collation is not defiened, collstion differences is detected and handeled.
+- If collation is not specified, collstion differences is detected and handeled.
+- SQL server **Extended table properties** is used to store current **BatchNo** and **BatchDate** (for inc.history mode).
