@@ -4,8 +4,6 @@ Configures the flow to automatically run by checking periodically for new messag
 
 <br/>
 
-WORK IN PROGRESS
-
 <br/>
 <!-- 
 **Example**![img](/images/strz.jpg)    -->

@@ -50,9 +50,9 @@
       href: "power-bi/writeback-table-trigger.md"
     - name: "Writeback Comments trigger"
       href: power-bi/writeback-comments-trigger.md
-- name: "RabbitMQ"
-  items:
-    - name: "Message trigger"
-      href: "rabbitmq/message-trigger.md"
+# - name: "RabbitMQ"
+#   items:
+#     - name: "Message trigger"
+#       href: "rabbitmq/message-trigger.md"
 - name: "Schedule trigger"
   href: "schedule-trigger.md"
