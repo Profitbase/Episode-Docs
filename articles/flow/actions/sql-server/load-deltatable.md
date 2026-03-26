@@ -10,7 +10,7 @@ If **Incremental Historic mode** is selected, the **DeltaTable** will contain mu
 
 **Example** ![img](../../../../images/strz.jpg)  
 
-This flow example shows a process that loads a DeltaTable by comparing a source and target table. The source table, for example, is updated by loading transactions using the [Load SIE file](../sie/load-file.md) originating from an ERP system, and then [inserting results](./insert-data.md). After the **DeltaTable** is loaded, a message is sendt using the [RabbitMQ publish message action](../rabbitmq/publish-message.md).
+This flow example shows a process that loads a DeltaTable by comparing a source and target table. The source table, for example, is updated by loading transactions using the [Load SIE file](../sie/load-file.md) originating from an ERP system, and then [inserting results](./insert-data.md). After the **DeltaTable** is loaded, a message is sent using the [RabbitMQ publish message action](../rabbitmq/publish-message.md).
 
 <br/>
 
@@ -47,20 +47,18 @@ The target table represents the state of the target system. Flow uses this table
 
 3) **Specify the DeltaTable.**  
 This table contains the differences between the source and target tables — which rows in the source have been inserted (new), updated, or deleted relative to the target table since the last synchronization.  
-
-    Specify a table name that does not already exist in the database. Flow will take ownership of the table and create, update, or drop it as needed.  
-    _The DeltaTable should not be relied upon by other systems._
+Flow will take ownership of the table and create or update it as needed.  
 
 4) **Configure the Column Settings**  
 Specify which columns from the source should be included in the DeltaTable.
    * Add all columns that should be synchronized from source to target.
-   * Select the Key columns (1 or more colums that make the row unique).
+   * Select the Key columns (1 or more columns that make the row unique).
    * Select the column(s) used for comparison.      
-    For performance reasons, choose as few columns as possible while still ensuring that rows can be uniquely identified (keys), and changes detected (comparion).<br/><br/>  
+    For performance reasons, choose as few columns as possible while still ensuring that rows can be uniquely identified (keys), and changes detected (comparison).<br/><br/>  
 
 5) **Incremental history mode**  
-When checked, the **DeltTable** will contain multiple loads (separeted with an __batchNo column incremented for each load). To limmit the size of the DeltaTable, set the **Days To Keep** value resulting that older row will be deleted. <br />
-When not checked, the DeltaTable will be **truncated** befor each load. 
+When checked, the **DeltaTable** will contain multiple loads (separated with an __batchNo column incremented for each load). To limit the size of the DeltaTable, set the **Days To Keep** value resulting that older row will be deleted. <br />
+When not checked, the DeltaTable will be **truncated** before each load. 
 
 6) **Keep the target table synchronized**  
 If you are using Flow to build a staging database, make sure that the target table is also kept in sync with the final destination. Otherwise, the DeltaTable may be calculated incorrectly the next time the Flow runs.<br/>
@@ -110,5 +108,5 @@ The following notes and recommendations apply:
 - If no **Compare by** are checked, all columns are used for comparison.
 - If no unique column combinations exist for keys, the **DeltaTable** will only contain Deletes and Inserts. **Important:** Delete rows before inserting new rows.
 - Avoid use of collation if possible; collation casting costs resources and increases time spent.
-- If collation is not specified, collstion differences is detected and handeled.
+- If collation is not specified, collation differences is detected and handled.
 - SQL server **Extended table properties** is used to store current **BatchNo** and **BatchDate** (for inc.history mode).
