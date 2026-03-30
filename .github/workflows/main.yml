@@ -37,7 +37,7 @@ jobs:
       - name: Upload to Azure Blob Storage
         uses: azure/CLI@v2
         with:
-          azcliversion: 2.67.0
+          azcliversion: latest
           inlineScript: |
             az storage blob upload-batch \
               --source "${{ env.DOCFX_OUTPUT }}" \
