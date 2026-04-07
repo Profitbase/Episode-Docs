@@ -41,8 +41,8 @@ Known issues: https://github.com/Profitbase-Public/Planner/milestone/87
    - not able to add a style to a measure in a model (#2229)
 - Version deletion fails (#2218)
 - System operations:
-   - missing steps related to 'Regenerate historical data for currency conversion' in operations 'Account(s) added..' and 'Actuals incomplete..'
-   - incorrect steps in operation 'Reload LegalEntity dimension'
+   - missing steps related to 'Regenerate historical data for currency conversion' in operations 'Account(s) added..' and 'Actuals incomplete..' (#2235)
+   - incorrect steps in operation 'Reload LegalEntity dimension' (#2225)
 - Deployment: new deployments fail (#2228)
 
 ## EPM Planner 6.2.1
