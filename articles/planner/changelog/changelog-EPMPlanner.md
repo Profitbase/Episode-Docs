@@ -22,7 +22,7 @@ This package provide the financial planning function and can be organized in pro
 
 ## Unreleased
 
-Known issues: https://github.com/Profitbase-Public/Planner/milestone/87
+** [GitHub Milestone](https://github.com/Profitbase/Planner/milestone/87)
 
 ## EPM Planner 6.2.2
 
