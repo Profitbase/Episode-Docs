@@ -6,6 +6,7 @@ This package provide the financial planning function and can be organized in pro
 
 ## EPM Planner Versions
 
+- [EPM Planner 6.2.2](#epm-planner-622) - Released 2026.04.08
 - [EPM Planner 6.2.1](#epm-planner-621) - Released 2026.03.16
 - [EPM Planner 6.2.0](#epm-planner-620) - Released 2026.01.22
 - [EPM Planner 6.1.1](#epm-planner-611) - Released 2025.10.29
@@ -21,9 +22,28 @@ This package provide the financial planning function and can be organized in pro
 
 ## Unreleased
 
-**Changes:**
+Known issues: https://github.com/Profitbase-Public/Planner/milestone/87
+
+## EPM Planner 6.2.2
 
 **Fixes:**
+
+- Account/plan overview:
+   - plan differences after roll forward (#2212, #2215)
+   - historic columns display 0 when sign factor missing in report setup (#2233)
+- Personnel:
+   - rollover does not properly roll forward HC (headcount) (#2216)
+   - actuals missing in account details report (#2232)
+   - pay raise settings not rolled forward when plan rolls to new year (#2213)
+- Driver based:
+   - transaction pipeline fails if plan horizon < 3 years (#2230)
+   - actuals missing in account details report (#2232)
+   - not able to add a style to a measure in a model (#2229)
+- Version deletion fails (#2218)
+- System operations:
+   - missing steps related to 'Regenerate historical data for currency conversion' in operations 'Account(s) added..' and 'Actuals incomplete..'
+   - incorrect steps in operation 'Reload LegalEntity dimension'
+- Deployment: new deployments fail (#2228)
 
 ## EPM Planner 6.2.1
 
