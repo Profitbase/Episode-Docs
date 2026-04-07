@@ -25,7 +25,7 @@ Read about the **key features** of **Profitbase InVision**. Check out the follow
             <li><a href="systemsetup.md">System Setup</a></li>
             <li><a href="accesscontrol.md">Access Control</a></li>
             <li><a href="accessibility.md">Accessibility</a></li>
-            <li><a href="bestpractice/index.md">Best Practice</a></li>
+            <li><a href="bestpractice/bestpractice.md">Best Practice</a></li>
             <li><a href="dataflowitems.md">Data Flow Items</a></li>
             <li><a href="dataflows.md">Data Flows</a></li>
             <li><a href="datapool.md">Data Pool</a></li>
