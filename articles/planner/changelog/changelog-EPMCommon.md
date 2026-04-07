@@ -6,6 +6,7 @@ This package provide the users and access management, work process and tasks cap
 
 ## EPM Common Versions
 
+- [EPM Common 6.1.2](#epm-common-612) - Released 2026.03.30
 - [EPM Common 6.1.1](#epm-common-611) - Released 2026.01.15
 - [EPM Common 6.1.0](#epm-common-610) - Released 2026.01.
 - [EPM Common 6.0.0](#epm-common-600) - Released 2025.11.11
@@ -13,6 +14,10 @@ This package provide the users and access management, work process and tasks cap
 - [EPM Common 5.3.2](#epm-common-532)
 - [EPM Common 5.3.1](#epm-common-531)
 - [EPM Common 5.3.0](#epm-common-530)
+
+**Known issues:**
+
+- After upgrading from 5.X.X versions, all schedules for Scheduled Operations need to be manually recreated in the UI. This is a one off as we migrate from Dataflows to Flows. 
 
 ## Unreleased
 
@@ -22,6 +27,19 @@ This package provide the users and access management, work process and tasks cap
 
 - Limit file types allowed (.doc,.docx,.gif,.jpeg,.jpg,.pdf,.png,.ppt,.pptx,.txt,.xls,.xlsx) to upload and upload size to 100 mb (#1805)
 - Limit number of files possible to upload and disable open option (#1826)
+
+## EPM Common 6.1.2
+
+**Notes:**
+
+- Invision version 2026.1+
+- Ensure SendGrid key is set for emails (in Flow).
+
+**Fixes:**
+
+- Operations not handling Data Exports ([https://github.com/Profitbase-Public/Planner/issues/2168](https://github.com/Profitbase-Public/Planner/issues/2168))
+- Operations - error on delete ( [https://github.com/Profitbase/Planner/issues/2157](https://github.com/Profitbase-Public/Planner/issues/2174) )
+- Scheduled Operation errors, steps not found ( https://github.com/Profitbase-Public/Planner/issues/2192 , https://github.com/Profitbase-Public/Planner/issues/2224 )
 
 ## EPM Common 6.1.1
 
