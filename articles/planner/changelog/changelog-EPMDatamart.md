@@ -6,6 +6,7 @@ This package provide a datamart to share data between EPM applications and exter
 
 ## EPM Datamart Versions
 
+- [EPM Datamart 6.1.2](#epm-datamart-612) - Released 2026.03.30
 - [EPM Datamart 6.1.1](#epm-datamart-611) - Released 2026.01.28
 - [EPM Datamart 6.1.0](#epm-datamart-610) - Released 2026.01.
 - [EPM Datamart 6.0.0](#epm-datamart-600) - Released 2025.11.11
@@ -25,6 +26,18 @@ This package provide a datamart to share data between EPM applications and exter
 
 - Limit file upload size for Data Import/Export to 100 mb (#1804)
 - Limit number of files possible to upload and disable open option (#1826)
+
+## EPM Datamart 6.1.2
+
+**Notes:**
+
+- Invision 2026.1+
+
+**Fixes:**
+
+- Error message when browsing the currency echange rate workbook ( https://github.com/Profitbase-Public/Planner/issues/2190 )
+- Data Export File Extension default (to csv if not specified by user) ( https://github.com/Profitbase-Public/Planner/issues/2196 )
+- Actions menu hidden and hard to find in data import export workbook ( https://github.com/Profitbase-Public/Planner/issues/2214 )
 
 ## EPM Datamart 6.1.1
 
