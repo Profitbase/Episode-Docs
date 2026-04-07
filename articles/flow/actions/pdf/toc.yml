@@ -1,4 +1,6 @@
 - name: "Convert a PDF file to Markdown"
   href: "convert-to-markdown.md"
+- name: "Convert a PDF file to image"
+  href: "convert-to-image.md"
 - name: "Split a PDF document"
   href: "split-document.md"
