@@ -2,6 +2,7 @@
   href: "visma-net-connection.md"
 - name: "Create connection"
   href: "create-connection.md"
+- name: "REST API Request"
+  href: "rest-api-request.md"
 - name: "REST API Request with paging"
   href: "paged-rest-api-request.md"
-

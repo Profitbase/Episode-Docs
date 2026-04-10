@@ -1,12 +1,15 @@
 # RabbitMQ message trigger
 
-Configures the flow to automatically run by checking periodically for new messages from an RabbitMQ queue (including topic subscription queues).
+Configures the flow to automatically run when a new message is received from a **RabbitMQ** queue (including topic subscription queues).
 
 <br/>
 
-<br/>
-<!-- 
-**Example**![img](/images/strz.jpg)    -->
+![img](/images/flow/rabbitmq-trigger.png)
+
+ 
+**Example**![img](/images/strz.jpg)    
+
+This flow receives a message containing a JSON text with log data from RabbitMQ using this **trigger**. It then [converts the JSON to a datatable](../../actions/json/get-json-datatable.md), and [inserts it into an SQL Server table](../../actions/sql-server/insert-data.md).
 
 
 ## Properties
@@ -14,11 +17,9 @@ Configures the flow to automatically run by checking periodically for new messag
 | Name           | Type     | Description                                      |
 |----------------|----------|--------------------------------------------------|
 | Title          | Optional | A descriptive label for the trigger configuration. |
-| Connection     | Required | Select the RabbitMQ connection. |
+| Connection     | Required | Select or add an **RabbitMQ connection**. |
 | Queue name     | Required | Select the RabbitMQ Queue name. | 
-| Polling frequency| Required | Interval or schedule for how often the trigger checks for new messages in the topic. |
-| Output data type | Optional | Specifies the format of the trigger's output data (e.g., JSON, XML). |
-| Output variable name | Required | Name of the variable where the trigger's output data will be stored. |
+| Output variable name | Required | Name of the variable containing the message body. |
 | Disabled       | Optional | Boolean value indicating whether the trigger is disabled (true/false). |
 | Description    | Optional | Additional notes or comments about the trigger's purpose or configuration.  |
 
@@ -26,4 +27,4 @@ Configures the flow to automatically run by checking periodically for new messag
 
 ## Returns
 
-This trigger returns a single variable with the specified name and Output data type. 
+This trigger returns a single **string** with the message body from RabbitMQ. 

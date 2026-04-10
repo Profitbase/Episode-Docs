@@ -2,7 +2,7 @@
 
 This action compares a source table with a target table and detects inserted, updated, and deleted rows. The differences are stored in a **DeltaTable** that contains the mapped columns and a row state column named `__rowState`. The [row state column](#row-state) indicates whether a row in the source table is inserted, updated or deleted relative to the target table. The DeltaTable can then be used to update the target table by applying only the changed rows.
 <br/>
-If **Incremental Historic mode** is selected, the **DeltaTable** will contain multiple change sets grouped by an **Batch number** that is incremented per load. 
+If **Incremental Historic mode** is selected, the **DeltaTable** will contain multiple change sets grouped by a **Batch number** that is incremented per load. 
 
 <br/>
 
@@ -25,7 +25,7 @@ This flow example shows a process that loads a DeltaTable by comparing a source 
 | Delta table name   | Required  | Delta table to fill with changes. Flow automatically creates this table. |
 | Target table name  | Required  | Target table to compare against.|
 | Columns and load settings | Required  | List of columns to use in DeltaTable, and settings for historical mode. See below for details. |
-| Result variable name | Optional  | The name of the variable returning the number of rows in the DeltaSet table.  |
+| Result variable name | Optional  | The name of the variable returning the number of rows in the DeltaTable.  |
 | Command timeout (sec) | Optional | The time limit for command execution before it times out. Default is 120 seconds.|
 | Description   | Optional | Additional notes or comments about the action or configuration. |
 
@@ -57,12 +57,12 @@ Specify which columns from the source should be included in the DeltaTable.
     For performance reasons, choose as few columns as possible while still ensuring that rows can be uniquely identified (keys), and changes detected (comparison).<br/><br/>  
 
 5) **Incremental history mode**  
-When checked, the **DeltaTable** will contain multiple loads (separated with an __batchNo column incremented for each load). To limit the size of the DeltaTable, set the **Days To Keep** value resulting that older row will be deleted. <br />
+When checked, the **DeltaTable** will contain multiple loads (separated with a __batchNo column incremented for each load). To limit the size of the DeltaTable, set the **Days To Keep** value so that older rows will be deleted. <br />
 When not checked, the DeltaTable will be **truncated** before each load. 
 
 6) **Keep the target table synchronized**  
 If you are using Flow to build a staging database, make sure that the target table is also kept in sync with the final destination. Otherwise, the DeltaTable may be calculated incorrectly the next time the Flow runs.<br/>
-When the **Update target table** is checked, it will be merged with the DeltaTable: Otherwise do it with other SQL server actions etc.
+When the **Update target table** is checked, it will be merged with the DeltaTable. Otherwise, do it with other SQL Server actions.
 
 <br/>
 
@@ -85,6 +85,16 @@ The columns defined in the list will be added to the **DeltaTable**.
 
 <br/>
 
+### System columns added to the DeltaTable
+
+| Column | Type | Description |
+|--------|------|-------------|
+| __rowState | tinyint | The Row State column specifies which action to apply when updating the target table. See values in table below. |
+| __batchNo | int | The Batch Number column contains an incremented value per load. This column only exists when using **Incremental history mode**. |  
+| __batchDate | DateTime | The Batch Date column contains a load date, and it is used for deletion. This column only exists when using **Incremental history mode**. |  
+
+<br/>
+
 ### Row State
 
 The DeltaTable contains a column **__rowState** (of type tinyint) that indicates which action to apply when updating the target table.
@@ -94,6 +104,7 @@ The DeltaTable contains a column **__rowState** (of type tinyint) that indicates
 | 1 | Row should be **Inserted** to the target table.|
 | 2 | Row should be **Updated** in the target table. |
 | 4 | Row should be **Deleted** from the target table. |
+
 
 <br/>
 
@@ -108,5 +119,5 @@ The following notes and recommendations apply:
 - If no **Compare by** are checked, all columns are used for comparison.
 - If no unique column combinations exist for keys, the **DeltaTable** will only contain Deletes and Inserts. **Important:** Delete rows before inserting new rows.
 - Avoid use of collation if possible; collation casting costs resources and increases time spent.
-- If collation is not specified, collation differences is detected and handled.
-- SQL server **Extended table properties** is used to store current **BatchNo** and **BatchDate** (for inc.history mode).
+- If collation is not specified, collation differences are detected and handled.
+- SQL Server **Extended table properties** are used to store the current **BatchNo** and **BatchDate** (for incremental history mode).
